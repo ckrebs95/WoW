@@ -1,0 +1,1773 @@
+
+RecountPerCharDB = {
+	["version"] = "1.3",
+	["combatants"] = {
+		["Doyjen"] = {
+			["GUID"] = "0x03800000057C779D",
+			["LastEventHealth"] = {
+				"123 (100%)", -- [1]
+				"123 (100%)", -- [2]
+				"123 (100%)", -- [3]
+				"123 (100%)", -- [4]
+				"123 (100%)", -- [5]
+				"123 (100%)", -- [6]
+				"123 (100%)", -- [7]
+				"123 (100%)", -- [8]
+				"123 (100%)", -- [9]
+				"123 (100%)", -- [10]
+				"123 (100%)", -- [11]
+				"123 (100%)", -- [12]
+				"123 (100%)", -- [13]
+				"123 (100%)", -- [14]
+				"123 (100%)", -- [15]
+				"123 (100%)", -- [16]
+				"123 (100%)", -- [17]
+				"123 (100%)", -- [18]
+				"123 (100%)", -- [19]
+				"123 (100%)", -- [20]
+				"123 (100%)", -- [21]
+				"123 (100%)", -- [22]
+				"123 (100%)", -- [23]
+				"123 (100%)", -- [24]
+				"123 (100%)", -- [25]
+				"123 (100%)", -- [26]
+				"123 (100%)", -- [27]
+				"123 (100%)", -- [28]
+				"123 (100%)", -- [29]
+				"123 (100%)", -- [30]
+				"123 (100%)", -- [31]
+				"123 (100%)", -- [32]
+				"123 (100%)", -- [33]
+				"123 (100%)", -- [34]
+				"123 (100%)", -- [35]
+				"123 (100%)", -- [36]
+				"123 (100%)", -- [37]
+				"123 (100%)", -- [38]
+				"123 (100%)", -- [39]
+				"123 (100%)", -- [40]
+				"123 (100%)", -- [41]
+				"123 (100%)", -- [42]
+				"123 (100%)", -- [43]
+				"123 (100%)", -- [44]
+				"123 (100%)", -- [45]
+			},
+			["LastEventType"] = {
+				"DAMAGE", -- [1]
+				"DAMAGE", -- [2]
+				"DAMAGE", -- [3]
+				"DAMAGE", -- [4]
+				"DAMAGE", -- [5]
+				"DAMAGE", -- [6]
+				"DAMAGE", -- [7]
+				"DAMAGE", -- [8]
+				"DAMAGE", -- [9]
+				"DAMAGE", -- [10]
+				"DAMAGE", -- [11]
+				"DAMAGE", -- [12]
+				"DAMAGE", -- [13]
+				"DAMAGE", -- [14]
+				"DAMAGE", -- [15]
+				"DAMAGE", -- [16]
+				"DAMAGE", -- [17]
+				"DAMAGE", -- [18]
+				"DAMAGE", -- [19]
+				"DAMAGE", -- [20]
+				"DAMAGE", -- [21]
+				"DAMAGE", -- [22]
+				"DAMAGE", -- [23]
+				"DAMAGE", -- [24]
+				"DAMAGE", -- [25]
+				"DAMAGE", -- [26]
+				"DAMAGE", -- [27]
+				"DAMAGE", -- [28]
+				"DAMAGE", -- [29]
+				"DAMAGE", -- [30]
+				"DAMAGE", -- [31]
+				"DAMAGE", -- [32]
+				"DAMAGE", -- [33]
+				"DAMAGE", -- [34]
+				"DAMAGE", -- [35]
+				"DAMAGE", -- [36]
+				"DAMAGE", -- [37]
+				"DAMAGE", -- [38]
+				"DAMAGE", -- [39]
+				"DAMAGE", -- [40]
+				"DAMAGE", -- [41]
+				"DAMAGE", -- [42]
+				"DAMAGE", -- [43]
+				"DAMAGE", -- [44]
+				"DAMAGE", -- [45]
+			},
+			["TimeWindows"] = {
+				["Damage"] = {
+					659, -- [1]
+				},
+				["TimeDamage"] = {
+					66.78999999999999, -- [1]
+				},
+				["ActiveTime"] = {
+					66.78999999999999, -- [1]
+				},
+			},
+			["enClass"] = "MONK",
+			["unit"] = "Doyjen",
+			["level"] = 1,
+			["LastFightIn"] = 4,
+			["type"] = "Self",
+			["FightsSaved"] = 5,
+			["TimeLast"] = {
+				["Damage"] = 1348653831,
+				["OVERALL"] = 1348653831,
+				["TimeDamage"] = 1348653831,
+				["ActiveTime"] = 1348653831,
+			},
+			["Owner"] = false,
+			["LastAbility"] = 355402.687,
+			["NextEventNum"] = 46,
+			["LastEventHealthNum"] = {
+				100, -- [1]
+				100, -- [2]
+				100, -- [3]
+				100, -- [4]
+				100, -- [5]
+				100, -- [6]
+				100, -- [7]
+				100, -- [8]
+				100, -- [9]
+				100, -- [10]
+				100, -- [11]
+				100, -- [12]
+				100, -- [13]
+				100, -- [14]
+				100, -- [15]
+				100, -- [16]
+				100, -- [17]
+				100, -- [18]
+				100, -- [19]
+				100, -- [20]
+				100, -- [21]
+				100, -- [22]
+				100, -- [23]
+				100, -- [24]
+				100, -- [25]
+				100, -- [26]
+				100, -- [27]
+				100, -- [28]
+				100, -- [29]
+				100, -- [30]
+				100, -- [31]
+				100, -- [32]
+				100, -- [33]
+				100, -- [34]
+				100, -- [35]
+				100, -- [36]
+				100, -- [37]
+				100, -- [38]
+				100, -- [39]
+				100, -- [40]
+				100, -- [41]
+				100, -- [42]
+				100, -- [43]
+				100, -- [44]
+				100, -- [45]
+			},
+			["LastEvents"] = {
+				"Doyjen Melee Training Target Dodge", -- [1]
+				"Doyjen Jab Training Target Hit -8 (Physical)", -- [2]
+				"Doyjen Melee Training Target Hit -19 (Physical)", -- [3]
+				"Doyjen Jab Training Target Hit -9 (Physical)", -- [4]
+				"Doyjen Melee Training Target Glancing -13 (Physical)", -- [5]
+				"Doyjen Jab Training Target Parry (Physical)", -- [6]
+				"Doyjen Melee Training Target Hit -19 (Physical)", -- [7]
+				"Doyjen Quaking Palm Training Target Block (Physical)", -- [8]
+				"Doyjen Melee Training Target Hit -21 (Physical)", -- [9]
+				"Doyjen Jab Training Target Hit -9 (Physical)", -- [10]
+				"Doyjen Melee Training Target Glancing -20 (Physical)", -- [11]
+				"Doyjen Melee Training Target Hit -19 (Physical)", -- [12]
+				"Doyjen Jab Training Target Hit -8 (Physical)", -- [13]
+				"Doyjen Jab Training Target Hit -10 (Physical)", -- [14]
+				"Doyjen Melee Training Target Crit -38 (Physical)", -- [15]
+				"Doyjen Jab Training Target Crit -18 (Physical)", -- [16]
+				"Doyjen Melee Training Target Hit -17 (Physical)", -- [17]
+				"Doyjen Jab Training Target Hit -9 (Physical)", -- [18]
+				"Doyjen Melee Training Target Hit -21 (Physical)", -- [19]
+				"Doyjen Melee Training Target Hit -12 (Physical)", -- [20]
+				"Doyjen Melee Training Target Hit -17 (Physical)", -- [21]
+				"Doyjen Jab Training Target Crit -17 (Physical)", -- [22]
+				"Doyjen Melee Training Target Hit -17 (Physical)", -- [23]
+				"Doyjen Jab Training Target Hit -8 (Physical)", -- [24]
+				"Doyjen Melee Training Target Hit -20 (Physical)", -- [25]
+				"Doyjen Jab Training Target Hit -8 (Physical)", -- [26]
+				"Doyjen Melee Training Target Crit -35 (Physical)", -- [27]
+				"Doyjen Jab Training Target Hit -10 (Physical)", -- [28]
+				"Doyjen Melee Training Target Hit -18 (Physical)", -- [29]
+				"Doyjen Jab Training Target Hit -8 (Physical)", -- [30]
+				"Doyjen Melee Training Target Dodge", -- [31]
+				"Doyjen Melee Training Target Crit -39 (Physical)", -- [32]
+				"Doyjen Melee Training Target Hit -19 (Physical)", -- [33]
+				"Doyjen Jab Training Target Hit -9 (Physical)", -- [34]
+				"Doyjen Melee Training Target Hit -17 (Physical)", -- [35]
+				"Doyjen Jab Training Target Hit -8 (Physical)", -- [36]
+				"Doyjen Melee Training Target Hit -17 (Physical)", -- [37]
+				"Doyjen Jab Training Target Hit -9 (Physical)", -- [38]
+				"Doyjen Melee Training Target Crit -25 (Physical)", -- [39]
+				"Doyjen Melee Training Target Glancing -17 (Physical)", -- [40]
+				"Doyjen Jab Training Target Hit -8 (Physical)", -- [41]
+				"Doyjen Melee Training Target Hit -18 (Physical)", -- [42]
+				"Doyjen Jab Training Target Hit -8 (Physical)", -- [43]
+				"Doyjen Jab Training Target Crit -17 (Physical)", -- [44]
+				"Doyjen Melee Training Target Hit -20 (Physical)", -- [45]
+			},
+			["Name"] = "Doyjen",
+			["LastEventIncoming"] = {
+				false, -- [1]
+				false, -- [2]
+				false, -- [3]
+				false, -- [4]
+				false, -- [5]
+				false, -- [6]
+				false, -- [7]
+				false, -- [8]
+				false, -- [9]
+				false, -- [10]
+				false, -- [11]
+				false, -- [12]
+				false, -- [13]
+				false, -- [14]
+				false, -- [15]
+				false, -- [16]
+				false, -- [17]
+				false, -- [18]
+				false, -- [19]
+				false, -- [20]
+				false, -- [21]
+				false, -- [22]
+				false, -- [23]
+				false, -- [24]
+				false, -- [25]
+				false, -- [26]
+				false, -- [27]
+				false, -- [28]
+				false, -- [29]
+				false, -- [30]
+				false, -- [31]
+				false, -- [32]
+				false, -- [33]
+				false, -- [34]
+				false, -- [35]
+				false, -- [36]
+				false, -- [37]
+				false, -- [38]
+				false, -- [39]
+				false, -- [40]
+				false, -- [41]
+				false, -- [42]
+				false, -- [43]
+				false, -- [44]
+				false, -- [45]
+			},
+			["LastEventTimes"] = {
+				355281.559, -- [1]
+				355283.365, -- [2]
+				355283.924, -- [3]
+				355285.78, -- [4]
+				355286.155, -- [5]
+				355287.144, -- [6]
+				355288.627, -- [7]
+				355289.862, -- [8]
+				355290.974, -- [9]
+				355292.216, -- [10]
+				355293.398, -- [11]
+				355314.555, -- [12]
+				355314.769, -- [13]
+				355316.343, -- [14]
+				355316.905, -- [15]
+				355317.945, -- [16]
+				355321.338, -- [17]
+				355321.578, -- [18]
+				355323.598, -- [19]
+				355325.918, -- [20]
+				355330.225, -- [21]
+				355330.818, -- [22]
+				355332.608, -- [23]
+				355332.843, -- [24]
+				355334.925, -- [25]
+				355335.217, -- [26]
+				355337.847, -- [27]
+				355338.037, -- [28]
+				355340.17, -- [29]
+				355341.379, -- [30]
+				355342.544, -- [31]
+				355344.946, -- [32]
+				355347.951, -- [33]
+				355348.923, -- [34]
+				355350.299, -- [35]
+				355350.587, -- [36]
+				355352.688, -- [37]
+				355353.891, -- [38]
+				355355.042, -- [39]
+				355397.898, -- [40]
+				355399.639, -- [41]
+				355400.337, -- [42]
+				355400.867, -- [43]
+				355402.445, -- [44]
+				355402.687, -- [45]
+			},
+			["Fights"] = {
+				["Fight5"] = {
+					["ElementDoneBlock"] = {
+						["Melee"] = 11,
+						["Physical"] = 0,
+					},
+					["TimeSpent"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Quaking Palm"] = {
+									["count"] = 1.24,
+								},
+								["Jab"] = {
+									["count"] = 8.960000000000001,
+								},
+								["Melee"] = {
+									["count"] = 20,
+								},
+							},
+							["amount"] = 30.2,
+						},
+					},
+					["ElementDone"] = {
+						["Melee"] = 199,
+						["Physical"] = 71,
+					},
+					["DamagedWho"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 71,
+								},
+								["Melee"] = {
+									["count"] = 199,
+								},
+							},
+							["amount"] = 270,
+						},
+					},
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 2,
+								},
+								["Hit"] = {
+									["count"] = 7,
+								},
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Dodge"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 11,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 1,
+								},
+								["Block"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 6,
+								},
+							},
+							["amount"] = 9,
+						},
+					},
+					["TimeDamage"] = 30.2,
+					["TimeDamaging"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Quaking Palm"] = {
+									["count"] = 1.24,
+								},
+								["Jab"] = {
+									["count"] = 8.960000000000001,
+								},
+								["Melee"] = {
+									["count"] = 20,
+								},
+							},
+							["amount"] = 30.2,
+						},
+					},
+					["Attacks"] = {
+						["Quaking Palm"] = {
+							["Details"] = {
+								["Block"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 18,
+									["min"] = 18,
+									["count"] = 1,
+									["amount"] = 18,
+								},
+								["Hit"] = {
+									["max"] = 10,
+									["min"] = 8,
+									["count"] = 6,
+									["amount"] = 53,
+								},
+							},
+							["count"] = 8,
+							["amount"] = 71,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 20,
+									["min"] = 20,
+									["count"] = 1,
+									["amount"] = 20,
+								},
+								["Dodge"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 12,
+									["min"] = 12,
+									["count"] = 1,
+									["amount"] = 12,
+								},
+								["Glancing (Blocked)"] = {
+									["max"] = 13,
+									["min"] = 13,
+									["count"] = 1,
+									["amount"] = 13,
+								},
+								["Crit"] = {
+									["max"] = 38,
+									["min"] = 38,
+									["count"] = 1,
+									["amount"] = 38,
+								},
+								["Hit"] = {
+									["max"] = 21,
+									["min"] = 17,
+									["count"] = 6,
+									["amount"] = 116,
+								},
+							},
+							["count"] = 11,
+							["amount"] = 199,
+						},
+					},
+					["ActiveTime"] = 30.2,
+					["Damage"] = 270,
+				},
+				["Fight2"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 3,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 85,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 59,
+						["Physical"] = 26,
+					},
+					["PartialAbsorb"] = {
+					},
+					["DamagedWho"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 59,
+								},
+								["Jab"] = {
+									["count"] = 26,
+								},
+							},
+							["amount"] = 85,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+						["Melee"] = 11,
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 4.63,
+								},
+								["Jab"] = {
+									["count"] = 2.46,
+								},
+							},
+							["amount"] = 7.09,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 7.09,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Crit (Blocked)"] = {
+									["max"] = 25,
+									["min"] = 25,
+									["count"] = 1,
+									["amount"] = 25,
+								},
+								["Hit"] = {
+									["max"] = 17,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 34,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 59,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 9,
+									["min"] = 8,
+									["count"] = 3,
+									["amount"] = 26,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 26,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 7.09,
+					["TimeDamaging"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 4.63,
+								},
+								["Jab"] = {
+									["count"] = 2.46,
+								},
+							},
+							["amount"] = 7.09,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["CurrentFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 0,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight3"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 3,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 2,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 75,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 57,
+						["Physical"] = 18,
+					},
+					["PartialAbsorb"] = {
+					},
+					["DamagedWho"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 57,
+								},
+								["Jab"] = {
+									["count"] = 18,
+								},
+							},
+							["amount"] = 75,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 5.69,
+								},
+								["Jab"] = {
+									["count"] = 1.4,
+								},
+							},
+							["amount"] = 7.09,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 7.09,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 39,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 39,
+								},
+								["Hit"] = {
+									["max"] = 18,
+									["min"] = 18,
+									["count"] = 1,
+									["amount"] = 18,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 57,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 10,
+									["min"] = 8,
+									["count"] = 2,
+									["amount"] = 18,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 18,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 7.09,
+					["TimeDamaging"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 5.69,
+								},
+								["Jab"] = {
+									["count"] = 1.4,
+								},
+							},
+							["amount"] = 7.09,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight4"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 87,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 54,
+						["Physical"] = 33,
+					},
+					["PartialAbsorb"] = {
+					},
+					["DamagedWho"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 54,
+								},
+								["Jab"] = {
+									["count"] = 33,
+								},
+							},
+							["amount"] = 87,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 7.37,
+								},
+								["Jab"] = {
+									["count"] = 1.11,
+								},
+							},
+							["amount"] = 8.48,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 8.48,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 20,
+									["min"] = 17,
+									["count"] = 3,
+									["amount"] = 54,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 54,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 17,
+									["min"] = 17,
+									["count"] = 1,
+									["amount"] = 17,
+								},
+								["Hit"] = {
+									["max"] = 8,
+									["min"] = 8,
+									["count"] = 2,
+									["amount"] = 16,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 33,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 8.48,
+					["TimeDamaging"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 7.37,
+								},
+								["Jab"] = {
+									["count"] = 1.11,
+								},
+							},
+							["amount"] = 8.48,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["LastFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 2,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 71,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 38,
+						["Physical"] = 33,
+					},
+					["PartialAbsorb"] = {
+					},
+					["DamagedWho"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 38,
+								},
+								["Jab"] = {
+									["count"] = 33,
+								},
+							},
+							["amount"] = 71,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0.94,
+								},
+								["Jab"] = {
+									["count"] = 3.85,
+								},
+							},
+							["amount"] = 4.79,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 4.79,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 20,
+									["min"] = 18,
+									["count"] = 2,
+									["amount"] = 38,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 38,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 17,
+									["min"] = 17,
+									["count"] = 1,
+									["amount"] = 17,
+								},
+								["Hit"] = {
+									["max"] = 8,
+									["min"] = 8,
+									["count"] = 2,
+									["amount"] = 16,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 33,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 4.79,
+					["TimeDamaging"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0.94,
+								},
+								["Jab"] = {
+									["count"] = 3.85,
+								},
+							},
+							["amount"] = 4.79,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight1"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 2,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 71,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 38,
+						["Physical"] = 33,
+					},
+					["PartialAbsorb"] = {
+					},
+					["DamagedWho"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 38,
+								},
+								["Jab"] = {
+									["count"] = 33,
+								},
+							},
+							["amount"] = 71,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0.94,
+								},
+								["Jab"] = {
+									["count"] = 3.85,
+								},
+							},
+							["amount"] = 4.79,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 4.79,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 20,
+									["min"] = 18,
+									["count"] = 2,
+									["amount"] = 38,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 38,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 17,
+									["min"] = 17,
+									["count"] = 1,
+									["amount"] = 17,
+								},
+								["Hit"] = {
+									["max"] = 8,
+									["min"] = 8,
+									["count"] = 2,
+									["amount"] = 16,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 33,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 4.79,
+					["TimeDamaging"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0.94,
+								},
+								["Jab"] = {
+									["count"] = 3.85,
+								},
+							},
+							["amount"] = 4.79,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["OverallData"] = {
+					["ElementDoneBlock"] = {
+						["Melee"] = 22,
+						["Physical"] = 0,
+					},
+					["TimeSpent"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Quaking Palm"] = {
+									["count"] = 1.24,
+								},
+								["Jab"] = {
+									["count"] = 17.78,
+								},
+								["Melee"] = {
+									["count"] = 47.77,
+								},
+							},
+							["amount"] = 66.78999999999999,
+						},
+					},
+					["ElementDone"] = {
+						["Melee"] = 478,
+						["Physical"] = 181,
+					},
+					["DamagedWho"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 181,
+								},
+								["Melee"] = {
+									["count"] = 478,
+								},
+							},
+							["amount"] = 659,
+						},
+					},
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 3,
+								},
+								["Hit"] = {
+									["count"] = 16,
+								},
+								["Crit"] = {
+									["count"] = 4,
+								},
+								["Dodge"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 25,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 1,
+								},
+								["Block"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 3,
+								},
+								["Hit"] = {
+									["count"] = 15,
+								},
+							},
+							["amount"] = 20,
+						},
+					},
+					["TimeDamage"] = 66.78999999999999,
+					["TimeDamaging"] = {
+						["Training Target"] = {
+							["Details"] = {
+								["Quaking Palm"] = {
+									["count"] = 1.24,
+								},
+								["Jab"] = {
+									["count"] = 17.78,
+								},
+								["Melee"] = {
+									["count"] = 47.77,
+								},
+							},
+							["amount"] = 66.78999999999999,
+						},
+					},
+					["Attacks"] = {
+						["Quaking Palm"] = {
+							["Details"] = {
+								["Block"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 18,
+									["min"] = 17,
+									["count"] = 3,
+									["amount"] = 52,
+								},
+								["Hit"] = {
+									["max"] = 10,
+									["min"] = 8,
+									["count"] = 15,
+									["amount"] = 129,
+								},
+							},
+							["count"] = 19,
+							["amount"] = 181,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 20,
+									["min"] = 17,
+									["count"] = 2,
+									["amount"] = 37,
+								},
+								["Crit (Blocked)"] = {
+									["max"] = 25,
+									["min"] = 25,
+									["count"] = 1,
+									["amount"] = 25,
+								},
+								["Dodge"] = {
+									["count"] = 2,
+									["amount"] = 0,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 12,
+									["min"] = 12,
+									["count"] = 1,
+									["amount"] = 12,
+								},
+								["Glancing (Blocked)"] = {
+									["max"] = 13,
+									["min"] = 13,
+									["count"] = 1,
+									["amount"] = 13,
+								},
+								["Crit"] = {
+									["max"] = 39,
+									["min"] = 35,
+									["count"] = 3,
+									["amount"] = 112,
+								},
+								["Hit"] = {
+									["max"] = 21,
+									["min"] = 17,
+									["count"] = 15,
+									["amount"] = 279,
+								},
+							},
+							["count"] = 25,
+							["amount"] = 478,
+						},
+					},
+					["ActiveTime"] = 66.78999999999999,
+					["Damage"] = 659,
+				},
+			},
+			["UnitLockout"] = 1348653710,
+			["LastActive"] = 1348653831,
+		},
+	},
+	["FightNum"] = 5,
+	["CombatTimes"] = {
+		{
+			1348653710, -- [1]
+			1348653757, -- [2]
+			"06:01:50", -- [3]
+			"06:02:37", -- [4]
+			"Training Target", -- [5]
+		}, -- [1]
+		{
+			1348653759, -- [1]
+			1348653766, -- [2]
+			"06:02:39", -- [3]
+			"06:02:46", -- [4]
+			"Training Target", -- [5]
+		}, -- [2]
+		{
+			1348653767, -- [1]
+			1348653776, -- [2]
+			"06:02:47", -- [3]
+			"06:02:56", -- [4]
+			"Training Target", -- [5]
+		}, -- [3]
+		{
+			1348653777, -- [1]
+			1348653787, -- [2]
+			"06:02:58", -- [3]
+			"06:03:07", -- [4]
+			"Training Target", -- [5]
+		}, -- [4]
+		{
+			1348653828, -- [1]
+			1348653834, -- [2]
+			"06:03:48", -- [3]
+			"06:03:54", -- [4]
+			"Training Target", -- [5]
+		}, -- [5]
+	},
+	["FoughtWho"] = {
+		"Training Target 06:03:48-06:03:54", -- [1]
+		"Training Target 06:02:58-06:03:07", -- [2]
+		"Training Target 06:02:47-06:02:56", -- [3]
+		"Training Target 06:02:39-06:02:46", -- [4]
+		"Training Target 06:01:50-06:02:37", -- [5]
+	},
+}

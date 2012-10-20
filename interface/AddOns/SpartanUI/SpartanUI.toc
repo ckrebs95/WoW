@@ -1,0 +1,24 @@
+## Interface: 50001
+## Title: SpartanUI |CFF0070DDCore|r
+## Notes: User Interface combining elegant artwork with well designed features.
+## Version: 3.0.0
+## Author: Atriace, Beladona, Zilver, Wutname1
+## OptionalDeps: Ace3, Bartender4
+## SavedVariablesPerCharacter: suiChar
+## X-Curse-Packaged-Version: v3.0.0-Beta1
+## X-Curse-Project-Name: SpartanUI
+## X-Curse-Project-ID: spartan-ui
+## X-Curse-Repository-ID: wow/spartan-ui/mainline
+
+#@no-lib-strip@
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0\CallbackHandler-1.0.xml
+libs\Ace3\AceAddon-3.0.lua
+libs\Ace3\AceConfig-3.0.lua
+libs\Ace3\AceConfigCmd-3.0.lua
+libs\Ace3\AceConfigRegistry-3.0.lua
+libs\Ace3\AceConsole-3.0.lua
+#@end-no-lib-strip@
+
+
+scripts\Global-Framework.xml

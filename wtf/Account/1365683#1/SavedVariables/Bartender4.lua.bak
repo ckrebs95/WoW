@@ -1,0 +1,294 @@
+
+Bartender4DB = {
+	["namespaces"] = {
+		["BagBar"] = {
+			["profiles"] = {
+				["Dethamett - Khaz Modan"] = {
+					["version"] = 3,
+					["position"] = {
+						["x"] = 58.50002201646532,
+						["point"] = "CENTER",
+						["y"] = 1.500053383409181,
+					},
+				},
+				["SpartanUI Standard"] = {
+					["version"] = 3,
+					["position"] = {
+						["growHorizontal"] = "LEFT",
+						["x"] = -6,
+						["point"] = "TOPRIGHT",
+						["scale"] = 0.7,
+						["parent"] = "SUI_ActionBarPlate",
+						["y"] = -2,
+					},
+					["padding"] = 0,
+					["keyring"] = true,
+				},
+			},
+		},
+		["Vehicle"] = {
+			["profiles"] = {
+				["Dethamett - Khaz Modan"] = {
+					["version"] = 3,
+					["position"] = {
+						["x"] = 53.5000983849153,
+						["point"] = "CENTER",
+						["y"] = 51.50009078532321,
+					},
+				},
+				["SpartanUI Standard"] = {
+					["enabled"] = false,
+					["version"] = 3,
+					["position"] = {
+						["x"] = 53.5000983849153,
+						["point"] = "CENTER",
+						["y"] = 51.50009078532321,
+					},
+				},
+			},
+		},
+		["XPBar"] = {
+		},
+		["ActionBars"] = {
+			["profiles"] = {
+				["Dethamett - Khaz Modan"] = {
+					["actionbars"] = {
+						{
+							["version"] = 3,
+							["position"] = {
+								["x"] = -231.4998592212818,
+								["point"] = "CENTER",
+								["y"] = -227.4999584630138,
+							},
+						}, -- [1]
+						{
+							["version"] = 3,
+							["position"] = {
+								["x"] = -231.4998592212818,
+								["point"] = "CENTER",
+								["y"] = -189.5000048056244,
+							},
+						}, -- [2]
+						{
+							["version"] = 3,
+							["position"] = {
+								["x"] = -231.4998592212818,
+								["point"] = "CENTER",
+								["y"] = -151.4999367073187,
+							},
+						}, -- [3]
+						{
+							["version"] = 3,
+							["position"] = {
+								["x"] = -231.4998592212818,
+								["point"] = "CENTER",
+								["y"] = -113.4999449029573,
+							},
+						}, -- [4]
+						{
+							["version"] = 3,
+							["position"] = {
+								["x"] = -231.4998592212818,
+								["point"] = "CENTER",
+								["y"] = -75.49995309859582,
+							},
+						}, -- [5]
+						{
+							["version"] = 3,
+							["position"] = {
+								["x"] = -231.4998592212818,
+								["point"] = "CENTER",
+								["y"] = -37.49996129423437,
+							},
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						[10] = {
+						},
+					},
+				},
+				["SpartanUI Standard"] = {
+					["actionbars"] = {
+						{
+							["skin"] = {
+								["Zoom"] = true,
+							},
+							["version"] = 3,
+							["position"] = {
+								["x"] = 0,
+								["point"] = "LEFT",
+								["scale"] = 0.85,
+								["parent"] = "SUI_ActionBarPlate",
+								["y"] = 36,
+							},
+							["padding"] = 3,
+						}, -- [1]
+						{
+							["skin"] = {
+								["Zoom"] = true,
+							},
+							["version"] = 3,
+							["position"] = {
+								["x"] = 0,
+								["point"] = "LEFT",
+								["scale"] = 0.85,
+								["parent"] = "SUI_ActionBarPlate",
+								["y"] = -4,
+							},
+							["padding"] = 3,
+						}, -- [2]
+						{
+							["skin"] = {
+								["Zoom"] = true,
+							},
+							["version"] = 3,
+							["position"] = {
+								["x"] = -402,
+								["point"] = "RIGHT",
+								["scale"] = 0.85,
+								["parent"] = "SUI_ActionBarPlate",
+								["y"] = 36,
+							},
+							["padding"] = 3,
+						}, -- [3]
+						{
+							["skin"] = {
+								["Zoom"] = true,
+							},
+							["version"] = 3,
+							["position"] = {
+								["x"] = -402,
+								["point"] = "RIGHT",
+								["scale"] = 0.85,
+								["parent"] = "SUI_ActionBarPlate",
+								["y"] = -4,
+							},
+							["padding"] = 3,
+						}, -- [4]
+						{
+							["rows"] = 3,
+							["skin"] = {
+								["Zoom"] = true,
+							},
+							["version"] = 3,
+							["position"] = {
+								["x"] = -135,
+								["point"] = "LEFT",
+								["scale"] = 0.8,
+								["parent"] = "SUI_ActionBarPlate",
+								["y"] = 36,
+							},
+							["padding"] = 4,
+						}, -- [5]
+						{
+							["rows"] = 3,
+							["skin"] = {
+								["Zoom"] = true,
+							},
+							["version"] = 3,
+							["position"] = {
+								["x"] = 3,
+								["point"] = "RIGHT",
+								["scale"] = 0.8,
+								["parent"] = "SUI_ActionBarPlate",
+								["y"] = 36,
+							},
+							["padding"] = 4,
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						[10] = {
+						},
+					},
+				},
+			},
+		},
+		["RepBar"] = {
+		},
+		["StanceBar"] = {
+			["profiles"] = {
+				["Dethamett - Khaz Modan"] = {
+					["version"] = 3,
+					["position"] = {
+						["x"] = -207.7499358691284,
+						["point"] = "CENTER",
+						["y"] = 14.25004937872222,
+					},
+				},
+				["SpartanUI Standard"] = {
+					["version"] = 3,
+					["position"] = {
+						["growHorizontal"] = "LEFT",
+						["x"] = -605,
+						["point"] = "TOPRIGHT",
+						["scale"] = 0.85,
+						["parent"] = "SUI_ActionBarPlate",
+						["y"] = -2,
+					},
+					["padding"] = 1,
+				},
+			},
+		},
+		["PetBar"] = {
+			["profiles"] = {
+				["Dethamett - Khaz Modan"] = {
+					["version"] = 3,
+					["position"] = {
+						["x"] = -163.4999441578993,
+						["point"] = "CENTER",
+						["y"] = 89.50012073665675,
+					},
+				},
+				["SpartanUI Standard"] = {
+					["version"] = 3,
+					["skin"] = {
+						["Zoom"] = true,
+					},
+					["position"] = {
+						["x"] = 5,
+						["point"] = "TOPLEFT",
+						["scale"] = 0.7,
+						["parent"] = "SUI_ActionBarPlate",
+						["y"] = -6,
+					},
+					["padding"] = 1,
+				},
+			},
+		},
+		["MicroMenu"] = {
+			["profiles"] = {
+				["Dethamett - Khaz Modan"] = {
+					["version"] = 3,
+					["position"] = {
+						["x"] = -178.8000674247744,
+						["point"] = "CENTER",
+						["scale"] = 0.800000011920929,
+						["y"] = 42.39985787868432,
+					},
+				},
+				["SpartanUI Standard"] = {
+					["version"] = 3,
+					["position"] = {
+						["x"] = 603,
+						["point"] = "TOPLEFT",
+						["parent"] = "SUI_ActionBarPlate",
+						["y"] = 0,
+					},
+				},
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Dethamett - Khaz Modan"] = "SpartanUI Standard",
+	},
+	["profiles"] = {
+		["Dethamett - Khaz Modan"] = {
+		},
+		["SpartanUI Standard"] = {
+		},
+	},
+}

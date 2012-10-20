@@ -1,0 +1,37 @@
+------------------------------------------------------------------------
+r422 | sidoine | 2011-09-21 17:38:15 +0000 (Wed, 21 Sep 2011) | 1 line
+Changed paths:
+   A /tags/4.2.3 (from /trunk:421)
+
+tag 4.2.3
+------------------------------------------------------------------------
+r421 | sidoine | 2011-09-21 17:37:50 +0000 (Wed, 21 Sep 2011) | 1 line
+Changed paths:
+   M /trunk/Ovale.toc
+   M /trunk/defaut/Voleur.lua
+
+bug fix in rogue script
+------------------------------------------------------------------------
+r419 | sidoine | 2011-09-18 13:45:44 +0000 (Sun, 18 Sep 2011) | 4 lines
+Changed paths:
+   M /trunk/Condition.lua
+   M /trunk/Ovale.lua
+   M /trunk/OvaleFrame.lua
+   M /trunk/defaut/Chasseur.lua
+   M /trunk/defaut/Druide.lua
+   M /trunk/defaut/Guerrier.lua
+   M /trunk/defaut/Pretre.lua
+   M /trunk/defaut/Voleur.lua
+
+various fixes for default scripts
+added spell list, harmful, and helpful parameters to IsCasting
+added remainingCastTime value
+added second icon scale option
+------------------------------------------------------------------------
+r418 | sidoine | 2011-07-10 12:11:29 +0000 (Sun, 10 Jul 2011) | 1 line
+Changed paths:
+   M /trunk/Ovale.toc
+   M /trunk/defaut/Mage.lua
+
+Use of Pyroblast!
+------------------------------------------------------------------------

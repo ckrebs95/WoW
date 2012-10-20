@@ -1,0 +1,7780 @@
+
+RecountPerCharDB = {
+	["version"] = "1.3",
+	["combatants"] = {
+		["Havenshire Stallion <Deyndis>"] = {
+			["GUID"] = "0xF1506FBD000AE1A2",
+			["LastEventHealth"] = {
+				"2533 (100%)", -- [1]
+			},
+			["LastEventType"] = {
+				"DAMAGE", -- [1]
+			},
+			["enClass"] = "PET",
+			["unit"] = "Havenshire Stallion",
+			["level"] = 1,
+			["LastFightIn"] = 25,
+			["type"] = "Pet",
+			["FightsSaved"] = 4,
+			["Owner"] = "Deyndis",
+			["NextEventNum"] = 2,
+			["LastEventHealthNum"] = {
+				100, -- [1]
+			},
+			["LastEvents"] = {
+				"Scarlet Infantryman Melee Havenshire Stallion <Deyndis> Dodge", -- [1]
+			},
+			["Name"] = "Havenshire Stallion",
+			["LastEventIncoming"] = {
+				true, -- [1]
+			},
+			["LastEventTimes"] = {
+				3111.148, -- [1]
+			},
+			["Fights"] = {
+				["CurrentFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 0,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight4"] = {
+					["PartialResist"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+					},
+					["PartialAbsorb"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+					},
+				},
+				["LastFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 0,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["OverallData"] = {
+					["PartialResist"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+					},
+					["PartialAbsorb"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+					},
+				},
+			},
+			["UnitLockout"] = 1329621195,
+			["LastActive"] = 1329621195,
+		},
+		["Scarlet Crusader"] = {
+			["GUID"] = "0xF1306F7100000177",
+			["type"] = "Nontrivial",
+			["FightsSaved"] = 5,
+			["GuardianReverseGUIDs"] = {
+				["Vengeful Ghoul"] = {
+					["LatestGuardian"] = 4,
+					["GUIDs"] = {
+						"0xF1306F70000D0417", -- [1]
+						"0xF1306F70000D0418", -- [2]
+						"0xF1306F70000D04FC", -- [3]
+						"0xF1306F70000D04FD", -- [4]
+						[0] = "0xF1306F70000D0416",
+					},
+				},
+			},
+			["Owner"] = false,
+			["enClass"] = "MOB",
+			["Name"] = "Scarlet Crusader",
+			["Pet"] = {
+				"Vengeful Ghoul <Scarlet Crusader>", -- [1]
+			},
+			["Fights"] = {
+				["LastFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 0,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["CurrentFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 0,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+			},
+			["level"] = 1,
+			["UnitLockout"] = 1329620385,
+			["LastFightIn"] = 2,
+		},
+		["Eye of Acherus <Deyndis>"] = {
+			["GUID"] = "0xF1306F5F000D039D",
+			["LastEventHealth"] = {
+				"2560 (97%)", -- [1]
+				"2086 (79%)", -- [2]
+				"2026 (77%)", -- [3]
+				"1963 (75%)", -- [4]
+				"1963 (75%)", -- [5]
+				"1409 (53%)", -- [6]
+				"1353 (51%)", -- [7]
+				"1290 (49%)", -- [8]
+				"1227 (46%)", -- [9]
+				"1169 (44%)", -- [10]
+				"623 (23%)", -- [11]
+				"567 (21%)", -- [12]
+				"507 (19%)", -- [13]
+				"1 (0%)", -- [14]
+				"1 (0%)", -- [15]
+				"2556 (97%)", -- [16]
+				"2491 (95%)", -- [17]
+				"2491 (95%)", -- [18]
+				"2449 (93%)", -- [19]
+				"2392 (91%)", -- [20]
+				"2331 (89%)", -- [21]
+				"2277 (87%)", -- [22]
+				"2559 (97%)", -- [23]
+				"2498 (95%)", -- [24]
+			},
+			["LastAttackedBy"] = "Scarlet Crusader",
+			["LastEventType"] = {
+				"DAMAGE", -- [1]
+				"DAMAGE", -- [2]
+				"DAMAGE", -- [3]
+				"DAMAGE", -- [4]
+				"DAMAGE", -- [5]
+				"DAMAGE", -- [6]
+				"DAMAGE", -- [7]
+				"DAMAGE", -- [8]
+				"DAMAGE", -- [9]
+				"DAMAGE", -- [10]
+				"DAMAGE", -- [11]
+				"DAMAGE", -- [12]
+				"DAMAGE", -- [13]
+				"DAMAGE", -- [14]
+				"MISC", -- [15]
+				"DAMAGE", -- [16]
+				"DAMAGE", -- [17]
+				"DAMAGE", -- [18]
+				"DAMAGE", -- [19]
+				"DAMAGE", -- [20]
+				"DAMAGE", -- [21]
+				"DAMAGE", -- [22]
+				"DAMAGE", -- [23]
+				"DAMAGE", -- [24]
+			},
+			["TimeWindows"] = {
+				["DamageTaken"] = {
+					3171, -- [1]
+				},
+				["DeathCount"] = {
+					1, -- [1]
+				},
+			},
+			["enClass"] = "PET",
+			["unit"] = "Eye of Acherus",
+			["LastFlags"] = 2600,
+			["DeathLogs"] = {
+				{
+					["MessageIncoming"] = {
+						true, -- [1]
+						true, -- [2]
+						true, -- [3]
+						true, -- [4]
+						true, -- [5]
+						true, -- [6]
+						true, -- [7]
+						true, -- [8]
+						true, -- [9]
+						true, -- [10]
+						true, -- [11]
+						true, -- [12]
+						true, -- [13]
+						true, -- [14]
+					},
+					["Messages"] = {
+						"Scarlet Preacher Holy Smite Eye of Acherus <Deyndis> Hit -528 (Holy)", -- [1]
+						"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -60 (Physical)", -- [2]
+						"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -63 (Physical)", -- [3]
+						"Scarlet Preacher Holy Smite Eye of Acherus <Deyndis> Miss (Holy)", -- [4]
+						"Scarlet Preacher Holy Smite Eye of Acherus <Deyndis> Hit -554 (Holy)", -- [5]
+						"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -56 (Physical)", -- [6]
+						"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -63 (Physical)", -- [7]
+						"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -63 (Physical)", -- [8]
+						"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -58 (Physical)", -- [9]
+						"Scarlet Preacher Holy Smite Eye of Acherus <Deyndis> Hit -546 (Holy)", -- [10]
+						"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -56 (Physical)", -- [11]
+						"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -60 (Physical)", -- [12]
+						"Scarlet Preacher Holy Smite Eye of Acherus <Deyndis> Hit -557 (Holy)", -- [13]
+						"Eye of Acherus <Deyndis> dies.", -- [14]
+					},
+					["DeathAt"] = 1329620345,
+					["HealthNum"] = {
+						79.80107115531752, -- [1]
+						77.50573833205814, -- [2]
+						75.09563886763581, -- [3]
+						75.09563886763581, -- [4]
+						53.90206579954094, -- [5]
+						51.75975516449886, -- [6]
+						49.34965570007651, -- [7]
+						46.93955623565417, -- [8]
+						44.72073450650344, -- [9]
+						23.83320581484315, -- [10]
+						21.69089517980107, -- [11]
+						19.3955623565417, -- [12]
+						0.03825554705432287, -- [13]
+						0.03825554705432287, -- [14]
+					},
+					["MessageTimes"] = {
+						-12.05000000000018, -- [1]
+						-8.218000000000302, -- [2]
+						-6.751000000000204, -- [3]
+						-4.751000000000204, -- [4]
+						-4.451000000000022, -- [5]
+						-4.050000000000182, -- [6]
+						-3.050000000000182, -- [7]
+						-3.050000000000182, -- [8]
+						-1.631000000000313, -- [9]
+						-0.749000000000251, -- [10]
+						-0.6489999999998872, -- [11]
+						-0.6489999999998872, -- [12]
+						0, -- [13]
+						0, -- [14]
+					},
+					["KilledBy"] = "Scarlet Preacher",
+					["Health"] = {
+						"2086 (79%)", -- [1]
+						"2026 (77%)", -- [2]
+						"1963 (75%)", -- [3]
+						"1963 (75%)", -- [4]
+						"1409 (53%)", -- [5]
+						"1353 (51%)", -- [6]
+						"1290 (49%)", -- [7]
+						"1227 (46%)", -- [8]
+						"1169 (44%)", -- [9]
+						"623 (23%)", -- [10]
+						"567 (21%)", -- [11]
+						"507 (19%)", -- [12]
+						"1 (0%)", -- [13]
+						"1 (0%)", -- [14]
+					},
+					["EventNum"] = {
+						20.19892884468248, -- [1]
+						2.295332823259373, -- [2]
+						2.410099464422341, -- [3]
+						0, -- [4]
+						21.19357306809487, -- [5]
+						2.142310635042081, -- [6]
+						2.410099464422341, -- [7]
+						2.410099464422341, -- [8]
+						2.218821729150727, -- [9]
+						20.88752869166029, -- [10]
+						2.142310635042081, -- [11]
+						2.295332823259373, -- [12]
+						21.30833970925784, -- [13]
+						0, -- [14]
+					},
+					["MessageType"] = {
+						"DAMAGE", -- [1]
+						"DAMAGE", -- [2]
+						"DAMAGE", -- [3]
+						"DAMAGE", -- [4]
+						"DAMAGE", -- [5]
+						"DAMAGE", -- [6]
+						"DAMAGE", -- [7]
+						"DAMAGE", -- [8]
+						"DAMAGE", -- [9]
+						"DAMAGE", -- [10]
+						"DAMAGE", -- [11]
+						"DAMAGE", -- [12]
+						"DAMAGE", -- [13]
+						"MISC", -- [14]
+					},
+				}, -- [1]
+			},
+			["level"] = 1,
+			["LastDamageAbility"] = "Shoot",
+			["LastFightIn"] = 3,
+			["LastEventNum"] = {
+				2.065799540933436, -- [1]
+				20.19892884468248, -- [2]
+				2.295332823259373, -- [3]
+				2.410099464422341, -- [4]
+				nil, -- [5]
+				21.19357306809487, -- [6]
+				2.142310635042081, -- [7]
+				2.410099464422341, -- [8]
+				2.410099464422341, -- [9]
+				2.218821729150727, -- [10]
+				20.88752869166029, -- [11]
+				2.142310635042081, -- [12]
+				2.295332823259373, -- [13]
+				21.30833970925784, -- [14]
+				nil, -- [15]
+				2.218821729150727, -- [16]
+				2.486610558530987, -- [17]
+				nil, -- [18]
+				1.606732976281561, -- [19]
+				2.180566182096404, -- [20]
+				2.333588370313696, -- [21]
+				2.065799540933436, -- [22]
+				2.104055087987758, -- [23]
+				2.333588370313696, -- [24]
+			},
+			["type"] = "Pet",
+			["FightsSaved"] = 5,
+			["LastDamageTaken"] = 61,
+			["Owner"] = "Deyndis",
+			["TimeLast"] = {
+				["OVERALL"] = 1329620439,
+				["DamageTaken"] = 1329620439,
+				["DeathCount"] = 1329620343,
+			},
+			["NextEventNum"] = 25,
+			["LastEventHealthNum"] = {
+				97.93420045906656, -- [1]
+				79.80107115531752, -- [2]
+				77.50573833205814, -- [3]
+				75.09563886763581, -- [4]
+				75.09563886763581, -- [5]
+				53.90206579954094, -- [6]
+				51.75975516449886, -- [7]
+				49.34965570007651, -- [8]
+				46.93955623565417, -- [9]
+				44.72073450650344, -- [10]
+				23.83320581484315, -- [11]
+				21.69089517980107, -- [12]
+				19.3955623565417, -- [13]
+				0.03825554705432287, -- [14]
+				0.03825554705432287, -- [15]
+				97.78117827084927, -- [16]
+				95.29456771231828, -- [17]
+				95.29456771231828, -- [18]
+				93.68783473603672, -- [19]
+				91.50726855394032, -- [20]
+				89.17368018362663, -- [21]
+				87.10788064269319, -- [22]
+				97.89594491201224, -- [23]
+				95.56235654169855, -- [24]
+			},
+			["LastEvents"] = {
+				"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -54 (Physical)", -- [1]
+				"Scarlet Preacher Holy Smite Eye of Acherus <Deyndis> Hit -528 (Holy)", -- [2]
+				"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -60 (Physical)", -- [3]
+				"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -63 (Physical)", -- [4]
+				"Scarlet Preacher Holy Smite Eye of Acherus <Deyndis> Miss (Holy)", -- [5]
+				"Scarlet Preacher Holy Smite Eye of Acherus <Deyndis> Hit -554 (Holy)", -- [6]
+				"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -56 (Physical)", -- [7]
+				"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -63 (Physical)", -- [8]
+				"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -63 (Physical)", -- [9]
+				"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -58 (Physical)", -- [10]
+				"Scarlet Preacher Holy Smite Eye of Acherus <Deyndis> Hit -546 (Holy)", -- [11]
+				"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -56 (Physical)", -- [12]
+				"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -60 (Physical)", -- [13]
+				"Scarlet Preacher Holy Smite Eye of Acherus <Deyndis> Hit -557 (Holy)", -- [14]
+				"Eye of Acherus <Deyndis> dies.", -- [15]
+				"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -58 (Physical)", -- [16]
+				"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -65 (Physical)", -- [17]
+				"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Miss (Physical)", -- [18]
+				"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -42 (Physical)", -- [19]
+				"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -57 (Physical)", -- [20]
+				"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -61 (Physical)", -- [21]
+				"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -54 (Physical)", -- [22]
+				"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -55 (Physical)", -- [23]
+				"Scarlet Crusader Shoot Eye of Acherus <Deyndis> Hit -61 (Physical)", -- [24]
+			},
+			["Name"] = "Eye of Acherus",
+			["LastEventIncoming"] = {
+				true, -- [1]
+				true, -- [2]
+				true, -- [3]
+				true, -- [4]
+				true, -- [5]
+				true, -- [6]
+				true, -- [7]
+				true, -- [8]
+				true, -- [9]
+				true, -- [10]
+				true, -- [11]
+				true, -- [12]
+				true, -- [13]
+				true, -- [14]
+				true, -- [15]
+				true, -- [16]
+				true, -- [17]
+				true, -- [18]
+				true, -- [19]
+				true, -- [20]
+				true, -- [21]
+				true, -- [22]
+				true, -- [23]
+				true, -- [24]
+			},
+			["LastEventTimes"] = {
+				2183.446, -- [1]
+				2246.944, -- [2]
+				2250.776, -- [3]
+				2252.243, -- [4]
+				2254.243, -- [5]
+				2254.543, -- [6]
+				2254.944, -- [7]
+				2255.944, -- [8]
+				2255.944, -- [9]
+				2257.363, -- [10]
+				2258.245, -- [11]
+				2258.345, -- [12]
+				2258.345, -- [13]
+				2258.994, -- [14]
+				2258.994, -- [15]
+				2313.474, -- [16]
+				2313.474, -- [17]
+				2314.381, -- [18]
+				2315.896, -- [19]
+				2315.896, -- [20]
+				2315.896, -- [21]
+				2317.08, -- [22]
+				2355.594, -- [23]
+				2355.594, -- [24]
+			},
+			["Fights"] = {
+				["LastFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 0,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["CurrentFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 0,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["OverallData"] = {
+					["PartialBlock"] = {
+						["Shoot"] = {
+							["Details"] = {
+								["Blocked"] = {
+									["max"] = 18,
+									["min"] = 18,
+									["count"] = 1,
+									["amount"] = 18,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 18,
+						},
+					},
+					["ElementHitsTaken"] = {
+						["Holy"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 5,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 17,
+								},
+							},
+							["amount"] = 18,
+						},
+					},
+					["DamageTaken"] = 3171,
+					["PartialResist"] = {
+						["Shoot"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 18,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 18,
+							["amount"] = 0,
+						},
+						["Holy Smite"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 1,
+					["PartialAbsorb"] = {
+						["Shoot"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 18,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 18,
+							["amount"] = 0,
+						},
+						["Holy Smite"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 0,
+						},
+					},
+					["WhoDamaged"] = {
+						["Scarlet Preacher"] = {
+							["Details"] = {
+								["Holy Smite"] = {
+									["count"] = 2185,
+								},
+							},
+							["amount"] = 2185,
+						},
+						["Scarlet Crusader"] = {
+							["Details"] = {
+								["Shoot"] = {
+									["count"] = 986,
+								},
+							},
+							["amount"] = 986,
+						},
+					},
+					["ElementTaken"] = {
+						["Holy"] = 2185,
+						["Physical"] = 986,
+					},
+					["ElementTakenBlock"] = {
+						["Physical"] = 18,
+					},
+				},
+			},
+			["UnitLockout"] = 1329620267,
+			["LastActive"] = 1329620439,
+		},
+		["Deyndis"] = {
+			["GUID"] = "0x03800000052CD153",
+			["LastEventHealth"] = {
+				"2320 (67%)", -- [1]
+				"2235 (64%)", -- [2]
+				"2235 (64%)", -- [3]
+				"2156 (62%)", -- [4]
+				"2144 (62%)", -- [5]
+				"2144 (62%)", -- [6]
+				"2978 (86%)", -- [7]
+				"2903 (84%)", -- [8]
+				"3387 (98%)", -- [9]
+				"3387 (98%)", -- [10]
+				"3387 (98%)", -- [11]
+				"3305 (95%)", -- [12]
+				"3305 (95%)", -- [13]
+				"3305 (95%)", -- [14]
+				"3305 (95%)", -- [15]
+				"3144 (91%)", -- [16]
+				"3144 (91%)", -- [17]
+				"3144 (91%)", -- [18]
+				"3144 (91%)", -- [19]
+				"3144 (91%)", -- [20]
+				"3063 (88%)", -- [21]
+				"3139 (91%)", -- [22]
+				"2860 (82%)", -- [23]
+				"2860 (82%)", -- [24]
+				"2860 (82%)", -- [25]
+				"2860 (82%)", -- [26]
+				"2860 (82%)", -- [27]
+				"2679 (77%)", -- [28]
+				"2679 (77%)", -- [29]
+				"2600 (75%)", -- [30]
+				"2600 (75%)", -- [31]
+				"2600 (75%)", -- [32]
+				"2587 (75%)", -- [33]
+				"2509 (72%)", -- [34]
+				"2509 (72%)", -- [35]
+				"2509 (72%)", -- [36]
+				"2509 (72%)", -- [37]
+				"2509 (72%)", -- [38]
+				"2509 (72%)", -- [39]
+				"2426 (70%)", -- [40]
+				"2426 (70%)", -- [41]
+				"2415 (70%)", -- [42]
+				"2415 (70%)", -- [43]
+				"2415 (70%)", -- [44]
+				"2415 (70%)", -- [45]
+				"2415 (70%)", -- [46]
+				"2331 (67%)", -- [47]
+				"2331 (67%)", -- [48]
+				"2320 (67%)", -- [49]
+				"2320 (67%)", -- [50]
+			},
+			["LastAttackedBy"] = "Acherus Deathcharger",
+			["LastEventType"] = {
+				"DAMAGE", -- [1]
+				"DAMAGE", -- [2]
+				"DAMAGE", -- [3]
+				"DAMAGE", -- [4]
+				"DAMAGE", -- [5]
+				"DAMAGE", -- [6]
+				"DAMAGE", -- [7]
+				"DAMAGE", -- [8]
+				"DAMAGE", -- [9]
+				"DAMAGE", -- [10]
+				"DAMAGE", -- [11]
+				"DAMAGE", -- [12]
+				"DAMAGE", -- [13]
+				"DAMAGE", -- [14]
+				"DAMAGE", -- [15]
+				"DAMAGE", -- [16]
+				"DAMAGE", -- [17]
+				"DAMAGE", -- [18]
+				"DAMAGE", -- [19]
+				"DAMAGE", -- [20]
+				"DAMAGE", -- [21]
+				"DAMAGE", -- [22]
+				"DAMAGE", -- [23]
+				"DAMAGE", -- [24]
+				"DAMAGE", -- [25]
+				"DAMAGE", -- [26]
+				"DAMAGE", -- [27]
+				"DAMAGE", -- [28]
+				"DAMAGE", -- [29]
+				"DAMAGE", -- [30]
+				"DAMAGE", -- [31]
+				"DAMAGE", -- [32]
+				"DAMAGE", -- [33]
+				"DAMAGE", -- [34]
+				"DAMAGE", -- [35]
+				"DAMAGE", -- [36]
+				"DAMAGE", -- [37]
+				"DAMAGE", -- [38]
+				"DAMAGE", -- [39]
+				"DAMAGE", -- [40]
+				"DAMAGE", -- [41]
+				"DAMAGE", -- [42]
+				"DAMAGE", -- [43]
+				"DAMAGE", -- [44]
+				"DAMAGE", -- [45]
+				"DAMAGE", -- [46]
+				"DAMAGE", -- [47]
+				"DAMAGE", -- [48]
+				"DAMAGE", -- [49]
+				"DAMAGE", -- [50]
+			},
+			["TimeWindows"] = {
+				["TimeDamage"] = {
+					268.61, -- [1]
+				},
+				["ActiveTime"] = {
+					268.61, -- [1]
+				},
+				["DOT_Time"] = {
+					171, -- [1]
+				},
+				["RunicPowerGain"] = {
+					15, -- [1]
+				},
+				["DamageTaken"] = {
+					8374, -- [1]
+				},
+				["Damage"] = {
+					54221, -- [1]
+				},
+			},
+			["enClass"] = "DEATHKNIGHT",
+			["unit"] = "Deyndis",
+			["TimeLast"] = {
+				["RunicPowerGain"] = 1329620168,
+				["DOT_Time"] = 1329621352,
+				["ActiveTime"] = 1329621353,
+				["TimeDamage"] = 1329621353,
+				["OVERALL"] = 1329621354,
+				["DamageTaken"] = 1329621354,
+				["Damage"] = 1329621353,
+			},
+			["LastAbility"] = 3268.945,
+			["level"] = 55,
+			["LastDamageAbility"] = "Melee",
+			["LastFightIn"] = 28,
+			["LastEventNum"] = {
+				[15] = 4.66801971585967,
+				[30] = 2.290518991011888,
+				[31] = 0.3769208466222093,
+				[32] = 2.261525079733256,
+				[38] = 2.406494636126413,
+				[20] = 2.348506813569151,
+				[41] = 0.3189330240649463,
+				[43] = 2.435488547405045,
+				[3] = 0.3479269353435778,
+				[23] = 8.089301246738184,
+				[47] = 0.3189330240649463,
+				[50] = 2.290518991011888,
+				[26] = 2.348506813569151,
+				[28] = 2.899391127863149,
+				[6] = 0.3769208466222093,
+				[2] = 2.464482458683676,
+				[10] = 2.377500724847782,
+			},
+			["type"] = "Self",
+			["FightsSaved"] = 5,
+			["GuardianReverseGUIDs"] = {
+				["Eye of Acherus"] = {
+					["LatestGuardian"] = 1,
+					["GUIDs"] = {
+						"0xF1306F5F000D039D", -- [1]
+						[0] = "0xF1306F5F000D021C",
+					},
+				},
+			},
+			["LastDamageTaken"] = 13,
+			["Owner"] = false,
+			["Pet"] = {
+				"Eye of Acherus <Deyndis>", -- [1]
+				"Havenshire Stallion <Deyndis>", -- [2]
+			},
+			["NextEventNum"] = 7,
+			["LastEventHealthNum"] = {
+				67.26587416642505, -- [1]
+				64.80139170774137, -- [2]
+				64.80139170774137, -- [3]
+				62.51087271672949, -- [4]
+				62.16294578138591, -- [5]
+				62.16294578138591, -- [6]
+				86.34386778776457, -- [7]
+				84.1693244418672, -- [8]
+				98.20237750072485, -- [9]
+				98.20237750072485, -- [10]
+				98.20237750072485, -- [11]
+				95.82487677587707, -- [12]
+				95.82487677587707, -- [13]
+				95.82487677587707, -- [14]
+				95.82487677587707, -- [15]
+				91.1568570600174, -- [16]
+				91.1568570600174, -- [17]
+				91.1568570600174, -- [18]
+				91.1568570600174, -- [19]
+				91.1568570600174, -- [20]
+				88.80835024644824, -- [21]
+				91.01188750362424, -- [22]
+				82.92258625688605, -- [23]
+				82.92258625688605, -- [24]
+				82.92258625688605, -- [25]
+				82.92258625688605, -- [26]
+				82.92258625688605, -- [27]
+				77.67468831545375, -- [28]
+				77.67468831545375, -- [29]
+				75.38416932444187, -- [30]
+				75.38416932444187, -- [31]
+				75.38416932444187, -- [32]
+				75.00724847781966, -- [33]
+				72.7457233980864, -- [34]
+				72.7457233980864, -- [35]
+				72.7457233980864, -- [36]
+				72.7457233980864, -- [37]
+				72.7457233980864, -- [38]
+				72.7457233980864, -- [39]
+				70.33922876195999, -- [40]
+				70.33922876195999, -- [41]
+				70.02029573789504, -- [42]
+				70.02029573789504, -- [43]
+				70.02029573789504, -- [44]
+				70.02029573789504, -- [45]
+				70.02029573789504, -- [46]
+				67.58480719049, -- [47]
+				67.58480719049, -- [48]
+				67.26587416642505, -- [49]
+				67.26587416642505, -- [50]
+			},
+			["LastEvents"] = {
+				"Deyndis Plague Strike Dark Rider of Acherus Hit -312 (Physical)", -- [1]
+				"Dark Rider of Acherus Blood Strike Deyndis Hit -85 (Physical)", -- [2]
+				"Acherus Deathcharger Melee Deyndis Hit -12 (Physical)", -- [3]
+				"Deyndis Blood Plague (DoT) Dark Rider of Acherus Tick -77 (Shadow)", -- [4]
+				"Deyndis Melee Dark Rider of Acherus Hit -225 (Physical)", -- [5]
+				"Acherus Deathcharger Melee Deyndis Hit -13 (Physical)", -- [6]
+				"Deyndis Icy Touch Shadowy Tormentor Hit -328 (Frost)", -- [7]
+				"Deyndis Death Coil Shadowy Tormentor Hit -509 (Shadow)", -- [8]
+				"Deyndis Icy Touch Shadowy Tormentor Hit -325 (Frost)", -- [9]
+				"Shadowy Tormentor Melee Deyndis Hit -82 (Physical)", -- [10]
+				"Deyndis Melee Shadowy Tormentor Crit -495 (Physical)", -- [11]
+				"Deyndis Plague Strike Shadowy Tormentor Hit -338 (Physical)", -- [12]
+				"Deyndis Frost Fever (DoT) Shadowy Tormentor Tick -72 (Frost)", -- [13]
+				"Deyndis Blood Strike Shadowy Tormentor Hit -387 (Physical)", -- [14]
+				"Shadowy Tormentor Melee Deyndis Crit -161 (Physical)", -- [15]
+				"Deyndis Blood Plague (DoT) Shadowy Tormentor Tick -77 (Shadow)", -- [16]
+				"Deyndis Melee Shadowy Tormentor Glancing -231 (Physical)", -- [17]
+				"Deyndis Frost Fever (DoT) Shadowy Tormentor Tick -72 (Frost)", -- [18]
+				"Deyndis Icy Touch Shadowy Tormentor Hit -334 (Frost)", -- [19]
+				"Shadowy Tormentor Melee Deyndis Hit -81 (Physical)", -- [20]
+				"Deyndis Plague Strike Shadowy Tormentor Crit -659 (Physical)", -- [21]
+				"Deyndis Death Coil Dark Rider of Acherus Hit -509 (Shadow)", -- [22]
+				"Dark Rider of Acherus Icy Touch Deyndis Hit -279 (Frost)", -- [23]
+				"Deyndis Icy Touch Dark Rider of Acherus Hit -329 (Frost)", -- [24]
+				"Acherus Deathcharger Melee Deyndis Parry", -- [25]
+				"Dark Rider of Acherus Melee Deyndis Hit -81 (Physical)", -- [26]
+				"Deyndis Melee Dark Rider of Acherus Hit -222 (Physical)", -- [27]
+				"Dark Rider of Acherus Throw Deyndis Hit -100 (Physical)", -- [28]
+				"Deyndis Plague Strike Dark Rider of Acherus Hit -225 (Physical)", -- [29]
+				"Dark Rider of Acherus Blood Strike Deyndis Hit -79 (Physical)", -- [30]
+				"Acherus Deathcharger Melee Deyndis Hit -13 (Physical)", -- [31]
+				"Dark Rider of Acherus Melee Deyndis Hit -78 (Physical)", -- [32]
+				"Deyndis Frost Fever (DoT) Dark Rider of Acherus Tick -72 (Frost)", -- [33]
+				"Deyndis Blood Strike Dark Rider of Acherus Hit -385 (Physical)", -- [34]
+				"Deyndis Melee Dark Rider of Acherus Miss", -- [35]
+				"Acherus Deathcharger Melee Deyndis Miss", -- [36]
+				"Deyndis Blood Plague (DoT) Dark Rider of Acherus Tick -77 (Shadow)", -- [37]
+				"Dark Rider of Acherus Melee Deyndis Hit -83 (Physical)", -- [38]
+				"Deyndis Blood Strike Dark Rider of Acherus Hit -389 (Physical)", -- [39]
+				"Deyndis Frost Fever (DoT) Dark Rider of Acherus Tick -72 (Frost)", -- [40]
+				"Acherus Deathcharger Melee Deyndis Hit -11 (Physical)", -- [41]
+				"Deyndis Death Coil Dark Rider of Acherus Hit -509 (Shadow)", -- [42]
+				"Dark Rider of Acherus Melee Deyndis Hit -84 (Physical)", -- [43]
+				"Deyndis Blood Plague (DoT) Dark Rider of Acherus Tick -77 (Shadow)", -- [44]
+				"Dark Rider of Acherus Plague Strike Deyndis Parry (Shadow)", -- [45]
+				"Deyndis Melee Dark Rider of Acherus Hit -216 (Physical)", -- [46]
+				"Acherus Deathcharger Melee Deyndis Hit -11 (Physical)", -- [47]
+				"Deyndis Icy Touch Dark Rider of Acherus Hit -336 (Frost)", -- [48]
+				"Deyndis Frost Fever (DoT) Dark Rider of Acherus Tick -72 (Frost)", -- [49]
+				"Dark Rider of Acherus Melee Deyndis Hit -79 (Physical)", -- [50]
+			},
+			["Name"] = "Deyndis",
+			["LastEventIncoming"] = {
+				false, -- [1]
+				true, -- [2]
+				true, -- [3]
+				false, -- [4]
+				false, -- [5]
+				true, -- [6]
+				false, -- [7]
+				false, -- [8]
+				false, -- [9]
+				true, -- [10]
+				false, -- [11]
+				false, -- [12]
+				false, -- [13]
+				false, -- [14]
+				true, -- [15]
+				false, -- [16]
+				false, -- [17]
+				false, -- [18]
+				false, -- [19]
+				true, -- [20]
+				false, -- [21]
+				false, -- [22]
+				true, -- [23]
+				false, -- [24]
+				true, -- [25]
+				true, -- [26]
+				false, -- [27]
+				true, -- [28]
+				false, -- [29]
+				true, -- [30]
+				true, -- [31]
+				true, -- [32]
+				false, -- [33]
+				false, -- [34]
+				false, -- [35]
+				true, -- [36]
+				false, -- [37]
+				true, -- [38]
+				false, -- [39]
+				false, -- [40]
+				true, -- [41]
+				false, -- [42]
+				true, -- [43]
+				false, -- [44]
+				true, -- [45]
+				false, -- [46]
+				true, -- [47]
+				false, -- [48]
+				false, -- [49]
+				true, -- [50]
+			},
+			["LastEventTimes"] = {
+				3267.479, -- [1]
+				3267.479, -- [2]
+				3267.863, -- [3]
+				3268.097, -- [4]
+				3268.945, -- [5]
+				3269.878, -- [6]
+				3211.662, -- [7]
+				3213.548, -- [8]
+				3241.434, -- [9]
+				3243.799, -- [10]
+				3244.164, -- [11]
+				3244.164, -- [12]
+				3244.404, -- [13]
+				3245.849, -- [14]
+				3246.214, -- [15]
+				3247.218, -- [16]
+				3247.399, -- [17]
+				3247.399, -- [18]
+				3247.399, -- [19]
+				3248.615, -- [20]
+				3249.031, -- [21]
+				3256.313, -- [22]
+				3256.646, -- [23]
+				3257.464, -- [24]
+				3257.896, -- [25]
+				3257.896, -- [26]
+				3257.896, -- [27]
+				3258.437, -- [28]
+				3259.097, -- [29]
+				3259.097, -- [30]
+				3259.865, -- [31]
+				3260.28, -- [32]
+				3260.482, -- [33]
+				3260.713, -- [34]
+				3261.512, -- [35]
+				3261.881, -- [36]
+				3262.111, -- [37]
+				3262.679, -- [38]
+				3262.679, -- [39]
+				3263.465, -- [40]
+				3263.879, -- [41]
+				3264.301, -- [42]
+				3265.096, -- [43]
+				3265.096, -- [44]
+				3265.096, -- [45]
+				3265.246, -- [46]
+				3265.865, -- [47]
+				3265.865, -- [48]
+				3266.479, -- [49]
+				3267.479, -- [50]
+			},
+			["Fights"] = {
+				["Fight5"] = {
+					["ElementDoneBlock"] = {
+						["Melee"] = 0,
+					},
+					["DOTs"] = {
+						["Frost Fever (DoT)"] = {
+							["Details"] = {
+								["Scarlet Infantryman"] = {
+									["count"] = 6,
+								},
+								["Scarlet Medic"] = {
+									["count"] = 0,
+								},
+								["Unworthy Initiate"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 6,
+						},
+						["Blood Plague (DoT)"] = {
+							["Details"] = {
+								["Scarlet Infantryman"] = {
+									["count"] = 3,
+								},
+								["Unworthy Initiate"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["TimeSpent"] = {
+						["Scarlet Infantryman"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0.44,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 0.6,
+								},
+								["Icy Touch"] = {
+									["count"] = 5.52,
+								},
+								["Plague Strike"] = {
+									["count"] = 0.57,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 1.36,
+								},
+								["Blood Strike"] = {
+									["count"] = 1.63,
+								},
+							},
+							["amount"] = 10.12,
+						},
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Medic"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Unworthy Initiate"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DamageTaken"] = 147,
+					["PartialResist"] = {
+						["Holy Smite"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Death Coil"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Plague Strike"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Blood Strike"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["PartialAbsorb"] = {
+						["Holy Smite"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Death Coil"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Plague Strike"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Blood Strike"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["ActiveTime"] = 10.12,
+					["ElementTaken"] = {
+						["Holy"] = 0,
+						["Physical"] = 0,
+						["Melee"] = 147,
+						["Shadow"] = 0,
+					},
+					["DOT_Time"] = 9,
+					["Damage"] = 3028,
+					["RunicPowerGainedFrom"] = {
+						["Deyndis"] = {
+							["Details"] = {
+								["Arcane Torrent"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["TimeDamaging"] = {
+						["Scarlet Infantryman"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0.44,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 0.6,
+								},
+								["Icy Touch"] = {
+									["count"] = 5.52,
+								},
+								["Plague Strike"] = {
+									["count"] = 0.57,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 1.36,
+								},
+								["Blood Strike"] = {
+									["count"] = 1.63,
+								},
+							},
+							["amount"] = 10.12,
+						},
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Medic"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Unworthy Initiate"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementDone"] = {
+						["Shadow"] = 586,
+						["Frost"] = 1214,
+						["Melee"] = 477,
+						["Physical"] = 751,
+					},
+					["Attacks"] = {
+						["Death Coil"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 509,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 509,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 509,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 240,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 477,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 477,
+						},
+						["Blood Plague (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 77,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 77,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 77,
+						},
+						["Blood Strike"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 418,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 418,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 418,
+						},
+						["Plague Strike"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 333,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 333,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 333,
+						},
+						["Frost Fever (DoT)"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 144,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 144,
+								},
+								["Tick"] = {
+									["max"] = 72,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 72,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 216,
+						},
+						["Icy Touch"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 673,
+									["min"] = 673,
+									["count"] = 1,
+									["amount"] = 673,
+								},
+								["Hit"] = {
+									["max"] = 325,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 325,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 998,
+						},
+					},
+					["ElementHitsDone"] = {
+						["Shadow"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 1,
+								},
+								["Tick"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 2,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 2,
+								},
+								["Hit"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 4,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 2,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 2,
+						},
+					},
+					["DamagedWho"] = {
+						["Scarlet Infantryman"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 509,
+								},
+								["Melee"] = {
+									["count"] = 477,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 77,
+								},
+								["Icy Touch"] = {
+									["count"] = 998,
+								},
+								["Plague Strike"] = {
+									["count"] = 333,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 216,
+								},
+								["Blood Strike"] = {
+									["count"] = 418,
+								},
+							},
+							["amount"] = 3028,
+						},
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Medic"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Unworthy Initiate"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["TimeDamage"] = 10.12,
+					["WhoDamaged"] = {
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Infantryman"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 147,
+								},
+							},
+							["amount"] = 147,
+						},
+						["Scarlet Medic"] = {
+							["Details"] = {
+								["Holy Smite"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Unworthy Initiate"] = {
+							["Details"] = {
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["RunicPowerGain"] = 0,
+					["ElementHitsTaken"] = {
+						["Holy"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Shadow"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 2,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["RunicPowerGained"] = {
+						["Arcane Torrent"] = {
+							["Details"] = {
+								["Deyndis"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+				},
+				["Fight2"] = {
+					["DOTs"] = {
+						["Frost Fever (DoT)"] = {
+							["Details"] = {
+								["Scarlet Peasant"] = {
+									["count"] = 0,
+								},
+								["Citizen of Havenshire"] = {
+									["count"] = 0,
+								},
+								["Shadowy Tormentor"] = {
+									["count"] = 6,
+								},
+							},
+							["amount"] = 6,
+						},
+						["Blood Plague (DoT)"] = {
+							["Details"] = {
+								["Scarlet Medic"] = {
+									["count"] = 0,
+								},
+								["Shadowy Tormentor"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 324,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 3,
+						},
+						["Holy"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Shadow"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 1,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 2,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 4,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 2,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Melee"] = 324,
+						["Holy"] = 0,
+					},
+					["DOT_Time"] = 9,
+					["Damage"] = 2990,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Shadow"] = 77,
+						["Frost"] = 803,
+						["Melee"] = 726,
+						["Physical"] = 1384,
+					},
+					["PartialAbsorb"] = {
+						["Holy Smite"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Shadowy Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 726,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 77,
+								},
+								["Icy Touch"] = {
+									["count"] = 659,
+								},
+								["Plague Strike"] = {
+									["count"] = 997,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 144,
+								},
+								["Blood Strike"] = {
+									["count"] = 387,
+								},
+							},
+							["amount"] = 2990,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Medic"] = {
+							["Details"] = {
+								["Blood Plague (DoT)"] = {
+									["count"] = 0,
+								},
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["Scarlet Medic"] = {
+							["Details"] = {
+								["Holy Smite"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Shadowy Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 324,
+								},
+							},
+							["amount"] = 324,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["Holy Smite"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+						["Melee"] = 0,
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Shadowy Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 2.91,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 1.37,
+								},
+								["Icy Touch"] = {
+									["count"] = 3.5,
+								},
+								["Plague Strike"] = {
+									["count"] = 1.63,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0.24,
+								},
+								["Blood Strike"] = {
+									["count"] = 1.45,
+								},
+							},
+							["amount"] = 11.1,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Medic"] = {
+							["Details"] = {
+								["Blood Plague (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 11.1,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["Blood Plague (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 77,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 77,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 77,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Glancing"] = {
+									["max"] = 231,
+									["min"] = 231,
+									["count"] = 1,
+									["amount"] = 231,
+								},
+								["Crit"] = {
+									["max"] = 495,
+									["min"] = 495,
+									["count"] = 1,
+									["amount"] = 495,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 726,
+						},
+						["Blood Strike"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 387,
+									["min"] = 387,
+									["count"] = 1,
+									["amount"] = 387,
+								},
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 387,
+						},
+						["Icy Touch"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 334,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 659,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 659,
+						},
+						["Plague Strike"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 659,
+									["min"] = 659,
+									["count"] = 1,
+									["amount"] = 659,
+								},
+								["Hit"] = {
+									["max"] = 338,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 338,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 997,
+						},
+						["Frost Fever (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 72,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 144,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 144,
+						},
+						["Death Coil"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 11.1,
+					["TimeDamaging"] = {
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Shadowy Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 2.91,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 1.37,
+								},
+								["Icy Touch"] = {
+									["count"] = 3.5,
+								},
+								["Plague Strike"] = {
+									["count"] = 1.63,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0.24,
+								},
+								["Blood Strike"] = {
+									["count"] = 1.45,
+								},
+							},
+							["amount"] = 11.1,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Medic"] = {
+							["Details"] = {
+								["Blood Plague (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["CurrentFightData"] = {
+					["DOTs"] = {
+						["Frost Fever (DoT)"] = {
+							["Details"] = {
+								["Scarlet Infantryman"] = {
+									["count"] = 0,
+								},
+								["Citizen of Havenshire"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Blood Plague (DoT)"] = {
+							["Details"] = {
+								["Scarlet Infantryman"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Shadow"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Melee"] = 0,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Physical"] = 0,
+						["Shadow"] = 0,
+						["Melee"] = 0,
+						["Frost"] = 0,
+					},
+					["PartialAbsorb"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Infantryman"] = {
+							["Details"] = {
+								["Blood Plague (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Infantryman"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Infantryman"] = {
+							["Details"] = {
+								["Blood Plague (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 0,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["Blood Plague (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Blood Strike"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Death Coil"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Plague Strike"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Frost Fever (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Icy Touch"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Infantryman"] = {
+							["Details"] = {
+								["Blood Plague (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight1"] = {
+					["DOTs"] = {
+						["Frost Fever (DoT)"] = {
+							["Details"] = {
+								["Scarlet Captain"] = {
+									["count"] = 0,
+								},
+								["Scarlet Infantryman"] = {
+									["count"] = 0,
+								},
+								["Dark Rider of Acherus"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 9,
+						},
+						["Blood Plague (DoT)"] = {
+							["Details"] = {
+								["Scarlet Infantryman"] = {
+									["count"] = 0,
+								},
+								["Dark Rider of Acherus"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 9,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 1008,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Shadow"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 1,
+								},
+								["Parry"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 10,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 12,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Shadow"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 2,
+								},
+								["Tick"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 5,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 3,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 5,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 4,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 4,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 4,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Physical"] = 264,
+						["Melee"] = 465,
+						["Frost"] = 279,
+					},
+					["DOT_Time"] = 18,
+					["Damage"] = 4104,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Shadow"] = 1249,
+						["Frost"] = 881,
+						["Melee"] = 663,
+						["Physical"] = 1311,
+					},
+					["PartialAbsorb"] = {
+						["Shoot"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Blood Strike"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 12,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 12,
+							["amount"] = 0,
+						},
+						["Throw"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Icy Touch"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Plague Strike"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Sweeping Slam"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Heroic Strike"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["Scarlet Captain"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Infantryman"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Dark Rider of Acherus"] = {
+							["Details"] = {
+								["Blood Plague (DoT)"] = {
+									["count"] = 231,
+								},
+								["Melee"] = {
+									["count"] = 663,
+								},
+								["Blood Strike"] = {
+									["count"] = 774,
+								},
+								["Death Coil"] = {
+									["count"] = 1018,
+								},
+								["Plague Strike"] = {
+									["count"] = 537,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 216,
+								},
+								["Icy Touch"] = {
+									["count"] = 665,
+								},
+							},
+							["amount"] = 4104,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["Scarlet Captain"] = {
+							["Details"] = {
+								["Shoot"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Heroic Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Infantryman"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Sweeping Slam"] = {
+									["count"] = 0,
+								},
+								["Heroic Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Acherus Deathcharger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 60,
+								},
+							},
+							["amount"] = 60,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Dark Rider of Acherus"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 279,
+								},
+								["Blood Strike"] = {
+									["count"] = 164,
+								},
+								["Melee"] = {
+									["count"] = 405,
+								},
+								["Throw"] = {
+									["count"] = 100,
+								},
+							},
+							["amount"] = 948,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["Shoot"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Blood Strike"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 12,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 12,
+							["amount"] = 0,
+						},
+						["Throw"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Icy Touch"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Plague Strike"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Sweeping Slam"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Heroic Strike"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+						["Melee"] = 0,
+						["Physical"] = 97,
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Scarlet Captain"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Infantryman"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Dark Rider of Acherus"] = {
+							["Details"] = {
+								["Blood Plague (DoT)"] = {
+									["count"] = 2.02,
+								},
+								["Melee"] = {
+									["count"] = 2.23,
+								},
+								["Blood Strike"] = {
+									["count"] = 0.7999999999999999,
+								},
+								["Death Coil"] = {
+									["count"] = 4.34,
+								},
+								["Plague Strike"] = {
+									["count"] = 2.2,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 2.78,
+								},
+								["Icy Touch"] = {
+									["count"] = 1.77,
+								},
+							},
+							["amount"] = 16.14,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 16.14,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["Death Coil"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 509,
+									["min"] = 509,
+									["count"] = 2,
+									["amount"] = 1018,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 1018,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 225,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 663,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 663,
+						},
+						["Blood Plague (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 77,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 231,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 231,
+						},
+						["Icy Touch"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 336,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 665,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 665,
+						},
+						["Plague Strike"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 312,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 312,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 225,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 225,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 537,
+						},
+						["Frost Fever (DoT)"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Tick"] = {
+									["max"] = 72,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 216,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 216,
+						},
+						["Blood Strike"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 389,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 774,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 774,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 16.14,
+					["TimeDamaging"] = {
+						["Scarlet Captain"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Infantryman"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Dark Rider of Acherus"] = {
+							["Details"] = {
+								["Blood Plague (DoT)"] = {
+									["count"] = 2.02,
+								},
+								["Melee"] = {
+									["count"] = 2.23,
+								},
+								["Blood Strike"] = {
+									["count"] = 0.7999999999999999,
+								},
+								["Death Coil"] = {
+									["count"] = 4.34,
+								},
+								["Plague Strike"] = {
+									["count"] = 2.2,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 2.78,
+								},
+								["Icy Touch"] = {
+									["count"] = 1.77,
+								},
+							},
+							["amount"] = 16.14,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight4"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 59,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Shadow"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Melee"] = 0,
+						["Physical"] = 59,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Physical"] = 0,
+						["Shadow"] = 0,
+						["Melee"] = 0,
+						["Frost"] = 0,
+					},
+					["PartialAbsorb"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Shoot"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Captain"] = {
+							["Details"] = {
+								["Shoot"] = {
+									["count"] = 59,
+								},
+							},
+							["amount"] = 59,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Shoot"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 0,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["Icy Touch"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Plague Strike"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Death Coil"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["LastFightData"] = {
+					["DOTs"] = {
+						["Frost Fever (DoT)"] = {
+							["Details"] = {
+								["Scarlet Captain"] = {
+									["count"] = 0,
+								},
+								["Scarlet Infantryman"] = {
+									["count"] = 0,
+								},
+								["Dark Rider of Acherus"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 9,
+						},
+						["Blood Plague (DoT)"] = {
+							["Details"] = {
+								["Scarlet Infantryman"] = {
+									["count"] = 0,
+								},
+								["Dark Rider of Acherus"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 9,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 1008,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Shadow"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 1,
+								},
+								["Parry"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 10,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 12,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Shadow"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 2,
+								},
+								["Tick"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 5,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 3,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 5,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 4,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 4,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 4,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Physical"] = 264,
+						["Melee"] = 465,
+						["Frost"] = 279,
+					},
+					["DOT_Time"] = 18,
+					["Damage"] = 4104,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Shadow"] = 1249,
+						["Frost"] = 881,
+						["Melee"] = 663,
+						["Physical"] = 1311,
+					},
+					["PartialAbsorb"] = {
+						["Shoot"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Blood Strike"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 12,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 12,
+							["amount"] = 0,
+						},
+						["Throw"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Icy Touch"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Plague Strike"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Sweeping Slam"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Heroic Strike"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["Scarlet Captain"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Infantryman"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Dark Rider of Acherus"] = {
+							["Details"] = {
+								["Blood Plague (DoT)"] = {
+									["count"] = 231,
+								},
+								["Melee"] = {
+									["count"] = 663,
+								},
+								["Blood Strike"] = {
+									["count"] = 774,
+								},
+								["Death Coil"] = {
+									["count"] = 1018,
+								},
+								["Plague Strike"] = {
+									["count"] = 537,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 216,
+								},
+								["Icy Touch"] = {
+									["count"] = 665,
+								},
+							},
+							["amount"] = 4104,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["Scarlet Captain"] = {
+							["Details"] = {
+								["Shoot"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Heroic Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Infantryman"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Sweeping Slam"] = {
+									["count"] = 0,
+								},
+								["Heroic Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Acherus Deathcharger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 60,
+								},
+							},
+							["amount"] = 60,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Dark Rider of Acherus"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 279,
+								},
+								["Blood Strike"] = {
+									["count"] = 164,
+								},
+								["Melee"] = {
+									["count"] = 405,
+								},
+								["Throw"] = {
+									["count"] = 100,
+								},
+							},
+							["amount"] = 948,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["Shoot"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Blood Strike"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 12,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 12,
+							["amount"] = 0,
+						},
+						["Throw"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Icy Touch"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Plague Strike"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Sweeping Slam"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Heroic Strike"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+						["Melee"] = 0,
+						["Physical"] = 97,
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Scarlet Captain"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Infantryman"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Dark Rider of Acherus"] = {
+							["Details"] = {
+								["Blood Plague (DoT)"] = {
+									["count"] = 2.02,
+								},
+								["Melee"] = {
+									["count"] = 2.23,
+								},
+								["Blood Strike"] = {
+									["count"] = 0.7999999999999999,
+								},
+								["Death Coil"] = {
+									["count"] = 4.34,
+								},
+								["Plague Strike"] = {
+									["count"] = 2.2,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 2.78,
+								},
+								["Icy Touch"] = {
+									["count"] = 1.77,
+								},
+							},
+							["amount"] = 16.14,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 16.14,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["Death Coil"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 509,
+									["min"] = 509,
+									["count"] = 2,
+									["amount"] = 1018,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 1018,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 225,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 663,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 663,
+						},
+						["Blood Plague (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 77,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 231,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 231,
+						},
+						["Icy Touch"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 336,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 665,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 665,
+						},
+						["Plague Strike"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 312,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 312,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 225,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 225,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 537,
+						},
+						["Frost Fever (DoT)"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Tick"] = {
+									["max"] = 72,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 216,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 216,
+						},
+						["Blood Strike"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 389,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 774,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 774,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 16.14,
+					["TimeDamaging"] = {
+						["Scarlet Captain"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Infantryman"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Dark Rider of Acherus"] = {
+							["Details"] = {
+								["Blood Plague (DoT)"] = {
+									["count"] = 2.02,
+								},
+								["Melee"] = {
+									["count"] = 2.23,
+								},
+								["Blood Strike"] = {
+									["count"] = 0.7999999999999999,
+								},
+								["Death Coil"] = {
+									["count"] = 4.34,
+								},
+								["Plague Strike"] = {
+									["count"] = 2.2,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 2.78,
+								},
+								["Icy Touch"] = {
+									["count"] = 1.77,
+								},
+							},
+							["amount"] = 16.14,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight3"] = {
+					["DOTs"] = {
+						["Frost Fever (DoT)"] = {
+							["Details"] = {
+								["Scarlet Peasant"] = {
+									["count"] = 0,
+								},
+								["Shadowy Tormentor"] = {
+									["count"] = 6,
+								},
+								["Citizen of Havenshire"] = {
+									["count"] = 0,
+								},
+								["Scarlet Captain"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 6,
+						},
+						["Blood Plague (DoT)"] = {
+							["Details"] = {
+								["Scarlet Captain"] = {
+									["count"] = 0,
+								},
+								["Shadowy Tormentor"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 304,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 4,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Shadow"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 1,
+								},
+								["Tick"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 2,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 2,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 4,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 3,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 2,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Melee"] = 304,
+						["Physical"] = 0,
+					},
+					["DOT_Time"] = 9,
+					["Damage"] = 2582,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Shadow"] = 586,
+						["Frost"] = 806,
+						["Melee"] = 433,
+						["Physical"] = 757,
+					},
+					["PartialAbsorb"] = {
+						["Shoot"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+						["Heroic Strike"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Shadowy Tormentor"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 509,
+								},
+								["Melee"] = {
+									["count"] = 433,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 77,
+								},
+								["Icy Touch"] = {
+									["count"] = 662,
+								},
+								["Plague Strike"] = {
+									["count"] = 324,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 144,
+								},
+								["Blood Strike"] = {
+									["count"] = 433,
+								},
+							},
+							["amount"] = 2582,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Captain"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Shadowy Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 304,
+								},
+							},
+							["amount"] = 304,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Captain"] = {
+							["Details"] = {
+								["Shoot"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Heroic Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["Shoot"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+						["Heroic Strike"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Shadowy Tormentor"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 1.89,
+								},
+								["Melee"] = {
+									["count"] = 4.55,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 1.38,
+								},
+								["Icy Touch"] = {
+									["count"] = 0.84,
+								},
+								["Plague Strike"] = {
+									["count"] = 1.9,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 1.02,
+								},
+								["Blood Strike"] = {
+									["count"] = 0.6,
+								},
+							},
+							["amount"] = 12.18,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Captain"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 12.18,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["Death Coil"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 509,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 509,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 509,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 221,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 433,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 433,
+						},
+						["Blood Plague (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 77,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 77,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 77,
+						},
+						["Icy Touch"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 334,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 662,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 662,
+						},
+						["Plague Strike"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 324,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 324,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 324,
+						},
+						["Frost Fever (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 72,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 144,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 144,
+						},
+						["Blood Strike"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 433,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 433,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 433,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 12.18,
+					["TimeDamaging"] = {
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Shadowy Tormentor"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 1.89,
+								},
+								["Melee"] = {
+									["count"] = 4.55,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 1.38,
+								},
+								["Icy Touch"] = {
+									["count"] = 0.84,
+								},
+								["Plague Strike"] = {
+									["count"] = 1.9,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 1.02,
+								},
+								["Blood Strike"] = {
+									["count"] = 0.6,
+								},
+							},
+							["amount"] = 12.18,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scarlet Captain"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 0,
+								},
+								["Icy Touch"] = {
+									["count"] = 0,
+								},
+								["Plague Strike"] = {
+									["count"] = 0,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0,
+								},
+								["Blood Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["OverallData"] = {
+					["ElementDoneBlock"] = {
+						["Melee"] = 289,
+						["Physical"] = 198,
+					},
+					["DOTs"] = {
+						["Frost Fever (DoT)"] = {
+							["Details"] = {
+								["Scarlet Captain"] = {
+									["count"] = 21,
+								},
+								["Dark Rider of Acherus"] = {
+									["count"] = 9,
+								},
+								["Scarlet Infantryman"] = {
+									["count"] = 21,
+								},
+								["Shadowy Tormentor"] = {
+									["count"] = 12,
+								},
+								["Scarlet Peasant"] = {
+									["count"] = 6,
+								},
+								["Scarlet Medic"] = {
+									["count"] = 9,
+								},
+								["Citizen of Havenshire"] = {
+									["count"] = 18,
+								},
+								["Unworthy Initiate"] = {
+									["count"] = 18,
+								},
+							},
+							["amount"] = 114,
+						},
+						["Blood Plague (DoT)"] = {
+							["Details"] = {
+								["Scarlet Captain"] = {
+									["count"] = 3,
+								},
+								["Scarlet Infantryman"] = {
+									["count"] = 15,
+								},
+								["Dark Rider of Acherus"] = {
+									["count"] = 9,
+								},
+								["Shadowy Tormentor"] = {
+									["count"] = 6,
+								},
+								["Scarlet Medic"] = {
+									["count"] = 9,
+								},
+								["Unworthy Initiate"] = {
+									["count"] = 15,
+								},
+							},
+							["amount"] = 57,
+						},
+					},
+					["TimeSpent"] = {
+						["Scarlet Captain"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 0.55,
+								},
+								["Melee"] = {
+									["count"] = 16.68,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 0.14,
+								},
+								["Blood Strike"] = {
+									["count"] = 3.95,
+								},
+								["Plague Strike"] = {
+									["count"] = 5.25,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 10.38,
+								},
+								["Icy Touch"] = {
+									["count"] = 2.9,
+								},
+							},
+							["amount"] = 39.85,
+						},
+						["Dark Rider of Acherus"] = {
+							["Details"] = {
+								["Blood Plague (DoT)"] = {
+									["count"] = 2.02,
+								},
+								["Melee"] = {
+									["count"] = 2.23,
+								},
+								["Blood Strike"] = {
+									["count"] = 0.7999999999999999,
+								},
+								["Death Coil"] = {
+									["count"] = 4.34,
+								},
+								["Plague Strike"] = {
+									["count"] = 2.2,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 2.78,
+								},
+								["Icy Touch"] = {
+									["count"] = 1.77,
+								},
+							},
+							["amount"] = 16.14,
+						},
+						["Scarlet Infantryman"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 3.5,
+								},
+								["Melee"] = {
+									["count"] = 11.45,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 3.84,
+								},
+								["Icy Touch"] = {
+									["count"] = 9.369999999999999,
+								},
+								["Plague Strike"] = {
+									["count"] = 5.020000000000001,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 3.49,
+								},
+								["Blood Strike"] = {
+									["count"] = 2.09,
+								},
+							},
+							["amount"] = 38.76000000000001,
+						},
+						["Shadowy Tormentor"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 1.89,
+								},
+								["Melee"] = {
+									["count"] = 7.459999999999999,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 2.75,
+								},
+								["Icy Touch"] = {
+									["count"] = 4.34,
+								},
+								["Plague Strike"] = {
+									["count"] = 3.53,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 1.26,
+								},
+								["Blood Strike"] = {
+									["count"] = 2.05,
+								},
+							},
+							["amount"] = 23.28,
+						},
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 17.18,
+								},
+								["Death Coil"] = {
+									["count"] = 3.5,
+								},
+								["Plague Strike"] = {
+									["count"] = 8.390000000000001,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0.46,
+								},
+								["Icy Touch"] = {
+									["count"] = 11.41,
+								},
+							},
+							["amount"] = 40.94,
+						},
+						["Scarlet Medic"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 4.76,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 0.77,
+								},
+								["Icy Touch"] = {
+									["count"] = 7.51,
+								},
+								["Blood Strike"] = {
+									["count"] = 1.46,
+								},
+								["Plague Strike"] = {
+									["count"] = 0.71,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 4.970000000000001,
+								},
+								["Melee"] = {
+									["count"] = 9.720000000000001,
+								},
+							},
+							["amount"] = 29.9,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 10.6,
+								},
+								["Blood Strike"] = {
+									["count"] = 1.2,
+								},
+								["Icy Touch"] = {
+									["count"] = 24.7,
+								},
+								["Plague Strike"] = {
+									["count"] = 6.99,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 12.88,
+								},
+								["Death Coil"] = {
+									["count"] = 1.02,
+								},
+							},
+							["amount"] = 57.39000000000001,
+						},
+						["Unworthy Initiate"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 0.18,
+								},
+								["Melee"] = {
+									["count"] = 5.47,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 4.03,
+								},
+								["Blood Strike"] = {
+									["count"] = 1.59,
+								},
+								["Plague Strike"] = {
+									["count"] = 2.78,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 6.35,
+								},
+								["Icy Touch"] = {
+									["count"] = 1.95,
+								},
+							},
+							["amount"] = 22.35,
+						},
+					},
+					["DamageTaken"] = 8374,
+					["PartialResist"] = {
+						["Holy Smite"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 8,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 8,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 66,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 66,
+							["amount"] = 0,
+						},
+						["Death Coil"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Sweeping Slam"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Shoot"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+						["Throw"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Icy Touch"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Plague Strike"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Blood Strike"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+						["Heroic Strike"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 0,
+						},
+					},
+					["PartialAbsorb"] = {
+						["Holy Smite"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 8,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 8,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 66,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 66,
+							["amount"] = 0,
+						},
+						["Death Coil"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Sweeping Slam"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Shoot"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+						["Throw"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Icy Touch"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Plague Strike"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Blood Strike"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+						["Heroic Strike"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 0,
+						},
+					},
+					["ActiveTime"] = 268.61,
+					["ElementTaken"] = {
+						["Shadow"] = 347,
+						["Melee"] = 4510,
+						["Frost"] = 279,
+						["Holy"] = 1735,
+						["Physical"] = 1503,
+					},
+					["DOT_Time"] = 171,
+					["Damage"] = 54221,
+					["RunicPowerGainedFrom"] = {
+						["Deyndis"] = {
+							["Details"] = {
+								["Arcane Torrent"] = {
+									["count"] = 15,
+								},
+							},
+							["amount"] = 15,
+						},
+					},
+					["TimeDamaging"] = {
+						["Scarlet Captain"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 0.55,
+								},
+								["Melee"] = {
+									["count"] = 16.68,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 0.14,
+								},
+								["Blood Strike"] = {
+									["count"] = 3.95,
+								},
+								["Plague Strike"] = {
+									["count"] = 5.25,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 10.38,
+								},
+								["Icy Touch"] = {
+									["count"] = 2.9,
+								},
+							},
+							["amount"] = 39.85,
+						},
+						["Dark Rider of Acherus"] = {
+							["Details"] = {
+								["Blood Plague (DoT)"] = {
+									["count"] = 2.02,
+								},
+								["Melee"] = {
+									["count"] = 2.23,
+								},
+								["Blood Strike"] = {
+									["count"] = 0.7999999999999999,
+								},
+								["Death Coil"] = {
+									["count"] = 4.34,
+								},
+								["Plague Strike"] = {
+									["count"] = 2.2,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 2.78,
+								},
+								["Icy Touch"] = {
+									["count"] = 1.77,
+								},
+							},
+							["amount"] = 16.14,
+						},
+						["Scarlet Infantryman"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 3.5,
+								},
+								["Melee"] = {
+									["count"] = 11.45,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 3.84,
+								},
+								["Icy Touch"] = {
+									["count"] = 9.369999999999999,
+								},
+								["Plague Strike"] = {
+									["count"] = 5.020000000000001,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 3.49,
+								},
+								["Blood Strike"] = {
+									["count"] = 2.09,
+								},
+							},
+							["amount"] = 38.76000000000001,
+						},
+						["Shadowy Tormentor"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 1.89,
+								},
+								["Melee"] = {
+									["count"] = 7.459999999999999,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 2.75,
+								},
+								["Icy Touch"] = {
+									["count"] = 4.34,
+								},
+								["Plague Strike"] = {
+									["count"] = 3.53,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 1.26,
+								},
+								["Blood Strike"] = {
+									["count"] = 2.05,
+								},
+							},
+							["amount"] = 23.28,
+						},
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 17.18,
+								},
+								["Death Coil"] = {
+									["count"] = 3.5,
+								},
+								["Plague Strike"] = {
+									["count"] = 8.390000000000001,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 0.46,
+								},
+								["Icy Touch"] = {
+									["count"] = 11.41,
+								},
+							},
+							["amount"] = 40.94,
+						},
+						["Scarlet Medic"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 4.76,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 0.77,
+								},
+								["Icy Touch"] = {
+									["count"] = 7.51,
+								},
+								["Blood Strike"] = {
+									["count"] = 1.46,
+								},
+								["Plague Strike"] = {
+									["count"] = 0.71,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 4.970000000000001,
+								},
+								["Melee"] = {
+									["count"] = 9.720000000000001,
+								},
+							},
+							["amount"] = 29.9,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 10.6,
+								},
+								["Blood Strike"] = {
+									["count"] = 1.2,
+								},
+								["Icy Touch"] = {
+									["count"] = 24.7,
+								},
+								["Plague Strike"] = {
+									["count"] = 6.99,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 12.88,
+								},
+								["Death Coil"] = {
+									["count"] = 1.02,
+								},
+							},
+							["amount"] = 57.39000000000001,
+						},
+						["Unworthy Initiate"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 0.18,
+								},
+								["Melee"] = {
+									["count"] = 5.47,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 4.03,
+								},
+								["Blood Strike"] = {
+									["count"] = 1.59,
+								},
+								["Plague Strike"] = {
+									["count"] = 2.78,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 6.35,
+								},
+								["Icy Touch"] = {
+									["count"] = 1.95,
+								},
+							},
+							["amount"] = 22.35,
+						},
+					},
+					["ElementDone"] = {
+						["Shadow"] = 7273,
+						["Frost"] = 17074,
+						["Melee"] = 14207,
+						["Physical"] = 15667,
+					},
+					["Attacks"] = {
+						["Death Coil"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 611,
+									["min"] = 505,
+									["count"] = 11,
+									["amount"] = 5797,
+								},
+							},
+							["count"] = 11,
+							["amount"] = 5797,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 231,
+									["min"] = 210,
+									["count"] = 2,
+									["amount"] = 441,
+								},
+								["Hit"] = {
+									["max"] = 322,
+									["min"] = 207,
+									["count"] = 42,
+									["amount"] = 10031,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 174,
+									["min"] = 165,
+									["count"] = 4,
+									["amount"] = 672,
+								},
+								["Miss"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 623,
+									["min"] = 439,
+									["count"] = 6,
+									["amount"] = 3063,
+								},
+								["Parry"] = {
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 58,
+							["amount"] = 14207,
+						},
+						["Blood Plague (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 93,
+									["min"] = 76,
+									["count"] = 19,
+									["amount"] = 1476,
+								},
+							},
+							["count"] = 19,
+							["amount"] = 1476,
+						},
+						["Blood Strike"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 711,
+									["min"] = 711,
+									["count"] = 1,
+									["amount"] = 711,
+								},
+								["Hit"] = {
+									["max"] = 433,
+									["min"] = 350,
+									["count"] = 13,
+									["amount"] = 5130,
+								},
+							},
+							["count"] = 16,
+							["amount"] = 5841,
+						},
+						["Plague Strike"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 2,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 414,
+									["min"] = 312,
+									["count"] = 23,
+									["amount"] = 8013,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 235,
+									["min"] = 225,
+									["count"] = 2,
+									["amount"] = 460,
+								},
+								["Miss"] = {
+									["count"] = 2,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 694,
+									["min"] = 659,
+									["count"] = 2,
+									["amount"] = 1353,
+								},
+								["Parry"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 32,
+							["amount"] = 9826,
+						},
+						["Frost Fever (DoT)"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 144,
+									["min"] = 142,
+									["count"] = 3,
+									["amount"] = 430,
+								},
+								["Tick"] = {
+									["max"] = 87,
+									["min"] = 71,
+									["count"] = 35,
+									["amount"] = 2604,
+								},
+							},
+							["count"] = 38,
+							["amount"] = 3034,
+						},
+						["Icy Touch"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 673,
+									["min"] = 673,
+									["count"] = 1,
+									["amount"] = 673,
+								},
+								["Hit"] = {
+									["max"] = 403,
+									["min"] = 325,
+									["count"] = 39,
+									["amount"] = 13367,
+								},
+							},
+							["count"] = 40,
+							["amount"] = 14040,
+						},
+					},
+					["ElementHitsDone"] = {
+						["Shadow"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 11,
+								},
+								["Tick"] = {
+									["count"] = 19,
+								},
+							},
+							["amount"] = 30,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 35,
+								},
+								["Crit"] = {
+									["count"] = 4,
+								},
+								["Hit"] = {
+									["count"] = 39,
+								},
+							},
+							["amount"] = 78,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 2,
+								},
+								["Hit"] = {
+									["count"] = 46,
+								},
+								["Miss"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 6,
+								},
+								["Parry"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 58,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 38,
+								},
+								["Dodge"] = {
+									["count"] = 2,
+								},
+								["Miss"] = {
+									["count"] = 3,
+								},
+								["Crit"] = {
+									["count"] = 3,
+								},
+								["Parry"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 48,
+						},
+					},
+					["DamagedWho"] = {
+						["Scarlet Captain"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 611,
+								},
+								["Melee"] = {
+									["count"] = 2940,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 93,
+								},
+								["Blood Strike"] = {
+									["count"] = 1469,
+								},
+								["Plague Strike"] = {
+									["count"] = 677,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 621,
+								},
+								["Icy Touch"] = {
+									["count"] = 1816,
+								},
+							},
+							["amount"] = 8227,
+						},
+						["Dark Rider of Acherus"] = {
+							["Details"] = {
+								["Blood Plague (DoT)"] = {
+									["count"] = 231,
+								},
+								["Melee"] = {
+									["count"] = 663,
+								},
+								["Blood Strike"] = {
+									["count"] = 774,
+								},
+								["Death Coil"] = {
+									["count"] = 1018,
+								},
+								["Plague Strike"] = {
+									["count"] = 537,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 216,
+								},
+								["Icy Touch"] = {
+									["count"] = 665,
+								},
+							},
+							["amount"] = 4104,
+						},
+						["Scarlet Infantryman"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 1018,
+								},
+								["Melee"] = {
+									["count"] = 2041,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 385,
+								},
+								["Icy Touch"] = {
+									["count"] = 1991,
+								},
+								["Plague Strike"] = {
+									["count"] = 1555,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 576,
+								},
+								["Blood Strike"] = {
+									["count"] = 1216,
+								},
+							},
+							["amount"] = 8782,
+						},
+						["Shadowy Tormentor"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 509,
+								},
+								["Melee"] = {
+									["count"] = 1159,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 154,
+								},
+								["Icy Touch"] = {
+									["count"] = 1321,
+								},
+								["Plague Strike"] = {
+									["count"] = 1321,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 288,
+								},
+								["Blood Strike"] = {
+									["count"] = 820,
+								},
+							},
+							["amount"] = 5572,
+						},
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 2478,
+								},
+								["Death Coil"] = {
+									["count"] = 508,
+								},
+								["Plague Strike"] = {
+									["count"] = 2418,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 144,
+								},
+								["Icy Touch"] = {
+									["count"] = 2708,
+								},
+							},
+							["amount"] = 8256,
+						},
+						["Scarlet Medic"] = {
+							["Details"] = {
+								["Blood Strike"] = {
+									["count"] = 741,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 233,
+								},
+								["Icy Touch"] = {
+									["count"] = 995,
+								},
+								["Death Coil"] = {
+									["count"] = 1017,
+								},
+								["Plague Strike"] = {
+									["count"] = 677,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 216,
+								},
+								["Melee"] = {
+									["count"] = 1346,
+								},
+							},
+							["amount"] = 5225,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 2754,
+								},
+								["Blood Strike"] = {
+									["count"] = 427,
+								},
+								["Icy Touch"] = {
+									["count"] = 3488,
+								},
+								["Plague Strike"] = {
+									["count"] = 2007,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 476,
+								},
+								["Death Coil"] = {
+									["count"] = 611,
+								},
+							},
+							["amount"] = 9763,
+						},
+						["Unworthy Initiate"] = {
+							["Details"] = {
+								["Death Coil"] = {
+									["count"] = 505,
+								},
+								["Melee"] = {
+									["count"] = 826,
+								},
+								["Blood Plague (DoT)"] = {
+									["count"] = 380,
+								},
+								["Blood Strike"] = {
+									["count"] = 394,
+								},
+								["Plague Strike"] = {
+									["count"] = 634,
+								},
+								["Frost Fever (DoT)"] = {
+									["count"] = 497,
+								},
+								["Icy Touch"] = {
+									["count"] = 1056,
+								},
+							},
+							["amount"] = 4292,
+						},
+					},
+					["TimeDamage"] = 268.61,
+					["WhoDamaged"] = {
+						["Shadowy Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 628,
+								},
+							},
+							["amount"] = 628,
+						},
+						["Scarlet Infantryman"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 483,
+								},
+								["Sweeping Slam"] = {
+									["count"] = 114,
+								},
+								["Heroic Strike"] = {
+									["count"] = 142,
+								},
+							},
+							["amount"] = 739,
+						},
+						["Scarlet Peasant"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 273,
+								},
+							},
+							["amount"] = 273,
+						},
+						["Dark Rider of Acherus"] = {
+							["Details"] = {
+								["Icy Touch"] = {
+									["count"] = 279,
+								},
+								["Blood Strike"] = {
+									["count"] = 164,
+								},
+								["Melee"] = {
+									["count"] = 405,
+								},
+								["Throw"] = {
+									["count"] = 100,
+								},
+							},
+							["amount"] = 948,
+						},
+						["Scarlet Medic"] = {
+							["Details"] = {
+								["Holy Smite"] = {
+									["count"] = 1735,
+								},
+								["Melee"] = {
+									["count"] = 208,
+								},
+							},
+							["amount"] = 1943,
+						},
+						["Scarlet Captain"] = {
+							["Details"] = {
+								["Shoot"] = {
+									["count"] = 183,
+								},
+								["Melee"] = {
+									["count"] = 437,
+								},
+								["Heroic Strike"] = {
+									["count"] = 614,
+								},
+							},
+							["amount"] = 1234,
+						},
+						["Acherus Deathcharger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 60,
+								},
+							},
+							["amount"] = 60,
+						},
+						["Citizen of Havenshire"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 1225,
+								},
+							},
+							["amount"] = 1225,
+						},
+						["Unworthy Initiate"] = {
+							["Details"] = {
+								["Blood Strike"] = {
+									["count"] = 186,
+								},
+								["Melee"] = {
+									["count"] = 791,
+								},
+								["Death Coil"] = {
+									["count"] = 347,
+								},
+							},
+							["amount"] = 1324,
+						},
+					},
+					["RunicPowerGain"] = 15,
+					["ElementHitsTaken"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 14,
+								},
+							},
+							["amount"] = 14,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 52,
+								},
+								["Dodge"] = {
+									["count"] = 3,
+								},
+								["Miss"] = {
+									["count"] = 5,
+								},
+								["Crit"] = {
+									["count"] = 2,
+								},
+								["Parry"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 66,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+						["Holy"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 7,
+								},
+								["Miss"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 8,
+						},
+						["Shadow"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 1,
+								},
+								["Dodge"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["RunicPowerGained"] = {
+						["Arcane Torrent"] = {
+							["Details"] = {
+								["Deyndis"] = {
+									["count"] = 15,
+								},
+							},
+							["amount"] = 15,
+						},
+					},
+				},
+			},
+			["UnitLockout"] = 1329620151,
+			["LastActive"] = 1329621354,
+		},
+	},
+	["FightNum"] = 29,
+	["CombatTimes"] = {
+		{
+			1329620151, -- [1]
+			1329620173, -- [2]
+			"21:55:51", -- [3]
+			"21:56:13", -- [4]
+			"Unworthy Initiate", -- [5]
+		}, -- [1]
+		{
+			1329620267, -- [1]
+			1329620274, -- [2]
+			"21:57:47", -- [3]
+			"21:57:54", -- [4]
+			"Scarlet Crusader", -- [5]
+		}, -- [2]
+		{
+			1329620397, -- [1]
+			1329620403, -- [2]
+			"21:59:57", -- [3]
+			"22:00:03", -- [4]
+			"Scarlet Crusader", -- [5]
+		}, -- [3]
+		{
+			1329620439, -- [1]
+			1329620445, -- [2]
+			"22:00:39", -- [3]
+			"22:00:45", -- [4]
+			"Scarlet Crusader", -- [5]
+		}, -- [4]
+		{
+			1329620691, -- [1]
+			1329620705, -- [2]
+			"22:04:51", -- [3]
+			"22:05:05", -- [4]
+			"Scarlet Infantryman", -- [5]
+		}, -- [5]
+		{
+			1329620716, -- [1]
+			1329620728, -- [2]
+			"22:05:16", -- [3]
+			"22:05:28", -- [4]
+			"Scarlet Infantryman", -- [5]
+		}, -- [6]
+		{
+			1329620736, -- [1]
+			1329620741, -- [2]
+			"22:05:37", -- [3]
+			"22:05:41", -- [4]
+			"Scarlet Peasant", -- [5]
+		}, -- [7]
+		{
+			1329620749, -- [1]
+			1329620755, -- [2]
+			"22:05:49", -- [3]
+			"22:05:55", -- [4]
+			"Scarlet Peasant", -- [5]
+		}, -- [8]
+		{
+			1329620761, -- [1]
+			1329620766, -- [2]
+			"22:06:01", -- [3]
+			"22:06:06", -- [4]
+			"Scarlet Peasant", -- [5]
+		}, -- [9]
+		{
+			1329620778, -- [1]
+			1329620784, -- [2]
+			"22:06:18", -- [3]
+			"22:06:24", -- [4]
+			"Scarlet Peasant", -- [5]
+		}, -- [10]
+		{
+			1329620818, -- [1]
+			1329620831, -- [2]
+			"22:06:58", -- [3]
+			"22:07:11", -- [4]
+			"Scarlet Captain", -- [5]
+		}, -- [11]
+		{
+			1329620854, -- [1]
+			1329620858, -- [2]
+			"22:07:34", -- [3]
+			"22:07:38", -- [4]
+			"Scarlet Peasant", -- [5]
+		}, -- [12]
+		{
+			1329620867, -- [1]
+			1329620871, -- [2]
+			"22:07:47", -- [3]
+			"22:07:51", -- [4]
+			"Scarlet Peasant", -- [5]
+		}, -- [13]
+		{
+			1329620893, -- [1]
+			1329620897, -- [2]
+			"22:08:13", -- [3]
+			"22:08:17", -- [4]
+			"Scarlet Peasant", -- [5]
+		}, -- [14]
+		{
+			1329620897, -- [1]
+			1329620902, -- [2]
+			"22:08:17", -- [3]
+			"22:08:22", -- [4]
+			"Citizen of Havenshire", -- [5]
+		}, -- [15]
+		{
+			1329620918, -- [1]
+			1329620949, -- [2]
+			"22:08:38", -- [3]
+			"22:09:09", -- [4]
+			"Citizen of Havenshire", -- [5]
+		}, -- [16]
+		{
+			1329620994, -- [1]
+			1329621009, -- [2]
+			"22:09:54", -- [3]
+			"22:10:09", -- [4]
+			"Scarlet Captain", -- [5]
+		}, -- [17]
+		{
+			1329621014, -- [1]
+			1329621019, -- [2]
+			"22:10:14", -- [3]
+			"22:10:19", -- [4]
+			"Citizen of Havenshire", -- [5]
+		}, -- [18]
+		{
+			1329621036, -- [1]
+			1329621055, -- [2]
+			"22:10:36", -- [3]
+			"22:10:55", -- [4]
+			"Scarlet Medic", -- [5]
+		}, -- [19]
+		{
+			1329621076, -- [1]
+			1329621085, -- [2]
+			"22:11:17", -- [3]
+			"22:11:25", -- [4]
+			"Citizen of Havenshire", -- [5]
+		}, -- [20]
+		{
+			1329621100, -- [1]
+			1329621111, -- [2]
+			"22:11:40", -- [3]
+			"22:11:51", -- [4]
+			"Scarlet Captain", -- [5]
+		}, -- [21]
+		{
+			1329621119, -- [1]
+			1329621126, -- [2]
+			"22:11:59", -- [3]
+			"22:12:06", -- [4]
+			"Citizen of Havenshire", -- [5]
+		}, -- [22]
+		{
+			1329621129, -- [1]
+			1329621133, -- [2]
+			"22:12:09", -- [3]
+			"22:12:13", -- [4]
+			"Citizen of Havenshire", -- [5]
+		}, -- [23]
+		{
+			1329621148, -- [1]
+			1329621154, -- [2]
+			"22:12:28", -- [3]
+			"22:12:34", -- [4]
+			"Citizen of Havenshire", -- [5]
+		}, -- [24]
+		{
+			1329621168, -- [1]
+			1329621177, -- [2]
+			"22:12:48", -- [3]
+			"22:12:57", -- [4]
+			"Scarlet Infantryman", -- [5]
+		}, -- [25]
+		{
+			1329621193, -- [1]
+			1329621222, -- [2]
+			"22:13:13", -- [3]
+			"22:13:42", -- [4]
+			"Scarlet Captain", -- [5]
+		}, -- [26]
+		{
+			1329621288, -- [1]
+			1329621299, -- [2]
+			"22:14:48", -- [3]
+			"22:14:59", -- [4]
+			"Shadowy Tormentor", -- [5]
+		}, -- [27]
+		{
+			1329621325, -- [1]
+			1329621335, -- [2]
+			"22:15:25", -- [3]
+			"22:15:35", -- [4]
+			"Shadowy Tormentor", -- [5]
+		}, -- [28]
+		{
+			1329621340, -- [1]
+			1329621356, -- [2]
+			"22:15:40", -- [3]
+			"22:15:56", -- [4]
+			"Dark Rider of Acherus", -- [5]
+		}, -- [29]
+	},
+	["FoughtWho"] = {
+		"Dark Rider of Acherus 22:15:40-22:15:56", -- [1]
+		"Shadowy Tormentor 22:15:25-22:15:35", -- [2]
+		"Shadowy Tormentor 22:14:48-22:14:59", -- [3]
+		"Scarlet Captain 22:13:13-22:13:42", -- [4]
+		"Scarlet Infantryman 22:12:48-22:12:57", -- [5]
+	},
+}

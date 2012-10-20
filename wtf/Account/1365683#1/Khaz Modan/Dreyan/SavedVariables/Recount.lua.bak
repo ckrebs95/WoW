@@ -1,0 +1,5343 @@
+
+RecountPerCharDB = {
+	["version"] = "1.3",
+	["combatants"] = {
+		["Dreyan"] = {
+			["GUID"] = "0x0380000004378C88",
+			["LastEventHealth"] = {
+				"126 (94%)", -- [1]
+				"119 (89%)", -- [2]
+				"119 (89%)", -- [3]
+				"119 (89%)", -- [4]
+				"119 (89%)", -- [5]
+				"112 (84%)", -- [6]
+				"112 (84%)", -- [7]
+				"112 (84%)", -- [8]
+				"112 (84%)", -- [9]
+				"112 (84%)", -- [10]
+				"106 (79%)", -- [11]
+				"106 (79%)", -- [12]
+				"106 (79%)", -- [13]
+				"133 (100%)", -- [14]
+				"133 (100%)", -- [15]
+				"133 (100%)", -- [16]
+				"109 (81%)", -- [17]
+				"109 (81%)", -- [18]
+				"109 (81%)", -- [19]
+				"109 (81%)", -- [20]
+				"109 (81%)", -- [21]
+				"103 (77%)", -- [22]
+				"103 (77%)", -- [23]
+				"103 (77%)", -- [24]
+				"103 (77%)", -- [25]
+				"103 (77%)", -- [26]
+				"133 (100%)", -- [27]
+				"133 (100%)", -- [28]
+				"133 (100%)", -- [29]
+				"133 (100%)", -- [30]
+				"133 (100%)", -- [31]
+				"133 (100%)", -- [32]
+				"133 (100%)", -- [33]
+				"133 (100%)", -- [34]
+				"133 (100%)", -- [35]
+				"133 (100%)", -- [36]
+				"127 (95%)", -- [37]
+				"127 (95%)", -- [38]
+				"127 (95%)", -- [39]
+				"127 (95%)", -- [40]
+				"121 (90%)", -- [41]
+				"121 (90%)", -- [42]
+				"133 (100%)", -- [43]
+				"133 (100%)", -- [44]
+				"133 (100%)", -- [45]
+				"133 (100%)", -- [46]
+				"133 (100%)", -- [47]
+				"126 (94%)", -- [48]
+				"126 (94%)", -- [49]
+				"126 (94%)", -- [50]
+			},
+			["LastAttackedBy"] = "Ragged Young Wolf",
+			["LastEventType"] = {
+				"DAMAGE", -- [1]
+				"DAMAGE", -- [2]
+				"DAMAGE", -- [3]
+				"DAMAGE", -- [4]
+				"DAMAGE", -- [5]
+				"DAMAGE", -- [6]
+				"DAMAGE", -- [7]
+				"DAMAGE", -- [8]
+				"DAMAGE", -- [9]
+				"DAMAGE", -- [10]
+				"DAMAGE", -- [11]
+				"DAMAGE", -- [12]
+				"DAMAGE", -- [13]
+				"DAMAGE", -- [14]
+				"DAMAGE", -- [15]
+				"DAMAGE", -- [16]
+				"DAMAGE", -- [17]
+				"DAMAGE", -- [18]
+				"DAMAGE", -- [19]
+				"DAMAGE", -- [20]
+				"DAMAGE", -- [21]
+				"DAMAGE", -- [22]
+				"DAMAGE", -- [23]
+				"DAMAGE", -- [24]
+				"DAMAGE", -- [25]
+				"DAMAGE", -- [26]
+				"DAMAGE", -- [27]
+				"DAMAGE", -- [28]
+				"DAMAGE", -- [29]
+				"DAMAGE", -- [30]
+				"DAMAGE", -- [31]
+				"DAMAGE", -- [32]
+				"DAMAGE", -- [33]
+				"DAMAGE", -- [34]
+				"DAMAGE", -- [35]
+				"DAMAGE", -- [36]
+				"DAMAGE", -- [37]
+				"DAMAGE", -- [38]
+				"DAMAGE", -- [39]
+				"DAMAGE", -- [40]
+				"DAMAGE", -- [41]
+				"DAMAGE", -- [42]
+				"DAMAGE", -- [43]
+				"DAMAGE", -- [44]
+				"DAMAGE", -- [45]
+				"DAMAGE", -- [46]
+				"DAMAGE", -- [47]
+				"DAMAGE", -- [48]
+				"DAMAGE", -- [49]
+				"DAMAGE", -- [50]
+			},
+			["TimeWindows"] = {
+				["TimeDamage"] = {
+					427.2199999999999, -- [1]
+				},
+				["Damage"] = {
+					2937, -- [1]
+				},
+				["DamageTaken"] = {
+					574, -- [1]
+				},
+				["ActiveTime"] = {
+					427.2199999999999, -- [1]
+				},
+			},
+			["enClass"] = "ROGUE",
+			["unit"] = "Dreyan",
+			["level"] = 3,
+			["LastDamageAbility"] = "Melee",
+			["LastFightIn"] = 34,
+			["LastEventNum"] = {
+				5.263157894736843, -- [1]
+				[46] = 5.263157894736843,
+				[16] = 18.04511278195489,
+				[9] = 4.511278195488722,
+				[5] = 5.263157894736843,
+				[38] = 4.511278195488722,
+				[20] = 4.511278195488722,
+				[12] = 4.511278195488722,
+				[34] = 4.511278195488722,
+			},
+			["type"] = "Self",
+			["FightsSaved"] = 5,
+			["LastDamageTaken"] = 6,
+			["TimeLast"] = {
+				["ActiveTime"] = 1308498757,
+				["TimeDamage"] = 1308498757,
+				["OVERALL"] = 1308498757,
+				["DamageTaken"] = 1308498756,
+				["Damage"] = 1308498757,
+			},
+			["Owner"] = false,
+			["LastAbility"] = 203208.565,
+			["NextEventNum"] = 14,
+			["LastEventHealthNum"] = {
+				94.73684210526317, -- [1]
+				89.47368421052632, -- [2]
+				89.47368421052632, -- [3]
+				89.47368421052632, -- [4]
+				89.47368421052632, -- [5]
+				84.21052631578948, -- [6]
+				84.21052631578948, -- [7]
+				84.21052631578948, -- [8]
+				84.21052631578948, -- [9]
+				84.21052631578948, -- [10]
+				79.69924812030075, -- [11]
+				79.69924812030075, -- [12]
+				79.69924812030075, -- [13]
+				100, -- [14]
+				100, -- [15]
+				100, -- [16]
+				81.95488721804512, -- [17]
+				81.95488721804512, -- [18]
+				81.95488721804512, -- [19]
+				81.95488721804512, -- [20]
+				81.95488721804512, -- [21]
+				77.44360902255639, -- [22]
+				77.44360902255639, -- [23]
+				77.44360902255639, -- [24]
+				77.44360902255639, -- [25]
+				77.44360902255639, -- [26]
+				100, -- [27]
+				100, -- [28]
+				100, -- [29]
+				100, -- [30]
+				100, -- [31]
+				100, -- [32]
+				100, -- [33]
+				100, -- [34]
+				100, -- [35]
+				100, -- [36]
+				95.48872180451127, -- [37]
+				95.48872180451127, -- [38]
+				95.48872180451127, -- [39]
+				95.48872180451127, -- [40]
+				90.97744360902256, -- [41]
+				90.97744360902256, -- [42]
+				100, -- [43]
+				100, -- [44]
+				100, -- [45]
+				100, -- [46]
+				100, -- [47]
+				94.73684210526317, -- [48]
+				94.73684210526317, -- [49]
+				94.73684210526317, -- [50]
+			},
+			["LastEvents"] = {
+				"Ragged Young Wolf Melee Dreyan Hit -7 (Physical)", -- [1]
+				"Dreyan Sinister Strike Ragged Young Wolf Hit -9 (Physical)", -- [2]
+				"Dreyan Melee Ragged Young Wolf Hit -4 (Physical)", -- [3]
+				"Dreyan Melee Ragged Young Wolf Miss", -- [4]
+				"Ragged Young Wolf Melee Dreyan Hit -7 (Physical)", -- [5]
+				"Dreyan Melee Ragged Young Wolf Miss", -- [6]
+				"Dreyan Sinister Strike Ragged Young Wolf Hit -9 (Physical)", -- [7]
+				"Dreyan Melee Ragged Young Wolf Hit -11 (Physical)", -- [8]
+				"Ragged Young Wolf Melee Dreyan Hit -6 (Physical)", -- [9]
+				"Dreyan Melee Ragged Young Wolf Miss", -- [10]
+				"Dreyan Melee Ragged Young Wolf Hit -11 (Physical)", -- [11]
+				"Ragged Young Wolf Melee Dreyan Hit -6 (Physical)", -- [12]
+				"Dreyan Melee Ragged Young Wolf Hit -4 (Physical)", -- [13]
+				"Dreyan Throw Small Crag Boar Hit -4 (Physical)", -- [14]
+				"Dreyan Melee Small Crag Boar Miss", -- [15]
+				"Small Crag Boar Melee Dreyan Hit -24 (Physical)", -- [16]
+				"Dreyan Melee Small Crag Boar Miss", -- [17]
+				"Dreyan Sinister Strike Small Crag Boar Hit -9 (Physical)", -- [18]
+				"Dreyan Melee Small Crag Boar Hit -4 (Physical)", -- [19]
+				"Small Crag Boar Melee Dreyan Hit -6 (Physical)", -- [20]
+				"Dreyan Melee Small Crag Boar Hit -12 (Physical)", -- [21]
+				"Dreyan Sinister Strike Small Crag Boar Hit -9 (Physical)", -- [22]
+				"Dreyan Melee Small Crag Boar Miss", -- [23]
+				"Small Crag Boar Melee Dreyan Dodge", -- [24]
+				"Dreyan Melee Small Crag Boar Crit -24 (Physical)", -- [25]
+				"Dreyan Eviscerate Small Crag Boar Hit -36 (Physical)", -- [26]
+				"Dreyan Throw Ragged Young Wolf Hit -4 (Physical)", -- [27]
+				"Dreyan Throw Ragged Young Wolf Hit -4 (Physical)", -- [28]
+				"Dreyan Melee Ragged Young Wolf Hit -4 (Physical)", -- [29]
+				"Ragged Young Wolf Melee Dreyan Miss", -- [30]
+				"Dreyan Sinister Strike Ragged Young Wolf Hit -9 (Physical)", -- [31]
+				"Dreyan Melee Ragged Young Wolf Miss", -- [32]
+				"Dreyan Melee Ragged Young Wolf Miss", -- [33]
+				"Ragged Young Wolf Melee Dreyan Hit -6 (Physical)", -- [34]
+				"Dreyan Melee Ragged Young Wolf Miss", -- [35]
+				"Dreyan Sinister Strike Ragged Young Wolf Miss (Physical)", -- [36]
+				"Dreyan Melee Ragged Young Wolf Hit -4 (Physical)", -- [37]
+				"Ragged Young Wolf Melee Dreyan Hit -6 (Physical)", -- [38]
+				"Dreyan Sinister Strike Ragged Young Wolf Hit -8 (Physical)", -- [39]
+				"Dreyan Melee Ragged Young Wolf Hit -11 (Physical)", -- [40]
+				"Dreyan Melee Ragged Young Wolf Hit -3 (Physical)", -- [41]
+				"Dreyan Eviscerate Ragged Young Wolf Hit -30 (Physical)", -- [42]
+				"Dreyan Throw Ragged Young Wolf Hit -4 (Physical)", -- [43]
+				"Dreyan Throw Ragged Young Wolf Hit -4 (Physical)", -- [44]
+				"Dreyan Melee Ragged Young Wolf Hit -10 (Physical)", -- [45]
+				"Ragged Young Wolf Melee Dreyan Hit -7 (Physical)", -- [46]
+				"Dreyan Melee Ragged Young Wolf Miss", -- [47]
+				"Dreyan Sinister Strike Ragged Young Wolf Hit -9 (Physical)", -- [48]
+				"Dreyan Melee Ragged Young Wolf Hit -4 (Physical)", -- [49]
+				"Dreyan Melee Ragged Young Wolf Miss", -- [50]
+			},
+			["Name"] = "Dreyan",
+			["LastEventIncoming"] = {
+				true, -- [1]
+				false, -- [2]
+				false, -- [3]
+				false, -- [4]
+				true, -- [5]
+				false, -- [6]
+				false, -- [7]
+				false, -- [8]
+				true, -- [9]
+				false, -- [10]
+				false, -- [11]
+				true, -- [12]
+				false, -- [13]
+				false, -- [14]
+				false, -- [15]
+				true, -- [16]
+				false, -- [17]
+				false, -- [18]
+				false, -- [19]
+				true, -- [20]
+				false, -- [21]
+				false, -- [22]
+				false, -- [23]
+				true, -- [24]
+				false, -- [25]
+				false, -- [26]
+				false, -- [27]
+				false, -- [28]
+				false, -- [29]
+				true, -- [30]
+				false, -- [31]
+				false, -- [32]
+				false, -- [33]
+				true, -- [34]
+				false, -- [35]
+				false, -- [36]
+				false, -- [37]
+				true, -- [38]
+				false, -- [39]
+				false, -- [40]
+				false, -- [41]
+				false, -- [42]
+				false, -- [43]
+				false, -- [44]
+				false, -- [45]
+				true, -- [46]
+				false, -- [47]
+				false, -- [48]
+				false, -- [49]
+				false, -- [50]
+			},
+			["LastEventTimes"] = {
+				203202.379, -- [1]
+				203203.367, -- [2]
+				203203.646, -- [3]
+				203204.21, -- [4]
+				203204.21, -- [5]
+				203205.36, -- [6]
+				203205.928, -- [7]
+				203206.494, -- [8]
+				203206.494, -- [9]
+				203206.777, -- [10]
+				203208.277, -- [11]
+				203208.277, -- [12]
+				203208.565, -- [13]
+				203144.342, -- [14]
+				203144.957, -- [15]
+				203145.224, -- [16]
+				203145.541, -- [17]
+				203145.811, -- [18]
+				203146.742, -- [19]
+				203147.274, -- [20]
+				203147.575, -- [21]
+				203147.877, -- [22]
+				203148.441, -- [23]
+				203149.025, -- [24]
+				203149.375, -- [25]
+				203149.833, -- [26]
+				203168.043, -- [27]
+				203170.832, -- [28]
+				203172.294, -- [29]
+				203172.294, -- [30]
+				203172.747, -- [31]
+				203172.747, -- [32]
+				203174.043, -- [33]
+				203174.328, -- [34]
+				203174.745, -- [35]
+				203175.027, -- [36]
+				203175.645, -- [37]
+				203176.494, -- [38]
+				203176.777, -- [39]
+				203176.778, -- [40]
+				203177.064, -- [41]
+				203177.887, -- [42]
+				203197.571, -- [43]
+				203199.061, -- [44]
+				203200.411, -- [45]
+				203200.411, -- [46]
+				203200.412, -- [47]
+				203201.231, -- [48]
+				203202.095, -- [49]
+				203202.378, -- [50]
+			},
+			["Fights"] = {
+				["Fight5"] = {
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialAbsorb"] = {
+						["Club"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+						["Throw Priceless Artifact"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["PartialResist"] = {
+						["Club"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+						["Throw Priceless Artifact"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["Attacks"] = {
+						["Eviscerate"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 34,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 34,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 34,
+						},
+						["Sinister Strike"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 9,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 17,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 17,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 2,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 11,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 29,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 6,
+							["amount"] = 29,
+						},
+						["Throw"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 9,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 9,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 9,
+						},
+					},
+					["TimeSpent"] = {
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Goon"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Small Crag Boar"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0.31,
+								},
+								["Sinister Strike"] = {
+									["count"] = 1.51,
+								},
+								["Melee"] = {
+									["count"] = 3.8,
+								},
+								["Throw"] = {
+									["count"] = 3.5,
+								},
+							},
+							["amount"] = 9.120000000000001,
+						},
+					},
+					["DamageTaken"] = 35,
+					["WhoDamaged"] = {
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw Priceless Artifact"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Goon"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Club"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Small Crag Boar"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 35,
+								},
+							},
+							["amount"] = 35,
+						},
+					},
+					["ElementDone"] = {
+						["Melee"] = 29,
+						["Physical"] = 60,
+					},
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 2,
+								},
+								["Hit"] = {
+									["count"] = 4,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 6,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 4,
+						},
+					},
+					["DamagedWho"] = {
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Goon"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Small Crag Boar"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 34,
+								},
+								["Sinister Strike"] = {
+									["count"] = 17,
+								},
+								["Melee"] = {
+									["count"] = 29,
+								},
+								["Throw"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 89,
+						},
+					},
+					["TimeDamage"] = 9.120000000000001,
+					["TimeDamaging"] = {
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Goon"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Small Crag Boar"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0.31,
+								},
+								["Sinister Strike"] = {
+									["count"] = 1.51,
+								},
+								["Melee"] = {
+									["count"] = 3.8,
+								},
+								["Throw"] = {
+									["count"] = 3.5,
+								},
+							},
+							["amount"] = 9.120000000000001,
+						},
+					},
+					["ElementTaken"] = {
+						["Melee"] = 35,
+						["Physical"] = 0,
+					},
+					["ActiveTime"] = 9.120000000000001,
+					["Damage"] = 89,
+				},
+				["Fight2"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 12,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 3,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 4,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 7,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 5,
+								},
+							},
+							["amount"] = 6,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Melee"] = 12,
+						["Physical"] = 0,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 77,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 22,
+						["Physical"] = 55,
+					},
+					["PartialAbsorb"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+						["Throw Priceless Artifact"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 30,
+								},
+								["Sinister Strike"] = {
+									["count"] = 17,
+								},
+								["Melee"] = {
+									["count"] = 22,
+								},
+								["Throw"] = {
+									["count"] = 8,
+								},
+							},
+							["amount"] = 77,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 12,
+								},
+							},
+							["amount"] = 12,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw Priceless Artifact"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+						["Throw Priceless Artifact"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0.82,
+								},
+								["Sinister Strike"] = {
+									["count"] = 1.86,
+								},
+								["Melee"] = {
+									["count"] = 4.37,
+								},
+								["Throw"] = {
+									["count"] = 6.29,
+								},
+							},
+							["amount"] = 13.34,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 13.34,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["Eviscerate"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 30,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 30,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 30,
+						},
+						["Sinister Strike"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 9,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 17,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 17,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 11,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 22,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 7,
+							["amount"] = 22,
+						},
+						["Throw"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 4,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 8,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 8,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 13.34,
+					["TimeDamaging"] = {
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0.82,
+								},
+								["Sinister Strike"] = {
+									["count"] = 1.86,
+								},
+								["Melee"] = {
+									["count"] = 4.37,
+								},
+								["Throw"] = {
+									["count"] = 6.29,
+								},
+							},
+							["amount"] = 13.34,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["CurrentFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Melee"] = 0,
+						["Physical"] = 0,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 0,
+						["Physical"] = 0,
+					},
+					["PartialAbsorb"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Throw Priceless Artifact"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw Priceless Artifact"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Throw Priceless Artifact"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 0,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["Eviscerate"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Sinister Strike"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Throw"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight3"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 30,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 3,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 3,
+								},
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 6,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 4,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Physical"] = 0,
+						["Melee"] = 30,
+						["Nature"] = 0,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 98,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 40,
+						["Physical"] = 58,
+					},
+					["PartialAbsorb"] = {
+						["Throw Priceless Artifact"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Club"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+						["Poisoned Blade (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Goon"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Small Crag Boar"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 36,
+								},
+								["Melee"] = {
+									["count"] = 40,
+								},
+								["Sinister Strike"] = {
+									["count"] = 18,
+								},
+								["Throw"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 98,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw Priceless Artifact"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Goon"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Club"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frostmane Blade"] = {
+							["Details"] = {
+								["Poisoned Blade (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Small Crag Boar"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 30,
+								},
+							},
+							["amount"] = 30,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["Throw Priceless Artifact"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Club"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+						["Poisoned Blade (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+						["Melee"] = 0,
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Goon"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Small Crag Boar"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0.46,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0.5700000000000001,
+								},
+								["Melee"] = {
+									["count"] = 4.44,
+								},
+								["Throw"] = {
+									["count"] = 3.5,
+								},
+							},
+							["amount"] = 8.970000000000001,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 8.970000000000001,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["Eviscerate"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 36,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 36,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 36,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 3,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 24,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 24,
+								},
+								["Hit"] = {
+									["max"] = 12,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 16,
+								},
+							},
+							["count"] = 6,
+							["amount"] = 40,
+						},
+						["Sinister Strike"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 9,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 18,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 18,
+						},
+						["Throw"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 4,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 4,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 4,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 8.970000000000001,
+					["TimeDamaging"] = {
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Goon"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Small Crag Boar"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0.46,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0.5700000000000001,
+								},
+								["Melee"] = {
+									["count"] = 4.44,
+								},
+								["Throw"] = {
+									["count"] = 3.5,
+								},
+							},
+							["amount"] = 8.970000000000001,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight4"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 20,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 2,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 5,
+								},
+							},
+							["amount"] = 7,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 5,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Physical"] = 0,
+						["Melee"] = 20,
+						["Nature"] = 0,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 126,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 33,
+						["Physical"] = 93,
+					},
+					["PartialAbsorb"] = {
+						["Throw Priceless Artifact"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Club"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+						["Poisoned Blade (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Goon"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frostmane Blade"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 66,
+								},
+								["Sinister Strike"] = {
+									["count"] = 18,
+								},
+								["Melee"] = {
+									["count"] = 33,
+								},
+								["Throw"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 126,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw Priceless Artifact"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Goon"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Club"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frostmane Blade"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Poisoned Blade (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 20,
+								},
+							},
+							["amount"] = 20,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["Throw Priceless Artifact"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Club"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+						["Poisoned Blade (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Goon"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frostmane Blade"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0.31,
+								},
+								["Sinister Strike"] = {
+									["count"] = 1.17,
+								},
+								["Melee"] = {
+									["count"] = 5.750000000000001,
+								},
+								["Throw"] = {
+									["count"] = 6.279999999999999,
+								},
+							},
+							["amount"] = 13.51,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 13.51,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["Eviscerate"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 66,
+									["min"] = 66,
+									["count"] = 1,
+									["amount"] = 66,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 66,
+						},
+						["Sinister Strike"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 9,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 18,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 18,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 2,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 11,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 33,
+								},
+							},
+							["count"] = 7,
+							["amount"] = 33,
+						},
+						["Throw"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 5,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 9,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 9,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 13.51,
+					["TimeDamaging"] = {
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Goon"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frostmane Blade"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0.31,
+								},
+								["Sinister Strike"] = {
+									["count"] = 1.17,
+								},
+								["Melee"] = {
+									["count"] = 5.750000000000001,
+								},
+								["Throw"] = {
+									["count"] = 6.279999999999999,
+								},
+							},
+							["amount"] = 13.51,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["LastFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 33,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 5,
+								},
+							},
+							["amount"] = 5,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 5,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 6,
+								},
+							},
+							["amount"] = 11,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 5,
+								},
+							},
+							["amount"] = 5,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Melee"] = 33,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 79,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 44,
+						["Physical"] = 35,
+					},
+					["PartialAbsorb"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["Training Dummy"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rabbit"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Sinister Strike"] = {
+									["count"] = 27,
+								},
+								["Melee"] = {
+									["count"] = 44,
+								},
+								["Throw"] = {
+									["count"] = 8,
+								},
+							},
+							["amount"] = 79,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Small Crag Boar"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Small Crag Boar"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 33,
+								},
+							},
+							["amount"] = 33,
+						},
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 0,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Training Dummy"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rabbit"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Sinister Strike"] = {
+									["count"] = 2.38,
+								},
+								["Melee"] = {
+									["count"] = 7.120000000000001,
+								},
+								["Throw"] = {
+									["count"] = 4.99,
+								},
+							},
+							["amount"] = 14.49,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Small Crag Boar"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 14.49,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["Eviscerate"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Sinister Strike"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 9,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 27,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 27,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 5,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 11,
+									["min"] = 0,
+									["count"] = 6,
+									["amount"] = 44,
+								},
+							},
+							["count"] = 11,
+							["amount"] = 44,
+						},
+						["Throw"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 4,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 8,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 8,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 14.49,
+					["TimeDamaging"] = {
+						["Training Dummy"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rabbit"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Sinister Strike"] = {
+									["count"] = 2.38,
+								},
+								["Melee"] = {
+									["count"] = 7.120000000000001,
+								},
+								["Throw"] = {
+									["count"] = 4.99,
+								},
+							},
+							["amount"] = 14.49,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Small Crag Boar"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight1"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 33,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 5,
+								},
+							},
+							["amount"] = 5,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 5,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 6,
+								},
+							},
+							["amount"] = 11,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 5,
+								},
+							},
+							["amount"] = 5,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Melee"] = 33,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 79,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 44,
+						["Physical"] = 35,
+					},
+					["PartialAbsorb"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["Training Dummy"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rabbit"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Sinister Strike"] = {
+									["count"] = 27,
+								},
+								["Melee"] = {
+									["count"] = 44,
+								},
+								["Throw"] = {
+									["count"] = 8,
+								},
+							},
+							["amount"] = 79,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Small Crag Boar"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Small Crag Boar"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 33,
+								},
+							},
+							["amount"] = 33,
+						},
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 0,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Training Dummy"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rabbit"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Sinister Strike"] = {
+									["count"] = 2.38,
+								},
+								["Melee"] = {
+									["count"] = 7.120000000000001,
+								},
+								["Throw"] = {
+									["count"] = 4.99,
+								},
+							},
+							["amount"] = 14.49,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Small Crag Boar"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 14.49,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["Eviscerate"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Sinister Strike"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 9,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 27,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 27,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 5,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 11,
+									["min"] = 0,
+									["count"] = 6,
+									["amount"] = 44,
+								},
+							},
+							["count"] = 11,
+							["amount"] = 44,
+						},
+						["Throw"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 4,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 8,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 8,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 14.49,
+					["TimeDamaging"] = {
+						["Training Dummy"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rabbit"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Sinister Strike"] = {
+									["count"] = 2.38,
+								},
+								["Melee"] = {
+									["count"] = 7.120000000000001,
+								},
+								["Throw"] = {
+									["count"] = 4.99,
+								},
+							},
+							["amount"] = 14.49,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Small Crag Boar"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0,
+								},
+								["Sinister Strike"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Throw"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["OverallData"] = {
+					["ElementDoneBlock"] = {
+						["Melee"] = 1,
+					},
+					["ElementHitsTaken"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 8,
+								},
+							},
+							["amount"] = 8,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 7,
+								},
+								["Dodge"] = {
+									["count"] = 14,
+								},
+								["Hit"] = {
+									["count"] = 77,
+								},
+							},
+							["amount"] = 98,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 4,
+						},
+					},
+					["PartialAbsorb"] = {
+						["Throw Priceless Artifact"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 0,
+						},
+						["Club"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 98,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 98,
+							["amount"] = 0,
+						},
+						["Poisoned Blade (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+					},
+					["PartialResist"] = {
+						["Throw Priceless Artifact"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 0,
+						},
+						["Club"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 98,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 98,
+							["amount"] = 0,
+						},
+						["Poisoned Blade (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+					},
+					["Attacks"] = {
+						["Eviscerate"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 66,
+									["min"] = 42,
+									["count"] = 2,
+									["amount"] = 108,
+								},
+								["Hit"] = {
+									["max"] = 46,
+									["min"] = 15,
+									["count"] = 29,
+									["amount"] = 843,
+								},
+							},
+							["count"] = 31,
+							["amount"] = 951,
+						},
+						["Sinister Strike"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 2,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 13,
+									["min"] = 13,
+									["count"] = 3,
+									["amount"] = 39,
+								},
+								["Hit"] = {
+									["max"] = 9,
+									["min"] = 5,
+									["count"] = 66,
+									["amount"] = 473,
+								},
+							},
+							["count"] = 71,
+							["amount"] = 512,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 7,
+									["min"] = 3,
+									["count"] = 4,
+									["amount"] = 22,
+								},
+								["Hit"] = {
+									["max"] = 12,
+									["min"] = 3,
+									["count"] = 161,
+									["amount"] = 932,
+								},
+								["Miss"] = {
+									["count"] = 54,
+									["amount"] = 0,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 2,
+									["min"] = 2,
+									["count"] = 1,
+									["amount"] = 2,
+								},
+								["Dodge"] = {
+									["count"] = 2,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 24,
+									["min"] = 7,
+									["count"] = 21,
+									["amount"] = 280,
+								},
+								["Parry"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 244,
+							["amount"] = 1236,
+						},
+						["Throw"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 9,
+									["min"] = 7,
+									["count"] = 7,
+									["amount"] = 54,
+								},
+								["Hit"] = {
+									["max"] = 5,
+									["min"] = 3,
+									["count"] = 49,
+									["amount"] = 184,
+								},
+							},
+							["count"] = 57,
+							["amount"] = 238,
+						},
+					},
+					["TimeSpent"] = {
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 4.06,
+								},
+								["Sinister Strike"] = {
+									["count"] = 3.95,
+								},
+								["Melee"] = {
+									["count"] = 25.34,
+								},
+								["Throw"] = {
+									["count"] = 34.34999999999999,
+								},
+							},
+							["amount"] = 67.7,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0.77,
+								},
+								["Melee"] = {
+									["count"] = 15.87,
+								},
+								["Sinister Strike"] = {
+									["count"] = 10,
+								},
+								["Throw"] = {
+									["count"] = 29.05,
+								},
+							},
+							["amount"] = 55.68999999999999,
+						},
+						["Small Crag Boar"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 2.04,
+								},
+								["Sinister Strike"] = {
+									["count"] = 3.17,
+								},
+								["Melee"] = {
+									["count"] = 16.06,
+								},
+								["Throw"] = {
+									["count"] = 14,
+								},
+							},
+							["amount"] = 35.26999999999999,
+						},
+						["Rockjaw Goon"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 3.6,
+								},
+								["Sinister Strike"] = {
+									["count"] = 7.67,
+								},
+								["Melee"] = {
+									["count"] = 24.03,
+								},
+								["Throw"] = {
+									["count"] = 10.5,
+								},
+							},
+							["amount"] = 45.8,
+						},
+						["Training Dummy"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 2.23,
+								},
+								["Sinister Strike"] = {
+									["count"] = 1.25,
+								},
+								["Melee"] = {
+									["count"] = 16.93,
+								},
+							},
+							["amount"] = 20.41000000000001,
+						},
+						["Rabbit"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 3.5,
+								},
+							},
+							["amount"] = 3.5,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 6.46,
+								},
+								["Sinister Strike"] = {
+									["count"] = 15.58,
+								},
+								["Melee"] = {
+									["count"] = 46.29,
+								},
+								["Throw"] = {
+									["count"] = 63.24999999999999,
+								},
+							},
+							["amount"] = 131.58,
+						},
+						["Frostmane Blade"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 1.64,
+								},
+								["Sinister Strike"] = {
+									["count"] = 2.65,
+								},
+								["Melee"] = {
+									["count"] = 5.460000000000001,
+								},
+								["Throw"] = {
+									["count"] = 6.32,
+								},
+							},
+							["amount"] = 16.07,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 1.14,
+								},
+								["Sinister Strike"] = {
+									["count"] = 6.680000000000001,
+								},
+								["Melee"] = {
+									["count"] = 22.32,
+								},
+								["Throw"] = {
+									["count"] = 21.06,
+								},
+							},
+							["amount"] = 51.20000000000001,
+						},
+					},
+					["DamageTaken"] = 574,
+					["WhoDamaged"] = {
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 29,
+								},
+							},
+							["amount"] = 29,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 38,
+								},
+								["Throw Priceless Artifact"] = {
+									["count"] = 50,
+								},
+							},
+							["amount"] = 88,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 84,
+								},
+							},
+							["amount"] = 84,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 181,
+								},
+							},
+							["amount"] = 181,
+						},
+						["Rockjaw Goon"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 49,
+								},
+								["Club"] = {
+									["count"] = 15,
+								},
+							},
+							["amount"] = 64,
+						},
+						["Frostmane Blade"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 15,
+								},
+								["Poisoned Blade (DoT)"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 19,
+						},
+						["Small Crag Boar"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 109,
+								},
+							},
+							["amount"] = 109,
+						},
+					},
+					["ElementDone"] = {
+						["Melee"] = 1236,
+						["Physical"] = 1701,
+					},
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 4,
+								},
+								["Miss"] = {
+									["count"] = 54,
+								},
+								["Hit"] = {
+									["count"] = 162,
+								},
+								["Dodge"] = {
+									["count"] = 2,
+								},
+								["Crit"] = {
+									["count"] = 21,
+								},
+								["Parry"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 244,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 3,
+								},
+								["Crit"] = {
+									["count"] = 12,
+								},
+								["Hit"] = {
+									["count"] = 144,
+								},
+							},
+							["amount"] = 159,
+						},
+					},
+					["DamagedWho"] = {
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 129,
+								},
+								["Sinister Strike"] = {
+									["count"] = 56,
+								},
+								["Melee"] = {
+									["count"] = 117,
+								},
+								["Throw"] = {
+									["count"] = 39,
+								},
+							},
+							["amount"] = 341,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 32,
+								},
+								["Melee"] = {
+									["count"] = 154,
+								},
+								["Sinister Strike"] = {
+									["count"] = 71,
+								},
+								["Throw"] = {
+									["count"] = 44,
+								},
+							},
+							["amount"] = 301,
+						},
+						["Small Crag Boar"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 123,
+								},
+								["Sinister Strike"] = {
+									["count"] = 60,
+								},
+								["Melee"] = {
+									["count"] = 160,
+								},
+								["Throw"] = {
+									["count"] = 21,
+								},
+							},
+							["amount"] = 364,
+						},
+						["Rockjaw Goon"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 129,
+								},
+								["Sinister Strike"] = {
+									["count"] = 65,
+								},
+								["Melee"] = {
+									["count"] = 126,
+								},
+								["Throw"] = {
+									["count"] = 12,
+								},
+							},
+							["amount"] = 332,
+						},
+						["Training Dummy"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 55,
+								},
+								["Sinister Strike"] = {
+									["count"] = 19,
+								},
+								["Melee"] = {
+									["count"] = 106,
+								},
+							},
+							["amount"] = 180,
+						},
+						["Rabbit"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 8,
+								},
+							},
+							["amount"] = 8,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 313,
+								},
+								["Sinister Strike"] = {
+									["count"] = 143,
+								},
+								["Melee"] = {
+									["count"] = 373,
+								},
+								["Throw"] = {
+									["count"] = 89,
+								},
+							},
+							["amount"] = 918,
+						},
+						["Frostmane Blade"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 44,
+								},
+								["Sinister Strike"] = {
+									["count"] = 18,
+								},
+								["Melee"] = {
+									["count"] = 49,
+								},
+								["Throw"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 115,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 126,
+								},
+								["Sinister Strike"] = {
+									["count"] = 80,
+								},
+								["Melee"] = {
+									["count"] = 143,
+								},
+								["Throw"] = {
+									["count"] = 29,
+								},
+							},
+							["amount"] = 378,
+						},
+					},
+					["TimeDamage"] = 427.2199999999999,
+					["TimeDamaging"] = {
+						["Rockjaw Invader"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 4.06,
+								},
+								["Sinister Strike"] = {
+									["count"] = 3.95,
+								},
+								["Melee"] = {
+									["count"] = 25.34,
+								},
+								["Throw"] = {
+									["count"] = 34.34999999999999,
+								},
+							},
+							["amount"] = 67.7,
+						},
+						["Rockjaw Scavenger"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 0.77,
+								},
+								["Melee"] = {
+									["count"] = 15.87,
+								},
+								["Sinister Strike"] = {
+									["count"] = 10,
+								},
+								["Throw"] = {
+									["count"] = 29.05,
+								},
+							},
+							["amount"] = 55.68999999999999,
+						},
+						["Small Crag Boar"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 2.04,
+								},
+								["Sinister Strike"] = {
+									["count"] = 3.17,
+								},
+								["Melee"] = {
+									["count"] = 16.06,
+								},
+								["Throw"] = {
+									["count"] = 14,
+								},
+							},
+							["amount"] = 35.26999999999999,
+						},
+						["Rockjaw Goon"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 3.6,
+								},
+								["Sinister Strike"] = {
+									["count"] = 7.67,
+								},
+								["Melee"] = {
+									["count"] = 24.03,
+								},
+								["Throw"] = {
+									["count"] = 10.5,
+								},
+							},
+							["amount"] = 45.8,
+						},
+						["Training Dummy"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 2.23,
+								},
+								["Sinister Strike"] = {
+									["count"] = 1.25,
+								},
+								["Melee"] = {
+									["count"] = 16.93,
+								},
+							},
+							["amount"] = 20.41000000000001,
+						},
+						["Rabbit"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 3.5,
+								},
+							},
+							["amount"] = 3.5,
+						},
+						["Frostmane Troll Whelp"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 6.46,
+								},
+								["Sinister Strike"] = {
+									["count"] = 15.58,
+								},
+								["Melee"] = {
+									["count"] = 46.29,
+								},
+								["Throw"] = {
+									["count"] = 63.24999999999999,
+								},
+							},
+							["amount"] = 131.58,
+						},
+						["Frostmane Blade"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 1.64,
+								},
+								["Sinister Strike"] = {
+									["count"] = 2.65,
+								},
+								["Melee"] = {
+									["count"] = 5.460000000000001,
+								},
+								["Throw"] = {
+									["count"] = 6.32,
+								},
+							},
+							["amount"] = 16.07,
+						},
+						["Ragged Young Wolf"] = {
+							["Details"] = {
+								["Eviscerate"] = {
+									["count"] = 1.14,
+								},
+								["Sinister Strike"] = {
+									["count"] = 6.680000000000001,
+								},
+								["Melee"] = {
+									["count"] = 22.32,
+								},
+								["Throw"] = {
+									["count"] = 21.06,
+								},
+							},
+							["amount"] = 51.20000000000001,
+						},
+					},
+					["ElementTaken"] = {
+						["Physical"] = 65,
+						["Melee"] = 505,
+						["Nature"] = 4,
+					},
+					["ActiveTime"] = 427.2199999999999,
+					["Damage"] = 2937,
+				},
+			},
+			["UnitLockout"] = 1308497009,
+			["LastActive"] = 1308498757,
+		},
+	},
+	["FightNum"] = 35,
+	["CombatTimes"] = {
+		{
+			1308497009, -- [1]
+			1308497024, -- [2]
+			"11:23:29", -- [3]
+			"11:23:44", -- [4]
+			"Rockjaw Invader", -- [5]
+		}, -- [1]
+		{
+			1308497031, -- [1]
+			1308497045, -- [2]
+			"11:23:51", -- [3]
+			"11:24:05", -- [4]
+			"Rockjaw Invader", -- [5]
+		}, -- [2]
+		{
+			1308497066, -- [1]
+			1308497072, -- [2]
+			"11:24:26", -- [3]
+			"11:24:32", -- [4]
+			"Rockjaw Invader", -- [5]
+		}, -- [3]
+		{
+			1308497078, -- [1]
+			1308497085, -- [2]
+			"11:24:39", -- [3]
+			"11:24:45", -- [4]
+			"Rockjaw Invader", -- [5]
+		}, -- [4]
+		{
+			1308497091, -- [1]
+			1308497099, -- [2]
+			"11:24:51", -- [3]
+			"11:24:59", -- [4]
+			"Rockjaw Invader", -- [5]
+		}, -- [5]
+		{
+			1308497110, -- [1]
+			1308497115, -- [2]
+			"11:25:10", -- [3]
+			"11:25:15", -- [4]
+			"Rockjaw Invader", -- [5]
+		}, -- [6]
+		{
+			1308497267, -- [1]
+			1308497279, -- [2]
+			"11:27:47", -- [3]
+			"11:27:59", -- [4]
+			"Rockjaw Goon", -- [5]
+		}, -- [7]
+		{
+			1308497286, -- [1]
+			1308497299, -- [2]
+			"11:28:06", -- [3]
+			"11:28:19", -- [4]
+			"Rockjaw Goon", -- [5]
+		}, -- [8]
+		{
+			1308497332, -- [1]
+			1308497349, -- [2]
+			"11:28:52", -- [3]
+			"11:29:09", -- [4]
+			"Rockjaw Goon", -- [5]
+		}, -- [9]
+		{
+			1308497613, -- [1]
+			1308497617, -- [2]
+			"11:33:33", -- [3]
+			"11:33:37", -- [4]
+			"Rockjaw Invader", -- [5]
+		}, -- [10]
+		{
+			1308497652, -- [1]
+			1308497675, -- [2]
+			"11:34:12", -- [3]
+			"11:34:35", -- [4]
+			"Training Dummy", -- [5]
+		}, -- [11]
+		{
+			1308497927, -- [1]
+			1308497939, -- [2]
+			"11:38:47", -- [3]
+			"11:38:59", -- [4]
+			"Frostmane Troll Whelp", -- [5]
+		}, -- [12]
+		{
+			1308497946, -- [1]
+			1308497957, -- [2]
+			"11:39:06", -- [3]
+			"11:39:17", -- [4]
+			"Frostmane Troll Whelp", -- [5]
+		}, -- [13]
+		{
+			1308497965, -- [1]
+			1308497982, -- [2]
+			"11:39:25", -- [3]
+			"11:39:42", -- [4]
+			"Frostmane Troll Whelp", -- [5]
+		}, -- [14]
+		{
+			1308497992, -- [1]
+			1308498001, -- [2]
+			"11:39:52", -- [3]
+			"11:40:01", -- [4]
+			"Frostmane Troll Whelp", -- [5]
+		}, -- [15]
+		{
+			1308498007, -- [1]
+			1308498017, -- [2]
+			"11:40:07", -- [3]
+			"11:40:17", -- [4]
+			"Frostmane Troll Whelp", -- [5]
+		}, -- [16]
+		{
+			1308498028, -- [1]
+			1308498042, -- [2]
+			"11:40:29", -- [3]
+			"11:40:42", -- [4]
+			"Frostmane Troll Whelp", -- [5]
+		}, -- [17]
+		{
+			1308498048, -- [1]
+			1308498060, -- [2]
+			"11:40:48", -- [3]
+			"11:41:00", -- [4]
+			"Frostmane Troll Whelp", -- [5]
+		}, -- [18]
+		{
+			1308498077, -- [1]
+			1308498092, -- [2]
+			"11:41:17", -- [3]
+			"11:41:32", -- [4]
+			"Frostmane Troll Whelp", -- [5]
+		}, -- [19]
+		{
+			1308498106, -- [1]
+			1308498121, -- [2]
+			"11:41:46", -- [3]
+			"11:42:01", -- [4]
+			"Frostmane Blade", -- [5]
+		}, -- [20]
+		{
+			1308498128, -- [1]
+			1308498139, -- [2]
+			"11:42:09", -- [3]
+			"11:42:19", -- [4]
+			"Frostmane Troll Whelp", -- [5]
+		}, -- [21]
+		{
+			1308498153, -- [1]
+			1308498161, -- [2]
+			"11:42:33", -- [3]
+			"11:42:41", -- [4]
+			"Frostmane Troll Whelp", -- [5]
+		}, -- [22]
+		{
+			1308498494, -- [1]
+			1308498503, -- [2]
+			"11:48:14", -- [3]
+			"11:48:23", -- [4]
+			"Small Crag Boar", -- [5]
+		}, -- [23]
+		{
+			1308498516, -- [1]
+			1308498529, -- [2]
+			"11:48:37", -- [3]
+			"11:48:49", -- [4]
+			"Rockjaw Scavenger", -- [5]
+		}, -- [24]
+		{
+			1308498569, -- [1]
+			1308498578, -- [2]
+			"11:49:30", -- [3]
+			"11:49:38", -- [4]
+			"Rockjaw Scavenger", -- [5]
+		}, -- [25]
+		{
+			1308498584, -- [1]
+			1308498595, -- [2]
+			"11:49:44", -- [3]
+			"11:49:55", -- [4]
+			"Rockjaw Scavenger", -- [5]
+		}, -- [26]
+		{
+			1308498601, -- [1]
+			1308498610, -- [2]
+			"11:50:02", -- [3]
+			"11:50:10", -- [4]
+			"Rockjaw Scavenger", -- [5]
+		}, -- [27]
+		{
+			1308498616, -- [1]
+			1308498626, -- [2]
+			"11:50:16", -- [3]
+			"11:50:26", -- [4]
+			"Rockjaw Scavenger", -- [5]
+		}, -- [28]
+		{
+			1308498632, -- [1]
+			1308498638, -- [2]
+			"11:50:32", -- [3]
+			"11:50:38", -- [4]
+			"Small Crag Boar", -- [5]
+		}, -- [29]
+		{
+			1308498645, -- [1]
+			1308498654, -- [2]
+			"11:50:45", -- [3]
+			"11:50:54", -- [4]
+			"Ragged Young Wolf", -- [5]
+		}, -- [30]
+		{
+			1308498661, -- [1]
+			1308498668, -- [2]
+			"11:51:01", -- [3]
+			"11:51:08", -- [4]
+			"Small Crag Boar", -- [5]
+		}, -- [31]
+		{
+			1308498676, -- [1]
+			1308498689, -- [2]
+			"11:51:16", -- [3]
+			"11:51:29", -- [4]
+			"Ragged Young Wolf", -- [5]
+		}, -- [32]
+		{
+			1308498692, -- [1]
+			1308498701, -- [2]
+			"11:51:33", -- [3]
+			"11:51:41", -- [4]
+			"Small Crag Boar", -- [5]
+		}, -- [33]
+		{
+			1308498716, -- [1]
+			1308498729, -- [2]
+			"11:51:56", -- [3]
+			"11:52:09", -- [4]
+			"Ragged Young Wolf", -- [5]
+		}, -- [34]
+		{
+			1308498746, -- [1]
+			1308498759, -- [2]
+			"11:52:26", -- [3]
+			"11:52:39", -- [4]
+			"Ragged Young Wolf", -- [5]
+		}, -- [35]
+	},
+	["FoughtWho"] = {
+		"Ragged Young Wolf 11:52:26-11:52:39", -- [1]
+		"Ragged Young Wolf 11:51:56-11:52:09", -- [2]
+		"Small Crag Boar 11:51:33-11:51:41", -- [3]
+		"Ragged Young Wolf 11:51:16-11:51:29", -- [4]
+		"Small Crag Boar 11:51:01-11:51:08", -- [5]
+	},
+}

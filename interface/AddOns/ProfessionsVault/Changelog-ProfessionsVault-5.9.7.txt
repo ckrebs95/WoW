@@ -1,0 +1,66 @@
+------------------------------------------------------------------------
+r351 | oscarucb | 2012-08-06 20:11:51 +0000 (Mon, 06 Aug 2012) | 1 line
+Changed paths:
+   A /tags/5.9.7 (from /trunk:350)
+
+Tagging as 5.9.7
+------------------------------------------------------------------------
+r350 | oscarucb | 2012-08-06 20:08:59 +0000 (Mon, 06 Aug 2012) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+zhTW database updates
+
+------------------------------------------------------------------------
+r349 | oscarucb | 2012-08-06 15:40:29 +0000 (Mon, 06 Aug 2012) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+   M /trunk/ProfessionsVault.lua
+
+zhTW database updates
+
+------------------------------------------------------------------------
+r347 | oscarucb | 2012-08-04 02:47:04 +0000 (Sat, 04 Aug 2012) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+final zhCN database updates
+
+------------------------------------------------------------------------
+r346 | oscarucb | 2012-08-04 01:41:56 +0000 (Sat, 04 Aug 2012) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+   M /trunk/ProfessionsVault.lua
+
+zhCN database updates
+
+------------------------------------------------------------------------
+r345 | oscarucb | 2012-08-03 07:27:27 +0000 (Fri, 03 Aug 2012) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+add zhCN hash conflicts
+
+------------------------------------------------------------------------
+r344 | oscarucb | 2012-08-02 09:09:47 +0000 (Thu, 02 Aug 2012) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+small fix to zhCN
+
+------------------------------------------------------------------------
+r343 | oscarucb | 2012-07-31 14:56:04 +0000 (Tue, 31 Jul 2012) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+   M /trunk/notes/testing.txt
+
+dry-code a partial fix to ticket 85 (zhCN item database failures)
+
+------------------------------------------------------------------------
+r342 | oscarucb | 2012-07-05 22:40:24 +0000 (Thu, 05 Jul 2012) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+ruRU database update
+
+------------------------------------------------------------------------

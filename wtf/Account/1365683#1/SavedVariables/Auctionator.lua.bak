@@ -1,0 +1,68 @@
+
+AUCTIONATOR_SAVEDVARS = {
+	["_10000"] = 200,
+	["_50000"] = 500,
+	["_500"] = 5,
+	["_1000000"] = 2500,
+	["_200000"] = 1000,
+	["STARTING_DISCOUNT"] = 5,
+	["_5000000"] = 10000,
+	["_2000"] = 100,
+}
+AUCTIONATOR_PRICING_HISTORY = {
+}
+AUCTIONATOR_SHOPPING_LISTS = {
+	{
+		["items"] = {
+			"explosive shot", -- [1]
+		},
+		["isRecents"] = 1,
+		["name"] = "Recent Searches",
+	}, -- [1]
+	{
+		["items"] = {
+			"Greater Cosmic Essence", -- [1]
+			"Infinite Dust", -- [2]
+			"Dream Shard", -- [3]
+			"Abyss Crystal", -- [4]
+		},
+		["name"] = "Sample Shopping List #1",
+		["isSorted"] = false,
+	}, -- [2]
+}
+AUCTIONATOR_PRICE_DATABASE = {
+	["__dbversion"] = 4,
+	["Khaz Modan_Alliance"] = {
+		["Explosive Shotgun"] = {
+			["mr"] = 39900,
+			["cc"] = 1,
+			["id"] = "8188",
+			["H268"] = 39900,
+			["sc"] = 4,
+		},
+		["Glyph of Explosive Shot"] = {
+			["mr"] = 2329678,
+			["cc"] = 5,
+			["id"] = "45731",
+			["H268"] = 2329678,
+			["sc"] = 3,
+		},
+	},
+}
+AUCTIONATOR_LAST_SCAN_TIME = nil
+AUCTIONATOR_TOONS = {
+	["Dathsar"] = {
+		["firstSeen"] = 1313023875,
+		["guid"] = "0x0380000003FFE6F1",
+		["firstVersion"] = "2.9.7",
+	},
+}
+AUCTIONATOR_STACKING_PREFS = {
+}
+AUCTIONATOR_SCAN_MINLEVEL = 1
+AUCTIONATOR_DB_MAXITEM_AGE = 180
+AUCTIONATOR_DB_MAXHIST_AGE = -1
+AUCTIONATOR_DB_MAXHIST_DAYS = 5
+AUCTIONATOR_DC_PAUSE = nil
+AUCTIONATOR_DE_DATA = nil
+AUCTIONATOR_DE_DATA_BAK = nil

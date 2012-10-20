@@ -1,0 +1,55 @@
+
+BeanCounterDB = {
+	["Khaz Modan"] = {
+		["Dathsar"] = {
+			["vendorsell"] = {
+			},
+			["postedBids"] = {
+			},
+			["postedAuctions"] = {
+			},
+			["completedBidsBuyoutsNeutral"] = {
+			},
+			["vendorbuy"] = {
+			},
+			["failedAuctions"] = {
+			},
+			["failedBidsNeutral"] = {
+			},
+			["failedBids"] = {
+			},
+			["completedAuctions"] = {
+			},
+			["failedAuctionsNeutral"] = {
+			},
+			["completedAuctionsNeutral"] = {
+			},
+			["completedBidsBuyouts"] = {
+			},
+		},
+	},
+}
+BeanCounterDBSettings = {
+	["profile.Default"] = {
+		["configator.left"] = 400.0001084804519,
+		["configator.top"] = 824.9999114125981,
+		["util.beancounter.ButtonuseDateCheck"] = false,
+	},
+	["Khaz Modan"] = {
+		["Dathsar"] = {
+			["version"] = 3.02,
+			["faction"] = "Alliance",
+			["wealth"] = 33586665,
+			["maintenance"] = {
+				["compactDB"] = 1316560201,
+				["sortArray"] = 1316561709,
+				["prunePostedDB"] = 1316637523,
+			},
+			["mailbox"] = {
+			},
+		},
+	},
+}
+BeanCounterDBNames = {
+}
+BeanCounterAccountDB = nil

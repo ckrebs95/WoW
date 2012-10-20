@@ -1,0 +1,37 @@
+
+RecountDB = {
+	["profileKeys"] = {
+		["Dathsar - Khaz Modan"] = "Dathsar - Khaz Modan",
+	},
+	["profiles"] = {
+		["Dathsar - Khaz Modan"] = {
+			["GraphWindowY"] = 0,
+			["MainWindow"] = {
+				["Position"] = {
+					["y"] = -547.9995693564479,
+					["x"] = 658.499746046964,
+					["w"] = 280.9997898191245,
+					["h"] = 109.9999316036711,
+				},
+			},
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+					["Total Bar"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["DetailWindowY"] = 0,
+			["DetailWindowX"] = 0,
+			["MainWindowWidth"] = 280.9997707456384,
+			["HideCollect"] = true,
+			["MainWindowHeight"] = 109.9999316036711,
+			["GraphWindowX"] = 0,
+			["CurDataSet"] = "OverallData",
+			["LastInstanceName"] = "Blackrock Caverns",
+		},
+	},
+}

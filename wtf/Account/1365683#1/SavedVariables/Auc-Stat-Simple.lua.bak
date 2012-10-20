@@ -1,0 +1,14 @@
+
+AucAdvancedStatSimpleData = {
+	["Version"] = "2.0",
+	["RealmData"] = {
+		["Khaz Modan-Alliance"] = {
+			["means"] = {
+			},
+			["daily"] = {
+				["created"] = 1316217813,
+				[52722] = "0:80017270;83;789000",
+			},
+		},
+	},
+}

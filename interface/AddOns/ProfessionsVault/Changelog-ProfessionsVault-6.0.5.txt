@@ -1,0 +1,140 @@
+------------------------------------------------------------------------
+r376 | oscarucb | 2012-09-08 17:29:01 +0000 (Sat, 08 Sep 2012) | 1 line
+Changed paths:
+   A /tags/6.0.5 (from /trunk:375)
+
+Tagging as 6.0.5
+------------------------------------------------------------------------
+r375 | oscarucb | 2012-09-08 17:28:41 +0000 (Sat, 08 Sep 2012) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+first pass of zhCN updates for 5.x
+
+------------------------------------------------------------------------
+r374 | oscarucb | 2012-09-04 04:27:00 +0000 (Tue, 04 Sep 2012) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+First pass of database updates for koKR, zhTW
+
+------------------------------------------------------------------------
+r372 | oscarucb | 2012-09-03 23:47:12 +0000 (Mon, 03 Sep 2012) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+first pass of ruRU updates
+
+------------------------------------------------------------------------
+r371 | oscarucb | 2012-09-03 13:57:36 +0000 (Mon, 03 Sep 2012) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+   M /trunk/ProfessionsVault.lua
+
+First pass of database updates for esES, ptBR, deDE, itIT
+
+------------------------------------------------------------------------
+r370 | oscarucb | 2012-09-03 11:28:53 +0000 (Mon, 03 Sep 2012) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+more database updates
+
+------------------------------------------------------------------------
+r369 | oscarucb | 2012-09-03 10:04:14 +0000 (Mon, 03 Sep 2012) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+minor database updates
+
+------------------------------------------------------------------------
+r368 | oscarucb | 2012-09-03 04:45:45 +0000 (Mon, 03 Sep 2012) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+ticket 77: disable hashing on Mac64
+
+------------------------------------------------------------------------
+r367 | oscarucb | 2012-09-02 12:13:12 +0000 (Sun, 02 Sep 2012) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+roll back unintentional commit
+
+------------------------------------------------------------------------
+r366 | oscarucb | 2012-09-02 12:12:07 +0000 (Sun, 02 Sep 2012) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+   M /trunk/ProfessionsVault.lua
+
+make populate_database smarter
+
+------------------------------------------------------------------------
+r365 | oscarucb | 2012-09-02 10:53:37 +0000 (Sun, 02 Sep 2012) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+add 5.x exceptions
+
+------------------------------------------------------------------------
+r363 | oscarucb | 2012-09-02 02:03:24 +0000 (Sun, 02 Sep 2012) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+ticket90: fix update issues with recipes in merchant windows
+
+------------------------------------------------------------------------
+r362 | oscarucb | 2012-09-01 23:58:30 +0000 (Sat, 01 Sep 2012) | 4 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+   M /trunk/ProfessionsVault.lua
+
+fix einstein links
+need to exclude dead bits now for proper loading
+update inscription database
+
+------------------------------------------------------------------------
+r361 | oscarucb | 2012-09-01 23:07:50 +0000 (Sat, 01 Sep 2012) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+update fishing spellid
+
+------------------------------------------------------------------------
+r359 | oscarucb | 2012-08-30 11:16:29 +0000 (Thu, 30 Aug 2012) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+ticket 86: work-around a glitch on live that triggers false positives for rescanning
+
+------------------------------------------------------------------------
+r357 | oscarucb | 2012-08-30 05:32:18 +0000 (Thu, 30 Aug 2012) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+ticket 88: fix Herbalism detection
+
+------------------------------------------------------------------------
+r355 | oscarucb | 2012-08-28 18:29:46 +0000 (Tue, 28 Aug 2012) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+don't prompt to scan when version mismatches
+
+------------------------------------------------------------------------
+r353 | oscarucb | 2012-08-28 04:39:05 +0000 (Tue, 28 Aug 2012) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+5.0 database updates
+
+------------------------------------------------------------------------
+r352 | oscarucb | 2012-08-28 00:57:07 +0000 (Tue, 28 Aug 2012) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+   M /trunk/ProfessionsVault.lua
+   M /trunk/ProfessionsVault.toc
+
+first round of 5.x updates
+
+------------------------------------------------------------------------

@@ -1,0 +1,27 @@
+tag 3.1.0
+4abfea528a14f00baaca0274f6c360dfcef0b07f
+Hendrik Leppkes <h.leppkes@gmail.com>
+2012-08-28 07:10:54 +0200
+
+Tag as 3.1.0
+
+
+--------------------
+
+Hendrik Leppkes:
+	- Update toc for 5.0
+	- Fix width of the latency bar
+	- Fix position of the Spark
+	- Improve bar positioning with a moved/resized UIParent
+	- Add an option to hide the Default UI Focus Cast Bar
+	- Properly restore the Player CastBars events in MoP
+	- The total bar width now includes the icon, and does not change when the icon is shown/hidden.
+	- Added a new option to center spell name or time on the center of the bars backdrop (castbar + icon) instead of just the castbar.
+	- Adjust default icon gap to better fit the new backdrop
+	- Expand the Bars backdrop around the spell icon
+	- Name the mirror bar frames
+	- Mirror: Don't use OnHide to disable the OnUpdate.
+	Its certainly possible that something else is hiding this frame (or the parent), like opening the default blizzard map.
+	- Update list of channeld spells and their ticks
+	- Fix display of channeling tic indicators on the player cast bar
+	- Cleanup Reset Spells in "Swing" module. All "next-swing" attacks have been removed since 4.0

@@ -1,0 +1,8 @@
+
+NxCData = {
+	["Version"] = 0.4,
+	["Taxi"] = {
+		["Ironforge, Dun Morogh"] = true,
+		["Kharanos, Dun Morogh"] = true,
+	},
+}

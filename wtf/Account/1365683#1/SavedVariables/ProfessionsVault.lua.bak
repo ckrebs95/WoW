@@ -1,0 +1,156 @@
+
+ProfessionsVaultDB = {
+	["realm"] = {
+		["Khaz Modan"] = {
+			["guid_prefix"] = "038",
+			["clientbuild"] = 15354,
+			["clientversion"] = "4.3.3",
+			["hide"] = {
+			},
+			["guid_cache"] = {
+				["Dathsar"] = 67102449,
+			},
+			["chars"] = {
+				["Dathsar"] = {
+					["Inscription"] = {
+						["uiversion"] = 40300,
+						["link"] = "|cffffd000|Htrade:45357:525:525:380000003FFE6F1:A/////59+//////7//7/t//X9//l//z9/n+/f++////////////7////X2xLRxPFIIEITw/3////f//+|h[Inscription]|h|r",
+						["lastupdate"] = 1334136139,
+						["rankmax"] = 525,
+						["clientbuild"] = 15354,
+						["rank"] = 525,
+					},
+					["Archaeology"] = {
+						["uiversion"] = 40300,
+						["link"] = "|cffffd000|Htrade:78670:525:525:0:|h[Archaeology]|h|r",
+						["lastupdate"] = 1334136134,
+						["rankmax"] = 525,
+						["clientbuild"] = 15354,
+						["rank"] = 525,
+					},
+					["Fishing"] = {
+						["uiversion"] = 40300,
+						["link"] = "|cffffd000|Htrade:7620:525:525:0:|h[Fishing]|h|r",
+						["lastupdate"] = 1334136134,
+						["rankmax"] = 525,
+						["clientbuild"] = 15354,
+						["rank"] = 525,
+					},
+					["Herbalism"] = {
+						["uiversion"] = 40300,
+						["link"] = "|cffffd000|Htrade:9134:525:525:0:|h[Herbalism]|h|r",
+						["lastupdate"] = 1334136134,
+						["rankmax"] = 525,
+						["clientbuild"] = 15354,
+						["rank"] = 525,
+					},
+					["Cooking"] = {
+						["uiversion"] = 40300,
+						["link"] = "|cffffd000|Htrade:2550:525:525:380000003FFE6F1:Gfbi/dx5W95DDDAIXmz//BAAwnvD+/////9S|h[Cooking]|h|r",
+						["lastupdate"] = 1334135951,
+						["rankmax"] = 525,
+						["clientbuild"] = 15354,
+						["rank"] = 525,
+					},
+					["data"] = {
+						["alt"] = true,
+						["name"] = "Dathsar",
+						["faction"] = "Alliance",
+						["level"] = 85,
+						["scanned"] = true,
+						["class"] = "Hunter",
+					},
+					["First Aid"] = {
+						["uiversion"] = 40300,
+						["link"] = "|cffffd000|Htrade:3273:525:525:380000003FFE6F1:8LPP4DA|h[First Aid]|h|r",
+						["lastupdate"] = 1334136187,
+						["rankmax"] = 525,
+						["clientbuild"] = 15354,
+						["rank"] = 525,
+					},
+				},
+				["All Recipes"] = {
+					["Inscription"] = {
+						["rankmax"] = 525,
+						["link"] = "|cffffd000|Htrade:45357:0:0:0380000003FFE6F1:////////////////////////////////////////////////////////////////////////////////|h[Inscription]|h|r",
+						["rank"] = 525,
+					},
+					["Blacksmithing"] = {
+						["rankmax"] = 525,
+						["link"] = "|cffffd000|Htrade:2018:0:0:0380000003FFE6F1://////////////////////////////////////////////////////////////////////////////////////////////////////|h[Blacksmithing]|h|r",
+						["rank"] = 525,
+					},
+					["Alchemy"] = {
+						["rankmax"] = 525,
+						["link"] = "|cffffd000|Htrade:2259:0:0:0380000003FFE6F1://///////////////////////////////////////////////////|h[Alchemy]|h|r",
+						["rank"] = 525,
+					},
+					["data"] = {
+						["alt"] = false,
+						["scanned"] = true,
+					},
+					["Cooking"] = {
+						["rankmax"] = 525,
+						["link"] = "|cffffd000|Htrade:2550:0:0:0380000003FFE6F1:////////////////////////////////////|h[Cooking]|h|r",
+						["rank"] = 525,
+					},
+					["First Aid"] = {
+						["rankmax"] = 525,
+						["link"] = "|cffffd000|Htrade:3273:0:0:0380000003FFE6F1:///////|h[First Aid]|h|r",
+						["rank"] = 525,
+					},
+					["Tailoring"] = {
+						["rankmax"] = 525,
+						["link"] = "|cffffd000|Htrade:3908:0:0:0380000003FFE6F1://///////////////////////////////////////////////////////////////////////////////////|h[Tailoring]|h|r",
+						["rank"] = 525,
+					},
+					["Engineering"] = {
+						["rankmax"] = 525,
+						["link"] = "|cffffd000|Htrade:4036:0:0:0380000003FFE6F1://///////////////////////////////////////////////////////|h[Engineering]|h|r",
+						["rank"] = 525,
+					},
+					["Leatherworking"] = {
+						["rankmax"] = 525,
+						["link"] = "|cffffd000|Htrade:2108:0:0:0380000003FFE6F1://////////////////////////////////////////////////////////////////////////////////////////////////////////|h[Leatherworking]|h|r",
+						["rank"] = 525,
+					},
+					["Jewelcrafting"] = {
+						["rankmax"] = 525,
+						["link"] = "|cffffd000|Htrade:25229:0:0:0380000003FFE6F1://///////////////////////////////////////////////////////////////////////////////////////////////////////////////|h[Jewelcrafting]|h|r",
+						["rank"] = 525,
+					},
+					["Enchanting"] = {
+						["rankmax"] = 525,
+						["link"] = "|cffffd000|Htrade:7411:0:0:0380000003FFE6F1://///////////////////////////////////////////////////////////|h[Enchanting]|h|r",
+						["rank"] = 525,
+					},
+				},
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Dathsar - Khaz Modan"] = "Dathsar - Khaz Modan",
+	},
+	["profiles"] = {
+		["Dathsar - Khaz Modan"] = {
+			["treepath"] = {
+				"Dathsar", -- [1]
+				"First Aid", -- [2]
+			},
+			["ldbprof"] = "First Aid",
+			["vermin"] = 3,
+			["vermaj"] = 1,
+			["treestatus"] = {
+				["groups"] = {
+					["All RecipesInscription"] = true,
+					["Dathsar"] = true,
+					["All Recipes"] = true,
+				},
+				["scrollvalue"] = 4,
+				["selected"] = "DathsarFirst Aid",
+				["treesizable"] = true,
+				["fullwidth"] = 475.9999395012865,
+			},
+		},
+	},
+}
