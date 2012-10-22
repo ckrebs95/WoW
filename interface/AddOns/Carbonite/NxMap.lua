@@ -1,4 +1,4 @@
----------------------------------------------------------------------------------------
+﻿---------------------------------------------------------------------------------------
 -- NxMap - Map code
 -- Copyright 2007-2012 Carbon Based Creations, LLC
 ---------------------------------------------------------------------------------------
@@ -72,7 +72,18 @@ NxMapOptsDefaults = {
 				NXPlyrFollow = false,
 				NXWorldShow = false,
 			},
-
+			[9012] = {	-- TK
+				NXPlyrFollow = false,
+				NXWorldShow = false,
+			},
+			[9013] = {	-- SM
+				NXPlyrFollow = false,
+				NXWorldShow = false,
+			},
+			[9014] = {	-- TPG
+				NXPlyrFollow = false,
+				NXWorldShow = false,
+			},
 			NXAutoScaleOn = true,
 
 			NXKillShow = false,
@@ -87,6 +98,9 @@ NxMapOptsDefaults = {
 			NXBackgndAlphaFade = .4,
 			NXBackgndAlphaFull = 1,
 
+			NXArchAlpha = .3,
+			NXQuestAlpha = .3,
+			
 			NXAutoScaleMin = .01,
 			NXAutoScaleMax = 4,
 			NXDotZoneScale = 1,
@@ -101,11 +115,11 @@ NxMapOptsDefaults = {
 
 			NXShowUnexplored = false,
 			NXUnexploredAlpha = .35,
-
+			
 			-- OLD
 			NXOverlayAlpha = nil,
 			NXMiniAlpha = nil,
-			NXMiniShow = nil,
+			NXMiniShow = nil,			
 		}
 	}
 }
@@ -206,6 +220,10 @@ function Nx.Map:Init()
 		tom["SetCustomMFWaypoint"] = Nx.TTSetCustomMFWaypoint
 		tom["RemoveWaypoint"] = Nx.TTRemoveWaypoint
 		tom["SetCrazyArrow"] = Nx.TTSetCrazyArrow
+		SLASH_WAY1 = '/way'
+		SlashCmdList["WAY"] = function (msg, editbox)
+			Nx:TTWayCmd(msg)
+		end
 	end
 
 	if gopts["EmuCartWP"] and not Cartographer then
@@ -266,8 +284,8 @@ function Nx.Map:Open()
 
 	local opts = NxMapOpts.NXMaps[1]
 
-	for k, v in pairs (NxMapOptsDefaults.NXMaps[1]) do
-		if opts[k] == nil then
+	for k, v in pairs (NxMapOptsDefaults.NXMaps[1]) do		
+		if opts[k] == nil then		    
 			opts[k] = v
 		end
 	end
@@ -334,9 +352,12 @@ function Nx.Map:UpdateOptions (index)
 	dst.NXShowUnexplored = src.ShowUnexplored
 	dst.NXKillShow = src.KillShow
 
-	dst.NXBackgndAlphaFade = src.BackgndAlphaFade
+	dst.NXBackgndAlphaFade = src.BackgndAlphaFade	
 	dst.NXBackgndAlphaFull = src.BackgndAlphaFull
 
+	dst.NXArchAlpha = src.ArchAlpha
+	dst.NXQuestAlpha = src.QuestAlpha
+	
 	dst.NXDotZoneScale = src.DotZoneScale
 	dst.NXDotPalScale = src.DotPalScale
 	dst.NXDotPartyScale = src.DotPartyScale
@@ -384,6 +405,7 @@ function Nx.Map:SwitchOptions (id, startup)
 			self.MapPosX = copts.NXMapPosX
 			self.MapPosY = copts.NXMapPosY
 			self.Scale = copts.NXScale
+			self.RealScale = self.Scale
 			self.StepTime = 1
 
 		elseif copts.NXPlyrFollow or Nx.InBG then
@@ -513,11 +535,13 @@ function Nx.Map:Create (index)
 	m.MMOwn = gopts["MapMMOwn"] and index == 1
 
 	m.ShowUnexplored = opts.NXShowUnexplored
+	
 	m.KillShow = opts.NXKillShow
 
 	m.TitleH = 0
 	m.PadX = 0
 	m.Scale = .025
+	m.RealScale = .025
 	m.ScaleDraw = .025									-- Actual draw scale
 	m.MapScale = opts.NXMapScale or 1
 	m.MapW = 150
@@ -551,6 +575,8 @@ function Nx.Map:Create (index)
 	m.MapsDrawnOrder = {}									-- [index (1st is newest)] = map id
 	m.MapsDrawnFade = {}										-- [map id] = fade
 	m.MiniBlks = gopts["MapDetailSize"]
+	m.ArchAlpha = opts.NXArchAlpha
+	m.QuestAlpha = opts.NXQuestAlpha
 	m.BackgndAlphaFade = opts.NXBackgndAlphaFade
 	m.BackgndAlphaFull = opts.NXBackgndAlphaFull
 	m.BackgndAlpha = 0									-- Current value
@@ -606,7 +632,7 @@ function Nx.Map:Create (index)
 		win:InitLayoutData (tostring (n), -.0001, -.4, -.19, -.3, 1)
 	end
 
-	for n = 9008, 9011 do
+	for n = 9008, 9013 do
 		win:InitLayoutData (tostring (n), -.0001, -.4, -.19, -.3, 1)
 	end
 
@@ -663,7 +689,6 @@ function Nx.Map:Create (index)
 
 	local tf = CreateFrame ("Frame", nil, tsf)
 	m.TextFrm = tf
-
 	tf:SetPoint ("TOPLEFT", 0, 0)
 	tf:SetWidth (100)
 	tf:SetHeight (100)
@@ -789,7 +814,12 @@ function Nx.Map:Create (index)
 	local item = showMenu:AddItem (0, "Show Punks")
 	item:SetChecked (gopts, "MapShowPunks")
 
+	local item = showMenu:AddItem(0, "Show Archaeology Blobs", func, m)
+	item:SetChecked (Nx.CharOpts, "MapShowArchBlobs")
 
+	local item = showMenu:AddItem(0, "Show Quest Blobs", func, m)
+	item:SetChecked (Nx.CharOpts, "MapShowQuestBlobs")
+	
 	local function func (self, item)
 		self.ShowUnexplored = item:GetChecked()
 	end
@@ -947,7 +977,13 @@ function Nx.Map:Create (index)
 
 	local item = tmenu:AddItem (0, "Unexplored Transparency", func, m)
 	item:SetSlider (opts.NXUnexploredAlpha, 0, .9)
+	
+	local item = tmenu:AddItem(0, "Archaeology Blob Transparency",self.Menu_OnArchAlpha, m)
+	item:SetSlider (m.ArchAlpha,0,1)
 
+	local item = tmenu:AddItem(0, "Quest Blob Transparency",self.Menu_OnQuestAlpha, m)
+	item:SetSlider (m.QuestAlpha,0,1)	
+	
 	-- Options menu
 
 	local item = menu:AddItem (0, "Options...", self.Menu_OnOptions, m)
@@ -1091,7 +1127,28 @@ function Nx.Map:Create (index)
 --]]
 
 	--
-
+	local questwin = CreateFrame("QuestPOIFrame")
+	m.QuestWin = questwin
+	m.QuestWin:SetParent(m.TextScFrm:GetScrollChild())
+	m.QuestWin:Hide()
+	m.QuestWin:SetSize(WorldMapButton:GetSize())
+	m.QuestWin:SetFillAlpha(255 * m.QuestAlpha)
+	m.QuestWin:SetBorderAlpha(255 * m.QuestAlpha)
+	m.QuestWin:SetFillTexture([[Interface\WorldMap\UI-QuestBlob-Inside]])
+	m.QuestWin:SetBorderTexture([[Interface\WorldMap\UI-QuestBlob-Outside]])
+	m.QuestWin:SetBorderScalar(0.15)
+	
+	local arch = CreateFrame("ArchaeologyDigSiteFrame")
+	m.Arch = arch
+    m.Arch:SetParent(m.TextScFrm:GetScrollChild())		
+    m.Arch:Hide()
+	m.Arch:SetSize(WorldMapButton:GetSize())
+	m.Arch:SetFillAlpha(255 * m.ArchAlpha)
+	m.Arch:SetBorderAlpha(255 * m.ArchAlpha )
+	m.Arch:SetFillTexture( [[Interface\WorldMap\UI-ArchaeologyBlob-Inside]] )
+	m.Arch:SetBorderTexture( [[Interface\WorldMap\UI-ArchaeologyBlob-Outside]] )
+	m.Arch:SetBorderScalar( 0.15 )
+	
 	self.RMapId = 9000		-- Safe default
 
 	m:SwitchOptions (-1, true)
@@ -1447,7 +1504,6 @@ function Nx.Map:UpdateWorldMap()
 
 			self:ClipZoneFrm (self.Cont, self.Zone, f, 1)
 			f:SetFrameLevel (self.Level)
-
 			if self.WorldMapFrmMapId ~= self.MapId then
 
 --				Nx.prt ("mapid %s", self.MapId)
@@ -1463,6 +1519,19 @@ function Nx.Map:UpdateWorldMap()
 		for k, f in ipairs (_G["MAP_VEHICLES"]) do
 			f:SetScale (.001)
 		end
+	end
+	self.Arch:DrawNone();
+	if Nx.CharOpts["MapShowArchBlobs"] then
+		for i = 1, ArchaeologyMapUpdateAll() do
+			self.Arch:DrawBlob(ArcheologyGetVisibleBlobID(i), true)	  
+		end
+		self:ClipZoneFrm( self.Cont, self.Zone, self.Arch, 1 )
+		self.Arch:SetFrameLevel(self.Level)		
+		self.Arch:SetFillAlpha(255 * self.ArchAlpha)
+		self.Arch:SetBorderAlpha( 255 * self.ArchAlpha )		
+		self.Arch:Show()
+	else
+		self.Arch:Hide()
 	end
 end
 
@@ -2579,7 +2648,7 @@ function Nx.Map:MinimapUpdate()
 			Nx.Menu:CheckUpdate(self.MMMenuIFull)	    	  
 		end
 		if zoomType == 0 then
-			al = lOpts.NXMMDockAlpha
+			al = 1
 		end
 
 		if IsControlKeyDown() then
@@ -2982,6 +3051,7 @@ function Nx.Map:Menu_OnScaleRestore()
 	local s = self.CurOpts.NXScaleSave
 	if s then
 		self.Scale = s
+		self.RealScale = s
 		self.StepTime = 10
 	else
 		Nx.prt ("Scale not set")
@@ -3015,6 +3085,14 @@ end
 
 function Nx.Map:Menu_OnBackgndAlphaFade (item)
 	self.BackgndAlphaFade = item:GetSlider()
+end
+
+function Nx.Map:Menu_OnArchAlpha (item)
+	self.ArchAlpha = item:GetSlider()
+end
+
+function Nx.Map:Menu_OnQuestAlpha (item)
+	self.QuestAlpha = item:GetSlider()
 end
 
 function Nx.Map:Menu_OnBackgndAlphaFull (item)
@@ -3911,14 +3989,17 @@ function Nx.Map:MouseWheel (value)
 
 	map.Scale = map:ScrollScale (value)
 	map.StepTime = 10
-
+	if map:IsInstanceMap(map:GetRealMapId()) then
+	else
+	  map.RealScale = map.Scale
+	end
 	map.MapScale = map.Scale / 10.02
 
 	local nx = map.MapPosX + (x - left - map.PadX - map.MapW / 2) / map.Scale
 	local ny = map.MapPosY + (top - y - map.TitleH - map.MapH / 2) / map.Scale
 
 	map.MapPosX = map.MapPosX + ox - nx
-	map.MapPosY = map.MapPosY + oy - ny
+	map.MapPosY = map.MapPosY + oy - ny		
 end
 
 function Nx.Map:ScrollScale (value)
@@ -4116,17 +4197,19 @@ function Nx.Map.OnUpdate (this, elapsed)	--V4 this
 
 			map.BackgndAlphaTarget = map.BackgndAlphaFade
 
-			local rid = map:GetRealMapId()
+			local rid = map:GetRealMapId()			
 			if rid ~= 9000 and not WorldMapFrame:IsShown() then
 
 				local mapId = map:GetCurrentMapId()
-
-				if map:IsInstanceMap (rid) then
-
+				if map:IsInstanceMap (rid) then					
 					if not Nx.Map.InstanceInfo[rid] then		-- Don't convert WotLK/Cata instances
 						rid = Nx.Map.MapWorldInfo[rid].EntryMId
 					end
-
+					if map:IsInstanceMap(rid) then
+					  map.Scale = 120
+					else
+					  map.Scale = map.RealScale
+					end
 					local lvl = GetCurrentMapDungeonLevel()
 					if lvl ~= map.InstLevelSet then
 						mapId = 0	-- Force set
@@ -4135,8 +4218,7 @@ function Nx.Map.OnUpdate (this, elapsed)	--V4 this
 				end
 
 				if mapId ~= rid then
-
-					if map:IsBattleGroundMap (rid) then
+					if map:IsBattleGroundMap (rid) then						
 						SetMapToCurrentZone()
 					else
 						map:SetCurrentMap (rid)
@@ -4213,7 +4295,7 @@ function Nx.Map.OnUpdate (this, elapsed)	--V4 this
 		end
 		map.Win:SetTitle (format ("%s %s", s, cursorLocXY), 2)
 	end
-
+	
 	Nx.Timer:ProfilerEnd ("Map OnUpdate")
 end
 
@@ -4319,11 +4401,11 @@ function Nx.Map:UpdateWorld()
 	if not winfo.NoBackground then
 
 		local name = winfo.MapBaseName or mapFileName
-
+		
 		for i = 1, 12 do
 			self.TileFrms[i].texture:SetTexture ("Interface\\WorldMap\\" .. mapFileName .. "\\" .. name .. i)
 		end
-	end
+	end	
 end
 
 --------
@@ -4484,6 +4566,7 @@ function Nx.Map:Update (elapsed)
 			self:SwitchOptions (rid)
 			self:SwitchRealMap (rid)
 		end
+		self.Scale = self.RealScale
 	end
 
 	local plZX, plZY = GetPlayerMapPosition ("player")
@@ -4524,7 +4607,6 @@ function Nx.Map:Update (elapsed)
 --		self.InstanceLevel = GetCurrentMapDungeonLevel()
 
 		self.PlyrSpeed = 0
-
 	elseif plZX > 0 or plZY > 0 then	-- Update world position of player if we can get it
 
 		plZX = plZX * 100
@@ -5161,8 +5243,7 @@ end
 -- Switch to a new map
 -- self = map
 
-function Nx.Map:SwitchRealMap (id)
-
+function Nx.Map:SwitchRealMap (id)	
 	if self:IsInstanceMap (id) then
 		self:SetInstanceMap (id)			-- Turn it on
 	else
@@ -5173,6 +5254,13 @@ function Nx.Map:SwitchRealMap (id)
 		self.LOpts.NXMMFull = false
 		if self:IsInstanceMap (id) then
 			self.LOpts.NXMMFull = true
+		end
+	else
+		if self:IsInstanceMap(id) then		
+			s = self.Scale
+			self.Scale = 120.0
+		else
+			self.Scale = self.RealScale
 		end
 	end
 end
@@ -7473,7 +7561,7 @@ function Nx.Map:ClipZoneFrm (cont, zone, frm, alpha)
 			vy1 = vy1 / sc
 			frm:SetPoint ("TOPLEFT", vx1, -vy1 - self.TitleH)
 			frm:SetScale (sc)
-			frm:SetFrameLevel (level)
+--			frm:SetFrameLevel (level)
 
 			frm:Show()
 
@@ -8745,7 +8833,7 @@ function Nx.Map:InitTables()
 			self.MapWorldInfo[mid] = winfo
 		end
 	end
-	Nx.prt("debug: ")
+--	Nx.prt("debug: ")
 	-- Init NxzoneToMapId, MapIdToNxzone
 
 	for id, v in ipairs (Nx.Zones) do
@@ -8994,8 +9082,8 @@ function Nx.Map:GetRealMapId()
 
 --	Nx.prtCtrl ("RealMId %s %s #%s", GetRealZoneText(), GetSubZoneText(), GetCurrentMapDungeonLevel())
 
-	local zName = GetRealZoneText()
-	local mapId = Nx.MapNameToId[zName] or 9000
+	local zName = GetRealZoneText()	
+	local mapId = Nx.MapNameToId[zName] or 9000	
 	local name, instanceType, difficultyIndex, difficultyName, maxPlayers, dynamicDifficulty, isDynamic, mapID = GetInstanceInfo()
 	if (difficultyIndex == 1) then      
 		local aid=GetCurrentMapAreaID()
@@ -9850,6 +9938,11 @@ function Nx:TTAddWaypoint (zx, zy, name)
 	map:ChangeTargetOrder (-1, 1)
 
 	return tar.UniqueId
+end
+
+function Nx:TTWayCmd(msg,editbox)
+	local map = Nx.Map:GetMap(1)
+	map:SetTargetAtStr (msg, true)
 end
 
 --------

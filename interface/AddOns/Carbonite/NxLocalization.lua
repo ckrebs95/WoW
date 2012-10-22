@@ -1,4 +1,4 @@
--- Carbonite Localization File
+﻿-- Carbonite Localization File
 
 BINDING_HEADER_Nx						= "Carbonite"
 

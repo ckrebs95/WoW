@@ -1,4 +1,4 @@
----------------------------------------------------------------------------------------
+﻿---------------------------------------------------------------------------------------
 -- Carbonite - Addon for World of Warcraft(tm)
 -- Copyright 2007-2012 Carbon Based Creations, LLC
 --
@@ -26,7 +26,7 @@ function NXInit()
 
 	NXTITLEFULL = NXTITLE
 
-	Nx.VERMAJOR			= 5.053
+	Nx.VERMAJOR			= 5.054
 	Nx.VERMINOR			= .000			-- Not 0 is a test version
 	Nx.BUILD				= 292
 
@@ -376,8 +376,7 @@ end
 function Nx:NXOnLoad (frm)
 
 	SlashCmdList["Carbonite"] = Nx.slashCommand
-	SLASH_Carbonite1 = "/Carb"
-	SLASH_Carbonite2 = "/Nx"
+	SLASH_Carbonite1 = "/Carb"	
 
 	self.Frm = frm		--V4 this
 	self.TimeLast = 0

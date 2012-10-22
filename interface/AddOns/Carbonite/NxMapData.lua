@@ -1,4 +1,4 @@
----------------------------------------------------------------------------------------
+﻿---------------------------------------------------------------------------------------
 -- NxMapData - Map code
 -- Copyright 2007-2012 Carbon Based Creations, LLC
 ---------------------------------------------------------------------------------------
@@ -1740,6 +1740,7 @@ Map.MapWorldInfo = {
 		5.341666015625,
 		-16000,-6000,
 		Overlay = "thewanderingisle",
+		StartZone = true,
 	},
 	[9000] = {
 		1,				-- Scale
@@ -1814,7 +1815,25 @@ Map.MapWorldInfo = {
 		-14500,3000,
 		Short = "TP",
 	},
-
+    [9012] = {
+		Name = "Temple of Kotmogu",
+		3.0,
+		-14500,4000,
+		Short = "TK",
+	},
+	[9013] = {
+		Name = "Silvershard Mines",
+		8.0,
+		-14500,5000,
+		Short = "SSM",
+		MapBaseName = "STVDiamondMineBG1_",
+	},	
+	[9014] = {
+		Name = "Tol'vir Proving Grounds",
+		3.0,
+		-14500,6000,
+		Short = "TPG",
+	},
 	-- Instances are created at 11000-14999 (cont * 1000 + 10000 + nxid)
 	-- Manual adjustments are added here
 
@@ -2221,11 +2240,11 @@ Map.InstanceInfo = {			-- Blizzard instance maps (SetInstanceMap uses size of 3 
 	[14156] = { 0, 0,			"HallsofReflection\\HallsofReflection1_", },
 	[14159] = { 0, 0,			"VaultofArchavon\\VaultofArchavon1_", },
 	[16226] = { 0, 0,			"TheGreatWall\\theGreatWall1_",
-					0, -100,	"TheGreatWall\TheGreatWall2_", },
+					0, -100,	"TheGreatWall\\TheGreatWall2_", },
 	[16227] = { 0, 0,			"MogushanPalace\\MogushanPalace1_",
 					0, -100,	"MogushanPalace\\MogushanPalace2_",
 					0, -200,	"MogushanPalace\\MogushanPalace3_", },
-	[16228] = { 0, 0,			"ShadowpanHideout\\ShadowpanHideout_",
+	[16228] = { 0, 0,			"ShadowpanHideout\\ShadowpanHideout",
 					0, -100,	"ShadowpanHideout\\ShadowpanHideout1_",
 					0, -200,	"ShadowpanHideout\\ShadowpanHideout2_",
 					0, -300,	"ShadowpanHideout\\ShadowpanHideout3_", },

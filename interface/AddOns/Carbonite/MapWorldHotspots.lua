@@ -1,4 +1,4 @@
-Nx.MapWorldHotspots = {
+﻿Nx.MapWorldHotspots = {
 }
 
 Nx.MapWorldHotspots2 = {

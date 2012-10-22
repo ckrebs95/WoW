@@ -1,4 +1,4 @@
----------------------------------------------------------------------------------------
+﻿---------------------------------------------------------------------------------------
 -- NxQuest - Quest stuff
 -- Copyright 2007-2012 Carbon Based Creations, LLC
 ---------------------------------------------------------------------------------------
@@ -1189,8 +1189,8 @@ function Nx.Quest.GetQuestReward (choice, ...)
 --	Nx.prt ("GetQuestReward %s", choice or "nil")
 
 	local q = Nx.Quest
-	q:FinishQuest()
-	q.BlizzGetQuestReward (choice, ...)
+	q:FinishQuest()	
+    q.BlizzGetQuestReward (choice, ...)	
 end
 
 function Nx.Quest:FinishQuest()
@@ -7875,7 +7875,7 @@ function Nx.Quest:TrackOnMap (qId, qObj, useEnd, target, skipSame)
 	local BlizIndex = nil    
 	local quest = Quest.IdToQuest[qId]
 	
-	if self.GOpts["QSync"] then		
+--[[	if self.GOpts["QSync"] then		
 		local i = 1
 		while GetQuestLogTitle(i) do
 			local _, _, _, _, _, _, _, _, questID = GetQuestLogTitle(i)
@@ -7889,6 +7889,7 @@ function Nx.Quest:TrackOnMap (qId, qObj, useEnd, target, skipSame)
 		i = i + 1
 		end	
 	end
+]]--
 	if quest then
 
 		local tbits = Quest.Tracking[qId] or 0
@@ -7922,11 +7923,27 @@ function Nx.Quest:TrackOnMap (qId, qObj, useEnd, target, skipSame)
 --		Nx.prt ("TrackOnMap %s %s %s %s %s", qId, qObj, track, name, zone)
 
 		if track > 0 and zone then
-			if self.GOpts["QSync"] then
-				if not (IsQuestWatched(BlizIndex)) then
-					AddQuestWatch(BlizIndex)
-				end	
+--[[			if self.GOpts["QSync"] then
+				if BlizIndex then
+					if not (IsQuestWatched(BlizIndex)) then
+						AddQuestWatch(BlizIndex)
+					end	
+				end
 			end
+]]--
+	local QMap = NxMap1.NxMap
+	QMap.QuestWin:DrawNone();
+	if Nx.CharOpts["MapShowQuestBlobs"] then
+		QMap.QuestWin:DrawBlob(qId,true)
+		QMap:ClipZoneFrm( QMap.Cont, QMap.Zone, QMap.QuestWin, 1 )
+		QMap.QuestWin:SetFrameLevel(QMap.Level)		
+		QMap.QuestWin:SetFillAlpha(255 * QMap.QuestAlpha)
+		QMap.QuestWin:SetBorderAlpha( 255 * QMap.QuestAlpha )		
+		QMap.QuestWin:Show()		
+	else
+		QMap.QuestWin:Hide()
+	end
+	
 			local mId = Map.NxzoneToMapId[zone]
 			if mId then
 
