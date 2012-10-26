@@ -227,7 +227,7 @@ RecountDB = {
 					false, -- [8]
 				},
 			},
-			["CurDataSet"] = "LastFightData",
+			["CurDataSet"] = "CurrentFightData",
 			["MainWindowMode"] = 2,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 397.0000017136335,

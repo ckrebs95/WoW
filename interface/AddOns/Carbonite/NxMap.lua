@@ -656,7 +656,8 @@ function Nx.Map:Create (index)
 --	win:RegisterEvent ("PLAYER_LOGIN", self.OnEvent)
 --	win:RegisterEvent ("PLAYER_ENTERING_WORLD", self.OnEvent)
 	win:RegisterEvent ("WORLD_MAP_UPDATE", self.OnEvent)
-
+	win:RegisterEvent ("PLAYER_REGEN_DISABLED", self.OnEvent)
+	win:RegisterEvent ("PLAYER_REGEN_ENABLED", self.OnEvent)
 	f:SetScript ("OnMouseDown", self.OnMouseDown)
 	f:SetScript ("OnMouseUp", self.OnMouseUp)
 	f:SetScript ("OnMouseWheel", self.OnMouseWheel)
@@ -1520,18 +1521,20 @@ function Nx.Map:UpdateWorldMap()
 			f:SetScale (.001)
 		end
 	end
-	self.Arch:DrawNone();
-	if Nx.CharOpts["MapShowArchBlobs"] then
-		for i = 1, ArchaeologyMapUpdateAll() do
-			self.Arch:DrawBlob(ArcheologyGetVisibleBlobID(i), true)	  
+	if not InCombatLockdown() then	
+		self.Arch:DrawNone();
+		if Nx.CharOpts["MapShowArchBlobs"] then
+			for i = 1, ArchaeologyMapUpdateAll() do
+				self.Arch:DrawBlob(ArcheologyGetVisibleBlobID(i), true)	  
+			end
+			self:ClipZoneFrm( self.Cont, self.Zone, self.Arch, 1 )
+			self.Arch:SetFrameLevel(self.Level)		
+			self.Arch:SetFillAlpha(255 * self.ArchAlpha)
+			self.Arch:SetBorderAlpha( 255 * self.ArchAlpha )		
+			self.Arch:Show()
+		else
+			self.Arch:Hide()
 		end
-		self:ClipZoneFrm( self.Cont, self.Zone, self.Arch, 1 )
-		self.Arch:SetFrameLevel(self.Level)		
-		self.Arch:SetFillAlpha(255 * self.ArchAlpha)
-		self.Arch:SetBorderAlpha( 255 * self.ArchAlpha )		
-		self.Arch:Show()
-	else
-		self.Arch:Hide()
 	end
 end
 
@@ -2210,7 +2213,7 @@ function Nx.Map:MinimapOwnInit()
 	-- Reset since this seems to be getting remembered
 	mm:SetMaskTexture ("textures\\MinimapMask")
 
---	self:MinimapNodeGlowInit()
+	self:MinimapNodeGlowInit()
 
 	-- Commom data for map and dock
 
@@ -3776,28 +3779,18 @@ function Nx.Map:OnEvent (event, ...)
 		if this:IsVisible() then
 			this.NxMap:UpdateAll()
 		end
-
---	elseif event == "MINIMAP_UPDATE_ZOOM" then		-- Seems useless
---		Nx.prt ("Z %s", GetCVar ("minimapZoom") or "nil")
---		Nx.prt ("IZ %s", GetCVar ("minimapInsideZoom") or "nil")
-
---[[
-	elseif event == "PLAYER_ENTERING_WORLD" then
-
-		local map = this.NxMap
-
---		if not map.RMapId then
-
-			local rid = map:GetRealMapId()
---			map.RMapId = rid
-
-			Nx.prt ("PLAYER_ENTERING_WORLD rid %s", rid)
-
-			map.CurOpts = nil
-			map:SwitchOptions (rid)
-			map:SwitchRealMap (rid)
---		end
---]]
+	elseif event == "PLAYER_REGEN_DISABLED" then
+	  self.Arch:Hide()
+	  self.QuestWin:Hide()
+	  self.Arch:SetParent(nil)
+	  self.QuestWin:SetParent(nil)
+	  self.Arch:ClearAllPoints()
+	  self.QuestWin:ClearAllPoints()
+	elseif event == "PLAYER_REGEN_ENABLED" then
+	  self.Arch:SetParent(this.NxMap.TextScFrm:GetScrollChild())
+	  self.QuestWin:SetParent(this.NxMap.TextScFrm:GetScrollChild())
+	  self.Arch:Show()
+	  self.QuestWin:Hide()
 	end
 end
 

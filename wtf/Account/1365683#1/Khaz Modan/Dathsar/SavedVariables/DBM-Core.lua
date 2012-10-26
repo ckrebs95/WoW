@@ -107,7 +107,7 @@ DBM_SavedOptions = {
 	["HPFrameX"] = 19.99998062849074,
 	["RangeFrameSound1"] = "none",
 	["SpamBlockBossWhispers"] = false,
-	["LastRevision"] = 7846,
+	["LastRevision"] = 7956,
 	["DisableCinematicsOutside"] = false,
 }
 DBT_SavedOptions = {

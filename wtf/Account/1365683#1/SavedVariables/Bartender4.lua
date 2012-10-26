@@ -1680,7 +1680,9 @@ Bartender4DB = {
 						["parent"] = "SUI_ActionBarPlate",
 						["y"] = 167.9564049869303,
 					},
+					["padding"] = 1,
 					["rows"] = 2,
+					["version"] = 3,
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -1692,8 +1694,6 @@ Bartender4DB = {
 							["scale"] = 0.85,
 						},
 					},
-					["version"] = 3,
-					["padding"] = 1,
 				},
 				["Doyjen - Khaz Modan"] = {
 					["padding"] = 1,
