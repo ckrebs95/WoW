@@ -1857,17 +1857,17 @@ Bartender4DB = {
 					},
 				},
 				["Darvina - Khaz Modan"] = {
+					["skin"] = {
+						["Zoom"] = true,
+					},
+					["padding"] = 1,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 167.7500022729591,
 						["x"] = -352.588480453774,
 						["point"] = "BOTTOM",
 						["scale"] = 0.699999988079071,
 						["parent"] = "SUI_ActionBarPlate",
-					},
-					["padding"] = 1,
-					["version"] = 3,
-					["skin"] = {
-						["Zoom"] = true,
 					},
 				},
 				["Deyndis - Khaz Modan"] = {
@@ -1887,16 +1887,16 @@ Bartender4DB = {
 					},
 				},
 				["Dathsar - Khaz Modan"] = {
-					["skin"] = {
-						["Zoom"] = true,
-					},
-					["version"] = 3,
 					["position"] = {
 						["y"] = 2.450006951711885,
 						["x"] = 83.06155797855473,
 						["point"] = "TOPLEFT",
 						["scale"] = 0.699999988079071,
 						["parent"] = "SUI_ActionBarPlate",
+					},
+					["version"] = 3,
+					["skin"] = {
+						["Zoom"] = true,
 					},
 					["padding"] = 1,
 				},
@@ -1915,7 +1915,6 @@ Bartender4DB = {
 					["skin"] = {
 						["Zoom"] = true,
 					},
-					["padding"] = 1,
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -1927,6 +1926,7 @@ Bartender4DB = {
 							["scale"] = 0.85,
 						},
 					},
+					["padding"] = 1,
 					["position"] = {
 						["y"] = 165.8584581739824,
 						["x"] = -353.4855819449167,
@@ -1951,7 +1951,6 @@ Bartender4DB = {
 					["skin"] = {
 						["Zoom"] = true,
 					},
-					["padding"] = 1,
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -1963,6 +1962,7 @@ Bartender4DB = {
 							["scale"] = 0.85,
 						},
 					},
+					["padding"] = 1,
 					["position"] = {
 						["y"] = 167.7500022729591,
 						["x"] = -352.588480453774,

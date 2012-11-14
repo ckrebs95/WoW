@@ -43,6 +43,7 @@ function Nx.Warehouse:Init()
 		["Warlock"] = "Spell_Nature_FaerieFire",
 		["Warrior"] = "INV_Sword_27",
 		["Death Knight"] = "Spell_Deathknight_ClassIcon",
+		["Monk"] = "class_monk",
 	}
 
 	self.InvNames = {
@@ -1128,7 +1129,7 @@ function Nx.Warehouse:FindCharsWithItem (link)
 --	local tm = GetTime()
 
 	local s1, s2, link = strfind (link, "item:(%d+)")
-	assert (s1)
+--  assert (s1)
 
 --	Nx.prt ("Find Link %s", link)
 

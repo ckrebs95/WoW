@@ -2248,7 +2248,7 @@ Map.InstanceInfo = {			-- Blizzard instance maps (SetInstanceMap uses size of 3 
 					0, -100,	"ShadowpanHideout\\ShadowpanHideout1_",
 					0, -200,	"ShadowpanHideout\\ShadowpanHideout2_",
 					0, -300,	"ShadowpanHideout\\ShadowpanHideout3_", },
-	[16229] = { 0, 0,			"Siegeofniuzaotemple\\Siegeofniuzaotemple_",
+	[16229] = { 0, 0,			"Siegeofniuzaotemple\\SiegeofNiuzaoTemple",
 					0, -100,	"SiegeofNiuzaoTemple\\SiegeofNiuzaoTemple1_",
 					0, -200,	"SiegeofNiuzaoTemple\\SiegeofNiuzaoTemple2_", },
 	[16230] = { 0, 0,			"StormstoutBrewery\\StormstoutBrewery1_",

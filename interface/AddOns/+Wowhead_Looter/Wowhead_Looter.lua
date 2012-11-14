@@ -3,8 +3,8 @@
 --     W o w h e a d   L o o t e r     --
 --                                     --
 --                                     --
---    Patch: 5.0.4                     --
---    Updated: September 6, 2012       --
+--    Patch: 5.0.5                     --
+--    Updated: October 13, 2012        --
 --    E-mail: feedback@wowhead.com     --
 --                                     --
 -----------------------------------------
@@ -12,7 +12,7 @@
 
 local WL_NAME = "|cffffff7fWowhead Looter|r";
 local WL_VERSION = 50006;
-local WL_VERSION_PATCH = 0;
+local WL_VERSION_PATCH = 3;
 
 
 -- SavedVariables
@@ -79,7 +79,7 @@ local WL_CURRENCIES = {
 local VALOR_TIER1_LFG_ID = 301;
 -- Random Dungeon IDs extracted from LFGDungeons.dbc
 local WL_AREAID_TO_DUNGEONID = {
-	[1] = {
+	[2] = {
 		-- Random Cata Normal : 300
 		[769] = 300, -- Vortex Pinnacle
 		[768] = 300, -- The Stonecore
@@ -102,7 +102,7 @@ local WL_AREAID_TO_DUNGEONID = {
 		[536] = 261, -- Violet Hold
 		[520] = 261, -- The Nexus
 	},
-	[2] = {
+	[3] = {
 		-- Random Zandalari Heroic: 341
 		[793] = 301, -- ZG
 		[781] = 301, -- ZA
@@ -1440,7 +1440,7 @@ end
 --**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--
 
 function wlGetInstanceDifficulty()
-	local _, instanceType, instanceDifficulty, _, _, dynamicDifficulty = GetInstanceInfo();
+	local _, instanceType, instanceDifficulty, _, maxPlayers, dynamicDifficulty = GetInstanceInfo();
 
 	if type(dynamicDifficulty) ~= "nil" and dynamicDifficulty == 1 then
 		if instanceDifficulty == 1 then
@@ -1450,11 +1450,11 @@ function wlGetInstanceDifficulty()
 		end
 	end
 
-	if instanceType == "party" then
+	if instanceType == "party"  or (instanceType == nil and maxPlayers == 3) then
 		return -instanceDifficulty;
 	elseif instanceType == "raid" then
 		if instanceDifficulty == 2 and IsPartyLFG() and IsInLFGDungeon() then
-			return 5; -- LFR 25
+			return 7; -- LFR 25
 		end
 		return instanceDifficulty;
 	else
@@ -2419,6 +2419,7 @@ end
 
 function wlScanGlyphs()
 	if not IsAddOnLoaded("Blizzard_GlyphUI") then
+		TalentFrame_LoadUI();
 		LoadAddOn("Blizzard_GlyphUI");
 	end
 

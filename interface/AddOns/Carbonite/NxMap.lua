@@ -218,6 +218,7 @@ function Nx.Map:Init()
 		tom["AddZWaypoint"] = Nx.TTAddZWaypoint
 		tom["SetCustomWaypoint"] = Nx.TTSetCustomWaypoint
 		tom["SetCustomMFWaypoint"] = Nx.TTSetCustomMFWaypoint
+		tom["AddMFWaypoint"] = Nx.TTSetCustomMFWaypoint
 		tom["RemoveWaypoint"] = Nx.TTRemoveWaypoint
 		tom["SetCrazyArrow"] = Nx.TTSetCrazyArrow
 		SLASH_WAY1 = '/way'
@@ -2485,7 +2486,7 @@ function Nx.Map:MinimapNodeGlowInit (reset)
 			t:SetTexture ("Interface\\AddOns\\Carbonite\\Gfx\\Map\\MMOIconsG")
 			t:Hide()
 		end
-
+		
 		Nx.Timer:Start ("MapNodeGlow", .1, self, self.OnMinimapNodeGlowTimer)
 	end
 end
@@ -2510,18 +2511,12 @@ end
 
 function Nx.Map:MinimapNodeGlowSet (letter)
 
-	local count = GetNumTrackingTypes()
+	local count = GetNumTrackingTypes()	
 	for n = 1, count do 
 		local name, texture, active, category = GetTrackingInfo (n)
 
 		if active and category == "spell" then
---			Nx.prt ("#%d %s %s %s %s", n, name, texture, active or "0", category or "nil")
-
---			if IsAltKeyDown() then
---				self.MMFrm:SetBlipTexture ("Interface\\Minimap\\objecticons")
 				self.MMFrm:SetBlipTexture ("Interface\\AddOns\\Carbonite\\Gfx\\Map\\MMOIcons" .. letter)
---			end
-
 			break
 		end
 	end

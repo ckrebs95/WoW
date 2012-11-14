@@ -32,10 +32,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["DetailWindowX"] = 0,
+			["MainWindowHeight"] = 113.9999372661123,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 268.0000646710386,
-			["MainWindowHeight"] = 113.9999372661123,
+			["DetailWindowX"] = 0,
 		},
 		["Darvina - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -137,10 +137,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["MainWindowHeight"] = 102.000015646219,
+			["DetailWindowX"] = 0,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 283.0000263005491,
-			["DetailWindowX"] = 0,
+			["MainWindowHeight"] = 102.000015646219,
 		},
 		["Doyjen - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -214,7 +214,7 @@ RecountDB = {
 			["DetailWindowY"] = -227.9999237060547,
 			["DetailWindowX"] = 563,
 			["HideCollect"] = true,
-			["LastInstanceName"] = "Scarlet Monastery of Old",
+			["LastInstanceName"] = "Mogu'shan Palace",
 			["RealtimeWindows"] = {
 				["Realtime_!RAID_DAMAGE"] = {
 					"!RAID", -- [1]
@@ -227,7 +227,7 @@ RecountDB = {
 					false, -- [8]
 				},
 			},
-			["CurDataSet"] = "CurrentFightData",
+			["CurDataSet"] = "LastFightData",
 			["MainWindowMode"] = 2,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 397.0000017136335,
