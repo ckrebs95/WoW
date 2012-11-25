@@ -14,7 +14,7 @@ Y: -27
 W: 124
 H: 19
 Frame: NxPunkHUD
-FrameLevel: 21
+FrameLevel: 15
 Anchor: TOPRIGHT
 X: -8
 Y: -45
@@ -24,7 +24,7 @@ Frame: DBMMinimapButton
 FrameLevel: 2
 Anchor: RIGHT
 X: -12
-Y: 276
+Y: 247
 W: 32
 H: 32
 Frame: Recount_MainWindow

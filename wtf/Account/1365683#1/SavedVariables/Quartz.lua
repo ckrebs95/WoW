@@ -18,14 +18,22 @@ Quartz3DB = {
 		},
 		["Mirror"] = {
 		},
-		["EnemyCasts"] = {
-		},
-		["Player"] = {
+		["Procs"] = {
 			["profiles"] = {
 				["Default"] = {
-					["x"] = 674.9999880790713,
+					["spells"] = {
+						["heroism"] = {
+							["sound"] = "None",
+						},
+						["bloodlust"] = {
+							["sound"] = "None",
+						},
+					},
+					["fixCustomProcCaps"] = false,
 				},
 			},
+		},
+		["EnemyCasts"] = {
 		},
 		["GCD"] = {
 		},
@@ -45,18 +53,10 @@ Quartz3DB = {
 		},
 		["Range"] = {
 		},
-		["Procs"] = {
+		["Player"] = {
 			["profiles"] = {
 				["Default"] = {
-					["spells"] = {
-						["heroism"] = {
-							["sound"] = "None",
-						},
-						["bloodlust"] = {
-							["sound"] = "None",
-						},
-					},
-					["fixCustomProcCaps"] = false,
+					["x"] = 674.9999880790713,
 				},
 			},
 		},

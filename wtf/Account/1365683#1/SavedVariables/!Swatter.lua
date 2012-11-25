@@ -5,66 +5,13 @@ SwatterData = {
 	["errors"] = {
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
-			["count"] = 19,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.3\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.4\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.041\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.0.7\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=832)\n",
-			["locals"] = "self = GlyphFrame {\n 0 = <userdata>\n glow = GlyphFrameGlow {\n }\n specRing = GlyphFrameSpecRing {\n }\n sideInset = GlyphFrameSideInset {\n }\n specIcon = GlyphFrameSpecIcon {\n }\n Glyph4 = GlyphFrameGlyph4 {\n }\n levelOverlayText2 = GlyphFrameLevelOverlayText2 {\n }\n background = GlyphFrameBackground {\n }\n Glyph1 = GlyphFrameGlyph1 {\n }\n scrollFrame = GlyphFrameScrollFrame {\n }\n clearInfo = GlyphFrameClearInfoFrame {\n }\n Glyph2 = GlyphFrameGlyph2 {\n }\n levelOverlay2 = GlyphFrameLevelOverlay2 {\n }\n levelOverlayText1 = GlyphFrameLevelOverlayText1 {\n }\n levelOverlay1 = GlyphFrameLevelOverlay1 {\n }\n Glyph5 = GlyphFrameGlyph5 {\n }\n Glyph6 = GlyphFrameGlyph6 {\n }\n Glyph3 = GlyphFrameGlyph3 {\n }\n}\nisActiveTalentGroup = nil\nname = \"Dust of Disappearance\"\ncount = 0\ntexture = \"Interface\\Icons\\achievement_zone_dustwallowmarsh\"\nspellID = 90647\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = false\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = GlyphFrameGlyph6Glyph {\n 0 = <userdata>\n}\n(*temporary) = true\n(*temporary) = 1\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'PlayerTalentFrame' (a nil value)\"\n",
-			["timestamp"] = "2012-09-18 05:13:21",
-			["context"] = "Global",
-			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [1]
-		{
-			["message"] = "Error: AddOn ProfessionsVault attempted to call a forbidden function (RemoveTalent()) from a tainted execution path.",
-			["count"] = 4,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.3\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucScanData, v5.14.5335 (KowariOnCrutches)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.4\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.041\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.0.7\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=85f)\n",
-			["timestamp"] = "2012-09-18 05:15:16",
-			["context"] = "AddOn: ProfessionsVault",
-			["stack"] = "[C]: in function `RemoveTalent'\n...rface\\AddOns\\Blizzard_TalentUI\\Blizzard_TalentUI.lua:56: in function `OnAccept'\nInterface\\FrameXML\\StaticPopup.lua:3827: in function `StaticPopup_OnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>\n",
-		}, -- [2]
-		{
-			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
-			["count"] = 1,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.3\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucScanData, v5.14.5335 (KowariOnCrutches)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.4\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.041\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.0.7\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=85f)\n",
-			["locals"] = "self = GlyphFrame {\n 0 = <userdata>\n glow = GlyphFrameGlow {\n }\n specRing = GlyphFrameSpecRing {\n }\n sideInset = GlyphFrameSideInset {\n }\n specIcon = GlyphFrameSpecIcon {\n }\n Glyph4 = GlyphFrameGlyph4 {\n }\n levelOverlayText2 = GlyphFrameLevelOverlayText2 {\n }\n background = GlyphFrameBackground {\n }\n Glyph1 = GlyphFrameGlyph1 {\n }\n scrollFrame = GlyphFrameScrollFrame {\n }\n clearInfo = GlyphFrameClearInfoFrame {\n }\n Glyph2 = GlyphFrameGlyph2 {\n }\n levelOverlay2 = GlyphFrameLevelOverlay2 {\n }\n levelOverlayText1 = GlyphFrameLevelOverlayText1 {\n }\n levelOverlay1 = GlyphFrameLevelOverlay1 {\n }\n Glyph5 = GlyphFrameGlyph5 {\n }\n Glyph6 = GlyphFrameGlyph6 {\n }\n Glyph3 = GlyphFrameGlyph3 {\n }\n}\nisActiveTalentGroup = nil\nname = \"Vanishing Powder\"\ncount = 0\ntexture = \"Interface\\Icons\\INV_Misc_Dust_02\"\nspellID = 89964\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = false\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = GlyphFrameGlyph6Glyph {\n 0 = <userdata>\n}\n(*temporary) = true\n(*temporary) = 1\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'PlayerTalentFrame' (a nil value)\"\n",
-			["timestamp"] = "2012-09-18 05:55:10",
-			["context"] = "Global",
-			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:93: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [3]
-		{
-			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
-			["count"] = 45,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.3\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucScanData, v5.14.5335 (KowariOnCrutches)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.4\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.041\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.0.7\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=85f)\n",
-			["locals"] = "self = GlyphFrame {\n 0 = <userdata>\n glow = GlyphFrameGlow {\n }\n specRing = GlyphFrameSpecRing {\n }\n sideInset = GlyphFrameSideInset {\n }\n specIcon = GlyphFrameSpecIcon {\n }\n Glyph4 = GlyphFrameGlyph4 {\n }\n levelOverlayText2 = GlyphFrameLevelOverlayText2 {\n }\n background = GlyphFrameBackground {\n }\n Glyph1 = GlyphFrameGlyph1 {\n }\n scrollFrame = GlyphFrameScrollFrame {\n }\n clearInfo = GlyphFrameClearInfoFrame {\n }\n Glyph2 = GlyphFrameGlyph2 {\n }\n levelOverlay2 = GlyphFrameLevelOverlay2 {\n }\n levelOverlayText1 = GlyphFrameLevelOverlayText1 {\n }\n levelOverlay1 = GlyphFrameLevelOverlay1 {\n }\n Glyph5 = GlyphFrameGlyph5 {\n }\n Glyph6 = GlyphFrameGlyph6 {\n }\n Glyph3 = GlyphFrameGlyph3 {\n }\n}\nisActiveTalentGroup = nil\nname = \"Vanishing Powder\"\ncount = 0\ntexture = \"Interface\\Icons\\INV_Misc_Dust_02\"\nspellID = 89964\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = false\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = GlyphFrameGlyph6Glyph {\n 0 = <userdata>\n}\n(*temporary) = true\n(*temporary) = 1\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'PlayerTalentFrame' (a nil value)\"\n",
-			["timestamp"] = "2012-09-19 05:21:32",
-			["context"] = "Global",
-			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [4]
-		{
-			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
-			["count"] = 56,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.3\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucScanData, v5.14.5335 (KowariOnCrutches)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.4\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.041\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.0.7\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=85f)\n",
-			["locals"] = "self = GlyphFrame {\n 0 = <userdata>\n glow = GlyphFrameGlow {\n }\n specRing = GlyphFrameSpecRing {\n }\n sideInset = GlyphFrameSideInset {\n }\n specIcon = GlyphFrameSpecIcon {\n }\n Glyph4 = GlyphFrameGlyph4 {\n }\n levelOverlayText2 = GlyphFrameLevelOverlayText2 {\n }\n background = GlyphFrameBackground {\n }\n Glyph1 = GlyphFrameGlyph1 {\n }\n scrollFrame = GlyphFrameScrollFrame {\n }\n clearInfo = GlyphFrameClearInfoFrame {\n }\n Glyph2 = GlyphFrameGlyph2 {\n }\n levelOverlay2 = GlyphFrameLevelOverlay2 {\n }\n levelOverlayText1 = GlyphFrameLevelOverlayText1 {\n }\n levelOverlay1 = GlyphFrameLevelOverlay1 {\n }\n Glyph5 = GlyphFrameGlyph5 {\n }\n Glyph6 = GlyphFrameGlyph6 {\n }\n Glyph3 = GlyphFrameGlyph3 {\n }\n}\nisActiveTalentGroup = nil\nname = \"Dust of Disappearance\"\ncount = 0\ntexture = \"Interface\\Icons\\achievement_zone_dustwallowmarsh\"\nspellID = 90647\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = false\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = GlyphFrameGlyph6Glyph {\n 0 = <userdata>\n}\n(*temporary) = true\n(*temporary) = 1\n(*temporary) = 53299\n(*temporary) = \"attempt to index global 'PlayerTalentFrame' (a nil value)\"\n",
-			["timestamp"] = "2012-09-19 20:44:35",
-			["context"] = "Global",
-			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [5]
-		{
-			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
-			["count"] = 61,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.3\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucScanData, v5.14.5335 (KowariOnCrutches)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.4\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.041\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.0.7\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=85f)\n",
-			["locals"] = "self = GlyphFrame {\n 0 = <userdata>\n glow = GlyphFrameGlow {\n }\n specRing = GlyphFrameSpecRing {\n }\n sideInset = GlyphFrameSideInset {\n }\n specIcon = GlyphFrameSpecIcon {\n }\n Glyph4 = GlyphFrameGlyph4 {\n }\n levelOverlayText2 = GlyphFrameLevelOverlayText2 {\n }\n background = GlyphFrameBackground {\n }\n Glyph1 = GlyphFrameGlyph1 {\n }\n scrollFrame = GlyphFrameScrollFrame {\n }\n clearInfo = GlyphFrameClearInfoFrame {\n }\n Glyph2 = GlyphFrameGlyph2 {\n }\n levelOverlay2 = GlyphFrameLevelOverlay2 {\n }\n levelOverlayText1 = GlyphFrameLevelOverlayText1 {\n }\n levelOverlay1 = GlyphFrameLevelOverlay1 {\n }\n Glyph5 = GlyphFrameGlyph5 {\n }\n Glyph6 = GlyphFrameGlyph6 {\n }\n Glyph3 = GlyphFrameGlyph3 {\n }\n}\nisActiveTalentGroup = nil\nname = \"Vanishing Powder\"\ncount = 0\ntexture = \"Interface\\Icons\\INV_Misc_Dust_02\"\nspellID = 89964\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = false\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = GlyphFrameGlyph6Glyph {\n 0 = <userdata>\n}\n(*temporary) = true\n(*temporary) = 1\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'PlayerTalentFrame' (a nil value)\"\n",
-			["timestamp"] = "2012-09-20 05:08:07",
-			["context"] = "Global",
-			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [6]
-		{
-			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 227,
 			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.3\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucScanData, v5.14.5335 (KowariOnCrutches)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.4\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.041\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.0.7\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=85f)\n",
 			["locals"] = "self = GlyphFrame {\n 0 = <userdata>\n glow = GlyphFrameGlow {\n }\n specRing = GlyphFrameSpecRing {\n }\n sideInset = GlyphFrameSideInset {\n }\n specIcon = GlyphFrameSpecIcon {\n }\n Glyph4 = GlyphFrameGlyph4 {\n }\n levelOverlayText2 = GlyphFrameLevelOverlayText2 {\n }\n background = GlyphFrameBackground {\n }\n Glyph1 = GlyphFrameGlyph1 {\n }\n scrollFrame = GlyphFrameScrollFrame {\n }\n clearInfo = GlyphFrameClearInfoFrame {\n }\n Glyph2 = GlyphFrameGlyph2 {\n }\n levelOverlay2 = GlyphFrameLevelOverlay2 {\n }\n levelOverlayText1 = GlyphFrameLevelOverlayText1 {\n }\n levelOverlay1 = GlyphFrameLevelOverlay1 {\n }\n Glyph5 = GlyphFrameGlyph5 {\n }\n Glyph6 = GlyphFrameGlyph6 {\n }\n Glyph3 = GlyphFrameGlyph3 {\n }\n}\nisActiveTalentGroup = nil\nname = \"Vanishing Powder\"\ncount = 0\ntexture = \"Interface\\Icons\\INV_Misc_Dust_02\"\nspellID = 89964\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = false\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = GlyphFrameGlyph6Glyph {\n 0 = <userdata>\n}\n(*temporary) = true\n(*temporary) = 1\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'PlayerTalentFrame' (a nil value)\"\n",
 			["timestamp"] = "2012-09-20 20:53:24",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [7]
+		}, -- [1]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 45,
@@ -73,7 +20,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-21 06:12:19",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [8]
+		}, -- [2]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 45,
@@ -82,7 +29,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-21 06:39:49",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [9]
+		}, -- [3]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 38,
@@ -91,7 +38,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-21 21:09:58",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [10]
+		}, -- [4]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 167,
@@ -100,7 +47,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-21 21:42:17",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [11]
+		}, -- [5]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 2,
@@ -108,7 +55,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-21 21:56:59",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:725: in function `BTWM'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1595: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [12]
+		}, -- [6]
 		{
 			["message"] = "Note: AddOn Stubby attempted to call a protected function (UNKNOWN()) during combat lockdown.",
 			["count"] = 8,
@@ -116,7 +63,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-21 23:44:43",
 			["context"] = "AddOn: Stubby",
 			["stack"] = "[C]: ?\n[C]: in function `pcall'\nInterface\\AddOns\\Stubby\\Stubby.lua:341: in function <Interface\\AddOns\\Stubby\\Stubby.lua:325>\n(tail call): ?\nInterface\\FrameXML\\ContainerFrame.lua:758: in function `ContainerFrameItemButton_OnClick'\nInterface\\FrameXML\\ContainerFrame.lua:662: in function `ContainerFrameItemButton_OnDrag'\n[string \"*:OnReceiveDrag\"]:1: in function <[string \"*:OnReceiveDrag\"]:1>\n",
-		}, -- [13]
+		}, -- [7]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 16,
@@ -125,7 +72,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-24 05:39:50",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [14]
+		}, -- [8]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 28,
@@ -134,7 +81,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-25 05:22:04",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [15]
+		}, -- [9]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 1,
@@ -142,7 +89,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-25 05:45:14",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:725: in function `BTWM'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1595: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [16]
+		}, -- [10]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 56,
@@ -151,7 +98,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-26 05:26:27",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [17]
+		}, -- [11]
 		{
 			["message"] = "Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: attempt to call method 'returnProcList' (a nil value)",
 			["count"] = 1,
@@ -159,7 +106,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-26 05:53:53",
 			["context"] = "Global",
 			["stack"] = "(tail call): ?\nInterface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: in function <Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:91>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:514: in function `InitializeAddon'\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:629: in function <...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:621>\n",
-		}, -- [18]
+		}, -- [12]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 28,
@@ -168,7 +115,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-27 20:41:14",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [19]
+		}, -- [13]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 4,
@@ -176,7 +123,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-27 20:45:13",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:725: in function `BTWM'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1595: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [20]
+		}, -- [14]
 		{
 			["message"] = "...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:1305: script ran too long",
 			["count"] = 1,
@@ -185,7 +132,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-28 05:12:24",
 			["context"] = "Global",
 			["stack"] = "[C]: in function `SetAction'\n...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:1305: in function `SetTooltip'\n...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:1116: in function <...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:1110>\n...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:517: in function <...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:515>\n",
-		}, -- [21]
+		}, -- [15]
 		{
 			["message"] = "Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: attempt to call method 'returnProcList' (a nil value)",
 			["count"] = 1,
@@ -193,7 +140,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-28 05:38:41",
 			["context"] = "Global",
 			["stack"] = "(tail call): ?\nInterface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: in function <Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:91>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:514: in function `InitializeAddon'\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:629: in function <...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:621>\n",
-		}, -- [22]
+		}, -- [16]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 3,
@@ -202,7 +149,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-28 05:41:05",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:93: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [23]
+		}, -- [17]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 86,
@@ -211,7 +158,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-28 20:55:18",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [24]
+		}, -- [18]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapDetailFrame:SetScale()) during combat lockdown.",
 			["count"] = 1,
@@ -219,7 +166,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-28 21:16:52",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `SetScale'\nInterface\\FrameXML\\WorldMapFrame.lua:1912: in function `WorldMapFrame_SetFullMapView'\nInterface\\FrameXML\\WorldMapFrame.lua:1869: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:725: in function `BTWM'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1595: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [25]
+		}, -- [19]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapDetailFrame:SetPoint()) during combat lockdown.",
 			["count"] = 1,
@@ -227,7 +174,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-28 21:16:52",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `SetPoint'\nInterface\\FrameXML\\WorldMapFrame.lua:1915: in function `WorldMapFrame_SetFullMapView'\nInterface\\FrameXML\\WorldMapFrame.lua:1869: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:725: in function `BTWM'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1595: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [26]
+		}, -- [20]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapBlobFrame:Hide()) during combat lockdown.",
 			["count"] = 1,
@@ -235,7 +182,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-28 21:16:52",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapFrame.lua:1871: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:725: in function `BTWM'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1595: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [27]
+		}, -- [21]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 532,
@@ -244,7 +191,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-29 20:52:10",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [28]
+		}, -- [22]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 4,
@@ -252,7 +199,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-29 22:02:07",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:725: in function `BTWM'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1595: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [29]
+		}, -- [23]
 		{
 			["message"] = "Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: attempt to call method 'returnProcList' (a nil value)",
 			["count"] = 1,
@@ -260,7 +207,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-30 00:09:29",
 			["context"] = "Global",
 			["stack"] = "(tail call): ?\nInterface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: in function <Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:91>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:514: in function `InitializeAddon'\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:629: in function <...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:621>\n",
-		}, -- [30]
+		}, -- [24]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 2,
@@ -269,7 +216,7 @@ SwatterData = {
 			["timestamp"] = "2012-09-30 00:13:26",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:93: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [31]
+		}, -- [25]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 2,
@@ -277,7 +224,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-02 05:29:15",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:725: in function `BTWM'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1595: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [32]
+		}, -- [26]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapFrame:SetAttribute()) during combat lockdown.",
 			["count"] = 6,
@@ -285,7 +232,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-03 05:13:00",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:69: in function <Interface\\FrameXML\\UIParent.lua:63>\nInterface\\FrameXML\\UIParent.lua:2171: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:725: in function `BTWM'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1595: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [33]
+		}, -- [27]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapFrame:Show()) during combat lockdown.",
 			["count"] = 1,
@@ -293,7 +240,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-03 05:13:00",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:2172: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:725: in function `BTWM'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1595: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [34]
+		}, -- [28]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 6,
@@ -301,7 +248,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-03 05:19:01",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:725: in function `BTWM'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1595: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [35]
+		}, -- [29]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 1,
@@ -309,7 +256,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-05 05:38:06",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:725: in function `BTWM'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1595: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [36]
+		}, -- [30]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 140,
@@ -318,7 +265,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-05 21:06:21",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [37]
+		}, -- [31]
 		{
 			["message"] = "Note: AddOn Stubby attempted to call a protected function (UNKNOWN()) during combat lockdown.",
 			["count"] = 3,
@@ -326,7 +273,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-05 21:27:13",
 			["context"] = "AddOn: Stubby",
 			["stack"] = "[C]: ?\n[C]: in function `pcall'\nInterface\\AddOns\\Stubby\\Stubby.lua:341: in function <Interface\\AddOns\\Stubby\\Stubby.lua:325>\n(tail call): ?\nInterface\\FrameXML\\ContainerFrame.lua:758: in function `ContainerFrameItemButton_OnClick'\nInterface\\FrameXML\\ContainerFrame.lua:662: in function `ContainerFrameItemButton_OnDrag'\n[string \"*:OnReceiveDrag\"]:1: in function <[string \"*:OnReceiveDrag\"]:1>\n",
-		}, -- [38]
+		}, -- [32]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapFrame:SetAttribute()) during combat lockdown.",
 			["count"] = 12,
@@ -334,7 +281,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-05 21:29:16",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:69: in function <Interface\\FrameXML\\UIParent.lua:63>\nInterface\\FrameXML\\UIParent.lua:2171: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:725: in function `BTWM'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1595: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [39]
+		}, -- [33]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapFrame:Show()) during combat lockdown.",
 			["count"] = 2,
@@ -342,7 +289,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-05 21:29:16",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:2172: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:725: in function `BTWM'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1595: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [40]
+		}, -- [34]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 168,
@@ -351,7 +298,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-06 21:15:21",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [41]
+		}, -- [35]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 4,
@@ -359,7 +306,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-06 22:45:02",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:10632: in function `BTWM'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:2111: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [42]
+		}, -- [36]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 3,
@@ -367,7 +314,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-08 05:37:26",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:10632: in function `BTWM'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:2111: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [43]
+		}, -- [37]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 95,
@@ -376,7 +323,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-09 05:11:19",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [44]
+		}, -- [38]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 87,
@@ -385,7 +332,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-09 05:24:18",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [45]
+		}, -- [39]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 112,
@@ -394,7 +341,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-09 05:35:21",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [46]
+		}, -- [40]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 140,
@@ -403,7 +350,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-09 05:51:47",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [47]
+		}, -- [41]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 112,
@@ -412,7 +359,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-10 05:11:01",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [48]
+		}, -- [42]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 10,
@@ -420,7 +367,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-10 05:51:28",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:275: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n",
-		}, -- [49]
+		}, -- [43]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapDetailFrame:SetScale()) during combat lockdown.",
 			["count"] = 14,
@@ -428,7 +375,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-10 05:51:29",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `SetScale'\nInterface\\FrameXML\\WorldMapFrame.lua:1912: in function `WorldMapFrame_SetFullMapView'\nInterface\\FrameXML\\WorldMapFrame.lua:1869: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapZoom'\nInterface\\AddOns\\Carbonite\\NxMap.lua:9097: in function `SetCurrentMap'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:1854: in function `F'\nInterface\\AddOns\\Carbonite\\NxTimer.lua:111: in function `OnUpdate'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1114: in function `NXOnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n",
-		}, -- [50]
+		}, -- [44]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapDetailFrame:SetPoint()) during combat lockdown.",
 			["count"] = 14,
@@ -436,7 +383,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-10 05:51:29",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `SetPoint'\nInterface\\FrameXML\\WorldMapFrame.lua:1915: in function `WorldMapFrame_SetFullMapView'\nInterface\\FrameXML\\WorldMapFrame.lua:1869: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapZoom'\nInterface\\AddOns\\Carbonite\\NxMap.lua:9097: in function `SetCurrentMap'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:1854: in function `F'\nInterface\\AddOns\\Carbonite\\NxTimer.lua:111: in function `OnUpdate'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1114: in function `NXOnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n",
-		}, -- [51]
+		}, -- [45]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapBlobFrame:Hide()) during combat lockdown.",
 			["count"] = 57,
@@ -444,7 +391,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-10 05:51:29",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapFrame.lua:1871: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapZoom'\nInterface\\AddOns\\Carbonite\\NxMap.lua:9097: in function `SetCurrentMap'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:1854: in function `F'\nInterface\\AddOns\\Carbonite\\NxTimer.lua:111: in function `OnUpdate'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1114: in function `NXOnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n",
-		}, -- [52]
+		}, -- [46]
 		{
 			["message"] = "Error: AddOn Informant attempted to call a forbidden function (UseQuestLogSpecialItem()) from a tainted execution path.",
 			["count"] = 5,
@@ -452,7 +399,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-11 05:20:09",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `UseQuestLogSpecialItem'\nInterface\\FrameXML\\WatchFrame.lua:1427: in function `WatchFrameItem_OnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>\n",
-		}, -- [53]
+		}, -- [47]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 28,
@@ -461,7 +408,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-12 06:07:57",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [54]
+		}, -- [48]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 28,
@@ -470,7 +417,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-12 21:21:57",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [55]
+		}, -- [49]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 2,
@@ -478,7 +425,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-12 22:05:25",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3450: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3397: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [56]
+		}, -- [50]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:4286: attempt to index local 'winfo' (a nil value)",
 			["count"] = 2,
@@ -487,7 +434,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-12 22:47:48",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\nInterface\\AddOns\\Carbonite\\NxMap.lua:4286: in function `UpdateWorld'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4349: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4023: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:3947>\n",
-		}, -- [57]
+		}, -- [51]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9353: attempt to compare number with nil",
 			["count"] = 6,
@@ -496,7 +443,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-12 22:49:36",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\nInterface\\AddOns\\Carbonite\\NxMap.lua:9353: in function `IdToContZone'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4357: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4023: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:3947>\n",
-		}, -- [58]
+		}, -- [52]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 224,
@@ -505,7 +452,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-13 21:51:15",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [59]
+		}, -- [53]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:4286: attempt to index local 'winfo' (a nil value)",
 			["count"] = 4,
@@ -514,7 +461,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-13 22:55:51",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\nInterface\\AddOns\\Carbonite\\NxMap.lua:4286: in function `UpdateWorld'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4349: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4023: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:3947>\n",
-		}, -- [60]
+		}, -- [54]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9353: attempt to compare number with nil",
 			["count"] = 8,
@@ -523,7 +470,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-13 22:55:51",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\nInterface\\AddOns\\Carbonite\\NxMap.lua:9353: in function `IdToContZone'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4357: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4023: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:3947>\n",
-		}, -- [61]
+		}, -- [55]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 28,
@@ -532,7 +479,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-15 06:08:57",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [62]
+		}, -- [56]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 56,
@@ -541,7 +488,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-16 05:11:03",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [63]
+		}, -- [57]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 1,
@@ -549,7 +496,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-17 05:37:17",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3450: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3397: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [64]
+		}, -- [58]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 1,
@@ -557,7 +504,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-18 05:15:55",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3450: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3397: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [65]
+		}, -- [59]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 56,
@@ -566,7 +513,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-18 05:53:55",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [66]
+		}, -- [60]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 197,
@@ -575,7 +522,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-19 05:21:14",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [67]
+		}, -- [61]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapFrame:SetAttribute()) during combat lockdown.",
 			["count"] = 30,
@@ -583,7 +530,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-19 05:54:45",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:69: in function <Interface\\FrameXML\\UIParent.lua:63>\nInterface\\FrameXML\\UIParent.lua:2171: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3450: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3397: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [68]
+		}, -- [62]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapFrame:Show()) during combat lockdown.",
 			["count"] = 5,
@@ -591,7 +538,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-19 05:54:45",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:2172: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3450: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3397: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [69]
+		}, -- [63]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 1,
@@ -599,7 +546,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-19 05:57:19",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3450: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3397: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [70]
+		}, -- [64]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 1,
@@ -607,7 +554,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-19 22:17:46",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3450: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3397: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [71]
+		}, -- [65]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:4286: attempt to index local 'winfo' (a nil value)",
 			["count"] = 1,
@@ -616,7 +563,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-19 23:23:26",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\nInterface\\AddOns\\Carbonite\\NxMap.lua:4286: in function `UpdateWorld'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4349: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4023: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:3947>\n",
-		}, -- [72]
+		}, -- [66]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMapGuide.lua:3020: script ran too long",
 			["count"] = 130,
@@ -625,7 +572,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-20 00:14:27",
 			["context"] = "Global",
 			["stack"] = "[C]: in function `collectgarbage'\nInterface\\AddOns\\Carbonite\\NxMapGuide.lua:3020: in function `UpdateVisitedVendors'\nInterface\\AddOns\\Carbonite\\NxMapGuide.lua:2852: in function `F'\nInterface\\AddOns\\Carbonite\\NxTimer.lua:111: in function `OnUpdate'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1114: in function `NXOnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n",
-		}, -- [73]
+		}, -- [67]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 84,
@@ -634,7 +581,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-22 05:15:37",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [74]
+		}, -- [68]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (<unnamed>:Hide()) during combat lockdown.",
 			["count"] = 1000,
@@ -642,7 +589,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-23 05:12:34",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Hide'\nInterface\\AddOns\\Carbonite\\NxMap.lua:1534: in function `UpdateWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4847: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4104: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4028>\n",
-		}, -- [75]
+		}, -- [69]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (<unnamed>:?()) during combat lockdown.",
 			["count"] = 1000,
@@ -650,7 +597,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-23 05:12:34",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `?'\nInterface\\AddOns\\Carbonite\\NxMap.lua:5207: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4104: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4028>\n",
-		}, -- [76]
+		}, -- [70]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 56,
@@ -659,7 +606,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-23 05:26:17",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [77]
+		}, -- [71]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (<unnamed>:Hide()) during combat lockdown.",
 			["count"] = 1000,
@@ -667,7 +614,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-24 05:15:48",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Hide'\nInterface\\AddOns\\Carbonite\\NxMap.lua:1534: in function `UpdateWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4847: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4104: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4028>\n",
-		}, -- [78]
+		}, -- [72]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (<unnamed>:?()) during combat lockdown.",
 			["count"] = 1000,
@@ -675,7 +622,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-24 05:15:48",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `?'\nInterface\\AddOns\\Carbonite\\NxMap.lua:5207: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4104: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4028>\n",
-		}, -- [79]
+		}, -- [73]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 112,
@@ -684,7 +631,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-24 05:24:09",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [80]
+		}, -- [74]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (<unnamed>:Hide()) during combat lockdown.",
 			["count"] = 1000,
@@ -692,7 +639,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-24 20:41:10",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Hide'\nInterface\\AddOns\\Carbonite\\NxMap.lua:1534: in function `UpdateWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4847: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4104: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4028>\n",
-		}, -- [81]
+		}, -- [75]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (<unnamed>:?()) during combat lockdown.",
 			["count"] = 1000,
@@ -700,7 +647,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-24 20:41:10",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `?'\nInterface\\AddOns\\Carbonite\\NxMap.lua:5207: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4104: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4028>\n",
-		}, -- [82]
+		}, -- [76]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 168,
@@ -709,7 +656,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-26 21:23:55",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [83]
+		}, -- [77]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapDetailFrame:SetScale()) during combat lockdown.",
 			["count"] = 3,
@@ -717,7 +664,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-26 21:37:43",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `SetScale'\nInterface\\FrameXML\\WorldMapFrame.lua:1896: in function `WorldMapFrame_SetQuestMapView'\nInterface\\FrameXML\\WorldMapFrame.lua:1862: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3531: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3478: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [84]
+		}, -- [78]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapDetailFrame:SetPoint()) during combat lockdown.",
 			["count"] = 3,
@@ -725,7 +672,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-26 21:37:43",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `SetPoint'\nInterface\\FrameXML\\WorldMapFrame.lua:1899: in function `WorldMapFrame_SetQuestMapView'\nInterface\\FrameXML\\WorldMapFrame.lua:1862: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3531: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3478: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [85]
+		}, -- [79]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 6,
@@ -733,7 +680,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-26 21:37:43",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3531: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3478: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [86]
+		}, -- [80]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapBlobFrame:Hide()) during combat lockdown.",
 			["count"] = 1,
@@ -741,7 +688,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-26 22:27:10",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapFrame.lua:1871: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3531: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3478: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [87]
+		}, -- [81]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 2,
@@ -749,7 +696,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-28 21:07:01",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3531: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3478: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [88]
+		}, -- [82]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 28,
@@ -758,7 +705,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-28 21:12:13",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [89]
+		}, -- [83]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 168,
@@ -767,7 +714,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-30 21:39:21",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [90]
+		}, -- [84]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1736: script ran too long",
 			["count"] = 1,
@@ -776,7 +723,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-30 22:11:18",
 			["context"] = "Global",
 			["stack"] = "[C]: in function `LoadAddOn'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:1736: in function `func'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:728: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:721>\n",
-		}, -- [91]
+		}, -- [85]
 		{
 			["message"] = "Interface\\AddOns\\Recount\\Recount.lua:908: script ran too long",
 			["count"] = 2,
@@ -785,7 +732,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-30 22:11:29",
 			["context"] = "Global",
 			["stack"] = "[C]: in function `collectgarbage'\nInterface\\AddOns\\Recount\\Recount.lua:908: in function `ResetData'\nInterface\\AddOns\\Recount\\GUI_Reset.lua:73: in function <Interface\\AddOns\\Recount\\GUI_Reset.lua:73>\n",
-		}, -- [92]
+		}, -- [86]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2499: attempt to index field 'stats' (a nil value)",
 			["count"] = 2,
@@ -794,7 +741,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-30 22:12:54",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2499: in function `StartCombat'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2357: in function `?'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:365: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:358>\n",
-		}, -- [93]
+		}, -- [87]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2688: attempt to perform arithmetic on field 'pull' (a nil value)",
 			["count"] = 2,
@@ -803,7 +750,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-30 22:14:49",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2688: in function `EndCombat'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2819: in function `OnMobKill'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2853: in function `?'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:365: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:358>\n(tail call): ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:365: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:358>\n",
-		}, -- [94]
+		}, -- [88]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 3,
@@ -811,7 +758,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-30 22:39:23",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3531: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3478: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [95]
+		}, -- [89]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:4361: attempt to index local 'winfo' (a nil value)",
 			["count"] = 2,
@@ -820,7 +767,7 @@ SwatterData = {
 			["timestamp"] = "2012-11-04 00:22:44",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\nInterface\\AddOns\\Carbonite\\NxMap.lua:4361: in function `UpdateWorld'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4424: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4097: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4021>\n",
-		}, -- [96]
+		}, -- [90]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9434: attempt to compare number with nil",
 			["count"] = 1,
@@ -829,7 +776,7 @@ SwatterData = {
 			["timestamp"] = "2012-11-04 00:22:46",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\nInterface\\AddOns\\Carbonite\\NxMap.lua:9434: in function `IdToContZone'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4432: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4097: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4021>\n",
-		}, -- [97]
+		}, -- [91]
 		{
 			["message"] = "...AddOns\\Auc-Advanced\\Libs\\LibExtraTip\\LibExtraTip.lua:163: script ran too long",
 			["count"] = 1,
@@ -838,7 +785,7 @@ SwatterData = {
 			["timestamp"] = "2012-11-16 05:46:27",
 			["context"] = "Global",
 			["stack"] = "[C]: in function `Show'\n...AddOns\\Auc-Advanced\\Libs\\LibExtraTip\\LibExtraTip.lua:163: in function `h'\n...AddOns\\Auc-Advanced\\Libs\\LibExtraTip\\LibExtraTip.lua:333: in function <...AddOns\\Auc-Advanced\\Libs\\LibExtraTip\\LibExtraTip.lua:329>\n[C]: ?\n[C]: ?\n[C]: in function `SetAction'\n...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:1305: in function `SetTooltip'\n...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:1116: in function <...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:1110>\n...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:715: in function <...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:681>\n",
-		}, -- [98]
+		}, -- [92]
 		{
 			["message"] = "...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:1305: script ran too long",
 			["count"] = 2,
@@ -847,7 +794,7 @@ SwatterData = {
 			["timestamp"] = "2012-11-16 05:46:27",
 			["context"] = "Global",
 			["stack"] = "[C]: in function `SetAction'\n...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:1305: in function `SetTooltip'\n...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:1116: in function <...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:1110>\n...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:715: in function <...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:681>\n",
-		}, -- [99]
+		}, -- [93]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 1,
@@ -855,7 +802,7 @@ SwatterData = {
 			["timestamp"] = "2012-11-17 23:00:57",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3526: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3473: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [100]
+		}, -- [94]
 		{
 			["message"] = "...-Advanced\\Modules\\Auc-Util-Appraiser\\AprSettings.lua:73: attempt to compare number with nil",
 			["count"] = 122,
@@ -864,7 +811,7 @@ SwatterData = {
 			["timestamp"] = "2012-11-20 05:13:21",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...-Advanced\\Modules\\Auc-Util-Appraiser\\AprSettings.lua:73: in function <...-Advanced\\Modules\\Auc-Util-Appraiser\\AprSettings.lua:71>\n[C]: in function `sort'\n...Auc-Advanced\\Modules\\Auc-Util-Appraiser\\AprFrame.lua:167: in function `GenerateList'\n...Auc-Advanced\\Modules\\Auc-Util-Appraiser\\AprFrame.lua:2657: in function <...Auc-Advanced\\Modules\\Auc-Util-Appraiser\\AprFrame.lua:2640>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `AuctionFrameTab_OnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>\n",
-		}, -- [101]
+		}, -- [95]
 		{
 			["message"] = "...Auc-Advanced\\Modules\\Auc-Util-Appraiser\\AprFrame.lua:1583: Usage: GetItemQualityColor(index)",
 			["count"] = 1,
@@ -873,6 +820,38 @@ SwatterData = {
 			["timestamp"] = "2012-11-20 05:13:25",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n[C]: in function `GetItemQualityColor'\n...Auc-Advanced\\Modules\\Auc-Util-Appraiser\\AprFrame.lua:1583: in function `SetScroll'\n...Auc-Advanced\\Modules\\Auc-Util-Appraiser\\AprFrame.lua:289: in function `SelectItem'\n...Auc-Advanced\\Modules\\Auc-Util-Appraiser\\AprFrame.lua:1253: in function `GetItemByLink'\n...Auc-Advanced\\Modules\\Auc-Util-Appraiser\\AprFrame.lua:1267: in function <...Auc-Advanced\\Modules\\Auc-Util-Appraiser\\AprFrame.lua:1263>\n",
-		}, -- [102]
+		}, -- [96]
+		{
+			["message"] = "Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: attempt to call method 'returnProcList' (a nil value)",
+			["count"] = 1,
+			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.5\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.05.06\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.1.0\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=7e8)\n",
+			["timestamp"] = "2012-11-21 06:11:29",
+			["context"] = "Global",
+			["stack"] = "(tail call): ?\nInterface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: in function <Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:91>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:514: in function `InitializeAddon'\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:629: in function <...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:621>\n",
+		}, -- [97]
+		{
+			["message"] = "Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: attempt to call method 'returnProcList' (a nil value)",
+			["count"] = 1,
+			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.5\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.05.06\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.1.0\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=7e8)\n",
+			["timestamp"] = "2012-11-21 21:36:05",
+			["context"] = "Global",
+			["stack"] = "(tail call): ?\nInterface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: in function <Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:91>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:514: in function `InitializeAddon'\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:629: in function <...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:621>\n",
+		}, -- [98]
+		{
+			["message"] = "Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: attempt to call method 'returnProcList' (a nil value)",
+			["count"] = 1,
+			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.5\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.05.06\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.1.0\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=7e8)\n",
+			["timestamp"] = "2012-11-21 22:47:01",
+			["context"] = "Global",
+			["stack"] = "(tail call): ?\nInterface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: in function <Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:91>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:514: in function `InitializeAddon'\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:629: in function <...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:621>\n",
+		}, -- [99]
+		{
+			["message"] = "Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: attempt to call method 'returnProcList' (a nil value)",
+			["count"] = 1,
+			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.5\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.05.06\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.1.0\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=7e8)\n",
+			["timestamp"] = "2012-11-21 22:52:47",
+			["context"] = "Global",
+			["stack"] = "(tail call): ?\nInterface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: in function <Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:91>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:514: in function `InitializeAddon'\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:629: in function <...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:621>\n",
+		}, -- [100]
 	},
 }

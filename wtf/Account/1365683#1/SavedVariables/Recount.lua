@@ -32,10 +32,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["DetailWindowX"] = 0,
+			["MainWindowHeight"] = 113.9999372661123,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 268.0000646710386,
-			["MainWindowHeight"] = 113.9999372661123,
+			["DetailWindowX"] = 0,
 		},
 		["Darvina - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -90,10 +90,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["DetailWindowX"] = 0,
+			["MainWindowHeight"] = 122.9999810010198,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 312.0000029802322,
-			["MainWindowHeight"] = 122.9999810010198,
+			["DetailWindowX"] = 0,
 		},
 		["Depha - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -111,10 +111,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["DetailWindowX"] = 0,
-			["MainWindowVis"] = false,
-			["CurDataSet"] = "OverallData",
 			["GraphWindowX"] = 0,
+			["CurDataSet"] = "OverallData",
+			["MainWindowVis"] = false,
+			["DetailWindowX"] = 0,
 		},
 		["Dreyan - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -163,9 +163,9 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["MainWindowMode"] = 2,
-			["MainWindowWidth"] = 329,
 			["GraphWindowX"] = 0,
+			["MainWindowWidth"] = 329,
+			["MainWindowMode"] = 2,
 		},
 		["Datinnite - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -195,8 +195,8 @@ RecountDB = {
 			["GraphWindowY"] = 0,
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -495.9997024536133,
-					["x"] = -589.5000076293945,
+					["y"] = -495.9996948242188,
+					["x"] = -589.5000305175781,
 					["w"] = 397,
 					["h"] = 137.9999084472656,
 				},
@@ -213,8 +213,8 @@ RecountDB = {
 			},
 			["DetailWindowY"] = -227.9999237060547,
 			["DetailWindowX"] = 563,
-			["GraphWindowX"] = 0,
-			["LastInstanceName"] = "Gate of the Setting Sun",
+			["HideCollect"] = true,
+			["LastInstanceName"] = "Mogu'shan Palace",
 			["RealtimeWindows"] = {
 				["Realtime_!RAID_DAMAGE"] = {
 					"!RAID", -- [1]
@@ -229,7 +229,7 @@ RecountDB = {
 			},
 			["CurDataSet"] = "LastFightData",
 			["MainWindowMode"] = 2,
-			["HideCollect"] = true,
+			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 397.0000017136335,
 			["MainWindowHeight"] = 137.9999235570442,
 		},

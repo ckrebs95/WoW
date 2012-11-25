@@ -1684,7 +1684,7 @@ Map.MapWorldInfo = {
 	[6003] = {
 		Name="Kun-Lai Summit",
 		12.516666015625,
-		-1015, 360,
+		-1014.5, 363.5,
 		Overlay = "kunlaisummit",
 		Fish = 525,
 	},
@@ -1724,7 +1724,7 @@ Map.MapWorldInfo = {
 	[6009] = {
 		Name="Vale of Eternal Blossoms",
 		5.06666796875,
-		-548,1097,
+		-542.5,1097,
 		Overlay = "valeofeternalblossoms",
 		Fish = 525,
 	},
@@ -2262,7 +2262,7 @@ Map.InstanceInfo = {			-- Blizzard instance maps (SetInstanceMap uses size of 3 
 	[16233] = { 0, 0,			"Mogushanvaults\\Mogushanvaults1_",
 					0, -100,	"Mogushanvaults\\Mogushanvaults2_",
 					0, -200,	"Mogushanvaults\\Mogushanvaults3_", },
-	[16234] = { 0, 0,			"TerraceOfEndlessSpring\\TerraceOfEndlessSpring_", },
+	[16234] = { 0, 0,			"TerraceOfEndlessSpring\\TerraceOfEndlessSpring", },
     [13006] = { 0 ,0,			"AuchenaiCrypts\\AuchenaiCrypts1_",
 					0, -100,	"AuchenaiCrypts\\AuchenaiCrypts2_", },
 	[13007] = { 0, 0,			"ManaTombs\\ManaTombs1_", },

@@ -6,6 +6,7 @@ DBM_SavedOptions = {
 	["UseMasterVolume"] = true,
 	["StatusEnabled"] = true,
 	["InfoFrameX"] = -282.0003658235019,
+	["CountdownPullTimer"] = true,
 	["AprilFools"] = true,
 	["RangeFrameX"] = 50,
 	["WarningColors"] = {
@@ -107,7 +108,7 @@ DBM_SavedOptions = {
 	["HPFrameX"] = 19.99998283386231,
 	["RangeFrameSound1"] = "none",
 	["SpamBlockBossWhispers"] = false,
-	["LastRevision"] = 7956,
+	["LastRevision"] = 8086,
 	["DisableCinematicsOutside"] = false,
 }
 DBT_SavedOptions = {
