@@ -195,9 +195,9 @@ RecountDB = {
 			["GraphWindowY"] = 0,
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -495.9996948242188,
-					["x"] = -589.5000305175781,
-					["w"] = 397,
+					["y"] = -456.9996795654297,
+					["x"] = -751.5000228881836,
+					["w"] = 397.0000305175781,
 					["h"] = 137.9999084472656,
 				},
 			},
@@ -211,10 +211,10 @@ RecountDB = {
 					},
 				},
 			},
-			["DetailWindowY"] = -227.9999237060547,
+			["DetailWindowY"] = -227.9999542236328,
 			["DetailWindowX"] = 563,
 			["HideCollect"] = true,
-			["LastInstanceName"] = "Mogu'shan Palace",
+			["LastInstanceName"] = "Siege of Niuzao Temple",
 			["RealtimeWindows"] = {
 				["Realtime_!RAID_DAMAGE"] = {
 					"!RAID", -- [1]

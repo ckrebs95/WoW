@@ -54,7 +54,7 @@ DBM_SavedOptions = {
 	["HealthFrameWidth"] = 200,
 	["WarningIconLeft"] = true,
 	["RangeFrameLocked"] = false,
-	["HPFrameY"] = -30.99990081787109,
+	["HPFrameY"] = -62.99990844726563,
 	["ShowMinimapButton"] = true,
 	["MoviesSeen"] = {
 	},
@@ -105,7 +105,7 @@ DBM_SavedOptions = {
 	["RangeFrameFrames"] = "radar",
 	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
 	["AlwaysShowHealthFrame"] = false,
-	["HPFrameX"] = 19.99998283386231,
+	["HPFrameX"] = 208.9998779296875,
 	["RangeFrameSound1"] = "none",
 	["SpamBlockBossWhispers"] = false,
 	["LastRevision"] = 8086,

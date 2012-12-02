@@ -3,8 +3,8 @@
 --     W o w h e a d   L o o t e r     --
 --                                     --
 --                                     --
---    Patch: 5.0.5                     --
---    Updated: October 13, 2012        --
+--    Patch: 5.1.0                     --
+--    Updated: November 28, 2012       --
 --    E-mail: feedback@wowhead.com     --
 --                                     --
 -----------------------------------------

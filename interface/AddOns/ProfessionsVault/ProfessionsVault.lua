@@ -10,7 +10,7 @@ local PVLDB
 local minimapIcon = LibStub("LibDBIcon-1.0")
 vars.svnrev = vars.svnrev or {}
 local svnrev = vars.svnrev
-svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 396 $"):match("%d+"))
+svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 409 $"):match("%d+"))
 local DB_VERSION_MAJOR = 1
 local DB_VERSION_MINOR = 4
 local _G = _G
@@ -43,6 +43,7 @@ local defaults = {
     otherdata = false,
     factiondata = false,
     grpbyprof = false,
+    trainreminder = true,
     pos = {
       height = 432,
       width  = 510,
@@ -106,6 +107,10 @@ local allexpandminus = "Interface\\Buttons\\UI-MinusButton-UP"
 local locale = GetLocale()
 if locale == "enGB" then locale = "enUS" end
 local rcolortable
+local DB, DBc, settings
+local charName
+local optionsFrame, colorFrame, unhideFrame
+
 
 BINDING_NAME_PROFESSIONSVAULT = L["Show/Hide the ProfessionsVault window"]
 BINDING_HEADER_PROFESSIONSVAULT = "ProfessionsVault"
@@ -264,6 +269,68 @@ do
   --myprint(allProfSorted)
 end
 
+local profranks = { -- min and max for each skill level
+  { learn=0,   max=75,  exp=0  },
+  { learn=50,  max=150, exp=0 },
+  { learn=125, max=225, exp=0 },
+  { learn=200, max=300, exp=0 },  
+  { learn=275, max=375, exp=1 },  
+  { learn=350, max=450, exp=2 },  
+  { learn=425, max=525, exp=3 },  
+  { learn=500, max=600, exp=4 },  
+}
+
+-- minimum player level for training each skill level
+local proflvl_craft  = { 5,  10, 20, 35, 50, 65, 75, 80, }
+local proflvl_gather = { 1,  1,  10, 25, 40, 55, 75, 80, }
+local proflvls = {
+  [PID_COOK] = { 1,  1,  1,  1,  1,  1,  1,  80, },
+  [PID_FA]   = { 1,  1,  1,  35, 50, 65, 75, 80, },
+  [PID_FISH] = { 1,  1,  1,  1,  1,  1,  1,  1,  },
+  [PID_ARCH] = { 20, 20, 20, 35, 50, 65, 75, 80, },
+  [PID_BS]   = proflvl_craft,
+  [PID_ALCH] = proflvl_craft,  
+  [PID_TAIL] = proflvl_craft,  
+  [PID_INSC] = proflvl_craft,  
+  [PID_JC]   = proflvl_craft,
+  [PID_ENG]  = proflvl_craft,
+  [PID_LW]   = proflvl_craft,
+  [PID_MINE] = proflvl_gather,
+  [PID_SKIN] = proflvl_gather,
+  [PID_HERB] = proflvl_gather,
+}
+  
+-- returns true when a player with given ranks and level should visit a trainer
+function addon:canLearn(pid, rank, rankmax, level)
+  local lvlmap = proflvls[pid]
+  if not lvlmap then return false end
+  rankmax = math.floor(rankmax/25)*25 -- round away racial bonuses
+  local learnskill 
+  for skill, info in ipairs(profranks) do
+    if rank >= info.learn and rankmax < info.max and
+       GetExpansionLevel() >= info.exp then
+      learnskill = skill
+      break
+    end
+  end
+  if not learnskill then return false end
+  return level >= lvlmap[learnskill]
+end  
+
+function addon:checkLearn()
+  addon.learnmsg = addon.learnmsg or {}
+  local level = UnitLevel("player")
+  for pname, pinfo in pairs(DBc) do
+    local pid = allProf[pname] and allProf[pname].spellid
+    if pid and addon:canLearn(pid, pinfo.rank, pinfo.rankmax, level) and 
+       not addon.learnmsg[pname..pinfo.rankmax] and
+       settings.trainreminder then
+       addon.learnmsg[pname..pinfo.rankmax] = true
+       addon.chatMsg(pname.." "..pinfo.rank..": "..string.format(L["Visit a %s trainer!"],pname))
+    end
+  end
+end
+
 local LFaction = {
   Alliance = FACTION_ALLIANCE,
   Horde = FACTION_HORDE
@@ -284,10 +351,6 @@ local function profSpec(olink)
   end
   return nil
 end
-
-local DB, DBc, settings
-local charName
-local optionsFrame, colorFrame, unhideFrame
 
 local function chatMsg(msg)
      DEFAULT_CHAT_FRAME:AddMessage("\124cFF00FF00"..addonName.."\124r: "..msg)
@@ -457,6 +520,12 @@ return {
       desc = L["Enable the AH scanning button on the auction frame"],
       type = "toggle",
       order = 42,
+    },
+    trainreminder = {
+      name = L["Training reminder"],
+      desc = L["Print a reminder when you can train a new profession rank"],
+      type = "toggle",
+      order = 43,
     },
     --[[
     autoscan = {
@@ -1996,6 +2065,7 @@ function addon:ScanSecondary()
       end
     end
   end
+  addon:checkLearn()
   return gotr, gots, gotprof
 end
 
@@ -2735,6 +2805,10 @@ function addon:CleanDatabase() -- remove links that are dead due to a patch
 	  -- 5.0.5: 11 cooking bits moved
 	  (oldclientbuild <= 16030 and clientbuild >= 16048 and 
               (pname == GetSpellInfo(PID_COOK)) ) or
+
+	  -- 5.1.0: 10 tailoring bit moves
+	  (oldclientbuild < 16309 and clientbuild >= 16309 and 
+              (pname == GetSpellInfo(PID_TAIL)) ) or
 
 	  (pname == GetSpellInfo(PID_SMELT)) -- smelting db permanently deprecated
 
