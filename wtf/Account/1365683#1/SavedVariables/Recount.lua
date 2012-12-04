@@ -16,35 +16,38 @@ RecountDB = {
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = -544.000244140625,
-					["x"] = -649.0002899169922,
-					["w"] = 268.0001220703125,
+					["x"] = -649.0002822875977,
+					["w"] = 268.0001525878906,
 					["h"] = 113.9999389648438,
 				},
 			},
 			["MainWindowMode"] = 2,
-			["LastInstanceName"] = "Azjol-Nerub",
-			["CurDataSet"] = "OverallData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
 						["a"] = 1,
 					},
+					["Total Bar"] = {
+						["a"] = 1,
+					},
 				},
 			},
 			["DetailWindowY"] = 0,
-			["MainWindowHeight"] = 113.9999372661123,
-			["GraphWindowX"] = 0,
-			["MainWindowWidth"] = 268.0000646710386,
 			["DetailWindowX"] = 0,
+			["GraphWindowX"] = 0,
+			["LastInstanceName"] = "Azjol-Nerub",
+			["CurDataSet"] = "OverallData",
+			["MainWindowWidth"] = 268.0000646710386,
+			["MainWindowHeight"] = 113.9999372661123,
 		},
 		["Darvina - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -522.5004119873047,
-					["x"] = 638.9998779296875,
-					["w"] = 294.0001220703125,
-					["h"] = 158.9999084472656,
+					["y"] = -522.5003967285156,
+					["x"] = 638.9999389648438,
+					["w"] = 294.0001525878906,
+					["h"] = 158.9999237060547,
 				},
 			},
 			["MainWindowMode"] = 2,
@@ -61,10 +64,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = -409.9998474121094,
-			["DetailWindowX"] = 619.0000610351563,
+			["MainWindowHeight"] = 158.999907985331,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 294.0000299513335,
-			["MainWindowHeight"] = 158.999907985331,
+			["DetailWindowX"] = 619.0000610351563,
 		},
 		["Deyndis - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -120,9 +123,9 @@ RecountDB = {
 			["GraphWindowY"] = 0,
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -546.9998931884766,
-					["x"] = -656.4999084472656,
-					["w"] = 283.0000305175781,
+					["y"] = -546.9999084472656,
+					["x"] = -656.4999179840088,
+					["w"] = 283,
 					["h"] = 102.0000457763672,
 				},
 			},
@@ -134,13 +137,16 @@ RecountDB = {
 					["Bar Text"] = {
 						["a"] = 1,
 					},
+					["Total Bar"] = {
+						["a"] = 1,
+					},
 				},
 			},
 			["DetailWindowY"] = 0,
-			["MainWindowHeight"] = 102.000015646219,
+			["DetailWindowX"] = 0,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 283.0000263005491,
-			["DetailWindowX"] = 0,
+			["MainWindowHeight"] = 102.000015646219,
 		},
 		["Doyjen - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -201,19 +207,7 @@ RecountDB = {
 					["h"] = 137.9999084472656,
 				},
 			},
-			["Colors"] = {
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
-					["Total Bar"] = {
-						["a"] = 1,
-					},
-				},
-			},
-			["DetailWindowY"] = -227.9999542236328,
 			["DetailWindowX"] = 563,
-			["HideCollect"] = true,
 			["LastInstanceName"] = "Siege of Niuzao Temple",
 			["RealtimeWindows"] = {
 				["Realtime_!RAID_DAMAGE"] = {
@@ -227,7 +221,19 @@ RecountDB = {
 					false, -- [8]
 				},
 			},
+			["DetailWindowY"] = -227.9999542236328,
 			["CurDataSet"] = "LastFightData",
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+					["Total Bar"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["HideCollect"] = true,
 			["MainWindowMode"] = 2,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 397.0000017136335,

@@ -2327,6 +2327,20 @@ Map.InstanceInfo = {			-- Blizzard instance maps (SetInstanceMap uses size of 3 
 	[16242] = { 0, 0,			"BrewmasterScenario03\\BrewmasterScenario03", },
 	[16243] = { 0, 0,			"KunLaiPassScenario\\KunLaiPassScenario", },
 	[16244]	= { 0, 0,			"ProvingGrounds\\ProvingGrounds1_",},
+	[16247] = { 0, 0, 			"Tyrivess\\Tyrivess",},
+	[16248] = { 0, 0, 			"KrasarangPatience\\KrasarangPatience",},
+	[16249] = { 0, 0, 			"VoljinScenario\\VoljinScenario1_",
+					0,-100,		"VoljinScenario\\TheAncientPassage1_",},
+	[16250] = { 0, 0, 			"KrasarangAlliance\\KrasarangAlliance",},
+	[16251] = { 0, 0, 			"KrasarangHorde\\KrasarangHorde",},
+	[12252] = { 0, 0, 			"BlackTempleScenario\\BlackTempleScenario",
+					0,-100,		"BlackTempleScenario\\BlackTempleScenario1_",
+					0,-200,		"BlackTempleScenario\\BlackTempleScenario2_",	
+					0,-300,		"BlackTempleScenario\\BlackTempleScenario3_",
+					0,-400,		"BlackTempleScenario\\BlackTempleScenario4_",	
+					0,-500,		"BlackTempleScenario\\BlackTempleScenario5_",					
+					0,-600,		"BlackTempleScenario\\BlackTempleScenario6_",
+					0,-700,		"BlackTempleScenario\\BlackTempleScenario7_",},
 }	
 
 Map.ZoneOverlays = {

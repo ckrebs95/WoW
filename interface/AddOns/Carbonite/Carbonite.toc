@@ -1,6 +1,6 @@
-## Interface: 50001
-## Title: Carbonite 5.05.07
-## Version: 5.05.07
+## Interface: 50100
+## Title: Carbonite 5.05.09
+## Version: 5.05.09
 ## Author: Rythal
 ## Notes: Released Under GPL
 ## DefaultState: Enabled

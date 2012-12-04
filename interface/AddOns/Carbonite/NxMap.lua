@@ -2842,9 +2842,9 @@ function Nx.Map:MinimapUpdateMask (optName)
 
 	if self.MMArrowName ~= name then
 		self.MMArrowName = name
-
-		self.MMFrm:SetPlayerTexture (name)
-
+		if name ~= "" then
+			self.MMFrm:SetPlayerTexture (name)
+		end
 --		Nx.prt ("MMmask %s", name)
 	end
 end
@@ -4865,10 +4865,16 @@ function Nx.Map:Update (elapsed)
 				local f2 = self:GetIconNI (1)
 
 				local sc = self.ScaleDraw * .8		-- Airships
+				if self:IsInstanceMap(self:GetRealMapId()) then
+					sc = .7
+				end
 				if typ == "Drive" or typ == "Fly" then
 					sc = 1
+					if self:IsInstanceMap(self:GetRealMapId()) then
+						sc = .8
+					end
 				end
-
+		
 				if self:ClipFrameZ (f2, x * 100, y * 100, vtex[typ]["width"] * sc, vtex[typ]["height"] * sc, orientation / PI * -180) then
 					f2.texture:SetTexture (WorldMap_GetVehicleTexture (typ, possessed))
 				end
@@ -9073,7 +9079,8 @@ function Nx.Map:GetRealMapId()
 	local zName = GetRealZoneText()	
 	local mapId = Nx.MapNameToId[zName] or 9000	
 	local name, instanceType, difficultyIndex, difficultyName, maxPlayers, dynamicDifficulty, isDynamic, mapID = GetInstanceInfo()
-	if (difficultyIndex == 1) then      
+	if (difficultyIndex == 1) then  
+		SetMapToCurrentZone()
 		local aid=GetCurrentMapAreaID()
 		local id=Nx.AIdToId[aid]  	
 		return id
