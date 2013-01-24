@@ -4,15 +4,15 @@
 --                                     --
 --                                     --
 --    Patch: 5.1.0                     --
---    Updated: November 28, 2012       --
+--    Updated: December 12, 2012       --
 --    E-mail: feedback@wowhead.com     --
 --                                     --
 -----------------------------------------
 
 
 local WL_NAME = "|cffffff7fWowhead Looter|r";
-local WL_VERSION = 50006;
-local WL_VERSION_PATCH = 3;
+local WL_VERSION = 50007;
+local WL_VERSION_PATCH = 0;
 
 
 -- SavedVariables
@@ -43,6 +43,8 @@ local WL_SPELL_BLACKLIST = {
 	[1604] = true,  -- Dazed
 	[15571] = true, -- Dazed
 	[61394] = true, -- Frozen Wake (Glyph of Freezing Trap)
+	[135299] = true, -- Ice Trap
+	[135373] = true, -- Entrapment
 };
 local WL_REP_MODS = {
 	[GetSpellInfo(61849)] = {nil, 0.1},
@@ -433,6 +435,21 @@ function scanBattlePetData()
 			end
 		end
 	end
+end
+
+
+function wlEvent_BLACK_MARKET_ITEM_UPDATE(self)
+    local numItems = C_BlackMarket.GetNumItems();
+    for index = 1, numItems do
+		local name, texture, quantity, itemType, usable, level, levelType, sellerName, minBid, minIncrement, currBid, youHaveHighBid, numBids, timeLeft, link, marketID = C_BlackMarket.GetItemInfoByIndex(index);
+        if link then
+			local eventId = wlGetNextEventId();
+			wlUpdateVariable(wlEvent, wlId, wlN, eventId, "initArray", 0);
+			wlEvent[wlId][wlN][eventId].what = "blackmarket";
+			wlEvent[wlId][wlN][eventId].item = wlParseItemLink(link);
+			wlEvent[wlId][wlN][eventId].seller = sellerName;
+        end
+    end
 end
 
 
@@ -2686,6 +2703,8 @@ local wlEvents = {
 	-- battlepets
 	PET_JOURNAL_LIST_UPDATE = wlEvent_PET_JOURNAL_LIST_UPDATE,
 	PET_BATTLE_LEVEL_CHANGED = wlEvent_PET_BATTLE_LEVEL_CHANGED,
+	
+	BLACK_MARKET_ITEM_UPDATE = wlEvent_BLACK_MARKET_ITEM_UPDATE,
 };
 
 --**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--

@@ -1121,18 +1121,23 @@ function Nx.Com:Send (chanId, msg, plName)
 			end
 
 		elseif chanId == "p" then	-- Addon party
-
-			SendAddonMessage (self.Name, msg, "PARTY")
-
+			if (IsPartyLFG()) then
+				SendAddonMessage (self.Name, msg, "INSTANCE_CHAT")
+			else
+				SendAddonMessage (self.Name, msg, "PARTY")
+			end
 		elseif chanId == "W" then	-- Addon whisper
 
 --			Nx.prt ("Send W %s", plName)
 			SendAddonMessage (self.Name, msg, "WHISPER", plName)
 
 		elseif chanId == "P" then	-- Party channel
-
 			if GetNumSubgroupMembers() > 0 then
-				self:SendChatMessageFixed (msg, "PARTY")
+				if (IsPartyLFG()) then
+					self:SendChatMessageFixed (msg, "INSTANCE_CHAT")
+				else
+					self:SendChatMessageFixed (msg, "PARTY")
+				end
 			end
 
 		else
@@ -1927,8 +1932,11 @@ function Nx.Com:ShowVersionMsg()
 
 	StaticPopup_Show ("NxVerMsg")
 --]]
-
-	local s1 = format ("A newer version of %s is available", NXTITLEFULL)
+    
+	local verstemp verstemp2 = math.modf(self.NEWVER * 10)
+	verstemp = verstemp / 10
+	verstemp2 = verstemp2 * 100
+	local s1 = format ("version %s.%s of %s is available", verstemp, verstemp2, NXTITLEFULL)
 	local s2 = format ("Visit %s%s|cffffffff for an update", Nx.TXTBLUE, Nx.WebSite)
 	UIErrorsFrame:AddMessage (s2, 1, 1, 1, 1)	-- Flip order so it show correctly
 	UIErrorsFrame:AddMessage (s1, 1, 1, 0, 1)
@@ -1971,15 +1979,14 @@ function Nx.Com:OnMsgVersion (name, enmsg, arg2, arg9)
 					local vermajor = floor (ver * 1000) / 1000
 					local verminor = ver - vermajor
 
-					if verminor > 0 then		-- Is test?
-						return					-- Ignore
-					end
+--					if verminor > 0 then		-- Is test?
+--						return					-- Ignore
+--					end
 				end
 
---				ver = ver + 9	-- Test the message
-
+--				ver = ver + 9	-- Test the message				
 				if ver - .0000001 > Nx.VERSION and not self.NewVerMsg then
-
+					self.NEWVER = ver
 					self.NewVerMsg = true
 					Nx.Timer:Start ("ComShowVer", 60, self, self.ShowVerTimer)
 

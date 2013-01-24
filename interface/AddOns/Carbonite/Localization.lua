@@ -821,7 +821,7 @@ elseif GetLocale() == "frFR" then	-- French
 		["Sholazar Basin"] = "Bassin de Sholazar",
 		["Shrine of Seven Stars"] = "Sanctuaire des Sept-\195\137toiles",
 		["Shrine of Two Moons"] = "Sanctuaire des Deux-Lunes",
-		["Silvermoon City"] = "Lune-d\226\128\153argent",
+		["Silvermoon City"] = "Lune-d’Argent",
 		["Silverpine Forest"] = "For\195\170t des Pins-Argent\195\169s",
 		["Slitherblade Shore"] = "Rivage des Ondulames",
 		["Southern Barrens"] = "Tarides du Sud",

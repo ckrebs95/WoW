@@ -1,6 +1,6 @@
 ## Interface: 50100
-## Title: Carbonite 5.05.09
-## Version: 5.05.09
+## Title: Carbonite 5.1.2
+## Version: 5.1.2
 ## Author: Rythal
 ## Notes: Released Under GPL
 ## DefaultState: Enabled
@@ -28,8 +28,8 @@ NxWarehouse.lua
 NxSec.lua
 NxTimer.lua
 MapWorldHotspots.lua
+Zones.lua
 Guide.lua
 Quests.lua
 ZoneConnections.lua
-Zones.lua
 Carbonite.xml

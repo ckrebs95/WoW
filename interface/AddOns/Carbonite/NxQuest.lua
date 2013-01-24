@@ -1091,7 +1091,7 @@ function Nx.Quest:CheckQuestObj (q, n)
 	local oName, zone, x, y = self:GetObjectivePos (q[n])
 	local mapId = Nx.Map.NxzoneToMapId[zone]
 
-	if (x == 0 or y == 0) and mapId and not Nx.Map:IsInstanceMap (mapId) then
+	if (x == 0 or y == 0) and mapId and not Nx.Map:IsInstanceMap (mapId) then		
 		q[n] = format ("%c%s# ####", #oName + 35, oName)	-- Zero it to get a red button
 --		Nx.prt ("zeroed %s, %s", self:UnpackName (q[1]), oName)
 	end
@@ -4958,8 +4958,7 @@ function Nx.Quest.List:Update_()
 
 							if obj then
 								desc, zone, loc = Quest:UnpackObjective (obj)
-							end
-
+							end							
 							if ln <= num then
 								desc, typ, done = GetQuestLogLeaderBoard (ln, qn)
 								desc = desc or "?"	--V4
@@ -5370,8 +5369,7 @@ function Nx.Quest.List:Update_()
 
 						local name, zone, loc = Quest:UnpackObjective (obj)
 
---						str = zone and "|cff505050o" or ""
-
+--						str = zone and "|cff505050o" or ""						
 						if zone then
 							list:ItemSetButton ("QuestWatch", false)
 							list:ItemSetButtonTip (questTip)
@@ -5831,7 +5829,7 @@ function Nx.Quest:UpdateIcons (map)
 										break
 									end
 
-									local x, y, w, h = Quest:UnpackLocRect (loc1)
+									local x, y, w, h = Quest:UnpackLocRect (loc1)									
 									local wx, wy = map:GetWorldPos (mapId, x, y)
 
 									local f = map:GetIconStatic (hover and 1)
@@ -7052,8 +7050,7 @@ function Nx.Quest.Watch:UpdateList()
 					list:ItemAdd (qId * 0x10000 + qi)
 
 					local trackMode = Quest.Tracking[qId] or 0
-					local obj = quest and (quest[3] or quest[2])
-
+					local obj = quest and (quest[3] or quest[2])					
 					if qId == 0 then
 						list:ItemSetButton ("QuestWatchErr", false)
 
@@ -7232,10 +7229,7 @@ function Nx.Quest.Watch:UpdateList()
 								local butType = "QuestWatchErr"
 
 								if zone then
-									if zone == 220 then
-										butType = nil
-
-									elseif Map.NxzoneToMapId[zone] then
+									if Map.NxzoneToMapId[zone] then
 										butType = "QuestWatch"
 										if Quest:IsTargeted (qId, ln) then
 											butType = "QuestWatchTarget"
@@ -7875,7 +7869,7 @@ function Nx.Quest:TrackOnMap (qId, qObj, useEnd, target, skipSame)
 	local BlizIndex = nil    
 	local quest = Quest.IdToQuest[qId]
 	
---[[	if self.GOpts["QSync"] then		
+	if self.GOpts["QSync"] then		
 		local i = 1
 		while GetQuestLogTitle(i) do
 			local _, _, _, _, _, _, _, _, questID = GetQuestLogTitle(i)
@@ -7889,7 +7883,6 @@ function Nx.Quest:TrackOnMap (qId, qObj, useEnd, target, skipSame)
 		i = i + 1
 		end	
 	end
-]]--
 	if quest then
 
 		local tbits = Quest.Tracking[qId] or 0
@@ -7923,14 +7916,13 @@ function Nx.Quest:TrackOnMap (qId, qObj, useEnd, target, skipSame)
 --		Nx.prt ("TrackOnMap %s %s %s %s %s", qId, qObj, track, name, zone)
 
 		if track > 0 and zone then
---[[			if self.GOpts["QSync"] then
+			if self.GOpts["QSync"] then
 				if BlizIndex then
 					if not (IsQuestWatched(BlizIndex)) then
 						AddQuestWatch(BlizIndex)
 					end	
 				end
 			end
-]]--
 	local QMap = NxMap1.NxMap
 	if not InCombatLockdown() then	
 		local cur = self.QIds[qId]
@@ -8228,8 +8220,7 @@ function Nx.Quest:GetPosLoc (str, loc)
 			local area = w * h
 			cnt = cnt + area
 			ox = ox + (x + w * .5) * area
-			oy = oy + (y + h * .5) * area
-
+			oy = oy + (y + h * .5) * area				
 --			Nx.prt ("#%f %f %f %f %f (%f)", cnt, x, y, w, h, area)
 		end
 	end

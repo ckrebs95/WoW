@@ -11,24 +11,24 @@ DBM_SavedOptions = {
 	["RangeFrameX"] = 50,
 	["WarningColors"] = {
 		{
-			["r"] = 0.41,
-			["g"] = 0.8,
 			["b"] = 0.94,
+			["g"] = 0.8,
+			["r"] = 0.41,
 		}, -- [1]
 		{
-			["r"] = 0.95,
-			["g"] = 0.95,
 			["b"] = 0,
+			["g"] = 0.95,
+			["r"] = 0.95,
 		}, -- [2]
 		{
-			["r"] = 1,
-			["g"] = 0.5,
 			["b"] = 0,
+			["g"] = 0.5,
+			["r"] = 1,
 		}, -- [3]
 		{
-			["r"] = 1,
-			["g"] = 0.1,
 			["b"] = 0.1,
+			["g"] = 0.1,
+			["r"] = 1,
 		}, -- [4]
 	},
 	["AlwaysShowSpeedKillTimer"] = true,
@@ -79,19 +79,19 @@ DBM_SavedOptions = {
 	["BlockVersionUpdateNotice"] = false,
 	["DontShowBossAnnounces"] = false,
 	["RangeFramePoint"] = "CENTER",
-	["RangeFrameRadarY"] = -100,
-	["RangeFrameFrames"] = "radar",
+	["DisableCinematicsOutside"] = false,
+	["LastRevision"] = 8086,
 	["ShowEngageMessage"] = true,
-	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
+	["ShowRecoveryMessage"] = true,
 	["AutoRespond"] = true,
 	["ShowPizzaMessage"] = true,
 	["RangeFrameSound2"] = "none",
 	["ShowLHFrame"] = true,
 	["HPFrameMaxEntries"] = 5,
-	["ArrowPosY"] = -150,
+	["RangeFrameLocked"] = false,
 	["Enabled"] = true,
-	["HealthFrameLocked"] = false,
-	["SpecialWarningSound2"] = "Sound\\Creature\\AlgalonTheObserver\\UR_Algalon_BHole01.wav",
+	["ShowLoadMessage"] = true,
+	["DontSendBossWhispers"] = false,
 	["DisableCinematics"] = false,
 	["MovieFilters"] = {
 	},
@@ -101,15 +101,15 @@ DBM_SavedOptions = {
 		1, -- [3]
 	},
 	["ShowWipeMessage"] = true,
-	["DontSendBossWhispers"] = false,
-	["ShowLoadMessage"] = true,
-	["RangeFrameLocked"] = false,
+	["SpecialWarningSound2"] = "Sound\\Creature\\AlgalonTheObserver\\UR_Algalon_BHole01.wav",
+	["HealthFrameLocked"] = false,
+	["ArrowPosY"] = -150,
 	["AlwaysShowHealthFrame"] = false,
 	["HPFrameX"] = -50,
-	["ShowRecoveryMessage"] = true,
+	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
 	["SpamBlockBossWhispers"] = false,
-	["LastRevision"] = 8086,
-	["DisableCinematicsOutside"] = false,
+	["RangeFrameFrames"] = "radar",
+	["RangeFrameRadarY"] = -100,
 }
 DBT_SavedOptions = {
 	["DBM"] = {
@@ -117,7 +117,7 @@ DBT_SavedOptions = {
 		["TimerPoint"] = "TOPRIGHT",
 		["TimerX"] = -223.0000305175781,
 		["HugeTimerX"] = 0,
-		["HugeTimerY"] = -120,
 		["TimerY"] = -260,
+		["HugeTimerY"] = -120,
 	},
 }

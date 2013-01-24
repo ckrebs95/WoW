@@ -360,31 +360,31 @@ Map.MapGenAreas = {	-- Auto gen by ConvertMapData()
 		1170.833300782, -- [3]
 		"badlands", -- [4]
 	},
-	[213] = {
+	[206] = {
 		3.6375, -- [1]
 		2562.91640626, -- [2]
 		720.833203124, -- [3]
 		"ammenvalestart", -- [4]
 	},
-	[215] = {
+	[208] = {
 		3.6125, -- [1]
 		898.3332031260001, -- [2]
 		105, -- [3]
 		"echoislesstart", -- [4]
 	},
-	[217] = {
+	[210] = {
 		2.700000000000001, -- [1]
 		728.3332031259999, -- [2]
 		-0, -- [3]
 		"valleyoftrialsstart", -- [4]
 	},
-	[219] = {
+	[212] = {
 		2.17916796876, -- [1]
 		-429.583398438, -- [2]
 		-454.166601562, -- [3]
 		"deathknellstart", -- [4]
 	},
-	[221] = {
+	[214] = {
 		1.9375, -- [1]
 		-37.5, -- [2]
 		1714.16640625, -- [3]
@@ -408,19 +408,19 @@ Map.MapGenAreas = {	-- Auto gen by ConvertMapData()
 		913.8482421880001, -- [3]
 		"ironforge", -- [4]
 	},
-	[218] = {
+	[211] = {
 		1.929166015626,
 		-195.8333984376,
 		1192.5,
 		"coldridgevalley",
 	},	
-	[220] = {
+	[213] = {
 		3.7, -- [1]
 		-241.25, -- [2]
 		945.416796876, -- [3]
 		"newtinkertownstart", -- [4]
 	},
-	[222] = {
+	[215] = {
 		3.2, -- [1]
 		1076.666796876, -- [2]
 		-2166.66660156, -- [3]
@@ -432,13 +432,13 @@ Map.MapGenAreas = {	-- Auto gen by ConvertMapData()
 		897.5, -- [3]
 		"lochmodan", -- [4]
 	},
-	[214] = {
+	[207] = {
 		3.53333593751, -- [1]
 		-46.666796875, -- [2]
 		515.416796876, -- [3]
 		"campnarachestart", -- [4]
 	},
-	[216] = {
+	[209] = {
 		2.90000195313, -- [1]
 		-298.333398438, -- [2]
 		-2206.66660156, -- [3]
@@ -877,18 +877,18 @@ Map.MapInfo = {
 	{
 		Name = "The Maelstrom",
 		FileName = "TheMaelstromContinent",
-		X = 1375,
-		Y = 100,
+		X = 1100,
+		Y = -1800, 
 		Min = 5001,
 		Max = 5005,
 	},
 	[6] = {
 	    Name = "Pandaria",
 		FileName = "Pandaria",
-		X = 2400,
-		Y = 2500,
+		X = 2350,
+		Y = 300,
 		Min = 6001,
-		Max = 6011,
+		Max = 6012,
 	},
 	[8] = {
 		Name = "Instance",
@@ -1652,96 +1652,122 @@ Map.MapWorldInfo = {
 		YOff = 600,
 		City = true,
 		Explored = true,
-	},
+	},	
     [5005] = { 
-	    Name = "Darkmoon Faire",
+	    Name = "Darkmoon Island",
 		3.8,
-		-3000, -3000,
+		-300, -2750+2400,
 		Explored = true,
+		City = true,
+		MMOutside = true,		
 		UseAId=true,
 		MId=5005,
 		Overlay = "darkmoonfaireisland",
 	},
 	-- BGs/Arenas (note: add map win InitLayoutData when adding BGs)
     [6000] = {
-		31.03,
-		-1800, 150,
+		31.030601,
+		-1756.42, 95.44,
 	},
 	[6001] = {
 		Name="Dread Wastes",
-		10.704166015625,
-		-1275, 1203,
+		10.704166,
+		-1234.27, 1148.84,
 		Overlay = "dreadwastes",
 		Fish = 525,
 	},
 	[6002] = {
 		Name="Krasarang Wilds",
-		9.375001953125,
-		-640, 1510,
+		9.375002,
+		-595.94, 1454.25,
 		Overlay = "krasarang",
 		Fish = 525,
 	},
 	[6003] = {
 		Name="Kun-Lai Summit",
-		12.516666015625,
-		-1014.5, 363.5,
+		12.516666,
+		-974.27, 308.42,
 		Overlay = "kunlaisummit",
 		Fish = 525,
 	},
-	[6004] = {
-		Name="Shrine of Seven Stars",
-		0.1,
-		0,0,
-		City = True,
-	},
-	[6005] = {
-		Name="Shrine of Two Moons",
-		0.1,
-		0,0,		
-		City = True,
+	[6004] = { 
+		Name = "Shrine of Seven Stars",	
+		0.55, 
+		-82, 1251, 
+		ScaleAdjust=0.9469, 
+		City = true, 
+		Level2Id = 6005,
+	}, 
+    [6005] = {
+		Name = "Shrine of Seven Stars L2", 
+		0.55,
+		-82, 1251, 
+		ScaleAdjust=1.14356, 
+		City = true, 
+		Level1Id = 6004,
 	},
     [6006] = {
 		Name="The Jade Forest",
-		13.966666015625,
-		-335,755,
+		13.966666,
+		-296.77,701.75,
 		Overlay = "thejadeforest",
 		Fish = 525,
 	},
 	[6007] = {
 		Name="The Veiled Stair",
-		3.5875,
-		-210,1150,
+		3.587500,
+		-168.85,1094.25,
 		Overlay = "thehiddenpass",
 		Fish = 525,
 	},
 	[6008] = {
 		Name="Townlong Steppes",
-		11.487498046875,
-		-1463,576,
+		11.487498,
+		-1422.19,520.50,
 		Overlay = "townlongwastes",
 		Fish = 525,
 	},
 	[6009] = {
 		Name="Vale of Eternal Blossoms",
-		5.06666796875,
-		-542.5,1097,
+		5.066668,
+		-502.60,1042.59,
 		Overlay = "valeofeternalblossoms",
 		Fish = 525,
 	},
 	[6010] = {
 		Name="Valley of the Four Winds",
-		7.850001953125,
-		-585,1265,
+		7.850002,
+		-542.19,1213.00,
 		Overlay = "valleyofthefourwinds",
 		Fish = 525,
 	},
 	[6011] = {
 		Name="The Wandering Isle",
 		5.341666015625,
-		-16000,-6000,
+		-500,-200,
 		Overlay = "thewanderingisle",
 		StartZone = true,
+--		City = true,
+		MMOutside = true,		
+	},    
+    [6012] = { 
+		Name = "Shrine of Two Moons",	
+		0.5,
+		-217.8, 1073.5,
+		Alpha=2,
+		ScaleAdjust=0.87584,
+		City = true,
+		Level2Id = 6013,
 	},
+    [6013] = { 
+		Name = "Shrine of Seven Stars",	
+		0.5,
+		-217.8, 1073.5,
+		Alpha=2,	
+		ScaleAdjust=1.03448,
+		City = true, 
+		Level1Id = 6012,
+	},	
 	[9000] = {
 		1,				-- Scale
 		0, 0,			-- Origin
@@ -1908,6 +1934,7 @@ Map.MapWorldInfo = {
 -- "Atlas\Images\Maps"
 
 Map.AtlasInstanceInfo = {
+--[[
 	Atlas = 1,					-- Flag table as Atlas maps
 	[13006] = {
 		129 / 512, 386 / 512,		"AuchAuchenaiCrypts"
@@ -2082,265 +2109,10 @@ Map.AtlasInstanceInfo = {
 	[14144] = { 265 / 512, 257 / 512, "ObsidianSanctum", },
 	[14145] = { 185 / 512,   9 / 512, "UtgardePinnacle", },
 	[11147] = { 398 / 512, 489 / 512, "CoTOldStratholme", },
+]]--
 }
 
 Map.InstanceInfo = {			-- Blizzard instance maps (SetInstanceMap uses size of 3 for table entries)
-
-	-- Cataclysm
-	[15188] = { 0, 0,			"Baradinhold\\Baradinhold1_", },
-	[11014] = { 0, 0,			"BlackFathomDeeps\\BlackFathomDeeps1_",
-					0, -100,		"BlackFathomDeeps\\BlackFathomDeeps2_",
-					0, -200,		"BlackFathomDeeps\\BlackFathomDeeps3_", },
-	[12189] = { 0, 0,			"BlackrockCaverns\\BlackrockCaverns1_",
-					0, -100,		"BlackrockCaverns\\BlackrockCaverns2_", },
-	[12015] = { 0, 0,			"BlackrockDepths\\BlackrockDepths1_",
-					0, -100,		"BlackrockDepths\\BlackrockDepths2_", },
-	[12017] = { 0, 0,			"BlackrockSpire\\BlackrockSpire1_",
-					0, -100,		"BlackrockSpire\\BlackrockSpire2_",
-					0, -200,		"BlackrockSpire\\BlackrockSpire3_",
-					0, -300,		"BlackrockSpire\\BlackrockSpire4_",
-					0, -400,		"BlackrockSpire\\BlackrockSpire5_",
-					0, -500,		"BlackrockSpire\\BlackrockSpire6_",
-					0, -600,		"BlackrockSpire\\BlackrockSpire7_", },
-	[12190] = { 0, 0,			"BlackwingDescent\\BlackwingDescent1_",
-					0, -100,		"BlackwingDescent\\BlackwingDescent2_", },
-	[12018] = { 0, 0,			"BlackwingLair\\BlackwingLair1_",
-					0, -100,		"BlackwingLair\\BlackwingLair2_",
-					0, -200,		"BlackwingLair\\BlackwingLair3_",
-					0, -300,		"BlackwingLair\\BlackwingLair4_", },
-	[11036] = { 0, 0,			"DireMaul\\DireMaul1_",
-					0, -100,		"DireMaul\\DireMaul2_",
-					0, -200,		"DireMaul\\DireMaul3_",
-					0, -300,		"DireMaul\\DireMaul4_",
-					0, -400,		"DireMaul\\DireMaul5_",
-					0, -500,		"DireMaul\\DireMaul6_", },
-	[12048] = { 0, 0,			"Gnomeregan\\Gnomeregan1_",
-					0, -100,		"Gnomeregan\\Gnomeregan2_",
-					0, -200,		"Gnomeregan\\Gnomeregan3_",
-					0, -300,		"Gnomeregan\\Gnomeregan4_", },
-	[12191] = { 0, 0,			"GrimBatol\\GrimBatol1_", },
-	[11193] = { 0, 0,			"HallsOfOrigination\\HallsOfOrigination1_",
-					0, -100,		"HallsOfOrigination\\HallsOfOrigination2_",
-					0, -200,		"HallsOfOrigination\\HallsOfOrigination3_", },
-	[11186] = { 0, 0,			"LostCityofTolvir\\LostCityofTolvir", },
-	[11060] = { 0, 0,			"Maraudon\\Maraudon1_",
-					0, -100,		"Maraudon\\Maraudon2_", },
-	[12061] = { 0, 0,			"MoltenCore\\MoltenCore1_", },
-	[11069] = { 0, 0,			"Ragefire\\Ragefire1_", },
-	[11070] = { 0, 0,			"RazorfenDowns\\RazorfenDowns1_", },
-	[11071] = { 0, 0,			"RazorfenKraul\\RazorfenKraul1_", },
-	[11073] = { 0, 0,			"RuinsofAhnQiraj\\RuinsofAhnQiraj", },
-	[12074] = { 0, 0,			"ScarletHalls\\ScarletHalls1_",
-					0, -100,		"ScarletHalls\\ScarletHalls2_", },
-    [12238] = { 0, 0,			"ScarletCathedral\\ScarletCathedral1_",
-					0, -100,	"ScarletCathedral\\ScarletCathedral2_", },
-	[12075] = { 0, 0,			"Scholomance\\Scholomance1_",
-					0, -100, 	"Scholomance\\Scholomance2_",
-					0, -200,	"Scholomance\\Scholomance3_",
-					0, -300, 	"Scholomance\\Scholomance4_", },
-	[12077] = { 0, 0,			"ShadowfangKeep\\ShadowfangKeep1_",
-					0, -100,		"ShadowfangKeep\\ShadowfangKeep2_",
-					0, -200,		"ShadowfangKeep\\ShadowfangKeep3_",
-					0, -300,		"ShadowfangKeep\\ShadowfangKeep4_",
-					0, -400,		"ShadowfangKeep\\ShadowfangKeep5_",
-					0, -500,		"ShadowfangKeep\\ShadowfangKeep6_",
-					0, -600,		"ShadowfangKeep\\ShadowfangKeep7_", },
-	[12086] = { 0, 0,			"Stratholme\\Stratholme1_", },
-	[12192] = { 0, 0,			"TheBastionofTwilight\\TheBastionofTwilight1_",
-					0, -100,		"TheBastionofTwilight\\TheBastionofTwilight2_",
-					0, -200,		"TheBastionofTwilight\\TheBastionofTwilight3_", },
-	[12098] = { 0, 0,			"TheDeadmines\\TheDeadmines1_",
-					0, -100,		"TheDeadmines\\TheDeadmines2_", },
-	[12101] = { 0, 0,			"TheStockade\\TheStockade1_", },
-	[15195] = { 0, 0,			"TheStoneCore\\TheStoneCore1_", },
-	[12087] = { 0, 0,			"TheTempleOfAtalHakkar\\TheTempleOfAtalHakkar1_", },
-	[11198] = { 0, 0,			"Throneofthefourwinds\\Throneofthefourwinds1_", },
-	[11196] = { 0, 0,			"SkywallDungeon\\SkywallDungeon1_", },
-	[12194] = { 0, 0,			"ThroneOfTides\\ThroneOfTides1_",
-					0, -100,		"ThroneOfTides\\ThroneOfTides2_", },
-	[12106] = { 0, 0,			"Uldaman\\Uldaman1_", },
-	[11109] = { 0, 0,			"WailingCaverns\\WailingCaverns1_", },
-	[12118] = { 0, 0,			"ZulAman\\ZulAman", },
-	[11116] = { 0, 0,			"ZulFarrak\\ZulFarrak", },
-	[12117] = { 0, 0,			"ZulGurub\\ZulGurub", },
-
-	-- Patch 4.2
-	[11200] = { 0, 0,			"Firelands\\Firelands",
-					0, -100,		"Firelands\\Firelands1_",
-					0, -200,		"Firelands\\Firelands2_", },
-
-	-- Patch 4.3
-	[11201] = { 0, 0,			"EndTime\\EndTime",
-					0, -100,		"EndTime\\EndTime1_",
-					0, -200,		"EndTime\\EndTime2_",
-					0, -300,		"EndTime\\EndTime3_",
-					0, -400,		"EndTime\\EndTime4_",
-					0, -500,		"EndTime\\EndTime5_", },
-	[11202] = { 0, 0,			"WellOfEternity\\WellOfEternity", },
-	[11203] = { 0, 0,			"HourofTwilight\\HourOfTwilight",
-					0, -100,		"HourofTwilight\\HourofTwilight1_", },
-	[11204] = { 0, 0,			"DragonSoul\\DragonSoul",
-					0, -100,		"DragonSoul\\DragonSoul1_",
-					0, -200,		"DragonSoul\\DragonSoul2_",
-					0, -300,		"DragonSoul\\DragonSoul3_",
-					0, -400,		"DragonSoul\\DragonSoul4_",
-					0, -500,		"DragonSoul\\DragonSoul5_",
-					0, -600,		"DragonSoul\\DragonSoul6_", },
-
-	-- WotLK
-	[14065] = { 0, 0,			"Naxxramas\\Naxxramas1_",
-					0, -100,		"Naxxramas\\Naxxramas2_",
-					0, -200,		"Naxxramas\\Naxxramas3_",
-					0, -300,		"Naxxramas\\Naxxramas4_",
-					0, -400,		"Naxxramas\\Naxxramas5_",
-					0, -500,		"Naxxramas\\Naxxramas6_", },
-	[14133] = { 0, 0,			"AhnKahet\\Ahnkahet1_",
-					0, -100,		"AhnKahet\\Ahnkahet2_", },
-	[14160] = { 0, 0,			"AzjolNerub\\AzjolNerub1_",
-					0, -100,		"AzjolNerub\\AzjolNerub2_",
-					0, -200,		"AzjolNerub\\AzjolNerub3_", },
-	[14135] = { 0, 0,			"DrakTharonKeep\\DrakTharonKeep1_",
-					0, -100,		"DrakTharonKeep\\DrakTharonKeep2_", },
-	[14158] = { 0, 0,			"GunDrak\\GunDrak1_", },
-	[14137] = { 0, 0,			"TheNexus\\TheNexus1_", },
-	[14138] = { 0, 0,			"TheOculus\\TheOculus1_",
-					0, -100,		"TheOculus\\TheOculus2_",
-					0, -200,		"TheOculus\\TheOculus3_",
-					0, -300,		"TheOculus\\TheOculus4_", },
-	[14139] = { 0, 0,			"VioletHold\\VioletHold1_", },
-	[14140] = { 0, 0,			"HallsofLightning\\HallsofLightning1_",
-					0, -100,		"HallsofLightning\\HallsofLightning2_", },
-	[14141] = { 0, 0,			"HallsofStone\\HallsofStone1_", },
-	[14142] = { 0, 0,			"UtgardeKeep\\UtgardeKeep1_",
-					0, -100,		"UtgardeKeep\\UtgardeKeep2_",
-					0, -200,		"UtgardeKeep\\UtgardeKeep3_", },
-	[14144] = { 0, 0,			"TheObsidianSanctum\\TheObsidianSanctum", },
-	[14145] = { 0, 0,			"UtgardePinnacle\\UtgardePinnacle1_",
-					0, -100,		"UtgardePinnacle\\UtgardePinnacle2_", },
-	[11147] = { 0, 0,			"CoTStratholme\\CoTStratholme2_",
-					0, -100,		"CoTStratholme\\CoTStratholme1_", },
-	[14149] = { 0, 0,			"Ulduar\\Ulduar",
-					0, -100,		"Ulduar\\Ulduar1_",
-					0, -200,		"Ulduar\\Ulduar2_",
-					0, -300,		"Ulduar\\Ulduar3_",
-					0, -400,		"Ulduar\\Ulduar4_", },
-	[14151] = { 0, 0,			"TheArgentColiseum\\TheArgentColiseum1_", },
-	[14152] = { 0, 0,			"TheArgentColiseum\\TheArgentColiseum1_", },
-	[14153] = { 0, 0,			"TheForgeofSouls\\TheForgeofSouls1_", },
-	[14154] = { 0, 0,			"IcecrownCitadel\\IcecrownCitadel1_",
-					0, -100,		"IcecrownCitadel\\IcecrownCitadel2_",
-					0, -200,		"IcecrownCitadel\\IcecrownCitadel3_",
-					0, -300,		"IcecrownCitadel\\IcecrownCitadel4_",
-					0, -400,		"IcecrownCitadel\\IcecrownCitadel5_",
-					0, -500,		"IcecrownCitadel\\IcecrownCitadel6_",
-					0, -600,		"IcecrownCitadel\\IcecrownCitadel7_",
-					0, -700,		"IcecrownCitadel\\IcecrownCitadel8_", },
-	[11067] = { 0, 0,			"OnyxiasLair\\OnyxiasLair1_", },
-	[14155] = { 0, 0,			"PitofSaron\\PitofSaron", },
-	[14156] = { 0, 0,			"HallsofReflection\\HallsofReflection1_", },
-	[14159] = { 0, 0,			"VaultofArchavon\\VaultofArchavon1_", },
-	[16226] = { 0, 0,			"TheGreatWall\\theGreatWall1_",
-					0, -100,	"TheGreatWall\\TheGreatWall2_", },
-	[16227] = { 0, 0,			"MogushanPalace\\MogushanPalace1_",
-					0, -100,	"MogushanPalace\\MogushanPalace2_",
-					0, -200,	"MogushanPalace\\MogushanPalace3_", },
-	[16228] = { 0, 0,			"ShadowpanHideout\\ShadowpanHideout",
-					0, -100,	"ShadowpanHideout\\ShadowpanHideout1_",
-					0, -200,	"ShadowpanHideout\\ShadowpanHideout2_",
-					0, -300,	"ShadowpanHideout\\ShadowpanHideout3_", },
-	[16229] = { 0, 0,			"Siegeofniuzaotemple\\SiegeofNiuzaoTemple",
-					0, -100,	"SiegeofNiuzaoTemple\\SiegeofNiuzaoTemple1_",
-					0, -200,	"SiegeofNiuzaoTemple\\SiegeofNiuzaoTemple2_", },
-	[16230] = { 0, 0,			"StormstoutBrewery\\StormstoutBrewery1_",
-					0, -100,	"StormstoutBrewery\\StormstoutBrewery2_",
-					0, -200,	"StormstoutBrewery\\StormstoutBrewery3_",
-					0, -300,	"StormstoutBrewery\\StormstoutBrewery4_", },
-	[16231] = { 0, 0,			"EastTemple\\EastTemple1_",
-					0, -100,	"EastTemple\\EastTemple2_", },
-	[16232] = { 0, 0,			"Heartoffear\\Heartoffear1_",
-					0, -100,	"Heartoffear\\Heartoffear2_", },
-	[16233] = { 0, 0,			"Mogushanvaults\\Mogushanvaults1_",
-					0, -100,	"Mogushanvaults\\Mogushanvaults2_",
-					0, -200,	"Mogushanvaults\\Mogushanvaults3_", },
-	[16234] = { 0, 0,			"TerraceOfEndlessSpring\\TerraceOfEndlessSpring", },
-    [13006] = { 0 ,0,			"AuchenaiCrypts\\AuchenaiCrypts1_",
-					0, -100,	"AuchenaiCrypts\\AuchenaiCrypts2_", },
-	[13007] = { 0, 0,			"ManaTombs\\ManaTombs1_", },
-	[13008] = { 0, 0,			"SethekkHalls\\SethekkHalls1_",
-					0, -100,	"SethekkHalls\\SethekkHalls2_", },
-	[13009] = { 0, 0,			"ShadowLabyrinth\\ShadowLabrinth1_", },
-	[13013] = { 0, 0,			"BlackTemple\\BlackTemple",
-					0, -100,	"BlackTemple\\BlackTemple1_",
-					0, -200,	"BlackTemple\\BlackTemple2_",
-					0, -300,	"BlackTemple\\BlackTemple3_",
-					0, -400,	"BlackTemple\\BlackTemple4_",
-					0, -500,	"BlackTemple\\BlackTemple5_",
-					0, -600,	"BlackTemple\\BlackTemple6_",
-					0, -700,	"BlackTemple\\BlackTemple7_", },
-	[13027] = { 0, 0,			"CoilfangReservoir\\CoilfangReservoir1_", },
-	[13028] = { 0, 0,			"TheSlavePens\\TheSlavePens1_", },
-	[13029] = { 0, 0,			"TheSteamVault\\TheSteamVault1_",
-					0, -100,	"TheSteamVault\\TheSteamVault2_", },
-	[13030] = { 0, 0,			"TheUnderBog\\TheUnderBog1_", },
-	[13049] = { 0, 0,			"GruulsLair\\GruulsLair1_", },
-	[13051] = { 0, 0,			"HellfireRamparts1_", },
-	[13052] = { 0, 0,			"Magtheridonslair\\Magtheridonslair1_", },
-	[13053] = { 0, 0,			"TheBloodFurnace\\TheBloodFurnace1_", },
-	[13054] = { 0, 0,			"TheShatteredHalls\\TheShatteredHalls1_", },
-	[13091] = { 0, 0,			"TheArcatraz\\TheArcatraz1_",
-					0, -100,	"TheArcatraz\\TheArcatraz2_",
-					0, -200,	"TheArcatraz\\TheArcatraz3_", },
-	[13092] = { 0, 0,			"TheBotanica1_", },
-	[13093] = { 0, 0,			"TempestKeep\\TempestKeep1_", },
-	[13094] = { 0, 0,			"TheMechanar\\TheMechanar1_",
-					0, -100,	"TheMechanar\\TheMechanar2_", },
-	[11024] = { 0, 0,			"CoTHillsbradFoothills\\CoTHillsbradFoothills", },
-	[11025] = { 0, 0,			"CoTTheBlackMorass\\CoTTheBlackMorass", },
-	[11023] = { 0, 0,			"CoTMountHyjal\\CoTMountHyjal", },
-	[12058] = { 0, 0,			"Karazhan\\Karazhan1_",
-					0, -100,	"Karazhan\\Karazhan2_",
-					0, -200,	"Karazhan\\Karazhan3_",
-					0, -300,	"Karazhan\\Karazhan4_",
-					0, -400,	"Karazhan\\Karazhan5_",
-					0, -500,	"Karazhan\\Karazhan6_",
-					0, -600,	"Karazhan\\Karazhan7_",
-					0, -700,	"Karazhan\\Karazhan8_",
-					0, -800,	"Karazhan\\Karazhan9_",
-					0, -900,	"Karazhan\\Karazhan10_",
-					0, -1000,	"Karazhan\\Karazhan11_",
-					0, -1100,	"Karazhan\\Karazhan12_",
-					0, -1200,	"Karazhan\\Karazhan13_",
-					0, -1300,	"Karazhan\\Karazhan14_",
-					0, -1400,	"Karazhan\\Karazhan15_",
-					0, -1500,	"Karazhan\\Karazhan16_",
-					0, -1600,	"Karazhan\\Karazhan17_", },
-	[12120] = { 0, 0,			"MagistersTerrace\\MagistersTerrace1_",
-					0, -100,	"MagistersTerrace\\MagistersTerrace2_", },
-	[12121] = { 0, 0,			"SunwellPlateau\\SunwellPlateau",
-					0, -100,	"SunwellPlateau\\SunwellPlateau1_", },
-	[11236] = { 0, 0,			"DustwallowMarshScenario\\DustwallowMarshScenario", },
-	[11237] = { 0, 0,			"DustwallowMarshScenarioAlliance\\DustwallowMarshScenarioAlliance", },
-	[16239] = { 0, 0,			"BrewmasterScenario01\\BrewmasterScenario01", },
-	[16240] = { 0, 0,			"AncientMoguCrypt\\AncientMoguCrypt1_",
-					0, -100,	"AncientMoguCrypt\\AncientMoguCrypt2_", },
-	[16241] = { 0, 0,			"TheJadeForestScenario\\TheJadeForestScenario", },
-	[16242] = { 0, 0,			"BrewmasterScenario03\\BrewmasterScenario03", },
-	[16243] = { 0, 0,			"KunLaiPassScenario\\KunLaiPassScenario", },
-	[16244]	= { 0, 0,			"ProvingGrounds\\ProvingGrounds1_",},
-	[16247] = { 0, 0, 			"Tyrivess\\Tyrivess",},
-	[16248] = { 0, 0, 			"KrasarangPatience\\KrasarangPatience",},
-	[16249] = { 0, 0, 			"VoljinScenario\\VoljinScenario1_",
-					0,-100,		"VoljinScenario\\TheAncientPassage1_",},
-	[16250] = { 0, 0, 			"KrasarangAlliance\\KrasarangAlliance",},
-	[16251] = { 0, 0, 			"KrasarangHorde\\KrasarangHorde",},
-	[12252] = { 0, 0, 			"BlackTempleScenario\\BlackTempleScenario",
-					0,-100,		"BlackTempleScenario\\BlackTempleScenario1_",
-					0,-200,		"BlackTempleScenario\\BlackTempleScenario2_",	
-					0,-300,		"BlackTempleScenario\\BlackTempleScenario3_",
-					0,-400,		"BlackTempleScenario\\BlackTempleScenario4_",	
-					0,-500,		"BlackTempleScenario\\BlackTempleScenario5_",					
-					0,-600,		"BlackTempleScenario\\BlackTempleScenario6_",
-					0,-700,		"BlackTempleScenario\\BlackTempleScenario7_",},
 }	
 
 Map.ZoneOverlays = {
@@ -3650,26 +3422,26 @@ Map.ZoneOverlays = {
 		["moltenfront"] = "0,0,1024,768",	-- Manual
 	},
 	-- Pandaria
-	["thejadeforest"] = {
-		["glassfinvillage"] = "525,358,278,310",
-		["ruinsofganshi"] = "316,0,196,158",
-		["thearboretum"] = "481,215,242,210",
-		["windlessisle"] = "539,43,251,348",
-		["dawnsblossom"] = "325,178,234,210",
-		["templeofthejadeserpent"] = "468,295,264,211",
-		["dreamerspavillion"] = "474,520,218,148",
-		["nectarbreezeorchard"] = "290,330,219,256",
-		["hellscreamshope"] = "181,75,196,166",
-		["slingtailpits"] = "428,416,179,180",
-		["serpentsspine"] = "388,299,191,216",
-		["chuntianmonastery"] = "300,56,227,198",
-		["jademines"] = "400,146,236,142",
-		["emperorsomen"] = "430,21,202,204",
-		["grookinmound"] = "182,214,253,229",
-		["wreckoftheskyshark"] = "202,0,210,158",
-		["waywardlanding"] = "346,482,219,186",
-		["nookanooka"] = "189,151,219,205",
-	},
+ ["thejadeforest"] = {
+    ["chuntianmonastery"] = "300,56,227,198",
+    ["dawnsblossom"] = "325,178,234,210",
+    ["dreamerspavillion"] = "474,520,218,148",
+    ["emperorsomen"] = "430,21,202,204",
+    ["glassfinvillage"] = "525,358,278,310",
+    ["grookinmound"] = "182,214,253,229",
+    ["hellscreamshope"] = "181,75,196,166",
+    ["jademines"] = "400,146,236,142",
+    ["nectarbreezeorchard"] = "290,330,219,256",
+    ["nookanooka"] = "189,151,219,205",
+    ["ruinsofganshi"] = "316,0,196,158",
+    ["serpentsspine"] = "388,299,191,216",
+    ["slingtailpits"] = "428,416,179,180",
+    ["templeofthejadeserpent"] = "468,295,264,211",
+    ["thearboretum"] = "481,215,242,210",
+    ["waywardlanding"] = "346,482,219,186",
+    ["windlessisle"] = "539,43,251,348",
+    ["wreckoftheskyshark"] = "202,0,210,158",
+  },
 	["dreadwastes"] = {
 		["klaxxivess"] = "458,110,236,204",
 		["zanvess"] = "162,385,290,283",
@@ -3702,6 +3474,24 @@ Map.ZoneOverlays = {
 		["ungaingoo"] = "330,498,258,170",
 		["nayelilagoon"] = "343,373,246,240",
 	},
+	["krasarang_terrain1"] = {
+		["redwingrefuge"] = "317,63,212,265",
+		["anglersoutpost"] = "545,205,265,194",
+		["templeoftheredcrane"] = "300,215,219,259",
+		["dojaniriver"] = "513,3,190,282",
+		["krasarangcove"] = "701,19,295,293",
+		["thedeepwild"] = "397,59,188,412",
+		["lostdynasty"] = "589,27,217,279",
+		["fallsongriver"] = "218,77,214,393",
+		["thesouthernisles"] = "0,267,275,329",
+		["zhusbastion"] = "612,0,306,204",
+		["ruinsofdojan"] = "444,44,204,383",
+		["theforbiddenjungle"] = "0,79,257,300",
+		["ruinsofkorja"] = "125,88,211,395",
+		["cradleofchiji"] = "176,376,272,250",
+		["ungaingoo"] = "330,498,258,170",
+		["nayelilagoon"] = "343,373,246,240",
+	},	
 	["kunlaisummit"] = {
 		["binanvillage"] = "607,470,240,198",
 		["mogujia"] = "462,411,253,208",
@@ -3717,7 +3507,7 @@ Map.ZoneOverlays = {
 		["kotapeak"] = "233,360,252,257",
 		["iseoflostsouls"] = "602,4,259,233",
 		["fireboughnook"] = "322,496,224,172",
-	},
+	},	
 	["valeofeternalblossoms"] = {
 		["guolairuins"] = "87,3,337,349",
 		["whitemoonshrine"] = "482,10,298,262",
@@ -7223,6 +7013,29 @@ Map.PandariaMapBlks = {
 	[3941] = "",
 }
 
+Map.TheWanderingIsleMapBlks={
+	[2328]="",
+	[2329]="",
+	[2330]="",
+	[2331]="",
+	[2428]="",
+	[2429]="",
+	[2430]="",
+	[2431]="",
+	[2528]="",
+	[2529]="",
+	[2530]="",
+	[2531]="",
+	[2628]="",
+	[2629]="",
+	[2630]="",
+	[2631]="",
+	[2728]="",
+	[2729]="",
+	[2730]="",
+	[2731]="",
+}
+
 --[[
 Map.OrgMapBlks = {
 	[0000000] = "2874c241d5d9f4b84eba58c91d42943d",
@@ -7266,14 +7079,14 @@ Map.MiniMapBlks = {
 		Map.LIMapBlks,
 		2324,
 		23, 24,
-		1164.905429,397.59998,
+		1164.91-1375+1100,397.60-100-1800,
 		"World\\Minimaps\\LostIsles"
 	},
 	[6] = {
 		Map.PandariaMapBlks,
 		1816,
 		18, 16,
-		860, 2280,
+		850, 2225-2500+300,
 		"World\\Minimaps\\HawaiiMainLand"
 	},
 	[1003] = {
@@ -7308,23 +7121,30 @@ Map.MiniMapBlks = {
 		Map.DeepholmMapBlks,
 		2625,
 		26, 25,
-		2314.912,54.8056,
+		2314.91-1375+1100,54.81-100-1800,
 		"World\\Minimaps\\Deephome"
 	},
 	[5002] = {
 		Map.KezanMapBlks,
 		2324,
 		23, 24,
-		1670.8002,-1295.7,
+		1670.80-1375+1100,-1295.70-100-1800,
 		"World\\Minimaps\\LostIsles"
 	},
 	[5005] = {
 		Map.DarkMoonFaireBlks,
 		1636,
 		16, 36,
-		-1871.256, -3133,
+		-1871.26-1375+1100+3000-300,-3133.00-100-1800+3000-2750+2400,
 		"World\\Minimaps\\DarkmoonFaire"
 	},
+    [6009] = {
+	     Map.TheWanderingIsleMapBlks,
+		 2328,
+		 23,28,
+		 Map.MapWorldInfo[6009][2]+Map.MapInfo[6].X+35.7, Map.MapWorldInfo[6009][3]+Map.MapInfo[6].Y-69.55,
+		 "World\\Minimaps\\NewRaceStartZone"
+	},	
 }
 
 --------
@@ -7380,11 +7200,38 @@ function Nx.Map:GetMiniBlkName (miniT, x, y)
 
 		if #v > 0 then
 			return format ("%s\\noLiquid_map%02d_%02d", miniT[7], x + miniT[3], y + miniT[4])
+		end		
+		if (strfind(miniT[7],"HawaiiMainLand")) then			
+			local hasFac = false
+			for factionIndex = 1, GetNumFactions() do
+				local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith,canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild = GetFactionInfo(factionIndex)				
+				if (name == "Operation: Shieldwall") or (name == "Dominance Offensive") then
+					hasFac = true
+				end
+			end
+			if (hasFac) then
+				if ((x + miniT[3] == 33) or (x + miniT[3] == 34)) and ((y + miniT[4] == 33) or (y + miniT[4] == 34)) then
+					return format("World\\Minimaps\\AllianceBeachDailyArea\\map%02d_%02d", x + miniT[3], y + miniT[4])
+				end
+				if ((x + miniT[3] == 27) or (x + miniT[3] == 28)) and ((y + miniT[4] == 35) or (y + miniT[4] == 36) or (y + miniT[4] == 37) or (y + miniT[4] == 38)) then
+					return format("World\\Minimaps\\HordeBeachDailyArea\\map%02d_%02d", x + miniT[3], y + miniT[4])
+				end
+			end
+		  return format ("%s\\map%02d_%02d", miniT[7], x + miniT[3], y + miniT[4])
+		else
+			return format ("%s\\map%02d_%02d", miniT[7], x + miniT[3], y + miniT[4])
 		end
-
-		return format ("%s\\map%02d_%02d", miniT[7], x + miniT[3], y + miniT[4])
+		
 	end
 end
+
+Map.MapLevels={
+    [811] = { [3] = 6010, [4] = 6011, },
+    [903] = { [1] = 6012, [2] = 6013, },
+    [905] = { [3] = 6010, [4] = 6011, }, 
+    [504] = { [2] = 4014, },    
+    [321] = { [2] = 1034, },   
+}
 
 -------------------------------------------------------------------------------
 

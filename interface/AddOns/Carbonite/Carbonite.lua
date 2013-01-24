@@ -26,11 +26,11 @@ function NXInit()
 
 	NXTITLEFULL = NXTITLE
 
-	Nx.VERMAJOR			= 5.059
-	Nx.VERMINOR			= .000			-- Not 0 is a test version
+	Nx.VERMAJOR			= 5.1
+	Nx.VERMINOR			= .2			-- Not 0 is a test version
 	Nx.BUILD				= 292
 
-	Nx.VERSION			= Nx.VERMAJOR + Nx.VERMINOR / 1000
+	Nx.VERSION			= Nx.VERMAJOR + Nx.VERMINOR / 100
 
 	Nx.VERSIONDATA			= .02				-- Main data
 	Nx.VERSIONCHAR			= .02				-- Character data
@@ -412,8 +412,8 @@ function Nx:ADDON_LOADED (event, arg1, ...)
 
 		Nx:prtSetChatFrame()
 
-		if not opts["LoginHideVer"] then
-			Nx.prt (NXTITLE.." |cffffffff"..Nx.VERSION.." B"..Nx.BUILD.." "..NXLOADING)
+		if not opts["LoginHideVer"] then			
+			Nx.prt (NXTITLE.." |cffffffff"..Nx.VERMAJOR.."."..(Nx.VERMINOR*10).." B"..Nx.BUILD.." "..NXLOADING)
 		end
 
 		Nx:LocaleInit()
@@ -2498,15 +2498,15 @@ function Nx.Title:Init()
 	local str
 
 	if Nx.VERMINOR > 0 then
-		str = NXTITLEFULL .. " |cffe0e0ffVersion %.6f Build %d"
+		str = NXTITLEFULL .. " |cffe0e0ffVersion %d.%d Build %d"
 	else
-		str = NXTITLEFULL .. " |cffe0e0ffVersion %.3f Build %d"
+		str = NXTITLEFULL .. " |cffe0e0ffVersion %d.%d Build %d"
 	end
 
-	str = format (str, Nx.VERSION, Nx.BUILD)
+	str = format (str, Nx.VERMAJOR,Nx.VERMINOR*10, Nx.BUILD)
 
 	self.NXFStr1:SetText (str)
-	self.NXFStr2:SetText ("|cffe0e0ffCopyright 2007-2012 Carbon Based Creations, LLC")
+	self.NXFStr2:SetText ("|cffe0e0ffMaintained by Rythal of Moonguard")
 
 	Nx.Proc:New (self, self.TickWait, 40)
 
@@ -4280,9 +4280,7 @@ function Nx.NXMiniMapBut:NXOnEnter (frm)
 
 	--V4 this
 	tip:SetOwner (frm, "ANCHOR_LEFT")
-	tip:SetText (NXTITLEFULL .. " " .. Nx.VERSION)
-
-	tip:AddLine ("carboniteaddon.com", .6, .6, 1, 1)
+	tip:SetText (NXTITLEFULL .. " " .. Nx.VERMAJOR .. "." .. Nx.VERMINOR*10)	
 	tip:AddLine ("Left click toggle Map", 1, 1, 1, 1)
 
 	if mmown then

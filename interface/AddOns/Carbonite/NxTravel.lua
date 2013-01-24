@@ -51,6 +51,7 @@ function Nx.Travel:Init()
 
 	self.ColdFlyName = GetSpellInfo (54197) or ""
 	self.AzerothFlyName = GetSpellInfo (90267) or ""
+	self.FlySkillPandaria=115913
 end
 
 function Nx.Travel:Add (typ, cont)
@@ -63,7 +64,7 @@ function Nx.Travel:Add (typ, cont)
 
 	if 1 then
 
-		local dataStr = Nx.GuideData[typ][cont]
+		local dataStr = Nx.GuideData[typ][cont] or ""
 
 		for n = 1, #dataStr, 2 do
 
@@ -432,6 +433,9 @@ function Nx.Travel:MakePath (tracking, srcMapId, srcX, srcY, dstMapId, dstX, dst
 
 		elseif cont1 == 4 then
 			self.FlyingMount = GetSpellInfo (self.ColdFlyName)
+        elseif cont1 == 6 then
+            self.FlyingMount = IsSpellKnown(self.FlySkillPandaria)            
+			
 		end
 	end
 

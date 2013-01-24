@@ -11,24 +11,24 @@ DBM_SavedOptions = {
 	["RangeFrameX"] = 50,
 	["WarningColors"] = {
 		{
-			["r"] = 0.41,
-			["g"] = 0.8,
 			["b"] = 0.94,
+			["g"] = 0.8,
+			["r"] = 0.41,
 		}, -- [1]
 		{
-			["r"] = 0.95,
-			["g"] = 0.95,
 			["b"] = 0,
+			["g"] = 0.95,
+			["r"] = 0.95,
 		}, -- [2]
 		{
-			["r"] = 1,
-			["g"] = 0.5,
 			["b"] = 0,
+			["g"] = 0.5,
+			["r"] = 1,
 		}, -- [3]
 		{
-			["r"] = 1,
-			["g"] = 0.1,
 			["b"] = 0.1,
+			["g"] = 0.1,
+			["r"] = 1,
 		}, -- [4]
 	},
 	["AlwaysShowSpeedKillTimer"] = true,
@@ -79,37 +79,37 @@ DBM_SavedOptions = {
 	["BlockVersionUpdateNotice"] = false,
 	["DontShowBossAnnounces"] = false,
 	["RangeFramePoint"] = "CENTER",
-	["DisableCinematicsOutside"] = false,
-	["LastRevision"] = 8086,
+	["ShowEngageMessage"] = true,
+	["ShowRecoveryMessage"] = true,
 	["ShowSpecialWarnings"] = true,
-	["SpecialWarningSound2"] = "Sound\\Creature\\AlgalonTheObserver\\UR_Algalon_BHole01.wav",
+	["ShowLoadMessage"] = true,
 	["ArrowPosY"] = -150,
 	["ShowPizzaMessage"] = true,
 	["RangeFrameSound2"] = "none",
 	["ShowLHFrame"] = true,
 	["HideBossEmoteFrame"] = false,
-	["WarningIconRight"] = true,
+	["HealthFrameLocked"] = false,
 	["Enabled"] = true,
-	["RangeFrameRadarY"] = -100,
-	["HPFrameMaxEntries"] = 5,
-	["DisableCinematics"] = false,
-	["MovieFilters"] = {
-	},
-	["RangeFrameLocked"] = false,
-	["ShowWipeMessage"] = true,
+	["DontSendBossWhispers"] = false,
 	["SpecialWarningFontColor"] = {
 		0, -- [1]
 		0, -- [2]
 		1, -- [3]
 	},
-	["DontSendBossWhispers"] = false,
-	["HealthFrameLocked"] = false,
+	["DisableCinematics"] = false,
+	["MovieFilters"] = {
+	},
+	["RangeFrameLocked"] = false,
+	["ShowWipeMessage"] = true,
+	["HPFrameMaxEntries"] = 5,
+	["RangeFrameRadarY"] = -100,
+	["WarningIconRight"] = true,
 	["AlwaysShowHealthFrame"] = false,
 	["HPFrameX"] = -50,
-	["ShowLoadMessage"] = true,
+	["SpecialWarningSound2"] = "Sound\\Creature\\AlgalonTheObserver\\UR_Algalon_BHole01.wav",
 	["SpamBlockBossWhispers"] = false,
-	["ShowRecoveryMessage"] = true,
-	["ShowEngageMessage"] = true,
+	["LastRevision"] = 8086,
+	["DisableCinematicsOutside"] = false,
 }
 DBT_SavedOptions = {
 	["DBM"] = {

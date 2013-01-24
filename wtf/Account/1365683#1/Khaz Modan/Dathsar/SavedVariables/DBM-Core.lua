@@ -11,24 +11,24 @@ DBM_SavedOptions = {
 	["RangeFrameX"] = 50,
 	["WarningColors"] = {
 		{
-			["r"] = 0.4117647058823529,
-			["g"] = 0.8,
 			["b"] = 0.9411764705882353,
+			["g"] = 0.8,
+			["r"] = 0.4117647058823529,
 		}, -- [1]
 		{
-			["r"] = 0.9490196078431372,
-			["g"] = 0.9490196078431372,
 			["b"] = 0,
+			["g"] = 0.9490196078431372,
+			["r"] = 0.9490196078431372,
 		}, -- [2]
 		{
-			["r"] = 1,
-			["g"] = 0.5019607843137255,
 			["b"] = 0,
+			["g"] = 0.5019607843137255,
+			["r"] = 1,
 		}, -- [3]
 		{
-			["r"] = 1,
-			["g"] = 0.1019607843137255,
 			["b"] = 0.1019607843137255,
+			["g"] = 0.1019607843137255,
+			["r"] = 1,
 		}, -- [4]
 	},
 	["AlwaysShowSpeedKillTimer"] = true,
@@ -68,7 +68,7 @@ DBM_SavedOptions = {
 	["AutoRespond"] = true,
 	["HealthFrameGrowUp"] = false,
 	["HideBossEmoteFrame"] = false,
-	["RangeFrameRadarX"] = -65.0001134723408,
+	["RangeFrameRadarX"] = -206.0003051757813,
 	["ShowBigBrotherOnCombatStart"] = false,
 	["BlockVersionUpdatePopup"] = true,
 	["InfoFrameShowSelf"] = false,
@@ -79,37 +79,37 @@ DBM_SavedOptions = {
 	["BlockVersionUpdateNotice"] = false,
 	["DontShowBossAnnounces"] = false,
 	["ArrowPosY"] = -150,
-	["ShowEngageMessage"] = true,
-	["ShowRecoveryMessage"] = true,
+	["DisableCinematicsOutside"] = false,
+	["LastRevision"] = 8086,
 	["WarningIconRight"] = true,
-	["ShowLoadMessage"] = true,
+	["RangeFrameSound1"] = "none",
 	["SpecialWarningSound2"] = "Sound\\Creature\\AlgalonTheObserver\\UR_Algalon_BHole01.wav",
 	["ShowPizzaMessage"] = true,
 	["RangeFrameSound2"] = "none",
 	["ShowLHFrame"] = true,
 	["DontSendBossWhispers"] = false,
-	["RangeFrameRadarY"] = -150.0000931322561,
+	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
 	["Enabled"] = true,
-	["HealthFrameLocked"] = false,
-	["HPFrameMaxEntries"] = 5,
-	["DisableCinematics"] = false,
-	["MovieFilters"] = {
-	},
-	["RangeFramePoint"] = "CENTER",
-	["ShowWipeMessage"] = true,
+	["RangeFrameFrames"] = "radar",
 	["SpecialWarningFontColor"] = {
 		0, -- [1]
 		0, -- [2]
 		1, -- [3]
 	},
-	["RangeFrameFrames"] = "radar",
-	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
+	["DisableCinematics"] = false,
+	["MovieFilters"] = {
+	},
+	["RangeFramePoint"] = "CENTER",
+	["ShowWipeMessage"] = true,
+	["HPFrameMaxEntries"] = 5,
+	["HealthFrameLocked"] = false,
+	["RangeFrameRadarY"] = -179.0001678466797,
 	["AlwaysShowHealthFrame"] = false,
 	["HPFrameX"] = 208.9998779296875,
-	["RangeFrameSound1"] = "none",
+	["ShowLoadMessage"] = true,
 	["SpamBlockBossWhispers"] = false,
-	["LastRevision"] = 8086,
-	["DisableCinematicsOutside"] = false,
+	["ShowRecoveryMessage"] = true,
+	["ShowEngageMessage"] = true,
 }
 DBT_SavedOptions = {
 	["DBM"] = {
@@ -127,11 +127,11 @@ DBT_SavedOptions = {
 		["EndColorR"] = 1,
 		["Width"] = 183,
 		["HugeTimerPoint"] = "CENTER",
-		["FontSize"] = 10,
-		["HugeTimerX"] = 0,
-		["StartColorR"] = 1,
-		["StartColorB"] = 0,
 		["HugeScale"] = 1.049999952316284,
+		["StartColorB"] = 0,
+		["StartColorR"] = 1,
+		["HugeTimerX"] = 0,
+		["FontSize"] = 10,
 		["BarXOffset"] = 0,
 		["EndColorB"] = 0,
 	},

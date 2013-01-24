@@ -22,6 +22,8 @@ RecountDB = {
 				},
 			},
 			["MainWindowMode"] = 2,
+			["LastInstanceName"] = "Azjol-Nerub",
+			["CurDataSet"] = "OverallData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -33,19 +35,17 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["DetailWindowX"] = 0,
-			["GraphWindowX"] = 0,
-			["LastInstanceName"] = "Azjol-Nerub",
-			["CurDataSet"] = "OverallData",
-			["MainWindowWidth"] = 268.0000646710386,
 			["MainWindowHeight"] = 113.9999372661123,
+			["GraphWindowX"] = 0,
+			["MainWindowWidth"] = 268.0000646710386,
+			["DetailWindowX"] = 0,
 		},
 		["Darvina - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -522.5003967285156,
-					["x"] = 638.9999389648438,
+					["y"] = -522.5003509521484,
+					["x"] = 639.0000610351563,
 					["w"] = 294.0001525878906,
 					["h"] = 158.9999237060547,
 				},
@@ -64,10 +64,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = -409.9998474121094,
-			["MainWindowHeight"] = 158.999907985331,
+			["DetailWindowX"] = 619.0000610351563,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 294.0000299513335,
-			["DetailWindowX"] = 619.0000610351563,
+			["MainWindowHeight"] = 158.999907985331,
 		},
 		["Deyndis - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -93,10 +93,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["MainWindowHeight"] = 122.9999810010198,
+			["DetailWindowX"] = 0,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 312.0000029802322,
-			["DetailWindowX"] = 0,
+			["MainWindowHeight"] = 122.9999810010198,
 		},
 		["Depha - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -114,10 +114,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["GraphWindowX"] = 0,
-			["CurDataSet"] = "OverallData",
-			["MainWindowVis"] = false,
 			["DetailWindowX"] = 0,
+			["MainWindowVis"] = false,
+			["CurDataSet"] = "OverallData",
+			["GraphWindowX"] = 0,
 		},
 		["Dreyan - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -130,8 +130,6 @@ RecountDB = {
 				},
 			},
 			["MainWindowMode"] = 2,
-			["LastInstanceName"] = "Drak'Tharon Keep",
-			["CurDataSet"] = "LastFightData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -145,6 +143,8 @@ RecountDB = {
 			["DetailWindowY"] = 0,
 			["DetailWindowX"] = 0,
 			["GraphWindowX"] = 0,
+			["LastInstanceName"] = "The Stonecore",
+			["CurDataSet"] = "LastFightData",
 			["MainWindowWidth"] = 283.0000263005491,
 			["MainWindowHeight"] = 102.000015646219,
 		},
@@ -152,13 +152,13 @@ RecountDB = {
 			["GraphWindowY"] = 0,
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -522.4999389648438,
+					["y"] = -522.4999542236328,
 					["x"] = -629.5001220703125,
 					["w"] = 329,
-					["h"] = 140.9999389648438,
+					["h"] = 140.9999542236328,
 				},
 			},
-			["DetailWindowX"] = 0,
+			["MainWindowMode"] = 2,
 			["MainWindowHeight"] = 140.9999389648438,
 			["CurDataSet"] = "OverallData",
 			["Colors"] = {
@@ -166,12 +166,15 @@ RecountDB = {
 					["Bar Text"] = {
 						["a"] = 1,
 					},
+					["Total Bar"] = {
+						["a"] = 1,
+					},
 				},
 			},
 			["DetailWindowY"] = 0,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 329,
-			["MainWindowMode"] = 2,
+			["DetailWindowX"] = 0,
 		},
 		["Datinnite - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -201,14 +204,14 @@ RecountDB = {
 			["GraphWindowY"] = 0,
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -456.9996795654297,
+					["y"] = -456.9996337890625,
 					["x"] = -751.5000228881836,
 					["w"] = 397.0000305175781,
 					["h"] = 137.9999084472656,
 				},
 			},
 			["DetailWindowX"] = 563,
-			["LastInstanceName"] = "Siege of Niuzao Temple",
+			["LastInstanceName"] = "Brewmoon Festival",
 			["RealtimeWindows"] = {
 				["Realtime_!RAID_DAMAGE"] = {
 					"!RAID", -- [1]
@@ -233,9 +236,9 @@ RecountDB = {
 					},
 				},
 			},
-			["HideCollect"] = true,
-			["MainWindowMode"] = 2,
 			["GraphWindowX"] = 0,
+			["MainWindowMode"] = 2,
+			["HideCollect"] = true,
 			["MainWindowWidth"] = 397.0000017136335,
 			["MainWindowHeight"] = 137.9999235570442,
 		},
