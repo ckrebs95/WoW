@@ -11,24 +11,24 @@ DBM_SavedOptions = {
 	["RangeFrameX"] = 50,
 	["WarningColors"] = {
 		{
-			["b"] = 0.9411764705882353,
-			["g"] = 0.8,
 			["r"] = 0.4117647058823529,
+			["g"] = 0.8,
+			["b"] = 0.9411764705882353,
 		}, -- [1]
 		{
-			["b"] = 0,
-			["g"] = 0.9490196078431372,
 			["r"] = 0.9490196078431372,
+			["g"] = 0.9490196078431372,
+			["b"] = 0,
 		}, -- [2]
 		{
-			["b"] = 0,
-			["g"] = 0.5019607843137255,
 			["r"] = 1,
+			["g"] = 0.5019607843137255,
+			["b"] = 0,
 		}, -- [3]
 		{
-			["b"] = 0.1019607843137255,
-			["g"] = 0.1019607843137255,
 			["r"] = 1,
+			["g"] = 0.1019607843137255,
+			["b"] = 0.1019607843137255,
 		}, -- [4]
 	},
 	["AlwaysShowSpeedKillTimer"] = true,
@@ -79,37 +79,37 @@ DBM_SavedOptions = {
 	["BlockVersionUpdateNotice"] = false,
 	["DontShowBossAnnounces"] = false,
 	["ArrowPosY"] = -150,
-	["DisableCinematicsOutside"] = false,
-	["LastRevision"] = 8086,
+	["ShowEngageMessage"] = true,
+	["ShowRecoveryMessage"] = true,
 	["WarningIconRight"] = true,
-	["RangeFrameSound1"] = "none",
+	["ShowLoadMessage"] = true,
 	["SpecialWarningSound2"] = "Sound\\Creature\\AlgalonTheObserver\\UR_Algalon_BHole01.wav",
 	["ShowPizzaMessage"] = true,
 	["RangeFrameSound2"] = "none",
 	["ShowLHFrame"] = true,
 	["DontSendBossWhispers"] = false,
-	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
+	["RangeFrameRadarY"] = -179.0001678466797,
 	["Enabled"] = true,
-	["RangeFrameFrames"] = "radar",
-	["SpecialWarningFontColor"] = {
-		0, -- [1]
-		0, -- [2]
-		1, -- [3]
-	},
+	["HealthFrameLocked"] = false,
+	["HPFrameMaxEntries"] = 5,
 	["DisableCinematics"] = false,
 	["MovieFilters"] = {
 	},
 	["RangeFramePoint"] = "CENTER",
 	["ShowWipeMessage"] = true,
-	["HPFrameMaxEntries"] = 5,
-	["HealthFrameLocked"] = false,
-	["RangeFrameRadarY"] = -179.0001678466797,
+	["SpecialWarningFontColor"] = {
+		0, -- [1]
+		0, -- [2]
+		1, -- [3]
+	},
+	["RangeFrameFrames"] = "radar",
+	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
 	["AlwaysShowHealthFrame"] = false,
 	["HPFrameX"] = 208.9998779296875,
-	["ShowLoadMessage"] = true,
+	["RangeFrameSound1"] = "none",
 	["SpamBlockBossWhispers"] = false,
-	["ShowRecoveryMessage"] = true,
-	["ShowEngageMessage"] = true,
+	["LastRevision"] = 8086,
+	["DisableCinematicsOutside"] = false,
 }
 DBT_SavedOptions = {
 	["DBM"] = {
@@ -127,11 +127,11 @@ DBT_SavedOptions = {
 		["EndColorR"] = 1,
 		["Width"] = 183,
 		["HugeTimerPoint"] = "CENTER",
-		["HugeScale"] = 1.049999952316284,
-		["StartColorB"] = 0,
-		["StartColorR"] = 1,
-		["HugeTimerX"] = 0,
 		["FontSize"] = 10,
+		["HugeTimerX"] = 0,
+		["StartColorR"] = 1,
+		["StartColorB"] = 0,
+		["HugeScale"] = 1.049999952316284,
 		["BarXOffset"] = 0,
 		["EndColorB"] = 0,
 	},
