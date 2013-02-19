@@ -22,8 +22,6 @@ RecountDB = {
 				},
 			},
 			["MainWindowMode"] = 2,
-			["LastInstanceName"] = "Azjol-Nerub",
-			["CurDataSet"] = "OverallData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -37,6 +35,8 @@ RecountDB = {
 			["DetailWindowY"] = 0,
 			["DetailWindowX"] = 0,
 			["GraphWindowX"] = 0,
+			["LastInstanceName"] = "Azjol-Nerub",
+			["CurDataSet"] = "OverallData",
 			["MainWindowWidth"] = 268.0000646710386,
 			["MainWindowHeight"] = 113.9999372661123,
 		},
@@ -52,7 +52,7 @@ RecountDB = {
 			},
 			["MainWindowMode"] = 2,
 			["LastInstanceName"] = "Theramore's Fall",
-			["CurDataSet"] = "LastFightData",
+			["CurDataSet"] = "CurrentFightData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -130,6 +130,8 @@ RecountDB = {
 				},
 			},
 			["MainWindowMode"] = 2,
+			["LastInstanceName"] = "Shado-Pan Monastery",
+			["CurDataSet"] = "CurrentFightData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -141,12 +143,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["DetailWindowX"] = 0,
-			["GraphWindowX"] = 0,
-			["LastInstanceName"] = "Temple of the Jade Serpent",
-			["CurDataSet"] = "LastFightData",
-			["MainWindowWidth"] = 283.0000263005491,
 			["MainWindowHeight"] = 102.000015646219,
+			["GraphWindowX"] = 0,
+			["MainWindowWidth"] = 283.0000263005491,
+			["DetailWindowX"] = 0,
 		},
 		["Doyjen - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -211,7 +211,7 @@ RecountDB = {
 				},
 			},
 			["DetailWindowX"] = 563,
-			["LastInstanceName"] = "Brewmoon Festival",
+			["LastInstanceName"] = "Shadowfang Keep",
 			["RealtimeWindows"] = {
 				["Realtime_!RAID_DAMAGE"] = {
 					"!RAID", -- [1]

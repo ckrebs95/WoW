@@ -6,7 +6,7 @@ AucAdvancedStatPurchasedData = {
 			["means"] = {
 			},
 			["daily"] = {
-				["created"] = 1359540576,
+				["created"] = 1361067279,
 			},
 		},
 		["Khaz Modan-Alliance"] = {
@@ -86,7 +86,7 @@ AucAdvancedStatPurchasedData = {
 				[79339] = "0:1;1;13000000.0;13000000.0;13000000.0",
 			},
 			["daily"] = {
-				["created"] = 1359540576,
+				["created"] = 1361067279,
 			},
 		},
 		["Khaz Modan-Horde"] = {
@@ -94,7 +94,7 @@ AucAdvancedStatPurchasedData = {
 				[39900] = "0:1;1;165000.0;165000.0;165000.0",
 			},
 			["daily"] = {
-				["created"] = 1359540576,
+				["created"] = 1361067279,
 			},
 		},
 	},

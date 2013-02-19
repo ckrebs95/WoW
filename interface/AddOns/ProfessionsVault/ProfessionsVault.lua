@@ -10,7 +10,7 @@ local PVLDB
 local minimapIcon = LibStub("LibDBIcon-1.0")
 vars.svnrev = vars.svnrev or {}
 local svnrev = vars.svnrev
-svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 409 $"):match("%d+"))
+svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 424 $"):match("%d+"))
 local DB_VERSION_MAJOR = 1
 local DB_VERSION_MINOR = 4
 local _G = _G
@@ -44,6 +44,9 @@ local defaults = {
     factiondata = false,
     grpbyprof = false,
     trainreminder = true,
+    ldbself = true,
+    ldbeinstein = true,
+    ldbfavorite = true,
     pos = {
       height = 432,
       width  = 510,
@@ -119,11 +122,13 @@ local _ve = GetExpansionLevel()
 local _vv,_vb,_,_vtoc = GetBuildInfo()
 local _vwarned = false
 _vb = tonumber(_vb)
-local function vs(wotlkv40,catav40,catav406,catav420,catav430,mop50)
+local function vs(wotlkv40,catav40,catav406,catav420,catav430,mop50,mop52)
   local warn = false
   if wotlkv40 == 0 or wotlkv40 == 1 then return wotlkv40 end
   local res
-  if (_vtoc >= 50001) then -- second clause for PTR
+  if (_vtoc >= 50200) then
+    res = mop52
+  elseif (_vtoc >= 50001) then
     res = mop50
   elseif (_vtoc >= 40300) or _vv == "4.3.0" then -- second clause for PTR
     res = catav430 
@@ -139,7 +144,7 @@ local function vs(wotlkv40,catav40,catav406,catav420,catav430,mop50)
   elseif (_vb > 13329) then
     res = catav406
   else
-    res = catav40
+    res = mop52
     warn = true 
   end
   if warn and not _vwarned then
@@ -147,6 +152,8 @@ local function vs(wotlkv40,catav40,catav406,catav420,catav430,mop50)
                     format("%s-%d",_vv, _vb), addon_website))
       _vwarned = true
       addon.badversion = true
+  elseif not res then
+      print("INTERNAL ERROR: bad res in vs()")
   end
   return res
 end
@@ -175,28 +182,28 @@ NAME_HERB = NAME_HERB:match("%s*([^%s]+)$")
 NAME_HERB = NAME_HERB:gsub("^(%l)",string.upper)
 
 local primaryProf = {  -- 0 == no tradeskill, 1 == broken
-        [PID_ALCH] = {vs(44,52,52,52,53,57), -- Alchemy
+        [PID_ALCH] = {vs(44,52,52,52,53,57,57), -- Alchemy
 	            28677, -- Elixer Master 
 		    28675, -- Potion Master
 		    28672, -- Transmutation Master
 		 },
-	[PID_BS] = {vs(87,99,99,101,102,116), -- Blacksmithing
+	[PID_BS] = {vs(87,99,99,101,102,116,116), -- Blacksmithing
 	            9787, -- Weaponsmith
 		    9788, -- Armorsmith
 	         },
-	[PID_ENCH] =  vs(51,60,61,61,61,63), -- Enchanting
-	[PID_ENG] = {vs(51,57,57,58,57,65), -- Engineering
+	[PID_ENCH] =  vs(51,60,61,61,61,63,63), -- Enchanting
+	[PID_ENG] = {vs(51,57,57,58,57,65,65), -- Engineering
 	            20219, -- Gnomish Engineer
 		    20222, -- Goblin Engineer
 	         },
-	[PID_INSC] = vs(73,79,80,80,80,96), -- Inscription 
-	[PID_JC] = vs(84,100,101,102,113,145), -- Jewelcrafting 
-	[PID_LW] = {vs(89,102,102,105,106,119), -- Leatherworking
+	[PID_INSC] = vs(73,79,80,80,80,96,96), -- Inscription 
+	[PID_JC] = vs(84,100,101,102,113,145,146), -- Jewelcrafting 
+	[PID_LW] = {vs(89,102,102,105,106,119,119), -- Leatherworking
                     10656, -- Dragonscale Leatherworking
                     10660, -- Tribal Leatherworking
                     10658, -- Elemental Leatherworking
 	         },
-	[PID_TAIL] = {vs(73,83,83,84,85,93), -- Tailoring
+	[PID_TAIL] = {vs(73,83,83,84,85,93,93), -- Tailoring
 	            26797, -- Spellfire Tailoring
 		    26798, -- Mooncloth Tailoring
 		    26801, -- Shadoweave Tailoring
@@ -208,8 +215,8 @@ local primaryProf = {  -- 0 == no tradeskill, 1 == broken
 }
 local secondaryProf = { 
 	[PID_ARCH] = vs(0), -- Archaeology
-	[PID_COOK] =  vs(31,36,36,36,36,41), -- Cooking
-	[PID_FA] =  vs(6, 7, 7,7,7, 8), -- First Aid 
+	[PID_COOK] =  vs(31,36,36,36,36,41,41), -- Cooking
+	[PID_FA] =  vs(6, 7, 7,7,7, 8,8), -- First Aid 
 	[PID_FISH] =  vs(0), -- Fishing
 }
 
@@ -617,6 +624,30 @@ return {
       order = 54,
       disabled = function() return not addon:usingColor() end,
     },
+    ldbheader = {
+      name = L["LDB/Minimap Tooltip Options"],
+      type = "header",
+      cmdHidden = true,
+      order = 60,
+    },
+    ldbself = {
+      name = L["Show My Professions"],
+      desc = L["Show My Professions"],
+      type = "toggle",
+      order = 61,
+    },
+    ldbfavorite = {
+      name = L["Show Favorites"],
+      desc = L["Show Favorites"],
+      type = "toggle",
+      order = 62,
+    },
+    ldbeinstein = {
+      name = L["Show All Recipes"],
+      desc = L["Show All Recipes"],
+      type = "toggle",
+      order = 63,
+    },
     minimap = {
       name = L["Minimap icon"],
       desc = L["Show minimap icon"],
@@ -625,11 +656,7 @@ return {
       get = function(info) return not settings.minimap.hide end,
       set = function(info,val) 
                   settings.minimap.hide = not val
-		  if settings.minimap.hide then
-		    minimapIcon:Hide(addonName)
-		  else
-		    minimapIcon:Show(addonName)
-		  end
+		  minimapIcon:Update()
             end
     },
    }}, -- general
@@ -904,6 +931,7 @@ function addon:RefreshConfig()
 
   addon:RefreshChar()
   addon:RefreshWindow()
+  if minimapIcon.Update then minimapIcon:Update() end
 end
 
 local function resetSettings() 
@@ -1173,8 +1201,8 @@ function addon:OnEnable()
     "CHAT_MSG_WHISPER", "CHAT_MSG_WHISPER_INFORM",
     "CHAT_MSG_PARTY", "CHAT_MSG_PARTY_LEADER", 
     "CHAT_MSG_RAID", "CHAT_MSG_RAID_LEADER", "CHAT_MSG_RAID_WARNING",
+    "CHAT_MSG_INSTANCE_CHAT", "CHAT_MSG_INSTANCE_CHAT_LEADER",
     "CHAT_MSG_DND", "CHAT_MSG_AFK", "CHAT_MSG_EMOTE", "CHAT_MSG_TEXT_EMOTE",
-    "CHAT_MSG_BATTLEGROUND", "CHAT_MSG_BATTLEGROUND_LEADER", 
   }
   for _,chatevent in pairs(chatevents) do
     self:RegisterEvent(chatevent, "CHAT_MSG_X")
@@ -1341,17 +1369,18 @@ function addon:OnEnable()
 
   settings.minimap = settings.minimap or {}
   minimapIcon:Register(addonName, PVLDB, settings.minimap)
-  if settings.minimap.hide then
-    minimapIcon:Hide(addonName)
-  else
-    minimapIcon:Show(addonName)
+  minimapIcon.Update = function()
+    if settings.minimap.hide then
+      minimapIcon:Hide(addonName)
+    else
+      minimapIcon:Show(addonName)
+    end
   end
+  minimapIcon:Update()
   SetLDBProf()
 
 end
 
-local ldb_myprof_line = 1
-local ldb_einstein_line = 1
 function addon:fillLDB(tooltip)
   local ttname = tooltip:GetName()
   tooltip:SetText(addonName.." "..ProfessionsVault.version)
@@ -1360,11 +1389,13 @@ function addon:fillLDB(tooltip)
   if settings.ldbprof and not nocastProf[settings.ldbprof]  then
     tooltip:AddLine("|cffff8040"..L["Right Click"].."|r "..L["to open"].." "..settings.ldbprof)
   end
+  addon.ldblines = addon.ldblines or {}
+  wipe(addon.ldblines)
   if not DBc then return end
-  tooltip:AddLine(" ")
-  tooltip:AddLine("|cffff8040"..L["My Professions"]..":|r")
-  ldb_myprof_line = tooltip:NumLines() 
-  for _,pname in ipairs(allProfSorted) do
+  if settings.ldbself then
+    tooltip:AddLine(" ")
+    tooltip:AddLine("|cffff8040"..L["My Professions"]..":|r")
+    for _,pname in ipairs(allProfSorted) do
       local pinfo = DBc[pname]
       if pinfo then 
         local rank = pinfo.rank or "??"
@@ -1375,36 +1406,50 @@ function addon:fillLDB(tooltip)
 	  hidden = " ("..L["hidden"]..")"
 	end
         tooltip:AddDoubleLine(texstr.." ["..pname.."]"..hidden,"("..rank.."/"..rankmax..")")
-        --tooltip:AddTexture(allProf[pname].icon)
+	addon.ldblines[tooltip:NumLines()] = charName.."\t"..pname.."\t"..(pinfo.link or "")
       end
+    end
   end
-  tooltip:AddLine(" ")
-  tooltip:AddLine("|cffff8040"..einstein..":|r")
-  ldb_einstein_line = tooltip:NumLines() 
-  for _,pname in ipairs(allProfSorted) do
+  if settings.ldbfavorite then
+    tooltip:AddLine(" ")
+    tooltip:AddLine("|cffff8040"..L["Favorites"]..":|r")
+    for _,pname in ipairs(allProfSorted) do
+      for cname,cinfo in pairs(DB.chars) do
+        local pinfo = cinfo[pname]
+        if pinfo and pinfo.link and pinfo.favorite then
+          local texstr = "|T"..allProf[pname].icon..":0|t"
+          tooltip:AddDoubleLine(texstr.." ["..pname.."]",cname)
+	  addon.ldblines[tooltip:NumLines()] = cname.."\t"..pname.."\t"..pinfo.link
+	end
+      end
+    end
+  end
+  if settings.ldbeinstein then
+    tooltip:AddLine(" ")
+    tooltip:AddLine("|cffff8040"..einstein..":|r")
+    for _,pname in ipairs(allProfSorted) do
       local pinfo = DB.chars[einstein][pname]
       if (pinfo and pinfo.link) then
         local texstr = "|T"..allProf[pname].icon..":0|t"
         tooltip:AddDoubleLine(texstr.." ["..pname.."]"," ")
-        --tooltip:AddTexture(allProf[pname].icon)
+	addon.ldblines[tooltip:NumLines()] = einstein.."\t"..pname.."\t"..pinfo.link
       end
+    end
   end
   
 end
 function addon:LDBclick(tt,button)
    local ttname = tt:GetName()
    debug("LDBclick "..ttname)
+   if not addon.ldblines then return end
    local gotone = false
-   for i=ldb_myprof_line,tt:NumLines() do
+   for i, linedata in pairs(addon.ldblines) do
      local lline = getglobal(ttname .. "TextLeft"..i)
      if not lline then return end
-     local text = lline:GetText()
-     if not text then return end
-     local pname = string.match(text,"%[(.*)%]")
-     if pname and lline:IsMouseOver(0,0,-500,500) then
-         local cname = (i >= ldb_einstein_line) and einstein or charName
-         local link = DB.chars[cname][pname].link
-         debug("LDBclicked on "..pname.." "..link)
+     if lline:IsMouseOver(0,0,-500,500) and linedata then
+         local cname, pname, link = strsplit("\t",linedata)
+         debug("LDBclicked on "..cname.." "..pname.." "..link)
+	 if #link == 0 then link = nil end
          addon:ActivateLink(cname, pname, link, true)
          gotone = true
      end   
@@ -1473,9 +1518,16 @@ local function processSystemMessage(msg)
 	--chatMsg(format(L["Updated %s's %s"].." (%s "..L["skill points"]..")", charName, profname, (nrank-orank)))
     local rchange, schange, profchange = addon:ScanSecondary()
     --print(rchange.." : "..schange)
-    if (rchange == 0) and (schange == 0) then -- failed?
+    if (rchange == 0) and (schange == 0) and not profchange then -- can fail on profupgrade due to lag
       debug("Failed to detect profession change for: "..msg) -- ticket 86
       --DBc.data.scanned = false
+      addon:ScheduleTimer(function() 
+          local rchange, schange, profchange = addon:ScanSecondary()
+          debug("Delayed rescan got: "..(profchange or "nil"))
+          if profchange and allProf[profchange] then
+	    SetLDBProf(profchange)
+	  end
+	end, 5)
       return
     end
     if allProf[rescan] then 
@@ -1543,6 +1595,7 @@ function addon:link_cnameguid(link)
    if not link then return end
    local guid = string.match(link,"\124Htrade:%d+:%d+:%d+:(%x+):")
    if not guid or #guid < 10 then return end
+   guid = string.rep("0",16-#guid)..guid -- restore leading zeros
    local cname = select(6,GetPlayerInfoByGUID(guid)) -- sometimes failed if not encountered by client
    return guid, cname
 end
@@ -1826,7 +1879,7 @@ end
 function addon:SaveLink(cname, pname, link)
     local dbc = DB.chars[cname]
     local changestr = nil
-    local rchange, schange = 0, 0
+    local rchange, schange, mchange = 0, 0, 0
     local newr, newrmax = addon:link_rank(link)
     if not dbc[pname] then
       changestr = L["Saved %s's %s"]
@@ -1836,12 +1889,13 @@ function addon:SaveLink(cname, pname, link)
 	rchange = cnt
       end
       schange = newr
+      mchange = newrmax
     elseif dbc[pname].link ~= link then
       changestr = L["Updated %s's %s"]
       if link and dbc[pname].link then 
         local oldcnt = addon:link_bit_count(dbc[pname].link)
         local newcnt = addon:link_bit_count(link)
-	local oldr = addon:link_rank(dbc[pname].link)
+	local oldr, oldrmax = addon:link_rank(dbc[pname].link)
 	local diffstr = ""
 	if (newcnt ~= oldcnt) then
 	  rchange = (newcnt-oldcnt)
@@ -1851,6 +1905,7 @@ function addon:SaveLink(cname, pname, link)
 	  schange = (newr - oldr)
 	  diffstr = diffstr..((#diffstr > 0 and ", ") or "")..schange.." "..L["skill points"]
 	end
+	mchange = newrmax - oldrmax
 	if #diffstr > 0 then
           changestr = changestr.." ("..diffstr..")"
 	else
@@ -1858,9 +1913,10 @@ function addon:SaveLink(cname, pname, link)
 	end
       else
         schange = newr
+        mchange = newrmax
       end
     end
-    dbc[pname] = {}
+    dbc[pname] = dbc[pname] or {}
     dbc[pname].link = link
     dbc[pname].rank = newr
     dbc[pname].rankmax = newrmax
@@ -1876,7 +1932,7 @@ function addon:SaveLink(cname, pname, link)
       addon:RefreshWindow()
     end
     addon:RefreshTooltips()
-    return rchange, schange
+    return rchange, schange, mchange
 end
 
 -- traversal function for character table
@@ -2057,10 +2113,10 @@ function addon:ScanSecondary()
       link = addon:fakeLink(pname, 0, allProf[pname].spellid, rank, rankmax, 0)
     end
     if link then
-      local rchange, schange = addon:SaveLink(charName, pname, link)
+      local rchange, schange, mchange = addon:SaveLink(charName, pname, link)
       gotr = gotr + rchange 
       gots = gots + schange 
-      if rchange > 0 then
+      if rchange > 0 or mchange > 0 then
         gotprof = pname
       end
     end
@@ -2707,7 +2763,7 @@ function addon:fakeLink(profName, guid, spellid, rank, rankmax, patlen)
   rank = rank or rankmax
   guid = string.gsub(guid,"0x","")
   local deadbits = spellid and vars.PatDBL and vars.PatDBL[spellid] and vars.PatDBL[spellid][0].deadbitmask
- if deadbits and allProf[profName] and patlen == allProf[profName].patlen then -- exclude dead bits
+ if deadbits and allProf[profName] and #deadbits == patlen and patlen == allProf[profName].patlen then -- exclude dead bits
   local bitlist = {}
   local deadlink = "\124Htrade:"..spellid..":"..rank..":"..rankmax..":"..guid..":"..deadbits.."\124h"
   for bit = 0,(patlen*6)-1 do
@@ -3947,11 +4003,13 @@ function addon:MerchantEvent(context)
   if useMerchantTimer and not addon.merchantTimer then
     addon.merchantTimer = addon:ScheduleRepeatingTimer("MerchantEvent", 1.0, "timer")
   end
-  if not addon.merchantHooked and 
-     MerchantPrevPageButton and MerchantNextPageButton and MerchantFrameTab1 then
+  if not addon.merchantHooked and MerchantFrame_UpdateMerchantInfo and
+     MerchantPrevPageButton and MerchantNextPageButton and MerchantFrameTab1 and MerchantItem1 then
     MerchantNextPageButton:HookScript("PostClick", function () addon:MerchantEvent("MerchantNextPageButton:PostClick") end)
     MerchantPrevPageButton:HookScript("PostClick", function () addon:MerchantEvent("MerchantPrevPageButton:PostClick") end)
     MerchantFrameTab1:HookScript("PostClick", function () addon:MerchantEvent("MerchantFrameTab1:PostClick") end)
+    MerchantItem1:HookScript("OnShow", function () addon:MerchantEvent("MerchantItem1:OnShow") end)
+    hooksecurefunc("MerchantFrame_UpdateMerchantInfo", function () addon:MerchantEvent("MerchantFrame_UpdateMerchantInfo") end)
     addon.merchantHooked = true
   end
   if MerchantFrame.selectedTab ~= 1 then return end -- buyback tab
@@ -4218,10 +4276,18 @@ function addon:ShowTooltip(tt)
         local text = line:GetText()
         if not text then return end
 	text = puncnormalize(text)
-        profName, profLvl = string.match(text, strtrim(L["Requires"]).."%s*:?%s*(.+)%s*%((%d+)%)%s*$")
-	if not profName then
-          profName, profLvl = string.match(text, "(.+)%s+%((%d+)%)%s+"..strtrim(L["Requires"])) -- frFR
+        local pn, pl = string.match(text, strtrim(L["Requires"]).."%s*:?%s*(.+)%s*%((%d+)%)%s*$")
+	if not pn then
+          pn, pl = string.match(text, "(.+)%s+%((%d+)%)%s+"..strtrim(L["Requires"])) -- frFR
 	end
+	pn = pn and strtrim(pn)
+        pl = pl and tonumber(pl)
+        local pID = allProf[pn] and allProf[pn].spellid
+	if pn and pl and pID then -- need LAST valid Requires line as of 5.1
+	   profName, profLvl, profID = pn, pl, pID
+           addon.ttrecipe = true
+	end
+
 	recipeClasses = recipeClasses or text:match(recipeMatchClass)
 	local races = text:match(recipeMatchRace)
 	if races and not recipeFaction then
@@ -4233,12 +4299,8 @@ function addon:ShowTooltip(tt)
 	    recipeFaction = (f == "Alliance" and "Horde" or "Alliance")
 	  end
 	end
-	profName = profName and strtrim(profName)
-        profLvl = profLvl and tonumber(profLvl)
-        profID = allProf[profName] and allProf[profName].spellid
-        if profID == PID_FISH or profID == PID_FA then addon.ttrecipe = false ; return end -- ignore fishing/first aid books
-        if profName and profID and profLvl then addon.ttrecipe = true ; break end
       end
+      if profID == PID_FISH or profID == PID_FA then addon.ttrecipe = false ; return end -- ignore fishing/first aid books
      elseif addon.settings.craftedtooltips then -- possible crafted item, determine spellname and profinfo
         local spns = {}
         if vars.Exceptions_ItoS[itemid] then 
@@ -4485,7 +4547,22 @@ addon.DropDownMenu.initialize = function(self, level)
                   menuinfo.func = function(button, arg1, arg2, checked)
 		        checked = not checked
 		        debug("Set cname alt flag to: "..(checked and "true" or "false"))
-                        DB.chars[cname].data.alt = checked
+                        DB.chars[cname].data.alt = (checked or nil)
+			addon:RefreshWindow()
+			addon:RefreshTooltips()
+                      end
+                  UIDropDownMenu_AddButton(menuinfo, level)
+		end
+
+		if pname and cname ~= einstein then
+		  menuinfo.text = L["Favorite"]
+		  menuinfo.disabled = nolinkProf[pname]
+		  menuinfo.arg1 = nil
+                  menuinfo.checked = DB.chars[cname][pname].favorite
+                  menuinfo.func = function(button, arg1, arg2, checked)
+		        checked = not checked
+		        debug("Set favorite flag to: "..(checked and "true" or "false"))
+                        DB.chars[cname][pname].favorite = (checked or nil)
 			addon:RefreshWindow()
 			addon:RefreshTooltips()
                       end

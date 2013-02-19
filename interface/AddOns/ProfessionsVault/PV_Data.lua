@@ -1,15 +1,15 @@
 -- All data in this file is copyrighted to the author (oscarucb), all rights reserved
 local addonName, vars = ...
 vars.svnrev = vars.svnrev or {}
-vars.svnrev["PV_data.lua"] = tonumber(("$Revision: 409 $"):match("%d+"))
+vars.svnrev["PV_data.lua"] = tonumber(("$Revision: 414 $"):match("%d+"))
 
 vars.VersionInfo = {
 	   ["DBversion"] = 8,
-	   ["DBrevision"] = tonumber(("$Revision: 409 $"):match("%d+")),
+	   ["DBrevision"] = tonumber(("$Revision: 414 $"):match("%d+")),
            ["clientexpansion"] = 4,
            ["clientversion"] = "5.1.0",
            ["clientbuildmin"] = "16309",
-           ["clientbuildmax"] = "16309",
+           ["clientbuildmax"] = "16357",
 }
 
 local _fakeid = 1000000
@@ -507,6 +507,7 @@ vars.Exceptions_ItoS = {
   [{44473,38981}] = 44595, -- Enchant (2H) Weapon - Scourgebane
   [43339] = 58303, -- Glyph of Arcane Intellect / Brilliance
   [44455] = 60653, -- Shield Enchant - Intellect III (name never updated on several locales)
+  [{87751,86607}] = 127128, -- Schematic: Goblin Flame Thrower, Mark II
 
   -- misc name collisions to disambiguate
   [42457] = 57261, -- Glyph of Death Coil, Warlock (crafted itemid - no pat)
@@ -787,6 +788,8 @@ vars.DeadCrafted = {
  [85722] = true, -- Glyph of the Blazing Trail (real version 85221)
  [87875] = true, -- Glyph of Lightspring (real version is 87902)
  [87886] = true, -- zzOLD Glyph of Spinning Fire Blossom
+ [92727] = true, -- Glyph of Discreet Magic
+ [93203] = true, -- Glyph of Focus
 }
 
 -- First Aid weirdness: Heavy Linen thru Heavy Runecloth have a duplicate bit for the 

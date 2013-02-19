@@ -1857,17 +1857,17 @@ Bartender4DB = {
 					},
 				},
 				["Darvina - Khaz Modan"] = {
+					["skin"] = {
+						["Zoom"] = true,
+					},
+					["padding"] = 1,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 167.7500022729591,
 						["x"] = -352.588480453774,
 						["point"] = "BOTTOM",
 						["scale"] = 0.699999988079071,
 						["parent"] = "SUI_ActionBarPlate",
-					},
-					["padding"] = 1,
-					["version"] = 3,
-					["skin"] = {
-						["Zoom"] = true,
 					},
 				},
 				["Deyndis - Khaz Modan"] = {
@@ -1887,17 +1887,17 @@ Bartender4DB = {
 					},
 				},
 				["Dathsar - Khaz Modan"] = {
-					["skin"] = {
-						["Zoom"] = true,
-					},
-					["padding"] = 1,
-					["version"] = 3,
 					["position"] = {
 						["y"] = 2.450006951711885,
 						["x"] = 83.06155797855473,
 						["point"] = "TOPLEFT",
 						["scale"] = 0.699999988079071,
 						["parent"] = "SUI_ActionBarPlate",
+					},
+					["padding"] = 1,
+					["version"] = 3,
+					["skin"] = {
+						["Zoom"] = true,
 					},
 				},
 				["Dethamett - Khaz Modan"] = {
@@ -2149,6 +2149,7 @@ Bartender4DB = {
 		["Dethamett - Khaz Modan"] = {
 		},
 		["SpartanUI Standard"] = {
+			["buttonlock"] = true,
 		},
 		["Default"] = {
 			["focuscastmodifier"] = false,

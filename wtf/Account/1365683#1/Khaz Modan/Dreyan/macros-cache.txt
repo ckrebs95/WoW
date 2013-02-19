@@ -1,0 +1,4 @@
+MACRO64 0000000001000001 "Tricks_ot_Trade" "ABILITY_ROGUE_TRICKSOFTHETRADE"
+#showtooltip Tricks of the Trade
+/cast [@focus,help][help] Tricks of the Trade
+END

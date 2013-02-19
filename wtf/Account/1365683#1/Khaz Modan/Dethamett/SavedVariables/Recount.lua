@@ -2,6 +2,1031 @@
 RecountPerCharDB = {
 	["version"] = "1.3",
 	["combatants"] = {
+		["Keram"] = {
+			["GUID"] = "0x03800000046CAB05",
+			["type"] = "Hostile",
+			["FightsSaved"] = 5,
+			["GuardianReverseGUIDs"] = {
+				["Worg Pup"] = {
+					["LatestGuardian"] = 0,
+					["GUIDs"] = {
+						[0] = "0xF130281300788078",
+					},
+				},
+			},
+			["Owner"] = false,
+			["enClass"] = "HOSTILE",
+			["LastFightIn"] = 64,
+			["Name"] = "Keram",
+			["Fights"] = {
+				["CurrentFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["HOTs"] = {
+					},
+					["Damage"] = 0,
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["FAttacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["ElementDone"] = {
+					},
+					["ElementHitsDone"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["Dispelled"] = 0,
+					["WhoHealed"] = {
+					},
+					["HealedWho"] = {
+					},
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
+					},
+					["FDamage"] = 0,
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["Interrupts"] = 0,
+					["EnergyGained"] = {
+					},
+					["PartialResist"] = {
+					},
+					["Healing"] = 0,
+					["OverHeals"] = {
+					},
+					["RageGained"] = {
+					},
+					["Attacks"] = {
+					},
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["DOT_Time"] = 0,
+					["DispelledWho"] = {
+					},
+				},
+				["LastFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["HOTs"] = {
+					},
+					["Damage"] = 0,
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["FAttacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["ElementDone"] = {
+					},
+					["ElementHitsDone"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["Dispelled"] = 0,
+					["WhoHealed"] = {
+					},
+					["HealedWho"] = {
+					},
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
+					},
+					["FDamage"] = 0,
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["Interrupts"] = 0,
+					["EnergyGained"] = {
+					},
+					["PartialResist"] = {
+					},
+					["Healing"] = 0,
+					["OverHeals"] = {
+					},
+					["RageGained"] = {
+					},
+					["Attacks"] = {
+					},
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["DOT_Time"] = 0,
+					["DispelledWho"] = {
+					},
+				},
+			},
+			["Pet"] = {
+				"Worg Pup <Keram>", -- [1]
+			},
+			["level"] = 1,
+			["UnitLockout"] = 1322445621,
+			["LastAbility"] = 245693.359,
+		},
+		["Stiven-Tichondrius"] = {
+			["GUID"] = "0x0300000006A7ECBD",
+			["LastEventHealth"] = {
+				"12834 (100%)", -- [1]
+				"12834 (100%)", -- [2]
+				"12834 (100%)", -- [3]
+				"12834 (100%)", -- [4]
+			},
+			["LastEventType"] = {
+				"HEAL", -- [1]
+				"HEAL", -- [2]
+				"HEAL", -- [3]
+				"HEAL", -- [4]
+			},
+			["enClass"] = "PALADIN",
+			["unit"] = "Stiven",
+			["level"] = 72,
+			["LastFightIn"] = 0,
+			["LastEventNum"] = {
+				7.503506311360449, -- [1]
+				7.503506311360449, -- [2]
+				7.503506311360449, -- [3]
+				7.511298114383669, -- [4]
+			},
+			["type"] = "Ungrouped",
+			["FightsSaved"] = 5,
+			["Owner"] = false,
+			["LastActive"] = 1322100496,
+			["NextEventNum"] = 5,
+			["LastEventHealthNum"] = {
+				100, -- [1]
+				100, -- [2]
+				100, -- [3]
+				100, -- [4]
+			},
+			["LastEvents"] = {
+				"Helpmeout-Dath'Remar Renew Stiven-Tichondrius Tick +963 (215 overheal)", -- [1]
+				"Helpmeout-Dath'Remar Renew Stiven-Tichondrius Tick +963 (963 overheal)", -- [2]
+				"Helpmeout-Dath'Remar Renew Stiven-Tichondrius Tick +963 (963 overheal)", -- [3]
+				"Helpmeout-Dath'Remar Renew Stiven-Tichondrius Tick +964 (964 overheal)", -- [4]
+			},
+			["Name"] = "Stiven-Tichondrius",
+			["LastEventTimes"] = {
+				1263516.456, -- [1]
+				1263519.408, -- [2]
+				1263522.399, -- [3]
+				1263525.361, -- [4]
+			},
+			["Fights"] = {
+				["CurrentFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["HOTs"] = {
+					},
+					["Damage"] = 0,
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["FAttacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["ElementDone"] = {
+					},
+					["ElementHitsDone"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["Dispelled"] = 0,
+					["WhoHealed"] = {
+					},
+					["HealedWho"] = {
+					},
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
+					},
+					["FDamage"] = 0,
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["Interrupts"] = 0,
+					["EnergyGained"] = {
+					},
+					["PartialResist"] = {
+					},
+					["Healing"] = 0,
+					["OverHeals"] = {
+					},
+					["RageGained"] = {
+					},
+					["Attacks"] = {
+					},
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["DOT_Time"] = 0,
+					["DispelledWho"] = {
+					},
+				},
+				["LastFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["HOTs"] = {
+					},
+					["Damage"] = 0,
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["FAttacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["ElementDone"] = {
+					},
+					["ElementHitsDone"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["Dispelled"] = 0,
+					["WhoHealed"] = {
+					},
+					["HealedWho"] = {
+					},
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
+					},
+					["FDamage"] = 0,
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["Interrupts"] = 0,
+					["EnergyGained"] = {
+					},
+					["PartialResist"] = {
+					},
+					["Healing"] = 0,
+					["OverHeals"] = {
+					},
+					["RageGained"] = {
+					},
+					["Attacks"] = {
+					},
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["DOT_Time"] = 0,
+					["DispelledWho"] = {
+					},
+				},
+			},
+			["LastEventIncoming"] = {
+				true, -- [1]
+				true, -- [2]
+				true, -- [3]
+				true, -- [4]
+			},
+			["UnitLockout"] = 1322100493,
+			["LastAbility"] = 245693.359,
+		},
+		["Superior Healing Ward <Drakkari Witch Doctor>"] = {
+			["GUID"] = "0xF13027EA008081DA",
+			["LastEventHealth"] = {
+				"???", -- [1]
+				"???", -- [2]
+				"???", -- [3]
+				"???", -- [4]
+				"???", -- [5]
+				"???", -- [6]
+				"???", -- [7]
+				"???", -- [8]
+				"???", -- [9]
+				"???", -- [10]
+				"???", -- [11]
+				"???", -- [12]
+				"???", -- [13]
+				"???", -- [14]
+				"???", -- [15]
+				"???", -- [16]
+				"???", -- [17]
+				"???", -- [18]
+				"1 (20%)", -- [19]
+				"0 (0%)", -- [20]
+			},
+			["LastEventType"] = {
+				"HEAL", -- [1]
+				"HEAL", -- [2]
+				"HEAL", -- [3]
+				"HEAL", -- [4]
+				"HEAL", -- [5]
+				"HEAL", -- [6]
+				"HEAL", -- [7]
+				"HEAL", -- [8]
+				"HEAL", -- [9]
+				"HEAL", -- [10]
+				"HEAL", -- [11]
+				"MISC", -- [12]
+				"HEAL", -- [13]
+				"HEAL", -- [14]
+				"HEAL", -- [15]
+				"HEAL", -- [16]
+				"HEAL", -- [17]
+				"HEAL", -- [18]
+				"DAMAGE", -- [19]
+				"MISC", -- [20]
+			},
+			["TimeWindows"] = {
+				["DamageTaken"] = {
+					1953, -- [1]
+				},
+				["DeathCount"] = {
+					2, -- [1]
+				},
+			},
+			["enClass"] = "PET",
+			["unit"] = "playertarget",
+			["LastAbility"] = 245693.359,
+			["UnitLockout"] = 1322476899,
+			["level"] = 1,
+			["LastDamageAbility"] = "Mangle",
+			["LastFightIn"] = 170,
+			["LastEventNum"] = {
+				[19] = 39060,
+			},
+			["type"] = "Pet",
+			["FightsSaved"] = 5,
+			["LastFlags"] = 2600,
+			["Fights"] = {
+				["LastFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["HOTs"] = {
+					},
+					["Damage"] = 0,
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["FAttacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["ElementDone"] = {
+					},
+					["ElementHitsDone"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["Dispelled"] = 0,
+					["WhoHealed"] = {
+					},
+					["HealedWho"] = {
+					},
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
+					},
+					["FDamage"] = 0,
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["Interrupts"] = 0,
+					["EnergyGained"] = {
+					},
+					["PartialResist"] = {
+					},
+					["Healing"] = 0,
+					["OverHeals"] = {
+					},
+					["RageGained"] = {
+					},
+					["Attacks"] = {
+					},
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["DOT_Time"] = 0,
+					["DispelledWho"] = {
+					},
+				},
+				["CurrentFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["HOTs"] = {
+					},
+					["Damage"] = 0,
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["FAttacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["ElementDone"] = {
+					},
+					["ElementHitsDone"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["Dispelled"] = 0,
+					["WhoHealed"] = {
+					},
+					["HealedWho"] = {
+					},
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
+					},
+					["FDamage"] = 0,
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["Interrupts"] = 0,
+					["EnergyGained"] = {
+					},
+					["PartialResist"] = {
+					},
+					["Healing"] = 0,
+					["OverHeals"] = {
+					},
+					["RageGained"] = {
+					},
+					["Attacks"] = {
+					},
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["DOT_Time"] = 0,
+					["DispelledWho"] = {
+					},
+				},
+				["OverallData"] = {
+					["PartialResist"] = {
+						["Mangle"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 2,
+					["PartialAbsorb"] = {
+						["Mangle"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+					},
+					["WhoDamaged"] = {
+						["Dethamett"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 1953,
+								},
+							},
+							["amount"] = 1953,
+						},
+					},
+					["ElementTaken"] = {
+						["Physical"] = 1953,
+					},
+					["DamageTaken"] = 1953,
+					["ElementHitsTaken"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+					},
+				},
+			},
+			["Owner"] = "Drakkari Witch Doctor",
+			["LastDamageTaken"] = 1953,
+			["NextEventNum"] = 21,
+			["LastEventHealthNum"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				0, -- [7]
+				0, -- [8]
+				0, -- [9]
+				0, -- [10]
+				0, -- [11]
+				0, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				0, -- [16]
+				0, -- [17]
+				0, -- [18]
+				20, -- [19]
+				0, -- [20]
+			},
+			["LastEvents"] = {
+				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Defender Hit +108", -- [1]
+				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Witch Doctor Hit +108", -- [2]
+				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +108", -- [3]
+				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +108", -- [4]
+				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Defender Hit +108", -- [5]
+				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Witch Doctor Hit +108", -- [6]
+				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +108", -- [7]
+				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +108", -- [8]
+				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Defender Hit +108 (108 overheal)", -- [9]
+				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +107 (107 overheal)", -- [10]
+				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +108 (108 overheal)", -- [11]
+				"Superior Healing Ward <Drakkari Witch Doctor> dies.", -- [12]
+				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Witch Doctor Hit +108", -- [13]
+				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +107", -- [14]
+				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Witch Doctor Hit +108", -- [15]
+				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +107", -- [16]
+				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Witch Doctor Hit +108", -- [17]
+				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +108", -- [18]
+				"Dethamett Mangle Superior Healing Ward <Drakkari Witch Doctor> Hit -1953 (Physical)", -- [19]
+				"Superior Healing Ward <Drakkari Witch Doctor> dies.", -- [20]
+			},
+			["LastEventIncoming"] = {
+				false, -- [1]
+				false, -- [2]
+				false, -- [3]
+				false, -- [4]
+				false, -- [5]
+				false, -- [6]
+				false, -- [7]
+				false, -- [8]
+				false, -- [9]
+				false, -- [10]
+				false, -- [11]
+				true, -- [12]
+				false, -- [13]
+				false, -- [14]
+				false, -- [15]
+				false, -- [16]
+				false, -- [17]
+				false, -- [18]
+				true, -- [19]
+				true, -- [20]
+			},
+			["Name"] = "Superior Healing Ward",
+			["TimeLast"] = {
+				["DeathCount"] = 1322476899,
+				["DamageTaken"] = 1322476899,
+				["OVERALL"] = 1322476899,
+			},
+			["DeathLogs"] = {
+				{
+					["MessageIncoming"] = {
+						false, -- [1]
+						false, -- [2]
+						false, -- [3]
+						false, -- [4]
+						false, -- [5]
+						false, -- [6]
+						true, -- [7]
+						true, -- [8]
+					},
+					["Messages"] = {
+						"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Witch Doctor Hit +108", -- [1]
+						"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +107", -- [2]
+						"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Witch Doctor Hit +108", -- [3]
+						"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +107", -- [4]
+						"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Witch Doctor Hit +108", -- [5]
+						"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +108", -- [6]
+						"Dethamett Mangle Superior Healing Ward <Drakkari Witch Doctor> Hit -1953 (Physical)", -- [7]
+						"Superior Healing Ward <Drakkari Witch Doctor> dies.", -- [8]
+					},
+					["DeathAt"] = 1322476901,
+					["HealthNum"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0, -- [4]
+						0, -- [5]
+						0, -- [6]
+						20, -- [7]
+						0, -- [8]
+					},
+					["MessageTimes"] = {
+						-8.33199999993667, -- [1]
+						-8.33199999993667, -- [2]
+						-5.33600000012666, -- [3]
+						-5.334999999962747, -- [4]
+						-2.509000000078231, -- [5]
+						-2.253999999957159, -- [6]
+						-0.006000000052154064, -- [7]
+						0, -- [8]
+					},
+					["KilledBy"] = "Dethamett",
+					["Health"] = {
+						"???", -- [1]
+						"???", -- [2]
+						"???", -- [3]
+						"???", -- [4]
+						"???", -- [5]
+						"???", -- [6]
+						"1 (20%)", -- [7]
+						"0 (0%)", -- [8]
+					},
+					["EventNum"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0, -- [4]
+						0, -- [5]
+						0, -- [6]
+						39060, -- [7]
+						0, -- [8]
+					},
+					["MessageType"] = {
+						"HEAL", -- [1]
+						"HEAL", -- [2]
+						"HEAL", -- [3]
+						"HEAL", -- [4]
+						"HEAL", -- [5]
+						"HEAL", -- [6]
+						"DAMAGE", -- [7]
+						"MISC", -- [8]
+					},
+				}, -- [1]
+				{
+					["MessageTimes"] = {
+						0, -- [1]
+					},
+					["MessageIncoming"] = {
+						true, -- [1]
+					},
+					["Messages"] = {
+						"Superior Healing Ward <Drakkari Witch Doctor> dies.", -- [1]
+					},
+					["HealthNum"] = {
+						0, -- [1]
+					},
+					["DeathAt"] = 1322476711,
+					["EventNum"] = {
+						0, -- [1]
+					},
+					["Health"] = {
+						"???", -- [1]
+					},
+					["MessageType"] = {
+						"MISC", -- [1]
+					},
+				}, -- [2]
+			},
+			["LastEventTimes"] = {
+				1639703.462, -- [1]
+				1639703.735, -- [2]
+				1639703.735, -- [3]
+				1639703.735, -- [4]
+				1639706.349, -- [5]
+				1639706.778, -- [6]
+				1639706.778, -- [7]
+				1639706.778, -- [8]
+				1639709.427, -- [9]
+				1639709.994, -- [10]
+				1639709.994, -- [11]
+				1639738.686, -- [12]
+				1639920.285, -- [13]
+				1639920.285, -- [14]
+				1639923.281, -- [15]
+				1639923.282, -- [16]
+				1639926.108, -- [17]
+				1639926.363, -- [18]
+				1639928.611, -- [19]
+				1639928.617, -- [20]
+			},
+			["LastActive"] = 1322476899,
+		},
 		["Mummy Effect Bunny"] = {
 			["GUID"] = "0xF13068F300968C4F",
 			["type"] = "Nontrivial",
@@ -41,13 +1066,14 @@ RecountPerCharDB = {
 					},
 					["DeathCount"] = 0,
 					["HOT_Time"] = 0,
-					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
 					["RunicPowerGain"] = 0,
 					["ElementTaken"] = {
 					},
-					["DOT_Time"] = 0,
-					["ElementTakenBlock"] = {
+					["HOTs"] = {
 					},
+					["Damage"] = 0,
 					["ElementDoneAbsorb"] = {
 					},
 					["TimeHeal"] = 0,
@@ -56,33 +1082,32 @@ RecountPerCharDB = {
 					["Dispels"] = 0,
 					["PartialBlock"] = {
 					},
-					["ElementHitsDone"] = {
+					["DamagedWho"] = {
 					},
 					["FAttacks"] = {
 					},
 					["HealingTaken"] = 0,
 					["ElementDone"] = {
 					},
-					["DamagedWho"] = {
+					["ElementHitsDone"] = {
 					},
 					["ManaGainedFrom"] = {
 					},
-					["RunicPowerGainedFrom"] = {
+					["RunicPowerGained"] = {
 					},
 					["WhoDamaged"] = {
 					},
 					["EnergyGainedFrom"] = {
 					},
-					["RunicPowerGained"] = {
-					},
 					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
 					},
 					["ElementDoneBlock"] = {
 					},
 					["TimeHealing"] = {
 					},
-					["OverHeals"] = {
-					},
+					["Dispelled"] = 0,
 					["WhoHealed"] = {
 					},
 					["HealedWho"] = {
@@ -90,14 +1115,13 @@ RecountPerCharDB = {
 					["CCBreak"] = 0,
 					["ElementTakenAbsorb"] = {
 					},
-					["PartialAbsorb"] = {
-					},
-					["PartialResist"] = {
-					},
+					["FDamage"] = 0,
+					["EnergyGain"] = 0,
 					["ManaGained"] = {
 					},
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
 					["Overhealing"] = 0,
 					["TimeSpent"] = {
 					},
@@ -109,12 +1133,14 @@ RecountPerCharDB = {
 					},
 					["Heals"] = {
 					},
-					["ActiveTime"] = 0,
+					["Interrupts"] = 0,
 					["EnergyGained"] = {
 					},
-					["EnergyGain"] = 0,
+					["PartialResist"] = {
+					},
 					["Healing"] = 0,
-					["Dispelled"] = 0,
+					["OverHeals"] = {
+					},
 					["RageGained"] = {
 					},
 					["Attacks"] = {
@@ -126,8 +1152,7 @@ RecountPerCharDB = {
 					["TimeDamaging"] = {
 					},
 					["ManaGain"] = 0,
-					["HOTs"] = {
-					},
+					["DOT_Time"] = 0,
 					["DispelledWho"] = {
 					},
 				},
@@ -144,13 +1169,14 @@ RecountPerCharDB = {
 					},
 					["DeathCount"] = 0,
 					["HOT_Time"] = 0,
-					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
 					["RunicPowerGain"] = 0,
 					["ElementTaken"] = {
 					},
-					["DOT_Time"] = 0,
-					["ElementTakenBlock"] = {
+					["HOTs"] = {
 					},
+					["Damage"] = 0,
 					["ElementDoneAbsorb"] = {
 					},
 					["TimeHeal"] = 0,
@@ -159,33 +1185,32 @@ RecountPerCharDB = {
 					["Dispels"] = 0,
 					["PartialBlock"] = {
 					},
-					["ElementHitsDone"] = {
+					["DamagedWho"] = {
 					},
 					["FAttacks"] = {
 					},
 					["HealingTaken"] = 0,
 					["ElementDone"] = {
 					},
-					["DamagedWho"] = {
+					["ElementHitsDone"] = {
 					},
 					["ManaGainedFrom"] = {
 					},
-					["RunicPowerGainedFrom"] = {
+					["RunicPowerGained"] = {
 					},
 					["WhoDamaged"] = {
 					},
 					["EnergyGainedFrom"] = {
 					},
-					["RunicPowerGained"] = {
-					},
 					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
 					},
 					["ElementDoneBlock"] = {
 					},
 					["TimeHealing"] = {
 					},
-					["OverHeals"] = {
-					},
+					["Dispelled"] = 0,
 					["WhoHealed"] = {
 					},
 					["HealedWho"] = {
@@ -193,14 +1218,13 @@ RecountPerCharDB = {
 					["CCBreak"] = 0,
 					["ElementTakenAbsorb"] = {
 					},
-					["PartialAbsorb"] = {
-					},
-					["PartialResist"] = {
-					},
+					["FDamage"] = 0,
+					["EnergyGain"] = 0,
 					["ManaGained"] = {
 					},
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
 					["Overhealing"] = 0,
 					["TimeSpent"] = {
 					},
@@ -212,12 +1236,14 @@ RecountPerCharDB = {
 					},
 					["Heals"] = {
 					},
-					["ActiveTime"] = 0,
+					["Interrupts"] = 0,
 					["EnergyGained"] = {
 					},
-					["EnergyGain"] = 0,
+					["PartialResist"] = {
+					},
 					["Healing"] = 0,
-					["Dispelled"] = 0,
+					["OverHeals"] = {
+					},
 					["RageGained"] = {
 					},
 					["Attacks"] = {
@@ -229,8 +1255,7 @@ RecountPerCharDB = {
 					["TimeDamaging"] = {
 					},
 					["ManaGain"] = 0,
-					["HOTs"] = {
-					},
+					["DOT_Time"] = 0,
 					["DispelledWho"] = {
 					},
 				},
@@ -240,232 +1265,342 @@ RecountPerCharDB = {
 			},
 			["level"] = 1,
 			["UnitLockout"] = 1322563138,
-			["LastAbility"] = 349.446,
+			["LastAbility"] = 245693.359,
 		},
-		["Destructive Ward <Dethamett>"] = {
-			["GUID"] = "0xF1306B26004BA648",
+		["Totéms-Windrunner"] = {
+			["GUID"] = "0x0100000004EC348C",
+			["type"] = "Ungrouped",
+			["GuardianReverseGUIDs"] = {
+				["Stone Bulwark Totem"] = {
+					["LatestGuardian"] = 0,
+					["GUIDs"] = {
+						[0] = "0xF130E940002A5F36",
+					},
+				},
+				["Healing Stream Totem"] = {
+					["LatestGuardian"] = 0,
+					["GUIDs"] = {
+						[0] = "0xF1300DC7002A5F40",
+					},
+				},
+			},
+			["Owner"] = false,
+			["enClass"] = "UNGROUPED",
+			["LastAbility"] = 245693.359,
+			["Name"] = "Totéms-Windrunner",
+			["Pet"] = {
+				"Stone Bulwark Totem <Totéms-Windrunner>", -- [1]
+				"Healing Stream Totem <Totéms-Windrunner>", -- [2]
+			},
+			["UnitLockout"] = 1360376619,
+			["level"] = 1,
+			["Fights"] = {
+			},
+			["LastFightIn"] = 211,
+		},
+		["Shadowy Apparition <Optomistprim>"] = {
+			["GUID"] = "0xF130F20E004CAD99",
 			["LastEventHealth"] = {
 				"???", -- [1]
 				"???", -- [2]
 				"???", -- [3]
-				"???", -- [4]
-				"???", -- [5]
-				"???", -- [6]
-				"???", -- [7]
-				"???", -- [8]
-				"???", -- [9]
-				"???", -- [10]
-				"???", -- [11]
-				"???", -- [12]
-				"???", -- [13]
-				"???", -- [14]
-				"???", -- [15]
-				"???", -- [16]
-				"???", -- [17]
-				"???", -- [18]
-				"???", -- [19]
-				"???", -- [20]
-				"???", -- [21]
-				"???", -- [22]
-				"???", -- [23]
-				"???", -- [24]
-				"???", -- [25]
-				"???", -- [26]
-				"???", -- [27]
-				"???", -- [28]
-				"???", -- [29]
-				"???", -- [30]
-				"???", -- [31]
-				"???", -- [32]
-				"???", -- [33]
-				"???", -- [34]
-				"???", -- [35]
-				"???", -- [36]
-				"???", -- [37]
-				"???", -- [38]
-				"???", -- [39]
-				"???", -- [40]
-				"???", -- [41]
-				"???", -- [42]
-				"???", -- [43]
-				"???", -- [44]
-				"???", -- [45]
-				"???", -- [46]
 			},
-			["LastAttackedBy"] = "Smoldering Skeleton",
 			["LastEventType"] = {
 				"DAMAGE", -- [1]
 				"DAMAGE", -- [2]
 				"DAMAGE", -- [3]
-				"DAMAGE", -- [4]
-				"DAMAGE", -- [5]
-				"DAMAGE", -- [6]
-				"DAMAGE", -- [7]
-				"DAMAGE", -- [8]
-				"DAMAGE", -- [9]
-				"DAMAGE", -- [10]
-				"DAMAGE", -- [11]
-				"DAMAGE", -- [12]
-				"DAMAGE", -- [13]
-				"DAMAGE", -- [14]
-				"DAMAGE", -- [15]
-				"DAMAGE", -- [16]
-				"DAMAGE", -- [17]
-				"DAMAGE", -- [18]
-				"DAMAGE", -- [19]
-				"DAMAGE", -- [20]
-				"DAMAGE", -- [21]
-				"DAMAGE", -- [22]
-				"DAMAGE", -- [23]
-				"DAMAGE", -- [24]
-				"DAMAGE", -- [25]
-				"DAMAGE", -- [26]
-				"DAMAGE", -- [27]
-				"DAMAGE", -- [28]
-				"DAMAGE", -- [29]
-				"DAMAGE", -- [30]
-				"DAMAGE", -- [31]
-				"DAMAGE", -- [32]
-				"DAMAGE", -- [33]
-				"DAMAGE", -- [34]
-				"DAMAGE", -- [35]
-				"DAMAGE", -- [36]
-				"DAMAGE", -- [37]
-				"DAMAGE", -- [38]
-				"DAMAGE", -- [39]
-				"DAMAGE", -- [40]
-				"DAMAGE", -- [41]
-				"DAMAGE", -- [42]
-				"DAMAGE", -- [43]
-				"DAMAGE", -- [44]
-				"DAMAGE", -- [45]
-				"DAMAGE", -- [46]
 			},
 			["TimeWindows"] = {
-				["ActiveTime"] = {
-					29.5, -- [1]
-				},
 				["TimeDamage"] = {
-					29.5, -- [1]
+					7, -- [1]
 				},
-				["DamageTaken"] = {
-					7576, -- [1]
+				["FDamage"] = {
+					1019, -- [1]
 				},
-				["DOT_Time"] = {
-					33, -- [1]
-				},
-				["Damage"] = {
-					54740, -- [1]
+				["ActiveTime"] = {
+					7, -- [1]
 				},
 			},
 			["enClass"] = "PET",
-			["LastDamageTaken"] = 183,
 			["level"] = 1,
-			["LastDamageAbility"] = "Smoldering Bones",
-			["LastFightIn"] = 20,
+			["LastFightIn"] = 211,
 			["type"] = "Pet",
-			["FightsSaved"] = 5,
-			["LastActive"] = 1322276135,
-			["Owner"] = "Dethamett",
-			["UnitLockout"] = 1322276135,
-			["NextEventNum"] = 47,
+			["LastFlags"] = 2600,
+			["TimeLast"] = {
+				["TimeDamage"] = 1361077280,
+				["OVERALL"] = 1361077280,
+				["FDamage"] = 1361077280,
+				["ActiveTime"] = 1361077280,
+			},
+			["Owner"] = "Optomistprim",
+			["LastAbility"] = 245756.676,
+			["NextEventNum"] = 4,
 			["LastEventHealthNum"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
-				0, -- [4]
-				0, -- [5]
-				0, -- [6]
-				0, -- [7]
-				0, -- [8]
-				0, -- [9]
-				0, -- [10]
-				0, -- [11]
-				0, -- [12]
-				0, -- [13]
-				0, -- [14]
-				0, -- [15]
-				0, -- [16]
-				0, -- [17]
-				0, -- [18]
-				0, -- [19]
-				0, -- [20]
-				0, -- [21]
-				0, -- [22]
-				0, -- [23]
-				0, -- [24]
-				0, -- [25]
-				0, -- [26]
-				0, -- [27]
-				0, -- [28]
-				0, -- [29]
-				0, -- [30]
-				0, -- [31]
-				0, -- [32]
-				0, -- [33]
-				0, -- [34]
-				0, -- [35]
-				0, -- [36]
-				0, -- [37]
-				0, -- [38]
-				0, -- [39]
-				0, -- [40]
-				0, -- [41]
-				0, -- [42]
-				0, -- [43]
-				0, -- [44]
-				0, -- [45]
-				0, -- [46]
 			},
 			["LastEvents"] = {
-				"Smoldering Skeleton Melee Destructive Ward <Dethamett> Hit -518 (Physical)", -- [1]
-				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -190 (Fire)", -- [2]
-				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -173 (Fire)", -- [3]
-				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -191 (Fire)", -- [4]
-				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -191 (Fire)", -- [5]
-				"Smoldering Skeleton Melee Destructive Ward <Dethamett> Hit -384 (Physical)", -- [6]
-				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -169 (Fire)", -- [7]
-				"Smoldering Skeleton Melee Destructive Ward <Dethamett> Hit -388 (Physical)", -- [8]
-				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -178 (Fire)", -- [9]
-				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -177 (Fire)", -- [10]
-				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Skeleton Tick -929 (Fire)", -- [11]
-				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Skeleton Tick -749 (Fire)", -- [12]
-				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -178 (Fire)", -- [13]
-				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -184 (Fire)", -- [14]
-				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Miss (Fire)", -- [15]
-				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -190 (Fire)", -- [16]
-				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -188 (Fire)", -- [17]
-				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Skeleton Tick -749 (Fire)", -- [18]
-				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Skeleton Tick -929 (Fire)", -- [19]
-				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -182 (Fire)", -- [20]
-				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -187 (Fire)", -- [21]
-				"Smoldering Construct Melee Destructive Ward <Dethamett> Hit -440 (Physical)", -- [22]
-				"Smoldering Construct Melee Destructive Ward <Dethamett> Hit -447 (Physical)", -- [23]
-				"Smoldering Construct Melee Destructive Ward <Dethamett> Hit -459 (Physical)", -- [24]
-				"Smoldering Construct Melee Destructive Ward <Dethamett> Hit -398 (Physical)", -- [25]
-				"Smoldering Construct Melee Destructive Ward <Dethamett> Hit -502 (Physical)", -- [26]
-				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Construct Tick -1156 (Fire)", -- [27]
-				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Construct Tick -646 (Fire)", -- [28]
-				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Construct Tick -646 (Fire)", -- [29]
-				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Construct Tick -1156 (Fire)", -- [30]
-				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Construct Tick -1156 (Fire)", -- [31]
-				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Construct Tick -1156 (Fire)", -- [32]
-				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Construct Tick -1156 (Fire)", -- [33]
-				"Smoldering Construct Dazed Destructive Ward <Dethamett> Immune (Physical)", -- [34]
-				"Smoldering Construct Melee Destructive Ward <Dethamett> Hit -466 (Physical)", -- [35]
-				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -178 (Fire)", -- [36]
-				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -178 (Fire)", -- [37]
-				"Smoldering Skeleton Melee Destructive Ward <Dethamett> Hit -483 (Physical)", -- [38]
-				"Destructive Ward <Dethamett> Destructive Barrage Smoldering Skeleton Hit -8774 (Fire)", -- [39]
-				"Destructive Ward <Dethamett> Destructive Barrage Smoldering Construct Hit -5755 (Fire)", -- [40]
-				"Destructive Ward <Dethamett> Destructive Barrage Smoldering Skeleton Hit -6092 (Fire)", -- [41]
-				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -174 (Fire)", -- [42]
-				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -183 (Fire)", -- [43]
-				"Destructive Ward <Dethamett> Destructive Barrage Smoldering Skeleton Hit -7925 (Fire)", -- [44]
-				"Destructive Ward <Dethamett> Destructive Barrage Smoldering Skeleton Hit -9040 (Fire)", -- [45]
-				"Destructive Ward <Dethamett> Destructive Barrage Smoldering Construct Hit -6726 (Fire)", -- [46]
+				"Shadowy Apparition <Optomistprim> Shadowy Apparition Ibamfette-Windrunner Crit -510 (Shadow)", -- [1]
+				"Shadowy Apparition <Optomistprim> Shadowy Apparition Ibamfette-Windrunner Hit -255 (Shadow)", -- [2]
+				"Shadowy Apparition <Optomistprim> Shadowy Apparition Ibamfette-Windrunner Hit -254 (Shadow)", -- [3]
 			},
-			["Name"] = "Destructive Ward",
+			["Name"] = "Shadowy Apparition",
+			["LastEventIncoming"] = {
+				false, -- [1]
+				false, -- [2]
+				false, -- [3]
+			},
+			["LastEventTimes"] = {
+				245742.965, -- [1]
+				245742.965, -- [2]
+				245756.676, -- [3]
+			},
+			["Fights"] = {
+				["CurrentFightData"] = {
+					["FDamagedWho"] = {
+						["Ibamfette-Windrunner"] = {
+							["Details"] = {
+								["Shadowy Apparition"] = {
+									["count"] = 1019,
+								},
+							},
+							["amount"] = 1019,
+						},
+					},
+					["FDamage"] = 1019,
+					["ActiveTime"] = 7,
+					["TimeDamaging"] = {
+						["Ibamfette-Windrunner"] = {
+							["Details"] = {
+								["Shadowy Apparition"] = {
+									["count"] = 7,
+								},
+							},
+							["amount"] = 7,
+						},
+					},
+					["TimeSpent"] = {
+						["Ibamfette-Windrunner"] = {
+							["Details"] = {
+								["Shadowy Apparition"] = {
+									["count"] = 7,
+								},
+							},
+							["amount"] = 7,
+						},
+					},
+					["FAttacks"] = {
+						["Shadowy Apparition"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 510,
+									["min"] = 510,
+									["count"] = 1,
+									["amount"] = 510,
+								},
+								["Hit"] = {
+									["max"] = 255,
+									["min"] = 254,
+									["count"] = 2,
+									["amount"] = 509,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 1019,
+						},
+					},
+					["TimeDamage"] = 7,
+				},
+				["OverallData"] = {
+					["FDamagedWho"] = {
+						["Ibamfette-Windrunner"] = {
+							["Details"] = {
+								["Shadowy Apparition"] = {
+									["count"] = 1019,
+								},
+							},
+							["amount"] = 1019,
+						},
+					},
+					["FDamage"] = 1019,
+					["ActiveTime"] = 7,
+					["TimeDamaging"] = {
+						["Ibamfette-Windrunner"] = {
+							["Details"] = {
+								["Shadowy Apparition"] = {
+									["count"] = 7,
+								},
+							},
+							["amount"] = 7,
+						},
+					},
+					["TimeSpent"] = {
+						["Ibamfette-Windrunner"] = {
+							["Details"] = {
+								["Shadowy Apparition"] = {
+									["count"] = 7,
+								},
+							},
+							["amount"] = 7,
+						},
+					},
+					["FAttacks"] = {
+						["Shadowy Apparition"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 510,
+									["min"] = 510,
+									["count"] = 1,
+									["amount"] = 510,
+								},
+								["Hit"] = {
+									["max"] = 255,
+									["min"] = 254,
+									["count"] = 2,
+									["amount"] = 509,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 1019,
+						},
+					},
+					["TimeDamage"] = 7,
+				},
+			},
+			["UnitLockout"] = 1361077280,
+			["LastActive"] = 1361077280,
+		},
+		["Gold Shaman"] = {
+			["GUID"] = "0xF1307E540052D468",
+			["type"] = "Nontrivial",
+			["GuardianReverseGUIDs"] = {
+				["Earthbind Totem"] = {
+					["LatestGuardian"] = 0,
+					["GUIDs"] = {
+						[0] = "0xF1300A460052D697",
+					},
+				},
+			},
+			["Owner"] = false,
+			["enClass"] = "MOB",
+			["LastFightIn"] = 211,
+			["Name"] = "Gold Shaman",
+			["Fights"] = {
+			},
+			["Pet"] = {
+				"Earthbind Totem <Gold Shaman>", -- [1]
+			},
+			["level"] = 1,
+			["UnitLockout"] = 1343443053,
+			["LastAbility"] = 245693.359,
+		},
+		["Optomistprim"] = {
+			["GUID"] = "0x038000000556B4F3",
+			["type"] = "Ungrouped",
+			["GuardianReverseGUIDs"] = {
+				["Shadowy Apparition"] = {
+					["LatestGuardian"] = 1,
+					["GUIDs"] = {
+						"0xF130F20E004CAD99", -- [1]
+						[0] = "0xF130F20E004CACFF",
+					},
+				},
+			},
+			["Owner"] = false,
+			["enClass"] = "UNGROUPED",
+			["Name"] = "Optomistprim",
+			["Pet"] = {
+				"Shadowy Apparition <Optomistprim>", -- [1]
+			},
+			["Fights"] = {
+			},
+			["level"] = 1,
+			["UnitLockout"] = 1361077265,
+			["LastFightIn"] = 211,
+		},
+		["Helpmeout-Dath'Remar"] = {
+			["GUID"] = "0x03000000069214D6",
+			["LastEventHealth"] = {
+				"9416 (100%)", -- [1]
+				"9416 (100%)", -- [2]
+				"9416 (100%)", -- [3]
+				"9416 (100%)", -- [4]
+				"9416 (100%)", -- [5]
+				"9416 (100%)", -- [6]
+				"9416 (100%)", -- [7]
+				"9416 (100%)", -- [8]
+				"9416 (100%)", -- [9]
+				"9416 (100%)", -- [10]
+				"9416 (100%)", -- [11]
+				"9416 (100%)", -- [12]
+			},
+			["LastEventType"] = {
+				"HEAL", -- [1]
+				"HEAL", -- [2]
+				"HEAL", -- [3]
+				"HEAL", -- [4]
+				"HEAL", -- [5]
+				"HEAL", -- [6]
+				"HEAL", -- [7]
+				"HEAL", -- [8]
+				"HEAL", -- [9]
+				"HEAL", -- [10]
+				"HEAL", -- [11]
+				"HEAL", -- [12]
+			},
+			["enClass"] = "PRIEST",
+			["unit"] = "Helpmeout",
+			["level"] = 73,
+			["LastFightIn"] = 0,
+			["type"] = "Ungrouped",
+			["FightsSaved"] = 5,
+			["Owner"] = false,
+			["LastActive"] = 1322100496,
+			["NextEventNum"] = 13,
+			["LastEventHealthNum"] = {
+				100, -- [1]
+				100, -- [2]
+				100, -- [3]
+				100, -- [4]
+				100, -- [5]
+				100, -- [6]
+				100, -- [7]
+				100, -- [8]
+				100, -- [9]
+				100, -- [10]
+				100, -- [11]
+				100, -- [12]
+			},
+			["LastEvents"] = {
+				"Helpmeout-Dath'Remar Renew Dethamett Tick +963", -- [1]
+				"Helpmeout-Dath'Remar Renew Dethamett Tick +964 (879 overheal)", -- [2]
+				"Helpmeout-Dath'Remar Renew Featherwitch-Shadow Council Tick +964 (55 overheal)", -- [3]
+				"Helpmeout-Dath'Remar Renew Dethamett Crit +1927 (1927 overheal)", -- [4]
+				"Helpmeout-Dath'Remar Renew Featherwitch-Shadow Council Tick +964 (964 overheal)", -- [5]
+				"Helpmeout-Dath'Remar Renew Dethamett Tick +964 (964 overheal)", -- [6]
+				"Helpmeout-Dath'Remar Renew Featherwitch-Shadow Council Tick +964 (964 overheal)", -- [7]
+				"Helpmeout-Dath'Remar Renew Featherwitch-Shadow Council Tick +964 (964 overheal)", -- [8]
+				"Helpmeout-Dath'Remar Renew Stiven-Tichondrius Tick +963 (215 overheal)", -- [9]
+				"Helpmeout-Dath'Remar Renew Stiven-Tichondrius Tick +963 (963 overheal)", -- [10]
+				"Helpmeout-Dath'Remar Renew Stiven-Tichondrius Tick +963 (963 overheal)", -- [11]
+				"Helpmeout-Dath'Remar Renew Stiven-Tichondrius Tick +964 (964 overheal)", -- [12]
+			},
+			["Name"] = "Helpmeout-Dath'Remar",
+			["LastEventTimes"] = {
+				1263499.001, -- [1]
+				1263501.918, -- [2]
+				1263503.032, -- [3]
+				1263504.886, -- [4]
+				1263505.993, -- [5]
+				1263507.902, -- [6]
+				1263508.969, -- [7]
+				1263511.917, -- [8]
+				1263516.456, -- [9]
+				1263519.408, -- [10]
+				1263522.399, -- [11]
+				1263525.36, -- [12]
+			},
 			["Fights"] = {
 				["LastFightData"] = {
 					["DOTs"] = {
@@ -480,13 +1615,14 @@ RecountPerCharDB = {
 					},
 					["DeathCount"] = 0,
 					["HOT_Time"] = 0,
-					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
 					["RunicPowerGain"] = 0,
 					["ElementTaken"] = {
 					},
-					["DOT_Time"] = 0,
-					["ElementTakenBlock"] = {
+					["HOTs"] = {
 					},
+					["Damage"] = 0,
 					["ElementDoneAbsorb"] = {
 					},
 					["TimeHeal"] = 0,
@@ -495,33 +1631,32 @@ RecountPerCharDB = {
 					["Dispels"] = 0,
 					["PartialBlock"] = {
 					},
-					["ElementHitsDone"] = {
+					["DamagedWho"] = {
 					},
 					["FAttacks"] = {
 					},
 					["HealingTaken"] = 0,
 					["ElementDone"] = {
 					},
-					["DamagedWho"] = {
+					["ElementHitsDone"] = {
 					},
 					["ManaGainedFrom"] = {
 					},
-					["RunicPowerGainedFrom"] = {
+					["RunicPowerGained"] = {
 					},
 					["WhoDamaged"] = {
 					},
 					["EnergyGainedFrom"] = {
 					},
-					["RunicPowerGained"] = {
-					},
 					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
 					},
 					["ElementDoneBlock"] = {
 					},
 					["TimeHealing"] = {
 					},
-					["OverHeals"] = {
-					},
+					["Dispelled"] = 0,
 					["WhoHealed"] = {
 					},
 					["HealedWho"] = {
@@ -529,14 +1664,13 @@ RecountPerCharDB = {
 					["CCBreak"] = 0,
 					["ElementTakenAbsorb"] = {
 					},
-					["PartialAbsorb"] = {
-					},
-					["PartialResist"] = {
-					},
+					["FDamage"] = 0,
+					["EnergyGain"] = 0,
 					["ManaGained"] = {
 					},
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
 					["Overhealing"] = 0,
 					["TimeSpent"] = {
 					},
@@ -548,12 +1682,14 @@ RecountPerCharDB = {
 					},
 					["Heals"] = {
 					},
-					["ActiveTime"] = 0,
+					["Interrupts"] = 0,
 					["EnergyGained"] = {
 					},
-					["EnergyGain"] = 0,
+					["PartialResist"] = {
+					},
 					["Healing"] = 0,
-					["Dispelled"] = 0,
+					["OverHeals"] = {
+					},
 					["RageGained"] = {
 					},
 					["Attacks"] = {
@@ -565,8 +1701,7 @@ RecountPerCharDB = {
 					["TimeDamaging"] = {
 					},
 					["ManaGain"] = 0,
-					["HOTs"] = {
-					},
+					["DOT_Time"] = 0,
 					["DispelledWho"] = {
 					},
 				},
@@ -583,13 +1718,14 @@ RecountPerCharDB = {
 					},
 					["DeathCount"] = 0,
 					["HOT_Time"] = 0,
-					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
 					["RunicPowerGain"] = 0,
 					["ElementTaken"] = {
 					},
-					["DOT_Time"] = 0,
-					["ElementTakenBlock"] = {
+					["HOTs"] = {
 					},
+					["Damage"] = 0,
 					["ElementDoneAbsorb"] = {
 					},
 					["TimeHeal"] = 0,
@@ -598,33 +1734,32 @@ RecountPerCharDB = {
 					["Dispels"] = 0,
 					["PartialBlock"] = {
 					},
-					["ElementHitsDone"] = {
+					["DamagedWho"] = {
 					},
 					["FAttacks"] = {
 					},
 					["HealingTaken"] = 0,
 					["ElementDone"] = {
 					},
-					["DamagedWho"] = {
+					["ElementHitsDone"] = {
 					},
 					["ManaGainedFrom"] = {
 					},
-					["RunicPowerGainedFrom"] = {
+					["RunicPowerGained"] = {
 					},
 					["WhoDamaged"] = {
 					},
 					["EnergyGainedFrom"] = {
 					},
-					["RunicPowerGained"] = {
-					},
 					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
 					},
 					["ElementDoneBlock"] = {
 					},
 					["TimeHealing"] = {
 					},
-					["OverHeals"] = {
-					},
+					["Dispelled"] = 0,
 					["WhoHealed"] = {
 					},
 					["HealedWho"] = {
@@ -632,14 +1767,13 @@ RecountPerCharDB = {
 					["CCBreak"] = 0,
 					["ElementTakenAbsorb"] = {
 					},
-					["PartialAbsorb"] = {
-					},
-					["PartialResist"] = {
-					},
+					["FDamage"] = 0,
+					["EnergyGain"] = 0,
 					["ManaGained"] = {
 					},
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
 					["Overhealing"] = 0,
 					["TimeSpent"] = {
 					},
@@ -651,12 +1785,14 @@ RecountPerCharDB = {
 					},
 					["Heals"] = {
 					},
-					["ActiveTime"] = 0,
+					["Interrupts"] = 0,
 					["EnergyGained"] = {
 					},
-					["EnergyGain"] = 0,
+					["PartialResist"] = {
+					},
 					["Healing"] = 0,
-					["Dispelled"] = 0,
+					["OverHeals"] = {
+					},
 					["RageGained"] = {
 					},
 					["Attacks"] = {
@@ -668,381 +1804,271 @@ RecountPerCharDB = {
 					["TimeDamaging"] = {
 					},
 					["ManaGain"] = 0,
-					["HOTs"] = {
-					},
+					["DOT_Time"] = 0,
 					["DispelledWho"] = {
 					},
 				},
 				["OverallData"] = {
-					["DOTs"] = {
-						["Destructive Pulse (DoT)"] = {
+					["ShieldedWho"] = {
+						["Dethamett"] = {
 							["Details"] = {
-								["Smoldering Construct"] = {
-									["count"] = 21,
-								},
-								["Smoldering Skeleton"] = {
-									["count"] = 12,
-								},
-							},
-							["amount"] = 33,
-						},
-					},
-					["ElementHitsTaken"] = {
-						["Fire"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 17,
-								},
-								["Miss"] = {
-									["count"] = 1,
-								},
-							},
-							["amount"] = 18,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 10,
-								},
-							},
-							["amount"] = 10,
-						},
-						["Physical"] = {
-							["Details"] = {
-								["Immune"] = {
+								["Divine Aegis"] = {
 									["count"] = 1,
 								},
 							},
 							["amount"] = 1,
 						},
 					},
-					["DamageTaken"] = 7576,
-					["PartialResist"] = {
-						["Smoldering Bones"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 18,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 18,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 10,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 10,
-							["amount"] = 0,
-						},
-						["Dazed"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 0,
-						},
-					},
-					["PartialAbsorb"] = {
-						["Smoldering Bones"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 18,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 18,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 10,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 10,
-							["amount"] = 0,
-						},
-						["Dazed"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 0,
-						},
-					},
-					["ActiveTime"] = 29.5,
-					["ElementTaken"] = {
-						["Melee"] = 4485,
-						["Fire"] = 3091,
-					},
-					["DOT_Time"] = 33,
-					["Damage"] = 54740,
-					["Attacks"] = {
-						["Destructive Pulse (DoT)"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 1156,
-									["min"] = 646,
-									["count"] = 11,
-									["amount"] = 10428,
-								},
-							},
-							["count"] = 11,
-							["amount"] = 10428,
-						},
-						["Destructive Barrage"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 9040,
-									["min"] = 5755,
-									["count"] = 6,
-									["amount"] = 44312,
-								},
-							},
-							["count"] = 6,
-							["amount"] = 44312,
-						},
-					},
-					["WhoDamaged"] = {
-						["Smoldering Construct"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 2712,
-								},
-							},
-							["amount"] = 2712,
-						},
-						["Smoldering Skeleton"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 1773,
-								},
-								["Smoldering Bones"] = {
-									["count"] = 3091,
-								},
-							},
-							["amount"] = 4864,
-						},
-					},
-					["DamagedWho"] = {
-						["Smoldering Construct"] = {
-							["Details"] = {
-								["Destructive Pulse (DoT)"] = {
-									["count"] = 7072,
-								},
-								["Destructive Barrage"] = {
-									["count"] = 12481,
-								},
-							},
-							["amount"] = 19553,
-						},
-						["Smoldering Skeleton"] = {
-							["Details"] = {
-								["Destructive Pulse (DoT)"] = {
-									["count"] = 3356,
-								},
-								["Destructive Barrage"] = {
-									["count"] = 31831,
-								},
-							},
-							["amount"] = 35187,
-						},
-					},
-					["TimeDamage"] = 29.5,
-					["TimeDamaging"] = {
-						["Smoldering Construct"] = {
-							["Details"] = {
-								["Destructive Pulse (DoT)"] = {
-									["count"] = 18.18,
-								},
-								["Destructive Barrage"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 18.18,
-						},
-						["Smoldering Skeleton"] = {
-							["Details"] = {
-								["Destructive Pulse (DoT)"] = {
-									["count"] = 7.66,
-								},
-								["Destructive Barrage"] = {
-									["count"] = 3.66,
-								},
-							},
-							["amount"] = 11.32,
-						},
-					},
-					["TimeSpent"] = {
-						["Smoldering Construct"] = {
-							["Details"] = {
-								["Destructive Pulse (DoT)"] = {
-									["count"] = 18.18,
-								},
-								["Destructive Barrage"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 18.18,
-						},
-						["Smoldering Skeleton"] = {
-							["Details"] = {
-								["Destructive Pulse (DoT)"] = {
-									["count"] = 7.66,
-								},
-								["Destructive Barrage"] = {
-									["count"] = 3.66,
-								},
-							},
-							["amount"] = 11.32,
-						},
-					},
-					["ElementDone"] = {
-						["Fire"] = 54740,
-					},
-					["ElementHitsDone"] = {
-						["Fire"] = {
-							["Details"] = {
-								["Tick"] = {
-									["count"] = 11,
-								},
-								["Hit"] = {
-									["count"] = 6,
-								},
-							},
-							["amount"] = 17,
-						},
+				},
+			},
+			["LastEventIncoming"] = {
+				false, -- [1]
+				false, -- [2]
+				false, -- [3]
+				false, -- [4]
+				false, -- [5]
+				false, -- [6]
+				false, -- [7]
+				false, -- [8]
+				false, -- [9]
+				false, -- [10]
+				false, -- [11]
+				false, -- [12]
+			},
+			["UnitLockout"] = 1322100496,
+			["LastAbility"] = 245693.359,
+		},
+		["Drakkari Witch Doctor"] = {
+			["GUID"] = "0xF1306BA300750E26",
+			["type"] = "Nontrivial",
+			["FightsSaved"] = 5,
+			["GuardianReverseGUIDs"] = {
+				["Superior Healing Ward"] = {
+					["LatestGuardian"] = 1,
+					["GUIDs"] = {
+						"0xF13027EA008081DA", -- [1]
+						[0] = "0xF13027EA00807433",
 					},
 				},
 			},
-			["TimeLast"] = {
-				["ActiveTime"] = 1322276135,
-				["TimeDamage"] = 1322276135,
-				["DamageTaken"] = 1322276135,
-				["OVERALL"] = 1322276135,
-				["DOT_Time"] = 1322276131,
-				["Damage"] = 1322276135,
+			["Owner"] = false,
+			["enClass"] = "MOB",
+			["LastAbility"] = 245693.359,
+			["Name"] = "Drakkari Witch Doctor",
+			["UnitLockout"] = 1322476671,
+			["Pet"] = {
+				"Superior Healing Ward <Drakkari Witch Doctor>", -- [1]
 			},
-			["LastEventIncoming"] = {
-				true, -- [1]
-				true, -- [2]
-				true, -- [3]
-				true, -- [4]
-				true, -- [5]
-				true, -- [6]
-				true, -- [7]
-				true, -- [8]
-				true, -- [9]
-				true, -- [10]
-				false, -- [11]
-				false, -- [12]
-				true, -- [13]
-				true, -- [14]
-				true, -- [15]
-				true, -- [16]
-				true, -- [17]
-				false, -- [18]
-				false, -- [19]
-				true, -- [20]
-				true, -- [21]
-				true, -- [22]
-				true, -- [23]
-				true, -- [24]
-				true, -- [25]
-				true, -- [26]
-				false, -- [27]
-				false, -- [28]
-				false, -- [29]
-				false, -- [30]
-				false, -- [31]
-				false, -- [32]
-				false, -- [33]
-				true, -- [34]
-				true, -- [35]
-				true, -- [36]
-				true, -- [37]
-				true, -- [38]
-				false, -- [39]
-				false, -- [40]
-				false, -- [41]
-				true, -- [42]
-				true, -- [43]
-				false, -- [44]
-				false, -- [45]
-				false, -- [46]
+			["level"] = 1,
+			["Fights"] = {
+				["CurrentFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["HOTs"] = {
+					},
+					["Damage"] = 0,
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["FAttacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["ElementDone"] = {
+					},
+					["ElementHitsDone"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["Dispelled"] = 0,
+					["WhoHealed"] = {
+					},
+					["HealedWho"] = {
+					},
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
+					},
+					["FDamage"] = 0,
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["Interrupts"] = 0,
+					["EnergyGained"] = {
+					},
+					["PartialResist"] = {
+					},
+					["Healing"] = 0,
+					["OverHeals"] = {
+					},
+					["RageGained"] = {
+					},
+					["Attacks"] = {
+					},
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["DOT_Time"] = 0,
+					["DispelledWho"] = {
+					},
+				},
+				["LastFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["HOTs"] = {
+					},
+					["Damage"] = 0,
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["FAttacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["ElementDone"] = {
+					},
+					["ElementHitsDone"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["Dispelled"] = 0,
+					["WhoHealed"] = {
+					},
+					["HealedWho"] = {
+					},
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
+					},
+					["FDamage"] = 0,
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["Interrupts"] = 0,
+					["EnergyGained"] = {
+					},
+					["PartialResist"] = {
+					},
+					["Healing"] = 0,
+					["OverHeals"] = {
+					},
+					["RageGained"] = {
+					},
+					["Attacks"] = {
+					},
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["DOT_Time"] = 0,
+					["DispelledWho"] = {
+					},
+				},
 			},
-			["LastEventTimes"] = {
-				1439088.602, -- [1]
-				1439090.322, -- [2]
-				1439092.294, -- [3]
-				1439093.789, -- [4]
-				1439095.9, -- [5]
-				1439104.237, -- [6]
-				1439105.145, -- [7]
-				1439106.134, -- [8]
-				1439107.274, -- [9]
-				1439108.102, -- [10]
-				1439108.675, -- [11]
-				1439108.992, -- [12]
-				1439109.235, -- [13]
-				1439109.805, -- [14]
-				1439110.646, -- [15]
-				1439111.962, -- [16]
-				1439112.834, -- [17]
-				1439113.503, -- [18]
-				1439113.845, -- [19]
-				1439114.601, -- [20]
-				1439115.806, -- [21]
-				1439133.357, -- [22]
-				1439133.358, -- [23]
-				1439135.256, -- [24]
-				1439135.256, -- [25]
-				1439137.748, -- [26]
-				1439141.106, -- [27]
-				1439141.523, -- [28]
-				1439146.108, -- [29]
-				1439146.372, -- [30]
-				1439151.221, -- [31]
-				1439156.118, -- [32]
-				1439161.088, -- [33]
-				1439161.862, -- [34]
-				1439161.863, -- [35]
-				1439162.306, -- [36]
-				1439162.617, -- [37]
-				1439162.922, -- [38]
-				1439162.924, -- [39]
-				1439162.925, -- [40]
-				1439162.926, -- [41]
-				1439164.171, -- [42]
-				1439164.453, -- [43]
-				1439164.455, -- [44]
-				1439164.742, -- [45]
-				1439164.742, -- [46]
-			},
-			["LastAbility"] = 349.446,
+			["LastFightIn"] = 164,
 		},
 		["Budd <Dethamett>"] = {
 			["GUID"] = "0xF1307F9700790A0D",
@@ -1169,7 +2195,7 @@ RecountPerCharDB = {
 			},
 			["enClass"] = "PET",
 			["unit"] = "Budd",
-			["LastAbility"] = 349.446,
+			["LastAbility"] = 245693.359,
 			["level"] = 1,
 			["LastDamageAbility"] = "Ice Slash",
 			["LastFightIn"] = 132,
@@ -1480,13 +2506,14 @@ RecountPerCharDB = {
 					},
 					["DeathCount"] = 0,
 					["HOT_Time"] = 0,
-					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
 					["RunicPowerGain"] = 0,
 					["ElementTaken"] = {
 					},
-					["DOT_Time"] = 0,
-					["ElementTakenBlock"] = {
+					["HOTs"] = {
 					},
+					["Damage"] = 0,
 					["ElementDoneAbsorb"] = {
 					},
 					["TimeHeal"] = 0,
@@ -1495,33 +2522,32 @@ RecountPerCharDB = {
 					["Dispels"] = 0,
 					["PartialBlock"] = {
 					},
-					["ElementHitsDone"] = {
+					["DamagedWho"] = {
 					},
 					["FAttacks"] = {
 					},
 					["HealingTaken"] = 0,
 					["ElementDone"] = {
 					},
-					["DamagedWho"] = {
+					["ElementHitsDone"] = {
 					},
 					["ManaGainedFrom"] = {
 					},
-					["RunicPowerGainedFrom"] = {
+					["RunicPowerGained"] = {
 					},
 					["WhoDamaged"] = {
 					},
 					["EnergyGainedFrom"] = {
 					},
-					["RunicPowerGained"] = {
-					},
 					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
 					},
 					["ElementDoneBlock"] = {
 					},
 					["TimeHealing"] = {
 					},
-					["OverHeals"] = {
-					},
+					["Dispelled"] = 0,
 					["WhoHealed"] = {
 					},
 					["HealedWho"] = {
@@ -1529,14 +2555,13 @@ RecountPerCharDB = {
 					["CCBreak"] = 0,
 					["ElementTakenAbsorb"] = {
 					},
-					["PartialAbsorb"] = {
-					},
-					["PartialResist"] = {
-					},
+					["FDamage"] = 0,
+					["EnergyGain"] = 0,
 					["ManaGained"] = {
 					},
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
 					["Overhealing"] = 0,
 					["TimeSpent"] = {
 					},
@@ -1548,12 +2573,14 @@ RecountPerCharDB = {
 					},
 					["Heals"] = {
 					},
-					["ActiveTime"] = 0,
+					["Interrupts"] = 0,
 					["EnergyGained"] = {
 					},
-					["EnergyGain"] = 0,
+					["PartialResist"] = {
+					},
 					["Healing"] = 0,
-					["Dispelled"] = 0,
+					["OverHeals"] = {
+					},
 					["RageGained"] = {
 					},
 					["Attacks"] = {
@@ -1565,8 +2592,7 @@ RecountPerCharDB = {
 					["TimeDamaging"] = {
 					},
 					["ManaGain"] = 0,
-					["HOTs"] = {
-					},
+					["DOT_Time"] = 0,
 					["DispelledWho"] = {
 					},
 				},
@@ -1583,13 +2609,14 @@ RecountPerCharDB = {
 					},
 					["DeathCount"] = 0,
 					["HOT_Time"] = 0,
-					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
 					["RunicPowerGain"] = 0,
 					["ElementTaken"] = {
 					},
-					["DOT_Time"] = 0,
-					["ElementTakenBlock"] = {
+					["HOTs"] = {
 					},
+					["Damage"] = 0,
 					["ElementDoneAbsorb"] = {
 					},
 					["TimeHeal"] = 0,
@@ -1598,33 +2625,32 @@ RecountPerCharDB = {
 					["Dispels"] = 0,
 					["PartialBlock"] = {
 					},
-					["ElementHitsDone"] = {
+					["DamagedWho"] = {
 					},
 					["FAttacks"] = {
 					},
 					["HealingTaken"] = 0,
 					["ElementDone"] = {
 					},
-					["DamagedWho"] = {
+					["ElementHitsDone"] = {
 					},
 					["ManaGainedFrom"] = {
 					},
-					["RunicPowerGainedFrom"] = {
+					["RunicPowerGained"] = {
 					},
 					["WhoDamaged"] = {
 					},
 					["EnergyGainedFrom"] = {
 					},
-					["RunicPowerGained"] = {
-					},
 					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
 					},
 					["ElementDoneBlock"] = {
 					},
 					["TimeHealing"] = {
 					},
-					["OverHeals"] = {
-					},
+					["Dispelled"] = 0,
 					["WhoHealed"] = {
 					},
 					["HealedWho"] = {
@@ -1632,14 +2658,13 @@ RecountPerCharDB = {
 					["CCBreak"] = 0,
 					["ElementTakenAbsorb"] = {
 					},
-					["PartialAbsorb"] = {
-					},
-					["PartialResist"] = {
-					},
+					["FDamage"] = 0,
+					["EnergyGain"] = 0,
 					["ManaGained"] = {
 					},
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
 					["Overhealing"] = 0,
 					["TimeSpent"] = {
 					},
@@ -1651,12 +2676,14 @@ RecountPerCharDB = {
 					},
 					["Heals"] = {
 					},
-					["ActiveTime"] = 0,
+					["Interrupts"] = 0,
 					["EnergyGained"] = {
 					},
-					["EnergyGain"] = 0,
+					["PartialResist"] = {
+					},
 					["Healing"] = 0,
-					["Dispelled"] = 0,
+					["OverHeals"] = {
+					},
 					["RageGained"] = {
 					},
 					["Attacks"] = {
@@ -1668,15 +2695,72 @@ RecountPerCharDB = {
 					["TimeDamaging"] = {
 					},
 					["ManaGain"] = 0,
-					["HOTs"] = {
-					},
+					["DOT_Time"] = 0,
 					["DispelledWho"] = {
 					},
 				},
 				["OverallData"] = {
+					["PartialResist"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Ice Slash"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+					},
+					["TimeSpent"] = {
+						["Drakkari Shaman"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 112.65,
+								},
+							},
+							["amount"] = 112.65,
+						},
+						["Drakkari Warrior"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 35.64,
+								},
+							},
+							["amount"] = 35.64,
+						},
+					},
 					["ElementDone"] = {
 						["Melee"] = 470,
 					},
+					["WhoDamaged"] = {
+						["Ice Serpent"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 929,
+								},
+								["Ice Slash"] = {
+									["count"] = 1003,
+								},
+							},
+							["amount"] = 1932,
+						},
+					},
+					["TimeDamage"] = 148.29,
 					["ElementHitsTaken"] = {
 						["Melee"] = {
 							["Details"] = {
@@ -1693,6 +2777,29 @@ RecountPerCharDB = {
 								},
 							},
 							["amount"] = 1,
+						},
+					},
+					["DamageTaken"] = 1932,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 5,
+								},
+								["Hit"] = {
+									["count"] = 59,
+								},
+								["Miss"] = {
+									["count"] = 4,
+								},
+								["Crit"] = {
+									["count"] = 2,
+								},
+								["Dodge"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 71,
 						},
 					},
 					["Attacks"] = {
@@ -1729,112 +2836,23 @@ RecountPerCharDB = {
 							["amount"] = 470,
 						},
 					},
-					["WhoDamaged"] = {
-						["Ice Serpent"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 929,
-								},
-								["Ice Slash"] = {
-									["count"] = 1003,
-								},
-							},
-							["amount"] = 1932,
-						},
-					},
-					["TimeDamage"] = 148.29,
-					["TimeSpent"] = {
+					["DeathCount"] = 1,
+					["DamagedWho"] = {
 						["Drakkari Shaman"] = {
 							["Details"] = {
 								["Melee"] = {
-									["count"] = 112.65,
+									["count"] = 379,
 								},
 							},
-							["amount"] = 112.65,
+							["amount"] = 379,
 						},
 						["Drakkari Warrior"] = {
 							["Details"] = {
 								["Melee"] = {
-									["count"] = 35.64,
+									["count"] = 91,
 								},
 							},
-							["amount"] = 35.64,
-						},
-					},
-					["DamageTaken"] = 1932,
-					["ElementHitsDone"] = {
-						["Melee"] = {
-							["Details"] = {
-								["Glancing"] = {
-									["count"] = 5,
-								},
-								["Hit"] = {
-									["count"] = 59,
-								},
-								["Miss"] = {
-									["count"] = 4,
-								},
-								["Crit"] = {
-									["count"] = 2,
-								},
-								["Dodge"] = {
-									["count"] = 1,
-								},
-							},
-							["amount"] = 71,
-						},
-					},
-					["PartialResist"] = {
-						["Melee"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 0,
-						},
-						["Ice Slash"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 0,
-						},
-					},
-					["DeathCount"] = 1,
-					["PartialAbsorb"] = {
-						["Melee"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 0,
-						},
-						["Ice Slash"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 0,
+							["amount"] = 91,
 						},
 					},
 					["ActiveTime"] = 148.29,
@@ -1860,22 +2878,30 @@ RecountPerCharDB = {
 						["Melee"] = 929,
 						["Frost"] = 1003,
 					},
-					["DamagedWho"] = {
-						["Drakkari Shaman"] = {
+					["PartialAbsorb"] = {
+						["Melee"] = {
 							["Details"] = {
-								["Melee"] = {
-									["count"] = 379,
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
 								},
 							},
-							["amount"] = 379,
+							["count"] = 2,
+							["amount"] = 0,
 						},
-						["Drakkari Warrior"] = {
+						["Ice Slash"] = {
 							["Details"] = {
-								["Melee"] = {
-									["count"] = 91,
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
 								},
 							},
-							["amount"] = 91,
+							["count"] = 1,
+							["amount"] = 0,
 						},
 					},
 					["Damage"] = 470,
@@ -1883,788 +2909,6 @@ RecountPerCharDB = {
 			},
 			["UnitLockout"] = 1322447701,
 			["LastActive"] = 1322449695,
-		},
-		["Keram"] = {
-			["GUID"] = "0x03800000046CAB05",
-			["type"] = "Hostile",
-			["FightsSaved"] = 5,
-			["GuardianReverseGUIDs"] = {
-				["Worg Pup"] = {
-					["LatestGuardian"] = 0,
-					["GUIDs"] = {
-						[0] = "0xF130281300788078",
-					},
-				},
-			},
-			["Owner"] = false,
-			["enClass"] = "HOSTILE",
-			["LastFightIn"] = 64,
-			["Name"] = "Keram",
-			["Fights"] = {
-				["CurrentFightData"] = {
-					["DOTs"] = {
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 0,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["Damage"] = 0,
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
-					["DOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["ElementHitsDone"] = {
-					},
-					["FAttacks"] = {
-					},
-					["HealingTaken"] = 0,
-					["ElementDone"] = {
-					},
-					["DamagedWho"] = {
-					},
-					["ManaGainedFrom"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["WhoDamaged"] = {
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["CCBroken"] = {
-					},
-					["ElementDoneBlock"] = {
-					},
-					["TimeHealing"] = {
-					},
-					["OverHeals"] = {
-					},
-					["WhoHealed"] = {
-					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["PartialResist"] = {
-					},
-					["ManaGained"] = {
-					},
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["InterruptData"] = {
-					},
-					["ElementTakenResist"] = {
-					},
-					["Heals"] = {
-					},
-					["ActiveTime"] = 0,
-					["EnergyGained"] = {
-					},
-					["EnergyGain"] = 0,
-					["Healing"] = 0,
-					["Dispelled"] = 0,
-					["RageGained"] = {
-					},
-					["Attacks"] = {
-					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
-					},
-					["TimeDamage"] = 0,
-					["TimeDamaging"] = {
-					},
-					["ManaGain"] = 0,
-					["HOTs"] = {
-					},
-					["DispelledWho"] = {
-					},
-				},
-				["LastFightData"] = {
-					["DOTs"] = {
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 0,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["Damage"] = 0,
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
-					["DOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["ElementHitsDone"] = {
-					},
-					["FAttacks"] = {
-					},
-					["HealingTaken"] = 0,
-					["ElementDone"] = {
-					},
-					["DamagedWho"] = {
-					},
-					["ManaGainedFrom"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["WhoDamaged"] = {
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["CCBroken"] = {
-					},
-					["ElementDoneBlock"] = {
-					},
-					["TimeHealing"] = {
-					},
-					["OverHeals"] = {
-					},
-					["WhoHealed"] = {
-					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["PartialResist"] = {
-					},
-					["ManaGained"] = {
-					},
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["InterruptData"] = {
-					},
-					["ElementTakenResist"] = {
-					},
-					["Heals"] = {
-					},
-					["ActiveTime"] = 0,
-					["EnergyGained"] = {
-					},
-					["EnergyGain"] = 0,
-					["Healing"] = 0,
-					["Dispelled"] = 0,
-					["RageGained"] = {
-					},
-					["Attacks"] = {
-					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
-					},
-					["TimeDamage"] = 0,
-					["TimeDamaging"] = {
-					},
-					["ManaGain"] = 0,
-					["HOTs"] = {
-					},
-					["DispelledWho"] = {
-					},
-				},
-			},
-			["Pet"] = {
-				"Worg Pup <Keram>", -- [1]
-			},
-			["level"] = 1,
-			["UnitLockout"] = 1322445621,
-			["LastAbility"] = 349.446,
-		},
-		["Drakkari Witch Doctor"] = {
-			["GUID"] = "0xF1306BA300750E26",
-			["type"] = "Nontrivial",
-			["FightsSaved"] = 5,
-			["GuardianReverseGUIDs"] = {
-				["Superior Healing Ward"] = {
-					["LatestGuardian"] = 1,
-					["GUIDs"] = {
-						"0xF13027EA008081DA", -- [1]
-						[0] = "0xF13027EA00807433",
-					},
-				},
-			},
-			["Owner"] = false,
-			["enClass"] = "MOB",
-			["LastAbility"] = 349.446,
-			["Name"] = "Drakkari Witch Doctor",
-			["UnitLockout"] = 1322476671,
-			["Pet"] = {
-				"Superior Healing Ward <Drakkari Witch Doctor>", -- [1]
-			},
-			["level"] = 1,
-			["Fights"] = {
-				["CurrentFightData"] = {
-					["DOTs"] = {
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 0,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["Damage"] = 0,
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
-					["DOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["ElementHitsDone"] = {
-					},
-					["FAttacks"] = {
-					},
-					["HealingTaken"] = 0,
-					["ElementDone"] = {
-					},
-					["DamagedWho"] = {
-					},
-					["ManaGainedFrom"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["WhoDamaged"] = {
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["CCBroken"] = {
-					},
-					["ElementDoneBlock"] = {
-					},
-					["TimeHealing"] = {
-					},
-					["OverHeals"] = {
-					},
-					["WhoHealed"] = {
-					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["PartialResist"] = {
-					},
-					["ManaGained"] = {
-					},
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["InterruptData"] = {
-					},
-					["ElementTakenResist"] = {
-					},
-					["Heals"] = {
-					},
-					["ActiveTime"] = 0,
-					["EnergyGained"] = {
-					},
-					["EnergyGain"] = 0,
-					["Healing"] = 0,
-					["Dispelled"] = 0,
-					["RageGained"] = {
-					},
-					["Attacks"] = {
-					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
-					},
-					["TimeDamage"] = 0,
-					["TimeDamaging"] = {
-					},
-					["ManaGain"] = 0,
-					["HOTs"] = {
-					},
-					["DispelledWho"] = {
-					},
-				},
-				["LastFightData"] = {
-					["DOTs"] = {
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 0,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["Damage"] = 0,
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
-					["DOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["ElementHitsDone"] = {
-					},
-					["FAttacks"] = {
-					},
-					["HealingTaken"] = 0,
-					["ElementDone"] = {
-					},
-					["DamagedWho"] = {
-					},
-					["ManaGainedFrom"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["WhoDamaged"] = {
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["CCBroken"] = {
-					},
-					["ElementDoneBlock"] = {
-					},
-					["TimeHealing"] = {
-					},
-					["OverHeals"] = {
-					},
-					["WhoHealed"] = {
-					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["PartialResist"] = {
-					},
-					["ManaGained"] = {
-					},
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["InterruptData"] = {
-					},
-					["ElementTakenResist"] = {
-					},
-					["Heals"] = {
-					},
-					["ActiveTime"] = 0,
-					["EnergyGained"] = {
-					},
-					["EnergyGain"] = 0,
-					["Healing"] = 0,
-					["Dispelled"] = 0,
-					["RageGained"] = {
-					},
-					["Attacks"] = {
-					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
-					},
-					["TimeDamage"] = 0,
-					["TimeDamaging"] = {
-					},
-					["ManaGain"] = 0,
-					["HOTs"] = {
-					},
-					["DispelledWho"] = {
-					},
-				},
-			},
-			["LastFightIn"] = 164,
-		},
-		["Helpmeout-Dath'Remar"] = {
-			["GUID"] = "0x03000000069214D6",
-			["LastEventHealth"] = {
-				"9416 (100%)", -- [1]
-				"9416 (100%)", -- [2]
-				"9416 (100%)", -- [3]
-				"9416 (100%)", -- [4]
-				"9416 (100%)", -- [5]
-				"9416 (100%)", -- [6]
-				"9416 (100%)", -- [7]
-				"9416 (100%)", -- [8]
-				"9416 (100%)", -- [9]
-				"9416 (100%)", -- [10]
-				"9416 (100%)", -- [11]
-				"9416 (100%)", -- [12]
-			},
-			["LastEventType"] = {
-				"HEAL", -- [1]
-				"HEAL", -- [2]
-				"HEAL", -- [3]
-				"HEAL", -- [4]
-				"HEAL", -- [5]
-				"HEAL", -- [6]
-				"HEAL", -- [7]
-				"HEAL", -- [8]
-				"HEAL", -- [9]
-				"HEAL", -- [10]
-				"HEAL", -- [11]
-				"HEAL", -- [12]
-			},
-			["enClass"] = "PRIEST",
-			["unit"] = "Helpmeout",
-			["level"] = 73,
-			["LastFightIn"] = 0,
-			["type"] = "Ungrouped",
-			["FightsSaved"] = 5,
-			["Owner"] = false,
-			["LastActive"] = 1322100496,
-			["NextEventNum"] = 13,
-			["LastEventHealthNum"] = {
-				100, -- [1]
-				100, -- [2]
-				100, -- [3]
-				100, -- [4]
-				100, -- [5]
-				100, -- [6]
-				100, -- [7]
-				100, -- [8]
-				100, -- [9]
-				100, -- [10]
-				100, -- [11]
-				100, -- [12]
-			},
-			["LastEvents"] = {
-				"Helpmeout-Dath'Remar Renew Dethamett Tick +963", -- [1]
-				"Helpmeout-Dath'Remar Renew Dethamett Tick +964 (879 overheal)", -- [2]
-				"Helpmeout-Dath'Remar Renew Featherwitch-Shadow Council Tick +964 (55 overheal)", -- [3]
-				"Helpmeout-Dath'Remar Renew Dethamett Crit +1927 (1927 overheal)", -- [4]
-				"Helpmeout-Dath'Remar Renew Featherwitch-Shadow Council Tick +964 (964 overheal)", -- [5]
-				"Helpmeout-Dath'Remar Renew Dethamett Tick +964 (964 overheal)", -- [6]
-				"Helpmeout-Dath'Remar Renew Featherwitch-Shadow Council Tick +964 (964 overheal)", -- [7]
-				"Helpmeout-Dath'Remar Renew Featherwitch-Shadow Council Tick +964 (964 overheal)", -- [8]
-				"Helpmeout-Dath'Remar Renew Stiven-Tichondrius Tick +963 (215 overheal)", -- [9]
-				"Helpmeout-Dath'Remar Renew Stiven-Tichondrius Tick +963 (963 overheal)", -- [10]
-				"Helpmeout-Dath'Remar Renew Stiven-Tichondrius Tick +963 (963 overheal)", -- [11]
-				"Helpmeout-Dath'Remar Renew Stiven-Tichondrius Tick +964 (964 overheal)", -- [12]
-			},
-			["Name"] = "Helpmeout-Dath'Remar",
-			["LastEventTimes"] = {
-				1263499.001, -- [1]
-				1263501.918, -- [2]
-				1263503.032, -- [3]
-				1263504.886, -- [4]
-				1263505.993, -- [5]
-				1263507.902, -- [6]
-				1263508.969, -- [7]
-				1263511.917, -- [8]
-				1263516.456, -- [9]
-				1263519.408, -- [10]
-				1263522.399, -- [11]
-				1263525.36, -- [12]
-			},
-			["Fights"] = {
-				["LastFightData"] = {
-					["DOTs"] = {
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 0,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["Damage"] = 0,
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
-					["DOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["ElementHitsDone"] = {
-					},
-					["FAttacks"] = {
-					},
-					["HealingTaken"] = 0,
-					["ElementDone"] = {
-					},
-					["DamagedWho"] = {
-					},
-					["ManaGainedFrom"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["WhoDamaged"] = {
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["CCBroken"] = {
-					},
-					["ElementDoneBlock"] = {
-					},
-					["TimeHealing"] = {
-					},
-					["OverHeals"] = {
-					},
-					["WhoHealed"] = {
-					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["PartialResist"] = {
-					},
-					["ManaGained"] = {
-					},
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["InterruptData"] = {
-					},
-					["ElementTakenResist"] = {
-					},
-					["Heals"] = {
-					},
-					["ActiveTime"] = 0,
-					["EnergyGained"] = {
-					},
-					["EnergyGain"] = 0,
-					["Healing"] = 0,
-					["Dispelled"] = 0,
-					["RageGained"] = {
-					},
-					["Attacks"] = {
-					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
-					},
-					["TimeDamage"] = 0,
-					["TimeDamaging"] = {
-					},
-					["ManaGain"] = 0,
-					["HOTs"] = {
-					},
-					["DispelledWho"] = {
-					},
-				},
-				["CurrentFightData"] = {
-					["DOTs"] = {
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 0,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["Damage"] = 0,
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
-					["DOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["ElementHitsDone"] = {
-					},
-					["FAttacks"] = {
-					},
-					["HealingTaken"] = 0,
-					["ElementDone"] = {
-					},
-					["DamagedWho"] = {
-					},
-					["ManaGainedFrom"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["WhoDamaged"] = {
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["CCBroken"] = {
-					},
-					["ElementDoneBlock"] = {
-					},
-					["TimeHealing"] = {
-					},
-					["OverHeals"] = {
-					},
-					["WhoHealed"] = {
-					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["PartialResist"] = {
-					},
-					["ManaGained"] = {
-					},
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["InterruptData"] = {
-					},
-					["ElementTakenResist"] = {
-					},
-					["Heals"] = {
-					},
-					["ActiveTime"] = 0,
-					["EnergyGained"] = {
-					},
-					["EnergyGain"] = 0,
-					["Healing"] = 0,
-					["Dispelled"] = 0,
-					["RageGained"] = {
-					},
-					["Attacks"] = {
-					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
-					},
-					["TimeDamage"] = 0,
-					["TimeDamaging"] = {
-					},
-					["ManaGain"] = 0,
-					["HOTs"] = {
-					},
-					["DispelledWho"] = {
-					},
-				},
-				["OverallData"] = {
-					["ShieldedWho"] = {
-						["Dethamett"] = {
-							["Details"] = {
-								["Divine Aegis"] = {
-									["count"] = 1,
-								},
-							},
-							["amount"] = 1,
-						},
-					},
-				},
-			},
-			["LastEventIncoming"] = {
-				false, -- [1]
-				false, -- [2]
-				false, -- [3]
-				false, -- [4]
-				false, -- [5]
-				false, -- [6]
-				false, -- [7]
-				false, -- [8]
-				false, -- [9]
-				false, -- [10]
-				false, -- [11]
-				false, -- [12]
-			},
-			["UnitLockout"] = 1322100496,
-			["LastAbility"] = 349.446,
 		},
 		["Lilgwenie"] = {
 			["GUID"] = "0x03800000021112A8",
@@ -2688,7 +2932,1263 @@ RecountPerCharDB = {
 			},
 			["level"] = 1,
 			["UnitLockout"] = 1344742663,
-			["LastAbility"] = 349.446,
+			["LastAbility"] = 245693.359,
+		},
+		["Destructive Ward <Dethamett>"] = {
+			["GUID"] = "0xF1306B26004BA648",
+			["LastEventHealth"] = {
+				"???", -- [1]
+				"???", -- [2]
+				"???", -- [3]
+				"???", -- [4]
+				"???", -- [5]
+				"???", -- [6]
+				"???", -- [7]
+				"???", -- [8]
+				"???", -- [9]
+				"???", -- [10]
+				"???", -- [11]
+				"???", -- [12]
+				"???", -- [13]
+				"???", -- [14]
+				"???", -- [15]
+				"???", -- [16]
+				"???", -- [17]
+				"???", -- [18]
+				"???", -- [19]
+				"???", -- [20]
+				"???", -- [21]
+				"???", -- [22]
+				"???", -- [23]
+				"???", -- [24]
+				"???", -- [25]
+				"???", -- [26]
+				"???", -- [27]
+				"???", -- [28]
+				"???", -- [29]
+				"???", -- [30]
+				"???", -- [31]
+				"???", -- [32]
+				"???", -- [33]
+				"???", -- [34]
+				"???", -- [35]
+				"???", -- [36]
+				"???", -- [37]
+				"???", -- [38]
+				"???", -- [39]
+				"???", -- [40]
+				"???", -- [41]
+				"???", -- [42]
+				"???", -- [43]
+				"???", -- [44]
+				"???", -- [45]
+				"???", -- [46]
+			},
+			["LastAttackedBy"] = "Smoldering Skeleton",
+			["LastEventType"] = {
+				"DAMAGE", -- [1]
+				"DAMAGE", -- [2]
+				"DAMAGE", -- [3]
+				"DAMAGE", -- [4]
+				"DAMAGE", -- [5]
+				"DAMAGE", -- [6]
+				"DAMAGE", -- [7]
+				"DAMAGE", -- [8]
+				"DAMAGE", -- [9]
+				"DAMAGE", -- [10]
+				"DAMAGE", -- [11]
+				"DAMAGE", -- [12]
+				"DAMAGE", -- [13]
+				"DAMAGE", -- [14]
+				"DAMAGE", -- [15]
+				"DAMAGE", -- [16]
+				"DAMAGE", -- [17]
+				"DAMAGE", -- [18]
+				"DAMAGE", -- [19]
+				"DAMAGE", -- [20]
+				"DAMAGE", -- [21]
+				"DAMAGE", -- [22]
+				"DAMAGE", -- [23]
+				"DAMAGE", -- [24]
+				"DAMAGE", -- [25]
+				"DAMAGE", -- [26]
+				"DAMAGE", -- [27]
+				"DAMAGE", -- [28]
+				"DAMAGE", -- [29]
+				"DAMAGE", -- [30]
+				"DAMAGE", -- [31]
+				"DAMAGE", -- [32]
+				"DAMAGE", -- [33]
+				"DAMAGE", -- [34]
+				"DAMAGE", -- [35]
+				"DAMAGE", -- [36]
+				"DAMAGE", -- [37]
+				"DAMAGE", -- [38]
+				"DAMAGE", -- [39]
+				"DAMAGE", -- [40]
+				"DAMAGE", -- [41]
+				"DAMAGE", -- [42]
+				"DAMAGE", -- [43]
+				"DAMAGE", -- [44]
+				"DAMAGE", -- [45]
+				"DAMAGE", -- [46]
+			},
+			["TimeWindows"] = {
+				["ActiveTime"] = {
+					29.5, -- [1]
+				},
+				["TimeDamage"] = {
+					29.5, -- [1]
+				},
+				["DamageTaken"] = {
+					7576, -- [1]
+				},
+				["DOT_Time"] = {
+					33, -- [1]
+				},
+				["Damage"] = {
+					54740, -- [1]
+				},
+			},
+			["enClass"] = "PET",
+			["LastDamageTaken"] = 183,
+			["level"] = 1,
+			["LastDamageAbility"] = "Smoldering Bones",
+			["LastFightIn"] = 20,
+			["type"] = "Pet",
+			["FightsSaved"] = 5,
+			["LastActive"] = 1322276135,
+			["Owner"] = "Dethamett",
+			["UnitLockout"] = 1322276135,
+			["NextEventNum"] = 47,
+			["LastEventHealthNum"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				0, -- [7]
+				0, -- [8]
+				0, -- [9]
+				0, -- [10]
+				0, -- [11]
+				0, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				0, -- [16]
+				0, -- [17]
+				0, -- [18]
+				0, -- [19]
+				0, -- [20]
+				0, -- [21]
+				0, -- [22]
+				0, -- [23]
+				0, -- [24]
+				0, -- [25]
+				0, -- [26]
+				0, -- [27]
+				0, -- [28]
+				0, -- [29]
+				0, -- [30]
+				0, -- [31]
+				0, -- [32]
+				0, -- [33]
+				0, -- [34]
+				0, -- [35]
+				0, -- [36]
+				0, -- [37]
+				0, -- [38]
+				0, -- [39]
+				0, -- [40]
+				0, -- [41]
+				0, -- [42]
+				0, -- [43]
+				0, -- [44]
+				0, -- [45]
+				0, -- [46]
+			},
+			["LastEvents"] = {
+				"Smoldering Skeleton Melee Destructive Ward <Dethamett> Hit -518 (Physical)", -- [1]
+				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -190 (Fire)", -- [2]
+				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -173 (Fire)", -- [3]
+				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -191 (Fire)", -- [4]
+				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -191 (Fire)", -- [5]
+				"Smoldering Skeleton Melee Destructive Ward <Dethamett> Hit -384 (Physical)", -- [6]
+				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -169 (Fire)", -- [7]
+				"Smoldering Skeleton Melee Destructive Ward <Dethamett> Hit -388 (Physical)", -- [8]
+				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -178 (Fire)", -- [9]
+				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -177 (Fire)", -- [10]
+				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Skeleton Tick -929 (Fire)", -- [11]
+				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Skeleton Tick -749 (Fire)", -- [12]
+				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -178 (Fire)", -- [13]
+				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -184 (Fire)", -- [14]
+				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Miss (Fire)", -- [15]
+				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -190 (Fire)", -- [16]
+				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -188 (Fire)", -- [17]
+				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Skeleton Tick -749 (Fire)", -- [18]
+				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Skeleton Tick -929 (Fire)", -- [19]
+				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -182 (Fire)", -- [20]
+				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -187 (Fire)", -- [21]
+				"Smoldering Construct Melee Destructive Ward <Dethamett> Hit -440 (Physical)", -- [22]
+				"Smoldering Construct Melee Destructive Ward <Dethamett> Hit -447 (Physical)", -- [23]
+				"Smoldering Construct Melee Destructive Ward <Dethamett> Hit -459 (Physical)", -- [24]
+				"Smoldering Construct Melee Destructive Ward <Dethamett> Hit -398 (Physical)", -- [25]
+				"Smoldering Construct Melee Destructive Ward <Dethamett> Hit -502 (Physical)", -- [26]
+				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Construct Tick -1156 (Fire)", -- [27]
+				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Construct Tick -646 (Fire)", -- [28]
+				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Construct Tick -646 (Fire)", -- [29]
+				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Construct Tick -1156 (Fire)", -- [30]
+				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Construct Tick -1156 (Fire)", -- [31]
+				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Construct Tick -1156 (Fire)", -- [32]
+				"Destructive Ward <Dethamett> Destructive Pulse (DoT) Smoldering Construct Tick -1156 (Fire)", -- [33]
+				"Smoldering Construct Dazed Destructive Ward <Dethamett> Immune (Physical)", -- [34]
+				"Smoldering Construct Melee Destructive Ward <Dethamett> Hit -466 (Physical)", -- [35]
+				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -178 (Fire)", -- [36]
+				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -178 (Fire)", -- [37]
+				"Smoldering Skeleton Melee Destructive Ward <Dethamett> Hit -483 (Physical)", -- [38]
+				"Destructive Ward <Dethamett> Destructive Barrage Smoldering Skeleton Hit -8774 (Fire)", -- [39]
+				"Destructive Ward <Dethamett> Destructive Barrage Smoldering Construct Hit -5755 (Fire)", -- [40]
+				"Destructive Ward <Dethamett> Destructive Barrage Smoldering Skeleton Hit -6092 (Fire)", -- [41]
+				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -174 (Fire)", -- [42]
+				"Smoldering Skeleton Smoldering Bones Destructive Ward <Dethamett> Hit -183 (Fire)", -- [43]
+				"Destructive Ward <Dethamett> Destructive Barrage Smoldering Skeleton Hit -7925 (Fire)", -- [44]
+				"Destructive Ward <Dethamett> Destructive Barrage Smoldering Skeleton Hit -9040 (Fire)", -- [45]
+				"Destructive Ward <Dethamett> Destructive Barrage Smoldering Construct Hit -6726 (Fire)", -- [46]
+			},
+			["Name"] = "Destructive Ward",
+			["Fights"] = {
+				["LastFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["HOTs"] = {
+					},
+					["Damage"] = 0,
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["FAttacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["ElementDone"] = {
+					},
+					["ElementHitsDone"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["Dispelled"] = 0,
+					["WhoHealed"] = {
+					},
+					["HealedWho"] = {
+					},
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
+					},
+					["FDamage"] = 0,
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["Interrupts"] = 0,
+					["EnergyGained"] = {
+					},
+					["PartialResist"] = {
+					},
+					["Healing"] = 0,
+					["OverHeals"] = {
+					},
+					["RageGained"] = {
+					},
+					["Attacks"] = {
+					},
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["DOT_Time"] = 0,
+					["DispelledWho"] = {
+					},
+				},
+				["CurrentFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["HOTs"] = {
+					},
+					["Damage"] = 0,
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["FAttacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["ElementDone"] = {
+					},
+					["ElementHitsDone"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["Dispelled"] = 0,
+					["WhoHealed"] = {
+					},
+					["HealedWho"] = {
+					},
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
+					},
+					["FDamage"] = 0,
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["Interrupts"] = 0,
+					["EnergyGained"] = {
+					},
+					["PartialResist"] = {
+					},
+					["Healing"] = 0,
+					["OverHeals"] = {
+					},
+					["RageGained"] = {
+					},
+					["Attacks"] = {
+					},
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["DOT_Time"] = 0,
+					["DispelledWho"] = {
+					},
+				},
+				["OverallData"] = {
+					["DOTs"] = {
+						["Destructive Pulse (DoT)"] = {
+							["Details"] = {
+								["Smoldering Construct"] = {
+									["count"] = 21,
+								},
+								["Smoldering Skeleton"] = {
+									["count"] = 12,
+								},
+							},
+							["amount"] = 33,
+						},
+					},
+					["ElementHitsTaken"] = {
+						["Fire"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 17,
+								},
+								["Miss"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 18,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 10,
+								},
+							},
+							["amount"] = 10,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Immune"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+					},
+					["DamageTaken"] = 7576,
+					["PartialResist"] = {
+						["Smoldering Bones"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 18,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 18,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 10,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 10,
+							["amount"] = 0,
+						},
+						["Dazed"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+					},
+					["PartialAbsorb"] = {
+						["Smoldering Bones"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 18,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 18,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 10,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 10,
+							["amount"] = 0,
+						},
+						["Dazed"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+					},
+					["ActiveTime"] = 29.5,
+					["ElementTaken"] = {
+						["Melee"] = 4485,
+						["Fire"] = 3091,
+					},
+					["DOT_Time"] = 33,
+					["Damage"] = 54740,
+					["Attacks"] = {
+						["Destructive Pulse (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 1156,
+									["min"] = 646,
+									["count"] = 11,
+									["amount"] = 10428,
+								},
+							},
+							["count"] = 11,
+							["amount"] = 10428,
+						},
+						["Destructive Barrage"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 9040,
+									["min"] = 5755,
+									["count"] = 6,
+									["amount"] = 44312,
+								},
+							},
+							["count"] = 6,
+							["amount"] = 44312,
+						},
+					},
+					["TimeDamaging"] = {
+						["Smoldering Construct"] = {
+							["Details"] = {
+								["Destructive Pulse (DoT)"] = {
+									["count"] = 18.18,
+								},
+								["Destructive Barrage"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 18.18,
+						},
+						["Smoldering Skeleton"] = {
+							["Details"] = {
+								["Destructive Pulse (DoT)"] = {
+									["count"] = 7.66,
+								},
+								["Destructive Barrage"] = {
+									["count"] = 3.66,
+								},
+							},
+							["amount"] = 11.32,
+						},
+					},
+					["ElementHitsDone"] = {
+						["Fire"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 11,
+								},
+								["Hit"] = {
+									["count"] = 6,
+								},
+							},
+							["amount"] = 17,
+						},
+					},
+					["TimeDamage"] = 29.5,
+					["WhoDamaged"] = {
+						["Smoldering Construct"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 2712,
+								},
+							},
+							["amount"] = 2712,
+						},
+						["Smoldering Skeleton"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 1773,
+								},
+								["Smoldering Bones"] = {
+									["count"] = 3091,
+								},
+							},
+							["amount"] = 4864,
+						},
+					},
+					["TimeSpent"] = {
+						["Smoldering Construct"] = {
+							["Details"] = {
+								["Destructive Pulse (DoT)"] = {
+									["count"] = 18.18,
+								},
+								["Destructive Barrage"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 18.18,
+						},
+						["Smoldering Skeleton"] = {
+							["Details"] = {
+								["Destructive Pulse (DoT)"] = {
+									["count"] = 7.66,
+								},
+								["Destructive Barrage"] = {
+									["count"] = 3.66,
+								},
+							},
+							["amount"] = 11.32,
+						},
+					},
+					["ElementDone"] = {
+						["Fire"] = 54740,
+					},
+					["DamagedWho"] = {
+						["Smoldering Construct"] = {
+							["Details"] = {
+								["Destructive Pulse (DoT)"] = {
+									["count"] = 7072,
+								},
+								["Destructive Barrage"] = {
+									["count"] = 12481,
+								},
+							},
+							["amount"] = 19553,
+						},
+						["Smoldering Skeleton"] = {
+							["Details"] = {
+								["Destructive Pulse (DoT)"] = {
+									["count"] = 3356,
+								},
+								["Destructive Barrage"] = {
+									["count"] = 31831,
+								},
+							},
+							["amount"] = 35187,
+						},
+					},
+				},
+			},
+			["TimeLast"] = {
+				["ActiveTime"] = 1322276135,
+				["TimeDamage"] = 1322276135,
+				["DamageTaken"] = 1322276135,
+				["OVERALL"] = 1322276135,
+				["DOT_Time"] = 1322276131,
+				["Damage"] = 1322276135,
+			},
+			["LastEventIncoming"] = {
+				true, -- [1]
+				true, -- [2]
+				true, -- [3]
+				true, -- [4]
+				true, -- [5]
+				true, -- [6]
+				true, -- [7]
+				true, -- [8]
+				true, -- [9]
+				true, -- [10]
+				false, -- [11]
+				false, -- [12]
+				true, -- [13]
+				true, -- [14]
+				true, -- [15]
+				true, -- [16]
+				true, -- [17]
+				false, -- [18]
+				false, -- [19]
+				true, -- [20]
+				true, -- [21]
+				true, -- [22]
+				true, -- [23]
+				true, -- [24]
+				true, -- [25]
+				true, -- [26]
+				false, -- [27]
+				false, -- [28]
+				false, -- [29]
+				false, -- [30]
+				false, -- [31]
+				false, -- [32]
+				false, -- [33]
+				true, -- [34]
+				true, -- [35]
+				true, -- [36]
+				true, -- [37]
+				true, -- [38]
+				false, -- [39]
+				false, -- [40]
+				false, -- [41]
+				true, -- [42]
+				true, -- [43]
+				false, -- [44]
+				false, -- [45]
+				false, -- [46]
+			},
+			["LastEventTimes"] = {
+				1439088.602, -- [1]
+				1439090.322, -- [2]
+				1439092.294, -- [3]
+				1439093.789, -- [4]
+				1439095.9, -- [5]
+				1439104.237, -- [6]
+				1439105.145, -- [7]
+				1439106.134, -- [8]
+				1439107.274, -- [9]
+				1439108.102, -- [10]
+				1439108.675, -- [11]
+				1439108.992, -- [12]
+				1439109.235, -- [13]
+				1439109.805, -- [14]
+				1439110.646, -- [15]
+				1439111.962, -- [16]
+				1439112.834, -- [17]
+				1439113.503, -- [18]
+				1439113.845, -- [19]
+				1439114.601, -- [20]
+				1439115.806, -- [21]
+				1439133.357, -- [22]
+				1439133.358, -- [23]
+				1439135.256, -- [24]
+				1439135.256, -- [25]
+				1439137.748, -- [26]
+				1439141.106, -- [27]
+				1439141.523, -- [28]
+				1439146.108, -- [29]
+				1439146.372, -- [30]
+				1439151.221, -- [31]
+				1439156.118, -- [32]
+				1439161.088, -- [33]
+				1439161.862, -- [34]
+				1439161.863, -- [35]
+				1439162.306, -- [36]
+				1439162.617, -- [37]
+				1439162.922, -- [38]
+				1439162.924, -- [39]
+				1439162.925, -- [40]
+				1439162.926, -- [41]
+				1439164.171, -- [42]
+				1439164.453, -- [43]
+				1439164.455, -- [44]
+				1439164.742, -- [45]
+				1439164.742, -- [46]
+			},
+			["LastAbility"] = 245693.359,
+		},
+		["Featherwitch-Shadow Council"] = {
+			["GUID"] = "0x0100000004403FDD",
+			["LastEventHealth"] = {
+				"13914 (100%)", -- [1]
+				"13914 (100%)", -- [2]
+				"13914 (100%)", -- [3]
+				"13914 (100%)", -- [4]
+			},
+			["LastEventType"] = {
+				"HEAL", -- [1]
+				"HEAL", -- [2]
+				"HEAL", -- [3]
+				"HEAL", -- [4]
+			},
+			["enClass"] = "MAGE",
+			["unit"] = "Featherwitch",
+			["level"] = 75,
+			["LastFightIn"] = 0,
+			["LastEventNum"] = {
+				6.928273681184419, -- [1]
+				6.928273681184419, -- [2]
+				6.928273681184419, -- [3]
+				6.928273681184419, -- [4]
+			},
+			["type"] = "Ungrouped",
+			["FightsSaved"] = 5,
+			["Owner"] = false,
+			["LastActive"] = 1322100482,
+			["NextEventNum"] = 5,
+			["LastEventHealthNum"] = {
+				100, -- [1]
+				100, -- [2]
+				100, -- [3]
+				100, -- [4]
+			},
+			["LastEvents"] = {
+				"Helpmeout-Dath'Remar Renew Featherwitch-Shadow Council Tick +964 (55 overheal)", -- [1]
+				"Helpmeout-Dath'Remar Renew Featherwitch-Shadow Council Tick +964 (964 overheal)", -- [2]
+				"Helpmeout-Dath'Remar Renew Featherwitch-Shadow Council Tick +964 (964 overheal)", -- [3]
+				"Helpmeout-Dath'Remar Renew Featherwitch-Shadow Council Tick +964 (964 overheal)", -- [4]
+			},
+			["Name"] = "Featherwitch-Shadow Council",
+			["LastEventTimes"] = {
+				1263503.032, -- [1]
+				1263505.993, -- [2]
+				1263508.969, -- [3]
+				1263511.918, -- [4]
+			},
+			["Fights"] = {
+				["CurrentFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["HOTs"] = {
+					},
+					["Damage"] = 0,
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["FAttacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["ElementDone"] = {
+					},
+					["ElementHitsDone"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["Dispelled"] = 0,
+					["WhoHealed"] = {
+					},
+					["HealedWho"] = {
+					},
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
+					},
+					["FDamage"] = 0,
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["Interrupts"] = 0,
+					["EnergyGained"] = {
+					},
+					["PartialResist"] = {
+					},
+					["Healing"] = 0,
+					["OverHeals"] = {
+					},
+					["RageGained"] = {
+					},
+					["Attacks"] = {
+					},
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["DOT_Time"] = 0,
+					["DispelledWho"] = {
+					},
+				},
+				["LastFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["HOTs"] = {
+					},
+					["Damage"] = 0,
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["FAttacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["ElementDone"] = {
+					},
+					["ElementHitsDone"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["Dispelled"] = 0,
+					["WhoHealed"] = {
+					},
+					["HealedWho"] = {
+					},
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
+					},
+					["FDamage"] = 0,
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["Interrupts"] = 0,
+					["EnergyGained"] = {
+					},
+					["PartialResist"] = {
+					},
+					["Healing"] = 0,
+					["OverHeals"] = {
+					},
+					["RageGained"] = {
+					},
+					["Attacks"] = {
+					},
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["DOT_Time"] = 0,
+					["DispelledWho"] = {
+					},
+				},
+			},
+			["LastEventIncoming"] = {
+				true, -- [1]
+				true, -- [2]
+				true, -- [3]
+				true, -- [4]
+			},
+			["UnitLockout"] = 1322100479,
+			["LastAbility"] = 245693.359,
+		},
+		["Koryo"] = {
+			["GUID"] = "0x0380000005817E3A",
+			["type"] = "Ungrouped",
+			["GuardianReverseGUIDs"] = {
+				["Father Winter's Helper"] = {
+					["LatestGuardian"] = 0,
+					["GUIDs"] = {
+						[0] = "0xF1303D52000CBCA8",
+					},
+				},
+			},
+			["Owner"] = false,
+			["enClass"] = "UNGROUPED",
+			["LastFightIn"] = 211,
+			["Name"] = "Koryo",
+			["Fights"] = {
+			},
+			["Pet"] = {
+				"Father Winter's Helper <Koryo>", -- [1]
+			},
+			["level"] = 1,
+			["UnitLockout"] = 1357728113,
+			["LastAbility"] = 245693.359,
+		},
+		["Earthbind Totem <Gold Shaman>"] = {
+			["GUID"] = "0xF1300A460052D697",
+			["LastEventHealth"] = {
+				"???", -- [1]
+				"???", -- [2]
+			},
+			["LastAttackedBy"] = "Green Mage",
+			["LastEventType"] = {
+				"DAMAGE", -- [1]
+				"MISC", -- [2]
+			},
+			["TimeWindows"] = {
+				["DamageTaken"] = {
+					238, -- [1]
+				},
+				["DeathCount"] = {
+					1, -- [1]
+				},
+			},
+			["enClass"] = "PET",
+			["LastDamageTaken"] = 238,
+			["level"] = 1,
+			["LastDamageAbility"] = "Ice Lance",
+			["LastFightIn"] = 211,
+			["type"] = "Pet",
+			["LastActive"] = 1343443056,
+			["Owner"] = "Gold Shaman",
+			["LastEventTimes"] = {
+				1441557.914, -- [1]
+				1441557.914, -- [2]
+			},
+			["NextEventNum"] = 3,
+			["LastEventHealthNum"] = {
+				0, -- [1]
+				0, -- [2]
+			},
+			["LastEvents"] = {
+				"Green Mage Ice Lance Earthbind Totem <Gold Shaman> Hit -238 (Frost)", -- [1]
+				"Earthbind Totem <Gold Shaman> dies.", -- [2]
+			},
+			["Name"] = "Earthbind Totem",
+			["LastEventIncoming"] = {
+				true, -- [1]
+				true, -- [2]
+			},
+			["Fights"] = {
+				["CurrentFightData"] = {
+					["PartialResist"] = {
+						["Ice Lance"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["PartialAbsorb"] = {
+						["Ice Lance"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["WhoDamaged"] = {
+						["Green Mage"] = {
+							["Details"] = {
+								["Ice Lance"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementTaken"] = {
+						["Frost"] = 0,
+					},
+					["DamageTaken"] = 0,
+					["ElementHitsTaken"] = {
+						["Frost"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+				},
+				["OverallData"] = {
+					["PartialResist"] = {
+						["Ice Lance"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 1,
+					["PartialAbsorb"] = {
+						["Ice Lance"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+					},
+					["WhoDamaged"] = {
+						["Green Mage"] = {
+							["Details"] = {
+								["Ice Lance"] = {
+									["count"] = 238,
+								},
+							},
+							["amount"] = 238,
+						},
+					},
+					["ElementTaken"] = {
+						["Frost"] = 238,
+					},
+					["DamageTaken"] = 238,
+					["ElementHitsTaken"] = {
+						["Frost"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+					},
+				},
+			},
+			["TimeLast"] = {
+				["OVERALL"] = 1343443056,
+				["DamageTaken"] = 1343443056,
+				["DeathCount"] = 1343443056,
+			},
+			["UnitLockout"] = 1343443056,
+			["LastAbility"] = 245693.359,
 		},
 		["Dethamett"] = {
 			["GUID"] = "0x03800000047D3256",
@@ -2801,11 +4301,11 @@ RecountPerCharDB = {
 				["TimeHeal"] = {
 					307.6899999999999, -- [1]
 				},
+				["HealingTaken"] = {
+					198172, -- [1]
+				},
 				["RageGain"] = {
 					5181, -- [1]
-				},
-				["DeathCount"] = {
-					2, -- [1]
 				},
 				["HOT_Time"] = {
 					1188, -- [1]
@@ -2816,23 +4316,23 @@ RecountPerCharDB = {
 				["DamageTaken"] = {
 					425866, -- [1]
 				},
-				["Interrupts"] = {
-					1, -- [1]
+				["TimeDamage"] = {
+					3184.860000000009, -- [1]
 				},
 				["Absorbs"] = {
 					2401, -- [1]
 				},
-				["HealingTaken"] = {
-					198172, -- [1]
+				["DeathCount"] = {
+					2, -- [1]
 				},
 				["Overhealing"] = {
 					163245, -- [1]
 				},
-				["TimeDamage"] = {
-					3184.860000000009, -- [1]
-				},
 				["ActiveTime"] = {
 					3492.550000000012, -- [1]
+				},
+				["Interrupts"] = {
+					1, -- [1]
 				},
 				["ManaGain"] = {
 					127061, -- [1]
@@ -3533,8 +5033,8 @@ RecountPerCharDB = {
 				[33] = 30.08511045232859,
 				[35] = 1.071175637393768,
 				[37] = 4.000930448941614,
-				[15] = 1.96945025975033,
 				[4] = 0.9382026827944483,
+				[29] = 3.551213460494689,
 				[8] = 4.000930448941614,
 				[31] = 54.48044495453342,
 				[32] = 21.24892416563068,
@@ -3544,7 +5044,7 @@ RecountPerCharDB = {
 				[40] = 1.271613553539583,
 				[42] = 1.139799953477553,
 				[13] = 0.9459564239745677,
-				[29] = 3.551213460494689,
+				[15] = 1.96945025975033,
 			},
 			["type"] = "Self",
 			["FightsSaved"] = 5,
@@ -3619,11 +5119,11 @@ RecountPerCharDB = {
 								["Iron Rune-Weaver"] = {
 									["count"] = 6,
 								},
-								["Infected Grizzly Bear"] = {
-									["count"] = 3,
+								["Grizzly Bear"] = {
+									["count"] = 54,
 								},
-								["Drakkari Protector"] = {
-									["count"] = 6,
+								["Injured Drakkari Refugee"] = {
+									["count"] = 12,
 								},
 								["Smoldering Skeleton"] = {
 									["count"] = 39,
@@ -3631,19 +5131,19 @@ RecountPerCharDB = {
 								["Iron Rune Avenger"] = {
 									["count"] = 15,
 								},
-								["Grizzly Bear"] = {
-									["count"] = 54,
+								["Infected Grizzly Bear"] = {
+									["count"] = 3,
 								},
-								["Injured Drakkari Refugee"] = {
-									["count"] = 12,
+								["Drakkari Protector"] = {
+									["count"] = 6,
 								},
-								["Emerald Lasher"] = {
-									["count"] = 12,
+								["Scourge Corpserender"] = {
+									["count"] = 6,
 								},
 								["Burning Depths Necrolyte"] = {
 									["count"] = 12,
 								},
-								["Scourge Corpserender"] = {
+								["Overseer Durval"] = {
 									["count"] = 6,
 								},
 								["Scourge Deathspeaker"] = {
@@ -3655,26 +5155,26 @@ RecountPerCharDB = {
 								["Tallhorn Stag"] = {
 									["count"] = 18,
 								},
-								["Smoldering Geist"] = {
-									["count"] = 15,
+								["Diseased Drakkari"] = {
+									["count"] = 21,
 								},
 								["Overseer Lochli"] = {
 									["count"] = 6,
 								},
-								["Serpent Defender"] = {
-									["count"] = 3,
-								},
 								["Drakkari Warrior"] = {
 									["count"] = 3,
 								},
-								["Diseased Drakkari"] = {
-									["count"] = 21,
+								["Serpent Defender"] = {
+									["count"] = 3,
+								},
+								["Smoldering Geist"] = {
+									["count"] = 15,
 								},
 								["Infinite Timerender"] = {
 									["count"] = 12,
 								},
-								["Overseer Durval"] = {
-									["count"] = 6,
+								["Emerald Lasher"] = {
+									["count"] = 12,
 								},
 								["Drakkari Witch Doctor"] = {
 									["count"] = 3,
@@ -3725,14 +5225,14 @@ RecountPerCharDB = {
 								["Graymist Hunter"] = {
 									["count"] = 18,
 								},
+								["Infinite Assailant"] = {
+									["count"] = 9,
+								},
 								["Emerald Skytalon"] = {
 									["count"] = 18,
 								},
 								["Conquest Hold Grunt"] = {
 									["count"] = 36,
-								},
-								["Infinite Assailant"] = {
-									["count"] = 9,
 								},
 								["Ice Serpent"] = {
 									["count"] = 18,
@@ -3887,23 +5387,23 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 2,
 								},
-								["Maul"] = {
-									["count"] = 1.92,
+								["Mangle"] = {
+									["count"] = 3.74,
 								},
 								["Fury Swipes"] = {
 									["count"] = 1.53,
 								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 6.87,
+								["Moonfire (DoT)"] = {
+									["count"] = 31.38,
 								},
-								["Mangle"] = {
-									["count"] = 3.74,
+								["Maul"] = {
+									["count"] = 1.92,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 5.359999999999999,
 								},
-								["Moonfire (DoT)"] = {
-									["count"] = 31.38,
+								["Faerie Fire (Feral)"] = {
+									["count"] = 6.87,
 								},
 								["Swipe"] = {
 									["count"] = 5.680000000000001,
@@ -4006,11 +5506,11 @@ RecountPerCharDB = {
 						},
 						["Iron Rune Avenger"] = {
 							["Details"] = {
-								["Maul"] = {
-									["count"] = 4.19,
+								["Mangle"] = {
+									["count"] = 3.87,
 								},
-								["Pulverize"] = {
-									["count"] = 2.92,
+								["Lacerate"] = {
+									["count"] = 8.140000000000001,
 								},
 								["Melee"] = {
 									["count"] = 35.17,
@@ -4018,14 +5518,14 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 3.35,
 								},
-								["Lacerate"] = {
-									["count"] = 8.140000000000001,
+								["Pulverize"] = {
+									["count"] = 2.92,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 4.249999999999999,
 								},
-								["Mangle"] = {
-									["count"] = 3.87,
+								["Maul"] = {
+									["count"] = 4.19,
 								},
 								["Swipe"] = {
 									["count"] = 5.43,
@@ -4064,23 +5564,23 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 4.63,
 								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 4.42,
+								["Moonfire (DoT)"] = {
+									["count"] = 10.55,
 								},
 								["Fury Swipes"] = {
 									["count"] = 1.14,
 								},
-								["Moonfire (DoT)"] = {
-									["count"] = 10.55,
+								["Faerie Fire (Feral)"] = {
+									["count"] = 4.42,
 								},
-								["Maul"] = {
-									["count"] = 3.46,
+								["Mangle"] = {
+									["count"] = 2.48,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 4.850000000000001,
 								},
-								["Mangle"] = {
-									["count"] = 2.48,
+								["Maul"] = {
+									["count"] = 3.46,
 								},
 								["Swipe"] = {
 									["count"] = 11.64,
@@ -4121,17 +5621,17 @@ RecountPerCharDB = {
 						},
 						["Overseer Brunon"] = {
 							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0.27,
-								},
 								["Melee"] = {
 									["count"] = 9.809999999999999,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0.27,
 								},
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0.15,
 								},
-								["Maul"] = {
-									["count"] = 1.89,
+								["Lacerate"] = {
+									["count"] = 2.04,
 								},
 								["Pulverize"] = {
 									["count"] = 0,
@@ -4139,8 +5639,8 @@ RecountPerCharDB = {
 								["Mangle"] = {
 									["count"] = 0.29,
 								},
-								["Lacerate"] = {
-									["count"] = 2.04,
+								["Maul"] = {
+									["count"] = 1.89,
 								},
 							},
 							["amount"] = 14.45,
@@ -4290,17 +5790,17 @@ RecountPerCharDB = {
 								["Moonfire"] = {
 									["count"] = 3.5,
 								},
-								["Mangle"] = {
-									["count"] = 2.51,
+								["Maul"] = {
+									["count"] = 3.22,
 								},
 								["Fury Swipes"] = {
 									["count"] = 2.46,
 								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 1.09,
+								["Moonfire (DoT)"] = {
+									["count"] = 8.9,
 								},
-								["Maul"] = {
-									["count"] = 3.22,
+								["Mangle"] = {
+									["count"] = 2.51,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
@@ -4308,8 +5808,8 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 2.74,
 								},
-								["Moonfire (DoT)"] = {
-									["count"] = 8.9,
+								["Faerie Fire (Feral)"] = {
+									["count"] = 1.09,
 								},
 							},
 							["amount"] = 57.86000000000001,
@@ -4337,22 +5837,31 @@ RecountPerCharDB = {
 							},
 							["amount"] = 9.870000000000001,
 						},
-						["Overseer Korgan"] = {
+						["Tormented Drakkari"] = {
 							["Details"] = {
-								["Mangle"] = {
-									["count"] = 1.05,
-								},
-								["Lacerate"] = {
-									["count"] = 1.12,
-								},
 								["Melee"] = {
-									["count"] = 6.11,
+									["count"] = 3.42,
 								},
 								["Fury Swipes"] = {
-									["count"] = 0.32,
+									["count"] = 1.46,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 1.43,
+								},
+								["Maul"] = {
+									["count"] = 1.58,
+								},
+								["Mangle"] = {
+									["count"] = 0.29,
+								},
+								["Lacerate"] = {
+									["count"] = 1.53,
+								},
+								["Swipe"] = {
+									["count"] = 2.05,
 								},
 							},
-							["amount"] = 8.6,
+							["amount"] = 11.76,
 						},
 						["Infinite Timerender"] = {
 							["Details"] = {
@@ -4406,31 +5915,22 @@ RecountPerCharDB = {
 							},
 							["amount"] = 293.6899999999999,
 						},
-						["Tormented Drakkari"] = {
+						["Overseer Korgan"] = {
 							["Details"] = {
-								["Melee"] = {
-									["count"] = 3.42,
-								},
-								["Fury Swipes"] = {
-									["count"] = 1.46,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 1.43,
-								},
-								["Maul"] = {
-									["count"] = 1.58,
-								},
 								["Mangle"] = {
-									["count"] = 0.29,
+									["count"] = 1.05,
 								},
 								["Lacerate"] = {
-									["count"] = 1.53,
+									["count"] = 1.12,
 								},
-								["Swipe"] = {
-									["count"] = 2.05,
+								["Fury Swipes"] = {
+									["count"] = 0.32,
+								},
+								["Melee"] = {
+									["count"] = 6.11,
 								},
 							},
-							["amount"] = 11.76,
+							["amount"] = 8.6,
 						},
 						["Overseer Lochli"] = {
 							["Details"] = {
@@ -4599,6 +6099,69 @@ RecountPerCharDB = {
 							},
 							["amount"] = 10.42,
 						},
+						["Weakened Overseer Deathgaze"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0.01,
+								},
+								["Lacerate"] = {
+									["count"] = 1.2,
+								},
+								["Melee"] = {
+									["count"] = 6.09,
+								},
+								["Swipe"] = {
+									["count"] = 0.01,
+								},
+							},
+							["amount"] = 7.31,
+						},
+						["Guardian Serpent"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0.01,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0.01,
+								},
+								["Melee"] = {
+									["count"] = 6.51,
+								},
+								["Swipe"] = {
+									["count"] = 0.95,
+								},
+							},
+							["amount"] = 7.48,
+						},
+						["Duskhowl Prowler"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 8.779999999999999,
+								},
+								["Pulverize"] = {
+									["count"] = 2.26,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0.4,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0.6800000000000001,
+								},
+								["Maul"] = {
+									["count"] = 1.42,
+								},
+								["Lacerate"] = {
+									["count"] = 3.73,
+								},
+								["Mangle"] = {
+									["count"] = 0.52,
+								},
+								["Swipe"] = {
+									["count"] = 1.1,
+								},
+							},
+							["amount"] = 18.89,
+						},
 						["Drakkari Shaman"] = {
 							["Details"] = {
 								["Insect Swarm (DoT)"] = {
@@ -4642,48 +6205,6 @@ RecountPerCharDB = {
 								},
 							},
 							["amount"] = 169.67,
-						},
-						["Guardian Serpent"] = {
-							["Details"] = {
-								["Lacerate"] = {
-									["count"] = 0.01,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0.01,
-								},
-								["Melee"] = {
-									["count"] = 6.51,
-								},
-								["Swipe"] = {
-									["count"] = 0.95,
-								},
-							},
-							["amount"] = 7.48,
-						},
-						["Rainbow Trout"] = {
-							["Details"] = {
-								["Swipe"] = {
-									["count"] = 1.13,
-								},
-							},
-							["amount"] = 1.13,
-						},
-						["Weakened Overseer Deathgaze"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0.01,
-								},
-								["Lacerate"] = {
-									["count"] = 1.2,
-								},
-								["Melee"] = {
-									["count"] = 6.09,
-								},
-								["Swipe"] = {
-									["count"] = 0.01,
-								},
-							},
-							["amount"] = 7.31,
 						},
 						["Superior Healing Ward <Drakkari Witch Doctor>"] = {
 							["Details"] = {
@@ -4736,23 +6257,23 @@ RecountPerCharDB = {
 						},
 						["Overseer Durval"] = {
 							["Details"] = {
-								["Pulverize"] = {
-									["count"] = 0.59,
+								["Mangle"] = {
+									["count"] = 4.28,
 								},
 								["Melee"] = {
-									["count"] = 1.27,
-								},
-								["Maul"] = {
 									["count"] = 1.27,
 								},
 								["Lacerate"] = {
 									["count"] = 1.72,
 								},
+								["Maul"] = {
+									["count"] = 1.27,
+								},
 								["Lacerate (DoT)"] = {
 									["count"] = 2.35,
 								},
-								["Mangle"] = {
-									["count"] = 4.28,
+								["Pulverize"] = {
+									["count"] = 0.59,
 								},
 								["Swipe"] = {
 									["count"] = 0.84,
@@ -4940,35 +6461,6 @@ RecountPerCharDB = {
 							},
 							["amount"] = 122.72,
 						},
-						["Scourge Corpserender"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 5.75,
-								},
-								["Lacerate"] = {
-									["count"] = 4.85,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0.55,
-								},
-								["Mangle"] = {
-									["count"] = 0.5600000000000001,
-								},
-								["Pulverize"] = {
-									["count"] = 0.58,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0.73,
-								},
-								["Maul"] = {
-									["count"] = 2.7,
-								},
-								["Swipe"] = {
-									["count"] = 1.19,
-								},
-							},
-							["amount"] = 16.91,
-						},
 						["Infected Grizzly Bear"] = {
 							["Details"] = {
 								["Melee"] = {
@@ -5000,6 +6492,35 @@ RecountPerCharDB = {
 								},
 							},
 							["amount"] = 12.62,
+						},
+						["Scourge Corpserender"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 5.75,
+								},
+								["Mangle"] = {
+									["count"] = 0.5600000000000001,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0.55,
+								},
+								["Lacerate"] = {
+									["count"] = 4.85,
+								},
+								["Maul"] = {
+									["count"] = 2.7,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0.73,
+								},
+								["Pulverize"] = {
+									["count"] = 0.58,
+								},
+								["Swipe"] = {
+									["count"] = 1.19,
+								},
+							},
+							["amount"] = 16.91,
 						},
 						["Scourge Deathspeaker"] = {
 							["Details"] = {
@@ -5033,8 +6554,8 @@ RecountPerCharDB = {
 								["Mangle"] = {
 									["count"] = 4.6,
 								},
-								["Wrath"] = {
-									["count"] = 4.28,
+								["Fury Swipes"] = {
+									["count"] = 2.01,
 								},
 								["Moonfire (DoT)"] = {
 									["count"] = 38.28999999999999,
@@ -5045,8 +6566,8 @@ RecountPerCharDB = {
 								["Lacerate (DoT)"] = {
 									["count"] = 3.25,
 								},
-								["Fury Swipes"] = {
-									["count"] = 2.01,
+								["Wrath"] = {
+									["count"] = 4.28,
 								},
 								["Swipe"] = {
 									["count"] = 2.03,
@@ -5054,34 +6575,13 @@ RecountPerCharDB = {
 							},
 							["amount"] = 139.89,
 						},
-						["Duskhowl Prowler"] = {
+						["Rainbow Trout"] = {
 							["Details"] = {
-								["Melee"] = {
-									["count"] = 8.779999999999999,
-								},
-								["Mangle"] = {
-									["count"] = 0.52,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0.4,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0.6800000000000001,
-								},
-								["Pulverize"] = {
-									["count"] = 2.26,
-								},
-								["Lacerate"] = {
-									["count"] = 3.73,
-								},
-								["Maul"] = {
-									["count"] = 1.42,
-								},
 								["Swipe"] = {
-									["count"] = 1.1,
+									["count"] = 1.13,
 								},
 							},
-							["amount"] = 18.89,
+							["amount"] = 1.13,
 						},
 						["Smoldering Geist"] = {
 							["Details"] = {
@@ -5135,8 +6635,8 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 2.52,
 								},
-								["Lacerate"] = {
-									["count"] = 3.07,
+								["Mangle"] = {
+									["count"] = 1.67,
 								},
 								["Melee"] = {
 									["count"] = 18.72,
@@ -5144,14 +6644,14 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 1.16,
 								},
-								["Mangle"] = {
-									["count"] = 1.67,
+								["Pulverize"] = {
+									["count"] = 2,
 								},
 								["Maul"] = {
 									["count"] = 2.22,
 								},
-								["Pulverize"] = {
-									["count"] = 2,
+								["Lacerate"] = {
+									["count"] = 3.07,
 								},
 								["Swipe"] = {
 									["count"] = 3.97,
@@ -5164,23 +6664,23 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0.36,
 								},
-								["Maul"] = {
-									["count"] = 0,
+								["Mangle"] = {
+									["count"] = 0.59,
 								},
 								["Melee"] = {
 									["count"] = 3.91,
 								},
-								["Mangle"] = {
-									["count"] = 0.59,
+								["Maul"] = {
+									["count"] = 0,
 								},
-								["Pulverize"] = {
-									["count"] = 1.16,
+								["Lacerate"] = {
+									["count"] = 2.9,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0.3,
 								},
-								["Lacerate"] = {
-									["count"] = 2.9,
+								["Pulverize"] = {
+									["count"] = 1.16,
 								},
 								["Swipe"] = {
 									["count"] = 1.06,
@@ -5193,8 +6693,8 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 32.14,
 								},
-								["Lacerate"] = {
-									["count"] = 1.49,
+								["Pulverize"] = {
+									["count"] = 1,
 								},
 								["Fury Swipes"] = {
 									["count"] = 2.42,
@@ -5202,14 +6702,14 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 2.87,
 								},
-								["Pulverize"] = {
-									["count"] = 1,
+								["Mangle"] = {
+									["count"] = 5.789999999999999,
 								},
 								["Maul"] = {
 									["count"] = 4.33,
 								},
-								["Mangle"] = {
-									["count"] = 5.789999999999999,
+								["Lacerate"] = {
+									["count"] = 1.49,
 								},
 								["Swipe"] = {
 									["count"] = 8.619999999999999,
@@ -5551,23 +7051,23 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 1612,
 								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 17890,
+								["Moonfire (DoT)"] = {
+									["count"] = 1962,
 								},
 								["Fury Swipes"] = {
 									["count"] = 5068,
 								},
-								["Moonfire (DoT)"] = {
-									["count"] = 1962,
+								["Faerie Fire (Feral)"] = {
+									["count"] = 17890,
 								},
-								["Mangle"] = {
-									["count"] = 14780,
+								["Maul"] = {
+									["count"] = 782,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 447,
 								},
-								["Maul"] = {
-									["count"] = 782,
+								["Mangle"] = {
+									["count"] = 14780,
 								},
 								["Swipe"] = {
 									["count"] = 4648,
@@ -5670,11 +7170,11 @@ RecountPerCharDB = {
 						},
 						["Iron Rune Avenger"] = {
 							["Details"] = {
-								["Maul"] = {
-									["count"] = 1899,
+								["Mangle"] = {
+									["count"] = 9069,
 								},
-								["Pulverize"] = {
-									["count"] = 3940,
+								["Lacerate"] = {
+									["count"] = 18511,
 								},
 								["Melee"] = {
 									["count"] = 9369,
@@ -5682,14 +7182,14 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 10406,
 								},
-								["Lacerate"] = {
-									["count"] = 18511,
+								["Pulverize"] = {
+									["count"] = 3940,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 398,
 								},
-								["Mangle"] = {
-									["count"] = 9069,
+								["Maul"] = {
+									["count"] = 1899,
 								},
 								["Swipe"] = {
 									["count"] = 2016,
@@ -5728,23 +7228,23 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 8983,
 								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 9404,
+								["Moonfire (DoT)"] = {
+									["count"] = 927,
 								},
 								["Fury Swipes"] = {
 									["count"] = 2033,
 								},
-								["Moonfire (DoT)"] = {
-									["count"] = 927,
+								["Faerie Fire (Feral)"] = {
+									["count"] = 9404,
 								},
-								["Maul"] = {
-									["count"] = 1009,
+								["Mangle"] = {
+									["count"] = 12887,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 574,
 								},
-								["Mangle"] = {
-									["count"] = 12887,
+								["Maul"] = {
+									["count"] = 1009,
 								},
 								["Swipe"] = {
 									["count"] = 18206,
@@ -5896,17 +7396,17 @@ RecountPerCharDB = {
 								["Moonfire"] = {
 									["count"] = 238,
 								},
-								["Mangle"] = {
-									["count"] = 5625,
+								["Maul"] = {
+									["count"] = 925,
 								},
 								["Fury Swipes"] = {
 									["count"] = 3821,
 								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 2081,
+								["Moonfire (DoT)"] = {
+									["count"] = 490,
 								},
-								["Maul"] = {
-									["count"] = 925,
+								["Mangle"] = {
+									["count"] = 5625,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 265,
@@ -5914,8 +7414,8 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 3747,
 								},
-								["Moonfire (DoT)"] = {
-									["count"] = 490,
+								["Faerie Fire (Feral)"] = {
+									["count"] = 2081,
 								},
 							},
 							["amount"] = 32058,
@@ -6003,22 +7503,31 @@ RecountPerCharDB = {
 							},
 							["amount"] = 8131,
 						},
-						["Overseer Korgan"] = {
+						["Tormented Drakkari"] = {
 							["Details"] = {
-								["Mangle"] = {
-									["count"] = 2175,
-								},
-								["Lacerate"] = {
-									["count"] = 4300,
-								},
 								["Melee"] = {
-									["count"] = 1019,
+									["count"] = 1278,
 								},
 								["Fury Swipes"] = {
-									["count"] = 1026,
+									["count"] = 2033,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 2097,
+								},
+								["Maul"] = {
+									["count"] = 654,
+								},
+								["Mangle"] = {
+									["count"] = 1894,
+								},
+								["Lacerate"] = {
+									["count"] = 1984,
+								},
+								["Swipe"] = {
+									["count"] = 535,
 								},
 							},
-							["amount"] = 8520,
+							["amount"] = 10475,
 						},
 						["Drakkari Protector"] = {
 							["Details"] = {
@@ -6075,14 +7584,14 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 4165,
 								},
-								["Mangle"] = {
-									["count"] = 6694,
+								["Maul"] = {
+									["count"] = 450,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 250,
 								},
-								["Maul"] = {
-									["count"] = 450,
+								["Mangle"] = {
+									["count"] = 6694,
 								},
 								["Swipe"] = {
 									["count"] = 490,
@@ -6122,37 +7631,43 @@ RecountPerCharDB = {
 							},
 							["amount"] = 45029,
 						},
-						["Conquest Hold Marauder"] = {
+						["Graymist Hunter"] = {
 							["Details"] = {
+								["Insect Swarm (DoT)"] = {
+									["count"] = 666,
+								},
 								["Melee"] = {
-									["count"] = 16885,
+									["count"] = 13723,
 								},
 								["Lacerate"] = {
-									["count"] = 22098,
+									["count"] = 21027,
 								},
-								["Maul"] = {
-									["count"] = 5350,
+								["Moonfire"] = {
+									["count"] = 165,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 408,
 								},
 								["Fury Swipes"] = {
-									["count"] = 10324,
+									["count"] = 4894,
 								},
 								["Faerie Fire (Feral)"] = {
-									["count"] = 16559,
+									["count"] = 17753,
 								},
 								["Mangle"] = {
-									["count"] = 27985,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 484,
+									["count"] = 19411,
 								},
 								["Pulverize"] = {
-									["count"] = 3368,
+									["count"] = 3094,
+								},
+								["Maul"] = {
+									["count"] = 2235,
 								},
 								["Swipe"] = {
-									["count"] = 1488,
+									["count"] = 4593,
 								},
 							},
-							["amount"] = 104541,
+							["amount"] = 87969,
 						},
 						["Overseer Lochli"] = {
 							["Details"] = {
@@ -6242,31 +7757,13 @@ RecountPerCharDB = {
 							},
 							["amount"] = 4174,
 						},
-						["Duskhowl Prowler"] = {
+						["Rainbow Trout"] = {
 							["Details"] = {
-								["Maul"] = {
-									["count"] = 370,
-								},
-								["Melee"] = {
-									["count"] = 3240,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 2114,
-								},
-								["Mangle"] = {
-									["count"] = 2131,
-								},
-								["Pulverize"] = {
-									["count"] = 221,
-								},
-								["Fury Swipes"] = {
-									["count"] = 1165,
-								},
 								["Swipe"] = {
-									["count"] = 523,
+									["count"] = 2472,
 								},
 							},
-							["amount"] = 9764,
+							["amount"] = 2472,
 						},
 						["Drakkari Shaman"] = {
 							["Details"] = {
@@ -6285,14 +7782,14 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 11554,
 								},
-								["Wrath"] = {
-									["count"] = 2659,
-								},
 								["Fury Swipes"] = {
 									["count"] = 5143,
 								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 7317,
+								["Wrath"] = {
+									["count"] = 2659,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 2696,
 								},
 								["Mangle"] = {
 									["count"] = 23196,
@@ -6300,8 +7797,8 @@ RecountPerCharDB = {
 								["Lacerate (DoT)"] = {
 									["count"] = 133,
 								},
-								["Moonfire (DoT)"] = {
-									["count"] = 2696,
+								["Faerie Fire (Feral)"] = {
+									["count"] = 7317,
 								},
 								["Swipe"] = {
 									["count"] = 3862,
@@ -6335,8 +7832,8 @@ RecountPerCharDB = {
 								["Mangle"] = {
 									["count"] = 21051,
 								},
-								["Wrath"] = {
-									["count"] = 2740,
+								["Fury Swipes"] = {
+									["count"] = 4929,
 								},
 								["Moonfire (DoT)"] = {
 									["count"] = 2286,
@@ -6347,8 +7844,8 @@ RecountPerCharDB = {
 								["Lacerate (DoT)"] = {
 									["count"] = 332,
 								},
-								["Fury Swipes"] = {
-									["count"] = 4929,
+								["Wrath"] = {
+									["count"] = 2740,
 								},
 								["Swipe"] = {
 									["count"] = 2072,
@@ -6363,29 +7860,6 @@ RecountPerCharDB = {
 								},
 							},
 							["amount"] = 1953,
-						},
-						["Infinite Assailant"] = {
-							["Details"] = {
-								["Insect Swarm (DoT)"] = {
-									["count"] = 308,
-								},
-								["Melee"] = {
-									["count"] = 1237,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 2079,
-								},
-								["Mangle"] = {
-									["count"] = 3798,
-								},
-								["Lacerate"] = {
-									["count"] = 2941,
-								},
-								["Swipe"] = {
-									["count"] = 2011,
-								},
-							},
-							["amount"] = 12374,
 						},
 						["Smoldering Skeleton"] = {
 							["Details"] = {
@@ -6434,6 +7908,29 @@ RecountPerCharDB = {
 							},
 							["amount"] = 176821,
 						},
+						["Infinite Assailant"] = {
+							["Details"] = {
+								["Insect Swarm (DoT)"] = {
+									["count"] = 308,
+								},
+								["Melee"] = {
+									["count"] = 1237,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 2079,
+								},
+								["Mangle"] = {
+									["count"] = 3798,
+								},
+								["Lacerate"] = {
+									["count"] = 2941,
+								},
+								["Swipe"] = {
+									["count"] = 2011,
+								},
+							},
+							["amount"] = 12374,
+						},
 						["Infinite Chrono-Magus"] = {
 							["Details"] = {
 								["Melee"] = {
@@ -6453,32 +7950,6 @@ RecountPerCharDB = {
 								},
 							},
 							["amount"] = 13637,
-						},
-						["Overseer Durval"] = {
-							["Details"] = {
-								["Pulverize"] = {
-									["count"] = 3014,
-								},
-								["Melee"] = {
-									["count"] = 1568,
-								},
-								["Mangle"] = {
-									["count"] = 1978,
-								},
-								["Maul"] = {
-									["count"] = 297,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 332,
-								},
-								["Lacerate"] = {
-									["count"] = 4578,
-								},
-								["Swipe"] = {
-									["count"] = 523,
-								},
-							},
-							["amount"] = 12290,
 						},
 						["Weakened Turgid the Vile"] = {
 							["Details"] = {
@@ -6502,6 +7973,32 @@ RecountPerCharDB = {
 								},
 							},
 							["amount"] = 10169,
+						},
+						["Overseer Durval"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 4578,
+								},
+								["Melee"] = {
+									["count"] = 1568,
+								},
+								["Maul"] = {
+									["count"] = 297,
+								},
+								["Mangle"] = {
+									["count"] = 1978,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 332,
+								},
+								["Pulverize"] = {
+									["count"] = 3014,
+								},
+								["Swipe"] = {
+									["count"] = 523,
+								},
+							},
+							["amount"] = 12290,
 						},
 						["Emerald Lasher"] = {
 							["Details"] = {
@@ -6567,64 +8064,6 @@ RecountPerCharDB = {
 							},
 							["amount"] = 119620,
 						},
-						["Infected Grizzly Bear"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 1473,
-								},
-								["Pulverize"] = {
-									["count"] = 1049,
-								},
-								["Fury Swipes"] = {
-									["count"] = 716,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 2077,
-								},
-								["Maul"] = {
-									["count"] = 281,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 102,
-								},
-								["Lacerate"] = {
-									["count"] = 4487,
-								},
-								["Swipe"] = {
-									["count"] = 491,
-								},
-							},
-							["amount"] = 10676,
-						},
-						["Scourge Corpserender"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 2243,
-								},
-								["Maul"] = {
-									["count"] = 796,
-								},
-								["Fury Swipes"] = {
-									["count"] = 1083,
-								},
-								["Mangle"] = {
-									["count"] = 1964,
-								},
-								["Pulverize"] = {
-									["count"] = 2109,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 339,
-								},
-								["Lacerate"] = {
-									["count"] = 9737,
-								},
-								["Swipe"] = {
-									["count"] = 2547,
-								},
-							},
-							["amount"] = 20818,
-						},
 						["Grizzly Bear"] = {
 							["Details"] = {
 								["Melee"] = {
@@ -6656,6 +8095,64 @@ RecountPerCharDB = {
 								},
 							},
 							["amount"] = 260596,
+						},
+						["Infected Grizzly Bear"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 1473,
+								},
+								["Maul"] = {
+									["count"] = 281,
+								},
+								["Fury Swipes"] = {
+									["count"] = 716,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 2077,
+								},
+								["Lacerate"] = {
+									["count"] = 4487,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 102,
+								},
+								["Pulverize"] = {
+									["count"] = 1049,
+								},
+								["Swipe"] = {
+									["count"] = 491,
+								},
+							},
+							["amount"] = 10676,
+						},
+						["Scourge Corpserender"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 2243,
+								},
+								["Mangle"] = {
+									["count"] = 1964,
+								},
+								["Fury Swipes"] = {
+									["count"] = 1083,
+								},
+								["Maul"] = {
+									["count"] = 796,
+								},
+								["Lacerate"] = {
+									["count"] = 9737,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 339,
+								},
+								["Pulverize"] = {
+									["count"] = 2109,
+								},
+								["Swipe"] = {
+									["count"] = 2547,
+								},
+							},
+							["amount"] = 20818,
 						},
 						["Drakkari Witch Doctor"] = {
 							["Details"] = {
@@ -6744,8 +8241,8 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 6515,
 								},
-								["Lacerate"] = {
-									["count"] = 6419,
+								["Mangle"] = {
+									["count"] = 15786,
 								},
 								["Melee"] = {
 									["count"] = 6323,
@@ -6753,14 +8250,14 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 3597,
 								},
-								["Mangle"] = {
-									["count"] = 15786,
+								["Pulverize"] = {
+									["count"] = 213,
 								},
 								["Maul"] = {
 									["count"] = 1080,
 								},
-								["Pulverize"] = {
-									["count"] = 213,
+								["Lacerate"] = {
+									["count"] = 6419,
 								},
 								["Swipe"] = {
 									["count"] = 4782,
@@ -6770,26 +8267,26 @@ RecountPerCharDB = {
 						},
 						["Serpent Defender"] = {
 							["Details"] = {
-								["Melee"] = {
-									["count"] = 1935,
-								},
 								["Fury Swipes"] = {
 									["count"] = 977,
 								},
-								["Lacerate"] = {
-									["count"] = 3303,
+								["Melee"] = {
+									["count"] = 1935,
 								},
 								["Maul"] = {
 									["count"] = 657,
 								},
+								["Mangle"] = {
+									["count"] = 1943,
+								},
 								["Lacerate (DoT)"] = {
 									["count"] = 267,
 								},
+								["Lacerate"] = {
+									["count"] = 3303,
+								},
 								["Pulverize"] = {
 									["count"] = 1478,
-								},
-								["Mangle"] = {
-									["count"] = 1943,
 								},
 							},
 							["amount"] = 10560,
@@ -6799,8 +8296,8 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 10120,
 								},
-								["Lacerate"] = {
-									["count"] = 9999,
+								["Pulverize"] = {
+									["count"] = 857,
 								},
 								["Fury Swipes"] = {
 									["count"] = 2052,
@@ -6808,14 +8305,14 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 6244,
 								},
-								["Pulverize"] = {
-									["count"] = 857,
+								["Mangle"] = {
+									["count"] = 22073,
 								},
 								["Maul"] = {
 									["count"] = 805,
 								},
-								["Mangle"] = {
-									["count"] = 22073,
+								["Lacerate"] = {
+									["count"] = 9999,
 								},
 								["Swipe"] = {
 									["count"] = 14334,
@@ -6823,77 +8320,80 @@ RecountPerCharDB = {
 							},
 							["amount"] = 66484,
 						},
-						["Graymist Hunter"] = {
+						["Conquest Hold Marauder"] = {
 							["Details"] = {
-								["Insect Swarm (DoT)"] = {
-									["count"] = 666,
-								},
 								["Melee"] = {
-									["count"] = 13723,
+									["count"] = 16885,
 								},
 								["Lacerate"] = {
-									["count"] = 21027,
+									["count"] = 22098,
 								},
-								["Moonfire"] = {
-									["count"] = 165,
-								},
-								["Moonfire (DoT)"] = {
-									["count"] = 408,
+								["Maul"] = {
+									["count"] = 5350,
 								},
 								["Fury Swipes"] = {
-									["count"] = 4894,
+									["count"] = 10324,
 								},
 								["Faerie Fire (Feral)"] = {
-									["count"] = 17753,
+									["count"] = 16559,
 								},
 								["Mangle"] = {
-									["count"] = 19411,
+									["count"] = 27985,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 484,
 								},
 								["Pulverize"] = {
-									["count"] = 3094,
+									["count"] = 3368,
 								},
+								["Swipe"] = {
+									["count"] = 1488,
+								},
+							},
+							["amount"] = 104541,
+						},
+						["Duskhowl Prowler"] = {
+							["Details"] = {
 								["Maul"] = {
-									["count"] = 2235,
+									["count"] = 370,
 								},
-								["Swipe"] = {
-									["count"] = 4593,
-								},
-							},
-							["amount"] = 87969,
-						},
-						["Rainbow Trout"] = {
-							["Details"] = {
-								["Swipe"] = {
-									["count"] = 2472,
-								},
-							},
-							["amount"] = 2472,
-						},
-						["Tormented Drakkari"] = {
-							["Details"] = {
 								["Melee"] = {
-									["count"] = 1278,
-								},
-								["Fury Swipes"] = {
-									["count"] = 2033,
+									["count"] = 3240,
 								},
 								["Faerie Fire (Feral)"] = {
-									["count"] = 2097,
-								},
-								["Maul"] = {
-									["count"] = 654,
+									["count"] = 2114,
 								},
 								["Mangle"] = {
-									["count"] = 1894,
+									["count"] = 2131,
 								},
-								["Lacerate"] = {
-									["count"] = 1984,
+								["Pulverize"] = {
+									["count"] = 221,
+								},
+								["Fury Swipes"] = {
+									["count"] = 1165,
 								},
 								["Swipe"] = {
-									["count"] = 535,
+									["count"] = 523,
 								},
 							},
-							["amount"] = 10475,
+							["amount"] = 9764,
+						},
+						["Overseer Korgan"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 2175,
+								},
+								["Lacerate"] = {
+									["count"] = 4300,
+								},
+								["Fury Swipes"] = {
+									["count"] = 1026,
+								},
+								["Melee"] = {
+									["count"] = 1019,
+								},
+							},
+							["amount"] = 8520,
 						},
 						["Ice Serpent"] = {
 							["Details"] = {
@@ -7207,13 +8707,13 @@ RecountPerCharDB = {
 							},
 							["amount"] = 1492,
 						},
-						["Rune Reaver"] = {
+						["Duskhowl Prowler"] = {
 							["Details"] = {
 								["Melee"] = {
-									["count"] = 2524,
+									["count"] = 2215,
 								},
 							},
-							["amount"] = 2524,
+							["amount"] = 2215,
 						},
 						["Guardian Serpent"] = {
 							["Details"] = {
@@ -7223,13 +8723,13 @@ RecountPerCharDB = {
 							},
 							["amount"] = 246,
 						},
-						["Duskhowl Prowler"] = {
+						["Rune Reaver"] = {
 							["Details"] = {
 								["Melee"] = {
-									["count"] = 2215,
+									["count"] = 2524,
 								},
 							},
-							["amount"] = 2215,
+							["amount"] = 2524,
 						},
 						["Drakkari Shaman"] = {
 							["Details"] = {
@@ -7300,28 +8800,6 @@ RecountPerCharDB = {
 							},
 							["amount"] = 4053,
 						},
-						["Overseer Durval"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 238,
-								},
-								["Rune of Destruction"] = {
-									["count"] = 796,
-								},
-							},
-							["amount"] = 1034,
-						},
-						["Infected Grizzly Bear"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 295,
-								},
-								["Infected Bite (DoT)"] = {
-									["count"] = 1604,
-								},
-							},
-							["amount"] = 1899,
-						},
 						["Grizzly Bear"] = {
 							["Details"] = {
 								["Melee"] = {
@@ -7329,6 +8807,25 @@ RecountPerCharDB = {
 								},
 							},
 							["amount"] = 13550,
+						},
+						["Weakened Turgid the Vile"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 668,
+								},
+								["Vile Vomit"] = {
+									["count"] = 459,
+								},
+							},
+							["amount"] = 1127,
+						},
+						["Scourge Corpserender"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 2054,
+								},
+							},
+							["amount"] = 2054,
 						},
 						["Burning Depths Necrolyte"] = {
 							["Details"] = {
@@ -7341,13 +8838,16 @@ RecountPerCharDB = {
 							},
 							["amount"] = 10619,
 						},
-						["Scourge Corpserender"] = {
+						["Infected Grizzly Bear"] = {
 							["Details"] = {
 								["Melee"] = {
-									["count"] = 2054,
+									["count"] = 295,
+								},
+								["Infected Bite (DoT)"] = {
+									["count"] = 1604,
 								},
 							},
-							["amount"] = 2054,
+							["amount"] = 1899,
 						},
 						["Weakened Overseer Deathgaze"] = {
 							["Details"] = {
@@ -7371,16 +8871,16 @@ RecountPerCharDB = {
 							},
 							["amount"] = 17853,
 						},
-						["Weakened Turgid the Vile"] = {
+						["Overseer Durval"] = {
 							["Details"] = {
 								["Melee"] = {
-									["count"] = 668,
+									["count"] = 238,
 								},
-								["Vile Vomit"] = {
-									["count"] = 459,
+								["Rune of Destruction"] = {
+									["count"] = 796,
 								},
 							},
-							["amount"] = 1127,
+							["amount"] = 1034,
 						},
 						["Smoldering Geist"] = {
 							["Details"] = {
@@ -7911,19 +9411,19 @@ RecountPerCharDB = {
 							["count"] = 4,
 							["amount"] = 567,
 						},
-						["Melee"] = {
+						["Swoop"] = {
 							["Details"] = {
 								["No Resist"] = {
 									["max"] = 0,
 									["min"] = 0,
-									["count"] = 1676,
+									["count"] = 11,
 									["amount"] = 0,
 								},
 							},
-							["count"] = 1676,
+							["count"] = 11,
 							["amount"] = 0,
 						},
-						["Tail Lash"] = {
+						["Power Release"] = {
 							["Details"] = {
 								["No Resist"] = {
 									["max"] = 0,
@@ -7965,29 +9465,29 @@ RecountPerCharDB = {
 							["count"] = 4,
 							["amount"] = 0,
 						},
-						["Swoop"] = {
+						["Melee"] = {
 							["Details"] = {
 								["No Resist"] = {
 									["max"] = 0,
 									["min"] = 0,
-									["count"] = 11,
+									["count"] = 1676,
 									["amount"] = 0,
 								},
 							},
-							["count"] = 11,
+							["count"] = 1676,
 							["amount"] = 0,
 						},
-						["Vile Vomit"] = {
+						["Shadow Blast"] = {
 							["Details"] = {
-								["25%Resist"] = {
-									["max"] = 62,
-									["min"] = 62,
-									["count"] = 1,
-									["amount"] = 62,
+								["50%Resist"] = {
+									["max"] = 779,
+									["min"] = 773,
+									["count"] = 2,
+									["amount"] = 1552,
 								},
 							},
-							["count"] = 1,
-							["amount"] = 62,
+							["count"] = 2,
+							["amount"] = 1552,
 						},
 						["Talon Strike"] = {
 							["Details"] = {
@@ -8109,17 +9609,17 @@ RecountPerCharDB = {
 							["count"] = 50,
 							["amount"] = 3023,
 						},
-						["Shadow Blast"] = {
+						["Vile Vomit"] = {
 							["Details"] = {
-								["50%Resist"] = {
-									["max"] = 779,
-									["min"] = 773,
-									["count"] = 2,
-									["amount"] = 1552,
+								["25%Resist"] = {
+									["max"] = 62,
+									["min"] = 62,
+									["count"] = 1,
+									["amount"] = 62,
 								},
 							},
-							["count"] = 2,
-							["amount"] = 1552,
+							["count"] = 1,
+							["amount"] = 62,
 						},
 						["Ice Slash"] = {
 							["Details"] = {
@@ -8133,7 +9633,7 @@ RecountPerCharDB = {
 							["count"] = 2,
 							["amount"] = 0,
 						},
-						["Power Release"] = {
+						["Tail Lash"] = {
 							["Details"] = {
 								["No Resist"] = {
 									["max"] = 0,
@@ -8517,25 +10017,25 @@ RecountPerCharDB = {
 							["count"] = 4,
 							["amount"] = 0,
 						},
-						["Melee"] = {
+						["Swoop"] = {
 							["Details"] = {
 								["No Absorb"] = {
 									["max"] = 0,
 									["min"] = 0,
-									["count"] = 1380,
+									["count"] = 8,
 									["amount"] = 0,
 								},
 								["Absorbed"] = {
-									["max"] = 659,
-									["min"] = 1,
-									["count"] = 296,
-									["amount"] = 79502,
+									["max"] = 385,
+									["min"] = 22,
+									["count"] = 3,
+									["amount"] = 560,
 								},
 							},
-							["count"] = 1676,
-							["amount"] = 79502,
+							["count"] = 11,
+							["amount"] = 560,
 						},
-						["Tail Lash"] = {
+						["Power Release"] = {
 							["Details"] = {
 								["No Absorb"] = {
 									["max"] = 0,
@@ -8571,34 +10071,34 @@ RecountPerCharDB = {
 							["count"] = 4,
 							["amount"] = 0,
 						},
-						["Swoop"] = {
+						["Melee"] = {
 							["Details"] = {
 								["No Absorb"] = {
 									["max"] = 0,
 									["min"] = 0,
-									["count"] = 8,
+									["count"] = 1380,
 									["amount"] = 0,
 								},
 								["Absorbed"] = {
-									["max"] = 385,
-									["min"] = 22,
-									["count"] = 3,
-									["amount"] = 560,
+									["max"] = 659,
+									["min"] = 1,
+									["count"] = 296,
+									["amount"] = 79502,
 								},
 							},
-							["count"] = 11,
-							["amount"] = 560,
+							["count"] = 1676,
+							["amount"] = 79502,
 						},
-						["Vile Vomit"] = {
+						["Shadow Blast"] = {
 							["Details"] = {
 								["No Absorb"] = {
 									["max"] = 0,
 									["min"] = 0,
-									["count"] = 1,
+									["count"] = 2,
 									["amount"] = 0,
 								},
 							},
-							["count"] = 1,
+							["count"] = 2,
 							["amount"] = 0,
 						},
 						["Talon Strike"] = {
@@ -8685,16 +10185,16 @@ RecountPerCharDB = {
 							["count"] = 50,
 							["amount"] = 0,
 						},
-						["Shadow Blast"] = {
+						["Vile Vomit"] = {
 							["Details"] = {
 								["No Absorb"] = {
 									["max"] = 0,
 									["min"] = 0,
-									["count"] = 2,
+									["count"] = 1,
 									["amount"] = 0,
 								},
 							},
-							["count"] = 2,
+							["count"] = 1,
 							["amount"] = 0,
 						},
 						["Ice Slash"] = {
@@ -8709,7 +10209,7 @@ RecountPerCharDB = {
 							["count"] = 2,
 							["amount"] = 0,
 						},
-						["Power Release"] = {
+						["Tail Lash"] = {
 							["Details"] = {
 								["No Absorb"] = {
 									["max"] = 0,
@@ -9326,38 +10826,6 @@ RecountPerCharDB = {
 							["count"] = 287,
 							["amount"] = 171660,
 						},
-						["Starfire"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 1065,
-									["min"] = 941,
-									["count"] = 4,
-									["amount"] = 3932,
-								},
-								["Crit"] = {
-									["max"] = 1585,
-									["min"] = 1585,
-									["count"] = 1,
-									["amount"] = 1585,
-								},
-								["Evade"] = {
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 6,
-							["amount"] = 5517,
-						},
-						["Rip"] = {
-							["Details"] = {
-								["Parry"] = {
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 0,
-						},
 						["Rake"] = {
 							["Details"] = {
 								["Hit (Blocked)"] = {
@@ -9385,6 +10853,38 @@ RecountPerCharDB = {
 							},
 							["count"] = 6,
 							["amount"] = 1829,
+						},
+						["Rip"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Starfire"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 1065,
+									["min"] = 941,
+									["count"] = 4,
+									["amount"] = 3932,
+								},
+								["Crit"] = {
+									["max"] = 1585,
+									["min"] = 1585,
+									["count"] = 1,
+									["amount"] = 1585,
+								},
+								["Evade"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 6,
+							["amount"] = 5517,
 						},
 						["Rake (DoT)"] = {
 							["Details"] = {
@@ -9542,6 +11042,40 @@ RecountPerCharDB = {
 							["count"] = 4,
 							["amount"] = 3994,
 						},
+						["Wrath"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 694,
+									["min"] = 646,
+									["count"] = 8,
+									["amount"] = 5399,
+								},
+								["Evade"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 9,
+							["amount"] = 5399,
+						},
+						["Moonfire (DoT)"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 123,
+									["min"] = 117,
+									["count"] = 13,
+									["amount"] = 1567,
+								},
+								["Tick"] = {
+									["max"] = 82,
+									["min"] = 78,
+									["count"] = 108,
+									["amount"] = 8741,
+								},
+							},
+							["count"] = 121,
+							["amount"] = 10308,
+						},
 						["Fury Swipes"] = {
 							["Details"] = {
 								["Hit"] = {
@@ -9573,40 +11107,6 @@ RecountPerCharDB = {
 							},
 							["count"] = 117,
 							["amount"] = 140658,
-						},
-						["Moonfire (DoT)"] = {
-							["Details"] = {
-								["Crit"] = {
-									["max"] = 123,
-									["min"] = 117,
-									["count"] = 13,
-									["amount"] = 1567,
-								},
-								["Tick"] = {
-									["max"] = 82,
-									["min"] = 78,
-									["count"] = 108,
-									["amount"] = 8741,
-								},
-							},
-							["count"] = 121,
-							["amount"] = 10308,
-						},
-						["Wrath"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 694,
-									["min"] = 646,
-									["count"] = 8,
-									["amount"] = 5399,
-								},
-								["Evade"] = {
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 9,
-							["amount"] = 5399,
 						},
 						["Maul"] = {
 							["Details"] = {
@@ -9842,23 +11342,23 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 2,
 								},
-								["Maul"] = {
-									["count"] = 1.92,
+								["Mangle"] = {
+									["count"] = 3.74,
 								},
 								["Fury Swipes"] = {
 									["count"] = 1.53,
 								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 6.87,
+								["Moonfire (DoT)"] = {
+									["count"] = 31.38,
 								},
-								["Mangle"] = {
-									["count"] = 3.74,
+								["Maul"] = {
+									["count"] = 1.92,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 5.359999999999999,
 								},
-								["Moonfire (DoT)"] = {
-									["count"] = 31.38,
+								["Faerie Fire (Feral)"] = {
+									["count"] = 6.87,
 								},
 								["Swipe"] = {
 									["count"] = 5.680000000000001,
@@ -9961,11 +11461,11 @@ RecountPerCharDB = {
 						},
 						["Iron Rune Avenger"] = {
 							["Details"] = {
-								["Maul"] = {
-									["count"] = 4.19,
+								["Mangle"] = {
+									["count"] = 3.87,
 								},
-								["Pulverize"] = {
-									["count"] = 2.92,
+								["Lacerate"] = {
+									["count"] = 8.140000000000001,
 								},
 								["Melee"] = {
 									["count"] = 35.17,
@@ -9973,14 +11473,14 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 3.35,
 								},
-								["Lacerate"] = {
-									["count"] = 8.140000000000001,
+								["Pulverize"] = {
+									["count"] = 2.92,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 4.249999999999999,
 								},
-								["Mangle"] = {
-									["count"] = 3.87,
+								["Maul"] = {
+									["count"] = 4.19,
 								},
 								["Swipe"] = {
 									["count"] = 5.43,
@@ -10019,23 +11519,23 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 4.63,
 								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 4.42,
+								["Moonfire (DoT)"] = {
+									["count"] = 10.55,
 								},
 								["Fury Swipes"] = {
 									["count"] = 1.14,
 								},
-								["Moonfire (DoT)"] = {
-									["count"] = 10.55,
+								["Faerie Fire (Feral)"] = {
+									["count"] = 4.42,
 								},
-								["Maul"] = {
-									["count"] = 3.46,
+								["Mangle"] = {
+									["count"] = 2.48,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 4.850000000000001,
 								},
-								["Mangle"] = {
-									["count"] = 2.48,
+								["Maul"] = {
+									["count"] = 3.46,
 								},
 								["Swipe"] = {
 									["count"] = 11.64,
@@ -10155,17 +11655,17 @@ RecountPerCharDB = {
 						},
 						["Overseer Brunon"] = {
 							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0.27,
-								},
 								["Melee"] = {
 									["count"] = 9.809999999999999,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0.27,
 								},
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0.15,
 								},
-								["Maul"] = {
-									["count"] = 1.89,
+								["Lacerate"] = {
+									["count"] = 2.04,
 								},
 								["Pulverize"] = {
 									["count"] = 0,
@@ -10173,8 +11673,8 @@ RecountPerCharDB = {
 								["Mangle"] = {
 									["count"] = 0.29,
 								},
-								["Lacerate"] = {
-									["count"] = 2.04,
+								["Maul"] = {
+									["count"] = 1.89,
 								},
 							},
 							["amount"] = 14.45,
@@ -10190,17 +11690,17 @@ RecountPerCharDB = {
 								["Moonfire"] = {
 									["count"] = 3.5,
 								},
-								["Mangle"] = {
-									["count"] = 2.51,
+								["Maul"] = {
+									["count"] = 3.22,
 								},
 								["Fury Swipes"] = {
 									["count"] = 2.46,
 								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 1.09,
+								["Moonfire (DoT)"] = {
+									["count"] = 8.9,
 								},
-								["Maul"] = {
-									["count"] = 3.22,
+								["Mangle"] = {
+									["count"] = 2.51,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
@@ -10208,8 +11708,8 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 2.74,
 								},
-								["Moonfire (DoT)"] = {
-									["count"] = 8.9,
+								["Faerie Fire (Feral)"] = {
+									["count"] = 1.09,
 								},
 							},
 							["amount"] = 57.86000000000001,
@@ -10300,22 +11800,31 @@ RecountPerCharDB = {
 							},
 							["amount"] = 16.02,
 						},
-						["Overseer Korgan"] = {
+						["Tormented Drakkari"] = {
 							["Details"] = {
-								["Mangle"] = {
-									["count"] = 1.05,
-								},
-								["Lacerate"] = {
-									["count"] = 1.12,
-								},
 								["Melee"] = {
-									["count"] = 6.11,
+									["count"] = 3.42,
 								},
 								["Fury Swipes"] = {
-									["count"] = 0.32,
+									["count"] = 1.46,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 1.43,
+								},
+								["Maul"] = {
+									["count"] = 1.58,
+								},
+								["Mangle"] = {
+									["count"] = 0.29,
+								},
+								["Lacerate"] = {
+									["count"] = 1.53,
+								},
+								["Swipe"] = {
+									["count"] = 2.05,
 								},
 							},
-							["amount"] = 8.6,
+							["amount"] = 11.76,
 						},
 						["Drakkari Protector"] = {
 							["Details"] = {
@@ -10422,37 +11931,43 @@ RecountPerCharDB = {
 							},
 							["amount"] = 43.95,
 						},
-						["Conquest Hold Marauder"] = {
+						["Graymist Hunter"] = {
 							["Details"] = {
+								["Insect Swarm (DoT)"] = {
+									["count"] = 1.7,
+								},
 								["Melee"] = {
-									["count"] = 58.67999999999999,
+									["count"] = 38.60999999999999,
 								},
 								["Lacerate"] = {
-									["count"] = 7.99,
+									["count"] = 5.24,
 								},
-								["Maul"] = {
-									["count"] = 14.4,
+								["Moonfire"] = {
+									["count"] = 3.5,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 4.869999999999999,
 								},
 								["Fury Swipes"] = {
-									["count"] = 3.29,
+									["count"] = 2.67,
 								},
 								["Faerie Fire (Feral)"] = {
-									["count"] = 5.16,
+									["count"] = 7.65,
 								},
 								["Mangle"] = {
-									["count"] = 8.5,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 5.58,
+									["count"] = 6.59,
 								},
 								["Pulverize"] = {
-									["count"] = 4.029999999999999,
+									["count"] = 3,
+								},
+								["Maul"] = {
+									["count"] = 4.210000000000001,
 								},
 								["Swipe"] = {
-									["count"] = 1.98,
+									["count"] = 2.91,
 								},
 							},
-							["amount"] = 109.61,
+							["amount"] = 80.94999999999999,
 						},
 						["Overseer Lochli"] = {
 							["Details"] = {
@@ -10545,34 +12060,13 @@ RecountPerCharDB = {
 							},
 							["amount"] = 7.48,
 						},
-						["Duskhowl Prowler"] = {
+						["Rainbow Trout"] = {
 							["Details"] = {
-								["Melee"] = {
-									["count"] = 8.779999999999999,
-								},
-								["Mangle"] = {
-									["count"] = 0.52,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0.4,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0.6800000000000001,
-								},
-								["Pulverize"] = {
-									["count"] = 2.26,
-								},
-								["Lacerate"] = {
-									["count"] = 3.73,
-								},
-								["Maul"] = {
-									["count"] = 1.42,
-								},
 								["Swipe"] = {
-									["count"] = 1.1,
+									["count"] = 1.13,
 								},
 							},
-							["amount"] = 18.89,
+							["amount"] = 1.13,
 						},
 						["Drakkari Shaman"] = {
 							["Details"] = {
@@ -10650,8 +12144,8 @@ RecountPerCharDB = {
 								["Mangle"] = {
 									["count"] = 4.6,
 								},
-								["Wrath"] = {
-									["count"] = 4.28,
+								["Fury Swipes"] = {
+									["count"] = 2.01,
 								},
 								["Moonfire (DoT)"] = {
 									["count"] = 38.28999999999999,
@@ -10662,8 +12156,8 @@ RecountPerCharDB = {
 								["Lacerate (DoT)"] = {
 									["count"] = 3.25,
 								},
-								["Fury Swipes"] = {
-									["count"] = 2.01,
+								["Wrath"] = {
+									["count"] = 4.28,
 								},
 								["Swipe"] = {
 									["count"] = 2.03,
@@ -10678,29 +12172,6 @@ RecountPerCharDB = {
 								},
 							},
 							["amount"] = 2.94,
-						},
-						["Infinite Assailant"] = {
-							["Details"] = {
-								["Insect Swarm (DoT)"] = {
-									["count"] = 5.41,
-								},
-								["Melee"] = {
-									["count"] = 2.74,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 1.08,
-								},
-								["Mangle"] = {
-									["count"] = 0.57,
-								},
-								["Lacerate"] = {
-									["count"] = 0.43,
-								},
-								["Swipe"] = {
-									["count"] = 0.9,
-								},
-							},
-							["amount"] = 11.13,
 						},
 						["Smoldering Skeleton"] = {
 							["Details"] = {
@@ -10749,6 +12220,29 @@ RecountPerCharDB = {
 							},
 							["amount"] = 194.3699999999999,
 						},
+						["Infinite Assailant"] = {
+							["Details"] = {
+								["Insect Swarm (DoT)"] = {
+									["count"] = 5.41,
+								},
+								["Melee"] = {
+									["count"] = 2.74,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 1.08,
+								},
+								["Mangle"] = {
+									["count"] = 0.57,
+								},
+								["Lacerate"] = {
+									["count"] = 0.43,
+								},
+								["Swipe"] = {
+									["count"] = 0.9,
+								},
+							},
+							["amount"] = 11.13,
+						},
 						["Infinite Chrono-Magus"] = {
 							["Details"] = {
 								["Melee"] = {
@@ -10768,32 +12262,6 @@ RecountPerCharDB = {
 								},
 							},
 							["amount"] = 24.6,
-						},
-						["Overseer Durval"] = {
-							["Details"] = {
-								["Pulverize"] = {
-									["count"] = 0.59,
-								},
-								["Melee"] = {
-									["count"] = 1.27,
-								},
-								["Maul"] = {
-									["count"] = 1.27,
-								},
-								["Lacerate"] = {
-									["count"] = 1.72,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 2.35,
-								},
-								["Mangle"] = {
-									["count"] = 4.28,
-								},
-								["Swipe"] = {
-									["count"] = 0.84,
-								},
-							},
-							["amount"] = 12.32,
 						},
 						["Weakened Turgid the Vile"] = {
 							["Details"] = {
@@ -10820,6 +12288,32 @@ RecountPerCharDB = {
 								},
 							},
 							["amount"] = 11.17,
+						},
+						["Overseer Durval"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 4.28,
+								},
+								["Melee"] = {
+									["count"] = 1.27,
+								},
+								["Lacerate"] = {
+									["count"] = 1.72,
+								},
+								["Maul"] = {
+									["count"] = 1.27,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 2.35,
+								},
+								["Pulverize"] = {
+									["count"] = 0.59,
+								},
+								["Swipe"] = {
+									["count"] = 0.84,
+								},
+							},
+							["amount"] = 12.32,
 						},
 						["Emerald Lasher"] = {
 							["Details"] = {
@@ -10885,6 +12379,38 @@ RecountPerCharDB = {
 							},
 							["amount"] = 122.72,
 						},
+						["Grizzly Bear"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 134.64,
+								},
+								["Lacerate"] = {
+									["count"] = 42.35000000000001,
+								},
+								["Mangle"] = {
+									["count"] = 28.75999999999999,
+								},
+								["Fury Swipes"] = {
+									["count"] = 4.1,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 11.54,
+								},
+								["Maul"] = {
+									["count"] = 10.96,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 14.76,
+								},
+								["Pulverize"] = {
+									["count"] = 9.530000000000001,
+								},
+								["Swipe"] = {
+									["count"] = 14.54,
+								},
+							},
+							["amount"] = 271.18,
+						},
 						["Infected Grizzly Bear"] = {
 							["Details"] = {
 								["Melee"] = {
@@ -10922,61 +12448,29 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 5.75,
 								},
-								["Lacerate"] = {
-									["count"] = 4.85,
+								["Mangle"] = {
+									["count"] = 0.5600000000000001,
 								},
 								["Fury Swipes"] = {
 									["count"] = 0.55,
 								},
-								["Mangle"] = {
-									["count"] = 0.5600000000000001,
+								["Lacerate"] = {
+									["count"] = 4.85,
 								},
-								["Pulverize"] = {
-									["count"] = 0.58,
+								["Maul"] = {
+									["count"] = 2.7,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0.73,
 								},
-								["Maul"] = {
-									["count"] = 2.7,
+								["Pulverize"] = {
+									["count"] = 0.58,
 								},
 								["Swipe"] = {
 									["count"] = 1.19,
 								},
 							},
 							["amount"] = 16.91,
-						},
-						["Grizzly Bear"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 134.64,
-								},
-								["Lacerate"] = {
-									["count"] = 42.35000000000001,
-								},
-								["Mangle"] = {
-									["count"] = 28.75999999999999,
-								},
-								["Fury Swipes"] = {
-									["count"] = 4.1,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 11.54,
-								},
-								["Maul"] = {
-									["count"] = 10.96,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 14.76,
-								},
-								["Pulverize"] = {
-									["count"] = 9.530000000000001,
-								},
-								["Swipe"] = {
-									["count"] = 14.54,
-								},
-							},
-							["amount"] = 271.18,
 						},
 						["Drakkari Witch Doctor"] = {
 							["Details"] = {
@@ -11065,8 +12559,8 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 2.52,
 								},
-								["Lacerate"] = {
-									["count"] = 3.07,
+								["Mangle"] = {
+									["count"] = 1.67,
 								},
 								["Melee"] = {
 									["count"] = 18.72,
@@ -11074,14 +12568,14 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 1.16,
 								},
-								["Mangle"] = {
-									["count"] = 1.67,
+								["Pulverize"] = {
+									["count"] = 2,
 								},
 								["Maul"] = {
 									["count"] = 2.22,
 								},
-								["Pulverize"] = {
-									["count"] = 2,
+								["Lacerate"] = {
+									["count"] = 3.07,
 								},
 								["Swipe"] = {
 									["count"] = 3.97,
@@ -11094,23 +12588,23 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0.36,
 								},
-								["Maul"] = {
-									["count"] = 0,
+								["Mangle"] = {
+									["count"] = 0.59,
 								},
 								["Melee"] = {
 									["count"] = 3.91,
 								},
-								["Mangle"] = {
-									["count"] = 0.59,
+								["Maul"] = {
+									["count"] = 0,
 								},
-								["Pulverize"] = {
-									["count"] = 1.16,
+								["Lacerate"] = {
+									["count"] = 2.9,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0.3,
 								},
-								["Lacerate"] = {
-									["count"] = 2.9,
+								["Pulverize"] = {
+									["count"] = 1.16,
 								},
 								["Swipe"] = {
 									["count"] = 1.06,
@@ -11123,8 +12617,8 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 32.14,
 								},
-								["Lacerate"] = {
-									["count"] = 1.49,
+								["Pulverize"] = {
+									["count"] = 1,
 								},
 								["Fury Swipes"] = {
 									["count"] = 2.42,
@@ -11132,14 +12626,14 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 2.87,
 								},
-								["Pulverize"] = {
-									["count"] = 1,
+								["Mangle"] = {
+									["count"] = 5.789999999999999,
 								},
 								["Maul"] = {
 									["count"] = 4.33,
 								},
-								["Mangle"] = {
-									["count"] = 5.789999999999999,
+								["Lacerate"] = {
+									["count"] = 1.49,
 								},
 								["Swipe"] = {
 									["count"] = 8.619999999999999,
@@ -11147,77 +12641,83 @@ RecountPerCharDB = {
 							},
 							["amount"] = 58.66000000000001,
 						},
-						["Graymist Hunter"] = {
+						["Conquest Hold Marauder"] = {
 							["Details"] = {
-								["Insect Swarm (DoT)"] = {
-									["count"] = 1.7,
-								},
 								["Melee"] = {
-									["count"] = 38.60999999999999,
+									["count"] = 58.67999999999999,
 								},
 								["Lacerate"] = {
-									["count"] = 5.24,
+									["count"] = 7.99,
 								},
-								["Moonfire"] = {
-									["count"] = 3.5,
-								},
-								["Moonfire (DoT)"] = {
-									["count"] = 4.869999999999999,
+								["Maul"] = {
+									["count"] = 14.4,
 								},
 								["Fury Swipes"] = {
-									["count"] = 2.67,
+									["count"] = 3.29,
 								},
 								["Faerie Fire (Feral)"] = {
-									["count"] = 7.65,
+									["count"] = 5.16,
 								},
 								["Mangle"] = {
-									["count"] = 6.59,
+									["count"] = 8.5,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 5.58,
 								},
 								["Pulverize"] = {
-									["count"] = 3,
-								},
-								["Maul"] = {
-									["count"] = 4.210000000000001,
+									["count"] = 4.029999999999999,
 								},
 								["Swipe"] = {
-									["count"] = 2.91,
+									["count"] = 1.98,
 								},
 							},
-							["amount"] = 80.94999999999999,
+							["amount"] = 109.61,
 						},
-						["Rainbow Trout"] = {
-							["Details"] = {
-								["Swipe"] = {
-									["count"] = 1.13,
-								},
-							},
-							["amount"] = 1.13,
-						},
-						["Tormented Drakkari"] = {
+						["Duskhowl Prowler"] = {
 							["Details"] = {
 								["Melee"] = {
-									["count"] = 3.42,
+									["count"] = 8.779999999999999,
+								},
+								["Pulverize"] = {
+									["count"] = 2.26,
 								},
 								["Fury Swipes"] = {
-									["count"] = 1.46,
+									["count"] = 0.4,
 								},
 								["Faerie Fire (Feral)"] = {
-									["count"] = 1.43,
+									["count"] = 0.6800000000000001,
 								},
 								["Maul"] = {
-									["count"] = 1.58,
-								},
-								["Mangle"] = {
-									["count"] = 0.29,
+									["count"] = 1.42,
 								},
 								["Lacerate"] = {
-									["count"] = 1.53,
+									["count"] = 3.73,
+								},
+								["Mangle"] = {
+									["count"] = 0.52,
 								},
 								["Swipe"] = {
-									["count"] = 2.05,
+									["count"] = 1.1,
 								},
 							},
-							["amount"] = 11.76,
+							["amount"] = 18.89,
+						},
+						["Overseer Korgan"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 1.05,
+								},
+								["Lacerate"] = {
+									["count"] = 1.12,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0.32,
+								},
+								["Melee"] = {
+									["count"] = 6.11,
+								},
+							},
+							["amount"] = 8.6,
 						},
 						["Ice Serpent"] = {
 							["Details"] = {
@@ -11284,21 +12784,7 @@ RecountPerCharDB = {
 				},
 				["Fight5"] = {
 					["Ressed"] = 0,
-					["RageGainedFrom"] = {
-						["Dethamett"] = {
-							["Details"] = {
-								["Natural Reaction"] = {
-									["count"] = 3,
-								},
-								["Primal Fury"] = {
-									["count"] = 5,
-								},
-								["Furor"] = {
-									["count"] = 10,
-								},
-							},
-							["amount"] = 18,
-						},
+					["ElementDoneAbsorb"] = {
 					},
 					["DOTs"] = {
 						["Insect Swarm (DoT)"] = {
@@ -11455,7 +12941,10 @@ RecountPerCharDB = {
 						},
 					},
 					["DamageTaken"] = 289,
-					["ElementDoneAbsorb"] = {
+					["ElementTakenResist"] = {
+						["Fire"] = 0,
+						["Shadow"] = 62,
+						["Nature"] = 0,
 					},
 					["Absorbs"] = 0,
 					["DeathCount"] = 0,
@@ -11529,679 +13018,6 @@ RecountPerCharDB = {
 						},
 					},
 					["FAttacks"] = {
-					},
-					["DamagedWho"] = {
-						["River Thresher"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Conquest Hold Marauder"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Plague Spreader"] = {
-							["Details"] = {
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Imperial Eagle"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Moonfire"] = {
-									["count"] = 0,
-								},
-								["Moonfire (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Emerald Skytalon"] = {
-							["Details"] = {
-								["Moonfire (DoT)"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Moonfire"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Smoldering Construct"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Shaman"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Weakened Reanimated Frost Wyrm"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Smoldering Skeleton"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Iron Rune Avenger"] = {
-							["Details"] = {
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Iron Rune-Weaver"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 713,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 3269,
-								},
-								["Lacerate"] = {
-									["count"] = 6713,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 2182,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 12877,
-						},
-						["Injured Drakkari Refugee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Protector"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Weakened Turgid the Vile"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Grizzly Bear"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Superior Healing Ward <Drakkari Witch Doctor>"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Rothin the Decaying"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tallhorn Stag"] = {
-							["Details"] = {
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Smoldering Geist"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Emerald Lasher"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Graymist Hunter"] = {
-							["Details"] = {
-								["Insect Swarm (DoT)"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Moonfire"] = {
-									["count"] = 0,
-								},
-								["Moonfire (DoT)"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Turgid the Vile"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Diseased Drakkari"] = {
-							["Details"] = {
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Scourge Deathspeaker"] = {
-							["Details"] = {
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Witch Doctor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Moonfire (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Moonfire"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Overseer Korgan"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Defender"] = {
-							["Details"] = {
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["ElementDone"] = {
-						["Nature"] = 3269,
-						["Physical"] = 8895,
-						["Melee"] = 713,
-						["Arcane"] = 0,
-					},
-					["RunicPowerGained"] = {
 					},
 					["ElementHitsDone"] = {
 						["Nature"] = {
@@ -12282,6 +13098,12 @@ RecountPerCharDB = {
 							["amount"] = 0,
 						},
 					},
+					["ElementDone"] = {
+						["Nature"] = 3269,
+						["Physical"] = 8895,
+						["Melee"] = 713,
+						["Arcane"] = 0,
+					},
 					["Absorbed"] = {
 						["Savage Defense"] = {
 							["Details"] = {
@@ -12295,6 +13117,18 @@ RecountPerCharDB = {
 							["count"] = 0,
 							["amount"] = 0,
 						},
+					},
+					["ManaGainedFrom"] = {
+						["Dethamett"] = {
+							["Details"] = {
+								["Leader of the Pack"] = {
+									["count"] = 417,
+								},
+							},
+							["amount"] = 417,
+						},
+					},
+					["CCBroken"] = {
 					},
 					["WhoDamaged"] = {
 						["River Thresher"] = {
@@ -12563,32 +13397,7 @@ RecountPerCharDB = {
 					},
 					["EnergyGainedFrom"] = {
 					},
-					["OverHeals"] = {
-						["Leader of the Pack"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 227,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 227,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 227,
-						},
-						["Kurun's Blessing"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
+					["Dispelled"] = 0,
 					["RunicPowerGainedFrom"] = {
 					},
 					["ElementDoneBlock"] = {
@@ -12619,331 +13428,22 @@ RecountPerCharDB = {
 							["amount"] = 0,
 						},
 					},
-					["Dispelled"] = 0,
-					["RessedWho"] = {
-					},
-					["PartialResist"] = {
-						["Fevered Disease"] = {
+					["OverHeals"] = {
+						["Leader of the Pack"] = {
 							["Details"] = {
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Head Trauma"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Shadowflame"] = {
-							["Details"] = {
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Voodoo Doll"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Burning Blaze"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Head Trauma (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Frost Breath"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Rune Weaving (DoT)"] = {
-							["Details"] = {
-								["50%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["25%Resist"] = {
-									["max"] = 41,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 62,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 62,
-						},
-						["Heroic Strike"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Call Lightning"] = {
-							["Details"] = {
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Shadowflame (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Swoop"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Vile Vomit"] = {
-							["Details"] = {
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Talon Strike"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Plague Infected (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Lightning Bolt"] = {
-							["Details"] = {
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Smoldering Bones"] = {
-							["Details"] = {
-								["50%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Backlash"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Dream Lash"] = {
-							["Details"] = {
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Cleave"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
+								["Tick"] = {
+									["max"] = 227,
 									["min"] = 0,
 									["count"] = 1,
-									["amount"] = 0,
+									["amount"] = 227,
 								},
 							},
 							["count"] = 1,
-							["amount"] = 0,
+							["amount"] = 227,
 						},
-						["Gore"] = {
+						["Kurun's Blessing"] = {
 							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Gore (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Fireball"] = {
-							["Details"] = {
-								["50%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Fevered Disease (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["25%Resist"] = {
+								["Hit"] = {
 									["max"] = 0,
 									["min"] = 0,
 									["count"] = 0,
@@ -12954,723 +13454,10 @@ RecountPerCharDB = {
 							["amount"] = 0,
 						},
 					},
-					["CCBreak"] = 0,
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
+					["RessedWho"] = {
+					},
 					["EnergyGain"] = 0,
-					["ManaGained"] = {
-						["Leader of the Pack"] = {
-							["Details"] = {
-								["Dethamett"] = {
-									["count"] = 417,
-								},
-							},
-							["amount"] = 417,
-						},
-					},
-					["ElementTakenAbsorb"] = {
-						["Melee"] = 0,
-						["Physical"] = 0,
-					},
-					["ActiveTime"] = 9.09,
-					["InterruptData"] = {
-					},
-					["Overhealing"] = 227,
-					["TimeSpent"] = {
-						["River Thresher"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Graymist Hunter"] = {
-							["Details"] = {
-								["Insect Swarm (DoT)"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Moonfire"] = {
-									["count"] = 0,
-								},
-								["Moonfire (DoT)"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Plague Spreader"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Imperial Eagle"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Moonfire"] = {
-									["count"] = 0,
-								},
-								["Moonfire (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Emerald Skytalon"] = {
-							["Details"] = {
-								["Moonfire (DoT)"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Moonfire"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Smoldering Construct"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Shaman"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Weakened Reanimated Frost Wyrm"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Iron Rune-Weaver"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 5.73,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0.78,
-								},
-								["Lacerate"] = {
-									["count"] = 1.43,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0.89,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 8.83,
-						},
-						["Drakkari Witch Doctor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Moonfire (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Moonfire"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Smoldering Skeleton"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Iron Rune Avenger"] = {
-							["Details"] = {
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Superior Healing Ward <Drakkari Witch Doctor>"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Protector"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Rothin the Decaying"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Grizzly Bear"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Turgid the Vile"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Weakened Turgid the Vile"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Smoldering Geist"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tallhorn Stag"] = {
-							["Details"] = {
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Diseased Drakkari"] = {
-							["Details"] = {
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Conquest Hold Marauder"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Grizzly Hills Giant"] = {
-							["Details"] = {
-								["Kurun's Blessing"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Dethamett"] = {
-							["Details"] = {
-								["Leader of the Pack"] = {
-									["count"] = 0.26,
-								},
-								["Rejuvenation"] = {
-									["count"] = 0,
-								},
-								["Regrowth"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0.26,
-						},
-						["Emerald Lasher"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Scourge Deathspeaker"] = {
-							["Details"] = {
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Injured Drakkari Refugee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Overseer Korgan"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Defender"] = {
-							["Details"] = {
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["WhoDispelled"] = {
-					},
+					["CCBreak"] = 0,
 					["PartialAbsorb"] = {
 						["Fevered Disease"] = {
 							["Details"] = {
@@ -13876,7 +13663,7 @@ RecountPerCharDB = {
 							["count"] = 0,
 							["amount"] = 0,
 						},
-						["Smoldering Bones"] = {
+						["Dream Lash"] = {
 							["Details"] = {
 								["No Absorb"] = {
 									["max"] = 0,
@@ -13900,7 +13687,7 @@ RecountPerCharDB = {
 							["count"] = 0,
 							["amount"] = 0,
 						},
-						["Dream Lash"] = {
+						["Smoldering Bones"] = {
 							["Details"] = {
 								["No Absorb"] = {
 									["max"] = 0,
@@ -14003,6 +13790,1053 @@ RecountPerCharDB = {
 							["amount"] = 0,
 						},
 					},
+					["ActiveTime"] = 9.09,
+					["PartialResist"] = {
+						["Fevered Disease"] = {
+							["Details"] = {
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Head Trauma"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Shadowflame"] = {
+							["Details"] = {
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Voodoo Doll"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Burning Blaze"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Head Trauma (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Frost Breath"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Rune Weaving (DoT)"] = {
+							["Details"] = {
+								["50%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["25%Resist"] = {
+									["max"] = 41,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 62,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 62,
+						},
+						["Heroic Strike"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Call Lightning"] = {
+							["Details"] = {
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Shadowflame (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Swoop"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Vile Vomit"] = {
+							["Details"] = {
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Talon Strike"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Plague Infected (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Lightning Bolt"] = {
+							["Details"] = {
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Dream Lash"] = {
+							["Details"] = {
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Backlash"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Smoldering Bones"] = {
+							["Details"] = {
+								["50%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Cleave"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Gore"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Gore (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Fireball"] = {
+							["Details"] = {
+								["50%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Fevered Disease (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["ManaGained"] = {
+						["Leader of the Pack"] = {
+							["Details"] = {
+								["Dethamett"] = {
+									["count"] = 417,
+								},
+							},
+							["amount"] = 417,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+						["Melee"] = 0,
+						["Physical"] = 0,
+					},
+					["Interrupts"] = 0,
+					["InterruptData"] = {
+					},
+					["Overhealing"] = 227,
+					["TimeSpent"] = {
+						["River Thresher"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Graymist Hunter"] = {
+							["Details"] = {
+								["Insect Swarm (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Moonfire"] = {
+									["count"] = 0,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Plague Spreader"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Imperial Eagle"] = {
+							["Details"] = {
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Moonfire"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Emerald Skytalon"] = {
+							["Details"] = {
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Moonfire"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Construct"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Shaman"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Weakened Reanimated Frost Wyrm"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Iron Rune-Weaver"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 5.73,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0.78,
+								},
+								["Lacerate"] = {
+									["count"] = 1.43,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0.89,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 8.83,
+						},
+						["Drakkari Witch Doctor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Moonfire"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Skeleton"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Iron Rune Avenger"] = {
+							["Details"] = {
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Superior Healing Ward <Drakkari Witch Doctor>"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Injured Drakkari Refugee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rothin the Decaying"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Turgid the Vile"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Emerald Lasher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Weakened Turgid the Vile"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Diseased Drakkari"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tallhorn Stag"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Grizzly Hills Giant"] = {
+							["Details"] = {
+								["Kurun's Blessing"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Conquest Hold Marauder"] = {
+							["Details"] = {
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Geist"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Dethamett"] = {
+							["Details"] = {
+								["Leader of the Pack"] = {
+									["count"] = 0.26,
+								},
+								["Rejuvenation"] = {
+									["count"] = 0,
+								},
+								["Regrowth"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0.26,
+						},
+						["Grizzly Bear"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scourge Deathspeaker"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Protector"] = {
+							["Details"] = {
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Overseer Korgan"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Defender"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["FDamage"] = 0,
 					["Heals"] = {
 						["Leader of the Pack"] = {
 							["Details"] = {
@@ -14106,17 +14940,672 @@ RecountPerCharDB = {
 					},
 					["EnergyGained"] = {
 					},
-					["CCBroken"] = {
+					["RunicPowerGained"] = {
 					},
 					["Healing"] = 289,
-					["ManaGainedFrom"] = {
-						["Dethamett"] = {
+					["DamagedWho"] = {
+						["River Thresher"] = {
 							["Details"] = {
-								["Leader of the Pack"] = {
-									["count"] = 417,
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
 								},
 							},
-							["amount"] = 417,
+							["amount"] = 0,
+						},
+						["Conquest Hold Marauder"] = {
+							["Details"] = {
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Plague Spreader"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Imperial Eagle"] = {
+							["Details"] = {
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Moonfire"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Emerald Skytalon"] = {
+							["Details"] = {
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Moonfire"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Construct"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Shaman"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Weakened Reanimated Frost Wyrm"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Skeleton"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Iron Rune Avenger"] = {
+							["Details"] = {
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Iron Rune-Weaver"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 713,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 3269,
+								},
+								["Lacerate"] = {
+									["count"] = 6713,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 2182,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 12877,
+						},
+						["Injured Drakkari Refugee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Protector"] = {
+							["Details"] = {
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Grizzly Bear"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Weakened Turgid the Vile"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Superior Healing Ward <Drakkari Witch Doctor>"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rothin the Decaying"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tallhorn Stag"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Diseased Drakkari"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Emerald Lasher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Graymist Hunter"] = {
+							["Details"] = {
+								["Insect Swarm (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Moonfire"] = {
+									["count"] = 0,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Turgid the Vile"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Geist"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scourge Deathspeaker"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Witch Doctor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Moonfire"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Overseer Korgan"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Defender"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
 						},
 					},
 					["RageGained"] = {
@@ -14288,23 +15777,23 @@ RecountPerCharDB = {
 							["count"] = 2,
 							["amount"] = 6713,
 						},
-						["Moonfire (DoT)"] = {
+						["Faerie Fire (Feral)"] = {
 							["Details"] = {
 								["Crit"] = {
-									["max"] = 0,
+									["max"] = 3269,
 									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
+									["count"] = 1,
+									["amount"] = 3269,
 								},
-								["Tick"] = {
+								["Hit"] = {
 									["max"] = 0,
 									["min"] = 0,
 									["count"] = 0,
 									["amount"] = 0,
 								},
 							},
-							["count"] = 0,
-							["amount"] = 0,
+							["count"] = 1,
+							["amount"] = 3269,
 						},
 						["Fury Swipes"] = {
 							["Details"] = {
@@ -14334,57 +15823,7 @@ RecountPerCharDB = {
 							["count"] = 0,
 							["amount"] = 0,
 						},
-						["Faerie Fire (Feral)"] = {
-							["Details"] = {
-								["Crit"] = {
-									["max"] = 3269,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 3269,
-								},
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 3269,
-						},
-						["Mangle"] = {
-							["Details"] = {
-								["Dodge"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 2182,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 2182,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 2182,
-						},
-						["Lacerate (DoT)"] = {
+						["Moonfire (DoT)"] = {
 							["Details"] = {
 								["Crit"] = {
 									["max"] = 0,
@@ -14427,6 +15866,56 @@ RecountPerCharDB = {
 							},
 							["count"] = 0,
 							["amount"] = 0,
+						},
+						["Lacerate (DoT)"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Tick"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Mangle"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 2182,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 2182,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 2182,
 						},
 						["Swipe"] = {
 							["Details"] = {
@@ -14494,16 +15983,16 @@ RecountPerCharDB = {
 						},
 						["Conquest Hold Marauder"] = {
 							["Details"] = {
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Melee"] = {
+								["Fury Swipes"] = {
 									["count"] = 0,
 								},
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate"] = {
@@ -14512,7 +16001,7 @@ RecountPerCharDB = {
 								["Maul"] = {
 									["count"] = 0,
 								},
-								["Fury Swipes"] = {
+								["Melee"] = {
 									["count"] = 0,
 								},
 							},
@@ -14523,7 +16012,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -14532,13 +16021,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -14549,16 +16038,16 @@ RecountPerCharDB = {
 						},
 						["Imperial Eagle"] = {
 							["Details"] = {
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Faerie Fire (Feral)"] = {
+								["Moonfire (DoT)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate"] = {
@@ -14567,7 +16056,7 @@ RecountPerCharDB = {
 								["Moonfire"] = {
 									["count"] = 0,
 								},
-								["Moonfire (DoT)"] = {
+								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
 							},
@@ -14575,16 +16064,16 @@ RecountPerCharDB = {
 						},
 						["Emerald Skytalon"] = {
 							["Details"] = {
-								["Moonfire (DoT)"] = {
+								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Faerie Fire (Feral)"] = {
+								["Moonfire (DoT)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -14593,7 +16082,7 @@ RecountPerCharDB = {
 								["Moonfire"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 							},
@@ -14601,10 +16090,10 @@ RecountPerCharDB = {
 						},
 						["Smoldering Construct"] = {
 							["Details"] = {
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -14613,13 +16102,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -14777,10 +16266,10 @@ RecountPerCharDB = {
 						},
 						["Drakkari Protector"] = {
 							["Details"] = {
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -14789,13 +16278,42 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Grizzly Bear"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
 								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -14822,35 +16340,6 @@ RecountPerCharDB = {
 									["count"] = 0,
 								},
 								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Grizzly Bear"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -14910,33 +16399,27 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Smoldering Geist"] = {
+						["Diseased Drakkari"] = {
 							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
+								["Melee"] = {
 									["count"] = 0,
 								},
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Swipe"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 							},
@@ -14947,7 +16430,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -14956,13 +16439,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -15017,27 +16500,33 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Diseased Drakkari"] = {
+						["Smoldering Geist"] = {
 							["Details"] = {
-								["Pulverize"] = {
-									["count"] = 0,
-								},
 								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Lacerate (DoT)"] = {
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
 								["Mangle"] = {
 									["count"] = 0,
 								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
 								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
 									["count"] = 0,
 								},
 							},
@@ -15045,10 +16534,10 @@ RecountPerCharDB = {
 						},
 						["Scourge Deathspeaker"] = {
 							["Details"] = {
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -15057,13 +16546,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -15109,10 +16598,10 @@ RecountPerCharDB = {
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Melee"] = {
+								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Fury Swipes"] = {
+								["Melee"] = {
 									["count"] = 0,
 								},
 							},
@@ -15137,10 +16626,21 @@ RecountPerCharDB = {
 						},
 					},
 					["RunicPowerGain"] = 0,
-					["ElementTakenResist"] = {
-						["Fire"] = 0,
-						["Shadow"] = 62,
-						["Nature"] = 0,
+					["RageGainedFrom"] = {
+						["Dethamett"] = {
+							["Details"] = {
+								["Natural Reaction"] = {
+									["count"] = 3,
+								},
+								["Primal Fury"] = {
+									["count"] = 5,
+								},
+								["Furor"] = {
+									["count"] = 10,
+								},
+							},
+							["amount"] = 18,
+						},
 					},
 					["DispelledWho"] = {
 					},
@@ -15310,7 +16810,32 @@ RecountPerCharDB = {
 						["Shadow"] = 0,
 						["Nature"] = 0,
 					},
-					["DOT_Time"] = 0,
+					["HOTs"] = {
+						["Leader of the Pack"] = {
+							["Details"] = {
+								["Dethamett"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rejuvenation"] = {
+							["Details"] = {
+								["Dethamett"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Regrowth"] = {
+							["Details"] = {
+								["Dethamett"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
 					["ElementTakenBlock"] = {
 					},
 					["ElementDoneAbsorb"] = {
@@ -15347,6 +16872,76 @@ RecountPerCharDB = {
 						["Physical"] = 0,
 						["Melee"] = 0,
 						["Arcane"] = 0,
+					},
+					["ElementHitsDone"] = {
+						["Nature"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Tick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Tick"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Arcane"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Tick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
 					},
 					["DamagedWho"] = {
 						["River Thresher"] = {
@@ -15517,7 +17112,7 @@ RecountPerCharDB = {
 						},
 						["Smoldering Skeleton"] = {
 							["Details"] = {
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -15526,7 +17121,7 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -15535,7 +17130,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 							},
@@ -15598,7 +17193,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -15607,13 +17202,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -15656,22 +17251,22 @@ RecountPerCharDB = {
 						},
 						["Overseer Durval"] = {
 							["Details"] = {
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -15818,7 +17413,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -15827,13 +17422,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -15902,7 +17497,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -15911,13 +17506,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -15931,7 +17526,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -15940,86 +17535,16 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["ElementHitsDone"] = {
-						["Nature"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 0,
-								},
-								["Tick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Physical"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Tick"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Glancing"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Arcane"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 0,
-								},
-								["Tick"] = {
 									["count"] = 0,
 								},
 							},
@@ -16314,7 +17839,7 @@ RecountPerCharDB = {
 							["amount"] = 0,
 						},
 					},
-					["RunicPowerGained"] = {
+					["CCBroken"] = {
 					},
 					["ElementDoneBlock"] = {
 						["Melee"] = 0,
@@ -16538,9 +18063,15 @@ RecountPerCharDB = {
 							["count"] = 0,
 							["amount"] = 0,
 						},
-						["Dream Lash"] = {
+						["Smoldering Bones"] = {
 							["Details"] = {
-								["50%Resist"] = {
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["No Resist"] = {
 									["max"] = 0,
 									["min"] = 0,
 									["count"] = 0,
@@ -16598,15 +18129,9 @@ RecountPerCharDB = {
 							["count"] = 0,
 							["amount"] = 0,
 						},
-						["Smoldering Bones"] = {
+						["Dream Lash"] = {
 							["Details"] = {
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["No Resist"] = {
+								["50%Resist"] = {
 									["max"] = 0,
 									["min"] = 0,
 									["count"] = 0,
@@ -16636,6 +18161,741 @@ RecountPerCharDB = {
 						},
 					},
 					["CCBreak"] = 0,
+					["FDamage"] = 0,
+					["ActiveTime"] = 0,
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+						["Leader of the Pack"] = {
+							["Details"] = {
+								["Dethamett"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+						["Melee"] = 0,
+						["Physical"] = 0,
+					},
+					["Interrupts"] = 0,
+					["RessedWho"] = {
+					},
+					["InterruptData"] = {
+					},
+					["TimeSpent"] = {
+						["River Thresher"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Conquest Hold Marauder"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Plague Spreader"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Imperial Eagle"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Emerald Skytalon"] = {
+							["Details"] = {
+								["Insect Swarm (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Construct"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rainbow Trout"] = {
+							["Details"] = {
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Shaman"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Skeleton"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Iron Rune Avenger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Injured Drakkari Refugee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Moonfire"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Emerald Lasher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Burning Depths Necrolyte"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Overseer Durval"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Iron Rune-Weaver"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Protector"] = {
+							["Details"] = {
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tallhorn Stag"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Grizzly Hills Giant"] = {
+							["Details"] = {
+								["Kurun's Blessing"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Burning Depths Necromancer"] = {
+							["Details"] = {
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rune Reaver"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Dethamett"] = {
+							["Details"] = {
+								["Leader of the Pack"] = {
+									["count"] = 0,
+								},
+								["Rejuvenation"] = {
+									["count"] = 0,
+								},
+								["Nourish"] = {
+									["count"] = 0,
+								},
+								["Regrowth"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Iron Thane Argrum"] = {
+							["Details"] = {
+								["Shred"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Maim"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Ravage!"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Infinite Timerender"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Diseased Drakkari"] = {
+							["Details"] = {
+								["Insect Swarm (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Graymist Hunter"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Grizzly Bear"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["Overhealing"] = 0,
+					["Heals"] = {
+						["Leader of the Pack"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Kurun's Blessing"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Regrowth"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Tick"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Nourish"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Rejuvenation"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
 					["PartialAbsorb"] = {
 						["Fevered Disease"] = {
 							["Details"] = {
@@ -16817,7 +19077,7 @@ RecountPerCharDB = {
 							["count"] = 0,
 							["amount"] = 0,
 						},
-						["Dream Lash"] = {
+						["Smoldering Bones"] = {
 							["Details"] = {
 								["No Absorb"] = {
 									["max"] = 0,
@@ -16883,7 +19143,7 @@ RecountPerCharDB = {
 							["count"] = 0,
 							["amount"] = 0,
 						},
-						["Smoldering Bones"] = {
+						["Dream Lash"] = {
 							["Details"] = {
 								["No Absorb"] = {
 									["max"] = 0,
@@ -16908,741 +19168,6 @@ RecountPerCharDB = {
 							["amount"] = 0,
 						},
 					},
-					["ActiveTime"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-						["Leader of the Pack"] = {
-							["Details"] = {
-								["Dethamett"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["RessedWho"] = {
-					},
-					["InterruptData"] = {
-					},
-					["TimeSpent"] = {
-						["River Thresher"] = {
-							["Details"] = {
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Conquest Hold Marauder"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Plague Spreader"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Imperial Eagle"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Emerald Skytalon"] = {
-							["Details"] = {
-								["Insect Swarm (DoT)"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Smoldering Construct"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Rainbow Trout"] = {
-							["Details"] = {
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Shaman"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Smoldering Skeleton"] = {
-							["Details"] = {
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Iron Rune Avenger"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Injured Drakkari Refugee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Moonfire"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Moonfire (DoT)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Grizzly Bear"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Burning Depths Necrolyte"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Emerald Lasher"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Iron Rune-Weaver"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Protector"] = {
-							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tallhorn Stag"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Diseased Drakkari"] = {
-							["Details"] = {
-								["Insect Swarm (DoT)"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Burning Depths Necromancer"] = {
-							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Rune Reaver"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Dethamett"] = {
-							["Details"] = {
-								["Leader of the Pack"] = {
-									["count"] = 0,
-								},
-								["Rejuvenation"] = {
-									["count"] = 0,
-								},
-								["Nourish"] = {
-									["count"] = 0,
-								},
-								["Regrowth"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Iron Thane Argrum"] = {
-							["Details"] = {
-								["Shred"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Maim"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Ravage!"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Infinite Timerender"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Grizzly Hills Giant"] = {
-							["Details"] = {
-								["Kurun's Blessing"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Graymist Hunter"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Overseer Durval"] = {
-							["Details"] = {
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["WhoDispelled"] = {
-					},
-					["Overhealing"] = 0,
-					["Heals"] = {
-						["Leader of the Pack"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Kurun's Blessing"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Regrowth"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Tick"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Nourish"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Rejuvenation"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["ElementTakenAbsorb"] = {
-						["Melee"] = 0,
-						["Physical"] = 0,
-					},
 					["EnergyGained"] = {
 					},
 					["WhoHealed"] = {
@@ -17665,9 +19190,9 @@ RecountPerCharDB = {
 						},
 					},
 					["Healing"] = 0,
-					["RunicPowerGainedFrom"] = {
+					["RunicPowerGained"] = {
 					},
-					["CCBroken"] = {
+					["RunicPowerGainedFrom"] = {
 					},
 					["Attacks"] = {
 						["Insect Swarm (DoT)"] = {
@@ -17876,7 +19401,7 @@ RecountPerCharDB = {
 							["count"] = 0,
 							["amount"] = 0,
 						},
-						["Faerie Fire (Feral)"] = {
+						["Moonfire (DoT)"] = {
 							["Details"] = {
 								["Crit"] = {
 									["max"] = 0,
@@ -17884,7 +19409,7 @@ RecountPerCharDB = {
 									["count"] = 0,
 									["amount"] = 0,
 								},
-								["Hit"] = {
+								["Tick"] = {
 									["max"] = 0,
 									["min"] = 0,
 									["count"] = 0,
@@ -17944,7 +19469,7 @@ RecountPerCharDB = {
 							["count"] = 0,
 							["amount"] = 0,
 						},
-						["Moonfire (DoT)"] = {
+						["Faerie Fire (Feral)"] = {
 							["Details"] = {
 								["Crit"] = {
 									["max"] = 0,
@@ -17952,7 +19477,7 @@ RecountPerCharDB = {
 									["count"] = 0,
 									["amount"] = 0,
 								},
-								["Tick"] = {
+								["Hit"] = {
 									["max"] = 0,
 									["min"] = 0,
 									["count"] = 0,
@@ -18164,16 +19689,16 @@ RecountPerCharDB = {
 						},
 						["Smoldering Skeleton"] = {
 							["Details"] = {
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Melee"] = {
+								["Fury Swipes"] = {
 									["count"] = 0,
 								},
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -18182,7 +19707,7 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Fury Swipes"] = {
+								["Melee"] = {
 									["count"] = 0,
 								},
 							},
@@ -18245,7 +19770,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -18254,13 +19779,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -18303,22 +19828,22 @@ RecountPerCharDB = {
 						},
 						["Overseer Durval"] = {
 							["Details"] = {
-								["Pulverize"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -18468,7 +19993,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -18477,13 +20002,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -18552,7 +20077,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -18561,13 +20086,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -18581,7 +20106,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -18590,13 +20115,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -18607,32 +20132,7 @@ RecountPerCharDB = {
 						},
 					},
 					["RunicPowerGain"] = 0,
-					["HOTs"] = {
-						["Leader of the Pack"] = {
-							["Details"] = {
-								["Dethamett"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Rejuvenation"] = {
-							["Details"] = {
-								["Dethamett"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Regrowth"] = {
-							["Details"] = {
-								["Dethamett"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
+					["DOT_Time"] = 0,
 					["DispelledWho"] = {
 					},
 				},
@@ -18756,16 +20256,16 @@ RecountPerCharDB = {
 								["Moonfire"] = {
 									["count"] = 0,
 								},
-								["Faerie Fire (Feral)"] = {
+								["Moonfire (DoT)"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Moonfire (DoT)"] = {
+								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -18774,7 +20274,7 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 							},
@@ -18782,7 +20282,7 @@ RecountPerCharDB = {
 						},
 						["Conquest Hold Marauder"] = {
 							["Details"] = {
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -18791,7 +20291,7 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -18800,7 +20300,7 @@ RecountPerCharDB = {
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 							},
@@ -18843,19 +20343,19 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
 								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Moonfire (DoT)"] = {
+								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -18913,22 +20413,22 @@ RecountPerCharDB = {
 								["Rake"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Rip"] = {
+								["Rake (DoT)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Rake (DoT)"] = {
+								["Rip"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -19008,7 +20508,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -19017,13 +20517,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Maul"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -19034,7 +20534,7 @@ RecountPerCharDB = {
 						},
 						["Drakkari Protector"] = {
 							["Details"] = {
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -19043,7 +20543,7 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -19052,7 +20552,7 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 							},
@@ -19060,10 +20560,10 @@ RecountPerCharDB = {
 						},
 						["Iron Rune Avenger"] = {
 							["Details"] = {
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -19072,13 +20572,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -19151,32 +20651,6 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Overseer Brunon"] = {
-							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0.27,
-								},
-								["Melee"] = {
-									["count"] = 9.809999999999999,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0.15,
-								},
-								["Maul"] = {
-									["count"] = 1.89,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0.29,
-								},
-								["Lacerate"] = {
-									["count"] = 2.04,
-								},
-							},
-							["amount"] = 14.45,
-						},
 						["Conquest Hold Grunt"] = {
 							["Details"] = {
 								["Insect Swarm (DoT)"] = {
@@ -19212,6 +20686,32 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
+						["Overseer Brunon"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 9.809999999999999,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0.27,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0.15,
+								},
+								["Lacerate"] = {
+									["count"] = 2.04,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0.29,
+								},
+								["Maul"] = {
+									["count"] = 1.89,
+								},
+							},
+							["amount"] = 14.45,
+						},
 						["Tallhorn Stag"] = {
 							["Details"] = {
 								["Fury Swipes"] = {
@@ -19230,6 +20730,152 @@ RecountPerCharDB = {
 									["count"] = 0,
 								},
 								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Diseased Drakkari"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Burning Depths Necromancer"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Warrior"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Dethamett"] = {
+							["Details"] = {
+								["Leader of the Pack"] = {
+									["count"] = 1.25,
+								},
+								["Rejuvenation"] = {
+									["count"] = 0,
+								},
+								["Regrowth"] = {
+									["count"] = 0,
+								},
+								["Frenzied Regeneration"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 1.25,
+						},
+						["Grizzly Hills Giant"] = {
+							["Details"] = {
+								["Kurun's Blessing"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Emerald Lasher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Conquest Hold Raider"] = {
+							["Details"] = {
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -19261,164 +20907,18 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Burning Depths Necromancer"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Warrior"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Conquest Hold Raider"] = {
-							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Grizzly Hills Giant"] = {
-							["Details"] = {
-								["Kurun's Blessing"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Emerald Lasher"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Dethamett"] = {
-							["Details"] = {
-								["Leader of the Pack"] = {
-									["count"] = 1.25,
-								},
-								["Rejuvenation"] = {
-									["count"] = 0,
-								},
-								["Regrowth"] = {
-									["count"] = 0,
-								},
-								["Frenzied Regeneration"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 1.25,
-						},
-						["Diseased Drakkari"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
 						["Drakkari Defender"] = {
 							["Details"] = {
-								["Melee"] = {
+								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Fury Swipes"] = {
+								["Melee"] = {
 									["count"] = 0,
 								},
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -19427,7 +20927,7 @@ RecountPerCharDB = {
 								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 							},
@@ -19522,16 +21022,16 @@ RecountPerCharDB = {
 								["Moonfire"] = {
 									["count"] = 0,
 								},
-								["Faerie Fire (Feral)"] = {
+								["Moonfire (DoT)"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Moonfire (DoT)"] = {
+								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -19540,7 +21040,7 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 							},
@@ -19548,7 +21048,7 @@ RecountPerCharDB = {
 						},
 						["Conquest Hold Marauder"] = {
 							["Details"] = {
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -19557,7 +21057,7 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -19566,7 +21066,7 @@ RecountPerCharDB = {
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 							},
@@ -19647,7 +21147,7 @@ RecountPerCharDB = {
 								["Shred"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -19656,7 +21156,7 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate"] = {
@@ -19976,7 +21476,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -19985,7 +21485,7 @@ RecountPerCharDB = {
 								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 							},
@@ -19996,7 +21496,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -20005,13 +21505,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -20025,7 +21525,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -20034,13 +21534,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Maul"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -20051,10 +21551,10 @@ RecountPerCharDB = {
 						},
 						["Iron Rune Avenger"] = {
 							["Details"] = {
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -20063,13 +21563,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -20083,7 +21583,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -20092,13 +21592,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -21814,16 +23314,16 @@ RecountPerCharDB = {
 								["Moonfire"] = {
 									["count"] = 0,
 								},
-								["Faerie Fire (Feral)"] = {
+								["Moonfire (DoT)"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Moonfire (DoT)"] = {
+								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -21832,7 +23332,7 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 							},
@@ -21840,7 +23340,7 @@ RecountPerCharDB = {
 						},
 						["Conquest Hold Marauder"] = {
 							["Details"] = {
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -21849,7 +23349,7 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -21858,7 +23358,7 @@ RecountPerCharDB = {
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 							},
@@ -21901,19 +23401,19 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
 								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Moonfire (DoT)"] = {
+								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -21971,22 +23471,22 @@ RecountPerCharDB = {
 								["Rake"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Rip"] = {
+								["Rake (DoT)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Rake (DoT)"] = {
+								["Rip"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -22063,7 +23563,7 @@ RecountPerCharDB = {
 						},
 						["Drakkari Protector"] = {
 							["Details"] = {
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -22072,7 +23572,7 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -22081,7 +23581,7 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 							},
@@ -22153,17 +23653,17 @@ RecountPerCharDB = {
 						},
 						["Overseer Brunon"] = {
 							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0.27,
-								},
 								["Melee"] = {
 									["count"] = 9.809999999999999,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0.27,
 								},
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0.15,
 								},
-								["Maul"] = {
-									["count"] = 1.89,
+								["Lacerate"] = {
+									["count"] = 2.04,
 								},
 								["Pulverize"] = {
 									["count"] = 0,
@@ -22171,8 +23671,8 @@ RecountPerCharDB = {
 								["Mangle"] = {
 									["count"] = 0.29,
 								},
-								["Lacerate"] = {
-									["count"] = 2.04,
+								["Maul"] = {
+									["count"] = 1.89,
 								},
 							},
 							["amount"] = 14.45,
@@ -22286,7 +23786,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -22295,7 +23795,7 @@ RecountPerCharDB = {
 								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 							},
@@ -22306,7 +23806,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -22315,13 +23815,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -22335,7 +23835,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -22344,13 +23844,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Maul"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -22361,10 +23861,10 @@ RecountPerCharDB = {
 						},
 						["Iron Rune Avenger"] = {
 							["Details"] = {
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -22373,13 +23873,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -22393,7 +23893,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -22402,13 +23902,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -22442,16 +23942,16 @@ RecountPerCharDB = {
 						},
 						["Drakkari Defender"] = {
 							["Details"] = {
-								["Melee"] = {
+								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Fury Swipes"] = {
+								["Melee"] = {
 									["count"] = 0,
 								},
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -22460,7 +23960,7 @@ RecountPerCharDB = {
 								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 							},
@@ -22473,21 +23973,7 @@ RecountPerCharDB = {
 				},
 				["Fight4"] = {
 					["Ressed"] = 0,
-					["RageGainedFrom"] = {
-						["Dethamett"] = {
-							["Details"] = {
-								["Natural Reaction"] = {
-									["count"] = 0,
-								},
-								["Primal Fury"] = {
-									["count"] = 10,
-								},
-								["Furor"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 10,
-						},
+					["ElementDoneAbsorb"] = {
 					},
 					["DOTs"] = {
 						["Insect Swarm (DoT)"] = {
@@ -22638,7 +24124,10 @@ RecountPerCharDB = {
 						},
 					},
 					["DamageTaken"] = 0,
-					["ElementDoneAbsorb"] = {
+					["ElementTakenResist"] = {
+						["Fire"] = 0,
+						["Shadow"] = 0,
+						["Nature"] = 0,
 					},
 					["Absorbs"] = 0,
 					["DeathCount"] = 0,
@@ -22716,6 +24205,2011 @@ RecountPerCharDB = {
 					},
 					["FAttacks"] = {
 					},
+					["ElementHitsDone"] = {
+						["Nature"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Tick"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Evade"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 3,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Tick"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 4,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 3,
+						},
+						["Arcane"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Tick"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Evade"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementDone"] = {
+						["Nature"] = 0,
+						["Physical"] = 7729,
+						["Melee"] = 1252,
+						["Arcane"] = 0,
+					},
+					["Absorbed"] = {
+						["Savage Defense"] = {
+							["Details"] = {
+								["Dethamett"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["ManaGainedFrom"] = {
+						["Dethamett"] = {
+							["Details"] = {
+								["Leader of the Pack"] = {
+									["count"] = 417,
+								},
+							},
+							["amount"] = 417,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["WhoDamaged"] = {
+						["River Thresher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Conquest Hold Marauder"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Heroic Strike"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Plague Spreader"] = {
+							["Details"] = {
+								["Plague Infected (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Imperial Eagle"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Swoop"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Construct"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Backlash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Duskhowl Prowler"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Weakened Overseer Deathgaze"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Shadow Bolt"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tecahuna"] = {
+							["Details"] = {
+								["Tecahuna Venom Spit (DoT)"] = {
+									["count"] = 0,
+								},
+								["Tecahuna Venom Spit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ancient Drakkari King <Mummy Effect Bunny>"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Drakkari Curse (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Skeleton"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Smoldering Bones"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Iron Rune Avenger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Oracle"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lightning Bolt"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Injured Drakkari Refugee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Iron Rune-Weaver"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Rune Weaving (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Burning Depths Necrolyte"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Infected Grizzly Bear"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Infected Bite (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rothin the Decaying"] = {
+							["Details"] = {
+								["Shadowflame (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scourge Deathspeaker"] = {
+							["Details"] = {
+								["Fireball"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tallhorn Stag"] = {
+							["Details"] = {
+								["Gore"] = {
+									["count"] = 0,
+								},
+								["Gore (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Diseased Drakkari"] = {
+							["Details"] = {
+								["Fevered Disease"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Fevered Disease (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Burning Depths Necromancer"] = {
+							["Details"] = {
+								["Power Release (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Emerald Lasher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Dream Lash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Graymist Hunter"] = {
+							["Details"] = {
+								["Gore"] = {
+									["count"] = 0,
+								},
+								["Gore (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Environment"] = {
+							["Details"] = {
+								["Falling"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Shaman"] = {
+							["Details"] = {
+								["Lightning Bolt"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Geist"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Burning Blaze"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tormented Drakkari"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Grizzly Bear"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["Dispelled"] = 0,
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+						["Melee"] = 102,
+						["Physical"] = 272,
+					},
+					["TimeHealing"] = {
+						["Dethamett"] = {
+							["Details"] = {
+								["Leader of the Pack"] = {
+									["count"] = 0,
+								},
+								["Rejuvenation"] = {
+									["count"] = 0,
+								},
+								["Nourish"] = {
+									["count"] = 0,
+								},
+								["Regrowth"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["OverHeals"] = {
+						["Leader of the Pack"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 516,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 516,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 516,
+						},
+						["Rejuvenation"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Kurun's Blessing"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["RessedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["CCBreak"] = 0,
+					["PartialAbsorb"] = {
+						["Fevered Disease"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Rune Weaving (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tecahuna Venom Spit"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Fireball"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Plague Infected (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Infected Bite (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Drakkari Curse (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Heroic Strike"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Power Release"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Backlash"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Shadowflame (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Absorbed"] = {
+									["max"] = 510,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 894,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 894,
+						},
+						["Tecahuna Venom Spit (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Smoldering Bones"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Burn"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Lightning Bolt"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Shadow Bolt"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Falling"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Dream Lash"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Power Release (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Swoop"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Gore"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Gore (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Burning Blaze"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Fevered Disease (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["ActiveTime"] = 9.050000000000001,
+					["PartialResist"] = {
+						["Fevered Disease"] = {
+							["Details"] = {
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Rune Weaving (DoT)"] = {
+							["Details"] = {
+								["50%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tecahuna Venom Spit"] = {
+							["Details"] = {
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Fireball"] = {
+							["Details"] = {
+								["50%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Plague Infected (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Infected Bite (DoT)"] = {
+							["Details"] = {
+								["50%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Drakkari Curse (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Heroic Strike"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Power Release"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Backlash"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Shadowflame (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+						["Tecahuna Venom Spit (DoT)"] = {
+							["Details"] = {
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Smoldering Bones"] = {
+							["Details"] = {
+								["50%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Burn"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Lightning Bolt"] = {
+							["Details"] = {
+								["50%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Shadow Bolt"] = {
+							["Details"] = {
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Falling"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Dream Lash"] = {
+							["Details"] = {
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Power Release (DoT)"] = {
+							["Details"] = {
+								["50%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Swoop"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Gore"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Gore (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Burning Blaze"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Fevered Disease (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["ManaGained"] = {
+						["Leader of the Pack"] = {
+							["Details"] = {
+								["Dethamett"] = {
+									["count"] = 417,
+								},
+							},
+							["amount"] = 417,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+						["Melee"] = 894,
+						["Physical"] = 0,
+					},
+					["Interrupts"] = 0,
+					["InterruptData"] = {
+					},
+					["Overhealing"] = 516,
+					["TimeSpent"] = {
+						["River Thresher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Graymist Hunter"] = {
+							["Details"] = {
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Imperial Eagle"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Construct"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rainbow Trout"] = {
+							["Details"] = {
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Weakened Overseer Deathgaze"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tecahuna"] = {
+							["Details"] = {
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Iron Rune-Weaver"] = {
+							["Details"] = {
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 5.23,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 1.19,
+								},
+								["Pulverize"] = {
+									["count"] = 0.6800000000000001,
+								},
+								["Mangle"] = {
+									["count"] = 1.65,
+								},
+								["Swipe"] = {
+									["count"] = 0.3,
+								},
+							},
+							["amount"] = 9.050000000000001,
+						},
+						["Ancient Drakkari King <Mummy Effect Bunny>"] = {
+							["Details"] = {
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Skeleton"] = {
+							["Details"] = {
+								["Rake"] = {
+									["count"] = 0,
+								},
+								["Rake (DoT)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Iron Rune Avenger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Oracle"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Injured Drakkari Refugee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Emerald Lasher"] = {
+							["Details"] = {
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Burning Depths Necrolyte"] = {
+							["Details"] = {
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Infected Grizzly Bear"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Conquest Hold Marauder"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scourge Deathspeaker"] = {
+							["Details"] = {
+								["Insect Swarm (DoT)"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Insect Swarm"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Moonfire"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 0,
+								},
+								["Starfire"] = {
+									["count"] = 0,
+								},
+								["Wrath"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tallhorn Stag"] = {
+							["Details"] = {
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Diseased Drakkari"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Burning Depths Necromancer"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Grizzly Bear"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Dethamett"] = {
+							["Details"] = {
+								["Leader of the Pack"] = {
+									["count"] = 0,
+								},
+								["Rejuvenation"] = {
+									["count"] = 0,
+								},
+								["Nourish"] = {
+									["count"] = 0,
+								},
+								["Regrowth"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Infinite Assailant"] = {
+							["Details"] = {
+								["Insect Swarm (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Geist"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Rake (DoT)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Rake"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Shaman"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tormented Drakkari"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Duskhowl Prowler"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["FDamage"] = 0,
+					["Heals"] = {
+						["Leader of the Pack"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Regrowth"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Rejuvenation"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Tick"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Nourish"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Savage Defense"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["HealedWho"] = {
+						["Dethamett"] = {
+							["Details"] = {
+								["Leader of the Pack"] = {
+									["count"] = 0,
+								},
+								["Regrowth"] = {
+									["count"] = 0,
+								},
+								["Rejuvenation"] = {
+									["count"] = 0,
+								},
+								["Nourish"] = {
+									["count"] = 0,
+								},
+								["Savage Defense"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGained"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["Healing"] = 0,
 					["DamagedWho"] = {
 						["River Thresher"] = {
 							["Details"] = {
@@ -22742,7 +26236,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -22751,13 +26245,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -23009,7 +26503,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -23018,13 +26512,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -23033,27 +26527,27 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Grizzly Bear"] = {
+						["Infected Grizzly Bear"] = {
 							["Details"] = {
-								["Mangle"] = {
+								["Melee"] = {
 									["count"] = 0,
 								},
 								["Maul"] = {
 									["count"] = 0,
 								},
-								["Melee"] = {
+								["Fury Swipes"] = {
 									["count"] = 0,
 								},
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -23090,10 +26584,10 @@ RecountPerCharDB = {
 						},
 						["Emerald Lasher"] = {
 							["Details"] = {
-								["Lacerate"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -23102,13 +26596,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -23119,48 +26613,36 @@ RecountPerCharDB = {
 						},
 						["Tallhorn Stag"] = {
 							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
 								["Maul"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Lacerate (DoT)"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Melee"] = {
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
 									["count"] = 0,
 								},
 							},
 							["amount"] = 0,
 						},
-						["Smoldering Geist"] = {
+						["Diseased Drakkari"] = {
 							["Details"] = {
 								["Melee"] = {
-									["count"] = 0,
-								},
-								["Rake (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Rake"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -23169,16 +26651,16 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Swipe"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 							},
@@ -23189,7 +26671,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -23198,13 +26680,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -23323,1413 +26805,6 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Diseased Drakkari"] = {
-							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tormented Drakkari"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Infected Grizzly Bear"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["ElementDone"] = {
-						["Nature"] = 0,
-						["Physical"] = 7729,
-						["Melee"] = 1252,
-						["Arcane"] = 0,
-					},
-					["RunicPowerGained"] = {
-					},
-					["ElementHitsDone"] = {
-						["Nature"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-								["Tick"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 0,
-								},
-								["Evade"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Physical"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 3,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Tick"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 1,
-								},
-								["Parry"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 4,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Glancing"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 2,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 1,
-								},
-								["Parry"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 3,
-						},
-						["Arcane"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-								["Tick"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 0,
-								},
-								["Evade"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["Absorbed"] = {
-						["Savage Defense"] = {
-							["Details"] = {
-								["Dethamett"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["WhoDamaged"] = {
-						["River Thresher"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Conquest Hold Marauder"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Heroic Strike"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Plague Spreader"] = {
-							["Details"] = {
-								["Plague Infected (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Imperial Eagle"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Swoop"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Smoldering Construct"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Backlash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Duskhowl Prowler"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Weakened Overseer Deathgaze"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Shadow Bolt"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tecahuna"] = {
-							["Details"] = {
-								["Tecahuna Venom Spit (DoT)"] = {
-									["count"] = 0,
-								},
-								["Tecahuna Venom Spit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Ancient Drakkari King <Mummy Effect Bunny>"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Drakkari Curse (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Smoldering Skeleton"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Smoldering Bones"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Iron Rune Avenger"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Oracle"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lightning Bolt"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Injured Drakkari Refugee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Iron Rune-Weaver"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Rune Weaving (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Burning Depths Necrolyte"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Grizzly Bear"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Rothin the Decaying"] = {
-							["Details"] = {
-								["Shadowflame (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Scourge Deathspeaker"] = {
-							["Details"] = {
-								["Fireball"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tallhorn Stag"] = {
-							["Details"] = {
-								["Gore"] = {
-									["count"] = 0,
-								},
-								["Gore (DoT)"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Smoldering Geist"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Burning Blaze"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Burning Depths Necromancer"] = {
-							["Details"] = {
-								["Power Release (DoT)"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Emerald Lasher"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Dream Lash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Graymist Hunter"] = {
-							["Details"] = {
-								["Gore"] = {
-									["count"] = 0,
-								},
-								["Gore (DoT)"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Environment"] = {
-							["Details"] = {
-								["Falling"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Shaman"] = {
-							["Details"] = {
-								["Lightning Bolt"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Diseased Drakkari"] = {
-							["Details"] = {
-								["Fevered Disease"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Fevered Disease (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tormented Drakkari"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Infected Grizzly Bear"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Infected Bite (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["OverHeals"] = {
-						["Leader of the Pack"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 516,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 516,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 516,
-						},
-						["Rejuvenation"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Kurun's Blessing"] = {
-							["Details"] = {
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["ElementDoneBlock"] = {
-						["Melee"] = 102,
-						["Physical"] = 272,
-					},
-					["TimeHealing"] = {
-						["Dethamett"] = {
-							["Details"] = {
-								["Leader of the Pack"] = {
-									["count"] = 0,
-								},
-								["Rejuvenation"] = {
-									["count"] = 0,
-								},
-								["Nourish"] = {
-									["count"] = 0,
-								},
-								["Regrowth"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["Dispelled"] = 0,
-					["RessedWho"] = {
-					},
-					["PartialResist"] = {
-						["Fevered Disease"] = {
-							["Details"] = {
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Rune Weaving (DoT)"] = {
-							["Details"] = {
-								["50%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tecahuna Venom Spit"] = {
-							["Details"] = {
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Fireball"] = {
-							["Details"] = {
-								["50%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Burning Blaze"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Infected Bite (DoT)"] = {
-							["Details"] = {
-								["50%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Drakkari Curse (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Heroic Strike"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Power Release"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Falling"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Shadowflame (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Swoop"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tecahuna Venom Spit (DoT)"] = {
-							["Details"] = {
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Smoldering Bones"] = {
-							["Details"] = {
-								["50%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Burn"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Lightning Bolt"] = {
-							["Details"] = {
-								["50%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Shadow Bolt"] = {
-							["Details"] = {
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Backlash"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Dream Lash"] = {
-							["Details"] = {
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Power Release (DoT)"] = {
-							["Details"] = {
-								["50%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 3,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 3,
-							["amount"] = 0,
-						},
-						["Gore"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Gore (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Plague Infected (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Fevered Disease (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["CCBreak"] = 0,
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-						["Leader of the Pack"] = {
-							["Details"] = {
-								["Dethamett"] = {
-									["count"] = 417,
-								},
-							},
-							["amount"] = 417,
-						},
-					},
-					["ElementTakenAbsorb"] = {
-						["Melee"] = 894,
-						["Physical"] = 0,
-					},
-					["ActiveTime"] = 9.050000000000001,
-					["InterruptData"] = {
-					},
-					["Overhealing"] = 516,
-					["TimeSpent"] = {
-						["River Thresher"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Graymist Hunter"] = {
-							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Imperial Eagle"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Smoldering Construct"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Rainbow Trout"] = {
-							["Details"] = {
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Weakened Overseer Deathgaze"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tecahuna"] = {
-							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Iron Rune-Weaver"] = {
-							["Details"] = {
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 5.23,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 1.19,
-								},
-								["Pulverize"] = {
-									["count"] = 0.6800000000000001,
-								},
-								["Mangle"] = {
-									["count"] = 1.65,
-								},
-								["Swipe"] = {
-									["count"] = 0.3,
-								},
-							},
-							["amount"] = 9.050000000000001,
-						},
-						["Ancient Drakkari King <Mummy Effect Bunny>"] = {
-							["Details"] = {
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Smoldering Skeleton"] = {
-							["Details"] = {
-								["Rake"] = {
-									["count"] = 0,
-								},
-								["Rake (DoT)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Iron Rune Avenger"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Oracle"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Injured Drakkari Refugee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Emerald Lasher"] = {
-							["Details"] = {
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Burning Depths Necrolyte"] = {
-							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Infected Grizzly Bear"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Conquest Hold Marauder"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Scourge Deathspeaker"] = {
-							["Details"] = {
-								["Insect Swarm (DoT)"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Insect Swarm"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Moonfire"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Moonfire (DoT)"] = {
-									["count"] = 0,
-								},
-								["Starfire"] = {
-									["count"] = 0,
-								},
-								["Wrath"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tallhorn Stag"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
 						["Smoldering Geist"] = {
 							["Details"] = {
 								["Melee"] = {
@@ -24753,136 +26828,9 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
 								["Maul"] = {
 									["count"] = 0,
 								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Burning Depths Necromancer"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Grizzly Bear"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Dethamett"] = {
-							["Details"] = {
-								["Leader of the Pack"] = {
-									["count"] = 0,
-								},
-								["Rejuvenation"] = {
-									["count"] = 0,
-								},
-								["Nourish"] = {
-									["count"] = 0,
-								},
-								["Regrowth"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Infinite Assailant"] = {
-							["Details"] = {
-								["Insect Swarm (DoT)"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Diseased Drakkari"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
@@ -24890,26 +26838,6 @@ RecountPerCharDB = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Shaman"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
 									["count"] = 0,
 								},
 							},
@@ -24941,27 +26869,27 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Duskhowl Prowler"] = {
+						["Grizzly Bear"] = {
 							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
 								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -24969,445 +26897,6 @@ RecountPerCharDB = {
 								},
 							},
 							["amount"] = 0,
-						},
-					},
-					["WhoDispelled"] = {
-					},
-					["PartialAbsorb"] = {
-						["Fevered Disease"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Rune Weaving (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tecahuna Venom Spit"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Fireball"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Burning Blaze"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Infected Bite (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Drakkari Curse (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Heroic Strike"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Power Release"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Falling"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Shadowflame (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Swoop"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tecahuna Venom Spit (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Smoldering Bones"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Burn"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Lightning Bolt"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Shadow Bolt"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Backlash"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Dream Lash"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Power Release (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 0,
-								},
-								["Absorbed"] = {
-									["max"] = 510,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 894,
-								},
-							},
-							["count"] = 3,
-							["amount"] = 894,
-						},
-						["Gore"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Gore (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Plague Infected (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Fevered Disease (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["Heals"] = {
-						["Leader of the Pack"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Regrowth"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Rejuvenation"] = {
-							["Details"] = {
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Tick"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Nourish"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Savage Defense"] = {
-							["Details"] = {
-								["Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["HealedWho"] = {
-						["Dethamett"] = {
-							["Details"] = {
-								["Leader of the Pack"] = {
-									["count"] = 0,
-								},
-								["Regrowth"] = {
-									["count"] = 0,
-								},
-								["Rejuvenation"] = {
-									["count"] = 0,
-								},
-								["Nourish"] = {
-									["count"] = 0,
-								},
-								["Savage Defense"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["EnergyGained"] = {
-					},
-					["CCBroken"] = {
-					},
-					["Healing"] = 0,
-					["ManaGainedFrom"] = {
-						["Dethamett"] = {
-							["Details"] = {
-								["Leader of the Pack"] = {
-									["count"] = 417,
-								},
-							},
-							["amount"] = 417,
 						},
 					},
 					["RageGained"] = {
@@ -25868,7 +27357,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -25877,13 +27366,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -26089,7 +27578,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -26098,13 +27587,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -26144,7 +27633,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -26153,13 +27642,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -26168,27 +27657,30 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Grizzly Bear"] = {
+						["Infected Grizzly Bear"] = {
 							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Faerie Fire (Feral)"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Pulverize"] = {
 									["count"] = 0,
 								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -26202,7 +27694,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -26211,13 +27703,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -26228,10 +27720,10 @@ RecountPerCharDB = {
 						},
 						["Emerald Lasher"] = {
 							["Details"] = {
-								["Lacerate"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -26240,13 +27732,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -26257,48 +27749,39 @@ RecountPerCharDB = {
 						},
 						["Tallhorn Stag"] = {
 							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
 								["Maul"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Lacerate (DoT)"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Melee"] = {
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
 									["count"] = 0,
 								},
 							},
 							["amount"] = 0,
 						},
-						["Smoldering Geist"] = {
+						["Diseased Drakkari"] = {
 							["Details"] = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Rake (DoT)"] = {
-									["count"] = 0,
-								},
 								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Rake"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -26313,7 +27796,7 @@ RecountPerCharDB = {
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -26327,7 +27810,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -26336,13 +27819,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -26467,9 +27950,18 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Diseased Drakkari"] = {
+						["Smoldering Geist"] = {
 							["Details"] = {
 								["Melee"] = {
+									["count"] = 0,
+								},
+								["Rake (DoT)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Rake"] = {
 									["count"] = 0,
 								},
 								["Pulverize"] = {
@@ -26481,7 +27973,7 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -26522,30 +28014,27 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Infected Grizzly Bear"] = {
+						["Grizzly Bear"] = {
 							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
 								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Fury Swipes"] = {
+								["Melee"] = {
 									["count"] = 0,
 								},
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -26556,10 +28045,21 @@ RecountPerCharDB = {
 						},
 					},
 					["RunicPowerGain"] = 0,
-					["ElementTakenResist"] = {
-						["Fire"] = 0,
-						["Shadow"] = 0,
-						["Nature"] = 0,
+					["RageGainedFrom"] = {
+						["Dethamett"] = {
+							["Details"] = {
+								["Natural Reaction"] = {
+									["count"] = 0,
+								},
+								["Primal Fury"] = {
+									["count"] = 10,
+								},
+								["Furor"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 10,
+						},
 					},
 					["DispelledWho"] = {
 					},
@@ -26684,16 +28184,16 @@ RecountPerCharDB = {
 								["Moonfire"] = {
 									["count"] = 0,
 								},
-								["Faerie Fire (Feral)"] = {
+								["Moonfire (DoT)"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Moonfire (DoT)"] = {
+								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -26702,7 +28202,7 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 							},
@@ -26710,7 +28210,7 @@ RecountPerCharDB = {
 						},
 						["Conquest Hold Marauder"] = {
 							["Details"] = {
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -26719,7 +28219,7 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -26728,7 +28228,7 @@ RecountPerCharDB = {
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 							},
@@ -26771,19 +28271,19 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
 								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Moonfire (DoT)"] = {
+								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -26841,22 +28341,22 @@ RecountPerCharDB = {
 								["Rake"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Rip"] = {
+								["Rake (DoT)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Rake (DoT)"] = {
+								["Rip"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -26936,7 +28436,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -26945,13 +28445,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Maul"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -26962,7 +28462,7 @@ RecountPerCharDB = {
 						},
 						["Drakkari Protector"] = {
 							["Details"] = {
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -26971,7 +28471,7 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -26980,7 +28480,7 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 							},
@@ -26988,10 +28488,10 @@ RecountPerCharDB = {
 						},
 						["Iron Rune Avenger"] = {
 							["Details"] = {
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -27000,13 +28500,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -27079,32 +28579,6 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Overseer Brunon"] = {
-							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0.27,
-								},
-								["Melee"] = {
-									["count"] = 9.809999999999999,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0.15,
-								},
-								["Maul"] = {
-									["count"] = 1.89,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0.29,
-								},
-								["Lacerate"] = {
-									["count"] = 2.04,
-								},
-							},
-							["amount"] = 14.45,
-						},
 						["Conquest Hold Grunt"] = {
 							["Details"] = {
 								["Insect Swarm (DoT)"] = {
@@ -27140,6 +28614,32 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
+						["Overseer Brunon"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 9.809999999999999,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0.27,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0.15,
+								},
+								["Lacerate"] = {
+									["count"] = 2.04,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0.29,
+								},
+								["Maul"] = {
+									["count"] = 1.89,
+								},
+							},
+							["amount"] = 14.45,
+						},
 						["Tallhorn Stag"] = {
 							["Details"] = {
 								["Fury Swipes"] = {
@@ -27158,6 +28658,152 @@ RecountPerCharDB = {
 									["count"] = 0,
 								},
 								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Diseased Drakkari"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Burning Depths Necromancer"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Warrior"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Dethamett"] = {
+							["Details"] = {
+								["Leader of the Pack"] = {
+									["count"] = 1.25,
+								},
+								["Rejuvenation"] = {
+									["count"] = 0,
+								},
+								["Regrowth"] = {
+									["count"] = 0,
+								},
+								["Frenzied Regeneration"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 1.25,
+						},
+						["Grizzly Hills Giant"] = {
+							["Details"] = {
+								["Kurun's Blessing"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Emerald Lasher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Conquest Hold Raider"] = {
+							["Details"] = {
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -27189,164 +28835,18 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Burning Depths Necromancer"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Warrior"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Conquest Hold Raider"] = {
-							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Grizzly Hills Giant"] = {
-							["Details"] = {
-								["Kurun's Blessing"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Emerald Lasher"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Dethamett"] = {
-							["Details"] = {
-								["Leader of the Pack"] = {
-									["count"] = 1.25,
-								},
-								["Rejuvenation"] = {
-									["count"] = 0,
-								},
-								["Regrowth"] = {
-									["count"] = 0,
-								},
-								["Frenzied Regeneration"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 1.25,
-						},
-						["Diseased Drakkari"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
 						["Drakkari Defender"] = {
 							["Details"] = {
-								["Melee"] = {
+								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Fury Swipes"] = {
+								["Melee"] = {
 									["count"] = 0,
 								},
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -27355,7 +28855,7 @@ RecountPerCharDB = {
 								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 							},
@@ -27450,16 +28950,16 @@ RecountPerCharDB = {
 								["Moonfire"] = {
 									["count"] = 0,
 								},
-								["Faerie Fire (Feral)"] = {
+								["Moonfire (DoT)"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Moonfire (DoT)"] = {
+								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -27468,7 +28968,7 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 							},
@@ -27476,7 +28976,7 @@ RecountPerCharDB = {
 						},
 						["Conquest Hold Marauder"] = {
 							["Details"] = {
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -27485,7 +28985,7 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -27494,7 +28994,7 @@ RecountPerCharDB = {
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 							},
@@ -27575,7 +29075,7 @@ RecountPerCharDB = {
 								["Shred"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -27584,7 +29084,7 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate"] = {
@@ -27904,7 +29404,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -27913,7 +29413,7 @@ RecountPerCharDB = {
 								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 							},
@@ -27924,7 +29424,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -27933,13 +29433,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -27953,7 +29453,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -27962,13 +29462,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Maul"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -27979,10 +29479,10 @@ RecountPerCharDB = {
 						},
 						["Iron Rune Avenger"] = {
 							["Details"] = {
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -27991,13 +29491,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -28011,7 +29511,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -28020,13 +29520,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -29742,16 +31242,16 @@ RecountPerCharDB = {
 								["Moonfire"] = {
 									["count"] = 0,
 								},
-								["Faerie Fire (Feral)"] = {
+								["Moonfire (DoT)"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Moonfire (DoT)"] = {
+								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -29760,7 +31260,7 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 							},
@@ -29768,7 +31268,7 @@ RecountPerCharDB = {
 						},
 						["Conquest Hold Marauder"] = {
 							["Details"] = {
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -29777,7 +31277,7 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -29786,7 +31286,7 @@ RecountPerCharDB = {
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 							},
@@ -29829,19 +31329,19 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
 								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Moonfire (DoT)"] = {
+								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -29899,22 +31399,22 @@ RecountPerCharDB = {
 								["Rake"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Rip"] = {
+								["Rake (DoT)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Rake (DoT)"] = {
+								["Rip"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -29991,7 +31491,7 @@ RecountPerCharDB = {
 						},
 						["Drakkari Protector"] = {
 							["Details"] = {
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -30000,7 +31500,7 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -30009,7 +31509,7 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 							},
@@ -30081,17 +31581,17 @@ RecountPerCharDB = {
 						},
 						["Overseer Brunon"] = {
 							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0.27,
-								},
 								["Melee"] = {
 									["count"] = 9.809999999999999,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0.27,
 								},
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0.15,
 								},
-								["Maul"] = {
-									["count"] = 1.89,
+								["Lacerate"] = {
+									["count"] = 2.04,
 								},
 								["Pulverize"] = {
 									["count"] = 0,
@@ -30099,8 +31599,8 @@ RecountPerCharDB = {
 								["Mangle"] = {
 									["count"] = 0.29,
 								},
-								["Lacerate"] = {
-									["count"] = 2.04,
+								["Maul"] = {
+									["count"] = 1.89,
 								},
 							},
 							["amount"] = 14.45,
@@ -30214,7 +31714,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -30223,7 +31723,7 @@ RecountPerCharDB = {
 								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 							},
@@ -30234,7 +31734,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -30243,13 +31743,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -30263,7 +31763,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -30272,13 +31772,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Maul"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -30289,10 +31789,10 @@ RecountPerCharDB = {
 						},
 						["Iron Rune Avenger"] = {
 							["Details"] = {
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -30301,13 +31801,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -30321,7 +31821,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -30330,13 +31830,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -30370,16 +31870,16 @@ RecountPerCharDB = {
 						},
 						["Drakkari Defender"] = {
 							["Details"] = {
-								["Melee"] = {
+								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Fury Swipes"] = {
+								["Melee"] = {
 									["count"] = 0,
 								},
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -30388,7 +31888,7 @@ RecountPerCharDB = {
 								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 							},
@@ -30592,7 +32092,32 @@ RecountPerCharDB = {
 						["Physical"] = 0,
 						["Nature"] = 0,
 					},
-					["DOT_Time"] = 0,
+					["HOTs"] = {
+						["Leader of the Pack"] = {
+							["Details"] = {
+								["Dethamett"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rejuvenation"] = {
+							["Details"] = {
+								["Dethamett"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Regrowth"] = {
+							["Details"] = {
+								["Dethamett"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
 					["ElementTakenBlock"] = {
 					},
 					["ElementDoneAbsorb"] = {
@@ -30629,6 +32154,73 @@ RecountPerCharDB = {
 						["Physical"] = 7493,
 						["Melee"] = 1058,
 						["Arcane"] = 0,
+					},
+					["ElementHitsDone"] = {
+						["Nature"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 5,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Tick"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 5,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 3,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 4,
+						},
+						["Arcane"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Tick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
 					},
 					["DamagedWho"] = {
 						["Infinite Destroyer"] = {
@@ -30734,7 +32326,7 @@ RecountPerCharDB = {
 						},
 						["Rune Reaver"] = {
 							["Details"] = {
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -30743,7 +32335,7 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -30752,7 +32344,7 @@ RecountPerCharDB = {
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 							},
@@ -30888,7 +32480,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -30897,13 +32489,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -31007,7 +32599,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -31016,13 +32608,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -31033,11 +32625,11 @@ RecountPerCharDB = {
 						},
 						["Iron Rune-Weaver"] = {
 							["Details"] = {
-								["Pulverize"] = {
-									["count"] = 0,
+								["Lacerate"] = {
+									["count"] = 4298,
 								},
-								["Mangle"] = {
-									["count"] = 2214,
+								["Maul"] = {
+									["count"] = 417,
 								},
 								["Melee"] = {
 									["count"] = 1058,
@@ -31045,14 +32637,14 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
-									["count"] = 417,
+								["Mangle"] = {
+									["count"] = 2214,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
-									["count"] = 4298,
+								["Pulverize"] = {
+									["count"] = 0,
 								},
 								["Swipe"] = {
 									["count"] = 564,
@@ -31065,7 +32657,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -31074,13 +32666,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -31160,7 +32752,7 @@ RecountPerCharDB = {
 						},
 						["Emerald Lasher"] = {
 							["Details"] = {
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -31169,7 +32761,7 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Pulverize"] = {
@@ -31178,7 +32770,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 							},
@@ -31209,7 +32801,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -31218,83 +32810,16 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["ElementHitsDone"] = {
-						["Nature"] = {
-							["Details"] = {
-								["Tick"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Physical"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 5,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Tick"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 5,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Glancing"] = {
-									["count"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 3,
-								},
-								["Crit"] = {
-									["count"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 1,
-								},
-							},
-							["amount"] = 4,
-						},
-						["Arcane"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-								["Tick"] = {
 									["count"] = 0,
 								},
 							},
@@ -31571,7 +33096,7 @@ RecountPerCharDB = {
 							["amount"] = 0,
 						},
 					},
-					["RunicPowerGained"] = {
+					["CCBroken"] = {
 					},
 					["ElementDoneBlock"] = {
 						["Melee"] = 0,
@@ -31907,6 +33432,713 @@ RecountPerCharDB = {
 						},
 					},
 					["CCBreak"] = 0,
+					["FDamage"] = 0,
+					["ActiveTime"] = 9.85,
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+						["Leader of the Pack"] = {
+							["Details"] = {
+								["Dethamett"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+						["Melee"] = 503,
+						["Physical"] = 0,
+					},
+					["Interrupts"] = 0,
+					["RessedWho"] = {
+					},
+					["InterruptData"] = {
+						["Drakkari Shaman"] = {
+							["Details"] = {
+								["Lightning Bolt (Skull Bash)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["TimeSpent"] = {
+						["Infinite Destroyer"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scourge Deathspeaker"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Conquest Hold Marauder"] = {
+							["Details"] = {
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Emerald Skytalon"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Moonfire"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Rune Reaver"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Shaman"] = {
+							["Details"] = {
+								["Insect Swarm (DoT)"] = {
+									["count"] = 0,
+								},
+								["Starfire"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Moonfire"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 0,
+								},
+								["Wrath"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Bash"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Skeleton"] = {
+							["Details"] = {
+								["Rip (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Rake (DoT)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Rake"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Infinite Chrono-Magus"] = {
+							["Details"] = {
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Injured Drakkari Refugee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Moonfire"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Burning Depths Necrolyte"] = {
+							["Details"] = {
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Grizzly Bear"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Iron Rune-Weaver"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 2.58,
+								},
+								["Maul"] = {
+									["count"] = 0.69,
+								},
+								["Melee"] = {
+									["count"] = 5.72,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0.61,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0.25,
+								},
+							},
+							["amount"] = 9.85,
+						},
+						["Conquest Hold Grunt"] = {
+							["Details"] = {
+								["Insect Swarm (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tallhorn Stag"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Geist"] = {
+							["Details"] = {
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Protector"] = {
+							["Details"] = {
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Conquest Hold Raider"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Dethamett"] = {
+							["Details"] = {
+								["Leader of the Pack"] = {
+									["count"] = 0,
+								},
+								["Rejuvenation"] = {
+									["count"] = 0,
+								},
+								["Regrowth"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Warlord Zim'bo"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Emerald Lasher"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Diseased Drakkari"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ice Serpent"] = {
+							["Details"] = {
+								["Insect Swarm (DoT)"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Defender"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["Overhealing"] = 0,
+					["Heals"] = {
+						["Leader of the Pack"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Rejuvenation"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Regrowth"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
 					["PartialAbsorb"] = {
 						["Fireball"] = {
 							["Details"] = {
@@ -32179,713 +34411,6 @@ RecountPerCharDB = {
 							["amount"] = 0,
 						},
 					},
-					["ActiveTime"] = 9.85,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-						["Leader of the Pack"] = {
-							["Details"] = {
-								["Dethamett"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["RessedWho"] = {
-					},
-					["InterruptData"] = {
-						["Drakkari Shaman"] = {
-							["Details"] = {
-								["Lightning Bolt (Skull Bash)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["TimeSpent"] = {
-						["Infinite Destroyer"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Scourge Deathspeaker"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Conquest Hold Marauder"] = {
-							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Emerald Skytalon"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Moonfire"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Moonfire (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Rune Reaver"] = {
-							["Details"] = {
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Shaman"] = {
-							["Details"] = {
-								["Insect Swarm (DoT)"] = {
-									["count"] = 0,
-								},
-								["Starfire"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Moonfire"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Moonfire (DoT)"] = {
-									["count"] = 0,
-								},
-								["Wrath"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Bash"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Smoldering Skeleton"] = {
-							["Details"] = {
-								["Rip (DoT)"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Rake (DoT)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Rake"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Infinite Chrono-Magus"] = {
-							["Details"] = {
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Injured Drakkari Refugee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Moonfire"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Moonfire (DoT)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Burning Depths Necrolyte"] = {
-							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Grizzly Bear"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Iron Rune-Weaver"] = {
-							["Details"] = {
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0.61,
-								},
-								["Melee"] = {
-									["count"] = 5.72,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0.69,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 2.58,
-								},
-								["Swipe"] = {
-									["count"] = 0.25,
-								},
-							},
-							["amount"] = 9.85,
-						},
-						["Conquest Hold Grunt"] = {
-							["Details"] = {
-								["Insect Swarm (DoT)"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tallhorn Stag"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Smoldering Geist"] = {
-							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Protector"] = {
-							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Dethamett"] = {
-							["Details"] = {
-								["Leader of the Pack"] = {
-									["count"] = 0,
-								},
-								["Rejuvenation"] = {
-									["count"] = 0,
-								},
-								["Regrowth"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Conquest Hold Raider"] = {
-							["Details"] = {
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Warlord Zim'bo"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Emerald Lasher"] = {
-							["Details"] = {
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Diseased Drakkari"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Ice Serpent"] = {
-							["Details"] = {
-								["Insect Swarm (DoT)"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Defender"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["WhoDispelled"] = {
-					},
-					["Overhealing"] = 0,
-					["Heals"] = {
-						["Leader of the Pack"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Rejuvenation"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Regrowth"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["ElementTakenAbsorb"] = {
-						["Melee"] = 503,
-						["Physical"] = 0,
-					},
 					["EnergyGained"] = {
 					},
 					["WhoHealed"] = {
@@ -32905,9 +34430,9 @@ RecountPerCharDB = {
 						},
 					},
 					["Healing"] = 0,
-					["RunicPowerGainedFrom"] = {
+					["RunicPowerGained"] = {
 					},
-					["CCBroken"] = {
+					["RunicPowerGainedFrom"] = {
 					},
 					["Attacks"] = {
 						["Insect Swarm (DoT)"] = {
@@ -33387,10 +34912,10 @@ RecountPerCharDB = {
 						},
 						["Rune Reaver"] = {
 							["Details"] = {
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -33399,13 +34924,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -33547,7 +35072,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -33556,13 +35081,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -33666,7 +35191,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -33675,13 +35200,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -33692,11 +35217,11 @@ RecountPerCharDB = {
 						},
 						["Iron Rune-Weaver"] = {
 							["Details"] = {
-								["Pulverize"] = {
-									["count"] = 0,
+								["Lacerate"] = {
+									["count"] = 2.58,
 								},
-								["Mangle"] = {
-									["count"] = 0.61,
+								["Maul"] = {
+									["count"] = 0.69,
 								},
 								["Melee"] = {
 									["count"] = 5.72,
@@ -33704,14 +35229,14 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
-									["count"] = 0.69,
+								["Mangle"] = {
+									["count"] = 0.61,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
-									["count"] = 2.58,
+								["Pulverize"] = {
+									["count"] = 0,
 								},
 								["Swipe"] = {
 									["count"] = 0.25,
@@ -33724,7 +35249,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -33733,13 +35258,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -33819,7 +35344,7 @@ RecountPerCharDB = {
 						},
 						["Emerald Lasher"] = {
 							["Details"] = {
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -33828,7 +35353,7 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Pulverize"] = {
@@ -33837,7 +35362,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 							},
@@ -33868,7 +35393,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -33877,13 +35402,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -33894,52 +35419,13 @@ RecountPerCharDB = {
 						},
 					},
 					["RunicPowerGain"] = 0,
-					["HOTs"] = {
-						["Leader of the Pack"] = {
-							["Details"] = {
-								["Dethamett"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Rejuvenation"] = {
-							["Details"] = {
-								["Dethamett"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Regrowth"] = {
-							["Details"] = {
-								["Dethamett"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
+					["DOT_Time"] = 0,
 					["DispelledWho"] = {
 					},
 				},
 				["Fight3"] = {
 					["Ressed"] = 0,
-					["RageGainedFrom"] = {
-						["Dethamett"] = {
-							["Details"] = {
-								["Natural Reaction"] = {
-									["count"] = 0,
-								},
-								["Primal Fury"] = {
-									["count"] = 15,
-								},
-								["Furor"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 15,
-						},
+					["ElementDoneAbsorb"] = {
 					},
 					["DOTs"] = {
 						["Rip (DoT)"] = {
@@ -33961,10 +35447,10 @@ RecountPerCharDB = {
 								["Emerald Lasher"] = {
 									["count"] = 0,
 								},
-								["Smoldering Construct"] = {
+								["Drakkari Witch Doctor"] = {
 									["count"] = 0,
 								},
-								["Drakkari Witch Doctor"] = {
+								["Smoldering Construct"] = {
 									["count"] = 0,
 								},
 								["Diseased Drakkari"] = {
@@ -34102,7 +35588,10 @@ RecountPerCharDB = {
 						},
 					},
 					["DamageTaken"] = 1475,
-					["ElementDoneAbsorb"] = {
+					["ElementTakenResist"] = {
+						["Fire"] = 0,
+						["Shadow"] = 100,
+						["Nature"] = 0,
 					},
 					["Absorbs"] = 0,
 					["DeathCount"] = 0,
@@ -34154,725 +35643,6 @@ RecountPerCharDB = {
 						},
 					},
 					["FAttacks"] = {
-					},
-					["DamagedWho"] = {
-						["Scourge Deathspeaker"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Conquest Hold Marauder"] = {
-							["Details"] = {
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Plague Spreader"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Emerald Skytalon"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Moonfire (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Moonfire"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Smoldering Construct"] = {
-							["Details"] = {
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Guardian Serpent"] = {
-							["Details"] = {
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Shaman"] = {
-							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Iron Rune-Weaver"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 675,
-								},
-								["Melee"] = {
-									["count"] = 2159,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 2187,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 1158,
-								},
-								["Lacerate"] = {
-									["count"] = 1724,
-								},
-								["Swipe"] = {
-									["count"] = 1183,
-								},
-							},
-							["amount"] = 9086,
-						},
-						["Drakkari Witch Doctor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Moonfire (DoT)"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Moonfire"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Graymist Hunter"] = {
-							["Details"] = {
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Smoldering Skeleton"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Infinite Chrono-Magus"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Oracle"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Injured Drakkari Refugee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Scourge Corpserender"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Burning Depths Necrolyte"] = {
-							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Grizzly Bear"] = {
-							["Details"] = {
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Emerald Lasher"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Wild Turkey"] = {
-							["Details"] = {
-								["Moonfire"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tallhorn Stag"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Smoldering Geist"] = {
-							["Details"] = {
-								["Rip (DoT)"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Ravage!"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Shred"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Overseer Lochli"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Serpent Defender"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Conquest Hold Raider"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Warrior"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Moonfire"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Moonfire (DoT)"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Diseased Drakkari"] = {
-							["Details"] = {
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Iron Rune Avenger"] = {
-							["Details"] = {
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Ice Serpent"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Drakkari Defender"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["ElementDone"] = {
-						["Nature"] = 2187,
-						["Physical"] = 4740,
-						["Melee"] = 2159,
-						["Arcane"] = 0,
-					},
-					["RunicPowerGained"] = {
 					},
 					["ElementHitsDone"] = {
 						["Nature"] = {
@@ -34941,6 +35711,12 @@ RecountPerCharDB = {
 							["amount"] = 0,
 						},
 					},
+					["ElementDone"] = {
+						["Nature"] = 2187,
+						["Physical"] = 4740,
+						["Melee"] = 2159,
+						["Arcane"] = 0,
+					},
 					["Absorbed"] = {
 						["Savage Defense"] = {
 							["Details"] = {
@@ -34954,6 +35730,18 @@ RecountPerCharDB = {
 							["count"] = 0,
 							["amount"] = 0,
 						},
+					},
+					["ManaGainedFrom"] = {
+						["Dethamett"] = {
+							["Details"] = {
+								["Leader of the Pack"] = {
+									["count"] = 417,
+								},
+							},
+							["amount"] = 417,
+						},
+					},
+					["CCBroken"] = {
 					},
 					["WhoDamaged"] = {
 						["Scourge Deathspeaker"] = {
@@ -35144,17 +35932,6 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Serpent Defender"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tail Lash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
 						["Drakkari Warrior"] = {
 							["Details"] = {
 								["Melee"] = {
@@ -35169,6 +35946,17 @@ RecountPerCharDB = {
 									["count"] = 0,
 								},
 								["Thunderstorm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Serpent Defender"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tail Lash"] = {
 									["count"] = 0,
 								},
 							},
@@ -35226,6 +36014,31 @@ RecountPerCharDB = {
 					},
 					["EnergyGainedFrom"] = {
 					},
+					["Dispelled"] = 0,
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+						["Melee"] = 0,
+						["Physical"] = 0,
+					},
+					["TimeHealing"] = {
+						["Dethamett"] = {
+							["Details"] = {
+								["Leader of the Pack"] = {
+									["count"] = 0.98,
+								},
+							},
+							["amount"] = 0.98,
+						},
+						["Grizzly Hills Giant"] = {
+							["Details"] = {
+								["Kurun's Blessing"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
 					["OverHeals"] = {
 						["Leader of the Pack"] = {
 							["Details"] = {
@@ -35252,33 +36065,313 @@ RecountPerCharDB = {
 							["amount"] = 0,
 						},
 					},
-					["RunicPowerGainedFrom"] = {
+					["RessedWho"] = {
 					},
-					["ElementDoneBlock"] = {
-						["Melee"] = 0,
-						["Physical"] = 0,
-					},
-					["TimeHealing"] = {
-						["Dethamett"] = {
+					["EnergyGain"] = 0,
+					["CCBreak"] = 0,
+					["PartialAbsorb"] = {
+						["Fevered Disease"] = {
 							["Details"] = {
-								["Leader of the Pack"] = {
-									["count"] = 0.98,
-								},
-							},
-							["amount"] = 0.98,
-						},
-						["Grizzly Hills Giant"] = {
-							["Details"] = {
-								["Kurun's Blessing"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
 									["count"] = 0,
+									["amount"] = 0,
 								},
 							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Cleave"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Destructive Strike"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Voodoo Doll"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Burning Blaze"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Rune Weaving (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+						["Thunderstorm"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Heroic Strike"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Fire"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Gore"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Shadow Blast"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Talon Strike"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tail Lash"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Lightning Bolt"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Smoldering Bones"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Backlash"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Dream Lash"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Falling"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Plague Infected (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Ice Slash"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Gore (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Fireball"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Fevered Disease (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
 							["amount"] = 0,
 						},
 					},
-					["Dispelled"] = 0,
-					["RessedWho"] = {
-					},
+					["ActiveTime"] = 11.38,
 					["PartialResist"] = {
 						["Fevered Disease"] = {
 							["Details"] = {
@@ -35472,30 +36565,6 @@ RecountPerCharDB = {
 							["count"] = 0,
 							["amount"] = 0,
 						},
-						["Dream Lash"] = {
-							["Details"] = {
-								["25%Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Falling"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
 						["Smoldering Bones"] = {
 							["Details"] = {
 								["50%Resist"] = {
@@ -35521,6 +36590,30 @@ RecountPerCharDB = {
 							["amount"] = 0,
 						},
 						["Backlash"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Dream Lash"] = {
+							["Details"] = {
+								["25%Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Falling"] = {
 							["Details"] = {
 								["No Resist"] = {
 									["max"] = 0,
@@ -35605,10 +36698,6 @@ RecountPerCharDB = {
 							["amount"] = 0,
 						},
 					},
-					["CCBreak"] = 0,
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["EnergyGain"] = 0,
 					["ManaGained"] = {
 						["Leader of the Pack"] = {
 							["Details"] = {
@@ -35623,7 +36712,7 @@ RecountPerCharDB = {
 						["Melee"] = 0,
 						["Physical"] = 0,
 					},
-					["ActiveTime"] = 11.38,
+					["Interrupts"] = 0,
 					["InterruptData"] = {
 					},
 					["Overhealing"] = 0,
@@ -35696,10 +36785,10 @@ RecountPerCharDB = {
 						},
 						["Iron Rune-Weaver"] = {
 							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0.43,
+								["Lacerate"] = {
+									["count"] = 1.95,
 								},
-								["Maul"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -35708,14 +36797,14 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 1.62,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
 									["count"] = 0.29,
 								},
-								["Lacerate"] = {
-									["count"] = 1.95,
+								["Mangle"] = {
+									["count"] = 0.43,
 								},
 								["Swipe"] = {
 									["count"] = 0.4,
@@ -35725,10 +36814,10 @@ RecountPerCharDB = {
 						},
 						["Emerald Skytalon"] = {
 							["Details"] = {
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -35737,7 +36826,7 @@ RecountPerCharDB = {
 								["Moonfire (DoT)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Faerie Fire (Feral)"] = {
@@ -35757,7 +36846,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -35766,13 +36855,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -35849,6 +36938,35 @@ RecountPerCharDB = {
 						},
 						["Conquest Hold Marauder"] = {
 							["Details"] = {
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Iron Rune Avenger"] = {
+							["Details"] = {
 								["Lacerate"] = {
 									["count"] = 0,
 								},
@@ -35861,13 +36979,71 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scourge Corpserender"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Skeleton"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
 								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -35888,93 +37064,6 @@ RecountPerCharDB = {
 									["count"] = 0,
 								},
 								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Grizzly Bear"] = {
-							["Details"] = {
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Smoldering Skeleton"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Iron Rune Avenger"] = {
-							["Details"] = {
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
 									["count"] = 0,
 								},
 							},
@@ -36036,7 +37125,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -36045,13 +37134,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -36060,27 +37149,27 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Scourge Corpserender"] = {
+						["Grizzly Bear"] = {
 							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
 								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Lacerate (DoT)"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
 								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -36152,9 +37241,18 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Diseased Drakkari"] = {
+						["Smoldering Geist"] = {
 							["Details"] = {
+								["Rip (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
 								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Ravage!"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -36163,13 +37261,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Lacerate (DoT)"] = {
+								["Shred"] = {
 									["count"] = 0,
 								},
-								["Melee"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -36183,7 +37281,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -36192,70 +37290,16 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Serpent Defender"] = {
-							["Details"] = {
-								["Fury Swipes"] = {
+								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
 								["Maul"] = {
 									["count"] = 0,
 								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
 								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Conquest Hold Raider"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Grizzly Hills Giant"] = {
-							["Details"] = {
-								["Kurun's Blessing"] = {
 									["count"] = 0,
 								},
 							},
@@ -36293,18 +37337,26 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Smoldering Geist"] = {
+						["Conquest Hold Raider"] = {
 							["Details"] = {
-								["Rip (DoT)"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Swipe"] = {
 									["count"] = 0,
 								},
-								["Ravage!"] = {
+							},
+							["amount"] = 0,
+						},
+						["Diseased Drakkari"] = {
+							["Details"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -36313,16 +37365,53 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Serpent Defender"] = {
+							["Details"] = {
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
 								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Shred"] = {
+								["Melee"] = {
 									["count"] = 0,
 								},
 								["Maul"] = {
 									["count"] = 0,
 								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
 								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Grizzly Hills Giant"] = {
+							["Details"] = {
+								["Kurun's Blessing"] = {
 									["count"] = 0,
 								},
 							},
@@ -36350,7 +37439,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -36359,13 +37448,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Maul"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -36377,308 +37466,7 @@ RecountPerCharDB = {
 					},
 					["WhoDispelled"] = {
 					},
-					["PartialAbsorb"] = {
-						["Fevered Disease"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Cleave"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Destructive Strike"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Voodoo Doll"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Burning Blaze"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Rune Weaving (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 4,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 4,
-							["amount"] = 0,
-						},
-						["Thunderstorm"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Heroic Strike"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Fire"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Gore"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 0,
-								},
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 0,
-						},
-						["Shadow Blast"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Talon Strike"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tail Lash"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Lightning Bolt"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Dream Lash"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Falling"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Smoldering Bones"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Backlash"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Plague Infected (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Ice Slash"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Gore (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Fireball"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Fevered Disease (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
+					["FDamage"] = 0,
 					["Heals"] = {
 						["Leader of the Pack"] = {
 							["Details"] = {
@@ -36740,17 +37528,718 @@ RecountPerCharDB = {
 					},
 					["EnergyGained"] = {
 					},
-					["CCBroken"] = {
+					["RunicPowerGained"] = {
 					},
 					["Healing"] = 516,
-					["ManaGainedFrom"] = {
-						["Dethamett"] = {
+					["DamagedWho"] = {
+						["Scourge Deathspeaker"] = {
 							["Details"] = {
-								["Leader of the Pack"] = {
-									["count"] = 417,
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
 								},
 							},
-							["amount"] = 417,
+							["amount"] = 0,
+						},
+						["Conquest Hold Marauder"] = {
+							["Details"] = {
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Plague Spreader"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Emerald Skytalon"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Moonfire"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Construct"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Guardian Serpent"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Shaman"] = {
+							["Details"] = {
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Iron Rune-Weaver"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 1724,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 2159,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 2187,
+								},
+								["Maul"] = {
+									["count"] = 675,
+								},
+								["Fury Swipes"] = {
+									["count"] = 1158,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 1183,
+								},
+							},
+							["amount"] = 9086,
+						},
+						["Drakkari Witch Doctor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Moonfire"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Graymist Hunter"] = {
+							["Details"] = {
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Skeleton"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Iron Rune Avenger"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Oracle"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Injured Drakkari Refugee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Grizzly Bear"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Burning Depths Necrolyte"] = {
+							["Details"] = {
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Scourge Corpserender"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Emerald Lasher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Wild Turkey"] = {
+							["Details"] = {
+								["Moonfire"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tallhorn Stag"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Diseased Drakkari"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Overseer Lochli"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Warrior"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Moonfire"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Moonfire (DoT)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Conquest Hold Raider"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Serpent Defender"] = {
+							["Details"] = {
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Geist"] = {
+							["Details"] = {
+								["Rip (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Ravage!"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Shred"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Infinite Chrono-Magus"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ice Serpent"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Drakkari Defender"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
 						},
 					},
 					["RageGained"] = {
@@ -36910,7 +38399,7 @@ RecountPerCharDB = {
 							["count"] = 0,
 							["amount"] = 0,
 						},
-						["Moonfire (DoT)"] = {
+						["Faerie Fire (Feral)"] = {
 							["Details"] = {
 								["Crit"] = {
 									["max"] = 0,
@@ -36918,15 +38407,15 @@ RecountPerCharDB = {
 									["count"] = 0,
 									["amount"] = 0,
 								},
-								["Tick"] = {
-									["max"] = 0,
+								["Hit"] = {
+									["max"] = 2187,
 									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
+									["count"] = 1,
+									["amount"] = 2187,
 								},
 							},
-							["count"] = 0,
-							["amount"] = 0,
+							["count"] = 1,
+							["amount"] = 2187,
 						},
 						["Maul"] = {
 							["Details"] = {
@@ -36984,7 +38473,7 @@ RecountPerCharDB = {
 							["count"] = 1,
 							["amount"] = 1158,
 						},
-						["Faerie Fire (Feral)"] = {
+						["Moonfire (DoT)"] = {
 							["Details"] = {
 								["Crit"] = {
 									["max"] = 0,
@@ -36992,15 +38481,15 @@ RecountPerCharDB = {
 									["count"] = 0,
 									["amount"] = 0,
 								},
-								["Hit"] = {
-									["max"] = 2187,
+								["Tick"] = {
+									["max"] = 0,
 									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 2187,
+									["count"] = 0,
+									["amount"] = 0,
 								},
 							},
-							["count"] = 1,
-							["amount"] = 2187,
+							["count"] = 0,
+							["amount"] = 0,
 						},
 						["Mangle"] = {
 							["Details"] = {
@@ -37131,10 +38620,10 @@ RecountPerCharDB = {
 						},
 						["Conquest Hold Marauder"] = {
 							["Details"] = {
-								["Lacerate"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -37143,13 +38632,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -37183,10 +38672,10 @@ RecountPerCharDB = {
 						},
 						["Emerald Skytalon"] = {
 							["Details"] = {
-								["Mangle"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -37195,7 +38684,7 @@ RecountPerCharDB = {
 								["Moonfire (DoT)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Faerie Fire (Feral)"] = {
@@ -37215,7 +38704,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -37224,13 +38713,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -37278,10 +38767,10 @@ RecountPerCharDB = {
 						},
 						["Iron Rune-Weaver"] = {
 							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0.43,
+								["Lacerate"] = {
+									["count"] = 1.95,
 								},
-								["Maul"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -37290,14 +38779,14 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 1.62,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
 									["count"] = 0.29,
 								},
-								["Lacerate"] = {
-									["count"] = 1.95,
+								["Mangle"] = {
+									["count"] = 0.43,
 								},
 								["Swipe"] = {
 									["count"] = 0.4,
@@ -37365,7 +38854,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -37374,7 +38863,36 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Iron Rune Avenger"] = {
+							["Details"] = {
+								["Lacerate"] = {
+									["count"] = 0,
+								},
 								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
+									["count"] = 0,
+								},
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
@@ -37384,23 +38902,6 @@ RecountPerCharDB = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Infinite Chrono-Magus"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
 							},
@@ -37449,27 +38950,27 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Scourge Corpserender"] = {
+						["Grizzly Bear"] = {
 							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
 								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Lacerate (DoT)"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
 								["Maul"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -37483,7 +38984,7 @@ RecountPerCharDB = {
 								["Fury Swipes"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -37492,13 +38993,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Lacerate"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -37507,27 +39008,27 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Grizzly Bear"] = {
+						["Scourge Corpserender"] = {
 							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
 								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Maul"] = {
 									["count"] = 0,
 								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -37541,7 +39042,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -37550,13 +39051,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -37605,18 +39106,9 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Smoldering Geist"] = {
+						["Diseased Drakkari"] = {
 							["Details"] = {
-								["Rip (DoT)"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
 								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Ravage!"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -37625,13 +39117,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
-								["Shred"] = {
+								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
-								["Maul"] = {
+								["Melee"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -37658,52 +39150,6 @@ RecountPerCharDB = {
 									["count"] = 0,
 								},
 								["Mangle"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Serpent Defender"] = {
-							["Details"] = {
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Maul"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
-									["count"] = 0,
-								},
-								["Lacerate"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Conquest Hold Raider"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 0,
-								},
-								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Swipe"] = {
 									["count"] = 0,
 								},
 							},
@@ -37741,21 +39187,12 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Diseased Drakkari"] = {
+						["Conquest Hold Raider"] = {
 							["Details"] = {
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
-									["count"] = 0,
-								},
-								["Faerie Fire (Feral)"] = {
-									["count"] = 0,
-								},
-								["Pulverize"] = {
-									["count"] = 0,
-								},
-								["Lacerate (DoT)"] = {
 									["count"] = 0,
 								},
 								["Melee"] = {
@@ -37767,15 +39204,50 @@ RecountPerCharDB = {
 							},
 							["amount"] = 0,
 						},
-						["Iron Rune Avenger"] = {
+						["Serpent Defender"] = {
 							["Details"] = {
-								["Pulverize"] = {
+								["Fury Swipes"] = {
+									["count"] = 0,
+								},
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
 									["count"] = 0,
 								},
 								["Maul"] = {
 									["count"] = 0,
 								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Lacerate (DoT)"] = {
+									["count"] = 0,
+								},
+								["Pulverize"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Smoldering Geist"] = {
+							["Details"] = {
+								["Rip (DoT)"] = {
+									["count"] = 0,
+								},
 								["Melee"] = {
+									["count"] = 0,
+								},
+								["Lacerate"] = {
+									["count"] = 0,
+								},
+								["Ravage!"] = {
+									["count"] = 0,
+								},
+								["Fury Swipes"] = {
 									["count"] = 0,
 								},
 								["Faerie Fire (Feral)"] = {
@@ -37784,13 +39256,30 @@ RecountPerCharDB = {
 								["Mangle"] = {
 									["count"] = 0,
 								},
-								["Lacerate (DoT)"] = {
+								["Shred"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Maul"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Infinite Chrono-Magus"] = {
+							["Details"] = {
+								["Mangle"] = {
+									["count"] = 0,
+								},
+								["Swipe"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
 							},
@@ -37818,7 +39307,7 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 0,
 								},
-								["Pulverize"] = {
+								["Lacerate"] = {
 									["count"] = 0,
 								},
 								["Fury Swipes"] = {
@@ -37827,13 +39316,13 @@ RecountPerCharDB = {
 								["Faerie Fire (Feral)"] = {
 									["count"] = 0,
 								},
-								["Lacerate"] = {
+								["Mangle"] = {
 									["count"] = 0,
 								},
 								["Maul"] = {
 									["count"] = 0,
 								},
-								["Mangle"] = {
+								["Pulverize"] = {
 									["count"] = 0,
 								},
 								["Swipe"] = {
@@ -37844,10 +39333,21 @@ RecountPerCharDB = {
 						},
 					},
 					["RunicPowerGain"] = 0,
-					["ElementTakenResist"] = {
-						["Fire"] = 0,
-						["Shadow"] = 100,
-						["Nature"] = 0,
+					["RageGainedFrom"] = {
+						["Dethamett"] = {
+							["Details"] = {
+								["Natural Reaction"] = {
+									["count"] = 0,
+								},
+								["Primal Fury"] = {
+									["count"] = 15,
+								},
+								["Furor"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 15,
+						},
 					},
 					["DispelledWho"] = {
 					},
@@ -37963,6 +39463,8 @@ RecountPerCharDB = {
 				"Dethamett Lacerate Iron Rune-Weaver Hit -2149 (Physical)", -- [49]
 				"Dethamett Melee Iron Rune-Weaver Hit -370 (Physical)", -- [50]
 			},
+			["Name"] = "Dethamett",
+			["LastDamageTaken"] = 121,
 			["LastEventIncoming"] = {
 				true, -- [1]
 				false, -- [2]
@@ -38015,1299 +39517,26 @@ RecountPerCharDB = {
 				false, -- [49]
 				false, -- [50]
 			},
-			["LastDamageTaken"] = 121,
-			["Name"] = "Dethamett",
 			["TimeLast"] = {
 				["Healing"] = 1322564237,
 				["TimeHeal"] = 1322564237,
-				["Interrupts"] = 1322475667,
+				["TimeDamage"] = 1322564239,
 				["HealingTaken"] = 1322564237,
-				["DeathCount"] = 1322476677,
+				["RageGain"] = 1346147824,
 				["OVERALL"] = 1349775086,
 				["DamageTaken"] = 1349775086,
-				["ActiveTime"] = 1322564239,
+				["Interrupts"] = 1322475667,
 				["Absorbs"] = 1322563944,
-				["RageGain"] = 1346147824,
-				["Overhealing"] = 1322564237,
-				["TimeDamage"] = 1322564239,
+				["DeathCount"] = 1322476677,
 				["HOT_Time"] = 1322564237,
+				["ActiveTime"] = 1322564239,
+				["Overhealing"] = 1322564237,
 				["ManaGain"] = 1322564237,
 				["DOT_Time"] = 1322564068,
 				["Damage"] = 1322564239,
 			},
 			["UnitLockout"] = 1322100469,
-			["LastAbility"] = 349.446,
-		},
-		["Superior Healing Ward <Drakkari Witch Doctor>"] = {
-			["GUID"] = "0xF13027EA008081DA",
-			["LastEventHealth"] = {
-				"???", -- [1]
-				"???", -- [2]
-				"???", -- [3]
-				"???", -- [4]
-				"???", -- [5]
-				"???", -- [6]
-				"???", -- [7]
-				"???", -- [8]
-				"???", -- [9]
-				"???", -- [10]
-				"???", -- [11]
-				"???", -- [12]
-				"???", -- [13]
-				"???", -- [14]
-				"???", -- [15]
-				"???", -- [16]
-				"???", -- [17]
-				"???", -- [18]
-				"1 (20%)", -- [19]
-				"0 (0%)", -- [20]
-			},
-			["LastEventType"] = {
-				"HEAL", -- [1]
-				"HEAL", -- [2]
-				"HEAL", -- [3]
-				"HEAL", -- [4]
-				"HEAL", -- [5]
-				"HEAL", -- [6]
-				"HEAL", -- [7]
-				"HEAL", -- [8]
-				"HEAL", -- [9]
-				"HEAL", -- [10]
-				"HEAL", -- [11]
-				"MISC", -- [12]
-				"HEAL", -- [13]
-				"HEAL", -- [14]
-				"HEAL", -- [15]
-				"HEAL", -- [16]
-				"HEAL", -- [17]
-				"HEAL", -- [18]
-				"DAMAGE", -- [19]
-				"MISC", -- [20]
-			},
-			["TimeWindows"] = {
-				["DamageTaken"] = {
-					1953, -- [1]
-				},
-				["DeathCount"] = {
-					2, -- [1]
-				},
-			},
-			["enClass"] = "PET",
-			["unit"] = "playertarget",
-			["LastAbility"] = 349.446,
-			["UnitLockout"] = 1322476899,
-			["level"] = 1,
-			["LastDamageAbility"] = "Mangle",
-			["LastFightIn"] = 170,
-			["LastEventNum"] = {
-				[19] = 39060,
-			},
-			["type"] = "Pet",
-			["FightsSaved"] = 5,
-			["LastFlags"] = 2600,
-			["Fights"] = {
-				["LastFightData"] = {
-					["DOTs"] = {
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 0,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["Damage"] = 0,
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
-					["DOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["ElementHitsDone"] = {
-					},
-					["FAttacks"] = {
-					},
-					["HealingTaken"] = 0,
-					["ElementDone"] = {
-					},
-					["DamagedWho"] = {
-					},
-					["ManaGainedFrom"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["WhoDamaged"] = {
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["CCBroken"] = {
-					},
-					["ElementDoneBlock"] = {
-					},
-					["TimeHealing"] = {
-					},
-					["OverHeals"] = {
-					},
-					["WhoHealed"] = {
-					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["PartialResist"] = {
-					},
-					["ManaGained"] = {
-					},
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["InterruptData"] = {
-					},
-					["ElementTakenResist"] = {
-					},
-					["Heals"] = {
-					},
-					["ActiveTime"] = 0,
-					["EnergyGained"] = {
-					},
-					["EnergyGain"] = 0,
-					["Healing"] = 0,
-					["Dispelled"] = 0,
-					["RageGained"] = {
-					},
-					["Attacks"] = {
-					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
-					},
-					["TimeDamage"] = 0,
-					["TimeDamaging"] = {
-					},
-					["ManaGain"] = 0,
-					["HOTs"] = {
-					},
-					["DispelledWho"] = {
-					},
-				},
-				["CurrentFightData"] = {
-					["DOTs"] = {
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 0,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["Damage"] = 0,
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
-					["DOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["ElementHitsDone"] = {
-					},
-					["FAttacks"] = {
-					},
-					["HealingTaken"] = 0,
-					["ElementDone"] = {
-					},
-					["DamagedWho"] = {
-					},
-					["ManaGainedFrom"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["WhoDamaged"] = {
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["CCBroken"] = {
-					},
-					["ElementDoneBlock"] = {
-					},
-					["TimeHealing"] = {
-					},
-					["OverHeals"] = {
-					},
-					["WhoHealed"] = {
-					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["PartialResist"] = {
-					},
-					["ManaGained"] = {
-					},
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["InterruptData"] = {
-					},
-					["ElementTakenResist"] = {
-					},
-					["Heals"] = {
-					},
-					["ActiveTime"] = 0,
-					["EnergyGained"] = {
-					},
-					["EnergyGain"] = 0,
-					["Healing"] = 0,
-					["Dispelled"] = 0,
-					["RageGained"] = {
-					},
-					["Attacks"] = {
-					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
-					},
-					["TimeDamage"] = 0,
-					["TimeDamaging"] = {
-					},
-					["ManaGain"] = 0,
-					["HOTs"] = {
-					},
-					["DispelledWho"] = {
-					},
-				},
-				["OverallData"] = {
-					["PartialResist"] = {
-						["Mangle"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 0,
-						},
-					},
-					["DeathCount"] = 2,
-					["PartialAbsorb"] = {
-						["Mangle"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 0,
-						},
-					},
-					["WhoDamaged"] = {
-						["Dethamett"] = {
-							["Details"] = {
-								["Mangle"] = {
-									["count"] = 1953,
-								},
-							},
-							["amount"] = 1953,
-						},
-					},
-					["ElementTaken"] = {
-						["Physical"] = 1953,
-					},
-					["DamageTaken"] = 1953,
-					["ElementHitsTaken"] = {
-						["Physical"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 1,
-								},
-							},
-							["amount"] = 1,
-						},
-					},
-				},
-			},
-			["Owner"] = "Drakkari Witch Doctor",
-			["LastDamageTaken"] = 1953,
-			["NextEventNum"] = 21,
-			["LastEventHealthNum"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-				0, -- [5]
-				0, -- [6]
-				0, -- [7]
-				0, -- [8]
-				0, -- [9]
-				0, -- [10]
-				0, -- [11]
-				0, -- [12]
-				0, -- [13]
-				0, -- [14]
-				0, -- [15]
-				0, -- [16]
-				0, -- [17]
-				0, -- [18]
-				20, -- [19]
-				0, -- [20]
-			},
-			["LastEvents"] = {
-				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Defender Hit +108", -- [1]
-				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Witch Doctor Hit +108", -- [2]
-				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +108", -- [3]
-				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +108", -- [4]
-				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Defender Hit +108", -- [5]
-				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Witch Doctor Hit +108", -- [6]
-				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +108", -- [7]
-				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +108", -- [8]
-				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Defender Hit +108 (108 overheal)", -- [9]
-				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +107 (107 overheal)", -- [10]
-				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +108 (108 overheal)", -- [11]
-				"Superior Healing Ward <Drakkari Witch Doctor> dies.", -- [12]
-				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Witch Doctor Hit +108", -- [13]
-				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +107", -- [14]
-				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Witch Doctor Hit +108", -- [15]
-				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +107", -- [16]
-				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Witch Doctor Hit +108", -- [17]
-				"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +108", -- [18]
-				"Dethamett Mangle Superior Healing Ward <Drakkari Witch Doctor> Hit -1953 (Physical)", -- [19]
-				"Superior Healing Ward <Drakkari Witch Doctor> dies.", -- [20]
-			},
-			["Name"] = "Superior Healing Ward",
-			["LastEventIncoming"] = {
-				false, -- [1]
-				false, -- [2]
-				false, -- [3]
-				false, -- [4]
-				false, -- [5]
-				false, -- [6]
-				false, -- [7]
-				false, -- [8]
-				false, -- [9]
-				false, -- [10]
-				false, -- [11]
-				true, -- [12]
-				false, -- [13]
-				false, -- [14]
-				false, -- [15]
-				false, -- [16]
-				false, -- [17]
-				false, -- [18]
-				true, -- [19]
-				true, -- [20]
-			},
-			["TimeLast"] = {
-				["DeathCount"] = 1322476899,
-				["DamageTaken"] = 1322476899,
-				["OVERALL"] = 1322476899,
-			},
-			["DeathLogs"] = {
-				{
-					["MessageIncoming"] = {
-						false, -- [1]
-						false, -- [2]
-						false, -- [3]
-						false, -- [4]
-						false, -- [5]
-						false, -- [6]
-						true, -- [7]
-						true, -- [8]
-					},
-					["Messages"] = {
-						"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Witch Doctor Hit +108", -- [1]
-						"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +107", -- [2]
-						"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Witch Doctor Hit +108", -- [3]
-						"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +107", -- [4]
-						"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Drakkari Witch Doctor Hit +108", -- [5]
-						"Superior Healing Ward <Drakkari Witch Doctor> Healing Aura Injured Drakkari Refugee Hit +108", -- [6]
-						"Dethamett Mangle Superior Healing Ward <Drakkari Witch Doctor> Hit -1953 (Physical)", -- [7]
-						"Superior Healing Ward <Drakkari Witch Doctor> dies.", -- [8]
-					},
-					["DeathAt"] = 1322476901,
-					["HealthNum"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-						0, -- [5]
-						0, -- [6]
-						20, -- [7]
-						0, -- [8]
-					},
-					["MessageTimes"] = {
-						-8.33199999993667, -- [1]
-						-8.33199999993667, -- [2]
-						-5.33600000012666, -- [3]
-						-5.334999999962747, -- [4]
-						-2.509000000078231, -- [5]
-						-2.253999999957159, -- [6]
-						-0.006000000052154064, -- [7]
-						0, -- [8]
-					},
-					["KilledBy"] = "Dethamett",
-					["Health"] = {
-						"???", -- [1]
-						"???", -- [2]
-						"???", -- [3]
-						"???", -- [4]
-						"???", -- [5]
-						"???", -- [6]
-						"1 (20%)", -- [7]
-						"0 (0%)", -- [8]
-					},
-					["EventNum"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0, -- [4]
-						0, -- [5]
-						0, -- [6]
-						39060, -- [7]
-						0, -- [8]
-					},
-					["MessageType"] = {
-						"HEAL", -- [1]
-						"HEAL", -- [2]
-						"HEAL", -- [3]
-						"HEAL", -- [4]
-						"HEAL", -- [5]
-						"HEAL", -- [6]
-						"DAMAGE", -- [7]
-						"MISC", -- [8]
-					},
-				}, -- [1]
-				{
-					["MessageTimes"] = {
-						0, -- [1]
-					},
-					["MessageIncoming"] = {
-						true, -- [1]
-					},
-					["Messages"] = {
-						"Superior Healing Ward <Drakkari Witch Doctor> dies.", -- [1]
-					},
-					["HealthNum"] = {
-						0, -- [1]
-					},
-					["DeathAt"] = 1322476711,
-					["EventNum"] = {
-						0, -- [1]
-					},
-					["Health"] = {
-						"???", -- [1]
-					},
-					["MessageType"] = {
-						"MISC", -- [1]
-					},
-				}, -- [2]
-			},
-			["LastEventTimes"] = {
-				1639703.462, -- [1]
-				1639703.735, -- [2]
-				1639703.735, -- [3]
-				1639703.735, -- [4]
-				1639706.349, -- [5]
-				1639706.778, -- [6]
-				1639706.778, -- [7]
-				1639706.778, -- [8]
-				1639709.427, -- [9]
-				1639709.994, -- [10]
-				1639709.994, -- [11]
-				1639738.686, -- [12]
-				1639920.285, -- [13]
-				1639920.285, -- [14]
-				1639923.281, -- [15]
-				1639923.282, -- [16]
-				1639926.108, -- [17]
-				1639926.363, -- [18]
-				1639928.611, -- [19]
-				1639928.617, -- [20]
-			},
-			["LastActive"] = 1322476899,
-		},
-		["Featherwitch-Shadow Council"] = {
-			["GUID"] = "0x0100000004403FDD",
-			["LastEventHealth"] = {
-				"13914 (100%)", -- [1]
-				"13914 (100%)", -- [2]
-				"13914 (100%)", -- [3]
-				"13914 (100%)", -- [4]
-			},
-			["LastEventType"] = {
-				"HEAL", -- [1]
-				"HEAL", -- [2]
-				"HEAL", -- [3]
-				"HEAL", -- [4]
-			},
-			["enClass"] = "MAGE",
-			["unit"] = "Featherwitch",
-			["level"] = 75,
-			["LastFightIn"] = 0,
-			["LastEventNum"] = {
-				6.928273681184419, -- [1]
-				6.928273681184419, -- [2]
-				6.928273681184419, -- [3]
-				6.928273681184419, -- [4]
-			},
-			["type"] = "Ungrouped",
-			["FightsSaved"] = 5,
-			["Owner"] = false,
-			["LastActive"] = 1322100482,
-			["NextEventNum"] = 5,
-			["LastEventHealthNum"] = {
-				100, -- [1]
-				100, -- [2]
-				100, -- [3]
-				100, -- [4]
-			},
-			["LastEvents"] = {
-				"Helpmeout-Dath'Remar Renew Featherwitch-Shadow Council Tick +964 (55 overheal)", -- [1]
-				"Helpmeout-Dath'Remar Renew Featherwitch-Shadow Council Tick +964 (964 overheal)", -- [2]
-				"Helpmeout-Dath'Remar Renew Featherwitch-Shadow Council Tick +964 (964 overheal)", -- [3]
-				"Helpmeout-Dath'Remar Renew Featherwitch-Shadow Council Tick +964 (964 overheal)", -- [4]
-			},
-			["Name"] = "Featherwitch-Shadow Council",
-			["LastEventTimes"] = {
-				1263503.032, -- [1]
-				1263505.993, -- [2]
-				1263508.969, -- [3]
-				1263511.918, -- [4]
-			},
-			["Fights"] = {
-				["CurrentFightData"] = {
-					["DOTs"] = {
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 0,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["Damage"] = 0,
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
-					["DOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["ElementHitsDone"] = {
-					},
-					["FAttacks"] = {
-					},
-					["HealingTaken"] = 0,
-					["ElementDone"] = {
-					},
-					["DamagedWho"] = {
-					},
-					["ManaGainedFrom"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["WhoDamaged"] = {
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["CCBroken"] = {
-					},
-					["ElementDoneBlock"] = {
-					},
-					["TimeHealing"] = {
-					},
-					["OverHeals"] = {
-					},
-					["WhoHealed"] = {
-					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["PartialResist"] = {
-					},
-					["ManaGained"] = {
-					},
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["InterruptData"] = {
-					},
-					["ElementTakenResist"] = {
-					},
-					["Heals"] = {
-					},
-					["ActiveTime"] = 0,
-					["EnergyGained"] = {
-					},
-					["EnergyGain"] = 0,
-					["Healing"] = 0,
-					["Dispelled"] = 0,
-					["RageGained"] = {
-					},
-					["Attacks"] = {
-					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
-					},
-					["TimeDamage"] = 0,
-					["TimeDamaging"] = {
-					},
-					["ManaGain"] = 0,
-					["HOTs"] = {
-					},
-					["DispelledWho"] = {
-					},
-				},
-				["LastFightData"] = {
-					["DOTs"] = {
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 0,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["Damage"] = 0,
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
-					["DOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["ElementHitsDone"] = {
-					},
-					["FAttacks"] = {
-					},
-					["HealingTaken"] = 0,
-					["ElementDone"] = {
-					},
-					["DamagedWho"] = {
-					},
-					["ManaGainedFrom"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["WhoDamaged"] = {
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["CCBroken"] = {
-					},
-					["ElementDoneBlock"] = {
-					},
-					["TimeHealing"] = {
-					},
-					["OverHeals"] = {
-					},
-					["WhoHealed"] = {
-					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["PartialResist"] = {
-					},
-					["ManaGained"] = {
-					},
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["InterruptData"] = {
-					},
-					["ElementTakenResist"] = {
-					},
-					["Heals"] = {
-					},
-					["ActiveTime"] = 0,
-					["EnergyGained"] = {
-					},
-					["EnergyGain"] = 0,
-					["Healing"] = 0,
-					["Dispelled"] = 0,
-					["RageGained"] = {
-					},
-					["Attacks"] = {
-					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
-					},
-					["TimeDamage"] = 0,
-					["TimeDamaging"] = {
-					},
-					["ManaGain"] = 0,
-					["HOTs"] = {
-					},
-					["DispelledWho"] = {
-					},
-				},
-			},
-			["LastEventIncoming"] = {
-				true, -- [1]
-				true, -- [2]
-				true, -- [3]
-				true, -- [4]
-			},
-			["UnitLockout"] = 1322100479,
-			["LastAbility"] = 349.446,
-		},
-		["Stiven-Tichondrius"] = {
-			["GUID"] = "0x0300000006A7ECBD",
-			["LastEventHealth"] = {
-				"12834 (100%)", -- [1]
-				"12834 (100%)", -- [2]
-				"12834 (100%)", -- [3]
-				"12834 (100%)", -- [4]
-			},
-			["LastEventType"] = {
-				"HEAL", -- [1]
-				"HEAL", -- [2]
-				"HEAL", -- [3]
-				"HEAL", -- [4]
-			},
-			["enClass"] = "PALADIN",
-			["unit"] = "Stiven",
-			["level"] = 72,
-			["LastFightIn"] = 0,
-			["LastEventNum"] = {
-				7.503506311360449, -- [1]
-				7.503506311360449, -- [2]
-				7.503506311360449, -- [3]
-				7.511298114383669, -- [4]
-			},
-			["type"] = "Ungrouped",
-			["FightsSaved"] = 5,
-			["Owner"] = false,
-			["LastActive"] = 1322100496,
-			["NextEventNum"] = 5,
-			["LastEventHealthNum"] = {
-				100, -- [1]
-				100, -- [2]
-				100, -- [3]
-				100, -- [4]
-			},
-			["LastEvents"] = {
-				"Helpmeout-Dath'Remar Renew Stiven-Tichondrius Tick +963 (215 overheal)", -- [1]
-				"Helpmeout-Dath'Remar Renew Stiven-Tichondrius Tick +963 (963 overheal)", -- [2]
-				"Helpmeout-Dath'Remar Renew Stiven-Tichondrius Tick +963 (963 overheal)", -- [3]
-				"Helpmeout-Dath'Remar Renew Stiven-Tichondrius Tick +964 (964 overheal)", -- [4]
-			},
-			["Name"] = "Stiven-Tichondrius",
-			["LastEventTimes"] = {
-				1263516.456, -- [1]
-				1263519.408, -- [2]
-				1263522.399, -- [3]
-				1263525.361, -- [4]
-			},
-			["Fights"] = {
-				["CurrentFightData"] = {
-					["DOTs"] = {
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 0,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["Damage"] = 0,
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
-					["DOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["ElementHitsDone"] = {
-					},
-					["FAttacks"] = {
-					},
-					["HealingTaken"] = 0,
-					["ElementDone"] = {
-					},
-					["DamagedWho"] = {
-					},
-					["ManaGainedFrom"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["WhoDamaged"] = {
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["CCBroken"] = {
-					},
-					["ElementDoneBlock"] = {
-					},
-					["TimeHealing"] = {
-					},
-					["OverHeals"] = {
-					},
-					["WhoHealed"] = {
-					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["PartialResist"] = {
-					},
-					["ManaGained"] = {
-					},
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["InterruptData"] = {
-					},
-					["ElementTakenResist"] = {
-					},
-					["Heals"] = {
-					},
-					["ActiveTime"] = 0,
-					["EnergyGained"] = {
-					},
-					["EnergyGain"] = 0,
-					["Healing"] = 0,
-					["Dispelled"] = 0,
-					["RageGained"] = {
-					},
-					["Attacks"] = {
-					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
-					},
-					["TimeDamage"] = 0,
-					["TimeDamaging"] = {
-					},
-					["ManaGain"] = 0,
-					["HOTs"] = {
-					},
-					["DispelledWho"] = {
-					},
-				},
-				["LastFightData"] = {
-					["DOTs"] = {
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 0,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["Damage"] = 0,
-					["RunicPowerGain"] = 0,
-					["ElementTaken"] = {
-					},
-					["DOT_Time"] = 0,
-					["ElementTakenBlock"] = {
-					},
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["ElementHitsDone"] = {
-					},
-					["FAttacks"] = {
-					},
-					["HealingTaken"] = 0,
-					["ElementDone"] = {
-					},
-					["DamagedWho"] = {
-					},
-					["ManaGainedFrom"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["WhoDamaged"] = {
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["CCBroken"] = {
-					},
-					["ElementDoneBlock"] = {
-					},
-					["TimeHealing"] = {
-					},
-					["OverHeals"] = {
-					},
-					["WhoHealed"] = {
-					},
-					["HealedWho"] = {
-					},
-					["CCBreak"] = 0,
-					["ElementTakenAbsorb"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["PartialResist"] = {
-					},
-					["ManaGained"] = {
-					},
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["Overhealing"] = 0,
-					["TimeSpent"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["InterruptData"] = {
-					},
-					["ElementTakenResist"] = {
-					},
-					["Heals"] = {
-					},
-					["ActiveTime"] = 0,
-					["EnergyGained"] = {
-					},
-					["EnergyGain"] = 0,
-					["Healing"] = 0,
-					["Dispelled"] = 0,
-					["RageGained"] = {
-					},
-					["Attacks"] = {
-					},
-					["RageGain"] = 0,
-					["FDamagedWho"] = {
-					},
-					["TimeDamage"] = 0,
-					["TimeDamaging"] = {
-					},
-					["ManaGain"] = 0,
-					["HOTs"] = {
-					},
-					["DispelledWho"] = {
-					},
-				},
-			},
-			["LastEventIncoming"] = {
-				true, -- [1]
-				true, -- [2]
-				true, -- [3]
-				true, -- [4]
-			},
-			["UnitLockout"] = 1322100493,
-			["LastAbility"] = 349.446,
-		},
-		["Koryo"] = {
-			["GUID"] = "0x0380000005817E3A",
-			["type"] = "Ungrouped",
-			["GuardianReverseGUIDs"] = {
-				["Father Winter's Helper"] = {
-					["LatestGuardian"] = 0,
-					["GUIDs"] = {
-						[0] = "0xF1303D52000CBCA8",
-					},
-				},
-			},
-			["Owner"] = false,
-			["enClass"] = "UNGROUPED",
-			["Name"] = "Koryo",
-			["Pet"] = {
-				"Father Winter's Helper <Koryo>", -- [1]
-			},
-			["Fights"] = {
-			},
-			["level"] = 1,
-			["UnitLockout"] = 1357728113,
-			["LastFightIn"] = 211,
-		},
-		["Earthbind Totem <Gold Shaman>"] = {
-			["GUID"] = "0xF1300A460052D697",
-			["LastEventHealth"] = {
-				"???", -- [1]
-				"???", -- [2]
-			},
-			["LastAttackedBy"] = "Green Mage",
-			["LastEventType"] = {
-				"DAMAGE", -- [1]
-				"MISC", -- [2]
-			},
-			["TimeWindows"] = {
-				["DamageTaken"] = {
-					238, -- [1]
-				},
-				["DeathCount"] = {
-					1, -- [1]
-				},
-			},
-			["enClass"] = "PET",
-			["LastDamageTaken"] = 238,
-			["level"] = 1,
-			["LastDamageAbility"] = "Ice Lance",
-			["LastFightIn"] = 211,
-			["type"] = "Pet",
-			["LastActive"] = 1343443056,
-			["Owner"] = "Gold Shaman",
-			["LastEventTimes"] = {
-				1441557.914, -- [1]
-				1441557.914, -- [2]
-			},
-			["NextEventNum"] = 3,
-			["LastEventHealthNum"] = {
-				0, -- [1]
-				0, -- [2]
-			},
-			["LastEvents"] = {
-				"Green Mage Ice Lance Earthbind Totem <Gold Shaman> Hit -238 (Frost)", -- [1]
-				"Earthbind Totem <Gold Shaman> dies.", -- [2]
-			},
-			["Name"] = "Earthbind Totem",
-			["LastEventIncoming"] = {
-				true, -- [1]
-				true, -- [2]
-			},
-			["Fights"] = {
-				["CurrentFightData"] = {
-					["PartialResist"] = {
-						["Ice Lance"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["DeathCount"] = 0,
-					["PartialAbsorb"] = {
-						["Ice Lance"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["WhoDamaged"] = {
-						["Green Mage"] = {
-							["Details"] = {
-								["Ice Lance"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["ElementTaken"] = {
-						["Frost"] = 0,
-					},
-					["DamageTaken"] = 0,
-					["ElementHitsTaken"] = {
-						["Frost"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-				},
-				["OverallData"] = {
-					["PartialResist"] = {
-						["Ice Lance"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 0,
-						},
-					},
-					["DeathCount"] = 1,
-					["PartialAbsorb"] = {
-						["Ice Lance"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 0,
-						},
-					},
-					["WhoDamaged"] = {
-						["Green Mage"] = {
-							["Details"] = {
-								["Ice Lance"] = {
-									["count"] = 238,
-								},
-							},
-							["amount"] = 238,
-						},
-					},
-					["ElementTaken"] = {
-						["Frost"] = 238,
-					},
-					["DamageTaken"] = 238,
-					["ElementHitsTaken"] = {
-						["Frost"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 1,
-								},
-							},
-							["amount"] = 1,
-						},
-					},
-				},
-			},
-			["TimeLast"] = {
-				["OVERALL"] = 1343443056,
-				["DamageTaken"] = 1343443056,
-				["DeathCount"] = 1343443056,
-			},
-			["UnitLockout"] = 1343443056,
-			["LastAbility"] = 349.446,
-		},
-		["Gold Shaman"] = {
-			["GUID"] = "0xF1307E540052D468",
-			["type"] = "Nontrivial",
-			["GuardianReverseGUIDs"] = {
-				["Earthbind Totem"] = {
-					["LatestGuardian"] = 0,
-					["GUIDs"] = {
-						[0] = "0xF1300A460052D697",
-					},
-				},
-			},
-			["Owner"] = false,
-			["enClass"] = "MOB",
-			["LastFightIn"] = 211,
-			["Name"] = "Gold Shaman",
-			["Fights"] = {
-			},
-			["Pet"] = {
-				"Earthbind Totem <Gold Shaman>", -- [1]
-			},
-			["level"] = 1,
-			["UnitLockout"] = 1343443053,
-			["LastAbility"] = 349.446,
+			["LastAbility"] = 245693.359,
 		},
 	},
 	["FightNum"] = 211,

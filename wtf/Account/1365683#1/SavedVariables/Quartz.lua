@@ -32,6 +32,7 @@ Quartz3DB = {
 		["Procs"] = {
 			["profiles"] = {
 				["Default"] = {
+					["fixCustomProcCaps"] = false,
 					["spells"] = {
 						["heroism"] = {
 							["sound"] = "None",
@@ -40,7 +41,6 @@ Quartz3DB = {
 							["sound"] = "None",
 						},
 					},
-					["fixCustomProcCaps"] = false,
 				},
 			},
 		},
