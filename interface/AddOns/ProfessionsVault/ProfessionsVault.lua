@@ -10,7 +10,7 @@ local PVLDB
 local minimapIcon = LibStub("LibDBIcon-1.0")
 vars.svnrev = vars.svnrev or {}
 local svnrev = vars.svnrev
-svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 424 $"):match("%d+"))
+svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 428 $"):match("%d+"))
 local DB_VERSION_MAJOR = 1
 local DB_VERSION_MINOR = 4
 local _G = _G
@@ -187,7 +187,7 @@ local primaryProf = {  -- 0 == no tradeskill, 1 == broken
 		    28675, -- Potion Master
 		    28672, -- Transmutation Master
 		 },
-	[PID_BS] = {vs(87,99,99,101,102,116,116), -- Blacksmithing
+	[PID_BS] = {vs(87,99,99,101,102,116,130), -- Blacksmithing
 	            9787, -- Weaponsmith
 		    9788, -- Armorsmith
 	         },
@@ -197,13 +197,13 @@ local primaryProf = {  -- 0 == no tradeskill, 1 == broken
 		    20222, -- Goblin Engineer
 	         },
 	[PID_INSC] = vs(73,79,80,80,80,96,96), -- Inscription 
-	[PID_JC] = vs(84,100,101,102,113,145,146), -- Jewelcrafting 
-	[PID_LW] = {vs(89,102,102,105,106,119,119), -- Leatherworking
+	[PID_JC] = vs(84,100,101,102,113,145,147), -- Jewelcrafting 
+	[PID_LW] = {vs(89,102,102,105,106,119,133), -- Leatherworking
                     10656, -- Dragonscale Leatherworking
                     10660, -- Tribal Leatherworking
                     10658, -- Elemental Leatherworking
 	         },
-	[PID_TAIL] = {vs(73,83,83,84,85,93,93), -- Tailoring
+	[PID_TAIL] = {vs(73,83,83,84,85,93,99), -- Tailoring
 	            26797, -- Spellfire Tailoring
 		    26798, -- Mooncloth Tailoring
 		    26801, -- Shadoweave Tailoring
@@ -2866,6 +2866,10 @@ function addon:CleanDatabase() -- remove links that are dead due to a patch
 	  (oldclientbuild < 16309 and clientbuild >= 16309 and 
               (pname == GetSpellInfo(PID_TAIL)) ) or
 
+	  -- 5.2.0: 5 alchemy bit moves
+	  (oldclientbuild < 16656 and clientbuild >= 16656 and 
+              (pname == GetSpellInfo(PID_ALCH)) ) or
+
 	  (pname == GetSpellInfo(PID_SMELT)) -- smelting db permanently deprecated
 
 	  then
@@ -3600,10 +3604,17 @@ function addon:ScanJC()
     if skillname and skilltype ~= "header" and GetTradeSkillNumReagents(idx) == 1 then
       local link = GetTradeSkillRecipeLink(idx)
       local reagentlink = GetTradeSkillReagentItemLink(idx, 1)
+      if not reagentlink then -- GetTradeSkillReagentItemLink() broken in 5.2 PTR
+        addon.scantt:ClearLines()
+        addon.scantt:SetOwner(UIParent, "ANCHOR_NONE");
+        addon.scantt:SetTradeSkillItem(idx, 1)
+        reagentlink = select(2,addon.scantt:GetItem())
+      end
       if reagentlink then
         local itemid = string.match(reagentlink, "\124Hitem:(%d+):")
         --local itemname = string.match(reagentlink, "\124h%[(.+)%]\124h")
         local itemname,_,_,_,_, class, subclass = GetItemInfo(itemid)
+        -- print(link, reagentlink, itemid, itemname)
         if itemid and itemname and class == gemClass then
           jcdb[string.lower(itemname)] = tonumber(itemid)
         end

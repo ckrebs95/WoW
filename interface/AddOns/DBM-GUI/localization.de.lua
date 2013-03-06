@@ -28,7 +28,6 @@ L.Button_OK 				= 'OK'
 L.Button_Cancel 			= 'Abbrechen'
 L.Button_LoadMod 			= 'Lade Boss Mod'
 L.Mod_Enabled				= "Aktiviere Boss Mod"
-L.Mod_EnableAnnounce		= "Zum Schlachtzug ansagen (benötigt Leitung)"
 L.Reset 					= "Zurücksetzen"
 
 L.Enable  					= "Aktiviere"
@@ -96,6 +95,7 @@ L.RaidWarnSound				= "Spiele Sound bei Schlachtzugwarnung"
 L.CountdownVoice			= "Setze Stimme für Countdown- und Countout-Sounds"
 L.SpecialWarnSound			= "Sound für Spezialwarnungen, die dich oder deine Rolle betreffen"
 L.SpecialWarnSound2			= "Sound für Spezialwarnungen, die jeden betreffen"
+L.SpecialWarnSound3			= "Sound für SEHR wichtige Spezialwarnungen (tödlich für dich/Schlachtzug)"
 
 -- Tab: Generalwarnings
 L.Tab_GeneralMessages 		= "Allgemeine Meldungen"
@@ -158,18 +158,23 @@ L.BarWidth					= "Balkenbreite: %d"
 L.Panel_SpamFilter				= "Filter / Spam-Filter"
 L.Area_SpamFilter				= "Spam-Filter"
 L.HideBossEmoteFrame			= "Verberge das Schlachtzugsboss-Emote-Fenster ('RaidBossEmoteFrame')"
-L.SpamBlockRaidWarning			= "Ansagen von anderen Boss Mods filtern" 
 L.SpamBlockBossWhispers			= "Aktiviere Filter für <DBM>-Flüstermitteilungen im Kampf"
 L.BlockVersionUpdateNotice		= "Zeige Update-Meldung im Chat statt als Popup"
 L.ShowBigBrotherOnCombatStart	= "Führe Big-Brother-Buffprüfung bei Kampfbeginn durch"
 L.BigBrotherAnnounceToRaid		= "Verkünde Ergebnis der Big-Brother-Buffprüfung zum Schlachtzug"
+L.SpamBlockSayYell				= "Sprechblasen-Ansagen im Chat Frame ausblenden"
 
 L.Area_SpamFilter_Outgoing		= "globale Filtereinstellungen"
 L.SpamBlockNoShowAnnounce		= "Zeige keine Mitteilungen und spiele keine Warnungssounds"
-L.SpamBlockNoSendAnnounce		= "Sende keine Mitteilungen an den Schlachtzugchat"
 L.SpamBlockNoSendWhisper		= "Sende keine Flüstermitteilungen an andere Spieler"
 L.SpamBlockNoSetIcon			= "Setze keine Zeichen auf Ziele"
+L.SpamBlockNoRangeFrame			= "Zeige kein Abstandsfenster/-radar an"
+L.SpamBlockNoInfoFrame			= "Zeige kein Infofenster an"
 
+L.Area_PullTimer				= "Filtereinstellungen für Pull-Timer"
+L.DontShowPT					= "Zeige keinen Balken für Pull-Timer"
+L.DontShowPTCountdownText		= "Zeige keinen Countdown-Text für Pull-Timer"
+L.DontPlayPTCountdown			= "Spiele keinen Countdown-Sound für Pull-Timer"
 
 -- Misc
 L.FontHeight	= 16

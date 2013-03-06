@@ -22,6 +22,8 @@ RecountDB = {
 				},
 			},
 			["MainWindowMode"] = 2,
+			["LastInstanceName"] = "Azjol-Nerub",
+			["CurDataSet"] = "OverallData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -35,8 +37,6 @@ RecountDB = {
 			["DetailWindowY"] = 0,
 			["DetailWindowX"] = 0,
 			["GraphWindowX"] = 0,
-			["LastInstanceName"] = "Azjol-Nerub",
-			["CurDataSet"] = "OverallData",
 			["MainWindowWidth"] = 268.0000646710386,
 			["MainWindowHeight"] = 113.9999372661123,
 		},
@@ -52,7 +52,7 @@ RecountDB = {
 			},
 			["MainWindowMode"] = 2,
 			["LastInstanceName"] = "Theramore's Fall",
-			["CurDataSet"] = "CurrentFightData",
+			["CurDataSet"] = "LastFightData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -64,10 +64,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = -409.9998474121094,
-			["MainWindowHeight"] = 158.999907985331,
+			["DetailWindowX"] = 619.0000610351563,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 294.0000299513335,
-			["DetailWindowX"] = 619.0000610351563,
+			["MainWindowHeight"] = 158.999907985331,
 		},
 		["Deyndis - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -130,8 +130,6 @@ RecountDB = {
 				},
 			},
 			["MainWindowMode"] = 2,
-			["LastInstanceName"] = "Shado-Pan Monastery",
-			["CurDataSet"] = "CurrentFightData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -143,10 +141,12 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["MainWindowHeight"] = 102.000015646219,
-			["GraphWindowX"] = 0,
-			["MainWindowWidth"] = 283.0000263005491,
 			["DetailWindowX"] = 0,
+			["GraphWindowX"] = 0,
+			["LastInstanceName"] = "Temple of the Jade Serpent",
+			["CurDataSet"] = "LastFightData",
+			["MainWindowWidth"] = 283.0000263005491,
+			["MainWindowHeight"] = 102.000015646219,
 		},
 		["Doyjen - Khaz Modan"] = {
 			["GraphWindowY"] = 0,

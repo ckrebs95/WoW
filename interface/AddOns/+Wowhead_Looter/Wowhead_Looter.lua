@@ -3,8 +3,8 @@
 --     W o w h e a d   L o o t e r     --
 --                                     --
 --                                     --
---    Patch: 5.1.0                     --
---    Updated: December 12, 2012       --
+--    Patch: 5.2.0                     --
+--    Updated: March 5, 2013       	   --
 --    E-mail: feedback@wowhead.com     --
 --                                     --
 -----------------------------------------
@@ -12,7 +12,7 @@
 
 local WL_NAME = "|cffffff7fWowhead Looter|r";
 local WL_VERSION = 50007;
-local WL_VERSION_PATCH = 0;
+local WL_VERSION_PATCH = 1;
 
 
 -- SavedVariables
@@ -2155,7 +2155,7 @@ function wlEvent_CURRENCY_DISPLAY_UPDATE(...)
 					SetMapToCurrentZone();
 					local areaId = GetCurrentMapAreaID();
 					SetMapByID(oldAreaId);
-					local diff = GetInstanceDifficulty();
+					local diff = (wlSelectOne(3, GetInstanceInfo()) + 1);
 					local dungeonGroupId = 0;
 					if WL_AREAID_TO_DUNGEONID[diff] then
 						dungeonGroupId = WL_AREAID_TO_DUNGEONID[diff][areaId] or 0;

@@ -4,130 +4,13 @@ SwatterData = {
 	["autoshow"] = true,
 	["errors"] = {
 		{
-			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapFrame:SetAttribute()) during combat lockdown.",
-			["count"] = 30,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.4\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucScanData, v5.14.5335 (KowariOnCrutches)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.5\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.05.03\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DBMWorldEvents, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.1.0\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=875)\n",
-			["timestamp"] = "2012-10-19 05:54:45",
+			["message"] = "Note: AddOn Carbonite attempted to call a protected function (<unnamed>:?()) during combat lockdown.",
+			["count"] = 1000,
+			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.4\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.5\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.05.04\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.1.0\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=834)\n",
+			["timestamp"] = "2012-10-24 20:41:10",
 			["context"] = "AddOn: Carbonite",
-			["stack"] = "[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:69: in function <Interface\\FrameXML\\UIParent.lua:63>\nInterface\\FrameXML\\UIParent.lua:2171: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3450: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3397: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
+			["stack"] = "[C]: in function `?'\nInterface\\AddOns\\Carbonite\\NxMap.lua:5207: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4104: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4028>\n",
 		}, -- [1]
-		{
-			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapFrame:Show()) during combat lockdown.",
-			["count"] = 5,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.4\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucScanData, v5.14.5335 (KowariOnCrutches)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.5\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.05.03\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DBMWorldEvents, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.1.0\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=875)\n",
-			["timestamp"] = "2012-10-19 05:54:45",
-			["context"] = "AddOn: Carbonite",
-			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:2172: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3450: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3397: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [2]
-		{
-			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
-			["count"] = 1,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.4\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucScanData, v5.14.5335 (KowariOnCrutches)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.5\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.05.03\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DBMWorldEvents, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.1.0\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=875)\n",
-			["timestamp"] = "2012-10-19 05:57:19",
-			["context"] = "AddOn: Informant",
-			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3450: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3397: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [3]
-		{
-			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
-			["count"] = 1,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.4\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucScanData, v5.14.5335 (KowariOnCrutches)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.5\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.05.03\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DBMPandaria, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.1.0\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=872)\n",
-			["timestamp"] = "2012-10-19 22:17:46",
-			["context"] = "AddOn: Carbonite",
-			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3450: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3397: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [4]
-		{
-			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:4286: attempt to index local 'winfo' (a nil value)",
-			["count"] = 1,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.4\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucScanData, v5.14.5335 (KowariOnCrutches)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.5\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.05.03\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DBMPandaria, v\n  DBMPartyMoP, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.1.0\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=883)\n",
-			["locals"] = "self = <table> {\n InstMapWX2 = 1839.5140390625\n MiniBlks = 6\n IconScale = 1\n MMZoomType = 4\n GIconMenuITogInst = <table> {\n }\n TargetNextUniqueId = 1\n MMScalesC = <table> {\n }\n GOpts = <table> {\n }\n LOpts = <table> {\n }\n TextFStrs = <table> {\n }\n PlyrLastDir = 98.880119501985\n Scrolling = false\n Menu = <table> {\n }\n EffScale = 0.63999998569489\n Zone = 10\n WorldAlpha = 0\n StartupShown = 1\n ScaleDraw = 4\n BackgndAlphaFade = 0.4\n MoveLastX = 2371.5595169799\n PlyrDir = 98.880119501985\n PlyrSpeedCalcTime = 762905.427\n MapPosYDraw = 3890.4646471402\n PlyrSpeed = 13.205001701907\n MapScale = 0.39920159680639\n CurMapBG = false\n PadX = 0\n BGIncNum = 0\n ViewSavedData = <table> {\n }\n MapW = 306.99984741211\n MMGathererUpdateDelay = 1\n MMAddonFrms = <table> {\n }\n LClickTime = 0\n MouseEnabled = false\n ButAutoScaleOn = <table> {\n }\n MapH = 229.00003051758\n MMScales = <table> {\n }\n MMArrowName = \"\"\n CurOverlaysTexFolder = \"valleyofthefourwinds\"\n MapPosX = 2371.5595169799\n BackgndAlphaTarget = 0.4\n MapsDrawnOrder = <table> {\n }\n BGGrowBars = true\n ArrowScroll = 0.46\n H = 141\n Tick = 107931\n IconNIFrms = <table> {\n }\n TrackPlayer = \"Freesham\"\n BaseScale = 0.025\n ToolBar = <table> {\n }\n MoveLastY = 3890.2957786928\n MenuIShowHerb = <table> {\n }\n DotPartyScale = 1\n DotPalScale = 1\n InstMapWY2 = 3280.9841453125\n InstMapInfo = <table> {\n }\n InstMapWX1 = 1835.5999765625\n CurWorldUpdateOverlayNum = 23\n MMZoomChanged = false\n Scale = 4\n Targets = <table> {\n }\n BackgndAlpha = 0.4\n ArrowPulse = 1\n MenuIShowMine = <table> {\n }\n MapId = 6010\n MMOwn = true\n WorldHotspotTipStr = false\n MMModels = <table> {\n }\n Size1 = 1.1718750261934\n ShowUnexplored = true\n InstLevelSet = 1\n PIconMenu = <table> {\n }\n InstMapWY1 = 3270.5466453125\n LocTipFrm = NxMapTip {\n }\n MapIndex = 1\n StepTime = -43\n PlyrSpeedX = 2370.5004798655\n PlyrFrm = <unnamed> {\n }\n DebugAdjustScale = 0.1\n ScaleDrawW = 0.25\n IconStaticFrms = <table> {\n }\n UpdateTrackingDelay = 0\n IconNavScale = 1\n MiniFrms = <table> {\n }\n Win = <table> {\n }\n InstanceId = false\n Data = <table> {\n }\n TrackDir = false\n RMapId = 6010\n BGIconMenu = <table> {\n }\n CurOverlays = <table> {\n }\n LocTipFStrs = <table> {\n }\n TrackPlyrs = <table> {\n }\n TrackETA = false\n MMFScale = 1.5238095238095\n TextScFrm = <unnamed> {\n }\n MenuIShowWorld = <table> {\n }\n GIconMenuIFindNote = <table> {\n }\n TextFrm = <unnamed> {\n }\n GIconMenu = <table> {\n }\n WorldHotspotsCity = <table> {\n }\n MMMaskName = \"textures\\MinimapMask\"\n MMScale = 4\n MapPosY = 3890.2957786928\n Tracking = <table> {\n }\n Guide = <table> {\n }\n WorldHotspots = <table> {\n }\n PlyrRZY = 23.94186258316\n Cont = 6\n DotRaidScale = 1\n CurWorldUpdateMapId = 6010\n MapsDrawnFade = <table> {\n }\n PlyrSpeedY = 3890.1302992698\n ContFrms = <table> {\n }\n Level = 39\n TileFrms = <table> {\n }\n ScaleW = 0.25\n UpdateTargetDelay = 0\n CurOpts = <table> {\n }\n MenuIPlyrFollow = <table> {\n }\n TitleH = 0\n W = 150\n IconFrms = <table> {\n }\n MMAlphaDelay = 0\n MMOwnedFrms = <table> {\n }\n MMChkDelay = 34\n MenuIMonitorZone = <table> {\n }\n PlyrRZX = 70.899283885956\n KillShow = false\n DotZoneScale = 1\n NeedWorldUpdate = false\n PlyrY = 3890.2957786928\n MapPosXDraw = 2372.7726866717\n Frm = <unnamed> {\n }\n TransMenu = <table> {\n }\n MoveDir = 95.946445644989\n BackgndAlphaFull = 1\n PlyrX = 2371.5595169799\n}\nmapId = nil\nwinfo = nil\n(*temporary) = \"Valley of the Four Winds\"\n(*temporary) = 6010\n(*temporary) = \"Brewmoon Festival\"\n(*temporary) = nil\n(*temporary) = 1\n(*temporary) = \"Normal\"\n(*temporary) = 3\n(*temporary) = 0\n(*temporary) = false\n(*temporary) = 1051\n(*temporary) = -1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'winfo' (a nil value)\"\n",
-			["timestamp"] = "2012-10-19 23:23:26",
-			["context"] = "Global",
-			["stack"] = "[C]: ?\nInterface\\AddOns\\Carbonite\\NxMap.lua:4286: in function `UpdateWorld'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4349: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4023: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:3947>\n",
-		}, -- [5]
-		{
-			["message"] = "Interface\\AddOns\\Carbonite\\NxMapGuide.lua:3020: script ran too long",
-			["count"] = 130,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.4\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucScanData, v5.14.5335 (KowariOnCrutches)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.5\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.05.03\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DBMPandaria, v\n  DBMPartyMoP, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.1.0\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=883)\n",
-			["locals"] = "self = <table> {\n Win = <table> {\n }\n PadX = 0\n ItemDamageT = <table> {\n }\n MenuIDelete = <table> {\n }\n ItemHandT = <table> {\n }\n List = <table> {\n }\n List2 = <table> {\n }\n ShowQuestGiverCompleted = false\n TitleH = 0\n MenuIGotoQ = <table> {\n }\n Map = <table> {\n }\n ItemTriggerT = <table> {\n }\n POIDraw = true\n ToolBarW = 0\n EditBox = <table> {\n }\n POIMapId = 6009\n ShowAllCont = true\n Menu = <table> {\n }\n PathHistory = <table> {\n }\n ItemBindT = <table> {\n }\n PathHistorySel = <table> {\n }\n ShowFolders = <table> {\n }\n GuideIndex = 1\n}\nvv = <table> {\n The Golden Lotus Quartermaster~Jaluu the Generous = <table> {\n }\n Watersmith~Ot-Temmdo = <table> {\n }\n Innkeeper~Nan the Mason Mug = <table> {\n }\n Supplies & Mending~Christofen Moonfeather = <table> {\n }\n Flowers~Aster = <table> {\n }\n ~Supplier Qiao = <table> {\n }\n Exotic Brews~Collin Gooddreg = <table> {\n }\n Innkeeper~Puli the Even Handed = <table> {\n }\n General Goods~Bonni Chang = <table> {\n }\n Fruit Dealer~Kim Won Gi = <table> {\n }\n Adventuring Supplies~Trader Jambeezi = <table> {\n }\n First Aid Supplies~Serenka = <table> {\n }\n Guide to the Ways~Sungshin Ironpaw = <table> {\n }\n Cooking Supplies~Jojo = <table> {\n }\n Shado-Pan Quartermaster~Rushi the Fox = <table> {\n }\n Innkeeper~Chiyo Mistpaw = <table> {\n }\n Brews~Taijing the Cyclone = <table> {\n }\n Supplies~Lin the Brave = <table> {\n }\n ~Magister Xintar = <table> {\n }\n Barmaid~Hara Alebelly = <table> {\n }\n Stockmaster~Nam Ironpaw = <table> {\n }\n Grummlecakes & Luckydos~Wishbone = <table> {\n }\n Challenge Dungeons~Challenger Soong = <table> {\n }\n Inscription Supplies~Veronica Faraday = <table> {\n }\n Tillers Quartermaster~Gina Mudclaw = <table> {\n }\n ~Brewmaster Chani = <table> {\n }\n Innkeeper~Rude Sho = <table> {\n }\n Bartender~Den Den = <table> {\n }\n Sweet Treats~Pink Peony = <table> {\n }\n Food Vendor~Sniff = <table> {\n }\n Cooking Supplies~Noodles = <table> {\n }\n Seed Vendor~Merchant Greenfield = <table> {\n }\n ~Auntie Stormstout = <table> {\n }\n Innkeeper~Nan Thunderfoot = <table> {\n }\n Repair Vendor~Fixxit Redhammer = <table> {\n }\n Innkeeper~Tong the Fixer = <table> {\n }\n Pet & Mount Prizes~Lhara = <table> {\n }\n Token Redeemer~Belbi Quikswitch = <table> {\n }\n Supplies~Merchant Tantan = <table> {\n }\n Inscription Supplies~Stanly McCormick = <table> {\n }\n Adventuring Supplies~Len at Arms = <table> {\n }\n Man of the Cloth~Silk Fist = <table> {\n }\n Repairs~Spademender Yumba = <table> {\n }\n Ink Trader~Sarana Damir = <table> {\n }\n ~Ironshaper Peng = <table> {\n }\n Supplies & Mender~Elyssa Nightquiver = <table> {\n }\n Cook~Little Elsa = <table> {\n }\n Kitchen Storage Vendor~Merchant Cheng = <table> {\n }\n Dragon Turtle Breeder~Old Whitenose = <table> {\n }\n Adventuring Supplies~Claretta = <table> {\n }\n Innkeeper~Isirami Fairwind = <table> {\n }\n Innkeeper~Zit'tix = <table> {\n }\n Trade Supplies~Tharynn Bouden = <table> {\n }\n Reagent Vendor~Slimy Inkstain = <table> {\n }\n Silk Vendor~Mothwrangler Min = <table> {\n }\n Engineering Supplies~Billibub Cogspinner = <table> {\n }\n Klaxxi Quartermaster~Ambersmith Zikk = <table> {\n }\n Grummlecakes & Luckydos~Trader Hozenpaw = <table> {\n }\n Burlap Trail Supplies~Smokey Sootassle = <table> {\n }\n Cheese Vendor~Anne Summers = <table> {\n }\n}\nfolder = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n 16 = <table> {\n }\n 17 = <table> {\n }\n 18 = <table> {\n }\n 19 = <table> {\n }\n 20 = <table> {\n }\n 21 = <table> {\n }\n 22 = <table> {\n }\n 23 = <table> {\n }\n 24 = <table> {\n }\n 25 = <table> {\n }\n 26 = <table> {\n }\n 27 = <table> {\n }\n 28 = <table> {\n }\n 29 = <table> {\n }\n 30 = <table> {\n }\n 31 = <table> {\n }\n 32 = <table> {\n }\n 33 = <table> {\n }\n 34 = <table> {\n }\n 35 = <table> {\n }\n 36 = <table> {\n }\n 37 = <table> {\n }\n 38 = <table> {\n }\n 39 = <table> {\n }\n 40 = <table> {\n }\n 41 = <table> {\n }\n 42 = <table> {\n }\n 43 = <table> {\n }\n 44 = <table> {\n }\n Name = \"Visited Vendor\"\n Tx = \"INV_Misc_",
-			["timestamp"] = "2012-10-20 00:14:27",
-			["context"] = "Global",
-			["stack"] = "[C]: in function `collectgarbage'\nInterface\\AddOns\\Carbonite\\NxMapGuide.lua:3020: in function `UpdateVisitedVendors'\nInterface\\AddOns\\Carbonite\\NxMapGuide.lua:2852: in function `F'\nInterface\\AddOns\\Carbonite\\NxTimer.lua:111: in function `OnUpdate'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1114: in function `NXOnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n",
-		}, -- [6]
-		{
-			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
-			["count"] = 84,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.4\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucScanData, v5.14.5335 (KowariOnCrutches)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.5\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.05.03\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.1.0\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=861)\n",
-			["locals"] = "self = GlyphFrame {\n 0 = <userdata>\n glow = GlyphFrameGlow {\n }\n specRing = GlyphFrameSpecRing {\n }\n sideInset = GlyphFrameSideInset {\n }\n specIcon = GlyphFrameSpecIcon {\n }\n Glyph4 = GlyphFrameGlyph4 {\n }\n levelOverlayText2 = GlyphFrameLevelOverlayText2 {\n }\n background = GlyphFrameBackground {\n }\n Glyph1 = GlyphFrameGlyph1 {\n }\n scrollFrame = GlyphFrameScrollFrame {\n }\n clearInfo = GlyphFrameClearInfoFrame {\n }\n Glyph2 = GlyphFrameGlyph2 {\n }\n levelOverlay2 = GlyphFrameLevelOverlay2 {\n }\n levelOverlayText1 = GlyphFrameLevelOverlayText1 {\n }\n levelOverlay1 = GlyphFrameLevelOverlay1 {\n }\n Glyph5 = GlyphFrameGlyph5 {\n }\n Glyph6 = GlyphFrameGlyph6 {\n }\n Glyph3 = GlyphFrameGlyph3 {\n }\n}\nisActiveTalentGroup = nil\nname = \"Tome of the Clear Mind\"\ncount = 0\ntexture = \"Interface\\Icons\\inv_inscription_tomeoftheclearmind\"\nspellID = 111621\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = false\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = GlyphFrameGlyph6Glyph {\n 0 = <userdata>\n}\n(*temporary) = true\n(*temporary) = 1\n(*temporary) = 53299\n(*temporary) = \"attempt to index global 'PlayerTalentFrame' (a nil value)\"\n",
-			["timestamp"] = "2012-10-22 05:15:37",
-			["context"] = "Global",
-			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [7]
-		{
-			["message"] = "Note: AddOn Carbonite attempted to call a protected function (<unnamed>:Hide()) during combat lockdown.",
-			["count"] = 1000,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.4\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucScanData, v5.14.5335 (KowariOnCrutches)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.5\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.05.04\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.1.0\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=861)\n",
-			["timestamp"] = "2012-10-23 05:12:34",
-			["context"] = "AddOn: Carbonite",
-			["stack"] = "[C]: in function `Hide'\nInterface\\AddOns\\Carbonite\\NxMap.lua:1534: in function `UpdateWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4847: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4104: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4028>\n",
-		}, -- [8]
-		{
-			["message"] = "Note: AddOn Carbonite attempted to call a protected function (<unnamed>:?()) during combat lockdown.",
-			["count"] = 1000,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.4\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucScanData, v5.14.5335 (KowariOnCrutches)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.5\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.05.04\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.1.0\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=861)\n",
-			["timestamp"] = "2012-10-23 05:12:34",
-			["context"] = "AddOn: Carbonite",
-			["stack"] = "[C]: in function `?'\nInterface\\AddOns\\Carbonite\\NxMap.lua:5207: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4104: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4028>\n",
-		}, -- [9]
-		{
-			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
-			["count"] = 56,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.4\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucScanData, v5.14.5335 (KowariOnCrutches)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.5\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.05.04\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.1.0\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=861)\n",
-			["locals"] = "self = GlyphFrame {\n 0 = <userdata>\n glow = GlyphFrameGlow {\n }\n specRing = GlyphFrameSpecRing {\n }\n sideInset = GlyphFrameSideInset {\n }\n specIcon = GlyphFrameSpecIcon {\n }\n Glyph4 = GlyphFrameGlyph4 {\n }\n levelOverlayText2 = GlyphFrameLevelOverlayText2 {\n }\n background = GlyphFrameBackground {\n }\n Glyph1 = GlyphFrameGlyph1 {\n }\n scrollFrame = GlyphFrameScrollFrame {\n }\n clearInfo = GlyphFrameClearInfoFrame {\n }\n Glyph2 = GlyphFrameGlyph2 {\n }\n levelOverlay2 = GlyphFrameLevelOverlay2 {\n }\n levelOverlayText1 = GlyphFrameLevelOverlayText1 {\n }\n levelOverlay1 = GlyphFrameLevelOverlay1 {\n }\n Glyph5 = GlyphFrameGlyph5 {\n }\n Glyph6 = GlyphFrameGlyph6 {\n }\n Glyph3 = GlyphFrameGlyph3 {\n }\n}\nisActiveTalentGroup = nil\nname = \"Tome of the Clear Mind\"\ncount = 0\ntexture = \"Interface\\Icons\\inv_inscription_tomeoftheclearmind\"\nspellID = 111621\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = false\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = GlyphFrameGlyph6Glyph {\n 0 = <userdata>\n}\n(*temporary) = true\n(*temporary) = 1\n(*temporary) = 53299\n(*temporary) = \"attempt to index global 'PlayerTalentFrame' (a nil value)\"\n",
-			["timestamp"] = "2012-10-23 05:26:17",
-			["context"] = "Global",
-			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [10]
-		{
-			["message"] = "Note: AddOn Carbonite attempted to call a protected function (<unnamed>:Hide()) during combat lockdown.",
-			["count"] = 1000,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.4\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucScanData, v5.14.5335 (KowariOnCrutches)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.5\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.05.04\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.1.0\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=861)\n",
-			["timestamp"] = "2012-10-24 05:15:48",
-			["context"] = "AddOn: Carbonite",
-			["stack"] = "[C]: in function `Hide'\nInterface\\AddOns\\Carbonite\\NxMap.lua:1534: in function `UpdateWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4847: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4104: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4028>\n",
-		}, -- [11]
-		{
-			["message"] = "Note: AddOn Carbonite attempted to call a protected function (<unnamed>:?()) during combat lockdown.",
-			["count"] = 1000,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.4\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucScanData, v5.14.5335 (KowariOnCrutches)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.5\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.05.04\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.1.0\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=861)\n",
-			["timestamp"] = "2012-10-24 05:15:48",
-			["context"] = "AddOn: Carbonite",
-			["stack"] = "[C]: in function `?'\nInterface\\AddOns\\Carbonite\\NxMap.lua:5207: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4104: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4028>\n",
-		}, -- [12]
-		{
-			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
-			["count"] = 112,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.4\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucScanData, v5.14.5335 (KowariOnCrutches)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.5\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.05.04\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.1.0\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=861)\n",
-			["locals"] = "self = GlyphFrame {\n 0 = <userdata>\n glow = GlyphFrameGlow {\n }\n specRing = GlyphFrameSpecRing {\n }\n sideInset = GlyphFrameSideInset {\n }\n specIcon = GlyphFrameSpecIcon {\n }\n Glyph4 = GlyphFrameGlyph4 {\n }\n levelOverlayText2 = GlyphFrameLevelOverlayText2 {\n }\n background = GlyphFrameBackground {\n }\n Glyph1 = GlyphFrameGlyph1 {\n }\n scrollFrame = GlyphFrameScrollFrame {\n }\n clearInfo = GlyphFrameClearInfoFrame {\n }\n Glyph2 = GlyphFrameGlyph2 {\n }\n levelOverlay2 = GlyphFrameLevelOverlay2 {\n }\n levelOverlayText1 = GlyphFrameLevelOverlayText1 {\n }\n levelOverlay1 = GlyphFrameLevelOverlay1 {\n }\n Glyph5 = GlyphFrameGlyph5 {\n }\n Glyph6 = GlyphFrameGlyph6 {\n }\n Glyph3 = GlyphFrameGlyph3 {\n }\n}\nisActiveTalentGroup = nil\nname = \"Tome of the Clear Mind\"\ncount = 0\ntexture = \"Interface\\Icons\\inv_inscription_tomeoftheclearmind\"\nspellID = 111621\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = false\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = GlyphFrameGlyph6Glyph {\n 0 = <userdata>\n}\n(*temporary) = true\n(*temporary) = 1\n(*temporary) = 53299\n(*temporary) = \"attempt to index global 'PlayerTalentFrame' (a nil value)\"\n",
-			["timestamp"] = "2012-10-24 05:24:09",
-			["context"] = "Global",
-			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [13]
-		{
-			["message"] = "Note: AddOn Carbonite attempted to call a protected function (<unnamed>:Hide()) during combat lockdown.",
-			["count"] = 1000,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.4\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.5\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.05.04\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.1.0\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=834)\n",
-			["timestamp"] = "2012-10-24 20:41:10",
-			["context"] = "AddOn: Carbonite",
-			["stack"] = "[C]: in function `Hide'\nInterface\\AddOns\\Carbonite\\NxMap.lua:1534: in function `UpdateWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4847: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4104: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4028>\n",
-		}, -- [14]
-		{
-			["message"] = "Note: AddOn Carbonite attempted to call a protected function (<unnamed>:?()) during combat lockdown.",
-			["count"] = 1000,
-			["addons"] = "  Swatter, v5.14.5335 (KowariOnCrutches)\n  WowheadLooter, v50006\n  NPCScan, v5.0.0.4\n  AucAdvanced, v5.14.5335 (KowariOnCrutches)\n  AucFilterBasic, v5.14.5335 (KowariOnCrutches)\n  AucFilterOutlier, v5.14.5335.5335(5.14/embedded)\n  AucMatchUndercut, v5.14.5335.5225(5.14/embedded)\n  AucStatHistogram, v5.14.5335 (KowariOnCrutches)\n  AucStatiLevel, v5.14.5335 (KowariOnCrutches)\n  AucStatPurchased, v5.14.5335 (KowariOnCrutches)\n  AucStatSales, v5.14.5335.5335(5.14/embedded)\n  AucStatSimple, v5.14.5335 (KowariOnCrutches)\n  AucStatStdDev, v5.14.5335 (KowariOnCrutches)\n  AucStatWOWEcon, v5.14.5335.5335(5.14/embedded)\n  AucUtilAHWindowControl, v5.14.5335.5133(5.14/embedded)\n  AucUtilAppraiser, v5.14.5335.5335(5.14/embedded)\n  AucUtilAskPrice, v5.14.5335.5160(5.14/embedded)\n  AucUtilAutoMagic, v5.14.5335.5335(5.14/embedded)\n  AucUtilCompactUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilEasyBuyout, v5.14.5335.5238(5.14/embedded)\n  AucUtilFixAH, v5.14.5335 (KowariOnCrutches)\n  AucUtilItemSuggest, v5.14.5335.5335(5.14/embedded)\n  AucUtilPriceLevel, v5.14.5335.5237(5.14/embedded)\n  AucUtilScanButton, v5.14.5335.5335(5.14/embedded)\n  AucUtilScanFinish, v5.14.5335.5153(5.14/embedded)\n  AucUtilScanProgress, v5.14.5335.4979(5.14/embedded)\n  AucUtilScanStart, v5.14.5335.5153(5.14/embedded)\n  AucUtilSearchUI, v5.14.5335.5335(5.14/embedded)\n  AucUtilSimpleAuction, v5.14.5335.5208(5.14/embedded)\n  AucUtilVendMarkup, v5.14.5335.4828(5.14/embedded)\n  Babylonian, v5.1.DEV.312(/embedded)\n  Bartender4, v4.5.5\n  BeanCounter, v5.14.5335 (KowariOnCrutches)\n  Carbonite, v5.05.04\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.330(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.312(/embedded)\n  Enchantrix, v5.14.5335 (KowariOnCrutches)\n  EnchantrixBarker, v5.14.5335 (KowariOnCrutches)\n  Informant, v5.14.5335 (KowariOnCrutches)\n  LibExtraTip, v5.12.DEV.324(/embedded)\n  ProfessionsVault, v6.1.0\n  Quartz, v3.1.1\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.14.5335 (KowariOnCrutches)\n  Stubby, v5.14.5335 (KowariOnCrutches)\n  TipHelper, v5.12.DEV.315(/embedded)\n  BlizRuntimeLib_enUS v5.0.5.50001 <us>\n  (ck=834)\n",
-			["timestamp"] = "2012-10-24 20:41:10",
-			["context"] = "AddOn: Carbonite",
-			["stack"] = "[C]: in function `?'\nInterface\\AddOns\\Carbonite\\NxMap.lua:5207: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4104: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4028>\n",
-		}, -- [15]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 168,
@@ -136,7 +19,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-26 21:23:55",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [16]
+		}, -- [2]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapDetailFrame:SetScale()) during combat lockdown.",
 			["count"] = 3,
@@ -144,7 +27,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-26 21:37:43",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `SetScale'\nInterface\\FrameXML\\WorldMapFrame.lua:1896: in function `WorldMapFrame_SetQuestMapView'\nInterface\\FrameXML\\WorldMapFrame.lua:1862: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3531: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3478: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [17]
+		}, -- [3]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapDetailFrame:SetPoint()) during combat lockdown.",
 			["count"] = 3,
@@ -152,7 +35,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-26 21:37:43",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `SetPoint'\nInterface\\FrameXML\\WorldMapFrame.lua:1899: in function `WorldMapFrame_SetQuestMapView'\nInterface\\FrameXML\\WorldMapFrame.lua:1862: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3531: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3478: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [18]
+		}, -- [4]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 6,
@@ -160,7 +43,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-26 21:37:43",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3531: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3478: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [19]
+		}, -- [5]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapBlobFrame:Hide()) during combat lockdown.",
 			["count"] = 1,
@@ -168,7 +51,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-26 22:27:10",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapFrame.lua:1871: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3531: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3478: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [20]
+		}, -- [6]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 2,
@@ -176,7 +59,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-28 21:07:01",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3531: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3478: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [21]
+		}, -- [7]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 28,
@@ -185,7 +68,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-28 21:12:13",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [22]
+		}, -- [8]
 		{
 			["message"] = "...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: attempt to index global 'PlayerTalentFrame' (a nil value)",
 			["count"] = 168,
@@ -194,7 +77,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-30 21:39:21",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:174: in function `GlyphFrame_Update'\n...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:91: in function <...terface\\AddOns\\Blizzard_GlyphUI\\Blizzard_GlyphUI.lua:80>\n",
-		}, -- [23]
+		}, -- [9]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1736: script ran too long",
 			["count"] = 1,
@@ -203,7 +86,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-30 22:11:18",
 			["context"] = "Global",
 			["stack"] = "[C]: in function `LoadAddOn'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:1736: in function `func'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:728: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:721>\n",
-		}, -- [24]
+		}, -- [10]
 		{
 			["message"] = "Interface\\AddOns\\Recount\\Recount.lua:908: script ran too long",
 			["count"] = 2,
@@ -212,7 +95,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-30 22:11:29",
 			["context"] = "Global",
 			["stack"] = "[C]: in function `collectgarbage'\nInterface\\AddOns\\Recount\\Recount.lua:908: in function `ResetData'\nInterface\\AddOns\\Recount\\GUI_Reset.lua:73: in function <Interface\\AddOns\\Recount\\GUI_Reset.lua:73>\n",
-		}, -- [25]
+		}, -- [11]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2499: attempt to index field 'stats' (a nil value)",
 			["count"] = 2,
@@ -221,7 +104,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-30 22:12:54",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2499: in function `StartCombat'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2357: in function `?'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:365: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:358>\n",
-		}, -- [26]
+		}, -- [12]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2688: attempt to perform arithmetic on field 'pull' (a nil value)",
 			["count"] = 2,
@@ -230,7 +113,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-30 22:14:49",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2688: in function `EndCombat'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2819: in function `OnMobKill'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2853: in function `?'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:365: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:358>\n(tail call): ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:365: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:358>\n",
-		}, -- [27]
+		}, -- [13]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 3,
@@ -238,7 +121,7 @@ SwatterData = {
 			["timestamp"] = "2012-10-30 22:39:23",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3531: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3478: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [28]
+		}, -- [14]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:4361: attempt to index local 'winfo' (a nil value)",
 			["count"] = 2,
@@ -247,7 +130,7 @@ SwatterData = {
 			["timestamp"] = "2012-11-04 00:22:44",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\nInterface\\AddOns\\Carbonite\\NxMap.lua:4361: in function `UpdateWorld'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4424: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4097: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4021>\n",
-		}, -- [29]
+		}, -- [15]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9434: attempt to compare number with nil",
 			["count"] = 1,
@@ -256,7 +139,7 @@ SwatterData = {
 			["timestamp"] = "2012-11-04 00:22:46",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\nInterface\\AddOns\\Carbonite\\NxMap.lua:9434: in function `IdToContZone'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4432: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4097: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4021>\n",
-		}, -- [30]
+		}, -- [16]
 		{
 			["message"] = "...AddOns\\Auc-Advanced\\Libs\\LibExtraTip\\LibExtraTip.lua:163: script ran too long",
 			["count"] = 1,
@@ -265,7 +148,7 @@ SwatterData = {
 			["timestamp"] = "2012-11-16 05:46:27",
 			["context"] = "Global",
 			["stack"] = "[C]: in function `Show'\n...AddOns\\Auc-Advanced\\Libs\\LibExtraTip\\LibExtraTip.lua:163: in function `h'\n...AddOns\\Auc-Advanced\\Libs\\LibExtraTip\\LibExtraTip.lua:333: in function <...AddOns\\Auc-Advanced\\Libs\\LibExtraTip\\LibExtraTip.lua:329>\n[C]: ?\n[C]: ?\n[C]: in function `SetAction'\n...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:1305: in function `SetTooltip'\n...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:1116: in function <...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:1110>\n...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:715: in function <...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:681>\n",
-		}, -- [31]
+		}, -- [17]
 		{
 			["message"] = "...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:1305: script ran too long",
 			["count"] = 2,
@@ -274,7 +157,7 @@ SwatterData = {
 			["timestamp"] = "2012-11-16 05:46:27",
 			["context"] = "Global",
 			["stack"] = "[C]: in function `SetAction'\n...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:1305: in function `SetTooltip'\n...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:1116: in function <...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:1110>\n...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:715: in function <...er4\\libs\\LibActionButton-1.0\\LibActionButton-1.0.lua:681>\n",
-		}, -- [32]
+		}, -- [18]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 1,
@@ -282,7 +165,7 @@ SwatterData = {
 			["timestamp"] = "2012-11-17 23:00:57",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1864: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:1933: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:245: in function <Interface\\FrameXML\\WorldMapFrame.lua:231>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:201: in function <Interface\\FrameXML\\WorldMapFrame.lua:191>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1691: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1533: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1469: in function <Interface\\FrameXML\\UIParent.lua:1465>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2179: in function <Interface\\FrameXML\\UIParent.lua:2167>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3526: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3473: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [33]
+		}, -- [19]
 		{
 			["message"] = "...-Advanced\\Modules\\Auc-Util-Appraiser\\AprSettings.lua:73: attempt to compare number with nil",
 			["count"] = 122,
@@ -291,7 +174,7 @@ SwatterData = {
 			["timestamp"] = "2012-11-20 05:13:21",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n...-Advanced\\Modules\\Auc-Util-Appraiser\\AprSettings.lua:73: in function <...-Advanced\\Modules\\Auc-Util-Appraiser\\AprSettings.lua:71>\n[C]: in function `sort'\n...Auc-Advanced\\Modules\\Auc-Util-Appraiser\\AprFrame.lua:167: in function `GenerateList'\n...Auc-Advanced\\Modules\\Auc-Util-Appraiser\\AprFrame.lua:2657: in function <...Auc-Advanced\\Modules\\Auc-Util-Appraiser\\AprFrame.lua:2640>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `AuctionFrameTab_OnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>\n",
-		}, -- [34]
+		}, -- [20]
 		{
 			["message"] = "...Auc-Advanced\\Modules\\Auc-Util-Appraiser\\AprFrame.lua:1583: Usage: GetItemQualityColor(index)",
 			["count"] = 1,
@@ -300,7 +183,7 @@ SwatterData = {
 			["timestamp"] = "2012-11-20 05:13:25",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\n[C]: in function `GetItemQualityColor'\n...Auc-Advanced\\Modules\\Auc-Util-Appraiser\\AprFrame.lua:1583: in function `SetScroll'\n...Auc-Advanced\\Modules\\Auc-Util-Appraiser\\AprFrame.lua:289: in function `SelectItem'\n...Auc-Advanced\\Modules\\Auc-Util-Appraiser\\AprFrame.lua:1253: in function `GetItemByLink'\n...Auc-Advanced\\Modules\\Auc-Util-Appraiser\\AprFrame.lua:1267: in function <...Auc-Advanced\\Modules\\Auc-Util-Appraiser\\AprFrame.lua:1263>\n",
-		}, -- [35]
+		}, -- [21]
 		{
 			["message"] = "Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: attempt to call method 'returnProcList' (a nil value)",
 			["count"] = 1,
@@ -308,7 +191,7 @@ SwatterData = {
 			["timestamp"] = "2012-11-21 06:11:29",
 			["context"] = "Global",
 			["stack"] = "(tail call): ?\nInterface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: in function <Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:91>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:514: in function `InitializeAddon'\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:629: in function <...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:621>\n",
-		}, -- [36]
+		}, -- [22]
 		{
 			["message"] = "Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: attempt to call method 'returnProcList' (a nil value)",
 			["count"] = 1,
@@ -316,7 +199,7 @@ SwatterData = {
 			["timestamp"] = "2012-11-21 21:36:05",
 			["context"] = "Global",
 			["stack"] = "(tail call): ?\nInterface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: in function <Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:91>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:514: in function `InitializeAddon'\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:629: in function <...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:621>\n",
-		}, -- [37]
+		}, -- [23]
 		{
 			["message"] = "Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: attempt to call method 'returnProcList' (a nil value)",
 			["count"] = 1,
@@ -324,7 +207,7 @@ SwatterData = {
 			["timestamp"] = "2012-11-21 22:47:01",
 			["context"] = "Global",
 			["stack"] = "(tail call): ?\nInterface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: in function <Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:91>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:514: in function `InitializeAddon'\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:629: in function <...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:621>\n",
-		}, -- [38]
+		}, -- [24]
 		{
 			["message"] = "Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: attempt to call method 'returnProcList' (a nil value)",
 			["count"] = 1,
@@ -332,7 +215,7 @@ SwatterData = {
 			["timestamp"] = "2012-11-21 22:52:47",
 			["context"] = "Global",
 			["stack"] = "(tail call): ?\nInterface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: in function <Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:91>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:514: in function `InitializeAddon'\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:629: in function <...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:621>\n",
-		}, -- [39]
+		}, -- [25]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:-1: script ran too long",
 			["count"] = 1,
@@ -341,7 +224,7 @@ SwatterData = {
 			["timestamp"] = "2012-11-24 21:15:12",
 			["context"] = "Global",
 			["stack"] = "[C]: ?\nInterface\\AddOns\\Carbonite\\NxMap.lua: in function `ToggleFrame'\nInterface\\FrameXML\\UIParent.lua:626: in function `ToggleEncounterJournal'\n[string \"TOGGLEENCOUNTERJOURNAL\"]:1: in function <[string \"TOGGLEENCOUNTERJOURNAL\"]:1>\n",
-		}, -- [40]
+		}, -- [26]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:3463: script ran too long",
 			["count"] = 1,
@@ -350,7 +233,7 @@ SwatterData = {
 			["timestamp"] = "2012-11-24 21:15:16",
 			["context"] = "Global",
 			["stack"] = "[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3463: in function `ToggleFrame'\nInterface\\FrameXML\\UIParent.lua:626: in function `ToggleEncounterJournal'\n[string \"TOGGLEENCOUNTERJOURNAL\"]:1: in function <[string \"TOGGLEENCOUNTERJOURNAL\"]:1>\n",
-		}, -- [41]
+		}, -- [27]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:3463: script ran too long",
 			["count"] = 1,
@@ -359,7 +242,7 @@ SwatterData = {
 			["timestamp"] = "2012-11-24 22:17:49",
 			["context"] = "Global",
 			["stack"] = "[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3463: in function `ToggleFrame'\nInterface\\FrameXML\\UIParent.lua:626: in function `ToggleEncounterJournal'\n[string \"TOGGLEENCOUNTERJOURNAL\"]:1: in function <[string \"TOGGLEENCOUNTERJOURNAL\"]:1>\n",
-		}, -- [42]
+		}, -- [28]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapBlobFrame:Hide()) during combat lockdown.",
 			["count"] = 2,
@@ -367,7 +250,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-08 23:07:49",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapFrame.lua:1970: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:2037: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:306: in function <Interface\\FrameXML\\WorldMapFrame.lua:292>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:252: in function <Interface\\FrameXML\\WorldMapFrame.lua:233>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1703: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1481: in function <Interface\\FrameXML\\UIParent.lua:1477>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2193: in function <Interface\\FrameXML\\UIParent.lua:2181>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3526: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3473: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [43]
+		}, -- [29]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:4356: attempt to index local 'winfo' (a nil value)",
 			["count"] = 3,
@@ -376,7 +259,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-10 05:25:23",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:4356: in function `UpdateWorld'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4419: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4092: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4016>\n",
-		}, -- [44]
+		}, -- [30]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9491: attempt to compare number with nil",
 			["count"] = 1,
@@ -385,7 +268,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-10 05:25:25",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9491: in function `IsBattleGroundMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4454: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4092: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4016>\n",
-		}, -- [45]
+		}, -- [31]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:4356: attempt to index local 'winfo' (a nil value)",
 			["count"] = 3,
@@ -394,7 +277,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-12 05:26:11",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:4356: in function `UpdateWorld'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4419: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4092: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4016>\n",
-		}, -- [46]
+		}, -- [32]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9491: attempt to compare number with nil",
 			["count"] = 1,
@@ -403,7 +286,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-12 05:26:18",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9491: in function `IsBattleGroundMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4454: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4092: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4016>\n",
-		}, -- [47]
+		}, -- [33]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:4356: attempt to index local 'winfo' (a nil value)",
 			["count"] = 2,
@@ -412,7 +295,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-13 05:32:09",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:4356: in function `UpdateWorld'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4419: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4092: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4016>\n",
-		}, -- [48]
+		}, -- [34]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:3526: script ran too long",
 			["count"] = 1,
@@ -421,7 +304,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-16 22:32:20",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:3526: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3473: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [49]
+		}, -- [35]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Core\\DBT.lua:793: script ran too long",
 			["count"] = 1,
@@ -430,7 +313,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-16 22:35:29",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Core\\DBT.lua:793: in function `ApplyStyle'\nInterface\\AddOns\\DBM-Core\\DBT.lua:444: in function `CreateBar'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:4312: in function `Start'\nInterface\\AddOns\\DBM-MogushanVaults\\SpiritKings.lua:354: in function `?'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:367: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:360>\n",
-		}, -- [50]
+		}, -- [36]
 		{
 			["message"] = "Interface\\AddOns\\+Wowhead_Looter\\Wowhead_Looter.lua:2440: script ran too long",
 			["count"] = 1,
@@ -439,7 +322,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-18 05:47:22",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\+Wowhead_Looter\\Wowhead_Looter.lua:2440: in function `wlScanGlyphs'\nInterface\\AddOns\\+Wowhead_Looter\\Wowhead_Looter.lua:2062: in function `wlCollect'\nInterface\\AddOns\\+Wowhead_Looter\\Wowhead_Looter.lua:3139: in function <Interface\\AddOns\\+Wowhead_Looter\\Wowhead_Looter.lua:3126>\n",
-		}, -- [51]
+		}, -- [37]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 1,
@@ -447,7 +330,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-19 05:36:56",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1963: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:2037: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:306: in function <Interface\\FrameXML\\WorldMapFrame.lua:292>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:252: in function <Interface\\FrameXML\\WorldMapFrame.lua:233>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1703: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1481: in function <Interface\\FrameXML\\UIParent.lua:1477>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2193: in function <Interface\\FrameXML\\UIParent.lua:2181>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3526: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3473: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [52]
+		}, -- [38]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapBlobFrame:Hide()) during combat lockdown.",
 			["count"] = 2,
@@ -455,7 +338,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-21 21:23:03",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapFrame.lua:1970: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:2037: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:306: in function <Interface\\FrameXML\\WorldMapFrame.lua:292>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:252: in function <Interface\\FrameXML\\WorldMapFrame.lua:233>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1703: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1481: in function <Interface\\FrameXML\\UIParent.lua:1477>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2193: in function <Interface\\FrameXML\\UIParent.lua:2181>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3526: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3473: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [53]
+		}, -- [39]
 		{
 			["message"] = "Interface\\FrameXML\\UIParent.lua:299: script ran too long",
 			["count"] = 1,
@@ -464,7 +347,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-21 21:23:05",
 			["context"] = "Global",
 			["stack"] = "Interface\\FrameXML\\UIParent.lua:299: in function `UIParentLoadAddOn'\nInterface\\FrameXML\\UIParent.lua:428: in function `EncounterJournal_LoadUI'\nInterface\\FrameXML\\UIParent.lua:623: in function `ToggleEncounterJournal'\n[string \"*:OnClick\"]:6: in function <[string \"*:OnClick\"]:1>\n",
-		}, -- [54]
+		}, -- [40]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:3463: script ran too long",
 			["count"] = 1,
@@ -473,7 +356,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-21 21:23:10",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:3463: in function `ToggleFrame'\nInterface\\FrameXML\\UIParent.lua:626: in function `ToggleEncounterJournal'\n[string \"*:OnClick\"]:6: in function <[string \"*:OnClick\"]:1>\n",
-		}, -- [55]
+		}, -- [41]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:-1: script ran too long",
 			["count"] = 1,
@@ -482,7 +365,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-21 21:47:53",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\NxMap.lua: in function `ToggleFrame'\nInterface\\FrameXML\\UIParent.lua:636: in function `TogglePetJournal'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>\n",
-		}, -- [56]
+		}, -- [42]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Core\\DBT.lua:793: script ran too long",
 			["count"] = 1,
@@ -491,7 +374,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-26 21:59:14",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Core\\DBT.lua:793: in function `ApplyStyle'\nInterface\\AddOns\\DBM-Core\\DBT.lua:444: in function `CreateBar'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:4312: in function `Start'\n...nterface\\AddOns\\DBM-MogushanVaults\\WillofEmperor.lua:216: in function `?'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:367: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:360>\n",
-		}, -- [57]
+		}, -- [43]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapBlobFrame:Hide()) during combat lockdown.",
 			["count"] = 1,
@@ -499,7 +382,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-26 22:49:37",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapFrame.lua:1970: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:2037: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:306: in function <Interface\\FrameXML\\WorldMapFrame.lua:292>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:252: in function <Interface\\FrameXML\\WorldMapFrame.lua:233>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1703: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1481: in function <Interface\\FrameXML\\UIParent.lua:1477>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2193: in function <Interface\\FrameXML\\UIParent.lua:2181>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3526: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3473: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [58]
+		}, -- [44]
 		{
 			["message"] = "[string \"repopMe()\"]:1: attempt to call global 'repopMe' (a nil value)",
 			["count"] = 1,
@@ -508,7 +391,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-28 22:53:33",
 			["context"] = "Global",
 			["stack"] = "[string \"repopMe()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2158: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4388: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4082: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4121: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>\n",
-		}, -- [59]
+		}, -- [45]
 		{
 			["message"] = "[string \"repopme ()\"]:1: attempt to call global 'repopme' (a nil value)",
 			["count"] = 1,
@@ -517,7 +400,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-28 22:53:50",
 			["context"] = "Global",
 			["stack"] = "[string \"repopme ()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2158: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4388: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4082: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4121: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>\n",
-		}, -- [60]
+		}, -- [46]
 		{
 			["message"] = "[string \"repopme()\"]:1: attempt to call global 'repopme' (a nil value)",
 			["count"] = 1,
@@ -526,7 +409,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-28 22:54:28",
 			["context"] = "Global",
 			["stack"] = "[string \"repopme()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2158: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4388: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4082: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4121: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>\n",
-		}, -- [61]
+		}, -- [47]
 		{
 			["message"] = "[string \"repopme(dathsar)\"]:1: attempt to call global 'repopme' (a nil value)",
 			["count"] = 1,
@@ -535,7 +418,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-28 22:54:45",
 			["context"] = "Global",
 			["stack"] = "[string \"repopme(dathsar)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2158: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4388: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4082: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4121: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>\n",
-		}, -- [62]
+		}, -- [48]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:4356: attempt to index local 'winfo' (a nil value)",
 			["count"] = 3,
@@ -544,7 +427,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-29 20:43:45",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:4356: in function `UpdateWorld'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4419: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4092: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4016>\n",
-		}, -- [63]
+		}, -- [49]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9491: attempt to compare number with nil",
 			["count"] = 5,
@@ -553,7 +436,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-29 20:43:46",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9491: in function `IsBattleGroundMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4454: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4092: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4016>\n",
-		}, -- [64]
+		}, -- [50]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 3,
@@ -561,7 +444,7 @@ SwatterData = {
 			["timestamp"] = "2012-12-29 22:09:37",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1963: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:2037: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:306: in function <Interface\\FrameXML\\WorldMapFrame.lua:292>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:252: in function <Interface\\FrameXML\\WorldMapFrame.lua:233>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1703: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1481: in function <Interface\\FrameXML\\UIParent.lua:1477>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2193: in function <Interface\\FrameXML\\UIParent.lua:2181>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3526: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3473: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [65]
+		}, -- [51]
 		{
 			["message"] = "Error: AddOn Informant attempted to call a forbidden function (UseQuestLogSpecialItem()) from a tainted execution path.",
 			["count"] = 12,
@@ -569,7 +452,7 @@ SwatterData = {
 			["timestamp"] = "2013-01-18 22:22:50",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `UseQuestLogSpecialItem'\nInterface\\FrameXML\\WatchFrame.lua:1428: in function `WatchFrameItem_OnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>\n",
-		}, -- [66]
+		}, -- [52]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (SecureStateDriverManager:SetAttribute()) during combat lockdown.",
 			["count"] = 56,
@@ -577,7 +460,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `SetAttribute'\nInterface\\FrameXML\\SecureStateDriver.lua:18: in function <Interface\\FrameXML\\SecureStateDriver.lua:16>\n(tail call): ?\nInterface\\AddOns\\Bartender4\\Bar.lua:490: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [67]
+		}, -- [53]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4Bar1:SetAttribute()) during combat lockdown.",
 			["count"] = 1,
@@ -585,7 +468,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `SetAttribute'\nInterface\\AddOns\\Bartender4\\Bar.lua:491: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [68]
+		}, -- [54]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4Bar1:Show()) during combat lockdown.",
 			["count"] = 2,
@@ -593,7 +476,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `Show'\nInterface\\AddOns\\Bartender4\\Bar.lua:492: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [69]
+		}, -- [55]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4Bar3:SetAttribute()) during combat lockdown.",
 			["count"] = 1,
@@ -601,7 +484,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `SetAttribute'\nInterface\\AddOns\\Bartender4\\Bar.lua:491: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [70]
+		}, -- [56]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4Bar3:Show()) during combat lockdown.",
 			["count"] = 2,
@@ -609,7 +492,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `Show'\nInterface\\AddOns\\Bartender4\\Bar.lua:492: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [71]
+		}, -- [57]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4Bar2:SetAttribute()) during combat lockdown.",
 			["count"] = 1,
@@ -617,7 +500,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `SetAttribute'\nInterface\\AddOns\\Bartender4\\Bar.lua:491: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [72]
+		}, -- [58]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4Bar2:Show()) during combat lockdown.",
 			["count"] = 2,
@@ -625,7 +508,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `Show'\nInterface\\AddOns\\Bartender4\\Bar.lua:492: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [73]
+		}, -- [59]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4Bar5:SetAttribute()) during combat lockdown.",
 			["count"] = 1,
@@ -633,7 +516,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `SetAttribute'\nInterface\\AddOns\\Bartender4\\Bar.lua:491: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [74]
+		}, -- [60]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4Bar5:Show()) during combat lockdown.",
 			["count"] = 2,
@@ -641,7 +524,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `Show'\nInterface\\AddOns\\Bartender4\\Bar.lua:492: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [75]
+		}, -- [61]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4Bar4:SetAttribute()) during combat lockdown.",
 			["count"] = 1,
@@ -649,7 +532,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `SetAttribute'\nInterface\\AddOns\\Bartender4\\Bar.lua:491: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [76]
+		}, -- [62]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4Bar4:Show()) during combat lockdown.",
 			["count"] = 2,
@@ -657,7 +540,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `Show'\nInterface\\AddOns\\Bartender4\\Bar.lua:492: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [77]
+		}, -- [63]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4BarRep:SetAttribute()) during combat lockdown.",
 			["count"] = 1,
@@ -665,7 +548,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `SetAttribute'\nInterface\\AddOns\\Bartender4\\Bar.lua:491: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [78]
+		}, -- [64]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4BarRep:Show()) during combat lockdown.",
 			["count"] = 2,
@@ -673,7 +556,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `Show'\nInterface\\AddOns\\Bartender4\\Bar.lua:492: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [79]
+		}, -- [65]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4Bar6:SetAttribute()) during combat lockdown.",
 			["count"] = 1,
@@ -681,7 +564,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `SetAttribute'\nInterface\\AddOns\\Bartender4\\Bar.lua:491: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [80]
+		}, -- [66]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4Bar6:Show()) during combat lockdown.",
 			["count"] = 2,
@@ -689,7 +572,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `Show'\nInterface\\AddOns\\Bartender4\\Bar.lua:492: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [81]
+		}, -- [67]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4BarBagBar:SetAttribute()) during combat lockdown.",
 			["count"] = 1,
@@ -697,7 +580,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `SetAttribute'\nInterface\\AddOns\\Bartender4\\Bar.lua:491: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [82]
+		}, -- [68]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4BarBagBar:Show()) during combat lockdown.",
 			["count"] = 2,
@@ -705,7 +588,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `Show'\nInterface\\AddOns\\Bartender4\\Bar.lua:492: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [83]
+		}, -- [69]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4BarExtraActionBar:SetAttribute()) during combat lockdown.",
 			["count"] = 1,
@@ -713,7 +596,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `SetAttribute'\nInterface\\AddOns\\Bartender4\\Bar.lua:491: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [84]
+		}, -- [70]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4BarExtraActionBar:Show()) during combat lockdown.",
 			["count"] = 2,
@@ -721,7 +604,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `Show'\nInterface\\AddOns\\Bartender4\\Bar.lua:492: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [85]
+		}, -- [71]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4BarVehicle:SetAttribute()) during combat lockdown.",
 			["count"] = 1,
@@ -729,7 +612,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `SetAttribute'\nInterface\\AddOns\\Bartender4\\Bar.lua:491: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [86]
+		}, -- [72]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4BarVehicle:Show()) during combat lockdown.",
 			["count"] = 2,
@@ -737,7 +620,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `Show'\nInterface\\AddOns\\Bartender4\\Bar.lua:492: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [87]
+		}, -- [73]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4BarXP:SetAttribute()) during combat lockdown.",
 			["count"] = 1,
@@ -745,7 +628,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `SetAttribute'\nInterface\\AddOns\\Bartender4\\Bar.lua:491: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [88]
+		}, -- [74]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4BarXP:Show()) during combat lockdown.",
 			["count"] = 2,
@@ -753,7 +636,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `Show'\nInterface\\AddOns\\Bartender4\\Bar.lua:492: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [89]
+		}, -- [75]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4BarStanceBar:SetAttribute()) during combat lockdown.",
 			["count"] = 1,
@@ -761,7 +644,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `SetAttribute'\nInterface\\AddOns\\Bartender4\\Bar.lua:491: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [90]
+		}, -- [76]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4BarStanceBar:Show()) during combat lockdown.",
 			["count"] = 2,
@@ -769,7 +652,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `Show'\nInterface\\AddOns\\Bartender4\\Bar.lua:492: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [91]
+		}, -- [77]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4BarPetBar:SetAttribute()) during combat lockdown.",
 			["count"] = 1,
@@ -777,7 +660,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `SetAttribute'\nInterface\\AddOns\\Bartender4\\Bar.lua:491: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [92]
+		}, -- [78]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4BarPetBar:Show()) during combat lockdown.",
 			["count"] = 2,
@@ -785,7 +668,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `Show'\nInterface\\AddOns\\Bartender4\\Bar.lua:492: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [93]
+		}, -- [79]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4BarMicroMenu:SetAttribute()) during combat lockdown.",
 			["count"] = 1,
@@ -793,7 +676,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `SetAttribute'\nInterface\\AddOns\\Bartender4\\Bar.lua:491: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [94]
+		}, -- [80]
 		{
 			["message"] = "Note: AddOn Bartender4 attempted to call a protected function (BT4BarMicroMenu:Show()) during combat lockdown.",
 			["count"] = 2,
@@ -801,7 +684,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-01 22:12:24",
 			["context"] = "AddOn: Bartender4",
 			["stack"] = "[C]: in function `Show'\nInterface\\AddOns\\Bartender4\\Bar.lua:492: in function `DisableVisibilityDriver'\nInterface\\AddOns\\Bartender4\\Bar.lua:273: in function `func'\nInterface\\AddOns\\Bartender4\\Bar.lua:199: in function `ForAll'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:404: in function `Unlock'\nInterface\\AddOns\\Bartender4\\Bartender4.lua:469: in function `OnClick'\n...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143: in function <...dOns\\Bartender4\\libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:143>\n",
-		}, -- [95]
+		}, -- [81]
 		{
 			["message"] = "Note: AddOn Informant attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
 			["count"] = 3,
@@ -809,7 +692,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-05 05:47:52",
 			["context"] = "AddOn: Informant",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1963: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:2037: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:306: in function <Interface\\FrameXML\\WorldMapFrame.lua:292>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:252: in function <Interface\\FrameXML\\WorldMapFrame.lua:233>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1703: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1481: in function <Interface\\FrameXML\\UIParent.lua:1477>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2193: in function <Interface\\FrameXML\\UIParent.lua:2181>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3531: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3478: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [96]
+		}, -- [82]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1760: script ran too long",
 			["count"] = 1,
@@ -818,7 +701,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-09 22:17:41",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1760: in function `func'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:730: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:723>\n",
-		}, -- [97]
+		}, -- [83]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (MinimapCluster:Hide()) during combat lockdown.",
 			["count"] = 1,
@@ -826,7 +709,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-09 22:17:43",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Hide'\nInterface\\AddOns\\Carbonite\\NxMap.lua:2453: in function `MinimapButtonShowUpdate'\nInterface\\AddOns\\Carbonite\\NxMap.lua:10377: in function `F'\nInterface\\AddOns\\Carbonite\\NxTimer.lua:111: in function `OnUpdate'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1113: in function `NXOnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n",
-		}, -- [98]
+		}, -- [84]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\Carbonite.lua:2586: script ran too long",
 			["count"] = 293,
@@ -835,7 +718,7 @@ SwatterData = {
 			["timestamp"] = "2013-02-09 22:17:46",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\Carbonite.lua:2586: in function `Func'\nInterface\\AddOns\\Carbonite\\NxHelp.lua:812: in function `OnUpdate'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1114: in function `NXOnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n",
-		}, -- [99]
+		}, -- [85]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9212: script ran too long",
 			["count"] = 3,
@@ -844,6 +727,128 @@ SwatterData = {
 			["timestamp"] = "2013-02-16 23:12:40",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9212: in function `SetCurrentMap'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:1854: in function `F'\nInterface\\AddOns\\Carbonite\\NxTimer.lua:111: in function `OnUpdate'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1113: in function `NXOnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n",
+		}, -- [86]
+		{
+			["message"] = "Interface\\AddOns\\Carbonite\\NxMapGuide.lua:1936: script ran too long",
+			["count"] = 141,
+			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50007\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucScanData, v5.15.5383 (LikeableLyrebird)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.8\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.2\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DBMPartyMoP, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.2.0\n  Quartz, v3.1.1-2-ga35af5a\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.1.0.50100 <us>\n  (ck=853)\n",
+			["locals"] = "self = <table> {\n Win = <table> {\n }\n PadX = 0\n PathHistory = <table> {\n }\n MenuIDelete = <table> {\n }\n POIDraw = true\n List = <table> {\n }\n List2 = <table> {\n }\n ShowQuestGiverCompleted = false\n GuideIndex = 1\n MenuIGotoQ = <table> {\n }\n Map = <table> {\n }\n ToolBarW = 0\n EditBox = <table> {\n }\n Menu = <table> {\n }\n POIMapId = 6008\n ShowFolders = <table> {\n }\n PathHistorySel = <table> {\n }\n ShowAllCont = true\n TitleH = 0\n}\nvv = <table> {\n Spirit of Harmony Vendor~Krystel = <table> {\n }\n Innkeeper~Puli the Even Handed = <table> {\n }\n Innkeeper~Jiayi Applebloom = <table> {\n }\n Leatherworking & Skinning Supplies~Tanner Pang = <table> {\n }\n Brewer~Teng Applebloom = <table> {\n }\n Valor Quartermaster~Commander Oxheart = <table> {\n }\n General Goods~Hegrid Blazewing = <table> {\n }\n Adventuring Supplies~Singegruff = <table> {\n }\n Justice Quartermaster~Magatha Silverton = <table> {\n }\n Brewmaster~Peiji Goldendraft = <table> {\n }\n Adventuring Supplies~Trader Jambeezi = <table> {\n }\n Repairs~Earthmender Doros = <table> {\n }\n Guide to the Ways~Sungshin Ironpaw = <table> {\n }\n Leatherworking Supplies~Jalin Lakedeep = <table> {\n }\n Shado-Pan Quartermaster~Rushi the Fox = <table> {\n }\n Adventuring Supplies~Alin the Finder = <table> {\n }\n Brews~Taijing the Cyclone = <table> {\n }\n ~Supplier Qiao = <table> {\n }\n ~Magister Xintar = <table> {\n }\n Leatherworking Supplies~Nunaha Grasshoof = <table> {\n }\n Stockmaster~Nam Ironpaw = <table> {\n }\n Innkeeper~Stained Mug = <table> {\n }\n Watersmith~Ot-Temmdo = <table> {\n }\n Engineering Supplies~Billibub Cogspinner = <table> {\n }\n General Goods~Tomo = <table> {\n }\n Used Yak Salesgrummle~Uncle Bigpocket = <table> {\n }\n Innkeeper~Rude Sho = <table> {\n }\n Adventurous Tinker~Gnimo = <table> {\n }\n Valor Quartermaster~Faldren Tillsdale = <table> {\n }\n Food & Drink~Sway Dish Chef = <table> {\n }\n Weapons Vendor~Philip O'Tool = <table> {\n }\n Seed Vendor~Merchant Greenfield = <table> {\n }\n Innkeeper~Chiyo Mistpaw = <table> {\n }\n Justice Heirlooms~Larisse Pembraux = <table> {\n }\n Engineering & Mining Supplies~Frank Natale = <table> {\n }\n Flowers~Aster = <table> {\n }\n Inscription Supplies~Stanly McCormick = <table> {\n }\n Fireworks Vendor~Pera Firestone = <table> {\n }\n Blacksmithing Supplies~Kaita Deepforge = <table> {\n }\n Engineering Supplies~Murphy Diremoor = <table> {\n }\n Innkeeper~Nan Thunderfoot = <table> {\n }\n Dragon Turtle Breeder~Old Whitenose = <table> {\n }\n Leatherworking Supplies~Inoho Stronghide = <table> {\n }\n Innkeeper~Maegan Tillman = <table> {\n }\n Repair Vendor~Black Arrow = <table> {\n }\n Supplies & Mender~Elyssa Nightquiver = <table> {\n }\n Master of Noodles~Chin = <table> {\n }\n General Goods~Jandunel Reedwind = <table> {\n }\n Balloon Vendor~Carl Goodup = <table> {\n }\n Trade Supplies~Tharynn Bouden = <table> {\n }\n Justice Quartermaster~Commander Lo Ping = <table> {\n }\n General Goods Vendor~Big Sal = <table> {\n }\n Innkeeper~Kazemde = <table> {\n }\n Blacksmith~Ironshaper Shou = <table> {\n }\n Serpent Keeper~San Redscale = <table> {\n }\n ~Ironshaper Peng = <table> {\n }\n ~Lunar Festival Vendor = <table> {\n }\n Washed-Up Mage~Barnaby Fletcher = <table> {\n }\n The Golden Lotus Quartermaster~Jaluu the Generous = <table> {\n }\n Leatherworking Supplies~Jillian Tanner = <table> {\n }\n}\nfolder = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n 16 = <table> {\n }\n 17 = <table> {\n }\n 18 = <table> {\n }\n 19 = <table> {\n }\n 20 = <table> {\n }\n 21 = <table> {\n }\n 22 = <table> {\n }\n 23 = <table> {\n }\n 24 = <table> {\n }\n 25 = <table> {\n }\n 26 = <table> {\n }\n 27 = <table> {\n }\n 28 = <table> {\n }\n 29 = <table> {\n }\n 30 = <table> {\n }\n 31 = <table> {\n }\n 32 = <table> {\n }\n 33 = <table> {\n }\n 34 = <table> {\n }\n 35 = <table> {\n }\n 36 = <table> {\n }\n 37 = <table> {\n }\n 38 = <table> {\n }\n 39 = <table> {\n }\n 40 = <table> {\n }\n 41 = <table> {\n }\n Name = \"Visited Vendor\"\n Tx = \"INV_Misc_Coin_05\"\n}\n(*te",
+			["timestamp"] = "2013-02-23 22:59:06",
+			["context"] = "Global",
+			["stack"] = "Interface\\AddOns\\Carbonite\\NxMapGuide.lua:1936: in function `UpdateVisitedVendors'\nInterface\\AddOns\\Carbonite\\NxMapGuide.lua:1815: in function `F'\nInterface\\AddOns\\Carbonite\\NxTimer.lua:111: in function `OnUpdate'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1113: in function `NXOnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n",
+		}, -- [87]
+		{
+			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9098: bad argument #2 to 'strsplit' (string expected, got nil)",
+			["count"] = 628,
+			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50007\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.8\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.2\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.2.0\n  Quartz, v3.1.1-2-ga35af5a\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.1.0.50100 <us>\n  (ck=815)\n",
+			["locals"] = "(*temporary) = \"!\"\n(*temporary) = nil\n(*temporary) = \"string expected, got nil\"\n",
+			["timestamp"] = "2013-02-25 05:15:01",
+			["context"] = "Global",
+			["stack"] = "[C]: in function `strsplit'\nInterface\\AddOns\\Carbonite\\NxMap.lua:9098: in function `GetInstanceID'\nInterface\\AddOns\\Carbonite\\NxMap.lua:9118: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:9107>\n(tail call): ?\nInterface\\AddOns\\Carbonite\\NxMapGuide.lua:1180: in function `UpdateMapIcons'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:1808: in function `RecordQuestsLog'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:1381: in function `RecordQuests'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:4733: in function `LogUpdate'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:4702: in function `?'\nInterface\\AddOns\\Carbonite\\NxUI.lua:2780: in function <Interface\\AddOns\\Carbonite\\NxUI.lua:2762>\n",
+		}, -- [88]
+		{
+			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9098: bad argument #2 to 'strsplit' (string expected, got nil)",
+			["count"] = 225,
+			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50007\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucScanData, v5.15.5383 (LikeableLyrebird)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.8\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.2\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.2.0\n  Quartz, v3.1.1-2-ga35af5a\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.1.0.50100 <us>\n  (ck=842)\n",
+			["locals"] = "(*temporary) = \"!\"\n(*temporary) = nil\n(*temporary) = \"string expected, got nil\"\n",
+			["timestamp"] = "2013-02-26 05:13:51",
+			["context"] = "Global",
+			["stack"] = "[C]: in function `strsplit'\nInterface\\AddOns\\Carbonite\\NxMap.lua:9098: in function `GetInstanceID'\nInterface\\AddOns\\Carbonite\\NxMap.lua:9118: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:9107>\n(tail call): ?\nInterface\\AddOns\\Carbonite\\NxMapGuide.lua:1180: in function `UpdateMapIcons'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:1808: in function `RecordQuestsLog'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:1381: in function `RecordQuests'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:4733: in function `LogUpdate'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:4702: in function `?'\nInterface\\AddOns\\Carbonite\\NxUI.lua:2780: in function <Interface\\AddOns\\Carbonite\\NxUI.lua:2762>\n",
+		}, -- [89]
+		{
+			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9098: bad argument #2 to 'strsplit' (string expected, got nil)",
+			["count"] = 2,
+			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50007\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucScanData, v5.15.5383 (LikeableLyrebird)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.8\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.2\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.2.0\n  Quartz, v3.1.1-2-ga35af5a\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.1.0.50100 <us>\n  (ck=842)\n",
+			["locals"] = "(*temporary) = \"!\"\n(*temporary) = nil\n(*temporary) = \"string expected, got nil\"\n",
+			["timestamp"] = "2013-02-27 05:40:18",
+			["context"] = "Global",
+			["stack"] = "[C]: in function `strsplit'\nInterface\\AddOns\\Carbonite\\NxMap.lua:9098: in function `GetInstanceID'\nInterface\\AddOns\\Carbonite\\NxMap.lua:9118: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:9107>\n(tail call): ?\nInterface\\AddOns\\Carbonite\\NxMapGuide.lua:1180: in function `UpdateMapIcons'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:1808: in function `RecordQuestsLog'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:1381: in function `RecordQuests'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:4733: in function `LogUpdate'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:4702: in function `?'\nInterface\\AddOns\\Carbonite\\NxUI.lua:2780: in function <Interface\\AddOns\\Carbonite\\NxUI.lua:2762>\n",
+		}, -- [90]
+		{
+			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9098: bad argument #2 to 'strsplit' (string expected, got nil)",
+			["count"] = 2,
+			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50007\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.8\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.2\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.2.0\n  Quartz, v3.1.1-2-ga35af5a\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.1.0.50100 <us>\n  (ck=815)\n",
+			["locals"] = "(*temporary) = \"!\"\n(*temporary) = nil\n(*temporary) = \"string expected, got nil\"\n",
+			["timestamp"] = "2013-02-28 05:15:43",
+			["context"] = "Global",
+			["stack"] = "[C]: in function `strsplit'\nInterface\\AddOns\\Carbonite\\NxMap.lua:9098: in function `GetInstanceID'\nInterface\\AddOns\\Carbonite\\NxMap.lua:9118: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:9107>\n(tail call): ?\nInterface\\AddOns\\Carbonite\\NxMapGuide.lua:1180: in function `UpdateMapIcons'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:1808: in function `RecordQuestsLog'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:1381: in function `RecordQuests'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:4733: in function `LogUpdate'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:4702: in function `?'\nInterface\\AddOns\\Carbonite\\NxUI.lua:2780: in function <Interface\\AddOns\\Carbonite\\NxUI.lua:2762>\n",
+		}, -- [91]
+		{
+			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9098: bad argument #2 to 'strsplit' (string expected, got nil)",
+			["count"] = 12,
+			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50007\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.8\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.2\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.2.0\n  Quartz, v3.1.1-2-ga35af5a\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.1.0.50100 <us>\n  (ck=815)\n",
+			["locals"] = "(*temporary) = \"!\"\n(*temporary) = nil\n(*temporary) = \"string expected, got nil\"\n",
+			["timestamp"] = "2013-02-28 05:25:54",
+			["context"] = "Global",
+			["stack"] = "[C]: in function `strsplit'\nInterface\\AddOns\\Carbonite\\NxMap.lua:9098: in function `GetInstanceID'\nInterface\\AddOns\\Carbonite\\NxMap.lua:9118: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:9107>\n(tail call): ?\nInterface\\AddOns\\Carbonite\\NxMap.lua:4358: in function `UpdateWorld'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4426: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4097: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4021>\n",
+		}, -- [92]
+		{
+			["message"] = "Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1739: script ran too long",
+			["count"] = 1,
+			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50007\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucScanData, v5.15.5383 (LikeableLyrebird)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.8\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.2\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DBMPartyMoP, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.2.0\n  Quartz, v3.1.1-2-ga35af5a\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.1.0.50100 <us>\n  (ck=853)\n",
+			["locals"] = "self = <table> {\n MoveSpecialWarning = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:4241\n CreatePizzaTimer = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1015\n MapSizes = <table> {\n }\n UnregisterShortTermEvents = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:443\n MovieFilter = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3224\n GetModByName = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3306\n CHAT_MSG_RAID_BOSS_EMOTE = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2427\n CHAT_MSG_WHISPER = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3029\n RAID_BOSS_EMOTE = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2432\n UnregisterInCombatEvents = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:430\n ShowUpdateReminder = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2188\n PLAYER_REGEN_DISABLED = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2303\n CreateModLocalization = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:5158\n IsEnabled = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3117\n Bars = <table> {\n }\n AddMsg = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3125\n Schedule = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:775\n Capitalize = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3183\n ADDON_LOADED = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1457\n ShowPizzaInfo = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1031\n BossHealth = <table> {\n }\n ShowRaidIDRequestResults = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2050\n INSTANCE_ENCOUNTER_ENGAGE_UNIT = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2358\n Revision = 8421\n RegisterEvents = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:400\n COMBAT_LOG_EVENT_UNFILTERED = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:487\n FilterRaidBossEmote = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:464\n RequestTimers = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2825\n LFG_PROPOSAL_SUCCEEDED = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1562\n ForceUpdate = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:783\n UPDATE_BATTLEFIELD_STATUS = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1566\n CHAT_MSG_MONSTER_YELL = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2419\n LFG_COMPLETION_REWARD = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1659\n LFG_PROPOSAL_SHOW = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1554\n ReleaseRevision = 8421\n Enable = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3113\n PLAYER_ENTERING_WORLD = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2950\n AddOns = <table> {\n }\n Options = <table> {\n }\n UNIT_DESTROYED = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2810\n GetUnitFullName = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1327\n GetGroupMembers = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1303\n InfoFrame = <table> {\n }\n SendTimerInfo = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2915\n CHAT_MSG_BN_WHISPER = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3033\n UNIT_DIED = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2810\n GetRaidUnitId = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1322\n ReceiveCombatInfo = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2838\n CHAT_MSG_ADDON = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2177\n DefaultOptions = <table> {\n }\n GetModLocalization = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:5174\n ShowTestSpecialWarning = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:4291\n GetCurrentInstanceDifficulty = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2779\n RegisterCallback = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:583\n UpdateSpecialWarningOptions = <function> def",
+			["timestamp"] = "2013-03-01 05:18:47",
+			["context"] = "Global",
+			["stack"] = "Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1739: in function `func'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:730: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:723>\n",
+		}, -- [93]
+		{
+			["message"] = "Interface\\AddOns\\+Wowhead_Looter\\Wowhead_Looter.lua:952: script ran too long",
+			["count"] = 1,
+			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50007\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucScanData, v5.15.5383 (LikeableLyrebird)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.8\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.2\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DBMPartyMoP, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.2.0\n  Quartz, v3.1.1-2-ga35af5a\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.1.0.50100 <us>\n  (ck=853)\n",
+			["locals"] = "guid = \"0xF130DE570000236F\"\nname = \"Mantid Munitions\"\nid = 56919\nnow = 912398774094\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = wlGameTooltip {\n 0 = <userdata>\n}\n(*temporary) = \"unit:0xF130DE570000236F\"\n(*temporary) = \"Level %s %s (%s)\"\n(*temporary) = wlGameTooltip {\n 0 = <userdata>\n}\n(*temporary) = <function> defined @Interface\\FrameXML\\GameTooltip.lua:141\n(*temporary) = wlGameTooltip {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = \"script ran too long\"\nwlNpcInfo = <table> {\n Mogu Effigy = <table> {\n }\n Kun Autumnlight = <table> {\n }\n Sun Tenderheart = <table> {\n }\n Shao-Tien Marauder = <table> {\n }\n Anji Autumnlight = <table> {\n }\n Leven Dawnblade = <table> {\n }\n}\nwlTracker = <table> {\n spell = <table> {\n }\n rep = <table> {\n }\n quest = <table> {\n }\n}\n",
+			["timestamp"] = "2013-03-01 05:18:52",
+			["context"] = "Global",
+			["stack"] = "Interface\\AddOns\\+Wowhead_Looter\\Wowhead_Looter.lua:952: in function `wlCheckUnitForRep'\nInterface\\AddOns\\+Wowhead_Looter\\Wowhead_Looter.lua:1045: in function `wlEvent_COMBAT_LOG_EVENT_UNFILTERED'\nInterface\\AddOns\\+Wowhead_Looter\\Wowhead_Looter.lua:973: in function `?'\nInterface\\AddOns\\+Wowhead_Looter\\Wowhead_Looter.lua:3117: in function <Interface\\AddOns\\+Wowhead_Looter\\Wowhead_Looter.lua:3115>\n",
+		}, -- [94]
+		{
+			["message"] = "Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2504: attempt to index field 'stats' (a nil value)",
+			["count"] = 4,
+			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50007\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucScanData, v5.15.5383 (LikeableLyrebird)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.8\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.2\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DBMPartyMoP, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.2.0\n  Quartz, v3.1.1-2-ga35af5a\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.1.0.50100 <us>\n  (ck=853)\n",
+			["locals"] = "self = <table> {\n MoveSpecialWarning = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:4241\n CreatePizzaTimer = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1015\n MapSizes = <table> {\n }\n UnregisterShortTermEvents = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:443\n MovieFilter = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3224\n GetModByName = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3306\n CHAT_MSG_RAID_BOSS_EMOTE = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2427\n CHAT_MSG_WHISPER = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3029\n RAID_BOSS_EMOTE = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2432\n UnregisterInCombatEvents = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:430\n ShowUpdateReminder = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2188\n PLAYER_REGEN_DISABLED = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2303\n CreateModLocalization = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:5158\n IsEnabled = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3117\n Bars = <table> {\n }\n AddMsg = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3125\n Schedule = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:775\n Capitalize = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3183\n ADDON_LOADED = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1457\n ShowPizzaInfo = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1031\n BossHealth = <table> {\n }\n ShowRaidIDRequestResults = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2050\n INSTANCE_ENCOUNTER_ENGAGE_UNIT = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2358\n Revision = 8421\n RegisterEvents = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:400\n COMBAT_LOG_EVENT_UNFILTERED = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:487\n FilterRaidBossEmote = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:464\n RequestTimers = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2825\n LFG_PROPOSAL_SUCCEEDED = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1562\n ForceUpdate = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:783\n UPDATE_BATTLEFIELD_STATUS = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1566\n CHAT_MSG_MONSTER_YELL = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2419\n LFG_COMPLETION_REWARD = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1659\n LFG_PROPOSAL_SHOW = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1554\n ReleaseRevision = 8421\n Enable = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3113\n PLAYER_ENTERING_WORLD = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2950\n AddOns = <table> {\n }\n Options = <table> {\n }\n UNIT_DESTROYED = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2810\n GetUnitFullName = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1327\n GetGroupMembers = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1303\n InfoFrame = <table> {\n }\n SendTimerInfo = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2915\n CHAT_MSG_BN_WHISPER = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3033\n UNIT_DIED = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2810\n GetRaidUnitId = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1322\n ReceiveCombatInfo = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2838\n CHAT_MSG_ADDON = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2177\n DefaultOptions = <table> {\n }\n GetModLocalization = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:5174\n ShowTestSpecialWarning = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:4291\n GetCurrentInstanceDifficulty = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2779\n RegisterCallback = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:583\n UpdateSpecialWarningOptions = <function> def",
+			["timestamp"] = "2013-03-01 05:20:43",
+			["context"] = "Global",
+			["stack"] = "Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2504: in function `StartCombat'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2370: in function `?'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:367: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:360>\n",
+		}, -- [95]
+		{
+			["message"] = "Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2649: attempt to perform arithmetic on field 'pull' (a nil value)",
+			["count"] = 4,
+			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50007\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucScanData, v5.15.5383 (LikeableLyrebird)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.8\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.2\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DBMPartyMoP, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.2.0\n  Quartz, v3.1.1-2-ga35af5a\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.1.0.50100 <us>\n  (ck=853)\n",
+			["locals"] = "self = <table> {\n MoveSpecialWarning = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:4241\n CreatePizzaTimer = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1015\n MapSizes = <table> {\n }\n UnregisterShortTermEvents = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:443\n MovieFilter = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3224\n GetModByName = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3306\n CHAT_MSG_RAID_BOSS_EMOTE = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2427\n CHAT_MSG_WHISPER = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3029\n RAID_BOSS_EMOTE = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2432\n UnregisterInCombatEvents = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:430\n ShowUpdateReminder = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2188\n PLAYER_REGEN_DISABLED = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2303\n CreateModLocalization = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:5158\n IsEnabled = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3117\n Bars = <table> {\n }\n AddMsg = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3125\n Schedule = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:775\n Capitalize = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3183\n ADDON_LOADED = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1457\n ShowPizzaInfo = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1031\n BossHealth = <table> {\n }\n ShowRaidIDRequestResults = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2050\n INSTANCE_ENCOUNTER_ENGAGE_UNIT = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2358\n Revision = 8421\n RegisterEvents = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:400\n COMBAT_LOG_EVENT_UNFILTERED = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:487\n FilterRaidBossEmote = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:464\n RequestTimers = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2825\n LFG_PROPOSAL_SUCCEEDED = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1562\n ForceUpdate = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:783\n UPDATE_BATTLEFIELD_STATUS = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1566\n CHAT_MSG_MONSTER_YELL = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2419\n LFG_COMPLETION_REWARD = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1659\n LFG_PROPOSAL_SHOW = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1554\n ReleaseRevision = 8421\n Enable = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3113\n PLAYER_ENTERING_WORLD = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2950\n AddOns = <table> {\n }\n Options = <table> {\n }\n UNIT_DESTROYED = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2810\n GetUnitFullName = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1327\n GetGroupMembers = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1303\n InfoFrame = <table> {\n }\n SendTimerInfo = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2915\n CHAT_MSG_BN_WHISPER = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3033\n UNIT_DIED = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2810\n GetRaidUnitId = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1322\n ReceiveCombatInfo = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2838\n CHAT_MSG_ADDON = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2177\n DefaultOptions = <table> {\n }\n GetModLocalization = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:5174\n ShowTestSpecialWarning = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:4291\n GetCurrentInstanceDifficulty = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2779\n RegisterCallback = <function> defined @Interface\\AddOns\\DBM-Core\\DBM-Core.lua:583\n UpdateSpecialWarningOptions = <function> def",
+			["timestamp"] = "2013-03-01 05:22:11",
+			["context"] = "Global",
+			["stack"] = "Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2649: in function `EndCombat'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2774: in function `OnMobKill'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2812: in function `?'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:367: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:360>\n(tail call): ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:367: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:360>\n",
+		}, -- [96]
+		{
+			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapBlobFrame:Show()) during combat lockdown.",
+			["count"] = 1,
+			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50007\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucScanData, v5.15.5383 (LikeableLyrebird)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.8\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.2\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DBMPartyMoP, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.2.0\n  Quartz, v3.1.1-2-ga35af5a\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.1.0.50100 <us>\n  (ck=853)\n",
+			["timestamp"] = "2013-03-02 21:36:24",
+			["context"] = "AddOn: Carbonite",
+			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\WorldMapFrame.lua:1963: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:2037: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:306: in function <Interface\\FrameXML\\WorldMapFrame.lua:292>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:252: in function <Interface\\FrameXML\\WorldMapFrame.lua:233>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1703: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1481: in function <Interface\\FrameXML\\UIParent.lua:1477>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2193: in function <Interface\\FrameXML\\UIParent.lua:2181>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3531: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3478: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
+		}, -- [97]
+		{
+			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapDetailFrame:SetScale()) during combat lockdown.",
+			["count"] = 1,
+			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50007\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucScanData, v5.15.5383 (LikeableLyrebird)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.8\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.2\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DBMPartyMoP, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.2.0\n  Quartz, v3.1.1-2-ga35af5a\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.1.0.50100 <us>\n  (ck=853)\n",
+			["timestamp"] = "2013-03-02 22:18:08",
+			["context"] = "AddOn: Carbonite",
+			["stack"] = "[C]: in function `SetScale'\nInterface\\FrameXML\\WorldMapFrame.lua:2014: in function `WorldMapFrame_SetFullMapView'\nInterface\\FrameXML\\WorldMapFrame.lua:1968: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:2037: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:306: in function <Interface\\FrameXML\\WorldMapFrame.lua:292>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:252: in function <Interface\\FrameXML\\WorldMapFrame.lua:233>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1703: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1481: in function <Interface\\FrameXML\\UIParent.lua:1477>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2193: in function <Interface\\FrameXML\\UIParent.lua:2181>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3531: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3478: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
+		}, -- [98]
+		{
+			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapDetailFrame:SetPoint()) during combat lockdown.",
+			["count"] = 1,
+			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50007\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucScanData, v5.15.5383 (LikeableLyrebird)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.8\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.2\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DBMPartyMoP, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.2.0\n  Quartz, v3.1.1-2-ga35af5a\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.1.0.50100 <us>\n  (ck=853)\n",
+			["timestamp"] = "2013-03-02 22:18:08",
+			["context"] = "AddOn: Carbonite",
+			["stack"] = "[C]: in function `SetPoint'\nInterface\\FrameXML\\WorldMapFrame.lua:2017: in function `WorldMapFrame_SetFullMapView'\nInterface\\FrameXML\\WorldMapFrame.lua:1968: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:2037: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:306: in function <Interface\\FrameXML\\WorldMapFrame.lua:292>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:252: in function <Interface\\FrameXML\\WorldMapFrame.lua:233>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1703: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1481: in function <Interface\\FrameXML\\UIParent.lua:1477>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2193: in function <Interface\\FrameXML\\UIParent.lua:2181>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3531: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3478: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
+		}, -- [99]
+		{
+			["message"] = "Note: AddOn Carbonite attempted to call a protected function (WorldMapBlobFrame:Hide()) during combat lockdown.",
+			["count"] = 1,
+			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50007\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucScanData, v5.15.5383 (LikeableLyrebird)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.8\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.2\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DBMPartyMoP, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.2.0\n  Quartz, v3.1.1-2-ga35af5a\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.1.0.50100 <us>\n  (ck=853)\n",
+			["timestamp"] = "2013-03-02 22:18:08",
+			["context"] = "AddOn: Carbonite",
+			["stack"] = "[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapFrame.lua:1970: in function `WorldMapFrame_DisplayQuests'\nInterface\\FrameXML\\WorldMapFrame.lua:2037: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:306: in function <Interface\\FrameXML\\WorldMapFrame.lua:292>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:252: in function <Interface\\FrameXML\\WorldMapFrame.lua:233>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1703: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1481: in function <Interface\\FrameXML\\UIParent.lua:1477>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2193: in function <Interface\\FrameXML\\UIParent.lua:2181>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3531: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3478: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
 		}, -- [100]
 	},
 }

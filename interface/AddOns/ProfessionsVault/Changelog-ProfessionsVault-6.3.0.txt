@@ -1,0 +1,38 @@
+------------------------------------------------------------------------
+r433 | oscarucb | 2013-03-06 06:13:18 +0000 (Wed, 06 Mar 2013) | 1 line
+Changed paths:
+   A /tags/6.3.0 (from /trunk:432)
+
+Tagging as 6.3.0
+------------------------------------------------------------------------
+r431 | oscarucb | 2013-03-06 00:22:04 +0000 (Wed, 06 Mar 2013) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+more data updates
+
+------------------------------------------------------------------------
+r429 | oscarucb | 2013-03-05 16:49:22 +0000 (Tue, 05 Mar 2013) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+more general database updates
+
+------------------------------------------------------------------------
+r428 | oscarucb | 2013-03-05 09:13:41 +0000 (Tue, 05 Mar 2013) | 3 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+   M /trunk/ProfessionsVault.lua
+   M /trunk/ProfessionsVault.toc
+
+first round of 5.2 data updates
+toc bump
+
+------------------------------------------------------------------------
+r427 | oscarucb | 2013-01-22 14:02:48 +0000 (Tue, 22 Jan 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+ptr updates
+
+------------------------------------------------------------------------
