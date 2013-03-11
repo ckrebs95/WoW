@@ -1,4 +1,4 @@
-﻿## Interface: 50001
+﻿## Interface: 50200
 ## Title: Quartz |cff7777ffProcs|r
 ## Notes: Quartz module to display procs, class abilities, buffs, and cooldowns, displayed on the Mirror bar.
 ## Title-zhTW: Quartz |cff7777ff特效|r

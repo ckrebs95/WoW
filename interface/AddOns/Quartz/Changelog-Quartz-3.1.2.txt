@@ -1,0 +1,23 @@
+tag 3.1.2
+38fd3f29f09b4563a64d6f27af70c510d946845d
+Hendrik Leppkes <h.leppkes@gmail.com>
+2013-03-09 08:04:29 +0100
+
+Tag as 3.1.2
+
+
+--------------------
+
+Hendrik Leppkes:
+	- Add monk channeled spells
+	- Update TOC for 5.2
+	- Cleanup after a3cd5d9
+Benjamin Staneck:
+	- remove pre-mop combat and add mind flay: insanity to the list of channeled spells
+Hendrik Leppkes:
+	- Bump toc
+	- Fix latency showing wrong information when using world objects or crafting.
+	The latency display requires a fixed order of events,
+	if some of these events don't happen, the information is bogus,
+	so instead of trying to use it anyway, clear it, and ensure its
+	only displayed when its meaningful.

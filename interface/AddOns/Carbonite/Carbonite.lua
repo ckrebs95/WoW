@@ -27,7 +27,7 @@ function NXInit()
 	NXTITLEFULL = NXTITLE
 
 	Nx.VERMAJOR			= 5.1
-	Nx.VERMINOR			= .2			-- Not 0 is a test version
+	Nx.VERMINOR			= .3			-- Not 0 is a test version
 	Nx.BUILD				= 292
 
 	Nx.VERSION			= Nx.VERMAJOR + Nx.VERMINOR / 100
@@ -192,7 +192,7 @@ function NXInit()
 		UIErrorsFrame:AddMessage (s)
 		Nx.NXVerOld = true
 	end
-	Nx.TooltipLastDiffNumLines = 0
+	Nx.TooltipLastDiffNumLines = 0	
 end
 
 NXInit()
@@ -1681,6 +1681,10 @@ function Nx:InitGlobal()
 	end
 
 	cap["NPC"] = cap["NPC"] or {}
+--	if not NxData.EOL then
+--		message("This will be the last version of Carbonite. Watch for Carbonite2 Soon.\nTest Versions can be found on WoWI and Curse as Carbonite alpha releases now")
+--		NxData.EOL = "seen"
+--	end
 end
 
 --------

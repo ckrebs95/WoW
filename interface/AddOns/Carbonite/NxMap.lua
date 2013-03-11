@@ -3583,16 +3583,21 @@ function Nx.Map:ToggleSize (szmode)
 	local win = map.Win
 
 	if not win:IsShown() then
-
 		win:Show()
 
 		if szmode == 0 then
+			WorldMapPlayerLower:SetAlpha(1)
+			WorldMapPlayerUpper:SetAlpha(1)		
 			map:RestoreSize()
 
 		elseif szmode == 1 then
+			WorldMapPlayerLower:SetAlpha(0)
+			WorldMapPlayerUpper:SetAlpha(0)
 			map:MaxSize()
 
 		elseif self.GOpts["MapMaxCenter"] then
+			WorldMapPlayerLower:SetAlpha(0)
+			WorldMapPlayerUpper:SetAlpha(0)
 			map:MaxSize()
 		end
 
@@ -3600,9 +3605,13 @@ function Nx.Map:ToggleSize (szmode)
 		win:Show (false)
 
 	elseif not win:IsSizeMax() then
+		WorldMapPlayerLower:SetAlpha(0)
+		WorldMapPlayerUpper:SetAlpha(0)	
 		map:MaxSize()
 
 	else
+		WorldMapPlayerLower:SetAlpha(1)
+		WorldMapPlayerUpper:SetAlpha(1)	
 		map:RestoreSize()
 	end
 
@@ -8760,6 +8769,7 @@ function Nx.Map:InitTables()
 			if not winfo then
 				break
 			end			
+			Nx.prt(ci * 1000 + n)
 			winfo[4] = cx + winfo[2]
 			winfo[5] = cy + winfo[3]
 		end

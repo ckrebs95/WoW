@@ -888,7 +888,7 @@ Map.MapInfo = {
 		X = 2350,
 		Y = 300,
 		Min = 6001,
-		Max = 6012,
+		Max = 6015,
 	},
 	[8] = {
 		Name = "Instance",
@@ -1667,33 +1667,33 @@ Map.MapWorldInfo = {
 	-- BGs/Arenas (note: add map win InitLayoutData when adding BGs)
     [6000] = {
 		31.030601,
-		-1756.42, 95.44,
+		-1756.42, 595.44,
 	},
 	[6001] = {
 		Name="Dread Wastes",
 		10.704166,
-		-1234.27, 1148.84,
+		-1234.27, 1648.84,
 		Overlay = "dreadwastes",
 		Fish = 525,
 	},
 	[6002] = {
 		Name="Krasarang Wilds",
 		9.375002,
-		-595.94, 1454.25,
+		-595.94, 1954.25,
 		Overlay = "krasarang",
 		Fish = 525,
 	},
 	[6003] = {
 		Name="Kun-Lai Summit",
 		12.516666,
-		-974.27, 308.42,
+		-974.27, 808.42,
 		Overlay = "kunlaisummit",
 		Fish = 525,
 	},
 	[6004] = { 
 		Name = "Shrine of Seven Stars",	
 		0.55, 
-		-82, 1251, 
+		-82, 1751, 
 		ScaleAdjust=0.9469, 
 		City = true, 
 		Level2Id = 6005,
@@ -1701,7 +1701,7 @@ Map.MapWorldInfo = {
     [6005] = {
 		Name = "Shrine of Seven Stars L2", 
 		0.55,
-		-82, 1251, 
+		-82, 1751, 
 		ScaleAdjust=1.14356, 
 		City = true, 
 		Level1Id = 6004,
@@ -1709,35 +1709,35 @@ Map.MapWorldInfo = {
     [6006] = {
 		Name="The Jade Forest",
 		13.966666,
-		-296.77,701.75,
+		-296.77,1201.75,
 		Overlay = "thejadeforest",
 		Fish = 525,
 	},
 	[6007] = {
 		Name="The Veiled Stair",
 		3.587500,
-		-168.85,1094.25,
+		-168.85,1594.25,
 		Overlay = "thehiddenpass",
 		Fish = 525,
 	},
 	[6008] = {
 		Name="Townlong Steppes",
 		11.487498,
-		-1422.19,520.50,
+		-1422.19,1020.50,
 		Overlay = "townlongwastes",
 		Fish = 525,
 	},
 	[6009] = {
 		Name="Vale of Eternal Blossoms",
 		5.066668,
-		-502.60,1042.59,
+		-502.60,1542.59,
 		Overlay = "valeofeternalblossoms",
 		Fish = 525,
 	},
 	[6010] = {
 		Name="Valley of the Four Winds",
 		7.850002,
-		-542.19,1213.00,
+		-542.19,1713.00,
 		Overlay = "valleyofthefourwinds",
 		Fish = 525,
 	},
@@ -1753,7 +1753,7 @@ Map.MapWorldInfo = {
     [6012] = { 
 		Name = "Shrine of Two Moons",	
 		0.5,
-		-217.8, 1073.5,
+		-217.8, 1573.5,
 		Alpha=2,
 		ScaleAdjust=0.87584,
 		City = true,
@@ -1762,12 +1762,27 @@ Map.MapWorldInfo = {
     [6013] = { 
 		Name = "Shrine of Seven Stars",	
 		0.5,
-		-217.8, 1073.5,
+		-217.8, 1573.5,
 		Alpha=2,	
 		ScaleAdjust=1.03448,
 		City = true, 
 		Level1Id = 6012,
 	},	
+	[6014] = {
+		Name = "Isle of Giants",
+		3.575001968,
+		-400.8334, 600.5832,
+		Explored = true,
+		Overlay = "isleofgiants",
+	},
+	[6015] = {
+		Name = "Isle of Thunder",
+		8.270832,
+		-1535.8332, 514.5832,
+		Explored = true,
+		Overlay = "isleofthethunderking",
+	},	
+	
 	[9000] = {
 		1,				-- Scale
 		0, 0,			-- Origin
@@ -3576,6 +3591,15 @@ Map.ZoneOverlays = {
 		["theblackmarket"] = "371,175,479,493",
 		["thehiddensteps"] = "412,477,290,191",
 	},
+
+	["isleofgiants"] = {
+		["isleofgiants"] = "0,0,1024,768",	-- Manual
+	},
+	["isleofthethunderking"] = {
+		["isleofthethunderking"] = "0,0,1024,768",	-- Manual
+		["HORDE"] = "183,95,278,325",
+		["LOCK4"] = "396,9,446,429",
+	},	
 }
 
 --------
@@ -7086,7 +7110,7 @@ Map.MiniMapBlks = {
 		Map.PandariaMapBlks,
 		1816,
 		18, 16,
-		850, 2225-2500+300,
+		850, 2225-2500+800,
 		"World\\Minimaps\\HawaiiMainLand"
 	},
 	[1003] = {
@@ -7217,6 +7241,9 @@ function Nx.Map:GetMiniBlkName (miniT, x, y)
 					return format("World\\Minimaps\\HordeBeachDailyArea\\map%02d_%02d", x + miniT[3], y + miniT[4])
 				end
 			end
+			if (x + miniT[3] >= 18) and (x + miniT[3] <= 25) and (y + miniT[4] >= 17) and (y + miniT[4] <= 24) then
+				return format("World\\Minimaps\\MoguIslandDailyArea\\map%02d_%02d",x+miniT[3], y + miniT[4]-2)
+			end
 		  return format ("%s\\map%02d_%02d", miniT[7], x + miniT[3], y + miniT[4])
 		else
 			return format ("%s\\map%02d_%02d", miniT[7], x + miniT[3], y + miniT[4])
@@ -7235,7 +7262,7 @@ Map.MapLevels={
 
 -------------------------------------------------------------------------------
 
---[[
+
 
 -- WorldMapArea.dbc
 -- bounds y1, y2, x1, x2
@@ -7250,7 +7277,7 @@ Map.MapLevels={
 -- Scale = -y2 + y1 / 500
 -- X = -y1 / 5
 -- Y = -x1 / 5
---function Nx.Map:ConvertMapData()
+--[[function Nx.Map:ConvertMapData()
 
 	local data = {}
 	NxData.DumpZoneOverlays = data
@@ -7269,7 +7296,7 @@ Map.MapLevels={
 
 		aname = gsub (aname, '"', "")
 		aname = strlower (aname)
-
+		Nx.prt(aid)
 		local nxid = Nx.ID2Zone[aid]
 		if nxid and nxid > 0 then
 
@@ -7283,6 +7310,7 @@ Map.MapLevels={
 				ax2 = tonumber (ax2)
 
 				local scale = (-ay2 + ay1) / 500
+				Nx.prt(scale)
 				if scale > 0 then
 					local t = {}
 					areas[nxid] = t
@@ -7290,16 +7318,17 @@ Map.MapLevels={
 					t[2] = -ay1 / 5						-- X
 					t[3] = -ax1 / 5						-- Y
 					t[4] = aname
+					Nx.prt("%s %s %s %s",t[4],t[2],t[3],t[1])
 				end
-			end
+			end			
 		end
 
-		if map == 0 or map == 1 then
+--		if map == 0 or map == 1 then
 --		if map == 648 or map == 646 or map == 730 then			-- Maelstrom
 --		if map == 654 then	-- Gilneas
 --		if map == 571 or map == 609 then			-- Northrend, DK start
-
-			Nx.prt ("%s %s %s", aid, map, aname)
+		if map == 1064 or map == 870 then
+--			Nx.prt ("%s %s %s", aid, map, aname)
 
 			local area = {}
 
@@ -7323,13 +7352,14 @@ Map.MapLevels={
 		end
 	end
 end
+--]]
+--Nx.Map.WorldMapArea = [[929,870,6661,"Isleofgiants",2004.167,216.666016,6697.916,5506.25,-1,0,0,0x0,0,0,]]
 
-Nx.Map.WorldMapArea = [906,1000,6500,"DustwallowMarshScenarioAlliance",-3979.16601563,-5037.5,-3468.75,-4175.0,-1,0,0,0x0,0,0,]
+--Nx.Map.WorldMapOverlay = [[3564,928,0,0,0,0,"",0,0,0,0,490,290,256,378,0x0,]]
 
-Nx.Map.WorldMapOverlay = [3515,806,6517,0,0,0,"",0,0,0,0,526,386,557,423,0x0,]
 
-self.ConvertMapData()
-]]--
+--Nx.Map:ConvertMapData()
+
 -------------------------------------------------------------------------------
 --EOF
 
