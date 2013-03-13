@@ -123,8 +123,8 @@ RecountDB = {
 			["GraphWindowY"] = 0,
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -489.0003890991211,
-					["x"] = -784.4998931884766,
+					["y"] = -489.0003471374512,
+					["x"] = -784.4998779296875,
 					["w"] = 283,
 					["h"] = 102.0000457763672,
 				},
@@ -224,7 +224,7 @@ RecountDB = {
 					false, -- [8]
 				},
 			},
-			["DetailWindowY"] = -227.9999542236328,
+			["GraphWindowX"] = 0,
 			["CurDataSet"] = "LastFightData",
 			["Colors"] = {
 				["Bar"] = {
@@ -236,7 +236,7 @@ RecountDB = {
 					},
 				},
 			},
-			["GraphWindowX"] = 0,
+			["DetailWindowY"] = -227.9999542236328,
 			["MainWindowMode"] = 2,
 			["HideCollect"] = true,
 			["MainWindowWidth"] = 397.0000017136335,
