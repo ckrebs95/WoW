@@ -1,8 +1,8 @@
 
-wlVersion = 50007
+wlVersion = 50008
 wlUploaded = 3
-wlStats = "31^2^7^25^0^1^enUS^16685"
-wlExportData = "who=us.logon.worldofwarcraft.com,Khaz Modan,Dreyan,4&glyphs=409,394,406,398,397,400,407,391,410,468,393,733,465,466,467&projects=-1&timePlayedTotal=525197;"
+wlStats = "27^1^12^27^0^1^enUS^16709"
+wlExportData = "who=us.logon.worldofwarcraft.com,Khaz Modan,Dreyan,4&glyphs=409,394,406,398,397,400,407,391,410,468,393,733,465,466,467&projects=-1&timePlayedTotal=0;"
 wlRealmList = {
 	["us.logon.worldofwarcraft.com"] = 1,
 }
@@ -12,117 +12,59 @@ wlEvent = {
 	["Dreyan^Khaz Modan"] = {
 		{
 			{
-				["date"] = "3^13^2013",
+				["date"] = "3^18^2013",
 				["what"] = "login",
 			}, -- [1]
 			{
-				["targetkind"] = "npc",
-				["targetid"] = 64029,
-				["action"] = "turn-in",
+				["sharable"] = 1,
+				["targetid"] = 58468,
+				["action"] = "accept",
 				["what"] = "quest",
-				["progress"] = "May these charms bring you great luck, $N.",
-				["questid"] = 32719,
-				["targetname"] = "Elder Lin",
-				["complete"] = "May the stars smile upon you, $N.",
+				["timer"] = 0,
+				["questid"] = 30320,
+				["targetkind"] = "npc",
+				["targetname"] = "Sun Tenderheart",
 			}, -- [2]
 			{
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["action"] = "PickPocketing",
-				["what"] = "loot",
-				["id"] = 65978,
-				["kind"] = "npc",
-				["drop"] = {
-					"coin^1684", -- [1]
-				},
-				["dd"] = 0,
+				["sharable"] = 1,
+				["targetid"] = 58471,
+				["action"] = "accept",
+				["what"] = "quest",
+				["timer"] = 0,
+				["questid"] = 31758,
+				["targetkind"] = "npc",
+				["targetname"] = "Kun Autumnlight",
 			}, -- [3]
 			{
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 65978,
-				["kind"] = "npc",
-				["drop"] = {
-					"coin^3612", -- [1]
-				},
-				["dd"] = 0,
+				["sharable"] = 1,
+				["targetid"] = 58408,
+				["action"] = "accept",
+				["what"] = "quest",
+				["timer"] = 0,
+				["questid"] = 30307,
+				["targetkind"] = "npc",
+				["targetname"] = "Leven Dawnblade",
 			}, -- [4]
 			{
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["action"] = "PickPocketing",
-				["what"] = "loot",
-				["id"] = 65978,
-				["kind"] = "npc",
-				["drop"] = {
-					"coin^3470", -- [1]
-				},
-				["dd"] = 0,
+				["sharable"] = 1,
+				["targetid"] = 58465,
+				["action"] = "accept",
+				["what"] = "quest",
+				["timer"] = 0,
+				["questid"] = 30310,
+				["targetkind"] = "npc",
+				["targetname"] = "Anji Autumnlight",
 			}, -- [5]
 			{
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 65978,
-				["kind"] = "npc",
-				["drop"] = {
-					"coin^3749", -- [1]
-					"81414^1", -- [2]
-				},
-				["dd"] = 0,
+				["sharable"] = 1,
+				["targetid"] = 58465,
+				["action"] = "accept",
+				["what"] = "quest",
+				["timer"] = 0,
+				["questid"] = 31762,
+				["targetkind"] = "npc",
+				["targetname"] = "Anji Autumnlight",
 			}, -- [6]
-			{
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["action"] = "PickPocketing",
-				["what"] = "loot",
-				["id"] = 65978,
-				["kind"] = "npc",
-				["drop"] = {
-					"coin^2000", -- [1]
-					"88165^1", -- [2]
-				},
-				["dd"] = 0,
-			}, -- [7]
-			{
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 65978,
-				["kind"] = "npc",
-				["drop"] = {
-					"coin^4919", -- [1]
-				},
-				["dd"] = 0,
-			}, -- [8]
-			{
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["action"] = "PickPocketing",
-				["what"] = "loot",
-				["id"] = 65978,
-				["kind"] = "npc",
-				["drop"] = {
-					"coin^2819", -- [1]
-				},
-				["dd"] = 0,
-			}, -- [9]
-			{
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 65978,
-				["kind"] = "npc",
-				["drop"] = {
-					"coin^2139", -- [1]
-				},
-				["dd"] = 0,
-			}, -- [10]
 			{
 				["flags"] = 1024,
 				["drop"] = {
@@ -134,13 +76,62 @@ wlEvent = {
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
 				["dd"] = 0,
-			}, -- [11]
+			}, -- [7]
 			{
 				["flags"] = 1024,
 				["drop"] = {
 					"72120^1", -- [1]
 				},
 				["action"] = "Skinning",
+				["what"] = "loot",
+				["id"] = 59158,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["dd"] = 0,
+			}, -- [8]
+			{
+				["flags"] = 1024,
+				["drop"] = {
+					"83156^1", -- [1]
+				},
+				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 65824,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["dd"] = 0,
+			}, -- [9]
+			{
+				["flags"] = 1024,
+				["drop"] = {
+					"coin^2080", -- [1]
+					"88162^1", -- [2]
+				},
+				["action"] = "PickPocketing",
+				["what"] = "loot",
+				["id"] = 58412,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["dd"] = 0,
+			}, -- [10]
+			{
+				["flags"] = 1024,
+				["drop"] = {
+					"coin^2823", -- [1]
+				},
+				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 58412,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["dd"] = 0,
+			}, -- [11]
+			{
+				["flags"] = 1024,
+				["drop"] = {
+					"81194^1", -- [1]
+				},
+				["action"] = "Killing",
 				["what"] = "loot",
 				["id"] = 59158,
 				["kind"] = "npc",
@@ -149,58 +140,8 @@ wlEvent = {
 			}, -- [12]
 			{
 				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 65810,
-				["kind"] = "npc",
-				["drop"] = {
-					"coin^4331", -- [1]
-				},
-				["dd"] = 0,
-			}, -- [13]
-			{
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 65810,
-				["kind"] = "npc",
-				["drop"] = {
-					"coin^4551", -- [1]
-				},
-				["dd"] = 0,
-			}, -- [14]
-			{
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["action"] = "PickPocketing",
-				["what"] = "loot",
-				["id"] = 58412,
-				["kind"] = "npc",
-				["drop"] = {
-					"coin^5962", -- [1]
-				},
-				["dd"] = 0,
-			}, -- [15]
-			{
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 59158,
-				["kind"] = "npc",
-				["drop"] = {
-					"coin^1326", -- [1]
-					"81194^1", -- [2]
-				},
-				["dd"] = 0,
-			}, -- [16]
-			{
-				["flags"] = 1024,
 				["drop"] = {
 					"72120^1", -- [1]
-					"72201^1", -- [2]
 				},
 				["action"] = "Skinning",
 				["what"] = "loot",
@@ -208,39 +149,89 @@ wlEvent = {
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
 				["dd"] = 0,
-			}, -- [17]
+			}, -- [13]
 			{
 				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["action"] = "Opening",
-				["what"] = "loot",
-				["id"] = 72201,
-				["kind"] = "item",
 				["drop"] = {
-					"coin^13288", -- [1]
+					"coin^4193", -- [1]
+					"88162^1", -- [2]
 				},
-				["dd"] = 0,
-			}, -- [18]
-			{
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
 				["action"] = "PickPocketing",
 				["what"] = "loot",
 				["id"] = 65810,
 				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["dd"] = 0,
+			}, -- [14]
+			{
+				["flags"] = 1024,
 				["drop"] = {
-					"coin^5868", -- [1]
+					"coin^2080", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 58412,
+				["kind"] = "npc",
+				["isAoeLoot"] = 1,
+				["dd"] = 0,
+			}, -- [15]
+			{
+				["flags"] = 1024,
+				["drop"] = {
+					"coin^878", -- [1]
+				},
+				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 65810,
+				["isAoeLoot"] = 1,
+				["dd"] = 0,
+				["kind"] = "npc",
+			}, -- [16]
+			{
+				["flags"] = 1024,
+				["drop"] = {
+					"coin^7159", -- [1]
+				},
+				["action"] = "PickPocketing",
+				["what"] = "loot",
+				["id"] = 65810,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["dd"] = 0,
+			}, -- [17]
+			{
+				["flags"] = 1024,
+				["drop"] = {
+					"coin^5694", -- [1]
+					"82195^1", -- [2]
+				},
+				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 65810,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["dd"] = 0,
+			}, -- [18]
+			{
+				["flags"] = 1024,
+				["drop"] = {
+					"coin^1300", -- [1]
+				},
+				["action"] = "PickPocketing",
+				["what"] = "loot",
+				["id"] = 58412,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
 				["dd"] = 0,
 			}, -- [19]
 			{
 				["flags"] = 1024,
 				["drop"] = {
-					"81212^1", -- [1]
+					"coin^4308", -- [1]
 				},
-				["action"] = "Killing",
+				["action"] = "PickPocketing",
 				["what"] = "loot",
-				["id"] = 59158,
+				["id"] = 58412,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
 				["dd"] = 0,
@@ -248,6 +239,93 @@ wlEvent = {
 			{
 				["flags"] = 1024,
 				["drop"] = {
+					"coin^906", -- [1]
+					"81412^1", -- [2]
+				},
+				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 58412,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["dd"] = 0,
+			}, -- [21]
+			{
+				["flags"] = 1024,
+				["drop"] = {
+					"coin^6178", -- [1]
+					"88162^1", -- [2]
+				},
+				["action"] = "PickPocketing",
+				["what"] = "loot",
+				["id"] = 58412,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["dd"] = 0,
+			}, -- [22]
+			{
+				["flags"] = 1024,
+				["drop"] = {
+					"coin^1263", -- [1]
+				},
+				["action"] = "PickPocketing",
+				["what"] = "loot",
+				["id"] = 65810,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["dd"] = 0,
+			}, -- [23]
+			{
+				["flags"] = 1024,
+				["drop"] = {
+					"coin^2521", -- [1]
+				},
+				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 65810,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["dd"] = 0,
+			}, -- [24]
+			{
+				["flags"] = 1024,
+				["drop"] = {
+					"coin^1353", -- [1]
+					"88163^1", -- [2]
+				},
+				["action"] = "PickPocketing",
+				["what"] = "loot",
+				["id"] = 65810,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["dd"] = 0,
+			}, -- [25]
+			{
+				["flags"] = 1024,
+				["drop"] = {
+					"coin^5019", -- [1]
+				},
+				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 65810,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["dd"] = 0,
+			}, -- [26]
+			{
+				["flags"] = 1024,
+				["drop"] = {
+					"81194^1", -- [1]
+				},
+				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 59158,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["dd"] = 0,
+			}, -- [27]
+			{
+				["flags"] = 1024,
+				["drop"] = {
 					"72120^1", -- [1]
 				},
 				["action"] = "Skinning",
@@ -256,7 +334,57 @@ wlEvent = {
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
 				["dd"] = 0,
-			}, -- [21]
+			}, -- [28]
+			{
+				["flags"] = 1024,
+				["drop"] = {
+					"coin^6430", -- [1]
+					"88164^1", -- [2]
+				},
+				["action"] = "PickPocketing",
+				["what"] = "loot",
+				["id"] = 65810,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["dd"] = 0,
+			}, -- [29]
+			{
+				["flags"] = 1024,
+				["drop"] = {
+					"coin^4288", -- [1]
+				},
+				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 65810,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["dd"] = 0,
+			}, -- [30]
+			{
+				["flags"] = 1024,
+				["drop"] = {
+					"coin^1848", -- [1]
+				},
+				["action"] = "PickPocketing",
+				["what"] = "loot",
+				["id"] = 65810,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["dd"] = 0,
+			}, -- [31]
+			{
+				["flags"] = 1024,
+				["drop"] = {
+					"coin^6981", -- [1]
+					"88162^1", -- [2]
+				},
+				["action"] = "PickPocketing",
+				["what"] = "loot",
+				["id"] = 65810,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["dd"] = 0,
+			}, -- [32]
 			{
 				["targetkind"] = "npc",
 				["targetid"] = 58468,
@@ -266,37 +394,17 @@ wlEvent = {
 				["questid"] = 30320,
 				["targetname"] = "Sun Tenderheart",
 				["complete"] = "Very good! I'll hold onto this dagger. Perhaps we will get the chance to make more use of it later.\n\nThank you so much, my friend. You have a good heart.",
-			}, -- [22]
-			{
-				["targetkind"] = "npc",
-				["targetid"] = 58465,
-				["action"] = "turn-in",
-				["what"] = "quest",
-				["progress"] = "",
-				["questid"] = 30310,
-				["targetname"] = "Anji Autumnlight",
-				["complete"] = "Quite the battle! I think your feat has boosted morale among the troops a bit.",
-			}, -- [23]
-			{
-				["targetkind"] = "npc",
-				["targetid"] = 58465,
-				["action"] = "turn-in",
-				["what"] = "quest",
-				["progress"] = "",
-				["questid"] = 31760,
-				["targetname"] = "Anji Autumnlight",
-				["complete"] = "How went the diplomacy? I hope you didn't go easy on them.",
-			}, -- [24]
+			}, -- [33]
 			{
 				["targetkind"] = "npc",
 				["targetid"] = 58471,
 				["action"] = "turn-in",
 				["what"] = "quest",
 				["progress"] = "",
-				["questid"] = 31756,
+				["questid"] = 31758,
 				["targetname"] = "Kun Autumnlight",
-				["complete"] = "It's a lot brighter out! And not just thanks to your sunny smile.\n\nWay to go!",
-			}, -- [25]
+				["complete"] = "You're a good woman, helping that silly $c out more than he deserves.",
+			}, -- [34]
 			{
 				["targetkind"] = "npc",
 				["targetid"] = 58408,
@@ -306,135 +414,83 @@ wlEvent = {
 				["questid"] = 30307,
 				["targetname"] = "Leven Dawnblade",
 				["complete"] = "We hold this line. It does not matter how long they come, we hold this line.",
-			}, -- [26]
-			{
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 63065,
-				["kind"] = "npc",
-				["drop"] = {
-					"coin^4035", -- [1]
-				},
-				["dd"] = 0,
-			}, -- [27]
-			{
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["action"] = "PickPocketing",
-				["what"] = "loot",
-				["id"] = 63065,
-				["kind"] = "npc",
-				["drop"] = {
-					"coin^4205", -- [1]
-				},
-				["dd"] = 0,
-			}, -- [28]
-			{
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 63065,
-				["kind"] = "npc",
-				["drop"] = {
-					"coin^2859", -- [1]
-					"72988^3", -- [2]
-				},
-				["dd"] = 0,
-			}, -- [29]
-			{
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 63130,
-				["kind"] = "npc",
-				["drop"] = {
-					"coin^3354", -- [1]
-				},
-				["dd"] = 0,
-			}, -- [30]
-			{
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 63131,
-				["kind"] = "npc",
-				["drop"] = {
-					"coin^2209", -- [1]
-				},
-				["dd"] = 0,
-			}, -- [31]
-			{
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 63129,
-				["kind"] = "npc",
-				["drop"] = {
-					"coin^3191", -- [1]
-					"89112^1", -- [2]
-				},
-				["dd"] = 0,
-			}, -- [32]
+			}, -- [35]
 			{
 				["targetkind"] = "npc",
-				["targetid"] = 58469,
+				["targetid"] = 58465,
 				["action"] = "turn-in",
 				["what"] = "quest",
 				["progress"] = "",
-				["questid"] = 30283,
-				["targetname"] = "Ren Firetongue",
-				["complete"] = "If they come asking who rudely crushed all their little statuettes, I'll tell them it was you.\n\nNot that I don't appreciate your help. You're lovely.",
-			}, -- [33]
+				["questid"] = 30310,
+				["targetname"] = "Anji Autumnlight",
+				["complete"] = "Quite the battle! I think your feat has boosted morale among the troops a bit.",
+			}, -- [36]
+			{
+				["targetkind"] = "npc",
+				["targetid"] = 58465,
+				["action"] = "turn-in",
+				["what"] = "quest",
+				["progress"] = "",
+				["questid"] = 31762,
+				["targetname"] = "Anji Autumnlight",
+				["complete"] = "Glorious.  They will learn to fear us.",
+			}, -- [37]
+			{
+				["sharable"] = 1,
+				["targetid"] = 63315,
+				["action"] = "accept",
+				["what"] = "quest",
+				["timer"] = 0,
+				["questid"] = 31207,
+				["targetkind"] = "npc",
+				["targetname"] = "Gurgthock",
+			}, -- [38]
+			{
+				["targetkind"] = "npc",
+				["targetid"] = 63314,
+				["action"] = "turn-in",
+				["what"] = "quest",
+				["progress"] = "",
+				["questid"] = 31207,
+				["targetname"] = "Wodin the Troll-Servant",
+				["complete"] = "Gurgthock said you he'd make it worth your while, kid. Take your pick!",
+			}, -- [39]
+			{
+				["flags"] = 1024,
+				["drop"] = {
+					"coin^321246", -- [1]
+					"93143^1", -- [2]
+				},
+				["action"] = "Opening",
+				["what"] = "loot",
+				["id"] = 92813,
+				["kind"] = "item",
+				["isAoeLoot"] = 0,
+				["dd"] = 0,
+			}, -- [40]
 		}, -- [1]
 	},
 }
 wlItemSuffix = {
+	[82195] = {
+		[-36] = 1,
+		["sF"] = 1104,
+	},
+	[93143] = {
+		[-7] = 2,
+		["sF"] = 733,
+	},
 }
 wlObject = {
-	[213654] = {
-		["0^Shrine of Seven Stars"] = {
+	["Opening^Vale of Eternal Blossoms^Shao-Tien Cage"] = {
+		["0^Vale of Eternal Blossoms"] = {
 			{
-				["y"] = 639,
-				["x"] = 870,
+				["y"] = 223,
+				["x"] = 430,
 				["dl"] = 0,
 				["n"] = 1,
 			}, -- [1]
 			["n"] = 1,
-		},
-	},
-	["Opening^Vale of Eternal Blossoms^Shao-Tien Stormcaller"] = {
-		["0^Vale of Eternal Blossoms"] = {
-			{
-				["y"] = 182,
-				["x"] = 368,
-				["dl"] = 0,
-				["n"] = 1,
-			}, -- [1]
-			{
-				["y"] = 192,
-				["x"] = 478,
-				["dl"] = 0,
-				["n"] = 1,
-			}, -- [2]
-			{
-				["y"] = 223,
-				["x"] = 510,
-				["dl"] = 0,
-				["n"] = 1,
-			}, -- [3]
-			{
-				["y"] = 279,
-				["x"] = 431,
-				["dl"] = 0,
-				["n"] = 1,
-			}, -- [4]
-			["n"] = 4,
 		},
 	},
 }
@@ -448,124 +504,14 @@ wlProfile = {
 	},
 }
 wlUnit = {
-	[63065] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912400615124,
-		},
-		["sex"] = {
-			[2] = 4,
-		},
-		["class"] = "PALADIN",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Vale of Eternal Blossoms"] = {
-							{
-								["y"] = 452,
-								["x"] = 460,
-								["dl"] = 0,
-								["n"] = 16,
-							}, -- [1]
-							{
-								["y"] = 460,
-								["x"] = 461,
-								["dl"] = 0,
-								["n"] = 17,
-							}, -- [2]
-							["n"] = 2,
-						},
-					},
-					["powertype"] = 0,
-					["health"] = 590912,
-					["powermax"] = 9916,
-				},
-				["spell"] = {
-					[126919] = 2,
-					[126918] = 7,
-				},
-			},
-		},
-	},
-	[65818] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912399629679,
-		},
-		["sex"] = {
-			[2] = 1,
-		},
-		["quote"] = {
-			["say"] = {
-				["I owe you my life!"] = "",
-			},
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Vale of Eternal Blossoms"] = {
-							{
-								["y"] = 249,
-								["x"] = 417,
-								["dl"] = 0,
-								["n"] = 8,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 1969705,
-					["powermax"] = 0,
-				},
-			},
-		},
-		["faction"] = "Golden Lotus",
-	},
-	[63131] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912401372844,
-		},
-		["sex"] = {
-			[2] = 2,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Vale of Eternal Blossoms"] = {
-							{
-								["y"] = 442,
-								["x"] = 442,
-								["dl"] = 0,
-								["n"] = 5,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 590912,
-					["powermax"] = 0,
-				},
-				["spell"] = {
-					[126936] = 6,
-					[126943] = 2,
-				},
-			},
-		},
-	},
 	[59231] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912399631852,
+			["90^Alliance^5"] = 912399154485,
 		},
 		["sex"] = {
-			[2] = 10,
-			[3] = 5,
+			[3] = 4,
+			[2] = 13,
 		},
 		["class"] = "WARRIOR",
 		["spec"] = {
@@ -574,70 +520,70 @@ wlUnit = {
 					["loc"] = {
 						["Vale of Eternal Blossoms"] = {
 							{
-								["y"] = 249,
-								["x"] = 417,
+								["y"] = 240,
+								["x"] = 518,
 								["dl"] = 0,
-								["n"] = 8,
+								["n"] = 10,
 							}, -- [1]
 							{
-								["y"] = 199,
-								["x"] = 419,
-								["dl"] = 0,
-								["n"] = 6,
-							}, -- [2]
-							{
-								["y"] = 226,
-								["x"] = 522,
-								["dl"] = 0,
-								["n"] = 10,
-							}, -- [3]
-							{
-								["y"] = 218,
-								["x"] = 514,
-								["dl"] = 0,
-								["n"] = 15,
-							}, -- [4]
-							{
-								["y"] = 272,
-								["x"] = 490,
-								["dl"] = 0,
-								["n"] = 7,
-							}, -- [5]
-							{
-								["y"] = 275,
-								["x"] = 443,
-								["dl"] = 0,
-								["n"] = 24,
-							}, -- [6]
-							{
 								["y"] = 235,
-								["x"] = 436,
-								["dl"] = 0,
-								["n"] = 18,
-							}, -- [7]
-							{
-								["y"] = 241,
-								["x"] = 460,
-								["dl"] = 0,
-								["n"] = 31,
-							}, -- [8]
-							{
-								["y"] = 245,
-								["x"] = 467,
-								["dl"] = 0,
-								["n"] = 2,
-							}, -- [9]
-							{
-								["y"] = 237,
 								["x"] = 485,
 								["dl"] = 0,
-								["n"] = 9,
-							}, -- [10]
+								["n"] = 11,
+							}, -- [2]
 							{
-								["y"] = 252,
-								["x"] = 467,
+								["y"] = 229,
+								["x"] = 379,
+								["dl"] = 0,
+								["n"] = 9,
+							}, -- [3]
+							{
+								["y"] = 247,
+								["x"] = 417,
+								["dl"] = 0,
+								["n"] = 35,
+							}, -- [4]
+							{
+								["y"] = 254,
+								["x"] = 420,
+								["dl"] = 0,
+								["n"] = 3,
+							}, -- [5]
+							{
+								["y"] = 273,
+								["x"] = 444,
+								["dl"] = 0,
+								["n"] = 23,
+							}, -- [6]
+							{
+								["y"] = 248,
+								["x"] = 438,
+								["dl"] = 0,
+								["n"] = 7,
+							}, -- [7]
+							{
+								["y"] = 235,
+								["x"] = 434,
+								["dl"] = 0,
+								["n"] = 22,
+							}, -- [8]
+							{
+								["y"] = 223,
+								["x"] = 428,
+								["dl"] = 0,
+								["n"] = 7,
+							}, -- [9]
+							{
+								["y"] = 187,
+								["x"] = 408,
 								["dl"] = 0,
 								["n"] = 10,
+							}, -- [10]
+							{
+								["y"] = 229,
+								["x"] = 437,
+								["dl"] = 0,
+								["n"] = 5,
 							}, -- [11]
 							["n"] = 11,
 						},
@@ -649,10 +595,10 @@ wlUnit = {
 			},
 		},
 	},
-	[63130] = {
+	[65824] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^2"] = 912401341656,
+			["90^Alliance^2"] = 912398659206,
 		},
 		["sex"] = {
 			[2] = 3,
@@ -661,907 +607,68 @@ wlUnit = {
 		},
 		["spec"] = {
 			[0] = {
-				[90] = {
-					["loc"] = {
-						["Vale of Eternal Blossoms"] = {
-							{
-								["y"] = 447,
-								["x"] = 439,
-								["dl"] = 0,
-								["n"] = 5,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 157576,
-					["powermax"] = 0,
-				},
 				["spell"] = {
-					[123205] = 4,
-					[126269] = 3,
-					[126370] = 2,
-				},
-			},
-		},
-	},
-	[58737] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912400726227,
-		},
-		["sex"] = {
-			[2] = 11,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["A Brewing Storm"] = {
-							{
-								["y"] = 455,
-								["x"] = 539,
-								["dl"] = 0,
-								["n"] = 3,
-							}, -- [1]
-							{
-								["y"] = 414,
-								["x"] = 690,
-								["dl"] = 0,
-								["n"] = 10,
-							}, -- [2]
-							{
-								["y"] = 403,
-								["x"] = 693,
-								["dl"] = 0,
-								["n"] = 8,
-							}, -- [3]
-							{
-								["y"] = 410,
-								["x"] = 676,
-								["dl"] = 0,
-								["n"] = 6,
-							}, -- [4]
-							{
-								["y"] = 417,
-								["x"] = 680,
-								["dl"] = 0,
-								["n"] = 4,
-							}, -- [5]
-							{
-								["y"] = 346,
-								["x"] = 631,
-								["dl"] = 0,
-								["n"] = 3,
-							}, -- [6]
-							{
-								["y"] = 618,
-								["x"] = 256,
-								["dl"] = 0,
-								["n"] = 6,
-							}, -- [7]
-							["n"] = 7,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 393941,
-					["powermax"] = 0,
-				},
-				["spell"] = {
-					[132247] = 18,
-					[126295] = 17,
-					[132253] = 39,
-				},
-			},
-		},
-	},
-	[58738] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912400767962,
-		},
-		["sex"] = {
-			[2] = 9,
-		},
-		["class"] = {
-		},
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["A Brewing Storm"] = {
-							{
-								["y"] = 457,
-								["x"] = 539,
-								["dl"] = 0,
-								["n"] = 5,
-							}, -- [1]
-							{
-								["y"] = 344,
-								["x"] = 623,
-								["dl"] = 0,
-								["n"] = 3,
-							}, -- [2]
-							{
-								["y"] = 329,
-								["x"] = 546,
-								["dl"] = 0,
-								["n"] = 10,
-							}, -- [3]
-							{
-								["y"] = 335,
-								["x"] = 542,
-								["dl"] = 0,
-								["n"] = 1,
-							}, -- [4]
-							["n"] = 4,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 393941,
-					["powermax"] = 0,
-				},
-				["spell"] = {
-					[11976] = 57,
-					[126037] = 52,
-					[126833] = 91,
-				},
-			},
-		},
-	},
-	[58739] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912401162830,
-		},
-		["sex"] = {
-			[2] = 1,
-		},
-		["class"] = {
-		},
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["A Brewing Storm"] = {
-							{
-								["y"] = 595,
-								["x"] = 284,
-								["dl"] = 0,
-								["n"] = 4,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 7090938,
-					["powermax"] = 0,
-				},
-				["spell"] = {
-					[122142] = 2,
-					[115013] = 6,
-					[131777] = 2,
-				},
-			},
-		},
-	},
-	[58740] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912400694546,
-		},
-		["sex"] = {
-			[3] = 2,
-		},
-		["quote"] = {
-			["say"] = {
-				["The storm is starting! Get ready."] = "",
-				["Yow, the storm is more intense than I thought! Be careful!"] = "",
-				["...Saurok? What are they doing here? Keep them away!"] = "",
-				["Let me know when you're ready to go inside..."] = "",
-				["Everyone ready? Let's roll!"] = "",
-				["Keep an eye on the rear! No - not MY rear. Behind us!"] = "",
-				["Last call, you fork-tongued dip-slithers!"] = "",
-				["If the brewkegs catch fire, I need you to help put them out."] = "",
-				["Don't you die on me!"] = "",
-				["They're scaling the cliff walls! This is going to get dirty."] = "",
-				["And I've got just the brew to celebrate with. First round is on me. Thank you, friends!"] = "",
-				["You did it! Thunderpaw Refuge is saved!"] = "",
-				["Phew! I need a breather. Let's rest here a momen- wha?"] = "",
-				["Watch your footing! The stones are still slick from rain."] = "",
-				["Watch out for lightning strikes!"] = "",
-				["Maybe this will help..."] = "",
-				["Ho boy, more saurok. They always seek high ground when the rains hit!"] = "",
-				["You don't have to go home, but you can't stay here."] = "",
-				["I've got you..."] = "",
-				["Let's go be heroes!"] = "",
-			},
-		},
-		["class"] = "PALADIN",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["A Brewing Storm"] = {
-							{
-								["y"] = 453,
-								["x"] = 550,
-								["dl"] = 0,
-								["n"] = 29,
-							}, -- [1]
-							{
-								["y"] = 463,
-								["x"] = 549,
-								["dl"] = 0,
-								["n"] = 3,
-							}, -- [2]
-							{
-								["y"] = 471,
-								["x"] = 549,
-								["dl"] = 0,
-								["n"] = 12,
-							}, -- [3]
-							{
-								["y"] = 449,
-								["x"] = 544,
-								["dl"] = 0,
-								["n"] = 1,
-							}, -- [4]
-							{
-								["y"] = 440,
-								["x"] = 547,
-								["dl"] = 0,
-								["n"] = 2,
-							}, -- [5]
-							{
-								["y"] = 432,
-								["x"] = 554,
-								["dl"] = 0,
-								["n"] = 21,
-							}, -- [6]
-							{
-								["y"] = 435,
-								["x"] = 561,
-								["dl"] = 0,
-								["n"] = 10,
-							}, -- [7]
-							{
-								["y"] = 432,
-								["x"] = 569,
-								["dl"] = 0,
-								["n"] = 1,
-							}, -- [8]
-							{
-								["y"] = 346,
-								["x"] = 631,
-								["dl"] = 0,
-								["n"] = 2,
-							}, -- [9]
-							["n"] = 9,
-						},
-					},
-					["powertype"] = 0,
-					["health"] = 2166676,
-					["powermax"] = 9916,
-				},
-				["spell"] = {
-					[114663] = 22,
-				},
-			},
-		},
-	},
-	[59632] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912400885670,
-		},
-		["sex"] = {
-			[2] = 2,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["A Brewing Storm"] = {
-							{
-								["y"] = 472,
-								["x"] = 691,
-								["dl"] = 0,
-								["n"] = 2,
-							}, -- [1]
-							{
-								["y"] = 483,
-								["x"] = 682,
-								["dl"] = 0,
-								["n"] = 4,
-							}, -- [2]
-							{
-								["y"] = 335,
-								["x"] = 542,
-								["dl"] = 0,
-								["n"] = 6,
-							}, -- [3]
-							["n"] = 3,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 2363646,
-					["powermax"] = 0,
-				},
-				["spell"] = {
-					[124389] = 9,
-					[131594] = 5,
-				},
-			},
-		},
-	},
-	[59238] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912399661532,
-		},
-		["sex"] = {
-			11, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				["spell"] = {
-					[129883] = 103,
+					[131043] = 171,
+					[131046] = 76,
+					[127236] = 38,
 				},
 				[90] = {
 					["loc"] = {
 						["Vale of Eternal Blossoms"] = {
 							{
-								["y"] = 209,
-								["x"] = 452,
+								["y"] = 378,
+								["x"] = 480,
 								["dl"] = 0,
 								["n"] = 9,
 							}, -- [1]
 							{
-								["y"] = 219,
-								["x"] = 473,
+								["y"] = 385,
+								["x"] = 495,
 								["dl"] = 0,
-								["n"] = 3,
+								["n"] = 6,
 							}, -- [2]
-							{
-								["y"] = 223,
-								["x"] = 514,
-								["dl"] = 0,
-								["n"] = 13,
-							}, -- [3]
-							{
-								["y"] = 243,
-								["x"] = 505,
-								["dl"] = 0,
-								["n"] = 5,
-							}, -- [4]
-							{
-								["y"] = 225,
-								["x"] = 521,
-								["dl"] = 0,
-								["n"] = 4,
-							}, -- [5]
-							{
-								["y"] = 252,
-								["x"] = 467,
-								["dl"] = 0,
-								["n"] = 5,
-							}, -- [6]
-							{
-								["y"] = 252,
-								["x"] = 473,
-								["dl"] = 0,
-								["n"] = 3,
-							}, -- [7]
-							["n"] = 7,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 275759,
-					["powermax"] = 0,
-				},
-				["rep"] = {
-					["The Black Prince^5^5^0"] = 3,
-				},
-			},
-		},
-	},
-	[65962] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912399293211,
-		},
-		["sex"] = {
-			[2] = 1,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Vale of Eternal Blossoms"] = {
-							{
-								["y"] = 151,
-								["x"] = 443,
-								["dl"] = 0,
-								["n"] = 3,
-							}, -- [1]
-							["n"] = 1,
+							["n"] = 2,
 						},
 					},
 					["powertype"] = 1,
 					["health"] = 4727292,
 					["powermax"] = 0,
 				},
+				["rep"] = {
+					["The Black Prince^5^40^0"] = 1,
+				},
 			},
 		},
 	},
-	[58465] = {
+	[59908] = {
 		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912399155167,
-		},
-		["sex"] = {
-			[3] = 3,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Vale of Eternal Blossoms"] = {
-							{
-								["y"] = 437,
-								["x"] = 567,
-								["dl"] = 0,
-								["n"] = 91,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 1969705,
-					["powermax"] = 0,
-				},
-			},
-		},
-		["faction"] = "Golden Lotus",
-	},
-	[64480] = {
-		["spec"] = {
-			[0] = {
-				["spell"] = {
-					[128229] = 1,
-					[6668] = 2,
-					[11543] = 1,
-					[11540] = 2,
-					[128228] = 1,
-					[128227] = 1,
-				},
-			},
-		},
-	},
-	[58467] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912400588940,
-		},
-		["sex"] = {
-			[2] = 1,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Vale of Eternal Blossoms"] = {
-							{
-								["y"] = 431,
-								["x"] = 566,
-								["dl"] = 0,
-								["n"] = 4,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 1969705,
-					["powermax"] = 0,
-				},
-			},
-		},
-		["faction"] = "Golden Lotus",
-	},
-	[58468] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912399172446,
-		},
-		["sex"] = {
-			[3] = 2,
-		},
-		["class"] = "MAGE",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Vale of Eternal Blossoms"] = {
-							{
-								["y"] = 433,
-								["x"] = 565,
-								["dl"] = 0,
-								["n"] = 32,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 0,
-					["health"] = 1575765,
-					["powermax"] = 21262,
-				},
-			},
-		},
-		["faction"] = "Golden Lotus",
-	},
-	[58469] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912400589876,
-		},
-		["sex"] = {
-			[2] = 2,
-		},
-		["class"] = "MAGE",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Vale of Eternal Blossoms"] = {
-							{
-								["y"] = 431,
-								["x"] = 566,
-								["dl"] = 0,
-								["n"] = 67,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 0,
-					["health"] = 1575765,
-					["powermax"] = 21262,
-				},
-			},
-		},
-		["faction"] = "Golden Lotus",
-	},
-	[58408] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912399151503,
-		},
-		["sex"] = {
-			[2] = 2,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Vale of Eternal Blossoms"] = {
-							{
-								["y"] = 437,
-								["x"] = 567,
-								["dl"] = 0,
-								["n"] = 40,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 1969705,
-					["powermax"] = 0,
-				},
-			},
-		},
-		["faction"] = "Golden Lotus",
-	},
-	[58471] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912399165794,
-		},
-		["sex"] = {
-			[2] = 3,
-		},
-		["class"] = "PALADIN",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Vale of Eternal Blossoms"] = {
-							{
-								["y"] = 437,
-								["x"] = 567,
-								["dl"] = 0,
-								["n"] = 67,
-							}, -- [1]
-							{
-								["y"] = 431,
-								["x"] = 565,
-								["dl"] = 0,
-								["n"] = 1,
-							}, -- [2]
-							["n"] = 2,
-						},
-					},
-					["powertype"] = 0,
-					["health"] = 1969705,
-					["powermax"] = 9916,
-				},
-			},
-		},
-		["faction"] = "Golden Lotus",
-	},
-	[65978] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912399208860,
-		},
-		["sex"] = {
-			[2] = 8,
-		},
-		["class"] = "PALADIN",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Vale of Eternal Blossoms"] = {
-							{
-								["y"] = 149,
-								["x"] = 452,
-								["dl"] = 0,
-								["n"] = 28,
-							}, -- [1]
-							{
-								["y"] = 161,
-								["x"] = 450,
-								["dl"] = 0,
-								["n"] = 29,
-							}, -- [2]
-							{
-								["y"] = 146,
-								["x"] = 436,
-								["dl"] = 0,
-								["n"] = 30,
-							}, -- [3]
-							{
-								["y"] = 161,
-								["x"] = 433,
-								["dl"] = 0,
-								["n"] = 23,
-							}, -- [4]
-							["n"] = 4,
-						},
-					},
-					["powertype"] = 0,
-					["health"] = 590912,
-					["powermax"] = 9916,
-				},
-				["spell"] = {
-					[113501] = 16,
-					[126920] = 1,
-				},
-			},
-		},
-	},
-	[58470] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912400584934,
-		},
-		["sex"] = {
-			[2] = 1,
-		},
-		["class"] = "ROGUE",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Vale of Eternal Blossoms"] = {
-							{
-								["y"] = 430,
-								["x"] = 565,
-								["dl"] = 0,
-								["n"] = 16,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 3,
-					["health"] = 1969705,
-					["powermax"] = 100,
-				},
-			},
-		},
-		["faction"] = "Golden Lotus",
-	},
-	[58412] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912399526188,
-		},
-		["sex"] = {
-			[2] = 6,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Vale of Eternal Blossoms"] = {
-							{
-								["y"] = 220,
-								["x"] = 377,
-								["dl"] = 0,
-								["n"] = 10,
-							}, -- [1]
-							{
-								["y"] = 224,
-								["x"] = 524,
-								["dl"] = 0,
-								["n"] = 19,
-							}, -- [2]
-							{
-								["y"] = 251,
-								["x"] = 470,
-								["dl"] = 0,
-								["n"] = 8,
-							}, -- [3]
-							{
-								["y"] = 196,
-								["x"] = 379,
-								["dl"] = 0,
-								["n"] = 11,
-							}, -- [4]
-							["n"] = 4,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 590912,
-					["powermax"] = 0,
-				},
-				["spell"] = {
-					[126881] = 19,
-					[126886] = 5,
-				},
-			},
-		},
-	},
-	[58869] = {
-		["spec"] = {
-			[0] = {
-				["spell"] = {
-					[111544] = 14,
-				},
-			},
-		},
-	},
-	[59158] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912399191505,
-		},
-		["sex"] = {
-			[2] = 24,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Vale of Eternal Blossoms"] = {
-							{
-								["y"] = 198,
-								["x"] = 376,
-								["dl"] = 0,
-								["n"] = 4,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 1181823,
-					["powermax"] = 0,
-				},
-				["spell"] = {
-					[126522] = 22,
-					[129695] = 53,
-					[129657] = 34,
-				},
-			},
-		},
-	},
-	[43690] = {
-		["isPvp"] = true,
-		["reaction"] = {
-			["90^Alliance^5"] = 912398430062,
-		},
-		["sex"] = {
-			[2] = 1,
+		["merchant"] = {
+			["86276^0^1^250000"] = -1,
+			["86235^0^1^250000"] = -1,
+			["86308^0^1^500000"] = -1,
+			["86309^0^1^500000"] = -1,
+			["89232^0^1^0^0#0#1750<>pvecurrency-justice<>Justice Points"] = -1,
+			["86278^0^1^500000"] = -1,
+			["89070^0^1^0^0#0#625<>pvecurrency-valor<>Valor Points"] = -1,
+			["93215^0^1^500000"] = -1,
+			["87781^0^1^5000000"] = -1,
+			["86273^0^1^500000"] = -1,
+			["89653^0^1^0^0#0#1750<>pvecurrency-justice<>Justice Points"] = -1,
+			["87783^0^1^15000000"] = -1,
+			["86275^0^1^500000"] = -1,
+			["86277^0^1^500000"] = -1,
+			["89341^0^1^0^0#0#875<>pvecurrency-valor<>Valor Points"] = -1,
+			["87782^0^1^25000000"] = -1,
+			["89431^0^1^0^0#0#1125<>pvecurrency-valor<>Valor Points"] = -1,
+			["89527^0^1^0^0#0#1250<>pvecurrency-justice<>Justice Points"] = -1,
+			["86295^0^1^250000"] = -1,
+			["86237^0^1^500000"] = -1,
+			["86274^0^1^500000"] = -1,
+			["89797^0^1^100000"] = -1,
 		},
 		["gossip"] = {
-			["auctioneer"] = 1,
+			["vendor"] = 1,
 		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Stormwind City"] = {
-							{
-								["y"] = 327,
-								["x"] = 603,
-								["dl"] = 0,
-								["n"] = 1374,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 1181823,
-					["powermax"] = 0,
-				},
-			},
-		},
-		["faction"] = "Stormwind",
-	},
-	[63082] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912401271797,
-		},
-		["sex"] = {
-			[2] = 1,
-		},
-		["class"] = {
-		},
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Vale of Eternal Blossoms"] = {
-							{
-								["y"] = 461,
-								["x"] = 461,
-								["dl"] = 0,
-								["n"] = 11,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 157576,
-					["powermax"] = 0,
-				},
-				["spell"] = {
-					[126269] = 2,
-					[126370] = 2,
-				},
-			},
-		},
-	},
-	[63129] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912401431502,
-		},
-		["sex"] = {
-			[2] = 2,
-		},
-		["class"] = "PALADIN",
 		["spec"] = {
 			[0] = {
 				[90] = {
@@ -1569,43 +676,9 @@ wlUnit = {
 						["Vale of Eternal Blossoms"] = {
 							{
 								["y"] = 428,
-								["x"] = 433,
+								["x"] = 742,
 								["dl"] = 0,
-								["n"] = 7,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 0,
-					["health"] = 590912,
-					["powermax"] = 9916,
-				},
-				["spell"] = {
-					[126919] = 2,
-					[126918] = 3,
-				},
-			},
-		},
-	},
-	[64029] = {
-		["isPvp"] = true,
-		["reaction"] = {
-			["90^Alliance^5"] = 912399076428,
-		},
-		["sex"] = {
-			[3] = 1,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Shrine of Seven Stars"] = {
-							{
-								["y"] = 627,
-								["x"] = 853,
-								["dl"] = 0,
-								["n"] = 176,
+								["n"] = 311,
 							}, -- [1]
 							["n"] = 1,
 						},
@@ -1616,14 +689,251 @@ wlUnit = {
 				},
 			},
 		},
+		["reaction"] = {
+			["90^Alliance^5"] = 912400478165,
+		},
+		["faction"] = "Golden Lotus",
+		["canRepair"] = 1,
+		["sex"] = {
+			[2] = 1,
+		},
+		["class"] = "WARRIOR",
+	},
+	[63544] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[123976] = 10,
+				},
+			},
+		},
+	},
+	[58464] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[126786] = 1,
+				},
+			},
+		},
+	},
+	[63314] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912400271691,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Proving Grounds"] = {
+							{
+								["y"] = 187,
+								["x"] = 494,
+								["dl"] = 1,
+								["n"] = 47,
+							}, -- [1]
+							{
+								["y"] = 193,
+								["x"] = 494,
+								["dl"] = 1,
+								["n"] = 1,
+							}, -- [2]
+							{
+								["y"] = 206,
+								["x"] = 493,
+								["dl"] = 1,
+								["n"] = 1,
+							}, -- [3]
+							{
+								["y"] = 218,
+								["x"] = 492,
+								["dl"] = 1,
+								["n"] = 1,
+							}, -- [4]
+							{
+								["y"] = 230,
+								["x"] = 491,
+								["dl"] = 1,
+								["n"] = 1,
+							}, -- [5]
+							{
+								["y"] = 241,
+								["x"] = 490,
+								["dl"] = 1,
+								["n"] = 1,
+							}, -- [6]
+							{
+								["y"] = 253,
+								["x"] = 490,
+								["dl"] = 1,
+								["n"] = 1,
+							}, -- [7]
+							["n"] = 7,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 433335,
+					["powermax"] = 0,
+				},
+			},
+		},
+	},
+	[59238] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912399190983,
+		},
+		["sex"] = {
+			3, -- [1]
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Vale of Eternal Blossoms"] = {
+							{
+								["y"] = 207,
+								["x"] = 442,
+								["dl"] = 0,
+								["n"] = 5,
+							}, -- [1]
+							{
+								["y"] = 234,
+								["x"] = 438,
+								["dl"] = 0,
+								["n"] = 4,
+							}, -- [2]
+							["n"] = 2,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 275759,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[129883] = 12,
+				},
+			},
+		},
+	},
+	[59146] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[97153] = 2,
+				},
+			},
+		},
+	},
+	[58465] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912398517740,
+		},
+		["sex"] = {
+			[3] = 2,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Vale of Eternal Blossoms"] = {
+							{
+								["y"] = 438,
+								["x"] = 565,
+								["dl"] = 0,
+								["n"] = 272,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 1969705,
+					["powermax"] = 0,
+				},
+			},
+		},
+		["faction"] = "Golden Lotus",
+	},
+	[17252] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[30213] = 1,
+					[89766] = 1,
+				},
+			},
+		},
+	},
+	[63311] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912399780901,
+		},
+		["sex"] = {
+			1, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["powertype"] = 1,
+					["health"] = 6303056,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[123918] = 9,
+					[123928] = 3,
+				},
+			},
+		},
+	},
+	[58468] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912398493182,
+		},
+		["sex"] = {
+			[3] = 2,
+		},
+		["class"] = "MAGE",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Vale of Eternal Blossoms"] = {
+							{
+								["y"] = 434,
+								["x"] = 564,
+								["dl"] = 0,
+								["n"] = 57,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 0,
+					["health"] = 1575765,
+					["powermax"] = 21262,
+				},
+			},
+		},
+		["faction"] = "Golden Lotus",
 	},
 	[65810] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^2"] = 912399567440,
+			["90^Alliance^2"] = 912398972656,
 		},
 		["sex"] = {
-			[2] = 6,
+			[2] = 12,
 		},
 		["class"] = "PALADIN",
 		["spec"] = {
@@ -1632,30 +942,60 @@ wlUnit = {
 					["loc"] = {
 						["Vale of Eternal Blossoms"] = {
 							{
-								["y"] = 234,
-								["x"] = 381,
+								["y"] = 225,
+								["x"] = 520,
 								["dl"] = 0,
-								["n"] = 7,
+								["n"] = 23,
 							}, -- [1]
 							{
-								["y"] = 194,
-								["x"] = 477,
+								["y"] = 240,
+								["x"] = 505,
 								["dl"] = 0,
-								["n"] = 6,
+								["n"] = 39,
 							}, -- [2]
 							{
-								["y"] = 240,
-								["x"] = 469,
+								["y"] = 233,
+								["x"] = 437,
 								["dl"] = 0,
-								["n"] = 4,
+								["n"] = 31,
 							}, -- [3]
 							{
-								["y"] = 206,
+								["y"] = 203,
 								["x"] = 360,
 								["dl"] = 0,
-								["n"] = 28,
+								["n"] = 16,
 							}, -- [4]
-							["n"] = 4,
+							{
+								["y"] = 194,
+								["x"] = 372,
+								["dl"] = 0,
+								["n"] = 21,
+							}, -- [5]
+							{
+								["y"] = 230,
+								["x"] = 383,
+								["dl"] = 0,
+								["n"] = 26,
+							}, -- [6]
+							{
+								["y"] = 237,
+								["x"] = 383,
+								["dl"] = 0,
+								["n"] = 23,
+							}, -- [7]
+							{
+								["y"] = 271,
+								["x"] = 435,
+								["dl"] = 0,
+								["n"] = 53,
+							}, -- [8]
+							{
+								["y"] = 278,
+								["x"] = 438,
+								["dl"] = 0,
+								["n"] = 34,
+							}, -- [9]
+							["n"] = 9,
 						},
 					},
 					["powertype"] = 0,
@@ -1664,115 +1004,19 @@ wlUnit = {
 				},
 				["spell"] = {
 					[126921] = 2,
-					[126920] = 7,
-					[113501] = 13,
+					[126920] = 8,
+					[113501] = 8,
 				},
 			},
 		},
 	},
-	[58916] = {
+	[58408] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912400715388,
+			["90^Alliance^5"] = 912398509615,
 		},
 		["sex"] = {
-			6, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["A Brewing Storm"] = {
-							{
-								["y"] = 433,
-								["x"] = 574,
-								["dl"] = 0,
-								["n"] = 13,
-							}, -- [1]
-							{
-								["y"] = 445,
-								["x"] = 567,
-								["dl"] = 0,
-								["n"] = 3,
-							}, -- [2]
-							{
-								["y"] = 430,
-								["x"] = 563,
-								["dl"] = 0,
-								["n"] = 3,
-							}, -- [3]
-							{
-								["y"] = 428,
-								["x"] = 553,
-								["dl"] = 0,
-								["n"] = 26,
-							}, -- [4]
-							{
-								["y"] = 475,
-								["x"] = 557,
-								["dl"] = 0,
-								["n"] = 15,
-							}, -- [5]
-							{
-								["y"] = 469,
-								["x"] = 566,
-								["dl"] = 0,
-								["n"] = 2,
-							}, -- [6]
-							{
-								["y"] = 465,
-								["x"] = 574,
-								["dl"] = 0,
-								["n"] = 10,
-							}, -- [7]
-							{
-								["y"] = 454,
-								["x"] = 572,
-								["dl"] = 0,
-								["n"] = 2,
-							}, -- [8]
-							{
-								["y"] = 442,
-								["x"] = 560,
-								["dl"] = 0,
-								["n"] = 1,
-							}, -- [9]
-							{
-								["y"] = 474,
-								["x"] = 551,
-								["dl"] = 0,
-								["n"] = 11,
-							}, -- [10]
-							{
-								["y"] = 462,
-								["x"] = 548,
-								["dl"] = 0,
-								["n"] = 3,
-							}, -- [11]
-							{
-								["y"] = 456,
-								["x"] = 540,
-								["dl"] = 0,
-								["n"] = 21,
-							}, -- [12]
-							["n"] = 12,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 393941,
-					["powermax"] = 0,
-				},
-			},
-		},
-	},
-	[58466] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912400569978,
-		},
-		["sex"] = {
-			[2] = 1,
+			[2] = 2,
 		},
 		["class"] = "WARRIOR",
 		["spec"] = {
@@ -1781,10 +1025,10 @@ wlUnit = {
 					["loc"] = {
 						["Vale of Eternal Blossoms"] = {
 							{
-								["y"] = 436,
-								["x"] = 566,
+								["y"] = 438,
+								["x"] = 565,
 								["dl"] = 0,
-								["n"] = 2,
+								["n"] = 43,
 							}, -- [1]
 							["n"] = 1,
 						},
@@ -1792,6 +1036,389 @@ wlUnit = {
 					["powertype"] = 1,
 					["health"] = 1969705,
 					["powermax"] = 0,
+				},
+			},
+		},
+		["faction"] = "Golden Lotus",
+	},
+	[65136] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[126786] = 4,
+				},
+			},
+		},
+	},
+	[63872] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912400071203,
+		},
+		["sex"] = {
+			1, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["powertype"] = 1,
+					["health"] = 1181823,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[120077] = 5,
+				},
+			},
+		},
+	},
+	[63312] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912399851231,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["class"] = "ROGUE",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["powertype"] = 3,
+					["health"] = 7090938,
+					["powermax"] = 100,
+				},
+				["spell"] = {
+					[123931] = 14,
+					[123934] = 4,
+				},
+			},
+		},
+	},
+	[58412] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912398842246,
+		},
+		["sex"] = {
+			[2] = 9,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Vale of Eternal Blossoms"] = {
+							{
+								["y"] = 224,
+								["x"] = 528,
+								["dl"] = 0,
+								["n"] = 22,
+							}, -- [1]
+							{
+								["y"] = 224,
+								["x"] = 516,
+								["dl"] = 0,
+								["n"] = 3,
+							}, -- [2]
+							{
+								["y"] = 246,
+								["x"] = 514,
+								["dl"] = 0,
+								["n"] = 37,
+							}, -- [3]
+							{
+								["y"] = 253,
+								["x"] = 509,
+								["dl"] = 0,
+								["n"] = 21,
+							}, -- [4]
+							{
+								["y"] = 220,
+								["x"] = 429,
+								["dl"] = 0,
+								["n"] = 83,
+							}, -- [5]
+							{
+								["y"] = 214,
+								["x"] = 435,
+								["dl"] = 0,
+								["n"] = 2,
+							}, -- [6]
+							["n"] = 6,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 590912,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[126886] = 7,
+					[126881] = 20,
+				},
+			},
+		},
+	},
+	[65140] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[126581] = 2,
+					[126595] = 2,
+				},
+			},
+		},
+	},
+	[59158] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912398552758,
+		},
+		["sex"] = {
+			[2] = 15,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Vale of Eternal Blossoms"] = {
+							{
+								["y"] = 325,
+								["x"] = 491,
+								["dl"] = 0,
+								["n"] = 4,
+							}, -- [1]
+							{
+								["y"] = 272,
+								["x"] = 549,
+								["dl"] = 0,
+								["n"] = 4,
+							}, -- [2]
+							{
+								["y"] = 263,
+								["x"] = 535,
+								["dl"] = 0,
+								["n"] = 1,
+							}, -- [3]
+							["n"] = 3,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 1181823,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[129657] = 27,
+					[126491] = 2,
+					[129695] = 56,
+					[126522] = 24,
+				},
+			},
+		},
+	},
+	[63313] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912399939576,
+		},
+		["sex"] = {
+			2, -- [1]
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["powertype"] = 0,
+					["health"] = 5672754,
+					["powermax"] = 21262,
+				},
+				["spell"] = {
+					[131658] = 2,
+					[123960] = 6,
+					[123958] = 11,
+					[123966] = 3,
+					[123959] = 2,
+				},
+			},
+		},
+	},
+	[65866] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[126340] = 12,
+				},
+			},
+		},
+	},
+	[63315] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912400061431,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["quote"] = {
+			["yell"] = {
+				["So wild and vicious he was kicked off the Peak of Serenity, it's the froth-mouthed frenzy, always-bananas monkey monk master CLOUDBENDER KOBO!"] = "",
+				["Did someone say Yak Attack?! It's ax-master Chagan Firehoof, wandering warrior of the Townlong Steppes!"] = "",
+				["Ready for the next fight? Ring that gong and GET! IT! ON!"] = "",
+				["What a battle! Our fine combatants served up Chagan a heaping helping of Yaungolian barbeque..."] = "",
+				["What a gloriously bloody battle! Our three heroes showed Kobo that the Arena of Annihilation isn't just monkey business."] = "",
+				["Everyone, please cheer for the NEW CHAMPIONS of the Arena of Annihilation!"] = "",
+			},
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Proving Grounds"] = {
+							{
+								["y"] = 176,
+								["x"] = 460,
+								["dl"] = 1,
+								["n"] = 20,
+							}, -- [1]
+							{
+								["y"] = 186,
+								["x"] = 456,
+								["dl"] = 1,
+								["n"] = 1,
+							}, -- [2]
+							{
+								["y"] = 196,
+								["x"] = 453,
+								["dl"] = 1,
+								["n"] = 2,
+							}, -- [3]
+							{
+								["y"] = 204,
+								["x"] = 449,
+								["dl"] = 1,
+								["n"] = 1,
+							}, -- [4]
+							{
+								["y"] = 213,
+								["x"] = 446,
+								["dl"] = 1,
+								["n"] = 2,
+							}, -- [5]
+							{
+								["y"] = 221,
+								["x"] = 443,
+								["dl"] = 1,
+								["n"] = 1,
+							}, -- [6]
+							["n"] = 6,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 433335,
+					["powermax"] = 0,
+				},
+			},
+		},
+	},
+	[63316] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912400178356,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["powertype"] = 1,
+					["health"] = 7878820,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[127806] = 10,
+					[127807] = 10,
+					[125579] = 12,
+				},
+			},
+		},
+	},
+	[50359] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912399434555,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[0] = {
+				[91] = {
+					["powertype"] = 1,
+					["health"] = 4075320,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[124946] = 2,
+				},
+			},
+		},
+	},
+	[63318] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912400080411,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["powertype"] = 1,
+					["health"] = 7878820,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[123969] = 3,
+					[123974] = 6,
+				},
+			},
+		},
+	},
+	[58471] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912398501280,
+		},
+		["sex"] = {
+			[2] = 3,
+		},
+		["class"] = "PALADIN",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Vale of Eternal Blossoms"] = {
+							{
+								["y"] = 438,
+								["x"] = 565,
+								["dl"] = 0,
+								["n"] = 59,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 0,
+					["health"] = 1969705,
+					["powermax"] = 9916,
 				},
 			},
 		},
@@ -1801,7 +1428,7 @@ wlUnit = {
 wlBaseStats = {
 	["ROGUE^Dwarf^90"] = {
 		["SPIRIT"] = 76,
-		["DODGEPERAGI"] = 0.001465834435984757,
+		["DODGEPERAGI"] = 0.001460773624441358,
 		["INTELLECT"] = 47,
 		["STAMINA"] = 124,
 		["STRENGTH"] = 137,
@@ -1809,62 +1436,59 @@ wlBaseStats = {
 	},
 }
 wlItemDurability = {
-	[82239] = 85,
+	[89232] = 0,
 	[72163] = 0,
 	[72986] = 0,
-	[74250] = 0,
 	[81688] = 65,
 	[75014] = 0,
 	[72120] = 0,
 	[74833] = 0,
-	[74837] = 0,
-	[74841] = 0,
+	[76097] = 0,
+	[83157] = 0,
 	[74849] = 0,
 	[21383] = 0,
 	[82858] = 50,
-	[82240] = 40,
 	[86843] = 55,
-	[74247] = 0,
 	[74834] = 0,
-	[82209] = 40,
+	[45579] = 0,
 	[74846] = 0,
 	[74850] = 0,
-	[82288] = 40,
-	[45579] = 0,
-	[89232] = 0,
-	[81088] = 65,
-	[82283] = 0,
+	[49] = 0,
+	[92847] = 85,
+	[84240] = 0,
+	[86791] = 0,
 	[81265] = 0,
+	[89112] = 0,
 	[72988] = 0,
-	[81245] = 65,
 	[89070] = 0,
+	[89967] = 0,
 	[85852] = 0,
 	[92849] = 85,
 	[90585] = 165,
 	[74839] = 0,
-	[89522] = 0,
-	[71634] = 0,
-	[82285] = 55,
 	[87378] = 50,
-	[49] = 0,
+	[71634] = 0,
+	[81088] = 65,
+	[86762] = 80,
+	[93393] = 0,
 	[71083] = 0,
 	[91877] = 0,
 	[72162] = 0,
-	[92847] = 85,
-	[74249] = 0,
-	[38426] = 0,
-	[93393] = 0,
 	[7005] = 20,
+	[6948] = 0,
+	[82254] = 55,
+	[38426] = 0,
+	[82199] = 55,
 	[6256] = 16,
-	[82204] = 85,
+	[74837] = 0,
 	[95567] = 0,
 	[74844] = 0,
-	[76097] = 0,
+	[74841] = 0,
 	[30817] = 0,
 	[89661] = 100,
 	[87208] = 0,
+	[87779] = 0,
 	[76061] = 0,
-	[6948] = 0,
 }
 wlBattlePetStats = {
 	["0x000000000077C403"] = {

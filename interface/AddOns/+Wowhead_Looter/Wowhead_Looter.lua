@@ -4,15 +4,15 @@
 --                                     --
 --                                     --
 --    Patch: 5.2.0                     --
---    Updated: March 5, 2013       	   --
+--    Updated: March 15, 2013           --
 --    E-mail: feedback@wowhead.com     --
 --                                     --
 -----------------------------------------
 
 
 local WL_NAME = "|cffffff7fWowhead Looter|r";
-local WL_VERSION = 50007;
-local WL_VERSION_PATCH = 1;
+local WL_VERSION = 50008;
+local WL_VERSION_PATCH = 2;
 
 
 -- SavedVariables
@@ -77,6 +77,10 @@ local WL_CURRENCIES = {
 	["pvpcurrency-honor-horde"] = 392,
 	["achievement_zone_tolbarad"] = 391,
 	["inv_misc_markoftheworldtree"] = 416,
+	["inv_misc_coin_17"] = 697, -- Elder Charm of Good Fortune
+	["inv_misc_coin_18"] = 738, -- Lesser Charm of Good Fortune
+	["archaeology_5_0_mogucoin"] = 752, -- Mogu Rune of Fate
+	["inv_misc_archaeology_mantidstatue_01"] = 754, -- Mantid Archaeology Fragment
 };
 local VALOR_TIER1_LFG_ID = 301;
 -- Random Dungeon IDs extracted from LFGDungeons.dbc
@@ -1884,105 +1888,120 @@ function wlEvent_LOOT_OPENED(self)
 
 	local i = 1;
 	for slot=1, GetNumLootItems() do
-			local lootSources = { GetLootSourceInfo(slot) };
+		local lootSources = { GetLootSourceInfo(slot) };
 			
-			local slotType = GetLootSlotType(slot);
-			if slotType == LOOT_SLOT_ITEM then
-				local itemId = wlParseItemLink(GetLootSlotLink(slot));
-				
+		local slotType = GetLootSlotType(slot);
+		if slotType ~= LOOT_SLOT_NONE then
+			local itemId = nil;
+			local currencyId = nil;
+			
+			if slotType == LOOT_SLOT_ITEM then 
+				itemId = wlParseItemLink(GetLootSlotLink(slot));
 				-- for sourceIndex = 1, #lootSources, 2 do
-					-- print(("%s looted %d of %s"):format(wlParseGUID(lootSources[sourceIndex]), lootSources[sourceIndex + 1], GetItemInfo(itemId)));
+				--	 print(("%s looted %d of %s"):format(wlParseGUID(lootSources[sourceIndex]), lootSources[sourceIndex + 1], GetItemInfo(itemId)));
 				-- end
+			elseif slotType == LOOT_SLOT_MONEY then
+				itemId = "coin";
+			else -- Currency
+				itemId = "currency";
 				
-				for sourceIndex = 1, #lootSources, 2 do
-					local qty = lootSources[sourceIndex + 1];
-					local aoeGUID = lootSources[sourceIndex];
-					if ((wlTracker.spell.action == "Killing" and targetGUID == aoeGUID) or wlTracker.spell.action ~= "Killing") then
-						if not targetLoots[itemId] then
-							targetLoots[itemId] = {};
-						end
-						targetLoots[itemId][1] = (targetLoots[itemId][1] or 0) + qty;
-						targetLoots[itemId][2] = (targetLoots[itemId][2] or 0) + wlSelectOne(3, GetLootSlotInfo(slot));
-					else
-						if not aoeNpcs[aoeGUID] then
-							aoeNpcs[aoeGUID] = {};
-						end
-						aoeNpcs[aoeGUID][itemId] = (aoeNpcs[aoeGUID][itemId] or 0) + qty;
-					end
-				end
-
-			elseif slotType == LOOT_SLOT_CURRENCY then
-
 				local icon_file_name, currencyName, currencyQuantity, currencyRarity, currencyLocked = GetLootSlotInfo(slot);
 				icon_file_name = icon_file_name:match("[^\\]+$"):lower();
-				local currencyId = WL_CURRENCIES[icon_file_name];
+				currencyId = WL_CURRENCIES[icon_file_name];
 				
 				wlLootedCurrencyBlacklist = {
 					["currencyId"] = currencyId,
 					["currencyQuantity"] = currencyQuantity,
 				};
-
-				for sourceIndex = 1, #lootSources, 2 do
-					if (targetGUID == lootSources[sourceIndex] and lootSources[sourceIndex + 1]) then
-						wlUpdateVariable(wlEvent, wlId, wlN, eventId, "drop", i, "set", wlConcat("currency", lootSources[sourceIndex + 1], currencyId));
-						i = i + 1;
-					end
-				end
-
-			elseif slotType == LOOT_SLOT_MONEY then
-			
-				wlUpdateVariable(wlEvent, wlId, wlN, eventId, "drop", i, "set", wlConcat("coin", wlParseCoin(select(2, GetLootSlotInfo(slot)))));
-				i = i + 1;
-				
 			end
+			
+			for sourceIndex = 1, #lootSources, 2 do
+				local qty = lootSources[sourceIndex + 1];
+				local aoeGUID = lootSources[sourceIndex];
+				if ((wlTracker.spell.action == "Killing" and targetGUID == aoeGUID) or wlTracker.spell.action ~= "Killing") then
+					if not targetLoots[itemId] then
+						targetLoots[itemId] = {};
+					end
+					targetLoots[itemId][1] = (targetLoots[itemId][1] or 0) + qty;
+					targetLoots[itemId][2] = (targetLoots[itemId][2] or 0) + wlSelectOne(3, GetLootSlotInfo(slot));
+					targetLoots[itemId][3] = (currencyId or 0);
+				else
+					if not aoeNpcs[aoeGUID] then
+						aoeNpcs[aoeGUID] = {};
+					end
+					if not aoeNpcs[aoeGUID][itemId] then
+						aoeNpcs[aoeGUID][itemId] = {};
+					end
+					aoeNpcs[aoeGUID][itemId][1] = (aoeNpcs[aoeGUID][itemId][1] or 0) + qty;
+					aoeNpcs[aoeGUID][itemId][2] = (currencyId or 0);
+				end
+			end
+		end
 	end
 	
 	local isAoeLoot = (next(aoeNpcs) ~= nil) and 1 or 0;
 	wlEvent[wlId][wlN][eventId].isAoeLoot = isAoeLoot;
 
 	for itemId, qtyInfo in pairs(targetLoots) do
-		local qty = (isAoeLoot == 1) and qtyInfo[1] or qtyInfo[2];
-		wlUpdateVariable(wlEvent, wlId, wlN, eventId, "drop", i, "set", wlConcat(itemId, qty));
+		local qty = qtyInfo[1] or qtyInfo[2];
+		local currencyId = qtyInfo[3];
+		if currencyId > 0 then
+			wlUpdateVariable(wlEvent, wlId, wlN, eventId, "drop", i, "set", wlConcat(itemId, qty, currencyId));
+		else 
+			wlUpdateVariable(wlEvent, wlId, wlN, eventId, "drop", i, "set", wlConcat(itemId, qty));
+		end
 		i = i + 1;
 	end
 	
 	for aoeGUID, dropInfo in pairs(aoeNpcs) do
+		-- Enclosing loop for wlLootCooldown purposes
+		repeat
+			local guidMsg = wlConcat(wlTracker.spell.action, aoeGUID);
+			if wlLootCooldown[guidMsg] then
+				-- wlClearTracker("spell");
+				-- The next line jumps to the enclosing "for" loop
+				-- Equivalent to "continue;"
+				do break end;
+			end
+			if wlIsInParty() then
+				SendAddonMessage("WL_LOOT_COOLDOWN", guidMsg, "RAID");
+			else
+				wlEvent_CHAT_MSG_ADDON(self, "WL_LOOT_COOLDOWN", guidMsg, "RAID", UnitName("player"));
+			end
 
-		local guidMsg = wlConcat(wlTracker.spell.action, aoeGUID);
-		if wlLootCooldown[guidMsg] then
-			wlClearTracker("spell");
-			return;
-		end
-		if wlIsInParty() then
-			SendAddonMessage("WL_LOOT_COOLDOWN", guidMsg, "RAID");
-		else
-			wlEvent_CHAT_MSG_ADDON(self, "WL_LOOT_COOLDOWN", guidMsg, "RAID", UnitName("player"));
-		end
-
-		local npcId = wlParseGUID(aoeGUID);
-		local aoeEventId = wlGetNextEventId();
-		local aoeCounter = 1;
-		wlUpdateVariable(wlEvent, wlId, wlN, aoeEventId, "initArray", 0);
-		wlEvent[wlId][wlN][aoeEventId].what = "loot";
-		wlEvent[wlId][wlN][aoeEventId].isAoeLoot = isAoeLoot;
-		wlTableCopy(wlEvent[wlId][wlN][aoeEventId], wlTracker.spell);
-		wlEvent[wlId][wlN][aoeEventId].dd = instanceDiff;
-		wlEvent[wlId][wlN][aoeEventId].flags = flags;
-		wlEvent[wlId][wlN][aoeEventId].id = npcId;
-		for itemId, qty in pairs(dropInfo) do
-			wlUpdateVariable(wlEvent, wlId, wlN, aoeEventId, "drop", aoeCounter, "set", wlConcat(itemId, qty));
-			aoeCounter = aoeCounter + 1;
-		end
+			local npcId = wlParseGUID(aoeGUID);
+			local aoeEventId = wlGetNextEventId();
+			local aoeCounter = 1;
+			wlUpdateVariable(wlEvent, wlId, wlN, aoeEventId, "initArray", 0);
+			wlEvent[wlId][wlN][aoeEventId].what = "loot";
+			wlEvent[wlId][wlN][aoeEventId].isAoeLoot = isAoeLoot;
+			wlTableCopy(wlEvent[wlId][wlN][aoeEventId], wlTracker.spell);
+			wlEvent[wlId][wlN][aoeEventId].dd = instanceDiff;
+			wlEvent[wlId][wlN][aoeEventId].flags = flags;
+			wlEvent[wlId][wlN][aoeEventId].id = npcId;
+			-- Add Drops
+			for itemId, qty in pairs(dropInfo) do
+				if qty[2] > 0 then -- Currency 
+					wlUpdateVariable(wlEvent, wlId, wlN, aoeEventId, "drop", aoeCounter, "set", wlConcat(itemId, qty[1], qty[2]));
+				else -- Money or Item
+					wlUpdateVariable(wlEvent, wlId, wlN, aoeEventId, "drop", aoeCounter, "set", wlConcat(itemId, qty[1]));
+				end
+				aoeCounter = aoeCounter + 1;
+			end
+			-- End inner loop
+			break;
+		until true
 	end
 	
 	-- wlDebugFrame:Show();
 	-- wlPrint("-------------------------------");
 	-- wlTablePrint(wlTracker.spell);
-	-- for k, v in pairs(tempLoot) do
-		-- local name = GetItemInfo(k);
-		-- tempLoot[k] = wlConcat(name,v);
+	-- wlTablePrint(wlEvent[wlId][wlN]);
+	-- wlTablePrint(aoeNpcs);
+	-- for slot=1, GetNumLootItems() do
+	--	 wlPrint("------GetLootSourceInfo(" .. slot .. ")------");
+	--	 wlPrint(GetLootSourceInfo(slot));
 	-- end
-	-- wlTablePrint(tempLoot);
 end
 
 --**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--
@@ -2563,6 +2582,11 @@ end
 
 function wlGetLocation()
 	local zone = GetRealZoneText() or "";
+	-- Make sure coords are for the real zone
+	-- Disabled if not in the world
+	if(wlSelectOne(3,GetInstanceInfo()) == 0) then
+		SetMapByID(GetCurrentMapAreaID());
+	end
 	local x, y = GetPlayerMapPosition("player");
 	local dl = GetCurrentMapDungeonLevel() or 0;
 

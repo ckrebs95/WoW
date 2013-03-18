@@ -35,10 +35,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["MainWindowHeight"] = 113.9999372661123,
+			["DetailWindowX"] = 0,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 268.0000646710386,
-			["DetailWindowX"] = 0,
+			["MainWindowHeight"] = 113.9999372661123,
 		},
 		["Darvina - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -64,10 +64,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = -409.9998474121094,
-			["MainWindowHeight"] = 158.999907985331,
+			["DetailWindowX"] = 619.0000610351563,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 294.0000299513335,
-			["DetailWindowX"] = 619.0000610351563,
+			["MainWindowHeight"] = 158.999907985331,
 		},
 		["Deyndis - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -93,10 +93,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["DetailWindowX"] = 0,
+			["MainWindowHeight"] = 122.9999810010198,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 312.0000029802322,
-			["MainWindowHeight"] = 122.9999810010198,
+			["DetailWindowX"] = 0,
 		},
 		["Depha - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -114,17 +114,17 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["DetailWindowX"] = 0,
-			["MainWindowVis"] = false,
-			["CurDataSet"] = "OverallData",
 			["GraphWindowX"] = 0,
+			["CurDataSet"] = "OverallData",
+			["MainWindowVis"] = false,
+			["DetailWindowX"] = 0,
 		},
 		["Dreyan - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -489.0003471374512,
-					["x"] = -784.4998779296875,
+					["y"] = -489.0003433227539,
+					["x"] = -784.4998931884766,
 					["w"] = 283,
 					["h"] = 102.0000457763672,
 				},
@@ -172,9 +172,9 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["GraphWindowX"] = 0,
-			["MainWindowWidth"] = 329,
 			["DetailWindowX"] = 0,
+			["MainWindowWidth"] = 329,
+			["GraphWindowX"] = 0,
 		},
 		["Datinnite - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -224,7 +224,7 @@ RecountDB = {
 					false, -- [8]
 				},
 			},
-			["GraphWindowX"] = 0,
+			["MainWindowHeight"] = 137.9999235570442,
 			["CurDataSet"] = "LastFightData",
 			["Colors"] = {
 				["Bar"] = {
@@ -240,7 +240,7 @@ RecountDB = {
 			["MainWindowMode"] = 2,
 			["HideCollect"] = true,
 			["MainWindowWidth"] = 397.0000017136335,
-			["MainWindowHeight"] = 137.9999235570442,
+			["GraphWindowX"] = 0,
 		},
 	},
 }
