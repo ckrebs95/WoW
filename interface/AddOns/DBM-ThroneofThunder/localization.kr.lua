@@ -20,19 +20,19 @@ L:SetWarningLocalization({
 })
 
 L:SetTimerLocalization({
-	timerDoor		= "다음 부족의 문",--번역 재확인
+	timerDoor		= "다음 부족의 문 열림",
 	timerAdds		= "다음 %s"
 })
 
 L:SetOptionLocalization({
-	warnAdds		= "추가 병력 알림 보기",--번역 재확인
-	timerDoor		= "다음 부족의 문 바 표시",--번역 재확인
-	timerAdds		= "다음 추가 병력 바 표시"--번역 재확인
+	warnAdds		= "병력 등장시 알림 보기",
+	timerDoor		= "다음 부족의 문 열림 바 표시",
+	timerAdds		= "다음 추가 병력 바 표시"
 })
 
 L:SetMiscLocalization({
-	newForces		= "forces pour from the",--Farraki forces pour from the Farraki Tribal Door!
-	chargeTarget	= "stamps his tail!"--Horridon sets his eyes on Eraeshio and stamps his tail!
+	newForces		= "병력들이 쏟아져",
+	chargeTarget	= "꼬리를 바닥에 쿵쿵 내려칩니다!"
 })
 
 ---------------------------
@@ -72,7 +72,7 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(821)
 
 L:SetMiscLocalization({
-	rampageEnds	= "Megaera's rage subsides."
+	rampageEnds	= "분노가 가라앉습니다."
 })
 
 ------------
@@ -85,18 +85,23 @@ L:SetWarningLocalization({
 	specWarnFlock	= "%2$ : %1$ (%3$d)",
 })
 
+L:SetTimerLocalization({
+	timerFlockCD	= "둥지 (%d): %s"
+})
+
 L:SetOptionLocalization({
 	warnFlock		= DBM_CORE_AUTO_ANNOUNCE_OPTIONS.count:format("ej7348"),
 	specWarnFlock	= DBM_CORE_AUTO_SPEC_WARN_OPTIONS.switch:format("ej7348"),
+	timerFlockCD	= DBM_CORE_AUTO_TIMER_OPTIONS.nextcount:format("ej7348"),
 	RangeFrame		= "$spell:138923 주문에 대한 거리 창 보기(8m)"
 })
 
 L:SetMiscLocalization({
-	eggsHatchL		= "The eggs in one of the lower nests begin to hatch!",
-	eggsHatchU		= "The eggs in one of the upper nests begin to hatch!",
-	Upper			= "상층",
-	Lower			= "하층",
-	UpperAndLower	= "상층 & 하층"
+	eggsHatchL		= "아랫둥지에 있는 알들이 부화하기 시작합니다!",
+	eggsHatchU		= "위쪽 둥지에 있는 알들이 부화하기 시작합니다!",
+	Upper			= "위쪽",
+	Lower			= "아래쪽",
+	UpperAndLower	= "윗쪽 & 아래쪽"
 })
 
 --------------------------
@@ -128,7 +133,8 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(820)
 
 L:SetOptionLocalization({
-	RangeFrame		= "거리 창 보기(5m/2m)"
+	RangeFrame			= "거리 창 보기(5m/2m)",
+	SetIconOnBadOoze	= "$spell:140506를 생성하는 살아있는 점액에 전술 목표 아이콘 설정"
 })
 
 -----------------
@@ -145,7 +151,7 @@ L:SetOptionLocalization({
 })
 
 L:SetMiscLocalization({
-	Pull		= "The orb explodes!"
+	Pull		= "구슬이 폭발합니다!"
 })
 
 --------------
@@ -159,7 +165,8 @@ L:SetWarningLocalization({
 
 L:SetOptionLocalization({
 	warnDeadZone	= DBM_CORE_AUTO_ANNOUNCE_OPTIONS.spell:format(137229),
-	RangeFrame		= "전투 진영에 따라 거리 창 보기\n(일정 인원 이상이 뭉쳐 있을 때만 보이는 똑똑한 거리 창 입니다.)"
+	RangeFrame		= "전투 진영에 따라 거리 창 보기\n(일정 인원 이상이 뭉쳐 있을 때만 보이는 똑똑한 거리 창 입니다.)",
+	InfoFrame		= "$spell:136193 주문에 영향을 받은 대상을 정보 창에서 보기"
 })
 
 -------------------
@@ -181,7 +188,11 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(832)
 
 L:SetOptionLocalization({
-	RangeFrame		= "거리 창 보기"
+	RangeFrame			= "거리 창 보기",
+	StaticShockArrow	= "$spell:135695 주문의 영향을 누군가 받은 경우 DBM 화살표 보기",
+	OverchargeArrow		= "$spell:136295 주문의 영향을 누군가 받은 경우 DBM 화살표 보기",
+	SetIconOnOvercharge	= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(136295),
+	SetIconOnStaticShock= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(135695)
 })
 
 ------------

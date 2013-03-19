@@ -1931,9 +1931,8 @@ function Nx.Com:ShowVersionMsg()
 	pop["text"] = format ("A newer CARBONITE version has been detected.")
 
 	StaticPopup_Show ("NxVerMsg")
---]]
-    
-	local verstemp verstemp2 = math.modf(self.NEWVER * 10)
+--]]    
+	local verstemp, verstemp2 = math.modf(Nx.NEWVER * 10)
 	verstemp = verstemp / 10
 	verstemp2 = verstemp2 * 100
 	local s1 = format ("version %s.%s of %s is available", verstemp, verstemp2, NXTITLEFULL)
@@ -1941,7 +1940,7 @@ function Nx.Com:ShowVersionMsg()
 	UIErrorsFrame:AddMessage (s2, 1, 1, 1, 1)	-- Flip order so it show correctly
 	UIErrorsFrame:AddMessage (s1, 1, 1, 0, 1)
 	Nx.prt (s1)
-	Nx.prt (s2)
+	Nx.prt (s2)	
 end
 
 --------
@@ -1986,7 +1985,7 @@ function Nx.Com:OnMsgVersion (name, enmsg, arg2, arg9)
 
 --				ver = ver + 9	-- Test the message				
 				if ver - .0000001 > Nx.VERSION and not self.NewVerMsg then
-					self.NEWVER = ver
+					Nx.NEWVER = ver
 					self.NewVerMsg = true
 					Nx.Timer:Start ("ComShowVer", 60, self, self.ShowVerTimer)
 

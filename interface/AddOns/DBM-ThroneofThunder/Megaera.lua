@@ -1,8 +1,7 @@
-if select(4, GetBuildInfo()) < 50200 then return end--Don't load on live
 local mod	= DBM:NewMod(821, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 8825 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 8862 $"):sub(12, -3))
 mod:SetCreatureID(68065, 70212, 70235, 70247)--flaming 70212. Frozen 70235, Venomous 70247
 mod:SetModelID(47414)--Hydra Fire Head, 47415 Frost Head, 47416 Poison Head
 
@@ -22,13 +21,13 @@ mod:RegisterEventsInCombat(
 	"UNIT_DIED"
 )
 
-local warnRampage				= mod:NewSpellAnnounce(139458, 3)
+local warnRampage				= mod:NewCountAnnounce(139458, 3)
 local warnArcticFreeze			= mod:NewStackAnnounce(139843, 3, nil, mod:IsTank() or mod:IsHealer())
 local warnIgniteFlesh			= mod:NewStackAnnounce(137731, 3, nil, mod:IsTank() or mod:IsHealer())
 local warnRotArmor				= mod:NewStackAnnounce(139840, 3, nil, mod:IsTank() or mod:IsHealer())
 local warnArcaneDiffusion		= mod:NewStackAnnounce(139993, 3, nil, mod:IsTank() or mod:IsHealer())--Heroic
 local warnCinders				= mod:NewTargetAnnounce(139822, 4)
-local warnTorrentofIce			= mod:NewTargetAnnounce(139889, 4)--Cannot get target, no debuff. Maybe they get an emote? i was tank so I don't know. can't target scan because back heads aren't targetable
+local warnTorrentofIce			= mod:NewTargetAnnounce(139889, 4)
 local warnNetherTear			= mod:NewSpellAnnounce(140138, 3)--Heroic
 
 local specWarnRampage			= mod:NewSpecialWarningSpell(139458, nil, nil, nil, 2)
@@ -70,6 +69,7 @@ local fireBehind = 0
 local venomBehind = 0
 local iceBehind = 0
 local arcaneBehind = 0
+local rampageCast = 0
 local activeHeadGUIDS = {}
 local guids = {}
 local guidTableBuilt = false--Entirely for DCs, so we don't need to reset between pulls cause it doesn't effect building table on combat start and after a DC then it will be reset to false always
@@ -112,6 +112,7 @@ function mod:OnCombatStart(delay)
 	buildGuidTable()
 	guidTableBuilt = true
 	table.wipe(activeHeadGUIDS)
+	rampageCast = 0
 	fireInFront = 0
 	venomInFront = 0
 	iceInFront = 0
@@ -214,7 +215,8 @@ mod.SPELL_MISSED = mod.SPELL_DAMAGE
 
 function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg, _, _, _, target)
 	if msg:find("spell:139458") then
-		warnRampage:Show()
+		rampageCast = rampageCast + 1
+		warnRampage:Show(rampageCast)
 		timerArcticFreezeCD:Cancel()
 		timerIgniteFleshCD:Cancel()
 		timerRotArmorCD:Cancel()

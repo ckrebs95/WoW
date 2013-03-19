@@ -9,7 +9,7 @@ H: 100
 Frame: LootFrame
 FrameLevel: 13
 Anchor: BOTTOMRIGHT
-X: -82
+X: -115
 Y: 110
 W: 170
 H: 240
@@ -21,7 +21,7 @@ Y: -242
 W: 32
 H: 32
 Frame: Recount_MainWindow
-FrameLevel: 23
+FrameLevel: 31
 Anchor: BOTTOMLEFT
 X: 34
 Y: 0

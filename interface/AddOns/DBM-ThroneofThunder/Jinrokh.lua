@@ -1,8 +1,7 @@
-if select(4, GetBuildInfo()) < 50200 then return end--Don't load on live
 local mod	= DBM:NewMod(827, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 8812 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 8862 $"):sub(12, -3))
 mod:SetCreatureID(69465)
 mod:SetModelID(47552)
 
@@ -41,6 +40,8 @@ local timerStormCD					= mod:NewNextTimer(60, 137313)--90-93 variable (but ALWAY
 local timerIonizationCD				= mod:NewCDTimer(60, 138732)
 
 local soundFocusedLightning			= mod:NewSound(137422)
+
+local berserkTimer					= mod:NewBerserkTimer(540)
 
 mod:AddBoolOption("RangeFrame")
 
@@ -89,6 +90,7 @@ function mod:OnCombatStart(delay)
 	if self:IsDifficulty("heroic10", "heroic25") then
 		timerIonizationCD:Start(60-delay)
 	end
+	berserkTimer:Start(-delay)
 end
 
 function mod:OnCombatEnd()

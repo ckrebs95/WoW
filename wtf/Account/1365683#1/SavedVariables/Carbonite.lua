@@ -6,12 +6,12 @@ NxData = {
 	["NXGOpts"] = {
 		["BGShowStats"] = true,
 		["MapShowOthersInZ"] = true,
-		["FontSH"] = 0,
-		["SkinWinBdColor"] = 3435986943,
+		["InfoToZ"] = true,
+		["DemoShown"] = true,
 		["MapShowOthersInCities"] = false,
 		["MapMMDockIndoors"] = true,
 		["QSnd7"] = false,
-		["QMapWatchC2"] = 16711935,
+		["QMapWatchColorCnt"] = 12,
 		["MapMMOwn"] = true,
 		["FontQuest"] = "Friz",
 		["RouteMergeRadius"] = 20,
@@ -19,7 +19,7 @@ NxData = {
 		["QMapWatchC7"] = 4286513407,
 		["QWItemScale"] = 10,
 		["MapMMButShowCarb"] = true,
-		["MapShowPalsInCities"] = true,
+		["MapMMAboveIcons"] = false,
 		["MapMMButShowClock"] = true,
 		["ChatMsgFrm"] = "",
 		["MapShowCTown"] = true,
@@ -28,14 +28,14 @@ NxData = {
 		["MenuCenterV"] = false,
 		["QWKeyUseItem"] = "",
 		["QMapWatchColorPerQ"] = true,
-		["FontSSize"] = 10,
+		["QWBlizzModify"] = false,
 		["MapMMButCorner"] = "TopRight",
 		["QWFadeAll"] = false,
 		["MapIconGatherA"] = 0.7,
 		["MapLineThick"] = 1,
 		["QWChalTrack"] = true,
 		["QMapWatchC12"] = 4278222847,
-		["QWScenTrack"] = true,
+		["SkinWinFixedBgColor"] = 2155905152,
 		["MapMMDockRight"] = false,
 		["QWGrowUp"] = false,
 		["PunkMAlertSnd"] = true,
@@ -44,152 +44,152 @@ NxData = {
 		["InfoToG"] = true,
 		["SkinDef"] = false,
 		["InfoLvlUpShow"] = true,
+		["GryphonsHide"] = true,
+		["MapDetailSize"] = 6,
+		["MapTrailCnt"] = 100,
+		["QSnd6"] = false,
 		["QAutoTurnInAC"] = false,
 		["HUDTButCombatColor"] = 4278190106,
-		["EmuCartWP"] = true,
-		["QSnd6"] = false,
-		["MapButRAlt"] = "None",
-		["MapDetailSize"] = 6,
 		["FontWarehouseI"] = "Friz",
 		["QBroadcastQChanges"] = false,
-		["MapTrailCnt"] = 100,
+		["EmuCartWP"] = true,
 		["QWOCntFirst"] = false,
-		["PunkAreaColor"] = 537792255,
+		["MMButWinMinimize"] = false,
 		["MapMMDXO"] = 0,
 		["QMapWatchAreaAlpha"] = 4294967136,
-		["MMButWinMinimize"] = false,
+		["PunkAreaColor"] = 537792255,
 		["PunkBGAreaSize"] = 60,
-		["Version"] = 0.102,
-		["PunkIconColor"] = 4286611711,
 		["MapMMButShowWorldMap"] = true,
+		["PunkIconColor"] = 4286611711,
+		["Version"] = 0.102,
 		["FontMenu"] = "Friz",
-		["RouteGatherRadius"] = 60,
-		["QMapWatchAreaHoverColor"] = 4294967192,
+		["QMapWatchC4"] = 4294902015,
+		["PunkMAreaSize"] = 200,
 		["FontM"] = "Friz",
-		["QMapWatchC10"] = 2147418367,
+		["WarehouseAddTooltip"] = true,
 		["MapMMSquare"] = false,
 		["MapShowCExtra"] = true,
 		["PunkShowInNorthrend"] = false,
 		["MapShowPunks"] = true,
 		["QLevelsToLoad3"] = 90,
-		["QDetailTC"] = 537921791,
-		["QWAddChanged"] = true,
-		["QMapWatchC11"] = 8388607,
-		["MapLocTipAnchor"] = "TopRight",
-		["FontMapSize"] = 10,
+		["QMapWatchC10"] = 2147418367,
+		["FontWarehouseISize"] = 11,
+		["OptsQuickVer"] = 5,
+		["MapMMDockIScale"] = 1,
+		["MapShowTrail"] = true,
 		["FontMapLocSize"] = 10,
-		["PunkShowInSafeArea"] = false,
+		["FontWatch"] = "Arial",
 		["HUDATCorpse"] = true,
 		["MapMouseIgnore"] = true,
-		["MapMMDockIScale"] = 1,
+		["QShowDailyReset"] = true,
 		["HUDTButColor"] = 5,
-		["QAutoAccept"] = false,
-		["MapShowTrail"] = true,
-		["QWCompleteColor"] = 4291952895,
-		["QSnd5"] = false,
 		["CaptureEnable"] = true,
+		["FontMapSize"] = 10,
+		["QWCompleteColor"] = 4291952895,
+		["MapIconScaleMin"] = -1,
+		["QAutoAccept"] = false,
 		["MapWOwn"] = false,
 		["QBroadcastQChangesNum"] = 999,
-		["PunkNewLocalWarnChat"] = true,
-		["QSideBySide"] = true,
-		["QWRemoveComplete"] = false,
-		["MapIconPOIAlpha"] = 1,
-		["MapButMCtrl"] = "None",
-		["MapTrailTime"] = 90,
 		["QHCheckCompleted"] = true,
-		["QAddTooltip"] = false,
+		["QMapWatchC3"] = 859045887,
+		["QWRemoveComplete"] = false,
 		["QWHideRaid"] = true,
+		["MapButMCtrl"] = "None",
+		["QSnd5"] = false,
+		["FontWatchSize"] = 11,
+		["QAddTooltip"] = false,
+		["PunkNewLocalWarnChat"] = true,
 		["MapMMHideOnMax"] = false,
+		["QLevelsToLoad2"] = 85,
+		["MapIconPOIAlpha"] = 1,
 		["ComNoGlobal"] = false,
-		["QMapWatchAreaGfx"] = "Solid",
-		["FontWatchH"] = 2,
 		["MapIconGatherAtScale"] = 0.5,
 		["FontInfoSize"] = 11,
 		["FontInfoH"] = 0,
 		["MapLocTipAnchorRel"] = "None",
 		["HUDTSoundOn"] = true,
 		["MapShowToolBar"] = true,
-		["PunkMAlertText"] = true,
-		["MapBut4Alt"] = "Add Note",
-		["MapButM"] = "Show Player Zone",
-		["MapMMDockZoom"] = 3,
-		["MapMMButSpacing"] = 29,
 		["MapShowCCity"] = true,
-		["MapMMDockSquare"] = true,
+		["MapBut4Alt"] = "Add Note",
+		["GuideVendorVMax"] = 60,
+		["PunkNewLocalWarnSnd"] = false,
+		["MapMMButSpacing"] = 29,
+		["PunkMAlertText"] = true,
+		["NXCleaned"] = true,
 		["MapMaxCenter"] = true,
-		["QWHideBlizz"] = true,
-		["MapMMNodeGD"] = 0.4,
-		["IWinEnable"] = true,
+		["QSndPlayCompleted"] = false,
+		["MapMMDockZoom"] = 3,
+		["PunkMAreaColor"] = 409999615,
 		["QWItemAlpha"] = 4294967206,
 		["MapMaxOverride"] = false,
 		["MapMMButShowCalendar"] = true,
 		["QAutoTurnIn"] = false,
-		["TitleSoundOn"] = false,
+		["TeamTWinMaxButs"] = 15,
 		["HUDAYO"] = 0,
 		["MapZoneDrawCnt"] = 3,
-		["IWinLock"] = true,
+		["LoginHideVer"] = false,
 		["MapButLAlt"] = "None",
-		["NXCleaned"] = true,
+		["HUDAGfx"] = "Gloss",
 		["MapShowTitleXY"] = true,
 		["MapMMBuggedTogFullSize"] = false,
-		["QSndPlayCompleted"] = false,
-		["QMapWatchC9"] = 2131886079,
+		["QWHideBlizz"] = true,
+		["RouteRecycle"] = false,
 		["HUDASize"] = 44,
 		["MapTrailDist"] = 2,
 		["QWLargeFont"] = false,
-		["PunkMAreaColor"] = 409999615,
+		["IWinEnable"] = true,
 		["InfoToF"] = true,
-		["MapShowTitleName"] = true,
-		["QWAddNew"] = true,
 		["QWAchTrack"] = false,
-		["ComNoZone"] = false,
-		["FontMap"] = "Friz",
+		["QWAddNew"] = true,
+		["MapShowTitleName"] = true,
 		["MapMMDYO"] = 0,
-		["QWAchZoneShow"] = true,
-		["QSnd1"] = false,
 		["PunkTWinTitle"] = "Punks:",
+		["ComNoZone"] = false,
+		["QWAchZoneShow"] = true,
 		["PunkBGAreaColor"] = 604572159,
+		["FontMap"] = "Friz",
+		["QSnd1"] = false,
 		["HUDTBut"] = true,
-		["QWHideDoneObj"] = false,
-		["MapRestoreScaleAfterTrack"] = true,
-		["QDetailScale"] = 0.95,
-		["CameraForceMaxDist"] = false,
+		["SkinWinSizedBgColor"] = 522133472,
 		["QMapWatchC6"] = 4278255615,
+		["HUDATTaxi"] = true,
+		["QEnable"] = true,
+		["MapRestoreScaleAfterTrack"] = true,
 		["SocialEnable"] = true,
-		["EmuTomTom"] = true,
-		["MapMMButOwn"] = true,
+		["TeamTWinEnable"] = true,
+		["CameraForceMaxDist"] = false,
 		["QWOMaxLen"] = 60,
-		["QPartyShare"] = true,
+		["MapButMAlt"] = "None",
 		["QSync"] = true,
 		["PunkAreaSize"] = 80,
 		["QWBGColor"] = 85,
-		["TeamTWinEnable"] = true,
-		["MapButMAlt"] = "None",
+		["EmuTomTom"] = true,
+		["QPartyShare"] = true,
 		["MapPlyrArrowSize"] = 32,
-		["QWShowDist"] = true,
-		["QShowLinkExtra"] = true,
+		["TitleOff"] = false,
+		["QDetailBC"] = 3233837311,
 		["MapBut4Ctrl"] = "None",
 		["FontMH"] = 0,
 		["QMapQuestGiversHighLevel"] = 80,
 		["QLevelsToLoad"] = 80,
 		["MapButRCtrl"] = "None",
 		["MapMMMoveCapBars"] = false,
-		["QMapWatchC8"] = 16744447,
+		["IWinListCol"] = 0,
 		["MapMaxMouseIgnore"] = false,
-		["MapMMButColumns"] = 1,
-		["QSnd8"] = false,
+		["QMapWatchC8"] = 16744447,
+		["MapShowTitleSpeed"] = true,
 		["QMapShowWatchAreas"] = false,
 		["MapShowMailboxes"] = true,
 		["QMapWatchC1"] = 4278190335,
-		["MapMMDockBottom"] = false,
+		["QMapWatchC5"] = 16777215,
 		["MapMMDockOnMax"] = false,
 		["MapTopTooltip"] = true,
 		["SkinName"] = "ToolBlue",
 		["QSnd3"] = false,
-		["MapMMIndoorTogFullSize"] = true,
+		["QMapQuestGiversLowLevel"] = 80,
 		["QWShowPerColor"] = false,
 		["QShowDailyCount"] = true,
-		["QMapQuestGiversLowLevel"] = 80,
+		["MapMMIndoorTogFullSize"] = true,
 		["MapMMShowOldNameplate"] = false,
 		["MapMMIScale"] = 1,
 		["MapMaxRestoreHide"] = false,
@@ -200,65 +200,65 @@ NxData = {
 		["QMapWatchAreaTrackColor"] = 2964369536,
 		["MapShowNotes"] = true,
 		["FontQuestH"] = 1,
-		["QMapWatchC5"] = 16777215,
-		["MapShowTitleSpeed"] = true,
-		["IWinListCol"] = 0,
+		["MapMMDockBottom"] = false,
+		["QSnd8"] = false,
+		["MapMMButColumns"] = 1,
 		["HUDHideInBG"] = false,
-		["QDetailBC"] = 3233837311,
-		["TitleOff"] = false,
+		["QShowLinkExtra"] = true,
+		["QWShowDist"] = true,
 		["FontS"] = "Friz",
 		["QWFixedSize"] = false,
-		["QEnable"] = true,
-		["HUDATTaxi"] = true,
+		["MapMMButOwn"] = true,
+		["QDetailScale"] = 0.95,
 		["MapMMDockBugged"] = false,
-		["SkinWinSizedBgColor"] = 522133472,
+		["QWHideDoneObj"] = false,
 		["QWOIncompleteColor"] = 3435973887,
 		["MapButLCtrl"] = "Goto",
 		["MapButR"] = "Menu",
 		["FontWarehouseIH"] = 6,
-		["RouteRecycle"] = false,
-		["HUDAGfx"] = "Gloss",
-		["LoginHideVer"] = false,
-		["TeamTWinMaxButs"] = 15,
+		["QMapWatchC9"] = 2131886079,
+		["MapMMDockSquare"] = true,
+		["IWinLock"] = true,
+		["TitleSoundOn"] = false,
 		["HUDShowDir"] = true,
 		["FontMapLoc"] = "Friz",
 		["QWShowClose"] = false,
-		["PunkNewLocalWarnSnd"] = false,
-		["GuideVendorVMax"] = 60,
+		["MapMMNodeGD"] = 0.4,
+		["MapButM"] = "Show Player Zone",
 		["FontInfo"] = "Arial",
-		["QLevelsToLoad2"] = 85,
-		["FontWatchSize"] = 11,
+		["FontWatchH"] = 2,
+		["QMapWatchAreaGfx"] = "Solid",
 		["PunkTWinMaxButs"] = 5,
-		["QMapWatchC3"] = 859045887,
+		["QSideBySide"] = true,
 		["MenuCenterH"] = false,
-		["MapIconScaleMin"] = -1,
+		["MapTrailTime"] = 90,
 		["HUDHide"] = false,
-		["QShowDailyReset"] = true,
-		["FontWatch"] = "Arial",
+		["MapLocTipAnchor"] = "TopRight",
+		["QMapWatchC11"] = 8388607,
 		["HUDATBGPal"] = true,
 		["MapMMDockAlways"] = false,
-		["OptsQuickVer"] = 5,
-		["FontWarehouseISize"] = 11,
-		["WarehouseAddTooltip"] = true,
-		["PunkMAreaSize"] = 200,
-		["QMapWatchC4"] = 4294902015,
+		["PunkShowInSafeArea"] = false,
+		["QWAddChanged"] = true,
+		["QDetailTC"] = 537921791,
+		["QMapWatchAreaHoverColor"] = 4294967192,
+		["RouteGatherRadius"] = 60,
 		["FontMenuSize"] = 10,
 		["ItemRequest"] = false,
 		["QSnd4"] = false,
 		["MapBut4"] = "Show Selected Zone",
 		["FontQuestSize"] = 12,
-		["GryphonsHide"] = true,
+		["MapButRAlt"] = "None",
 		["MapRouteUse"] = true,
 		["QShowId"] = false,
-		["SkinWinFixedBgColor"] = 2155905152,
-		["QWBlizzModify"] = false,
+		["QWScenTrack"] = true,
+		["FontSSize"] = 10,
 		["HUDAXO"] = 0,
-		["MapMMAboveIcons"] = false,
+		["MapShowPalsInCities"] = true,
 		["QWIncompleteColor"] = 3214606591,
 		["QUseAltLKey"] = true,
-		["QMapWatchColorCnt"] = 12,
-		["DemoShown"] = true,
-		["InfoToZ"] = true,
+		["QMapWatchC2"] = 16711935,
+		["SkinWinBdColor"] = 3435986943,
+		["FontSH"] = 0,
 	},
 	["NXTravel"] = {
 		["Version"] = 0.5,
@@ -286,35 +286,2384 @@ NxData = {
 			["Shrine of Aviana, Hyjal#Nordrassil, Hyjal"] = 52.06099999998696,
 			["Fizzcrank Airstrip, Borean Tundra#Amber Ledge, Borean Tundra"] = 36.43699999991804,
 			["Halfhill, Valley of the Four Winds#Shrine of Seven Stars, Vale of Eternal Blossoms"] = 92.11800000001676,
-			["Paw'Don Village, Jade Forest#Shrine of Seven Stars, Vale of Eternal Blossoms"] = 105.4650000000111,
+			["Zhu's Watch, Krasarang Wilds#Pang's Stead, Valley of the Four Winds"] = 27.32400000002235,
 			["Ironforge, Dun Morogh#Chillwind Camp, Western Plaguelands"] = 208.9130000000587,
-			["Shado-Pan Garrison, Townlong Steppes#Rensai's Watchpost, Townlong Steppes"] = 11.40200000000186,
+			["Stoneplow, Valley of the Four Winds#Klaxxi'vess, Dread Wastes"] = 79.69899999999325,
 			["Dalaran#Valiance Keep, Borean Tundra"] = 208.9920000000275,
 			["Dalaran#Moa'ki, Dragonblight"] = 128.0370000000112,
-			["Kota Basecamp, Kun-Lai Summit#Shado-Pan Fallback, Kun-Lai Summit"] = 24.09899999998743,
+			["Tian Monastery, Jade Forest#Dawn's Blossom, Jade Forest"] = 53.0669999999227,
 			["Zouchin Village, Kun-Lai Summit#One Keg, Kun-Lai Summit"] = 49.32699999999022,
-			["Nordrassil, Hyjal#Shrine of Aviana, Hyjal"] = 42.08300000000054,
+			["Halfhill, Valley of the Four Winds#Sentinel Basecamp, Krasarang Wilds"] = 82.6500000001397,
 			["Shrine of Seven Stars, Vale of Eternal Blossoms#Klaxxi'vess, Dread Wastes"] = 90.80499999999302,
 			["Binan Village, Kun-Lai Summit#Westwind Rest, Kun-Lai Summit"] = 63.8859999999404,
 			["Dawn's Blossom, Jade Forest#Jade Temple Grounds, Jade Forest"] = 44.25900000007823,
 			["Valiance Keep, Borean Tundra#Dalaran"] = 209.4039999999804,
-			["Darkshire, Duskwood#Goldshire, Elwynn"] = 55.20899999991525,
-			["Stormwind, Elwynn#Lakeshire, Redridge"] = 90.41399999998976,
-			["The Sunset Brewgarden, Dread Wastes#Klaxxi'vess, Dread Wastes"] = 41.38899999996647,
-			["Booty Bay, Stranglethorn#Stormwind, Elwynn"] = 159.6609999999637,
-			["Sentinel Basecamp, Krasarang Wilds#Halfhill, Valley of the Four Winds"] = 80.43799999984913,
-			["Halfhill, Valley of the Four Winds#The Incursion, Krasarang Wilds"] = 55.28700000001118,
 			["The Arboretum, Jade Forest#Dawn's Blossom, Jade Forest"] = 33.43799999996554,
+			["Halfhill, Valley of the Four Winds#The Incursion, Krasarang Wilds"] = 55.28700000001118,
+			["Sentinel Basecamp, Krasarang Wilds#Halfhill, Valley of the Four Winds"] = 80.43799999984913,
+			["Booty Bay, Stranglethorn#Stormwind, Elwynn"] = 159.6609999999637,
+			["The Sunset Brewgarden, Dread Wastes#Klaxxi'vess, Dread Wastes"] = 41.38899999996647,
+			["Stormwind, Elwynn#Lakeshire, Redridge"] = 90.41399999998976,
+			["Darkshire, Duskwood#Goldshire, Elwynn"] = 55.20899999991525,
 			["Stormwind, Elwynn#Booty Bay, Stranglethorn"] = 159.3519999999553,
 			["Lakeshire, Redridge#Stormwind, Elwynn"] = 89.74699999997392,
-			["Halfhill, Valley of the Four Winds#Sentinel Basecamp, Krasarang Wilds"] = 82.6500000001397,
+			["Nordrassil, Hyjal#Shrine of Aviana, Hyjal"] = 42.08300000000054,
 			["Dalaran#Ebon Watch, Zul'Drak"] = 65.63500000000931,
-			["Tian Monastery, Jade Forest#Dawn's Blossom, Jade Forest"] = 53.0669999999227,
-			["Stoneplow, Valley of the Four Winds#Klaxxi'vess, Dread Wastes"] = 79.69899999999325,
-			["Zhu's Watch, Krasarang Wilds#Pang's Stead, Valley of the Four Winds"] = 27.32400000002235,
+			["Kota Basecamp, Kun-Lai Summit#Shado-Pan Fallback, Kun-Lai Summit"] = 24.09899999998743,
+			["Shado-Pan Garrison, Townlong Steppes#Rensai's Watchpost, Townlong Steppes"] = 11.40200000000186,
+			["Paw'Don Village, Jade Forest#Shrine of Seven Stars, Vale of Eternal Blossoms"] = 105.4650000000111,
 		},
 	},
 	["NXGather"] = {
+		["Version"] = 0.75,
+		["Misc"] = {
+			[1015] = {
+				["Art"] = {
+					"aba725^1", -- [1]
+					"a88731^1", -- [2]
+					"a6c7a0^1", -- [3]
+					"a36796^1", -- [4]
+					"a3a7d8^1", -- [5]
+					"a007f8^1", -- [6]
+					"a82752^1", -- [7]
+					"acb74d^1", -- [8]
+					"a807d9^1", -- [9]
+					"a8e704^1", -- [10]
+					"a35755^1", -- [11]
+					"a217a9^1", -- [12]
+					"a12747^1", -- [13]
+					"ad5774^1", -- [14]
+					"a77781^1", -- [15]
+					"a57711^1", -- [16]
+					"a3b817^1", -- [17]
+				},
+			},
+			[1017] = {
+				["Art"] = {
+					"651a4f^1", -- [1]
+					"5ffb0e^1", -- [2]
+					"6a6a33^1", -- [3]
+					"69bbb4^1", -- [4]
+					"686b80^1", -- [5]
+					"66ab3a^1", -- [6]
+					"857739^1", -- [7]
+					"88d79f^1", -- [8]
+					"86d73c^2", -- [9]
+					"6a4b92^1", -- [10]
+					"6a0b6d^1", -- [11]
+					"67cb4c^1", -- [12]
+					"7b7a81^1", -- [13]
+					"7a2a81^1", -- [14]
+					"7a7a1b^1", -- [15]
+					"663ae0^1", -- [16]
+					"690a01^1", -- [17]
+					"663a24^1", -- [18]
+					"669aaf^1", -- [19]
+					"67ba39^1", -- [20]
+					"676b68^1", -- [21]
+					"65bb44^1", -- [22]
+					"730803^1", -- [23]
+					"7487e6^1", -- [24]
+					"70381e^1", -- [25]
+					"64ca7a^1", -- [26]
+					"608af6^1", -- [27]
+					"68a9ea^1", -- [28]
+					"71b81e^1", -- [29]
+					"6ee813^1", -- [30]
+					"73269e^1", -- [31]
+					"782a91^1", -- [32]
+					"779a2a^1", -- [33]
+					"7bea66^1", -- [34]
+					"799a9f^1", -- [35]
+					"770a9b^1", -- [36]
+					"6a1b22^1", -- [37]
+					"654bb5^1", -- [38]
+					"68eb24^1", -- [39]
+					"69ca3f^1", -- [40]
+					"5f3b26^1", -- [41]
+					"87d755^1", -- [42]
+					"872765^1", -- [43]
+					"85274f^1", -- [44]
+					"5e4b05^1", -- [45]
+					"696b41^1", -- [46]
+					"6ccb9b^1", -- [47]
+					"764a48^1", -- [48]
+					"756a76^1", -- [49]
+					"772a67^1", -- [50]
+					"6ccb7d^1", -- [51]
+					"86a787^1", -- [52]
+					"62c3b0^2", -- [53]
+					"6953af^1", -- [54]
+					"66239f^1", -- [55]
+					"648a9e^1", -- [56]
+					"6dda1a^1", -- [57]
+					"66ca57^1", -- [58]
+					"70c67a^1", -- [59]
+					"7a579a^1", -- [60]
+					"712632^1", -- [61]
+					"682bbf^1", -- [62]
+					"64cb81^1", -- [63]
+					"650b9d^1", -- [64]
+					"68ab5e^1", -- [65]
+					"6b1bb4^1", -- [66]
+					"64c36f^1", -- [67]
+					"65d38a^1", -- [68]
+					"632392^1", -- [69]
+					"5f0ace^1", -- [70]
+					"732a5c^1", -- [71]
+					"668b5f^1", -- [72]
+					"7bda48^1", -- [73]
+					"6e7671^1", -- [74]
+					"7e7704^1", -- [75]
+					"7e960d^1", -- [76]
+					"86871e^1", -- [77]
+					"87170f^1", -- [78]
+					"68639c^1", -- [79]
+					"64139a^1", -- [80]
+					"64137e^1", -- [81]
+					"671b9b^1", -- [82]
+					"789a6d^1", -- [83]
+					"856762^1", -- [84]
+					"880729^1", -- [85]
+					"6d5b5c^1", -- [86]
+					"784a41^1", -- [87]
+					"6d69ef^1", -- [88]
+					"631ae2^1", -- [89]
+					"677b25^1", -- [90]
+					"6b1b42^1", -- [91]
+					"659b60^1", -- [92]
+					"722a5a^1", -- [93]
+					"751a25^1", -- [94]
+					"618aa9^1", -- [95]
+					"8767c1^1", -- [96]
+					"7bb6ee^1", -- [97]
+					"6db6c8^1", -- [98]
+					"706832^1", -- [99]
+					"72a754^1", -- [100]
+					"7046c0^1", -- [101]
+					"6773b5^1", -- [102]
+				},
+			},
+			[3004] = {
+				["Art"] = {
+					"89a367^1", -- [1]
+					"8aa353^1", -- [2]
+					"7fd3e1^1", -- [3]
+					"59a8a1^1", -- [4]
+					"55e8b4^1", -- [5]
+					"52a87c^1", -- [6]
+					"53784e^1", -- [7]
+					"56381c^1", -- [8]
+					"614b5c^1", -- [9]
+					"671b6d^1", -- [10]
+					"6a8bab^1", -- [11]
+					"83f34d^1", -- [12]
+					"88235f^1", -- [13]
+					"8c239a^1", -- [14]
+					"552835^1", -- [15]
+					"5b18e3^1", -- [16]
+					"53d8e7^1", -- [17]
+					"50f8a3^1", -- [18]
+					"5a9886^1", -- [19]
+					"696bc6^1", -- [20]
+					"675bbb^1", -- [21]
+					"536890^1", -- [22]
+					"575864^1", -- [23]
+					"611b72^1", -- [24]
+					"6a2b8b^1", -- [25]
+				},
+				["Gas"] = {
+					"5858c9^1", -- [1]
+				},
+			},
+			[2026] = {
+				["Art"] = {
+					"580c48^1", -- [1]
+					"547b9c^1", -- [2]
+					"586c0c^1", -- [3]
+					"5f1930^1", -- [4]
+					"61e90e^1", -- [5]
+					"5b9938^1", -- [6]
+					"7f358a^1", -- [7]
+					"7dd5b2^1", -- [8]
+					"7c654f^1", -- [9]
+					"7245cd^1", -- [10]
+					"7f354b^1", -- [11]
+					"79d5ef^1", -- [12]
+					"560bf3^1", -- [13]
+					"60b97f^1", -- [14]
+					"62593d^1", -- [15]
+					"5ca8dd^1", -- [16]
+					"5d694a^1", -- [17]
+					"6078e7^1", -- [18]
+					"7815ad^1", -- [19]
+					"7c95f6^1", -- [20]
+					"76b5e9^1", -- [21]
+					"55dbca^1", -- [22]
+					"7cf62d^1", -- [23]
+					"50eb80^1", -- [24]
+					"5c4913^1", -- [25]
+					"5b3953^1", -- [26]
+					"52fb7e^1", -- [27]
+					"575b9f^1", -- [28]
+					"72256f^1", -- [29]
+					"60391e^1", -- [30]
+					"60f948^1", -- [31]
+					"7bd651^1", -- [32]
+					"527ba2^1", -- [33]
+					"59dc00^1", -- [34]
+					"5b8c13^1", -- [35]
+					"76c555^1", -- [36]
+					"7d457b^1", -- [37]
+					"75857b^1", -- [38]
+					"502baa^1", -- [39]
+					"77061e^1", -- [40]
+				},
+			},
+			[1023] = {
+				["Art"] = {
+					"93e42c^1", -- [1]
+					"962527^1", -- [2]
+					"7c2519^1", -- [3]
+					"512b79^1", -- [4]
+					"568bba^1", -- [5]
+					"5cbbe7^2", -- [6]
+					"59449a^1", -- [7]
+					"5254aa^1", -- [8]
+					"5ea553^1", -- [9]
+					"5a25cc^1", -- [10]
+					"50744a^1", -- [11]
+					"775384^1", -- [12]
+					"8a3359^1", -- [13]
+					"78632b^1", -- [14]
+					"5dc505^1", -- [15]
+					"573465^1", -- [16]
+					"6bf2e8^1", -- [17]
+					"82d385^1", -- [18]
+					"74828e^1", -- [19]
+					"7dc54b^1", -- [20]
+					"8184a8^2", -- [21]
+					"54cb5d^1", -- [22]
+					"50acb7^1", -- [23]
+					"554c8f^1", -- [24]
+					"4eabdb^1", -- [25]
+					"5d5c6c^1", -- [26]
+					"515408^1", -- [27]
+					"55258c^1", -- [28]
+					"5ce582^1", -- [29]
+					"8ca2fc^1", -- [30]
+					"7f52f5^1", -- [31]
+					"7772ad^1", -- [32]
+					"79e5c6^1", -- [33]
+					"939405^1", -- [34]
+					"777563^1", -- [35]
+					"76f5b5^1", -- [36]
+					"871452^1", -- [37]
+					"5d04ec^1", -- [38]
+					"78d219^1", -- [39]
+					"890397^1", -- [40]
+					"56c4b2^1", -- [41]
+					"ae4991^2", -- [42]
+					"ab0a9e^1", -- [43]
+					"a5897b^1", -- [44]
+					"50f518^1", -- [45]
+					"6db38c^1", -- [46]
+					"5a94dd^1", -- [47]
+					"519c20^1", -- [48]
+					"5a1c90^1", -- [49]
+					"57148d^1", -- [50]
+					"57f514^1", -- [51]
+					"540cc0^1", -- [52]
+					"549bf7^1", -- [53]
+					"aa5ae1^1", -- [54]
+					"abca5d^1", -- [55]
+					"acd954^1", -- [56]
+					"706321^1", -- [57]
+					"75e2c7^1", -- [58]
+					"7853ca^1", -- [59]
+					"980498^1", -- [60]
+					"9ad4ad^1", -- [61]
+					"7a253f^1", -- [62]
+					"8613ac^1", -- [63]
+					"7c33b4^1", -- [64]
+					"59ec41^1", -- [65]
+					"563beb^1", -- [66]
+					"ab09a6^1", -- [67]
+					"5864ed^1", -- [68]
+					"b4ea85^1", -- [69]
+					"b519e6^1", -- [70]
+					"4dbc17^1", -- [71]
+					"53ec5b^1", -- [72]
+					"76d526^1", -- [73]
+					"7a4338^1", -- [74]
+					"7ba35d^1", -- [75]
+					"7b13ee^1", -- [76]
+					"a85b6a^1", -- [77]
+					"a9fb25^1", -- [78]
+					"7ea414^1", -- [79]
+					"7d32df^1", -- [80]
+					"51ec86^1", -- [81]
+					"8f8404^1", -- [82]
+					"ac2bc9^1", -- [83]
+					"ab1a19^1", -- [84]
+					"6ff293^1", -- [85]
+					"5cc5c6^1", -- [86]
+					"a67b7b^1", -- [87]
+					"4ccbdb^1", -- [88]
+					"b1ab10^1", -- [89]
+					"a77b11^1", -- [90]
+					"77834d^1", -- [91]
+					"858333^1", -- [92]
+					"77f4da^1", -- [93]
+					"52853d^1", -- [94]
+					"76132c^1", -- [95]
+					"77b2ca^1", -- [96]
+					"56e5bc^1", -- [97]
+					"4d7415^1", -- [98]
+					"4cfba1^1", -- [99]
+				},
+				["Gas"] = {
+					"c3678e^1", -- [1]
+				},
+			},
+			[1026] = {
+				["Gas"] = {
+					"88189a^1", -- [1]
+					"8d72f9^1", -- [2]
+					"4226a6^1", -- [3]
+				},
+				["Art"] = {
+					"97890c^1", -- [1]
+					"90494a^1", -- [2]
+					"8fb91f^1", -- [3]
+					"4ba4f1^1", -- [4]
+					"495544^1", -- [5]
+					"42fa42^1", -- [6]
+					"42da0a^1", -- [7]
+					"471a2d^1", -- [8]
+					"8888dc^1", -- [9]
+					"88a8ba^1", -- [10]
+					"7ae95d^1", -- [11]
+					"47b9d3^1", -- [12]
+					"4609df^1", -- [13]
+					"7e4386^1", -- [14]
+					"7eb31f^1", -- [15]
+					"7bf385^1", -- [16]
+					"47c4ee^1", -- [17]
+					"4e3560^1", -- [18]
+					"2fc5ba^1", -- [19]
+					"3786ed^1", -- [20]
+					"7ee2af^1", -- [21]
+					"79c300^1", -- [22]
+					"95a96c^1", -- [23]
+					"8b3868^1", -- [24]
+				},
+			},
+			[4005] = {
+				["Art"] = {
+					"466ba4^1", -- [1]
+					"49abd6^1", -- [2]
+					"510cac^1", -- [3]
+					"498c2d^1", -- [4]
+					"4f0c30^1", -- [5]
+					"484c1e^1", -- [6]
+					"b52498^1", -- [7]
+					"b2b436^2", -- [8]
+					"b4d479^1", -- [9]
+					"b883aa^1", -- [10]
+					"4c9c73^1", -- [11]
+					"4b5bdb^1", -- [12]
+					"bc33f8^1", -- [13]
+					"bca4df^1", -- [14]
+					"480bfa^1", -- [15]
+					"4d8ca6^1", -- [16]
+					"bcd49c^1", -- [17]
+					"b573eb^1", -- [18]
+					"b8548f^1", -- [19]
+					"b473b3^1", -- [20]
+					"4d5c54^1", -- [21]
+					"b2d3ce^1", -- [22]
+					"b8944f^1", -- [23]
+					"b45452^1", -- [24]
+					"459c18^1", -- [25]
+					"45bbff^1", -- [26]
+				},
+			},
+			[3005] = {
+				["Art"] = {
+					"52385b^1", -- [1]
+					"47f7b5^2", -- [2]
+					"73ab83^1", -- [3]
+					"75cb94^1", -- [4]
+					"7abaf1^1", -- [5]
+					"74d4ec^1", -- [6]
+					"7173f4^1", -- [7]
+					"79b42f^1", -- [8]
+					"90f7ec^1", -- [9]
+					"9357db^1", -- [10]
+					"91f807^1", -- [11]
+					"9587e1^1", -- [12]
+					"9737d7^1", -- [13]
+					"4e5938^1", -- [14]
+					"49b8d6^1", -- [15]
+					"73fab2^1", -- [16]
+					"75ca79^1", -- [17]
+					"751b18^1", -- [18]
+					"9625fd^1", -- [19]
+					"8dd616^1", -- [20]
+					"9725bb^1", -- [21]
+					"4d0949^1", -- [22]
+					"4b384b^1", -- [23]
+					"9bc7f7^1", -- [24]
+					"9607a1^1", -- [25]
+					"9c97df^1", -- [26]
+					"9ca7a2^1", -- [27]
+					"b4b9d7^1", -- [28]
+					"b3aa18^1", -- [29]
+					"aea9b7^1", -- [30]
+					"79247f^1", -- [31]
+					"744486^1", -- [32]
+					"72a4e0^1", -- [33]
+					"47b7df^1", -- [34]
+					"5168e3^1", -- [35]
+					"b0a97a^1", -- [36]
+					"ad1a01^1", -- [37]
+					"8e25b0^1", -- [38]
+					"8bb5c4^1", -- [39]
+					"9365dd^1", -- [40]
+					"4b18b2^1", -- [41]
+					"50b904^1", -- [42]
+					"4d97db^1", -- [43]
+					"7203d3^1", -- [44]
+					"b7f9cb^1", -- [45]
+					"5037bc^1", -- [46]
+					"512815^1", -- [47]
+					"b83a0a^1", -- [48]
+					"b71a3b^1", -- [49]
+					"9b05a7^1", -- [50]
+					"90f622^1", -- [51]
+					"9435ef^1", -- [52]
+					"4b692d^1", -- [53]
+					"48f7ed^1", -- [54]
+					"afd961^1", -- [55]
+					"75150f^1", -- [56]
+					"74d4a8^1", -- [57]
+					"8da63a^1", -- [58]
+					"75a440^1", -- [59]
+					"b15a16^1", -- [60]
+					"90165c^1", -- [61]
+					"74fabf^1", -- [62]
+					"767aeb^1", -- [63]
+					"780b06^1", -- [64]
+				},
+			},
+			[2003] = {
+				["Art"] = {
+					"6fb1c9^1", -- [1]
+					"6ac189^1", -- [2]
+					"701147^1", -- [3]
+					"6bb1cf^1", -- [4]
+					"70218f^1", -- [5]
+					"728214^1", -- [6]
+					"6d9166^1", -- [7]
+					"79b459^2", -- [8]
+					"7d546e^1", -- [9]
+					"7ac41f^1", -- [10]
+					"7e34ae^1", -- [11]
+					"7ba486^1", -- [12]
+					"856724^1", -- [13]
+					"7747a0^1", -- [14]
+					"8467bd^1", -- [15]
+					"804843^1", -- [16]
+					"845748^1", -- [17]
+					"73f19e^1", -- [18]
+					"7d143b^1", -- [19]
+					"810757^1", -- [20]
+					"838700^1", -- [21]
+					"72d1cc^1", -- [22]
+					"80d703^1", -- [23]
+					"7984a6^1", -- [24]
+					"79a92c^1", -- [25]
+					"6e11e0^1", -- [26]
+					"7fc442^1", -- [27]
+					"72f15f^1", -- [28]
+				},
+			},
+			[2015] = {
+				["Art"] = {
+					"b4f9c8^1", -- [1]
+					"b14a1a^1", -- [2]
+					"b1ca7c^1", -- [3]
+					"b89ae7^1", -- [4]
+					"ab4aed^1", -- [5]
+					"aa893d^1", -- [6]
+					"acd995^1", -- [7]
+					"a939be^1", -- [8]
+					"a7cac5^1", -- [9]
+					"b6baff^1", -- [10]
+					"aa3a15^1", -- [11]
+				},
+			},
+			[4006] = {
+				["Art"] = {
+					"946839^1", -- [1]
+					"97789d^1", -- [2]
+					"596267^1", -- [3]
+					"6041a8^1", -- [4]
+					"584259^1", -- [5]
+					"804915^1", -- [6]
+					"7e28c3^1", -- [7]
+					"810901^1", -- [8]
+					"9158d2^1", -- [9]
+					"979824^1", -- [10]
+					"9208a0^1", -- [11]
+					"93c847^1", -- [12]
+					"9737ee^1", -- [13]
+					"98087e^1", -- [14]
+					"ad1838^1", -- [15]
+					"ac7828^1", -- [16]
+					"ad6861^1", -- [17]
+					"749466^1", -- [18]
+					"70e45c^1", -- [19]
+					"72e450^1", -- [20]
+					"ae889f^1", -- [21]
+					"b07879^1", -- [22]
+					"b128f4^1", -- [23]
+					"9d2ca4^1", -- [24]
+					"997c9b^1", -- [25]
+					"9eece7^1", -- [26]
+					"ae6916^1", -- [27]
+					"aa78fc^1", -- [28]
+					"a3a67e^1", -- [29]
+					"a5962e^1", -- [30]
+					"a9d894^1", -- [31]
+					"b318f2^1", -- [32]
+					"b1284c^1", -- [33]
+					"704560^1", -- [34]
+					"6f1474^1", -- [35]
+					"70f507^1", -- [36]
+					"927c8e^1", -- [37]
+					"962c41^1", -- [38]
+					"a1c638^1", -- [39]
+					"a0f6b3^1", -- [40]
+					"7204c2^1", -- [41]
+					"74b484^1", -- [42]
+					"7604a0^1", -- [43]
+					"920856^1", -- [44]
+					"54b1eb^1", -- [45]
+					"60f13e^1", -- [46]
+					"b038e4^1", -- [47]
+					"ad9829^1", -- [48]
+				},
+			},
+			[2023] = {
+				["Art"] = {
+					"ab5b39^1", -- [1]
+					"aedb11^1", -- [2]
+					"a65a6c^1", -- [3]
+					"7266e1^1", -- [4]
+					"75062e^1", -- [5]
+					"7bc664^1", -- [6]
+					"5d9add^1", -- [7]
+					"54eb31^1", -- [8]
+					"556aaa^1", -- [9]
+					"300807^1", -- [10]
+					"2d07c5^1", -- [11]
+					"3267fd^1", -- [12]
+					"7bca83^1", -- [13]
+					"76eaa3^1", -- [14]
+					"77eb31^1", -- [15]
+					"7b96a1^1", -- [16]
+					"1e4866^1", -- [17]
+					"5adac4^1", -- [18]
+					"5b8be1^1", -- [19]
+					"54ab9c^1", -- [20]
+					"76bb05^1", -- [21]
+					"795a74^1", -- [22]
+					"29a83d^1", -- [23]
+					"236890^2", -- [24]
+					"738a33^1", -- [25]
+					"1b3841^2", -- [26]
+					"2b7805^1", -- [27]
+					"758ad8^1", -- [28]
+					"73fab6^1", -- [29]
+					"831a92^1", -- [30]
+					"59db53^1", -- [31]
+					"57db0f^1", -- [32]
+					"776a15^1", -- [33]
+					"2787ce^1", -- [34]
+					"2d7797^1", -- [35]
+					"955c13^1", -- [36]
+					"930a2a^1", -- [37]
+					"959c54^1", -- [38]
+					"73c676^1", -- [39]
+					"795669^1", -- [40]
+					"5aab87^1", -- [41]
+					"810a88^1", -- [42]
+					"777b73^1", -- [43]
+					"755a5e^1", -- [44]
+					"55abc4^1", -- [45]
+					"598be7^1", -- [46]
+					"5d5b0d^1", -- [47]
+					"837ab0^1", -- [48]
+					"a5eb1b^1", -- [49]
+					"a98bb8^1", -- [50]
+					"a50b59^1", -- [51]
+					"599ae2^1", -- [52]
+					"a87b7f^1", -- [53]
+					"25c8bf^1", -- [54]
+					"955b54^1", -- [55]
+					"9ceac6^1", -- [56]
+					"9b4a2d^1", -- [57]
+					"a94a47^1", -- [58]
+					"a21ae7^1", -- [59]
+					"9b3cc8^1", -- [60]
+					"9e8bc3^1", -- [61]
+					"9f4c43^1", -- [62]
+					"78c6aa^1", -- [63]
+					"7706fa^1", -- [64]
+					"527bb0^1", -- [65]
+					"1ab896^1", -- [66]
+					"5b0a7d^1", -- [67]
+					"ae7ba3^1", -- [68]
+					"a05b14^1", -- [69]
+					"802aba^1", -- [70]
+					"a8db4a^1", -- [71]
+					"a68b80^1", -- [72]
+					"b07b32^1", -- [73]
+					"9e9d5e^1", -- [74]
+					"99dc79^1", -- [75]
+					"9e0d2b^1", -- [76]
+					"9afae8^1", -- [77]
+					"592bc8^1", -- [78]
+					"79db35^1", -- [79]
+					"a59b9c^1", -- [80]
+					"26f768^1", -- [81]
+					"a6ca9a^1", -- [82]
+					"924b08^1", -- [83]
+					"ac6b57^1", -- [84]
+					"a27a8f^1", -- [85]
+					"ad9b7f^1", -- [86]
+					"ac9ab1^1", -- [87]
+					"7526da^1", -- [88]
+					"76865a^1", -- [89]
+					"aa1b06^1", -- [90]
+					"a72be2^1", -- [91]
+					"a81c71^1", -- [92]
+					"97ccab^1", -- [93]
+					"9a0b5c^1", -- [94]
+					"a8ea85^1", -- [95]
+					"ab9ad4^1", -- [96]
+					"9d6cae^1", -- [97]
+					"943b9c^1", -- [98]
+					"7e3a85^1", -- [99]
+					"9b3c58^1", -- [100]
+					"966bc0^1", -- [101]
+					"525b49^1", -- [102]
+					"4e6b94^1", -- [103]
+					"9b7b47^1", -- [104]
+					"ad3c18^1", -- [105]
+					"732730^1", -- [106]
+					"20f874^1", -- [107]
+					"260841^1", -- [108]
+					"58db8c^1", -- [109]
+					"9ccb98^1", -- [110]
+					"a3fc33^1", -- [111]
+					"4f7bd9^1", -- [112]
+					"71f694^1", -- [113]
+					"50db22^1", -- [114]
+					"304764^1", -- [115]
+				},
+			},
+			[1027] = {
+				["Art"] = {
+					"7bd624^1", -- [1]
+					"7a7626^1", -- [2]
+					"7a1637^1", -- [3]
+					"78dda2^1", -- [4]
+					"7abe2e^1", -- [5]
+					"7b5da4^1", -- [6]
+					"726734^1", -- [7]
+					"74c728^1", -- [8]
+					"74270c^2", -- [9]
+					"7cbe49^1", -- [10]
+					"7b5dc4^1", -- [11]
+					"7a4daf^1", -- [12]
+					"78adb4^1", -- [13]
+					"7b5633^1", -- [14]
+					"7ea611^1", -- [15]
+					"73d727^1", -- [16]
+					"7536fe^1", -- [17]
+					"7396d3^1", -- [18]
+					"7456f6^1", -- [19]
+					"7506e7^1", -- [20]
+					"771ddc^1", -- [21]
+					"7dc61b^1", -- [22]
+					"782e35^1", -- [23]
+					"7fbe0f^1", -- [24]
+					"7a2de5^1", -- [25]
+					"7e8d96^1", -- [26]
+					"7c4d8b^1", -- [27]
+					"793e0f^1", -- [28]
+					"7c7e31^1", -- [29]
+					"7a8e11^1", -- [30]
+					"7376ec^1", -- [31]
+					"77ae11^1", -- [32]
+					"79e602^1", -- [33]
+					"7dbe03^1", -- [34]
+					"7b0e03^1", -- [35]
+					"74a719^1", -- [36]
+					"7dfdeb^1", -- [37]
+				},
+			},
+			[1002] = {
+				["Art"] = {
+					"5a27f0^1", -- [1]
+					"5a5855^1", -- [2]
+					"51b792^1", -- [3]
+					"50f84c^1", -- [4]
+					"5178e8^1", -- [5]
+					"511906^1", -- [6]
+					"5a1923^1", -- [7]
+					"563846^1", -- [8]
+					"b045aa^1", -- [9]
+					"b854f4^1", -- [10]
+					"b42561^1", -- [11]
+					"57b8ae^1", -- [12]
+					"51082a^1", -- [13]
+					"b994c7^1", -- [14]
+					"b3358c^1", -- [15]
+					"bb94f7^1", -- [16]
+					"bbc549^1", -- [17]
+					"b03583^1", -- [18]
+					"b895cd^1", -- [19]
+					"b9959f^1", -- [20]
+					"58e7f7^1", -- [21]
+					"b9c51d^1", -- [22]
+					"b1b508^1", -- [23]
+					"b7259e^1", -- [24]
+					"b4f50a^1", -- [25]
+					"52e80f^1", -- [26]
+					"b3c5b8^1", -- [27]
+					"518800^1", -- [28]
+					"55c78f^1", -- [29]
+					"51e75d^1", -- [30]
+					"510866^1", -- [31]
+					"5647e9^1", -- [32]
+					"b4d4ce^1", -- [33]
+					"4ee7b6^1", -- [34]
+					"ad958a^1", -- [35]
+					"bc058b^1", -- [36]
+					"54f89d^1", -- [37]
+					"b77522^1", -- [38]
+					"4f984c^1", -- [39]
+					"4e37d9^1", -- [40]
+					"501801^1", -- [41]
+				},
+			},
+			[3007] = {
+				["Art"] = {
+					"aaa8c8^1", -- [1]
+					"ad98c6^1", -- [2]
+					"aa3896^1", -- [3]
+					"6f7b26^1", -- [4]
+					"660b98^1", -- [5]
+					"6b7b7b^1", -- [6]
+					"79e9b9^1", -- [7]
+					"74c9d5^1", -- [8]
+					"753961^1", -- [9]
+					"625654^1", -- [10]
+					"61266d^1", -- [11]
+					"6266ab^1", -- [12]
+					"a9d86a^1", -- [13]
+					"86e537^1", -- [14]
+					"81e4da^1", -- [15]
+					"8aa54b^1", -- [16]
+					"8914b7^1", -- [17]
+					"85d4a0^1", -- [18]
+					"8504f1^1", -- [19]
+					"63e689^1", -- [20]
+					"61569a^1", -- [21]
+					"59ca9a^1", -- [22]
+					"62ca1a^1", -- [23]
+					"6239bb^1", -- [24]
+					"9034bc^1", -- [25]
+					"7c6a2f^1", -- [26]
+					"7ff9f7^1", -- [27]
+					"589abe^1", -- [28]
+					"630ac8^1", -- [29]
+					"6eca75^1", -- [30]
+					"715aeb^1", -- [31]
+					"6c2979^1", -- [32]
+					"67aa8f^1", -- [33]
+					"681a71^1", -- [34]
+					"324a76^1", -- [35]
+					"342a47^2", -- [36]
+					"69b631^1", -- [37]
+					"68f996^1", -- [38]
+					"6a6a41^1", -- [39]
+					"694ac0^1", -- [40]
+					"692962^1", -- [41]
+					"66f957^1", -- [42]
+					"697a5d^1", -- [43]
+					"63e69e^1", -- [44]
+					"66b67c^1", -- [45]
+					"628b9a^1", -- [46]
+					"5ddb5b^1", -- [47]
+					"584a00^1", -- [48]
+					"64facc^1", -- [49]
+					"627b1e^1", -- [50]
+					"640650^1", -- [51]
+					"64b63f^1", -- [52]
+					"6826b3^1", -- [53]
+					"a92837^1", -- [54]
+					"ace837^1", -- [55]
+					"a5b896^1", -- [56]
+					"6546b1^1", -- [57]
+					"67f686^1", -- [58]
+					"6d3a25^1", -- [59]
+					"712aaa^1", -- [60]
+					"68bba6^1", -- [61]
+					"613683^1", -- [62]
+					"679b1d^1", -- [63]
+					"68d663^1", -- [64]
+					"2fda48^1", -- [65]
+					"358a3a^1", -- [66]
+					"a778b9^1", -- [67]
+					"82a45c^1", -- [68]
+					"77f9c4^1", -- [69]
+					"74a987^1", -- [70]
+					"8b650d^1", -- [71]
+					"312a5b^1", -- [72]
+					"349a29^1", -- [73]
+					"31aa20^1", -- [74]
+					"33ba16^1", -- [75]
+					"62aa48^1", -- [76]
+					"62f9dc^1", -- [77]
+					"60daa1^1", -- [78]
+					"5b8a79^1", -- [79]
+					"67769e^1", -- [80]
+					"818aa6^1", -- [81]
+					"3549c8^1", -- [82]
+					"3259f7^1", -- [83]
+					"5e7ab5^1", -- [84]
+					"63db9e^1", -- [85]
+				},
+			},
+			[9000] = {
+				["Art"] = {
+					"7575c1^6", -- [1]
+					"82a411^6", -- [2]
+					"6d71bd^1", -- [3]
+					"7712bf^2", -- [4]
+					"6ac3f2^6", -- [5]
+				},
+			},
+			[6006] = {
+				["Art"] = {
+					"85a416^2", -- [1]
+					"85842f^1", -- [2]
+					"813432^1", -- [3]
+					"7ff3d0^1", -- [4]
+					"8955d2^1", -- [5]
+					"86d62e^1", -- [6]
+					"89e5a3^1", -- [7]
+					"8505f3^1", -- [8]
+					"845615^1", -- [9]
+					"8745ae^1", -- [10]
+				},
+			},
+			[1010] = {
+				["Art"] = {
+					"60aa83^1", -- [1]
+					"60daa0^2", -- [2]
+					"642abc^1", -- [3]
+					"61eae1^1", -- [4]
+					"7d8501^1", -- [5]
+					"7cc4bc^1", -- [6]
+					"80e51a^1", -- [7]
+					"8eddb5^1", -- [8]
+					"925dbc^1", -- [9]
+					"8eed98^1", -- [10]
+					"947da6^1", -- [11]
+					"640b2a^1", -- [12]
+					"608ad9^1", -- [13]
+					"60eab8^1", -- [14]
+					"61598b^1", -- [15]
+					"62f8cd^1", -- [16]
+					"5ad98a^1", -- [17]
+					"5f9a8b^1", -- [18]
+					"633a81^1", -- [19]
+					"63f934^1", -- [20]
+					"5cf97d^1", -- [21]
+					"7dc4c5^1", -- [22]
+					"80f4ee^1", -- [23]
+					"632869^1", -- [24]
+					"5ad95e^1", -- [25]
+					"5dc9c3^1", -- [26]
+					"8ddd81^1", -- [27]
+					"93fdb6^1", -- [28]
+					"967da8^1", -- [29]
+					"5e3a92^1", -- [30]
+					"5fcaf0^1", -- [31]
+					"7d14a2^1", -- [32]
+					"645ae2^1", -- [33]
+					"609a6a^1", -- [34]
+					"92ad88^1", -- [35]
+					"917d7d^1", -- [36]
+					"8e2da7^1", -- [37]
+					"5f29d0^1", -- [38]
+					"92fda9^1", -- [39]
+					"7ec514^1", -- [40]
+					"7d34dd^1", -- [41]
+					"62d88f^1", -- [42]
+					"61ca8b^1", -- [43]
+					"6378f5^1", -- [44]
+					"63b8b0^1", -- [45]
+					"6019aa^1", -- [46]
+					"5ddabe^1", -- [47]
+					"7c14d1^1", -- [48]
+					"8034d7^1", -- [49]
+					"61f9b1^1", -- [50]
+					"5d2a91^1", -- [51]
+					"5a5973^1", -- [52]
+					"631acf^1", -- [53]
+					"8fed92^1", -- [54]
+					"6309a9^1", -- [55]
+					"7ea4ec^1", -- [56]
+					"8dedca^1", -- [57]
+				},
+			},
+			[2008] = {
+				["Art"] = {
+					"7ff64e^1", -- [1]
+					"79a735^1", -- [2]
+					"54cb22^1", -- [3]
+					"5e2b5f^1", -- [4]
+					"540b4c^1", -- [5]
+					"532b8f^1", -- [6]
+					"7b968b^1", -- [7]
+					"7e3706^1", -- [8]
+					"777792^1", -- [9]
+					"76c6fb^1", -- [10]
+					"708657^1", -- [11]
+					"79f6d8^1", -- [12]
+					"5c1bd0^1", -- [13]
+					"574bd7^1", -- [14]
+					"72b6d1^1", -- [15]
+					"75168c^1", -- [16]
+					"7ec69a^1", -- [17]
+					"585b81^1", -- [18]
+					"58db08^1", -- [19]
+					"628b3e^1", -- [20]
+					"73c626^1", -- [21]
+					"5bdb9c^1", -- [22]
+					"75b659^1", -- [23]
+					"539bb8^1", -- [24]
+					"62dbc8^1", -- [25]
+					"6fb687^1", -- [26]
+					"7c86b5^1", -- [27]
+					"7686d4^1", -- [28]
+				},
+			},
+			[2002] = {
+				["Art"] = {
+					"aefac3^1", -- [1]
+					"a36b15^1", -- [2]
+					"965c36^1", -- [3]
+					"940bc6^1", -- [4]
+					"9a8bee^1", -- [5]
+					"286443^1", -- [6]
+					"377316^1", -- [7]
+					"317380^1", -- [8]
+					"954c06^1", -- [9]
+					"96fbb6^1", -- [10]
+					"a1ec60^1", -- [11]
+					"357313^1", -- [12]
+					"26047f^1", -- [13]
+					"3053ce^1", -- [14]
+					"29346d^1", -- [15]
+					"2cf3aa^1", -- [16]
+					"a5dbef^1", -- [17]
+					"9ccb53^1", -- [18]
+					"a37bfe^1", -- [19]
+					"a68b96^1", -- [20]
+					"2f0377^1", -- [21]
+					"35434d^1", -- [22]
+					"969b00^1", -- [23]
+					"9a3b5c^1", -- [24]
+					"a9db64^1", -- [25]
+					"a85a96^1", -- [26]
+					"a4db56^1", -- [27]
+					"2b643a^1", -- [28]
+					"aa0a6c^1", -- [29]
+					"a06b94^1", -- [30]
+					"2d13fd^1", -- [31]
+					"a5abd0^1", -- [32]
+				},
+			},
+			[2016] = {
+				["Art"] = {
+					"569ac6^1", -- [1]
+					"4fdb42^1", -- [2]
+					"6f4b06^1", -- [3]
+					"62daf2^1", -- [4]
+					"7a0ae5^1", -- [5]
+					"636aa9^1", -- [6]
+					"6b4ae6^1", -- [7]
+					"5f5b01^1", -- [8]
+					"4d7adb^1", -- [9]
+					"4a4b2a^1", -- [10]
+					"4d3b7b^1", -- [11]
+					"6d5aae^1", -- [12]
+					"786a82^1", -- [13]
+					"6dea79^1", -- [14]
+					"5c8a9a^1", -- [15]
+					"47ab73^1", -- [16]
+				},
+			},
+			[4008] = {
+				["Gas"] = {
+					"a22bb9^1", -- [1]
+					"717b57^1", -- [2]
+					"467b93^1", -- [3]
+					"4ef5f3^1", -- [4]
+					"83e4f8^1", -- [5]
+					"7483ee^1", -- [6]
+					"816b45^1", -- [7]
+					"91aa81^1", -- [8]
+					"c1f9b8^1", -- [9]
+					"a1b82e^1", -- [10]
+					"971723^1", -- [11]
+					"46983c^1", -- [12]
+					"3b4a7d^1", -- [13]
+					"5d449b^1", -- [14]
+					"37890b^1", -- [15]
+					"705df6^1", -- [16]
+					"a69d21^1", -- [17]
+					"b6bba1^1", -- [18]
+				},
+			},
+			[3008] = {
+				["Art"] = {
+					"74d82c^1", -- [1]
+					"6bc795^1", -- [2]
+					"78285c^1", -- [3]
+					"8117ec^1", -- [4]
+					"71583c^1", -- [5]
+					"83f801^1", -- [6]
+					"71bab9^1", -- [7]
+					"733a95^2", -- [8]
+					"6eea77^1", -- [9]
+					"6c37ff^1", -- [10]
+					"7197e6^1", -- [11]
+					"706ab0^1", -- [12]
+					"6ff7df^1", -- [13]
+					"784800^1", -- [14]
+					"713a89^1", -- [15]
+					"83582d^1", -- [16]
+					"6f6822^1", -- [17]
+					"7297d5^1", -- [18]
+					"67f7cb^1", -- [19]
+					"79c862^1", -- [20]
+					"892813^1", -- [21]
+					"69279e^1", -- [22]
+					"708ae8^1", -- [23]
+					"7b1851^1", -- [24]
+					"6b17da^1", -- [25]
+				},
+			},
+			[2028] = {
+				["Art"] = {
+					"57273d^1", -- [1]
+					"57e78a^1", -- [2]
+					"5a7833^1", -- [3]
+					"70a3f5^1", -- [4]
+					"72b43e^1", -- [5]
+					"7013db^1", -- [6]
+					"5357c6^1", -- [7]
+					"54f765^1", -- [8]
+					"53e7aa^1", -- [9]
+					"a75815^1", -- [10]
+					"a18848^1", -- [11]
+					"a4e876^1", -- [12]
+					"5d282c^1", -- [13]
+					"5867bd^1", -- [14]
+					"532823^1", -- [15]
+					"6da44e^1", -- [16]
+					"7223db^1", -- [17]
+					"9bd76e^1", -- [18]
+					"a5583a^1", -- [19]
+					"a55813^1", -- [20]
+					"5bb6ed^1", -- [21]
+					"6e73d7^1", -- [22]
+					"9f388b^1", -- [23]
+					"a207fc^1", -- [24]
+					"a15792^1", -- [25]
+					"819222^1", -- [26]
+					"827207^1", -- [27]
+					"a6c858^1", -- [28]
+					"a578e0^1", -- [29]
+					"74f412^1", -- [30]
+					"73341e^1", -- [31]
+					"713435^1", -- [32]
+					"a49859^1", -- [33]
+					"57e6f2^1", -- [34]
+					"59d739^1", -- [35]
+					"82d23f^1", -- [36]
+					"8401f3^1", -- [37]
+					"8341d0^1", -- [38]
+					"8451bc^1", -- [39]
+					"5a6760^1", -- [40]
+					"5577b4^1", -- [41]
+					"74a432^1", -- [42]
+					"6fe424^1", -- [43]
+					"54d834^1", -- [44]
+					"58f7e8^1", -- [45]
+					"70d3be^1", -- [46]
+					"6e3403^1", -- [47]
+					"ab0831^1", -- [48]
+					"a6593e^1", -- [49]
+					"54c7f3^1", -- [50]
+				},
+			},
+			[1024] = {
+				["Art"] = {
+					"a58c14^1", -- [1]
+					"a34cbb^1", -- [2]
+					"a59c8e^1", -- [3]
+					"a4fc66^1", -- [4]
+					"a44c4b^1", -- [5]
+					"7d3895^1", -- [6]
+					"7c4947^1", -- [7]
+					"80f925^1", -- [8]
+					"7e5939^1", -- [9]
+					"7b1964^1", -- [10]
+					"77a93a^1", -- [11]
+					"83091f^1", -- [12]
+					"9a1db5^1", -- [13]
+					"952d63^1", -- [14]
+					"995d74^1", -- [15]
+					"80b88e^1", -- [16]
+					"7bb894^1", -- [17]
+					"a62cb5^1", -- [18]
+					"a38c99^1", -- [19]
+					"9c8daf^1", -- [20]
+					"96fd6d^1", -- [21]
+					"a4ccad^2", -- [22]
+					"79395b^1", -- [23]
+					"810853^1", -- [24]
+					"8098c2^1", -- [25]
+					"9dbe0b^1", -- [26]
+					"a2cdad^1", -- [27]
+					"9e6d90^1", -- [28]
+					"89b903^1", -- [29]
+					"993d89^1", -- [30]
+					"7c8931^1", -- [31]
+					"987d64^1", -- [32]
+					"9f4ddd^1", -- [33]
+					"a49c05^1", -- [34]
+					"a67c20^1", -- [35]
+					"7ea89a^1", -- [36]
+					"87c8fd^1", -- [37]
+					"a1fcb3^1", -- [38]
+					"a33c00^1", -- [39]
+					"86e92d^1", -- [40]
+					"7a1985^1", -- [41]
+					"a17de9^1", -- [42]
+					"a23c9a^1", -- [43]
+					"a75c3a^1", -- [44]
+					"9e3da6^1", -- [45]
+					"9dedf6^1", -- [46]
+					"9cfdd2^1", -- [47]
+					"97dd7d^1", -- [48]
+					"a37cdd^1", -- [49]
+					"a21c73^1", -- [50]
+					"78e8dc^1", -- [51]
+					"97bd9c^1", -- [52]
+					"936d5d^1", -- [53]
+					"a39c88^1", -- [54]
+					"a41ccc^1", -- [55]
+					"a10dc9^1", -- [56]
+					"a5ac40^1", -- [57]
+				},
+			},
+			[1028] = {
+				["Art"] = {
+					"51db15^1", -- [1]
+					"51aa14^1", -- [2]
+					"54eab6^1", -- [3]
+					"69e68d^1", -- [4]
+					"65d691^1", -- [5]
+					"6745f6^1", -- [6]
+					"57dad2^1", -- [7]
+					"5579a5^1", -- [8]
+					"554a77^1", -- [9]
+					"c2f8c1^1", -- [10]
+					"bdb8db^1", -- [11]
+					"c3986c^1", -- [12]
+					"521508^1", -- [13]
+					"51b4dc^1", -- [14]
+					"57f491^1", -- [15]
+					"768c9a^1", -- [16]
+					"824d70^1", -- [17]
+					"7b9cd5^1", -- [18]
+					"543510^1", -- [19]
+					"b75767^1", -- [20]
+					"c30735^1", -- [21]
+					"c42762^1", -- [22]
+					"6db61c^1", -- [23]
+					"668671^1", -- [24]
+					"6506b2^1", -- [25]
+					"634748^1", -- [26]
+					"66f715^1", -- [27]
+					"75a259^1", -- [28]
+					"75d271^1", -- [29]
+					"746253^1", -- [30]
+					"5a72e2^1", -- [31]
+					"5622ee^1", -- [32]
+					"5b72c4^1", -- [33]
+					"7582b0^1", -- [34]
+					"74728f^1", -- [35]
+					"553485^1", -- [36]
+					"57251a^1", -- [37]
+					"5694b9^1", -- [38]
+					"c3076c^1", -- [39]
+					"b9b762^1", -- [40]
+					"a7f350^1", -- [41]
+					"a5c3d1^1", -- [42]
+					"4dbae1^1", -- [43]
+					"501a82^1", -- [44]
+					"64c6cd^1", -- [45]
+					"6826d6^1", -- [46]
+					"60e71d^1", -- [47]
+					"61c736^1", -- [48]
+					"6836c0^1", -- [49]
+					"59450d^1", -- [50]
+					"563494^1", -- [51]
+					"75d242^1", -- [52]
+					"73321f^1", -- [53]
+					"bf98d8^1", -- [54]
+					"80bc9b^1", -- [55]
+					"81cd56^1", -- [56]
+					"75e2cb^1", -- [57]
+					"74a2c6^1", -- [58]
+					"57b31a^1", -- [59]
+					"5982ef^1", -- [60]
+					"a103bb^1", -- [61]
+					"ac5378^1", -- [62]
+					"a7b3af^1", -- [63]
+					"54d312^1", -- [64]
+					"53f4c9^1", -- [65]
+					"57f4b5^1", -- [66]
+					"597284^1", -- [67]
+					"59029e^1", -- [68]
+					"750206^1", -- [69]
+					"75e221^1", -- [70]
+					"7362c1^1", -- [71]
+					"74a26c^1", -- [72]
+					"a3f3d3^1", -- [73]
+					"b7f70e^1", -- [74]
+					"ba5713^1", -- [75]
+					"7f1ccf^1", -- [76]
+					"823c8b^1", -- [77]
+					"7c6c9b^1", -- [78]
+				},
+				["Gas"] = {
+					"9a161b^1", -- [1]
+				},
+			},
+			[2040] = {
+				["Art"] = {
+					"7c85e7^1", -- [1]
+					"87a4be^1", -- [2]
+					"7665f4^1", -- [3]
+					"7da5f9^1", -- [4]
+					"83e54e^1", -- [5]
+					"660399^1", -- [6]
+					"6ed3a1^1", -- [7]
+					"6ff3c3^1", -- [8]
+				},
+			},
+			[1016] = {
+				["Art"] = {
+					"c3bc6d^1", -- [1]
+					"c69c0a^1", -- [2]
+					"c58c46^1", -- [3]
+					"6c5420^1", -- [4]
+					"6ce3f8^1", -- [5]
+					"6ba38a^1", -- [6]
+					"be9c4a^2", -- [7]
+					"bfdc90^1", -- [8]
+					"c0dc41^1", -- [9]
+					"7b4c1f^1", -- [10]
+					"7c2c07^1", -- [11]
+					"c29c59^1", -- [12]
+					"bffbeb^1", -- [13]
+					"c87c18^1", -- [14]
+					"782bea^1", -- [15]
+					"79cc25^1", -- [16]
+					"7fab8e^1", -- [17]
+					"77abcd^1", -- [18]
+					"7d5c13^1", -- [19]
+					"698349^1", -- [20]
+					"6a43a6^1", -- [21]
+					"79bbad^1", -- [22]
+					"6cb396^1", -- [23]
+					"6a541b^1", -- [24]
+					"c4bc8c^1", -- [25]
+					"7dbc74^1", -- [26]
+					"7efbbe^1", -- [27]
+					"6983d5^1", -- [28]
+					"79fb8c^1", -- [29]
+					"7e3c5e^1", -- [30]
+					"6883e7^1", -- [31]
+					"7c4b74^1", -- [32]
+					"7d1c95^1", -- [33]
+					"c7fc5b^1", -- [34]
+					"c5dc1c^1", -- [35]
+					"c52bf2^1", -- [36]
+					"692371^1", -- [37]
+					"671398^1", -- [38]
+					"791c0c^1", -- [39]
+					"6c63e7^1", -- [40]
+					"6be3c7^1", -- [41]
+					"c0bc6e^1", -- [42]
+					"6793c4^1", -- [43]
+					"6a4384^1", -- [44]
+					"7b6c61^1", -- [45]
+					"68639b^1", -- [46]
+				},
+			},
+			[4001] = {
+				["Art"] = {
+					"e583bc^1", -- [1]
+					"dd53ab^1", -- [2]
+					"d203d0^1", -- [3]
+					"b69248^1", -- [4]
+					"b26253^1", -- [5]
+					"ac81f4^1", -- [6]
+					"778e50^1", -- [7]
+					"792e3d^1", -- [8]
+					"85beb0^1", -- [9]
+					"85bef5^1", -- [10]
+					"7aae18^1", -- [11]
+					"7b3ecb^1", -- [12]
+					"d83446^1", -- [13]
+					"e164ba^1", -- [14]
+					"d9632e^1", -- [15]
+					"d683fb^1", -- [16]
+					"e2a437^1", -- [17]
+					"78fe80^1", -- [18]
+					"760e71^1", -- [19]
+					"b8725c^1", -- [20]
+					"b6f266^1", -- [21]
+					"b282c0^1", -- [22]
+					"d77468^1", -- [23]
+					"b4c2aa^1", -- [24]
+					"aab24a^1", -- [25]
+					"ac124b^1", -- [26]
+					"729ec3^1", -- [27]
+					"878edc^1", -- [28]
+					"add26f^1", -- [29]
+					"b132c7^1", -- [30]
+					"78bec4^1", -- [31]
+					"7d7e0b^1", -- [32]
+					"b552da^1", -- [33]
+					"d7d3a1^1", -- [34]
+					"e46410^1", -- [35]
+					"d9d349^1", -- [36]
+					"e293b3^1", -- [37]
+					"af92e8^1", -- [38]
+					"e044b0^1", -- [39]
+					"df1510^1", -- [40]
+				},
+			},
+			[4009] = {
+				["Gas"] = {
+					"931a43^1", -- [1]
+					"b1390b^1", -- [2]
+				},
+				["Art"] = {
+					"678bd7^1", -- [1]
+					"69cba5^1", -- [2]
+					"684b14^1", -- [3]
+					"66cb1e^1", -- [4]
+					"658bab^1", -- [5]
+					"659b61^1", -- [6]
+					"67cb3d^1", -- [7]
+					"798b0c^1", -- [8]
+					"80cae8^1", -- [9]
+					"827a9c^1", -- [10]
+					"6a7bb7^1", -- [11]
+					"6bfb67^1", -- [12]
+					"7d7b30^1", -- [13]
+					"819ab8^1", -- [14]
+					"4239ce^1", -- [15]
+					"3c09a9^1", -- [16]
+					"442977^1", -- [17]
+					"4129c5^1", -- [18]
+					"415976^1", -- [19]
+					"3ed97d^1", -- [20]
+					"6b4b4a^1", -- [21]
+					"3c2915^1", -- [22]
+					"3d6993^1", -- [23]
+					"4669ed^1", -- [24]
+					"654b46^1", -- [25]
+					"66bb62^1", -- [26]
+					"7deb0c^1", -- [27]
+					"7d8a9e^1", -- [28]
+					"834aa5^1", -- [29]
+				},
+			},
+			[2004] = {
+				["Art"] = {
+					"6d3633^1", -- [1]
+					"76b5d6^1", -- [2]
+					"70a5aa^1", -- [3]
+					"b14c61^1", -- [4]
+					"983d27^1", -- [5]
+					"ae1c73^1", -- [6]
+					"718628^1", -- [7]
+					"73d625^1", -- [8]
+					"9adcd0^1", -- [9]
+					"b48b8e^1", -- [10]
+					"ab4c97^1", -- [11]
+					"9f6cc3^1", -- [12]
+					"a23cc2^1", -- [13]
+					"6f555e^1", -- [14]
+					"75b574^1", -- [15]
+					"6e050f^1", -- [16]
+					"7335fe^1", -- [17]
+					"73e5a8^1", -- [18]
+					"79054f^1", -- [19]
+					"6f05d6^1", -- [20]
+					"71a546^1", -- [21]
+					"70750d^1", -- [22]
+					"b26c3b^1", -- [23]
+					"a58ced^1", -- [24]
+					"6d25a1^1", -- [25]
+					"959d35^1", -- [26]
+					"b26bca^1", -- [27]
+					"9abd20^1", -- [28]
+					"aaec67^1", -- [29]
+				},
+			},
+			[4011] = {
+				["Art"] = {
+					"99d6c1^1", -- [1]
+					"9c9712^1", -- [2]
+					"9996df^1", -- [3]
+					"68f6fe^1", -- [4]
+					"6d371a^1", -- [5]
+					"6ce6de^1", -- [6]
+					"92b6ff^1", -- [7]
+					"95374f^1", -- [8]
+					"9826ca^1", -- [9]
+					"9eacfe^1", -- [10]
+					"93ccef^1", -- [11]
+					"cde5ca^1", -- [12]
+					"cb7644^1", -- [13]
+					"ccf5ba^1", -- [14]
+					"b7490c^1", -- [15]
+					"be3906^1", -- [16]
+					"b419b5^1", -- [17]
+					"6b57ba^1", -- [18]
+					"66d75f^1", -- [19]
+					"6267b5^1", -- [20]
+					"63d7b9^1", -- [21]
+					"c8c54d^1", -- [22]
+					"c24543^1", -- [23]
+					"97e6f0^1", -- [24]
+					"9c7684^1", -- [25]
+					"95ece5^1", -- [26]
+					"9e0c86^1", -- [27]
+					"b27994^1", -- [28]
+					"b729be^1", -- [29]
+					"9ae6e3^1", -- [30]
+					"924757^1", -- [31]
+					"6876c2^1", -- [32]
+					"cd4620^1", -- [33]
+					"c65643^1", -- [34]
+					"c5e5f7^1", -- [35]
+					"97dbe9^1", -- [36]
+					"9d4d1e^1", -- [37]
+					"bea9ed^1", -- [38]
+					"b589ae^1", -- [39]
+					"61367f^1", -- [40]
+					"6a8784^1", -- [41]
+					"c4f673^1", -- [42]
+					"bf95e2^1", -- [43]
+					"c19560^1", -- [44]
+					"c599b0^1", -- [45]
+					"c129f1^1", -- [46]
+					"c5853b^1", -- [47]
+					"96675e^1", -- [48]
+					"9a6751^1", -- [49]
+				},
+			},
+			[2017] = {
+				["Art"] = {
+					"6e176a^2", -- [1]
+					"57f7c4^1", -- [2]
+					"588704^1", -- [3]
+					"53d7a1^1", -- [4]
+					"70481f^1", -- [5]
+					"a159af^1", -- [6]
+					"9f8a39^1", -- [7]
+					"64b6ee^1", -- [8]
+					"5d87ab^1", -- [9]
+					"75c715^1", -- [10]
+					"9dc9db^1", -- [11]
+					"a18a09^1", -- [12]
+					"a2c95d^1", -- [13]
+					"6ac809^1", -- [14]
+					"63f818^1", -- [15]
+					"70a700^1", -- [16]
+					"9eb968^1", -- [17]
+					"6f4682^1", -- [18]
+					"5627fa^1", -- [19]
+					"606682^1", -- [20]
+				},
+			},
+			[2005] = {
+				["Art"] = {
+					"cfc8cc^1", -- [1]
+					"c63936^1", -- [2]
+					"c6e8fb^1", -- [3]
+					"cb9811^1", -- [4]
+					"cb78de^1", -- [5]
+					"76b61a^1", -- [6]
+					"75c5eb^1", -- [7]
+					"6b565a^1", -- [8]
+					"871633^1", -- [9]
+					"8165d8^1", -- [10]
+					"89c616^1", -- [11]
+					"8ec643^1", -- [12]
+					"855670^1", -- [13]
+					"8655c3^1", -- [14]
+					"6fb614^1", -- [15]
+					"71262d^1", -- [16]
+					"7405bd^1", -- [17]
+					"820685^1", -- [18]
+					"8445e2^1", -- [19]
+					"8d7693^1", -- [20]
+					"8975be^1", -- [21]
+					"856588^1", -- [22]
+					"c95924^1", -- [23]
+					"cbf906^1", -- [24]
+					"cf6895^1", -- [25]
+					"831641^1", -- [26]
+					"c99877^1", -- [27]
+					"ca58a4^1", -- [28]
+					"8b2671^1", -- [29]
+					"8bf61c^1", -- [30]
+					"7a45ee^1", -- [31]
+					"76157f^1", -- [32]
+					"8c163f^1", -- [33]
+					"c898d6^1", -- [34]
+					"cbe865^1", -- [35]
+					"7265fe^1", -- [36]
+					"6cb622^1", -- [37]
+				},
+			},
+			[2009] = {
+				["Art"] = {
+					"a5326d^1", -- [1]
+					"a20285^2", -- [2]
+					"a551e4^1", -- [3]
+					"a281d7^1", -- [4]
+					"a2423f^1", -- [5]
+					"83793f^1", -- [6]
+					"729a5b^1", -- [7]
+					"78a9e7^1", -- [8]
+					"7419c0^1", -- [9]
+					"78d992^1", -- [10]
+					"7c81e1^1", -- [11]
+					"7951e5^1", -- [12]
+					"87194d^1", -- [13]
+					"750ab6^1", -- [14]
+					"a39275^1", -- [15]
+					"a28211^1", -- [16]
+					"a851c7^1", -- [17]
+					"a79225^1", -- [18]
+					"a95251^1", -- [19]
+					"a3c1ab^1", -- [20]
+					"aab1ed^1", -- [21]
+					"7b7991^1", -- [22]
+					"ac124c^1", -- [23]
+					"a7324c^1", -- [24]
+					"a7717b^1", -- [25]
+					"7cfa4e^1", -- [26]
+					"84195c^1", -- [27]
+					"823a47^1", -- [28]
+					"80fa80^1", -- [29]
+					"7dca68^1", -- [30]
+					"7f29a2^1", -- [31]
+					"778aa3^1", -- [32]
+					"a501c9^1", -- [33]
+					"7209f5^1", -- [34]
+					"7c39b5^1", -- [35]
+					"77a298^1", -- [36]
+					"75f1f1^1", -- [37]
+					"7a8a67^1", -- [38]
+					"7639bf^1", -- [39]
+					"765242^1", -- [40]
+					"7f01e4^1", -- [41]
+				},
+			},
+			[2013] = {
+				["Art"] = {
+					"87db3d^1", -- [1]
+					"989931^1", -- [2]
+					"97e91b^1", -- [3]
+					"9f6d39^1", -- [4]
+					"a06d82^1", -- [5]
+					"9c9d44^1", -- [6]
+					"9d7d16^1", -- [7]
+					"a00d1a^1", -- [8]
+					"a17d37^1", -- [9]
+					"a28d16^1", -- [10]
+					"9d0dc4^1", -- [11]
+					"85dab9^1", -- [12]
+					"996961^1", -- [13]
+					"85fb5e^1", -- [14]
+					"9e7d62^1", -- [15]
+					"9c2d99^1", -- [16]
+					"9e0d85^1", -- [17]
+					"8c1a00^1", -- [18]
+					"889ae2^1", -- [19]
+					"9c18d0^1", -- [20]
+					"90b9cc^1", -- [21]
+					"9bed5c^1", -- [22]
+					"9679a9^1", -- [23]
+					"887a46^1", -- [24]
+					"952959^1", -- [25]
+					"9cce1b^1", -- [26]
+				},
+			},
+			[4002] = {
+				["Art"] = {
+					"e74900^1", -- [1]
+					"e15991^1", -- [2]
+					"2ee6ad^1", -- [3]
+					"1f7688^1", -- [4]
+					"3366d0^1", -- [5]
+					"18b717^1", -- [6]
+					"27b7d4^1", -- [7]
+					"27c710^1", -- [8]
+					"21a721^1", -- [9]
+					"371655^1", -- [10]
+					"1f27d4^1", -- [11]
+					"21765a^1", -- [12]
+					"e0c969^1", -- [13]
+					"b7caa7^1", -- [14]
+					"34770d^1", -- [15]
+					"e3c981^1", -- [16]
+					"d9e98e^1", -- [17]
+					"da893c^1", -- [18]
+					"dc89b4^1", -- [19]
+					"c05a27^1", -- [20]
+					"cf2a65^1", -- [21]
+				},
+			},
+			[2021] = {
+				["Art"] = {
+					"5a75b2^1", -- [1]
+					"5665bc^1", -- [2]
+					"5055f7^1", -- [3]
+					"8ac9f4^1", -- [4]
+					"880987^1", -- [5]
+					"3d63a3^1", -- [6]
+					"410312^1", -- [7]
+					"a01ae5^1", -- [8]
+					"a0dba5^2", -- [9]
+					"a15b88^1", -- [10]
+					"9a691f^1", -- [11]
+					"9aa8ce^1", -- [12]
+					"9ad8f4^1", -- [13]
+					"4972f4^1", -- [14]
+					"462333^1", -- [15]
+					"498405^1", -- [16]
+					"950b5b^2", -- [17]
+					"92eb5e^1", -- [18]
+					"97cb8c^1", -- [19]
+					"3e8404^1", -- [20]
+					"4213a8^1", -- [21]
+					"3c83da^1", -- [22]
+					"89899e^1", -- [23]
+					"8b297b^1", -- [24]
+					"41734c^1", -- [25]
+					"448377^1", -- [26]
+					"43f322^1", -- [27]
+					"a14b2a^1", -- [28]
+					"5ad6b5^1", -- [29]
+					"5f16cd^1", -- [30]
+					"5f3740^1", -- [31]
+					"8b299b^1", -- [32]
+					"9818db^1", -- [33]
+					"5d6728^1", -- [34]
+					"5ec66c^1", -- [35]
+					"926b81^1", -- [36]
+					"92cb3e^1", -- [37]
+					"954af4^1", -- [38]
+					"4203ef^1", -- [39]
+					"946b91^1", -- [40]
+					"5035c3^1", -- [41]
+					"536607^1", -- [42]
+					"4433f2^1", -- [43]
+					"8989d6^1", -- [44]
+					"8b1a1a^1", -- [45]
+					"933adc^1", -- [46]
+					"952bbf^1", -- [47]
+					"5375ad^1", -- [48]
+					"54f631^1", -- [49]
+					"a30b70^1", -- [50]
+					"9f5b7c^1", -- [51]
+					"a16bec^1", -- [52]
+					"98eb31^1", -- [53]
+					"97bbaa^1", -- [54]
+					"95eb9b^1", -- [55]
+					"477358^1", -- [56]
+					"5d05a6^1", -- [57]
+					"5875e6^1", -- [58]
+					"5ef704^1", -- [59]
+					"5d963e^1", -- [60]
+					"611629^1", -- [61]
+					"9ad896^1", -- [62]
+					"5655ef^1", -- [63]
+					"a37b14^1", -- [64]
+					"975b08^1", -- [65]
+					"4a5357^1", -- [66]
+					"55b659^1", -- [67]
+					"3fb330^1", -- [68]
+					"99f8ad^1", -- [69]
+					"9efbd5^1", -- [70]
+					"58d5c7^1", -- [71]
+					"5805a6^1", -- [72]
+					"480317^1", -- [73]
+					"3fd392^1", -- [74]
+					"98cacf^1", -- [75]
+					"46e3b1^1", -- [76]
+					"88fa11^1", -- [77]
+					"418388^1", -- [78]
+					"4833df^1", -- [79]
+					"4a93e3^1", -- [80]
+					"60071f^1", -- [81]
+					"9ebbb5^1", -- [82]
+					"5495c1^1", -- [83]
+					"405366^1", -- [84]
+				},
+			},
+			[4010] = {
+				["Gas"] = {
+					"dadacd^1", -- [1]
+					"df4b2c^1", -- [2]
+					"d73c18^1", -- [3]
+				},
+			},
+			[4007] = {
+				["Art"] = {
+					"3a9936^1", -- [1]
+					"35a87f^1", -- [2]
+					"36a974^1", -- [3]
+					"cc0a6d^1", -- [4]
+					"c82aa8^1", -- [5]
+					"ca19a1^1", -- [6]
+					"8c6853^1", -- [7]
+					"95c9f6^1", -- [8]
+					"9269fb^1", -- [9]
+					"3be9f2^1", -- [10]
+					"3188c0^1", -- [11]
+					"3c39ce^1", -- [12]
+					"880897^1", -- [13]
+					"9698ad^1", -- [14]
+					"8928d1^1", -- [15]
+					"8d0878^1", -- [16]
+					"985a50^1", -- [17]
+					"9828c5^1", -- [18]
+					"3268ed^1", -- [19]
+					"3788fc^1", -- [20]
+					"99da50^1", -- [21]
+					"8b4867^1", -- [22]
+					"c55a71^1", -- [23]
+					"c2fa70^1", -- [24]
+					"34a998^1", -- [25]
+					"943a20^1", -- [26]
+					"92a91c^1", -- [27]
+					"ca29d7^1", -- [28]
+					"c6aa2b^1", -- [29]
+					"3eb921^1", -- [30]
+					"4b7725^1", -- [31]
+					"4c25d3^1", -- [32]
+					"4ae5b3^1", -- [33]
+				},
+				["Gas"] = {
+					"31c7a5^1", -- [1]
+					"a1fb27^1", -- [2]
+					"6496b1^1", -- [3]
+				},
+			},
+			[3002] = {
+				["Art"] = {
+					"73bc05^1", -- [1]
+					"72ebd2^1", -- [2]
+					"741829^1", -- [3]
+					"7507e3^1", -- [4]
+					"76c8e0^1", -- [5]
+					"22d9ff^1", -- [6]
+					"21b926^1", -- [7]
+					"22b9ba^1", -- [8]
+					"70d806^1", -- [9]
+					"6ffbaf^1", -- [10]
+					"6eeb9c^1", -- [11]
+					"73dc60^1", -- [12]
+					"767807^1", -- [13]
+					"237974^1", -- [14]
+					"ad7c30^1", -- [15]
+					"af7b17^1", -- [16]
+					"7a28fa^1", -- [17]
+					"7dd8a2^1", -- [18]
+					"71ac31^1", -- [19]
+					"af2c5c^1", -- [20]
+					"b40b03^1", -- [21]
+					"ad9bd6^1", -- [22]
+					"7087d8^1", -- [23]
+					"763893^1", -- [24]
+					"7ca886^1", -- [25]
+					"7b28c5^1", -- [26]
+					"741bf2^1", -- [27]
+					"747c41^1", -- [28]
+					"72b889^1", -- [29]
+					"ac1c02^1", -- [30]
+					"1fe964^1", -- [31]
+					"27994d^1", -- [32]
+					"83383d^1", -- [33]
+					"73c7c8^1", -- [34]
+					"7de862^1", -- [35]
+					"7947e0^1", -- [36]
+					"b51b52^1", -- [37]
+					"851837^1", -- [38]
+					"22099c^1", -- [39]
+					"28e8f7^1", -- [40]
+					"2599f9^1", -- [41]
+					"257905^1", -- [42]
+					"236a18^1", -- [43]
+					"a9bc14^1", -- [44]
+					"a9ebb8^1", -- [45]
+				},
+			},
+			[2037] = {
+				["Art"] = {
+					"77534d^1", -- [1]
+					"708345^1", -- [2]
+					"6cb3d8^1", -- [3]
+					"9ca6ed^1", -- [4]
+					"9d26b5^1", -- [5]
+					"a0e73a^1", -- [6]
+					"88d54e^1", -- [7]
+					"8814fa^2", -- [8]
+					"874538^1", -- [9]
+					"8754c2^2", -- [10]
+					"6ce7e1^1", -- [11]
+					"6c27c4^1", -- [12]
+					"6b0805^1", -- [13]
+					"6cc444^1", -- [14]
+					"9a56de^1", -- [15]
+					"9ab692^1", -- [16]
+					"8a0508^1", -- [17]
+					"6de3f7^1", -- [18]
+					"7d337c^1", -- [19]
+					"7047cf^1", -- [20]
+					"9a1779^1", -- [21]
+					"9e56df^1", -- [22]
+					"9a373b^1", -- [23]
+					"6c687f^1", -- [24]
+					"683832^1", -- [25]
+					"6d4811^1", -- [26]
+					"7123a4^1", -- [27]
+					"9fe710^1", -- [28]
+					"a0d789^1", -- [29]
+					"7ce3a6^1", -- [30]
+					"6fe390^1", -- [31]
+					"6c683a^1", -- [32]
+					"843545^1", -- [33]
+					"a196c7^1", -- [34]
+					"7e23c6^1", -- [35]
+					"9816ec^1", -- [36]
+					"8a7528^1", -- [37]
+					"6d17ad^1", -- [38]
+				},
+			},
+			[2022] = {
+				["Art"] = {
+					"b33a46^1", -- [1]
+					"b00a77^1", -- [2]
+					"cda95f^1", -- [3]
+					"b8ea50^1", -- [4]
+					"acea24^1", -- [5]
+					"a669f6^1", -- [6]
+					"be3a52^1", -- [7]
+					"c8e92a^1", -- [8]
+					"ce3dbf^1", -- [9]
+					"ce1e4e^1", -- [10]
+					"d2edca^1", -- [11]
+					"9f98bb^1", -- [12]
+					"dc2bfc^1", -- [13]
+					"d09e75^1", -- [14]
+					"d6bd75^1", -- [15]
+					"d9ac4b^1", -- [16]
+					"da9c9f^1", -- [17]
+					"d37cd1^1", -- [18]
+					"d07d6b^1", -- [19]
+					"d4dd43^1", -- [20]
+					"d2be44^1", -- [21]
+					"c4a960^1", -- [22]
+					"df8bba^1", -- [23]
+					"d7bcc4^1", -- [24]
+					"9fe975^1", -- [25]
+					"bb7a2e^1", -- [26]
+					"c0b9ec^1", -- [27]
+					"cf4df6^1", -- [28]
+					"a95a10^1", -- [29]
+					"9d692c^1", -- [30]
+				},
+			},
+			[4004] = {
+				["Art"] = {
+					"3b9995^1", -- [1]
+					"3f99d6^1", -- [2]
+					"44e916^1", -- [3]
+					"40a830^1", -- [4]
+					"45b7a5^1", -- [5]
+					"4077df^1", -- [6]
+					"302923^1", -- [7]
+					"312916^1", -- [8]
+					"46a849^1", -- [9]
+					"44d7c8^1", -- [10]
+					"41486c^1", -- [11]
+					"4427ab^1", -- [12]
+					"388967^1", -- [13]
+					"39da2a^1", -- [14]
+					"33c909^1", -- [15]
+				},
+				["Gas"] = {
+					"7611ee^1", -- [1]
+				},
+			},
+			[1001] = {
+				["Art"] = {
+					"d43792^1", -- [1]
+					"d60788^1", -- [2]
+					"d6e727^1", -- [3]
+					"577acb^1", -- [4]
+					"542aae^1", -- [5]
+					"560ab9^1", -- [6]
+					"4ea4e0^1", -- [7]
+					"48d50e^1", -- [8]
+					"4ea518^1", -- [9]
+					"d69757^1", -- [10]
+					"d5f768^1", -- [11]
+					"55ba95^1", -- [12]
+					"5a6aaa^2", -- [13]
+					"5a9ad1^1", -- [14]
+					"564ae1^1", -- [15]
+					"d717b6^1", -- [16]
+					"541ad0^1", -- [17]
+					"572ab0^1", -- [18]
+					"52fadd^1", -- [19]
+					"1f5208^1", -- [20]
+					"293343^1", -- [21]
+					"22226d^1", -- [22]
+					"4a350b^1", -- [23]
+					"46d522^1", -- [24]
+					"49a47d^1", -- [25]
+					"d84775^1", -- [26]
+					"47c545^1", -- [27]
+					"463545^1", -- [28]
+					"d41756^1", -- [29]
+					"4bd4d5^1", -- [30]
+					"45e517^1", -- [31]
+					"4d54fe^1", -- [32]
+					"4914ce^1", -- [33]
+					"2c0301^1", -- [34]
+					"2612f0^1", -- [35]
+					"267429^1", -- [36]
+					"d75797^1", -- [37]
+					"1c3224^1", -- [38]
+					"201415^1", -- [39]
+					"4b3518^1", -- [40]
+					"234400^1", -- [41]
+					"1e1282^1", -- [42]
+					"2803a4^1", -- [43]
+					"261356^1", -- [44]
+					"d587a7^1", -- [45]
+					"2113d3^1", -- [46]
+					"4754ef^1", -- [47]
+					"285277^1", -- [48]
+					"2502e4^1", -- [49]
+					"24933c^1", -- [50]
+					"25732a^1", -- [51]
+				},
+			},
+			[3003] = {
+				["Art"] = {
+					"45d9ab^1", -- [1]
+					"42f97c^1", -- [2]
+					"4369a0^1", -- [3]
+					"6db366^1", -- [4]
+					"79f3d5^1", -- [5]
+					"70839e^1", -- [6]
+					"6d9764^1", -- [7]
+					"6af6f9^1", -- [8]
+					"43d9ed^1", -- [9]
+					"42b9cf^1", -- [10]
+					"5066c7^1", -- [11]
+					"50c64a^1", -- [12]
+					"b9db35^1", -- [13]
+					"bf4b7d^1", -- [14]
+					"b8aad9^1", -- [15]
+					"6e4396^1", -- [16]
+					"7763ed^1", -- [17]
+					"7b8379^1", -- [18]
+					"4df6b3^1", -- [19]
+					"5396c2^1", -- [20]
+					"5216ef^1", -- [21]
+					"721350^1", -- [22]
+					"7bd3c7^1", -- [23]
+					"6ad35b^1", -- [24]
+					"7d637d^1", -- [25]
+					"722392^1", -- [26]
+					"bbbb4d^1", -- [27]
+					"b83b2a^1", -- [28]
+					"42193c^1", -- [29]
+					"441964^1", -- [30]
+					"7d13e3^1", -- [31]
+					"77b406^1", -- [32]
+					"6d1705^1", -- [33]
+					"7653d9^1", -- [34]
+					"731332^1", -- [35]
+					"54d706^1", -- [36]
+					"4fa6d9^1", -- [37]
+					"4f5700^1", -- [38]
+					"6fb71a^1", -- [39]
+					"5426e0^1", -- [40]
+					"52e6a4^1", -- [41]
+					"b97b05^1", -- [42]
+					"461946^1", -- [43]
+					"456977^1", -- [44]
+					"54e73c^1", -- [45]
+					"bb9b80^1", -- [46]
+					"42e9b4^1", -- [47]
+					"41a966^1", -- [48]
+					"4669d0^1", -- [49]
+					"6d3339^1", -- [50]
+					"6e83ab^1", -- [51]
+					"bd4b7c^1", -- [52]
+					"51673e^1", -- [53]
+					"50b698^1", -- [54]
+					"5226c7^1", -- [55]
+					"ba4af2^1", -- [56]
+					"bb9ae1^1", -- [57]
+					"6c46f3^1", -- [58]
+					"6c1726^1", -- [59]
+					"4d16a3^1", -- [60]
+					"57169a^1", -- [61]
+					"44a9ab^1", -- [62]
+					"bfdb61^1", -- [63]
+				},
+			},
+			[1005] = {
+				["Art"] = {
+					"55ed67^1", -- [1]
+					"4fad4a^1", -- [2]
+					"56dd56^1", -- [3]
+					"521d7a^1", -- [4]
+					"50ad7b^1", -- [5]
+					"525d59^1", -- [6]
+					"4f7d83^1", -- [7]
+					"4f3d6b^1", -- [8]
+					"57ed69^1", -- [9]
+					"509d68^1", -- [10]
+					"573dc1^1", -- [11]
+					"56bd9d^1", -- [12]
+					"546d9c^1", -- [13]
+					"541d8c^1", -- [14]
+					"55cd46^1", -- [15]
+				},
+			},
+			[1007] = {
+				["Art"] = {
+					"4b6527^1", -- [1]
+					"48f4ac^2", -- [2]
+					"4b64e4^1", -- [3]
+					"896b5d^1", -- [4]
+					"82bd51^1", -- [5]
+					"806b87^1", -- [6]
+					"5074ee^1", -- [7]
+					"8918d6^1", -- [8]
+					"8b09c0^1", -- [9]
+					"84993c^1", -- [10]
+					"a47e9a^1", -- [11]
+					"9bbe75^1", -- [12]
+					"9d2e8f^1", -- [13]
+					"7c4c43^1", -- [14]
+					"812ba7^1", -- [15]
+					"4c64c2^1", -- [16]
+					"4ee523^1", -- [17]
+					"b602f8^1", -- [18]
+					"bd844c^1", -- [19]
+					"bed338^1", -- [20]
+					"c553e1^1", -- [21]
+					"bdd400^1", -- [22]
+					"8a9bad^1", -- [23]
+					"8c6c71^1", -- [24]
+					"667447^1", -- [25]
+					"67149a^2", -- [26]
+					"648402^1", -- [27]
+					"608406^1", -- [28]
+					"829971^1", -- [29]
+					"89694e^1", -- [30]
+					"8a099e^1", -- [31]
+					"7eac8c^1", -- [32]
+					"8abc5b^1", -- [33]
+					"8798ff^1", -- [34]
+					"867992^1", -- [35]
+					"6463dc^1", -- [36]
+					"4ea507^1", -- [37]
+					"7ebceb^1", -- [38]
+					"824d01^1", -- [39]
+					"833d90^1", -- [40]
+					"c163ca^1", -- [41]
+					"c14406^1", -- [42]
+					"5234b7^1", -- [43]
+					"50350e^1", -- [44]
+					"a74dc5^1", -- [45]
+					"a40d2e^1", -- [46]
+					"a21ec9^1", -- [47]
+					"c1c316^1", -- [48]
+					"89dca3^1", -- [49]
+					"647486^1", -- [50]
+					"6434e3^1", -- [51]
+					"88f924^1", -- [52]
+					"83d98d^1", -- [53]
+					"83c957^1", -- [54]
+					"a22e6e^1", -- [55]
+					"a46e80^1", -- [56]
+					"898c85^1", -- [57]
+					"8b7c2b^1", -- [58]
+					"867d60^1", -- [59]
+					"a19e4e^1", -- [60]
+					"a77e3f^1", -- [61]
+					"bfa492^1", -- [62]
+					"828c3f^1", -- [63]
+					"884d83^1", -- [64]
+					"bde395^1", -- [65]
+					"c853f0^1", -- [66]
+					"694489^1", -- [67]
+					"6183e2^1", -- [68]
+					"6554bc^1", -- [69]
+					"a4ad7a^1", -- [70]
+					"8aaa0c^1", -- [71]
+					"8ac926^1", -- [72]
+					"4ca4fc^1", -- [73]
+					"51e54b^1", -- [74]
+					"8a69da^1", -- [75]
+					"86e92c^1", -- [76]
+					"7ebc41^1", -- [77]
+					"839b5b^1", -- [78]
+					"8579b6^1", -- [79]
+					"89ccbe^1", -- [80]
+					"89fb73^1", -- [81]
+					"87dca2^1", -- [82]
+					"a53ecd^1", -- [83]
+					"a3dee2^1", -- [84]
+					"685467^1", -- [85]
+					"837d10^1", -- [86]
+					"88fbfc^1", -- [87]
+					"66641a^1", -- [88]
+					"65e4e0^1", -- [89]
+					"6424cb^1", -- [90]
+					"5024c5^1", -- [91]
+					"4e94bf^1", -- [92]
+					"52d4e3^1", -- [93]
+					"b7c37d^1", -- [94]
+					"84f9dd^1", -- [95]
+					"8b1984^1", -- [96]
+					"541511^1", -- [97]
+					"a64e67^1", -- [98]
+					"a5fd2f^1", -- [99]
+					"a49e16^1", -- [100]
+					"9e8e9d^1", -- [101]
+					"8929b0^1", -- [102]
+					"8a7d60^1", -- [103]
+					"bba344^1", -- [104]
+					"a80dfa^1", -- [105]
+					"8caa16^1", -- [106]
+					"4eb482^1", -- [107]
+					"64e421^1", -- [108]
+					"9abe5d^1", -- [109]
+					"88c9f9^1", -- [110]
+				},
+			},
+			[1009] = {
+				["Art"] = {
+					"7aeb77^1", -- [1]
+					"783c5d^1", -- [2]
+					"76dc06^1", -- [3]
+					"7ec904^1", -- [4]
+					"7ae9b6^1", -- [5]
+					"7a9bc6^1", -- [6]
+					"7f1ba6^1", -- [7]
+					"785bb3^1", -- [8]
+					"7d7b52^1", -- [9]
+					"806be3^1", -- [10]
+					"784c3b^1", -- [11]
+					"7b4c47^1", -- [12]
+					"7cdc00^1", -- [13]
+					"7d3bc5^1", -- [14]
+					"7bf8e0^1", -- [15]
+					"7f893c^1", -- [16]
+					"7dc93f^1", -- [17]
+					"8048a5^1", -- [18]
+					"7a4960^1", -- [19]
+					"76e8c1^1", -- [20]
+					"7e19f2^1", -- [21]
+					"79c881^1", -- [22]
+					"788beb^1", -- [23]
+					"7d4c2a^1", -- [24]
+					"79c92d^1", -- [25]
+					"77d91c^1", -- [26]
+					"7b18bf^1", -- [27]
+				},
+			},
+			[1011] = {
+				["Art"] = {
+					"a45958^1", -- [1]
+					"a61959^1", -- [2]
+					"a3f98d^1", -- [3]
+					"943741^1", -- [4]
+					"96379a^1", -- [5]
+					"98b7a0^1", -- [6]
+					"61f28e^1", -- [7]
+					"6371d4^1", -- [8]
+					"66624b^1", -- [9]
+					"4238dd^1", -- [10]
+					"4148b0^1", -- [11]
+					"4d68bc^1", -- [12]
+					"986a77^1", -- [13]
+					"947ab7^1", -- [14]
+					"962770^1", -- [15]
+					"997755^1", -- [16]
+					"9987fa^1", -- [17]
+					"4a7897^1", -- [18]
+					"3ed851^1", -- [19]
+					"9a6944^1", -- [20]
+					"9cb906^1", -- [21]
+					"9b4922^1", -- [22]
+					"4a18b7^1", -- [23]
+					"4698e9^1", -- [24]
+					"43482e^1", -- [25]
+					"601259^1", -- [26]
+					"6401c5^1", -- [27]
+					"60b1de^1", -- [28]
+					"9a38bd^1", -- [29]
+					"9b68d0^1", -- [30]
+					"95b725^1", -- [31]
+					"95f7b8^1", -- [32]
+					"a0344f^1", -- [33]
+					"88a299^2", -- [34]
+					"84b278^1", -- [35]
+					"8a5278^1", -- [36]
+					"4388ec^1", -- [37]
+					"476896^2", -- [38]
+					"9887c3^1", -- [39]
+					"3f78a9^1", -- [40]
+					"451842^1", -- [41]
+					"9ee72d^1", -- [42]
+					"a6d948^1", -- [43]
+					"a4f920^1", -- [44]
+					"9daae1^1", -- [45]
+					"955b62^2", -- [46]
+					"417836^1", -- [47]
+					"61d1cc^1", -- [48]
+					"866297^2", -- [49]
+					"88b275^1", -- [50]
+					"63d1e7^1", -- [51]
+					"66c203^1", -- [52]
+					"64b1f4^1", -- [53]
+					"9e38ca^1", -- [54]
+					"9dc8b7^1", -- [55]
+					"9c5931^1", -- [56]
+					"86a285^1", -- [57]
+					"8982a4^1", -- [58]
+					"994a9b^1", -- [59]
+					"981abe^1", -- [60]
+					"a2a4f6^1", -- [61]
+					"62e1a4^1", -- [62]
+					"929730^1", -- [63]
+					"98d7ec^1", -- [64]
+					"a919c6^1", -- [65]
+					"a67997^1", -- [66]
+					"9bbb11^1", -- [67]
+					"96ead1^1", -- [68]
+					"4298b7^1", -- [69]
+					"4e78af^1", -- [70]
+					"a3d9d3^1", -- [71]
+					"a5d9ec^1", -- [72]
+					"4228f3^1", -- [73]
+					"43e8dc^1", -- [74]
+					"8902ba^1", -- [75]
+					"9697fd^1", -- [76]
+					"9aeac8^1", -- [77]
+					"956ae6^1", -- [78]
+					"9c8af1^1", -- [79]
+					"9db8e1^1", -- [80]
+					"999b3d^1", -- [81]
+					"95faf9^1", -- [82]
+					"4f38ca^1", -- [83]
+					"a419fc^1", -- [84]
+					"9a59fa^1", -- [85]
+					"99aaad^1", -- [86]
+					"680218^1", -- [87]
+					"66d16a^1", -- [88]
+					"9c68ee^1", -- [89]
+					"64f257^1", -- [90]
+					"9977cf^1", -- [91]
+					"614259^1", -- [92]
+					"63e21c^1", -- [93]
+					"a86990^1", -- [94]
+					"9df517^1", -- [95]
+					"a8697e^1", -- [96]
+					"a629d1^1", -- [97]
+					"9a8ae2^1", -- [98]
+					"62c231^1", -- [99]
+					"60c1fd^1", -- [100]
+					"a6096d^1", -- [101]
+					"a509bf^1", -- [102]
+					"a57a03^1", -- [103]
+					"a47935^1", -- [104]
+					"99b9d9^1", -- [105]
+					"4d18ce^1", -- [106]
+					"4b68b6^1", -- [107]
+					"6171e9^1", -- [108]
+					"9a6b1d^1", -- [109]
+					"a274d9^1", -- [110]
+					"9c494d^1", -- [111]
+					"946ad1^1", -- [112]
+					"469823^1", -- [113]
+					"400863^1", -- [114]
+					"93e6f6^1", -- [115]
+				},
+			},
+			[5001] = {
+				["Gas"] = {
+					"3b39f2^1", -- [1]
+					"b9e6c6^1", -- [2]
+					"bb969c^1", -- [3]
+				},
+			},
+		},
 		["NXHerb"] = {
 			[2031] = {
 				[50] = {
@@ -476,61 +2825,50 @@ NxData = {
 					"63fde6^1", -- [33]
 					"8e654e^1", -- [34]
 				},
-				[30] = {
-					"4f5997^1", -- [1]
-					"b4ccb4^1", -- [2]
-					"b2d29a^1", -- [3]
-					"6793c1^1", -- [4]
-					"77c4f2^1", -- [5]
-					"5f14cb^1", -- [6]
-					"4817f9^1", -- [7]
-					"4389c3^1", -- [8]
-					"6cf60a^1", -- [9]
-					"ac1427^1", -- [10]
-					"bf7137^1", -- [11]
-					"a15955^1", -- [12]
-					"5797fd^1", -- [13]
-					"955a09^1", -- [14]
-					"8d64a6^1", -- [15]
-					"82fb2b^1", -- [16]
-					"5c4612^1", -- [17]
-					"c4c44d^1", -- [18]
-					"a63b7d^1", -- [19]
-					"42c5b1^1", -- [20]
-					"6556cb^1", -- [21]
-					"5148b9^1", -- [22]
-					"801d63^1", -- [23]
-					"8455f2^1", -- [24]
-					"8ff3c5^1", -- [25]
-					"81ec9f^1", -- [26]
-					"be2516^1", -- [27]
-					"5ce70e^1", -- [28]
-					"51d6be^1", -- [29]
-					"8dc764^1", -- [30]
-					"c5235b^1", -- [31]
-					"72ce3c^1", -- [32]
-					"934e17^1", -- [33]
-					"a51779^1", -- [34]
-					"a64ca5^1", -- [35]
-					"5a1db5^1", -- [36]
-					"7243ef^1", -- [37]
-					"ac1cdc^1", -- [38]
-					"69553e^1", -- [39]
-					"68de7a^1", -- [40]
-					"4ec56f^1", -- [41]
-					"94e7e2^1", -- [42]
-					"78180d^1", -- [43]
-					"65db50^1", -- [44]
-					"7d78ba^1", -- [45]
-					"3b17c4^1", -- [46]
-					"9d8b91^1", -- [47]
-					"7629b3^1", -- [48]
-					"752b50^1", -- [49]
-					"70a908^1", -- [50]
-					"83a515^1", -- [51]
-					"9656aa^1", -- [52]
-					"668811^1", -- [53]
-					"9b8e55^1", -- [54]
+				[24] = {
+					"4d3691^1", -- [1]
+					"5faba2^1", -- [2]
+					"bdf2a7^1", -- [3]
+					"a00d8c^1", -- [4]
+					"b85297^1", -- [5]
+					"4406db^1", -- [6]
+					"965dda^1", -- [7]
+					"6a2767^1", -- [8]
+					"39c6df^1", -- [9]
+					"969836^1", -- [10]
+					"b1fa25^1", -- [11]
+					"b23353^1", -- [12]
+					"3ad843^1", -- [13]
+					"5e9a2d^1", -- [14]
+					"512823^1", -- [15]
+					"5f65a8^1", -- [16]
+					"8da633^1", -- [17]
+					"be7407^1", -- [18]
+					"36f6ec^1", -- [19]
+					"3099af^1", -- [20]
+					"85bdfb^1", -- [21]
+					"5c484b^1", -- [22]
+					"b293db^1", -- [23]
+					"69e444^1", -- [24]
+					"9afd70^1", -- [25]
+					"7044b1^1", -- [26]
+					"6cabcf^1", -- [27]
+					"a3a7be^1", -- [28]
+					"6cfaff^1", -- [29]
+					"5c6531^1", -- [30]
+					"a42ced^1", -- [31]
+					"7625fc^1", -- [32]
+					"638cf6^1", -- [33]
+					"587b6c^1", -- [34]
+					"347a22^1", -- [35]
+					"ab6cae^1", -- [36]
+					"628b54^1", -- [37]
+					"61a4e8^1", -- [38]
+					"46db0e^1", -- [39]
+					"44d54f^1", -- [40]
+					"a7fe0f^1", -- [41]
+					"c3d305^1", -- [42]
+					"3c55e1^1", -- [43]
 				},
 				[34] = {
 					"a25c6a^1", -- [1]
@@ -602,6 +2940,62 @@ NxData = {
 					"8e6d3f^1", -- [67]
 					"96ccf6^1", -- [68]
 				},
+				[30] = {
+					"4f5997^1", -- [1]
+					"b4ccb4^1", -- [2]
+					"b2d29a^1", -- [3]
+					"6793c1^1", -- [4]
+					"77c4f2^1", -- [5]
+					"5f14cb^1", -- [6]
+					"4817f9^1", -- [7]
+					"4389c3^1", -- [8]
+					"6cf60a^1", -- [9]
+					"ac1427^1", -- [10]
+					"bf7137^1", -- [11]
+					"a15955^1", -- [12]
+					"5797fd^1", -- [13]
+					"955a09^1", -- [14]
+					"8d64a6^1", -- [15]
+					"82fb2b^1", -- [16]
+					"5c4612^1", -- [17]
+					"c4c44d^1", -- [18]
+					"a63b7d^1", -- [19]
+					"42c5b1^1", -- [20]
+					"6556cb^1", -- [21]
+					"5148b9^1", -- [22]
+					"801d63^1", -- [23]
+					"8455f2^1", -- [24]
+					"8ff3c5^1", -- [25]
+					"81ec9f^1", -- [26]
+					"be2516^1", -- [27]
+					"5ce70e^1", -- [28]
+					"51d6be^1", -- [29]
+					"8dc764^1", -- [30]
+					"c5235b^1", -- [31]
+					"72ce3c^1", -- [32]
+					"934e17^1", -- [33]
+					"a51779^1", -- [34]
+					"a64ca5^1", -- [35]
+					"5a1db5^1", -- [36]
+					"7243ef^1", -- [37]
+					"ac1cdc^1", -- [38]
+					"69553e^1", -- [39]
+					"68de7a^1", -- [40]
+					"4ec56f^1", -- [41]
+					"94e7e2^1", -- [42]
+					"78180d^1", -- [43]
+					"65db50^1", -- [44]
+					"7d78ba^1", -- [45]
+					"3b17c4^1", -- [46]
+					"9d8b91^1", -- [47]
+					"7629b3^1", -- [48]
+					"752b50^1", -- [49]
+					"70a908^1", -- [50]
+					"83a515^1", -- [51]
+					"9656aa^1", -- [52]
+					"668811^1", -- [53]
+					"9b8e55^1", -- [54]
+				},
 				[35] = {
 					"536273^1", -- [1]
 					"759fbd^1", -- [2]
@@ -654,51 +3048,6 @@ NxData = {
 					"b7d944^1", -- [49]
 					"b480d1^1", -- [50]
 					"93c2d4^1", -- [51]
-				},
-				[24] = {
-					"4d3691^1", -- [1]
-					"5faba2^1", -- [2]
-					"bdf2a7^1", -- [3]
-					"a00d8c^1", -- [4]
-					"b85297^1", -- [5]
-					"4406db^1", -- [6]
-					"965dda^1", -- [7]
-					"6a2767^1", -- [8]
-					"39c6df^1", -- [9]
-					"969836^1", -- [10]
-					"b1fa25^1", -- [11]
-					"b23353^1", -- [12]
-					"3ad843^1", -- [13]
-					"5e9a2d^1", -- [14]
-					"512823^1", -- [15]
-					"5f65a8^1", -- [16]
-					"8da633^1", -- [17]
-					"be7407^1", -- [18]
-					"36f6ec^1", -- [19]
-					"3099af^1", -- [20]
-					"85bdfb^1", -- [21]
-					"5c484b^1", -- [22]
-					"b293db^1", -- [23]
-					"69e444^1", -- [24]
-					"9afd70^1", -- [25]
-					"7044b1^1", -- [26]
-					"6cabcf^1", -- [27]
-					"a3a7be^1", -- [28]
-					"6cfaff^1", -- [29]
-					"5c6531^1", -- [30]
-					"a42ced^1", -- [31]
-					"7625fc^1", -- [32]
-					"638cf6^1", -- [33]
-					"587b6c^1", -- [34]
-					"347a22^1", -- [35]
-					"ab6cae^1", -- [36]
-					"628b54^1", -- [37]
-					"61a4e8^1", -- [38]
-					"46db0e^1", -- [39]
-					"44d54f^1", -- [40]
-					"a7fe0f^1", -- [41]
-					"c3d305^1", -- [42]
-					"3c55e1^1", -- [43]
 				},
 			},
 			[2016] = {
@@ -876,10 +3225,92 @@ NxData = {
 				},
 			},
 			[3001] = {
-				[29] = {
-					"60466d^1", -- [1]
-					"44cc1f^1", -- [2]
-					"4e4db2^1", -- [3]
+				[9] = {
+					"481a15^1", -- [1]
+					"c7e4f8^1", -- [2]
+					"5c6411^1", -- [3]
+					"853203^1", -- [4]
+					"7dc98e^1", -- [5]
+					"bb11b4^1", -- [6]
+					"af6ba6^1", -- [7]
+					"aa88c5^1", -- [8]
+					"b27718^1", -- [9]
+					"882bdd^1", -- [10]
+					"926a61^1", -- [11]
+					"b314cf^1", -- [12]
+					"5b05e5^1", -- [13]
+					"515961^1", -- [14]
+					"60e485^1", -- [15]
+					"5d831a^1", -- [16]
+					"9b3566^1", -- [17]
+					"982bc2^1", -- [18]
+					"c39afe^1", -- [19]
+					"c10342^1", -- [20]
+					"93a6b0^1", -- [21]
+					"acfa48^1", -- [22]
+					"691461^1", -- [23]
+					"a114ce^1", -- [24]
+					"9a6cab^1", -- [25]
+					"a0ac60^1", -- [26]
+					"57b4d7^1", -- [27]
+					"ae5b0a^1", -- [28]
+					"7dba1f^1", -- [29]
+					"aee1c6^1", -- [30]
+					"7fd2f9^1", -- [31]
+					"a00718^1", -- [32]
+					"469c28^1", -- [33]
+					"8e61a9^1", -- [34]
+					"50c9f0^1", -- [35]
+					"475da1^1", -- [36]
+					"5522fd^1", -- [37]
+					"a94c31^1", -- [38]
+					"5358b5^1", -- [39]
+					"b92a89^1", -- [40]
+					"672b48^1", -- [41]
+					"a0d438^1", -- [42]
+					"b68ae1^1", -- [43]
+					"4c378a^1", -- [44]
+					"b855ed^1", -- [45]
+					"81cafc^1", -- [46]
+					"7e6b1a^1", -- [47]
+					"a75790^1", -- [48]
+					"96122c^1", -- [49]
+					"a325de^1", -- [50]
+					"5e94e4^1", -- [51]
+					"9615fe^1", -- [52]
+					"615c77^1", -- [53]
+					"5a46aa^1", -- [54]
+					"5154aa^1", -- [55]
+					"9c3c6e^1", -- [56]
+					"a4e158^1", -- [57]
+					"5046a1^1", -- [58]
+					"a634ae^1", -- [59]
+					"8a5aa4^1", -- [60]
+					"bbb45f^1", -- [61]
+					"4cf525^1", -- [62]
+					"4d3c82^1", -- [63]
+					"5b2397^1", -- [64]
+					"4ae7f5^1", -- [65]
+					"6be3f2^1", -- [66]
+					"4b23cd^1", -- [67]
+					"9e4207^1", -- [68]
+					"c51c49^1", -- [69]
+					"90b986^1", -- [70]
+					"4ae481^1", -- [71]
+					"685a3a^1", -- [72]
+					"54c7b9^1", -- [73]
+					"b0359a^1", -- [74]
+					"4f5b4c^1", -- [75]
+					"a11776^1", -- [76]
+					"aea68a^1", -- [77]
+					"8beb3d^1", -- [78]
+					"a1b552^1", -- [79]
+					"80dbae^1", -- [80]
+					"5c9b75^1", -- [81]
+					"a2383f^1", -- [82]
+					"46daf2^1", -- [83]
+					"aba99c^1", -- [84]
+					"54a3d2^1", -- [85]
 				},
 				[25] = {
 					"5e5650^1", -- [1]
@@ -894,6 +3325,11 @@ NxData = {
 					"b951a5^1", -- [10]
 					"ac11ff^1", -- [11]
 					"4d3d84^1", -- [12]
+				},
+				[29] = {
+					"60466d^1", -- [1]
+					"44cc1f^1", -- [2]
+					"4e4db2^1", -- [3]
 				},
 				[12] = {
 					"a292f1^1", -- [1]
@@ -998,93 +3434,6 @@ NxData = {
 					"74196d^1", -- [100]
 					"64a8ab^1", -- [101]
 				},
-				[9] = {
-					"481a15^1", -- [1]
-					"c7e4f8^1", -- [2]
-					"5c6411^1", -- [3]
-					"853203^1", -- [4]
-					"7dc98e^1", -- [5]
-					"bb11b4^1", -- [6]
-					"af6ba6^1", -- [7]
-					"aa88c5^1", -- [8]
-					"b27718^1", -- [9]
-					"882bdd^1", -- [10]
-					"926a61^1", -- [11]
-					"b314cf^1", -- [12]
-					"5b05e5^1", -- [13]
-					"515961^1", -- [14]
-					"60e485^1", -- [15]
-					"5d831a^1", -- [16]
-					"9b3566^1", -- [17]
-					"982bc2^1", -- [18]
-					"c39afe^1", -- [19]
-					"c10342^1", -- [20]
-					"93a6b0^1", -- [21]
-					"acfa48^1", -- [22]
-					"691461^1", -- [23]
-					"a114ce^1", -- [24]
-					"9a6cab^1", -- [25]
-					"a0ac60^1", -- [26]
-					"57b4d7^1", -- [27]
-					"ae5b0a^1", -- [28]
-					"7dba1f^1", -- [29]
-					"aee1c6^1", -- [30]
-					"7fd2f9^1", -- [31]
-					"a00718^1", -- [32]
-					"469c28^1", -- [33]
-					"8e61a9^1", -- [34]
-					"50c9f0^1", -- [35]
-					"475da1^1", -- [36]
-					"5522fd^1", -- [37]
-					"a94c31^1", -- [38]
-					"5358b5^1", -- [39]
-					"b92a89^1", -- [40]
-					"672b48^1", -- [41]
-					"a0d438^1", -- [42]
-					"b68ae1^1", -- [43]
-					"4c378a^1", -- [44]
-					"b855ed^1", -- [45]
-					"81cafc^1", -- [46]
-					"7e6b1a^1", -- [47]
-					"a75790^1", -- [48]
-					"96122c^1", -- [49]
-					"a325de^1", -- [50]
-					"5e94e4^1", -- [51]
-					"9615fe^1", -- [52]
-					"615c77^1", -- [53]
-					"5a46aa^1", -- [54]
-					"5154aa^1", -- [55]
-					"9c3c6e^1", -- [56]
-					"a4e158^1", -- [57]
-					"5046a1^1", -- [58]
-					"a634ae^1", -- [59]
-					"8a5aa4^1", -- [60]
-					"bbb45f^1", -- [61]
-					"4cf525^1", -- [62]
-					"4d3c82^1", -- [63]
-					"5b2397^1", -- [64]
-					"4ae7f5^1", -- [65]
-					"6be3f2^1", -- [66]
-					"4b23cd^1", -- [67]
-					"9e4207^1", -- [68]
-					"c51c49^1", -- [69]
-					"90b986^1", -- [70]
-					"4ae481^1", -- [71]
-					"685a3a^1", -- [72]
-					"54c7b9^1", -- [73]
-					"b0359a^1", -- [74]
-					"4f5b4c^1", -- [75]
-					"a11776^1", -- [76]
-					"aea68a^1", -- [77]
-					"8beb3d^1", -- [78]
-					"a1b552^1", -- [79]
-					"80dbae^1", -- [80]
-					"5c9b75^1", -- [81]
-					"a2383f^1", -- [82]
-					"46daf2^1", -- [83]
-					"aba99c^1", -- [84]
-					"54a3d2^1", -- [85]
-				},
 			},
 			[3002] = {
 				[8] = {
@@ -1167,65 +3516,9 @@ NxData = {
 					"7f7a45^1", -- [77]
 					"a1b687^1", -- [78]
 				},
-				[16] = {
-					"83ecf9^1", -- [1]
-					"1d27ac^1", -- [2]
-					"b38b0a^1", -- [3]
-					"9bc855^1", -- [4]
-					"25e6b6^1", -- [5]
-					"878d01^1", -- [6]
-					"8cb89d^1", -- [7]
-					"c8fa42^1", -- [8]
-					"90bcc4^1", -- [9]
-					"720695^1", -- [10]
-					"77e8a5^1", -- [11]
-					"665de7^1", -- [12]
-					"6f0bb7^1", -- [13]
-					"bdf64b^1", -- [14]
-					"9607ae^1", -- [15]
-					"6aed3c^1", -- [16]
-					"15d7ee^1", -- [17]
-					"86c497^1", -- [18]
-					"a91bb5^1", -- [19]
-					"7c8857^1", -- [20]
-					"4ab9e1^1", -- [21]
-					"9e5a1b^1", -- [22]
-					"a676df^1", -- [23]
-					"5dae14^1", -- [24]
-					"95a519^1", -- [25]
-					"c18766^1", -- [26]
-					"5fe928^1", -- [27]
-					"6617b7^1", -- [28]
-					"ae9c39^1", -- [29]
-					"7289f4^1", -- [30]
-					"86c7b8^1", -- [31]
-					"d8ca04^1", -- [32]
-					"a25bc2^1", -- [33]
-					"94c880^1", -- [34]
-					"6588f2^1", -- [35]
-					"a95af3^1", -- [36]
-					"6aed9e^1", -- [37]
-					"751826^1", -- [38]
-					"da964b^1", -- [39]
-					"940b0e^1", -- [40]
-					"7c47ed^1", -- [41]
-					"67082a^1", -- [42]
-					"736ca8^1", -- [43]
-					"737d7b^1", -- [44]
-					"7d48b5^1", -- [45]
-					"b38b42^1", -- [46]
-					"2fe6a6^1", -- [47]
-					"a28c61^1", -- [48]
-					"5e1853^1", -- [49]
-					"7867c8^1", -- [50]
-					"adeabc^1", -- [51]
-					"c08863^1", -- [52]
-					"79f8df^1", -- [53]
-					"aa44e8^1", -- [54]
-					"7f7490^1", -- [55]
-					"74b6df^1", -- [56]
-					"6cbb12^1", -- [57]
-					"b55b67^1", -- [58]
+				[29] = {
+					"948323^1", -- [1]
+					"a252c7^1", -- [2]
 				},
 				[12] = {
 					"3c971d^1", -- [1]
@@ -1460,6 +3753,66 @@ NxData = {
 					"29b5ed^1", -- [57]
 					"be0a38^1", -- [58]
 				},
+				[16] = {
+					"83ecf9^1", -- [1]
+					"1d27ac^1", -- [2]
+					"b38b0a^1", -- [3]
+					"9bc855^1", -- [4]
+					"25e6b6^1", -- [5]
+					"878d01^1", -- [6]
+					"8cb89d^1", -- [7]
+					"c8fa42^1", -- [8]
+					"90bcc4^1", -- [9]
+					"720695^1", -- [10]
+					"77e8a5^1", -- [11]
+					"665de7^1", -- [12]
+					"6f0bb7^1", -- [13]
+					"bdf64b^1", -- [14]
+					"9607ae^1", -- [15]
+					"6aed3c^1", -- [16]
+					"15d7ee^1", -- [17]
+					"86c497^1", -- [18]
+					"a91bb5^1", -- [19]
+					"7c8857^1", -- [20]
+					"4ab9e1^1", -- [21]
+					"9e5a1b^1", -- [22]
+					"a676df^1", -- [23]
+					"5dae14^1", -- [24]
+					"95a519^1", -- [25]
+					"c18766^1", -- [26]
+					"5fe928^1", -- [27]
+					"6617b7^1", -- [28]
+					"ae9c39^1", -- [29]
+					"7289f4^1", -- [30]
+					"86c7b8^1", -- [31]
+					"d8ca04^1", -- [32]
+					"a25bc2^1", -- [33]
+					"94c880^1", -- [34]
+					"6588f2^1", -- [35]
+					"a95af3^1", -- [36]
+					"6aed9e^1", -- [37]
+					"751826^1", -- [38]
+					"da964b^1", -- [39]
+					"940b0e^1", -- [40]
+					"7c47ed^1", -- [41]
+					"67082a^1", -- [42]
+					"736ca8^1", -- [43]
+					"737d7b^1", -- [44]
+					"7d48b5^1", -- [45]
+					"b38b42^1", -- [46]
+					"2fe6a6^1", -- [47]
+					"a28c61^1", -- [48]
+					"5e1853^1", -- [49]
+					"7867c8^1", -- [50]
+					"adeabc^1", -- [51]
+					"c08863^1", -- [52]
+					"79f8df^1", -- [53]
+					"aa44e8^1", -- [54]
+					"7f7490^1", -- [55]
+					"74b6df^1", -- [56]
+					"6cbb12^1", -- [57]
+					"b55b67^1", -- [58]
+				},
 				[9] = {
 					"c62cb5^1", -- [1]
 					"41b83a^1", -- [2]
@@ -1518,10 +3871,6 @@ NxData = {
 					"3c3b88^1", -- [55]
 					"aee84f^1", -- [56]
 					"a9eb86^1", -- [57]
-				},
-				[29] = {
-					"948323^1", -- [1]
-					"a252c7^1", -- [2]
 				},
 			},
 			[3003] = {
@@ -1900,6 +4249,65 @@ NxData = {
 					"a365d4^1", -- [29]
 					"a87856^1", -- [30]
 				},
+				[21] = {
+					"4d9783^1", -- [1]
+					"4e675b^1", -- [2]
+					"a688c5^1", -- [3]
+					"a84a35^1", -- [4]
+					"a78b47^1", -- [5]
+					"8fdb79^1", -- [6]
+					"8d4bbd^1", -- [7]
+					"966841^1", -- [8]
+					"80c589^1", -- [9]
+					"944b6c^1", -- [10]
+					"814b3d^1", -- [11]
+					"981aa3^1", -- [12]
+					"7a65c1^1", -- [13]
+					"2547ae^1", -- [14]
+					"96fbc5^1", -- [15]
+					"b5369c^1", -- [16]
+					"9d3a4a^1", -- [17]
+					"92dabe^1", -- [18]
+					"8b054a^1", -- [19]
+					"b3c4c2^1", -- [20]
+					"9dcbb0^1", -- [21]
+					"7ec826^1", -- [22]
+					"9414ff^1", -- [23]
+					"6d65e6^1", -- [24]
+					"89761a^1", -- [25]
+					"84255e^1", -- [26]
+					"accad7^1", -- [27]
+					"15e736^1", -- [28]
+					"7e3587^1", -- [29]
+					"790c60^1", -- [30]
+					"5df50c^1", -- [31]
+					"9a0b80^1", -- [32]
+					"5c1a0c^1", -- [33]
+					"a49bb1^1", -- [34]
+					"8b2652^1", -- [35]
+					"7865ef^1", -- [36]
+					"916beb^1", -- [37]
+					"a939bf^1", -- [38]
+					"a2ac32^1", -- [39]
+				},
+				[23] = {
+					"2a58af^1", -- [1]
+					"a49ad0^1", -- [2]
+					"2b38ff^1", -- [3]
+					"9baacb^1", -- [4]
+					"9bab02^1", -- [5]
+					"623b97^1", -- [6]
+					"a2ea2b^1", -- [7]
+					"9eca8f^1", -- [8]
+					"3bc8d8^1", -- [9]
+					"2cc839^1", -- [10]
+					"a5aa4e^1", -- [11]
+					"661d6c^1", -- [12]
+					"3ad90e^1", -- [13]
+					"9fbb87^1", -- [14]
+					"641b43^1", -- [15]
+					"65ece5^1", -- [16]
+				},
 				[17] = {
 					"73a610^1", -- [1]
 					"5f36e5^1", -- [2]
@@ -1944,65 +4352,6 @@ NxData = {
 					"528716^1", -- [41]
 					"5a06a5^1", -- [42]
 					"98e481^1", -- [43]
-				},
-				[23] = {
-					"2a58af^1", -- [1]
-					"a49ad0^1", -- [2]
-					"2b38ff^1", -- [3]
-					"9baacb^1", -- [4]
-					"9bab02^1", -- [5]
-					"623b97^1", -- [6]
-					"a2ea2b^1", -- [7]
-					"9eca8f^1", -- [8]
-					"3bc8d8^1", -- [9]
-					"2cc839^1", -- [10]
-					"a5aa4e^1", -- [11]
-					"661d6c^1", -- [12]
-					"3ad90e^1", -- [13]
-					"9fbb87^1", -- [14]
-					"641b43^1", -- [15]
-					"65ece5^1", -- [16]
-				},
-				[21] = {
-					"4d9783^1", -- [1]
-					"4e675b^1", -- [2]
-					"a688c5^1", -- [3]
-					"a84a35^1", -- [4]
-					"a78b47^1", -- [5]
-					"8fdb79^1", -- [6]
-					"8d4bbd^1", -- [7]
-					"966841^1", -- [8]
-					"80c589^1", -- [9]
-					"944b6c^1", -- [10]
-					"814b3d^1", -- [11]
-					"981aa3^1", -- [12]
-					"7a65c1^1", -- [13]
-					"2547ae^1", -- [14]
-					"96fbc5^1", -- [15]
-					"b5369c^1", -- [16]
-					"9d3a4a^1", -- [17]
-					"92dabe^1", -- [18]
-					"8b054a^1", -- [19]
-					"b3c4c2^1", -- [20]
-					"9dcbb0^1", -- [21]
-					"7ec826^1", -- [22]
-					"9414ff^1", -- [23]
-					"6d65e6^1", -- [24]
-					"89761a^1", -- [25]
-					"84255e^1", -- [26]
-					"accad7^1", -- [27]
-					"15e736^1", -- [28]
-					"7e3587^1", -- [29]
-					"790c60^1", -- [30]
-					"5df50c^1", -- [31]
-					"9a0b80^1", -- [32]
-					"5c1a0c^1", -- [33]
-					"a49bb1^1", -- [34]
-					"8b2652^1", -- [35]
-					"7865ef^1", -- [36]
-					"916beb^1", -- [37]
-					"a939bf^1", -- [38]
-					"a2ac32^1", -- [39]
 				},
 			},
 			[3004] = {
@@ -2144,6 +4493,9 @@ NxData = {
 					"6625e7^1", -- [3]
 					"62c5db^1", -- [4]
 				},
+				[23] = {
+					"76689a^1", -- [1]
+				},
 				[16] = {
 					"781243^1", -- [1]
 					"743926^1", -- [2]
@@ -2234,9 +4586,6 @@ NxData = {
 					"86b6db^1", -- [81]
 					"745170^1", -- [82]
 					"74f8c5^1", -- [83]
-				},
-				[23] = {
-					"76689a^1", -- [1]
 				},
 			},
 			[1021] = {
@@ -2702,69 +5051,6 @@ NxData = {
 				},
 			},
 			[2003] = {
-				[39] = {
-					"6b66cb^1", -- [1]
-					"5f8737^1", -- [2]
-					"4da934^1", -- [3]
-					"4d58ec^1", -- [4]
-				},
-				[13] = {
-					"a7e89f^1", -- [1]
-					"aa8868^1", -- [2]
-					"931710^1", -- [3]
-					"b78732^1", -- [4]
-					"719a10^1", -- [5]
-					"29f9aa^1", -- [6]
-					"778421^1", -- [7]
-					"b65490^1", -- [8]
-					"8d5734^1", -- [9]
-					"886867^1", -- [10]
-					"75e96a^1", -- [11]
-					"b3d4d4^1", -- [12]
-					"9066c7^1", -- [13]
-					"aae8ad^1", -- [14]
-					"76b4b1^1", -- [15]
-					"88d928^1", -- [16]
-					"79f9e5^1", -- [17]
-					"5bb9a5^1", -- [18]
-					"4b46a8^1", -- [19]
-					"5905de^1", -- [20]
-					"251971^1", -- [21]
-					"46a6c5^1", -- [22]
-					"55b636^1", -- [23]
-					"47d655^1", -- [24]
-					"b5a7a4^1", -- [25]
-					"8dc82b^1", -- [26]
-					"b2f765^1", -- [27]
-					"653967^1", -- [28]
-				},
-				[16] = {
-					"ac48a9^1", -- [1]
-					"837322^1", -- [2]
-					"84e35a^1", -- [3]
-					"2c9929^1", -- [4]
-					"3127fa^1", -- [5]
-					"35a873^1", -- [6]
-					"922629^1", -- [7]
-					"93b407^1", -- [8]
-					"b0c69d^1", -- [9]
-					"8f04c6^1", -- [10]
-					"8f4760^1", -- [11]
-					"64992a^1", -- [12]
-					"a61797^1", -- [13]
-					"ae481a^1", -- [14]
-					"79d9a6^1", -- [15]
-					"4d8759^1", -- [16]
-					"41a7dd^1", -- [17]
-					"8933ee^1", -- [18]
-					"488711^1", -- [19]
-					"2779b5^1", -- [20]
-					"2eaa8a^1", -- [21]
-					"38e7df^1", -- [22]
-					"6949c9^1", -- [23]
-					"5896d7^1", -- [24]
-					"b47897^1", -- [25]
-				},
 				[36] = {
 					"76018e^1", -- [1]
 					"9456e8^1", -- [2]
@@ -2831,6 +5117,69 @@ NxData = {
 					"b826a2^1", -- [63]
 					"7d0926^1", -- [64]
 					"39796f^1", -- [65]
+				},
+				[39] = {
+					"6b66cb^1", -- [1]
+					"5f8737^1", -- [2]
+					"4da934^1", -- [3]
+					"4d58ec^1", -- [4]
+				},
+				[16] = {
+					"ac48a9^1", -- [1]
+					"837322^1", -- [2]
+					"84e35a^1", -- [3]
+					"2c9929^1", -- [4]
+					"3127fa^1", -- [5]
+					"35a873^1", -- [6]
+					"922629^1", -- [7]
+					"93b407^1", -- [8]
+					"b0c69d^1", -- [9]
+					"8f04c6^1", -- [10]
+					"8f4760^1", -- [11]
+					"64992a^1", -- [12]
+					"a61797^1", -- [13]
+					"ae481a^1", -- [14]
+					"79d9a6^1", -- [15]
+					"4d8759^1", -- [16]
+					"41a7dd^1", -- [17]
+					"8933ee^1", -- [18]
+					"488711^1", -- [19]
+					"2779b5^1", -- [20]
+					"2eaa8a^1", -- [21]
+					"38e7df^1", -- [22]
+					"6949c9^1", -- [23]
+					"5896d7^1", -- [24]
+					"b47897^1", -- [25]
+				},
+				[13] = {
+					"a7e89f^1", -- [1]
+					"aa8868^1", -- [2]
+					"931710^1", -- [3]
+					"b78732^1", -- [4]
+					"719a10^1", -- [5]
+					"29f9aa^1", -- [6]
+					"778421^1", -- [7]
+					"b65490^1", -- [8]
+					"8d5734^1", -- [9]
+					"886867^1", -- [10]
+					"75e96a^1", -- [11]
+					"b3d4d4^1", -- [12]
+					"9066c7^1", -- [13]
+					"aae8ad^1", -- [14]
+					"76b4b1^1", -- [15]
+					"88d928^1", -- [16]
+					"79f9e5^1", -- [17]
+					"5bb9a5^1", -- [18]
+					"4b46a8^1", -- [19]
+					"5905de^1", -- [20]
+					"251971^1", -- [21]
+					"46a6c5^1", -- [22]
+					"55b636^1", -- [23]
+					"47d655^1", -- [24]
+					"b5a7a4^1", -- [25]
+					"8dc82b^1", -- [26]
+					"b2f765^1", -- [27]
+					"653967^1", -- [28]
 				},
 			},
 			[3006] = {
@@ -5313,6 +7662,23 @@ NxData = {
 					"bfd89b^1", -- [18]
 					"93784b^1", -- [19]
 				},
+				[35] = {
+					"ccac42^1", -- [1]
+					"da067c^1", -- [2]
+					"d7c876^1", -- [3]
+					"d6f6db^1", -- [4]
+					"d8290c^1", -- [5]
+					"d14a5e^1", -- [6]
+					"cc6ab1^1", -- [7]
+				},
+				[38] = {
+					"822880^1", -- [1]
+					"90e8ae^1", -- [2]
+					"71867c^1", -- [3]
+					"6b26dd^1", -- [4]
+					"7eb829^1", -- [5]
+					"7b188a^1", -- [6]
+				},
 				[21] = {
 					"67c7cc^1", -- [1]
 					"b067d0^1", -- [2]
@@ -5329,20 +7695,6 @@ NxData = {
 					"bbd7f9^1", -- [13]
 					"582804^1", -- [14]
 					"6478c1^1", -- [15]
-				},
-				[38] = {
-					"822880^1", -- [1]
-					"90e8ae^1", -- [2]
-					"71867c^1", -- [3]
-					"6b26dd^1", -- [4]
-					"7eb829^1", -- [5]
-					"7b188a^1", -- [6]
-				},
-				[11] = {
-					"95575d^1", -- [1]
-					"457a16^1", -- [2]
-					"64785e^1", -- [3]
-					"902864^1", -- [4]
 				},
 				[22] = {
 					"35e85a^1", -- [1]
@@ -5377,14 +7729,11 @@ NxData = {
 					"cbeaf8^1", -- [6]
 					"b8c731^1", -- [7]
 				},
-				[35] = {
-					"ccac42^1", -- [1]
-					"da067c^1", -- [2]
-					"d7c876^1", -- [3]
-					"d6f6db^1", -- [4]
-					"d8290c^1", -- [5]
-					"d14a5e^1", -- [6]
-					"cc6ab1^1", -- [7]
+				[11] = {
+					"95575d^1", -- [1]
+					"457a16^1", -- [2]
+					"64785e^1", -- [3]
+					"902864^1", -- [4]
 				},
 			},
 			[2039] = {
@@ -5867,6 +8216,9 @@ NxData = {
 					"907a6a^1", -- [183]
 					"73f889^1", -- [184]
 				},
+				[7] = {
+					"2bf564^1", -- [1]
+				},
 				[51] = {
 					"92e7c8^1", -- [1]
 					"ac89d5^1", -- [2]
@@ -5946,9 +8298,6 @@ NxData = {
 					"944d58^1", -- [76]
 					"64aa5a^1", -- [77]
 					"6793c1^1", -- [78]
-				},
-				[7] = {
-					"2bf564^1", -- [1]
 				},
 			},
 			[6001] = {
@@ -6655,9 +9004,212 @@ NxData = {
 					"8086af^1", -- [64]
 				},
 			},
-			[16229] = {
-				[58] = {
-					"61ca90^1", -- [1]
+			[1005] = {
+				[6] = {
+					"70e561^1", -- [1]
+					"6a563e^1", -- [2]
+					"6e8691^1", -- [3]
+					"6adc8f^1", -- [4]
+					"717d62^1", -- [5]
+					"8c4464^1", -- [6]
+					"7e84b4^1", -- [7]
+					"7e647f^1", -- [8]
+					"76759a^1", -- [9]
+					"6cf68c^1", -- [10]
+					"67359b^1", -- [11]
+					"704584^1", -- [12]
+					"6df66f^1", -- [13]
+					"6b560a^1", -- [14]
+					"6ab5d4^1", -- [15]
+					"94e3f2^1", -- [16]
+					"98126f^1", -- [17]
+					"958410^1", -- [18]
+					"76f3d4^1", -- [19]
+					"93b41f^1", -- [20]
+					"789400^1", -- [21]
+					"78256c^1", -- [22]
+					"793571^1", -- [23]
+					"6a9825^1", -- [24]
+					"71393f^1", -- [25]
+					"72578c^1", -- [26]
+					"74a6f7^1", -- [27]
+					"77780c^1", -- [28]
+					"a3c2c4^1", -- [29]
+					"961239^1", -- [30]
+					"a4a2ea^1", -- [31]
+					"6767c8^1", -- [32]
+					"6b480c^1", -- [33]
+					"703779^1", -- [34]
+					"71e957^1", -- [35]
+					"75dc7e^1", -- [36]
+					"6d7ca5^1", -- [37]
+					"6fed5a^1", -- [38]
+					"74ec77^1", -- [39]
+					"6c3c96^1", -- [40]
+					"635c44^1", -- [41]
+					"8b7470^1", -- [42]
+					"720549^1", -- [43]
+					"6b3620^1", -- [44]
+					"67b82d^1", -- [45]
+					"72576f^1", -- [46]
+					"7717f2^1", -- [47]
+					"7516df^1", -- [48]
+					"70bae5^1", -- [49]
+					"744c63^1", -- [50]
+					"6ffd6e^1", -- [51]
+					"635de1^1", -- [52]
+					"66be78^1", -- [53]
+					"633e1d^1", -- [54]
+					"617df7^1", -- [55]
+					"6c0cbb^1", -- [56]
+					"691bfa^1", -- [57]
+					"72cc62^1", -- [58]
+					"65e559^1", -- [59]
+				},
+				[24] = {
+					"6b25a5^1", -- [1]
+					"69b89b^1", -- [2]
+					"6c6981^1", -- [3]
+					"6b6c5f^1", -- [4]
+					"727ccb^1", -- [5]
+					"8f9349^1", -- [6]
+					"9032d7^1", -- [7]
+					"8b0456^1", -- [8]
+					"920396^1", -- [9]
+					"8bf42b^1", -- [10]
+					"7f4412^1", -- [11]
+					"7775cd^1", -- [12]
+					"789679^1", -- [13]
+					"783606^1", -- [14]
+					"6e0522^1", -- [15]
+					"7e7607^1", -- [16]
+					"6c35bf^1", -- [17]
+					"6d4507^1", -- [18]
+					"9002e9^1", -- [19]
+					"96f2e0^1", -- [20]
+					"9e6369^1", -- [21]
+					"9ce3ad^1", -- [22]
+					"97a398^1", -- [23]
+					"97f21f^1", -- [24]
+					"9f81e4^1", -- [25]
+					"a1a0ff^1", -- [26]
+					"9c426d^1", -- [27]
+					"8fd3b6^1", -- [28]
+					"6b94de^1", -- [29]
+					"8ed37b^1", -- [30]
+					"901322^1", -- [31]
+					"96e370^1", -- [32]
+					"9be3dd^1", -- [33]
+					"6d9534^1", -- [34]
+					"6c074e^1", -- [35]
+					"630666^1", -- [36]
+					"6e077c^1", -- [37]
+					"78c768^1", -- [38]
+					"73e7d5^1", -- [39]
+					"6c8795^1", -- [40]
+					"76273a^1", -- [41]
+					"6c4874^1", -- [42]
+					"6c99be^1", -- [43]
+					"75cbf4^1", -- [44]
+					"70cce6^1", -- [45]
+					"622d21^1", -- [46]
+					"602d37^1", -- [47]
+					"a0c1eb^1", -- [48]
+					"9a83c6^1", -- [49]
+					"9a72f6^1", -- [50]
+					"994215^1", -- [51]
+					"9f61c9^1", -- [52]
+					"6e259f^1", -- [53]
+					"6457b2^1", -- [54]
+					"62d6f1^1", -- [55]
+					"67765d^1", -- [56]
+					"6bf766^1", -- [57]
+					"7257df^1", -- [58]
+					"79779e^1", -- [59]
+					"69d8c9^1", -- [60]
+					"6b99b3^1", -- [61]
+					"74cbcb^1", -- [62]
+					"71bcff^1", -- [63]
+					"759e7c^1", -- [64]
+					"679c64^1", -- [65]
+					"697cdd^1", -- [66]
+					"5face1^1", -- [67]
+					"745bb7^1", -- [68]
+					"5f6d17^1", -- [69]
+					"76d6a0^1", -- [70]
+					"7d4636^1", -- [71]
+					"77d659^1", -- [72]
+					"71e6f6^1", -- [73]
+					"81b3fe^1", -- [74]
+					"9772f2^1", -- [75]
+					"98a248^1", -- [76]
+					"a38110^1", -- [77]
+					"97a32e^1", -- [78]
+					"9b73ad^1", -- [79]
+					"8c74a2^1", -- [80]
+					"64a5a9^1", -- [81]
+					"99434d^1", -- [82]
+					"96b227^1", -- [83]
+					"6675ec^1", -- [84]
+					"6fd6f0^1", -- [85]
+					"7137d5^1", -- [86]
+					"64a82b^1", -- [87]
+					"61a755^1", -- [88]
+					"65f650^1", -- [89]
+					"62a71e^1", -- [90]
+					"70770a^1", -- [91]
+					"76775a^1", -- [92]
+					"6b2899^1", -- [93]
+					"6d696f^1", -- [94]
+					"688e3b^1", -- [95]
+					"5e1e1c^1", -- [96]
+					"66bcd6^1", -- [97]
+					"69ec33^1", -- [98]
+					"737bc7^1", -- [99]
+					"68ae5b^1", -- [100]
+					"97320a^1", -- [101]
+					"9ed1f2^1", -- [102]
+					"a190eb^1", -- [103]
+					"62d5b8^1", -- [104]
+				},
+				[10] = {
+					"9b419b^1", -- [1]
+					"9a51b5^1", -- [2]
+					"a510a7^1", -- [3]
+					"a60103^1", -- [4]
+					"a6b0ee^1", -- [5]
+				},
+				[34] = {
+					"8f4331^1", -- [1]
+					"8e1320^1", -- [2]
+					"760495^1", -- [3]
+					"7534f7^1", -- [4]
+					"7283e5^1", -- [5]
+					"908348^1", -- [6]
+					"7804ec^1", -- [7]
+					"7614e7^1", -- [8]
+					"78d3b8^1", -- [9]
+					"73f408^1", -- [10]
+					"79e3c6^1", -- [11]
+					"76747d^1", -- [12]
+					"7bd4ff^1", -- [13]
+					"775447^1", -- [14]
+					"79e3a0^1", -- [15]
+					"7b43c3^1", -- [16]
+					"78d486^1", -- [17]
+					"7ca525^1", -- [18]
+				},
+				[30] = {
+					"7265bb^1", -- [1]
+					"7435dd^1", -- [2]
+					"7215f7^1", -- [3]
+					"7386a3^1", -- [4]
+					"74a5b1^1", -- [5]
+					"72164d^1", -- [6]
+				},
+				[35] = {
+					"8a5213^1", -- [1]
+					"8d1277^1", -- [2]
 				},
 			},
 			[12074] = {
@@ -6672,14 +9224,14 @@ NxData = {
 					"a92494^1", -- [3]
 					"a1a401^1", -- [4]
 				},
-				[61] = {
-					"a4a4d1^2", -- [1]
+				[59] = {
+					"902742^1", -- [1]
 				},
 				[56] = {
 					"aba471^1", -- [1]
 				},
-				[59] = {
-					"902742^1", -- [1]
+				[61] = {
+					"a4a4d1^2", -- [1]
 				},
 			},
 			[2017] = {
@@ -7428,282 +9980,60 @@ NxData = {
 					"9565b1^1", -- [4]
 				},
 			},
-			[2024] = {
-				[34] = {
-					"63b69b^1", -- [1]
-					"557853^1", -- [2]
-					"4c777b^1", -- [3]
-					"64c836^1", -- [4]
-					"76296b^1", -- [5]
-					"887867^1", -- [6]
-					"8fc812^1", -- [7]
-					"900791^1", -- [8]
-					"8b28d2^1", -- [9]
-					"a4d865^1", -- [10]
-					"9bf711^1", -- [11]
-					"9506a9^1", -- [12]
-					"9d1544^1", -- [13]
-					"94656a^1", -- [14]
-					"8816eb^1", -- [15]
-					"8a1752^1", -- [16]
-					"9e35eb^1", -- [17]
-					"74f47a^1", -- [18]
-					"7135d0^1", -- [19]
-					"6df6bd^1", -- [20]
-					"83aa7c^1", -- [21]
-					"7c4afa^1", -- [22]
-					"83ab52^1", -- [23]
-					"84b877^1", -- [24]
-					"8967f7^1", -- [25]
-					"768a82^1", -- [26]
-					"75aaf6^1", -- [27]
-					"8059d6^1", -- [28]
-					"6d0831^1", -- [29]
-					"6856b6^1", -- [30]
-					"8577b3^1", -- [31]
-					"7e24d4^1", -- [32]
-					"75a700^1", -- [33]
-					"7bc6e9^1", -- [34]
-					"726745^1", -- [35]
-					"5ca766^1", -- [36]
-					"6d99c4^1", -- [37]
-					"73daa7^1", -- [38]
-					"87e9d4^1", -- [39]
-					"6f4b25^1", -- [40]
-					"7cda58^1", -- [41]
-					"a2d682^1", -- [42]
-					"c2eb7b^1", -- [43]
-					"cfbbd8^1", -- [44]
-					"d62a88^1", -- [45]
-					"c07a9c^1", -- [46]
+			[1024] = {
+				[20] = {
+					"80093d^1", -- [1]
+					"994d89^1", -- [2]
+					"3db943^1", -- [3]
+					"3dc850^1", -- [4]
+					"3d77f7^1", -- [5]
+					"48591c^1", -- [6]
+					"50d8e5^1", -- [7]
+					"50c8a2^1", -- [8]
+					"544879^1", -- [9]
+					"593928^1", -- [10]
+					"60d91b^1", -- [11]
+					"487889^1", -- [12]
+					"6f98d7^1", -- [13]
+					"79983d^1", -- [14]
+					"7b5888^1", -- [15]
+					"7df863^1", -- [16]
+					"8ac83a^1", -- [17]
+					"68a8c5^1", -- [18]
+					"63190d^1", -- [19]
+					"5cd8dd^1", -- [20]
+					"5a8900^1", -- [21]
+					"4668eb^1", -- [22]
+					"a50cbe^1", -- [23]
+					"9c8d6f^1", -- [24]
+					"77f98b^1", -- [25]
+					"75f993^1", -- [26]
+					"9cbc61^1", -- [27]
+					"a1aae4^1", -- [28]
+					"a7bad1^1", -- [29]
+					"a538d9^1", -- [30]
+					"a31873^1", -- [31]
+					"a0e858^1", -- [32]
+					"856969^1", -- [33]
+					"92fadd^1", -- [34]
+					"96cadf^1", -- [35]
+					"9adb61^1", -- [36]
+					"a10bfd^1", -- [37]
+					"9f2d42^1", -- [38]
+					"9acdb9^1", -- [39]
 				},
-				[10] = {
-					"9fb803^1", -- [1]
-					"8f0592^1", -- [2]
-					"8796ac^1", -- [3]
-					"99d4f4^1", -- [4]
-					"92b482^1", -- [5]
-					"7f7450^1", -- [6]
-					"7a7469^1", -- [7]
-					"6f7632^1", -- [8]
-					"841743^1", -- [9]
-					"8be667^1", -- [10]
-					"92b4e2^1", -- [11]
-					"8d64f1^1", -- [12]
-					"83d5d1^1", -- [13]
-					"4fd732^1", -- [14]
-					"6fda81^1", -- [15]
-					"d2e512^1", -- [16]
-					"b6fa7e^1", -- [17]
-				},
-				[30] = {
-					"6026f0^1", -- [1]
-					"759838^1", -- [2]
-					"53f812^1", -- [3]
-					"4aa73f^1", -- [4]
-					"6217d0^1", -- [5]
-					"9ba6a2^1", -- [6]
-					"91862d^1", -- [7]
-					"7154e8^1", -- [8]
-					"77959c^1", -- [9]
-					"714666^1", -- [10]
-					"7186cf^1", -- [11]
-					"77a6be^1", -- [12]
-					"77f655^1", -- [13]
-					"7b6515^1", -- [14]
-					"820a45^1", -- [15]
-					"7ffa83^1", -- [16]
-					"81bb2a^1", -- [17]
-					"9ac90f^1", -- [18]
-					"87f760^1", -- [19]
-					"8459b7^1", -- [20]
-					"66772d^1", -- [21]
-					"83a8ab^1", -- [22]
-					"89a4a0^1", -- [23]
-					"7fd5f2^1", -- [24]
-					"4f17a1^1", -- [25]
-					"700932^1", -- [26]
-					"8d3a13^1", -- [27]
-					"870b62^1", -- [28]
-					"9349b6^1", -- [29]
-					"a546bc^1", -- [30]
-					"a5c81b^1", -- [31]
-					"b09979^1", -- [32]
-					"d0dbae^1", -- [33]
-					"cb29df^1", -- [34]
+				[26] = {
+					"5e9969^1", -- [1]
+					"6ad88f^1", -- [2]
+					"6dd911^1", -- [3]
+					"62493d^1", -- [4]
+					"79aa21^1", -- [5]
+					"a257fe^1", -- [6]
 				},
 			},
-			[1008] = {
-				[30] = {
-					"84383d^1", -- [1]
-					"814b82^1", -- [2]
-					"8d894f^1", -- [3]
-					"8fc726^1", -- [4]
-					"8db683^1", -- [5]
-					"897574^1", -- [6]
-					"8d0509^1", -- [7]
-					"6a86be^1", -- [8]
-					"60a721^1", -- [9]
-					"8417fa^1", -- [10]
-					"86692d^1", -- [11]
-					"8529c7^1", -- [12]
-					"8f3b26^1", -- [13]
-					"7bf645^1", -- [14]
-					"74a35c^1", -- [15]
-					"8ce276^1", -- [16]
-					"91c4c8^1", -- [17]
-					"8b454a^1", -- [18]
-					"8f78f4^1", -- [19]
-					"90c785^1", -- [20]
-					"899be6^1", -- [21]
-					"851922^1", -- [22]
-					"6ad77a^1", -- [23]
-					"6806b7^1", -- [24]
-					"6162b2^1", -- [25]
-					"6e474c^1", -- [26]
-					"62c725^1", -- [27]
-					"83e888^1", -- [28]
-					"8e0903^1", -- [29]
-					"87ebbd^1", -- [30]
-					"83cb91^1", -- [31]
-					"851a0c^1", -- [32]
-					"836901^1", -- [33]
-					"71932e^1", -- [34]
-					"701357^1", -- [35]
-					"8c824e^1", -- [36]
-					"60c301^1", -- [37]
-					"6b9688^1", -- [38]
-					"5b2674^1", -- [39]
-					"6692c0^1", -- [40]
-					"61d4ec^1", -- [41]
-					"5cf68e^1", -- [42]
-					"618763^1", -- [43]
-					"6fd6ec^1", -- [44]
-					"909753^1", -- [45]
-					"8b4580^1", -- [46]
-					"6624e3^1", -- [47]
-					"7f059d^1", -- [48]
-					"7d1631^1", -- [49]
-					"82357a^1", -- [50]
-					"74f3aa^1", -- [51]
-					"623523^1", -- [52]
-					"85894a^1", -- [53]
-					"880be2^1", -- [54]
-					"8e9b56^1", -- [55]
-					"883ca0^1", -- [56]
-					"864bf7^1", -- [57]
-					"8ed633^1", -- [58]
-					"8f34de^1", -- [59]
-					"63e2d9^1", -- [60]
-					"872c90^1", -- [61]
-					"909b67^1", -- [62]
-					"880ce1^1", -- [63]
-					"769cd7^1", -- [64]
-					"5dc66c^1", -- [65]
-					"8c865c^1", -- [66]
-					"858ccc^1", -- [67]
-					"818b52^1", -- [68]
-					"93fb71^1", -- [69]
-					"736746^1", -- [70]
-					"83b9e3^1", -- [71]
-					"8ce614^1", -- [72]
-					"91f775^1", -- [73]
-					"7f262f^1", -- [74]
-					"8599b1^1", -- [75]
-					"5f272f^1", -- [76]
-				},
-				[10] = {
-					"7fc3d3^1", -- [1]
-					"6636ad^1", -- [2]
-					"5f484a^1", -- [3]
-					"78f802^1", -- [4]
-					"832868^1", -- [5]
-					"83092b^1", -- [6]
-					"8c2b34^3", -- [7]
-					"84221c^1", -- [8]
-					"9162a0^1", -- [9]
-					"9373b3^1", -- [10]
-					"8994f4^1", -- [11]
-					"8fe7f1^1", -- [12]
-					"85a98d^1", -- [13]
-					"7fc882^1", -- [14]
-					"62a684^1", -- [15]
-					"5fb862^1", -- [16]
-					"66d438^1", -- [17]
-					"68c424^1", -- [18]
-					"8f97d0^1", -- [19]
-					"8c39d1^1", -- [20]
-					"841b6d^1", -- [21]
-					"839951^1", -- [22]
-					"682448^1", -- [23]
-					"8964cf^1", -- [24]
-					"93e2db^1", -- [25]
-					"7ef368^1", -- [26]
-					"65569c^1", -- [27]
-					"8a14a4^1", -- [28]
-					"9163bd^1", -- [29]
-					"9032b0^1", -- [30]
-					"5b6532^1", -- [31]
-					"5af578^1", -- [32]
-					"864972^1", -- [33]
-					"854b3f^1", -- [34]
-					"83cb33^1", -- [35]
-					"928399^1", -- [36]
-					"7b9c75^1", -- [37]
-					"8d3a29^1", -- [38]
-					"8923bf^1", -- [39]
-					"8cd9f6^1", -- [40]
-					"79b7e0^1", -- [41]
-				},
-				[34] = {
-					"806ad0^1", -- [1]
-					"934727^1", -- [2]
-					"903438^1", -- [3]
-					"80b8bb^1", -- [4]
-					"83fa85^1", -- [5]
-					"7d9be8^1", -- [6]
-					"8af774^1", -- [7]
-					"8e2582^1", -- [8]
-					"7f9402^1", -- [9]
-					"7a454f^1", -- [10]
-					"8fbaf6^1", -- [11]
-					"91cbda^1", -- [12]
-					"7714c1^1", -- [13]
-					"6ec4db^2", -- [14]
-					"8fa3fb^1", -- [15]
-					"94c8d1^1", -- [16]
-					"919865^1", -- [17]
-					"969752^1", -- [18]
-					"63f337^1", -- [19]
-					"6fb494^1", -- [20]
-					"633820^1", -- [21]
-					"80e87d^1", -- [22]
-					"916886^1", -- [23]
-					"905c05^1", -- [24]
-					"831ac6^1", -- [25]
-					"6d1246^1", -- [26]
-					"623372^1", -- [27]
-					"7124ee^1", -- [28]
-					"6034c2^1", -- [29]
-					"66f7cf^1", -- [30]
-					"7c8520^1", -- [31]
-					"5cd49b^1", -- [32]
-					"6c325f^1", -- [33]
-					"62b35c^1", -- [34]
-					"912c26^1", -- [35]
-					"902609^1", -- [36]
-					"78ccd1^1", -- [37]
-					"8b975c^1", -- [38]
-					"92090a^1", -- [39]
-					"67880b^1", -- [40]
-					"7b9cb9^1", -- [41]
-					"92ab39^1", -- [42]
-					"926974^1", -- [43]
-					"7ec3de^1", -- [44]
-					"7954ba^1", -- [45]
-					"8f15b9^1", -- [46]
-					"92092b^1", -- [47]
-					"817c11^1", -- [48]
+			[9000] = {
+				[58] = {
+					"8eeffa^1", -- [1]
 				},
 			},
 			[4006] = {
@@ -7934,26 +10264,23 @@ NxData = {
 					"539cf2^1", -- [9]
 					"52f68b^1", -- [10]
 				},
-				[24] = {
-					"49e52b^1", -- [1]
-					"5d9e16^1", -- [2]
-					"7f320b^1", -- [3]
-					"63c400^1", -- [4]
-					"59fb4c^1", -- [5]
-					"662b7a^1", -- [6]
-					"580d55^1", -- [7]
-					"7ee4fb^1", -- [8]
-					"9d1afc^1", -- [9]
-					"9848e3^1", -- [10]
-					"91716c^1", -- [11]
-					"9e0791^1", -- [12]
-					"abeb40^1", -- [13]
-					"770b7b^1", -- [14]
-					"4978e7^1", -- [15]
-					"6f56af^1", -- [16]
-					"6262c0^1", -- [17]
-					"7ff965^1", -- [18]
-					"6449b8^1", -- [19]
+				[30] = {
+					"896357^1", -- [1]
+					"5b25c6^1", -- [2]
+					"4f1602^1", -- [3]
+					"97057d^1", -- [4]
+					"765459^1", -- [5]
+					"91044e^1", -- [6]
+					"985695^1", -- [7]
+					"92dae2^1", -- [8]
+					"a4bbe2^1", -- [9]
+					"a4591c^1", -- [10]
+					"ae7b8a^1", -- [11]
+					"8e09b0^1", -- [12]
+					"82e2c0^1", -- [13]
+					"a4eaf4^1", -- [14]
+					"7572b5^1", -- [15]
+					"6eb51e^1", -- [16]
 				},
 				[34] = {
 					"985201^1", -- [1]
@@ -8019,23 +10346,26 @@ NxData = {
 					"3f2a64^1", -- [34]
 					"33c905^1", -- [35]
 				},
-				[30] = {
-					"896357^1", -- [1]
-					"5b25c6^1", -- [2]
-					"4f1602^1", -- [3]
-					"97057d^1", -- [4]
-					"765459^1", -- [5]
-					"91044e^1", -- [6]
-					"985695^1", -- [7]
-					"92dae2^1", -- [8]
-					"a4bbe2^1", -- [9]
-					"a4591c^1", -- [10]
-					"ae7b8a^1", -- [11]
-					"8e09b0^1", -- [12]
-					"82e2c0^1", -- [13]
-					"a4eaf4^1", -- [14]
-					"7572b5^1", -- [15]
-					"6eb51e^1", -- [16]
+				[24] = {
+					"49e52b^1", -- [1]
+					"5d9e16^1", -- [2]
+					"7f320b^1", -- [3]
+					"63c400^1", -- [4]
+					"59fb4c^1", -- [5]
+					"662b7a^1", -- [6]
+					"580d55^1", -- [7]
+					"7ee4fb^1", -- [8]
+					"9d1afc^1", -- [9]
+					"9848e3^1", -- [10]
+					"91716c^1", -- [11]
+					"9e0791^1", -- [12]
+					"abeb40^1", -- [13]
+					"770b7b^1", -- [14]
+					"4978e7^1", -- [15]
+					"6f56af^1", -- [16]
+					"6262c0^1", -- [17]
+					"7ff965^1", -- [18]
+					"6449b8^1", -- [19]
 				},
 			},
 			[1027] = {
@@ -8166,78 +10496,165 @@ NxData = {
 					"716eef^1", -- [2]
 				},
 			},
-			[1017] = {
-				[36] = {
-					"89e75c^1", -- [1]
-					"877799^1", -- [2]
-					"860727^1", -- [3]
-					"608450^1", -- [4]
-					"a6094b^1", -- [5]
-					"64d844^1", -- [6]
-					"67bb59^1", -- [7]
-					"b5f810^1", -- [8]
-					"a9667b^1", -- [9]
-					"a29706^1", -- [10]
-					"5dd440^1", -- [11]
-					"5fe430^1", -- [12]
-					"a229b8^1", -- [13]
-					"ab568e^1", -- [14]
-					"8a88ac^1", -- [15]
-					"796a5d^1", -- [16]
-					"61e40c^1", -- [17]
-					"9b771f^1", -- [18]
-					"b3686a^1", -- [19]
-					"6b9b7f^1", -- [20]
-					"676b79^1", -- [21]
-					"6aeb9c^1", -- [22]
+			[2019] = {
+				[24] = {
+					"ad9d9f^1", -- [1]
+					"9af23e^1", -- [2]
+					"99e2a1^1", -- [3]
+					"8f6356^1", -- [4]
+					"9e8177^1", -- [5]
+					"7a67ab^1", -- [6]
+					"905c23^1", -- [7]
+					"9d5ca9^1", -- [8]
+					"9e79eb^1", -- [9]
+					"9dab0e^1", -- [10]
+					"944a22^1", -- [11]
+					"94cc90^1", -- [12]
+					"8dcbfa^1", -- [13]
+					"8bab1a^1", -- [14]
+					"a13a98^1", -- [15]
+					"998a6c^1", -- [16]
+					"9e0208^1", -- [17]
+					"7fd2ef^1", -- [18]
+					"78f311^1", -- [19]
+					"728491^1", -- [20]
+					"5db29d^1", -- [21]
+					"63f268^1", -- [22]
+					"8033d4^1", -- [23]
+					"849328^1", -- [24]
+					"73285c^1", -- [25]
+					"7788cb^1", -- [26]
+					"815960^1", -- [27]
+					"83c8a4^1", -- [28]
+					"8ce6eb^1", -- [29]
+					"8fe525^1", -- [30]
+					"8486bf^1", -- [31]
+					"9389d0^1", -- [32]
+					"8dab49^1", -- [33]
+					"946a98^1", -- [34]
+					"a299d4^1", -- [35]
+					"a489c0^1", -- [36]
+					"a93949^1", -- [37]
+					"984a2b^1", -- [38]
+					"a86998^1", -- [39]
+					"a5c92d^1", -- [40]
+					"a8b8b0^1", -- [41]
+					"a7cc64^1", -- [42]
+					"a0ec0a^1", -- [43]
+					"a019ae^1", -- [44]
+					"a2d989^1", -- [45]
+					"88c2c9^1", -- [46]
+					"7d93ee^1", -- [47]
+					"74f451^1", -- [48]
+					"88b570^1", -- [49]
+					"810715^1", -- [50]
+					"83e925^1", -- [51]
+					"8a3964^1", -- [52]
+					"a3b1ba^1", -- [53]
+					"6ac2ed^1", -- [54]
+					"7d53a1^1", -- [55]
+					"8b8923^1", -- [56]
+					"89886f^1", -- [57]
+					"8ce818^1", -- [58]
+					"8a86dc^1", -- [59]
+					"98dccc^1", -- [60]
+					"a44caf^1", -- [61]
+					"a41bee^1", -- [62]
+					"6702e2^1", -- [63]
+					"8e0b0f^1", -- [64]
+					"99bc45^1", -- [65]
+					"adcd0c^1", -- [66]
+					"7813fb^1", -- [67]
+					"8908e2^1", -- [68]
+					"85198f^1", -- [69]
+					"8bbb99^1", -- [70]
 				},
-				[13] = {
-					"97f85d^1", -- [1]
-					"6b2463^1", -- [2]
-					"624555^1", -- [3]
-					"65c639^1", -- [4]
-					"7a9bd4^1", -- [5]
-					"aca897^1", -- [6]
-					"b897c3^1", -- [7]
-					"96977b^1", -- [8]
-					"81a683^1", -- [9]
-					"75f570^1", -- [10]
-					"86d8a3^1", -- [11]
-					"9fe938^1", -- [12]
-					"915971^1", -- [13]
-					"742786^1", -- [14]
-					"76b52b^1", -- [15]
-					"5d35cd^1", -- [16]
-					"4cc8dd^1", -- [17]
-					"676459^1", -- [18]
-					"6fc70d^1", -- [19]
-					"7be7e8^1", -- [20]
-					"9388b6^1", -- [21]
-					"955904^1", -- [22]
-					"7db669^1", -- [23]
-					"9417a8^1", -- [24]
-					"5d856e^1", -- [25]
-					"67a658^1", -- [26]
-					"b6479b^1", -- [27]
-					"9c98d4^1", -- [28]
-					"90d75a^1", -- [29]
-					"710527^1", -- [30]
-					"5d452b^1", -- [31]
-					"6de4a3^1", -- [32]
-					"74781d^1", -- [33]
-					"99c95a^1", -- [34]
-					"a128fa^1", -- [35]
-					"b2086d^1", -- [36]
-					"8e0734^1", -- [37]
-					"5a6a7c^1", -- [38]
-					"8c8920^1", -- [39]
-					"5d29c7^1", -- [40]
-					"6a7610^1", -- [41]
-					"7bb50a^1", -- [42]
-					"4f3858^1", -- [43]
-					"805609^1", -- [44]
-					"6f0b9a^1", -- [45]
-					"6ca41d^1", -- [46]
+				[6] = {
+					"ad7d57^1", -- [1]
+					"893c83^1", -- [2]
+					"950c48^1", -- [3]
+					"9bdc20^1", -- [4]
+					"99ba55^1", -- [5]
+					"90ac9d^1", -- [6]
+					"8e0be5^1", -- [7]
+					"9c7a9d^1", -- [8]
+					"93d9ce^1", -- [9]
+					"908996^1", -- [10]
+					"8cd9e5^1", -- [11]
+					"8e5a94^1", -- [12]
+					"9eca94^1", -- [13]
+					"98fa12^1", -- [14]
+					"aa3d04^1", -- [15]
+					"97acaa^1", -- [16]
+					"acbca1^1", -- [17]
+					"8fc9d8^1", -- [18]
+					"922a68^1", -- [19]
+					"8dfb7e^1", -- [20]
+					"8c0c44^1", -- [21]
+					"a3ac4c^1", -- [22]
+					"8dbc7e^1", -- [23]
+					"a8fc62^1", -- [24]
+				},
+				[10] = {
+					"a4d096^1", -- [1]
+					"6d9527^1", -- [2]
+					"69a2a4^1", -- [3]
+					"5a4342^1", -- [4]
+					"5e734d^1", -- [5]
+					"7f58e3^1", -- [6]
+					"8f96c6^1", -- [7]
+					"9929b6^1", -- [8]
+					"9cdb06^1", -- [9]
+					"9b5abf^1", -- [10]
+					"9e19b7^1", -- [11]
+					"a0f12b^1", -- [12]
+					"79f50b^1", -- [13]
+					"8d55a8^1", -- [14]
+					"8056eb^1", -- [15]
+					"81d8a1^1", -- [16]
+					"7b9292^1", -- [17]
+					"696369^1", -- [18]
+					"66e24e^1", -- [19]
+					"58d2f1^1", -- [20]
+					"8e3872^1", -- [21]
+					"8f26fc^1", -- [22]
+					"9c30f9^1", -- [23]
+					"83d1e7^1", -- [24]
+					"63f396^1", -- [25]
+					"740293^1", -- [26]
+					"80a74b^1", -- [27]
+					"81b8dd^1", -- [28]
+				},
+				[34] = {
+					"976156^1", -- [1]
+					"8a7289^1", -- [2]
+					"9c920c^1", -- [3]
+					"7c12f2^1", -- [4]
+					"7a23ca^1", -- [5]
+					"79039b^1", -- [6]
+					"923271^1", -- [7]
+					"8bb5eb^1", -- [8]
+					"8aa671^1", -- [9]
+					"80f655^1", -- [10]
+					"8376f6^1", -- [11]
+					"9c614d^1", -- [12]
+					"81d48d^1", -- [13]
+					"84458e^1", -- [14]
+					"84766d^1", -- [15]
+					"8bb715^1", -- [16]
+					"80f779^1", -- [17]
+					"81f2d7^1", -- [18]
+					"7cd44f^1", -- [19]
+					"7c35a3^1", -- [20]
+					"889760^1", -- [21]
+					"8db239^1", -- [22]
+					"8643ba^1", -- [23]
+					"78543a^1", -- [24]
+					"8bb5a9^1", -- [25]
+					"81733c^1", -- [26]
+					"87c302^1", -- [27]
+					"86c5ae^1", -- [28]
+					"8ba62f^1", -- [29]
 				},
 			},
 			[4007] = {
@@ -8481,6 +10898,668 @@ NxData = {
 					"af3c22^1", -- [237]
 					"78f8a8^1", -- [238]
 					"740640^1", -- [239]
+				},
+			},
+			[2011] = {
+				[5] = {
+					"5e1dbd^1", -- [1]
+					"867b81^1", -- [2]
+					"5edb68^1", -- [3]
+					"598917^1", -- [4]
+					"6e7832^1", -- [5]
+					"b066f7^1", -- [6]
+					"5ddde6^1", -- [7]
+					"863b54^1", -- [8]
+					"aea7bd^1", -- [9]
+					"5fee07^1", -- [10]
+					"8f2d36^1", -- [11]
+					"6e7de6^1", -- [12]
+					"8dbda9^1", -- [13]
+					"5c095d^1", -- [14]
+					"8f88db^1", -- [15]
+					"b06739^1", -- [16]
+					"ad576e^1", -- [17]
+					"8b9d6c^1", -- [18]
+					"6e3d78^1", -- [19]
+					"84bb50^1", -- [20]
+					"acd745^1", -- [21]
+					"731dad^1", -- [22]
+					"5879a6^1", -- [23]
+					"b0676e^1", -- [24]
+					"8b9d40^1", -- [25]
+					"587965^1", -- [26]
+					"61ada1^1", -- [27]
+					"ae16f3^1", -- [28]
+					"735880^1", -- [29]
+					"84fb02^1", -- [30]
+					"88cb1f^1", -- [31]
+					"735847^1", -- [32]
+					"6ec8aa^1", -- [33]
+					"6e8864^1", -- [34]
+					"8a1b70^1", -- [35]
+					"6dfdb5^1", -- [36]
+					"b027e9^1", -- [37]
+					"b067b7^1", -- [38]
+					"5ffb89^1", -- [39]
+					"8ca8a5^1", -- [40]
+					"72489b^1", -- [41]
+					"73c860^1", -- [42]
+					"70285d^1", -- [43]
+					"8b1b52^1", -- [44]
+					"b2079a^1", -- [45]
+					"b32775^1", -- [46]
+					"b367df^1", -- [47]
+					"8bfb32^1", -- [48]
+					"857b28^1", -- [49]
+					"8afb14^1", -- [50]
+					"8f5d61^1", -- [51]
+					"905d75^1", -- [52]
+					"706848^1", -- [53]
+					"721863^1", -- [54]
+					"7068ba^1", -- [55]
+				},
+				[10] = {
+					"b1f5c9^1", -- [1]
+					"a21bc6^1", -- [2]
+					"6cec1c^1", -- [3]
+					"b7db37^1", -- [4]
+					"96dafe^1", -- [5]
+					"692bbb^1", -- [6]
+					"a63b60^1", -- [7]
+					"92e9ff^1", -- [8]
+					"4f4940^1", -- [9]
+					"addaac^1", -- [10]
+					"ab88da^1", -- [11]
+					"b16867^1", -- [12]
+					"979d90^1", -- [13]
+					"5cd888^1", -- [14]
+					"90fc08^1", -- [15]
+					"b89c5a^1", -- [16]
+					"8a9ad9^1", -- [17]
+					"6d2bca^1", -- [18]
+					"48ecc0^1", -- [19]
+					"4e4b71^1", -- [20]
+					"b16948^1", -- [21]
+					"69dcc0^1", -- [22]
+					"b4cdde^1", -- [23]
+					"52da09^1", -- [24]
+					"5c0cf1^1", -- [25]
+					"8c1ba2^1", -- [26]
+					"434c7a^1", -- [27]
+					"4c3bca^1", -- [28]
+					"762ce9^1", -- [29]
+					"5f1c28^1", -- [30]
+					"454bd4^1", -- [31]
+					"907af3^1", -- [32]
+					"52ac45^1", -- [33]
+					"62fc41^1", -- [34]
+					"a63a11^1", -- [35]
+					"72cbba^1", -- [36]
+					"9c0d1e^1", -- [37]
+					"b37e71^1", -- [38]
+					"797c97^1", -- [39]
+					"ab4755^1", -- [40]
+					"9b8c3e^1", -- [41]
+					"8a2a15^1", -- [42]
+					"8b5c5e^1", -- [43]
+					"5fecf1^1", -- [44]
+					"5468e6^1", -- [45]
+				},
+				[34] = {
+					"8a9d06^1", -- [1]
+					"8ad94c^1", -- [2]
+					"4c3880^1", -- [3]
+					"6bad9d^1", -- [4]
+					"4fdbae^1", -- [5]
+					"85091c^1", -- [6]
+					"9c1910^1", -- [7]
+					"485ae5^1", -- [8]
+					"878bd7^1", -- [9]
+					"72dadb^1", -- [10]
+					"8a6889^1", -- [11]
+					"6cbbcf^1", -- [12]
+					"71d8d7^1", -- [13]
+					"854844^1", -- [14]
+					"8ffc24^1", -- [15]
+					"9dc8d2^1", -- [16]
+					"623971^1", -- [17]
+					"949d2a^1", -- [18]
+					"9aa86b^1", -- [19]
+					"59ca3e^1", -- [20]
+					"a6fa29^1", -- [21]
+					"67880d^1", -- [22]
+					"83ad99^1", -- [23]
+					"b706f7^1", -- [24]
+					"9e0c41^1", -- [25]
+					"ad0ceb^1", -- [26]
+					"b689cf^1", -- [27]
+					"a2190b^1", -- [28]
+					"9d0ccc^1", -- [29]
+					"46293d^1", -- [30]
+					"5f2c05^1", -- [31]
+					"6efaa7^1", -- [32]
+					"773a7b^1", -- [33]
+					"a1ea26^1", -- [34]
+					"9e4be3^1", -- [35]
+					"ab0731^1", -- [36]
+					"8cfa2e^1", -- [37]
+					"6408db^1", -- [38]
+					"a9c7f9^1", -- [39]
+					"456b40^1", -- [40]
+					"79384b^1", -- [41]
+					"56f894^1", -- [42]
+					"6ef801^1", -- [43]
+					"781c68^1", -- [44]
+					"938a42^1", -- [45]
+					"60ee55^1", -- [46]
+					"39cc5a^1", -- [47]
+					"434a21^1", -- [48]
+					"b1662f^1", -- [49]
+					"aa48ff^1", -- [50]
+					"76a923^1", -- [51]
+					"49e9b3^1", -- [52]
+					"93cae1^1", -- [53]
+					"9e1b06^1", -- [54]
+					"a7c997^1", -- [55]
+					"670e40^1", -- [56]
+					"4928e2^1", -- [57]
+					"8998aa^1", -- [58]
+					"567b37^1", -- [59]
+					"7cdaa1^1", -- [60]
+					"7b89e2^1", -- [61]
+					"b1bd90^1", -- [62]
+					"b9185b^1", -- [63]
+					"8eeb1f^1", -- [64]
+					"8c6816^1", -- [65]
+					"908dd7^1", -- [66]
+					"535a63^1", -- [67]
+					"4a6dc1^1", -- [68]
+					"7d8c15^1", -- [69]
+					"640874^1", -- [70]
+					"992b2f^1", -- [71]
+					"ac5b8b^1", -- [72]
+					"8efb8a^1", -- [73]
+					"b43af2^1", -- [74]
+					"5fe8f3^1", -- [75]
+					"691d12^1", -- [76]
+					"8f7d5c^1", -- [77]
+					"4659f8^1", -- [78]
+					"98691b^1", -- [79]
+					"755847^1", -- [80]
+					"94799a^1", -- [81]
+					"975bc2^1", -- [82]
+					"539cf9^1", -- [83]
+					"7a6959^1", -- [84]
+					"959b91^1", -- [85]
+					"74696d^1", -- [86]
+					"8b1dca^1", -- [87]
+					"5f19c3^1", -- [88]
+					"a8bae9^1", -- [89]
+					"8a1c6a^1", -- [90]
+					"525c77^1", -- [91]
+					"852dc8^1", -- [92]
+				},
+				[30] = {
+					"b85797^1", -- [1]
+					"ab4db1^1", -- [2]
+					"78f843^1", -- [3]
+					"90bd1a^1", -- [4]
+					"6e7e17^1", -- [5]
+					"857a63^1", -- [6]
+					"6fb8ff^1", -- [7]
+					"a949d3^1", -- [8]
+					"414c45^1", -- [9]
+					"a98b75^1", -- [10]
+					"af2c2d^1", -- [11]
+					"ad9979^1", -- [12]
+					"92b9a5^1", -- [13]
+					"8be9b0^1", -- [14]
+					"5cd9ec^1", -- [15]
+					"b0eb1f^1", -- [16]
+					"9e6d16^1", -- [17]
+					"47d965^1", -- [18]
+					"4399d4^1", -- [19]
+					"b077e4^1", -- [20]
+					"74ba82^1", -- [21]
+					"47ace2^1", -- [22]
+					"60395a^1", -- [23]
+					"71cd47^1", -- [24]
+					"913b4c^1", -- [25]
+					"a119a3^1", -- [26]
+					"660a7b^1", -- [27]
+					"87dada^1", -- [28]
+					"890cc8^1", -- [29]
+					"593bca^1", -- [30]
+					"5a0c7f^1", -- [31]
+					"4e89fc^1", -- [32]
+					"54b8b6^1", -- [33]
+					"9b4b96^1", -- [34]
+					"685e1b^1", -- [35]
+					"928a52^1", -- [36]
+					"857c29^1", -- [37]
+					"481b4c^1", -- [38]
+					"8b1add^1", -- [39]
+					"67db91^1", -- [40]
+					"6918b5^1", -- [41]
+					"b70d36^1", -- [42]
+					"6e3b23^1", -- [43]
+					"511b9e^1", -- [44]
+					"a2aac2^1", -- [45]
+					"837d9d^1", -- [46]
+					"67d9e8^1", -- [47]
+					"7feb78^1", -- [48]
+					"643b8d^1", -- [49]
+					"71cd8c^1", -- [50]
+					"697b39^1", -- [51]
+					"7fddf7^1", -- [52]
+					"a3a9e0^1", -- [53]
+					"95d8ff^1", -- [54]
+					"881918^1", -- [55]
+					"606a83^1", -- [56]
+					"7cca3a^1", -- [57]
+					"898c08^1", -- [58]
+					"9dcc35^1", -- [59]
+					"aa87a3^1", -- [60]
+					"941d90^1", -- [61]
+					"3fad09^1", -- [62]
+					"7d893c^1", -- [63]
+					"5d5bca^1", -- [64]
+					"6d093a^1", -- [65]
+					"9b1a7d^1", -- [66]
+					"880b06^1", -- [67]
+					"ac1ad2^1", -- [68]
+					"41cab0^1", -- [69]
+					"b5499a^1", -- [70]
+					"b75c2d^1", -- [71]
+					"77e971^1", -- [72]
+					"68d80d^1", -- [73]
+					"76ead9^1", -- [74]
+					"4e8c35^1", -- [75]
+					"7a9c62^1", -- [76]
+					"989970^1", -- [77]
+					"b646ba^1", -- [78]
+				},
+			},
+			[4008] = {
+				[43] = {
+					"54fd64^1", -- [1]
+					"6e7c69^1", -- [2]
+					"6aec4e^1", -- [3]
+					"43ec69^1", -- [4]
+					"4d0c0e^1", -- [5]
+					"667c37^1", -- [6]
+					"5aeaa9^1", -- [7]
+					"6a8b8e^1", -- [8]
+					"501c25^1", -- [9]
+					"503aff^1", -- [10]
+					"699c09^1", -- [11]
+					"4fab5b^1", -- [12]
+					"5a09b3^1", -- [13]
+					"67b8e2^1", -- [14]
+					"5ba7f5^1", -- [15]
+					"57a97b^1", -- [16]
+					"4ff8d2^1", -- [17]
+					"3e7928^1", -- [18]
+					"41b8f3^1", -- [19]
+					"5a6960^1", -- [20]
+					"48b999^1", -- [21]
+					"3758cb^1", -- [22]
+					"4947ee^1", -- [23]
+					"4ad94a^1", -- [24]
+					"51bb31^1", -- [25]
+					"587b34^1", -- [26]
+					"6a88f6^1", -- [27]
+					"6e69f5^1", -- [28]
+					"4d075f^1", -- [29]
+					"6288e0^1", -- [30]
+					"77e906^1", -- [31]
+					"376a2c^1", -- [32]
+					"7063c1^1", -- [33]
+					"51c6a8^1", -- [34]
+					"4b1795^1", -- [35]
+					"67d420^1", -- [36]
+					"61b99e^1", -- [37]
+					"60594c^1", -- [38]
+					"3cf8d8^1", -- [39]
+					"7748df^1", -- [40]
+					"56f364^1", -- [41]
+					"64293d^1", -- [42]
+					"4697e7^1", -- [43]
+					"441888^1", -- [44]
+					"43382e^1", -- [45]
+					"4b18de^1", -- [46]
+					"559980^1", -- [47]
+					"4cb87a^1", -- [48]
+					"5bb50c^1", -- [49]
+					"778852^1", -- [50]
+					"834884^1", -- [51]
+					"90b8b1^1", -- [52]
+					"81b861^1", -- [53]
+					"4e36c9^1", -- [54]
+					"60d96e^1", -- [55]
+					"627d8b^1", -- [56]
+					"8cc8e9^1", -- [57]
+					"693965^1", -- [58]
+					"3698fd^1", -- [59]
+					"60fa29^1", -- [60]
+					"9d0b5e^1", -- [61]
+					"a6dc17^1", -- [62]
+					"974b92^1", -- [63]
+					"58053b^1", -- [64]
+					"74583e^1", -- [65]
+					"8128a8^1", -- [66]
+					"7a77d3^1", -- [67]
+					"6555b9^1", -- [68]
+					"683e08^1", -- [69]
+					"6b4dd4^1", -- [70]
+					"6feb57^1", -- [71]
+					"ab7bff^1", -- [72]
+					"b0bbc3^1", -- [73]
+					"9975e5^1", -- [74]
+					"963618^1", -- [75]
+					"99357d^1", -- [76]
+					"a27d29^1", -- [77]
+					"ae3b35^1", -- [78]
+					"a8cb5b^1", -- [79]
+					"96e525^1", -- [80]
+					"75793f^1", -- [81]
+					"a32ba6^1", -- [82]
+					"97fcb3^1", -- [83]
+					"8587d4^1", -- [84]
+					"689343^1", -- [85]
+					"85b910^1", -- [86]
+					"655dea^1", -- [87]
+					"6c8d42^1", -- [88]
+					"93878c^1", -- [89]
+					"7a18a7^1", -- [90]
+					"6f4980^1", -- [91]
+					"59278c^1", -- [92]
+					"b5bb39^1", -- [93]
+					"a6db41^1", -- [94]
+					"489cb4^1", -- [95]
+					"510767^1", -- [96]
+					"498888^1", -- [97]
+					"4df852^1", -- [98]
+					"4eb875^1", -- [99]
+					"4c2aad^1", -- [100]
+					"48fc09^1", -- [101]
+					"9766b6^1", -- [102]
+					"698ac2^1", -- [103]
+					"88b704^1", -- [104]
+					"576a7c^1", -- [105]
+					"6b2a68^1", -- [106]
+					"903869^1", -- [107]
+					"6a2aab^1", -- [108]
+					"40c871^1", -- [109]
+					"76e7db^1", -- [110]
+					"66135d^1", -- [111]
+					"5ffd4a^1", -- [112]
+					"5a1730^1", -- [113]
+					"39d96e^1", -- [114]
+					"585aa8^1", -- [115]
+					"59ad7b^1", -- [116]
+					"48dd48^1", -- [117]
+					"997bed^1", -- [118]
+					"605a92^1", -- [119]
+					"59fd51^1", -- [120]
+					"4af81a^1", -- [121]
+					"5ab4da^1", -- [122]
+					"93269c^1", -- [123]
+					"5643e7^1", -- [124]
+					"56b50d^1", -- [125]
+					"5a0deb^1", -- [126]
+					"985736^1", -- [127]
+					"5fca59^1", -- [128]
+					"5ab354^1", -- [129]
+					"6c6370^1", -- [130]
+					"6274b9^1", -- [131]
+					"6473fd^1", -- [132]
+					"5b1b4c^1", -- [133]
+					"68cd68^1", -- [134]
+					"961c70^1", -- [135]
+					"91b747^1", -- [136]
+					"68eba0^1", -- [137]
+					"96bc1e^1", -- [138]
+					"68ed9a^1", -- [139]
+					"b54b09^1", -- [140]
+					"902507^1", -- [141]
+					"9e4d48^1", -- [142]
+					"b26b8a^1", -- [143]
+					"a0ed56^1", -- [144]
+					"9eb56d^1", -- [145]
+					"a8fb1c^1", -- [146]
+					"a9bb90^1", -- [147]
+					"8e37f6^1", -- [148]
+					"b09b83^1", -- [149]
+					"5ee4ec^1", -- [150]
+					"a0c53c^1", -- [151]
+					"a0756d^1", -- [152]
+					"a67cb7^1", -- [153]
+					"499d8b^1", -- [154]
+					"abfb49^1", -- [155]
+				},
+				[45] = {
+					"6fcbda^1", -- [1]
+					"780a7e^1", -- [2]
+					"7e3b5d^1", -- [3]
+					"7bdafe^1", -- [4]
+					"803a40^1", -- [5]
+					"7b0b42^1", -- [6]
+					"53aa4e^1", -- [7]
+					"52a9a6^1", -- [8]
+					"778a5e^1", -- [9]
+					"7889c4^1", -- [10]
+					"805a62^1", -- [11]
+					"76da32^1", -- [12]
+					"7e99b4^1", -- [13]
+					"8119fd^1", -- [14]
+					"7bd98c^1", -- [15]
+					"3d198c^1", -- [16]
+					"40b96e^1", -- [17]
+					"7c4887^1", -- [18]
+					"7e9b16^1", -- [19]
+					"7eaa7f^1", -- [20]
+					"5029b2^1", -- [21]
+					"79b7ec^1", -- [22]
+					"a347d0^1", -- [23]
+					"a0f7ab^1", -- [24]
+					"a3078d^1", -- [25]
+					"4e5997^1", -- [26]
+					"7d3803^1", -- [27]
+					"747c0b^1", -- [28]
+					"4a89df^1", -- [29]
+					"3d29c1^1", -- [30]
+					"88edda^1", -- [31]
+					"4eaa5d^1", -- [32]
+					"75782c^1", -- [33]
+					"7597f2^1", -- [34]
+					"982dca^1", -- [35]
+					"aefadd^1", -- [36]
+					"a41767^1", -- [37]
+					"972d67^1", -- [38]
+					"92fd4c^1", -- [39]
+					"8068ee^1", -- [40]
+					"7a7bd1^1", -- [41]
+					"6f9c08^1", -- [42]
+					"7e985c^1", -- [43]
+					"4579c3^1", -- [44]
+					"3a09cc^1", -- [45]
+					"901dd5^1", -- [46]
+					"53d9d2^1", -- [47]
+					"7207d7^1", -- [48]
+					"4a7a2d^1", -- [49]
+					"b19aa6^1", -- [50]
+					"3939a3^1", -- [51]
+					"788be9^1", -- [52]
+					"950dd4^1", -- [53]
+					"83ddcc^1", -- [54]
+					"762a14^1", -- [55]
+					"761ba3^1", -- [56]
+					"7bf83e^1", -- [57]
+					"997d9e^1", -- [58]
+					"8b5dad^1", -- [59]
+					"b13aee^1", -- [60]
+					"8ffd90^1", -- [61]
+					"87eda0^1", -- [62]
+					"af8aa6^1", -- [63]
+					"7a899b^1", -- [64]
+					"7cd9a2^1", -- [65]
+				},
+				[41] = {
+					"458cfa^1", -- [1]
+					"54bcdc^1", -- [2]
+					"3c5834^1", -- [3]
+					"412c82^1", -- [4]
+					"4adcbe^1", -- [5]
+					"52e92f^1", -- [6]
+					"897453^1", -- [7]
+					"8fc565^1", -- [8]
+					"50d985^1", -- [9]
+					"55975d^1", -- [10]
+					"3ff855^1", -- [11]
+					"4fd7e8^1", -- [12]
+					"53b66e^1", -- [13]
+					"5449af^1", -- [14]
+					"85840c^1", -- [15]
+					"66645e^1", -- [16]
+					"5726d8^1", -- [17]
+					"5187dd^1", -- [18]
+					"48f721^1", -- [19]
+					"945c7d^1", -- [20]
+					"51ecbb^1", -- [21]
+					"7e6724^1", -- [22]
+					"71763b^1", -- [23]
+					"b38b1f^1", -- [24]
+					"96541e^1", -- [25]
+					"78a6f7^1", -- [26]
+					"964506^1", -- [27]
+					"4e5809^1", -- [28]
+					"91dc20^1", -- [29]
+					"70467a^1", -- [30]
+					"6c05b9^1", -- [31]
+					"455bf1^1", -- [32]
+					"3bd8a1^1", -- [33]
+					"4a29cf^1", -- [34]
+					"53dd52^1", -- [35]
+					"443772^1", -- [36]
+					"3f17e4^1", -- [37]
+					"83c6cc^1", -- [38]
+					"71e6bb^1", -- [39]
+					"89c550^1", -- [40]
+					"821437^1", -- [41]
+					"9215d0^1", -- [42]
+					"4a06ba^1", -- [43]
+					"3de79f^1", -- [44]
+					"5b8dc5^1", -- [45]
+					"5b1532^1", -- [46]
+					"559595^1", -- [47]
+					"934cd7^1", -- [48]
+					"841498^1", -- [49]
+					"8da5b9^1", -- [50]
+					"7bc491^1", -- [51]
+					"992cfb^1", -- [52]
+					"78354c^1", -- [53]
+					"8096d8^1", -- [54]
+					"722531^1", -- [55]
+					"b3eb77^1", -- [56]
+					"9795ce^1", -- [57]
+					"b62b13^1", -- [58]
+					"abfb4c^1", -- [59]
+					"97957e^1", -- [60]
+				},
+			},
+			[1002] = {
+				[6] = {
+					"658c0d^1", -- [1]
+					"524b54^1", -- [2]
+					"51e9d6^1", -- [3]
+					"4a09a9^1", -- [4]
+					"2167b0^1", -- [5]
+					"442947^1", -- [6]
+					"4916ca^1", -- [7]
+					"60c30b^1", -- [8]
+					"79a401^1", -- [9]
+					"ac93af^1", -- [10]
+					"a2544e^1", -- [11]
+					"674c6e^1", -- [12]
+					"2a6b62^1", -- [13]
+					"47f723^1", -- [14]
+					"5945a0^1", -- [15]
+					"6233aa^1", -- [16]
+					"7d5292^1", -- [17]
+					"9fb495^1", -- [18]
+					"ae3330^1", -- [19]
+					"2b7a0f^1", -- [20]
+				},
+				[24] = {
+					"438887^1", -- [1]
+					"3e27d8^1", -- [2]
+					"354766^1", -- [3]
+					"261947^1", -- [4]
+					"3c5a15^1", -- [5]
+					"5116a1^1", -- [6]
+					"6ed2e3^1", -- [7]
+					"818363^1", -- [8]
+					"8c93b7^1", -- [9]
+					"9913ec^1", -- [10]
+					"a53391^1", -- [11]
+					"84aca8^1", -- [12]
+					"79ec82^1", -- [13]
+					"6fcd1c^1", -- [14]
+					"24da92^1", -- [15]
+					"2fb75f^1", -- [16]
+					"41f7b2^1", -- [17]
+					"4e469f^1", -- [18]
+					"80f2ca^1", -- [19]
+					"887343^1", -- [20]
+					"a8945b^1", -- [21]
+					"6dbd08^1", -- [22]
+					"815ce9^1", -- [23]
+					"8adbeb^1", -- [24]
+					"227ada^1", -- [25]
+					"27cadc^1", -- [26]
+					"20da99^1", -- [27]
+					"27e999^1", -- [28]
+				},
+				[10] = {
+					"3a6c26^1", -- [1]
+					"62bcca^1", -- [2]
+					"613c8b^1", -- [3]
+					"31ab9e^1", -- [4]
+					"454b5b^1", -- [5]
+					"371b6f^1", -- [6]
+					"40bb4d^1", -- [7]
+					"3d9c24^1", -- [8]
+					"421b2d^1", -- [9]
+					"369b0f^1", -- [10]
+					"377b44^1", -- [11]
+					"37ac53^1", -- [12]
+				},
+				[34] = {
+					"4afae0^1", -- [1]
+					"452ac7^1", -- [2]
+					"587b5f^1", -- [3]
+					"47aae1^1", -- [4]
+					"586b7d^1", -- [5]
+					"5cdb99^1", -- [6]
+				},
+				[30] = {
+					"372bee^1", -- [1]
+					"4cfa57^1", -- [2]
+					"501c5b^1", -- [3]
+					"343a90^1", -- [4]
+					"524cae^1", -- [5]
+					"51cc72^1", -- [6]
+					"4caa09^1", -- [7]
+					"4ab9e5^1", -- [8]
+					"7ded4a^1", -- [9]
+					"b9c521^1", -- [10]
+					"325bf8^1", -- [11]
+					"316a35^1", -- [12]
+					"33ca49^1", -- [13]
+					"801d3b^1", -- [14]
+					"b50518^1", -- [15]
+					"360bb8^1", -- [16]
 				},
 			},
 			[1010] = {
@@ -8819,33 +11898,21 @@ NxData = {
 					"bc96ed^1", -- [32]
 					"9ab4b3^1", -- [33]
 				},
-				[7] = {
-					"793285^1", -- [1]
-					"b6a6e7^1", -- [2]
-					"9f2c91^1", -- [3]
-					"9a7c7c^1", -- [4]
-					"88aaa6^1", -- [5]
-					"5a1713^1", -- [6]
-					"80e848^1", -- [7]
-					"7b728d^1", -- [8]
-					"aafa3a^1", -- [9]
-					"6bf36b^1", -- [10]
-					"58928e^1", -- [11]
-					"59779e^1", -- [12]
-					"976bb8^1", -- [13]
-					"455796^1", -- [14]
-					"5274b6^1", -- [15]
-					"88dc28^1", -- [16]
-					"901395^1", -- [17]
-					"709402^1", -- [18]
-					"38c9c2^1", -- [19]
-					"6ae662^1", -- [20]
-					"79071b^1", -- [21]
-					"8b8ca6^1", -- [22]
-					"a79bd9^1", -- [23]
-					"b07592^1", -- [24]
-					"ab1991^1", -- [25]
-					"53c693^1", -- [26]
+				[23] = {
+					"82b501^1", -- [1]
+					"2c2457^1", -- [2]
+					"35147d^1", -- [3]
+					"522308^1", -- [4]
+					"4ec3b2^1", -- [5]
+					"9a77fb^1", -- [6]
+					"2bd786^1", -- [7]
+					"513382^1", -- [8]
+					"38358b^1", -- [9]
+					"31c817^1", -- [10]
+					"50b572^1", -- [11]
+					"60753a^1", -- [12]
+					"82c577^1", -- [13]
+					"9e288a^1", -- [14]
 				},
 				[35] = {
 					"1a8a95^1", -- [1]
@@ -8876,799 +11943,33 @@ NxData = {
 					"231423^1", -- [26]
 					"2ae3b7^1", -- [27]
 				},
-				[23] = {
-					"82b501^1", -- [1]
-					"2c2457^1", -- [2]
-					"35147d^1", -- [3]
-					"522308^1", -- [4]
-					"4ec3b2^1", -- [5]
-					"9a77fb^1", -- [6]
-					"2bd786^1", -- [7]
-					"513382^1", -- [8]
-					"38358b^1", -- [9]
-					"31c817^1", -- [10]
-					"50b572^1", -- [11]
-					"60753a^1", -- [12]
-					"82c577^1", -- [13]
-					"9e288a^1", -- [14]
-				},
-			},
-			[1002] = {
-				[6] = {
-					"658c0d^1", -- [1]
-					"524b54^1", -- [2]
-					"51e9d6^1", -- [3]
-					"4a09a9^1", -- [4]
-					"2167b0^1", -- [5]
-					"442947^1", -- [6]
-					"4916ca^1", -- [7]
-					"60c30b^1", -- [8]
-					"79a401^1", -- [9]
-					"ac93af^1", -- [10]
-					"a2544e^1", -- [11]
-					"674c6e^1", -- [12]
-					"2a6b62^1", -- [13]
-					"47f723^1", -- [14]
-					"5945a0^1", -- [15]
-					"6233aa^1", -- [16]
-					"7d5292^1", -- [17]
-					"9fb495^1", -- [18]
-					"ae3330^1", -- [19]
-					"2b7a0f^1", -- [20]
-				},
-				[24] = {
-					"438887^1", -- [1]
-					"3e27d8^1", -- [2]
-					"354766^1", -- [3]
-					"261947^1", -- [4]
-					"3c5a15^1", -- [5]
-					"5116a1^1", -- [6]
-					"6ed2e3^1", -- [7]
-					"818363^1", -- [8]
-					"8c93b7^1", -- [9]
-					"9913ec^1", -- [10]
-					"a53391^1", -- [11]
-					"84aca8^1", -- [12]
-					"79ec82^1", -- [13]
-					"6fcd1c^1", -- [14]
-					"24da92^1", -- [15]
-					"2fb75f^1", -- [16]
-					"41f7b2^1", -- [17]
-					"4e469f^1", -- [18]
-					"80f2ca^1", -- [19]
-					"887343^1", -- [20]
-					"a8945b^1", -- [21]
-					"6dbd08^1", -- [22]
-					"815ce9^1", -- [23]
-					"8adbeb^1", -- [24]
-					"227ada^1", -- [25]
-					"27cadc^1", -- [26]
-					"20da99^1", -- [27]
-					"27e999^1", -- [28]
-				},
-				[10] = {
-					"3a6c26^1", -- [1]
-					"62bcca^1", -- [2]
-					"613c8b^1", -- [3]
-					"31ab9e^1", -- [4]
-					"454b5b^1", -- [5]
-					"371b6f^1", -- [6]
-					"40bb4d^1", -- [7]
-					"3d9c24^1", -- [8]
-					"421b2d^1", -- [9]
-					"369b0f^1", -- [10]
-					"377b44^1", -- [11]
-					"37ac53^1", -- [12]
-				},
-				[34] = {
-					"4afae0^1", -- [1]
-					"452ac7^1", -- [2]
-					"587b5f^1", -- [3]
-					"47aae1^1", -- [4]
-					"586b7d^1", -- [5]
-					"5cdb99^1", -- [6]
-				},
-				[30] = {
-					"372bee^1", -- [1]
-					"4cfa57^1", -- [2]
-					"501c5b^1", -- [3]
-					"343a90^1", -- [4]
-					"524cae^1", -- [5]
-					"51cc72^1", -- [6]
-					"4caa09^1", -- [7]
-					"4ab9e5^1", -- [8]
-					"7ded4a^1", -- [9]
-					"b9c521^1", -- [10]
-					"325bf8^1", -- [11]
-					"316a35^1", -- [12]
-					"33ca49^1", -- [13]
-					"801d3b^1", -- [14]
-					"b50518^1", -- [15]
-					"360bb8^1", -- [16]
-				},
-			},
-			[2012] = {
-				[6] = {
-					"420787^1", -- [1]
-					"75a7ed^1", -- [2]
-					"6ceac9^1", -- [3]
-					"a36903^1", -- [4]
-					"2003d7^1", -- [5]
-					"aef350^1", -- [6]
-					"4a2a6b^1", -- [7]
-					"79768d^1", -- [8]
-					"7eaa45^1", -- [9]
-					"89e8c2^1", -- [10]
-					"390a2d^1", -- [11]
-					"b2b413^1", -- [12]
-					"c364b4^1", -- [13]
-					"461a56^1", -- [14]
-					"ad5979^1", -- [15]
-					"99e7d4^1", -- [16]
-					"55a8f6^1", -- [17]
-					"2fd731^1", -- [18]
-					"2766eb^1", -- [19]
-					"c14699^1", -- [20]
-					"a8b60e^1", -- [21]
-					"b85346^1", -- [22]
-					"4f46eb^1", -- [23]
-					"a1d772^1", -- [24]
-					"ccc55e^1", -- [25]
-					"50848e^1", -- [26]
-					"301836^1", -- [27]
-					"b5c6df^1", -- [28]
-					"388388^1", -- [29]
-					"5c463f^1", -- [30]
-					"a477e1^1", -- [31]
-					"45d91b^1", -- [32]
-					"52d378^1", -- [33]
-					"a29bdf^1", -- [34]
-					"5a88d6^1", -- [35]
-					"4274d7^1", -- [36]
-					"92cbcf^1", -- [37]
-					"c203c9^1", -- [38]
-					"63ba1d^1", -- [39]
-					"91b894^1", -- [40]
-					"41b751^1", -- [41]
-					"9f06a5^1", -- [42]
-					"a04a73^1", -- [43]
-					"894a21^1", -- [44]
-					"47d5f6^1", -- [45]
-					"6ef8d2^1", -- [46]
-				},
 				[7] = {
-					"d1e660^1", -- [1]
-					"508cbc^1", -- [2]
-					"539b5c^1", -- [3]
-					"9cbb16^1", -- [4]
-					"34b7af^1", -- [5]
-					"33a6df^1", -- [6]
-					"aac996^1", -- [7]
-					"2cc7b3^1", -- [8]
-					"a9d46e^1", -- [9]
-					"504bb6^1", -- [10]
-					"a7b8ca^1", -- [11]
-					"a9c81a^1", -- [12]
-					"504e3c^1", -- [13]
-					"a46b75^1", -- [14]
-					"a67938^1", -- [15]
-					"49edfb^1", -- [16]
-					"29b894^1", -- [17]
-					"c496e3^1", -- [18]
-					"5c0e03^1", -- [19]
-					"93c465^1", -- [20]
-					"a54a65^1", -- [21]
-					"9d7c14^1", -- [22]
-					"475b79^1", -- [23]
-					"29f6f3^1", -- [24]
-					"a73c66^1", -- [25]
-					"c04772^1", -- [26]
-					"650d3b^1", -- [27]
-					"cdc5b8^1", -- [28]
-					"695c72^1", -- [29]
-					"5f6bb6^1", -- [30]
-					"b02867^1", -- [31]
-					"c9b63b^1", -- [32]
-					"930a63^1", -- [33]
-				},
-				[10] = {
-					"578273^1", -- [1]
-					"3ce3c2^1", -- [2]
-					"9413cd^1", -- [3]
-					"6382dc^1", -- [4]
-					"2b7863^1", -- [5]
-					"a835c0^1", -- [6]
-					"b028ca^1", -- [7]
-					"c9b542^1", -- [8]
-					"a2e28b^1", -- [9]
-					"b615a5^1", -- [10]
-					"43c116^1", -- [11]
-					"8326c2^1", -- [12]
-					"c6f231^1", -- [13]
-					"c32311^1", -- [14]
-					"440a19^1", -- [15]
-					"7d884b^1", -- [16]
-					"99ec5e^1", -- [17]
-					"39d235^1", -- [18]
-					"ae23c6^1", -- [19]
-					"4f0158^1", -- [20]
-					"29f992^1", -- [21]
-					"4ab2d9^1", -- [22]
-					"4d3230^1", -- [23]
-					"90f894^1", -- [24]
-					"a63ad1^1", -- [25]
-					"b70797^1", -- [26]
-					"907abc^1", -- [27]
-					"346a36^1", -- [28]
-					"3f25f6^1", -- [29]
-					"3fa346^1", -- [30]
-					"822a22^1", -- [31]
-					"9e0353^1", -- [32]
-					"2ec699^1", -- [33]
-					"3de43c^1", -- [34]
-				},
-				[30] = {
-					"a0e7c5^1", -- [1]
-					"55a996^1", -- [2]
-					"3ce6fb^1", -- [3]
-					"46e4ec^1", -- [4]
-					"9309fc^1", -- [5]
-					"51d6b6^1", -- [6]
-					"332884^1", -- [7]
-					"7ac8c6^1", -- [8]
-					"5d1143^1", -- [9]
-					"87999b^1", -- [10]
-					"8fb8ea^1", -- [11]
-					"3cd34b^1", -- [12]
-					"58b1df^1", -- [13]
-					"3a0633^1", -- [14]
-					"83a724^1", -- [15]
-					"c55438^1", -- [16]
-					"5cd465^1", -- [17]
-					"6be678^1", -- [18]
-					"7e06e3^1", -- [19]
-					"9977d9^1", -- [20]
-					"4db5ac^1", -- [21]
-					"aca76e^1", -- [22]
-					"4ec434^1", -- [23]
-					"681af6^1", -- [24]
-					"4dfaa4^1", -- [25]
-					"b0e6a1^1", -- [26]
-					"427996^1", -- [27]
-					"6baa09^1", -- [28]
-					"ac25ad^1", -- [29]
-					"3902b4^1", -- [30]
-					"2d89fc^1", -- [31]
-					"c8c4f0^1", -- [32]
-					"755714^1", -- [33]
-					"562643^1", -- [34]
-					"b9a665^1", -- [35]
-					"56632f^1", -- [36]
-					"961b89^1", -- [37]
-					"af67e9^1", -- [38]
-					"a526eb^1", -- [39]
-					"6ba853^1", -- [40]
-					"49366d^1", -- [41]
-					"b7074d^1", -- [42]
-					"c3961a^1", -- [43]
-				},
-				[34] = {
-					"68a833^1", -- [1]
-					"50d92c^1", -- [2]
-					"6d768d^1", -- [3]
-					"633378^1", -- [4]
-					"41c743^1", -- [5]
-					"b44434^1", -- [6]
-					"3b6497^1", -- [7]
-					"6eb3ad^1", -- [8]
-					"955c31^1", -- [9]
-					"52913f^1", -- [10]
-					"458695^1", -- [11]
-					"4ae500^1", -- [12]
-					"928388^1", -- [13]
-					"7f5a4b^1", -- [14]
-					"9e926e^1", -- [15]
-					"5b46ba^1", -- [16]
-					"6bebae^1", -- [17]
-					"2725ed^1", -- [18]
-					"5ac251^1", -- [19]
-					"77e6df^1", -- [20]
-					"4bf430^1", -- [21]
-					"965322^1", -- [22]
-					"52a4e0^1", -- [23]
-					"4aa822^1", -- [24]
-					"68db75^1", -- [25]
-					"2a7826^1", -- [26]
-					"762867^1", -- [27]
-					"9e0749^1", -- [28]
-					"728305^1", -- [29]
-					"7fe88d^1", -- [30]
-					"3bd246^1", -- [31]
-					"a6c8f8^1", -- [32]
-					"a9d7dd^1", -- [33]
-					"63b231^1", -- [34]
-					"b17536^1", -- [35]
-					"961aa0^1", -- [36]
-					"311aa8^1", -- [37]
-					"689a5a^1", -- [38]
-					"c764b7^1", -- [39]
-					"b8632a^1", -- [40]
-					"c3975d^1", -- [41]
-					"772a3a^1", -- [42]
-					"38c898^1", -- [43]
-					"7e99a6^1", -- [44]
-					"8959d2^1", -- [45]
-					"c663d6^1", -- [46]
-					"539a63^1", -- [47]
-					"9132f5^1", -- [48]
-					"3e7336^1", -- [49]
-					"c1d55b^1", -- [50]
-					"ad22a8^1", -- [51]
-					"c7728a^1", -- [52]
-					"4bc879^1", -- [53]
-					"cb865c^1", -- [54]
-					"4759b3^1", -- [55]
-					"5a531f^1", -- [56]
-					"bc2695^1", -- [57]
-					"9358ce^1", -- [58]
-					"529438^1", -- [59]
-					"33e9c3^1", -- [60]
-					"b432b7^1", -- [61]
-					"90ba3e^1", -- [62]
-					"af66ca^1", -- [63]
-					"811786^1", -- [64]
-					"3c5971^1", -- [65]
-					"47a761^1", -- [66]
-					"42054e^1", -- [67]
-					"4f463b^1", -- [68]
-				},
-				[35] = {
-					"38f3e0^1", -- [1]
-				},
-				[24] = {
-					"613ac9^1", -- [1]
-					"6795b9^1", -- [2]
-					"4a2786^1", -- [3]
-					"8167a7^1", -- [4]
-					"2ab5e9^1", -- [5]
-					"297a98^1", -- [6]
-					"5b47fd^1", -- [7]
-					"3c1529^1", -- [8]
-					"5e65c8^1", -- [9]
-					"5c1708^1", -- [10]
-					"975863^1", -- [11]
-					"60f420^1", -- [12]
-					"5b89a6^1", -- [13]
-					"ad24a7^1", -- [14]
-					"5355ac^1", -- [15]
-					"658af2^1", -- [16]
-					"c83276^1", -- [17]
-					"af37d9^1", -- [18]
-					"95972c^1", -- [19]
-					"5d51f3^1", -- [20]
-					"2cd82e^1", -- [21]
-					"a42afe^1", -- [22]
-					"6ba3d6^1", -- [23]
-					"a19776^1", -- [24]
-					"6786ef^1", -- [25]
-					"8439f4^1", -- [26]
-					"61625d^1", -- [27]
-					"95d32a^1", -- [28]
-					"2dca36^1", -- [29]
-					"3602c8^1", -- [30]
-					"51da11^1", -- [31]
-					"a902ed^1", -- [32]
-					"5194d7^1", -- [33]
-					"23d857^1", -- [34]
-					"380826^1", -- [35]
-					"681928^1", -- [36]
-					"598ac9^1", -- [37]
-					"944af2^1", -- [38]
-				},
-			},
-			[1018] = {
-				[24] = {
-					"9b7b50^1", -- [1]
-					"acd874^1", -- [2]
-					"7d8c72^1", -- [3]
-					"b12903^1", -- [4]
-					"9f09fc^1", -- [5]
-					"6ae577^1", -- [6]
-					"975ba6^1", -- [7]
-					"88ca90^1", -- [8]
-					"751b68^1", -- [9]
-					"7fd934^1", -- [10]
-					"930a94^1", -- [11]
-					"9f0bb6^1", -- [12]
-					"6519ab^1", -- [13]
-					"78a732^1", -- [14]
-					"7eeb89^1", -- [15]
-					"6aec28^1", -- [16]
-					"88cb48^1", -- [17]
-					"6349d3^1", -- [18]
-					"a15b8d^1", -- [19]
-					"a6ba3b^1", -- [20]
-					"6c648e^1", -- [21]
-					"751874^1", -- [22]
-					"84b9f8^1", -- [23]
-					"9e8b06^1", -- [24]
-					"6e8704^1", -- [25]
-					"a4eab4^1", -- [26]
-					"a6f889^1", -- [27]
-					"81080a^1", -- [28]
-					"7f0ae3^1", -- [29]
-					"9c4a3b^1", -- [30]
-					"9bd99c^1", -- [31]
-					"88f9d2^1", -- [32]
-					"781766^1", -- [33]
-				},
-				[10] = {
-					"58f5b8^1", -- [1]
-					"66cc28^1", -- [2]
-					"7147c8^1", -- [3]
-					"6687a7^1", -- [4]
-					"674a21^1", -- [5]
-					"965be3^1", -- [6]
-					"6605bc^1", -- [7]
-					"735427^1", -- [8]
-					"6a2b17^1", -- [9]
-					"718ba6^1", -- [10]
-					"7d4a00^1", -- [11]
-					"685cc4^1", -- [12]
-					"843baa^1", -- [13]
-					"76e4fc^1", -- [14]
-					"7145c0^1", -- [15]
-					"857a25^1", -- [16]
-					"82aab4^1", -- [17]
-					"79f556^1", -- [18]
-					"62f650^1", -- [19]
-					"65c97d^1", -- [20]
-					"6544bb^1", -- [21]
-					"729c08^1", -- [22]
-					"5cd6c2^1", -- [23]
-					"78669d^1", -- [24]
-					"7c0475^1", -- [25]
-					"59c5f1^1", -- [26]
-					"a09b33^1", -- [27]
-					"59c65d^1", -- [28]
-					"6995ac^1", -- [29]
-					"9bfb81^1", -- [30]
-					"809bcb^1", -- [31]
-					"7625f1^1", -- [32]
-					"7358db^1", -- [33]
-					"655b58^1", -- [34]
-					"6918ff^1", -- [35]
-					"7ac735^1", -- [36]
-					"80e9af^1", -- [37]
-					"62bb02^1", -- [38]
-					"899b79^1", -- [39]
-					"69d4e4^1", -- [40]
-					"718508^1", -- [41]
-					"7b3bd3^1", -- [42]
-					"6b2beb^1", -- [43]
-					"6ca89d^1", -- [44]
-					"724647^1", -- [45]
-					"61ecaf^1", -- [46]
-					"60245d^1", -- [47]
-					"735898^1", -- [48]
-					"809b4c^1", -- [49]
-					"5f1a87^1", -- [50]
-					"72c776^1", -- [51]
-					"7a7903^1", -- [52]
-					"7c096d^1", -- [53]
-					"6786ae^1", -- [54]
-					"7c59b4^1", -- [55]
-					"66843c^1", -- [56]
-					"7637bd^1", -- [57]
-					"7c77df^1", -- [58]
-					"7ec8bf^1", -- [59]
-					"74da2e^1", -- [60]
-					"7d3a50^1", -- [61]
-					"899a04^1", -- [62]
-					"7dd83c^1", -- [63]
-					"838959^1", -- [64]
-					"7e1876^1", -- [65]
-					"75c687^1", -- [66]
-					"67f588^1", -- [67]
-					"600595^1", -- [68]
-					"5f5506^1", -- [69]
-					"60253c^1", -- [70]
-					"6df44e^1", -- [71]
-					"6dc4fc^1", -- [72]
-					"797465^1", -- [73]
-					"74950c^1", -- [74]
-					"756580^1", -- [75]
-					"6e49af^1", -- [76]
-					"6a884b^1", -- [77]
-					"6593d9^1", -- [78]
-					"74b46d^1", -- [79]
-					"7496ce^1", -- [80]
-					"70a788^1", -- [81]
-					"6c25db^1", -- [82]
-				},
-				[30] = {
-					"692550^1", -- [1]
-					"6a587d^1", -- [2]
-					"5f666d^1", -- [3]
-					"82aa8b^1", -- [4]
-					"782b5c^1", -- [5]
-					"6aa492^1", -- [6]
-					"6127ab^1", -- [7]
-					"97aa45^1", -- [8]
-					"71064b^1", -- [9]
-					"62fab4^1", -- [10]
-					"a4a8c2^1", -- [11]
-					"8808c5^1", -- [12]
-					"71cbaa^1", -- [13]
-					"ab0a6b^1", -- [14]
-					"77e5be^1", -- [15]
-					"8c1bf4^1", -- [16]
-					"87cab5^1", -- [17]
-					"6aa724^1", -- [18]
-					"8c1a29^1", -- [19]
-					"acd9e1^1", -- [20]
-					"87cc42^1", -- [21]
-					"9388ca^1", -- [22]
-					"7f1ae1^1", -- [23]
-					"7f5c45^1", -- [24]
-					"9b7bfc^1", -- [25]
-					"64860e^1", -- [26]
-					"766888^1", -- [27]
-					"715b2f^1", -- [28]
-					"a29a2d^1", -- [29]
-					"a19b75^1", -- [30]
-					"ae18a9^1", -- [31]
-					"72c5ed^1", -- [32]
-					"60e6e7^1", -- [33]
-					"ad9844^1", -- [34]
-					"72c504^1", -- [35]
-					"868bc7^1", -- [36]
-					"a2d9c7^1", -- [37]
-					"695c9f^1", -- [38]
-					"83a986^1", -- [39]
-					"a5b9ed^1", -- [40]
-					"70c6ec^1", -- [41]
-					"99a9cb^1", -- [42]
-					"76e755^1", -- [43]
-					"9dd9cb^1", -- [44]
-					"a77847^1", -- [45]
-					"6957c0^1", -- [46]
-					"6688db^1", -- [47]
-					"930a5b^1", -- [48]
-					"6e3bd3^1", -- [49]
-					"9bb8d5^1", -- [50]
-					"759691^1", -- [51]
-					"7e18da^1", -- [52]
-					"9b2896^1", -- [53]
-					"61f735^1", -- [54]
-					"996b89^1", -- [55]
-					"9cfa94^1", -- [56]
-					"67d99f^1", -- [57]
-					"5c459c^1", -- [58]
-					"5dd515^1", -- [59]
-					"7208ce^1", -- [60]
-					"6f758f^1", -- [61]
-					"8269f8^1", -- [62]
-					"61647d^1", -- [63]
-					"9bf946^1", -- [64]
-					"b1f965^1", -- [65]
-					"6ff759^1", -- [66]
-					"62b9f8^1", -- [67]
-					"94cb8d^1", -- [68]
-					"749bb7^1", -- [69]
-					"9f8993^1", -- [70]
-					"ab898a^1", -- [71]
-					"934c20^1", -- [72]
-					"668b0b^1", -- [73]
-					"8f2b7e^1", -- [74]
-					"87c9f8^1", -- [75]
-					"934b48^1", -- [76]
-					"762546^1", -- [77]
-					"79b413^1", -- [78]
-					"736c24^1", -- [79]
-					"7556e0^1", -- [80]
-					"6bab7d^1", -- [81]
-					"7104b2^1", -- [82]
-					"8d6aac^1", -- [83]
-					"76a465^1", -- [84]
-					"857a8b^1", -- [85]
-					"9aea76^1", -- [86]
-					"7545dd^1", -- [87]
-					"78d778^1", -- [88]
-					"7aa9e8^1", -- [89]
-					"777a38^1", -- [90]
-					"8b7a70^1", -- [91]
-					"920a92^1", -- [92]
-					"994a74^1", -- [93]
-					"9a793a^1", -- [94]
-					"9c7861^1", -- [95]
-					"9f88df^1", -- [96]
-					"a848a0^1", -- [97]
-					"a8d73c^1", -- [98]
-					"838931^1", -- [99]
-					"878959^1", -- [100]
-					"9917ba^1", -- [101]
-					"a93790^1", -- [102]
-					"9247ac^1", -- [103]
-					"862937^1", -- [104]
-					"8cc952^1", -- [105]
-					"846852^1", -- [106]
-					"8368b5^1", -- [107]
-					"79466b^1", -- [108]
-					"7fa7b7^1", -- [109]
-					"6d46c6^1", -- [110]
-					"64f5a3^1", -- [111]
-					"66c3f9^1", -- [112]
-					"743420^1", -- [113]
-					"78d4a5^1", -- [114]
-					"7aa4aa^1", -- [115]
-					"7304df^1", -- [116]
-					"6ee63c^1", -- [117]
-					"675648^1", -- [118]
-					"8b98df^1", -- [119]
-					"985921^1", -- [120]
-					"932a15^1", -- [121]
-					"91e9da^1", -- [122]
-					"807ab7^1", -- [123]
-					"71ea4c^1", -- [124]
-					"6c086e^1", -- [125]
-					"6666b8^1", -- [126]
-					"666612^1", -- [127]
-					"7933e8^1", -- [128]
-					"7bd39c^1", -- [129]
-					"736669^1", -- [130]
-					"741611^1", -- [131]
-				},
-				[34] = {
-					"949a86^1", -- [1]
-					"acd948^1", -- [2]
-					"a3aa63^1", -- [3]
-					"9078bd^1", -- [4]
-					"850b11^1", -- [5]
-					"afa82e^1", -- [6]
-					"86ba67^1", -- [7]
-					"a37992^1", -- [8]
-					"8c1acd^1", -- [9]
-					"afa9d8^1", -- [10]
-					"7978c1^1", -- [11]
-					"772786^1", -- [12]
-					"708c76^1", -- [13]
-					"685a25^1", -- [14]
-					"7dc9dc^1", -- [15]
-					"7218a1^1", -- [16]
-					"6888a1^1", -- [17]
-					"5d1521^1", -- [18]
-					"6b659c^1", -- [19]
-					"5a4511^1", -- [20]
-					"97db60^1", -- [21]
-					"b2394c^1", -- [22]
-					"7e4baa^1", -- [23]
-					"6c6407^1", -- [24]
-					"6825e5^1", -- [25]
-					"681934^1", -- [26]
-					"7d4955^1", -- [27]
-					"63f5c4^1", -- [28]
-					"836860^1", -- [29]
-					"aa0a05^1", -- [30]
-					"77a5c4^1", -- [31]
-					"62b97e^1", -- [32]
-					"88499e^1", -- [33]
-					"735535^1", -- [34]
-					"b1b8ca^1", -- [35]
-					"772654^1", -- [36]
-					"6cec90^1", -- [37]
-					"7246be^1", -- [38]
-					"a4eb2b^1", -- [39]
-					"8f2c49^1", -- [40]
-					"9f8a2d^1", -- [41]
-					"63fcd8^1", -- [42]
-					"685772^1", -- [43]
-					"67d4cf^1", -- [44]
-					"9a6a52^1", -- [45]
-					"a00bc2^1", -- [46]
-					"84b9a7^1", -- [47]
-					"93dc51^1", -- [48]
-					"a7fa9c^1", -- [49]
-					"65c529^1", -- [50]
-					"7664bf^1", -- [51]
-					"6f363b^1", -- [52]
-					"88dc5a^1", -- [53]
-					"691c5a^1", -- [54]
-					"5dd5f7^1", -- [55]
-					"a878b1^1", -- [56]
-					"a779cb^1", -- [57]
-					"9c49f0^1", -- [58]
-					"7af444^1", -- [59]
-					"6076cb^1", -- [60]
-					"a94826^1", -- [61]
-					"7bc3ff^1", -- [62]
-					"612423^1", -- [63]
-					"a3eb50^1", -- [64]
-					"a05ad9^1", -- [65]
-					"5b048e^1", -- [66]
-					"a8f86b^1", -- [67]
-					"9d8b8d^1", -- [68]
-					"6549e0^1", -- [69]
-					"674458^1", -- [70]
-					"62ba63^1", -- [71]
-					"73acab^1", -- [72]
-					"76ec20^1", -- [73]
-					"6efb5d^1", -- [74]
-					"7666be^1", -- [75]
-					"8f6b4c^1", -- [76]
-					"b2b890^1", -- [77]
-					"903bd8^1", -- [78]
-					"782755^1", -- [79]
-					"992895^1", -- [80]
-					"5d167d^1", -- [81]
-					"80986b^1", -- [82]
-					"816c20^1", -- [83]
-					"718749^1", -- [84]
-					"766bdf^1", -- [85]
-					"77a413^1", -- [86]
-					"74146d^1", -- [87]
-					"95dc10^1", -- [88]
-					"8bab9e^1", -- [89]
-					"87cbd0^1", -- [90]
-					"96ea05^1", -- [91]
-					"878884^1", -- [92]
-					"602745^1", -- [93]
-					"6dbb17^1", -- [94]
-					"762c8b^1", -- [95]
-					"a00a44^1", -- [96]
-					"8d4b9a^1", -- [97]
-					"abf895^1", -- [98]
-					"75578d^1", -- [99]
-					"78da5c^1", -- [100]
-					"792a92^1", -- [101]
-					"767b0a^1", -- [102]
-					"882a4b^1", -- [103]
-					"8b1a23^1", -- [104]
-					"8cba21^1", -- [105]
-					"8f0a57^1", -- [106]
-					"9aca12^1", -- [107]
-					"9cfa43^1", -- [108]
-					"a149c0^1", -- [109]
-					"9558c0^1", -- [110]
-					"9fc85e^1", -- [111]
-					"aa989f^1", -- [112]
-					"ac57b1^1", -- [113]
-					"858872^1", -- [114]
-					"7f6899^1", -- [115]
-					"7ee8be^1", -- [116]
-					"a4e760^1", -- [117]
-					"a75788^1", -- [118]
-					"aa7728^1", -- [119]
-					"a52721^1", -- [120]
-					"972782^1", -- [121]
-					"887867^1", -- [122]
-					"937933^1", -- [123]
-					"87f770^1", -- [124]
-					"7a5672^1", -- [125]
-					"81c75e^1", -- [126]
-					"62f5b1^1", -- [127]
-					"63753f^1", -- [128]
-					"60746c^1", -- [129]
-					"62c47d^1", -- [130]
-					"6c4438^1", -- [131]
-					"690511^1", -- [132]
-					"7713e2^1", -- [133]
-					"7d8389^1", -- [134]
-					"790430^1", -- [135]
-					"78d5eb^1", -- [136]
-					"749661^1", -- [137]
-					"6cd687^1", -- [138]
-					"79b694^1", -- [139]
-					"9619ed^1", -- [140]
-					"88eac3^1", -- [141]
-					"6a28a4^1", -- [142]
-					"6cd8dc^1", -- [143]
-					"6683a7^1", -- [144]
-					"79e39e^1", -- [145]
-					"6f84f0^1", -- [146]
-					"797591^1", -- [147]
-					"6ce78a^1", -- [148]
-					"612406^1", -- [149]
+					"793285^1", -- [1]
+					"b6a6e7^1", -- [2]
+					"9f2c91^1", -- [3]
+					"9a7c7c^1", -- [4]
+					"88aaa6^1", -- [5]
+					"5a1713^1", -- [6]
+					"80e848^1", -- [7]
+					"7b728d^1", -- [8]
+					"aafa3a^1", -- [9]
+					"6bf36b^1", -- [10]
+					"58928e^1", -- [11]
+					"59779e^1", -- [12]
+					"976bb8^1", -- [13]
+					"455796^1", -- [14]
+					"5274b6^1", -- [15]
+					"88dc28^1", -- [16]
+					"901395^1", -- [17]
+					"709402^1", -- [18]
+					"38c9c2^1", -- [19]
+					"6ae662^1", -- [20]
+					"79071b^1", -- [21]
+					"8b8ca6^1", -- [22]
+					"a79bd9^1", -- [23]
+					"b07592^1", -- [24]
+					"ab1991^1", -- [25]
+					"53c693^1", -- [26]
 				},
 			},
 			[1028] = {
@@ -10490,248 +12791,23 @@ NxData = {
 					"cf6bba^1", -- [353]
 				},
 			},
-			[1013] = {
-				[34] = {
-					"a34923^1", -- [1]
-					"8876d6^1", -- [2]
-					"9608b4^1", -- [3]
-					"9637aa^1", -- [4]
-					"98da8d^1", -- [5]
-					"6446ea^1", -- [6]
-					"59461a^1", -- [7]
-					"7b2797^1", -- [8]
-					"95d345^1", -- [9]
-					"884943^1", -- [10]
-					"7db6a0^1", -- [11]
-					"8c38bd^1", -- [12]
-					"8e7810^1", -- [13]
-					"92ca2a^1", -- [14]
-					"a15b28^1", -- [15]
-					"a98abd^1", -- [16]
-					"937957^1", -- [17]
-					"5ac9dd^1", -- [18]
-					"647a11^1", -- [19]
-					"6a9a25^1", -- [20]
-					"89f2b5^1", -- [21]
-					"835188^1", -- [22]
-					"88a369^1", -- [23]
-					"61a22c^1", -- [24]
-				},
-				[10] = {
-					"9f68d2^1", -- [1]
-					"9a484b^1", -- [2]
-					"89cbaa^1", -- [3]
-					"8dbbb1^1", -- [4]
-					"98f77f^1", -- [5]
-					"96b72c^1", -- [6]
-					"a72b28^1", -- [7]
-					"599837^1", -- [8]
-					"57e792^1", -- [9]
-					"8ac1ec^1", -- [10]
-					"8c42f1^1", -- [11]
-					"ada950^1", -- [12]
-					"5b38ab^1", -- [13]
-					"902319^1", -- [14]
-					"8751a7^1", -- [15]
-					"6051ed^1", -- [16]
-					"5a9a8d^1", -- [17]
-				},
-				[30] = {
-					"a6e94c^1", -- [1]
-					"85bac8^1", -- [2]
-					"9578e0^1", -- [3]
-					"953828^1", -- [4]
-					"93fa9b^1", -- [5]
-					"8c3a30^1", -- [6]
-					"5a27d0^1", -- [7]
-					"6396a8^1", -- [8]
-					"5ed64a^1", -- [9]
-					"77d7d9^1", -- [10]
-					"8c5397^1", -- [11]
-					"96d997^1", -- [12]
-					"a6babb^1", -- [13]
-					"5fd9df^1", -- [14]
-					"6b0a73^1", -- [15]
-					"7ca2b4^1", -- [16]
-					"88e2ff^1", -- [17]
-					"9563ad^1", -- [18]
-					"7b31f2^1", -- [19]
-					"6242f5^1", -- [20]
-					"6989e3^1", -- [21]
-					"605a74^1", -- [22]
-				},
-			},
-			[4010] = {
-				[46] = {
-					"5662b6^1", -- [1]
-					"402773^1", -- [2]
-					"34477c^1", -- [3]
-					"5d995e^1", -- [4]
-					"b6a56c^1", -- [5]
-					"bf978e^1", -- [6]
-					"9926a8^1", -- [7]
-					"43e613^1", -- [8]
-					"2e4877^1", -- [9]
-					"aff89c^1", -- [10]
-					"a2171b^1", -- [11]
-					"73d834^1", -- [12]
-					"b03483^1", -- [13]
-					"af954e^1", -- [14]
-					"61d32f^1", -- [15]
-					"9e7614^1", -- [16]
-					"74e535^1", -- [17]
-					"9e5517^1", -- [18]
-					"4cc6ca^1", -- [19]
-					"a735d1^1", -- [20]
-					"62244a^1", -- [21]
-					"a163e6^1", -- [22]
-					"aa845a^1", -- [23]
-					"6a97e2^1", -- [24]
-					"6e8841^1", -- [25]
-					"ba98e3^1", -- [26]
-					"526456^1", -- [27]
-					"34092f^1", -- [28]
-					"a9d3ac^1", -- [29]
-					"8e0501^1", -- [30]
-					"45363d^1", -- [31]
-					"23692a^1", -- [32]
-					"96379c^1", -- [33]
-					"8c1737^1", -- [34]
-					"937690^1", -- [35]
-					"3586fd^1", -- [36]
-					"428597^1", -- [37]
-					"44a42f^1", -- [38]
-					"64b4ad^1", -- [39]
-					"9b19c5^1", -- [40]
-					"aac62f^1", -- [41]
-					"9d67e7^1", -- [42]
-					"6e85f1^1", -- [43]
-				},
-				[48] = {
-					"64e4ab^1", -- [1]
-					"355703^1", -- [2]
-					"b74819^1", -- [3]
-					"8da506^1", -- [4]
-					"73e83b^1", -- [5]
-					"80cbd7^1", -- [6]
-					"af854f^1", -- [7]
-					"a143e2^1", -- [8]
-					"6ab6ce^1", -- [9]
-				},
-				[44] = {
-					"42a599^1", -- [1]
-					"4d9a54^1", -- [2]
-					"3b2a99^1", -- [3]
-					"2ea87a^1", -- [4]
-					"443612^1", -- [5]
-					"678985^1", -- [6]
-					"62032c^1", -- [7]
-					"b6a56e^1", -- [8]
-					"9d72ce^1", -- [9]
-					"a695ce^1", -- [10]
-					"b96a31^1", -- [11]
-					"9956b0^1", -- [12]
-					"ada793^1", -- [13]
-					"7a16a7^1", -- [14]
-					"9e151b^1", -- [15]
-					"4c444e^1", -- [16]
-					"a22718^1", -- [17]
-					"afc554^1", -- [18]
-					"9e761b^1", -- [19]
-					"6494ab^1", -- [20]
-					"676c9f^1", -- [21]
-					"853715^1", -- [22]
-					"52145a^1", -- [23]
-					"9dc7ec^1", -- [24]
-					"934692^1", -- [25]
-					"7805ed^1", -- [26]
-					"b7681b^1", -- [27]
-					"620445^1", -- [28]
-					"34b771^1", -- [29]
-					"897642^1", -- [30]
-					"45263b^1", -- [31]
-					"6ae7e0^1", -- [32]
-					"aaa628^1", -- [33]
-					"a8a5e2^1", -- [34]
-					"bf678d^1", -- [35]
-					"4cc6cd^1", -- [36]
-					"aab465^1", -- [37]
-					"a983ad^1", -- [38]
-					"414507^1", -- [39]
-					"936925^1", -- [40]
-					"89b6cc^1", -- [41]
-					"6646c9^1", -- [42]
-					"ba4ae2^1", -- [43]
-					"5224e6^1", -- [44]
-					"baa8e1^1", -- [45]
-					"b02482^1", -- [46]
-					"9c29eb^1", -- [47]
-				},
-			},
-			[5003] = {
-				[34] = {
-					"86da8c^1", -- [1]
-					"7c8ae4^1", -- [2]
-					"71ea97^1", -- [3]
-					"729acf^1", -- [4]
-					"848c57^1", -- [5]
-					"898eb3^1", -- [6]
-					"85cc83^1", -- [7]
-					"82ea8a^1", -- [8]
-					"7efb0a^1", -- [9]
-					"910bdf^1", -- [10]
-					"a0fb67^1", -- [11]
-					"59d596^1", -- [12]
-					"880407^1", -- [13]
-					"881ec7^1", -- [14]
-					"8fabee^1", -- [15]
-					"a2bb58^1", -- [16]
-					"753abb^1", -- [17]
-					"82da48^1", -- [18]
-					"568597^1", -- [19]
-				},
-				[10] = {
-					"838b68^1", -- [1]
-					"860bce^1", -- [2]
-					"7c8ce6^1", -- [3]
-					"85cb94^1", -- [4]
-					"b5c75e^1", -- [5]
-					"5764b6^1", -- [6]
-					"56b5af^1", -- [7]
-					"57564a^1", -- [8]
-					"89f279^1", -- [9]
-					"53e5f2^1", -- [10]
-					"85629d^1", -- [11]
-					"9f0b1a^1", -- [12]
-					"82f2de^1", -- [13]
-				},
-				[30] = {
-					"816a1e^1", -- [1]
-					"76c9af^1", -- [2]
-					"8b4c32^1", -- [3]
-					"8e5c50^1", -- [4]
-					"90dd30^1", -- [5]
-					"90fc99^1", -- [6]
-					"8cbd44^1", -- [7]
-					"7dcc39^1", -- [8]
-					"8c3b02^1", -- [9]
-					"959b52^1", -- [10]
-					"902b1c^1", -- [11]
-					"8e1b48^1", -- [12]
-					"73a9fb^1", -- [13]
-					"795951^1", -- [14]
-					"824879^1", -- [15]
-					"8207f8^1", -- [16]
-					"5855f9^1", -- [17]
-					"62562b^1", -- [18]
-					"56e6c8^1", -- [19]
-					"8f4351^1", -- [20]
-					"8edd90^1", -- [21]
-					"561735^1", -- [22]
-					"64f678^1", -- [23]
-					"82633e^1", -- [24]
-					"574683^1", -- [25]
-					"56a5de^1", -- [26]
+			[6008] = {
+				[58] = {
+					"b6087c^2", -- [1]
+					"b71912^1", -- [2]
+					"b4f8ea^1", -- [3]
+					"aae7df^1", -- [4]
+					"add7fa^1", -- [5]
+					"b45bcf^1", -- [6]
+					"d2fb19^2", -- [7]
+					"d8dc2d^2", -- [8]
+					"d81c95^1", -- [9]
+					"d74b83^1", -- [10]
+					"d72bf0^1", -- [11]
+					"d7eb51^1", -- [12]
+					"cb3cc1^1", -- [13]
+					"87ac6b^1", -- [14]
+					"7d6c65^2", -- [15]
 				},
 			},
 			[2013] = {
@@ -10920,54 +12996,6 @@ NxData = {
 					"7174e7^1", -- [1]
 					"71b4fc^1", -- [2]
 				},
-				[44] = {
-					"68d48c^1", -- [1]
-					"6c5460^1", -- [2]
-					"7044eb^1", -- [3]
-					"746491^1", -- [4]
-					"75344c^1", -- [5]
-					"73d3da^1", -- [6]
-					"7952f7^1", -- [7]
-					"816353^1", -- [8]
-					"86d3c5^1", -- [9]
-					"7a956d^1", -- [10]
-					"7485fa^1", -- [11]
-					"7875e9^1", -- [12]
-					"74364e^1", -- [13]
-					"702472^1", -- [14]
-					"7264f9^1", -- [15]
-					"66c489^1", -- [16]
-					"7c0324^1", -- [17]
-					"7c838e^1", -- [18]
-					"7615c8^1", -- [19]
-					"7e5410^1", -- [20]
-					"728450^1", -- [21]
-					"757420^1", -- [22]
-					"807397^1", -- [23]
-					"7da3bf^1", -- [24]
-					"8103be^1", -- [25]
-					"66a4b7^1", -- [26]
-					"702685^1", -- [27]
-					"7425ae^1", -- [28]
-					"72b54b^1", -- [29]
-					"6fb4bb^1", -- [30]
-					"77e426^1", -- [31]
-					"7bf450^1", -- [32]
-					"7bd544^1", -- [33]
-					"7c2570^1", -- [34]
-					"7345ed^1", -- [35]
-					"768619^1", -- [36]
-					"68c4b8^1", -- [37]
-					"71d651^1", -- [38]
-					"77e5a7^1", -- [39]
-					"6e565a^1", -- [40]
-					"715615^1", -- [41]
-					"73240c^1", -- [42]
-					"8473ad^1", -- [43]
-				},
-				[23] = {
-					"bbf42b^1", -- [1]
-				},
 				[24] = {
 					"a44bbf^1", -- [1]
 					"a8eb84^1", -- [2]
@@ -11148,6 +13176,227 @@ NxData = {
 					"a77894^1", -- [177]
 					"913bc7^1", -- [178]
 					"947b59^1", -- [179]
+				},
+				[23] = {
+					"bbf42b^1", -- [1]
+				},
+				[44] = {
+					"68d48c^1", -- [1]
+					"6c5460^1", -- [2]
+					"7044eb^1", -- [3]
+					"746491^1", -- [4]
+					"75344c^1", -- [5]
+					"73d3da^1", -- [6]
+					"7952f7^1", -- [7]
+					"816353^1", -- [8]
+					"86d3c5^1", -- [9]
+					"7a956d^1", -- [10]
+					"7485fa^1", -- [11]
+					"7875e9^1", -- [12]
+					"74364e^1", -- [13]
+					"702472^1", -- [14]
+					"7264f9^1", -- [15]
+					"66c489^1", -- [16]
+					"7c0324^1", -- [17]
+					"7c838e^1", -- [18]
+					"7615c8^1", -- [19]
+					"7e5410^1", -- [20]
+					"728450^1", -- [21]
+					"757420^1", -- [22]
+					"807397^1", -- [23]
+					"7da3bf^1", -- [24]
+					"8103be^1", -- [25]
+					"66a4b7^1", -- [26]
+					"702685^1", -- [27]
+					"7425ae^1", -- [28]
+					"72b54b^1", -- [29]
+					"6fb4bb^1", -- [30]
+					"77e426^1", -- [31]
+					"7bf450^1", -- [32]
+					"7bd544^1", -- [33]
+					"7c2570^1", -- [34]
+					"7345ed^1", -- [35]
+					"768619^1", -- [36]
+					"68c4b8^1", -- [37]
+					"71d651^1", -- [38]
+					"77e5a7^1", -- [39]
+					"6e565a^1", -- [40]
+					"715615^1", -- [41]
+					"73240c^1", -- [42]
+					"8473ad^1", -- [43]
+				},
+			},
+			[5003] = {
+				[34] = {
+					"86da8c^1", -- [1]
+					"7c8ae4^1", -- [2]
+					"71ea97^1", -- [3]
+					"729acf^1", -- [4]
+					"848c57^1", -- [5]
+					"898eb3^1", -- [6]
+					"85cc83^1", -- [7]
+					"82ea8a^1", -- [8]
+					"7efb0a^1", -- [9]
+					"910bdf^1", -- [10]
+					"a0fb67^1", -- [11]
+					"59d596^1", -- [12]
+					"880407^1", -- [13]
+					"881ec7^1", -- [14]
+					"8fabee^1", -- [15]
+					"a2bb58^1", -- [16]
+					"753abb^1", -- [17]
+					"82da48^1", -- [18]
+					"568597^1", -- [19]
+				},
+				[10] = {
+					"838b68^1", -- [1]
+					"860bce^1", -- [2]
+					"7c8ce6^1", -- [3]
+					"85cb94^1", -- [4]
+					"b5c75e^1", -- [5]
+					"5764b6^1", -- [6]
+					"56b5af^1", -- [7]
+					"57564a^1", -- [8]
+					"89f279^1", -- [9]
+					"53e5f2^1", -- [10]
+					"85629d^1", -- [11]
+					"9f0b1a^1", -- [12]
+					"82f2de^1", -- [13]
+				},
+				[30] = {
+					"816a1e^1", -- [1]
+					"76c9af^1", -- [2]
+					"8b4c32^1", -- [3]
+					"8e5c50^1", -- [4]
+					"90dd30^1", -- [5]
+					"90fc99^1", -- [6]
+					"8cbd44^1", -- [7]
+					"7dcc39^1", -- [8]
+					"8c3b02^1", -- [9]
+					"959b52^1", -- [10]
+					"902b1c^1", -- [11]
+					"8e1b48^1", -- [12]
+					"73a9fb^1", -- [13]
+					"795951^1", -- [14]
+					"824879^1", -- [15]
+					"8207f8^1", -- [16]
+					"5855f9^1", -- [17]
+					"62562b^1", -- [18]
+					"56e6c8^1", -- [19]
+					"8f4351^1", -- [20]
+					"8edd90^1", -- [21]
+					"561735^1", -- [22]
+					"64f678^1", -- [23]
+					"82633e^1", -- [24]
+					"574683^1", -- [25]
+					"56a5de^1", -- [26]
+				},
+			},
+			[4010] = {
+				[46] = {
+					"5662b6^1", -- [1]
+					"402773^1", -- [2]
+					"34477c^1", -- [3]
+					"5d995e^1", -- [4]
+					"b6a56c^1", -- [5]
+					"bf978e^1", -- [6]
+					"9926a8^1", -- [7]
+					"43e613^1", -- [8]
+					"2e4877^1", -- [9]
+					"aff89c^1", -- [10]
+					"a2171b^1", -- [11]
+					"73d834^1", -- [12]
+					"b03483^1", -- [13]
+					"af954e^1", -- [14]
+					"61d32f^1", -- [15]
+					"9e7614^1", -- [16]
+					"74e535^1", -- [17]
+					"9e5517^1", -- [18]
+					"4cc6ca^1", -- [19]
+					"a735d1^1", -- [20]
+					"62244a^1", -- [21]
+					"a163e6^1", -- [22]
+					"aa845a^1", -- [23]
+					"6a97e2^1", -- [24]
+					"6e8841^1", -- [25]
+					"ba98e3^1", -- [26]
+					"526456^1", -- [27]
+					"34092f^1", -- [28]
+					"a9d3ac^1", -- [29]
+					"8e0501^1", -- [30]
+					"45363d^1", -- [31]
+					"23692a^1", -- [32]
+					"96379c^1", -- [33]
+					"8c1737^1", -- [34]
+					"937690^1", -- [35]
+					"3586fd^1", -- [36]
+					"428597^1", -- [37]
+					"44a42f^1", -- [38]
+					"64b4ad^1", -- [39]
+					"9b19c5^1", -- [40]
+					"aac62f^1", -- [41]
+					"9d67e7^1", -- [42]
+					"6e85f1^1", -- [43]
+				},
+				[48] = {
+					"64e4ab^1", -- [1]
+					"355703^1", -- [2]
+					"b74819^1", -- [3]
+					"8da506^1", -- [4]
+					"73e83b^1", -- [5]
+					"80cbd7^1", -- [6]
+					"af854f^1", -- [7]
+					"a143e2^1", -- [8]
+					"6ab6ce^1", -- [9]
+				},
+				[44] = {
+					"42a599^1", -- [1]
+					"4d9a54^1", -- [2]
+					"3b2a99^1", -- [3]
+					"2ea87a^1", -- [4]
+					"443612^1", -- [5]
+					"678985^1", -- [6]
+					"62032c^1", -- [7]
+					"b6a56e^1", -- [8]
+					"9d72ce^1", -- [9]
+					"a695ce^1", -- [10]
+					"b96a31^1", -- [11]
+					"9956b0^1", -- [12]
+					"ada793^1", -- [13]
+					"7a16a7^1", -- [14]
+					"9e151b^1", -- [15]
+					"4c444e^1", -- [16]
+					"a22718^1", -- [17]
+					"afc554^1", -- [18]
+					"9e761b^1", -- [19]
+					"6494ab^1", -- [20]
+					"676c9f^1", -- [21]
+					"853715^1", -- [22]
+					"52145a^1", -- [23]
+					"9dc7ec^1", -- [24]
+					"934692^1", -- [25]
+					"7805ed^1", -- [26]
+					"b7681b^1", -- [27]
+					"620445^1", -- [28]
+					"34b771^1", -- [29]
+					"897642^1", -- [30]
+					"45263b^1", -- [31]
+					"6ae7e0^1", -- [32]
+					"aaa628^1", -- [33]
+					"a8a5e2^1", -- [34]
+					"bf678d^1", -- [35]
+					"4cc6cd^1", -- [36]
+					"aab465^1", -- [37]
+					"a983ad^1", -- [38]
+					"414507^1", -- [39]
+					"936925^1", -- [40]
+					"89b6cc^1", -- [41]
+					"6646c9^1", -- [42]
+					"ba4ae2^1", -- [43]
+					"5224e6^1", -- [44]
+					"baa8e1^1", -- [45]
+					"b02482^1", -- [46]
+					"9c29eb^1", -- [47]
 				},
 			},
 			[1026] = {
@@ -11414,173 +13663,87 @@ NxData = {
 					"b18313^1", -- [12]
 				},
 			},
-			[4004] = {
-				[42] = {
-					"f7a3e0^1", -- [1]
+			[1015] = {
+				[36] = {
+					"7385af^1", -- [1]
+					"684719^1", -- [2]
+					"629922^1", -- [3]
+					"6a9474^1", -- [4]
+					"4a0508^1", -- [5]
+					"6c7372^1", -- [6]
+					"5765a1^1", -- [7]
+					"64866a^1", -- [8]
+					"6d7835^1", -- [9]
+					"7ab858^1", -- [10]
+					"8d2876^1", -- [11]
+					"9a1860^1", -- [12]
+					"9826ab^1", -- [13]
+					"96c81d^1", -- [14]
+					"9f795a^1", -- [15]
+					"a62a9f^1", -- [16]
+					"6bbc3b^1", -- [17]
+					"544b4f^1", -- [18]
+					"69f8e9^1", -- [19]
+					"a61424^1", -- [20]
+					"a9ba50^1", -- [21]
+					"87093c^1", -- [22]
 				},
-				[41] = {
-					"7c3755^1", -- [1]
-					"a7cbea^1", -- [2]
-					"757780^1", -- [3]
-					"a59c53^1", -- [4]
-					"a27b45^1", -- [5]
-					"a68b76^1", -- [6]
-					"795858^1", -- [7]
-					"7e0819^1", -- [8]
+				[8] = {
+					"6ce639^1", -- [1]
+					"72e4f1^1", -- [2]
+					"6874d8^1", -- [3]
+					"5dc71d^1", -- [4]
+					"5c8289^1", -- [5]
+					"4a32bf^1", -- [6]
+					"4f953e^1", -- [7]
+					"6fb394^1", -- [8]
+					"6d956e^1", -- [9]
+					"5af689^1", -- [10]
+					"6e07be^1", -- [11]
+					"824871^1", -- [12]
+					"a93b17^1", -- [13]
+					"9d2925^1", -- [14]
+					"850b05^1", -- [15]
+					"6f9c27^1", -- [16]
+					"553af6^1", -- [17]
+					"670956^1", -- [18]
+					"7bd50c^1", -- [19]
+					"8914a5^1", -- [20]
+					"a8d433^1", -- [21]
+					"8e7ce2^1", -- [22]
+					"9778a1^1", -- [23]
+					"8858d9^1", -- [24]
+					"67daaa^1", -- [25]
+					"77c446^1", -- [26]
+					"51921a^1", -- [27]
+					"440464^1", -- [28]
 				},
-				[44] = {
-					"7391aa^1", -- [1]
-					"49d7b9^1", -- [2]
-					"2ae8dc^1", -- [3]
-					"712baa^1", -- [4]
-					"72eaa8^1", -- [5]
-					"727afb^1", -- [6]
-					"75d9cb^1", -- [7]
-					"468996^1", -- [8]
-					"400877^1", -- [9]
-					"3377eb^1", -- [10]
-					"3c89dc^1", -- [11]
-					"4398a8^1", -- [12]
-					"4649cf^1", -- [13]
-					"2928c4^1", -- [14]
-					"48889b^1", -- [15]
-					"db2974^1", -- [16]
-					"d7797c^1", -- [17]
-					"c24526^1", -- [18]
-					"da86e1^1", -- [19]
-					"dce33e^1", -- [20]
-					"c2349f^1", -- [21]
-					"6cc5d9^1", -- [22]
-					"60369e^1", -- [23]
-					"6e6ba4^1", -- [24]
-					"7b4a55^1", -- [25]
-					"6bd9ab^1", -- [26]
-					"6faa6b^1", -- [27]
-					"27e765^1", -- [28]
-					"35d8ce^1", -- [29]
-					"344821^1", -- [30]
-					"26f93a^1", -- [31]
-					"35a89e^1", -- [32]
-					"6fc785^1", -- [33]
-					"6e28c7^1", -- [34]
-					"5b5970^1", -- [35]
-					"44e979^1", -- [36]
-					"3ac9b6^1", -- [37]
-					"2897c3^1", -- [38]
-					"6df96d^1", -- [39]
-					"5919a1^1", -- [40]
-					"44e9b4^1", -- [41]
-					"26a96a^1", -- [42]
-					"29f8ef^1", -- [43]
-					"3f89bc^1", -- [44]
-					"d483c3^1", -- [45]
-					"e30536^1", -- [46]
-					"df2677^1", -- [47]
-					"d61583^1", -- [48]
-					"ea8a0b^1", -- [49]
-					"d3a657^1", -- [50]
-					"c3d4dd^1", -- [51]
-					"4ef7c2^1", -- [52]
-					"3437a5^1", -- [53]
-					"25f78f^1", -- [54]
-					"60dbc5^1", -- [55]
-					"6d5bd3^1", -- [56]
-					"75ebcb^1", -- [57]
-					"be9bc6^1", -- [58]
-					"e8a9c5^1", -- [59]
-					"e6d917^1", -- [60]
-					"e9280e^1", -- [61]
-					"e2d6f1^1", -- [62]
-					"dcc625^1", -- [63]
-					"da1387^1", -- [64]
-					"d08424^1", -- [65]
-					"3dd949^1", -- [66]
-					"791b82^1", -- [67]
-					"84bb04^1", -- [68]
-					"5666ff^1", -- [69]
-					"2a77f8^1", -- [70]
-					"564ac9^1", -- [71]
-					"782b60^1", -- [72]
-					"dc59d0^1", -- [73]
-					"e4a911^1", -- [74]
-					"eac801^1", -- [75]
-					"e59505^1", -- [76]
-					"7da343^1", -- [77]
-					"7781b1^1", -- [78]
-					"6e3a9c^1", -- [79]
-					"707a0b^1", -- [80]
-					"5abaae^1", -- [81]
-					"783bac^1", -- [82]
-					"e8a77b^1", -- [83]
-					"d1153a^1", -- [84]
-					"74e1f3^1", -- [85]
-					"e6ac27^1", -- [86]
-					"ea2a40^1", -- [87]
-					"eb993d^1", -- [88]
-					"e4e9ba^1", -- [89]
-					"e49b83^1", -- [90]
-					"cdca59^1", -- [91]
-					"8fcb64^1", -- [92]
-					"7cd9c6^1", -- [93]
-					"72b9a6^1", -- [94]
-					"c19be1^1", -- [95]
-					"603c10^1", -- [96]
-					"4ae7e0^1", -- [97]
-					"4ff75c^1", -- [98]
-					"6b290b^1", -- [99]
-					"549968^1", -- [100]
-					"65f89a^1", -- [101]
-					"6f89ae^1", -- [102]
-					"5d4bf2^1", -- [103]
-					"e8c751^1", -- [104]
-					"e3b6b3^1", -- [105]
-					"de4956^1", -- [106]
-					"59dac1^1", -- [107]
-					"248920^1", -- [108]
-					"32d8a7^1", -- [109]
-					"4ed7ed^1", -- [110]
-					"4568af^1", -- [111]
-					"32a77a^1", -- [112]
-					"553991^1", -- [113]
-					"802326^1", -- [114]
-					"7cc9fd^1", -- [115]
-					"6cc991^1", -- [116]
-					"70a9f0^1", -- [117]
-					"e6b510^1", -- [118]
-					"6ffbee^1", -- [119]
-					"dd4430^1", -- [120]
-					"7eca13^1", -- [121]
-					"7087c0^1", -- [122]
-					"641923^1", -- [123]
-					"2b28af^1", -- [124]
-					"7e72b7^1", -- [125]
-					"72a5a0^1", -- [126]
-					"6e97bc^1", -- [127]
-					"599a7b^1", -- [128]
-					"86bb23^1", -- [129]
-					"e1d4f4^1", -- [130]
-					"c1bace^1", -- [131]
-					"d1ea20^1", -- [132]
-					"5aa6ce^1", -- [133]
-					"6c259d^1", -- [134]
-					"bd6b07^1", -- [135]
-					"7095cc^1", -- [136]
-					"c114dc^1", -- [137]
-					"d0c49b^1", -- [138]
-					"247950^1", -- [139]
-					"bfaaf3^1", -- [140]
-					"885b67^1", -- [141]
-					"6d178e^1", -- [142]
-					"d0da66^1", -- [143]
-					"e7f926^1", -- [144]
-					"73a14e^1", -- [145]
-					"3238c6^1", -- [146]
-					"b7c98e^1", -- [147]
-					"c3ac0b^1", -- [148]
-					"e72bf3^1", -- [149]
-					"619bf6^1", -- [150]
-					"d549d3^1", -- [151]
-					"81633a^1", -- [152]
+				[3] = {
+					"51821e^1", -- [1]
+					"7835d6^1", -- [2]
+					"6ca523^1", -- [3]
+				},
+				[26] = {
+					"4622d1^1", -- [1]
+					"846ceb^1", -- [2]
+					"469202^1", -- [3]
+					"42c394^1", -- [4]
+					"42b4fb^1", -- [5]
+					"47a643^1", -- [6]
+				},
+				[16] = {
+					"ba44c7^1", -- [1]
+					"65a468^1", -- [2]
+					"61d2ba^1", -- [3]
+					"4a7362^1", -- [4]
+					"72b2ed^1", -- [5]
+					"6a23d1^1", -- [6]
+					"60b61d^1", -- [7]
+					"82c985^1", -- [8]
+					"60ea21^1", -- [9]
+					"7f98ce^1", -- [10]
+					"af4482^1", -- [11]
+					"575252^1", -- [12]
 				},
 			},
 			[4011] = {
@@ -12020,87 +14183,173 @@ NxData = {
 					"ac6996^1", -- [79]
 				},
 			},
-			[1015] = {
-				[36] = {
-					"7385af^1", -- [1]
-					"684719^1", -- [2]
-					"629922^1", -- [3]
-					"6a9474^1", -- [4]
-					"4a0508^1", -- [5]
-					"6c7372^1", -- [6]
-					"5765a1^1", -- [7]
-					"64866a^1", -- [8]
-					"6d7835^1", -- [9]
-					"7ab858^1", -- [10]
-					"8d2876^1", -- [11]
-					"9a1860^1", -- [12]
-					"9826ab^1", -- [13]
-					"96c81d^1", -- [14]
-					"9f795a^1", -- [15]
-					"a62a9f^1", -- [16]
-					"6bbc3b^1", -- [17]
-					"544b4f^1", -- [18]
-					"69f8e9^1", -- [19]
-					"a61424^1", -- [20]
-					"a9ba50^1", -- [21]
-					"87093c^1", -- [22]
+			[4004] = {
+				[42] = {
+					"f7a3e0^1", -- [1]
 				},
-				[8] = {
-					"6ce639^1", -- [1]
-					"72e4f1^1", -- [2]
-					"6874d8^1", -- [3]
-					"5dc71d^1", -- [4]
-					"5c8289^1", -- [5]
-					"4a32bf^1", -- [6]
-					"4f953e^1", -- [7]
-					"6fb394^1", -- [8]
-					"6d956e^1", -- [9]
-					"5af689^1", -- [10]
-					"6e07be^1", -- [11]
-					"824871^1", -- [12]
-					"a93b17^1", -- [13]
-					"9d2925^1", -- [14]
-					"850b05^1", -- [15]
-					"6f9c27^1", -- [16]
-					"553af6^1", -- [17]
-					"670956^1", -- [18]
-					"7bd50c^1", -- [19]
-					"8914a5^1", -- [20]
-					"a8d433^1", -- [21]
-					"8e7ce2^1", -- [22]
-					"9778a1^1", -- [23]
-					"8858d9^1", -- [24]
-					"67daaa^1", -- [25]
-					"77c446^1", -- [26]
-					"51921a^1", -- [27]
-					"440464^1", -- [28]
+				[41] = {
+					"7c3755^1", -- [1]
+					"a7cbea^1", -- [2]
+					"757780^1", -- [3]
+					"a59c53^1", -- [4]
+					"a27b45^1", -- [5]
+					"a68b76^1", -- [6]
+					"795858^1", -- [7]
+					"7e0819^1", -- [8]
 				},
-				[3] = {
-					"51821e^1", -- [1]
-					"7835d6^1", -- [2]
-					"6ca523^1", -- [3]
-				},
-				[26] = {
-					"4622d1^1", -- [1]
-					"846ceb^1", -- [2]
-					"469202^1", -- [3]
-					"42c394^1", -- [4]
-					"42b4fb^1", -- [5]
-					"47a643^1", -- [6]
-				},
-				[16] = {
-					"ba44c7^1", -- [1]
-					"65a468^1", -- [2]
-					"61d2ba^1", -- [3]
-					"4a7362^1", -- [4]
-					"72b2ed^1", -- [5]
-					"6a23d1^1", -- [6]
-					"60b61d^1", -- [7]
-					"82c985^1", -- [8]
-					"60ea21^1", -- [9]
-					"7f98ce^1", -- [10]
-					"af4482^1", -- [11]
-					"575252^1", -- [12]
+				[44] = {
+					"7391aa^1", -- [1]
+					"49d7b9^1", -- [2]
+					"2ae8dc^1", -- [3]
+					"712baa^1", -- [4]
+					"72eaa8^1", -- [5]
+					"727afb^1", -- [6]
+					"75d9cb^1", -- [7]
+					"468996^1", -- [8]
+					"400877^1", -- [9]
+					"3377eb^1", -- [10]
+					"3c89dc^1", -- [11]
+					"4398a8^1", -- [12]
+					"4649cf^1", -- [13]
+					"2928c4^1", -- [14]
+					"48889b^1", -- [15]
+					"db2974^1", -- [16]
+					"d7797c^1", -- [17]
+					"c24526^1", -- [18]
+					"da86e1^1", -- [19]
+					"dce33e^1", -- [20]
+					"c2349f^1", -- [21]
+					"6cc5d9^1", -- [22]
+					"60369e^1", -- [23]
+					"6e6ba4^1", -- [24]
+					"7b4a55^1", -- [25]
+					"6bd9ab^1", -- [26]
+					"6faa6b^1", -- [27]
+					"27e765^1", -- [28]
+					"35d8ce^1", -- [29]
+					"344821^1", -- [30]
+					"26f93a^1", -- [31]
+					"35a89e^1", -- [32]
+					"6fc785^1", -- [33]
+					"6e28c7^1", -- [34]
+					"5b5970^1", -- [35]
+					"44e979^1", -- [36]
+					"3ac9b6^1", -- [37]
+					"2897c3^1", -- [38]
+					"6df96d^1", -- [39]
+					"5919a1^1", -- [40]
+					"44e9b4^1", -- [41]
+					"26a96a^1", -- [42]
+					"29f8ef^1", -- [43]
+					"3f89bc^1", -- [44]
+					"d483c3^1", -- [45]
+					"e30536^1", -- [46]
+					"df2677^1", -- [47]
+					"d61583^1", -- [48]
+					"ea8a0b^1", -- [49]
+					"d3a657^1", -- [50]
+					"c3d4dd^1", -- [51]
+					"4ef7c2^1", -- [52]
+					"3437a5^1", -- [53]
+					"25f78f^1", -- [54]
+					"60dbc5^1", -- [55]
+					"6d5bd3^1", -- [56]
+					"75ebcb^1", -- [57]
+					"be9bc6^1", -- [58]
+					"e8a9c5^1", -- [59]
+					"e6d917^1", -- [60]
+					"e9280e^1", -- [61]
+					"e2d6f1^1", -- [62]
+					"dcc625^1", -- [63]
+					"da1387^1", -- [64]
+					"d08424^1", -- [65]
+					"3dd949^1", -- [66]
+					"791b82^1", -- [67]
+					"84bb04^1", -- [68]
+					"5666ff^1", -- [69]
+					"2a77f8^1", -- [70]
+					"564ac9^1", -- [71]
+					"782b60^1", -- [72]
+					"dc59d0^1", -- [73]
+					"e4a911^1", -- [74]
+					"eac801^1", -- [75]
+					"e59505^1", -- [76]
+					"7da343^1", -- [77]
+					"7781b1^1", -- [78]
+					"6e3a9c^1", -- [79]
+					"707a0b^1", -- [80]
+					"5abaae^1", -- [81]
+					"783bac^1", -- [82]
+					"e8a77b^1", -- [83]
+					"d1153a^1", -- [84]
+					"74e1f3^1", -- [85]
+					"e6ac27^1", -- [86]
+					"ea2a40^1", -- [87]
+					"eb993d^1", -- [88]
+					"e4e9ba^1", -- [89]
+					"e49b83^1", -- [90]
+					"cdca59^1", -- [91]
+					"8fcb64^1", -- [92]
+					"7cd9c6^1", -- [93]
+					"72b9a6^1", -- [94]
+					"c19be1^1", -- [95]
+					"603c10^1", -- [96]
+					"4ae7e0^1", -- [97]
+					"4ff75c^1", -- [98]
+					"6b290b^1", -- [99]
+					"549968^1", -- [100]
+					"65f89a^1", -- [101]
+					"6f89ae^1", -- [102]
+					"5d4bf2^1", -- [103]
+					"e8c751^1", -- [104]
+					"e3b6b3^1", -- [105]
+					"de4956^1", -- [106]
+					"59dac1^1", -- [107]
+					"248920^1", -- [108]
+					"32d8a7^1", -- [109]
+					"4ed7ed^1", -- [110]
+					"4568af^1", -- [111]
+					"32a77a^1", -- [112]
+					"553991^1", -- [113]
+					"802326^1", -- [114]
+					"7cc9fd^1", -- [115]
+					"6cc991^1", -- [116]
+					"70a9f0^1", -- [117]
+					"e6b510^1", -- [118]
+					"6ffbee^1", -- [119]
+					"dd4430^1", -- [120]
+					"7eca13^1", -- [121]
+					"7087c0^1", -- [122]
+					"641923^1", -- [123]
+					"2b28af^1", -- [124]
+					"7e72b7^1", -- [125]
+					"72a5a0^1", -- [126]
+					"6e97bc^1", -- [127]
+					"599a7b^1", -- [128]
+					"86bb23^1", -- [129]
+					"e1d4f4^1", -- [130]
+					"c1bace^1", -- [131]
+					"d1ea20^1", -- [132]
+					"5aa6ce^1", -- [133]
+					"6c259d^1", -- [134]
+					"bd6b07^1", -- [135]
+					"7095cc^1", -- [136]
+					"c114dc^1", -- [137]
+					"d0c49b^1", -- [138]
+					"247950^1", -- [139]
+					"bfaaf3^1", -- [140]
+					"885b67^1", -- [141]
+					"6d178e^1", -- [142]
+					"d0da66^1", -- [143]
+					"e7f926^1", -- [144]
+					"73a14e^1", -- [145]
+					"3238c6^1", -- [146]
+					"b7c98e^1", -- [147]
+					"c3ac0b^1", -- [148]
+					"e72bf3^1", -- [149]
+					"619bf6^1", -- [150]
+					"d549d3^1", -- [151]
+					"81633a^1", -- [152]
 				},
 			},
 			[1003] = {
@@ -12770,808 +15019,1111 @@ NxData = {
 					"b0d8c7^1", -- [4]
 				},
 			},
-			[6008] = {
-				[58] = {
-					"b6087c^2", -- [1]
-					"b71912^1", -- [2]
-					"b4f8ea^1", -- [3]
-					"aae7df^1", -- [4]
-					"add7fa^1", -- [5]
-					"b45bcf^1", -- [6]
-					"d2fb19^2", -- [7]
-					"d8dc2d^2", -- [8]
-					"d81c95^1", -- [9]
-					"d74b83^1", -- [10]
-					"d72bf0^1", -- [11]
-					"d7eb51^1", -- [12]
-					"cb3cc1^1", -- [13]
-					"87ac6b^1", -- [14]
-					"7d6c65^2", -- [15]
-				},
-			},
-			[4008] = {
-				[43] = {
-					"54fd64^1", -- [1]
-					"6e7c69^1", -- [2]
-					"6aec4e^1", -- [3]
-					"43ec69^1", -- [4]
-					"4d0c0e^1", -- [5]
-					"667c37^1", -- [6]
-					"5aeaa9^1", -- [7]
-					"6a8b8e^1", -- [8]
-					"501c25^1", -- [9]
-					"503aff^1", -- [10]
-					"699c09^1", -- [11]
-					"4fab5b^1", -- [12]
-					"5a09b3^1", -- [13]
-					"67b8e2^1", -- [14]
-					"5ba7f5^1", -- [15]
-					"57a97b^1", -- [16]
-					"4ff8d2^1", -- [17]
-					"3e7928^1", -- [18]
-					"41b8f3^1", -- [19]
-					"5a6960^1", -- [20]
-					"48b999^1", -- [21]
-					"3758cb^1", -- [22]
-					"4947ee^1", -- [23]
-					"4ad94a^1", -- [24]
-					"51bb31^1", -- [25]
-					"587b34^1", -- [26]
-					"6a88f6^1", -- [27]
-					"6e69f5^1", -- [28]
-					"4d075f^1", -- [29]
-					"6288e0^1", -- [30]
-					"77e906^1", -- [31]
-					"376a2c^1", -- [32]
-					"7063c1^1", -- [33]
-					"51c6a8^1", -- [34]
-					"4b1795^1", -- [35]
-					"67d420^1", -- [36]
-					"61b99e^1", -- [37]
-					"60594c^1", -- [38]
-					"3cf8d8^1", -- [39]
-					"7748df^1", -- [40]
-					"56f364^1", -- [41]
-					"64293d^1", -- [42]
-					"4697e7^1", -- [43]
-					"441888^1", -- [44]
-					"43382e^1", -- [45]
-					"4b18de^1", -- [46]
-					"559980^1", -- [47]
-					"4cb87a^1", -- [48]
-					"5bb50c^1", -- [49]
-					"778852^1", -- [50]
-					"834884^1", -- [51]
-					"90b8b1^1", -- [52]
-					"81b861^1", -- [53]
-					"4e36c9^1", -- [54]
-					"60d96e^1", -- [55]
-					"627d8b^1", -- [56]
-					"8cc8e9^1", -- [57]
-					"693965^1", -- [58]
-					"3698fd^1", -- [59]
-					"60fa29^1", -- [60]
-					"9d0b5e^1", -- [61]
-					"a6dc17^1", -- [62]
-					"974b92^1", -- [63]
-					"58053b^1", -- [64]
-					"74583e^1", -- [65]
-					"8128a8^1", -- [66]
-					"7a77d3^1", -- [67]
-					"6555b9^1", -- [68]
-					"683e08^1", -- [69]
-					"6b4dd4^1", -- [70]
-					"6feb57^1", -- [71]
-					"ab7bff^1", -- [72]
-					"b0bbc3^1", -- [73]
-					"9975e5^1", -- [74]
-					"963618^1", -- [75]
-					"99357d^1", -- [76]
-					"a27d29^1", -- [77]
-					"ae3b35^1", -- [78]
-					"a8cb5b^1", -- [79]
-					"96e525^1", -- [80]
-					"75793f^1", -- [81]
-					"a32ba6^1", -- [82]
-					"97fcb3^1", -- [83]
-					"8587d4^1", -- [84]
-					"689343^1", -- [85]
-					"85b910^1", -- [86]
-					"655dea^1", -- [87]
-					"6c8d42^1", -- [88]
-					"93878c^1", -- [89]
-					"7a18a7^1", -- [90]
-					"6f4980^1", -- [91]
-					"59278c^1", -- [92]
-					"b5bb39^1", -- [93]
-					"a6db41^1", -- [94]
-					"489cb4^1", -- [95]
-					"510767^1", -- [96]
-					"498888^1", -- [97]
-					"4df852^1", -- [98]
-					"4eb875^1", -- [99]
-					"4c2aad^1", -- [100]
-					"48fc09^1", -- [101]
-					"9766b6^1", -- [102]
-					"698ac2^1", -- [103]
-					"88b704^1", -- [104]
-					"576a7c^1", -- [105]
-					"6b2a68^1", -- [106]
-					"903869^1", -- [107]
-					"6a2aab^1", -- [108]
-					"40c871^1", -- [109]
-					"76e7db^1", -- [110]
-					"66135d^1", -- [111]
-					"5ffd4a^1", -- [112]
-					"5a1730^1", -- [113]
-					"39d96e^1", -- [114]
-					"585aa8^1", -- [115]
-					"59ad7b^1", -- [116]
-					"48dd48^1", -- [117]
-					"997bed^1", -- [118]
-					"605a92^1", -- [119]
-					"59fd51^1", -- [120]
-					"4af81a^1", -- [121]
-					"5ab4da^1", -- [122]
-					"93269c^1", -- [123]
-					"5643e7^1", -- [124]
-					"56b50d^1", -- [125]
-					"5a0deb^1", -- [126]
-					"985736^1", -- [127]
-					"5fca59^1", -- [128]
-					"5ab354^1", -- [129]
-					"6c6370^1", -- [130]
-					"6274b9^1", -- [131]
-					"6473fd^1", -- [132]
-					"5b1b4c^1", -- [133]
-					"68cd68^1", -- [134]
-					"961c70^1", -- [135]
-					"91b747^1", -- [136]
-					"68eba0^1", -- [137]
-					"96bc1e^1", -- [138]
-					"68ed9a^1", -- [139]
-					"b54b09^1", -- [140]
-					"902507^1", -- [141]
-					"9e4d48^1", -- [142]
-					"b26b8a^1", -- [143]
-					"a0ed56^1", -- [144]
-					"9eb56d^1", -- [145]
-					"a8fb1c^1", -- [146]
-					"a9bb90^1", -- [147]
-					"8e37f6^1", -- [148]
-					"b09b83^1", -- [149]
-					"5ee4ec^1", -- [150]
-					"a0c53c^1", -- [151]
-					"a0756d^1", -- [152]
-					"a67cb7^1", -- [153]
-					"499d8b^1", -- [154]
-					"abfb49^1", -- [155]
-				},
-				[45] = {
-					"6fcbda^1", -- [1]
-					"780a7e^1", -- [2]
-					"7e3b5d^1", -- [3]
-					"7bdafe^1", -- [4]
-					"803a40^1", -- [5]
-					"7b0b42^1", -- [6]
-					"53aa4e^1", -- [7]
-					"52a9a6^1", -- [8]
-					"778a5e^1", -- [9]
-					"7889c4^1", -- [10]
-					"805a62^1", -- [11]
-					"76da32^1", -- [12]
-					"7e99b4^1", -- [13]
-					"8119fd^1", -- [14]
-					"7bd98c^1", -- [15]
-					"3d198c^1", -- [16]
-					"40b96e^1", -- [17]
-					"7c4887^1", -- [18]
-					"7e9b16^1", -- [19]
-					"7eaa7f^1", -- [20]
-					"5029b2^1", -- [21]
-					"79b7ec^1", -- [22]
-					"a347d0^1", -- [23]
-					"a0f7ab^1", -- [24]
-					"a3078d^1", -- [25]
-					"4e5997^1", -- [26]
-					"7d3803^1", -- [27]
-					"747c0b^1", -- [28]
-					"4a89df^1", -- [29]
-					"3d29c1^1", -- [30]
-					"88edda^1", -- [31]
-					"4eaa5d^1", -- [32]
-					"75782c^1", -- [33]
-					"7597f2^1", -- [34]
-					"982dca^1", -- [35]
-					"aefadd^1", -- [36]
-					"a41767^1", -- [37]
-					"972d67^1", -- [38]
-					"92fd4c^1", -- [39]
-					"8068ee^1", -- [40]
-					"7a7bd1^1", -- [41]
-					"6f9c08^1", -- [42]
-					"7e985c^1", -- [43]
-					"4579c3^1", -- [44]
-					"3a09cc^1", -- [45]
-					"901dd5^1", -- [46]
-					"53d9d2^1", -- [47]
-					"7207d7^1", -- [48]
-					"4a7a2d^1", -- [49]
-					"b19aa6^1", -- [50]
-					"3939a3^1", -- [51]
-					"788be9^1", -- [52]
-					"950dd4^1", -- [53]
-					"83ddcc^1", -- [54]
-					"762a14^1", -- [55]
-					"761ba3^1", -- [56]
-					"7bf83e^1", -- [57]
-					"997d9e^1", -- [58]
-					"8b5dad^1", -- [59]
-					"b13aee^1", -- [60]
-					"8ffd90^1", -- [61]
-					"87eda0^1", -- [62]
-					"af8aa6^1", -- [63]
-					"7a899b^1", -- [64]
-					"7cd9a2^1", -- [65]
-				},
-				[41] = {
-					"458cfa^1", -- [1]
-					"54bcdc^1", -- [2]
-					"3c5834^1", -- [3]
-					"412c82^1", -- [4]
-					"4adcbe^1", -- [5]
-					"52e92f^1", -- [6]
-					"897453^1", -- [7]
-					"8fc565^1", -- [8]
-					"50d985^1", -- [9]
-					"55975d^1", -- [10]
-					"3ff855^1", -- [11]
-					"4fd7e8^1", -- [12]
-					"53b66e^1", -- [13]
-					"5449af^1", -- [14]
-					"85840c^1", -- [15]
-					"66645e^1", -- [16]
-					"5726d8^1", -- [17]
-					"5187dd^1", -- [18]
-					"48f721^1", -- [19]
-					"945c7d^1", -- [20]
-					"51ecbb^1", -- [21]
-					"7e6724^1", -- [22]
-					"71763b^1", -- [23]
-					"b38b1f^1", -- [24]
-					"96541e^1", -- [25]
-					"78a6f7^1", -- [26]
-					"964506^1", -- [27]
-					"4e5809^1", -- [28]
-					"91dc20^1", -- [29]
-					"70467a^1", -- [30]
-					"6c05b9^1", -- [31]
-					"455bf1^1", -- [32]
-					"3bd8a1^1", -- [33]
-					"4a29cf^1", -- [34]
-					"53dd52^1", -- [35]
-					"443772^1", -- [36]
-					"3f17e4^1", -- [37]
-					"83c6cc^1", -- [38]
-					"71e6bb^1", -- [39]
-					"89c550^1", -- [40]
-					"821437^1", -- [41]
-					"9215d0^1", -- [42]
-					"4a06ba^1", -- [43]
-					"3de79f^1", -- [44]
-					"5b8dc5^1", -- [45]
-					"5b1532^1", -- [46]
-					"559595^1", -- [47]
-					"934cd7^1", -- [48]
-					"841498^1", -- [49]
-					"8da5b9^1", -- [50]
-					"7bc491^1", -- [51]
-					"992cfb^1", -- [52]
-					"78354c^1", -- [53]
-					"8096d8^1", -- [54]
-					"722531^1", -- [55]
-					"b3eb77^1", -- [56]
-					"9795ce^1", -- [57]
-					"b62b13^1", -- [58]
-					"abfb4c^1", -- [59]
-					"97957e^1", -- [60]
-				},
-			},
-			[2011] = {
-				[5] = {
-					"5e1dbd^1", -- [1]
-					"867b81^1", -- [2]
-					"5edb68^1", -- [3]
-					"598917^1", -- [4]
-					"6e7832^1", -- [5]
-					"b066f7^1", -- [6]
-					"5ddde6^1", -- [7]
-					"863b54^1", -- [8]
-					"aea7bd^1", -- [9]
-					"5fee07^1", -- [10]
-					"8f2d36^1", -- [11]
-					"6e7de6^1", -- [12]
-					"8dbda9^1", -- [13]
-					"5c095d^1", -- [14]
-					"8f88db^1", -- [15]
-					"b06739^1", -- [16]
-					"ad576e^1", -- [17]
-					"8b9d6c^1", -- [18]
-					"6e3d78^1", -- [19]
-					"84bb50^1", -- [20]
-					"acd745^1", -- [21]
-					"731dad^1", -- [22]
-					"5879a6^1", -- [23]
-					"b0676e^1", -- [24]
-					"8b9d40^1", -- [25]
-					"587965^1", -- [26]
-					"61ada1^1", -- [27]
-					"ae16f3^1", -- [28]
-					"735880^1", -- [29]
-					"84fb02^1", -- [30]
-					"88cb1f^1", -- [31]
-					"735847^1", -- [32]
-					"6ec8aa^1", -- [33]
-					"6e8864^1", -- [34]
-					"8a1b70^1", -- [35]
-					"6dfdb5^1", -- [36]
-					"b027e9^1", -- [37]
-					"b067b7^1", -- [38]
-					"5ffb89^1", -- [39]
-					"8ca8a5^1", -- [40]
-					"72489b^1", -- [41]
-					"73c860^1", -- [42]
-					"70285d^1", -- [43]
-					"8b1b52^1", -- [44]
-					"b2079a^1", -- [45]
-					"b32775^1", -- [46]
-					"b367df^1", -- [47]
-					"8bfb32^1", -- [48]
-					"857b28^1", -- [49]
-					"8afb14^1", -- [50]
-					"8f5d61^1", -- [51]
-					"905d75^1", -- [52]
-					"706848^1", -- [53]
-					"721863^1", -- [54]
-					"7068ba^1", -- [55]
+			[1013] = {
+				[34] = {
+					"a34923^1", -- [1]
+					"8876d6^1", -- [2]
+					"9608b4^1", -- [3]
+					"9637aa^1", -- [4]
+					"98da8d^1", -- [5]
+					"6446ea^1", -- [6]
+					"59461a^1", -- [7]
+					"7b2797^1", -- [8]
+					"95d345^1", -- [9]
+					"884943^1", -- [10]
+					"7db6a0^1", -- [11]
+					"8c38bd^1", -- [12]
+					"8e7810^1", -- [13]
+					"92ca2a^1", -- [14]
+					"a15b28^1", -- [15]
+					"a98abd^1", -- [16]
+					"937957^1", -- [17]
+					"5ac9dd^1", -- [18]
+					"647a11^1", -- [19]
+					"6a9a25^1", -- [20]
+					"89f2b5^1", -- [21]
+					"835188^1", -- [22]
+					"88a369^1", -- [23]
+					"61a22c^1", -- [24]
 				},
 				[10] = {
-					"b1f5c9^1", -- [1]
-					"a21bc6^1", -- [2]
-					"6cec1c^1", -- [3]
-					"b7db37^1", -- [4]
-					"96dafe^1", -- [5]
-					"692bbb^1", -- [6]
-					"a63b60^1", -- [7]
-					"92e9ff^1", -- [8]
-					"4f4940^1", -- [9]
-					"addaac^1", -- [10]
-					"ab88da^1", -- [11]
-					"b16867^1", -- [12]
-					"979d90^1", -- [13]
-					"5cd888^1", -- [14]
-					"90fc08^1", -- [15]
-					"b89c5a^1", -- [16]
-					"8a9ad9^1", -- [17]
-					"6d2bca^1", -- [18]
-					"48ecc0^1", -- [19]
-					"4e4b71^1", -- [20]
-					"b16948^1", -- [21]
-					"69dcc0^1", -- [22]
-					"b4cdde^1", -- [23]
-					"52da09^1", -- [24]
-					"5c0cf1^1", -- [25]
-					"8c1ba2^1", -- [26]
-					"434c7a^1", -- [27]
-					"4c3bca^1", -- [28]
-					"762ce9^1", -- [29]
-					"5f1c28^1", -- [30]
-					"454bd4^1", -- [31]
-					"907af3^1", -- [32]
-					"52ac45^1", -- [33]
-					"62fc41^1", -- [34]
-					"a63a11^1", -- [35]
-					"72cbba^1", -- [36]
-					"9c0d1e^1", -- [37]
-					"b37e71^1", -- [38]
-					"797c97^1", -- [39]
-					"ab4755^1", -- [40]
-					"9b8c3e^1", -- [41]
-					"8a2a15^1", -- [42]
-					"8b5c5e^1", -- [43]
-					"5fecf1^1", -- [44]
-					"5468e6^1", -- [45]
+					"9f68d2^1", -- [1]
+					"9a484b^1", -- [2]
+					"89cbaa^1", -- [3]
+					"8dbbb1^1", -- [4]
+					"98f77f^1", -- [5]
+					"96b72c^1", -- [6]
+					"a72b28^1", -- [7]
+					"599837^1", -- [8]
+					"57e792^1", -- [9]
+					"8ac1ec^1", -- [10]
+					"8c42f1^1", -- [11]
+					"ada950^1", -- [12]
+					"5b38ab^1", -- [13]
+					"902319^1", -- [14]
+					"8751a7^1", -- [15]
+					"6051ed^1", -- [16]
+					"5a9a8d^1", -- [17]
 				},
 				[30] = {
-					"b85797^1", -- [1]
-					"ab4db1^1", -- [2]
-					"78f843^1", -- [3]
-					"90bd1a^1", -- [4]
-					"6e7e17^1", -- [5]
-					"857a63^1", -- [6]
-					"6fb8ff^1", -- [7]
-					"a949d3^1", -- [8]
-					"414c45^1", -- [9]
-					"a98b75^1", -- [10]
-					"af2c2d^1", -- [11]
-					"ad9979^1", -- [12]
-					"92b9a5^1", -- [13]
-					"8be9b0^1", -- [14]
-					"5cd9ec^1", -- [15]
-					"b0eb1f^1", -- [16]
-					"9e6d16^1", -- [17]
-					"47d965^1", -- [18]
-					"4399d4^1", -- [19]
-					"b077e4^1", -- [20]
-					"74ba82^1", -- [21]
-					"47ace2^1", -- [22]
-					"60395a^1", -- [23]
-					"71cd47^1", -- [24]
-					"913b4c^1", -- [25]
-					"a119a3^1", -- [26]
-					"660a7b^1", -- [27]
-					"87dada^1", -- [28]
-					"890cc8^1", -- [29]
-					"593bca^1", -- [30]
-					"5a0c7f^1", -- [31]
-					"4e89fc^1", -- [32]
-					"54b8b6^1", -- [33]
-					"9b4b96^1", -- [34]
-					"685e1b^1", -- [35]
-					"928a52^1", -- [36]
-					"857c29^1", -- [37]
-					"481b4c^1", -- [38]
-					"8b1add^1", -- [39]
-					"67db91^1", -- [40]
-					"6918b5^1", -- [41]
-					"b70d36^1", -- [42]
-					"6e3b23^1", -- [43]
-					"511b9e^1", -- [44]
-					"a2aac2^1", -- [45]
-					"837d9d^1", -- [46]
-					"67d9e8^1", -- [47]
-					"7feb78^1", -- [48]
-					"643b8d^1", -- [49]
-					"71cd8c^1", -- [50]
-					"697b39^1", -- [51]
-					"7fddf7^1", -- [52]
-					"a3a9e0^1", -- [53]
-					"95d8ff^1", -- [54]
-					"881918^1", -- [55]
-					"606a83^1", -- [56]
-					"7cca3a^1", -- [57]
-					"898c08^1", -- [58]
-					"9dcc35^1", -- [59]
-					"aa87a3^1", -- [60]
-					"941d90^1", -- [61]
-					"3fad09^1", -- [62]
-					"7d893c^1", -- [63]
-					"5d5bca^1", -- [64]
-					"6d093a^1", -- [65]
-					"9b1a7d^1", -- [66]
-					"880b06^1", -- [67]
-					"ac1ad2^1", -- [68]
-					"41cab0^1", -- [69]
-					"b5499a^1", -- [70]
-					"b75c2d^1", -- [71]
-					"77e971^1", -- [72]
-					"68d80d^1", -- [73]
-					"76ead9^1", -- [74]
-					"4e8c35^1", -- [75]
-					"7a9c62^1", -- [76]
-					"989970^1", -- [77]
-					"b646ba^1", -- [78]
-				},
-				[34] = {
-					"8a9d06^1", -- [1]
-					"8ad94c^1", -- [2]
-					"4c3880^1", -- [3]
-					"6bad9d^1", -- [4]
-					"4fdbae^1", -- [5]
-					"85091c^1", -- [6]
-					"9c1910^1", -- [7]
-					"485ae5^1", -- [8]
-					"878bd7^1", -- [9]
-					"72dadb^1", -- [10]
-					"8a6889^1", -- [11]
-					"6cbbcf^1", -- [12]
-					"71d8d7^1", -- [13]
-					"854844^1", -- [14]
-					"8ffc24^1", -- [15]
-					"9dc8d2^1", -- [16]
-					"623971^1", -- [17]
-					"949d2a^1", -- [18]
-					"9aa86b^1", -- [19]
-					"59ca3e^1", -- [20]
-					"a6fa29^1", -- [21]
-					"67880d^1", -- [22]
-					"83ad99^1", -- [23]
-					"b706f7^1", -- [24]
-					"9e0c41^1", -- [25]
-					"ad0ceb^1", -- [26]
-					"b689cf^1", -- [27]
-					"a2190b^1", -- [28]
-					"9d0ccc^1", -- [29]
-					"46293d^1", -- [30]
-					"5f2c05^1", -- [31]
-					"6efaa7^1", -- [32]
-					"773a7b^1", -- [33]
-					"a1ea26^1", -- [34]
-					"9e4be3^1", -- [35]
-					"ab0731^1", -- [36]
-					"8cfa2e^1", -- [37]
-					"6408db^1", -- [38]
-					"a9c7f9^1", -- [39]
-					"456b40^1", -- [40]
-					"79384b^1", -- [41]
-					"56f894^1", -- [42]
-					"6ef801^1", -- [43]
-					"781c68^1", -- [44]
-					"938a42^1", -- [45]
-					"60ee55^1", -- [46]
-					"39cc5a^1", -- [47]
-					"434a21^1", -- [48]
-					"b1662f^1", -- [49]
-					"aa48ff^1", -- [50]
-					"76a923^1", -- [51]
-					"49e9b3^1", -- [52]
-					"93cae1^1", -- [53]
-					"9e1b06^1", -- [54]
-					"a7c997^1", -- [55]
-					"670e40^1", -- [56]
-					"4928e2^1", -- [57]
-					"8998aa^1", -- [58]
-					"567b37^1", -- [59]
-					"7cdaa1^1", -- [60]
-					"7b89e2^1", -- [61]
-					"b1bd90^1", -- [62]
-					"b9185b^1", -- [63]
-					"8eeb1f^1", -- [64]
-					"8c6816^1", -- [65]
-					"908dd7^1", -- [66]
-					"535a63^1", -- [67]
-					"4a6dc1^1", -- [68]
-					"7d8c15^1", -- [69]
-					"640874^1", -- [70]
-					"992b2f^1", -- [71]
-					"ac5b8b^1", -- [72]
-					"8efb8a^1", -- [73]
-					"b43af2^1", -- [74]
-					"5fe8f3^1", -- [75]
-					"691d12^1", -- [76]
-					"8f7d5c^1", -- [77]
-					"4659f8^1", -- [78]
-					"98691b^1", -- [79]
-					"755847^1", -- [80]
-					"94799a^1", -- [81]
-					"975bc2^1", -- [82]
-					"539cf9^1", -- [83]
-					"7a6959^1", -- [84]
-					"959b91^1", -- [85]
-					"74696d^1", -- [86]
-					"8b1dca^1", -- [87]
-					"5f19c3^1", -- [88]
-					"a8bae9^1", -- [89]
-					"8a1c6a^1", -- [90]
-					"525c77^1", -- [91]
-					"852dc8^1", -- [92]
+					"a6e94c^1", -- [1]
+					"85bac8^1", -- [2]
+					"9578e0^1", -- [3]
+					"953828^1", -- [4]
+					"93fa9b^1", -- [5]
+					"8c3a30^1", -- [6]
+					"5a27d0^1", -- [7]
+					"6396a8^1", -- [8]
+					"5ed64a^1", -- [9]
+					"77d7d9^1", -- [10]
+					"8c5397^1", -- [11]
+					"96d997^1", -- [12]
+					"a6babb^1", -- [13]
+					"5fd9df^1", -- [14]
+					"6b0a73^1", -- [15]
+					"7ca2b4^1", -- [16]
+					"88e2ff^1", -- [17]
+					"9563ad^1", -- [18]
+					"7b31f2^1", -- [19]
+					"6242f5^1", -- [20]
+					"6989e3^1", -- [21]
+					"605a74^1", -- [22]
 				},
 			},
-			[2019] = {
+			[1018] = {
 				[24] = {
-					"ad9d9f^1", -- [1]
-					"9af23e^1", -- [2]
-					"99e2a1^1", -- [3]
-					"8f6356^1", -- [4]
-					"9e8177^1", -- [5]
-					"7a67ab^1", -- [6]
-					"905c23^1", -- [7]
-					"9d5ca9^1", -- [8]
-					"9e79eb^1", -- [9]
-					"9dab0e^1", -- [10]
-					"944a22^1", -- [11]
-					"94cc90^1", -- [12]
-					"8dcbfa^1", -- [13]
-					"8bab1a^1", -- [14]
-					"a13a98^1", -- [15]
-					"998a6c^1", -- [16]
-					"9e0208^1", -- [17]
-					"7fd2ef^1", -- [18]
-					"78f311^1", -- [19]
-					"728491^1", -- [20]
-					"5db29d^1", -- [21]
-					"63f268^1", -- [22]
-					"8033d4^1", -- [23]
-					"849328^1", -- [24]
-					"73285c^1", -- [25]
-					"7788cb^1", -- [26]
-					"815960^1", -- [27]
-					"83c8a4^1", -- [28]
-					"8ce6eb^1", -- [29]
-					"8fe525^1", -- [30]
-					"8486bf^1", -- [31]
-					"9389d0^1", -- [32]
-					"8dab49^1", -- [33]
-					"946a98^1", -- [34]
-					"a299d4^1", -- [35]
-					"a489c0^1", -- [36]
-					"a93949^1", -- [37]
-					"984a2b^1", -- [38]
-					"a86998^1", -- [39]
-					"a5c92d^1", -- [40]
-					"a8b8b0^1", -- [41]
-					"a7cc64^1", -- [42]
-					"a0ec0a^1", -- [43]
-					"a019ae^1", -- [44]
-					"a2d989^1", -- [45]
-					"88c2c9^1", -- [46]
-					"7d93ee^1", -- [47]
-					"74f451^1", -- [48]
-					"88b570^1", -- [49]
-					"810715^1", -- [50]
-					"83e925^1", -- [51]
-					"8a3964^1", -- [52]
-					"a3b1ba^1", -- [53]
-					"6ac2ed^1", -- [54]
-					"7d53a1^1", -- [55]
-					"8b8923^1", -- [56]
-					"89886f^1", -- [57]
-					"8ce818^1", -- [58]
-					"8a86dc^1", -- [59]
-					"98dccc^1", -- [60]
-					"a44caf^1", -- [61]
-					"a41bee^1", -- [62]
-					"6702e2^1", -- [63]
-					"8e0b0f^1", -- [64]
-					"99bc45^1", -- [65]
-					"adcd0c^1", -- [66]
-					"7813fb^1", -- [67]
-					"8908e2^1", -- [68]
-					"85198f^1", -- [69]
-					"8bbb99^1", -- [70]
-				},
-				[6] = {
-					"ad7d57^1", -- [1]
-					"893c83^1", -- [2]
-					"950c48^1", -- [3]
-					"9bdc20^1", -- [4]
-					"99ba55^1", -- [5]
-					"90ac9d^1", -- [6]
-					"8e0be5^1", -- [7]
-					"9c7a9d^1", -- [8]
-					"93d9ce^1", -- [9]
-					"908996^1", -- [10]
-					"8cd9e5^1", -- [11]
-					"8e5a94^1", -- [12]
-					"9eca94^1", -- [13]
-					"98fa12^1", -- [14]
-					"aa3d04^1", -- [15]
-					"97acaa^1", -- [16]
-					"acbca1^1", -- [17]
-					"8fc9d8^1", -- [18]
-					"922a68^1", -- [19]
-					"8dfb7e^1", -- [20]
-					"8c0c44^1", -- [21]
-					"a3ac4c^1", -- [22]
-					"8dbc7e^1", -- [23]
-					"a8fc62^1", -- [24]
-				},
-				[34] = {
-					"976156^1", -- [1]
-					"8a7289^1", -- [2]
-					"9c920c^1", -- [3]
-					"7c12f2^1", -- [4]
-					"7a23ca^1", -- [5]
-					"79039b^1", -- [6]
-					"923271^1", -- [7]
-					"8bb5eb^1", -- [8]
-					"8aa671^1", -- [9]
-					"80f655^1", -- [10]
-					"8376f6^1", -- [11]
-					"9c614d^1", -- [12]
-					"81d48d^1", -- [13]
-					"84458e^1", -- [14]
-					"84766d^1", -- [15]
-					"8bb715^1", -- [16]
-					"80f779^1", -- [17]
-					"81f2d7^1", -- [18]
-					"7cd44f^1", -- [19]
-					"7c35a3^1", -- [20]
-					"889760^1", -- [21]
-					"8db239^1", -- [22]
-					"8643ba^1", -- [23]
-					"78543a^1", -- [24]
-					"8bb5a9^1", -- [25]
-					"81733c^1", -- [26]
-					"87c302^1", -- [27]
-					"86c5ae^1", -- [28]
-					"8ba62f^1", -- [29]
+					"9b7b50^1", -- [1]
+					"acd874^1", -- [2]
+					"7d8c72^1", -- [3]
+					"b12903^1", -- [4]
+					"9f09fc^1", -- [5]
+					"6ae577^1", -- [6]
+					"975ba6^1", -- [7]
+					"88ca90^1", -- [8]
+					"751b68^1", -- [9]
+					"7fd934^1", -- [10]
+					"930a94^1", -- [11]
+					"9f0bb6^1", -- [12]
+					"6519ab^1", -- [13]
+					"78a732^1", -- [14]
+					"7eeb89^1", -- [15]
+					"6aec28^1", -- [16]
+					"88cb48^1", -- [17]
+					"6349d3^1", -- [18]
+					"a15b8d^1", -- [19]
+					"a6ba3b^1", -- [20]
+					"6c648e^1", -- [21]
+					"751874^1", -- [22]
+					"84b9f8^1", -- [23]
+					"9e8b06^1", -- [24]
+					"6e8704^1", -- [25]
+					"a4eab4^1", -- [26]
+					"a6f889^1", -- [27]
+					"81080a^1", -- [28]
+					"7f0ae3^1", -- [29]
+					"9c4a3b^1", -- [30]
+					"9bd99c^1", -- [31]
+					"88f9d2^1", -- [32]
+					"781766^1", -- [33]
 				},
 				[10] = {
-					"a4d096^1", -- [1]
-					"6d9527^1", -- [2]
-					"69a2a4^1", -- [3]
-					"5a4342^1", -- [4]
-					"5e734d^1", -- [5]
-					"7f58e3^1", -- [6]
-					"8f96c6^1", -- [7]
-					"9929b6^1", -- [8]
-					"9cdb06^1", -- [9]
-					"9b5abf^1", -- [10]
-					"9e19b7^1", -- [11]
-					"a0f12b^1", -- [12]
-					"79f50b^1", -- [13]
-					"8d55a8^1", -- [14]
-					"8056eb^1", -- [15]
-					"81d8a1^1", -- [16]
-					"7b9292^1", -- [17]
-					"696369^1", -- [18]
-					"66e24e^1", -- [19]
-					"58d2f1^1", -- [20]
-					"8e3872^1", -- [21]
-					"8f26fc^1", -- [22]
-					"9c30f9^1", -- [23]
-					"83d1e7^1", -- [24]
-					"63f396^1", -- [25]
-					"740293^1", -- [26]
-					"80a74b^1", -- [27]
-					"81b8dd^1", -- [28]
+					"58f5b8^1", -- [1]
+					"66cc28^1", -- [2]
+					"7147c8^1", -- [3]
+					"6687a7^1", -- [4]
+					"674a21^1", -- [5]
+					"965be3^1", -- [6]
+					"6605bc^1", -- [7]
+					"735427^1", -- [8]
+					"6a2b17^1", -- [9]
+					"718ba6^1", -- [10]
+					"7d4a00^1", -- [11]
+					"685cc4^1", -- [12]
+					"843baa^1", -- [13]
+					"76e4fc^1", -- [14]
+					"7145c0^1", -- [15]
+					"857a25^1", -- [16]
+					"82aab4^1", -- [17]
+					"79f556^1", -- [18]
+					"62f650^1", -- [19]
+					"65c97d^1", -- [20]
+					"6544bb^1", -- [21]
+					"729c08^1", -- [22]
+					"5cd6c2^1", -- [23]
+					"78669d^1", -- [24]
+					"7c0475^1", -- [25]
+					"59c5f1^1", -- [26]
+					"a09b33^1", -- [27]
+					"59c65d^1", -- [28]
+					"6995ac^1", -- [29]
+					"9bfb81^1", -- [30]
+					"809bcb^1", -- [31]
+					"7625f1^1", -- [32]
+					"7358db^1", -- [33]
+					"655b58^1", -- [34]
+					"6918ff^1", -- [35]
+					"7ac735^1", -- [36]
+					"80e9af^1", -- [37]
+					"62bb02^1", -- [38]
+					"899b79^1", -- [39]
+					"69d4e4^1", -- [40]
+					"718508^1", -- [41]
+					"7b3bd3^1", -- [42]
+					"6b2beb^1", -- [43]
+					"6ca89d^1", -- [44]
+					"724647^1", -- [45]
+					"61ecaf^1", -- [46]
+					"60245d^1", -- [47]
+					"735898^1", -- [48]
+					"809b4c^1", -- [49]
+					"5f1a87^1", -- [50]
+					"72c776^1", -- [51]
+					"7a7903^1", -- [52]
+					"7c096d^1", -- [53]
+					"6786ae^1", -- [54]
+					"7c59b4^1", -- [55]
+					"66843c^1", -- [56]
+					"7637bd^1", -- [57]
+					"7c77df^1", -- [58]
+					"7ec8bf^1", -- [59]
+					"74da2e^1", -- [60]
+					"7d3a50^1", -- [61]
+					"899a04^1", -- [62]
+					"7dd83c^1", -- [63]
+					"838959^1", -- [64]
+					"7e1876^1", -- [65]
+					"75c687^1", -- [66]
+					"67f588^1", -- [67]
+					"600595^1", -- [68]
+					"5f5506^1", -- [69]
+					"60253c^1", -- [70]
+					"6df44e^1", -- [71]
+					"6dc4fc^1", -- [72]
+					"797465^1", -- [73]
+					"74950c^1", -- [74]
+					"756580^1", -- [75]
+					"6e49af^1", -- [76]
+					"6a884b^1", -- [77]
+					"6593d9^1", -- [78]
+					"74b46d^1", -- [79]
+					"7496ce^1", -- [80]
+					"70a788^1", -- [81]
+					"6c25db^1", -- [82]
+				},
+				[34] = {
+					"949a86^1", -- [1]
+					"acd948^1", -- [2]
+					"a3aa63^1", -- [3]
+					"9078bd^1", -- [4]
+					"850b11^1", -- [5]
+					"afa82e^1", -- [6]
+					"86ba67^1", -- [7]
+					"a37992^1", -- [8]
+					"8c1acd^1", -- [9]
+					"afa9d8^1", -- [10]
+					"7978c1^1", -- [11]
+					"772786^1", -- [12]
+					"708c76^1", -- [13]
+					"685a25^1", -- [14]
+					"7dc9dc^1", -- [15]
+					"7218a1^1", -- [16]
+					"6888a1^1", -- [17]
+					"5d1521^1", -- [18]
+					"6b659c^1", -- [19]
+					"5a4511^1", -- [20]
+					"97db60^1", -- [21]
+					"b2394c^1", -- [22]
+					"7e4baa^1", -- [23]
+					"6c6407^1", -- [24]
+					"6825e5^1", -- [25]
+					"681934^1", -- [26]
+					"7d4955^1", -- [27]
+					"63f5c4^1", -- [28]
+					"836860^1", -- [29]
+					"aa0a05^1", -- [30]
+					"77a5c4^1", -- [31]
+					"62b97e^1", -- [32]
+					"88499e^1", -- [33]
+					"735535^1", -- [34]
+					"b1b8ca^1", -- [35]
+					"772654^1", -- [36]
+					"6cec90^1", -- [37]
+					"7246be^1", -- [38]
+					"a4eb2b^1", -- [39]
+					"8f2c49^1", -- [40]
+					"9f8a2d^1", -- [41]
+					"63fcd8^1", -- [42]
+					"685772^1", -- [43]
+					"67d4cf^1", -- [44]
+					"9a6a52^1", -- [45]
+					"a00bc2^1", -- [46]
+					"84b9a7^1", -- [47]
+					"93dc51^1", -- [48]
+					"a7fa9c^1", -- [49]
+					"65c529^1", -- [50]
+					"7664bf^1", -- [51]
+					"6f363b^1", -- [52]
+					"88dc5a^1", -- [53]
+					"691c5a^1", -- [54]
+					"5dd5f7^1", -- [55]
+					"a878b1^1", -- [56]
+					"a779cb^1", -- [57]
+					"9c49f0^1", -- [58]
+					"7af444^1", -- [59]
+					"6076cb^1", -- [60]
+					"a94826^1", -- [61]
+					"7bc3ff^1", -- [62]
+					"612423^1", -- [63]
+					"a3eb50^1", -- [64]
+					"a05ad9^1", -- [65]
+					"5b048e^1", -- [66]
+					"a8f86b^1", -- [67]
+					"9d8b8d^1", -- [68]
+					"6549e0^1", -- [69]
+					"674458^1", -- [70]
+					"62ba63^1", -- [71]
+					"73acab^1", -- [72]
+					"76ec20^1", -- [73]
+					"6efb5d^1", -- [74]
+					"7666be^1", -- [75]
+					"8f6b4c^1", -- [76]
+					"b2b890^1", -- [77]
+					"903bd8^1", -- [78]
+					"782755^1", -- [79]
+					"992895^1", -- [80]
+					"5d167d^1", -- [81]
+					"80986b^1", -- [82]
+					"816c20^1", -- [83]
+					"718749^1", -- [84]
+					"766bdf^1", -- [85]
+					"77a413^1", -- [86]
+					"74146d^1", -- [87]
+					"95dc10^1", -- [88]
+					"8bab9e^1", -- [89]
+					"87cbd0^1", -- [90]
+					"96ea05^1", -- [91]
+					"878884^1", -- [92]
+					"602745^1", -- [93]
+					"6dbb17^1", -- [94]
+					"762c8b^1", -- [95]
+					"a00a44^1", -- [96]
+					"8d4b9a^1", -- [97]
+					"abf895^1", -- [98]
+					"75578d^1", -- [99]
+					"78da5c^1", -- [100]
+					"792a92^1", -- [101]
+					"767b0a^1", -- [102]
+					"882a4b^1", -- [103]
+					"8b1a23^1", -- [104]
+					"8cba21^1", -- [105]
+					"8f0a57^1", -- [106]
+					"9aca12^1", -- [107]
+					"9cfa43^1", -- [108]
+					"a149c0^1", -- [109]
+					"9558c0^1", -- [110]
+					"9fc85e^1", -- [111]
+					"aa989f^1", -- [112]
+					"ac57b1^1", -- [113]
+					"858872^1", -- [114]
+					"7f6899^1", -- [115]
+					"7ee8be^1", -- [116]
+					"a4e760^1", -- [117]
+					"a75788^1", -- [118]
+					"aa7728^1", -- [119]
+					"a52721^1", -- [120]
+					"972782^1", -- [121]
+					"887867^1", -- [122]
+					"937933^1", -- [123]
+					"87f770^1", -- [124]
+					"7a5672^1", -- [125]
+					"81c75e^1", -- [126]
+					"62f5b1^1", -- [127]
+					"63753f^1", -- [128]
+					"60746c^1", -- [129]
+					"62c47d^1", -- [130]
+					"6c4438^1", -- [131]
+					"690511^1", -- [132]
+					"7713e2^1", -- [133]
+					"7d8389^1", -- [134]
+					"790430^1", -- [135]
+					"78d5eb^1", -- [136]
+					"749661^1", -- [137]
+					"6cd687^1", -- [138]
+					"79b694^1", -- [139]
+					"9619ed^1", -- [140]
+					"88eac3^1", -- [141]
+					"6a28a4^1", -- [142]
+					"6cd8dc^1", -- [143]
+					"6683a7^1", -- [144]
+					"79e39e^1", -- [145]
+					"6f84f0^1", -- [146]
+					"797591^1", -- [147]
+					"6ce78a^1", -- [148]
+					"612406^1", -- [149]
+				},
+				[30] = {
+					"692550^1", -- [1]
+					"6a587d^1", -- [2]
+					"5f666d^1", -- [3]
+					"82aa8b^1", -- [4]
+					"782b5c^1", -- [5]
+					"6aa492^1", -- [6]
+					"6127ab^1", -- [7]
+					"97aa45^1", -- [8]
+					"71064b^1", -- [9]
+					"62fab4^1", -- [10]
+					"a4a8c2^1", -- [11]
+					"8808c5^1", -- [12]
+					"71cbaa^1", -- [13]
+					"ab0a6b^1", -- [14]
+					"77e5be^1", -- [15]
+					"8c1bf4^1", -- [16]
+					"87cab5^1", -- [17]
+					"6aa724^1", -- [18]
+					"8c1a29^1", -- [19]
+					"acd9e1^1", -- [20]
+					"87cc42^1", -- [21]
+					"9388ca^1", -- [22]
+					"7f1ae1^1", -- [23]
+					"7f5c45^1", -- [24]
+					"9b7bfc^1", -- [25]
+					"64860e^1", -- [26]
+					"766888^1", -- [27]
+					"715b2f^1", -- [28]
+					"a29a2d^1", -- [29]
+					"a19b75^1", -- [30]
+					"ae18a9^1", -- [31]
+					"72c5ed^1", -- [32]
+					"60e6e7^1", -- [33]
+					"ad9844^1", -- [34]
+					"72c504^1", -- [35]
+					"868bc7^1", -- [36]
+					"a2d9c7^1", -- [37]
+					"695c9f^1", -- [38]
+					"83a986^1", -- [39]
+					"a5b9ed^1", -- [40]
+					"70c6ec^1", -- [41]
+					"99a9cb^1", -- [42]
+					"76e755^1", -- [43]
+					"9dd9cb^1", -- [44]
+					"a77847^1", -- [45]
+					"6957c0^1", -- [46]
+					"6688db^1", -- [47]
+					"930a5b^1", -- [48]
+					"6e3bd3^1", -- [49]
+					"9bb8d5^1", -- [50]
+					"759691^1", -- [51]
+					"7e18da^1", -- [52]
+					"9b2896^1", -- [53]
+					"61f735^1", -- [54]
+					"996b89^1", -- [55]
+					"9cfa94^1", -- [56]
+					"67d99f^1", -- [57]
+					"5c459c^1", -- [58]
+					"5dd515^1", -- [59]
+					"7208ce^1", -- [60]
+					"6f758f^1", -- [61]
+					"8269f8^1", -- [62]
+					"61647d^1", -- [63]
+					"9bf946^1", -- [64]
+					"b1f965^1", -- [65]
+					"6ff759^1", -- [66]
+					"62b9f8^1", -- [67]
+					"94cb8d^1", -- [68]
+					"749bb7^1", -- [69]
+					"9f8993^1", -- [70]
+					"ab898a^1", -- [71]
+					"934c20^1", -- [72]
+					"668b0b^1", -- [73]
+					"8f2b7e^1", -- [74]
+					"87c9f8^1", -- [75]
+					"934b48^1", -- [76]
+					"762546^1", -- [77]
+					"79b413^1", -- [78]
+					"736c24^1", -- [79]
+					"7556e0^1", -- [80]
+					"6bab7d^1", -- [81]
+					"7104b2^1", -- [82]
+					"8d6aac^1", -- [83]
+					"76a465^1", -- [84]
+					"857a8b^1", -- [85]
+					"9aea76^1", -- [86]
+					"7545dd^1", -- [87]
+					"78d778^1", -- [88]
+					"7aa9e8^1", -- [89]
+					"777a38^1", -- [90]
+					"8b7a70^1", -- [91]
+					"920a92^1", -- [92]
+					"994a74^1", -- [93]
+					"9a793a^1", -- [94]
+					"9c7861^1", -- [95]
+					"9f88df^1", -- [96]
+					"a848a0^1", -- [97]
+					"a8d73c^1", -- [98]
+					"838931^1", -- [99]
+					"878959^1", -- [100]
+					"9917ba^1", -- [101]
+					"a93790^1", -- [102]
+					"9247ac^1", -- [103]
+					"862937^1", -- [104]
+					"8cc952^1", -- [105]
+					"846852^1", -- [106]
+					"8368b5^1", -- [107]
+					"79466b^1", -- [108]
+					"7fa7b7^1", -- [109]
+					"6d46c6^1", -- [110]
+					"64f5a3^1", -- [111]
+					"66c3f9^1", -- [112]
+					"743420^1", -- [113]
+					"78d4a5^1", -- [114]
+					"7aa4aa^1", -- [115]
+					"7304df^1", -- [116]
+					"6ee63c^1", -- [117]
+					"675648^1", -- [118]
+					"8b98df^1", -- [119]
+					"985921^1", -- [120]
+					"932a15^1", -- [121]
+					"91e9da^1", -- [122]
+					"807ab7^1", -- [123]
+					"71ea4c^1", -- [124]
+					"6c086e^1", -- [125]
+					"6666b8^1", -- [126]
+					"666612^1", -- [127]
+					"7933e8^1", -- [128]
+					"7bd39c^1", -- [129]
+					"736669^1", -- [130]
+					"741611^1", -- [131]
 				},
 			},
-			[9000] = {
-				[58] = {
-					"8eeffa^1", -- [1]
+			[2012] = {
+				[6] = {
+					"420787^1", -- [1]
+					"75a7ed^1", -- [2]
+					"6ceac9^1", -- [3]
+					"a36903^1", -- [4]
+					"2003d7^1", -- [5]
+					"aef350^1", -- [6]
+					"4a2a6b^1", -- [7]
+					"79768d^1", -- [8]
+					"7eaa45^1", -- [9]
+					"89e8c2^1", -- [10]
+					"390a2d^1", -- [11]
+					"b2b413^1", -- [12]
+					"c364b4^1", -- [13]
+					"461a56^1", -- [14]
+					"ad5979^1", -- [15]
+					"99e7d4^1", -- [16]
+					"55a8f6^1", -- [17]
+					"2fd731^1", -- [18]
+					"2766eb^1", -- [19]
+					"c14699^1", -- [20]
+					"a8b60e^1", -- [21]
+					"b85346^1", -- [22]
+					"4f46eb^1", -- [23]
+					"a1d772^1", -- [24]
+					"ccc55e^1", -- [25]
+					"50848e^1", -- [26]
+					"301836^1", -- [27]
+					"b5c6df^1", -- [28]
+					"388388^1", -- [29]
+					"5c463f^1", -- [30]
+					"a477e1^1", -- [31]
+					"45d91b^1", -- [32]
+					"52d378^1", -- [33]
+					"a29bdf^1", -- [34]
+					"5a88d6^1", -- [35]
+					"4274d7^1", -- [36]
+					"92cbcf^1", -- [37]
+					"c203c9^1", -- [38]
+					"63ba1d^1", -- [39]
+					"91b894^1", -- [40]
+					"41b751^1", -- [41]
+					"9f06a5^1", -- [42]
+					"a04a73^1", -- [43]
+					"894a21^1", -- [44]
+					"47d5f6^1", -- [45]
+					"6ef8d2^1", -- [46]
+				},
+				[7] = {
+					"d1e660^1", -- [1]
+					"508cbc^1", -- [2]
+					"539b5c^1", -- [3]
+					"9cbb16^1", -- [4]
+					"34b7af^1", -- [5]
+					"33a6df^1", -- [6]
+					"aac996^1", -- [7]
+					"2cc7b3^1", -- [8]
+					"a9d46e^1", -- [9]
+					"504bb6^1", -- [10]
+					"a7b8ca^1", -- [11]
+					"a9c81a^1", -- [12]
+					"504e3c^1", -- [13]
+					"a46b75^1", -- [14]
+					"a67938^1", -- [15]
+					"49edfb^1", -- [16]
+					"29b894^1", -- [17]
+					"c496e3^1", -- [18]
+					"5c0e03^1", -- [19]
+					"93c465^1", -- [20]
+					"a54a65^1", -- [21]
+					"9d7c14^1", -- [22]
+					"475b79^1", -- [23]
+					"29f6f3^1", -- [24]
+					"a73c66^1", -- [25]
+					"c04772^1", -- [26]
+					"650d3b^1", -- [27]
+					"cdc5b8^1", -- [28]
+					"695c72^1", -- [29]
+					"5f6bb6^1", -- [30]
+					"b02867^1", -- [31]
+					"c9b63b^1", -- [32]
+					"930a63^1", -- [33]
+				},
+				[10] = {
+					"578273^1", -- [1]
+					"3ce3c2^1", -- [2]
+					"9413cd^1", -- [3]
+					"6382dc^1", -- [4]
+					"2b7863^1", -- [5]
+					"a835c0^1", -- [6]
+					"b028ca^1", -- [7]
+					"c9b542^1", -- [8]
+					"a2e28b^1", -- [9]
+					"b615a5^1", -- [10]
+					"43c116^1", -- [11]
+					"8326c2^1", -- [12]
+					"c6f231^1", -- [13]
+					"c32311^1", -- [14]
+					"440a19^1", -- [15]
+					"7d884b^1", -- [16]
+					"99ec5e^1", -- [17]
+					"39d235^1", -- [18]
+					"ae23c6^1", -- [19]
+					"4f0158^1", -- [20]
+					"29f992^1", -- [21]
+					"4ab2d9^1", -- [22]
+					"4d3230^1", -- [23]
+					"90f894^1", -- [24]
+					"a63ad1^1", -- [25]
+					"b70797^1", -- [26]
+					"907abc^1", -- [27]
+					"346a36^1", -- [28]
+					"3f25f6^1", -- [29]
+					"3fa346^1", -- [30]
+					"822a22^1", -- [31]
+					"9e0353^1", -- [32]
+					"2ec699^1", -- [33]
+					"3de43c^1", -- [34]
+				},
+				[24] = {
+					"613ac9^1", -- [1]
+					"6795b9^1", -- [2]
+					"4a2786^1", -- [3]
+					"8167a7^1", -- [4]
+					"2ab5e9^1", -- [5]
+					"297a98^1", -- [6]
+					"5b47fd^1", -- [7]
+					"3c1529^1", -- [8]
+					"5e65c8^1", -- [9]
+					"5c1708^1", -- [10]
+					"975863^1", -- [11]
+					"60f420^1", -- [12]
+					"5b89a6^1", -- [13]
+					"ad24a7^1", -- [14]
+					"5355ac^1", -- [15]
+					"658af2^1", -- [16]
+					"c83276^1", -- [17]
+					"af37d9^1", -- [18]
+					"95972c^1", -- [19]
+					"5d51f3^1", -- [20]
+					"2cd82e^1", -- [21]
+					"a42afe^1", -- [22]
+					"6ba3d6^1", -- [23]
+					"a19776^1", -- [24]
+					"6786ef^1", -- [25]
+					"8439f4^1", -- [26]
+					"61625d^1", -- [27]
+					"95d32a^1", -- [28]
+					"2dca36^1", -- [29]
+					"3602c8^1", -- [30]
+					"51da11^1", -- [31]
+					"a902ed^1", -- [32]
+					"5194d7^1", -- [33]
+					"23d857^1", -- [34]
+					"380826^1", -- [35]
+					"681928^1", -- [36]
+					"598ac9^1", -- [37]
+					"944af2^1", -- [38]
+				},
+				[34] = {
+					"68a833^1", -- [1]
+					"50d92c^1", -- [2]
+					"6d768d^1", -- [3]
+					"633378^1", -- [4]
+					"41c743^1", -- [5]
+					"b44434^1", -- [6]
+					"3b6497^1", -- [7]
+					"6eb3ad^1", -- [8]
+					"955c31^1", -- [9]
+					"52913f^1", -- [10]
+					"458695^1", -- [11]
+					"4ae500^1", -- [12]
+					"928388^1", -- [13]
+					"7f5a4b^1", -- [14]
+					"9e926e^1", -- [15]
+					"5b46ba^1", -- [16]
+					"6bebae^1", -- [17]
+					"2725ed^1", -- [18]
+					"5ac251^1", -- [19]
+					"77e6df^1", -- [20]
+					"4bf430^1", -- [21]
+					"965322^1", -- [22]
+					"52a4e0^1", -- [23]
+					"4aa822^1", -- [24]
+					"68db75^1", -- [25]
+					"2a7826^1", -- [26]
+					"762867^1", -- [27]
+					"9e0749^1", -- [28]
+					"728305^1", -- [29]
+					"7fe88d^1", -- [30]
+					"3bd246^1", -- [31]
+					"a6c8f8^1", -- [32]
+					"a9d7dd^1", -- [33]
+					"63b231^1", -- [34]
+					"b17536^1", -- [35]
+					"961aa0^1", -- [36]
+					"311aa8^1", -- [37]
+					"689a5a^1", -- [38]
+					"c764b7^1", -- [39]
+					"b8632a^1", -- [40]
+					"c3975d^1", -- [41]
+					"772a3a^1", -- [42]
+					"38c898^1", -- [43]
+					"7e99a6^1", -- [44]
+					"8959d2^1", -- [45]
+					"c663d6^1", -- [46]
+					"539a63^1", -- [47]
+					"9132f5^1", -- [48]
+					"3e7336^1", -- [49]
+					"c1d55b^1", -- [50]
+					"ad22a8^1", -- [51]
+					"c7728a^1", -- [52]
+					"4bc879^1", -- [53]
+					"cb865c^1", -- [54]
+					"4759b3^1", -- [55]
+					"5a531f^1", -- [56]
+					"bc2695^1", -- [57]
+					"9358ce^1", -- [58]
+					"529438^1", -- [59]
+					"33e9c3^1", -- [60]
+					"b432b7^1", -- [61]
+					"90ba3e^1", -- [62]
+					"af66ca^1", -- [63]
+					"811786^1", -- [64]
+					"3c5971^1", -- [65]
+					"47a761^1", -- [66]
+					"42054e^1", -- [67]
+					"4f463b^1", -- [68]
+				},
+				[30] = {
+					"a0e7c5^1", -- [1]
+					"55a996^1", -- [2]
+					"3ce6fb^1", -- [3]
+					"46e4ec^1", -- [4]
+					"9309fc^1", -- [5]
+					"51d6b6^1", -- [6]
+					"332884^1", -- [7]
+					"7ac8c6^1", -- [8]
+					"5d1143^1", -- [9]
+					"87999b^1", -- [10]
+					"8fb8ea^1", -- [11]
+					"3cd34b^1", -- [12]
+					"58b1df^1", -- [13]
+					"3a0633^1", -- [14]
+					"83a724^1", -- [15]
+					"c55438^1", -- [16]
+					"5cd465^1", -- [17]
+					"6be678^1", -- [18]
+					"7e06e3^1", -- [19]
+					"9977d9^1", -- [20]
+					"4db5ac^1", -- [21]
+					"aca76e^1", -- [22]
+					"4ec434^1", -- [23]
+					"681af6^1", -- [24]
+					"4dfaa4^1", -- [25]
+					"b0e6a1^1", -- [26]
+					"427996^1", -- [27]
+					"6baa09^1", -- [28]
+					"ac25ad^1", -- [29]
+					"3902b4^1", -- [30]
+					"2d89fc^1", -- [31]
+					"c8c4f0^1", -- [32]
+					"755714^1", -- [33]
+					"562643^1", -- [34]
+					"b9a665^1", -- [35]
+					"56632f^1", -- [36]
+					"961b89^1", -- [37]
+					"af67e9^1", -- [38]
+					"a526eb^1", -- [39]
+					"6ba853^1", -- [40]
+					"49366d^1", -- [41]
+					"b7074d^1", -- [42]
+					"c3961a^1", -- [43]
+				},
+				[35] = {
+					"38f3e0^1", -- [1]
 				},
 			},
-			[1024] = {
-				[20] = {
-					"80093d^1", -- [1]
-					"994d89^1", -- [2]
-					"3db943^1", -- [3]
-					"3dc850^1", -- [4]
-					"3d77f7^1", -- [5]
-					"48591c^1", -- [6]
-					"50d8e5^1", -- [7]
-					"50c8a2^1", -- [8]
-					"544879^1", -- [9]
-					"593928^1", -- [10]
-					"60d91b^1", -- [11]
-					"487889^1", -- [12]
-					"6f98d7^1", -- [13]
-					"79983d^1", -- [14]
-					"7b5888^1", -- [15]
-					"7df863^1", -- [16]
-					"8ac83a^1", -- [17]
-					"68a8c5^1", -- [18]
-					"63190d^1", -- [19]
-					"5cd8dd^1", -- [20]
-					"5a8900^1", -- [21]
-					"4668eb^1", -- [22]
-					"a50cbe^1", -- [23]
-					"9c8d6f^1", -- [24]
-					"77f98b^1", -- [25]
-					"75f993^1", -- [26]
-					"9cbc61^1", -- [27]
-					"a1aae4^1", -- [28]
-					"a7bad1^1", -- [29]
-					"a538d9^1", -- [30]
-					"a31873^1", -- [31]
-					"a0e858^1", -- [32]
-					"856969^1", -- [33]
-					"92fadd^1", -- [34]
-					"96cadf^1", -- [35]
-					"9adb61^1", -- [36]
-					"a10bfd^1", -- [37]
-					"9f2d42^1", -- [38]
-					"9acdb9^1", -- [39]
+			[1017] = {
+				[36] = {
+					"89e75c^1", -- [1]
+					"877799^1", -- [2]
+					"860727^1", -- [3]
+					"608450^1", -- [4]
+					"a6094b^1", -- [5]
+					"64d844^1", -- [6]
+					"67bb59^1", -- [7]
+					"b5f810^1", -- [8]
+					"a9667b^1", -- [9]
+					"a29706^1", -- [10]
+					"5dd440^1", -- [11]
+					"5fe430^1", -- [12]
+					"a229b8^1", -- [13]
+					"ab568e^1", -- [14]
+					"8a88ac^1", -- [15]
+					"796a5d^1", -- [16]
+					"61e40c^1", -- [17]
+					"9b771f^1", -- [18]
+					"b3686a^1", -- [19]
+					"6b9b7f^1", -- [20]
+					"676b79^1", -- [21]
+					"6aeb9c^1", -- [22]
 				},
-				[26] = {
-					"5e9969^1", -- [1]
-					"6ad88f^1", -- [2]
-					"6dd911^1", -- [3]
-					"62493d^1", -- [4]
-					"79aa21^1", -- [5]
-					"a257fe^1", -- [6]
+				[13] = {
+					"97f85d^1", -- [1]
+					"6b2463^1", -- [2]
+					"624555^1", -- [3]
+					"65c639^1", -- [4]
+					"7a9bd4^1", -- [5]
+					"aca897^1", -- [6]
+					"b897c3^1", -- [7]
+					"96977b^1", -- [8]
+					"81a683^1", -- [9]
+					"75f570^1", -- [10]
+					"86d8a3^1", -- [11]
+					"9fe938^1", -- [12]
+					"915971^1", -- [13]
+					"742786^1", -- [14]
+					"76b52b^1", -- [15]
+					"5d35cd^1", -- [16]
+					"4cc8dd^1", -- [17]
+					"676459^1", -- [18]
+					"6fc70d^1", -- [19]
+					"7be7e8^1", -- [20]
+					"9388b6^1", -- [21]
+					"955904^1", -- [22]
+					"7db669^1", -- [23]
+					"9417a8^1", -- [24]
+					"5d856e^1", -- [25]
+					"67a658^1", -- [26]
+					"b6479b^1", -- [27]
+					"9c98d4^1", -- [28]
+					"90d75a^1", -- [29]
+					"710527^1", -- [30]
+					"5d452b^1", -- [31]
+					"6de4a3^1", -- [32]
+					"74781d^1", -- [33]
+					"99c95a^1", -- [34]
+					"a128fa^1", -- [35]
+					"b2086d^1", -- [36]
+					"8e0734^1", -- [37]
+					"5a6a7c^1", -- [38]
+					"8c8920^1", -- [39]
+					"5d29c7^1", -- [40]
+					"6a7610^1", -- [41]
+					"7bb50a^1", -- [42]
+					"4f3858^1", -- [43]
+					"805609^1", -- [44]
+					"6f0b9a^1", -- [45]
+					"6ca41d^1", -- [46]
+				},
+			},
+			[1008] = {
+				[30] = {
+					"84383d^1", -- [1]
+					"814b82^1", -- [2]
+					"8d894f^1", -- [3]
+					"8fc726^1", -- [4]
+					"8db683^1", -- [5]
+					"897574^1", -- [6]
+					"8d0509^1", -- [7]
+					"6a86be^1", -- [8]
+					"60a721^1", -- [9]
+					"8417fa^1", -- [10]
+					"86692d^1", -- [11]
+					"8529c7^1", -- [12]
+					"8f3b26^1", -- [13]
+					"7bf645^1", -- [14]
+					"74a35c^1", -- [15]
+					"8ce276^1", -- [16]
+					"91c4c8^1", -- [17]
+					"8b454a^1", -- [18]
+					"8f78f4^1", -- [19]
+					"90c785^1", -- [20]
+					"899be6^1", -- [21]
+					"851922^1", -- [22]
+					"6ad77a^1", -- [23]
+					"6806b7^1", -- [24]
+					"6162b2^1", -- [25]
+					"6e474c^1", -- [26]
+					"62c725^1", -- [27]
+					"83e888^1", -- [28]
+					"8e0903^1", -- [29]
+					"87ebbd^1", -- [30]
+					"83cb91^1", -- [31]
+					"851a0c^1", -- [32]
+					"836901^1", -- [33]
+					"71932e^1", -- [34]
+					"701357^1", -- [35]
+					"8c824e^1", -- [36]
+					"60c301^1", -- [37]
+					"6b9688^1", -- [38]
+					"5b2674^1", -- [39]
+					"6692c0^1", -- [40]
+					"61d4ec^1", -- [41]
+					"5cf68e^1", -- [42]
+					"618763^1", -- [43]
+					"6fd6ec^1", -- [44]
+					"909753^1", -- [45]
+					"8b4580^1", -- [46]
+					"6624e3^1", -- [47]
+					"7f059d^1", -- [48]
+					"7d1631^1", -- [49]
+					"82357a^1", -- [50]
+					"74f3aa^1", -- [51]
+					"623523^1", -- [52]
+					"85894a^1", -- [53]
+					"880be2^1", -- [54]
+					"8e9b56^1", -- [55]
+					"883ca0^1", -- [56]
+					"864bf7^1", -- [57]
+					"8ed633^1", -- [58]
+					"8f34de^1", -- [59]
+					"63e2d9^1", -- [60]
+					"872c90^1", -- [61]
+					"909b67^1", -- [62]
+					"880ce1^1", -- [63]
+					"769cd7^1", -- [64]
+					"5dc66c^1", -- [65]
+					"8c865c^1", -- [66]
+					"858ccc^1", -- [67]
+					"818b52^1", -- [68]
+					"93fb71^1", -- [69]
+					"736746^1", -- [70]
+					"83b9e3^1", -- [71]
+					"8ce614^1", -- [72]
+					"91f775^1", -- [73]
+					"7f262f^1", -- [74]
+					"8599b1^1", -- [75]
+					"5f272f^1", -- [76]
+				},
+				[10] = {
+					"7fc3d3^1", -- [1]
+					"6636ad^1", -- [2]
+					"5f484a^1", -- [3]
+					"78f802^1", -- [4]
+					"832868^1", -- [5]
+					"83092b^1", -- [6]
+					"8c2b34^3", -- [7]
+					"84221c^1", -- [8]
+					"9162a0^1", -- [9]
+					"9373b3^1", -- [10]
+					"8994f4^1", -- [11]
+					"8fe7f1^1", -- [12]
+					"85a98d^1", -- [13]
+					"7fc882^1", -- [14]
+					"62a684^1", -- [15]
+					"5fb862^1", -- [16]
+					"66d438^1", -- [17]
+					"68c424^1", -- [18]
+					"8f97d0^1", -- [19]
+					"8c39d1^1", -- [20]
+					"841b6d^1", -- [21]
+					"839951^1", -- [22]
+					"682448^1", -- [23]
+					"8964cf^1", -- [24]
+					"93e2db^1", -- [25]
+					"7ef368^1", -- [26]
+					"65569c^1", -- [27]
+					"8a14a4^1", -- [28]
+					"9163bd^1", -- [29]
+					"9032b0^1", -- [30]
+					"5b6532^1", -- [31]
+					"5af578^1", -- [32]
+					"864972^1", -- [33]
+					"854b3f^1", -- [34]
+					"83cb33^1", -- [35]
+					"928399^1", -- [36]
+					"7b9c75^1", -- [37]
+					"8d3a29^1", -- [38]
+					"8923bf^1", -- [39]
+					"8cd9f6^1", -- [40]
+					"79b7e0^1", -- [41]
+				},
+				[34] = {
+					"806ad0^1", -- [1]
+					"934727^1", -- [2]
+					"903438^1", -- [3]
+					"80b8bb^1", -- [4]
+					"83fa85^1", -- [5]
+					"7d9be8^1", -- [6]
+					"8af774^1", -- [7]
+					"8e2582^1", -- [8]
+					"7f9402^1", -- [9]
+					"7a454f^1", -- [10]
+					"8fbaf6^1", -- [11]
+					"91cbda^1", -- [12]
+					"7714c1^1", -- [13]
+					"6ec4db^2", -- [14]
+					"8fa3fb^1", -- [15]
+					"94c8d1^1", -- [16]
+					"919865^1", -- [17]
+					"969752^1", -- [18]
+					"63f337^1", -- [19]
+					"6fb494^1", -- [20]
+					"633820^1", -- [21]
+					"80e87d^1", -- [22]
+					"916886^1", -- [23]
+					"905c05^1", -- [24]
+					"831ac6^1", -- [25]
+					"6d1246^1", -- [26]
+					"623372^1", -- [27]
+					"7124ee^1", -- [28]
+					"6034c2^1", -- [29]
+					"66f7cf^1", -- [30]
+					"7c8520^1", -- [31]
+					"5cd49b^1", -- [32]
+					"6c325f^1", -- [33]
+					"62b35c^1", -- [34]
+					"912c26^1", -- [35]
+					"902609^1", -- [36]
+					"78ccd1^1", -- [37]
+					"8b975c^1", -- [38]
+					"92090a^1", -- [39]
+					"67880b^1", -- [40]
+					"7b9cb9^1", -- [41]
+					"92ab39^1", -- [42]
+					"926974^1", -- [43]
+					"7ec3de^1", -- [44]
+					"7954ba^1", -- [45]
+					"8f15b9^1", -- [46]
+					"92092b^1", -- [47]
+					"817c11^1", -- [48]
+				},
+			},
+			[2024] = {
+				[34] = {
+					"63b69b^1", -- [1]
+					"557853^1", -- [2]
+					"4c777b^1", -- [3]
+					"64c836^1", -- [4]
+					"76296b^1", -- [5]
+					"887867^1", -- [6]
+					"8fc812^1", -- [7]
+					"900791^1", -- [8]
+					"8b28d2^1", -- [9]
+					"a4d865^1", -- [10]
+					"9bf711^1", -- [11]
+					"9506a9^1", -- [12]
+					"9d1544^1", -- [13]
+					"94656a^1", -- [14]
+					"8816eb^1", -- [15]
+					"8a1752^1", -- [16]
+					"9e35eb^1", -- [17]
+					"74f47a^1", -- [18]
+					"7135d0^1", -- [19]
+					"6df6bd^1", -- [20]
+					"83aa7c^1", -- [21]
+					"7c4afa^1", -- [22]
+					"83ab52^1", -- [23]
+					"84b877^1", -- [24]
+					"8967f7^1", -- [25]
+					"768a82^1", -- [26]
+					"75aaf6^1", -- [27]
+					"8059d6^1", -- [28]
+					"6d0831^1", -- [29]
+					"6856b6^1", -- [30]
+					"8577b3^1", -- [31]
+					"7e24d4^1", -- [32]
+					"75a700^1", -- [33]
+					"7bc6e9^1", -- [34]
+					"726745^1", -- [35]
+					"5ca766^1", -- [36]
+					"6d99c4^1", -- [37]
+					"73daa7^1", -- [38]
+					"87e9d4^1", -- [39]
+					"6f4b25^1", -- [40]
+					"7cda58^1", -- [41]
+					"a2d682^1", -- [42]
+					"c2eb7b^1", -- [43]
+					"cfbbd8^1", -- [44]
+					"d62a88^1", -- [45]
+					"c07a9c^1", -- [46]
+				},
+				[10] = {
+					"9fb803^1", -- [1]
+					"8f0592^1", -- [2]
+					"8796ac^1", -- [3]
+					"99d4f4^1", -- [4]
+					"92b482^1", -- [5]
+					"7f7450^1", -- [6]
+					"7a7469^1", -- [7]
+					"6f7632^1", -- [8]
+					"841743^1", -- [9]
+					"8be667^1", -- [10]
+					"92b4e2^1", -- [11]
+					"8d64f1^1", -- [12]
+					"83d5d1^1", -- [13]
+					"4fd732^1", -- [14]
+					"6fda81^1", -- [15]
+					"d2e512^1", -- [16]
+					"b6fa7e^1", -- [17]
+				},
+				[30] = {
+					"6026f0^1", -- [1]
+					"759838^1", -- [2]
+					"53f812^1", -- [3]
+					"4aa73f^1", -- [4]
+					"6217d0^1", -- [5]
+					"9ba6a2^1", -- [6]
+					"91862d^1", -- [7]
+					"7154e8^1", -- [8]
+					"77959c^1", -- [9]
+					"714666^1", -- [10]
+					"7186cf^1", -- [11]
+					"77a6be^1", -- [12]
+					"77f655^1", -- [13]
+					"7b6515^1", -- [14]
+					"820a45^1", -- [15]
+					"7ffa83^1", -- [16]
+					"81bb2a^1", -- [17]
+					"9ac90f^1", -- [18]
+					"87f760^1", -- [19]
+					"8459b7^1", -- [20]
+					"66772d^1", -- [21]
+					"83a8ab^1", -- [22]
+					"89a4a0^1", -- [23]
+					"7fd5f2^1", -- [24]
+					"4f17a1^1", -- [25]
+					"700932^1", -- [26]
+					"8d3a13^1", -- [27]
+					"870b62^1", -- [28]
+					"9349b6^1", -- [29]
+					"a546bc^1", -- [30]
+					"a5c81b^1", -- [31]
+					"b09979^1", -- [32]
+					"d0dbae^1", -- [33]
+					"cb29df^1", -- [34]
 				},
 			},
 			[2015] = {
@@ -13688,2564 +16240,12 @@ NxData = {
 					"c5f8a5^1", -- [8]
 				},
 			},
-			[1005] = {
-				[6] = {
-					"70e561^1", -- [1]
-					"6a563e^1", -- [2]
-					"6e8691^1", -- [3]
-					"6adc8f^1", -- [4]
-					"717d62^1", -- [5]
-					"8c4464^1", -- [6]
-					"7e84b4^1", -- [7]
-					"7e647f^1", -- [8]
-					"76759a^1", -- [9]
-					"6cf68c^1", -- [10]
-					"67359b^1", -- [11]
-					"704584^1", -- [12]
-					"6df66f^1", -- [13]
-					"6b560a^1", -- [14]
-					"6ab5d4^1", -- [15]
-					"94e3f2^1", -- [16]
-					"98126f^1", -- [17]
-					"958410^1", -- [18]
-					"76f3d4^1", -- [19]
-					"93b41f^1", -- [20]
-					"789400^1", -- [21]
-					"78256c^1", -- [22]
-					"793571^1", -- [23]
-					"6a9825^1", -- [24]
-					"71393f^1", -- [25]
-					"72578c^1", -- [26]
-					"74a6f7^1", -- [27]
-					"77780c^1", -- [28]
-					"a3c2c4^1", -- [29]
-					"961239^1", -- [30]
-					"a4a2ea^1", -- [31]
-					"6767c8^1", -- [32]
-					"6b480c^1", -- [33]
-					"703779^1", -- [34]
-					"71e957^1", -- [35]
-					"75dc7e^1", -- [36]
-					"6d7ca5^1", -- [37]
-					"6fed5a^1", -- [38]
-					"74ec77^1", -- [39]
-					"6c3c96^1", -- [40]
-					"635c44^1", -- [41]
-					"8b7470^1", -- [42]
-					"720549^1", -- [43]
-					"6b3620^1", -- [44]
-					"67b82d^1", -- [45]
-					"72576f^1", -- [46]
-					"7717f2^1", -- [47]
-					"7516df^1", -- [48]
-					"70bae5^1", -- [49]
-					"744c63^1", -- [50]
-					"6ffd6e^1", -- [51]
-					"635de1^1", -- [52]
-					"66be78^1", -- [53]
-					"633e1d^1", -- [54]
-					"617df7^1", -- [55]
-					"6c0cbb^1", -- [56]
-					"691bfa^1", -- [57]
-					"72cc62^1", -- [58]
-					"65e559^1", -- [59]
-				},
-				[24] = {
-					"6b25a5^1", -- [1]
-					"69b89b^1", -- [2]
-					"6c6981^1", -- [3]
-					"6b6c5f^1", -- [4]
-					"727ccb^1", -- [5]
-					"8f9349^1", -- [6]
-					"9032d7^1", -- [7]
-					"8b0456^1", -- [8]
-					"920396^1", -- [9]
-					"8bf42b^1", -- [10]
-					"7f4412^1", -- [11]
-					"7775cd^1", -- [12]
-					"789679^1", -- [13]
-					"783606^1", -- [14]
-					"6e0522^1", -- [15]
-					"7e7607^1", -- [16]
-					"6c35bf^1", -- [17]
-					"6d4507^1", -- [18]
-					"9002e9^1", -- [19]
-					"96f2e0^1", -- [20]
-					"9e6369^1", -- [21]
-					"9ce3ad^1", -- [22]
-					"97a398^1", -- [23]
-					"97f21f^1", -- [24]
-					"9f81e4^1", -- [25]
-					"a1a0ff^1", -- [26]
-					"9c426d^1", -- [27]
-					"8fd3b6^1", -- [28]
-					"6b94de^1", -- [29]
-					"8ed37b^1", -- [30]
-					"901322^1", -- [31]
-					"96e370^1", -- [32]
-					"9be3dd^1", -- [33]
-					"6d9534^1", -- [34]
-					"6c074e^1", -- [35]
-					"630666^1", -- [36]
-					"6e077c^1", -- [37]
-					"78c768^1", -- [38]
-					"73e7d5^1", -- [39]
-					"6c8795^1", -- [40]
-					"76273a^1", -- [41]
-					"6c4874^1", -- [42]
-					"6c99be^1", -- [43]
-					"75cbf4^1", -- [44]
-					"70cce6^1", -- [45]
-					"622d21^1", -- [46]
-					"602d37^1", -- [47]
-					"a0c1eb^1", -- [48]
-					"9a83c6^1", -- [49]
-					"9a72f6^1", -- [50]
-					"994215^1", -- [51]
-					"9f61c9^1", -- [52]
-					"6e259f^1", -- [53]
-					"6457b2^1", -- [54]
-					"62d6f1^1", -- [55]
-					"67765d^1", -- [56]
-					"6bf766^1", -- [57]
-					"7257df^1", -- [58]
-					"79779e^1", -- [59]
-					"69d8c9^1", -- [60]
-					"6b99b3^1", -- [61]
-					"74cbcb^1", -- [62]
-					"71bcff^1", -- [63]
-					"759e7c^1", -- [64]
-					"679c64^1", -- [65]
-					"697cdd^1", -- [66]
-					"5face1^1", -- [67]
-					"745bb7^1", -- [68]
-					"5f6d17^1", -- [69]
-					"76d6a0^1", -- [70]
-					"7d4636^1", -- [71]
-					"77d659^1", -- [72]
-					"71e6f6^1", -- [73]
-					"81b3fe^1", -- [74]
-					"9772f2^1", -- [75]
-					"98a248^1", -- [76]
-					"a38110^1", -- [77]
-					"97a32e^1", -- [78]
-					"9b73ad^1", -- [79]
-					"8c74a2^1", -- [80]
-					"64a5a9^1", -- [81]
-					"99434d^1", -- [82]
-					"96b227^1", -- [83]
-					"6675ec^1", -- [84]
-					"6fd6f0^1", -- [85]
-					"7137d5^1", -- [86]
-					"64a82b^1", -- [87]
-					"61a755^1", -- [88]
-					"65f650^1", -- [89]
-					"62a71e^1", -- [90]
-					"70770a^1", -- [91]
-					"76775a^1", -- [92]
-					"6b2899^1", -- [93]
-					"6d696f^1", -- [94]
-					"688e3b^1", -- [95]
-					"5e1e1c^1", -- [96]
-					"66bcd6^1", -- [97]
-					"69ec33^1", -- [98]
-					"737bc7^1", -- [99]
-					"68ae5b^1", -- [100]
-					"97320a^1", -- [101]
-					"9ed1f2^1", -- [102]
-					"a190eb^1", -- [103]
-					"62d5b8^1", -- [104]
-				},
-				[10] = {
-					"9b419b^1", -- [1]
-					"9a51b5^1", -- [2]
-					"a510a7^1", -- [3]
-					"a60103^1", -- [4]
-					"a6b0ee^1", -- [5]
-				},
-				[34] = {
-					"8f4331^1", -- [1]
-					"8e1320^1", -- [2]
-					"760495^1", -- [3]
-					"7534f7^1", -- [4]
-					"7283e5^1", -- [5]
-					"908348^1", -- [6]
-					"7804ec^1", -- [7]
-					"7614e7^1", -- [8]
-					"78d3b8^1", -- [9]
-					"73f408^1", -- [10]
-					"79e3c6^1", -- [11]
-					"76747d^1", -- [12]
-					"7bd4ff^1", -- [13]
-					"775447^1", -- [14]
-					"79e3a0^1", -- [15]
-					"7b43c3^1", -- [16]
-					"78d486^1", -- [17]
-					"7ca525^1", -- [18]
-				},
-				[30] = {
-					"7265bb^1", -- [1]
-					"7435dd^1", -- [2]
-					"7215f7^1", -- [3]
-					"7386a3^1", -- [4]
-					"74a5b1^1", -- [5]
-					"72164d^1", -- [6]
-				},
-				[35] = {
-					"8a5213^1", -- [1]
-					"8d1277^1", -- [2]
+			[16229] = {
+				[58] = {
+					"61ca90^1", -- [1]
 				},
 			},
 		},
-		["Misc"] = {
-			[1015] = {
-				["Art"] = {
-					"aba725^1", -- [1]
-					"a88731^1", -- [2]
-					"a6c7a0^1", -- [3]
-					"a36796^1", -- [4]
-					"a3a7d8^1", -- [5]
-					"a007f8^1", -- [6]
-					"a82752^1", -- [7]
-					"acb74d^1", -- [8]
-					"a807d9^1", -- [9]
-					"a8e704^1", -- [10]
-					"a35755^1", -- [11]
-					"a217a9^1", -- [12]
-					"a12747^1", -- [13]
-					"ad5774^1", -- [14]
-					"a77781^1", -- [15]
-					"a57711^1", -- [16]
-					"a3b817^1", -- [17]
-				},
-			},
-			[1017] = {
-				["Art"] = {
-					"651a4f^1", -- [1]
-					"5ffb0e^1", -- [2]
-					"6a6a33^1", -- [3]
-					"69bbb4^1", -- [4]
-					"686b80^1", -- [5]
-					"66ab3a^1", -- [6]
-					"857739^1", -- [7]
-					"88d79f^1", -- [8]
-					"86d73c^2", -- [9]
-					"6a4b92^1", -- [10]
-					"6a0b6d^1", -- [11]
-					"67cb4c^1", -- [12]
-					"7b7a81^1", -- [13]
-					"7a2a81^1", -- [14]
-					"7a7a1b^1", -- [15]
-					"663ae0^1", -- [16]
-					"690a01^1", -- [17]
-					"663a24^1", -- [18]
-					"669aaf^1", -- [19]
-					"67ba39^1", -- [20]
-					"676b68^1", -- [21]
-					"65bb44^1", -- [22]
-					"730803^1", -- [23]
-					"7487e6^1", -- [24]
-					"70381e^1", -- [25]
-					"64ca7a^1", -- [26]
-					"608af6^1", -- [27]
-					"68a9ea^1", -- [28]
-					"71b81e^1", -- [29]
-					"6ee813^1", -- [30]
-					"73269e^1", -- [31]
-					"782a91^1", -- [32]
-					"779a2a^1", -- [33]
-					"7bea66^1", -- [34]
-					"799a9f^1", -- [35]
-					"770a9b^1", -- [36]
-					"6a1b22^1", -- [37]
-					"654bb5^1", -- [38]
-					"68eb24^1", -- [39]
-					"69ca3f^1", -- [40]
-					"5f3b26^1", -- [41]
-					"87d755^1", -- [42]
-					"872765^1", -- [43]
-					"85274f^1", -- [44]
-					"5e4b05^1", -- [45]
-					"696b41^1", -- [46]
-					"6ccb9b^1", -- [47]
-					"764a48^1", -- [48]
-					"756a76^1", -- [49]
-					"772a67^1", -- [50]
-					"6ccb7d^1", -- [51]
-					"86a787^1", -- [52]
-					"62c3b0^2", -- [53]
-					"6953af^1", -- [54]
-					"66239f^1", -- [55]
-					"648a9e^1", -- [56]
-					"6dda1a^1", -- [57]
-					"66ca57^1", -- [58]
-					"70c67a^1", -- [59]
-					"7a579a^1", -- [60]
-					"712632^1", -- [61]
-					"682bbf^1", -- [62]
-					"64cb81^1", -- [63]
-					"650b9d^1", -- [64]
-					"68ab5e^1", -- [65]
-					"6b1bb4^1", -- [66]
-					"64c36f^1", -- [67]
-					"65d38a^1", -- [68]
-					"632392^1", -- [69]
-					"5f0ace^1", -- [70]
-					"732a5c^1", -- [71]
-					"668b5f^1", -- [72]
-					"7bda48^1", -- [73]
-					"6e7671^1", -- [74]
-					"7e7704^1", -- [75]
-					"7e960d^1", -- [76]
-					"86871e^1", -- [77]
-					"87170f^1", -- [78]
-					"68639c^1", -- [79]
-					"64139a^1", -- [80]
-					"64137e^1", -- [81]
-					"671b9b^1", -- [82]
-					"789a6d^1", -- [83]
-					"856762^1", -- [84]
-					"880729^1", -- [85]
-					"6d5b5c^1", -- [86]
-					"784a41^1", -- [87]
-					"6d69ef^1", -- [88]
-					"631ae2^1", -- [89]
-					"677b25^1", -- [90]
-					"6b1b42^1", -- [91]
-					"659b60^1", -- [92]
-					"722a5a^1", -- [93]
-					"751a25^1", -- [94]
-					"618aa9^1", -- [95]
-					"8767c1^1", -- [96]
-					"7bb6ee^1", -- [97]
-					"6db6c8^1", -- [98]
-					"706832^1", -- [99]
-					"72a754^1", -- [100]
-					"7046c0^1", -- [101]
-					"6773b5^1", -- [102]
-				},
-			},
-			[3004] = {
-				["Gas"] = {
-					"5858c9^1", -- [1]
-				},
-				["Art"] = {
-					"89a367^1", -- [1]
-					"8aa353^1", -- [2]
-					"7fd3e1^1", -- [3]
-					"59a8a1^1", -- [4]
-					"55e8b4^1", -- [5]
-					"52a87c^1", -- [6]
-					"53784e^1", -- [7]
-					"56381c^1", -- [8]
-					"614b5c^1", -- [9]
-					"671b6d^1", -- [10]
-					"6a8bab^1", -- [11]
-					"83f34d^1", -- [12]
-					"88235f^1", -- [13]
-					"8c239a^1", -- [14]
-					"552835^1", -- [15]
-					"5b18e3^1", -- [16]
-					"53d8e7^1", -- [17]
-					"50f8a3^1", -- [18]
-					"5a9886^1", -- [19]
-					"696bc6^1", -- [20]
-					"675bbb^1", -- [21]
-					"536890^1", -- [22]
-					"575864^1", -- [23]
-					"611b72^1", -- [24]
-					"6a2b8b^1", -- [25]
-				},
-			},
-			[2026] = {
-				["Art"] = {
-					"580c48^1", -- [1]
-					"547b9c^1", -- [2]
-					"586c0c^1", -- [3]
-					"5f1930^1", -- [4]
-					"61e90e^1", -- [5]
-					"5b9938^1", -- [6]
-					"7f358a^1", -- [7]
-					"7dd5b2^1", -- [8]
-					"7c654f^1", -- [9]
-					"7245cd^1", -- [10]
-					"7f354b^1", -- [11]
-					"79d5ef^1", -- [12]
-					"560bf3^1", -- [13]
-					"60b97f^1", -- [14]
-					"62593d^1", -- [15]
-					"5ca8dd^1", -- [16]
-					"5d694a^1", -- [17]
-					"6078e7^1", -- [18]
-					"7815ad^1", -- [19]
-					"7c95f6^1", -- [20]
-					"76b5e9^1", -- [21]
-					"55dbca^1", -- [22]
-					"7cf62d^1", -- [23]
-					"50eb80^1", -- [24]
-					"5c4913^1", -- [25]
-					"5b3953^1", -- [26]
-					"52fb7e^1", -- [27]
-					"575b9f^1", -- [28]
-					"72256f^1", -- [29]
-					"60391e^1", -- [30]
-					"60f948^1", -- [31]
-					"7bd651^1", -- [32]
-					"527ba2^1", -- [33]
-					"59dc00^1", -- [34]
-					"5b8c13^1", -- [35]
-					"76c555^1", -- [36]
-					"7d457b^1", -- [37]
-					"75857b^1", -- [38]
-					"502baa^1", -- [39]
-					"77061e^1", -- [40]
-				},
-			},
-			[1023] = {
-				["Gas"] = {
-					"c3678e^1", -- [1]
-				},
-				["Art"] = {
-					"93e42c^1", -- [1]
-					"962527^1", -- [2]
-					"7c2519^1", -- [3]
-					"512b79^1", -- [4]
-					"568bba^1", -- [5]
-					"5cbbe7^2", -- [6]
-					"59449a^1", -- [7]
-					"5254aa^1", -- [8]
-					"5ea553^1", -- [9]
-					"5a25cc^1", -- [10]
-					"50744a^1", -- [11]
-					"775384^1", -- [12]
-					"8a3359^1", -- [13]
-					"78632b^1", -- [14]
-					"5dc505^1", -- [15]
-					"573465^1", -- [16]
-					"6bf2e8^1", -- [17]
-					"82d385^1", -- [18]
-					"74828e^1", -- [19]
-					"7dc54b^1", -- [20]
-					"8184a8^2", -- [21]
-					"54cb5d^1", -- [22]
-					"50acb7^1", -- [23]
-					"554c8f^1", -- [24]
-					"4eabdb^1", -- [25]
-					"5d5c6c^1", -- [26]
-					"515408^1", -- [27]
-					"55258c^1", -- [28]
-					"5ce582^1", -- [29]
-					"8ca2fc^1", -- [30]
-					"7f52f5^1", -- [31]
-					"7772ad^1", -- [32]
-					"79e5c6^1", -- [33]
-					"939405^1", -- [34]
-					"777563^1", -- [35]
-					"76f5b5^1", -- [36]
-					"871452^1", -- [37]
-					"5d04ec^1", -- [38]
-					"78d219^1", -- [39]
-					"890397^1", -- [40]
-					"56c4b2^1", -- [41]
-					"ae4991^2", -- [42]
-					"ab0a9e^1", -- [43]
-					"a5897b^1", -- [44]
-					"50f518^1", -- [45]
-					"6db38c^1", -- [46]
-					"5a94dd^1", -- [47]
-					"519c20^1", -- [48]
-					"5a1c90^1", -- [49]
-					"57148d^1", -- [50]
-					"57f514^1", -- [51]
-					"540cc0^1", -- [52]
-					"549bf7^1", -- [53]
-					"aa5ae1^1", -- [54]
-					"abca5d^1", -- [55]
-					"acd954^1", -- [56]
-					"706321^1", -- [57]
-					"75e2c7^1", -- [58]
-					"7853ca^1", -- [59]
-					"980498^1", -- [60]
-					"9ad4ad^1", -- [61]
-					"7a253f^1", -- [62]
-					"8613ac^1", -- [63]
-					"7c33b4^1", -- [64]
-					"59ec41^1", -- [65]
-					"563beb^1", -- [66]
-					"ab09a6^1", -- [67]
-					"5864ed^1", -- [68]
-					"b4ea85^1", -- [69]
-					"b519e6^1", -- [70]
-					"4dbc17^1", -- [71]
-					"53ec5b^1", -- [72]
-					"76d526^1", -- [73]
-					"7a4338^1", -- [74]
-					"7ba35d^1", -- [75]
-					"7b13ee^1", -- [76]
-					"a85b6a^1", -- [77]
-					"a9fb25^1", -- [78]
-					"7ea414^1", -- [79]
-					"7d32df^1", -- [80]
-					"51ec86^1", -- [81]
-					"8f8404^1", -- [82]
-					"ac2bc9^1", -- [83]
-					"ab1a19^1", -- [84]
-					"6ff293^1", -- [85]
-					"5cc5c6^1", -- [86]
-					"a67b7b^1", -- [87]
-					"4ccbdb^1", -- [88]
-					"b1ab10^1", -- [89]
-					"a77b11^1", -- [90]
-					"77834d^1", -- [91]
-					"858333^1", -- [92]
-					"77f4da^1", -- [93]
-					"52853d^1", -- [94]
-					"76132c^1", -- [95]
-					"77b2ca^1", -- [96]
-					"56e5bc^1", -- [97]
-					"4d7415^1", -- [98]
-					"4cfba1^1", -- [99]
-				},
-			},
-			[1026] = {
-				["Art"] = {
-					"97890c^1", -- [1]
-					"90494a^1", -- [2]
-					"8fb91f^1", -- [3]
-					"4ba4f1^1", -- [4]
-					"495544^1", -- [5]
-					"42fa42^1", -- [6]
-					"42da0a^1", -- [7]
-					"471a2d^1", -- [8]
-					"8888dc^1", -- [9]
-					"88a8ba^1", -- [10]
-					"7ae95d^1", -- [11]
-					"47b9d3^1", -- [12]
-					"4609df^1", -- [13]
-					"7e4386^1", -- [14]
-					"7eb31f^1", -- [15]
-					"7bf385^1", -- [16]
-					"47c4ee^1", -- [17]
-					"4e3560^1", -- [18]
-					"2fc5ba^1", -- [19]
-					"3786ed^1", -- [20]
-					"7ee2af^1", -- [21]
-					"79c300^1", -- [22]
-					"95a96c^1", -- [23]
-					"8b3868^1", -- [24]
-				},
-				["Gas"] = {
-					"88189a^1", -- [1]
-					"8d72f9^1", -- [2]
-					"4226a6^1", -- [3]
-				},
-			},
-			[4005] = {
-				["Art"] = {
-					"466ba4^1", -- [1]
-					"49abd6^1", -- [2]
-					"510cac^1", -- [3]
-					"498c2d^1", -- [4]
-					"4f0c30^1", -- [5]
-					"484c1e^1", -- [6]
-					"b52498^1", -- [7]
-					"b2b436^2", -- [8]
-					"b4d479^1", -- [9]
-					"b883aa^1", -- [10]
-					"4c9c73^1", -- [11]
-					"4b5bdb^1", -- [12]
-					"bc33f8^1", -- [13]
-					"bca4df^1", -- [14]
-					"480bfa^1", -- [15]
-					"4d8ca6^1", -- [16]
-					"bcd49c^1", -- [17]
-					"b573eb^1", -- [18]
-					"b8548f^1", -- [19]
-					"b473b3^1", -- [20]
-					"4d5c54^1", -- [21]
-					"b2d3ce^1", -- [22]
-					"b8944f^1", -- [23]
-					"b45452^1", -- [24]
-					"459c18^1", -- [25]
-					"45bbff^1", -- [26]
-				},
-			},
-			[3005] = {
-				["Art"] = {
-					"52385b^1", -- [1]
-					"47f7b5^2", -- [2]
-					"73ab83^1", -- [3]
-					"75cb94^1", -- [4]
-					"7abaf1^1", -- [5]
-					"74d4ec^1", -- [6]
-					"7173f4^1", -- [7]
-					"79b42f^1", -- [8]
-					"90f7ec^1", -- [9]
-					"9357db^1", -- [10]
-					"91f807^1", -- [11]
-					"9587e1^1", -- [12]
-					"9737d7^1", -- [13]
-					"4e5938^1", -- [14]
-					"49b8d6^1", -- [15]
-					"73fab2^1", -- [16]
-					"75ca79^1", -- [17]
-					"751b18^1", -- [18]
-					"9625fd^1", -- [19]
-					"8dd616^1", -- [20]
-					"9725bb^1", -- [21]
-					"4d0949^1", -- [22]
-					"4b384b^1", -- [23]
-					"9bc7f7^1", -- [24]
-					"9607a1^1", -- [25]
-					"9c97df^1", -- [26]
-					"9ca7a2^1", -- [27]
-					"b4b9d7^1", -- [28]
-					"b3aa18^1", -- [29]
-					"aea9b7^1", -- [30]
-					"79247f^1", -- [31]
-					"744486^1", -- [32]
-					"72a4e0^1", -- [33]
-					"47b7df^1", -- [34]
-					"5168e3^1", -- [35]
-					"b0a97a^1", -- [36]
-					"ad1a01^1", -- [37]
-					"8e25b0^1", -- [38]
-					"8bb5c4^1", -- [39]
-					"9365dd^1", -- [40]
-					"4b18b2^1", -- [41]
-					"50b904^1", -- [42]
-					"4d97db^1", -- [43]
-					"7203d3^1", -- [44]
-					"b7f9cb^1", -- [45]
-					"5037bc^1", -- [46]
-					"512815^1", -- [47]
-					"b83a0a^1", -- [48]
-					"b71a3b^1", -- [49]
-					"9b05a7^1", -- [50]
-					"90f622^1", -- [51]
-					"9435ef^1", -- [52]
-					"4b692d^1", -- [53]
-					"48f7ed^1", -- [54]
-					"afd961^1", -- [55]
-					"75150f^1", -- [56]
-					"74d4a8^1", -- [57]
-					"8da63a^1", -- [58]
-					"75a440^1", -- [59]
-					"b15a16^1", -- [60]
-					"90165c^1", -- [61]
-					"74fabf^1", -- [62]
-					"767aeb^1", -- [63]
-					"780b06^1", -- [64]
-				},
-			},
-			[2003] = {
-				["Art"] = {
-					"6fb1c9^1", -- [1]
-					"6ac189^1", -- [2]
-					"701147^1", -- [3]
-					"6bb1cf^1", -- [4]
-					"70218f^1", -- [5]
-					"728214^1", -- [6]
-					"6d9166^1", -- [7]
-					"79b459^2", -- [8]
-					"7d546e^1", -- [9]
-					"7ac41f^1", -- [10]
-					"7e34ae^1", -- [11]
-					"7ba486^1", -- [12]
-					"856724^1", -- [13]
-					"7747a0^1", -- [14]
-					"8467bd^1", -- [15]
-					"804843^1", -- [16]
-					"845748^1", -- [17]
-					"73f19e^1", -- [18]
-					"7d143b^1", -- [19]
-					"810757^1", -- [20]
-					"838700^1", -- [21]
-					"72d1cc^1", -- [22]
-					"80d703^1", -- [23]
-					"7984a6^1", -- [24]
-					"79a92c^1", -- [25]
-					"6e11e0^1", -- [26]
-					"7fc442^1", -- [27]
-					"72f15f^1", -- [28]
-				},
-			},
-			[2015] = {
-				["Art"] = {
-					"b4f9c8^1", -- [1]
-					"b14a1a^1", -- [2]
-					"b1ca7c^1", -- [3]
-					"b89ae7^1", -- [4]
-					"ab4aed^1", -- [5]
-					"aa893d^1", -- [6]
-					"acd995^1", -- [7]
-					"a939be^1", -- [8]
-					"a7cac5^1", -- [9]
-					"b6baff^1", -- [10]
-					"aa3a15^1", -- [11]
-				},
-			},
-			[4006] = {
-				["Art"] = {
-					"946839^1", -- [1]
-					"97789d^1", -- [2]
-					"596267^1", -- [3]
-					"6041a8^1", -- [4]
-					"584259^1", -- [5]
-					"804915^1", -- [6]
-					"7e28c3^1", -- [7]
-					"810901^1", -- [8]
-					"9158d2^1", -- [9]
-					"979824^1", -- [10]
-					"9208a0^1", -- [11]
-					"93c847^1", -- [12]
-					"9737ee^1", -- [13]
-					"98087e^1", -- [14]
-					"ad1838^1", -- [15]
-					"ac7828^1", -- [16]
-					"ad6861^1", -- [17]
-					"749466^1", -- [18]
-					"70e45c^1", -- [19]
-					"72e450^1", -- [20]
-					"ae889f^1", -- [21]
-					"b07879^1", -- [22]
-					"b128f4^1", -- [23]
-					"9d2ca4^1", -- [24]
-					"997c9b^1", -- [25]
-					"9eece7^1", -- [26]
-					"ae6916^1", -- [27]
-					"aa78fc^1", -- [28]
-					"a3a67e^1", -- [29]
-					"a5962e^1", -- [30]
-					"a9d894^1", -- [31]
-					"b318f2^1", -- [32]
-					"b1284c^1", -- [33]
-					"704560^1", -- [34]
-					"6f1474^1", -- [35]
-					"70f507^1", -- [36]
-					"927c8e^1", -- [37]
-					"962c41^1", -- [38]
-					"a1c638^1", -- [39]
-					"a0f6b3^1", -- [40]
-					"7204c2^1", -- [41]
-					"74b484^1", -- [42]
-					"7604a0^1", -- [43]
-					"920856^1", -- [44]
-					"54b1eb^1", -- [45]
-					"60f13e^1", -- [46]
-					"b038e4^1", -- [47]
-					"ad9829^1", -- [48]
-				},
-			},
-			[2023] = {
-				["Art"] = {
-					"ab5b39^1", -- [1]
-					"aedb11^1", -- [2]
-					"a65a6c^1", -- [3]
-					"7266e1^1", -- [4]
-					"75062e^1", -- [5]
-					"7bc664^1", -- [6]
-					"5d9add^1", -- [7]
-					"54eb31^1", -- [8]
-					"556aaa^1", -- [9]
-					"300807^1", -- [10]
-					"2d07c5^1", -- [11]
-					"3267fd^1", -- [12]
-					"7bca83^1", -- [13]
-					"76eaa3^1", -- [14]
-					"77eb31^1", -- [15]
-					"7b96a1^1", -- [16]
-					"1e4866^1", -- [17]
-					"5adac4^1", -- [18]
-					"5b8be1^1", -- [19]
-					"54ab9c^1", -- [20]
-					"76bb05^1", -- [21]
-					"795a74^1", -- [22]
-					"29a83d^1", -- [23]
-					"236890^2", -- [24]
-					"738a33^1", -- [25]
-					"1b3841^2", -- [26]
-					"2b7805^1", -- [27]
-					"758ad8^1", -- [28]
-					"73fab6^1", -- [29]
-					"831a92^1", -- [30]
-					"59db53^1", -- [31]
-					"57db0f^1", -- [32]
-					"776a15^1", -- [33]
-					"2787ce^1", -- [34]
-					"2d7797^1", -- [35]
-					"955c13^1", -- [36]
-					"930a2a^1", -- [37]
-					"959c54^1", -- [38]
-					"73c676^1", -- [39]
-					"795669^1", -- [40]
-					"5aab87^1", -- [41]
-					"810a88^1", -- [42]
-					"777b73^1", -- [43]
-					"755a5e^1", -- [44]
-					"55abc4^1", -- [45]
-					"598be7^1", -- [46]
-					"5d5b0d^1", -- [47]
-					"837ab0^1", -- [48]
-					"a5eb1b^1", -- [49]
-					"a98bb8^1", -- [50]
-					"a50b59^1", -- [51]
-					"599ae2^1", -- [52]
-					"a87b7f^1", -- [53]
-					"25c8bf^1", -- [54]
-					"955b54^1", -- [55]
-					"9ceac6^1", -- [56]
-					"9b4a2d^1", -- [57]
-					"a94a47^1", -- [58]
-					"a21ae7^1", -- [59]
-					"9b3cc8^1", -- [60]
-					"9e8bc3^1", -- [61]
-					"9f4c43^1", -- [62]
-					"78c6aa^1", -- [63]
-					"7706fa^1", -- [64]
-					"527bb0^1", -- [65]
-					"1ab896^1", -- [66]
-					"5b0a7d^1", -- [67]
-					"ae7ba3^1", -- [68]
-					"a05b14^1", -- [69]
-					"802aba^1", -- [70]
-					"a8db4a^1", -- [71]
-					"a68b80^1", -- [72]
-					"b07b32^1", -- [73]
-					"9e9d5e^1", -- [74]
-					"99dc79^1", -- [75]
-					"9e0d2b^1", -- [76]
-					"9afae8^1", -- [77]
-					"592bc8^1", -- [78]
-					"79db35^1", -- [79]
-					"a59b9c^1", -- [80]
-					"26f768^1", -- [81]
-					"a6ca9a^1", -- [82]
-					"924b08^1", -- [83]
-					"ac6b57^1", -- [84]
-					"a27a8f^1", -- [85]
-					"ad9b7f^1", -- [86]
-					"ac9ab1^1", -- [87]
-					"7526da^1", -- [88]
-					"76865a^1", -- [89]
-					"aa1b06^1", -- [90]
-					"a72be2^1", -- [91]
-					"a81c71^1", -- [92]
-					"97ccab^1", -- [93]
-					"9a0b5c^1", -- [94]
-					"a8ea85^1", -- [95]
-					"ab9ad4^1", -- [96]
-					"9d6cae^1", -- [97]
-					"943b9c^1", -- [98]
-					"7e3a85^1", -- [99]
-					"9b3c58^1", -- [100]
-					"966bc0^1", -- [101]
-					"525b49^1", -- [102]
-					"4e6b94^1", -- [103]
-					"9b7b47^1", -- [104]
-					"ad3c18^1", -- [105]
-					"732730^1", -- [106]
-					"20f874^1", -- [107]
-					"260841^1", -- [108]
-					"58db8c^1", -- [109]
-					"9ccb98^1", -- [110]
-					"a3fc33^1", -- [111]
-					"4f7bd9^1", -- [112]
-					"71f694^1", -- [113]
-					"50db22^1", -- [114]
-					"304764^1", -- [115]
-				},
-			},
-			[1027] = {
-				["Art"] = {
-					"7bd624^1", -- [1]
-					"7a7626^1", -- [2]
-					"7a1637^1", -- [3]
-					"78dda2^1", -- [4]
-					"7abe2e^1", -- [5]
-					"7b5da4^1", -- [6]
-					"726734^1", -- [7]
-					"74c728^1", -- [8]
-					"74270c^2", -- [9]
-					"7cbe49^1", -- [10]
-					"7b5dc4^1", -- [11]
-					"7a4daf^1", -- [12]
-					"78adb4^1", -- [13]
-					"7b5633^1", -- [14]
-					"7ea611^1", -- [15]
-					"73d727^1", -- [16]
-					"7536fe^1", -- [17]
-					"7396d3^1", -- [18]
-					"7456f6^1", -- [19]
-					"7506e7^1", -- [20]
-					"771ddc^1", -- [21]
-					"7dc61b^1", -- [22]
-					"782e35^1", -- [23]
-					"7fbe0f^1", -- [24]
-					"7a2de5^1", -- [25]
-					"7e8d96^1", -- [26]
-					"7c4d8b^1", -- [27]
-					"793e0f^1", -- [28]
-					"7c7e31^1", -- [29]
-					"7a8e11^1", -- [30]
-					"7376ec^1", -- [31]
-					"77ae11^1", -- [32]
-					"79e602^1", -- [33]
-					"7dbe03^1", -- [34]
-					"7b0e03^1", -- [35]
-					"74a719^1", -- [36]
-					"7dfdeb^1", -- [37]
-				},
-			},
-			[1002] = {
-				["Art"] = {
-					"5a27f0^1", -- [1]
-					"5a5855^1", -- [2]
-					"51b792^1", -- [3]
-					"50f84c^1", -- [4]
-					"5178e8^1", -- [5]
-					"511906^1", -- [6]
-					"5a1923^1", -- [7]
-					"563846^1", -- [8]
-					"b045aa^1", -- [9]
-					"b854f4^1", -- [10]
-					"b42561^1", -- [11]
-					"57b8ae^1", -- [12]
-					"51082a^1", -- [13]
-					"b994c7^1", -- [14]
-					"b3358c^1", -- [15]
-					"bb94f7^1", -- [16]
-					"bbc549^1", -- [17]
-					"b03583^1", -- [18]
-					"b895cd^1", -- [19]
-					"b9959f^1", -- [20]
-					"58e7f7^1", -- [21]
-					"b9c51d^1", -- [22]
-					"b1b508^1", -- [23]
-					"b7259e^1", -- [24]
-					"b4f50a^1", -- [25]
-					"52e80f^1", -- [26]
-					"b3c5b8^1", -- [27]
-					"518800^1", -- [28]
-					"55c78f^1", -- [29]
-					"51e75d^1", -- [30]
-					"510866^1", -- [31]
-					"5647e9^1", -- [32]
-					"b4d4ce^1", -- [33]
-					"4ee7b6^1", -- [34]
-					"ad958a^1", -- [35]
-					"bc058b^1", -- [36]
-					"54f89d^1", -- [37]
-					"b77522^1", -- [38]
-					"4f984c^1", -- [39]
-					"4e37d9^1", -- [40]
-					"501801^1", -- [41]
-				},
-			},
-			[3007] = {
-				["Art"] = {
-					"aaa8c8^1", -- [1]
-					"ad98c6^1", -- [2]
-					"aa3896^1", -- [3]
-					"6f7b26^1", -- [4]
-					"660b98^1", -- [5]
-					"6b7b7b^1", -- [6]
-					"79e9b9^1", -- [7]
-					"74c9d5^1", -- [8]
-					"753961^1", -- [9]
-					"625654^1", -- [10]
-					"61266d^1", -- [11]
-					"6266ab^1", -- [12]
-					"a9d86a^1", -- [13]
-					"86e537^1", -- [14]
-					"81e4da^1", -- [15]
-					"8aa54b^1", -- [16]
-					"8914b7^1", -- [17]
-					"85d4a0^1", -- [18]
-					"8504f1^1", -- [19]
-					"63e689^1", -- [20]
-					"61569a^1", -- [21]
-					"59ca9a^1", -- [22]
-					"62ca1a^1", -- [23]
-					"6239bb^1", -- [24]
-					"9034bc^1", -- [25]
-					"7c6a2f^1", -- [26]
-					"7ff9f7^1", -- [27]
-					"589abe^1", -- [28]
-					"630ac8^1", -- [29]
-					"6eca75^1", -- [30]
-					"715aeb^1", -- [31]
-					"6c2979^1", -- [32]
-					"67aa8f^1", -- [33]
-					"681a71^1", -- [34]
-					"324a76^1", -- [35]
-					"342a47^2", -- [36]
-					"69b631^1", -- [37]
-					"68f996^1", -- [38]
-					"6a6a41^1", -- [39]
-					"694ac0^1", -- [40]
-					"692962^1", -- [41]
-					"66f957^1", -- [42]
-					"697a5d^1", -- [43]
-					"63e69e^1", -- [44]
-					"66b67c^1", -- [45]
-					"628b9a^1", -- [46]
-					"5ddb5b^1", -- [47]
-					"584a00^1", -- [48]
-					"64facc^1", -- [49]
-					"627b1e^1", -- [50]
-					"640650^1", -- [51]
-					"64b63f^1", -- [52]
-					"6826b3^1", -- [53]
-					"a92837^1", -- [54]
-					"ace837^1", -- [55]
-					"a5b896^1", -- [56]
-					"6546b1^1", -- [57]
-					"67f686^1", -- [58]
-					"6d3a25^1", -- [59]
-					"712aaa^1", -- [60]
-					"68bba6^1", -- [61]
-					"613683^1", -- [62]
-					"679b1d^1", -- [63]
-					"68d663^1", -- [64]
-					"2fda48^1", -- [65]
-					"358a3a^1", -- [66]
-					"a778b9^1", -- [67]
-					"82a45c^1", -- [68]
-					"77f9c4^1", -- [69]
-					"74a987^1", -- [70]
-					"8b650d^1", -- [71]
-					"312a5b^1", -- [72]
-					"349a29^1", -- [73]
-					"31aa20^1", -- [74]
-					"33ba16^1", -- [75]
-					"62aa48^1", -- [76]
-					"62f9dc^1", -- [77]
-					"60daa1^1", -- [78]
-					"5b8a79^1", -- [79]
-					"67769e^1", -- [80]
-					"818aa6^1", -- [81]
-					"3549c8^1", -- [82]
-					"3259f7^1", -- [83]
-					"5e7ab5^1", -- [84]
-					"63db9e^1", -- [85]
-				},
-			},
-			[5001] = {
-				["Gas"] = {
-					"3b39f2^1", -- [1]
-					"b9e6c6^1", -- [2]
-					"bb969c^1", -- [3]
-				},
-			},
-			[1011] = {
-				["Art"] = {
-					"a45958^1", -- [1]
-					"a61959^1", -- [2]
-					"a3f98d^1", -- [3]
-					"943741^1", -- [4]
-					"96379a^1", -- [5]
-					"98b7a0^1", -- [6]
-					"61f28e^1", -- [7]
-					"6371d4^1", -- [8]
-					"66624b^1", -- [9]
-					"4238dd^1", -- [10]
-					"4148b0^1", -- [11]
-					"4d68bc^1", -- [12]
-					"986a77^1", -- [13]
-					"947ab7^1", -- [14]
-					"962770^1", -- [15]
-					"997755^1", -- [16]
-					"9987fa^1", -- [17]
-					"4a7897^1", -- [18]
-					"3ed851^1", -- [19]
-					"9a6944^1", -- [20]
-					"9cb906^1", -- [21]
-					"9b4922^1", -- [22]
-					"4a18b7^1", -- [23]
-					"4698e9^1", -- [24]
-					"43482e^1", -- [25]
-					"601259^1", -- [26]
-					"6401c5^1", -- [27]
-					"60b1de^1", -- [28]
-					"9a38bd^1", -- [29]
-					"9b68d0^1", -- [30]
-					"95b725^1", -- [31]
-					"95f7b8^1", -- [32]
-					"a0344f^1", -- [33]
-					"88a299^2", -- [34]
-					"84b278^1", -- [35]
-					"8a5278^1", -- [36]
-					"4388ec^1", -- [37]
-					"476896^2", -- [38]
-					"9887c3^1", -- [39]
-					"3f78a9^1", -- [40]
-					"451842^1", -- [41]
-					"9ee72d^1", -- [42]
-					"a6d948^1", -- [43]
-					"a4f920^1", -- [44]
-					"9daae1^1", -- [45]
-					"955b62^2", -- [46]
-					"417836^1", -- [47]
-					"61d1cc^1", -- [48]
-					"866297^2", -- [49]
-					"88b275^1", -- [50]
-					"63d1e7^1", -- [51]
-					"66c203^1", -- [52]
-					"64b1f4^1", -- [53]
-					"9e38ca^1", -- [54]
-					"9dc8b7^1", -- [55]
-					"9c5931^1", -- [56]
-					"86a285^1", -- [57]
-					"8982a4^1", -- [58]
-					"994a9b^1", -- [59]
-					"981abe^1", -- [60]
-					"a2a4f6^1", -- [61]
-					"62e1a4^1", -- [62]
-					"929730^1", -- [63]
-					"98d7ec^1", -- [64]
-					"a919c6^1", -- [65]
-					"a67997^1", -- [66]
-					"9bbb11^1", -- [67]
-					"96ead1^1", -- [68]
-					"4298b7^1", -- [69]
-					"4e78af^1", -- [70]
-					"a3d9d3^1", -- [71]
-					"a5d9ec^1", -- [72]
-					"4228f3^1", -- [73]
-					"43e8dc^1", -- [74]
-					"8902ba^1", -- [75]
-					"9697fd^1", -- [76]
-					"9aeac8^1", -- [77]
-					"956ae6^1", -- [78]
-					"9c8af1^1", -- [79]
-					"9db8e1^1", -- [80]
-					"999b3d^1", -- [81]
-					"95faf9^1", -- [82]
-					"4f38ca^1", -- [83]
-					"a419fc^1", -- [84]
-					"9a59fa^1", -- [85]
-					"99aaad^1", -- [86]
-					"680218^1", -- [87]
-					"66d16a^1", -- [88]
-					"9c68ee^1", -- [89]
-					"64f257^1", -- [90]
-					"9977cf^1", -- [91]
-					"614259^1", -- [92]
-					"63e21c^1", -- [93]
-					"a86990^1", -- [94]
-					"9df517^1", -- [95]
-					"a8697e^1", -- [96]
-					"a629d1^1", -- [97]
-					"9a8ae2^1", -- [98]
-					"62c231^1", -- [99]
-					"60c1fd^1", -- [100]
-					"a6096d^1", -- [101]
-					"a509bf^1", -- [102]
-					"a57a03^1", -- [103]
-					"a47935^1", -- [104]
-					"99b9d9^1", -- [105]
-					"4d18ce^1", -- [106]
-					"4b68b6^1", -- [107]
-					"6171e9^1", -- [108]
-					"9a6b1d^1", -- [109]
-					"a274d9^1", -- [110]
-					"9c494d^1", -- [111]
-					"946ad1^1", -- [112]
-					"469823^1", -- [113]
-					"400863^1", -- [114]
-					"93e6f6^1", -- [115]
-				},
-			},
-			[1010] = {
-				["Art"] = {
-					"60aa83^1", -- [1]
-					"60daa0^2", -- [2]
-					"642abc^1", -- [3]
-					"61eae1^1", -- [4]
-					"7d8501^1", -- [5]
-					"7cc4bc^1", -- [6]
-					"80e51a^1", -- [7]
-					"8eddb5^1", -- [8]
-					"925dbc^1", -- [9]
-					"8eed98^1", -- [10]
-					"947da6^1", -- [11]
-					"640b2a^1", -- [12]
-					"608ad9^1", -- [13]
-					"60eab8^1", -- [14]
-					"61598b^1", -- [15]
-					"62f8cd^1", -- [16]
-					"5ad98a^1", -- [17]
-					"5f9a8b^1", -- [18]
-					"633a81^1", -- [19]
-					"63f934^1", -- [20]
-					"5cf97d^1", -- [21]
-					"7dc4c5^1", -- [22]
-					"80f4ee^1", -- [23]
-					"632869^1", -- [24]
-					"5ad95e^1", -- [25]
-					"5dc9c3^1", -- [26]
-					"8ddd81^1", -- [27]
-					"93fdb6^1", -- [28]
-					"967da8^1", -- [29]
-					"5e3a92^1", -- [30]
-					"5fcaf0^1", -- [31]
-					"7d14a2^1", -- [32]
-					"645ae2^1", -- [33]
-					"609a6a^1", -- [34]
-					"92ad88^1", -- [35]
-					"917d7d^1", -- [36]
-					"8e2da7^1", -- [37]
-					"5f29d0^1", -- [38]
-					"92fda9^1", -- [39]
-					"7ec514^1", -- [40]
-					"7d34dd^1", -- [41]
-					"62d88f^1", -- [42]
-					"61ca8b^1", -- [43]
-					"6378f5^1", -- [44]
-					"63b8b0^1", -- [45]
-					"6019aa^1", -- [46]
-					"5ddabe^1", -- [47]
-					"7c14d1^1", -- [48]
-					"8034d7^1", -- [49]
-					"61f9b1^1", -- [50]
-					"5d2a91^1", -- [51]
-					"5a5973^1", -- [52]
-					"631acf^1", -- [53]
-					"8fed92^1", -- [54]
-					"6309a9^1", -- [55]
-					"7ea4ec^1", -- [56]
-					"8dedca^1", -- [57]
-				},
-			},
-			[2008] = {
-				["Art"] = {
-					"7ff64e^1", -- [1]
-					"79a735^1", -- [2]
-					"54cb22^1", -- [3]
-					"5e2b5f^1", -- [4]
-					"540b4c^1", -- [5]
-					"532b8f^1", -- [6]
-					"7b968b^1", -- [7]
-					"7e3706^1", -- [8]
-					"777792^1", -- [9]
-					"76c6fb^1", -- [10]
-					"708657^1", -- [11]
-					"79f6d8^1", -- [12]
-					"5c1bd0^1", -- [13]
-					"574bd7^1", -- [14]
-					"72b6d1^1", -- [15]
-					"75168c^1", -- [16]
-					"7ec69a^1", -- [17]
-					"585b81^1", -- [18]
-					"58db08^1", -- [19]
-					"628b3e^1", -- [20]
-					"73c626^1", -- [21]
-					"5bdb9c^1", -- [22]
-					"75b659^1", -- [23]
-					"539bb8^1", -- [24]
-					"62dbc8^1", -- [25]
-					"6fb687^1", -- [26]
-					"7c86b5^1", -- [27]
-					"7686d4^1", -- [28]
-				},
-			},
-			[1009] = {
-				["Art"] = {
-					"7aeb77^1", -- [1]
-					"783c5d^1", -- [2]
-					"76dc06^1", -- [3]
-					"7ec904^1", -- [4]
-					"7ae9b6^1", -- [5]
-					"7a9bc6^1", -- [6]
-					"7f1ba6^1", -- [7]
-					"785bb3^1", -- [8]
-					"7d7b52^1", -- [9]
-					"806be3^1", -- [10]
-					"784c3b^1", -- [11]
-					"7b4c47^1", -- [12]
-					"7cdc00^1", -- [13]
-					"7d3bc5^1", -- [14]
-					"7bf8e0^1", -- [15]
-					"7f893c^1", -- [16]
-					"7dc93f^1", -- [17]
-					"8048a5^1", -- [18]
-					"7a4960^1", -- [19]
-					"76e8c1^1", -- [20]
-					"7e19f2^1", -- [21]
-					"79c881^1", -- [22]
-					"788beb^1", -- [23]
-					"7d4c2a^1", -- [24]
-					"79c92d^1", -- [25]
-					"77d91c^1", -- [26]
-					"7b18bf^1", -- [27]
-				},
-			},
-			[2016] = {
-				["Art"] = {
-					"569ac6^1", -- [1]
-					"4fdb42^1", -- [2]
-					"6f4b06^1", -- [3]
-					"62daf2^1", -- [4]
-					"7a0ae5^1", -- [5]
-					"636aa9^1", -- [6]
-					"6b4ae6^1", -- [7]
-					"5f5b01^1", -- [8]
-					"4d7adb^1", -- [9]
-					"4a4b2a^1", -- [10]
-					"4d3b7b^1", -- [11]
-					"6d5aae^1", -- [12]
-					"786a82^1", -- [13]
-					"6dea79^1", -- [14]
-					"5c8a9a^1", -- [15]
-					"47ab73^1", -- [16]
-				},
-			},
-			[4008] = {
-				["Gas"] = {
-					"a22bb9^1", -- [1]
-					"717b57^1", -- [2]
-					"467b93^1", -- [3]
-					"4ef5f3^1", -- [4]
-					"83e4f8^1", -- [5]
-					"7483ee^1", -- [6]
-					"816b45^1", -- [7]
-					"91aa81^1", -- [8]
-					"c1f9b8^1", -- [9]
-					"a1b82e^1", -- [10]
-					"971723^1", -- [11]
-					"46983c^1", -- [12]
-					"3b4a7d^1", -- [13]
-					"5d449b^1", -- [14]
-					"37890b^1", -- [15]
-					"705df6^1", -- [16]
-					"a69d21^1", -- [17]
-					"b6bba1^1", -- [18]
-				},
-			},
-			[3008] = {
-				["Art"] = {
-					"74d82c^1", -- [1]
-					"6bc795^1", -- [2]
-					"78285c^1", -- [3]
-					"8117ec^1", -- [4]
-					"71583c^1", -- [5]
-					"83f801^1", -- [6]
-					"71bab9^1", -- [7]
-					"733a95^2", -- [8]
-					"6eea77^1", -- [9]
-					"6c37ff^1", -- [10]
-					"7197e6^1", -- [11]
-					"706ab0^1", -- [12]
-					"6ff7df^1", -- [13]
-					"784800^1", -- [14]
-					"713a89^1", -- [15]
-					"83582d^1", -- [16]
-					"6f6822^1", -- [17]
-					"7297d5^1", -- [18]
-					"67f7cb^1", -- [19]
-					"79c862^1", -- [20]
-					"892813^1", -- [21]
-					"69279e^1", -- [22]
-					"708ae8^1", -- [23]
-					"7b1851^1", -- [24]
-					"6b17da^1", -- [25]
-				},
-			},
-			[2028] = {
-				["Art"] = {
-					"57273d^1", -- [1]
-					"57e78a^1", -- [2]
-					"5a7833^1", -- [3]
-					"70a3f5^1", -- [4]
-					"72b43e^1", -- [5]
-					"7013db^1", -- [6]
-					"5357c6^1", -- [7]
-					"54f765^1", -- [8]
-					"53e7aa^1", -- [9]
-					"a75815^1", -- [10]
-					"a18848^1", -- [11]
-					"a4e876^1", -- [12]
-					"5d282c^1", -- [13]
-					"5867bd^1", -- [14]
-					"532823^1", -- [15]
-					"6da44e^1", -- [16]
-					"7223db^1", -- [17]
-					"9bd76e^1", -- [18]
-					"a5583a^1", -- [19]
-					"a55813^1", -- [20]
-					"5bb6ed^1", -- [21]
-					"6e73d7^1", -- [22]
-					"9f388b^1", -- [23]
-					"a207fc^1", -- [24]
-					"a15792^1", -- [25]
-					"819222^1", -- [26]
-					"827207^1", -- [27]
-					"a6c858^1", -- [28]
-					"a578e0^1", -- [29]
-					"74f412^1", -- [30]
-					"73341e^1", -- [31]
-					"713435^1", -- [32]
-					"a49859^1", -- [33]
-					"57e6f2^1", -- [34]
-					"59d739^1", -- [35]
-					"82d23f^1", -- [36]
-					"8401f3^1", -- [37]
-					"8341d0^1", -- [38]
-					"8451bc^1", -- [39]
-					"5a6760^1", -- [40]
-					"5577b4^1", -- [41]
-					"74a432^1", -- [42]
-					"6fe424^1", -- [43]
-					"54d834^1", -- [44]
-					"58f7e8^1", -- [45]
-					"70d3be^1", -- [46]
-					"6e3403^1", -- [47]
-					"ab0831^1", -- [48]
-					"a6593e^1", -- [49]
-					"54c7f3^1", -- [50]
-				},
-			},
-			[1024] = {
-				["Art"] = {
-					"a58c14^1", -- [1]
-					"a34cbb^1", -- [2]
-					"a59c8e^1", -- [3]
-					"a4fc66^1", -- [4]
-					"a44c4b^1", -- [5]
-					"7d3895^1", -- [6]
-					"7c4947^1", -- [7]
-					"80f925^1", -- [8]
-					"7e5939^1", -- [9]
-					"7b1964^1", -- [10]
-					"77a93a^1", -- [11]
-					"83091f^1", -- [12]
-					"9a1db5^1", -- [13]
-					"952d63^1", -- [14]
-					"995d74^1", -- [15]
-					"80b88e^1", -- [16]
-					"7bb894^1", -- [17]
-					"a62cb5^1", -- [18]
-					"a38c99^1", -- [19]
-					"9c8daf^1", -- [20]
-					"96fd6d^1", -- [21]
-					"a4ccad^2", -- [22]
-					"79395b^1", -- [23]
-					"810853^1", -- [24]
-					"8098c2^1", -- [25]
-					"9dbe0b^1", -- [26]
-					"a2cdad^1", -- [27]
-					"9e6d90^1", -- [28]
-					"89b903^1", -- [29]
-					"993d89^1", -- [30]
-					"7c8931^1", -- [31]
-					"987d64^1", -- [32]
-					"9f4ddd^1", -- [33]
-					"a49c05^1", -- [34]
-					"a67c20^1", -- [35]
-					"7ea89a^1", -- [36]
-					"87c8fd^1", -- [37]
-					"a1fcb3^1", -- [38]
-					"a33c00^1", -- [39]
-					"86e92d^1", -- [40]
-					"7a1985^1", -- [41]
-					"a17de9^1", -- [42]
-					"a23c9a^1", -- [43]
-					"a75c3a^1", -- [44]
-					"9e3da6^1", -- [45]
-					"9dedf6^1", -- [46]
-					"9cfdd2^1", -- [47]
-					"97dd7d^1", -- [48]
-					"a37cdd^1", -- [49]
-					"a21c73^1", -- [50]
-					"78e8dc^1", -- [51]
-					"97bd9c^1", -- [52]
-					"936d5d^1", -- [53]
-					"a39c88^1", -- [54]
-					"a41ccc^1", -- [55]
-					"a10dc9^1", -- [56]
-					"a5ac40^1", -- [57]
-				},
-			},
-			[1028] = {
-				["Gas"] = {
-					"9a161b^1", -- [1]
-				},
-				["Art"] = {
-					"51db15^1", -- [1]
-					"51aa14^1", -- [2]
-					"54eab6^1", -- [3]
-					"69e68d^1", -- [4]
-					"65d691^1", -- [5]
-					"6745f6^1", -- [6]
-					"57dad2^1", -- [7]
-					"5579a5^1", -- [8]
-					"554a77^1", -- [9]
-					"c2f8c1^1", -- [10]
-					"bdb8db^1", -- [11]
-					"c3986c^1", -- [12]
-					"521508^1", -- [13]
-					"51b4dc^1", -- [14]
-					"57f491^1", -- [15]
-					"768c9a^1", -- [16]
-					"824d70^1", -- [17]
-					"7b9cd5^1", -- [18]
-					"543510^1", -- [19]
-					"b75767^1", -- [20]
-					"c30735^1", -- [21]
-					"c42762^1", -- [22]
-					"6db61c^1", -- [23]
-					"668671^1", -- [24]
-					"6506b2^1", -- [25]
-					"634748^1", -- [26]
-					"66f715^1", -- [27]
-					"75a259^1", -- [28]
-					"75d271^1", -- [29]
-					"746253^1", -- [30]
-					"5a72e2^1", -- [31]
-					"5622ee^1", -- [32]
-					"5b72c4^1", -- [33]
-					"7582b0^1", -- [34]
-					"74728f^1", -- [35]
-					"553485^1", -- [36]
-					"57251a^1", -- [37]
-					"5694b9^1", -- [38]
-					"c3076c^1", -- [39]
-					"b9b762^1", -- [40]
-					"a7f350^1", -- [41]
-					"a5c3d1^1", -- [42]
-					"4dbae1^1", -- [43]
-					"501a82^1", -- [44]
-					"64c6cd^1", -- [45]
-					"6826d6^1", -- [46]
-					"60e71d^1", -- [47]
-					"61c736^1", -- [48]
-					"6836c0^1", -- [49]
-					"59450d^1", -- [50]
-					"563494^1", -- [51]
-					"75d242^1", -- [52]
-					"73321f^1", -- [53]
-					"bf98d8^1", -- [54]
-					"80bc9b^1", -- [55]
-					"81cd56^1", -- [56]
-					"75e2cb^1", -- [57]
-					"74a2c6^1", -- [58]
-					"57b31a^1", -- [59]
-					"5982ef^1", -- [60]
-					"a103bb^1", -- [61]
-					"ac5378^1", -- [62]
-					"a7b3af^1", -- [63]
-					"54d312^1", -- [64]
-					"53f4c9^1", -- [65]
-					"57f4b5^1", -- [66]
-					"597284^1", -- [67]
-					"59029e^1", -- [68]
-					"750206^1", -- [69]
-					"75e221^1", -- [70]
-					"7362c1^1", -- [71]
-					"74a26c^1", -- [72]
-					"a3f3d3^1", -- [73]
-					"b7f70e^1", -- [74]
-					"ba5713^1", -- [75]
-					"7f1ccf^1", -- [76]
-					"823c8b^1", -- [77]
-					"7c6c9b^1", -- [78]
-				},
-			},
-			[2040] = {
-				["Art"] = {
-					"7c85e7^1", -- [1]
-					"87a4be^1", -- [2]
-					"7665f4^1", -- [3]
-					"7da5f9^1", -- [4]
-					"83e54e^1", -- [5]
-					"660399^1", -- [6]
-					"6ed3a1^1", -- [7]
-					"6ff3c3^1", -- [8]
-				},
-			},
-			[1016] = {
-				["Art"] = {
-					"c3bc6d^1", -- [1]
-					"c69c0a^1", -- [2]
-					"c58c46^1", -- [3]
-					"6c5420^1", -- [4]
-					"6ce3f8^1", -- [5]
-					"6ba38a^1", -- [6]
-					"be9c4a^2", -- [7]
-					"bfdc90^1", -- [8]
-					"c0dc41^1", -- [9]
-					"7b4c1f^1", -- [10]
-					"7c2c07^1", -- [11]
-					"c29c59^1", -- [12]
-					"bffbeb^1", -- [13]
-					"c87c18^1", -- [14]
-					"782bea^1", -- [15]
-					"79cc25^1", -- [16]
-					"7fab8e^1", -- [17]
-					"77abcd^1", -- [18]
-					"7d5c13^1", -- [19]
-					"698349^1", -- [20]
-					"6a43a6^1", -- [21]
-					"79bbad^1", -- [22]
-					"6cb396^1", -- [23]
-					"6a541b^1", -- [24]
-					"c4bc8c^1", -- [25]
-					"7dbc74^1", -- [26]
-					"7efbbe^1", -- [27]
-					"6983d5^1", -- [28]
-					"79fb8c^1", -- [29]
-					"7e3c5e^1", -- [30]
-					"6883e7^1", -- [31]
-					"7c4b74^1", -- [32]
-					"7d1c95^1", -- [33]
-					"c7fc5b^1", -- [34]
-					"c5dc1c^1", -- [35]
-					"c52bf2^1", -- [36]
-					"692371^1", -- [37]
-					"671398^1", -- [38]
-					"791c0c^1", -- [39]
-					"6c63e7^1", -- [40]
-					"6be3c7^1", -- [41]
-					"c0bc6e^1", -- [42]
-					"6793c4^1", -- [43]
-					"6a4384^1", -- [44]
-					"7b6c61^1", -- [45]
-					"68639b^1", -- [46]
-				},
-			},
-			[4001] = {
-				["Art"] = {
-					"e583bc^1", -- [1]
-					"dd53ab^1", -- [2]
-					"d203d0^1", -- [3]
-					"b69248^1", -- [4]
-					"b26253^1", -- [5]
-					"ac81f4^1", -- [6]
-					"778e50^1", -- [7]
-					"792e3d^1", -- [8]
-					"85beb0^1", -- [9]
-					"85bef5^1", -- [10]
-					"7aae18^1", -- [11]
-					"7b3ecb^1", -- [12]
-					"d83446^1", -- [13]
-					"e164ba^1", -- [14]
-					"d9632e^1", -- [15]
-					"d683fb^1", -- [16]
-					"e2a437^1", -- [17]
-					"78fe80^1", -- [18]
-					"760e71^1", -- [19]
-					"b8725c^1", -- [20]
-					"b6f266^1", -- [21]
-					"b282c0^1", -- [22]
-					"d77468^1", -- [23]
-					"b4c2aa^1", -- [24]
-					"aab24a^1", -- [25]
-					"ac124b^1", -- [26]
-					"729ec3^1", -- [27]
-					"878edc^1", -- [28]
-					"add26f^1", -- [29]
-					"b132c7^1", -- [30]
-					"78bec4^1", -- [31]
-					"7d7e0b^1", -- [32]
-					"b552da^1", -- [33]
-					"d7d3a1^1", -- [34]
-					"e46410^1", -- [35]
-					"d9d349^1", -- [36]
-					"e293b3^1", -- [37]
-					"af92e8^1", -- [38]
-					"e044b0^1", -- [39]
-					"df1510^1", -- [40]
-				},
-			},
-			[4009] = {
-				["Art"] = {
-					"678bd7^1", -- [1]
-					"69cba5^1", -- [2]
-					"684b14^1", -- [3]
-					"66cb1e^1", -- [4]
-					"658bab^1", -- [5]
-					"659b61^1", -- [6]
-					"67cb3d^1", -- [7]
-					"798b0c^1", -- [8]
-					"80cae8^1", -- [9]
-					"827a9c^1", -- [10]
-					"6a7bb7^1", -- [11]
-					"6bfb67^1", -- [12]
-					"7d7b30^1", -- [13]
-					"819ab8^1", -- [14]
-					"4239ce^1", -- [15]
-					"3c09a9^1", -- [16]
-					"442977^1", -- [17]
-					"4129c5^1", -- [18]
-					"415976^1", -- [19]
-					"3ed97d^1", -- [20]
-					"6b4b4a^1", -- [21]
-					"3c2915^1", -- [22]
-					"3d6993^1", -- [23]
-					"4669ed^1", -- [24]
-					"654b46^1", -- [25]
-					"66bb62^1", -- [26]
-					"7deb0c^1", -- [27]
-					"7d8a9e^1", -- [28]
-					"834aa5^1", -- [29]
-				},
-				["Gas"] = {
-					"931a43^1", -- [1]
-					"b1390b^1", -- [2]
-				},
-			},
-			[2004] = {
-				["Art"] = {
-					"6d3633^1", -- [1]
-					"76b5d6^1", -- [2]
-					"70a5aa^1", -- [3]
-					"b14c61^1", -- [4]
-					"983d27^1", -- [5]
-					"ae1c73^1", -- [6]
-					"718628^1", -- [7]
-					"73d625^1", -- [8]
-					"9adcd0^1", -- [9]
-					"b48b8e^1", -- [10]
-					"ab4c97^1", -- [11]
-					"9f6cc3^1", -- [12]
-					"a23cc2^1", -- [13]
-					"6f555e^1", -- [14]
-					"75b574^1", -- [15]
-					"6e050f^1", -- [16]
-					"7335fe^1", -- [17]
-					"73e5a8^1", -- [18]
-					"79054f^1", -- [19]
-					"6f05d6^1", -- [20]
-					"71a546^1", -- [21]
-					"70750d^1", -- [22]
-					"b26c3b^1", -- [23]
-					"a58ced^1", -- [24]
-					"6d25a1^1", -- [25]
-					"959d35^1", -- [26]
-					"b26bca^1", -- [27]
-					"9abd20^1", -- [28]
-					"aaec67^1", -- [29]
-				},
-			},
-			[3003] = {
-				["Art"] = {
-					"45d9ab^1", -- [1]
-					"42f97c^1", -- [2]
-					"4369a0^1", -- [3]
-					"6db366^1", -- [4]
-					"79f3d5^1", -- [5]
-					"70839e^1", -- [6]
-					"6d9764^1", -- [7]
-					"6af6f9^1", -- [8]
-					"43d9ed^1", -- [9]
-					"42b9cf^1", -- [10]
-					"5066c7^1", -- [11]
-					"50c64a^1", -- [12]
-					"b9db35^1", -- [13]
-					"bf4b7d^1", -- [14]
-					"b8aad9^1", -- [15]
-					"6e4396^1", -- [16]
-					"7763ed^1", -- [17]
-					"7b8379^1", -- [18]
-					"4df6b3^1", -- [19]
-					"5396c2^1", -- [20]
-					"5216ef^1", -- [21]
-					"721350^1", -- [22]
-					"7bd3c7^1", -- [23]
-					"6ad35b^1", -- [24]
-					"7d637d^1", -- [25]
-					"722392^1", -- [26]
-					"bbbb4d^1", -- [27]
-					"b83b2a^1", -- [28]
-					"42193c^1", -- [29]
-					"441964^1", -- [30]
-					"7d13e3^1", -- [31]
-					"77b406^1", -- [32]
-					"6d1705^1", -- [33]
-					"7653d9^1", -- [34]
-					"731332^1", -- [35]
-					"54d706^1", -- [36]
-					"4fa6d9^1", -- [37]
-					"4f5700^1", -- [38]
-					"6fb71a^1", -- [39]
-					"5426e0^1", -- [40]
-					"52e6a4^1", -- [41]
-					"b97b05^1", -- [42]
-					"461946^1", -- [43]
-					"456977^1", -- [44]
-					"54e73c^1", -- [45]
-					"bb9b80^1", -- [46]
-					"42e9b4^1", -- [47]
-					"41a966^1", -- [48]
-					"4669d0^1", -- [49]
-					"6d3339^1", -- [50]
-					"6e83ab^1", -- [51]
-					"bd4b7c^1", -- [52]
-					"51673e^1", -- [53]
-					"50b698^1", -- [54]
-					"5226c7^1", -- [55]
-					"ba4af2^1", -- [56]
-					"bb9ae1^1", -- [57]
-					"6c46f3^1", -- [58]
-					"6c1726^1", -- [59]
-					"4d16a3^1", -- [60]
-					"57169a^1", -- [61]
-					"44a9ab^1", -- [62]
-					"bfdb61^1", -- [63]
-				},
-			},
-			[4002] = {
-				["Art"] = {
-					"e74900^1", -- [1]
-					"e15991^1", -- [2]
-					"2ee6ad^1", -- [3]
-					"1f7688^1", -- [4]
-					"3366d0^1", -- [5]
-					"18b717^1", -- [6]
-					"27b7d4^1", -- [7]
-					"27c710^1", -- [8]
-					"21a721^1", -- [9]
-					"371655^1", -- [10]
-					"1f27d4^1", -- [11]
-					"21765a^1", -- [12]
-					"e0c969^1", -- [13]
-					"b7caa7^1", -- [14]
-					"34770d^1", -- [15]
-					"e3c981^1", -- [16]
-					"d9e98e^1", -- [17]
-					"da893c^1", -- [18]
-					"dc89b4^1", -- [19]
-					"c05a27^1", -- [20]
-					"cf2a65^1", -- [21]
-				},
-			},
-			[2005] = {
-				["Art"] = {
-					"cfc8cc^1", -- [1]
-					"c63936^1", -- [2]
-					"c6e8fb^1", -- [3]
-					"cb9811^1", -- [4]
-					"cb78de^1", -- [5]
-					"76b61a^1", -- [6]
-					"75c5eb^1", -- [7]
-					"6b565a^1", -- [8]
-					"871633^1", -- [9]
-					"8165d8^1", -- [10]
-					"89c616^1", -- [11]
-					"8ec643^1", -- [12]
-					"855670^1", -- [13]
-					"8655c3^1", -- [14]
-					"6fb614^1", -- [15]
-					"71262d^1", -- [16]
-					"7405bd^1", -- [17]
-					"820685^1", -- [18]
-					"8445e2^1", -- [19]
-					"8d7693^1", -- [20]
-					"8975be^1", -- [21]
-					"856588^1", -- [22]
-					"c95924^1", -- [23]
-					"cbf906^1", -- [24]
-					"cf6895^1", -- [25]
-					"831641^1", -- [26]
-					"c99877^1", -- [27]
-					"ca58a4^1", -- [28]
-					"8b2671^1", -- [29]
-					"8bf61c^1", -- [30]
-					"7a45ee^1", -- [31]
-					"76157f^1", -- [32]
-					"8c163f^1", -- [33]
-					"c898d6^1", -- [34]
-					"cbe865^1", -- [35]
-					"7265fe^1", -- [36]
-					"6cb622^1", -- [37]
-				},
-			},
-			[2009] = {
-				["Art"] = {
-					"a5326d^1", -- [1]
-					"a20285^2", -- [2]
-					"a551e4^1", -- [3]
-					"a281d7^1", -- [4]
-					"a2423f^1", -- [5]
-					"83793f^1", -- [6]
-					"729a5b^1", -- [7]
-					"78a9e7^1", -- [8]
-					"7419c0^1", -- [9]
-					"78d992^1", -- [10]
-					"7c81e1^1", -- [11]
-					"7951e5^1", -- [12]
-					"87194d^1", -- [13]
-					"750ab6^1", -- [14]
-					"a39275^1", -- [15]
-					"a28211^1", -- [16]
-					"a851c7^1", -- [17]
-					"a79225^1", -- [18]
-					"a95251^1", -- [19]
-					"a3c1ab^1", -- [20]
-					"aab1ed^1", -- [21]
-					"7b7991^1", -- [22]
-					"ac124c^1", -- [23]
-					"a7324c^1", -- [24]
-					"a7717b^1", -- [25]
-					"7cfa4e^1", -- [26]
-					"84195c^1", -- [27]
-					"823a47^1", -- [28]
-					"80fa80^1", -- [29]
-					"7dca68^1", -- [30]
-					"7f29a2^1", -- [31]
-					"778aa3^1", -- [32]
-					"a501c9^1", -- [33]
-					"7209f5^1", -- [34]
-					"7c39b5^1", -- [35]
-					"77a298^1", -- [36]
-					"75f1f1^1", -- [37]
-					"7a8a67^1", -- [38]
-					"7639bf^1", -- [39]
-					"765242^1", -- [40]
-					"7f01e4^1", -- [41]
-				},
-			},
-			[2013] = {
-				["Art"] = {
-					"87db3d^1", -- [1]
-					"989931^1", -- [2]
-					"97e91b^1", -- [3]
-					"9f6d39^1", -- [4]
-					"a06d82^1", -- [5]
-					"9c9d44^1", -- [6]
-					"9d7d16^1", -- [7]
-					"a00d1a^1", -- [8]
-					"a17d37^1", -- [9]
-					"a28d16^1", -- [10]
-					"9d0dc4^1", -- [11]
-					"85dab9^1", -- [12]
-					"996961^1", -- [13]
-					"85fb5e^1", -- [14]
-					"9e7d62^1", -- [15]
-					"9c2d99^1", -- [16]
-					"9e0d85^1", -- [17]
-					"8c1a00^1", -- [18]
-					"889ae2^1", -- [19]
-					"9c18d0^1", -- [20]
-					"90b9cc^1", -- [21]
-					"9bed5c^1", -- [22]
-					"9679a9^1", -- [23]
-					"887a46^1", -- [24]
-					"952959^1", -- [25]
-					"9cce1b^1", -- [26]
-				},
-			},
-			[2017] = {
-				["Art"] = {
-					"6e176a^2", -- [1]
-					"57f7c4^1", -- [2]
-					"588704^1", -- [3]
-					"53d7a1^1", -- [4]
-					"70481f^1", -- [5]
-					"a159af^1", -- [6]
-					"9f8a39^1", -- [7]
-					"64b6ee^1", -- [8]
-					"5d87ab^1", -- [9]
-					"75c715^1", -- [10]
-					"9dc9db^1", -- [11]
-					"a18a09^1", -- [12]
-					"a2c95d^1", -- [13]
-					"6ac809^1", -- [14]
-					"63f818^1", -- [15]
-					"70a700^1", -- [16]
-					"9eb968^1", -- [17]
-					"6f4682^1", -- [18]
-					"5627fa^1", -- [19]
-					"606682^1", -- [20]
-				},
-			},
-			[2021] = {
-				["Art"] = {
-					"5a75b2^1", -- [1]
-					"5665bc^1", -- [2]
-					"5055f7^1", -- [3]
-					"8ac9f4^1", -- [4]
-					"880987^1", -- [5]
-					"3d63a3^1", -- [6]
-					"410312^1", -- [7]
-					"a01ae5^1", -- [8]
-					"a0dba5^2", -- [9]
-					"a15b88^1", -- [10]
-					"9a691f^1", -- [11]
-					"9aa8ce^1", -- [12]
-					"9ad8f4^1", -- [13]
-					"4972f4^1", -- [14]
-					"462333^1", -- [15]
-					"498405^1", -- [16]
-					"950b5b^2", -- [17]
-					"92eb5e^1", -- [18]
-					"97cb8c^1", -- [19]
-					"3e8404^1", -- [20]
-					"4213a8^1", -- [21]
-					"3c83da^1", -- [22]
-					"89899e^1", -- [23]
-					"8b297b^1", -- [24]
-					"41734c^1", -- [25]
-					"448377^1", -- [26]
-					"43f322^1", -- [27]
-					"a14b2a^1", -- [28]
-					"5ad6b5^1", -- [29]
-					"5f16cd^1", -- [30]
-					"5f3740^1", -- [31]
-					"8b299b^1", -- [32]
-					"9818db^1", -- [33]
-					"5d6728^1", -- [34]
-					"5ec66c^1", -- [35]
-					"926b81^1", -- [36]
-					"92cb3e^1", -- [37]
-					"954af4^1", -- [38]
-					"4203ef^1", -- [39]
-					"946b91^1", -- [40]
-					"5035c3^1", -- [41]
-					"536607^1", -- [42]
-					"4433f2^1", -- [43]
-					"8989d6^1", -- [44]
-					"8b1a1a^1", -- [45]
-					"933adc^1", -- [46]
-					"952bbf^1", -- [47]
-					"5375ad^1", -- [48]
-					"54f631^1", -- [49]
-					"a30b70^1", -- [50]
-					"9f5b7c^1", -- [51]
-					"a16bec^1", -- [52]
-					"98eb31^1", -- [53]
-					"97bbaa^1", -- [54]
-					"95eb9b^1", -- [55]
-					"477358^1", -- [56]
-					"5d05a6^1", -- [57]
-					"5875e6^1", -- [58]
-					"5ef704^1", -- [59]
-					"5d963e^1", -- [60]
-					"611629^1", -- [61]
-					"9ad896^1", -- [62]
-					"5655ef^1", -- [63]
-					"a37b14^1", -- [64]
-					"975b08^1", -- [65]
-					"4a5357^1", -- [66]
-					"55b659^1", -- [67]
-					"3fb330^1", -- [68]
-					"99f8ad^1", -- [69]
-					"9efbd5^1", -- [70]
-					"58d5c7^1", -- [71]
-					"5805a6^1", -- [72]
-					"480317^1", -- [73]
-					"3fd392^1", -- [74]
-					"98cacf^1", -- [75]
-					"46e3b1^1", -- [76]
-					"88fa11^1", -- [77]
-					"418388^1", -- [78]
-					"4833df^1", -- [79]
-					"4a93e3^1", -- [80]
-					"60071f^1", -- [81]
-					"9ebbb5^1", -- [82]
-					"5495c1^1", -- [83]
-					"405366^1", -- [84]
-				},
-			},
-			[4004] = {
-				["Gas"] = {
-					"7611ee^1", -- [1]
-				},
-				["Art"] = {
-					"3b9995^1", -- [1]
-					"3f99d6^1", -- [2]
-					"44e916^1", -- [3]
-					"40a830^1", -- [4]
-					"45b7a5^1", -- [5]
-					"4077df^1", -- [6]
-					"302923^1", -- [7]
-					"312916^1", -- [8]
-					"46a849^1", -- [9]
-					"44d7c8^1", -- [10]
-					"41486c^1", -- [11]
-					"4427ab^1", -- [12]
-					"388967^1", -- [13]
-					"39da2a^1", -- [14]
-					"33c909^1", -- [15]
-				},
-			},
-			[2022] = {
-				["Art"] = {
-					"b33a46^1", -- [1]
-					"b00a77^1", -- [2]
-					"cda95f^1", -- [3]
-					"b8ea50^1", -- [4]
-					"acea24^1", -- [5]
-					"a669f6^1", -- [6]
-					"be3a52^1", -- [7]
-					"c8e92a^1", -- [8]
-					"ce3dbf^1", -- [9]
-					"ce1e4e^1", -- [10]
-					"d2edca^1", -- [11]
-					"9f98bb^1", -- [12]
-					"dc2bfc^1", -- [13]
-					"d09e75^1", -- [14]
-					"d6bd75^1", -- [15]
-					"d9ac4b^1", -- [16]
-					"da9c9f^1", -- [17]
-					"d37cd1^1", -- [18]
-					"d07d6b^1", -- [19]
-					"d4dd43^1", -- [20]
-					"d2be44^1", -- [21]
-					"c4a960^1", -- [22]
-					"df8bba^1", -- [23]
-					"d7bcc4^1", -- [24]
-					"9fe975^1", -- [25]
-					"bb7a2e^1", -- [26]
-					"c0b9ec^1", -- [27]
-					"cf4df6^1", -- [28]
-					"a95a10^1", -- [29]
-					"9d692c^1", -- [30]
-				},
-			},
-			[3002] = {
-				["Art"] = {
-					"73bc05^1", -- [1]
-					"72ebd2^1", -- [2]
-					"741829^1", -- [3]
-					"7507e3^1", -- [4]
-					"76c8e0^1", -- [5]
-					"22d9ff^1", -- [6]
-					"21b926^1", -- [7]
-					"22b9ba^1", -- [8]
-					"70d806^1", -- [9]
-					"6ffbaf^1", -- [10]
-					"6eeb9c^1", -- [11]
-					"73dc60^1", -- [12]
-					"767807^1", -- [13]
-					"237974^1", -- [14]
-					"ad7c30^1", -- [15]
-					"af7b17^1", -- [16]
-					"7a28fa^1", -- [17]
-					"7dd8a2^1", -- [18]
-					"71ac31^1", -- [19]
-					"af2c5c^1", -- [20]
-					"b40b03^1", -- [21]
-					"ad9bd6^1", -- [22]
-					"7087d8^1", -- [23]
-					"763893^1", -- [24]
-					"7ca886^1", -- [25]
-					"7b28c5^1", -- [26]
-					"741bf2^1", -- [27]
-					"747c41^1", -- [28]
-					"72b889^1", -- [29]
-					"ac1c02^1", -- [30]
-					"1fe964^1", -- [31]
-					"27994d^1", -- [32]
-					"83383d^1", -- [33]
-					"73c7c8^1", -- [34]
-					"7de862^1", -- [35]
-					"7947e0^1", -- [36]
-					"b51b52^1", -- [37]
-					"851837^1", -- [38]
-					"22099c^1", -- [39]
-					"28e8f7^1", -- [40]
-					"2599f9^1", -- [41]
-					"257905^1", -- [42]
-					"236a18^1", -- [43]
-					"a9bc14^1", -- [44]
-					"a9ebb8^1", -- [45]
-				},
-			},
-			[2037] = {
-				["Art"] = {
-					"77534d^1", -- [1]
-					"708345^1", -- [2]
-					"6cb3d8^1", -- [3]
-					"9ca6ed^1", -- [4]
-					"9d26b5^1", -- [5]
-					"a0e73a^1", -- [6]
-					"88d54e^1", -- [7]
-					"8814fa^2", -- [8]
-					"874538^1", -- [9]
-					"8754c2^2", -- [10]
-					"6ce7e1^1", -- [11]
-					"6c27c4^1", -- [12]
-					"6b0805^1", -- [13]
-					"6cc444^1", -- [14]
-					"9a56de^1", -- [15]
-					"9ab692^1", -- [16]
-					"8a0508^1", -- [17]
-					"6de3f7^1", -- [18]
-					"7d337c^1", -- [19]
-					"7047cf^1", -- [20]
-					"9a1779^1", -- [21]
-					"9e56df^1", -- [22]
-					"9a373b^1", -- [23]
-					"6c687f^1", -- [24]
-					"683832^1", -- [25]
-					"6d4811^1", -- [26]
-					"7123a4^1", -- [27]
-					"9fe710^1", -- [28]
-					"a0d789^1", -- [29]
-					"7ce3a6^1", -- [30]
-					"6fe390^1", -- [31]
-					"6c683a^1", -- [32]
-					"843545^1", -- [33]
-					"a196c7^1", -- [34]
-					"7e23c6^1", -- [35]
-					"9816ec^1", -- [36]
-					"8a7528^1", -- [37]
-					"6d17ad^1", -- [38]
-				},
-			},
-			[4007] = {
-				["Gas"] = {
-					"31c7a5^1", -- [1]
-					"a1fb27^1", -- [2]
-					"6496b1^1", -- [3]
-				},
-				["Art"] = {
-					"3a9936^1", -- [1]
-					"35a87f^1", -- [2]
-					"36a974^1", -- [3]
-					"cc0a6d^1", -- [4]
-					"c82aa8^1", -- [5]
-					"ca19a1^1", -- [6]
-					"8c6853^1", -- [7]
-					"95c9f6^1", -- [8]
-					"9269fb^1", -- [9]
-					"3be9f2^1", -- [10]
-					"3188c0^1", -- [11]
-					"3c39ce^1", -- [12]
-					"880897^1", -- [13]
-					"9698ad^1", -- [14]
-					"8928d1^1", -- [15]
-					"8d0878^1", -- [16]
-					"985a50^1", -- [17]
-					"9828c5^1", -- [18]
-					"3268ed^1", -- [19]
-					"3788fc^1", -- [20]
-					"99da50^1", -- [21]
-					"8b4867^1", -- [22]
-					"c55a71^1", -- [23]
-					"c2fa70^1", -- [24]
-					"34a998^1", -- [25]
-					"943a20^1", -- [26]
-					"92a91c^1", -- [27]
-					"ca29d7^1", -- [28]
-					"c6aa2b^1", -- [29]
-					"3eb921^1", -- [30]
-					"4b7725^1", -- [31]
-					"4c25d3^1", -- [32]
-					"4ae5b3^1", -- [33]
-				},
-			},
-			[4010] = {
-				["Gas"] = {
-					"dadacd^1", -- [1]
-					"df4b2c^1", -- [2]
-					"d73c18^1", -- [3]
-				},
-			},
-			[1001] = {
-				["Art"] = {
-					"d43792^1", -- [1]
-					"d60788^1", -- [2]
-					"d6e727^1", -- [3]
-					"577acb^1", -- [4]
-					"542aae^1", -- [5]
-					"560ab9^1", -- [6]
-					"4ea4e0^1", -- [7]
-					"48d50e^1", -- [8]
-					"4ea518^1", -- [9]
-					"d69757^1", -- [10]
-					"d5f768^1", -- [11]
-					"55ba95^1", -- [12]
-					"5a6aaa^2", -- [13]
-					"5a9ad1^1", -- [14]
-					"564ae1^1", -- [15]
-					"d717b6^1", -- [16]
-					"541ad0^1", -- [17]
-					"572ab0^1", -- [18]
-					"52fadd^1", -- [19]
-					"1f5208^1", -- [20]
-					"293343^1", -- [21]
-					"22226d^1", -- [22]
-					"4a350b^1", -- [23]
-					"46d522^1", -- [24]
-					"49a47d^1", -- [25]
-					"d84775^1", -- [26]
-					"47c545^1", -- [27]
-					"463545^1", -- [28]
-					"d41756^1", -- [29]
-					"4bd4d5^1", -- [30]
-					"45e517^1", -- [31]
-					"4d54fe^1", -- [32]
-					"4914ce^1", -- [33]
-					"2c0301^1", -- [34]
-					"2612f0^1", -- [35]
-					"267429^1", -- [36]
-					"d75797^1", -- [37]
-					"1c3224^1", -- [38]
-					"201415^1", -- [39]
-					"4b3518^1", -- [40]
-					"234400^1", -- [41]
-					"1e1282^1", -- [42]
-					"2803a4^1", -- [43]
-					"261356^1", -- [44]
-					"d587a7^1", -- [45]
-					"2113d3^1", -- [46]
-					"4754ef^1", -- [47]
-					"285277^1", -- [48]
-					"2502e4^1", -- [49]
-					"24933c^1", -- [50]
-					"25732a^1", -- [51]
-				},
-			},
-			[4011] = {
-				["Art"] = {
-					"99d6c1^1", -- [1]
-					"9c9712^1", -- [2]
-					"9996df^1", -- [3]
-					"68f6fe^1", -- [4]
-					"6d371a^1", -- [5]
-					"6ce6de^1", -- [6]
-					"92b6ff^1", -- [7]
-					"95374f^1", -- [8]
-					"9826ca^1", -- [9]
-					"9eacfe^1", -- [10]
-					"93ccef^1", -- [11]
-					"cde5ca^1", -- [12]
-					"cb7644^1", -- [13]
-					"ccf5ba^1", -- [14]
-					"b7490c^1", -- [15]
-					"be3906^1", -- [16]
-					"b419b5^1", -- [17]
-					"6b57ba^1", -- [18]
-					"66d75f^1", -- [19]
-					"6267b5^1", -- [20]
-					"63d7b9^1", -- [21]
-					"c8c54d^1", -- [22]
-					"c24543^1", -- [23]
-					"97e6f0^1", -- [24]
-					"9c7684^1", -- [25]
-					"95ece5^1", -- [26]
-					"9e0c86^1", -- [27]
-					"b27994^1", -- [28]
-					"b729be^1", -- [29]
-					"9ae6e3^1", -- [30]
-					"924757^1", -- [31]
-					"6876c2^1", -- [32]
-					"cd4620^1", -- [33]
-					"c65643^1", -- [34]
-					"c5e5f7^1", -- [35]
-					"97dbe9^1", -- [36]
-					"9d4d1e^1", -- [37]
-					"bea9ed^1", -- [38]
-					"b589ae^1", -- [39]
-					"61367f^1", -- [40]
-					"6a8784^1", -- [41]
-					"c4f673^1", -- [42]
-					"bf95e2^1", -- [43]
-					"c19560^1", -- [44]
-					"c599b0^1", -- [45]
-					"c129f1^1", -- [46]
-					"c5853b^1", -- [47]
-					"96675e^1", -- [48]
-					"9a6751^1", -- [49]
-				},
-			},
-			[1005] = {
-				["Art"] = {
-					"55ed67^1", -- [1]
-					"4fad4a^1", -- [2]
-					"56dd56^1", -- [3]
-					"521d7a^1", -- [4]
-					"50ad7b^1", -- [5]
-					"525d59^1", -- [6]
-					"4f7d83^1", -- [7]
-					"4f3d6b^1", -- [8]
-					"57ed69^1", -- [9]
-					"509d68^1", -- [10]
-					"573dc1^1", -- [11]
-					"56bd9d^1", -- [12]
-					"546d9c^1", -- [13]
-					"541d8c^1", -- [14]
-					"55cd46^1", -- [15]
-				},
-			},
-			[1007] = {
-				["Art"] = {
-					"4b6527^1", -- [1]
-					"48f4ac^2", -- [2]
-					"4b64e4^1", -- [3]
-					"896b5d^1", -- [4]
-					"82bd51^1", -- [5]
-					"806b87^1", -- [6]
-					"5074ee^1", -- [7]
-					"8918d6^1", -- [8]
-					"8b09c0^1", -- [9]
-					"84993c^1", -- [10]
-					"a47e9a^1", -- [11]
-					"9bbe75^1", -- [12]
-					"9d2e8f^1", -- [13]
-					"7c4c43^1", -- [14]
-					"812ba7^1", -- [15]
-					"4c64c2^1", -- [16]
-					"4ee523^1", -- [17]
-					"b602f8^1", -- [18]
-					"bd844c^1", -- [19]
-					"bed338^1", -- [20]
-					"c553e1^1", -- [21]
-					"bdd400^1", -- [22]
-					"8a9bad^1", -- [23]
-					"8c6c71^1", -- [24]
-					"667447^1", -- [25]
-					"67149a^2", -- [26]
-					"648402^1", -- [27]
-					"608406^1", -- [28]
-					"829971^1", -- [29]
-					"89694e^1", -- [30]
-					"8a099e^1", -- [31]
-					"7eac8c^1", -- [32]
-					"8abc5b^1", -- [33]
-					"8798ff^1", -- [34]
-					"867992^1", -- [35]
-					"6463dc^1", -- [36]
-					"4ea507^1", -- [37]
-					"7ebceb^1", -- [38]
-					"824d01^1", -- [39]
-					"833d90^1", -- [40]
-					"c163ca^1", -- [41]
-					"c14406^1", -- [42]
-					"5234b7^1", -- [43]
-					"50350e^1", -- [44]
-					"a74dc5^1", -- [45]
-					"a40d2e^1", -- [46]
-					"a21ec9^1", -- [47]
-					"c1c316^1", -- [48]
-					"89dca3^1", -- [49]
-					"647486^1", -- [50]
-					"6434e3^1", -- [51]
-					"88f924^1", -- [52]
-					"83d98d^1", -- [53]
-					"83c957^1", -- [54]
-					"a22e6e^1", -- [55]
-					"a46e80^1", -- [56]
-					"898c85^1", -- [57]
-					"8b7c2b^1", -- [58]
-					"867d60^1", -- [59]
-					"a19e4e^1", -- [60]
-					"a77e3f^1", -- [61]
-					"bfa492^1", -- [62]
-					"828c3f^1", -- [63]
-					"884d83^1", -- [64]
-					"bde395^1", -- [65]
-					"c853f0^1", -- [66]
-					"694489^1", -- [67]
-					"6183e2^1", -- [68]
-					"6554bc^1", -- [69]
-					"a4ad7a^1", -- [70]
-					"8aaa0c^1", -- [71]
-					"8ac926^1", -- [72]
-					"4ca4fc^1", -- [73]
-					"51e54b^1", -- [74]
-					"8a69da^1", -- [75]
-					"86e92c^1", -- [76]
-					"7ebc41^1", -- [77]
-					"839b5b^1", -- [78]
-					"8579b6^1", -- [79]
-					"89ccbe^1", -- [80]
-					"89fb73^1", -- [81]
-					"87dca2^1", -- [82]
-					"a53ecd^1", -- [83]
-					"a3dee2^1", -- [84]
-					"685467^1", -- [85]
-					"837d10^1", -- [86]
-					"88fbfc^1", -- [87]
-					"66641a^1", -- [88]
-					"65e4e0^1", -- [89]
-					"6424cb^1", -- [90]
-					"5024c5^1", -- [91]
-					"4e94bf^1", -- [92]
-					"52d4e3^1", -- [93]
-					"b7c37d^1", -- [94]
-					"84f9dd^1", -- [95]
-					"8b1984^1", -- [96]
-					"541511^1", -- [97]
-					"a64e67^1", -- [98]
-					"a5fd2f^1", -- [99]
-					"a49e16^1", -- [100]
-					"9e8e9d^1", -- [101]
-					"8929b0^1", -- [102]
-					"8a7d60^1", -- [103]
-					"bba344^1", -- [104]
-					"a80dfa^1", -- [105]
-					"8caa16^1", -- [106]
-					"4eb482^1", -- [107]
-					"64e421^1", -- [108]
-					"9abe5d^1", -- [109]
-					"88c9f9^1", -- [110]
-				},
-			},
-			[2002] = {
-				["Art"] = {
-					"aefac3^1", -- [1]
-					"a36b15^1", -- [2]
-					"965c36^1", -- [3]
-					"940bc6^1", -- [4]
-					"9a8bee^1", -- [5]
-					"286443^1", -- [6]
-					"377316^1", -- [7]
-					"317380^1", -- [8]
-					"954c06^1", -- [9]
-					"96fbb6^1", -- [10]
-					"a1ec60^1", -- [11]
-					"357313^1", -- [12]
-					"26047f^1", -- [13]
-					"3053ce^1", -- [14]
-					"29346d^1", -- [15]
-					"2cf3aa^1", -- [16]
-					"a5dbef^1", -- [17]
-					"9ccb53^1", -- [18]
-					"a37bfe^1", -- [19]
-					"a68b96^1", -- [20]
-					"2f0377^1", -- [21]
-					"35434d^1", -- [22]
-					"969b00^1", -- [23]
-					"9a3b5c^1", -- [24]
-					"a9db64^1", -- [25]
-					"a85a96^1", -- [26]
-					"a4db56^1", -- [27]
-					"2b643a^1", -- [28]
-					"aa0a6c^1", -- [29]
-					"a06b94^1", -- [30]
-					"2d13fd^1", -- [31]
-					"a5abd0^1", -- [32]
-				},
-			},
-			[6006] = {
-				["Art"] = {
-					"85a416^2", -- [1]
-					"85842f^1", -- [2]
-					"813432^1", -- [3]
-					"7ff3d0^1", -- [4]
-					"8955d2^1", -- [5]
-					"86d62e^1", -- [6]
-					"89e5a3^1", -- [7]
-					"8505f3^1", -- [8]
-					"845615^1", -- [9]
-					"8745ae^1", -- [10]
-				},
-			},
-			[9000] = {
-				["Art"] = {
-					"7575c1^6", -- [1]
-					"82a411^6", -- [2]
-					"6d71bd^1", -- [3]
-					"7712bf^2", -- [4]
-					"6ac3f2^6", -- [5]
-				},
-			},
-		},
-		["Version"] = 0.75,
 		["NXMine"] = {
 			[2031] = {
 				[27] = {
@@ -21461,121 +21461,210 @@ NxData = {
 					"6ae3ea^1", -- [3]
 				},
 			},
-			[1016] = {
-				[20] = {
-					"abddad^1", -- [1]
-					"9cec58^1", -- [2]
-					"9ecb85^1", -- [3]
-					"98ec69^1", -- [4]
-					"84da24^1", -- [5]
-					"87e868^1", -- [6]
-					"8c2835^1", -- [7]
-					"810657^1", -- [8]
-					"c2293c^1", -- [9]
-					"a33a37^1", -- [10]
-					"985a63^1", -- [11]
-					"a20df7^1", -- [12]
-					"ad7de5^1", -- [13]
-					"b47db5^1", -- [14]
-					"c5aeb9^1", -- [15]
-					"6d4a97^1", -- [16]
-					"686be5^1", -- [17]
-					"626bf5^1", -- [18]
-					"4f4a87^1", -- [19]
-					"5afa0f^1", -- [20]
-					"7036f3^1", -- [21]
-					"7de4f6^1", -- [22]
-					"8c575a^1", -- [23]
-					"9c8bc8^1", -- [24]
-					"9bab30^1", -- [25]
-					"99d9eb^1", -- [26]
-					"9baa5f^1", -- [27]
-					"9ceac8^1", -- [28]
-					"b0e7af^1", -- [29]
-					"a736f6^1", -- [30]
-					"9d2c71^1", -- [31]
-					"94fbf9^1", -- [32]
-					"b18dae^1", -- [33]
-					"a1ee8d^1", -- [34]
-					"9bce32^1", -- [35]
-					"c8ec60^1", -- [36]
-					"beec9d^1", -- [37]
-					"8da7e3^1", -- [38]
-					"c528e2^1", -- [39]
-					"a06a9a^1", -- [40]
-					"af7750^1", -- [41]
-					"a536f6^1", -- [42]
-					"99cb99^1", -- [43]
-					"a79e09^1", -- [44]
-					"9f3e46^1", -- [45]
-					"b2bd65^1", -- [46]
-					"95add5^1", -- [47]
-					"996e38^1", -- [48]
-					"a3fea6^1", -- [49]
-					"c34d49^1", -- [50]
-					"c87c24^1", -- [51]
-					"c07c47^1", -- [52]
-					"c2dc0e^1", -- [53]
-					"c76e4f^1", -- [54]
-					"bf6ea8^1", -- [55]
-					"83465e^1", -- [56]
-					"78673f^1", -- [57]
-					"716689^1", -- [58]
-					"a298d2^1", -- [59]
-					"b5ad8b^1", -- [60]
-					"a27a63^1", -- [61]
-					"bea9e0^1", -- [62]
-					"c168a4^1", -- [63]
-					"b8f7bb^1", -- [64]
-					"a4574c^1", -- [65]
-					"91a6f1^1", -- [66]
-					"8d0c2d^1", -- [67]
-					"7efbe3^1", -- [68]
-					"6a7aa8^1", -- [69]
-					"5fcbf1^1", -- [70]
-					"8779d9^1", -- [71]
-					"6d95b8^1", -- [72]
-					"b50796^1", -- [73]
-					"9af8d4^1", -- [74]
-					"9eb8e8^1", -- [75]
-					"77eba2^1", -- [76]
-					"76abf5^1", -- [77]
-					"79e838^1", -- [78]
-					"8fb6c2^1", -- [79]
-					"6c4634^1", -- [80]
-					"5968ab^1", -- [81]
-					"4c3a85^1", -- [82]
-					"649431^1", -- [83]
-					"9f6cbf^1", -- [84]
-					"bf2d41^1", -- [85]
-					"bd4e82^1", -- [86]
-					"bbfc7b^1", -- [87]
-					"85395c^1", -- [88]
-					"7e16ae^1", -- [89]
-				},
+			[1005] = {
 				[3] = {
-					"9b8d61^1", -- [1]
-					"99fcfe^1", -- [2]
-					"896975^1", -- [3]
-					"89e6d1^1", -- [4]
-					"7f757a^1", -- [5]
-					"9d3d76^1", -- [6]
-					"afdd3b^1", -- [7]
-					"520b12^1", -- [8]
-					"6dc773^1", -- [9]
-					"7ff5b3^1", -- [10]
-					"88f715^1", -- [11]
-					"aacd31^1", -- [12]
-					"ce6d56^1", -- [13]
-					"7bc585^1", -- [14]
-					"a63d08^1", -- [15]
-					"8b467c^1", -- [16]
-					"8a4bbf^1", -- [17]
-					"843b2b^1", -- [18]
-					"8de90a^1", -- [19]
-					"8c5b3f^1", -- [20]
-					"811b97^1", -- [21]
-					"565b6d^1", -- [22]
+					"981347^1", -- [1]
+					"9e5349^1", -- [2]
+					"9443a1^1", -- [3]
+					"950429^1", -- [4]
+					"904459^1", -- [5]
+					"8ed47c^1", -- [6]
+					"9af325^1", -- [7]
+					"9383ae^1", -- [8]
+					"73e4e4^1", -- [9]
+					"70b4bb^1", -- [10]
+					"6486a1^1", -- [11]
+					"65867a^2", -- [12]
+					"72e92f^1", -- [13]
+					"66a96c^1", -- [14]
+					"6699e5^1", -- [15]
+					"667a28^1", -- [16]
+					"7377c8^1", -- [17]
+					"71783f^1", -- [18]
+					"7038d2^1", -- [19]
+					"7a58ed^1", -- [20]
+					"7db8d9^1", -- [21]
+					"7d291b^1", -- [22]
+					"6c8aa9^1", -- [23]
+					"6a9d42^1", -- [24]
+					"611daa^1", -- [25]
+					"5e8d36^1", -- [26]
+					"5f7d27^1", -- [27]
+					"556d47^1", -- [28]
+					"52fd5c^1", -- [29]
+					"9a940b^1", -- [30]
+					"9a43f7^1", -- [31]
+					"8bf34e^1", -- [32]
+					"8cb327^1", -- [33]
+					"8ff472^1", -- [34]
+					"867480^2", -- [35]
+					"84f4cb^1", -- [36]
+					"8d44f1^1", -- [37]
+					"90f4f6^1", -- [38]
+					"93152e^1", -- [39]
+					"95351a^1", -- [40]
+					"96553a^1", -- [41]
+					"920559^1", -- [42]
+					"8ad554^1", -- [43]
+					"89658f^1", -- [44]
+					"87d50f^1", -- [45]
+					"8474eb^1", -- [46]
+					"6bb496^1", -- [47]
+					"6e54c7^1", -- [48]
+					"71343b^1", -- [49]
+					"8aa326^1", -- [50]
+					"8fc290^1", -- [51]
+					"839436^1", -- [52]
+					"81745c^1", -- [53]
+					"76a58f^1", -- [54]
+					"79261f^1", -- [55]
+					"794676^1", -- [56]
+					"7595c4^1", -- [57]
+					"73051b^1", -- [58]
+					"7ba588^1", -- [59]
+					"7ce613^1", -- [60]
+					"77b622^1", -- [61]
+					"747692^1", -- [62]
+					"6e368c^1", -- [63]
+					"6eb60f^1", -- [64]
+					"721514^1", -- [65]
+					"6e2542^1", -- [66]
+					"6a754f^1", -- [67]
+					"681512^1", -- [68]
+					"75a5de^1", -- [69]
+					"78668b^1", -- [70]
+					"7ca6b1^1", -- [71]
+					"7d062d^1", -- [72]
+					"7cb695^1", -- [73]
+					"6bd5d1^1", -- [74]
+					"6ba5b7^1", -- [75]
+					"98c3ac^1", -- [76]
+					"9593af^1", -- [77]
+					"a211c8^1", -- [78]
+					"a2919b^1", -- [79]
+					"a000ec^1", -- [80]
+					"97d17c^1", -- [81]
+					"9c11a3^1", -- [82]
+					"720467^1", -- [83]
+					"98731a^1", -- [84]
+					"95d501^1", -- [85]
+					"92c513^1", -- [86]
+					"7685a9^1", -- [87]
+					"73b4f8^1", -- [88]
+					"7054cd^1", -- [89]
+					"6f52fb^1", -- [90]
+					"919509^1", -- [91]
+					"935564^1", -- [92]
+					"95452b^1", -- [93]
+					"952548^1", -- [94]
+					"91143e^1", -- [95]
+					"77a5aa^1", -- [96]
+					"697633^1", -- [97]
+					"9b9265^1", -- [98]
+					"a1419c^1", -- [99]
+					"9e2151^1", -- [100]
+					"97230f^1", -- [101]
+					"9c831b^1", -- [102]
+					"803467^1", -- [103]
+					"782662^1", -- [104]
+					"65d730^1", -- [105]
+					"6beb31^1", -- [106]
+					"659dba^1", -- [107]
+					"6a8cf1^1", -- [108]
+					"640b68^1", -- [109]
+					"658af4^1", -- [110]
+					"64ea18^1", -- [111]
+					"65a988^1", -- [112]
+					"605778^1", -- [113]
+					"6595f0^1", -- [114]
+					"68362d^1", -- [115]
+					"721332^1", -- [116]
+					"8cb30e^1", -- [117]
+					"848421^1", -- [118]
+					"83b4d2^1", -- [119]
+					"8ec48c^1", -- [120]
+					"91c533^1", -- [121]
+					"90a565^1", -- [122]
+					"933577^1", -- [123]
+					"92056b^1", -- [124]
+					"81546c^1", -- [125]
+					"909576^1", -- [126]
+					"930588^1", -- [127]
+					"769626^1", -- [128]
+					"6fc602^1", -- [129]
+					"74d6a5^1", -- [130]
+					"7515b0^1", -- [131]
+					"8fe2c9^1", -- [132]
+					"9d913c^1", -- [133]
+					"65896f^1", -- [134]
+					"843454^1", -- [135]
+					"8d5513^1", -- [136]
+					"8c054d^1", -- [137]
+					"8845a2^1", -- [138]
+					"80747f^1", -- [139]
+					"909592^1", -- [140]
+					"7a856f^1", -- [141]
+					"69654c^1", -- [142]
+					"744975^1", -- [143]
+					"645973^1", -- [144]
+					"65aa0d^1", -- [145]
+					"731862^1", -- [146]
+					"76f8af^1", -- [147]
+					"6784f0^1", -- [148]
+					"61b75f^1", -- [149]
+					"6529d4^1", -- [150]
+					"5fd96b^1", -- [151]
+					"6d5aba^1", -- [152]
+					"710b64^1", -- [153]
+					"755b62^1", -- [154]
+					"76bbee^1", -- [155]
+					"775c8e^1", -- [156]
+					"671d88^1", -- [157]
+					"652de5^1", -- [158]
+					"6b0d9a^1", -- [159]
+					"618d55^1", -- [160]
+					"6a9b7b^1", -- [161]
+					"68cd89^1", -- [162]
+					"663d25^1", -- [163]
+					"58fd65^1", -- [164]
+					"5dbd4b^1", -- [165]
+					"525d72^1", -- [166]
+					"55dd6c^1", -- [167]
+					"7db67f^1", -- [168]
+					"7af74d^1", -- [169]
+					"7b1776^1", -- [170]
+					"78980d^1", -- [171]
+					"7688de^1", -- [172]
+					"75a92b^1", -- [173]
+					"730b05^1", -- [174]
+					"774ca1^1", -- [175]
+					"6b1db2^1", -- [176]
+					"6bc4ac^1", -- [177]
+					"6d151d^1", -- [178]
+					"7758cb^1", -- [179]
+					"6f9938^1", -- [180]
+					"718a7e^1", -- [181]
+					"75abc2^1", -- [182]
+					"763cb6^1", -- [183]
+					"67a53e^1", -- [184]
+					"5e6663^1", -- [185]
+					"6d5a9d^1", -- [186]
+				},
+				[20] = {
+					"764d65^1", -- [1]
+					"544d6b^1", -- [2]
+					"546dc9^1", -- [3]
+					"52fd6a^1", -- [4]
+					"520d38^1", -- [5]
+					"500d78^1", -- [6]
+					"779da6^1", -- [7]
+					"767d3e^1", -- [8]
+					"4f2d5c^1", -- [9]
+					"519d4d^1", -- [10]
+					"540de1^1", -- [11]
+					"760dc1^1", -- [12]
+					"798e75^1", -- [13]
+					"76cd4e^1", -- [14]
 				},
 			},
 			[4007] = {
@@ -22500,52 +22589,157 @@ NxData = {
 					"6bec41^1", -- [211]
 				},
 			},
-			[1017] = {
+			[2009] = {
 				[21] = {
-					"930b4b^1", -- [1]
-					"b066e2^1", -- [2]
-					"86bc08^1", -- [3]
-					"59584e^1", -- [4]
-					"b3f71f^1", -- [5]
+					"1ba46f^1", -- [1]
+					"47961c^1", -- [2]
+					"74b328^1", -- [3]
 				},
 				[13] = {
-					"78d409^1", -- [1]
-					"b2f835^1", -- [2]
-					"b2274b^1", -- [3]
-					"95fa43^1", -- [4]
-					"4859f1^1", -- [5]
-					"a4a8fc^1", -- [6]
-					"9567bd^1", -- [7]
-					"7ae438^1", -- [8]
-					"62949e^1", -- [9]
-					"5d9805^1", -- [10]
-					"596848^1", -- [11]
-					"4b09cc^1", -- [12]
-					"4acbb6^1", -- [13]
-					"71abfb^1", -- [14]
-					"869c0c^1", -- [15]
-					"954a89^1", -- [16]
-					"a11a0e^1", -- [17]
-					"a898e8^1", -- [18]
-					"b1a7f6^1", -- [19]
-					"7393e6^1", -- [20]
-					"67937b^1", -- [21]
-					"4c4b46^1", -- [22]
-					"90fb61^1", -- [23]
-					"97da46^1", -- [24]
-					"9777bb^1", -- [25]
-					"5376f3^1", -- [26]
-					"5e5844^1", -- [27]
-					"60b83b^1", -- [28]
-					"4ed736^1", -- [29]
-					"5b337e^1", -- [30]
-					"61787d^1", -- [31]
-					"6a58a7^1", -- [32]
-					"a2d8ed^1", -- [33]
+					"23b4c8^1", -- [1]
+					"1e94ad^1", -- [2]
+					"1c742f^1", -- [3]
+					"98854b^1", -- [4]
+					"a2e5b2^1", -- [5]
+					"7ac2d3^1", -- [6]
+					"841293^1", -- [7]
+					"74e327^1", -- [8]
+					"67530b^1", -- [9]
+					"5e2286^1", -- [10]
+					"5cd220^1", -- [11]
+					"6c0344^1", -- [12]
+					"31555e^1", -- [13]
+					"3e25f8^1", -- [14]
+					"4f3619^1", -- [15]
+					"2504f8^1", -- [16]
+					"23438d^1", -- [17]
+					"252313^1", -- [18]
+					"2b325a^1", -- [19]
+					"2123a6^1", -- [20]
+					"1c54b6^1", -- [21]
+					"a9e643^1", -- [22]
+					"9a64cd^1", -- [23]
+					"8f34d9^1", -- [24]
+					"9ad33a^1", -- [25]
+					"a65377^1", -- [26]
+					"a3e56a^1", -- [27]
+					"93e5bb^1", -- [28]
+					"975501^1", -- [29]
+					"9c935d^1", -- [30]
+					"aaa5e8^1", -- [31]
+					"ace58e^1", -- [32]
+					"b414b4^1", -- [33]
+					"b12414^1", -- [34]
+					"a4736a^1", -- [35]
+					"99642d^1", -- [36]
+					"5931fa^1", -- [37]
+					"5935aa^1", -- [38]
+					"20449b^1", -- [39]
+					"27c50f^1", -- [40]
+					"6e432f^1", -- [41]
+					"7f6575^1", -- [42]
+					"8ed3f1^1", -- [43]
+					"a13379^1", -- [44]
+					"95158e^1", -- [45]
+					"9ec518^1", -- [46]
+					"8dd388^1", -- [47]
+					"97f45b^1", -- [48]
+					"a01559^1", -- [49]
+					"877232^1", -- [50]
+					"8e1246^1", -- [51]
+					"9233f1^1", -- [52]
+					"1b646f^1", -- [53]
+					"1fb37c^1", -- [54]
+					"8b04e0^1", -- [55]
 				},
 				[9] = {
-					"768c20^1", -- [1]
-					"53084f^1", -- [2]
+					"356d1f^1", -- [1]
+					"3bfd1d^1", -- [2]
+					"382c8c^1", -- [3]
+					"20ab18^1", -- [4]
+					"1b8b61^1", -- [5]
+					"254bf5^1", -- [6]
+					"39ed64^1", -- [7]
+					"39addd^1", -- [8]
+					"12452a^1", -- [9]
+					"1404d8^1", -- [10]
+					"16a4b9^1", -- [11]
+					"1b445d^1", -- [12]
+					"1d2422^1", -- [13]
+					"19c490^1", -- [14]
+					"17e492^1", -- [15]
+					"14b4bc^1", -- [16]
+					"0f1573^1", -- [17]
+					"601d68^1", -- [18]
+					"8c62b0^1", -- [19]
+					"420ae9^1", -- [20]
+					"6bea65^1", -- [21]
+					"ad0ab3^1", -- [22]
+					"ab5700^1", -- [23]
+					"a1237f^1", -- [24]
+					"9bfcb9^1", -- [25]
+					"b53ae6^1", -- [26]
+					"4d8c91^1", -- [27]
+					"27ebba^1", -- [28]
+					"3a1cf1^1", -- [29]
+					"31ad58^1", -- [30]
+					"524d1f^1", -- [31]
+					"648c89^1", -- [32]
+					"6acac6^1", -- [33]
+					"757bb7^1", -- [34]
+					"7c18af^1", -- [35]
+					"95358a^1", -- [36]
+					"1d5a15^1", -- [37]
+					"2cec0e^1", -- [38]
+					"1314f8^1", -- [39]
+					"152499^1", -- [40]
+					"518c94^1", -- [41]
+					"521d70^1", -- [42]
+					"5f9da7^1", -- [43]
+					"7bfbda^1", -- [44]
+					"57cdbd^1", -- [45]
+					"be5a26^1", -- [46]
+					"be1aa4^1", -- [47]
+					"67230f^1", -- [48]
+					"881c61^1", -- [49]
+					"8aec8a^1", -- [50]
+					"30ed20^1", -- [51]
+					"491937^1", -- [52]
+					"0dc591^1", -- [53]
+					"0fb536^1", -- [54]
+					"14451f^1", -- [55]
+					"b9faa6^1", -- [56]
+					"1aab3a^1", -- [57]
+					"bac744^1", -- [58]
+					"1c844b^1", -- [59]
+					"116543^1", -- [60]
+					"ab6b28^1", -- [61]
+					"810c23^1", -- [62]
+					"9ddc9b^1", -- [63]
+					"96ace6^1", -- [64]
+					"450caa^1", -- [65]
+					"38ea91^1", -- [66]
+					"525cce^1", -- [67]
+					"333cb7^1", -- [68]
+					"638ccc^1", -- [69]
+					"83f28d^1", -- [70]
+					"c1193c^1", -- [71]
+					"693a02^1", -- [72]
+					"36ce01^1", -- [73]
+					"57392d^1", -- [74]
+					"65a953^1", -- [75]
+					"558d54^1", -- [76]
+					"3bfa5b^1", -- [77]
+					"526981^1", -- [78]
+					"9a4cdd^1", -- [79]
+					"acaa02^1", -- [80]
+					"b04c59^1", -- [81]
+					"a76c3e^1", -- [82]
+					"9bec5e^1", -- [83]
+					"8cbcb8^1", -- [84]
+					"836c3f^1", -- [85]
+					"706c00^1", -- [86]
+					"1faa3b^1", -- [87]
 				},
 			},
 			[1002] = {
@@ -23770,308 +23964,460 @@ NxData = {
 					"bb8bd5^1", -- [8]
 				},
 			},
-			[2011] = {
-				[3] = {
-					"b2767d^1", -- [1]
-					"500c45^1", -- [2]
-					"5a1ce5^1", -- [3]
-					"7acb1b^1", -- [4]
-					"80da3a^1", -- [5]
-					"509b62^1", -- [6]
-					"494bea^1", -- [7]
-					"509bc8^1", -- [8]
-					"a7f7e9^1", -- [9]
-					"996d7c^1", -- [10]
-					"b1f832^1", -- [11]
-					"5e9a15^1", -- [12]
-					"a7ba47^1", -- [13]
-					"972a9b^1", -- [14]
-					"5a1c11^1", -- [15]
-					"58ca9e^1", -- [16]
-					"826c3d^1", -- [17]
-					"b55961^1", -- [18]
-					"80cd56^1", -- [19]
-					"809aa5^1", -- [20]
-					"6588b0^1", -- [21]
-					"8949f8^1", -- [22]
-					"4f08b9^1", -- [23]
-					"8a999f^1", -- [24]
-					"832bc6^1", -- [25]
-					"6fad19^1", -- [26]
-					"a7490c^1", -- [27]
-					"8deab7^1", -- [28]
-					"790a4b^1", -- [29]
-					"6999af^1", -- [30]
-					"b79c00^1", -- [31]
-					"75c9a1^1", -- [32]
-					"b859fd^1", -- [33]
-					"76ee24^1", -- [34]
-					"83eda5^1", -- [35]
-					"8eabfc^1", -- [36]
-					"5468ce^1", -- [37]
-					"830b12^1", -- [38]
-					"7d8b85^1", -- [39]
-					"aeedca^1", -- [40]
-					"687a22^1", -- [41]
-					"801cd4^1", -- [42]
-					"4cf9dc^1", -- [43]
-					"871979^1", -- [44]
-					"425b55^1", -- [45]
-					"6c8a51^1", -- [46]
-					"62faa8^1", -- [47]
-					"448bcb^1", -- [48]
-					"abd879^1", -- [49]
-					"7b3992^1", -- [50]
-					"61fc29^1", -- [51]
-					"a87c3d^1", -- [52]
-					"57fa5a^1", -- [53]
-					"6c9ab7^1", -- [54]
-					"891d5c^1", -- [55]
-					"a00bcf^1", -- [56]
-					"7a3dd6^1", -- [57]
-					"7a39f4^1", -- [58]
-					"6ec9d8^1", -- [59]
-					"41ccab^1", -- [60]
-					"5e1ce1^1", -- [61]
-					"5e5d36^1", -- [62]
-					"5e0c11^1", -- [63]
-					"48a928^1", -- [64]
-					"773c6b^1", -- [65]
-					"80598e^1", -- [66]
-					"598e3c^1", -- [67]
-					"a46b70^1", -- [68]
-					"ab8708^1", -- [69]
-					"678d24^1", -- [70]
-					"515983^1", -- [71]
-					"5e9b1f^1", -- [72]
-					"69a910^1", -- [73]
-					"888b75^1", -- [74]
-					"951b2b^1", -- [75]
-					"8d0b22^1", -- [76]
-					"b64cd4^1", -- [77]
-					"ab19c4^1", -- [78]
-					"909cdb^1", -- [79]
-					"7439fd^1", -- [80]
-					"57cbbb^1", -- [81]
-					"9aac00^1", -- [82]
-					"b06e17^1", -- [83]
-					"45ab06^1", -- [84]
-					"4b7ba2^1", -- [85]
-					"8caa09^1", -- [86]
-					"64c82f^1", -- [87]
-					"aa8a94^1", -- [88]
-					"775944^1", -- [89]
-					"961d22^1", -- [90]
-					"727aec^1", -- [91]
-					"a6bd05^1", -- [92]
-					"46dc35^1", -- [93]
-					"58892b^1", -- [94]
-					"901a68^1", -- [95]
-					"548964^1", -- [96]
-					"75ae75^1", -- [97]
-					"823cf1^1", -- [98]
-					"6d7c41^1", -- [99]
-					"b65b0f^1", -- [100]
-					"894baf^1", -- [101]
-					"6ae959^1", -- [102]
-					"65e9ba^1", -- [103]
-					"b1bad9^1", -- [104]
-					"898aac^1", -- [105]
-					"525a3d^1", -- [106]
-					"941bfc^1", -- [107]
-					"78acd4^1", -- [108]
-					"573c72^1", -- [109]
-					"481adb^1", -- [110]
-					"907d84^1", -- [111]
-					"51a930^1", -- [112]
-					"59bb66^1", -- [113]
-					"63689c^1", -- [114]
-					"7efd8f^1", -- [115]
-					"502a04^1", -- [116]
+			[1024] = {
+				[21] = {
+					"81cb3f^1", -- [1]
+					"3b59b4^1", -- [2]
+					"6bc882^1", -- [3]
+					"9a9dc9^1", -- [4]
+					"ad488e^1", -- [5]
+					"55a950^1", -- [6]
+					"5bc95a^1", -- [7]
+					"95b438^1", -- [8]
+					"7a3766^1", -- [9]
+					"6ab8cf^1", -- [10]
+				},
+				[19] = {
+					"86fa22^1", -- [1]
+					"859a94^1", -- [2]
+					"862ad6^1", -- [3]
+					"503822^1", -- [4]
+					"a23c73^1", -- [5]
+					"42394d^1", -- [6]
+					"39f928^1", -- [7]
+					"8e39a0^1", -- [8]
+					"4cf932^1", -- [9]
+					"432827^1", -- [10]
+					"4f4897^1", -- [11]
+					"50888a^1", -- [12]
+					"39d94c^1", -- [13]
+					"7f6720^1", -- [14]
+					"8515bf^1", -- [15]
+					"855461^1", -- [16]
+					"9a4586^1", -- [17]
+					"9965e7^1", -- [18]
+					"90e6e1^1", -- [19]
+					"98772d^1", -- [20]
+					"9be5de^1", -- [21]
+					"97d3e1^1", -- [22]
+					"96d375^1", -- [23]
+					"8b7362^1", -- [24]
+					"89a329^1", -- [25]
+					"72033a^1", -- [26]
+					"8e735f^1", -- [27]
+					"8d2422^1", -- [28]
+					"99b5c8^1", -- [29]
+					"9ac8e2^1", -- [30]
+					"a37b76^1", -- [31]
+					"8ae75c^1", -- [32]
+					"84fa85^1", -- [33]
+					"8afa1b^1", -- [34]
+					"912cf4^1", -- [35]
+					"89f700^1", -- [36]
+					"722383^1", -- [37]
+					"9956d6^1", -- [38]
+					"45f7ad^1", -- [39]
+					"b3282e^1", -- [40]
+					"b72833^1", -- [41]
+					"b0186e^1", -- [42]
+					"b4c855^1", -- [43]
+					"b4a823^1", -- [44]
+					"6b67b5^1", -- [45]
+					"723777^1", -- [46]
+					"975d61^1", -- [47]
+					"9a9dcb^1", -- [48]
+					"3c3762^1", -- [49]
+					"64b940^1", -- [50]
+					"6c2941^1", -- [51]
+					"6bf8b3^1", -- [52]
+					"99136a^1", -- [53]
+					"9522f3^1", -- [54]
+					"8d7341^1", -- [55]
+					"88634e^1", -- [56]
+					"8172e6^1", -- [57]
+					"793244^1", -- [58]
+					"71f22e^1", -- [59]
+					"70f282^1", -- [60]
+					"74b41e^1", -- [61]
+					"75c3ee^1", -- [62]
+					"78b56f^1", -- [63]
+					"7ce6fd^1", -- [64]
+					"6707ce^1", -- [65]
+					"5f87a4^1", -- [66]
+					"5b17b0^1", -- [67]
+					"56b78b^1", -- [68]
+					"528793^1", -- [69]
+					"40f9c8^1", -- [70]
+					"53992c^1", -- [71]
+					"5d2965^1", -- [72]
+					"66e940^1", -- [73]
+					"6b191d^1", -- [74]
+					"73f92d^1", -- [75]
+					"7419a5^1", -- [76]
+					"8429cb^1", -- [77]
+					"8deb9f^1", -- [78]
+					"8d4c16^1", -- [79]
+					"92cd7d^1", -- [80]
+					"9cce05^1", -- [81]
+					"3c37ff^1", -- [82]
+					"3d5779^1", -- [83]
+					"769860^1", -- [84]
+					"6bb881^1", -- [85]
+					"412979^1", -- [86]
+					"48d977^1", -- [87]
+					"581956^1", -- [88]
+					"97b994^1", -- [89]
+					"9849d4^1", -- [90]
+					"b7b84c^1", -- [91]
+					"b5b87a^1", -- [92]
+					"b20872^1", -- [93]
+					"867608^1", -- [94]
+					"7fa2f1^1", -- [95]
+					"7dd2ab^1", -- [96]
+					"86f315^1", -- [97]
+					"73231d^1", -- [98]
+					"72a39a^1", -- [99]
+					"8234b6^1", -- [100]
+					"9f4bb7^1", -- [101]
+					"894a2b^1", -- [102]
+					"a5ec70^1", -- [103]
+				},
+				[16] = {
+					"8a9a65^1", -- [1]
+					"5037ae^1", -- [2]
+					"908ccd^1", -- [3]
+					"3949af^1", -- [4]
+					"4a3921^1", -- [5]
+					"3ee76e^1", -- [6]
+					"40778d^1", -- [7]
+					"434824^1", -- [8]
+					"536795^1", -- [9]
+					"5ee833^1", -- [10]
+					"768837^1", -- [11]
+					"739301^1", -- [12]
+					"95368f^1", -- [13]
+					"96f486^1", -- [14]
+					"96532b^1", -- [15]
+					"8162e6^1", -- [16]
+					"9ad94c^1", -- [17]
+					"a22c77^1", -- [18]
+					"774998^1", -- [19]
+					"8329e2^1", -- [20]
+					"952d4a^1", -- [21]
+					"a1bdf5^1", -- [22]
+					"97b8f4^1", -- [23]
+					"9a5973^1", -- [24]
+					"865a49^1", -- [25]
+					"827b95^1", -- [26]
+					"9a7dc9^1", -- [27]
+					"886350^1", -- [28]
+					"71a2bd^1", -- [29]
+					"9016ae^1", -- [30]
+					"b7086b^1", -- [31]
+					"9be5df^1", -- [32]
+					"93a6bb^1", -- [33]
+					"84baf8^1", -- [34]
+					"a2143e^1", -- [35]
+					"98f3dd^1", -- [36]
+					"7e3277^1", -- [37]
+					"7584d2^1", -- [38]
+					"730792^1", -- [39]
+					"6b97b7^1", -- [40]
+					"5ff809^1", -- [41]
+					"42580f^1", -- [42]
+					"3c075c^1", -- [43]
+					"475957^1", -- [44]
+					"4f8949^1", -- [45]
+					"882a45^1", -- [46]
+					"8a6aca^1", -- [47]
+					"9cee04^1", -- [48]
+					"40c829^1", -- [49]
+					"4e595f^1", -- [50]
+					"5bc957^1", -- [51]
+					"66c942^1", -- [52]
+					"6c493b^1", -- [53]
+					"75685b^1", -- [54]
+					"b46801^1", -- [55]
+					"b5e818^1", -- [56]
+					"8d7344^1", -- [57]
+					"9276e1^1", -- [58]
+					"848a2b^1", -- [59]
+					"83ea6a^1", -- [60]
+					"860b0a^1", -- [61]
+					"80aadc^1", -- [62]
 				},
 			},
-			[1026] = {
-				[27] = {
-					"435657^1", -- [1]
-					"47262d^1", -- [2]
-					"5955af^1", -- [3]
-					"a1556e^1", -- [4]
-					"3ae505^1", -- [5]
-					"2e1904^1", -- [6]
-					"85a95f^1", -- [7]
-					"95f8c9^1", -- [8]
-					"93a88c^1", -- [9]
-					"5563cc^1", -- [10]
-					"6be56e^1", -- [11]
-					"8d52f4^1", -- [12]
-					"8602cd^1", -- [13]
-					"69ea1c^1", -- [14]
-					"8e091a^1", -- [15]
-					"8b985a^1", -- [16]
-					"adb8e7^1", -- [17]
-					"a28851^1", -- [18]
-					"48f5e8^1", -- [19]
-					"52a498^1", -- [20]
-					"59145f^1", -- [21]
-					"8b52ba^1", -- [22]
-					"8a0355^1", -- [23]
-					"314972^1", -- [24]
-					"45c68a^1", -- [25]
-					"59637a^1", -- [26]
-					"7962d7^1", -- [27]
-					"71b32b^1", -- [28]
-					"7ef986^1", -- [29]
-					"3809ab^1", -- [30]
-					"20a771^1", -- [31]
-					"5b73e4^1", -- [32]
-					"e147bd^1", -- [33]
-					"dce8e8^1", -- [34]
-					"c18a29^1", -- [35]
-					"c4292c^1", -- [36]
-					"1a5583^1", -- [37]
-					"5293da^1", -- [38]
-					"9d52fe^1", -- [39]
-					"ac7811^1", -- [40]
-					"862c68^1", -- [41]
-					"8ff311^1", -- [42]
-					"703444^1", -- [43]
-					"7705b1^1", -- [44]
-					"72c410^1", -- [45]
-					"444585^1", -- [46]
-					"4b8672^1", -- [47]
-					"466664^1", -- [48]
-					"25863a^1", -- [49]
-					"26f82d^1", -- [50]
-					"53ea10^1", -- [51]
-					"4e1bfe^1", -- [52]
-					"56bea3^1", -- [53]
-					"521f0b^1", -- [54]
-					"505d25^1", -- [55]
-					"540bdb^1", -- [56]
-					"590a7d^1", -- [57]
-					"5748cf^1", -- [58]
-					"48089d^1", -- [59]
-					"90d911^1", -- [60]
-					"8fc85f^1", -- [61]
-					"82499a^1", -- [62]
-					"8b4956^1", -- [63]
-					"a4c81e^1", -- [64]
-					"c3ea84^1", -- [65]
-					"d78a62^1", -- [66]
-					"d1a9bb^1", -- [67]
-					"d75796^1", -- [68]
-					"cde830^1", -- [69]
-					"d2b8e3^1", -- [70]
-					"cdb89a^1", -- [71]
-					"cd2abc^1", -- [72]
-					"c20b1c^1", -- [73]
-					"db19c4^1", -- [74]
-					"d37a95^1", -- [75]
-					"910ca9^1", -- [76]
-					"a068ed^1", -- [77]
-					"81fd1f^1", -- [78]
-					"a76531^1", -- [79]
-					"5cf95e^1", -- [80]
-					"35199f^1", -- [81]
-					"3f3528^1", -- [82]
-					"7b847b^1", -- [83]
-					"52ec53^1", -- [84]
-					"604967^1", -- [85]
-					"93b251^1", -- [86]
-					"694340^1", -- [87]
-					"5c0827^1", -- [88]
-					"22b50d^1", -- [89]
-					"6d945f^1", -- [90]
-					"8e88c1^1", -- [91]
-					"4164c4^1", -- [92]
-					"ac4899^1", -- [93]
-					"8d5a60^1", -- [94]
-					"5c6708^1", -- [95]
-					"8a631a^1", -- [96]
-					"80e2b7^1", -- [97]
-					"7d84cf^1", -- [98]
-					"95d962^1", -- [99]
-					"69e965^1", -- [100]
-					"36c913^1", -- [101]
-					"5d9f39^1", -- [102]
-					"4fbe76^1", -- [103]
-					"7ed828^1", -- [104]
-					"98d8fe^1", -- [105]
-					"53c9e1^1", -- [106]
-					"2547ea^1", -- [107]
-					"54c83b^1", -- [108]
-					"47082b^1", -- [109]
-					"367939^1", -- [110]
-					"4ab945^1", -- [111]
-					"50ddf6^1", -- [112]
-					"992d07^1", -- [113]
-					"905b25^1", -- [114]
-					"933b84^1", -- [115]
-					"5cc87c^1", -- [116]
-					"6068cb^1", -- [117]
-					"973d29^1", -- [118]
-					"90fa9e^1", -- [119]
-					"59ca22^1", -- [120]
-					"46b8ca^1", -- [121]
-					"abd4a3^1", -- [122]
-					"9e8b83^1", -- [123]
-					"847bff^1", -- [124]
-					"7ed411^1", -- [125]
-					"7a3889^1", -- [126]
-					"6e7336^1", -- [127]
-					"5b7fd1^1", -- [128]
-					"58ef0c^1", -- [129]
-					"5618b9^1", -- [130]
-					"4be8f8^1", -- [131]
-					"3b89d0^1", -- [132]
-					"25d78a^1", -- [133]
-					"1805d5^1", -- [134]
-					"4f767d^1", -- [135]
-					"7f88b4^1", -- [136]
-					"763475^1", -- [137]
-					"3e05bd^1", -- [138]
-					"44c5fb^1", -- [139]
-					"41b624^1", -- [140]
-					"4985b7^1", -- [141]
-					"84981d^1", -- [142]
-					"8fd96c^1", -- [143]
-					"d718b8^1", -- [144]
-					"940ae1^1", -- [145]
-					"21a5d9^1", -- [146]
-					"83ccd9^1", -- [147]
-					"a0a996^1", -- [148]
-					"7b3365^1", -- [149]
-					"80b903^1", -- [150]
-					"2cf767^1", -- [151]
-					"65a4b7^1", -- [152]
-					"552523^1", -- [153]
-					"6299db^1", -- [154]
-					"27d853^1", -- [155]
-					"2de8d9^1", -- [156]
-					"4d88d4^1", -- [157]
-					"8b52e2^1", -- [158]
-					"d4d983^1", -- [159]
-					"8e132f^1", -- [160]
-					"a4990d^1", -- [161]
-					"dba7be^1", -- [162]
-					"de881e^1", -- [163]
-					"c95995^1", -- [164]
-					"96bd8f^1", -- [165]
-					"8aeaf0^1", -- [166]
-					"c549a2^1", -- [167]
-					"bad9fa^1", -- [168]
-					"d2b813^1", -- [169]
-					"9969a8^1", -- [170]
-					"90ecf6^1", -- [171]
-					"93cc97^1", -- [172]
-					"984c60^1", -- [173]
-					"dbd960^1", -- [174]
-					"bf291a^1", -- [175]
-					"4c5829^1", -- [176]
-					"66d844^1", -- [177]
-					"c7ba55^1", -- [178]
-					"dde891^1", -- [179]
-					"c8a883^1", -- [180]
+			[4008] = {
+				[24] = {
+					"680bd9^1", -- [1]
+					"39dc89^1", -- [2]
+					"8dba9d^1", -- [3]
+					"942ac0^1", -- [4]
+					"444d70^1", -- [5]
+					"912e10^1", -- [6]
+					"4916d7^1", -- [7]
+					"9a1e35^1", -- [8]
+					"c8d9f0^1", -- [9]
+					"476694^1", -- [10]
+					"34f973^1", -- [11]
+					"585e33^1", -- [12]
+					"59f8bc^1", -- [13]
+					"818a11^1", -- [14]
+					"4979dd^1", -- [15]
+					"77c65a^1", -- [16]
+					"8d7a1c^1", -- [17]
+					"8743a1^1", -- [18]
+					"5fadfd^1", -- [19]
+					"bf798e^1", -- [20]
+					"b2cbee^1", -- [21]
+					"38d884^1", -- [22]
+					"5a15d5^1", -- [23]
+					"5fadb1^1", -- [24]
+					"bd88f6^1", -- [25]
+					"99ed96^1", -- [26]
+					"35abe4^1", -- [27]
+					"3d2791^1", -- [28]
+					"8c73d6^1", -- [29]
+					"bfe8a2^1", -- [30]
+					"755e04^1", -- [31]
+					"c84945^1", -- [32]
+					"34cc12^1", -- [33]
+					"729e26^1", -- [34]
+					"83e9ab^1", -- [35]
+					"5a6740^1", -- [36]
+					"62c86d^1", -- [37]
+					"a53746^1", -- [38]
+					"7f96b0^1", -- [39]
+					"6158c9^1", -- [40]
+					"837376^1", -- [41]
+					"6715ea^1", -- [42]
+					"794aae^1", -- [43]
+					"57ac85^1", -- [44]
+					"4d488c^1", -- [45]
+					"7a94ce^1", -- [46]
+					"922ae0^1", -- [47]
+					"7bdc45^1", -- [48]
+					"8d6e26^1", -- [49]
+					"5938ed^1", -- [50]
+					"993d39^1", -- [51]
+					"b569b5^1", -- [52]
+					"5b97fc^1", -- [53]
+					"8859ef^1", -- [54]
+					"857582^1", -- [55]
+					"c1f808^1", -- [56]
+					"b65a33^1", -- [57]
+					"688b32^1", -- [58]
+					"5b8e17^1", -- [59]
+					"65553a^1", -- [60]
+					"667821^1", -- [61]
+					"8ae75f^1", -- [62]
+					"393d6e^1", -- [63]
+					"3a5827^1", -- [64]
+					"c948cd^1", -- [65]
+					"a12ab7^1", -- [66]
+					"a4f8e8^1", -- [67]
+					"c499cc^1", -- [68]
+					"80e545^1", -- [69]
+					"a4388c^1", -- [70]
+					"8de35f^1", -- [71]
+					"a7469d^1", -- [72]
+					"b1b94f^1", -- [73]
+					"4de5f9^1", -- [74]
+					"b998b5^1", -- [75]
+					"639bd7^1", -- [76]
+					"86c660^1", -- [77]
+					"5867ea^1", -- [78]
+					"86a5f8^1", -- [79]
+					"70d3b1^1", -- [80]
+					"8f5dfc^1", -- [81]
+					"9845f2^1", -- [82]
+					"69156b^1", -- [83]
+					"558773^1", -- [84]
+					"7bfe1b^1", -- [85]
+					"5797ac^1", -- [86]
+					"83b9ee^1", -- [87]
+					"353a54^1", -- [88]
+					"347a1f^1", -- [89]
+					"7d16cc^1", -- [90]
+					"c708d8^1", -- [91]
+					"94249c^1", -- [92]
+					"7a3e08^1", -- [93]
+					"61d786^1", -- [94]
+					"4a2dc2^1", -- [95]
+					"679a20^1", -- [96]
+					"897688^1", -- [97]
+					"3aa7e7^1", -- [98]
+					"351c93^1", -- [99]
+					"69de15^1", -- [100]
+					"8cd70e^1", -- [101]
+					"af789e^1", -- [102]
+					"38dd24^1", -- [103]
+					"965e31^1", -- [104]
+					"a38d5b^1", -- [105]
+					"352b89^1", -- [106]
+					"662e2c^1", -- [107]
+					"3629fc^1", -- [108]
+					"bc398e^1", -- [109]
+					"64233a^1", -- [110]
+					"34cb3c^1", -- [111]
+					"351aca^1", -- [112]
+					"6e25f6^1", -- [113]
+					"43a6fa^1", -- [114]
+					"5a1ab6^1", -- [115]
+					"a13c9b^1", -- [116]
+					"9f3be0^1", -- [117]
+					"bdd7c5^1", -- [118]
+					"a684dc^1", -- [119]
+					"b298b9^1", -- [120]
+					"6c8e09^1", -- [121]
+					"78cbaa^1", -- [122]
+					"3fe761^1", -- [123]
+					"51ea19^1", -- [124]
+					"52e5cb^1", -- [125]
+					"6b5c1b^1", -- [126]
+					"5188d4^1", -- [127]
+					"5618ec^1", -- [128]
+					"6f8c3c^1", -- [129]
+					"96889c^1", -- [130]
+					"aab7d9^1", -- [131]
+					"9a4ac1^1", -- [132]
+					"7986aa^1", -- [133]
+					"3b87ba^1", -- [134]
+					"5a8d9c^1", -- [135]
+					"91b36f^1", -- [136]
+					"6f6e14^1", -- [137]
+					"9ee58e^1", -- [138]
+					"4e28da^1", -- [139]
+					"94a6f3^1", -- [140]
+					"88bdff^1", -- [141]
+					"76ee26^1", -- [142]
+					"a6cd2e^1", -- [143]
+					"96dde4^1", -- [144]
+					"5b2b4b^1", -- [145]
+					"5baace^1", -- [146]
+					"4bf621^1", -- [147]
+					"98ccfa^1", -- [148]
+					"c91867^1", -- [149]
+					"9675b9^1", -- [150]
+					"766a73^1", -- [151]
+					"471da1^1", -- [152]
+					"c0c68b^1", -- [153]
+					"4f85d6^1", -- [154]
+					"6325e4^1", -- [155]
+					"3c9db5^1", -- [156]
+					"97a4bc^1", -- [157]
+					"920aab^1", -- [158]
+					"9548e4^1", -- [159]
+					"838a1d^1", -- [160]
+					"818e0d^1", -- [161]
+					"83dd1e^1", -- [162]
+					"36bc54^1", -- [163]
+					"90891e^1", -- [164]
+					"adbc96^1", -- [165]
+					"9203b8^1", -- [166]
+					"ad18fe^1", -- [167]
+					"5b4ca8^1", -- [168]
+					"80bc53^1", -- [169]
+					"479a13^1", -- [170]
+					"acbc3d^1", -- [171]
+					"a2f587^1", -- [172]
+					"95a551^1", -- [173]
+					"5625a5^1", -- [174]
+					"a9f736^1", -- [175]
+					"55c750^1", -- [176]
+					"5a577f^1", -- [177]
+					"56b7d6^1", -- [178]
+					"5a1631^1", -- [179]
+					"629b16^1", -- [180]
+					"683b7e^1", -- [181]
+					"59997e^1", -- [182]
+					"7599ba^1", -- [183]
+					"4d99eb^1", -- [184]
+					"7fba71^1", -- [185]
+					"541542^1", -- [186]
+					"583943^1", -- [187]
+					"66164c^1", -- [188]
+					"b518d3^1", -- [189]
+					"91180c^1", -- [190]
+					"aea73f^1", -- [191]
+					"ae6562^1", -- [192]
+					"9767cb^1", -- [193]
+					"344c3c^1", -- [194]
+					"3d2c4a^1", -- [195]
+					"8a8d54^1", -- [196]
+					"852e1b^1", -- [197]
+					"5a75fb^1", -- [198]
+					"62262b^1", -- [199]
+					"75343e^1", -- [200]
+					"a988d2^1", -- [201]
+					"991937^1", -- [202]
+					"7baaa2^1", -- [203]
+					"ab4d16^1", -- [204]
+					"366874^1", -- [205]
+					"346af7^1", -- [206]
+					"87e358^1", -- [207]
+					"b7eba5^1", -- [208]
+					"c72a33^1", -- [209]
+					"79033c^1", -- [210]
+					"6383bf^1", -- [211]
+					"5b966a^1", -- [212]
+					"620e22^1", -- [213]
+					"a29d7b^1", -- [214]
+					"a5c604^1", -- [215]
+					"bd5b10^1", -- [216]
+					"aa7672^1", -- [217]
+					"7aa391^1", -- [218]
+					"835e08^1", -- [219]
+					"a06b50^1", -- [220]
+					"834c7a^1", -- [221]
+					"9969a0^1", -- [222]
+					"a2871a^1", -- [223]
+					"8e79aa^1", -- [224]
+					"7b6b54^1", -- [225]
+					"763a0e^1", -- [226]
+					"56f629^1", -- [227]
+					"4f1820^1", -- [228]
+					"686351^1", -- [229]
+					"93ac47^1", -- [230]
+					"9377d5^1", -- [231]
+					"95fa4d^1", -- [232]
+					"a94555^1", -- [233]
+					"968472^1", -- [234]
+					"a0c4b7^1", -- [235]
+					"a19c48^1", -- [236]
+					"7f9e26^1", -- [237]
+					"710368^1", -- [238]
+					"be894b^1", -- [239]
+					"6173ca^1", -- [240]
+					"9a545c^1", -- [241]
+					"751361^1", -- [242]
+					"55cc25^1", -- [243]
+					"867bff^1", -- [244]
+					"b3d940^1", -- [245]
+					"7ac54e^1", -- [246]
+					"96835d^1", -- [247]
+					"56352c^1", -- [248]
+					"567bb8^1", -- [249]
+					"649c10^1", -- [250]
+					"a6ba1d^1", -- [251]
+					"579b7a^1", -- [252]
+					"ac1a14^1", -- [253]
+					"8d0c44^1", -- [254]
+					"a099f5^1", -- [255]
+					"7e0544^1", -- [256]
+					"56767f^1", -- [257]
+					"86bdf2^1", -- [258]
+					"3528fb^1", -- [259]
+					"7a36e6^1", -- [260]
+					"644b7e^1", -- [261]
+					"885625^1", -- [262]
+					"7925c1^1", -- [263]
+					"b3f63e^1", -- [264]
+					"981c13^1", -- [265]
+					"c4e931^1", -- [266]
+					"8eccfe^1", -- [267]
+					"383cb9^1", -- [268]
+					"5e98b3^1", -- [269]
 				},
 			},
 			[5003] = {
@@ -24258,697 +24604,320 @@ NxData = {
 					"b542b2^1", -- [1]
 				},
 			},
-			[1023] = {
-				[21] = {
-					"ad02ae^1", -- [1]
+			[2012] = {
+				[20] = {
+					"634958^1", -- [1]
+					"471c0c^1", -- [2]
+					"479826^1", -- [3]
+					"b167c8^1", -- [4]
+					"5d2a67^1", -- [5]
+					"66c832^1", -- [6]
+					"a6aabb^1", -- [7]
+					"c9f552^1", -- [8]
+					"5a076a^1", -- [9]
+					"a3ec97^1", -- [10]
+					"4ae934^1", -- [11]
+					"616db5^1", -- [12]
+					"441a1c^1", -- [13]
+					"4a28b5^1", -- [14]
+					"c0c786^1", -- [15]
+					"458d90^1", -- [16]
+					"5f6afe^1", -- [17]
+					"af7895^1", -- [18]
+					"658cb4^1", -- [19]
+					"cb466c^1", -- [20]
+					"944c24^1", -- [21]
+					"62786b^1", -- [22]
+					"b2774d^1", -- [23]
+					"ced5c1^1", -- [24]
 				},
-				[16] = {
-					"76c731^1", -- [1]
-					"7dddd4^1", -- [2]
-					"b87b65^1", -- [3]
-					"a35cec^1", -- [4]
-					"6192e7^1", -- [5]
-					"63bb32^1", -- [6]
-					"6ebdc2^1", -- [7]
-					"c3f92a^1", -- [8]
-					"c13646^1", -- [9]
-					"45c507^1", -- [10]
-					"3e96a6^1", -- [11]
-					"3f17fb^1", -- [12]
-					"3f3974^1", -- [13]
-					"c5173c^1", -- [14]
-					"af133b^1", -- [15]
-					"a6533a^1", -- [16]
-					"8db223^1", -- [17]
-					"49bbaa^1", -- [18]
-					"a14321^1", -- [19]
-					"8a3771^1", -- [20]
-					"c0d9a3^1", -- [21]
-					"bb2b3c^1", -- [22]
-					"85adec^1", -- [23]
-					"bf4a55^1", -- [24]
-					"c4f8b8^1", -- [25]
-					"bbe4d0^1", -- [26]
-					"b7c381^1", -- [27]
-					"8f5238^1", -- [28]
-					"3dc7b2^1", -- [29]
-					"504cc2^1", -- [30]
-					"64ed71^1", -- [31]
-					"c1a9d6^1", -- [32]
-					"bfe546^1", -- [33]
-					"b6d3d5^1", -- [34]
-					"6ac318^1", -- [35]
-					"4ebbff^1", -- [36]
-					"72bdc1^1", -- [37]
-					"9ddd62^1", -- [38]
-					"9a7297^1", -- [39]
-					"758876^1", -- [40]
-					"573b1b^1", -- [41]
-					"c4f8d9^1", -- [42]
-					"544cb6^1", -- [43]
-					"5d8332^1", -- [44]
-					"688a59^1", -- [45]
-					"9e628b^1", -- [46]
-					"8377b1^1", -- [47]
-				},
-				[13] = {
-					"713e23^1", -- [1]
-					"68e59f^1", -- [2]
-					"998593^1", -- [3]
-					"927273^1", -- [4]
-					"80ab5d^1", -- [5]
-					"9bda94^1", -- [6]
-					"859a61^1", -- [7]
-					"6f3281^1", -- [8]
-					"60ccf8^1", -- [9]
-				},
-				[19] = {
-					"bc04d0^1", -- [1]
-					"7cbaa1^1", -- [2]
-					"c4f8da^1", -- [3]
-					"744a5b^1", -- [4]
-					"befab6^1", -- [5]
-					"c3f928^1", -- [6]
-					"9e0d61^1", -- [7]
-					"813dbc^1", -- [8]
-					"7deccd^1", -- [9]
-					"810c26^1", -- [10]
-					"a36cef^1", -- [11]
-					"b88b67^1", -- [12]
-					"ab1ca9^1", -- [13]
-					"d039c2^1", -- [14]
-					"bf4598^1", -- [15]
-					"aec342^1", -- [16]
-					"9a0294^1", -- [17]
-					"945233^1", -- [18]
-					"90f1e4^1", -- [19]
-					"7bf209^1", -- [20]
-					"6ac317^1", -- [21]
-					"3cb667^1", -- [22]
-					"49dba9^1", -- [23]
-					"543cb6^1", -- [24]
-					"6ebdc2^1", -- [25]
-					"93adb2^1", -- [26]
-					"c1a9d2^1", -- [27]
-					"bdb4f5^1", -- [28]
-					"6182e5^1", -- [29]
-					"42d4ad^1", -- [30]
-					"41860b^1", -- [31]
-					"3f37f8^1", -- [32]
-					"3f99c9^1", -- [33]
-					"72cdbe^1", -- [34]
-					"7faded^1", -- [35]
-					"90ce1b^1", -- [36]
-					"8e1ec7^1", -- [37]
-					"a75cb1^1", -- [38]
-					"8d8a5d^1", -- [39]
-					"8da223^1", -- [40]
-					"4454fe^1", -- [41]
-					"3dd7b2^1", -- [42]
-					"638c5e^1", -- [43]
-					"bb4b39^1", -- [44]
-					"c07544^1", -- [45]
-					"9e327f^1", -- [46]
-					"42dab3^1", -- [47]
-					"be2b0d^1", -- [48]
-					"a6633c^1", -- [49]
-					"7fd217^1", -- [50]
-					"5da32c^1", -- [51]
-					"64ed72^1", -- [52]
-					"7dcdd5^1", -- [53]
-					"c3c907^1", -- [54]
-					"935267^1", -- [55]
-					"c0a9a6^1", -- [56]
-					"b7b382^1", -- [57]
-					"63c275^1", -- [58]
-					"5d1cd0^1", -- [59]
-					"503cc2^1", -- [60]
-					"a18323^1", -- [61]
-					"7e8d40^1", -- [62]
-					"730d57^1", -- [63]
-					"60c5a2^1", -- [64]
-					"8f6234^1", -- [65]
-					"4e6b74^1", -- [66]
-					"4e7c03^1", -- [67]
-					"b2530b^1", -- [68]
+				[3] = {
+					"363106^1", -- [1]
+					"c8256f^1", -- [2]
+					"4ec37c^1", -- [3]
+					"23d54e^1", -- [4]
+					"bf769d^1", -- [5]
+					"4bb809^1", -- [6]
+					"3c9a31^1", -- [7]
+					"39c0c8^1", -- [8]
+					"27e88c^1", -- [9]
+					"448847^1", -- [10]
+					"af3127^1", -- [11]
+					"485df7^1", -- [12]
+					"62860a^1", -- [13]
+					"52ddda^1", -- [14]
+					"4c78f6^1", -- [15]
+					"49284f^1", -- [16]
+					"7333ae^1", -- [17]
+					"950ab0^1", -- [18]
+					"98e36b^1", -- [19]
+					"a87643^1", -- [20]
+					"50c4c3^1", -- [21]
+					"cd42e4^1", -- [22]
+					"878a36^1", -- [23]
+					"3ea305^1", -- [24]
+					"a521a1^1", -- [25]
+					"9c7c4d^1", -- [26]
+					"486b02^1", -- [27]
+					"6d2beb^1", -- [28]
+					"49e728^1", -- [29]
+					"35b31e^1", -- [30]
+					"32aa7c^1", -- [31]
+					"525c97^1", -- [32]
+					"4bb220^1", -- [33]
+					"3f258f^1", -- [34]
+					"3c1423^1", -- [35]
+					"80a2bc^1", -- [36]
+					"4bb8a1^1", -- [37]
+					"39816c^1", -- [38]
+					"c8248e^1", -- [39]
+					"7d1a0a^1", -- [40]
+					"8a13bd^1", -- [41]
+					"ad198b^1", -- [42]
+					"2bf98e^1", -- [43]
+					"5b0d2a^1", -- [44]
+					"6687a3^1", -- [45]
+					"4d3d32^1", -- [46]
+					"b2b5b7^1", -- [47]
+					"6d52df^1", -- [48]
+					"32a191^1", -- [49]
+					"c7e1da^1", -- [50]
+					"255724^1", -- [51]
+					"30968d^1", -- [52]
+					"6db62f^1", -- [53]
+					"5fa9f4^1", -- [54]
+					"556b85^1", -- [55]
+					"91f890^1", -- [56]
+					"2b07ab^1", -- [57]
+					"44476e^1", -- [58]
+					"45d8a9^1", -- [59]
+					"6e7add^1", -- [60]
+					"643d47^1", -- [61]
+					"500786^1", -- [62]
+					"baa6f3^1", -- [63]
+					"54eb2f^1", -- [64]
+					"5e5e6d^1", -- [65]
+					"a98319^1", -- [66]
+					"c45398^1", -- [67]
+					"58025a^1", -- [68]
+					"454caf^1", -- [69]
+					"9486f7^1", -- [70]
+					"63b21c^1", -- [71]
+					"5d52f1^1", -- [72]
+					"a83735^1", -- [73]
+					"7d27be^1", -- [74]
+					"444870^1", -- [75]
+					"60a77a^1", -- [76]
 				},
 			},
-			[3004] = {
-				{
-					"61a5b8^1", -- [1]
-					"751228^1", -- [2]
-					"90b5b4^1", -- [3]
-					"63730d^1", -- [4]
-					"9347e9^1", -- [5]
-					"4f81f7^1", -- [6]
-					"948cb8^1", -- [7]
-					"8ea94c^1", -- [8]
-					"b765b5^1", -- [9]
-					"aa09d7^1", -- [10]
-					"907573^1", -- [11]
-					"59cba6^1", -- [12]
-					"38da70^1", -- [13]
-					"a25598^1", -- [14]
-					"78ea4b^1", -- [15]
-					"5e2697^1", -- [16]
-					"4cb695^1", -- [17]
-					"98e950^1", -- [18]
-					"4925e5^1", -- [19]
-					"65426a^1", -- [20]
-					"40b674^1", -- [21]
-					"99a691^1", -- [22]
-					"a67691^1", -- [23]
-					"9cc742^1", -- [24]
-					"913ab4^1", -- [25]
-					"79f745^1", -- [26]
-					"4176be^1", -- [27]
-					"54f95a^1", -- [28]
-					"3df60f^1", -- [29]
-					"6d2934^1", -- [30]
-					"89dd12^1", -- [31]
-					"4b4c8e^1", -- [32]
-					"81c37b^1", -- [33]
-					"992c8b^1", -- [34]
-					"4cb8ad^1", -- [35]
-					"5b4430^1", -- [36]
-					"47da09^1", -- [37]
-					"7188bd^1", -- [38]
-					"7ab62b^1", -- [39]
-					"654ad1^1", -- [40]
-					"47d2bf^1", -- [41]
-					"867c49^1", -- [42]
-					"5ad34a^1", -- [43]
-					"a0c955^1", -- [44]
-					"898ae1^1", -- [45]
-					"a7b7f5^1", -- [46]
-					"50128f^1", -- [47]
-					"3de6b6^1", -- [48]
-					"8c13b9^1", -- [49]
-					"7f29b3^1", -- [50]
-					"45d84b^1", -- [51]
-					"555c10^1", -- [52]
-					"6aa305^1", -- [53]
-					"43c65d^1", -- [54]
-					"99a60e^1", -- [55]
-					"a849b0^1", -- [56]
-					"b067ab^1", -- [57]
-					"4df319^1", -- [58]
-					"a29762^1", -- [59]
-					"61d9e4^1", -- [60]
-					"961685^1", -- [61]
-					"4345d9^1", -- [62]
-					"319b85^1", -- [63]
-					"724637^1", -- [64]
-					"413ca3^1", -- [65]
-					"461255^1", -- [66]
-					"689890^1", -- [67]
-					"7e1307^1", -- [68]
-					"4cf255^1", -- [69]
-					"a15708^1", -- [70]
-					"87c34b^1", -- [71]
-					"9dc6e7^1", -- [72]
-					"436947^1", -- [73]
-					"68d63b^1", -- [74]
-					"6bebb6^1", -- [75]
-					"97f6fb^1", -- [76]
-					"bcf6aa^1", -- [77]
-					"9b7d95^1", -- [78]
-					"4c3218^1", -- [79]
-					"afa77a^1", -- [80]
-					"4fc6ef^1", -- [81]
-					"797805^1", -- [82]
-					"4a3b44^1", -- [83]
-					"48a633^1", -- [84]
-					"89dd2e^1", -- [85]
-					"a3ea5a^1", -- [86]
-					"8ebe29^1", -- [87]
-					"7b3dbd^1", -- [88]
-					"af96c5^1", -- [89]
-					"8628b1^1", -- [90]
-					"62348e^1", -- [91]
-					"4246fa^1", -- [92]
-					"a7f4cf^1", -- [93]
-					"7c8a83^1", -- [94]
-					"44968a^1", -- [95]
-					"492315^1", -- [96]
-					"8846e7^1", -- [97]
-					"3c4593^1", -- [98]
-					"5c5904^1", -- [99]
-					"9866ca^1", -- [100]
-					"5a07e9^1", -- [101]
-					"60ecaf^1", -- [102]
-					"9f4a77^1", -- [103]
-					"9ba7e5^1", -- [104]
-					"81b85c^1", -- [105]
-					"7cc948^1", -- [106]
-					"650b0a^1", -- [107]
-					"7559b3^1", -- [108]
-					"69d33a^1", -- [109]
-					"78256f^1", -- [110]
-					"9aa704^1", -- [111]
-					"9e46ae^1", -- [112]
-					"8ce664^1", -- [113]
-					"5162e9^1", -- [114]
-					"a0f607^1", -- [115]
-					"76680d^1", -- [116]
-					"8e2309^1", -- [117]
-					"84fcf9^1", -- [118]
-					"50030e^1", -- [119]
-					"47c264^1", -- [120]
-					"4485b6^1", -- [121]
-					"9b86cd^1", -- [122]
-					"43c6bb^1", -- [123]
-					"9a366d^1", -- [124]
-					"426cb7^1", -- [125]
-				}, -- [1]
-				[5] = {
-					"6eb1e3^1", -- [1]
-					"8783a9^1", -- [2]
-					"acd98e^1", -- [3]
-					"9cf49e^1", -- [4]
-					"80bd8e^1", -- [5]
-					"6062fd^1", -- [6]
-					"8ff73d^1", -- [7]
-					"6c7368^1", -- [8]
-					"9bdb1b^1", -- [9]
-					"863a00^1", -- [10]
-					"9a2786^1", -- [11]
-					"6ef2dc^1", -- [12]
-					"61e3e6^1", -- [13]
-					"668301^1", -- [14]
-					"8d62ec^1", -- [15]
-					"422c00^1", -- [16]
-					"844312^1", -- [17]
-					"7c07d4^1", -- [18]
-					"961d5f^1", -- [19]
-					"878461^1", -- [20]
-					"94ce69^1", -- [21]
-					"8fd3b0^1", -- [22]
-					"7cd95f^1", -- [23]
-					"a4661e^1", -- [24]
-					"7f18de^1", -- [25]
-					"4aecd6^1", -- [26]
-					"650bca^1", -- [27]
-					"9c49d8^1", -- [28]
-					"643378^1", -- [29]
-					"7cda57^1", -- [30]
-					"7981d8^1", -- [31]
-					"b85664^1", -- [32]
-					"4648e0^1", -- [33]
-					"7f9894^1", -- [34]
-					"9f04cf^1", -- [35]
-					"562525^1", -- [36]
-					"4f1b61^1", -- [37]
-					"7eec62^1", -- [38]
-					"7a12d7^1", -- [39]
-					"56f898^1", -- [40]
-					"9fcca7^1", -- [41]
-					"654448^1", -- [42]
-					"5ad4b2^1", -- [43]
-					"517c0e^1", -- [44]
-					"4c2c11^1", -- [45]
-					"805407^1", -- [46]
-					"80794f^1", -- [47]
-					"32eab0^1", -- [48]
-					"618334^1", -- [49]
-					"355a9d^1", -- [50]
-				},
-				[10] = {
-					"93c7e9^1", -- [1]
-					"a0d948^1", -- [2]
-					"64b378^1", -- [3]
-					"853cfd^1", -- [4]
-					"9f84d3^1", -- [5]
-					"60ecb8^1", -- [6]
-					"a839b3^1", -- [7]
-					"7559b7^1", -- [8]
-					"76a811^1", -- [9]
-					"afe77e^1", -- [10]
-					"782573^1", -- [11]
-					"4cb691^1", -- [12]
-					"8ce668^1", -- [13]
-					"809d90^1", -- [14]
-					"ad1992^1", -- [15]
-					"a7f4d3^1", -- [16]
-					"654ad5^1", -- [17]
-					"4f4b60^1", -- [18]
-					"8c13bd^1", -- [19]
-					"7f18e6^1", -- [20]
-					"7971da^1", -- [21]
-					"49e301^1", -- [22]
-					"bcf6ae^1", -- [23]
-					"b795b8^1", -- [24]
-					"78fa4a^1", -- [25]
-					"9e86b2^1", -- [26]
-					"5b0346^1", -- [27]
-					"34fa98^1", -- [28]
-					"87c3ad^1", -- [29]
-					"6d7934^1", -- [30]
-					"616336^1", -- [31]
-					"9b7d99^1", -- [32]
-					"950e6d^1", -- [33]
-					"4d3249^1", -- [34]
-					"40f678^1", -- [35]
-					"3de6be^1", -- [36]
-					"3e260e^1", -- [37]
-					"5e1699^1", -- [38]
-					"4b7c8b^1", -- [39]
-					"8eae2c^1", -- [40]
-					"a3a59c^1", -- [41]
-					"9bbb23^1", -- [42]
-					"4aecd4^1", -- [43]
-					"903745^1", -- [44]
-					"423c00^1", -- [45]
-					"9cf745^1", -- [46]
-					"6ce36b^1", -- [47]
-					"a7f7f5^1", -- [48]
-					"47da0d^1", -- [49]
-					"a67695^1", -- [50]
-					"79f749^1", -- [51]
-					"87c461^1", -- [52]
-					"4176c2^1", -- [53]
-					"6bebba^1", -- [54]
-					"6273f6^1", -- [55]
-					"461251^1", -- [56]
-					"97d6ff^1", -- [57]
-					"6eb1e7^1", -- [58]
-					"a0d60a^1", -- [59]
-					"b85668^1", -- [60]
-					"423cb8^1", -- [61]
-					"552955^1", -- [62]
-					"99e695^1", -- [63]
-					"6f32e0^1", -- [64]
-					"996c8f^1", -- [65]
-					"756225^1", -- [66]
-					"504286^1", -- [67]
-					"961d63^1", -- [68]
-					"80940b^1", -- [69]
-					"9866ce^1", -- [70]
-					"4c3c0c^1", -- [71]
-					"9cb9d7^1", -- [72]
-					"8da2ec^1", -- [73]
-					"992955^1", -- [74]
-					"89dae5^1", -- [75]
-					"87c34f^1", -- [76]
-					"4f81fb^1", -- [77]
-					"969674^1", -- [78]
-					"515c10^1", -- [79]
-					"8ea950^1", -- [80]
-					"562529^1", -- [81]
-					"7d0961^1", -- [82]
-					"5bc4b2^1", -- [83]
-					"847315^1", -- [84]
-					"5c9907^1", -- [85]
-					"7e4305^1", -- [86]
-					"55bc15^1", -- [87]
-					"4cf8ad^1", -- [88]
-					"47d2c4^1", -- [89]
-					"31eb89^1", -- [90]
-					"4925e1^1", -- [91]
-					"43c660^1", -- [92]
-					"45d84f^1", -- [93]
-					"670bcf^1", -- [94]
-					"5b4434^1", -- [95]
-					"9bb7e0^1", -- [96]
-					"7d0a5a^1", -- [97]
-					"81e85f^1", -- [98]
-					"9a678a^1", -- [99]
-					"81e378^1", -- [100]
-					"5f149e^1", -- [101]
-					"65826e^1", -- [102]
-					"88c6db^1", -- [103]
-					"4a6b48^1", -- [104]
-					"a1570c^1", -- [105]
-					"9f4a7b^1", -- [106]
-					"9af70c^1", -- [107]
-					"434948^1", -- [108]
-					"797809^1", -- [109]
-					"5a47e4^1", -- [110]
-					"3c5598^1", -- [111]
-					"5a0ba2^1", -- [112]
-					"8638ad^1", -- [113]
-					"6235cd^1", -- [114]
-					"4658de^1", -- [115]
-					"6ae309^1", -- [116]
-					"68d894^1", -- [117]
-					"8a1d32^1", -- [118]
-					"917ab8^1", -- [119]
-					"7fd894^1", -- [120]
-					"7b3dc1^1", -- [121]
-					"4236fb^1", -- [122]
-					"583898^1", -- [123]
-					"68d63f^1", -- [124]
-					"7f5c62^1", -- [125]
-					"9e06eb^1", -- [126]
-					"afa6c2^1", -- [127]
-					"7a32d4^1", -- [128]
-					"90f5b0^1", -- [129]
-					"4f830d^1", -- [130]
-					"9a662f^1", -- [131]
-					"390a67^1", -- [132]
-					"48e637^1", -- [133]
-					"65c448^1", -- [134]
-					"9fccab^1", -- [135]
-					"a3ea5e^1", -- [136]
-					"61e9d7^1", -- [137]
-					"7ab633^1", -- [138]
-					"72863b^1", -- [139]
-					"71c8bd^1", -- [140]
-					"44c68d^1", -- [141]
-					"4385dd^1", -- [142]
-					"7f59b3^1", -- [143]
-					"a31759^1", -- [144]
-					"8de3b9^1", -- [145]
-					"863a09^1", -- [146]
-				},
-				[15] = {
-					"5a47ed^1", -- [1]
-					"5a0b9d^1", -- [2]
-					"7cca87^1", -- [3]
-					"38ca6b^1", -- [4]
-					"444627^1", -- [5]
-					"7599b7^1", -- [6]
-					"6239dc^1", -- [7]
-					"6b030b^1", -- [8]
-					"43c5e1^1", -- [9]
-					"4276fb^1", -- [10]
-					"71d8c1^1", -- [11]
-					"90f5b8^1", -- [12]
-					"a834d3^1", -- [13]
-					"a1194c^1", -- [14]
-					"465259^1", -- [15]
-					"97d6f7^1", -- [16]
-					"65c272^1", -- [17]
-					"b02782^1", -- [18]
-					"786577^1", -- [19]
-					"4c721c^1", -- [20]
-					"8c53bd^1", -- [21]
-					"63b311^1", -- [22]
-					"8e630d^1", -- [23]
-					"907577^1", -- [24]
-					"4cf251^1", -- [25]
-					"b7d5bc^1", -- [26]
-					"8886db^1", -- [27]
-					"6235c4^1", -- [28]
-					"b0a7ab^1", -- [29]
-					"4965e9^1", -- [30]
-					"9ec6b6^1", -- [31]
-					"98a955^1", -- [32]
-					"a2959c^1", -- [33]
-					"5e569b^1", -- [34]
-					"793a4e^1", -- [35]
-					"a63695^1", -- [36]
-					"55395e^1", -- [37]
-					"898d16^1", -- [38]
-					"6d7938^1", -- [39]
-					"3e2612^1", -- [40]
-					"822863^1", -- [41]
-					"bd36b2^1", -- [42]
-					"48a637^1", -- [43]
-					"4792bf^1", -- [44]
-					"481a11^1", -- [45]
-					"759228^1", -- [46]
-					"4b7c93^1", -- [47]
-					"41367d^1", -- [48]
-					"6c2bbe^1", -- [49]
-					"4fc1fb^1", -- [50]
-					"4cf8b1^1", -- [51]
-					"94ccb8^1", -- [52]
-					"a7f7f9^1", -- [53]
-					"8a1ae9^1", -- [54]
-					"7a374d^1", -- [55]
-					"4cf699^1", -- [56]
-					"76e816^1", -- [57]
-					"96d678^1", -- [58]
-					"93c7e0^1", -- [59]
-					"691643^1", -- [60]
-					"7f19b7^1", -- [61]
-					"658ad9^1", -- [62]
-					"7e4309^1", -- [63]
-					"7af62f^1", -- [64]
-					"a1160e^1", -- [65]
-					"9bb7e9^1", -- [66]
-					"3de6ba^1", -- [67]
-					"99e612^1", -- [68]
-					"496319^1", -- [69]
-					"62348a^1", -- [70]
-					"8eee2c^1", -- [71]
-					"81a380^1", -- [72]
-					"72c63f^1", -- [73]
-					"8a2d34^1", -- [74]
-					"556c10^1", -- [75]
-					"959e07^1", -- [76]
-					"a879b3^1", -- [77]
-					"9aa708^1", -- [78]
-					"9bbd9d^1", -- [79]
-					"4f930a^1", -- [80]
-					"5b8434^1", -- [81]
-					"9a2699^1", -- [82]
-					"4aab4c^1", -- [83]
-					"5b434b^1", -- [84]
-					"9f8a7b^1", -- [85]
-					"a31755^1", -- [86]
-					"6a133e^1", -- [87]
-					"98a6d2^1", -- [88]
-					"7d0948^1", -- [89]
-					"3c558f^1", -- [90]
-					"afa6be^1", -- [91]
-					"438949^1", -- [92]
-					"8638b5^1", -- [93]
-					"90fab8^1", -- [94]
-					"43c664^1", -- [95]
-					"8d2668^1", -- [96]
-					"46184f^1", -- [97]
-					"5c0903^1", -- [98]
-					"79b80a^1", -- [99]
-					"9cb745^1", -- [100]
-					"880353^1", -- [101]
-					"7b7dc6^1", -- [102]
-					"98ec93^1", -- [103]
-					"41b6c2^1", -- [104]
-					"322b8d^1", -- [105]
-					"a19710^1", -- [106]
-					"691899^1", -- [107]
-					"423cb4^1", -- [108]
-					"a42a5e^1", -- [109]
-					"9e46ef^1", -- [110]
-					"850cf6^1", -- [111]
-					"612cb4^1", -- [112]
-					"8ea948^1", -- [113]
-					"44c68e^1", -- [114]
-					"505287^1", -- [115]
-					"44b5b4^1", -- [116]
+			[1008] = {
+				[3] = {
+					"8842f2^1", -- [1]
+					"8b8187^1", -- [2]
+					"8b6163^1", -- [3]
+					"874187^1", -- [4]
+					"86b1ba^1", -- [5]
+					"85118d^1", -- [6]
+					"83a14d^1", -- [7]
+					"88214e^1", -- [8]
+					"8d918f^1", -- [9]
+					"9242ab^2", -- [10]
+					"90d3f5^2", -- [11]
+					"8e74d4^1", -- [12]
+					"8724a1^1", -- [13]
+					"7ab5dc^1", -- [14]
+					"7f3555^1", -- [15]
+					"62a27a^1", -- [16]
+					"7ff84a^1", -- [17]
+					"816915^1", -- [18]
+					"8659df^1", -- [19]
+					"835a8c^1", -- [20]
+					"859c81^1", -- [21]
+					"88bc15^1", -- [22]
+					"8d0a65^1", -- [23]
+					"8b69a8^1", -- [24]
+					"8ef7f4^1", -- [25]
+					"870472^1", -- [26]
+					"620356^1", -- [27]
+					"61f3e0^1", -- [28]
+					"5cb4b5^1", -- [29]
+					"69a799^1", -- [30]
+					"7203eb^1", -- [31]
+					"6ce667^1", -- [32]
+					"6e071f^1", -- [33]
+					"6a855c^1", -- [34]
+					"75e497^1", -- [35]
+					"6e964c^1", -- [36]
+					"67d77f^1", -- [37]
+					"624809^1", -- [38]
+					"65887b^1", -- [39]
+					"5f191c^1", -- [40]
+					"6dd81d^1", -- [41]
+					"7607f0^1", -- [42]
+					"7e7773^1", -- [43]
+					"80c866^1", -- [44]
+					"8108ed^1", -- [45]
+					"83a99f^1", -- [46]
+					"827aaa^1", -- [47]
+					"83eb57^1", -- [48]
+					"831c83^1", -- [49]
+					"9366cb^1", -- [50]
+					"8fa44a^1", -- [51]
+					"995392^1", -- [52]
+					"674240^1", -- [53]
+					"7613fc^1", -- [54]
+					"6e062e^1", -- [55]
+					"82d754^1", -- [56]
+					"828d68^1", -- [57]
+					"7f3d13^1", -- [58]
+					"7f6b79^1", -- [59]
+					"831a65^1", -- [60]
+					"85098b^1", -- [61]
+					"7457d7^1", -- [62]
+					"6c2836^1", -- [63]
+					"64c89f^1", -- [64]
+					"80c79a^1", -- [65]
+					"81e81a^1", -- [66]
+					"7613e0^1", -- [67]
+					"730475^1", -- [68]
+					"6ac570^1", -- [69]
+					"83b8d9^1", -- [70]
+					"7f4b3f^1", -- [71]
+					"9264f6^1", -- [72]
+					"83928c^1", -- [73]
+					"80b299^1", -- [74]
+					"5cc724^1", -- [75]
+					"60d366^1", -- [76]
+					"82b84d^1", -- [77]
+					"84478c^1", -- [78]
+					"8c0981^1", -- [79]
+					"8d279e^1", -- [80]
+					"8deab5^1", -- [81]
+					"650623^1", -- [82]
+					"5ef652^1", -- [83]
+					"5f6768^1", -- [84]
+					"5db567^1", -- [85]
+					"656696^1", -- [86]
+					"7865e5^1", -- [87]
+					"7f445f^1", -- [88]
+					"7f2379^1", -- [89]
+					"85e469^1", -- [90]
+					"895482^1", -- [91]
+					"8632d4^1", -- [92]
+					"974397^1", -- [93]
+					"88444b^1", -- [94]
+					"84b432^1", -- [95]
+					"60926b^1", -- [96]
+					"6ca62f^1", -- [97]
+					"64a667^1", -- [98]
+					"60a645^1", -- [99]
+					"5af569^1", -- [100]
+					"818a55^1", -- [101]
+					"931b33^1", -- [102]
+					"8cd997^1", -- [103]
+					"5b8453^1", -- [104]
+					"965679^1", -- [105]
+					"89446d^1", -- [106]
+					"84646f^1", -- [107]
+					"82a3cb^1", -- [108]
+					"84f3e5^1", -- [109]
+					"87044e^1", -- [110]
+					"87a460^1", -- [111]
+					"79e5b8^1", -- [112]
+					"885139^1", -- [113]
+					"8c31a4^1", -- [114]
+					"840273^1", -- [115]
 				},
 			},
-			[4004] = {
+			[4010] = {
 				[24] = {
-					"588567^1", -- [1]
-					"1486f8^1", -- [2]
-					"16b69b^1", -- [3]
-					"2f9685^1", -- [4]
-					"4886d7^1", -- [5]
-					"4b9647^1", -- [6]
-					"14a6c6^1", -- [7]
-					"52f370^1", -- [8]
-					"520340^1", -- [9]
-					"19268e^1", -- [10]
-				},
-				[22] = {
-					"81a2a2^1", -- [1]
-					"3027cd^1", -- [2]
-					"91d674^1", -- [3]
-					"a429cc^1", -- [4]
-					"4fe73a^1", -- [5]
-					"9301db^1", -- [6]
-					"a5eb6d^1", -- [7]
-					"8c55f2^1", -- [8]
-					"2ae7cc^1", -- [9]
-					"bcfc86^1", -- [10]
-					"86a2d9^1", -- [11]
-					"45daa2^1", -- [12]
-					"8492f1^1", -- [13]
-					"9a92c8^1", -- [14]
-					"a33b6a^1", -- [15]
-					"4dec14^1", -- [16]
-					"a91a75^1", -- [17]
-					"ada7cd^1", -- [18]
-					"9c6bba^1", -- [19]
-					"88ea58^1", -- [20]
-					"a2c79c^1", -- [21]
-					"b835bc^1", -- [22]
-					"408602^1", -- [23]
-					"5f1967^1", -- [24]
-					"ccbb8a^1", -- [25]
-					"8a2565^1", -- [26]
-					"75e17a^1", -- [27]
-					"4c09fa^1", -- [28]
-					"640c47^1", -- [29]
-					"df7762^1", -- [30]
-					"795b1b^1", -- [31]
-					"97927a^1", -- [32]
-					"6ac94c^1", -- [33]
-					"901add^1", -- [34]
-					"2948ff^1", -- [35]
-					"bc26d2^1", -- [36]
-					"52598f^1", -- [37]
-					"27e752^1", -- [38]
-					"a8c6c9^1", -- [39]
-					"40c9f9^1", -- [40]
-					"6f9be0^1", -- [41]
-					"c3a46b^1", -- [42]
-					"557b85^1", -- [43]
-					"807abe^1", -- [44]
-					"ead766^1", -- [45]
-					"cc2410^1", -- [46]
-					"b38d30^1", -- [47]
-					"88f1bf^1", -- [48]
-					"a6b911^1", -- [49]
-					"c44c1c^1", -- [50]
-					"3aaa2c^1", -- [51]
-					"45e6ca^1", -- [52]
-					"bad7f3^1", -- [53]
-					"76b274^1", -- [54]
-					"88829f^1", -- [55]
-					"30aa05^1", -- [56]
-					"72d78e^1", -- [57]
-					"2206d9^1", -- [58]
-					"b983a8^1", -- [59]
-					"83226b^1", -- [60]
-					"94b575^1", -- [61]
-					"b36aa6^1", -- [62]
-					"b3f331^1", -- [63]
-					"da66bf^1", -- [64]
-					"768883^1", -- [65]
-					"87d32a^1", -- [66]
-					"c77b8b^1", -- [67]
-					"e7ec02^1", -- [68]
-					"e8a831^1", -- [69]
-					"28b714^1", -- [70]
-					"76e91d^1", -- [71]
-					"8fda49^1", -- [72]
-					"4d6b89^1", -- [73]
-					"a67c62^1", -- [74]
-					"cbcaef^1", -- [75]
-					"37d6b3^1", -- [76]
-					"d13b1e^1", -- [77]
-					"a719be^1", -- [78]
-					"9375bc^1", -- [79]
-					"b2bc9c^1", -- [80]
-					"7f682d^1", -- [81]
-					"bbcd3d^1", -- [82]
-					"7a071c^1", -- [83]
-					"6c1a1e^1", -- [84]
-					"2cf9da^1", -- [85]
-					"696948^1", -- [86]
-					"57c958^1", -- [87]
-					"ac08d6^1", -- [88]
-					"8b9ac7^1", -- [89]
-					"d17365^1", -- [90]
-					"c2c348^1", -- [91]
-					"306901^1", -- [92]
-					"b5d8d8^1", -- [93]
-					"d92c89^1", -- [94]
-					"db6a81^1", -- [95]
+					"41498b^1", -- [1]
+					"3687b7^1", -- [2]
+					"0f9a88^1", -- [3]
+					"4be620^1", -- [4]
+					"3509fb^1", -- [5]
+					"45c9c4^1", -- [6]
+					"de8ae1^1", -- [7]
+					"7705a1^1", -- [8]
+					"a5c8a3^1", -- [9]
+					"4d467a^1", -- [10]
+					"4ed760^1", -- [11]
+					"90c8c0^1", -- [12]
+					"941419^1", -- [13]
+					"bba91f^1", -- [14]
+					"a5fc4d^1", -- [15]
+					"98e2ba^1", -- [16]
+					"7dd6f3^1", -- [17]
+					"5a422c^1", -- [18]
+					"56d8ab^1", -- [19]
+					"68b3bc^1", -- [20]
+					"3bd791^1", -- [21]
+					"7c65b0^1", -- [22]
+					"9b8910^1", -- [23]
+					"1e1a61^1", -- [24]
+					"7e5743^1", -- [25]
+					"8888d8^1", -- [26]
+					"492324^1", -- [27]
+					"126a86^1", -- [28]
+					"354950^1", -- [29]
+					"c54e08^1", -- [30]
+					"a4f6a1^1", -- [31]
+					"ca2abe^1", -- [32]
+					"ca8926^1", -- [33]
+					"359997^1", -- [34]
+					"6342f9^1", -- [35]
+					"ae9b9c^1", -- [36]
+					"aa0842^1", -- [37]
+					"8c14ef^1", -- [38]
+					"ba37f7^1", -- [39]
+					"962358^1", -- [40]
+					"7314cd^1", -- [41]
+					"c75ac7^1", -- [42]
+					"23f6ea^1", -- [43]
+					"d8ea65^1", -- [44]
+					"4103f5^1", -- [45]
+					"6b1410^1", -- [46]
+					"88b505^1", -- [47]
+					"65518f^1", -- [48]
+					"83f5ed^1", -- [49]
+					"9a7850^1", -- [50]
+					"80694f^1", -- [51]
+					"b9269a^1", -- [52]
+					"4cb706^1", -- [53]
+					"a12874^1", -- [54]
+					"93ccd0^1", -- [55]
+					"ad291e^1", -- [56]
+					"9b4942^1", -- [57]
+					"dc4c26^1", -- [58]
+					"cadc7c^1", -- [59]
+					"4809e9^1", -- [60]
+					"39e76c^1", -- [61]
+					"62f97f^1", -- [62]
+					"7fe7f2^1", -- [63]
+					"95b2b7^1", -- [64]
+					"4be2bd^1", -- [65]
+					"5901ff^1", -- [66]
+					"a35b0f^1", -- [67]
+					"c7b974^1", -- [68]
+					"194a85^1", -- [69]
+					"d5f6ea^1", -- [70]
+					"44138a^1", -- [71]
+					"d306af^1", -- [72]
+					"be172d^1", -- [73]
+					"c1c94d^1", -- [74]
+					"3ae739^1", -- [75]
+					"5597c6^1", -- [76]
+					"a44b8c^1", -- [77]
+					"6f5965^1", -- [78]
+					"2dbaaa^1", -- [79]
+					"26e6f5^1", -- [80]
+					"14586f^1", -- [81]
+					"6992d5^1", -- [82]
+					"8ff918^1", -- [83]
+					"ca6aee^1", -- [84]
+					"4c28d0^1", -- [85]
+					"41a9ce^1", -- [86]
+					"7f07b3^1", -- [87]
 				},
 			},
 			[4011] = {
@@ -25729,929 +25698,1049 @@ NxData = {
 					"4ac4cc^1", -- [5]
 				},
 			},
-			[4010] = {
+			[4004] = {
 				[24] = {
-					"41498b^1", -- [1]
-					"3687b7^1", -- [2]
-					"0f9a88^1", -- [3]
-					"4be620^1", -- [4]
-					"3509fb^1", -- [5]
-					"45c9c4^1", -- [6]
-					"de8ae1^1", -- [7]
-					"7705a1^1", -- [8]
-					"a5c8a3^1", -- [9]
-					"4d467a^1", -- [10]
-					"4ed760^1", -- [11]
-					"90c8c0^1", -- [12]
-					"941419^1", -- [13]
-					"bba91f^1", -- [14]
-					"a5fc4d^1", -- [15]
-					"98e2ba^1", -- [16]
-					"7dd6f3^1", -- [17]
-					"5a422c^1", -- [18]
-					"56d8ab^1", -- [19]
-					"68b3bc^1", -- [20]
-					"3bd791^1", -- [21]
-					"7c65b0^1", -- [22]
-					"9b8910^1", -- [23]
-					"1e1a61^1", -- [24]
-					"7e5743^1", -- [25]
-					"8888d8^1", -- [26]
-					"492324^1", -- [27]
-					"126a86^1", -- [28]
-					"354950^1", -- [29]
-					"c54e08^1", -- [30]
-					"a4f6a1^1", -- [31]
-					"ca2abe^1", -- [32]
-					"ca8926^1", -- [33]
-					"359997^1", -- [34]
-					"6342f9^1", -- [35]
-					"ae9b9c^1", -- [36]
-					"aa0842^1", -- [37]
-					"8c14ef^1", -- [38]
-					"ba37f7^1", -- [39]
-					"962358^1", -- [40]
-					"7314cd^1", -- [41]
-					"c75ac7^1", -- [42]
-					"23f6ea^1", -- [43]
-					"d8ea65^1", -- [44]
-					"4103f5^1", -- [45]
-					"6b1410^1", -- [46]
-					"88b505^1", -- [47]
-					"65518f^1", -- [48]
-					"83f5ed^1", -- [49]
-					"9a7850^1", -- [50]
-					"80694f^1", -- [51]
-					"b9269a^1", -- [52]
-					"4cb706^1", -- [53]
-					"a12874^1", -- [54]
-					"93ccd0^1", -- [55]
-					"ad291e^1", -- [56]
-					"9b4942^1", -- [57]
-					"dc4c26^1", -- [58]
-					"cadc7c^1", -- [59]
-					"4809e9^1", -- [60]
-					"39e76c^1", -- [61]
-					"62f97f^1", -- [62]
-					"7fe7f2^1", -- [63]
-					"95b2b7^1", -- [64]
-					"4be2bd^1", -- [65]
-					"5901ff^1", -- [66]
-					"a35b0f^1", -- [67]
-					"c7b974^1", -- [68]
-					"194a85^1", -- [69]
-					"d5f6ea^1", -- [70]
-					"44138a^1", -- [71]
-					"d306af^1", -- [72]
-					"be172d^1", -- [73]
-					"c1c94d^1", -- [74]
-					"3ae739^1", -- [75]
-					"5597c6^1", -- [76]
-					"a44b8c^1", -- [77]
-					"6f5965^1", -- [78]
-					"2dbaaa^1", -- [79]
-					"26e6f5^1", -- [80]
-					"14586f^1", -- [81]
-					"6992d5^1", -- [82]
-					"8ff918^1", -- [83]
-					"ca6aee^1", -- [84]
-					"4c28d0^1", -- [85]
-					"41a9ce^1", -- [86]
-					"7f07b3^1", -- [87]
+					"588567^1", -- [1]
+					"1486f8^1", -- [2]
+					"16b69b^1", -- [3]
+					"2f9685^1", -- [4]
+					"4886d7^1", -- [5]
+					"4b9647^1", -- [6]
+					"14a6c6^1", -- [7]
+					"52f370^1", -- [8]
+					"520340^1", -- [9]
+					"19268e^1", -- [10]
+				},
+				[22] = {
+					"81a2a2^1", -- [1]
+					"3027cd^1", -- [2]
+					"91d674^1", -- [3]
+					"a429cc^1", -- [4]
+					"4fe73a^1", -- [5]
+					"9301db^1", -- [6]
+					"a5eb6d^1", -- [7]
+					"8c55f2^1", -- [8]
+					"2ae7cc^1", -- [9]
+					"bcfc86^1", -- [10]
+					"86a2d9^1", -- [11]
+					"45daa2^1", -- [12]
+					"8492f1^1", -- [13]
+					"9a92c8^1", -- [14]
+					"a33b6a^1", -- [15]
+					"4dec14^1", -- [16]
+					"a91a75^1", -- [17]
+					"ada7cd^1", -- [18]
+					"9c6bba^1", -- [19]
+					"88ea58^1", -- [20]
+					"a2c79c^1", -- [21]
+					"b835bc^1", -- [22]
+					"408602^1", -- [23]
+					"5f1967^1", -- [24]
+					"ccbb8a^1", -- [25]
+					"8a2565^1", -- [26]
+					"75e17a^1", -- [27]
+					"4c09fa^1", -- [28]
+					"640c47^1", -- [29]
+					"df7762^1", -- [30]
+					"795b1b^1", -- [31]
+					"97927a^1", -- [32]
+					"6ac94c^1", -- [33]
+					"901add^1", -- [34]
+					"2948ff^1", -- [35]
+					"bc26d2^1", -- [36]
+					"52598f^1", -- [37]
+					"27e752^1", -- [38]
+					"a8c6c9^1", -- [39]
+					"40c9f9^1", -- [40]
+					"6f9be0^1", -- [41]
+					"c3a46b^1", -- [42]
+					"557b85^1", -- [43]
+					"807abe^1", -- [44]
+					"ead766^1", -- [45]
+					"cc2410^1", -- [46]
+					"b38d30^1", -- [47]
+					"88f1bf^1", -- [48]
+					"a6b911^1", -- [49]
+					"c44c1c^1", -- [50]
+					"3aaa2c^1", -- [51]
+					"45e6ca^1", -- [52]
+					"bad7f3^1", -- [53]
+					"76b274^1", -- [54]
+					"88829f^1", -- [55]
+					"30aa05^1", -- [56]
+					"72d78e^1", -- [57]
+					"2206d9^1", -- [58]
+					"b983a8^1", -- [59]
+					"83226b^1", -- [60]
+					"94b575^1", -- [61]
+					"b36aa6^1", -- [62]
+					"b3f331^1", -- [63]
+					"da66bf^1", -- [64]
+					"768883^1", -- [65]
+					"87d32a^1", -- [66]
+					"c77b8b^1", -- [67]
+					"e7ec02^1", -- [68]
+					"e8a831^1", -- [69]
+					"28b714^1", -- [70]
+					"76e91d^1", -- [71]
+					"8fda49^1", -- [72]
+					"4d6b89^1", -- [73]
+					"a67c62^1", -- [74]
+					"cbcaef^1", -- [75]
+					"37d6b3^1", -- [76]
+					"d13b1e^1", -- [77]
+					"a719be^1", -- [78]
+					"9375bc^1", -- [79]
+					"b2bc9c^1", -- [80]
+					"7f682d^1", -- [81]
+					"bbcd3d^1", -- [82]
+					"7a071c^1", -- [83]
+					"6c1a1e^1", -- [84]
+					"2cf9da^1", -- [85]
+					"696948^1", -- [86]
+					"57c958^1", -- [87]
+					"ac08d6^1", -- [88]
+					"8b9ac7^1", -- [89]
+					"d17365^1", -- [90]
+					"c2c348^1", -- [91]
+					"306901^1", -- [92]
+					"b5d8d8^1", -- [93]
+					"d92c89^1", -- [94]
+					"db6a81^1", -- [95]
 				},
 			},
-			[1008] = {
-				[3] = {
-					"8842f2^1", -- [1]
-					"8b8187^1", -- [2]
-					"8b6163^1", -- [3]
-					"874187^1", -- [4]
-					"86b1ba^1", -- [5]
-					"85118d^1", -- [6]
-					"83a14d^1", -- [7]
-					"88214e^1", -- [8]
-					"8d918f^1", -- [9]
-					"9242ab^2", -- [10]
-					"90d3f5^2", -- [11]
-					"8e74d4^1", -- [12]
-					"8724a1^1", -- [13]
-					"7ab5dc^1", -- [14]
-					"7f3555^1", -- [15]
-					"62a27a^1", -- [16]
-					"7ff84a^1", -- [17]
-					"816915^1", -- [18]
-					"8659df^1", -- [19]
-					"835a8c^1", -- [20]
-					"859c81^1", -- [21]
-					"88bc15^1", -- [22]
-					"8d0a65^1", -- [23]
-					"8b69a8^1", -- [24]
-					"8ef7f4^1", -- [25]
-					"870472^1", -- [26]
-					"620356^1", -- [27]
-					"61f3e0^1", -- [28]
-					"5cb4b5^1", -- [29]
-					"69a799^1", -- [30]
-					"7203eb^1", -- [31]
-					"6ce667^1", -- [32]
-					"6e071f^1", -- [33]
-					"6a855c^1", -- [34]
-					"75e497^1", -- [35]
-					"6e964c^1", -- [36]
-					"67d77f^1", -- [37]
-					"624809^1", -- [38]
-					"65887b^1", -- [39]
-					"5f191c^1", -- [40]
-					"6dd81d^1", -- [41]
-					"7607f0^1", -- [42]
-					"7e7773^1", -- [43]
-					"80c866^1", -- [44]
-					"8108ed^1", -- [45]
-					"83a99f^1", -- [46]
-					"827aaa^1", -- [47]
-					"83eb57^1", -- [48]
-					"831c83^1", -- [49]
-					"9366cb^1", -- [50]
-					"8fa44a^1", -- [51]
-					"995392^1", -- [52]
-					"674240^1", -- [53]
-					"7613fc^1", -- [54]
-					"6e062e^1", -- [55]
-					"82d754^1", -- [56]
-					"828d68^1", -- [57]
-					"7f3d13^1", -- [58]
-					"7f6b79^1", -- [59]
-					"831a65^1", -- [60]
-					"85098b^1", -- [61]
-					"7457d7^1", -- [62]
-					"6c2836^1", -- [63]
-					"64c89f^1", -- [64]
-					"80c79a^1", -- [65]
-					"81e81a^1", -- [66]
-					"7613e0^1", -- [67]
-					"730475^1", -- [68]
-					"6ac570^1", -- [69]
-					"83b8d9^1", -- [70]
-					"7f4b3f^1", -- [71]
-					"9264f6^1", -- [72]
-					"83928c^1", -- [73]
-					"80b299^1", -- [74]
-					"5cc724^1", -- [75]
-					"60d366^1", -- [76]
-					"82b84d^1", -- [77]
-					"84478c^1", -- [78]
-					"8c0981^1", -- [79]
-					"8d279e^1", -- [80]
-					"8deab5^1", -- [81]
-					"650623^1", -- [82]
-					"5ef652^1", -- [83]
-					"5f6768^1", -- [84]
-					"5db567^1", -- [85]
-					"656696^1", -- [86]
-					"7865e5^1", -- [87]
-					"7f445f^1", -- [88]
-					"7f2379^1", -- [89]
-					"85e469^1", -- [90]
-					"895482^1", -- [91]
-					"8632d4^1", -- [92]
-					"974397^1", -- [93]
-					"88444b^1", -- [94]
-					"84b432^1", -- [95]
-					"60926b^1", -- [96]
-					"6ca62f^1", -- [97]
-					"64a667^1", -- [98]
-					"60a645^1", -- [99]
-					"5af569^1", -- [100]
-					"818a55^1", -- [101]
-					"931b33^1", -- [102]
-					"8cd997^1", -- [103]
-					"5b8453^1", -- [104]
-					"965679^1", -- [105]
-					"89446d^1", -- [106]
-					"84646f^1", -- [107]
-					"82a3cb^1", -- [108]
-					"84f3e5^1", -- [109]
-					"87044e^1", -- [110]
-					"87a460^1", -- [111]
-					"79e5b8^1", -- [112]
-					"885139^1", -- [113]
-					"8c31a4^1", -- [114]
-					"840273^1", -- [115]
+			[3004] = {
+				{
+					"61a5b8^1", -- [1]
+					"751228^1", -- [2]
+					"90b5b4^1", -- [3]
+					"63730d^1", -- [4]
+					"9347e9^1", -- [5]
+					"4f81f7^1", -- [6]
+					"948cb8^1", -- [7]
+					"8ea94c^1", -- [8]
+					"b765b5^1", -- [9]
+					"aa09d7^1", -- [10]
+					"907573^1", -- [11]
+					"59cba6^1", -- [12]
+					"38da70^1", -- [13]
+					"a25598^1", -- [14]
+					"78ea4b^1", -- [15]
+					"5e2697^1", -- [16]
+					"4cb695^1", -- [17]
+					"98e950^1", -- [18]
+					"4925e5^1", -- [19]
+					"65426a^1", -- [20]
+					"40b674^1", -- [21]
+					"99a691^1", -- [22]
+					"a67691^1", -- [23]
+					"9cc742^1", -- [24]
+					"913ab4^1", -- [25]
+					"79f745^1", -- [26]
+					"4176be^1", -- [27]
+					"54f95a^1", -- [28]
+					"3df60f^1", -- [29]
+					"6d2934^1", -- [30]
+					"89dd12^1", -- [31]
+					"4b4c8e^1", -- [32]
+					"81c37b^1", -- [33]
+					"992c8b^1", -- [34]
+					"4cb8ad^1", -- [35]
+					"5b4430^1", -- [36]
+					"47da09^1", -- [37]
+					"7188bd^1", -- [38]
+					"7ab62b^1", -- [39]
+					"654ad1^1", -- [40]
+					"47d2bf^1", -- [41]
+					"867c49^1", -- [42]
+					"5ad34a^1", -- [43]
+					"a0c955^1", -- [44]
+					"898ae1^1", -- [45]
+					"a7b7f5^1", -- [46]
+					"50128f^1", -- [47]
+					"3de6b6^1", -- [48]
+					"8c13b9^1", -- [49]
+					"7f29b3^1", -- [50]
+					"45d84b^1", -- [51]
+					"555c10^1", -- [52]
+					"6aa305^1", -- [53]
+					"43c65d^1", -- [54]
+					"99a60e^1", -- [55]
+					"a849b0^1", -- [56]
+					"b067ab^1", -- [57]
+					"4df319^1", -- [58]
+					"a29762^1", -- [59]
+					"61d9e4^1", -- [60]
+					"961685^1", -- [61]
+					"4345d9^1", -- [62]
+					"319b85^1", -- [63]
+					"724637^1", -- [64]
+					"413ca3^1", -- [65]
+					"461255^1", -- [66]
+					"689890^1", -- [67]
+					"7e1307^1", -- [68]
+					"4cf255^1", -- [69]
+					"a15708^1", -- [70]
+					"87c34b^1", -- [71]
+					"9dc6e7^1", -- [72]
+					"436947^1", -- [73]
+					"68d63b^1", -- [74]
+					"6bebb6^1", -- [75]
+					"97f6fb^1", -- [76]
+					"bcf6aa^1", -- [77]
+					"9b7d95^1", -- [78]
+					"4c3218^1", -- [79]
+					"afa77a^1", -- [80]
+					"4fc6ef^1", -- [81]
+					"797805^1", -- [82]
+					"4a3b44^1", -- [83]
+					"48a633^1", -- [84]
+					"89dd2e^1", -- [85]
+					"a3ea5a^1", -- [86]
+					"8ebe29^1", -- [87]
+					"7b3dbd^1", -- [88]
+					"af96c5^1", -- [89]
+					"8628b1^1", -- [90]
+					"62348e^1", -- [91]
+					"4246fa^1", -- [92]
+					"a7f4cf^1", -- [93]
+					"7c8a83^1", -- [94]
+					"44968a^1", -- [95]
+					"492315^1", -- [96]
+					"8846e7^1", -- [97]
+					"3c4593^1", -- [98]
+					"5c5904^1", -- [99]
+					"9866ca^1", -- [100]
+					"5a07e9^1", -- [101]
+					"60ecaf^1", -- [102]
+					"9f4a77^1", -- [103]
+					"9ba7e5^1", -- [104]
+					"81b85c^1", -- [105]
+					"7cc948^1", -- [106]
+					"650b0a^1", -- [107]
+					"7559b3^1", -- [108]
+					"69d33a^1", -- [109]
+					"78256f^1", -- [110]
+					"9aa704^1", -- [111]
+					"9e46ae^1", -- [112]
+					"8ce664^1", -- [113]
+					"5162e9^1", -- [114]
+					"a0f607^1", -- [115]
+					"76680d^1", -- [116]
+					"8e2309^1", -- [117]
+					"84fcf9^1", -- [118]
+					"50030e^1", -- [119]
+					"47c264^1", -- [120]
+					"4485b6^1", -- [121]
+					"9b86cd^1", -- [122]
+					"43c6bb^1", -- [123]
+					"9a366d^1", -- [124]
+					"426cb7^1", -- [125]
+				}, -- [1]
+				[5] = {
+					"6eb1e3^1", -- [1]
+					"8783a9^1", -- [2]
+					"acd98e^1", -- [3]
+					"9cf49e^1", -- [4]
+					"80bd8e^1", -- [5]
+					"6062fd^1", -- [6]
+					"8ff73d^1", -- [7]
+					"6c7368^1", -- [8]
+					"9bdb1b^1", -- [9]
+					"863a00^1", -- [10]
+					"9a2786^1", -- [11]
+					"6ef2dc^1", -- [12]
+					"61e3e6^1", -- [13]
+					"668301^1", -- [14]
+					"8d62ec^1", -- [15]
+					"422c00^1", -- [16]
+					"844312^1", -- [17]
+					"7c07d4^1", -- [18]
+					"961d5f^1", -- [19]
+					"878461^1", -- [20]
+					"94ce69^1", -- [21]
+					"8fd3b0^1", -- [22]
+					"7cd95f^1", -- [23]
+					"a4661e^1", -- [24]
+					"7f18de^1", -- [25]
+					"4aecd6^1", -- [26]
+					"650bca^1", -- [27]
+					"9c49d8^1", -- [28]
+					"643378^1", -- [29]
+					"7cda57^1", -- [30]
+					"7981d8^1", -- [31]
+					"b85664^1", -- [32]
+					"4648e0^1", -- [33]
+					"7f9894^1", -- [34]
+					"9f04cf^1", -- [35]
+					"562525^1", -- [36]
+					"4f1b61^1", -- [37]
+					"7eec62^1", -- [38]
+					"7a12d7^1", -- [39]
+					"56f898^1", -- [40]
+					"9fcca7^1", -- [41]
+					"654448^1", -- [42]
+					"5ad4b2^1", -- [43]
+					"517c0e^1", -- [44]
+					"4c2c11^1", -- [45]
+					"805407^1", -- [46]
+					"80794f^1", -- [47]
+					"32eab0^1", -- [48]
+					"618334^1", -- [49]
+					"355a9d^1", -- [50]
+				},
+				[10] = {
+					"93c7e9^1", -- [1]
+					"a0d948^1", -- [2]
+					"64b378^1", -- [3]
+					"853cfd^1", -- [4]
+					"9f84d3^1", -- [5]
+					"60ecb8^1", -- [6]
+					"a839b3^1", -- [7]
+					"7559b7^1", -- [8]
+					"76a811^1", -- [9]
+					"afe77e^1", -- [10]
+					"782573^1", -- [11]
+					"4cb691^1", -- [12]
+					"8ce668^1", -- [13]
+					"809d90^1", -- [14]
+					"ad1992^1", -- [15]
+					"a7f4d3^1", -- [16]
+					"654ad5^1", -- [17]
+					"4f4b60^1", -- [18]
+					"8c13bd^1", -- [19]
+					"7f18e6^1", -- [20]
+					"7971da^1", -- [21]
+					"49e301^1", -- [22]
+					"bcf6ae^1", -- [23]
+					"b795b8^1", -- [24]
+					"78fa4a^1", -- [25]
+					"9e86b2^1", -- [26]
+					"5b0346^1", -- [27]
+					"34fa98^1", -- [28]
+					"87c3ad^1", -- [29]
+					"6d7934^1", -- [30]
+					"616336^1", -- [31]
+					"9b7d99^1", -- [32]
+					"950e6d^1", -- [33]
+					"4d3249^1", -- [34]
+					"40f678^1", -- [35]
+					"3de6be^1", -- [36]
+					"3e260e^1", -- [37]
+					"5e1699^1", -- [38]
+					"4b7c8b^1", -- [39]
+					"8eae2c^1", -- [40]
+					"a3a59c^1", -- [41]
+					"9bbb23^1", -- [42]
+					"4aecd4^1", -- [43]
+					"903745^1", -- [44]
+					"423c00^1", -- [45]
+					"9cf745^1", -- [46]
+					"6ce36b^1", -- [47]
+					"a7f7f5^1", -- [48]
+					"47da0d^1", -- [49]
+					"a67695^1", -- [50]
+					"79f749^1", -- [51]
+					"87c461^1", -- [52]
+					"4176c2^1", -- [53]
+					"6bebba^1", -- [54]
+					"6273f6^1", -- [55]
+					"461251^1", -- [56]
+					"97d6ff^1", -- [57]
+					"6eb1e7^1", -- [58]
+					"a0d60a^1", -- [59]
+					"b85668^1", -- [60]
+					"423cb8^1", -- [61]
+					"552955^1", -- [62]
+					"99e695^1", -- [63]
+					"6f32e0^1", -- [64]
+					"996c8f^1", -- [65]
+					"756225^1", -- [66]
+					"504286^1", -- [67]
+					"961d63^1", -- [68]
+					"80940b^1", -- [69]
+					"9866ce^1", -- [70]
+					"4c3c0c^1", -- [71]
+					"9cb9d7^1", -- [72]
+					"8da2ec^1", -- [73]
+					"992955^1", -- [74]
+					"89dae5^1", -- [75]
+					"87c34f^1", -- [76]
+					"4f81fb^1", -- [77]
+					"969674^1", -- [78]
+					"515c10^1", -- [79]
+					"8ea950^1", -- [80]
+					"562529^1", -- [81]
+					"7d0961^1", -- [82]
+					"5bc4b2^1", -- [83]
+					"847315^1", -- [84]
+					"5c9907^1", -- [85]
+					"7e4305^1", -- [86]
+					"55bc15^1", -- [87]
+					"4cf8ad^1", -- [88]
+					"47d2c4^1", -- [89]
+					"31eb89^1", -- [90]
+					"4925e1^1", -- [91]
+					"43c660^1", -- [92]
+					"45d84f^1", -- [93]
+					"670bcf^1", -- [94]
+					"5b4434^1", -- [95]
+					"9bb7e0^1", -- [96]
+					"7d0a5a^1", -- [97]
+					"81e85f^1", -- [98]
+					"9a678a^1", -- [99]
+					"81e378^1", -- [100]
+					"5f149e^1", -- [101]
+					"65826e^1", -- [102]
+					"88c6db^1", -- [103]
+					"4a6b48^1", -- [104]
+					"a1570c^1", -- [105]
+					"9f4a7b^1", -- [106]
+					"9af70c^1", -- [107]
+					"434948^1", -- [108]
+					"797809^1", -- [109]
+					"5a47e4^1", -- [110]
+					"3c5598^1", -- [111]
+					"5a0ba2^1", -- [112]
+					"8638ad^1", -- [113]
+					"6235cd^1", -- [114]
+					"4658de^1", -- [115]
+					"6ae309^1", -- [116]
+					"68d894^1", -- [117]
+					"8a1d32^1", -- [118]
+					"917ab8^1", -- [119]
+					"7fd894^1", -- [120]
+					"7b3dc1^1", -- [121]
+					"4236fb^1", -- [122]
+					"583898^1", -- [123]
+					"68d63f^1", -- [124]
+					"7f5c62^1", -- [125]
+					"9e06eb^1", -- [126]
+					"afa6c2^1", -- [127]
+					"7a32d4^1", -- [128]
+					"90f5b0^1", -- [129]
+					"4f830d^1", -- [130]
+					"9a662f^1", -- [131]
+					"390a67^1", -- [132]
+					"48e637^1", -- [133]
+					"65c448^1", -- [134]
+					"9fccab^1", -- [135]
+					"a3ea5e^1", -- [136]
+					"61e9d7^1", -- [137]
+					"7ab633^1", -- [138]
+					"72863b^1", -- [139]
+					"71c8bd^1", -- [140]
+					"44c68d^1", -- [141]
+					"4385dd^1", -- [142]
+					"7f59b3^1", -- [143]
+					"a31759^1", -- [144]
+					"8de3b9^1", -- [145]
+					"863a09^1", -- [146]
+				},
+				[15] = {
+					"5a47ed^1", -- [1]
+					"5a0b9d^1", -- [2]
+					"7cca87^1", -- [3]
+					"38ca6b^1", -- [4]
+					"444627^1", -- [5]
+					"7599b7^1", -- [6]
+					"6239dc^1", -- [7]
+					"6b030b^1", -- [8]
+					"43c5e1^1", -- [9]
+					"4276fb^1", -- [10]
+					"71d8c1^1", -- [11]
+					"90f5b8^1", -- [12]
+					"a834d3^1", -- [13]
+					"a1194c^1", -- [14]
+					"465259^1", -- [15]
+					"97d6f7^1", -- [16]
+					"65c272^1", -- [17]
+					"b02782^1", -- [18]
+					"786577^1", -- [19]
+					"4c721c^1", -- [20]
+					"8c53bd^1", -- [21]
+					"63b311^1", -- [22]
+					"8e630d^1", -- [23]
+					"907577^1", -- [24]
+					"4cf251^1", -- [25]
+					"b7d5bc^1", -- [26]
+					"8886db^1", -- [27]
+					"6235c4^1", -- [28]
+					"b0a7ab^1", -- [29]
+					"4965e9^1", -- [30]
+					"9ec6b6^1", -- [31]
+					"98a955^1", -- [32]
+					"a2959c^1", -- [33]
+					"5e569b^1", -- [34]
+					"793a4e^1", -- [35]
+					"a63695^1", -- [36]
+					"55395e^1", -- [37]
+					"898d16^1", -- [38]
+					"6d7938^1", -- [39]
+					"3e2612^1", -- [40]
+					"822863^1", -- [41]
+					"bd36b2^1", -- [42]
+					"48a637^1", -- [43]
+					"4792bf^1", -- [44]
+					"481a11^1", -- [45]
+					"759228^1", -- [46]
+					"4b7c93^1", -- [47]
+					"41367d^1", -- [48]
+					"6c2bbe^1", -- [49]
+					"4fc1fb^1", -- [50]
+					"4cf8b1^1", -- [51]
+					"94ccb8^1", -- [52]
+					"a7f7f9^1", -- [53]
+					"8a1ae9^1", -- [54]
+					"7a374d^1", -- [55]
+					"4cf699^1", -- [56]
+					"76e816^1", -- [57]
+					"96d678^1", -- [58]
+					"93c7e0^1", -- [59]
+					"691643^1", -- [60]
+					"7f19b7^1", -- [61]
+					"658ad9^1", -- [62]
+					"7e4309^1", -- [63]
+					"7af62f^1", -- [64]
+					"a1160e^1", -- [65]
+					"9bb7e9^1", -- [66]
+					"3de6ba^1", -- [67]
+					"99e612^1", -- [68]
+					"496319^1", -- [69]
+					"62348a^1", -- [70]
+					"8eee2c^1", -- [71]
+					"81a380^1", -- [72]
+					"72c63f^1", -- [73]
+					"8a2d34^1", -- [74]
+					"556c10^1", -- [75]
+					"959e07^1", -- [76]
+					"a879b3^1", -- [77]
+					"9aa708^1", -- [78]
+					"9bbd9d^1", -- [79]
+					"4f930a^1", -- [80]
+					"5b8434^1", -- [81]
+					"9a2699^1", -- [82]
+					"4aab4c^1", -- [83]
+					"5b434b^1", -- [84]
+					"9f8a7b^1", -- [85]
+					"a31755^1", -- [86]
+					"6a133e^1", -- [87]
+					"98a6d2^1", -- [88]
+					"7d0948^1", -- [89]
+					"3c558f^1", -- [90]
+					"afa6be^1", -- [91]
+					"438949^1", -- [92]
+					"8638b5^1", -- [93]
+					"90fab8^1", -- [94]
+					"43c664^1", -- [95]
+					"8d2668^1", -- [96]
+					"46184f^1", -- [97]
+					"5c0903^1", -- [98]
+					"79b80a^1", -- [99]
+					"9cb745^1", -- [100]
+					"880353^1", -- [101]
+					"7b7dc6^1", -- [102]
+					"98ec93^1", -- [103]
+					"41b6c2^1", -- [104]
+					"322b8d^1", -- [105]
+					"a19710^1", -- [106]
+					"691899^1", -- [107]
+					"423cb4^1", -- [108]
+					"a42a5e^1", -- [109]
+					"9e46ef^1", -- [110]
+					"850cf6^1", -- [111]
+					"612cb4^1", -- [112]
+					"8ea948^1", -- [113]
+					"44c68e^1", -- [114]
+					"505287^1", -- [115]
+					"44b5b4^1", -- [116]
 				},
 			},
-			[2012] = {
-				[20] = {
-					"634958^1", -- [1]
-					"471c0c^1", -- [2]
-					"479826^1", -- [3]
-					"b167c8^1", -- [4]
-					"5d2a67^1", -- [5]
-					"66c832^1", -- [6]
-					"a6aabb^1", -- [7]
-					"c9f552^1", -- [8]
-					"5a076a^1", -- [9]
-					"a3ec97^1", -- [10]
-					"4ae934^1", -- [11]
-					"616db5^1", -- [12]
-					"441a1c^1", -- [13]
-					"4a28b5^1", -- [14]
-					"c0c786^1", -- [15]
-					"458d90^1", -- [16]
-					"5f6afe^1", -- [17]
-					"af7895^1", -- [18]
-					"658cb4^1", -- [19]
-					"cb466c^1", -- [20]
-					"944c24^1", -- [21]
-					"62786b^1", -- [22]
-					"b2774d^1", -- [23]
-					"ced5c1^1", -- [24]
-				},
-				[3] = {
-					"363106^1", -- [1]
-					"c8256f^1", -- [2]
-					"4ec37c^1", -- [3]
-					"23d54e^1", -- [4]
-					"bf769d^1", -- [5]
-					"4bb809^1", -- [6]
-					"3c9a31^1", -- [7]
-					"39c0c8^1", -- [8]
-					"27e88c^1", -- [9]
-					"448847^1", -- [10]
-					"af3127^1", -- [11]
-					"485df7^1", -- [12]
-					"62860a^1", -- [13]
-					"52ddda^1", -- [14]
-					"4c78f6^1", -- [15]
-					"49284f^1", -- [16]
-					"7333ae^1", -- [17]
-					"950ab0^1", -- [18]
-					"98e36b^1", -- [19]
-					"a87643^1", -- [20]
-					"50c4c3^1", -- [21]
-					"cd42e4^1", -- [22]
-					"878a36^1", -- [23]
-					"3ea305^1", -- [24]
-					"a521a1^1", -- [25]
-					"9c7c4d^1", -- [26]
-					"486b02^1", -- [27]
-					"6d2beb^1", -- [28]
-					"49e728^1", -- [29]
-					"35b31e^1", -- [30]
-					"32aa7c^1", -- [31]
-					"525c97^1", -- [32]
-					"4bb220^1", -- [33]
-					"3f258f^1", -- [34]
-					"3c1423^1", -- [35]
-					"80a2bc^1", -- [36]
-					"4bb8a1^1", -- [37]
-					"39816c^1", -- [38]
-					"c8248e^1", -- [39]
-					"7d1a0a^1", -- [40]
-					"8a13bd^1", -- [41]
-					"ad198b^1", -- [42]
-					"2bf98e^1", -- [43]
-					"5b0d2a^1", -- [44]
-					"6687a3^1", -- [45]
-					"4d3d32^1", -- [46]
-					"b2b5b7^1", -- [47]
-					"6d52df^1", -- [48]
-					"32a191^1", -- [49]
-					"c7e1da^1", -- [50]
-					"255724^1", -- [51]
-					"30968d^1", -- [52]
-					"6db62f^1", -- [53]
-					"5fa9f4^1", -- [54]
-					"556b85^1", -- [55]
-					"91f890^1", -- [56]
-					"2b07ab^1", -- [57]
-					"44476e^1", -- [58]
-					"45d8a9^1", -- [59]
-					"6e7add^1", -- [60]
-					"643d47^1", -- [61]
-					"500786^1", -- [62]
-					"baa6f3^1", -- [63]
-					"54eb2f^1", -- [64]
-					"5e5e6d^1", -- [65]
-					"a98319^1", -- [66]
-					"c45398^1", -- [67]
-					"58025a^1", -- [68]
-					"454caf^1", -- [69]
-					"9486f7^1", -- [70]
-					"63b21c^1", -- [71]
-					"5d52f1^1", -- [72]
-					"a83735^1", -- [73]
-					"7d27be^1", -- [74]
-					"444870^1", -- [75]
-					"60a77a^1", -- [76]
-				},
-			},
-			[4008] = {
-				[24] = {
-					"680bd9^1", -- [1]
-					"39dc89^1", -- [2]
-					"8dba9d^1", -- [3]
-					"942ac0^1", -- [4]
-					"444d70^1", -- [5]
-					"912e10^1", -- [6]
-					"4916d7^1", -- [7]
-					"9a1e35^1", -- [8]
-					"c8d9f0^1", -- [9]
-					"476694^1", -- [10]
-					"34f973^1", -- [11]
-					"585e33^1", -- [12]
-					"59f8bc^1", -- [13]
-					"818a11^1", -- [14]
-					"4979dd^1", -- [15]
-					"77c65a^1", -- [16]
-					"8d7a1c^1", -- [17]
-					"8743a1^1", -- [18]
-					"5fadfd^1", -- [19]
-					"bf798e^1", -- [20]
-					"b2cbee^1", -- [21]
-					"38d884^1", -- [22]
-					"5a15d5^1", -- [23]
-					"5fadb1^1", -- [24]
-					"bd88f6^1", -- [25]
-					"99ed96^1", -- [26]
-					"35abe4^1", -- [27]
-					"3d2791^1", -- [28]
-					"8c73d6^1", -- [29]
-					"bfe8a2^1", -- [30]
-					"755e04^1", -- [31]
-					"c84945^1", -- [32]
-					"34cc12^1", -- [33]
-					"729e26^1", -- [34]
-					"83e9ab^1", -- [35]
-					"5a6740^1", -- [36]
-					"62c86d^1", -- [37]
-					"a53746^1", -- [38]
-					"7f96b0^1", -- [39]
-					"6158c9^1", -- [40]
-					"837376^1", -- [41]
-					"6715ea^1", -- [42]
-					"794aae^1", -- [43]
-					"57ac85^1", -- [44]
-					"4d488c^1", -- [45]
-					"7a94ce^1", -- [46]
-					"922ae0^1", -- [47]
-					"7bdc45^1", -- [48]
-					"8d6e26^1", -- [49]
-					"5938ed^1", -- [50]
-					"993d39^1", -- [51]
-					"b569b5^1", -- [52]
-					"5b97fc^1", -- [53]
-					"8859ef^1", -- [54]
-					"857582^1", -- [55]
-					"c1f808^1", -- [56]
-					"b65a33^1", -- [57]
-					"688b32^1", -- [58]
-					"5b8e17^1", -- [59]
-					"65553a^1", -- [60]
-					"667821^1", -- [61]
-					"8ae75f^1", -- [62]
-					"393d6e^1", -- [63]
-					"3a5827^1", -- [64]
-					"c948cd^1", -- [65]
-					"a12ab7^1", -- [66]
-					"a4f8e8^1", -- [67]
-					"c499cc^1", -- [68]
-					"80e545^1", -- [69]
-					"a4388c^1", -- [70]
-					"8de35f^1", -- [71]
-					"a7469d^1", -- [72]
-					"b1b94f^1", -- [73]
-					"4de5f9^1", -- [74]
-					"b998b5^1", -- [75]
-					"639bd7^1", -- [76]
-					"86c660^1", -- [77]
-					"5867ea^1", -- [78]
-					"86a5f8^1", -- [79]
-					"70d3b1^1", -- [80]
-					"8f5dfc^1", -- [81]
-					"9845f2^1", -- [82]
-					"69156b^1", -- [83]
-					"558773^1", -- [84]
-					"7bfe1b^1", -- [85]
-					"5797ac^1", -- [86]
-					"83b9ee^1", -- [87]
-					"353a54^1", -- [88]
-					"347a1f^1", -- [89]
-					"7d16cc^1", -- [90]
-					"c708d8^1", -- [91]
-					"94249c^1", -- [92]
-					"7a3e08^1", -- [93]
-					"61d786^1", -- [94]
-					"4a2dc2^1", -- [95]
-					"679a20^1", -- [96]
-					"897688^1", -- [97]
-					"3aa7e7^1", -- [98]
-					"351c93^1", -- [99]
-					"69de15^1", -- [100]
-					"8cd70e^1", -- [101]
-					"af789e^1", -- [102]
-					"38dd24^1", -- [103]
-					"965e31^1", -- [104]
-					"a38d5b^1", -- [105]
-					"352b89^1", -- [106]
-					"662e2c^1", -- [107]
-					"3629fc^1", -- [108]
-					"bc398e^1", -- [109]
-					"64233a^1", -- [110]
-					"34cb3c^1", -- [111]
-					"351aca^1", -- [112]
-					"6e25f6^1", -- [113]
-					"43a6fa^1", -- [114]
-					"5a1ab6^1", -- [115]
-					"a13c9b^1", -- [116]
-					"9f3be0^1", -- [117]
-					"bdd7c5^1", -- [118]
-					"a684dc^1", -- [119]
-					"b298b9^1", -- [120]
-					"6c8e09^1", -- [121]
-					"78cbaa^1", -- [122]
-					"3fe761^1", -- [123]
-					"51ea19^1", -- [124]
-					"52e5cb^1", -- [125]
-					"6b5c1b^1", -- [126]
-					"5188d4^1", -- [127]
-					"5618ec^1", -- [128]
-					"6f8c3c^1", -- [129]
-					"96889c^1", -- [130]
-					"aab7d9^1", -- [131]
-					"9a4ac1^1", -- [132]
-					"7986aa^1", -- [133]
-					"3b87ba^1", -- [134]
-					"5a8d9c^1", -- [135]
-					"91b36f^1", -- [136]
-					"6f6e14^1", -- [137]
-					"9ee58e^1", -- [138]
-					"4e28da^1", -- [139]
-					"94a6f3^1", -- [140]
-					"88bdff^1", -- [141]
-					"76ee26^1", -- [142]
-					"a6cd2e^1", -- [143]
-					"96dde4^1", -- [144]
-					"5b2b4b^1", -- [145]
-					"5baace^1", -- [146]
-					"4bf621^1", -- [147]
-					"98ccfa^1", -- [148]
-					"c91867^1", -- [149]
-					"9675b9^1", -- [150]
-					"766a73^1", -- [151]
-					"471da1^1", -- [152]
-					"c0c68b^1", -- [153]
-					"4f85d6^1", -- [154]
-					"6325e4^1", -- [155]
-					"3c9db5^1", -- [156]
-					"97a4bc^1", -- [157]
-					"920aab^1", -- [158]
-					"9548e4^1", -- [159]
-					"838a1d^1", -- [160]
-					"818e0d^1", -- [161]
-					"83dd1e^1", -- [162]
-					"36bc54^1", -- [163]
-					"90891e^1", -- [164]
-					"adbc96^1", -- [165]
-					"9203b8^1", -- [166]
-					"ad18fe^1", -- [167]
-					"5b4ca8^1", -- [168]
-					"80bc53^1", -- [169]
-					"479a13^1", -- [170]
-					"acbc3d^1", -- [171]
-					"a2f587^1", -- [172]
-					"95a551^1", -- [173]
-					"5625a5^1", -- [174]
-					"a9f736^1", -- [175]
-					"55c750^1", -- [176]
-					"5a577f^1", -- [177]
-					"56b7d6^1", -- [178]
-					"5a1631^1", -- [179]
-					"629b16^1", -- [180]
-					"683b7e^1", -- [181]
-					"59997e^1", -- [182]
-					"7599ba^1", -- [183]
-					"4d99eb^1", -- [184]
-					"7fba71^1", -- [185]
-					"541542^1", -- [186]
-					"583943^1", -- [187]
-					"66164c^1", -- [188]
-					"b518d3^1", -- [189]
-					"91180c^1", -- [190]
-					"aea73f^1", -- [191]
-					"ae6562^1", -- [192]
-					"9767cb^1", -- [193]
-					"344c3c^1", -- [194]
-					"3d2c4a^1", -- [195]
-					"8a8d54^1", -- [196]
-					"852e1b^1", -- [197]
-					"5a75fb^1", -- [198]
-					"62262b^1", -- [199]
-					"75343e^1", -- [200]
-					"a988d2^1", -- [201]
-					"991937^1", -- [202]
-					"7baaa2^1", -- [203]
-					"ab4d16^1", -- [204]
-					"366874^1", -- [205]
-					"346af7^1", -- [206]
-					"87e358^1", -- [207]
-					"b7eba5^1", -- [208]
-					"c72a33^1", -- [209]
-					"79033c^1", -- [210]
-					"6383bf^1", -- [211]
-					"5b966a^1", -- [212]
-					"620e22^1", -- [213]
-					"a29d7b^1", -- [214]
-					"a5c604^1", -- [215]
-					"bd5b10^1", -- [216]
-					"aa7672^1", -- [217]
-					"7aa391^1", -- [218]
-					"835e08^1", -- [219]
-					"a06b50^1", -- [220]
-					"834c7a^1", -- [221]
-					"9969a0^1", -- [222]
-					"a2871a^1", -- [223]
-					"8e79aa^1", -- [224]
-					"7b6b54^1", -- [225]
-					"763a0e^1", -- [226]
-					"56f629^1", -- [227]
-					"4f1820^1", -- [228]
-					"686351^1", -- [229]
-					"93ac47^1", -- [230]
-					"9377d5^1", -- [231]
-					"95fa4d^1", -- [232]
-					"a94555^1", -- [233]
-					"968472^1", -- [234]
-					"a0c4b7^1", -- [235]
-					"a19c48^1", -- [236]
-					"7f9e26^1", -- [237]
-					"710368^1", -- [238]
-					"be894b^1", -- [239]
-					"6173ca^1", -- [240]
-					"9a545c^1", -- [241]
-					"751361^1", -- [242]
-					"55cc25^1", -- [243]
-					"867bff^1", -- [244]
-					"b3d940^1", -- [245]
-					"7ac54e^1", -- [246]
-					"96835d^1", -- [247]
-					"56352c^1", -- [248]
-					"567bb8^1", -- [249]
-					"649c10^1", -- [250]
-					"a6ba1d^1", -- [251]
-					"579b7a^1", -- [252]
-					"ac1a14^1", -- [253]
-					"8d0c44^1", -- [254]
-					"a099f5^1", -- [255]
-					"7e0544^1", -- [256]
-					"56767f^1", -- [257]
-					"86bdf2^1", -- [258]
-					"3528fb^1", -- [259]
-					"7a36e6^1", -- [260]
-					"644b7e^1", -- [261]
-					"885625^1", -- [262]
-					"7925c1^1", -- [263]
-					"b3f63e^1", -- [264]
-					"981c13^1", -- [265]
-					"c4e931^1", -- [266]
-					"8eccfe^1", -- [267]
-					"383cb9^1", -- [268]
-					"5e98b3^1", -- [269]
-				},
-			},
-			[1024] = {
+			[1023] = {
 				[21] = {
-					"81cb3f^1", -- [1]
-					"3b59b4^1", -- [2]
-					"6bc882^1", -- [3]
-					"9a9dc9^1", -- [4]
-					"ad488e^1", -- [5]
-					"55a950^1", -- [6]
-					"5bc95a^1", -- [7]
-					"95b438^1", -- [8]
-					"7a3766^1", -- [9]
-					"6ab8cf^1", -- [10]
-				},
-				[19] = {
-					"86fa22^1", -- [1]
-					"859a94^1", -- [2]
-					"862ad6^1", -- [3]
-					"503822^1", -- [4]
-					"a23c73^1", -- [5]
-					"42394d^1", -- [6]
-					"39f928^1", -- [7]
-					"8e39a0^1", -- [8]
-					"4cf932^1", -- [9]
-					"432827^1", -- [10]
-					"4f4897^1", -- [11]
-					"50888a^1", -- [12]
-					"39d94c^1", -- [13]
-					"7f6720^1", -- [14]
-					"8515bf^1", -- [15]
-					"855461^1", -- [16]
-					"9a4586^1", -- [17]
-					"9965e7^1", -- [18]
-					"90e6e1^1", -- [19]
-					"98772d^1", -- [20]
-					"9be5de^1", -- [21]
-					"97d3e1^1", -- [22]
-					"96d375^1", -- [23]
-					"8b7362^1", -- [24]
-					"89a329^1", -- [25]
-					"72033a^1", -- [26]
-					"8e735f^1", -- [27]
-					"8d2422^1", -- [28]
-					"99b5c8^1", -- [29]
-					"9ac8e2^1", -- [30]
-					"a37b76^1", -- [31]
-					"8ae75c^1", -- [32]
-					"84fa85^1", -- [33]
-					"8afa1b^1", -- [34]
-					"912cf4^1", -- [35]
-					"89f700^1", -- [36]
-					"722383^1", -- [37]
-					"9956d6^1", -- [38]
-					"45f7ad^1", -- [39]
-					"b3282e^1", -- [40]
-					"b72833^1", -- [41]
-					"b0186e^1", -- [42]
-					"b4c855^1", -- [43]
-					"b4a823^1", -- [44]
-					"6b67b5^1", -- [45]
-					"723777^1", -- [46]
-					"975d61^1", -- [47]
-					"9a9dcb^1", -- [48]
-					"3c3762^1", -- [49]
-					"64b940^1", -- [50]
-					"6c2941^1", -- [51]
-					"6bf8b3^1", -- [52]
-					"99136a^1", -- [53]
-					"9522f3^1", -- [54]
-					"8d7341^1", -- [55]
-					"88634e^1", -- [56]
-					"8172e6^1", -- [57]
-					"793244^1", -- [58]
-					"71f22e^1", -- [59]
-					"70f282^1", -- [60]
-					"74b41e^1", -- [61]
-					"75c3ee^1", -- [62]
-					"78b56f^1", -- [63]
-					"7ce6fd^1", -- [64]
-					"6707ce^1", -- [65]
-					"5f87a4^1", -- [66]
-					"5b17b0^1", -- [67]
-					"56b78b^1", -- [68]
-					"528793^1", -- [69]
-					"40f9c8^1", -- [70]
-					"53992c^1", -- [71]
-					"5d2965^1", -- [72]
-					"66e940^1", -- [73]
-					"6b191d^1", -- [74]
-					"73f92d^1", -- [75]
-					"7419a5^1", -- [76]
-					"8429cb^1", -- [77]
-					"8deb9f^1", -- [78]
-					"8d4c16^1", -- [79]
-					"92cd7d^1", -- [80]
-					"9cce05^1", -- [81]
-					"3c37ff^1", -- [82]
-					"3d5779^1", -- [83]
-					"769860^1", -- [84]
-					"6bb881^1", -- [85]
-					"412979^1", -- [86]
-					"48d977^1", -- [87]
-					"581956^1", -- [88]
-					"97b994^1", -- [89]
-					"9849d4^1", -- [90]
-					"b7b84c^1", -- [91]
-					"b5b87a^1", -- [92]
-					"b20872^1", -- [93]
-					"867608^1", -- [94]
-					"7fa2f1^1", -- [95]
-					"7dd2ab^1", -- [96]
-					"86f315^1", -- [97]
-					"73231d^1", -- [98]
-					"72a39a^1", -- [99]
-					"8234b6^1", -- [100]
-					"9f4bb7^1", -- [101]
-					"894a2b^1", -- [102]
-					"a5ec70^1", -- [103]
+					"ad02ae^1", -- [1]
 				},
 				[16] = {
-					"8a9a65^1", -- [1]
-					"5037ae^1", -- [2]
-					"908ccd^1", -- [3]
-					"3949af^1", -- [4]
-					"4a3921^1", -- [5]
-					"3ee76e^1", -- [6]
-					"40778d^1", -- [7]
-					"434824^1", -- [8]
-					"536795^1", -- [9]
-					"5ee833^1", -- [10]
-					"768837^1", -- [11]
-					"739301^1", -- [12]
-					"95368f^1", -- [13]
-					"96f486^1", -- [14]
-					"96532b^1", -- [15]
-					"8162e6^1", -- [16]
-					"9ad94c^1", -- [17]
-					"a22c77^1", -- [18]
-					"774998^1", -- [19]
-					"8329e2^1", -- [20]
-					"952d4a^1", -- [21]
-					"a1bdf5^1", -- [22]
-					"97b8f4^1", -- [23]
-					"9a5973^1", -- [24]
-					"865a49^1", -- [25]
-					"827b95^1", -- [26]
-					"9a7dc9^1", -- [27]
-					"886350^1", -- [28]
-					"71a2bd^1", -- [29]
-					"9016ae^1", -- [30]
-					"b7086b^1", -- [31]
-					"9be5df^1", -- [32]
-					"93a6bb^1", -- [33]
-					"84baf8^1", -- [34]
-					"a2143e^1", -- [35]
-					"98f3dd^1", -- [36]
-					"7e3277^1", -- [37]
-					"7584d2^1", -- [38]
-					"730792^1", -- [39]
-					"6b97b7^1", -- [40]
-					"5ff809^1", -- [41]
-					"42580f^1", -- [42]
-					"3c075c^1", -- [43]
-					"475957^1", -- [44]
-					"4f8949^1", -- [45]
-					"882a45^1", -- [46]
-					"8a6aca^1", -- [47]
-					"9cee04^1", -- [48]
-					"40c829^1", -- [49]
-					"4e595f^1", -- [50]
-					"5bc957^1", -- [51]
-					"66c942^1", -- [52]
-					"6c493b^1", -- [53]
-					"75685b^1", -- [54]
-					"b46801^1", -- [55]
-					"b5e818^1", -- [56]
-					"8d7344^1", -- [57]
-					"9276e1^1", -- [58]
-					"848a2b^1", -- [59]
-					"83ea6a^1", -- [60]
-					"860b0a^1", -- [61]
-					"80aadc^1", -- [62]
+					"76c731^1", -- [1]
+					"7dddd4^1", -- [2]
+					"b87b65^1", -- [3]
+					"a35cec^1", -- [4]
+					"6192e7^1", -- [5]
+					"63bb32^1", -- [6]
+					"6ebdc2^1", -- [7]
+					"c3f92a^1", -- [8]
+					"c13646^1", -- [9]
+					"45c507^1", -- [10]
+					"3e96a6^1", -- [11]
+					"3f17fb^1", -- [12]
+					"3f3974^1", -- [13]
+					"c5173c^1", -- [14]
+					"af133b^1", -- [15]
+					"a6533a^1", -- [16]
+					"8db223^1", -- [17]
+					"49bbaa^1", -- [18]
+					"a14321^1", -- [19]
+					"8a3771^1", -- [20]
+					"c0d9a3^1", -- [21]
+					"bb2b3c^1", -- [22]
+					"85adec^1", -- [23]
+					"bf4a55^1", -- [24]
+					"c4f8b8^1", -- [25]
+					"bbe4d0^1", -- [26]
+					"b7c381^1", -- [27]
+					"8f5238^1", -- [28]
+					"3dc7b2^1", -- [29]
+					"504cc2^1", -- [30]
+					"64ed71^1", -- [31]
+					"c1a9d6^1", -- [32]
+					"bfe546^1", -- [33]
+					"b6d3d5^1", -- [34]
+					"6ac318^1", -- [35]
+					"4ebbff^1", -- [36]
+					"72bdc1^1", -- [37]
+					"9ddd62^1", -- [38]
+					"9a7297^1", -- [39]
+					"758876^1", -- [40]
+					"573b1b^1", -- [41]
+					"c4f8d9^1", -- [42]
+					"544cb6^1", -- [43]
+					"5d8332^1", -- [44]
+					"688a59^1", -- [45]
+					"9e628b^1", -- [46]
+					"8377b1^1", -- [47]
 				},
-			},
-			[2009] = {
-				[21] = {
-					"1ba46f^1", -- [1]
-					"47961c^1", -- [2]
-					"74b328^1", -- [3]
+				[19] = {
+					"bc04d0^1", -- [1]
+					"7cbaa1^1", -- [2]
+					"c4f8da^1", -- [3]
+					"744a5b^1", -- [4]
+					"befab6^1", -- [5]
+					"c3f928^1", -- [6]
+					"9e0d61^1", -- [7]
+					"813dbc^1", -- [8]
+					"7deccd^1", -- [9]
+					"810c26^1", -- [10]
+					"a36cef^1", -- [11]
+					"b88b67^1", -- [12]
+					"ab1ca9^1", -- [13]
+					"d039c2^1", -- [14]
+					"bf4598^1", -- [15]
+					"aec342^1", -- [16]
+					"9a0294^1", -- [17]
+					"945233^1", -- [18]
+					"90f1e4^1", -- [19]
+					"7bf209^1", -- [20]
+					"6ac317^1", -- [21]
+					"3cb667^1", -- [22]
+					"49dba9^1", -- [23]
+					"543cb6^1", -- [24]
+					"6ebdc2^1", -- [25]
+					"93adb2^1", -- [26]
+					"c1a9d2^1", -- [27]
+					"bdb4f5^1", -- [28]
+					"6182e5^1", -- [29]
+					"42d4ad^1", -- [30]
+					"41860b^1", -- [31]
+					"3f37f8^1", -- [32]
+					"3f99c9^1", -- [33]
+					"72cdbe^1", -- [34]
+					"7faded^1", -- [35]
+					"90ce1b^1", -- [36]
+					"8e1ec7^1", -- [37]
+					"a75cb1^1", -- [38]
+					"8d8a5d^1", -- [39]
+					"8da223^1", -- [40]
+					"4454fe^1", -- [41]
+					"3dd7b2^1", -- [42]
+					"638c5e^1", -- [43]
+					"bb4b39^1", -- [44]
+					"c07544^1", -- [45]
+					"9e327f^1", -- [46]
+					"42dab3^1", -- [47]
+					"be2b0d^1", -- [48]
+					"a6633c^1", -- [49]
+					"7fd217^1", -- [50]
+					"5da32c^1", -- [51]
+					"64ed72^1", -- [52]
+					"7dcdd5^1", -- [53]
+					"c3c907^1", -- [54]
+					"935267^1", -- [55]
+					"c0a9a6^1", -- [56]
+					"b7b382^1", -- [57]
+					"63c275^1", -- [58]
+					"5d1cd0^1", -- [59]
+					"503cc2^1", -- [60]
+					"a18323^1", -- [61]
+					"7e8d40^1", -- [62]
+					"730d57^1", -- [63]
+					"60c5a2^1", -- [64]
+					"8f6234^1", -- [65]
+					"4e6b74^1", -- [66]
+					"4e7c03^1", -- [67]
+					"b2530b^1", -- [68]
 				},
 				[13] = {
-					"23b4c8^1", -- [1]
-					"1e94ad^1", -- [2]
-					"1c742f^1", -- [3]
-					"98854b^1", -- [4]
-					"a2e5b2^1", -- [5]
-					"7ac2d3^1", -- [6]
-					"841293^1", -- [7]
-					"74e327^1", -- [8]
-					"67530b^1", -- [9]
-					"5e2286^1", -- [10]
-					"5cd220^1", -- [11]
-					"6c0344^1", -- [12]
-					"31555e^1", -- [13]
-					"3e25f8^1", -- [14]
-					"4f3619^1", -- [15]
-					"2504f8^1", -- [16]
-					"23438d^1", -- [17]
-					"252313^1", -- [18]
-					"2b325a^1", -- [19]
-					"2123a6^1", -- [20]
-					"1c54b6^1", -- [21]
-					"a9e643^1", -- [22]
-					"9a64cd^1", -- [23]
-					"8f34d9^1", -- [24]
-					"9ad33a^1", -- [25]
-					"a65377^1", -- [26]
-					"a3e56a^1", -- [27]
-					"93e5bb^1", -- [28]
-					"975501^1", -- [29]
-					"9c935d^1", -- [30]
-					"aaa5e8^1", -- [31]
-					"ace58e^1", -- [32]
-					"b414b4^1", -- [33]
-					"b12414^1", -- [34]
-					"a4736a^1", -- [35]
-					"99642d^1", -- [36]
-					"5931fa^1", -- [37]
-					"5935aa^1", -- [38]
-					"20449b^1", -- [39]
-					"27c50f^1", -- [40]
-					"6e432f^1", -- [41]
-					"7f6575^1", -- [42]
-					"8ed3f1^1", -- [43]
-					"a13379^1", -- [44]
-					"95158e^1", -- [45]
-					"9ec518^1", -- [46]
-					"8dd388^1", -- [47]
-					"97f45b^1", -- [48]
-					"a01559^1", -- [49]
-					"877232^1", -- [50]
-					"8e1246^1", -- [51]
-					"9233f1^1", -- [52]
-					"1b646f^1", -- [53]
-					"1fb37c^1", -- [54]
-					"8b04e0^1", -- [55]
+					"713e23^1", -- [1]
+					"68e59f^1", -- [2]
+					"998593^1", -- [3]
+					"927273^1", -- [4]
+					"80ab5d^1", -- [5]
+					"9bda94^1", -- [6]
+					"859a61^1", -- [7]
+					"6f3281^1", -- [8]
+					"60ccf8^1", -- [9]
+				},
+			},
+			[1026] = {
+				[27] = {
+					"435657^1", -- [1]
+					"47262d^1", -- [2]
+					"5955af^1", -- [3]
+					"a1556e^1", -- [4]
+					"3ae505^1", -- [5]
+					"2e1904^1", -- [6]
+					"85a95f^1", -- [7]
+					"95f8c9^1", -- [8]
+					"93a88c^1", -- [9]
+					"5563cc^1", -- [10]
+					"6be56e^1", -- [11]
+					"8d52f4^1", -- [12]
+					"8602cd^1", -- [13]
+					"69ea1c^1", -- [14]
+					"8e091a^1", -- [15]
+					"8b985a^1", -- [16]
+					"adb8e7^1", -- [17]
+					"a28851^1", -- [18]
+					"48f5e8^1", -- [19]
+					"52a498^1", -- [20]
+					"59145f^1", -- [21]
+					"8b52ba^1", -- [22]
+					"8a0355^1", -- [23]
+					"314972^1", -- [24]
+					"45c68a^1", -- [25]
+					"59637a^1", -- [26]
+					"7962d7^1", -- [27]
+					"71b32b^1", -- [28]
+					"7ef986^1", -- [29]
+					"3809ab^1", -- [30]
+					"20a771^1", -- [31]
+					"5b73e4^1", -- [32]
+					"e147bd^1", -- [33]
+					"dce8e8^1", -- [34]
+					"c18a29^1", -- [35]
+					"c4292c^1", -- [36]
+					"1a5583^1", -- [37]
+					"5293da^1", -- [38]
+					"9d52fe^1", -- [39]
+					"ac7811^1", -- [40]
+					"862c68^1", -- [41]
+					"8ff311^1", -- [42]
+					"703444^1", -- [43]
+					"7705b1^1", -- [44]
+					"72c410^1", -- [45]
+					"444585^1", -- [46]
+					"4b8672^1", -- [47]
+					"466664^1", -- [48]
+					"25863a^1", -- [49]
+					"26f82d^1", -- [50]
+					"53ea10^1", -- [51]
+					"4e1bfe^1", -- [52]
+					"56bea3^1", -- [53]
+					"521f0b^1", -- [54]
+					"505d25^1", -- [55]
+					"540bdb^1", -- [56]
+					"590a7d^1", -- [57]
+					"5748cf^1", -- [58]
+					"48089d^1", -- [59]
+					"90d911^1", -- [60]
+					"8fc85f^1", -- [61]
+					"82499a^1", -- [62]
+					"8b4956^1", -- [63]
+					"a4c81e^1", -- [64]
+					"c3ea84^1", -- [65]
+					"d78a62^1", -- [66]
+					"d1a9bb^1", -- [67]
+					"d75796^1", -- [68]
+					"cde830^1", -- [69]
+					"d2b8e3^1", -- [70]
+					"cdb89a^1", -- [71]
+					"cd2abc^1", -- [72]
+					"c20b1c^1", -- [73]
+					"db19c4^1", -- [74]
+					"d37a95^1", -- [75]
+					"910ca9^1", -- [76]
+					"a068ed^1", -- [77]
+					"81fd1f^1", -- [78]
+					"a76531^1", -- [79]
+					"5cf95e^1", -- [80]
+					"35199f^1", -- [81]
+					"3f3528^1", -- [82]
+					"7b847b^1", -- [83]
+					"52ec53^1", -- [84]
+					"604967^1", -- [85]
+					"93b251^1", -- [86]
+					"694340^1", -- [87]
+					"5c0827^1", -- [88]
+					"22b50d^1", -- [89]
+					"6d945f^1", -- [90]
+					"8e88c1^1", -- [91]
+					"4164c4^1", -- [92]
+					"ac4899^1", -- [93]
+					"8d5a60^1", -- [94]
+					"5c6708^1", -- [95]
+					"8a631a^1", -- [96]
+					"80e2b7^1", -- [97]
+					"7d84cf^1", -- [98]
+					"95d962^1", -- [99]
+					"69e965^1", -- [100]
+					"36c913^1", -- [101]
+					"5d9f39^1", -- [102]
+					"4fbe76^1", -- [103]
+					"7ed828^1", -- [104]
+					"98d8fe^1", -- [105]
+					"53c9e1^1", -- [106]
+					"2547ea^1", -- [107]
+					"54c83b^1", -- [108]
+					"47082b^1", -- [109]
+					"367939^1", -- [110]
+					"4ab945^1", -- [111]
+					"50ddf6^1", -- [112]
+					"992d07^1", -- [113]
+					"905b25^1", -- [114]
+					"933b84^1", -- [115]
+					"5cc87c^1", -- [116]
+					"6068cb^1", -- [117]
+					"973d29^1", -- [118]
+					"90fa9e^1", -- [119]
+					"59ca22^1", -- [120]
+					"46b8ca^1", -- [121]
+					"abd4a3^1", -- [122]
+					"9e8b83^1", -- [123]
+					"847bff^1", -- [124]
+					"7ed411^1", -- [125]
+					"7a3889^1", -- [126]
+					"6e7336^1", -- [127]
+					"5b7fd1^1", -- [128]
+					"58ef0c^1", -- [129]
+					"5618b9^1", -- [130]
+					"4be8f8^1", -- [131]
+					"3b89d0^1", -- [132]
+					"25d78a^1", -- [133]
+					"1805d5^1", -- [134]
+					"4f767d^1", -- [135]
+					"7f88b4^1", -- [136]
+					"763475^1", -- [137]
+					"3e05bd^1", -- [138]
+					"44c5fb^1", -- [139]
+					"41b624^1", -- [140]
+					"4985b7^1", -- [141]
+					"84981d^1", -- [142]
+					"8fd96c^1", -- [143]
+					"d718b8^1", -- [144]
+					"940ae1^1", -- [145]
+					"21a5d9^1", -- [146]
+					"83ccd9^1", -- [147]
+					"a0a996^1", -- [148]
+					"7b3365^1", -- [149]
+					"80b903^1", -- [150]
+					"2cf767^1", -- [151]
+					"65a4b7^1", -- [152]
+					"552523^1", -- [153]
+					"6299db^1", -- [154]
+					"27d853^1", -- [155]
+					"2de8d9^1", -- [156]
+					"4d88d4^1", -- [157]
+					"8b52e2^1", -- [158]
+					"d4d983^1", -- [159]
+					"8e132f^1", -- [160]
+					"a4990d^1", -- [161]
+					"dba7be^1", -- [162]
+					"de881e^1", -- [163]
+					"c95995^1", -- [164]
+					"96bd8f^1", -- [165]
+					"8aeaf0^1", -- [166]
+					"c549a2^1", -- [167]
+					"bad9fa^1", -- [168]
+					"d2b813^1", -- [169]
+					"9969a8^1", -- [170]
+					"90ecf6^1", -- [171]
+					"93cc97^1", -- [172]
+					"984c60^1", -- [173]
+					"dbd960^1", -- [174]
+					"bf291a^1", -- [175]
+					"4c5829^1", -- [176]
+					"66d844^1", -- [177]
+					"c7ba55^1", -- [178]
+					"dde891^1", -- [179]
+					"c8a883^1", -- [180]
+				},
+			},
+			[2011] = {
+				[3] = {
+					"b2767d^1", -- [1]
+					"500c45^1", -- [2]
+					"5a1ce5^1", -- [3]
+					"7acb1b^1", -- [4]
+					"80da3a^1", -- [5]
+					"509b62^1", -- [6]
+					"494bea^1", -- [7]
+					"509bc8^1", -- [8]
+					"a7f7e9^1", -- [9]
+					"996d7c^1", -- [10]
+					"b1f832^1", -- [11]
+					"5e9a15^1", -- [12]
+					"a7ba47^1", -- [13]
+					"972a9b^1", -- [14]
+					"5a1c11^1", -- [15]
+					"58ca9e^1", -- [16]
+					"826c3d^1", -- [17]
+					"b55961^1", -- [18]
+					"80cd56^1", -- [19]
+					"809aa5^1", -- [20]
+					"6588b0^1", -- [21]
+					"8949f8^1", -- [22]
+					"4f08b9^1", -- [23]
+					"8a999f^1", -- [24]
+					"832bc6^1", -- [25]
+					"6fad19^1", -- [26]
+					"a7490c^1", -- [27]
+					"8deab7^1", -- [28]
+					"790a4b^1", -- [29]
+					"6999af^1", -- [30]
+					"b79c00^1", -- [31]
+					"75c9a1^1", -- [32]
+					"b859fd^1", -- [33]
+					"76ee24^1", -- [34]
+					"83eda5^1", -- [35]
+					"8eabfc^1", -- [36]
+					"5468ce^1", -- [37]
+					"830b12^1", -- [38]
+					"7d8b85^1", -- [39]
+					"aeedca^1", -- [40]
+					"687a22^1", -- [41]
+					"801cd4^1", -- [42]
+					"4cf9dc^1", -- [43]
+					"871979^1", -- [44]
+					"425b55^1", -- [45]
+					"6c8a51^1", -- [46]
+					"62faa8^1", -- [47]
+					"448bcb^1", -- [48]
+					"abd879^1", -- [49]
+					"7b3992^1", -- [50]
+					"61fc29^1", -- [51]
+					"a87c3d^1", -- [52]
+					"57fa5a^1", -- [53]
+					"6c9ab7^1", -- [54]
+					"891d5c^1", -- [55]
+					"a00bcf^1", -- [56]
+					"7a3dd6^1", -- [57]
+					"7a39f4^1", -- [58]
+					"6ec9d8^1", -- [59]
+					"41ccab^1", -- [60]
+					"5e1ce1^1", -- [61]
+					"5e5d36^1", -- [62]
+					"5e0c11^1", -- [63]
+					"48a928^1", -- [64]
+					"773c6b^1", -- [65]
+					"80598e^1", -- [66]
+					"598e3c^1", -- [67]
+					"a46b70^1", -- [68]
+					"ab8708^1", -- [69]
+					"678d24^1", -- [70]
+					"515983^1", -- [71]
+					"5e9b1f^1", -- [72]
+					"69a910^1", -- [73]
+					"888b75^1", -- [74]
+					"951b2b^1", -- [75]
+					"8d0b22^1", -- [76]
+					"b64cd4^1", -- [77]
+					"ab19c4^1", -- [78]
+					"909cdb^1", -- [79]
+					"7439fd^1", -- [80]
+					"57cbbb^1", -- [81]
+					"9aac00^1", -- [82]
+					"b06e17^1", -- [83]
+					"45ab06^1", -- [84]
+					"4b7ba2^1", -- [85]
+					"8caa09^1", -- [86]
+					"64c82f^1", -- [87]
+					"aa8a94^1", -- [88]
+					"775944^1", -- [89]
+					"961d22^1", -- [90]
+					"727aec^1", -- [91]
+					"a6bd05^1", -- [92]
+					"46dc35^1", -- [93]
+					"58892b^1", -- [94]
+					"901a68^1", -- [95]
+					"548964^1", -- [96]
+					"75ae75^1", -- [97]
+					"823cf1^1", -- [98]
+					"6d7c41^1", -- [99]
+					"b65b0f^1", -- [100]
+					"894baf^1", -- [101]
+					"6ae959^1", -- [102]
+					"65e9ba^1", -- [103]
+					"b1bad9^1", -- [104]
+					"898aac^1", -- [105]
+					"525a3d^1", -- [106]
+					"941bfc^1", -- [107]
+					"78acd4^1", -- [108]
+					"573c72^1", -- [109]
+					"481adb^1", -- [110]
+					"907d84^1", -- [111]
+					"51a930^1", -- [112]
+					"59bb66^1", -- [113]
+					"63689c^1", -- [114]
+					"7efd8f^1", -- [115]
+					"502a04^1", -- [116]
+				},
+			},
+			[1017] = {
+				[21] = {
+					"930b4b^1", -- [1]
+					"b066e2^1", -- [2]
+					"86bc08^1", -- [3]
+					"59584e^1", -- [4]
+					"b3f71f^1", -- [5]
+				},
+				[13] = {
+					"78d409^1", -- [1]
+					"b2f835^1", -- [2]
+					"b2274b^1", -- [3]
+					"95fa43^1", -- [4]
+					"4859f1^1", -- [5]
+					"a4a8fc^1", -- [6]
+					"9567bd^1", -- [7]
+					"7ae438^1", -- [8]
+					"62949e^1", -- [9]
+					"5d9805^1", -- [10]
+					"596848^1", -- [11]
+					"4b09cc^1", -- [12]
+					"4acbb6^1", -- [13]
+					"71abfb^1", -- [14]
+					"869c0c^1", -- [15]
+					"954a89^1", -- [16]
+					"a11a0e^1", -- [17]
+					"a898e8^1", -- [18]
+					"b1a7f6^1", -- [19]
+					"7393e6^1", -- [20]
+					"67937b^1", -- [21]
+					"4c4b46^1", -- [22]
+					"90fb61^1", -- [23]
+					"97da46^1", -- [24]
+					"9777bb^1", -- [25]
+					"5376f3^1", -- [26]
+					"5e5844^1", -- [27]
+					"60b83b^1", -- [28]
+					"4ed736^1", -- [29]
+					"5b337e^1", -- [30]
+					"61787d^1", -- [31]
+					"6a58a7^1", -- [32]
+					"a2d8ed^1", -- [33]
 				},
 				[9] = {
-					"356d1f^1", -- [1]
-					"3bfd1d^1", -- [2]
-					"382c8c^1", -- [3]
-					"20ab18^1", -- [4]
-					"1b8b61^1", -- [5]
-					"254bf5^1", -- [6]
-					"39ed64^1", -- [7]
-					"39addd^1", -- [8]
-					"12452a^1", -- [9]
-					"1404d8^1", -- [10]
-					"16a4b9^1", -- [11]
-					"1b445d^1", -- [12]
-					"1d2422^1", -- [13]
-					"19c490^1", -- [14]
-					"17e492^1", -- [15]
-					"14b4bc^1", -- [16]
-					"0f1573^1", -- [17]
-					"601d68^1", -- [18]
-					"8c62b0^1", -- [19]
-					"420ae9^1", -- [20]
-					"6bea65^1", -- [21]
-					"ad0ab3^1", -- [22]
-					"ab5700^1", -- [23]
-					"a1237f^1", -- [24]
-					"9bfcb9^1", -- [25]
-					"b53ae6^1", -- [26]
-					"4d8c91^1", -- [27]
-					"27ebba^1", -- [28]
-					"3a1cf1^1", -- [29]
-					"31ad58^1", -- [30]
-					"524d1f^1", -- [31]
-					"648c89^1", -- [32]
-					"6acac6^1", -- [33]
-					"757bb7^1", -- [34]
-					"7c18af^1", -- [35]
-					"95358a^1", -- [36]
-					"1d5a15^1", -- [37]
-					"2cec0e^1", -- [38]
-					"1314f8^1", -- [39]
-					"152499^1", -- [40]
-					"518c94^1", -- [41]
-					"521d70^1", -- [42]
-					"5f9da7^1", -- [43]
-					"7bfbda^1", -- [44]
-					"57cdbd^1", -- [45]
-					"be5a26^1", -- [46]
-					"be1aa4^1", -- [47]
-					"67230f^1", -- [48]
-					"881c61^1", -- [49]
-					"8aec8a^1", -- [50]
-					"30ed20^1", -- [51]
-					"491937^1", -- [52]
-					"0dc591^1", -- [53]
-					"0fb536^1", -- [54]
-					"14451f^1", -- [55]
-					"b9faa6^1", -- [56]
-					"1aab3a^1", -- [57]
-					"bac744^1", -- [58]
-					"1c844b^1", -- [59]
-					"116543^1", -- [60]
-					"ab6b28^1", -- [61]
-					"810c23^1", -- [62]
-					"9ddc9b^1", -- [63]
-					"96ace6^1", -- [64]
-					"450caa^1", -- [65]
-					"38ea91^1", -- [66]
-					"525cce^1", -- [67]
-					"333cb7^1", -- [68]
-					"638ccc^1", -- [69]
-					"83f28d^1", -- [70]
-					"c1193c^1", -- [71]
-					"693a02^1", -- [72]
-					"36ce01^1", -- [73]
-					"57392d^1", -- [74]
-					"65a953^1", -- [75]
-					"558d54^1", -- [76]
-					"3bfa5b^1", -- [77]
-					"526981^1", -- [78]
-					"9a4cdd^1", -- [79]
-					"acaa02^1", -- [80]
-					"b04c59^1", -- [81]
-					"a76c3e^1", -- [82]
-					"9bec5e^1", -- [83]
-					"8cbcb8^1", -- [84]
-					"836c3f^1", -- [85]
-					"706c00^1", -- [86]
-					"1faa3b^1", -- [87]
+					"768c20^1", -- [1]
+					"53084f^1", -- [2]
 				},
 			},
 			[2015] = {
@@ -26765,210 +26854,121 @@ NxData = {
 					"a1cb66^1", -- [25]
 				},
 			},
-			[1005] = {
-				[3] = {
-					"981347^1", -- [1]
-					"9e5349^1", -- [2]
-					"9443a1^1", -- [3]
-					"950429^1", -- [4]
-					"904459^1", -- [5]
-					"8ed47c^1", -- [6]
-					"9af325^1", -- [7]
-					"9383ae^1", -- [8]
-					"73e4e4^1", -- [9]
-					"70b4bb^1", -- [10]
-					"6486a1^1", -- [11]
-					"65867a^2", -- [12]
-					"72e92f^1", -- [13]
-					"66a96c^1", -- [14]
-					"6699e5^1", -- [15]
-					"667a28^1", -- [16]
-					"7377c8^1", -- [17]
-					"71783f^1", -- [18]
-					"7038d2^1", -- [19]
-					"7a58ed^1", -- [20]
-					"7db8d9^1", -- [21]
-					"7d291b^1", -- [22]
-					"6c8aa9^1", -- [23]
-					"6a9d42^1", -- [24]
-					"611daa^1", -- [25]
-					"5e8d36^1", -- [26]
-					"5f7d27^1", -- [27]
-					"556d47^1", -- [28]
-					"52fd5c^1", -- [29]
-					"9a940b^1", -- [30]
-					"9a43f7^1", -- [31]
-					"8bf34e^1", -- [32]
-					"8cb327^1", -- [33]
-					"8ff472^1", -- [34]
-					"867480^2", -- [35]
-					"84f4cb^1", -- [36]
-					"8d44f1^1", -- [37]
-					"90f4f6^1", -- [38]
-					"93152e^1", -- [39]
-					"95351a^1", -- [40]
-					"96553a^1", -- [41]
-					"920559^1", -- [42]
-					"8ad554^1", -- [43]
-					"89658f^1", -- [44]
-					"87d50f^1", -- [45]
-					"8474eb^1", -- [46]
-					"6bb496^1", -- [47]
-					"6e54c7^1", -- [48]
-					"71343b^1", -- [49]
-					"8aa326^1", -- [50]
-					"8fc290^1", -- [51]
-					"839436^1", -- [52]
-					"81745c^1", -- [53]
-					"76a58f^1", -- [54]
-					"79261f^1", -- [55]
-					"794676^1", -- [56]
-					"7595c4^1", -- [57]
-					"73051b^1", -- [58]
-					"7ba588^1", -- [59]
-					"7ce613^1", -- [60]
-					"77b622^1", -- [61]
-					"747692^1", -- [62]
-					"6e368c^1", -- [63]
-					"6eb60f^1", -- [64]
-					"721514^1", -- [65]
-					"6e2542^1", -- [66]
-					"6a754f^1", -- [67]
-					"681512^1", -- [68]
-					"75a5de^1", -- [69]
-					"78668b^1", -- [70]
-					"7ca6b1^1", -- [71]
-					"7d062d^1", -- [72]
-					"7cb695^1", -- [73]
-					"6bd5d1^1", -- [74]
-					"6ba5b7^1", -- [75]
-					"98c3ac^1", -- [76]
-					"9593af^1", -- [77]
-					"a211c8^1", -- [78]
-					"a2919b^1", -- [79]
-					"a000ec^1", -- [80]
-					"97d17c^1", -- [81]
-					"9c11a3^1", -- [82]
-					"720467^1", -- [83]
-					"98731a^1", -- [84]
-					"95d501^1", -- [85]
-					"92c513^1", -- [86]
-					"7685a9^1", -- [87]
-					"73b4f8^1", -- [88]
-					"7054cd^1", -- [89]
-					"6f52fb^1", -- [90]
-					"919509^1", -- [91]
-					"935564^1", -- [92]
-					"95452b^1", -- [93]
-					"952548^1", -- [94]
-					"91143e^1", -- [95]
-					"77a5aa^1", -- [96]
-					"697633^1", -- [97]
-					"9b9265^1", -- [98]
-					"a1419c^1", -- [99]
-					"9e2151^1", -- [100]
-					"97230f^1", -- [101]
-					"9c831b^1", -- [102]
-					"803467^1", -- [103]
-					"782662^1", -- [104]
-					"65d730^1", -- [105]
-					"6beb31^1", -- [106]
-					"659dba^1", -- [107]
-					"6a8cf1^1", -- [108]
-					"640b68^1", -- [109]
-					"658af4^1", -- [110]
-					"64ea18^1", -- [111]
-					"65a988^1", -- [112]
-					"605778^1", -- [113]
-					"6595f0^1", -- [114]
-					"68362d^1", -- [115]
-					"721332^1", -- [116]
-					"8cb30e^1", -- [117]
-					"848421^1", -- [118]
-					"83b4d2^1", -- [119]
-					"8ec48c^1", -- [120]
-					"91c533^1", -- [121]
-					"90a565^1", -- [122]
-					"933577^1", -- [123]
-					"92056b^1", -- [124]
-					"81546c^1", -- [125]
-					"909576^1", -- [126]
-					"930588^1", -- [127]
-					"769626^1", -- [128]
-					"6fc602^1", -- [129]
-					"74d6a5^1", -- [130]
-					"7515b0^1", -- [131]
-					"8fe2c9^1", -- [132]
-					"9d913c^1", -- [133]
-					"65896f^1", -- [134]
-					"843454^1", -- [135]
-					"8d5513^1", -- [136]
-					"8c054d^1", -- [137]
-					"8845a2^1", -- [138]
-					"80747f^1", -- [139]
-					"909592^1", -- [140]
-					"7a856f^1", -- [141]
-					"69654c^1", -- [142]
-					"744975^1", -- [143]
-					"645973^1", -- [144]
-					"65aa0d^1", -- [145]
-					"731862^1", -- [146]
-					"76f8af^1", -- [147]
-					"6784f0^1", -- [148]
-					"61b75f^1", -- [149]
-					"6529d4^1", -- [150]
-					"5fd96b^1", -- [151]
-					"6d5aba^1", -- [152]
-					"710b64^1", -- [153]
-					"755b62^1", -- [154]
-					"76bbee^1", -- [155]
-					"775c8e^1", -- [156]
-					"671d88^1", -- [157]
-					"652de5^1", -- [158]
-					"6b0d9a^1", -- [159]
-					"618d55^1", -- [160]
-					"6a9b7b^1", -- [161]
-					"68cd89^1", -- [162]
-					"663d25^1", -- [163]
-					"58fd65^1", -- [164]
-					"5dbd4b^1", -- [165]
-					"525d72^1", -- [166]
-					"55dd6c^1", -- [167]
-					"7db67f^1", -- [168]
-					"7af74d^1", -- [169]
-					"7b1776^1", -- [170]
-					"78980d^1", -- [171]
-					"7688de^1", -- [172]
-					"75a92b^1", -- [173]
-					"730b05^1", -- [174]
-					"774ca1^1", -- [175]
-					"6b1db2^1", -- [176]
-					"6bc4ac^1", -- [177]
-					"6d151d^1", -- [178]
-					"7758cb^1", -- [179]
-					"6f9938^1", -- [180]
-					"718a7e^1", -- [181]
-					"75abc2^1", -- [182]
-					"763cb6^1", -- [183]
-					"67a53e^1", -- [184]
-					"5e6663^1", -- [185]
-					"6d5a9d^1", -- [186]
-				},
+			[1016] = {
 				[20] = {
-					"764d65^1", -- [1]
-					"544d6b^1", -- [2]
-					"546dc9^1", -- [3]
-					"52fd6a^1", -- [4]
-					"520d38^1", -- [5]
-					"500d78^1", -- [6]
-					"779da6^1", -- [7]
-					"767d3e^1", -- [8]
-					"4f2d5c^1", -- [9]
-					"519d4d^1", -- [10]
-					"540de1^1", -- [11]
-					"760dc1^1", -- [12]
-					"798e75^1", -- [13]
-					"76cd4e^1", -- [14]
+					"abddad^1", -- [1]
+					"9cec58^1", -- [2]
+					"9ecb85^1", -- [3]
+					"98ec69^1", -- [4]
+					"84da24^1", -- [5]
+					"87e868^1", -- [6]
+					"8c2835^1", -- [7]
+					"810657^1", -- [8]
+					"c2293c^1", -- [9]
+					"a33a37^1", -- [10]
+					"985a63^1", -- [11]
+					"a20df7^1", -- [12]
+					"ad7de5^1", -- [13]
+					"b47db5^1", -- [14]
+					"c5aeb9^1", -- [15]
+					"6d4a97^1", -- [16]
+					"686be5^1", -- [17]
+					"626bf5^1", -- [18]
+					"4f4a87^1", -- [19]
+					"5afa0f^1", -- [20]
+					"7036f3^1", -- [21]
+					"7de4f6^1", -- [22]
+					"8c575a^1", -- [23]
+					"9c8bc8^1", -- [24]
+					"9bab30^1", -- [25]
+					"99d9eb^1", -- [26]
+					"9baa5f^1", -- [27]
+					"9ceac8^1", -- [28]
+					"b0e7af^1", -- [29]
+					"a736f6^1", -- [30]
+					"9d2c71^1", -- [31]
+					"94fbf9^1", -- [32]
+					"b18dae^1", -- [33]
+					"a1ee8d^1", -- [34]
+					"9bce32^1", -- [35]
+					"c8ec60^1", -- [36]
+					"beec9d^1", -- [37]
+					"8da7e3^1", -- [38]
+					"c528e2^1", -- [39]
+					"a06a9a^1", -- [40]
+					"af7750^1", -- [41]
+					"a536f6^1", -- [42]
+					"99cb99^1", -- [43]
+					"a79e09^1", -- [44]
+					"9f3e46^1", -- [45]
+					"b2bd65^1", -- [46]
+					"95add5^1", -- [47]
+					"996e38^1", -- [48]
+					"a3fea6^1", -- [49]
+					"c34d49^1", -- [50]
+					"c87c24^1", -- [51]
+					"c07c47^1", -- [52]
+					"c2dc0e^1", -- [53]
+					"c76e4f^1", -- [54]
+					"bf6ea8^1", -- [55]
+					"83465e^1", -- [56]
+					"78673f^1", -- [57]
+					"716689^1", -- [58]
+					"a298d2^1", -- [59]
+					"b5ad8b^1", -- [60]
+					"a27a63^1", -- [61]
+					"bea9e0^1", -- [62]
+					"c168a4^1", -- [63]
+					"b8f7bb^1", -- [64]
+					"a4574c^1", -- [65]
+					"91a6f1^1", -- [66]
+					"8d0c2d^1", -- [67]
+					"7efbe3^1", -- [68]
+					"6a7aa8^1", -- [69]
+					"5fcbf1^1", -- [70]
+					"8779d9^1", -- [71]
+					"6d95b8^1", -- [72]
+					"b50796^1", -- [73]
+					"9af8d4^1", -- [74]
+					"9eb8e8^1", -- [75]
+					"77eba2^1", -- [76]
+					"76abf5^1", -- [77]
+					"79e838^1", -- [78]
+					"8fb6c2^1", -- [79]
+					"6c4634^1", -- [80]
+					"5968ab^1", -- [81]
+					"4c3a85^1", -- [82]
+					"649431^1", -- [83]
+					"9f6cbf^1", -- [84]
+					"bf2d41^1", -- [85]
+					"bd4e82^1", -- [86]
+					"bbfc7b^1", -- [87]
+					"85395c^1", -- [88]
+					"7e16ae^1", -- [89]
+				},
+				[3] = {
+					"9b8d61^1", -- [1]
+					"99fcfe^1", -- [2]
+					"896975^1", -- [3]
+					"89e6d1^1", -- [4]
+					"7f757a^1", -- [5]
+					"9d3d76^1", -- [6]
+					"afdd3b^1", -- [7]
+					"520b12^1", -- [8]
+					"6dc773^1", -- [9]
+					"7ff5b3^1", -- [10]
+					"88f715^1", -- [11]
+					"aacd31^1", -- [12]
+					"ce6d56^1", -- [13]
+					"7bc585^1", -- [14]
+					"a63d08^1", -- [15]
+					"8b467c^1", -- [16]
+					"8a4bbf^1", -- [17]
+					"843b2b^1", -- [18]
+					"8de90a^1", -- [19]
+					"8c5b3f^1", -- [20]
+					"811b97^1", -- [21]
+					"565b6d^1", -- [22]
 				},
 			},
 		},
@@ -26976,8 +26976,8 @@ NxData = {
 	["Characters"] = {
 		["Khaz Modan.Deyndis"] = {
 			["WareBank"] = {
-				["Bilgewater Cartel Tabard"] = "1^|cffffffff|Hitem:64884:0:0:0:0:0:0:0:69:0|h[Bilgewater Cartel Tabard]|h|r",
 				["Darkspear Tabard"] = "1^|cffffffff|Hitem:45582:0:0:0:0:0:0:0:69:0|h[Darkspear Tabard]|h|r",
+				["Bilgewater Cartel Tabard"] = "1^|cffffffff|Hitem:64884:0:0:0:0:0:0:0:69:0|h[Bilgewater Cartel Tabard]|h|r",
 				["Spirit Shard"] = "2^|cffffffff|Hitem:28558:0:0:0:0:0:0:842924352:69:0|h[Spirit Shard]|h|r",
 				["Undercity Tabard"] = "1^|cffffffff|Hitem:45583:0:0:0:0:0:0:0:69:0|h[Undercity Tabard]|h|r",
 			},
@@ -26998,24 +26998,6 @@ NxData = {
 				},
 				["Herbalism"] = {
 					["Rank"] = 345,
-				},
-				["Fishing"] = {
-					["Rank"] = 6,
-				},
-				["First Aid"] = {
-					[18630] = 14530,
-					["Link"] = "|cffffd000|Htrade:10846:287:300:3800000052CD153:EAAgH8H|h[First Aid]|h|r",
-					[10840] = 8544,
-					[3275] = 1251,
-					[7928] = 6450,
-					[7929] = 6451,
-					[3277] = 3530,
-					[3276] = 2581,
-					[7934] = 6452,
-					[18629] = 14529,
-					[10841] = 8545,
-					[3278] = 3531,
-					["Rank"] = 292,
 				},
 				["Alchemy"] = {
 					[12609] = 10592,
@@ -27046,34 +27028,52 @@ NxData = {
 					[11460] = 9154,
 					[7259] = 6052,
 					[3449] = 3824,
-					[17555] = 13447,
+					[2331] = 2455,
 					[17187] = 12360,
-					[11479] = 3577,
+					[17557] = 13453,
 					[15833] = 12190,
-					[11459] = 9149,
+					[11465] = 9179,
 					[63732] = 45621,
-					[2332] = 2456,
+					[17573] = 13454,
 					[3450] = 3825,
 					[17572] = 13462,
-					[17573] = 13454,
-					[7841] = 6372,
-					[11467] = 9187,
-					[11461] = 9155,
-					[11457] = 3928,
-					[7179] = 5996,
-					[22808] = 18294,
-					[3447] = 929,
-					[7183] = 5997,
-					[7181] = 1710,
-					[11449] = 8949,
-					[3176] = 3388,
-					[11451] = 8956,
+					[2332] = 2456,
 					[7845] = 6373,
+					[11467] = 9187,
+					[11451] = 8956,
+					[11457] = 3928,
+					[11449] = 8949,
+					[22808] = 18294,
+					[7181] = 1710,
+					[7183] = 5997,
+					[3447] = 929,
+					[7179] = 5996,
+					[3176] = 3388,
+					[11461] = 9155,
+					[7841] = 6372,
 					[3452] = 3827,
-					[11465] = 9179,
+					[11459] = 9149,
 					[2334] = 2458,
-					[17557] = 13453,
-					[2331] = 2455,
+					[11479] = 3577,
+					[17555] = 13447,
+				},
+				["First Aid"] = {
+					[18630] = 14530,
+					["Link"] = "|cffffd000|Htrade:10846:287:300:3800000052CD153:EAAgH8H|h[First Aid]|h|r",
+					[10840] = 8544,
+					[7929] = 6451,
+					[7928] = 6450,
+					[3275] = 1251,
+					[18629] = 14529,
+					[3276] = 2581,
+					[10841] = 8545,
+					[3277] = 3530,
+					[7934] = 6452,
+					[3278] = 3531,
+					["Rank"] = 292,
+				},
+				["Fishing"] = {
+					["Rank"] = 6,
 				},
 			},
 			["LXP"] = 161775,
@@ -27096,19 +27096,19 @@ NxData = {
 				["NxMap1TB"] = {
 					["Space"] = 1,
 					["AlignR"] = true,
-					["Size"] = 22,
 					["AlignB"] = true,
+					["Size"] = 22,
 				},
 			},
 			["TimePlayed"] = 110545,
 			["L"] = {
-				["Quest"] = {
+				["Events"] = {
 				},
 				["Social"] = {
 				},
-				["Version"] = 0.1,
-				["Events"] = {
+				["Quest"] = {
 				},
+				["Version"] = 0.1,
 			},
 			["XP"] = 161775,
 			["E"] = {
@@ -27182,127 +27182,148 @@ NxData = {
 				[12636] = "C1329620221",
 				[29591] = "W0",
 				[29593] = "W0",
-				[12515] = "C1333101872",
+				[12641] = "C1329620471",
 				[29599] = "C1332754914",
-				[10864] = "C1329821158",
-				[10086] = "C1329711294",
+				[12515] = "C1333101872",
+				[10213] = "W0",
 				[29605] = "W0",
 				[29607] = "W0",
 				[9344] = "C1329818883",
 				[9345] = "C1329713497",
 				[29573] = "W0",
 				[13411] = "W0",
-				[29565] = "W0",
+				[12751] = "C1329625872",
 				[12778] = "C1329626731",
 				[12779] = "C1329627414",
 				[29575] = "W0",
-				[29506] = "W0",
+				[28617] = "C1330340277",
 				[10242] = "C1329711780",
-				[31591] = "W0",
+				[10208] = "C1329820224",
 				[12657] = "C1329620513",
-				[13166] = "C1329629344",
-				[10121] = "C1329709545",
-				[10120] = "C1329709333",
+				[29506] = "W0",
 				[29512] = "C1333618985",
+				[10120] = "C1329709333",
+				[10121] = "C1329709545",
 				[29514] = "C1333618981",
 				[10123] = "C1329709934",
 				[10124] = "C1329711416",
 				[10087] = "C1329821079",
-				[28744] = "C1330340899",
-				[12670] = "C1329620595",
-				[29536] = "W0",
-				[10129] = "C1329820782",
-				[29530] = "W0",
+				[10238] = "W0",
+				[13165] = "C1329629097",
 				[12800] = "C1329627818",
-				[10135] = "C1329991776",
-				[10133] = "C1329991776",
+				[10129] = "C1329820782",
+				[12670] = "C1329620595",
+				[10389] = "W0",
+				[12678] = "C1329621422",
+				[29536] = "W0",
 				[12801] = "C1329629041",
-				[9373] = "C1332839092",
+				[10135] = "C1329991776",
 				[10390] = "C1329821979",
 				[10391] = "C1329905809",
 				[10392] = "C1329906918",
 				[12679] = "C1329621663",
 				[12680] = "C1329621230",
 				[13189] = "C1329629474",
-				[10835] = "C1329713719",
-				[10393] = "C1329821969",
+				[7926] = "C1333618733",
+				[9499] = "W0",
 				[10388] = "C1329821102",
-				[29564] = "W0",
-				[10450] = "C1329711338",
 				[29691] = "W0",
+				[29535] = "W0",
+				[29564] = "W0",
 				[12687] = "C1329621408",
 				[29568] = "W0",
 				[29570] = "W0",
 				[10278] = "W0",
 				[29574] = "W0",
-				[10236] = "C1329906470",
-				[12697] = "C1329622230",
+				[10136] = "W0",
 				[10538] = "C1329713486",
-				[29590] = "W0",
 				[10792] = "W0",
+				[9400] = "W0",
+				[12697] = "C1329622230",
 				[12698] = "C1329622456",
-				[10289] = "C1329709411",
-				[12700] = "C1329622567",
+				[10291] = "C1329709475",
+				[29590] = "W0",
 				[12701] = "C1329622857",
-				[28705] = "C1329709308",
+				[10289] = "C1329709411",
 				[29596] = "W0",
 				[29598] = "C1332754062",
 				[28711] = "C1334049880",
 				[12706] = "C1329622947",
-				[12723] = "C1329624872",
+				[10162] = "C1329821004",
 				[29606] = "W0",
 				[9407] = "C1329710611",
+				[12714] = "C1329623137",
+				[12842] = "C1329620096",
+				[12593] = "C1329619695",
+				[12850] = "C1329620551",
 				[10809] = "C1329713467",
 				[12715] = "C1329623245",
 				[28733] = "C1330339977",
-				[28747] = "W0",
-				[12714] = "C1329623137",
-				[12842] = "C1329620096",
-				[12716] = "C1329624281",
 				[12717] = "C1329624299",
 				[10813] = "W0",
 				[12719] = "C1329624339",
 				[12720] = "C1329624638",
 				[12848] = "C1329620183",
 				[12722] = "C1329624361",
-				[12850] = "C1329620551",
+				[12723] = "C1329624872",
 				[12724] = "C1329625488",
 				[12725] = "C1329625161",
-				[12593] = "C1329619695",
+				[12716] = "C1329624281",
 				[12727] = "C1329625503",
 				[11585] = "W0",
-				[10162] = "C1329821004",
-				[10291] = "C1329709475",
-				[9400] = "W0",
+				[28747] = "W0",
+				[28705] = "C1329709308",
+				[12700] = "C1329622567",
 				[29527] = "W0",
 				[12733] = "C1329622149",
-				[10136] = "W0",
+				[10236] = "C1329906470",
 				[10449] = "C1329711462",
-				[29535] = "W0",
+				[10450] = "C1329711338",
 				[29537] = "W0",
 				[12738] = "C1329625714",
-				[9499] = "W0",
-				[7926] = "C1333618733",
-				[12678] = "C1329621422",
-				[10389] = "W0",
+				[10393] = "C1329821969",
+				[10835] = "C1329713719",
+				[9373] = "C1332839092",
+				[10133] = "C1329991776",
 				[10838] = "W0",
-				[13165] = "C1329629097",
-				[10238] = "W0",
+				[29530] = "W0",
+				[28744] = "C1330340899",
 				[12619] = "C1329620002",
 				[12747] = "C1329625823",
-				[10208] = "C1329820224",
-				[28617] = "C1330340277",
+				[31591] = "W0",
+				[13166] = "C1329629344",
 				[29563] = "W0",
-				[12751] = "C1329625872",
+				[29565] = "W0",
 				[29567] = "W0",
-				[10213] = "W0",
-				[12641] = "C1329620471",
+				[10086] = "C1329711294",
+				[10864] = "C1329821158",
 			},
-			["LvlTime"] = 1348653979,
-			["ArenaPts"] = 0,
+			["XPRest"] = 1075500,
+			["WareInv"] = {
+				"HeadSlot^|cff0070dd|Hitem:27408:0:3371:0:2698:0:0:275433983:69:0:0|h[Hope Bearer Helm]|h|r", -- [1]
+				"NeckSlot^|cff0070dd|Hitem:24385:0:0:0:0:0:0:-2060259584:69:0:0|h[Pendant of Battle-Lust]|h|r", -- [2]
+				"ShoulderSlot^|cff0070dd|Hitem:29316:0:3371:0:0:0:0:1875307008:69:0:0|h[Warchief's Mantle]|h|r", -- [3]
+				"BackSlot^|cff0070dd|Hitem:39320:0:0:0:0:0:0:1735251840:69:0:0|h[Sky Darkener's Shroud of Blood]|h|r", -- [4]
+				"ChestSlot^|cffe6cc80|Hitem:69889:0:0:0:0:0:0:0:69:0:0|h[Burnished Breastplate of Might]|h|r", -- [5]
+				"TabardSlot^|cffffffff|Hitem:45581:0:0:0:0:0:0:0:69:0:0|h[Orgrimmar Tabard]|h|r", -- [6]
+				"WristSlot^|cff0070dd|Hitem:38666:0:0:0:0:0:0:533355616:69:0:0|h[Plated Saronite Bracers]|h|r", -- [7]
+				"HandsSlot^|cff1eff00|Hitem:24945:0:0:0:0:0:-45:627703839:69:0:0|h[Bloodscale Gauntlets of the Champion]|h|r", -- [8]
+				"WaistSlot^|cff0070dd|Hitem:24091:0:2691:2691:0:0:0:-1646523904:69:0:0|h[Tenacious Defender]|h|r", -- [9]
+				"LegsSlot^|cff0070dd|Hitem:24364:0:0:0:0:0:0:-1998132992:69:0:0|h[Azureplate Greaves]|h|r", -- [10]
+				"FeetSlot^|cff0070dd|Hitem:27420:0:0:0:0:0:0:-2070713472:69:0:0|h[Uther's Ceremonial Warboots]|h|r", -- [11]
+				"Finger0Slot^|cff1eff00|Hitem:25054:0:0:0:0:0:-45:775094301:69:0:0|h[Sodalite Band of the Champion]|h|r", -- [12]
+				"Finger1Slot^|cff1eff00|Hitem:25047:0:0:0:0:0:-7:555155479:69:0:0|h[Tourmaline Loop of the Bear]|h|r", -- [13]
+				"Trinket0Slot^|cff1eff00|Hitem:9149:0:0:0:0:0:0:46732520:69:0:0|h[Philosopher's Stone]|h|r", -- [14]
+				"Trinket1Slot^|cff0070dd|Hitem:38674:0:0:0:0:0:0:1581300480:69:0:0|h[Soul Harvester's Charm]|h|r", -- [15]
+				"MainHandSlot^|cff0070dd|Hitem:24044:3366:0:0:0:0:0:-1839290624:69:0:0|h[Hellreaver]|h|r", -- [16]
+				"Bag0Slot^|cff1eff00|Hitem:67533:0:0:0:0:0:0:0:69:0:0|h[Orgrimmar Satchel]|h|r", -- [17]
+				"Bag1Slot^|cff1eff00|Hitem:30744:0:0:0:0:0:0:0:69:0:0|h[Draenic Leather Pack]|h|r", -- [18]
+				"Bag2Slot^|cffffffff|Hitem:38145:0:0:0:0:0:0:0:69:0:0|h[Deathweave Bag]|h|r", -- [19]
+				"Bag3Slot^|cffffffff|Hitem:38145:0:0:0:0:0:0:0:69:0:0|h[Deathweave Bag]|h|r", -- [20]
+			},
 			["Honor"] = 0,
 			["Money"] = 757344,
-			["Level"] = 69,
+			["QHAskedGet"] = true,
 			["W"] = {
 				["NxHUD"] = {
 					["A"] = "TOP",
@@ -27313,10 +27334,10 @@ NxData = {
 					["Y"] = 5.999922662974556,
 					["X"] = 259.0013083964391,
 					["_H"] = 40,
-					["_X"] = 999999,
+					["Hide"] = true,
 					["H"] = 40,
 					["_Y"] = -0.17,
-					["Hide"] = true,
+					["_X"] = 999999,
 				},
 				["NxQuestList"] = {
 					["_W"] = -0.52,
@@ -27326,10 +27347,10 @@ NxData = {
 					["Y"] = 179.9999858736994,
 					["X"] = 383.9999942779542,
 					["_H"] = -0.65,
-					["_X"] = -0.24,
+					["Hide"] = true,
 					["H"] = 779.9999387860307,
 					["_Y"] = -0.15,
-					["Hide"] = true,
+					["_X"] = -0.24,
 				},
 				["NxDD"] = {
 					["_W"] = 207,
@@ -27339,10 +27360,10 @@ NxData = {
 					["Y"] = 0,
 					["X"] = 0,
 					["_H"] = 209,
-					["Hide"] = true,
+					["_X"] = 0,
 					["H"] = 209,
 					["_Y"] = 0,
-					["_X"] = 0,
+					["Hide"] = true,
 				},
 				["NxQuestWatch"] = {
 					["A"] = "TOPRIGHT",
@@ -27364,31 +27385,72 @@ NxData = {
 					["_Y"] = -0.35,
 					["_X"] = -0.8,
 				},
-				["NxTeamHUD"] = {
-					["_W"] = 107,
-					["FI"] = 0.5,
+				["NxMap1"] = {
+					["9002L"] = 1,
+					["9009Y"] = -0.4,
+					["FI"] = 1,
 					["FO"] = 0,
-					["W"] = 107,
-					["Y"] = 359.9999717473988,
-					["X"] = 959.9999856948855,
-					["_H"] = 40,
-					["Hide"] = true,
-					["H"] = 40,
-					["_Y"] = -0.3,
-					["_X"] = -0.6,
+					["9001Y"] = -0.4,
+					["9003H"] = -0.3,
+					["_H"] = -0.3,
+					["_L"] = 1,
+					["9009W"] = -0.19,
+					["9003Y"] = -0.4,
+					["9010W"] = -0.19,
+					["9011X"] = -0.0001,
+					["9008H"] = -0.3,
+					["9002X"] = -0.0001,
+					["9001H"] = -0.3,
+					["9002H"] = -0.3,
+					["9002W"] = -0.19,
+					["9010X"] = -0.0001,
+					["9011H"] = -0.3,
+					["9008Y"] = -0.4,
+					["_X"] = -0.0001,
+					["A"] = "BOTTOMRIGHT",
+					["9010L"] = 1,
+					["9002Y"] = -0.4,
+					["9001W"] = -0.19,
+					["9004Y"] = -0.4,
+					["9010H"] = -0.3,
+					["9011L"] = 1,
+					["9009H"] = -0.3,
+					["9011Y"] = -0.4,
+					["H"] = 258.3999595284468,
+					["9003L"] = 1,
+					["9003X"] = -0.0001,
+					["9009L"] = 1,
+					["L"] = 1,
+					["9003W"] = -0.19,
+					["9001L"] = 1,
+					["9008W"] = -0.19,
+					["_W"] = -0.19,
+					["9004H"] = -0.3,
+					["9009X"] = -0.0001,
+					["9010Y"] = -0.4,
+					["9004L"] = 1,
+					["W"] = 290.5598978614822,
+					["9008X"] = -0.0001,
+					["Y"] = -6.399929428101638,
+					["X"] = -3.337979266971659,
+					["9011W"] = -0.19,
+					["9004W"] = -0.19,
+					["9004X"] = -0.0001,
+					["9001X"] = -0.0001,
+					["_Y"] = -0.4,
+					["9008L"] = 1,
 				},
-				["NxCombat"] = {
-					["_W"] = -0.3,
+				["NxOpts"] = {
+					["_W"] = -0.5,
 					["FI"] = 1,
 					["FO"] = 0.75,
-					["W"] = 479.9999928474427,
-					["Y"] = 839.9999340772638,
-					["X"] = 1119.9999833107,
-					["_H"] = -0.06,
-					["Hide"] = true,
-					["H"] = 71.99999434947975,
-					["_Y"] = -0.7,
-					["_X"] = -0.7,
+					["W"] = 799.9999880790713,
+					["Y"] = 119.9999905824663,
+					["X"] = 399.9999940395356,
+					["_H"] = -0.7,
+					["H"] = 839.9999340772638,
+					["_Y"] = -0.1,
+					["_X"] = -0.25,
 				},
 				["NxMapDock"] = {
 					["_W"] = 52,
@@ -27404,32 +27466,32 @@ NxData = {
 					["_Y"] = -0.08,
 					["_X"] = 100045,
 				},
-				["NxGuide1"] = {
-					["_W"] = -0.63,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 1007.99998497963,
-					["Y"] = 239.9999811649325,
-					["X"] = 239.9999964237214,
-					["_H"] = -0.5,
-					["_X"] = -0.15,
-					["H"] = 599.9999529123313,
-					["_Y"] = -0.2,
+				["NxTeamHUD"] = {
+					["_W"] = 107,
+					["FI"] = 0.5,
+					["FO"] = 0,
+					["W"] = 107,
+					["Y"] = 359.9999717473988,
+					["X"] = 959.9999856948855,
+					["_H"] = 40,
+					["_X"] = -0.6,
+					["H"] = 40,
+					["_Y"] = -0.3,
 					["Hide"] = true,
 				},
 				["Version"] = 0.31,
-				["NxEventsList"] = {
-					["_W"] = -0.25,
+				["NxCombat"] = {
+					["_W"] = -0.3,
 					["FI"] = 1,
 					["FO"] = 0.75,
-					["W"] = 399.9999940395356,
-					["Y"] = 719.9999434947976,
-					["X"] = 1199.999982118607,
-					["_H"] = -0.1,
+					["W"] = 479.9999928474427,
+					["Y"] = 839.9999340772638,
+					["X"] = 1119.9999833107,
+					["_H"] = -0.06,
+					["_X"] = -0.7,
+					["H"] = 71.99999434947975,
+					["_Y"] = -0.7,
 					["Hide"] = true,
-					["H"] = 119.9999905824663,
-					["_Y"] = -0.6,
-					["_X"] = -0.75,
 				},
 				["NxPunkHUD"] = {
 					["A"] = "TOPRIGHT",
@@ -27452,77 +27514,36 @@ NxData = {
 					["Y"] = 215.9999830484393,
 					["X"] = 399.9999940395356,
 					["_H"] = -0.64,
-					["_X"] = -0.25,
+					["Hide"] = true,
 					["H"] = 767.9999397277841,
 					["_Y"] = -0.18,
-					["Hide"] = true,
-				},
-				["NxOpts"] = {
-					["_W"] = -0.5,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 799.9999880790713,
-					["Y"] = 119.9999905824663,
-					["X"] = 399.9999940395356,
-					["_H"] = -0.7,
-					["H"] = 839.9999340772638,
-					["_Y"] = -0.1,
 					["_X"] = -0.25,
 				},
-				["NxMap1"] = {
-					["9002L"] = 1,
-					["9009Y"] = -0.4,
+				["NxEventsList"] = {
+					["_W"] = -0.25,
 					["FI"] = 1,
-					["FO"] = 0,
-					["9001Y"] = -0.4,
-					["9003H"] = -0.3,
-					["_H"] = -0.3,
-					["_L"] = 1,
-					["9009W"] = -0.19,
-					["9003Y"] = -0.4,
-					["9010W"] = -0.19,
-					["9011X"] = -0.0001,
-					["9008H"] = -0.3,
-					["9002X"] = -0.0001,
-					["9001H"] = -0.3,
-					["9002H"] = -0.3,
-					["9002W"] = -0.19,
-					["9008L"] = 1,
-					["9011H"] = -0.3,
-					["9008Y"] = -0.4,
-					["_X"] = -0.0001,
-					["A"] = "BOTTOMRIGHT",
-					["9010L"] = 1,
-					["9001W"] = -0.19,
-					["9002Y"] = -0.4,
-					["9010H"] = -0.3,
-					["9004Y"] = -0.4,
-					["9011L"] = 1,
-					["9009H"] = -0.3,
-					["9004W"] = -0.19,
-					["H"] = 258.3999595284468,
-					["9003L"] = 1,
-					["9003X"] = -0.0001,
-					["9009L"] = 1,
-					["L"] = 1,
-					["9003W"] = -0.19,
-					["9001L"] = 1,
-					["9008W"] = -0.19,
-					["_W"] = -0.19,
-					["9004H"] = -0.3,
-					["9008X"] = -0.0001,
-					["9010Y"] = -0.4,
-					["9004L"] = 1,
-					["W"] = 290.5598978614822,
-					["9009X"] = -0.0001,
-					["Y"] = -6.399929428101638,
-					["X"] = -3.337979266971659,
-					["9011W"] = -0.19,
-					["9011Y"] = -0.4,
-					["9004X"] = -0.0001,
-					["9001X"] = -0.0001,
-					["_Y"] = -0.4,
-					["9010X"] = -0.0001,
+					["FO"] = 0.75,
+					["W"] = 399.9999940395356,
+					["Y"] = 719.9999434947976,
+					["X"] = 1199.999982118607,
+					["_H"] = -0.1,
+					["_X"] = -0.75,
+					["H"] = 119.9999905824663,
+					["_Y"] = -0.6,
+					["Hide"] = true,
+				},
+				["NxGuide1"] = {
+					["_W"] = -0.63,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 1007.99998497963,
+					["Y"] = 239.9999811649325,
+					["X"] = 239.9999964237214,
+					["_H"] = -0.5,
+					["Hide"] = true,
+					["H"] = 599.9999529123313,
+					["_Y"] = -0.2,
+					["_X"] = -0.15,
 				},
 			},
 			["Class"] = "Death Knight",
@@ -27548,51 +27569,30 @@ NxData = {
 				["Gold Bar"] = "1^|cff1eff00|Hitem:3577:0:0:0:0:0:0:1081216256:69:0:0|h[Gold Bar]|h|r",
 				["Fishing Pole"] = "1^|cffffffff|Hitem:6256:0:0:0:0:0:0:0:69:0:0|h[Fishing Pole]|h|r",
 				["Felweed"] = "4^|cffffffff|Hitem:22785:0:0:0:0:0:0:-2074075008:69:0:0|h[Felweed]|h|r",
-				["Stonescale Oil"] = "1^|cffffffff|Hitem:13423:0:0:0:0:0:0:1922355840:69:0:0|h[Stonescale Oil]|h|r",
-				["Mountain Silversage"] = "1^|cffffffff|Hitem:13465:0:0:0:0:0:0:2033395968:69:0:0|h[Mountain Silversage]|h|r",
+				["Crystal Vial"] = "24^|cffffffff|Hitem:3371:0:0:0:0:0:0:0:69:0:0|h[Crystal Vial]|h|r",
+				["Consortium Pants of the Prophet"] = "1^|cff1eff00|Hitem:24658:0:0:0:0:0:-38:1664483378:69:0:0|h[Consortium Pants of the Prophet]|h|r",
 				["Darkmoon Game Token"] = "3^|cff1eff00|Hitem:71083:0:0:0:0:0:0:415667104:69:0:0|h[Darkmoon Game Token]|h|r",
 				["Recipe: Elixir of Major Defense"] = "1^|cffffffff|Hitem:22909:0:0:0:0:0:0:0:69:0:0|h[Recipe: Elixir of Major Defense]|h|r",
-				["Elixir of Brute Force"] = "3^|cffffffff|Hitem:13453:0:0:0:0:0:0:55213052:69:0:0|h[Elixir of Brute Force]|h|r",
-				["Sorrowmoss"] = "16^|cffffffff|Hitem:13466:0:0:0:0:0:0:377731520:69:0:0|h[Sorrowmoss]|h|r",
+				["Silverleaf"] = "10^|cffffffff|Hitem:765:0:0:0:0:0:0:848148800:69:0:0|h[Silverleaf]|h|r",
+				["Eldr'naan Scepter of Intellect"] = "1^|cff1eff00|Hitem:25094:0:0:0:0:0:-26:1135018011:69:0:0|h[Eldr'naan Scepter of Intellect]|h|r",
 				["Liferoot"] = "35^|cffffffff|Hitem:3357:0:0:0:0:0:0:1150295552:69:0:0|h[Liferoot]|h|r",
 				["Firebloom"] = "2^|cffffffff|Hitem:4625:0:0:0:0:0:0:2099682688:69:0:0|h[Firebloom]|h|r",
-				["Noth's Special Brew"] = "17^|cffffffff|Hitem:39327:0:0:0:0:0:0:1534400896:69:0:0|h[Noth's Special Brew]|h|r",
-				["Libram of the Eternal Rest"] = "1^|cff9d9d9d|Hitem:27917:0:0:0:0:0:0:-2018135168:69:0:0|h[Libram of the Eternal Rest]|h|r",
-				["Blindweed"] = "1^|cffffffff|Hitem:8839:0:0:0:0:0:0:1395531008:69:0:0|h[Blindweed]|h|r",
-				["Purification Potion"] = "5^|cffffffff|Hitem:13462:0:0:0:0:0:0:49838192:69:0:0|h[Purification Potion]|h|r",
 				["Black Mushroom"] = "9^|cffffffff|Hitem:41751:0:0:0:0:0:0:0:69:0:0|h[Black Mushroom]|h|r",
-				["Eldr'naan Scepter of Intellect"] = "1^|cff1eff00|Hitem:25094:0:0:0:0:0:-26:1135018011:69:0:0|h[Eldr'naan Scepter of Intellect]|h|r",
-				["Silverleaf"] = "10^|cffffffff|Hitem:765:0:0:0:0:0:0:848148800:69:0:0|h[Silverleaf]|h|r",
+				["Libram of the Eternal Rest"] = "1^|cff9d9d9d|Hitem:27917:0:0:0:0:0:0:-2018135168:69:0:0|h[Libram of the Eternal Rest]|h|r",
+				["Purification Potion"] = "5^|cffffffff|Hitem:13462:0:0:0:0:0:0:49838192:69:0:0|h[Purification Potion]|h|r",
+				["Blindweed"] = "1^|cffffffff|Hitem:8839:0:0:0:0:0:0:1395531008:69:0:0|h[Blindweed]|h|r",
+				["Noth's Special Brew"] = "17^|cffffffff|Hitem:39327:0:0:0:0:0:0:1534400896:69:0:0|h[Noth's Special Brew]|h|r",
+				["Sorrowmoss"] = "16^|cffffffff|Hitem:13466:0:0:0:0:0:0:377731520:69:0:0|h[Sorrowmoss]|h|r",
+				["Elixir of Brute Force"] = "3^|cffffffff|Hitem:13453:0:0:0:0:0:0:55213052:69:0:0|h[Elixir of Brute Force]|h|r",
 				["Peacebloom"] = "13^|cffffffff|Hitem:2447:0:0:0:0:0:0:1014167104:69:0:0|h[Peacebloom]|h|r",
-				["Consortium Pants of the Prophet"] = "1^|cff1eff00|Hitem:24658:0:0:0:0:0:-38:1664483378:69:0:0|h[Consortium Pants of the Prophet]|h|r",
-				["Crystal Vial"] = "24^|cffffffff|Hitem:3371:0:0:0:0:0:0:0:69:0:0|h[Crystal Vial]|h|r",
+				["Mountain Silversage"] = "1^|cffffffff|Hitem:13465:0:0:0:0:0:0:2033395968:69:0:0|h[Mountain Silversage]|h|r",
+				["Stonescale Oil"] = "1^|cffffffff|Hitem:13423:0:0:0:0:0:0:1922355840:69:0:0|h[Stonescale Oil]|h|r",
 			},
 			["Version"] = 0.02,
 			["DurPercent"] = 100,
-			["QHAskedGet"] = true,
-			["WareInv"] = {
-				"HeadSlot^|cff0070dd|Hitem:27408:0:3371:0:2698:0:0:275433983:69:0:0|h[Hope Bearer Helm]|h|r", -- [1]
-				"NeckSlot^|cff0070dd|Hitem:24385:0:0:0:0:0:0:-2060259584:69:0:0|h[Pendant of Battle-Lust]|h|r", -- [2]
-				"ShoulderSlot^|cff0070dd|Hitem:29316:0:3371:0:0:0:0:1875307008:69:0:0|h[Warchief's Mantle]|h|r", -- [3]
-				"BackSlot^|cff0070dd|Hitem:39320:0:0:0:0:0:0:1735251840:69:0:0|h[Sky Darkener's Shroud of Blood]|h|r", -- [4]
-				"ChestSlot^|cffe6cc80|Hitem:69889:0:0:0:0:0:0:0:69:0:0|h[Burnished Breastplate of Might]|h|r", -- [5]
-				"TabardSlot^|cffffffff|Hitem:45581:0:0:0:0:0:0:0:69:0:0|h[Orgrimmar Tabard]|h|r", -- [6]
-				"WristSlot^|cff0070dd|Hitem:38666:0:0:0:0:0:0:533355616:69:0:0|h[Plated Saronite Bracers]|h|r", -- [7]
-				"HandsSlot^|cff1eff00|Hitem:24945:0:0:0:0:0:-45:627703839:69:0:0|h[Bloodscale Gauntlets of the Champion]|h|r", -- [8]
-				"WaistSlot^|cff0070dd|Hitem:24091:0:2691:2691:0:0:0:-1646523904:69:0:0|h[Tenacious Defender]|h|r", -- [9]
-				"LegsSlot^|cff0070dd|Hitem:24364:0:0:0:0:0:0:-1998132992:69:0:0|h[Azureplate Greaves]|h|r", -- [10]
-				"FeetSlot^|cff0070dd|Hitem:27420:0:0:0:0:0:0:-2070713472:69:0:0|h[Uther's Ceremonial Warboots]|h|r", -- [11]
-				"Finger0Slot^|cff1eff00|Hitem:25054:0:0:0:0:0:-45:775094301:69:0:0|h[Sodalite Band of the Champion]|h|r", -- [12]
-				"Finger1Slot^|cff1eff00|Hitem:25047:0:0:0:0:0:-7:555155479:69:0:0|h[Tourmaline Loop of the Bear]|h|r", -- [13]
-				"Trinket0Slot^|cff1eff00|Hitem:9149:0:0:0:0:0:0:46732520:69:0:0|h[Philosopher's Stone]|h|r", -- [14]
-				"Trinket1Slot^|cff0070dd|Hitem:38674:0:0:0:0:0:0:1581300480:69:0:0|h[Soul Harvester's Charm]|h|r", -- [15]
-				"MainHandSlot^|cff0070dd|Hitem:24044:3366:0:0:0:0:0:-1839290624:69:0:0|h[Hellreaver]|h|r", -- [16]
-				"Bag0Slot^|cff1eff00|Hitem:67533:0:0:0:0:0:0:0:69:0:0|h[Orgrimmar Satchel]|h|r", -- [17]
-				"Bag1Slot^|cff1eff00|Hitem:30744:0:0:0:0:0:0:0:69:0:0|h[Draenic Leather Pack]|h|r", -- [18]
-				"Bag2Slot^|cffffffff|Hitem:38145:0:0:0:0:0:0:0:69:0:0|h[Deathweave Bag]|h|r", -- [19]
-				"Bag3Slot^|cffffffff|Hitem:38145:0:0:0:0:0:0:0:69:0:0|h[Deathweave Bag]|h|r", -- [20]
-			},
-			["XPRest"] = 1075500,
+			["Level"] = 69,
+			["ArenaPts"] = 0,
+			["LvlTime"] = 1348653979,
 			["Pos"] = "4003^40.878159^49.376476",
 		},
 		["Khaz Modan.Dreyan"] = {
@@ -27600,18 +27600,18 @@ NxData = {
 				["Seth's Graphite Fishing Pole"] = "1^|cff1eff00|Hitem:25978:0:0:0:0:0:0:1372625664:90:0:0|h[Seth's Graphite Fishing Pole]|h|r",
 				["Renowned Guild Tabard"] = "1^|cffa335ee|Hitem:69210:0:0:0:0:0:0:0:90:0:0|h[Renowned Guild Tabard]|h|r",
 				["Exodar Tabard"] = "1^|cffffffff|Hitem:45580:0:0:0:0:0:0:0:90:0:0|h[Exodar Tabard]|h|r",
-				["Coin of Ancestry"] = "1^|cffffffff|Hitem:21100:0:0:0:0:0:0:587393856:90:0:0|h[Coin of Ancestry]|h|r",
+				["Burlap Ritual Bag"] = "1^|cffffffff|Hitem:88384:0:0:0:0:0:0:2010621696:90:0:0|h[Burlap Ritual Bag]|h|r",
 				["Hozen Idol"] = "1^|cffffffff|Hitem:88385:0:0:0:0:0:0:813084608:90:0:0|h[Hozen Idol]|h|r",
 				["Lao Chin's Last Mug"] = "1^|cffffffff|Hitem:88531:0:0:0:0:0:0:749966784:90:0:0|h[Lao Chin's Last Mug]|h|r",
-				["Gnomeregan Tabard"] = "1^|cffffffff|Hitem:45578:0:0:0:0:0:0:0:90:0:0|h[Gnomeregan Tabard]|h|r",
-				["Totem of Harmony"] = "1^|cffffffff|Hitem:88584:0:0:0:0:0:0:1507168640:90:0:0|h[Totem of Harmony]|h|r",
 				["Jin Warmkeg's Brew"] = "1^|cffffffff|Hitem:88579:0:0:0:0:0:0:258328672:90:0:0|h[Jin Warmkeg's Brew]|h|r",
-				["Burlap Ritual Bag"] = "1^|cffffffff|Hitem:88384:0:0:0:0:0:0:2010621696:90:0:0|h[Burlap Ritual Bag]|h|r",
+				["Totem of Harmony"] = "1^|cffffffff|Hitem:88584:0:0:0:0:0:0:1507168640:90:0:0|h[Totem of Harmony]|h|r",
+				["Gnomeregan Tabard"] = "1^|cffffffff|Hitem:45578:0:0:0:0:0:0:0:90:0:0|h[Gnomeregan Tabard]|h|r",
+				["Coin of Ancestry"] = "1^|cffffffff|Hitem:21100:0:0:0:0:0:0:587393856:90:0:0|h[Coin of Ancestry]|h|r",
 			},
 			["WareMail"] = {
 			},
-			["Time"] = 1363600587,
-			["LMoney"] = 43603950,
+			["Time"] = 1363687628,
+			["LMoney"] = 46096463,
 			["Profs"] = {
 				["Cooking"] = {
 					[2539] = 2680,
@@ -27628,43 +27628,43 @@ NxData = {
 					[18243] = 13931,
 					[18244] = 13932,
 					[46688] = 35565,
-					[62050] = 44837,
-					[2795] = 2888,
+					[45695] = 34832,
+					[2540] = 2681,
 					[4094] = 4457,
-					[8607] = 6890,
+					[62044] = 44836,
 					["Rank"] = 310,
-					[2543] = 733,
-					[125067] = 86026,
-					[46684] = 35563,
-					["Link"] = "|cffffd000|Htrade:33359:310:375:380000004378C88:mAbC2FDAUNABDAAKAgDAAAAAAgPAAAAAAQB+BO4WA|h[Cooking]|h|r",
-					[3371] = 3220,
-					[2546] = 2687,
+					[2795] = 2888,
+					[6415] = 5476,
+					[6500] = 5527,
+					[124226] = 81403,
+					[125117] = 86057,
+					[21175] = 17222,
 					[124223] = 81400,
 					[124227] = 81404,
 					[2544] = 2683,
-					[125117] = 86057,
-					[124228] = 81405,
-					[124224] = 81401,
+					[3371] = 3220,
+					[2538] = 2679,
+					[8604] = 6888,
+					[25954] = 21217,
+					[6412] = 5472,
+					[62049] = 44840,
 					[125078] = 81406,
+					[62045] = 44838,
 					[7751] = 6290,
 					[104237] = 74636,
-					[25954] = 21217,
-					[62045] = 44838,
-					[25704] = 21072,
-					[62049] = 44840,
 					[62051] = 44839,
-					[6412] = 5472,
+					[25704] = 21072,
 					[7752] = 787,
-					[8604] = 6888,
-					[2538] = 2679,
-					[21175] = 17222,
+					[124224] = 81401,
+					[124228] = 81405,
+					[2546] = 2687,
 					[7753] = 4592,
-					[124226] = 81403,
-					[6500] = 5527,
-					[6415] = 5476,
-					[62044] = 44836,
-					[2540] = 2681,
-					[45695] = 34832,
+					["Link"] = "|cffffd000|Htrade:33359:310:375:380000004378C88:mAbC2FDAUNABDAAKAgDAAAAAAgPAAAAAAQB+BO4WA|h[Cooking]|h|r",
+					[46684] = 35563,
+					[8607] = 6890,
+					[125067] = 86026,
+					[2543] = 733,
+					[62050] = 44837,
 				},
 				["Skinning"] = {
 					["Rank"] = 600,
@@ -27772,7 +27772,7 @@ NxData = {
 					[60622] = 38435,
 					[23708] = 19157,
 					[20650] = 4304,
-					["Link"] = "|cffffd000|Htrade:110423:600:600:380000004378C88:e+XFFPW9ifH0yWBg2BcLJQdAiBYF/FADPYAAgz//nAAAAABAAAA+BAAA4Bw3fx//////P/fAAAAAAAgAEAAGA+///DAAAAAAQAGA4P8//HAAiYAGgfBAEAgQBQCYAAAg0ZD4P|h[Leatherworking]|h|r",
+					["Link"] = "|cffffd000|Htrade:110423:600:600:380000004378C88:e+XFFPW9ifH0yWBg2BcLJQdAiBYF/FADPYAAgz//nAAAAABAAAA+BAAA4Bw3fx//////P/fAAAAAAAgAEAAGA+///DAAAAAAQAGA4P8//HAAiYAGgfBAEAgQBQCcAAAg0ZD4P|h[Leatherworking]|h|r",
 					[78416] = 56499,
 					[51568] = 38590,
 					[32467] = 25661,
@@ -27837,6 +27837,7 @@ NxData = {
 					[32469] = 25659,
 					[69386] = 49633,
 					[124127] = 83765,
+					[137878] = 93590,
 					[23399] = 18948,
 					[99536] = 75076,
 					[35540] = 29528,
@@ -27850,18 +27851,18 @@ NxData = {
 					[69388] = 49634,
 					[124129] = 83764,
 					[62448] = 44963,
-					[137875] = 93587,
+					[137813] = 93462,
 					[78427] = 56508,
 					[10558] = 8197,
-					[140040] = 72163,
-					[124554] = 0,
-					[124584] = 85843,
+					[137851] = 93488,
+					[124621] = 85850,
+					[10511] = 8189,
 					[124577] = 85833,
-					[124552] = 0,
-					[124576] = 85834,
+					[10507] = 8176,
+					[10518] = 8198,
 					[124635] = 85851,
-					[140041] = 72163,
-					[124573] = 85835,
+					[19072] = 15093,
+					[124607] = 85803,
 					[50951] = 38416,
 					[50967] = 38374,
 					[124637] = 85852,
@@ -27873,105 +27874,105 @@ NxData = {
 					[10630] = 8346,
 					[32478] = 25673,
 					[124578] = 85832,
-					[131865] = 72163,
-					[124575] = 85838,
+					[50947] = 38403,
+					[60652] = 43131,
 					[10650] = 8367,
-					[78411] = 56495,
+					[124125] = 85570,
 					[124571] = 85837,
 					[124574] = 85836,
 					[3776] = 4259,
-					[36074] = 29964,
+					[2881] = 2318,
 					[85008] = 0,
 					[9145] = 7348,
 					[99535] = 75077,
-					[23709] = 19162,
+					[60666] = 43256,
 					[50962] = 38375,
-					[124551] = 0,
+					[20854] = 16983,
 					[20853] = 16982,
 					[124579] = 85846,
-					[55199] = 41238,
-					[20649] = 4234,
+					[124566] = 0,
+					[20648] = 2319,
 					[60613] = 44441,
 					[60629] = 44444,
 					[50936] = 38425,
 					[50952] = 38424,
-					[60658] = 43133,
+					[32473] = 25671,
 					[9201] = 7378,
 					[85009] = 0,
 					[78398] = 56483,
 					[50940] = 38411,
 					[57691] = 0,
-					[50963] = 38376,
-					[32454] = 21887,
+					[50960] = 38419,
+					[36077] = 29973,
 					[78379] = 56477,
 					[124580] = 85848,
-					[124124] = 85569,
-					[9196] = 7374,
-					[23190] = 18662,
-					[50945] = 38401,
+					[60604] = 44437,
+					[50946] = 38402,
+					[32470] = 25669,
+					[60660] = 42731,
 					[32461] = 25653,
-					[6703] = 5781,
-					[124569] = 0,
-					[32487] = 25681,
+					[36079] = 29975,
+					[50961] = 38418,
+					[124582] = 85845,
 					[85010] = 0,
 					[78399] = 56484,
 					[24654] = 20295,
 					[60611] = 44440,
 					[19049] = 15083,
-					[124549] = 0,
 					[19065] = 15092,
+					[124549] = 0,
 					[124581] = 85844,
 					[19081] = 15075,
-					[32463] = 25655,
+					[137829] = 93479,
 					[19102] = 15090,
 					[60630] = 44445,
 					[60665] = 43255,
 					[50953] = 38415,
-					[60651] = 43130,
-					[9059] = 7277,
-					[9065] = 7281,
 					[36076] = 29971,
+					[9065] = 7281,
+					[9059] = 7277,
+					[60651] = 43130,
 					[78432] = 56512,
 					[32455] = 23793,
-					[137829] = 93479,
+					[32463] = 25655,
 					[32471] = 25670,
 					[32479] = 25674,
-					[124582] = 85845,
-					[50961] = 38418,
-					[36079] = 29975,
+					[32487] = 25681,
+					[124569] = 0,
+					[6703] = 5781,
 					["Rank"] = 600,
-					[60660] = 42731,
-					[32470] = 25669,
-					[50946] = 38402,
-					[60604] = 44437,
+					[50945] = 38401,
+					[23190] = 18662,
+					[9196] = 7374,
+					[124124] = 85569,
 					[22331] = 8170,
-					[36077] = 29973,
-					[50960] = 38419,
+					[32454] = 21887,
+					[50963] = 38376,
 					[78433] = 56513,
-					[32473] = 25671,
-					[20648] = 2319,
-					[124566] = 0,
-					[20854] = 16983,
+					[60658] = 43133,
+					[20649] = 4234,
+					[55199] = 41238,
+					[124551] = 0,
 					[124583] = 85847,
-					[60666] = 43256,
+					[23709] = 19162,
 					[60599] = 38436,
-					[2881] = 2318,
+					[36074] = 29964,
 					[60631] = 38441,
 					[50938] = 38408,
 					[50954] = 38413,
-					[124125] = 85570,
-					[60652] = 43131,
-					[50947] = 38403,
+					[78411] = 56495,
+					[124575] = 85838,
+					[131865] = 72163,
 					[10487] = 8173,
-					[124607] = 85803,
-					[19072] = 15093,
+					[124573] = 85835,
+					[140041] = 72163,
 					[10499] = 8175,
-					[10518] = 8198,
-					[10507] = 8176,
-					[10511] = 8189,
-					[124621] = 85850,
-					[137851] = 93488,
-					[137813] = 93462,
+					[124576] = 85834,
+					[124552] = 0,
+					[124584] = 85843,
+					[124554] = 0,
+					[140040] = 72163,
+					[137875] = 93587,
 				},
 				["First Aid"] = {
 					[74556] = 53049,
@@ -27993,10 +27994,10 @@ NxData = {
 					[88893] = 53051,
 					[18629] = 14529,
 					[7934] = 6452,
-					[102699] = 72986,
+					[45546] = 34722,
 					[102698] = 72986,
 					[45545] = 34721,
-					[45546] = 34722,
+					[102699] = 72986,
 					["Rank"] = 600,
 				},
 				["Archaeology"] = {
@@ -28015,7 +28016,7 @@ NxData = {
 			["XPMax"] = 93465000,
 			["NXLoggedOnNum"] = 1,
 			["LXPMax"] = 93465000,
-			["LTime"] = 1363598499,
+			["LTime"] = 1363684321,
 			["LLevel"] = 90,
 			["LArenaPts"] = 0,
 			["TBar"] = {
@@ -28023,23 +28024,46 @@ NxData = {
 				["NxMap1TB"] = {
 					["Space"] = 1,
 					["AlignR"] = true,
-					["Size"] = 22,
 					["AlignB"] = true,
+					["Size"] = 22,
 				},
 			},
-			["Class"] = "Rogue",
-			["TimePlayed"] = 535895,
+			["WareInv"] = {
+				"HeadSlot^|cff0070dd|Hitem:92849:0:0:0:0:0:-137:1456276971:90:168:0|h[Hozen-Speed Hood of the Windstorm]|h|r", -- [1]
+				"NeckSlot^|cffa335ee|Hitem:93393:0:0:0:0:0:0:863762688:90:146:445|h[Sweet Perfume Broach]|h|r", -- [2]
+				"ShoulderSlot^|cff0070dd|Hitem:92847:0:0:0:0:0:-133:1535312998:90:146:0|h[Hozen-Speed Shoulders of the Stormblast]|h|r", -- [3]
+				"BackSlot^|cff0070dd|Hitem:85852:0:0:0:0:0:0:1461713536:90:168:0|h[Quick Strike Cloak]|h|r", -- [4]
+				"ChestSlot^|cffa335ee|Hitem:90585:4869:0:0:0:0:0:2102819840:90:168:445|h[Vulajin's Vicious Breastplate]|h|r", -- [5]
+				"ShirtSlot^|cffffffff|Hitem:49:0:0:0:0:0:0:0:90:0:0|h[Footpad's Shirt]|h|r", -- [6]
+				"TabardSlot^|cffffffff|Hitem:45579:0:0:0:0:0:0:0:90:0:0|h[Darnassus Tabard]|h|r", -- [7]
+				"WristSlot^|cffa335ee|Hitem:86843:4875:0:0:0:0:0:565277696:90:167:445|h[Smooth Beetle Wristbands]|h|r", -- [8]
+				"HandsSlot^|cff0070dd|Hitem:82858:4869:0:0:0:0:0:979799168:90:153:451|h[Tombstone Gauntlets]|h|r", -- [9]
+				"WaistSlot^|cff0070dd|Hitem:87378:0:0:0:0:0:0:277897120:90:168:0|h[Loksey's Lost Belt]|h|r", -- [10]
+				"LegsSlot^|cff0070dd|Hitem:89661:4880:0:0:0:0:0:0:90:168:451|h[Tough Mushanhide Leggings]|h|r", -- [11]
+				"FeetSlot^|cff0070dd|Hitem:81688:4869:0:0:0:0:0:1163639104:90:168:451|h[Dashing Strike Treads]|h|r", -- [12]
+				"Finger0Slot^|cffa335ee|Hitem:89967:0:0:0:0:0:0:1950342272:90:0:445|h[Feng's Seal of Binding]|h|r", -- [13]
+				"Finger1Slot^|cffa335ee|Hitem:89070:0:0:0:0:0:0:0:90:153:445|h[Anji's Keepsake]|h|r", -- [14]
+				"Trinket0Slot^|cff0070dd|Hitem:81265:0:0:0:0:0:0:1067454272:90:0:451|h[Flashing Steel Talisman]|h|r", -- [15]
+				"Trinket1Slot^|cffa335ee|Hitem:86791:0:0:0:0:0:0:561507072:90:0:445|h[Bottle of Infinite Stars]|h|r", -- [16]
+				"MainHandSlot^|cffa335ee|Hitem:86762:0:0:0:0:0:0:936223360:90:0:445|h[Gara'kal, Fist of the Spiritbinder]|h|r", -- [17]
+				"SecondaryHandSlot^|cff0070dd|Hitem:81088:0:0:0:0:0:0:563640576:90:146:451|h[Mantid Trochanter]|h|r", -- [18]
+				"Bag0Slot^|cffffffff|Hitem:88397:0:0:0:0:0:0:539209344:90:0:0|h[Grummlepack]|h|r", -- [19]
+				"Bag1Slot^|cff1eff00|Hitem:54443:0:0:0:0:0:0:919992832:90:0:0|h[Embersilk Bag]|h|r", -- [20]
+				"Bag2Slot^|cff1eff00|Hitem:54443:0:0:0:0:0:0:1107144704:90:0:0|h[Embersilk Bag]|h|r", -- [21]
+				"Bag3Slot^|cff0070dd|Hitem:38399:0:0:0:0:0:0:1947576832:90:0:0|h[Trapper's Traveling Pack]|h|r", -- [22]
+			},
+			["TimePlayed"] = 537977,
 			["L"] = {
-				["Version"] = 0.1,
+				["Quest"] = {
+				},
 				["Social"] = {
 				},
+				["Version"] = 0.1,
 				["Events"] = {
-				},
-				["Quest"] = {
 				},
 			},
 			["XP"] = 186806,
-			["ArenaPts"] = 0,
+			["Class"] = "Rogue",
 			["Q"] = {
 				[30605] = "C1360984772",
 				[30637] = "C1362048512",
@@ -28154,7 +28178,7 @@ NxData = {
 				[11902] = "C1347767491",
 				[27922] = "C1358648313",
 				[12030] = "W0",
-				[30225] = "C1362806581",
+				[30225] = "C1363687509",
 				[30289] = "C1362394034",
 				[30353] = "C1360147494",
 				[28338] = "C1345542189",
@@ -28242,6 +28266,7 @@ NxData = {
 				[29908] = "C1360061141",
 				[27989] = "C1344850210",
 				[30196] = "C1363081030",
+				[30228] = "C1363687024",
 				[30292] = "W0",
 				[26230] = "C1308743792",
 				[28341] = "W0",
@@ -28434,7 +28459,7 @@ NxData = {
 				[30971] = "C1361444341",
 				[26941] = "C1343529537",
 				[10420] = "C1347678118",
-				[31131] = "C1363402473",
+				[31131] = "C1363685266",
 				[10484] = "C1346925139",
 				[31355] = "C1359253313",
 				[25278] = "C1357296159",
@@ -28446,6 +28471,7 @@ NxData = {
 				[12883] = "C1348285911",
 				[10916] = "C1347009109",
 				[27997] = "C1344851360",
+				[30204] = "C1363687031",
 				[28221] = "C1345196337",
 				[32347] = "C1361961382",
 				[26270] = "C1308820890",
@@ -28725,7 +28751,7 @@ NxData = {
 				[25832] = "C1357901266",
 				[30086] = "C1360061179",
 				[28135] = "W0",
-				[30310] = "C1363599723",
+				[30310] = "C1363685240",
 				[26248] = "C1358333433",
 				[28359] = "W0",
 				[28519] = "C1345714818",
@@ -28782,53 +28808,54 @@ NxData = {
 				[234] = "C1308496818",
 				[12921] = "C1356840480",
 				[12969] = "C1356840533",
+				[31240] = "C1363685816",
 				[30120] = "C1348285212",
 				[28105] = "C1358648817",
-				[30385] = "C1363081072",
-				[30341] = "C1362884698",
+				[30342] = "C1362994992",
+				[30265] = "C1363685779",
 				[30248] = "C1362885842",
-				[30339] = "C1363404962",
+				[30340] = "C1363685788",
 				[30312] = "C1362653428",
 				[30344] = "C1360147953",
-				[28462] = "C1345626592",
+				[10141] = "C1346749850",
 				[28361] = "C1345110912",
-				[30338] = "C1362739381",
-				[26511] = "C1309019248",
+				[30304] = "C1363687032",
+				[30200] = "C1363687022",
 				[10142] = "C1346749850",
 				[31294] = "C1362804055",
 				[28521] = "C1345542313",
 				[30600] = "C1360753538",
 				[30632] = "C1361962627",
-				[26255] = "C1358333938",
-				[30977] = "C1361529957",
-				[30285] = "C1362394028",
-				[32731] = "W0",
+				[30349] = "C1360233434",
+				[30195] = "W0",
+				[28238] = "C1358851644",
+				[30193] = "W0",
 				[30792] = "C1361677837",
-				[31473] = "W0",
+				[30231] = "C1363405646",
 				[24471] = "C1308497374",
 				[30888] = "C1361358172",
-				[30307] = "C1363599716",
-				[28472] = "C1345714210",
-				[29558] = "C1359260380",
+				[28735] = "C1357900504",
+				[32679] = "C1362652070",
+				[30308] = "C1362653437",
 				[10078] = "C1346752609",
-				[28596] = "C1358852222",
+				[30978] = "C1361529802",
 				[27187] = "C1358737699",
 				[12836] = "C1348481253",
 				[11590] = "C1348133974",
-				[25807] = "C1357899649",
-				[28868] = "C1308648525",
+				[29901] = "C1359864315",
+				[26870] = "C1343011217",
 				[27146] = "C1344656254",
 				[27178] = "C1358937159",
-				[10382] = "W0",
+				[27669] = "C1358739482",
 				[29599] = "C1347615571",
 				[25815] = "C1343447603",
-				[25795] = "C1357899597",
+				[28848] = "C1345715287",
 				[11626] = "C1348135421",
 				[27370] = "C1344652879",
 				[25352] = "C1357556494",
 				[30610] = "C1360985869",
-				[25985] = "C1357813974",
-				[10020] = "W0",
+				[29556] = "C1359258716",
+				[31363] = "C1362135565",
 				[29577] = "C1360377227",
 				[31656] = "C1361962471",
 				[31688] = "C1361531180",
@@ -28836,132 +28863,132 @@ NxData = {
 				[25611] = "C1357556497",
 				[28261] = "C1345197372",
 				[28228] = "W0",
-				[31442] = "W0",
-				[27537] = "C1359024764",
+				[27697] = "C1343986047",
+				[31762] = "C1363685242",
 				[29865] = "W0",
 				[25800] = "C1343526615",
 				[9851] = "C1347616255",
-				[28565] = "C1343448431",
-				[26241] = "C1308820765",
+				[26259] = "C1358570081",
+				[25464] = "C1357124166",
 				[26768] = "C1358567878",
 				[11962] = "C1347768394",
-				[32016] = "C1362802152",
-				[32018] = "C1359867399",
-				[30979] = "C1361529882",
-				[29874] = "C1360061739",
-				[30309] = "C1363080474",
+				[30787] = "C1361674050",
+				[9855] = "C1347529854",
+				[28256] = "C1345196976",
+				[26512] = "C1309019344",
+				[6031] = "C1345715874",
 				[30249] = "C1362995958",
 				[30281] = "W0",
-				[30313] = "C1362995007",
+				[30313] = "C1363685794",
 				[26251] = "C1358333725",
-				[25777] = "C1343522810",
+				[11973] = "C1348190760",
 				[28362] = "C1345542049",
-				[28741] = "C1357901201",
-				[28262] = "C1346144974",
-				[13132] = "C1356922032",
-				[14054] = "C1353495640",
+				[29906] = "C1359716016",
+				[28564] = "W0",
+				[29727] = "C1359629519",
+				[29318] = "W0",
 				[28522] = "C1345629805",
 				[30601] = "C1360751706",
 				[30633] = "C1362047935",
-				[28358] = "W0",
-				[27367] = "W0",
-				[28406] = "C1346147751",
+				[29759] = "C1359260480",
+				[32045] = "C1360377646",
+				[28558] = "C1358647799",
 				[29509] = "C1360059672",
 				[27167] = "C1344139085",
 				[25668] = "C1308617507",
-				[12017] = "C1348223982",
+				[25025] = "C1345541116",
 				[30889] = "C1361358179",
 				[30921] = "C1361589223",
-				[28749] = "C1344244235",
-				[29717] = "W0",
-				[25801] = "W0",
-				[13129] = "C1348280745",
-				[12832] = "C1348481286",
+				[30796] = "C1360838063",
+				[26256] = "C1358565121",
+				[27538] = "C1359024770",
+				[2951] = "C1343531313",
+				[25577] = "C1357297448",
 				[29066] = "C1357642003",
-				[26542] = "C1343986361",
+				[30636] = "C1362048504",
 				[12522] = "C1348372599",
-				[26510] = "C1309019236",
+				[30604] = "C1360753544",
 				[27147] = "C1344649797",
 				[27179] = "C1358737744",
-				[27366] = "C1358937709",
-				[26544] = "W0",
-				[12861] = "C1348285946",
-				[2947] = "C1343531622",
+				[9854] = "C1347443346",
+				[30069] = "C1359110597",
+				[28563] = "C1308906588",
+				[25802] = "W0",
 				[29386] = "C1357122140",
 				[27371] = "W0",
 				[31497] = "C1362281404",
 				[26505] = "C1308908609",
-				[25280] = "C1357295116",
+				[13655] = "C1343009423",
 				[9856] = "C1347616265",
-				[26254] = "C1358333890",
-				[12643] = "C1348366148",
+				[30348] = "C1360233492",
+				[24491] = "C1308561695",
 				[6391] = "W0",
 				[25600] = "C1357556429",
-				[25770] = "C1343448944",
+				[10895] = "C1346924715",
 				[12826] = "C1356237337",
-				[13094] = "C1348190737",
+				[25556] = "C1345541116",
 				[25584] = "C1357209684",
 				[29834] = "W0",
 				[29866] = "W0",
 				[12906] = "C1356840316",
-				[32116] = "C1361876239",
-				[28760] = "C1358569738",
-				[30351] = "C1360233124",
+				[29898] = "C1359864105",
+				[30611] = "C1360985873",
+				[28152] = "C1344935293",
 				[12970] = "C1356840572",
-				[28536] = "C1345714950",
+				[29726] = "C1359629227",
 				[26506] = "C1308907792",
 				[26250] = "C1358333728",
 				[25323] = "C1357123896",
 				[31738] = "C1359232201",
-				[12907] = "C1356840372",
-				[13131] = "C1356922044",
+				[29900] = "C1359864100",
+				[10847] = "W0",
 				[30282] = "W0",
 				[30314] = "C1363404942",
 				[30346] = "C1360233195",
-				[11671] = "C1348134274",
+				[24492] = "C1308561847",
 				[27338] = "C1358937394",
 				[11965] = "C1347768476",
 				[26380] = "C1308563661",
 				[485] = "W0",
 				[26258] = "C1358565008",
-				[30634] = "C1362047929",
-				[30602] = "C1360752038",
 				[24493] = "C1308561957",
-				[10058] = "W0",
+				[30602] = "C1360752038",
+				[30634] = "C1362047929",
+				[12088] = "C1347873619",
 				[25663] = "C1357814031",
-				[32681] = "C1362652189",
+				[29825] = "W0",
 				[30607] = "C1360985395",
 				[30794] = "C1360925992",
 				[28779] = "C1358569747",
-				[28738] = "C1357900851",
+				[31254] = "C1360378221",
 				[30890] = "C1361358169",
 				[30922] = "C1361589237",
 				[26860] = "C1343012054",
-				[30608] = "C1360985390",
-				[12638] = "C1348364410",
-				[11679] = "C1348134302",
+				[26508] = "C1308908761",
+				[11901] = "C1347766239",
+				[25324] = "C1357209205",
 				[12902] = "C1348285649",
-				[27101] = "C1358567369",
-				[11911] = "C1348190717",
-				[25740] = "C1357814885",
-				[25021] = "C1345541116",
+				[11727] = "C1347678826",
+				[30631] = "C1360664153",
+				[11789] = "C1347764993",
+				[24477] = "C1308498349",
 				[31242] = "C1363080532",
-				[29617] = "W0",
+				[9850] = "C1347529844",
 				[9857] = "C1347443334",
-				[28220] = "C1345196034",
+				[25758] = "C1357815322",
 				[29323] = "W0",
-				[12523] = "C1348373230",
-				[29562] = "C1359260607",
+				[10476] = "W0",
+				[10021] = "W0",
 				[25325] = "C1357209501",
-				[30192] = "C1363081045",
-				[28737] = "C1357900664",
+				[27516] = "C1359024360",
+				[11707] = "C1348047939",
 				[27468] = "C1359023962",
 				[29547] = "C1359025088",
-				[9858] = "C1347529827",
-				[30815] = "C1361675723",
+				[233] = "C1308496818",
+				[11] = "C1308650034",
 				[27596] = "W0",
-				[26973] = "W0",
-				[31754] = "C1362799821",
+				[28732] = "C1357900383",
+				[31754] = "C1363685236",
 				[27692] = "C1344245499",
 				[27724] = "W0",
 				[29803] = "W0",
@@ -28970,7 +28997,7 @@ NxData = {
 				[29899] = "C1359864095",
 				[9852] = "C1347616574",
 				[26365] = "C1308823046",
-				[27549] = "C1358739108",
+				[27305] = "C1344733889",
 				[25780] = "C1343523232",
 				[11963] = "C1347768409",
 				[28044] = "C1344936643",
@@ -28980,172 +29007,149 @@ NxData = {
 				[313] = "C1308617492",
 				[25630] = "C1357640661",
 				[30283] = "C1363168955",
+				[25599] = "C1357556248",
 				[315] = "C1308563633",
-				[30347] = "C1360233424",
 				[29904] = "C1359715568",
 				[28364] = "C1345542113",
-				[30975] = "C1361529083",
+				[12905] = "C1356838980",
 				[27148] = "C1344649790",
 				[28460] = "C1345629872",
-				[26509] = "W0",
-				[28524] = "C1345626592",
 				[30603] = "C1360752042",
+				[28524] = "C1345626592",
+				[26509] = "W0",
 				[30635] = "C1362048498",
-				[12905] = "C1356838980",
+				[30975] = "C1361529083",
 				[30699] = "C1362287404",
-				[25599] = "C1357556248",
+				[30347] = "C1360233424",
 				[28716] = "C1358850209",
 				[30795] = "C1360837913",
 				[30827] = "C1361076506",
-				[27305] = "C1344733889",
+				[27549] = "C1358739108",
 				[30891] = "C1361357557",
 				[30923] = "C1361589226",
 				[26861] = "W0",
-				[28732] = "C1357900383",
-				[11] = "C1308650034",
-				[233] = "C1308496818",
-				[11707] = "C1348047939",
-				[27516] = "C1359024360",
-				[10021] = "W0",
-				[10476] = "W0",
-				[25758] = "C1357815322",
+				[26973] = "W0",
+				[30815] = "C1361675723",
+				[9858] = "C1347529827",
+				[28737] = "C1357900664",
+				[30192] = "C1363081045",
+				[29562] = "C1359260607",
+				[12523] = "C1348373230",
+				[28220] = "C1345196034",
 				[31243] = "C1362392783",
-				[9850] = "C1347529844",
-				[24477] = "C1308498349",
-				[11789] = "C1347764993",
-				[30631] = "C1360664153",
-				[11727] = "C1347678826",
+				[29617] = "W0",
+				[25021] = "C1345541116",
+				[25740] = "C1357814885",
+				[11911] = "C1348190717",
+				[27101] = "C1358567369",
 				[27341] = "C1358937711",
-				[25324] = "C1357209205",
-				[11901] = "C1347766239",
-				[26508] = "C1308908761",
-				[31254] = "C1360378221",
+				[11679] = "C1348134302",
+				[12638] = "C1348364410",
+				[30608] = "C1360985390",
+				[28738] = "C1357900851",
 				[29548] = "C1359109570",
-				[29825] = "W0",
+				[32681] = "C1362652189",
 				[27565] = "C1345249880",
-				[12088] = "C1347873619",
+				[10058] = "W0",
 				[12795] = "C1348367243",
-				[31755] = "C1363080463",
+				[31755] = "C1363685232",
 				[12827] = "C1348481258",
 				[12843] = "C1356237382",
 				[12859] = "C1348285905",
-				[24492] = "C1308561847",
-				[10847] = "W0",
-				[29900] = "C1359864100",
+				[11671] = "C1348134274",
+				[13131] = "C1356922044",
+				[12907] = "C1356840372",
 				[25838] = "C1308619493",
 				[27917] = "C1343015616",
 				[10908] = "C1347268264",
 				[12971] = "W0",
-				[29726] = "C1359629227",
-				[28152] = "C1344935293",
-				[30611] = "C1360985873",
-				[29898] = "C1359864105",
+				[28536] = "C1345714950",
+				[30351] = "C1360233124",
+				[28760] = "C1358569738",
+				[32116] = "C1361876239",
 				[28141] = "C1358651351",
-				[25556] = "C1345541116",
-				[10895] = "C1346924715",
-				[30284] = "C1363404976",
-				[24491] = "C1308561695",
-				[30348] = "C1360233492",
+				[13094] = "C1348190737",
+				[25770] = "C1343448944",
+				[30284] = "C1363685781",
+				[12643] = "C1348366148",
+				[26254] = "C1358333890",
 				[26286] = "C1308821773",
-				[13655] = "C1343009423",
+				[25280] = "C1357295116",
 				[30444] = "C1362885845",
-				[25802] = "W0",
-				[28563] = "C1308906588",
-				[30069] = "C1359110597",
-				[9854] = "C1347443346",
-				[30604] = "C1360753544",
-				[30636] = "C1362048504",
-				[25577] = "C1357297448",
-				[2951] = "C1343531313",
-				[27538] = "C1359024770",
-				[26256] = "C1358565121",
-				[30796] = "C1360838063",
-				[25025] = "C1345541116",
+				[2947] = "C1343531622",
+				[12861] = "C1348285946",
+				[26544] = "W0",
+				[27366] = "C1358937709",
+				[26510] = "C1309019236",
+				[26542] = "C1343986361",
+				[12832] = "C1348481286",
+				[13129] = "C1348280745",
+				[25801] = "W0",
+				[29717] = "W0",
+				[28749] = "C1344244235",
+				[12017] = "C1348223982",
 				[26766] = "C1358568173",
 				[30892] = "C1361442172",
 				[30924] = "C1361589604",
-				[28558] = "C1358647799",
-				[32045] = "C1360377646",
-				[29759] = "C1359260480",
-				[29318] = "W0",
-				[29727] = "C1359629519",
-				[28564] = "W0",
-				[29906] = "C1359716016",
-				[11973] = "C1348190760",
-				[6031] = "C1345715874",
-				[26512] = "C1309019344",
-				[28256] = "C1345196976",
-				[9855] = "C1347529854",
-				[30787] = "C1361674050",
+				[28406] = "C1346147751",
+				[27367] = "W0",
+				[28358] = "W0",
+				[14054] = "C1353495640",
+				[13132] = "C1356922032",
+				[28262] = "C1346144974",
+				[28741] = "C1357901201",
+				[25777] = "C1343522810",
+				[30309] = "C1363080474",
+				[29874] = "C1360061739",
+				[30979] = "C1361529882",
+				[32018] = "C1359867399",
+				[32016] = "C1362802152",
 				[29325] = "W0",
-				[25464] = "C1357124166",
-				[26259] = "C1358570081",
+				[26241] = "C1308820765",
+				[28565] = "C1343448431",
 				[31468] = "W0",
-				[31762] = "C1363599726",
-				[27697] = "C1343986047",
+				[27537] = "C1359024764",
+				[31442] = "W0",
 				[29517] = "C1360059992",
 				[11708] = "C1348047983",
 				[29581] = "C1360377487",
-				[31363] = "C1362135565",
-				[29556] = "C1359258716",
+				[10020] = "W0",
+				[25985] = "C1357813974",
 				[2945] = "C1343531280",
 				[31756] = "C1363168028",
-				[28848] = "C1345715287",
+				[25795] = "C1357899597",
 				[27726] = "C1356924991",
 				[9789] = "C1347443355",
-				[27669] = "C1358739482",
-				[26870] = "C1343011217",
-				[29901] = "C1359864315",
+				[10382] = "W0",
+				[28868] = "C1308648525",
+				[25807] = "C1357899649",
 				[25839] = "C1308619748",
 				[9869] = "C1347529762",
 				[11932] = "C1347873179",
-				[30978] = "C1361529802",
+				[28596] = "C1358852222",
 				[9917] = "C1347356704",
-				[30308] = "C1362653437",
-				[32679] = "C1362652070",
-				[28735] = "C1357900504",
+				[29558] = "C1359260380",
+				[28472] = "C1345714210",
+				[30307] = "C1363685245",
 				[12028] = "C1348194228",
-				[30231] = "C1363405646",
-				[30193] = "W0",
-				[28238] = "C1358851644",
-				[30195] = "W0",
-				[30349] = "C1360233434",
+				[31473] = "W0",
+				[32731] = "W0",
+				[30285] = "C1362394028",
+				[30977] = "C1361529957",
+				[26255] = "C1358333938",
 				[26287] = "C1308821808",
 				[28366] = "C1345542201",
-				[30200] = "C1362806218",
-				[30304] = "C1362806213",
-				[10141] = "C1346749850",
-				[30340] = "C1362995000",
-				[30265] = "C1363404955",
-				[30342] = "C1362994992",
+				[26511] = "C1309019248",
+				[30338] = "C1362739381",
+				[28462] = "C1345626592",
+				[30339] = "C1363404962",
+				[30341] = "C1362884698",
+				[30385] = "C1363081072",
 			},
-			["LvlTime"] = 1363598499,
-			["WareInv"] = {
-				"HeadSlot^|cff0070dd|Hitem:92849:0:0:0:0:0:-137:1456276971:90:168:0|h[Hozen-Speed Hood of the Windstorm]|h|r", -- [1]
-				"NeckSlot^|cffa335ee|Hitem:93393:0:0:0:0:0:0:863762688:90:146:445|h[Sweet Perfume Broach]|h|r", -- [2]
-				"ShoulderSlot^|cff0070dd|Hitem:92847:0:0:0:0:0:-133:1535312998:90:146:0|h[Hozen-Speed Shoulders of the Stormblast]|h|r", -- [3]
-				"BackSlot^|cff0070dd|Hitem:85852:0:0:0:0:0:0:1461713536:90:168:0|h[Quick Strike Cloak]|h|r", -- [4]
-				"ChestSlot^|cffa335ee|Hitem:90585:4869:0:0:0:0:0:2102819840:90:168:445|h[Vulajin's Vicious Breastplate]|h|r", -- [5]
-				"ShirtSlot^|cffffffff|Hitem:49:0:0:0:0:0:0:0:90:0:0|h[Footpad's Shirt]|h|r", -- [6]
-				"TabardSlot^|cffffffff|Hitem:45579:0:0:0:0:0:0:0:90:0:0|h[Darnassus Tabard]|h|r", -- [7]
-				"WristSlot^|cffa335ee|Hitem:86843:4875:0:0:0:0:0:565277696:90:167:445|h[Smooth Beetle Wristbands]|h|r", -- [8]
-				"HandsSlot^|cff0070dd|Hitem:82858:4869:0:0:0:0:0:979799168:90:153:451|h[Tombstone Gauntlets]|h|r", -- [9]
-				"WaistSlot^|cff0070dd|Hitem:87378:0:0:0:0:0:0:277897120:90:168:0|h[Loksey's Lost Belt]|h|r", -- [10]
-				"LegsSlot^|cff0070dd|Hitem:89661:4880:0:0:0:0:0:0:90:168:451|h[Tough Mushanhide Leggings]|h|r", -- [11]
-				"FeetSlot^|cff0070dd|Hitem:81688:4869:0:0:0:0:0:1163639104:90:168:451|h[Dashing Strike Treads]|h|r", -- [12]
-				"Finger0Slot^|cffa335ee|Hitem:89967:0:0:0:0:0:0:1950342272:90:0:445|h[Feng's Seal of Binding]|h|r", -- [13]
-				"Finger1Slot^|cffa335ee|Hitem:89070:0:0:0:0:0:0:0:90:153:445|h[Anji's Keepsake]|h|r", -- [14]
-				"Trinket0Slot^|cff0070dd|Hitem:81265:0:0:0:0:0:0:1067454272:90:0:451|h[Flashing Steel Talisman]|h|r", -- [15]
-				"Trinket1Slot^|cffa335ee|Hitem:86791:0:0:0:0:0:0:561507072:90:0:445|h[Bottle of Infinite Stars]|h|r", -- [16]
-				"MainHandSlot^|cffa335ee|Hitem:86762:0:0:0:0:0:0:936223360:90:0:445|h[Gara'kal, Fist of the Spiritbinder]|h|r", -- [17]
-				"SecondaryHandSlot^|cff0070dd|Hitem:81088:0:0:0:0:0:0:563640576:90:146:451|h[Mantid Trochanter]|h|r", -- [18]
-				"Bag0Slot^|cffffffff|Hitem:88397:0:0:0:0:0:0:539209344:90:0:0|h[Grummlepack]|h|r", -- [19]
-				"Bag1Slot^|cff1eff00|Hitem:54443:0:0:0:0:0:0:919992832:90:0:0|h[Embersilk Bag]|h|r", -- [20]
-				"Bag2Slot^|cff1eff00|Hitem:54443:0:0:0:0:0:0:1107144704:90:0:0|h[Embersilk Bag]|h|r", -- [21]
-				"Bag3Slot^|cff0070dd|Hitem:38399:0:0:0:0:0:0:1947576832:90:0:0|h[Trapper's Traveling Pack]|h|r", -- [22]
-			},
+			["XPRest"] = 0,
+			["Level"] = 90,
 			["QHAskedGet"] = true,
-			["Money"] = 46096463,
+			["Money"] = 49577415,
 			["Honor"] = 214,
 			["W"] = {
 				["NxHUD"] = {
@@ -29153,40 +29157,40 @@ NxData = {
 					["_W"] = 8,
 					["FI"] = 1,
 					["FO"] = 0.15,
-					["H"] = 40,
 					["W"] = 220.9999542236328,
-					["_X"] = 999999,
 					["Y"] = 56.99996566772461,
-					["X"] = -89.5032958984375,
-					["_H"] = 40,
-					["_Y"] = -0.17,
+					["H"] = 40,
 					["Hide"] = true,
+					["_H"] = 40,
+					["X"] = -89.5032958984375,
+					["_Y"] = -0.17,
+					["_X"] = 999999,
 				},
 				["NxQuestList"] = {
 					["_W"] = -0.52,
 					["FI"] = 1,
 					["FO"] = 0.75,
-					["H"] = 779.9999387860307,
-					["W"] = 831.9999876022341,
-					["_X"] = -0.24,
-					["Y"] = 179.9999858736994,
 					["X"] = 383.9999942779542,
+					["W"] = 831.9999876022341,
+					["Hide"] = true,
+					["Y"] = 179.9999858736994,
+					["H"] = 779.9999387860307,
 					["_H"] = -0.65,
 					["_Y"] = -0.15,
-					["Hide"] = true,
+					["_X"] = -0.24,
 				},
 				["NxDD"] = {
 					["_W"] = 207,
 					["FI"] = 1,
 					["FO"] = 0.75,
-					["H"] = 209,
-					["W"] = 207,
-					["Hide"] = true,
-					["Y"] = 0,
 					["X"] = 0,
+					["W"] = 207,
+					["_X"] = 0,
+					["Y"] = 0,
+					["H"] = 209,
 					["_H"] = 209,
 					["_Y"] = 0,
-					["_X"] = 0,
+					["Hide"] = true,
 				},
 				["NxQuestWatch"] = {
 					["MinW"] = 123.9999561905867,
@@ -29207,99 +29211,70 @@ NxData = {
 					["_Y"] = -0.35,
 					["_X"] = -0.8,
 				},
-				["NxGuide1"] = {
-					["_W"] = -0.63,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["H"] = 599.9999529123313,
-					["W"] = 1007.99998497963,
-					["_X"] = -0.15,
-					["Y"] = 239.9999811649325,
-					["X"] = 239.9999964237214,
-					["_H"] = -0.5,
-					["_Y"] = -0.2,
-					["Hide"] = true,
-				},
-				["NxCombat"] = {
-					["_W"] = -0.3,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["H"] = 71.99999434947975,
-					["W"] = 479.9999928474427,
-					["Hide"] = true,
-					["Y"] = 839.9999340772638,
-					["X"] = 1119.9999833107,
-					["_H"] = -0.06,
-					["_Y"] = -0.7,
-					["_X"] = -0.7,
-				},
-				["NxMapDock"] = {
-					["A"] = "TOPRIGHT",
-					["_W"] = 52,
+				["NxMap1"] = {
+					["9002L"] = 1,
+					["9009Y"] = -0.4,
 					["FI"] = 1,
 					["FO"] = 0,
-					["W"] = 47.99997735023532,
-					["Y"] = 29.99997094273611,
-					["H"] = 40,
-					["X"] = -8.999943599105722,
-					["_H"] = 69,
-					["_L"] = 2,
-					["L"] = 2,
-					["_Y"] = -0.08,
-					["_X"] = 100045,
-				},
-				["NxTeamHUD"] = {
-					["_W"] = 107,
-					["FI"] = 0.5,
-					["FO"] = 0,
-					["H"] = 40,
-					["W"] = 107,
-					["Hide"] = true,
-					["Y"] = 359.9999717473988,
-					["X"] = 959.9999856948855,
-					["_H"] = 40,
-					["_Y"] = -0.3,
-					["_X"] = -0.6,
-				},
-				["Version"] = 0.31,
-				["NxEventsList"] = {
-					["_W"] = -0.25,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["H"] = 119.9999905824663,
-					["W"] = 399.9999940395356,
-					["Hide"] = true,
-					["Y"] = 719.9999434947976,
-					["X"] = 1199.999982118607,
-					["_H"] = -0.1,
-					["_Y"] = -0.6,
-					["_X"] = -0.75,
-				},
-				["NxPunkHUD"] = {
+					["9012W"] = -0.19,
+					["9013X"] = -0.0001,
+					["9010L"] = 1,
+					["9001Y"] = -0.4,
+					["9008L"] = 1,
+					["9003H"] = -0.3,
+					["_H"] = -0.3,
+					["_L"] = 1,
+					["9009W"] = -0.19,
+					["9003Y"] = -0.4,
+					["9010W"] = -0.19,
+					["9011X"] = -0.0001,
+					["9008H"] = -0.3,
+					["9002X"] = -0.0001,
+					["9010H"] = -0.3,
+					["9001H"] = -0.3,
+					["9012Y"] = -0.4,
+					["9012H"] = -0.3,
+					["9002H"] = -0.3,
+					["9002W"] = -0.19,
+					["9012L"] = 1,
+					["9004W"] = -0.19,
+					["9012X"] = -0.0001,
+					["9004Y"] = -0.4,
+					["9011H"] = -0.3,
+					["9008Y"] = -0.4,
+					["_X"] = -0.0001,
 					["A"] = "BOTTOMRIGHT",
-					["_W"] = 135,
-					["FI"] = 0.5,
-					["FO"] = 0,
-					["W"] = 133.9999465048321,
-					["H"] = 40,
-					["Y"] = -40.99976955354557,
-					["X"] = -144.00016570091,
-					["_H"] = 87,
-					["_Y"] = -0.1,
-					["_X"] = -0.6,
-				},
-				["NxSocial"] = {
-					["_W"] = -0.5,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 799.9999880790713,
-					["Y"] = 215.9999815225604,
-					["H"] = 767.9999427795418,
-					["_H"] = -0.64,
-					["_X"] = -0.25,
-					["X"] = 399.9999940395356,
-					["_Y"] = -0.18,
-					["Hide"] = true,
+					["9013L"] = 1,
+					["9002Y"] = -0.4,
+					["9013Y"] = -0.4,
+					["9013W"] = -0.19,
+					["9003W"] = -0.19,
+					["9011L"] = 1,
+					["9009H"] = -0.3,
+					["9010X"] = -0.0001,
+					["H"] = 280.3998413085938,
+					["9003L"] = 1,
+					["9003X"] = -0.0001,
+					["9009L"] = 1,
+					["L"] = 1,
+					["9004L"] = 1,
+					["9001L"] = 1,
+					["9001W"] = -0.19,
+					["_W"] = -0.19,
+					["9011Y"] = -0.4,
+					["9013H"] = -0.3,
+					["9010Y"] = -0.4,
+					["9004H"] = -0.3,
+					["W"] = 277.5599060058594,
+					["9008X"] = -0.0001,
+					["Y"] = -2.40078592300415,
+					["X"] = -31.33761978149414,
+					["9011W"] = -0.19,
+					["9008W"] = -0.19,
+					["9004X"] = -0.0001,
+					["9001X"] = -0.0001,
+					["_Y"] = -0.4,
+					["9009X"] = -0.0001,
 				},
 				["NxOpts"] = {
 					["_W"] = -0.5,
@@ -29313,151 +29288,300 @@ NxData = {
 					["_Y"] = -0.1,
 					["_X"] = -0.25,
 				},
-				["NxMap1"] = {
-					["9002L"] = 1,
-					["9009Y"] = -0.4,
-					["9008L"] = 1,
-					["FO"] = 0,
-					["9004H"] = -0.3,
-					["9013X"] = -0.0001,
-					["9010L"] = 1,
-					["9001Y"] = -0.4,
+				["NxMapDock"] = {
+					["A"] = "TOPRIGHT",
+					["_W"] = 52,
 					["FI"] = 1,
-					["9012Y"] = -0.4,
-					["_H"] = -0.3,
-					["_L"] = 1,
-					["9009W"] = -0.19,
-					["9003Y"] = -0.4,
-					["9010W"] = -0.19,
-					["9011X"] = -0.0001,
-					["9008H"] = -0.3,
-					["9002X"] = -0.0001,
-					["9003W"] = -0.19,
-					["9001H"] = -0.3,
-					["9003H"] = -0.3,
-					["9012H"] = -0.3,
-					["9002H"] = -0.3,
-					["9002W"] = -0.19,
-					["9012L"] = 1,
-					["9004W"] = -0.19,
-					["9012X"] = -0.0001,
-					["9012W"] = -0.19,
-					["9010X"] = -0.0001,
-					["9008Y"] = -0.4,
-					["9004L"] = 1,
+					["FO"] = 0,
+					["W"] = 47.99997735023532,
+					["Y"] = 29.99997094273611,
+					["X"] = -8.999943599105722,
+					["H"] = 40,
+					["_H"] = 69,
+					["_L"] = 2,
+					["L"] = 2,
+					["_Y"] = -0.08,
+					["_X"] = 100045,
+				},
+				["NxGuide1"] = {
+					["_W"] = -0.63,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["X"] = 239.9999964237214,
+					["W"] = 1007.99998497963,
+					["Hide"] = true,
+					["Y"] = 239.9999811649325,
+					["H"] = 599.9999529123313,
+					["_H"] = -0.5,
+					["_Y"] = -0.2,
+					["_X"] = -0.15,
+				},
+				["Version"] = 0.31,
+				["NxCombat"] = {
+					["_W"] = -0.3,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["X"] = 1119.9999833107,
+					["W"] = 479.9999928474427,
+					["_X"] = -0.7,
+					["Y"] = 839.9999340772638,
+					["H"] = 71.99999434947975,
+					["_H"] = -0.06,
+					["_Y"] = -0.7,
+					["Hide"] = true,
+				},
+				["NxPunkHUD"] = {
 					["A"] = "BOTTOMRIGHT",
-					["9013L"] = 1,
-					["9010H"] = -0.3,
-					["9001W"] = -0.19,
-					["9013W"] = -0.19,
-					["9004Y"] = -0.4,
-					["9011L"] = 1,
-					["9009H"] = -0.3,
-					["9011H"] = -0.3,
-					["H"] = 280.3998413085938,
-					["9003L"] = 1,
-					["9003X"] = -0.0001,
-					["9009L"] = 1,
-					["L"] = 1,
-					["_X"] = -0.0001,
-					["9001L"] = 1,
-					["9013Y"] = -0.4,
-					["_W"] = -0.19,
-					["9011Y"] = -0.4,
-					["9013H"] = -0.3,
-					["9010Y"] = -0.4,
-					["9008W"] = -0.19,
-					["W"] = 277.5599060058594,
-					["9008X"] = -0.0001,
-					["Y"] = -2.40078592300415,
-					["X"] = -31.33761978149414,
-					["9011W"] = -0.19,
-					["9002Y"] = -0.4,
-					["9004X"] = -0.0001,
-					["9001X"] = -0.0001,
-					["_Y"] = -0.4,
-					["9009X"] = -0.0001,
+					["_W"] = 135,
+					["FI"] = 0.5,
+					["FO"] = 0,
+					["W"] = 133.9999465048321,
+					["X"] = -144.00016570091,
+					["Y"] = -40.99976955354557,
+					["H"] = 40,
+					["_H"] = 87,
+					["_Y"] = -0.1,
+					["_X"] = -0.6,
+				},
+				["NxSocial"] = {
+					["_W"] = -0.5,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 799.9999880790713,
+					["Y"] = 215.9999815225604,
+					["H"] = 767.9999427795418,
+					["_H"] = -0.64,
+					["Hide"] = true,
+					["X"] = 399.9999940395356,
+					["_Y"] = -0.18,
+					["_X"] = -0.25,
+				},
+				["NxEventsList"] = {
+					["_W"] = -0.25,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["X"] = 1199.999982118607,
+					["W"] = 399.9999940395356,
+					["_X"] = -0.75,
+					["Y"] = 719.9999434947976,
+					["H"] = 119.9999905824663,
+					["_H"] = -0.1,
+					["_Y"] = -0.6,
+					["Hide"] = true,
+				},
+				["NxTeamHUD"] = {
+					["_W"] = 107,
+					["FI"] = 0.5,
+					["FO"] = 0,
+					["X"] = 959.9999856948855,
+					["W"] = 107,
+					["_X"] = -0.6,
+					["Y"] = 359.9999717473988,
+					["H"] = 40,
+					["_H"] = 40,
+					["_Y"] = -0.3,
+					["Hide"] = true,
 				},
 			},
 			["E"] = {
-				"I^136339776400^34^37f7da^Entered", -- [1]
-				"I^136339777700^16^ffaffa^Entered", -- [2]
-				"D^136339791300^16^75749c^Shao-Tien Behemoth", -- [3]
-				"K^136339851200^16^7fd54c^Subjugated Serpent^4", -- [4]
-				"I^136339857800^228^7995ee^Entered", -- [5]
-				"K^136339874500^228^8a4a82^Stone Quilen^1", -- [6]
-				"D^136339938700^228^5a65e6^Feng the Accursed", -- [7]
-				"K^136339968700^228^c70b98^Zandalari Infiltrator^1", -- [8]
-				"K^136339976300^228^c425bd^Zandalari Fire-Dancer^1", -- [9]
-				"K^136339978100^228^c0455e^Zandalari Infiltrator^2", -- [10]
-				"I^136340021300^16^7995ee^Entered", -- [11]
-				"D^136340032100^16^79c5f0^Shao-Tien Behemoth", -- [12]
-				"K^136340053500^16^5cc33a^Subjugated Serpent^5", -- [13]
-				"K^136340056600^16^622316^Shao-Tien Marauder^5", -- [14]
-				"D^136340158000^0^000000^?", -- [15]
-				"I^136340159500^16^75f87b^Entered", -- [16]
-				"K^136340182200^16^5b933e^Shao-Tien Soul-Render^8", -- [17]
-				"K^136340190000^16^5e9315^Shao-Tien Soul-Render^9", -- [18]
-				"K^136340194000^16^60039e^Shao-Tien Marauder^6", -- [19]
-				"K^136340197000^16^6153c6^Shao-Tien Soul-Render^10", -- [20]
-				"K^136340216900^16^648318^Shao-Tien Soul-Render^11", -- [21]
-				"K^136340220200^16^69a392^Shao-Tien Soul-Render^12", -- [22]
-				"K^136340253100^16^68372c^Knifetooth Swarmer^1", -- [23]
-				"K^136340253200^16^68372c^Knifetooth Swarmer^2", -- [24]
-				"K^136340253201^16^68472d^Knifetooth Swarmer^3", -- [25]
-				"K^136340256100^16^69173c^Knifetooth Swarmer^4", -- [26]
-				"K^136340256600^16^69173c^Knifetooth Swarmer^5", -- [27]
-				"K^136340256700^16^69173c^Knifetooth Swarmer^6", -- [28]
-				"K^136340258900^16^6c1791^Knifetooth Swarmer^7", -- [29]
-				"K^136340259300^16^6c1791^Knifetooth Swarmer^8", -- [30]
-				"K^136340259900^16^6c1791^Knifetooth Swarmer^9", -- [31]
-				"K^136340262800^16^69e7ba^Knifetooth Swarmer^10", -- [32]
-				"K^136340263500^16^69e7ba^Knifetooth Swarmer^11", -- [33]
-				"K^136340263700^16^69e7ba^Knifetooth Swarmer^12", -- [34]
-				"K^136340263900^16^69e7ba^Knifetooth Swarmer^13", -- [35]
-				"K^136340283300^16^69685f^Paleblade Slithertongue^1", -- [36]
-				"K^136340293800^16^61d786^Paleblade Flesheater^4", -- [37]
-				"I^136340296000^228^62979b^Entered", -- [38]
-				"K^136340358300^228^46d8ef^Cosmic Spark^1", -- [39]
-				"K^136340412400^228^af7a15^Mogu'shan Secret-Keeper^1", -- [40]
-				"K^136340416700^228^b14a55^Mogu'shan Secret-Keeper^2", -- [41]
-				"I^136340474500^16^b0fc3c^Entered", -- [42]
-				"K^136340479500^16^6af6a1^Paleblade Flesheater^5", -- [43]
-				"K^136340480000^16^6b2692^Paleblade Flesheater^6", -- [44]
-				"K^136340483300^16^67c6c2^Paleblade Flesheater^7", -- [45]
-				"K^136340486500^16^6b469e^Paleblade Flesheater^8", -- [46]
-				"K^136340488200^16^6ac672^Paleblade Flesheater^9", -- [47]
-				"K^136340531400^16^5c1b8e^Slateskin Troublemaker^1", -- [48]
-				"K^136340535600^16^55abb2^Slateskin Troublemaker^2", -- [49]
-				"K^136340540900^16^5f4c60^Slateskin Troublemaker^3", -- [50]
-				"K^136340541500^16^5f6c63^Slateskin Troublemaker^4", -- [51]
-				"K^136340545400^16^5e9c90^Slateskin Troublemaker^5", -- [52]
-				"K^136340547300^16^5e1ca8^Slateskin Troublemaker^6", -- [53]
-				"K^136340549300^16^5e0ca0^Slateskin Troublemaker^7", -- [54]
-				"K^136340552200^16^5cdcc1^Slateskin Troublemaker^8", -- [55]
-				"K^136340555400^16^5f8c97^Slateskin Troublemaker^9", -- [56]
-				"K^136340556200^16^5f8c97^Slateskin Troublemaker^10", -- [57]
-				"K^136340561200^16^5f5cb7^Slateskin Troublemaker^11", -- [58]
-				"I^136340567800^16^38641b^Entered", -- [59]
-				"I^136340575400^16^397451^Entered", -- [60]
-				"I^136359851600^16^7ee870^Entered", -- [61]
-				"K^136359865400^16^8be45b^Subjugated Serpent^3", -- [62]
-				"D^136359874200^16^7ca621^Shao-Tien Behemoth", -- [63]
-				"K^136359889100^16^86739c^Shao-Tien Marauder^3", -- [64]
-				"K^136359896700^16^895443^Subjugated Serpent^4", -- [65]
-				"K^136359902700^16^83d393^Shao-Tien Soul-Render^6", -- [66]
-				"K^136359905600^16^83a3b6^Shao-Tien Marauder^4", -- [67]
-				"K^136359910700^16^82b3c3^Shao-Tien Soul-Render^7", -- [68]
-				"K^136359916300^16^814420^Shao-Tien Marauder^5", -- [69]
-				"K^136359929100^16^6ed3c0^Shao-Tien Soul-Render^8", -- [70]
-				"K^136359934900^16^5b9342^Shao-Tien Soul-Render^9", -- [71]
-				"K^136359941200^16^5d534e^Subjugated Serpent^5", -- [72]
-				"K^136359945000^16^5df306^Shao-Tien Soul-Render^10", -- [73]
-				"K^136359964800^16^7003bf^Twisted Tormentor^1", -- [74]
-				"I^136359979100^239^90c6fa^Entered", -- [75]
-				"D^136360002600^239^772808^Little Liuyang", -- [76]
-				"K^136360029100^239^68d743^Cloudbender Kobo^1", -- [77]
-				"I^136360033700^16^ffaffa^Entered", -- [78]
+				"K^136340194000^16^60039e^Shao-Tien Marauder^6", -- [1]
+				"K^136340197000^16^6153c6^Shao-Tien Soul-Render^10", -- [2]
+				"K^136340216900^16^648318^Shao-Tien Soul-Render^11", -- [3]
+				"K^136340220200^16^69a392^Shao-Tien Soul-Render^12", -- [4]
+				"K^136340253100^16^68372c^Knifetooth Swarmer^1", -- [5]
+				"K^136340253200^16^68372c^Knifetooth Swarmer^2", -- [6]
+				"K^136340253201^16^68472d^Knifetooth Swarmer^3", -- [7]
+				"K^136340256100^16^69173c^Knifetooth Swarmer^4", -- [8]
+				"K^136340256600^16^69173c^Knifetooth Swarmer^5", -- [9]
+				"K^136340256700^16^69173c^Knifetooth Swarmer^6", -- [10]
+				"K^136340258900^16^6c1791^Knifetooth Swarmer^7", -- [11]
+				"K^136340259300^16^6c1791^Knifetooth Swarmer^8", -- [12]
+				"K^136340259900^16^6c1791^Knifetooth Swarmer^9", -- [13]
+				"K^136340262800^16^69e7ba^Knifetooth Swarmer^10", -- [14]
+				"K^136340263500^16^69e7ba^Knifetooth Swarmer^11", -- [15]
+				"K^136340263700^16^69e7ba^Knifetooth Swarmer^12", -- [16]
+				"K^136340263900^16^69e7ba^Knifetooth Swarmer^13", -- [17]
+				"K^136340283300^16^69685f^Paleblade Slithertongue^1", -- [18]
+				"K^136340293800^16^61d786^Paleblade Flesheater^4", -- [19]
+				"I^136340296000^228^62979b^Entered", -- [20]
+				"K^136340358300^228^46d8ef^Cosmic Spark^1", -- [21]
+				"K^136340412400^228^af7a15^Mogu'shan Secret-Keeper^1", -- [22]
+				"K^136340416700^228^b14a55^Mogu'shan Secret-Keeper^2", -- [23]
+				"I^136340474500^16^b0fc3c^Entered", -- [24]
+				"K^136340479500^16^6af6a1^Paleblade Flesheater^5", -- [25]
+				"K^136340480000^16^6b2692^Paleblade Flesheater^6", -- [26]
+				"K^136340483300^16^67c6c2^Paleblade Flesheater^7", -- [27]
+				"K^136340486500^16^6b469e^Paleblade Flesheater^8", -- [28]
+				"K^136340488200^16^6ac672^Paleblade Flesheater^9", -- [29]
+				"K^136340531400^16^5c1b8e^Slateskin Troublemaker^1", -- [30]
+				"K^136340535600^16^55abb2^Slateskin Troublemaker^2", -- [31]
+				"K^136340540900^16^5f4c60^Slateskin Troublemaker^3", -- [32]
+				"K^136340541500^16^5f6c63^Slateskin Troublemaker^4", -- [33]
+				"K^136340545400^16^5e9c90^Slateskin Troublemaker^5", -- [34]
+				"K^136340547300^16^5e1ca8^Slateskin Troublemaker^6", -- [35]
+				"K^136340549300^16^5e0ca0^Slateskin Troublemaker^7", -- [36]
+				"K^136340552200^16^5cdcc1^Slateskin Troublemaker^8", -- [37]
+				"K^136340555400^16^5f8c97^Slateskin Troublemaker^9", -- [38]
+				"K^136340556200^16^5f8c97^Slateskin Troublemaker^10", -- [39]
+				"K^136340561200^16^5f5cb7^Slateskin Troublemaker^11", -- [40]
+				"I^136340567800^16^38641b^Entered", -- [41]
+				"I^136340575400^16^397451^Entered", -- [42]
+				"I^136359851600^16^7ee870^Entered", -- [43]
+				"K^136359865400^16^8be45b^Subjugated Serpent^3", -- [44]
+				"D^136359874200^16^7ca621^Shao-Tien Behemoth", -- [45]
+				"K^136359889100^16^86739c^Shao-Tien Marauder^3", -- [46]
+				"K^136359896700^16^895443^Subjugated Serpent^4", -- [47]
+				"K^136359902700^16^83d393^Shao-Tien Soul-Render^6", -- [48]
+				"K^136359905600^16^83a3b6^Shao-Tien Marauder^4", -- [49]
+				"K^136359910700^16^82b3c3^Shao-Tien Soul-Render^7", -- [50]
+				"K^136359916300^16^814420^Shao-Tien Marauder^5", -- [51]
+				"K^136359929100^16^6ed3c0^Shao-Tien Soul-Render^8", -- [52]
+				"K^136359934900^16^5b9342^Shao-Tien Soul-Render^9", -- [53]
+				"K^136359941200^16^5d534e^Subjugated Serpent^5", -- [54]
+				"K^136359945000^16^5df306^Shao-Tien Soul-Render^10", -- [55]
+				"K^136359964800^16^7003bf^Twisted Tormentor^1", -- [56]
+				"I^136359979100^239^90c6fa^Entered", -- [57]
+				"D^136360002600^239^772808^Little Liuyang", -- [58]
+				"K^136360029100^239^68d743^Cloudbender Kobo^1", -- [59]
+				"I^136360033700^16^ffaffa^Entered", -- [60]
+				"I^136368432400^16^86586c^Entered", -- [61]
+				"K^136368447600^16^78844a^Subjugated Serpent^4", -- [62]
+				"D^136368459200^16^7ab69a^Shao-Tien Behemoth", -- [63]
+				"K^136368485900^16^7c7456^Shao-Tien Soul-Render^9", -- [64]
+				"K^136368490000^16^80f3d9^Shao-Tien Soul-Render^10", -- [65]
+				"K^136368494000^16^7cd447^Shao-Tien Soul-Render^11", -- [66]
+				"K^136368498300^16^6aa3a8^Subjugated Serpent^5", -- [67]
+				"K^136368503800^16^6ae3eb^Shao-Tien Soul-Render^12", -- [68]
+				"K^136368506800^16^6b2411^Shao-Tien Marauder^5", -- [69]
+				"K^136368511200^16^724466^Shao-Tien Soul-Render^13", -- [70]
+				"K^136368514800^16^6b8409^Shao-Tien Soul-Render^14", -- [71]
+				"K^136368518500^16^67842f^Shao-Tien Marauder^6", -- [72]
+				"K^136368530700^16^692734^Knifetooth Swarmer^14", -- [73]
+				"K^136368531100^16^692733^Knifetooth Swarmer^15", -- [74]
+				"K^136368531500^16^692733^Knifetooth Swarmer^16", -- [75]
+				"K^136368533900^16^6aa7a7^Knifetooth Swarmer^17", -- [76]
+				"K^136368533901^16^6aa7a7^Knifetooth Swarmer^18", -- [77]
+				"K^136368534100^16^6a87a1^Knifetooth Swarmer^19", -- [78]
+				"K^136368534101^16^6ae7a1^Knifetooth Swarmer^20", -- [79]
+				"K^136368537500^16^6ac802^Knifetooth Swarmer^21", -- [80]
+				"K^136368538100^16^6ac802^Knifetooth Swarmer^22", -- [81]
+				"K^136368538400^16^6ac802^Knifetooth Swarmer^23", -- [82]
+				"K^136368538800^16^6ac802^Knifetooth Swarmer^24", -- [83]
+				"K^136368546600^16^64b86a^Fog Walker^1", -- [84]
+				"K^136368550500^16^5e1935^Fog Walker^2", -- [85]
+				"K^136368553800^16^5f4914^Thundermaw^1", -- [86]
+				"K^136368554900^16^5f4914^Stillwater Crocolisk^1", -- [87]
+				"K^136368561200^16^6a1859^Fog Walker^3", -- [88]
+				"K^136368564700^16^70a81d^Fog Walker^4", -- [89]
+				"K^136368567000^16^6fe846^Fog Walker^5", -- [90]
+				"K^136368570700^16^6828e1^Fog Walker^6", -- [91]
+				"K^136368573600^16^66d898^Fog Walker^7", -- [92]
+				"K^136368576000^16^6508c0^Fog Walker^8", -- [93]
+				"K^136368588500^16^49754d^Ashweb Hatchling^1", -- [94]
+				"K^136368590600^16^496549^Stonebark Trickster^1", -- [95]
+				"K^136368591700^16^496549^Ashweb Piercer^1", -- [96]
+				"K^136368592300^16^497549^Stonebark Trickster^2", -- [97]
+				"K^136368592900^16^49854b^Stonebark Trickster^3", -- [98]
+				"K^136368593300^16^49854e^Stonebark Trickster^4", -- [99]
+				"K^136368598100^16^3b04ec^Ashweb Piercer^2", -- [100]
+				"K^136368602100^16^390455^Ashweb Piercer^3", -- [101]
+				"K^136368606900^16^3f0486^Mogu Statue^1", -- [102]
+				"K^136368608100^16^3ea485^Ashweb Weaver^1", -- [103]
+				"K^136368612900^16^3ed4c6^Ashweb Piercer^4", -- [104]
+				"K^136368621200^16^4574b4^Ashweb Piercer^5", -- [105]
+				"K^136368626700^16^3d5415^Ashweb Piercer^6", -- [106]
+				"K^136368632400^16^3a344e^Mogu Statue^2", -- [107]
+				"K^136368634700^16^38f47b^Ashweb Hatchling^2", -- [108]
+				"K^136368639200^16^3b04ec^Ashweb Piercer^7", -- [109]
+				"I^136368641300^16^39343f^Entered", -- [110]
+				"K^136368644400^16^3333e0^Mogu Statue^3", -- [111]
+				"I^136368655500^16^394446^Entered", -- [112]
+				"K^136368664900^16^303512^Ashweb Hatchling^3", -- [113]
+				"K^136368665300^16^305510^Ashweb Hatchling^4", -- [114]
+				"K^136368665600^16^2fc512^Ashweb Hatchling^5", -- [115]
+				"K^136368665800^16^307510^Ashweb Hatchling^6", -- [116]
+				"K^136368666000^16^307510^Ashweb Hatchling^7", -- [117]
+				"K^136368666100^16^307510^Ashweb Hatchling^8", -- [118]
+				"K^136368667200^16^30050b^Ashweb Piercer^8", -- [119]
+				"K^136368667201^16^30050b^Ashweb Hatchling^9", -- [120]
+				"K^136368668700^16^309510^Ashweb Weaver^2", -- [121]
+				"K^136368673600^16^32c4b2^Ashweb Piercer^9", -- [122]
+				"K^136368688100^16^51c411^Stonebark Trickster^5", -- [123]
+				"K^136368690900^16^5b43ad^Stonebark Trickster^6", -- [124]
+				"K^136368691500^16^5b53af^Stonebark Trickster^7", -- [125]
+				"K^136368691600^16^5b93b3^Stonebark Trickster^8", -- [126]
+				"K^136368691700^16^5b93b3^Stonebark Trickster^9", -- [127]
+				"K^136368694300^16^536383^Stonebark Trickster^10", -- [128]
+				"K^136368697500^16^4d1402^Stonebark Trickster^11", -- [129]
+				"K^136368698500^16^4cf401^Stonebark Trickster^12", -- [130]
+				"K^136368699600^16^4ce3fc^Stonebark Trickster^13", -- [131]
+				"K^136368699800^16^4ce3fc^Stonebark Trickster^14", -- [132]
+				"I^136368707600^16^386426^Entered", -- [133]
+				"K^136368715000^16^c1a7a1^Bloodtip Swarmer^1", -- [134]
+				"K^136368715001^16^c1a7a1^Bloodtip Swarmer^2", -- [135]
+				"K^136368715002^16^c1a7a1^Bloodtip Swarmer^3", -- [136]
+				"K^136368715003^16^c1a7a1^Bloodtip Swarmer^4", -- [137]
+				"K^136368715004^16^c1a7a1^Bloodtip Swarmer^5", -- [138]
+				"K^136368715005^16^c1a7a1^Bloodtip Swarmer^6", -- [139]
+				"K^136368715006^16^c1a7a1^Bloodtip Swarmer^7", -- [140]
+				"K^136368715007^16^c1a7a1^Bloodtip Swarmer^8", -- [141]
+				"K^136368715008^16^c1a7a1^Bloodtip Swarmer^9", -- [142]
+				"K^136368715009^16^c1a7a1^Bloodtip Swarmer^10", -- [143]
+				"K^136368715010^16^c1a7a1^Bloodtip Swarmer^11", -- [144]
+				"K^136368715011^16^c1a7a1^Bloodtip Swarmer^12", -- [145]
+				"K^136368715100^16^c1a7a6^Bloodtip Swarmer^13", -- [146]
+				"K^136368715101^16^c197a8^Bloodtip Swarmer^14", -- [147]
+				"K^136368715102^16^c197a8^Bloodtip Swarmer^15", -- [148]
+				"K^136368715103^16^c197a8^Bloodtip Swarmer^16", -- [149]
+				"K^136368715104^16^c197ab^Bloodtip Swarmer^17", -- [150]
+				"K^136368715105^16^c197ab^Bloodtip Swarmer^18", -- [151]
+				"K^136368715200^16^c187b3^Bloodtip Swarmer^19", -- [152]
+				"K^136368715201^16^c187b3^Bloodtip Swarmer^20", -- [153]
+				"K^136368715202^16^c187b3^Bloodtip Swarmer^21", -- [154]
+				"K^136368715203^16^c187b3^Bloodtip Swarmer^22", -- [155]
+				"K^136368715204^16^c187b3^Bloodtip Swarmer^23", -- [156]
+				"K^136368715205^16^c187b3^Bloodtip Swarmer^24", -- [157]
+				"K^136368716100^16^c167bb^Bloodtip Swarmer^25", -- [158]
+				"K^136368716101^16^c167bb^Bloodtip Swarmer^26", -- [159]
+				"K^136368716102^16^c167bb^Bloodtip Swarmer^27", -- [160]
+				"K^136368716200^16^c167bb^Bloodtip Swarmer^28", -- [161]
+				"K^136368716201^16^c167bb^Bloodtip Swarmer^29", -- [162]
+				"K^136368716202^16^c167bb^Bloodtip Swarmer^30", -- [163]
+				"K^136368716203^16^c167bb^Bloodtip Swarmer^31", -- [164]
+				"K^136368716204^16^c167bb^Bloodtip Swarmer^32", -- [165]
+				"K^136368716205^16^c167bb^Bloodtip Swarmer^33", -- [166]
+				"K^136368716206^16^c167bb^Bloodtip Swarmer^34", -- [167]
+				"K^136368716207^16^c167bb^Bloodtip Swarmer^35", -- [168]
+				"K^136368716208^16^c167bb^Bloodtip Swarmer^36", -- [169]
+				"K^136368719200^16^445254^Bloodtip Swarmer^37", -- [170]
+				"K^136368719201^16^445254^Bloodtip Swarmer^38", -- [171]
+				"K^136368719202^16^445254^Bloodtip Swarmer^39", -- [172]
+				"K^136368719203^16^445254^Bloodtip Swarmer^40", -- [173]
+				"K^136368719204^16^445254^Bloodtip Swarmer^41", -- [174]
+				"K^136368719205^16^445254^Bloodtip Swarmer^42", -- [175]
+				"K^136368719206^16^445254^Bloodtip Swarmer^43", -- [176]
+				"K^136368719207^16^445254^Bloodtip Swarmer^44", -- [177]
+				"K^136368719208^16^445254^Bloodtip Swarmer^45", -- [178]
+				"K^136368719209^16^445254^Bloodtip Swarmer^46", -- [179]
+				"K^136368719210^16^445254^Bloodtip Swarmer^47", -- [180]
+				"K^136368719211^16^445254^Bloodtip Swarmer^48", -- [181]
+				"K^136368720200^16^447264^Bloodtip Swarmer^49", -- [182]
+				"D^136368720300^16^447259^Bloodtip", -- [183]
+				"K^136368720301^16^447259^Bloodtip Swarmer^50", -- [184]
+				"I^136368722200^16^63e506^Entered", -- [185]
+				"I^136368727000^16^38a438^Entered", -- [186]
+				"K^136368735000^16^453261^Bloodtip Swarmer^51", -- [187]
+				"K^136368735001^16^459259^Bloodtip Swarmer^52", -- [188]
+				"K^136368735002^16^452248^Bloodtip Swarmer^53", -- [189]
+				"K^136368735100^16^452248^Bloodtip Swarmer^54", -- [190]
+				"K^136368735200^16^453252^Bloodtip Swarmer^55", -- [191]
+				"K^136368735201^16^45925c^Bloodtip Swarmer^56", -- [192]
+				"K^136368735202^16^44f25e^Bloodtip Swarmer^57", -- [193]
+				"K^136368735500^16^44f25e^Bloodtip^1", -- [194]
+				"D^136368735600^16^45025e^Bloodtip Swarmer", -- [195]
+				"I^136368736800^16^c0c7b1^Entered", -- [196]
+				"I^136368742100^16^394438^Entered", -- [197]
+				"I^136368748100^16^39644d^Entered", -- [198]
 			},
 			["LXPRest"] = 0,
 			["WareBags"] = {
@@ -29470,47 +29594,43 @@ NxData = {
 				["Domination Point Commission"] = "15^|cffffffff|Hitem:91877:0:0:0:0:0:0:-2091508736:90:0:0|h[Domination Point Commission]|h|r",
 				["Master Healing Potion"] = "1^|cffffffff|Hitem:76097:0:0:0:0:0:0:1214698752:90:0:0|h[Master Healing Potion]|h|r",
 				["Sha-Touched Leather"] = "4^|cffffffff|Hitem:72162:0:0:0:0:0:0:1063456448:90:0:0|h[Sha-Touched Leather]|h|r",
-				["Hearthstone"] = "1^|cffffffff|Hitem:6948:0:0:0:0:0:0:0:90:0:0|h[Hearthstone]|h|r",
+				["Great Pandaren Banquet"] = "1^|cffffffff|Hitem:75016:0:0:0:0:0:0:923713280:90:0:0|h[Great Pandaren Banquet]|h|r",
 				["Mushan Ribs"] = "7^|cffffffff|Hitem:74834:0:0:0:0:0:0:-1892052608:90:0:0|h[Mushan Ribs]|h|r",
-				["Raw Tiger Steak"] = "13^|cffffffff|Hitem:74833:0:0:0:0:0:0:566092288:90:0:0|h[Raw Tiger Steak]|h|r",
+				["Fresh Whitepetal Worm"] = "1^|cffffffff|Hitem:84240:0:0:0:0:0:0:854455680:90:0:0|h[Fresh Whitepetal Worm]|h|r",
 				["Trellised Cowl of the Sorcerer"] = "1^|cff1eff00|Hitem:82195:0:0:0:0:0:-36:687277136:90:0:0|h[Trellised Cowl of the Sorcerer]|h|r",
 				["Winterfall Spirit Beads"] = "3^|cffffffff|Hitem:21383:0:0:0:0:0:0:-2137437056:90:0:0|h[Winterfall Spirit Beads]|h|r",
-				["Magnificent Hide"] = "8^|cff0070dd|Hitem:72163:0:0:0:0:0:0:1423413376:90:0:0|h[Magnificent Hide]|h|r",
+				["Magnificent Hide"] = "9^|cff0070dd|Hitem:72163:0:0:0:0:0:0:1423413376:90:0:0|h[Magnificent Hide]|h|r",
 				["Spirit of Harmony"] = "3^|cff0070dd|Hitem:76061:0:0:0:0:0:0:892097728:90:0:0|h[Spirit of Harmony]|h|r",
 				["Fishing Pole"] = "1^|cffffffff|Hitem:6256:0:0:0:0:0:0:0:90:0:0|h[Fishing Pole]|h|r",
-				["Ancient Guo-Lai Cache Key"] = "1^|cffffffff|Hitem:87779:0:0:0:0:0:0:1681660288:90:0:0|h[Ancient Guo-Lai Cache Key]|h|r",
+				["Exotic Leather"] = "10^|cffffffff|Hitem:72120:0:0:0:0:0:0:471442752:90:0:0|h[Exotic Leather]|h|r",
 				["Darkmoon Game Token"] = "32^|cff1eff00|Hitem:71083:0:0:0:0:0:0:1795735168:90:0:0|h[Darkmoon Game Token]|h|r",
 				["Skinning Knife"] = "1^|cffffffff|Hitem:7005:0:0:0:0:0:0:0:90:0:0|h[Skinning Knife]|h|r",
-				["Exotic Leather"] = "12^|cffffffff|Hitem:72120:0:0:0:0:0:0:471442752:90:0:0|h[Exotic Leather]|h|r",
-				["Mote of Harmony"] = "8^|cffffffff|Hitem:89112:0:0:0:0:0:0:206076544:90:0:0|h[Mote of Harmony]|h|r",
-				["White Turnip"] = "1^|cffffffff|Hitem:74850:0:0:0:0:0:0:896704192:90:0:0|h[White Turnip]|h|r",
-				["Fresh Whitepetal Worm"] = "1^|cffffffff|Hitem:84240:0:0:0:0:0:0:854455680:90:0:0|h[Fresh Whitepetal Worm]|h|r",
-				["Sigil of Power"] = "4^|cffff8000|Hitem:87208:0:0:0:0:0:0:117167360:90:0:0|h[Sigil of Power]|h|r",
+				["Mote of Harmony"] = "9^|cffffffff|Hitem:89112:0:0:0:0:0:0:206076544:90:0:0|h[Mote of Harmony]|h|r",
+				["Raw Tiger Steak"] = "13^|cffffffff|Hitem:74833:0:0:0:0:0:0:566092288:90:0:0|h[Raw Tiger Steak]|h|r",
+				["Waterfall Sandals of the Feverflare"] = "1^|cff1eff00|Hitem:82254:0:0:0:0:0:-138:1328743326:90:0:0|h[Waterfall Sandals of the Feverflare]|h|r",
 				["Raw Crocolisk Belly"] = "4^|cffffffff|Hitem:75014:0:0:0:0:0:0:588168960:90:0:0|h[Raw Crocolisk Belly]|h|r",
+				["Sigil of Power"] = "4^|cffff8000|Hitem:87208:0:0:0:0:0:0:117167360:90:0:0|h[Sigil of Power]|h|r",
 				["Eternium Thread"] = "13^|cffffffff|Hitem:38426:0:0:0:0:0:0:0:90:0:0|h[Eternium Thread]|h|r",
+				["Simple Flour"] = "20^|cffffffff|Hitem:30817:0:0:0:0:0:0:0:90:0:0|h[Simple Flour]|h|r",
 				["Kirin Tor Beacon"] = "1^|cffffffff|Hitem:95567:0:0:0:0:0:0:525574912:90:0:0|h[Kirin Tor Beacon]|h|r",
 				["Trellised Sandals of the Fireflash"] = "1^|cff1eff00|Hitem:82199:0:0:0:0:0:-130:1095107380:90:0:0|h[Trellised Sandals of the Fireflash]|h|r",
 				["Wildfowl Breast"] = "18^|cffffffff|Hitem:74839:0:0:0:0:0:0:1963140352:90:0:0|h[Wildfowl Breast]|h|r",
-				["Heavy Windwool Bandage"] = "39^|cffffffff|Hitem:72986:0:0:0:0:0:0:63742172:90:0:0|h[Heavy Windwool Bandage]|h|r",
+				["Heavy Windwool Bandage"] = "40^|cffffffff|Hitem:72986:0:0:0:0:0:0:63742172:90:0:0|h[Heavy Windwool Bandage]|h|r",
 				["Juicycrunch Carrot"] = "2^|cffffffff|Hitem:74841:0:0:0:0:0:0:1832098304:90:0:0|h[Juicycrunch Carrot]|h|r",
-				["Simple Flour"] = "20^|cffffffff|Hitem:30817:0:0:0:0:0:0:0:90:0:0|h[Simple Flour]|h|r",
-				["Waterfall Sandals of the Feverflare"] = "1^|cff1eff00|Hitem:82254:0:0:0:0:0:-138:1328743326:90:0:0|h[Waterfall Sandals of the Feverflare]|h|r",
+				["White Turnip"] = "1^|cffffffff|Hitem:74850:0:0:0:0:0:0:896704192:90:0:0|h[White Turnip]|h|r",
+				["Hearthstone"] = "1^|cffffffff|Hitem:6948:0:0:0:0:0:0:0:90:0:0|h[Hearthstone]|h|r",
 			},
 			["Version"] = 0.02,
 			["DurPercent"] = 100,
-			["Level"] = 90,
-			["XPRest"] = 0,
-			["Pos"] = "6009^74.208760^42.794716",
+			["ArenaPts"] = 0,
+			["LvlTime"] = 1363684321,
+			["Pos"] = "6009^56.255996^43.327492",
 		},
 		["Khaz Modan.Doxx"] = {
 			["XPMax"] = 2100,
-			["Opts"] = {
-				["MapShowGatherH"] = false,
-				["QMapShowQuestGivers3"] = 1,
-				["MapShowGatherM"] = false,
-			},
+			["Pos"] = "5002^60.058522^77.056652",
 			["NXLoggedOnNum"] = 1,
-			["LvlTime"] = 1293498358,
+			["XPRest"] = 0,
 			["E"] = {
 				"I^129349611000^164^000000^Entered", -- [1]
 				"I^129349637700^164^99bbf0^+10 xp", -- [2]
@@ -29578,7 +29698,15 @@ NxData = {
 			["LArenaPts"] = 0,
 			["WareMail"] = {
 			},
-			["LTime"] = 1293496110,
+			["TBar"] = {
+				["Version"] = 0.1,
+				["NxMap1TB"] = {
+					["Space"] = 1,
+					["AlignR"] = true,
+					["AlignB"] = true,
+					["Size"] = 22,
+				},
+			},
 			["ArenaPts"] = 0,
 			["WareInv"] = {
 				"ChestSlot^|cffffffff|Hitem:54293:0:0:0:0:0:0:874185792:4:0|h[Tunnel Worm Vest]|h|r", -- [1]
@@ -29593,14 +29721,14 @@ NxData = {
 			["Level"] = 4,
 			["Profs"] = {
 			},
-			["LXPMax"] = 2100,
+			["L"] = {
+				["Version"] = 0.1,
+				["Events"] = {
+				},
+			},
 			["Q"] = {
 			},
-			["Time"] = 1293498696,
-			["LXP"] = 51,
-			["Honor"] = 0,
-			["Money"] = 385,
-			["LHonor"] = 0,
+			["XP"] = 981,
 			["W"] = {
 				["NxHUD"] = {
 					["_W"] = 8,
@@ -29610,10 +29738,10 @@ NxData = {
 					["Y"] = 203.9999839901927,
 					["X"] = 795.9999880790713,
 					["_H"] = 40,
-					["_X"] = 999999,
+					["Hide"] = true,
 					["H"] = 40,
 					["_Y"] = -0.17,
-					["Hide"] = true,
+					["_X"] = 999999,
 				},
 				["NxDD"] = {
 					["_W"] = 207,
@@ -29623,10 +29751,10 @@ NxData = {
 					["Y"] = 0,
 					["X"] = 0,
 					["_H"] = 209,
-					["Hide"] = true,
+					["_X"] = 0,
 					["H"] = 209,
 					["_Y"] = 0,
-					["_X"] = 0,
+					["Hide"] = true,
 				},
 				["NxMapDock"] = {
 					["_W"] = 52,
@@ -29650,10 +29778,10 @@ NxData = {
 					["Y"] = 359.9999717473988,
 					["X"] = 959.9999856948855,
 					["_H"] = 40,
-					["Hide"] = true,
+					["_X"] = -0.6,
 					["H"] = 40,
 					["_Y"] = -0.3,
-					["_X"] = -0.6,
+					["Hide"] = true,
 				},
 				["Version"] = 0.31,
 				["NxMap1"] = {
@@ -29674,19 +29802,19 @@ NxData = {
 					["9001H"] = -0.3,
 					["9002H"] = -0.3,
 					["9002W"] = -0.19,
+					["9008L"] = 1,
 					["9010X"] = -0.0001,
-					["9011H"] = -0.3,
 					["9008Y"] = -0.4,
 					["_X"] = -0.0001,
 					["A"] = "LEFT",
 					["9010L"] = 1,
-					["9001W"] = -0.19,
 					["9002Y"] = -0.4,
-					["9011Y"] = -0.4,
+					["9001W"] = -0.19,
 					["9004Y"] = -0.4,
+					["9011Y"] = -0.4,
 					["9011L"] = 1,
 					["9009H"] = -0.3,
-					["9004W"] = -0.19,
+					["9010H"] = -0.3,
 					["9004H"] = -0.3,
 					["9003L"] = 1,
 					["9003X"] = -0.0001,
@@ -29697,19 +29825,19 @@ NxData = {
 					["H"] = 313.399977782369,
 					["_W"] = -0.19,
 					["9008W"] = -0.19,
-					["9008X"] = -0.0001,
+					["9009X"] = -0.0001,
 					["9010Y"] = -0.4,
 					["9004L"] = 1,
 					["W"] = 413.5599837666753,
-					["9009X"] = -0.0001,
+					["9008X"] = -0.0001,
 					["Y"] = 140.899865911903,
 					["X"] = 34.10239168849004,
 					["9011W"] = -0.19,
-					["9010H"] = -0.3,
+					["9004W"] = -0.19,
 					["9004X"] = -0.0001,
 					["9001X"] = -0.0001,
 					["_Y"] = -0.4,
-					["9008L"] = 1,
+					["9011H"] = -0.3,
 				},
 				["NxPunkHUD"] = {
 					["A"] = "BOTTOMLEFT",
@@ -29724,17 +29852,17 @@ NxData = {
 					["_Y"] = -0.1,
 					["_X"] = -0.6,
 				},
-				["NxGuide1"] = {
-					["_W"] = -0.63,
+				["NxEventsList"] = {
+					["_W"] = -0.25,
 					["FI"] = 1,
 					["FO"] = 0.75,
-					["W"] = 1007.99998497963,
-					["Y"] = 239.9999811649325,
-					["X"] = 239.9999964237214,
-					["_H"] = -0.5,
-					["_X"] = -0.15,
-					["H"] = 599.9999529123313,
-					["_Y"] = -0.2,
+					["W"] = 399.9999940395356,
+					["Y"] = 719.9999434947976,
+					["X"] = 1199.999982118607,
+					["_H"] = -0.1,
+					["_X"] = -0.75,
+					["H"] = 119.9999905824663,
+					["_Y"] = -0.6,
 					["Hide"] = true,
 				},
 				["NxCombat"] = {
@@ -29745,27 +29873,27 @@ NxData = {
 					["Y"] = 839.9999340772638,
 					["X"] = 1119.9999833107,
 					["_H"] = -0.06,
-					["Hide"] = true,
+					["_X"] = -0.7,
 					["H"] = 71.99999434947975,
 					["_Y"] = -0.7,
-					["_X"] = -0.7,
+					["Hide"] = true,
 				},
-				["NxEventsList"] = {
-					["_W"] = -0.25,
+				["NxGuide1"] = {
+					["_W"] = -0.63,
 					["FI"] = 1,
 					["FO"] = 0.75,
-					["W"] = 399.9999940395356,
-					["Y"] = 719.9999434947976,
-					["X"] = 1199.999982118607,
-					["_H"] = -0.1,
+					["W"] = 1007.99998497963,
+					["Y"] = 239.9999811649325,
+					["X"] = 239.9999964237214,
+					["_H"] = -0.5,
 					["Hide"] = true,
-					["H"] = 119.9999905824663,
-					["_Y"] = -0.6,
-					["_X"] = -0.75,
+					["H"] = 599.9999529123313,
+					["_Y"] = -0.2,
+					["_X"] = -0.15,
 				},
 			},
-			["LMoney"] = 0,
-			["LXPRest"] = 0,
+			["Honor"] = 0,
+			["Money"] = 385,
 			["WareBags"] = {
 				["Inert Elemental Scintilla"] = "3^|cff9d9d9d|Hitem:55983:0:0:0:0:0:0:1434188160:4:0|h[Inert Elemental Scintilla]|h|r",
 				["Primal Shirt"] = "1^|cffffffff|Hitem:52550:0:0:0:0:0:0:0:4:0|h[Primal Shirt]|h|r",
@@ -29774,28 +29902,24 @@ NxData = {
 				["Tough Jerky"] = "1^|cffffffff|Hitem:117:0:0:0:0:0:0:1939779968:4:0|h[Tough Jerky]|h|r",
 				["Keys to the Hot Rod"] = "1^|cffffffff|Hitem:46856:0:0:0:0:0:0:563517120:4:0|h[Keys to the Hot Rod]|h|r",
 				["Hearthstone"] = "1^|cffffffff|Hitem:6948:0:0:0:0:0:0:0:4:0|h[Hearthstone]|h|r",
-				["Inert Elemental Speck"] = "3^|cff9d9d9d|Hitem:55973:0:0:0:0:0:0:1125771840:4:0|h[Inert Elemental Speck]|h|r",
-				["Crosscheck Breastplate"] = "1^|cffffffff|Hitem:54295:0:0:0:0:0:0:1828144768:4:0|h[Crosscheck Breastplate]|h|r",
 				["Kablooey Bombs"] = "1^|cffffffff|Hitem:48768:0:0:0:0:0:0:1541778432:4:0|h[Kablooey Bombs]|h|r",
+				["Crosscheck Breastplate"] = "1^|cffffffff|Hitem:54295:0:0:0:0:0:0:1828144768:4:0|h[Crosscheck Breastplate]|h|r",
+				["Inert Elemental Speck"] = "3^|cff9d9d9d|Hitem:55973:0:0:0:0:0:0:1125771840:4:0|h[Inert Elemental Speck]|h|r",
 			},
+			["LXP"] = 51,
+			["LMoney"] = 0,
+			["LXPRest"] = 0,
+			["LHonor"] = 0,
 			["Version"] = 0.02,
-			["XP"] = 981,
-			["L"] = {
-				["Version"] = 0.1,
-				["Events"] = {
-				},
+			["Time"] = 1293498696,
+			["LXPMax"] = 2100,
+			["LTime"] = 1293496110,
+			["LvlTime"] = 1293498358,
+			["Opts"] = {
+				["MapShowGatherH"] = false,
+				["QMapShowQuestGivers3"] = 1,
+				["MapShowGatherM"] = false,
 			},
-			["TBar"] = {
-				["Version"] = 0.1,
-				["NxMap1TB"] = {
-					["Space"] = 1,
-					["AlignR"] = true,
-					["Size"] = 22,
-					["AlignB"] = true,
-				},
-			},
-			["XPRest"] = 0,
-			["Pos"] = "5002^60.058522^77.056652",
 		},
 		["Khaz Modan.Depha"] = {
 			["WareMail"] = {
@@ -29870,16 +29994,16 @@ NxData = {
 				["NxMap1TB"] = {
 					["Space"] = 1,
 					["AlignR"] = true,
-					["AlignB"] = true,
 					["Size"] = 22,
+					["AlignB"] = true,
 				},
 			},
 			["TimePlayed"] = 16011,
 			["L"] = {
+				["Quest"] = {
+				},
 				["Version"] = 0.1,
 				["Events"] = {
-				},
-				["Quest"] = {
 				},
 			},
 			["XP"] = 24,
@@ -29917,16 +30041,16 @@ NxData = {
 				[9799] = "C1304041721",
 				[9453] = "C1304041721",
 				[9454] = "C1304041721",
-				[10303] = "C1304041721",
-				[9455] = "C1304041721",
-				[9294] = "C1304041721",
-				[9456] = "C1304041721",
-				[9409] = "C1304041721",
-				[9798] = "C1304041721",
-				[9542] = "C1304041721",
-				[9546] = "C1304041660",
-				[10302] = "C1304041721",
 				[10324] = "C1304041721",
+				[9455] = "C1304041721",
+				[10302] = "C1304041721",
+				[9456] = "C1304041721",
+				[9546] = "C1304041660",
+				[9542] = "C1304041721",
+				[9798] = "C1304041721",
+				[9409] = "C1304041721",
+				[9294] = "C1304041721",
+				[10303] = "C1304041721",
 			},
 			["WareInv"] = {
 				"HeadSlot^|cffffffff|Hitem:69864:0:0:0:0:0:0:1489955584:10:0|h[Tarnished Crown]|h|r", -- [1]
@@ -29946,10 +30070,10 @@ NxData = {
 				"Bag2Slot^|cffffffff|Hitem:4498:0:0:0:0:0:0:0:10:0|h[Brown Leather Satchel]|h|r", -- [15]
 				"Bag3Slot^|cffffffff|Hitem:4498:0:0:0:0:0:0:0:10:0|h[Brown Leather Satchel]|h|r", -- [16]
 			},
-			["XPRest"] = 10050,
+			["LvlTime"] = 1310378115,
 			["QHAskedGet"] = true,
 			["Money"] = 41304,
-			["Level"] = 10,
+			["Honor"] = 0,
 			["W"] = {
 				["NxHUD"] = {
 					["_W"] = 8,
@@ -29959,10 +30083,10 @@ NxData = {
 					["Y"] = 19.99998062849074,
 					["H"] = 40,
 					["_H"] = 40,
-					["Hide"] = true,
+					["_X"] = 999999,
 					["X"] = 249.4999657645827,
 					["_Y"] = -0.17,
-					["_X"] = 999999,
+					["Hide"] = true,
 				},
 				["NxQuestList"] = {
 					["_W"] = -0.52,
@@ -29972,10 +30096,10 @@ NxData = {
 					["Y"] = 179.9999858736994,
 					["X"] = 383.9999942779542,
 					["_H"] = -0.65,
-					["Hide"] = true,
+					["_X"] = -0.24,
 					["H"] = 779.9999387860307,
 					["_Y"] = -0.15,
-					["_X"] = -0.24,
+					["Hide"] = true,
 				},
 				["NxDD"] = {
 					["_W"] = 207,
@@ -29985,10 +30109,10 @@ NxData = {
 					["Y"] = 0,
 					["X"] = 0,
 					["_H"] = 209,
-					["_X"] = 0,
+					["Hide"] = true,
 					["H"] = 209,
 					["_Y"] = 0,
-					["Hide"] = true,
+					["_X"] = 0,
 				},
 				["NxQuestWatch"] = {
 					["MinW"] = 123.9999561905867,
@@ -30031,10 +30155,10 @@ NxData = {
 					["Y"] = 239.9999811649325,
 					["X"] = 239.9999964237214,
 					["_H"] = -0.5,
-					["Hide"] = true,
+					["_X"] = -0.15,
 					["H"] = 599.9999529123313,
 					["_Y"] = -0.2,
-					["_X"] = -0.15,
+					["Hide"] = true,
 				},
 				["Version"] = 0.31,
 				["NxMap1"] = {
@@ -30055,19 +30179,19 @@ NxData = {
 					["9001H"] = -0.3,
 					["9002H"] = -0.3,
 					["9002W"] = -0.19,
+					["9008L"] = 1,
 					["9010X"] = -0.0001,
-					["9011H"] = -0.3,
 					["9008Y"] = -0.4,
 					["_X"] = -0.0001,
 					["A"] = "LEFT",
 					["9010L"] = 1,
-					["9002Y"] = -0.4,
 					["9001W"] = -0.19,
-					["9011Y"] = -0.4,
+					["9002Y"] = -0.4,
 					["9004Y"] = -0.4,
+					["9011Y"] = -0.4,
 					["9011L"] = 1,
 					["9009H"] = -0.3,
-					["9010H"] = -0.3,
+					["9004W"] = -0.19,
 					["H"] = 262.0000037252902,
 					["9003L"] = 1,
 					["9003X"] = -0.0001,
@@ -30078,19 +30202,19 @@ NxData = {
 					["9004H"] = -0.3,
 					["_W"] = -0.19,
 					["9003W"] = -0.19,
-					["9009X"] = -0.0001,
+					["9008X"] = -0.0001,
 					["9010Y"] = -0.4,
 					["9004L"] = 1,
 					["W"] = 445.5600290662046,
-					["9008X"] = -0.0001,
+					["9009X"] = -0.0001,
 					["Y"] = 220.5992856532442,
 					["X"] = 14.10237768139873,
 					["9011W"] = -0.19,
-					["9004W"] = -0.19,
+					["9010H"] = -0.3,
 					["9004X"] = -0.0001,
 					["9001X"] = -0.0001,
 					["_Y"] = -0.4,
-					["9008L"] = 1,
+					["9011H"] = -0.3,
 				},
 				["NxPunkHUD"] = {
 					["A"] = "BOTTOMRIGHT",
@@ -30105,18 +30229,18 @@ NxData = {
 					["_Y"] = -0.1,
 					["_X"] = -0.6,
 				},
-				["NxEventsList"] = {
-					["_W"] = -0.25,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 399.9999940395356,
-					["Y"] = 719.9999434947976,
-					["X"] = 1199.999982118607,
-					["_H"] = -0.1,
-					["_X"] = -0.75,
-					["H"] = 119.9999905824663,
-					["_Y"] = -0.6,
+				["NxTeamHUD"] = {
+					["_W"] = 107,
+					["FI"] = 0.5,
+					["FO"] = 0,
+					["W"] = 107,
+					["Y"] = 359.9999717473988,
+					["X"] = 959.9999856948855,
+					["_H"] = 40,
 					["Hide"] = true,
+					["H"] = 40,
+					["_Y"] = -0.3,
+					["_X"] = -0.6,
 				},
 				["NxCombat"] = {
 					["_W"] = -0.3,
@@ -30126,55 +30250,55 @@ NxData = {
 					["Y"] = 839.9999340772638,
 					["X"] = 1119.9999833107,
 					["_H"] = -0.06,
-					["_X"] = -0.7,
+					["Hide"] = true,
 					["H"] = 71.99999434947975,
 					["_Y"] = -0.7,
-					["Hide"] = true,
+					["_X"] = -0.7,
 				},
-				["NxTeamHUD"] = {
-					["_W"] = 107,
-					["FI"] = 0.5,
-					["FO"] = 0,
-					["W"] = 107,
-					["Y"] = 359.9999717473988,
-					["X"] = 959.9999856948855,
-					["_H"] = 40,
-					["_X"] = -0.6,
-					["H"] = 40,
-					["_Y"] = -0.3,
+				["NxEventsList"] = {
+					["_W"] = -0.25,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 399.9999940395356,
+					["Y"] = 719.9999434947976,
+					["X"] = 1199.999982118607,
+					["_H"] = -0.1,
 					["Hide"] = true,
+					["H"] = 119.9999905824663,
+					["_Y"] = -0.6,
+					["_X"] = -0.75,
 				},
 			},
-			["ArenaPts"] = 0,
+			["LXPMax"] = 6700,
 			["LXPRest"] = 14798,
 			["WareBags"] = {
 				["Tough Jerky"] = "1^|cffffffff|Hitem:117:0:0:0:0:0:0:510396128:10:0|h[Tough Jerky]|h|r",
 				["Jeweler's Kit"] = "1^|cffffffff|Hitem:20815:0:0:0:0:0:0:0:10:0|h[Jeweler's Kit]|h|r",
 				["Fishing Pole"] = "1^|cffffffff|Hitem:6256:0:0:0:0:0:0:180614256:10:0|h[Fishing Pole]|h|r",
-				["Malachite"] = "1^|cff1eff00|Hitem:774:0:0:0:0:0:0:-2137360000:10:0|h[Malachite]|h|r",
-				["Refreshing Spring Water"] = "1^|cffffffff|Hitem:159:0:0:0:0:0:0:1791375232:10:0|h[Refreshing Spring Water]|h|r",
+				["Woven Copper Ring"] = "2^|cff1eff00|Hitem:21931:0:0:0:0:0:0:1097000576:10:0|h[Woven Copper Ring]|h|r",
 				["Rough Stone Statue"] = "5^|cffffffff|Hitem:25498:0:0:0:0:0:0:1991573632:10:0|h[Rough Stone Statue]|h|r",
 				["Moongraze Stag Tenderloin"] = "1^|cffffffff|Hitem:23676:0:0:0:0:0:0:-1884663808:10:0|h[Moongraze Stag Tenderloin]|h|r",
+				["Refreshing Spring Water"] = "1^|cffffffff|Hitem:159:0:0:0:0:0:0:1791375232:10:0|h[Refreshing Spring Water]|h|r",
 				["Clam Meat"] = "3^|cffffffff|Hitem:5503:0:0:0:0:0:0:1541405696:10:0|h[Clam Meat]|h|r",
 				["Cracked Egg Shells"] = "1^|cff9d9d9d|Hitem:4757:0:0:0:0:0:0:859006016:10:0|h[Cracked Egg Shells]|h|r",
 				["Small Egg"] = "1^|cffffffff|Hitem:6889:0:0:0:0:0:0:1127441472:10:0|h[Small Egg]|h|r",
 				["Pile of Leaves"] = "1^|cffffffff|Hitem:23791:0:0:0:0:0:0:1646068864:10:0|h[Pile of Leaves]|h|r",
-				["Hollowed Out Tree"] = "1^|cffffffff|Hitem:23790:0:0:0:0:0:0:2003839104:10:0|h[Hollowed Out Tree]|h|r",
+				["Mining Pick"] = "1^|cffffffff|Hitem:2901:0:0:0:0:0:0:0:10:0|h[Mining Pick]|h|r",
 				["Minor Healing Potion"] = "4^|cffffffff|Hitem:118:0:0:0:0:0:0:912518656:10:0|h[Minor Healing Potion]|h|r",
 				["Cracked Sledge"] = "1^|cff9d9d9d|Hitem:1414:0:0:0:0:0:0:1555212416:10:0|h[Cracked Sledge]|h|r",
 				["Copper Ore"] = "3^|cffffffff|Hitem:2770:0:0:0:0:0:0:789564448:10:0|h[Copper Ore]|h|r",
 				["Rough Stone"] = "7^|cffffffff|Hitem:2835:0:0:0:0:0:0:2030540288:10:0|h[Rough Stone]|h|r",
+				["Hollowed Out Tree"] = "1^|cffffffff|Hitem:23790:0:0:0:0:0:0:2003839104:10:0|h[Hollowed Out Tree]|h|r",
 				["Hearthstone"] = "1^|cffffffff|Hitem:6948:0:0:0:0:0:0:0:10:0|h[Hearthstone]|h|r",
-				["Mining Pick"] = "1^|cffffffff|Hitem:2901:0:0:0:0:0:0:0:10:0|h[Mining Pick]|h|r",
 				["Elixir of Minor Defense"] = "2^|cffffffff|Hitem:5997:0:0:0:0:0:0:1708675200:10:0|h[Elixir of Minor Defense]|h|r",
 				["Knitted Bracers"] = "1^|cffffffff|Hitem:3603:247:0:0:0:0:0:0:10:0|h[Knitted Bracers]|h|r",
-				["Woven Copper Ring"] = "2^|cff1eff00|Hitem:21931:0:0:0:0:0:0:1097000576:10:0|h[Woven Copper Ring]|h|r",
+				["Malachite"] = "1^|cff1eff00|Hitem:774:0:0:0:0:0:0:-2137360000:10:0|h[Malachite]|h|r",
 			},
 			["Version"] = 0.02,
 			["LTime"] = 1310378115,
-			["LXPMax"] = 6700,
-			["Honor"] = 0,
-			["LvlTime"] = 1310378115,
+			["ArenaPts"] = 0,
+			["Level"] = 10,
+			["XPRest"] = 10050,
 			["Pos"] = "1020^59.036362^27.228856",
 		},
 		["Khaz Modan.Darvina"] = {
@@ -30187,9 +30311,9 @@ NxData = {
 				["Heart of Fire"] = "1^|cffffffff|Hitem:7077:0:0:0:0:0:0:-1684951808:85:0|h[Heart of Fire]|h|r",
 				["Recipe: Sagefish Delight"] = "1^|cffffffff|Hitem:21219:0:0:0:0:0:0:0:85:0|h[Recipe: Sagefish Delight]|h|r",
 				["Exodar Tabard"] = "1^|cffffffff|Hitem:45580:0:0:0:0:0:0:0:85:0|h[Exodar Tabard]|h|r",
-				["Recipe: Smoked Sagefish"] = "1^|cffffffff|Hitem:21099:0:0:0:0:0:0:0:85:0|h[Recipe: Smoked Sagefish]|h|r",
-				["Tabard of Summer Flames"] = "1^|cff0070dd|Hitem:35280:0:0:0:0:0:0:1933977600:85:0|h[Tabard of Summer Flames]|h|r",
 				["Flask of Oil"] = "1^|cffffffff|Hitem:814:0:0:0:0:0:0:1090689216:85:0|h[Flask of Oil]|h|r",
+				["Tabard of Summer Flames"] = "1^|cff0070dd|Hitem:35280:0:0:0:0:0:0:1933977600:85:0|h[Tabard of Summer Flames]|h|r",
+				["Recipe: Smoked Sagefish"] = "1^|cffffffff|Hitem:21099:0:0:0:0:0:0:0:85:0|h[Recipe: Smoked Sagefish]|h|r",
 				["Nat Pagle's Extreme Angler FC-5000"] = "1^|cff1eff00|Hitem:19022:0:0:0:0:0:0:573325760:85:0|h[Nat Pagle's Extreme Angler FC-5000]|h|r",
 			},
 			["WareMail"] = {
@@ -30286,155 +30410,155 @@ NxData = {
 					[21940] = 17716,
 					[82180] = 0,
 					[28327] = 22728,
-					[131353] = 89991,
+					[100587] = 70139,
 					[127116] = 77531,
 					[127124] = 77532,
-					[39895] = 7191,
+					[84411] = 60223,
 					[3918] = 4357,
-					[60874] = 44504,
+					[56459] = 40892,
 					[3919] = 4358,
-					[84424] = 0,
-					[95703] = 67494,
+					[56468] = 44951,
+					[56467] = 40865,
 					[55016] = 0,
-					[30568] = 23841,
+					[81725] = 59449,
 					[84428] = 59594,
 					[63770] = 0,
-					[30309] = 23787,
+					[3972] = 4398,
 					[15628] = 11825,
 					[56469] = 41121,
 					[3924] = 4361,
-					[56463] = 40536,
+					[12584] = 10558,
 					[3925] = 4362,
-					[23068] = 9313,
+					[56479] = 41168,
 					[3926] = 4363,
-					[12594] = 10500,
+					[3929] = 4364,
 					[9269] = 7506,
-					[12586] = 10507,
+					[56463] = 40536,
 					[56471] = 39683,
 					[12590] = 10498,
 					[84413] = 60216,
-					[84429] = 60858,
-					[30349] = 23775,
-					[12622] = 10504,
-					[23096] = 18645,
+					[12594] = 10500,
+					[3931] = 4365,
 					[41307] = 32756,
+					[23096] = 18645,
+					[44391] = 34113,
 					[3932] = 4366,
-					[3968] = 4395,
+					[19567] = 15846,
 					[3933] = 4367,
-					[3937] = 4370,
+					[127127] = 77589,
 					[3934] = 4368,
-					[3967] = 4394,
-					[12895] = 10713,
+					[23129] = 18660,
+					[3942] = 4375,
 					[12618] = 10503,
 					[3936] = 4369,
-					[19825] = 16008,
-					[67839] = 0,
+					[12622] = 10504,
+					[3937] = 4370,
 					[84430] = 68049,
 					[3938] = 4371,
-					[56472] = 40768,
+					[100687] = 71077,
 					[3939] = 4372,
 					[30304] = 23782,
 					[30308] = 23786,
 					[30312] = 23742,
-					[3941] = 4374,
+					[12895] = 10713,
 					[30575] = 23829,
 					[12899] = 10716,
-					[3945] = 4377,
+					[54998] = 0,
 					[12903] = 10721,
 					[56464] = 39682,
-					[12907] = 10726,
-					[127130] = 87213,
-					[84415] = 60218,
+					[56472] = 40768,
+					[3965] = 4392,
+					[3945] = 4377,
 					[84431] = 59364,
 					[3946] = 4378,
-					[127114] = 77468,
-					[67920] = 48933,
+					[19794] = 15999,
 					[82200] = 0,
+					[67920] = 48933,
 					[30348] = 23774,
-					[3963] = 4391,
+					[54736] = 0,
 					[3949] = 4379,
-					[3923] = 4360,
+					[12897] = 10545,
 					[3950] = 4380,
 					[23070] = 18641,
-					[9271] = 6533,
-					[3961] = 4389,
+					[12905] = 10724,
+					[84417] = 59599,
 					[3952] = 4381,
-					[3954] = 4383,
+					[3955] = 4384,
 					[3953] = 4382,
 					[84432] = 59367,
-					["Link"] = "|cffffd000|Htrade:110403:545:615:380000004B9DC00:4v/3+v8NX2/PdBgud63CygNwAAA0BAx/BAuxFgOAQ7//v/QY4Ng//9/nLACKFDAgA|h[Engineering]|h|r",
-					[56473] = 40895,
+					[3954] = 4383,
+					["Rank"] = 565,
 					[54353] = 39688,
 					[82201] = 0,
 					[3956] = 4385,
 					[127113] = 77467,
 					[3922] = 4359,
-					[56461] = 40893,
+					[7430] = 6219,
 					[3958] = 4387,
 					[84416] = 60217,
-					[7430] = 6219,
+					[56461] = 40893,
 					[56465] = 41112,
-					["Rank"] = 565,
-					[3955] = 4384,
-					[84417] = 59599,
-					[12905] = 10724,
+					[56473] = 40895,
+					["Link"] = "|cffffd000|Htrade:110403:545:615:380000004B9DC00:4v/3+v8NX2/PdBgud63CygNwAAA0BAx/BAuxFgOAQ7//v/QY4Ng//9/nLACKFDAgA|h[Engineering]|h|r",
+					[3961] = 4389,
+					[9271] = 6533,
 					[3962] = 4390,
-					[12897] = 10545,
-					[54736] = 0,
+					[3923] = 4360,
+					[3963] = 4391,
 					[54999] = 0,
 					[19790] = 15993,
-					[19794] = 15999,
-					[3965] = 4392,
-					[54998] = 0,
-					[100687] = 71077,
-					[3942] = 4375,
-					[23129] = 18660,
-					[127127] = 77589,
-					[19567] = 15846,
-					[44391] = 34113,
+					[127114] = 77468,
+					[127130] = 87213,
+					[84415] = 60218,
+					[12907] = 10726,
+					[3941] = 4374,
+					[3967] = 4394,
+					[67839] = 0,
+					[3968] = 4395,
+					[19825] = 16008,
 					[84418] = 60403,
-					[3931] = 4365,
-					[3929] = 4364,
-					[56479] = 41168,
-					[12584] = 10558,
+					[30349] = 23775,
+					[84429] = 60858,
+					[12586] = 10507,
+					[23068] = 9313,
 					[30305] = 23783,
-					[3972] = 4398,
-					[81725] = 59449,
+					[30309] = 23787,
+					[30568] = 23841,
 					[3973] = 4404,
-					[56467] = 40865,
-					[56468] = 44951,
-					[56459] = 40892,
-					[84411] = 60223,
+					[95703] = 67494,
+					[84424] = 0,
+					[60874] = 44504,
+					[39895] = 7191,
 					[56466] = 40767,
-					[100587] = 70139,
+					[131353] = 89991,
 				},
 				["Mining"] = {
 					[74529] = 51950,
-					[74537] = 53039,
-					[3307] = 3575,
 					[2658] = 2842,
+					[3307] = 3575,
+					[74537] = 53039,
 					[10097] = 3860,
 					[49252] = 36916,
-					[29356] = 23445,
 					[55208] = 37663,
-					[10098] = 6037,
+					[35750] = 22573,
+					[29356] = 23445,
 					[3569] = 3859,
 					[49258] = 36913,
 					[55211] = 41163,
 					[29358] = 23446,
-					[29361] = 23449,
+					[2659] = 2841,
 					[29359] = 23447,
 					[74530] = 52186,
 					[29360] = 23448,
 					[29686] = 23573,
-					[2657] = 2840,
+					[29361] = 23449,
 					[35751] = 22574,
-					[3304] = 3576,
+					[3308] = 3577,
 					[16153] = 12359,
 					[14891] = 11371,
-					[3308] = 3577,
-					[2659] = 2841,
-					[35750] = 22573,
+					[3304] = 3576,
+					[2657] = 2840,
+					[10098] = 6037,
 					[84038] = 54849,
 					[70524] = 12655,
 					["Rank"] = 550,
@@ -30459,10 +30583,10 @@ NxData = {
 					[88893] = 53051,
 					[18629] = 14529,
 					[7934] = 6452,
-					[27032] = 21990,
+					[45545] = 34721,
 					[102698] = 72986,
 					[3277] = 3530,
-					[45545] = 34721,
+					[27032] = 21990,
 					["Rank"] = 600,
 				},
 				["Fishing"] = {
@@ -30489,19 +30613,19 @@ NxData = {
 				["NxMap1TB"] = {
 					["Space"] = 1,
 					["AlignR"] = true,
-					["AlignB"] = true,
 					["Size"] = 22,
+					["AlignB"] = true,
 				},
 			},
 			["TimePlayed"] = 652052,
 			["L"] = {
-				["Events"] = {
-				},
+				["Version"] = 0.1,
 				["Social"] = {
+				},
+				["Events"] = {
 				},
 				["Quest"] = {
 				},
-				["Version"] = 0.1,
 			},
 			["XP"] = 1080721,
 			["WareInv"] = {
@@ -31279,7 +31403,7 @@ NxData = {
 				[27175] = "C1301708174",
 				[29254] = "C1342122623",
 				[25224] = "C1338888375",
-				[31726] = "W0",
+				[31725] = "W0",
 				[12648] = "C1337073429",
 				[25320] = "C1338369260",
 				[25352] = "C1338456028",
@@ -31291,47 +31415,47 @@ NxData = {
 				[25544] = "C1338606179",
 				[27623] = "C1339147387",
 				[25608] = "C1339377552",
-				[29134] = "C1345945168",
+				[29124] = "C1339816397",
 				[26768] = "C1342843116",
-				[26564] = "C1344047151",
+				[29437] = "W0",
 				[29830] = "W0",
-				[27101] = "C1342842544",
+				[27933] = "C1344044015",
 				[27100] = "C1342842495",
 				[25832] = "C1338606684",
-				[28292] = "C1342927341",
+				[27058] = "C1342927285",
 				[27943] = "C1339541282",
 				[25928] = "C1338802236",
 				[10937] = "C1334827095",
 				[29215] = "C1341717031",
 				[26024] = "W0",
-				[29275] = "W0",
+				[29104] = "W0",
 				[28135] = "C1339062690",
 				[28167] = "C1300589500",
 				[27670] = "C1300589500",
 				[26184] = "W0",
 				[27926] = "C1339494784",
 				[26248] = "C1342835799",
-				[26127] = "C1301272008",
-				[28498] = "C1339422659",
-				[29283] = "W0",
-				[29189] = "W0",
-				[29210] = "W0",
+				[28174] = "C1302514812",
+				[29264] = "W0",
+				[26256] = "C1342840611",
+				[27952] = "C1341629528",
+				[29296] = "W0",
 				[29249] = "W0",
-				[29155] = "C1341027545",
-				[27950] = "C1339541370",
-				[29154] = "C1341016739",
+				[29182] = "C1342430815",
+				[11932] = "C1335580515",
+				[29245] = "C1342122580",
 				[29205] = "W0",
 				[29211] = "W0",
 				[11973] = "C1336187564",
 				[29246] = "W0",
-				[25711] = "C1302773702",
+				[27758] = "C1300754446",
 				[11949] = "C1335580975",
 				[28807] = "C1339283304",
-				[10482] = "C1303810543",
+				[29123] = "W0",
 				[24777] = "C1300589500",
 				[7848] = "W0",
 				[29248] = "W0",
-				[27598] = "C1302686462",
+				[25551] = "C1339382023",
 				[29464] = "W0",
 				[29142] = "W0",
 				[27016] = "C1301017566",
@@ -31341,7 +31465,7 @@ NxData = {
 				[29206] = "W0",
 				[27176] = "C1339061619",
 				[29255] = "W0",
-				[12652] = "C1336989117",
+				[29122] = "W0",
 				[27272] = "C1301802513",
 				[13656] = "C1300752695",
 				[11625] = "C1335524258",
@@ -31355,56 +31479,56 @@ NxData = {
 				[27592] = "C1302601722",
 				[27624] = "C1339062537",
 				[27656] = "C1302660084",
-				[27208] = "C1302228099",
+				[11673] = "C1336788129",
 				[29152] = "C1339820308",
 				[25705] = "C1303724489",
 				[29148] = "W0",
-				[29202] = "C1339899554",
+				[26244] = "C1342835354",
 				[26120] = "W0",
 				[11897] = "C1335578799",
 				[11913] = "C1335579933",
-				[25464] = "C1338283661",
+				[11613] = "C1335523876",
 				[11945] = "C1335580984",
 				[11961] = "C1335581092",
-				[29138] = "C1342922505",
-				[29197] = "W0",
+				[29125] = "W0",
+				[27150] = "C1301794070",
 				[29151] = "W0",
 				[27942] = "C1339541274",
 				[29214] = "C1341713396",
 				[28200] = "C1339387180",
-				[28852] = "C1339901347",
-				[29115] = "W0",
+				[27526] = "C1302406607",
+				[29213] = "C1339816236",
 				[26249] = "C1342835481",
-				[29126] = "W0",
-				[29200] = "W0",
-				[29102] = "W0",
-				[29391] = "C1339751684",
+				[11970] = "C1340791814",
+				[28853] = "C1339900093",
+				[28500] = "C1339422790",
+				[29150] = "W0",
 				[26409] = "C1341629599",
 				[29121] = "W0",
 				[28520] = "C1339494459",
-				[28845] = "C1339275153",
+				[24751] = "C1300589500",
 				[26537] = "C1344047162",
 				[29139] = "W0",
 				[11960] = "C1336876398",
 				[27779] = "W0",
-				[29328] = "C1339665210",
-				[27939] = "C1339540679",
-				[26518] = "C1301477742",
-				[29327] = "W0",
+				[27778] = "W0",
+				[11603] = "C1335579506",
+				[28623] = "C1339493528",
+				[27839] = "C1339388385",
 				[11795] = "C1336790006",
 				[27761] = "C1339492936",
 				[26857] = "C1342924041",
-				[29439] = "C1339579361",
+				[25731] = "C1338543213",
 				[10394] = "C1304068580",
 				[26953] = "C1301879124",
-				[28870] = "C1339898122",
-				[27940] = "C1339540573",
+				[29331] = "C1339666928",
+				[25716] = "C1302861203",
 				[3640] = "C1301794070",
 				[29128] = "W0",
+				[27962] = "C1302513402",
 				[29192] = "W0",
-				[10506] = "C1335067519",
 				[12569] = "C1337483267",
-				[25319] = "C1338088943",
+				[29335] = "C1339579702",
 				[29288] = "W0",
 				[27541] = "C1339061796",
 				[12633] = "C1336987164",
@@ -31413,58 +31537,58 @@ NxData = {
 				[12681] = "W0",
 				[27433] = "C1339293497",
 				[27465] = "C1302054261",
-				[29198] = "W0",
+				[27760] = "C1339492482",
 				[27529] = "C1302406222",
 				[29608] = "C1335434211",
 				[25546] = "C1338081649",
 				[25578] = "C1338369825",
-				[26254] = "C1342839437",
+				[13131] = "C1338001986",
 				[28533] = "C1339388415",
-				[9861] = "C1334915238",
+				[27965] = "C1302514235",
 				[12857] = "C1336881853",
 				[27785] = "C1300755643",
 				[29864] = "W0",
 				[27928] = "C1339540701",
-				[25555] = "C1339379500",
-				[28141] = "C1338976647",
+				[25843] = "C1338692452",
+				[26094] = "C1300671368",
 				[7502] = "W0",
-				[27621] = "W0",
-				[28756] = "W0",
+				[27605] = "C1302742471",
+				[27781] = "C1300754790",
 				[28576] = "C1301622198",
 				[30120] = "C1336880410",
 				[28105] = "C1338975785",
-				[27398] = "C1339382797",
+				[10398] = "C1334653980",
 				[28169] = "C1300589500",
 				[28201] = "C1339388241",
-				[25477] = "C1338083096",
-				[12740] = "C1337248262",
+				[27600] = "C1302687398",
+				[26250] = "C1342836074",
 				[13129] = "C1336880452",
 				[10502] = "C1335064598",
 				[27477] = "C1302229089",
-				[11965] = "C1335580465",
+				[25412] = "C1338608129",
 				[27431] = "C1339062434",
 				[26410] = "C1342834913",
-				[25223] = "C1338888384",
-				[27757] = "C1302743139",
-				[25576] = "C1338458295",
-				[12530] = "W0",
-				[11789] = "C1335523504",
-				[27629] = "C1339387288",
-				[27597] = "C1302685984",
+				[27141] = "C1339060691",
+				[12859] = "C1336881808",
+				[25715] = "C1302773618",
+				[11725] = "C1336788264",
+				[25713] = "C1302773681",
+				[12795] = "C1337247909",
+				[25550] = "C1339379869",
 				[27223] = "C1302228109",
 				[27551] = "C1302406229",
-				[25577] = "C1338458308",
-				[28579] = "C1302047721",
+				[12644] = "C1337482209",
+				[10504] = "C1335067508",
 				[27520] = "C1339147348",
 				[26826] = "C1301534111",
 				[27527] = "C1302407464",
-				[27373] = "C1301881444",
-				[27341] = "C1339286456",
-				[25492] = "C1338691483",
-				[27538] = "C1339294079",
-				[10556] = "C1335063250",
-				[28558] = "C1338975140",
-				[29591] = "W0",
+				[10620] = "W0",
+				[25294] = "C1338888767",
+				[25424] = "C1338369326",
+				[27367] = "C1301879473",
+				[12603] = "C1337593694",
+				[25841] = "C1300595988",
+				[25520] = "C1338692028",
 				[29161] = "W0",
 				[27146] = "C1301799614",
 				[27178] = "C1341627192",
@@ -31475,18 +31599,18 @@ NxData = {
 				[11626] = "C1335524430",
 				[27370] = "C1301880393",
 				[11658] = "C1336787581",
-				[12523] = "C1337475402",
+				[29132] = "C1344138150",
 				[27466] = "C1302054508",
-				[12507] = "C1337248702",
+				[29100] = "C1339820374",
 				[27530] = "C1302407390",
-				[27159] = "C1301650589",
+				[9855] = "C1334976601",
 				[25547] = "C1338082700",
-				[25321] = "C1338369304",
+				[27672] = "W0",
 				[25611] = "C1338542614",
-				[25904] = "C1338693520",
+				[25552] = "C1339379509",
 				[12861] = "C1336881837",
 				[25707] = "W0",
-				[13655] = "C1300757763",
+				[27177] = "C1341627181",
 				[25771] = "C1303779744",
 				[25514] = "C1338691996",
 				[9851] = "C1334976595",
@@ -31494,129 +31618,129 @@ NxData = {
 				[25899] = "C1338693096",
 				[14283] = "C1300589500",
 				[11962] = "C1335580323",
-				[9854] = "C1334875494",
-				[27305] = "C1302228104",
-				[29570] = "W0",
+				[11718] = "C1336790847",
+				[29808] = "W0",
+				[25706] = "W0",
 				[10511] = "C1335064622",
-				[10594] = "C1335174866",
-				[25553] = "C1339379876",
-				[27464] = "C1302048216",
-				[25722] = "W0",
+				[12505] = "C1337248528",
+				[25322] = "C1338282783",
+				[12117] = "C1336875916",
+				[25312] = "C1338371790",
 				[26251] = "C1342836070",
-				[26085] = "C1300671161",
+				[25499] = "C1338888854",
 				[12504] = "C1337333593",
-				[29446] = "W0",
-				[26413] = "C1342835085",
+				[29563] = "W0",
+				[10140] = "C1303809157",
 				[26411] = "C1342834945",
-				[27432] = "C1301882934",
-				[9856] = "C1334977270",
+				[25411] = "C1338607872",
+				[25531] = "C1338890403",
 				[14281] = "C1300589500",
-				[12661] = "W0",
-				[10076] = "C1334915429",
+				[29575] = "W0",
+				[26285] = "C1300589743",
 				[29590] = "W0",
-				[25308] = "C1338889375",
+				[11650] = "C1336786508",
 				[27145] = "C1301799666",
 				[27818] = "C1302746292",
-				[313] = "C1300594469",
+				[28172] = "C1302514865",
 				[25770] = "C1301106091",
-				[10584] = "C1335175409",
+				[25490] = "C1338608864",
 				[25291] = "C1338888424",
 				[7905] = "C1333617368",
 				[11653] = "C1336787222",
 				[10395] = "C1333770320",
 				[27125] = "C1302053082",
-				[29162] = "W0",
+				[27115] = "C1301105101",
 				[29066] = "C1338608362",
 				[12506] = "W0",
 				[12522] = "C1337334819",
-				[27115] = "C1301105101",
+				[29162] = "W0",
 				[27147] = "C1301799619",
 				[27179] = "C1339061624",
-				[29290] = "W0",
 				[10555] = "C1335062686",
+				[29290] = "W0",
 				[29512] = "C1360376029",
 				[12634] = "C1337482042",
+				[10456] = "C1335064558",
 				[25324] = "C1338369590",
-				[27371] = "C1301880661",
-				[26163] = "C1303777272",
-				[12638] = "C1336987246",
+				[27549] = "C1339062265",
+				[27677] = "W0",
 				[27467] = "C1302054255",
-				[29803] = "W0",
+				[25709] = "C1302774581",
 				[27531] = "C1302406836",
-				[27674] = "C1300589500",
+				[27595] = "C1339147106",
 				[25548] = "C1339379085",
-				[11729] = "C1336185385",
+				[9789] = "C1334875506",
+				[12858] = "W0",
 				[25644] = "C1339379058",
-				[27691] = "C1302688167",
-				[29834] = "W0",
-				[25708] = "C1302774563",
 				[25740] = "C1338543456",
-				[27596] = "C1302746232",
-				[27755] = "C1339423339",
-				[11723] = "C1336791105",
-				[11707] = "C1336183823",
+				[25708] = "C1302774563",
+				[29834] = "W0",
+				[25549] = "C1339379504",
+				[25323] = "C1338283439",
+				[27532] = "C1302404794",
+				[29547] = "W0",
 				[26927] = "C1300874548",
 				[25932] = "C1300596222",
-				[11726] = "C1336789649",
-				[25357] = "C1338081643",
-				[25325] = "C1338369778",
+				[12654] = "C1337334538",
+				[29451] = "W0",
+				[27372] = "C1301881177",
 				[11601] = "C1335579200",
 				[25724] = "C1300593683",
-				[12790] = "C1335434189",
-				[27386] = "C1301883075",
-				[9857] = "C1334875520",
+				[10485] = "C1334656486",
+				[26203] = "C1300589500",
+				[27516] = "C1339293430",
 				[4512] = "W0",
-				[25408] = "C1338607813",
+				[25758] = "C1338543841",
 				[26284] = "C1300589747",
 				[26316] = "C1300589500",
-				[27148] = "C1301799636",
-				[26380] = "C1300591785",
-				[29163] = "W0",
-				[12870] = "C1337939679",
-				[25597] = "C1338887840",
-				[25278] = "C1338371783",
-				[12855] = "C1337939719",
-				[25584] = "C1338370050",
-				[12804] = "C1337482285",
-				[25472] = "C1338088953",
-				[25493] = "C1338691510",
-				[13126] = "W0",
-				[28779] = "C1339277210",
-				[27756] = "C1300753990",
-				[14276] = "C1300589500",
-				[25118] = "C1300872670",
-				[26860] = "C1300874602",
-				[25404] = "C1338607714",
-				[9850] = "C1334915703",
-				[26956] = "C1301709789",
-				[25502] = "C1338691694",
-				[25710] = "C1302772652",
-				[27452] = "C1301995559",
-				[29131] = "W0",
-				[27116] = "C1301105167",
 				[29195] = "C1339751684",
-				[25758] = "C1338543841",
-				[27516] = "C1339293430",
-				[26203] = "C1300589500",
-				[10485] = "C1334656486",
+				[26380] = "C1300591785",
+				[27116] = "C1301105167",
+				[12870] = "C1337939679",
+				[27452] = "C1301995559",
+				[25710] = "C1302772652",
+				[25502] = "C1338691694",
+				[25584] = "C1338370050",
+				[9850] = "C1334915703",
+				[25404] = "C1338607714",
+				[25493] = "C1338691510",
+				[25118] = "C1300872670",
+				[28779] = "C1339277210",
+				[14276] = "C1300589500",
+				[27756] = "C1300753990",
+				[13126] = "W0",
+				[26860] = "C1300874602",
+				[25472] = "C1338088953",
+				[12804] = "C1337482285",
+				[26956] = "C1301709789",
+				[12855] = "C1337939719",
+				[25278] = "C1338371783",
+				[25597] = "C1338887840",
+				[29131] = "W0",
+				[29163] = "W0",
+				[27148] = "C1301799636",
+				[25408] = "C1338607813",
+				[9857] = "C1334875520",
+				[27386] = "C1301883075",
+				[12790] = "C1335434189",
 				[13658] = "C1300757777",
 				[29387] = "C1339667121",
-				[27372] = "C1301881177",
-				[29451] = "W0",
-				[12654] = "C1337334538",
+				[25325] = "C1338369778",
+				[25357] = "C1338081643",
+				[11726] = "C1336789649",
 				[27468] = "C1339293655",
-				[29547] = "W0",
-				[27532] = "C1302404794",
-				[25323] = "C1338283439",
-				[25549] = "C1339379504",
+				[11707] = "C1336183823",
+				[11723] = "C1336791105",
+				[27755] = "C1339423339",
+				[27596] = "C1302746232",
 				[27628] = "C1339148674",
-				[12858] = "W0",
-				[9789] = "C1334875506",
-				[27595] = "C1339147106",
-				[25709] = "C1302774581",
-				[27677] = "W0",
-				[27549] = "C1339062265",
-				[10456] = "C1335064558",
+				[27691] = "C1302688167",
+				[11729] = "C1336185385",
+				[27674] = "C1300589500",
+				[29803] = "W0",
+				[12638] = "C1336987246",
+				[26163] = "C1303777272",
+				[27371] = "C1301880661",
 				[9852] = "C1334981106",
 				[309] = "C1301098106",
 				[25901] = "C1338693473",
@@ -31624,151 +31748,450 @@ NxData = {
 				[11963] = "C1335580360",
 				[25997] = "C1300670482",
 				[11995] = "W0",
-				[25490] = "C1338608864",
+				[10584] = "C1335175409",
 				[26093] = "W0",
-				[28172] = "C1302514865",
+				[313] = "C1300594469",
 				[26157] = "C1303007251",
 				[314] = "C1300666906",
-				[11650] = "C1336786508",
+				[25308] = "C1338889375",
 				[315] = "C1300593668",
-				[26285] = "C1300589743",
-				[29575] = "W0",
-				[25531] = "C1338890403",
-				[25411] = "C1338607872",
-				[10140] = "C1303809157",
-				[29563] = "W0",
+				[10076] = "C1334915429",
+				[12661] = "W0",
+				[9856] = "C1334977270",
+				[27432] = "C1301882934",
+				[26413] = "C1342835085",
+				[29446] = "W0",
 				[14266] = "C1300589500",
-				[25499] = "C1338888854",
-				[25312] = "C1338371790",
-				[12117] = "C1336875916",
-				[25322] = "C1338282783",
-				[12505] = "C1337248528",
+				[26085] = "C1300671161",
+				[25722] = "W0",
+				[27464] = "C1302048216",
+				[25553] = "C1339379876",
+				[10594] = "C1335174866",
 				[28716] = "C1339281222",
-				[25706] = "W0",
-				[29808] = "W0",
-				[11718] = "C1336790847",
+				[29570] = "W0",
+				[27305] = "C1302228104",
+				[9854] = "C1334875494",
 				[24750] = "C1300589500",
 				[24782] = "C1300589500",
 				[26861] = "C1342923994",
-				[27177] = "C1341627181",
+				[13655] = "C1300757763",
 				[10396] = "C1304069338",
-				[25552] = "C1339379509",
-				[27672] = "W0",
-				[9855] = "C1334976601",
-				[29100] = "C1339820374",
-				[29132] = "C1344138150",
+				[25904] = "C1338693520",
+				[25321] = "C1338369304",
+				[27159] = "C1301650589",
+				[12507] = "C1337248702",
+				[12523] = "C1337475402",
 				[29164] = "W0",
 				[29196] = "C1339667258",
-				[25520] = "C1338692028",
-				[25841] = "C1300595988",
-				[12603] = "C1337593694",
-				[27367] = "C1301879473",
-				[25424] = "C1338369326",
-				[25294] = "C1338888767",
-				[10620] = "W0",
+				[29591] = "W0",
+				[28558] = "C1338975140",
+				[10556] = "C1335063250",
+				[27538] = "C1339294079",
+				[25492] = "C1338691483",
+				[27341] = "C1339286456",
+				[27373] = "C1301881444",
 				[12683] = "W0",
 				[12699] = "W0",
-				[10504] = "C1335067508",
-				[12644] = "C1337482209",
+				[28579] = "C1302047721",
+				[25577] = "C1338458308",
 				[27533] = "C1302405546",
 				[27565] = "C1302484914",
-				[25550] = "C1339379869",
-				[12795] = "C1337247909",
-				[25713] = "C1302773681",
-				[11725] = "C1336788264",
-				[25715] = "C1302773618",
-				[12859] = "C1336881808",
-				[27141] = "C1339060691",
+				[27597] = "C1302685984",
+				[27629] = "C1339387288",
+				[11789] = "C1335523504",
+				[12530] = "W0",
+				[25576] = "C1338458295",
+				[27757] = "C1302743139",
+				[25223] = "C1338888384",
 				[27821] = "W0",
-				[25412] = "C1338608129",
+				[11965] = "C1335580465",
 				[25838] = "C1300595243",
 				[27917] = "C1301098622",
-				[26250] = "C1342836074",
-				[27600] = "C1302687398",
-				[10398] = "C1334653980",
+				[12740] = "C1337248262",
+				[25477] = "C1338083096",
+				[27398] = "C1339382797",
 				[25998] = "C1300670790",
-				[27781] = "C1300754790",
-				[27605] = "C1302742471",
-				[26094] = "C1300671368",
-				[25843] = "C1338692452",
+				[28756] = "W0",
+				[27621] = "W0",
+				[28141] = "C1338976647",
+				[25555] = "C1339379500",
 				[26158] = "C1303007302",
-				[27965] = "C1302514235",
+				[9861] = "C1334915238",
 				[26222] = "C1300589500",
-				[13131] = "C1338001986",
-				[27760] = "C1339492482",
+				[26254] = "C1342839437",
+				[29198] = "W0",
 				[26318] = "C1300590651",
-				[29335] = "C1339579702",
-				[27962] = "C1302513402",
-				[25716] = "C1302861203",
-				[29331] = "C1339666928",
-				[25731] = "C1338543213",
+				[25319] = "C1338088943",
+				[10506] = "C1335067519",
+				[27940] = "C1339540573",
+				[28870] = "C1339898122",
+				[29439] = "C1339579361",
 				[351] = "W0",
 				[26542] = "C1301200287",
-				[27839] = "C1339388385",
-				[28623] = "C1339493528",
-				[11603] = "C1335579506",
-				[27778] = "W0",
+				[29327] = "W0",
+				[26518] = "C1301477742",
+				[27939] = "C1339540679",
+				[29328] = "C1339665210",
 				[28749] = "C1301648860",
 				[28781] = "C1339899518",
 				[26766] = "C1342843111",
-				[24751] = "C1300589500",
+				[28845] = "C1339275153",
 				[24783] = "C1300589500",
-				[29150] = "W0",
-				[28500] = "C1339422790",
-				[28853] = "C1339900093",
-				[11970] = "C1340791814",
-				[29213] = "C1339816236",
-				[27526] = "C1302406607",
+				[29391] = "C1339751684",
+				[29102] = "W0",
+				[29200] = "W0",
+				[29126] = "W0",
+				[29115] = "W0",
+				[28852] = "C1339901347",
 				[29101] = "W0",
 				[29133] = "W0",
 				[29165] = "W0",
-				[27150] = "C1301794070",
-				[29125] = "W0",
-				[11613] = "C1335523876",
+				[29197] = "W0",
+				[29138] = "C1342922505",
+				[25464] = "C1338283661",
 				[29293] = "W0",
-				[26244] = "C1342835354",
+				[29202] = "C1339899554",
 				[13659] = "C1300757774",
 				[29389] = "C1339751684",
-				[11673] = "C1336788129",
+				[27208] = "C1302228099",
 				[29453] = "C1344138059",
-				[29122] = "W0",
+				[12652] = "C1336989117",
 				[11692] = "C1336786027",
 				[11708] = "C1336183869",
 				[27534] = "C1302405553",
 				[25519] = "C1338692004",
-				[25551] = "C1339382023",
+				[27598] = "C1302686462",
 				[27630] = "C1339385589",
 				[11788] = "C1336785661",
-				[29123] = "W0",
+				[10482] = "C1303810543",
 				[27726] = "C1338085615",
-				[27758] = "C1300754446",
+				[25711] = "C1302773702",
 				[27790] = "C1300755741",
 				[27822] = "W0",
 				[25807] = "C1338544449",
 				[25839] = "C1300595326",
-				[29245] = "C1342122580",
-				[11932] = "C1335580515",
-				[29182] = "C1342430815",
+				[29154] = "C1341016739",
+				[27950] = "C1339541370",
+				[29155] = "C1341027545",
 				[9917] = "C1334980867",
-				[29296] = "W0",
-				[27952] = "C1341629528",
-				[26256] = "C1342840611",
-				[29264] = "W0",
-				[28174] = "C1302514812",
+				[29210] = "W0",
+				[29189] = "W0",
+				[29283] = "W0",
+				[28498] = "C1339422659",
+				[26127] = "C1301272008",
 				[26159] = "C1303008692",
 				[28238] = "C1339284516",
-				[29104] = "W0",
+				[29275] = "W0",
 				[26255] = "C1342839654",
-				[27058] = "C1342927285",
+				[28292] = "C1342927341",
 				[10093] = "C1334570457",
-				[27933] = "C1344044015",
-				[29437] = "W0",
+				[27101] = "C1342842544",
+				[26564] = "C1344047151",
 				[10141] = "C1303809526",
-				[29124] = "C1339816397",
+				[29134] = "C1345945168",
 				[24432] = "C1338081017",
-				[31725] = "W0",
+				[31726] = "W0",
 			},
-			["XPRest"] = 19500000,
+			["LvlTime"] = 1361358393,
+			["Level"] = 85,
+			["QHAskedGet"] = true,
+			["Money"] = 22054986,
+			["Honor"] = 172,
+			["W"] = {
+				["NxHUD"] = {
+					["A"] = "LEFT",
+					["_W"] = 8,
+					["FI"] = 1,
+					["FO"] = 0.15,
+					["W"] = 212.0000235438344,
+					["Y"] = -7.000446215265301,
+					["X"] = 45.99989345669905,
+					["_H"] = 40,
+					["_X"] = 999999,
+					["H"] = 40,
+					["_Y"] = -0.17,
+					["Hide"] = true,
+				},
+				["NxQuestList"] = {
+					["_W"] = -0.52,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 831.9999876022341,
+					["Y"] = 179.9999858736994,
+					["H"] = 779.9999387860307,
+					["_H"] = -0.65,
+					["_X"] = -0.24,
+					["X"] = 383.9999942779542,
+					["_Y"] = -0.15,
+					["Hide"] = true,
+				},
+				["NxGuide1"] = {
+					["_W"] = -0.63,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 1007.99998497963,
+					["Y"] = 239.9999811649325,
+					["H"] = 599.9999529123313,
+					["_H"] = -0.5,
+					["_X"] = -0.15,
+					["X"] = 239.9999964237214,
+					["_Y"] = -0.2,
+					["Hide"] = true,
+				},
+				["NxDD"] = {
+					["_W"] = 207,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 207,
+					["Y"] = 0,
+					["H"] = 209,
+					["_H"] = 209,
+					["Hide"] = true,
+					["X"] = 0,
+					["_Y"] = 0,
+					["_X"] = 0,
+				},
+				["NxQuestWatch"] = {
+					["MinW"] = 124.0000038743019,
+					["FI"] = 1,
+					["FO"] = 0.15,
+					["MinX"] = -21.00014655291816,
+					["H"] = 40,
+					["_H"] = -0.1,
+					["MinY"] = 77.99994829297143,
+					["Mode"] = "Min",
+					["_W"] = -0.2,
+					["W"] = 124.0000076293945,
+					["Min"] = true,
+					["X"] = 1280,
+					["MinH"] = 40,
+					["MinA"] = "TOPRIGHT",
+					["Y"] = 420,
+					["_Y"] = -0.35,
+					["_X"] = -0.8,
+				},
+				["NxMap1"] = {
+					["9010L"] = 1,
+					["9009Y"] = -0.4,
+					["9008L"] = 1,
+					["FO"] = 0,
+					["FI"] = 1,
+					["9013X"] = -0.0001,
+					["9012L"] = 1,
+					["9001Y"] = -0.4,
+					["9004W"] = -0.19,
+					["9012Y"] = -0.4,
+					["_H"] = -0.3,
+					["_L"] = 1,
+					["9009W"] = -0.19,
+					["9012H"] = -0.3,
+					["9010W"] = -0.19,
+					["9011X"] = -0.0001,
+					["9008H"] = -0.3,
+					["9002X"] = -0.0001,
+					["9003Y"] = -0.4,
+					["9001H"] = -0.3,
+					["9011H"] = -0.3,
+					["_X"] = -0.0001,
+					["9002H"] = -0.3,
+					["9002W"] = -0.19,
+					["9011Y"] = -0.4,
+					["9002Y"] = -0.4,
+					["9012X"] = -0.0001,
+					["9008X"] = -0.0001,
+					["9010X"] = -0.0001,
+					["9008Y"] = -0.4,
+					["9004L"] = 1,
+					["A"] = "BOTTOMLEFT",
+					["9013L"] = 1,
+					["9003W"] = -0.19,
+					["9013Y"] = -0.4,
+					["9013W"] = -0.19,
+					["9012W"] = -0.19,
+					["9011L"] = 1,
+					["9009H"] = -0.3,
+					["9010H"] = -0.3,
+					["H"] = 203.3997314661781,
+					["9003L"] = 1,
+					["9003X"] = -0.0001,
+					["9009L"] = 1,
+					["L"] = 1,
+					["9001W"] = -0.19,
+					["9001L"] = 1,
+					["9004Y"] = -0.4,
+					["_W"] = -0.19,
+					["9004H"] = -0.3,
+					["9013H"] = -0.3,
+					["9010Y"] = -0.4,
+					["9008W"] = -0.19,
+					["W"] = 215.5599943464995,
+					["9009X"] = -0.0001,
+					["Y"] = -215.4024664252629,
+					["X"] = 30.10242655720671,
+					["9011W"] = -0.19,
+					["9003H"] = -0.3,
+					["9004X"] = -0.0001,
+					["9001X"] = -0.0001,
+					["_Y"] = -0.4,
+					["9002L"] = 1,
+				},
+				["NxSocial"] = {
+					["_W"] = -0.5,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 799.9999880790713,
+					["Y"] = 215.9999815225604,
+					["H"] = 767.9999427795418,
+					["_H"] = -0.64,
+					["Hide"] = true,
+					["X"] = 399.9999940395356,
+					["_Y"] = -0.18,
+					["_X"] = -0.25,
+				},
+				["NxMapDock"] = {
+					["A"] = "TOPRIGHT",
+					["_W"] = 52,
+					["FI"] = 1,
+					["FO"] = 0,
+					["W"] = 47.99998092651367,
+					["Y"] = 99.00009918212891,
+					["X"] = -1.000166058540344,
+					["H"] = 40,
+					["_H"] = 69,
+					["_L"] = 2,
+					["L"] = 2,
+					["_Y"] = -0.08,
+					["_X"] = 100045,
+				},
+				["NxTeamHUD"] = {
+					["_W"] = 107,
+					["FI"] = 0.5,
+					["FO"] = 0,
+					["W"] = 107,
+					["Y"] = 359.9999717473988,
+					["H"] = 40,
+					["_H"] = 40,
+					["Hide"] = true,
+					["X"] = 959.9999856948855,
+					["_Y"] = -0.3,
+					["_X"] = -0.6,
+				},
+				["Version"] = 0.31,
+				["NxEventsList"] = {
+					["_W"] = -0.25,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 399.9999940395356,
+					["Y"] = 719.9999434947976,
+					["H"] = 119.9999905824663,
+					["_H"] = -0.1,
+					["Hide"] = true,
+					["X"] = 1199.999982118607,
+					["_Y"] = -0.6,
+					["_X"] = -0.75,
+				},
+				["NxPunkHUD"] = {
+					["A"] = "TOPRIGHT",
+					["_W"] = 135,
+					["FI"] = 0.5,
+					["FO"] = 0,
+					["W"] = 133.9999465048321,
+					["Y"] = 25.0000949949012,
+					["H"] = 40,
+					["_H"] = 87,
+					["X"] = -13.99993875622841,
+					["_Y"] = -0.1,
+					["_X"] = -0.6,
+				},
+				["NxOpts"] = {
+					["_W"] = -0.5,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 799.9998779296875,
+					["Y"] = 119.9999847412109,
+					["X"] = 400,
+					["_H"] = -0.7,
+					["Hide"] = true,
+					["H"] = 840,
+					["_Y"] = -0.1,
+					["_X"] = -0.25,
+				},
+				["NxCombat"] = {
+					["_W"] = -0.3,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 479.9999928474427,
+					["Y"] = 839.9999340772638,
+					["H"] = 71.99999434947975,
+					["_H"] = -0.06,
+					["Hide"] = true,
+					["X"] = 1119.9999833107,
+					["_Y"] = -0.7,
+					["_X"] = -0.7,
+				},
+				["NxWarehouse"] = {
+					["A"] = "CENTER",
+					["_W"] = -0.5,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 799.9999880790713,
+					["Y"] = -60.00006109475999,
+					["X"] = 0,
+					["_H"] = -0.6,
+					["_X"] = -0.25,
+					["H"] = 719.9999129772199,
+					["_Y"] = -0.15,
+					["Hide"] = true,
+				},
+			},
+			["Class"] = "Warlock",
+			["LXPRest"] = 19500000,
+			["WareBags"] = {
+				["Chaos Orb"] = "2^|cff0070dd|Hitem:52078:0:0:0:0:0:0:2010229888:85:0:0|h[Chaos Orb]|h|r",
+				["Ghost Iron Ore"] = "7^|cffffffff|Hitem:72092:0:0:0:0:0:0:422896688:85:0:0|h[Ghost Iron Ore]|h|r",
+				["Electrostatic Condenser"] = "1^|cff0070dd|Hitem:67494:0:0:0:0:0:0:43919088:85:0:0|h[Electrostatic Condenser]|h|r",
+				["Electrified Ether"] = "2^|cffffffff|Hitem:67749:0:0:0:0:0:0:26862068:85:0:0|h[Electrified Ether]|h|r",
+				["Darkmoon Adventurer's Guide"] = "1^|cffffffff|Hitem:71634:0:0:0:0:0:0:1945385728:85:0:0|h[Darkmoon Adventurer's Guide]|h|r",
+				["Trellised Leggings of the Seer"] = "1^|cff1eff00|Hitem:82197:0:0:0:0:0:-37:987694160:85:0:0|h[Trellised Leggings of the Seer]|h|r",
+				["Volatile Earth"] = "72^|cffffffff|Hitem:52327:0:0:0:0:0:0:1860020864:85:0:0|h[Volatile Earth]|h|r",
+				["Solid Stone"] = "1^|cffffffff|Hitem:7912:0:0:0:0:0:0:-1532177152:85:0:0|h[Solid Stone]|h|r",
+				["Tabard of Ramkahen"] = "1^|cffffffff|Hitem:65904:0:0:0:0:0:0:0:85:0:0|h[Tabard of Ramkahen]|h|r",
+				["Obsidium Ore"] = "4^|cffffffff|Hitem:53038:0:0:0:0:0:0:-2024123264:85:0:0|h[Obsidium Ore]|h|r",
+				["Waterfall Sandals of the Wildfire"] = "1^|cff1eff00|Hitem:82254:0:0:0:0:0:-129:632095646:85:0:0|h[Waterfall Sandals of the Wildfire]|h|r",
+				["Handful of Obsidium Bolts"] = "6^|cffffffff|Hitem:60224:0:0:0:0:0:0:996905792:85:0:0|h[Handful of Obsidium Bolts]|h|r",
+				["Hearthstone"] = "1^|cffffffff|Hitem:6948:0:0:0:0:0:0:0:85:0:0|h[Hearthstone]|h|r",
+				["Waterfall Cowl of the Sorcerer"] = "1^|cff1eff00|Hitem:82250:0:0:0:0:0:-36:1049363678:85:0:0|h[Waterfall Cowl of the Sorcerer]|h|r",
+				["Strong Fishing Pole"] = "1^|cffffffff|Hitem:6365:0:0:0:0:0:0:0:85:0:0|h[Strong Fishing Pole]|h|r",
+				["Trellised Shoulderpads of the Seer"] = "1^|cff1eff00|Hitem:82200:0:0:0:0:0:-37:961807156:85:0:0|h[Trellised Shoulderpads of the Seer]|h|r",
+				["Elementium Ore"] = "3^|cffffffff|Hitem:52185:0:0:0:0:0:0:1443821184:85:0:0|h[Elementium Ore]|h|r",
+				["Immaculate Ring of the Sorcerer"] = "1^|cff1eff00|Hitem:82283:0:0:0:0:0:-36:374145718:85:0:0|h[Immaculate Ring of the Sorcerer]|h|r",
+				["Void Crystal"] = "4^|cffa335ee|Hitem:22450:0:0:0:0:0:0:1301178112:85:0:0|h[Void Crystal]|h|r",
+				["Theramore Tabard"] = "1^|cff0070dd|Hitem:89196:0:0:0:0:0:0:1401778048:85:0:0|h[Theramore Tabard]|h|r",
+				["Bejeweled Cloak of the Elder"] = "1^|cff1eff00|Hitem:82226:0:0:0:0:0:-42:577897063:85:0:0|h[Bejeweled Cloak of the Elder]|h|r",
+				["Waterfall Robe of the Whale"] = "1^|cff1eff00|Hitem:82253:0:0:0:0:0:-8:1685390558:85:0:0|h[Waterfall Robe of the Whale]|h|r",
+				["Gnomish Army Knife"] = "1^|cffffffff|Hitem:40772:0:0:0:0:0:0:1189887616:85:0:0|h[Gnomish Army Knife]|h|r",
+				["Obsidium Bar"] = "54^|cffffffff|Hitem:54849:0:0:0:0:0:0:923898048:85:0:0|h[Obsidium Bar]|h|r",
+				["Heavy Windwool Bandage"] = "20^|cffffffff|Hitem:72986:0:0:0:0:0:0:1570396800:85:0:0|h[Heavy Windwool Bandage]|h|r",
+				["High-Powered Bolt Gun"] = "1^|cff0070dd|Hitem:60223:0:0:0:0:0:0:1007078912:85:0:0|h[High-Powered Bolt Gun]|h|r",
+				["Trellised Cord of the Flameblaze"] = "1^|cff1eff00|Hitem:82194:0:0:0:0:0:-114:627835700:85:0:0|h[Trellised Cord of the Flameblaze]|h|r",
+				["Volatile Fire"] = "43^|cffffffff|Hitem:52325:0:0:0:0:0:0:-1677099648:85:0:0|h[Volatile Fire]|h|r",
+				["Maelstrom Crystal"] = "2^|cffa335ee|Hitem:52722:0:0:0:0:0:0:812131648:85:0:0|h[Maelstrom Crystal]|h|r",
+				["Netherweave Cloth"] = "8^|cffffffff|Hitem:21877:0:0:0:0:0:0:966112000:85:0:0|h[Netherweave Cloth]|h|r",
+				["Trellised Sandals of the Feverflare"] = "1^|cff1eff00|Hitem:82199:0:0:0:0:0:-138:762315572:85:0:0|h[Trellised Sandals of the Feverflare]|h|r",
+				["Waterfall Cowl of the Flameblaze"] = "1^|cff1eff00|Hitem:82250:0:0:0:0:0:-114:316540126:85:0:0|h[Waterfall Cowl of the Flameblaze]|h|r",
+				["Darkmoon Game Token"] = "46^|cff1eff00|Hitem:71083:0:0:0:0:0:0:1403862912:85:0:0|h[Darkmoon Game Token]|h|r",
+				["Trellised Handwraps of the Fireflash"] = "1^|cff1eff00|Hitem:82196:0:0:0:0:0:-130:1304101684:85:0:0|h[Trellised Handwraps of the Fireflash]|h|r",
+				["Volatile Blasting Trigger"] = "7^|cffffffff|Hitem:39690:0:0:0:0:0:0:1048077504:85:0:0|h[Volatile Blasting Trigger]|h|r",
+				["Brewer's Cowl of the Elder"] = "1^|cff1eff00|Hitem:82140:0:0:0:0:0:-42:627770322:85:0:0|h[Brewer's Cowl of the Elder]|h|r",
+				["Volatile Water"] = "8^|cffffffff|Hitem:52326:0:0:0:0:0:0:2064658048:85:0:0|h[Volatile Water]|h|r",
+				["Bejeweled Ring of the Sorcerer"] = "1^|cff1eff00|Hitem:82228:0:0:0:0:0:-36:642581095:85:0:0|h[Bejeweled Ring of the Sorcerer]|h|r",
+				["Simple Flour"] = "20^|cffffffff|Hitem:30817:0:0:0:0:0:0:0:85:0:0|h[Simple Flour]|h|r",
+				["Elementium Bar"] = "7^|cffffffff|Hitem:52186:0:0:0:0:0:0:106429056:85:0:0|h[Elementium Bar]|h|r",
+				["Volatile Seaforium Blastpack"] = "1^|cffffffff|Hitem:60853:0:0:0:0:0:0:197479728:85:0:0|h[Volatile Seaforium Blastpack]|h|r",
+			},
+			["Version"] = 0.02,
+			["DurPercent"] = 88.91566265060241,
+			["ArenaPts"] = 0,
 			["E"] = {
 				"I^134701161500^124^ffa000^Entered", -- [1]
 				"I^134795952600^124^ffa000^Entered", -- [2]
@@ -31831,306 +32254,7 @@ NxData = {
 				"I^136037613200^42^ffaffa^Entered", -- [59]
 				"I^136135839500^42^ffaffa^Entered", -- [60]
 			},
-			["QHAskedGet"] = true,
-			["Money"] = 22054986,
-			["ArenaPts"] = 0,
-			["W"] = {
-				["NxHUD"] = {
-					["A"] = "LEFT",
-					["_W"] = 8,
-					["FI"] = 1,
-					["FO"] = 0.15,
-					["W"] = 212.0000235438344,
-					["Y"] = -7.000446215265301,
-					["X"] = 45.99989345669905,
-					["_H"] = 40,
-					["Hide"] = true,
-					["H"] = 40,
-					["_Y"] = -0.17,
-					["_X"] = 999999,
-				},
-				["NxQuestList"] = {
-					["_W"] = -0.52,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 831.9999876022341,
-					["Y"] = 179.9999858736994,
-					["H"] = 779.9999387860307,
-					["_H"] = -0.65,
-					["Hide"] = true,
-					["X"] = 383.9999942779542,
-					["_Y"] = -0.15,
-					["_X"] = -0.24,
-				},
-				["NxWarehouse"] = {
-					["A"] = "CENTER",
-					["_W"] = -0.5,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 799.9999880790713,
-					["Y"] = -60.00006109475999,
-					["X"] = 0,
-					["_H"] = -0.6,
-					["Hide"] = true,
-					["H"] = 719.9999129772199,
-					["_Y"] = -0.15,
-					["_X"] = -0.25,
-				},
-				["NxDD"] = {
-					["_W"] = 207,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 207,
-					["Y"] = 0,
-					["H"] = 209,
-					["_H"] = 209,
-					["_X"] = 0,
-					["X"] = 0,
-					["_Y"] = 0,
-					["Hide"] = true,
-				},
-				["NxQuestWatch"] = {
-					["MinW"] = 124.0000038743019,
-					["FI"] = 1,
-					["FO"] = 0.15,
-					["MinX"] = -21.00014655291816,
-					["H"] = 40,
-					["_H"] = -0.1,
-					["MinY"] = 77.99994829297143,
-					["Mode"] = "Min",
-					["_W"] = -0.2,
-					["W"] = 124.0000076293945,
-					["Min"] = true,
-					["X"] = 1280,
-					["MinH"] = 40,
-					["MinA"] = "TOPRIGHT",
-					["Y"] = 420,
-					["_Y"] = -0.35,
-					["_X"] = -0.8,
-				},
-				["NxEventsList"] = {
-					["_W"] = -0.25,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 399.9999940395356,
-					["Y"] = 719.9999434947976,
-					["H"] = 119.9999905824663,
-					["_H"] = -0.1,
-					["_X"] = -0.75,
-					["X"] = 1199.999982118607,
-					["_Y"] = -0.6,
-					["Hide"] = true,
-				},
-				["NxOpts"] = {
-					["_W"] = -0.5,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 799.9998779296875,
-					["Y"] = 119.9999847412109,
-					["X"] = 400,
-					["_H"] = -0.7,
-					["_X"] = -0.25,
-					["H"] = 840,
-					["_Y"] = -0.1,
-					["Hide"] = true,
-				},
-				["NxMapDock"] = {
-					["A"] = "TOPRIGHT",
-					["_W"] = 52,
-					["FI"] = 1,
-					["FO"] = 0,
-					["W"] = 47.99998092651367,
-					["Y"] = 99.00009918212891,
-					["X"] = -1.000166058540344,
-					["H"] = 40,
-					["_H"] = 69,
-					["_L"] = 2,
-					["L"] = 2,
-					["_Y"] = -0.08,
-					["_X"] = 100045,
-				},
-				["NxTeamHUD"] = {
-					["_W"] = 107,
-					["FI"] = 0.5,
-					["FO"] = 0,
-					["W"] = 107,
-					["Y"] = 359.9999717473988,
-					["H"] = 40,
-					["_H"] = 40,
-					["_X"] = -0.6,
-					["X"] = 959.9999856948855,
-					["_Y"] = -0.3,
-					["Hide"] = true,
-				},
-				["Version"] = 0.31,
-				["NxCombat"] = {
-					["_W"] = -0.3,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 479.9999928474427,
-					["Y"] = 839.9999340772638,
-					["H"] = 71.99999434947975,
-					["_H"] = -0.06,
-					["_X"] = -0.7,
-					["X"] = 1119.9999833107,
-					["_Y"] = -0.7,
-					["Hide"] = true,
-				},
-				["NxPunkHUD"] = {
-					["A"] = "TOPRIGHT",
-					["_W"] = 135,
-					["FI"] = 0.5,
-					["FO"] = 0,
-					["W"] = 133.9999465048321,
-					["Y"] = 25.0000949949012,
-					["H"] = 40,
-					["_H"] = 87,
-					["X"] = -13.99993875622841,
-					["_Y"] = -0.1,
-					["_X"] = -0.6,
-				},
-				["NxSocial"] = {
-					["_W"] = -0.5,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 799.9999880790713,
-					["Y"] = 215.9999815225604,
-					["H"] = 767.9999427795418,
-					["_H"] = -0.64,
-					["_X"] = -0.25,
-					["X"] = 399.9999940395356,
-					["_Y"] = -0.18,
-					["Hide"] = true,
-				},
-				["NxMap1"] = {
-					["9010L"] = 1,
-					["9009Y"] = -0.4,
-					["9008L"] = 1,
-					["FO"] = 0,
-					["9002L"] = 1,
-					["9013X"] = -0.0001,
-					["9012Y"] = -0.4,
-					["9001Y"] = -0.4,
-					["9012H"] = -0.3,
-					["9012L"] = 1,
-					["_H"] = -0.3,
-					["_L"] = 1,
-					["9009W"] = -0.19,
-					["9004W"] = -0.19,
-					["9010W"] = -0.19,
-					["9011X"] = -0.0001,
-					["9008H"] = -0.3,
-					["9002X"] = -0.0001,
-					["9003Y"] = -0.4,
-					["9001H"] = -0.3,
-					["9003H"] = -0.3,
-					["9004L"] = 1,
-					["9002H"] = -0.3,
-					["9002W"] = -0.19,
-					["9012W"] = -0.19,
-					["9013Y"] = -0.4,
-					["9012X"] = -0.0001,
-					["9009X"] = -0.0001,
-					["9010X"] = -0.0001,
-					["9008Y"] = -0.4,
-					["_X"] = -0.0001,
-					["A"] = "BOTTOMLEFT",
-					["9013L"] = 1,
-					["9011Y"] = -0.4,
-					["9002Y"] = -0.4,
-					["9013W"] = -0.19,
-					["9003W"] = -0.19,
-					["9011L"] = 1,
-					["9009H"] = -0.3,
-					["H"] = 203.3997314661781,
-					["9008W"] = -0.19,
-					["9003L"] = 1,
-					["9003X"] = -0.0001,
-					["9009L"] = 1,
-					["L"] = 1,
-					["9001W"] = -0.19,
-					["9001L"] = 1,
-					["9004Y"] = -0.4,
-					["_W"] = -0.19,
-					["9004H"] = -0.3,
-					["9013H"] = -0.3,
-					["9010Y"] = -0.4,
-					["9010H"] = -0.3,
-					["W"] = 215.5599943464995,
-					["9008X"] = -0.0001,
-					["Y"] = -215.4024664252629,
-					["X"] = 30.10242655720671,
-					["9011W"] = -0.19,
-					["9011H"] = -0.3,
-					["9004X"] = -0.0001,
-					["9001X"] = -0.0001,
-					["_Y"] = -0.4,
-					["FI"] = 1,
-				},
-				["NxGuide1"] = {
-					["_W"] = -0.63,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 1007.99998497963,
-					["Y"] = 239.9999811649325,
-					["H"] = 599.9999529123313,
-					["_H"] = -0.5,
-					["Hide"] = true,
-					["X"] = 239.9999964237214,
-					["_Y"] = -0.2,
-					["_X"] = -0.15,
-				},
-			},
-			["Class"] = "Warlock",
-			["LXPRest"] = 19500000,
-			["WareBags"] = {
-				["Chaos Orb"] = "2^|cff0070dd|Hitem:52078:0:0:0:0:0:0:2010229888:85:0:0|h[Chaos Orb]|h|r",
-				["Ghost Iron Ore"] = "7^|cffffffff|Hitem:72092:0:0:0:0:0:0:422896688:85:0:0|h[Ghost Iron Ore]|h|r",
-				["Electrostatic Condenser"] = "1^|cff0070dd|Hitem:67494:0:0:0:0:0:0:43919088:85:0:0|h[Electrostatic Condenser]|h|r",
-				["Electrified Ether"] = "2^|cffffffff|Hitem:67749:0:0:0:0:0:0:26862068:85:0:0|h[Electrified Ether]|h|r",
-				["Darkmoon Adventurer's Guide"] = "1^|cffffffff|Hitem:71634:0:0:0:0:0:0:1945385728:85:0:0|h[Darkmoon Adventurer's Guide]|h|r",
-				["Trellised Leggings of the Seer"] = "1^|cff1eff00|Hitem:82197:0:0:0:0:0:-37:987694160:85:0:0|h[Trellised Leggings of the Seer]|h|r",
-				["Volatile Earth"] = "72^|cffffffff|Hitem:52327:0:0:0:0:0:0:1860020864:85:0:0|h[Volatile Earth]|h|r",
-				["Solid Stone"] = "1^|cffffffff|Hitem:7912:0:0:0:0:0:0:-1532177152:85:0:0|h[Solid Stone]|h|r",
-				["Tabard of Ramkahen"] = "1^|cffffffff|Hitem:65904:0:0:0:0:0:0:0:85:0:0|h[Tabard of Ramkahen]|h|r",
-				["Obsidium Ore"] = "4^|cffffffff|Hitem:53038:0:0:0:0:0:0:-2024123264:85:0:0|h[Obsidium Ore]|h|r",
-				["Waterfall Sandals of the Wildfire"] = "1^|cff1eff00|Hitem:82254:0:0:0:0:0:-129:632095646:85:0:0|h[Waterfall Sandals of the Wildfire]|h|r",
-				["Handful of Obsidium Bolts"] = "6^|cffffffff|Hitem:60224:0:0:0:0:0:0:996905792:85:0:0|h[Handful of Obsidium Bolts]|h|r",
-				["Hearthstone"] = "1^|cffffffff|Hitem:6948:0:0:0:0:0:0:0:85:0:0|h[Hearthstone]|h|r",
-				["Waterfall Cowl of the Sorcerer"] = "1^|cff1eff00|Hitem:82250:0:0:0:0:0:-36:1049363678:85:0:0|h[Waterfall Cowl of the Sorcerer]|h|r",
-				["Strong Fishing Pole"] = "1^|cffffffff|Hitem:6365:0:0:0:0:0:0:0:85:0:0|h[Strong Fishing Pole]|h|r",
-				["Trellised Shoulderpads of the Seer"] = "1^|cff1eff00|Hitem:82200:0:0:0:0:0:-37:961807156:85:0:0|h[Trellised Shoulderpads of the Seer]|h|r",
-				["Elementium Ore"] = "3^|cffffffff|Hitem:52185:0:0:0:0:0:0:1443821184:85:0:0|h[Elementium Ore]|h|r",
-				["Immaculate Ring of the Sorcerer"] = "1^|cff1eff00|Hitem:82283:0:0:0:0:0:-36:374145718:85:0:0|h[Immaculate Ring of the Sorcerer]|h|r",
-				["Void Crystal"] = "4^|cffa335ee|Hitem:22450:0:0:0:0:0:0:1301178112:85:0:0|h[Void Crystal]|h|r",
-				["Theramore Tabard"] = "1^|cff0070dd|Hitem:89196:0:0:0:0:0:0:1401778048:85:0:0|h[Theramore Tabard]|h|r",
-				["Bejeweled Cloak of the Elder"] = "1^|cff1eff00|Hitem:82226:0:0:0:0:0:-42:577897063:85:0:0|h[Bejeweled Cloak of the Elder]|h|r",
-				["Waterfall Robe of the Whale"] = "1^|cff1eff00|Hitem:82253:0:0:0:0:0:-8:1685390558:85:0:0|h[Waterfall Robe of the Whale]|h|r",
-				["Elementium Bar"] = "7^|cffffffff|Hitem:52186:0:0:0:0:0:0:106429056:85:0:0|h[Elementium Bar]|h|r",
-				["Obsidium Bar"] = "54^|cffffffff|Hitem:54849:0:0:0:0:0:0:923898048:85:0:0|h[Obsidium Bar]|h|r",
-				["Bejeweled Ring of the Sorcerer"] = "1^|cff1eff00|Hitem:82228:0:0:0:0:0:-36:642581095:85:0:0|h[Bejeweled Ring of the Sorcerer]|h|r",
-				["High-Powered Bolt Gun"] = "1^|cff0070dd|Hitem:60223:0:0:0:0:0:0:1007078912:85:0:0|h[High-Powered Bolt Gun]|h|r",
-				["Volatile Fire"] = "43^|cffffffff|Hitem:52325:0:0:0:0:0:0:-1677099648:85:0:0|h[Volatile Fire]|h|r",
-				["Trellised Cord of the Flameblaze"] = "1^|cff1eff00|Hitem:82194:0:0:0:0:0:-114:627835700:85:0:0|h[Trellised Cord of the Flameblaze]|h|r",
-				["Maelstrom Crystal"] = "2^|cffa335ee|Hitem:52722:0:0:0:0:0:0:812131648:85:0:0|h[Maelstrom Crystal]|h|r",
-				["Netherweave Cloth"] = "8^|cffffffff|Hitem:21877:0:0:0:0:0:0:966112000:85:0:0|h[Netherweave Cloth]|h|r",
-				["Trellised Sandals of the Feverflare"] = "1^|cff1eff00|Hitem:82199:0:0:0:0:0:-138:762315572:85:0:0|h[Trellised Sandals of the Feverflare]|h|r",
-				["Waterfall Cowl of the Flameblaze"] = "1^|cff1eff00|Hitem:82250:0:0:0:0:0:-114:316540126:85:0:0|h[Waterfall Cowl of the Flameblaze]|h|r",
-				["Darkmoon Game Token"] = "46^|cff1eff00|Hitem:71083:0:0:0:0:0:0:1403862912:85:0:0|h[Darkmoon Game Token]|h|r",
-				["Trellised Handwraps of the Fireflash"] = "1^|cff1eff00|Hitem:82196:0:0:0:0:0:-130:1304101684:85:0:0|h[Trellised Handwraps of the Fireflash]|h|r",
-				["Volatile Blasting Trigger"] = "7^|cffffffff|Hitem:39690:0:0:0:0:0:0:1048077504:85:0:0|h[Volatile Blasting Trigger]|h|r",
-				["Brewer's Cowl of the Elder"] = "1^|cff1eff00|Hitem:82140:0:0:0:0:0:-42:627770322:85:0:0|h[Brewer's Cowl of the Elder]|h|r",
-				["Volatile Water"] = "8^|cffffffff|Hitem:52326:0:0:0:0:0:0:2064658048:85:0:0|h[Volatile Water]|h|r",
-				["Heavy Windwool Bandage"] = "20^|cffffffff|Hitem:72986:0:0:0:0:0:0:1570396800:85:0:0|h[Heavy Windwool Bandage]|h|r",
-				["Simple Flour"] = "20^|cffffffff|Hitem:30817:0:0:0:0:0:0:0:85:0:0|h[Simple Flour]|h|r",
-				["Gnomish Army Knife"] = "1^|cffffffff|Hitem:40772:0:0:0:0:0:0:1189887616:85:0:0|h[Gnomish Army Knife]|h|r",
-				["Volatile Seaforium Blastpack"] = "1^|cffffffff|Hitem:60853:0:0:0:0:0:0:197479728:85:0:0|h[Volatile Seaforium Blastpack]|h|r",
-			},
-			["Version"] = 0.02,
-			["DurPercent"] = 88.91566265060241,
-			["Honor"] = 172,
-			["Level"] = 85,
-			["LvlTime"] = 1361358393,
+			["XPRest"] = 19500000,
 			["Pos"] = "2010^43.536395^66.045493",
 		},
 		["Khaz Modan.Dethamett"] = {
@@ -32156,25 +32280,25 @@ NxData = {
 				["Soul Dust"] = "2^|cffffffff|Hitem:11083:0:0:0:0:0:0:1382559020:74:0:0|h[Soul Dust]|h|r",
 				["Bolt of Woolen Cloth"] = "4^|cffffffff|Hitem:2997:0:0:0:0:0:0:592222336:74:0:0|h[Bolt of Woolen Cloth]|h|r",
 				["Bolt of Silk Cloth"] = "2^|cffffffff|Hitem:4305:0:0:0:0:0:0:1097873280:74:0:0|h[Bolt of Silk Cloth]|h|r",
-				["Runecloth"] = "3^|cffffffff|Hitem:14047:0:0:0:0:0:0:1702796288:74:0:0|h[Runecloth]|h|r",
+				["Essence of Fire"] = "1^|cff1eff00|Hitem:7078:0:0:0:0:0:0:-1882694400:74:0:0|h[Essence of Fire]|h|r",
 				["Ichor of Undeath"] = "1^|cffffffff|Hitem:7972:0:0:0:0:0:0:1682054656:74:0:0|h[Ichor of Undeath]|h|r",
 				["Formula: Enchant Gloves - Angler"] = "1^|cff1eff00|Hitem:50406:0:0:0:0:0:0:861020160:74:0:0|h[Formula: Enchant Gloves - Angler]|h|r",
-				["Bolt of Mageweave"] = "1^|cffffffff|Hitem:4339:0:0:0:0:0:0:1249066112:74:0:0|h[Bolt of Mageweave]|h|r",
+				["Pilgrim's Boots"] = "1^|cffffffff|Hitem:44788:0:0:0:0:0:0:642981312:74:0:0|h[Pilgrim's Boots]|h|r",
 				["Engraved Staff of the Monkey"] = "1^|cff1eff00|Hitem:82277:0:0:0:0:0:-5:-1946942242:74:0:0|h[Engraved Staff of the Monkey]|h|r",
-				["Greater Astral Essence"] = "2^|cff1eff00|Hitem:11082:0:0:0:0:0:0:1382559127:74:0:0|h[Greater Astral Essence]|h|r",
+				["Elemental Earth"] = "3^|cffffffff|Hitem:7067:0:0:0:0:0:0:1825385472:74:0:0|h[Elemental Earth]|h|r",
 				["Bolt of Runecloth"] = "5^|cffffffff|Hitem:14048:0:0:0:0:0:0:1793534976:74:0:0|h[Bolt of Runecloth]|h|r",
 				["Pilgrim's Hat"] = "1^|cffffffff|Hitem:46723:0:0:0:0:0:0:1690513280:74:0:0|h[Pilgrim's Hat]|h|r",
 				["Core of Earth"] = "2^|cffffffff|Hitem:7075:0:0:0:0:0:0:1196737664:74:0:0|h[Core of Earth]|h|r",
 				["Greater Eternal Essence"] = "13^|cff1eff00|Hitem:16203:0:0:0:0:0:0:2117320576:74:0:0|h[Greater Eternal Essence]|h|r",
-				["Bolt of Linen Cloth"] = "22^|cffffffff|Hitem:2996:0:0:0:0:0:0:1220070400:74:0:0|h[Bolt of Linen Cloth]|h|r",
+				["Lesser Magic Essence"] = "1^|cff1eff00|Hitem:10938:0:0:0:0:0:0:-596757031:74:0:0|h[Lesser Magic Essence]|h|r",
 				["Elemental Fire"] = "1^|cffffffff|Hitem:7068:0:0:0:0:0:0:-1713376512:74:0:0|h[Elemental Fire]|h|r",
 				["Soothsayer's Runes"] = "1^|cff0070dd|Hitem:71716:0:0:0:0:0:0:-429177344:74:0:0|h[Soothsayer's Runes]|h|r",
-				["Lesser Magic Essence"] = "1^|cff1eff00|Hitem:10938:0:0:0:0:0:0:-596757031:74:0:0|h[Lesser Magic Essence]|h|r",
+				["Bolt of Linen Cloth"] = "22^|cffffffff|Hitem:2996:0:0:0:0:0:0:1220070400:74:0:0|h[Bolt of Linen Cloth]|h|r",
 				["Oshu'gun Crystal Powder Sample"] = "7^|cffffffff|Hitem:26043:0:0:0:0:0:0:-2081388928:74:0:0|h[Oshu'gun Crystal Powder Sample]|h|r",
 				["Pilgrim's Attire"] = "1^|cffffffff|Hitem:46800:0:0:0:0:0:0:1968412160:74:0:0|h[Pilgrim's Attire]|h|r",
-				["Elemental Earth"] = "3^|cffffffff|Hitem:7067:0:0:0:0:0:0:1825385472:74:0:0|h[Elemental Earth]|h|r",
-				["Pilgrim's Boots"] = "1^|cffffffff|Hitem:44788:0:0:0:0:0:0:642981312:74:0:0|h[Pilgrim's Boots]|h|r",
-				["Essence of Fire"] = "1^|cff1eff00|Hitem:7078:0:0:0:0:0:0:-1882694400:74:0:0|h[Essence of Fire]|h|r",
+				["Greater Astral Essence"] = "2^|cff1eff00|Hitem:11082:0:0:0:0:0:0:1382559127:74:0:0|h[Greater Astral Essence]|h|r",
+				["Bolt of Mageweave"] = "1^|cffffffff|Hitem:4339:0:0:0:0:0:0:1249066112:74:0:0|h[Bolt of Mageweave]|h|r",
+				["Runecloth"] = "3^|cffffffff|Hitem:14047:0:0:0:0:0:0:1702796288:74:0:0|h[Runecloth]|h|r",
 			},
 			["WareMail"] = {
 			},
@@ -32276,7 +32400,7 @@ NxData = {
 					[26770] = 21851,
 					[7623] = 6238,
 					[7624] = 6241,
-					[18420] = 14103,
+					[18458] = 14153,
 					[18403] = 13869,
 					[18407] = 13857,
 					[18411] = 13870,
@@ -32284,52 +32408,52 @@ NxData = {
 					[7633] = 6242,
 					[18423] = 13864,
 					[7630] = 6240,
-					[18410] = 14143,
+					[6688] = 5763,
 					["Link"] = "|cffffd000|Htrade:51309:423:450:3800000047D3256:4///rvoIyfjL+/Pw07n597pIyX33NzlLEAAAAYAA4DAYAAAAAIAAAABQsrAAAAAAAASACBAAAAAAAAAAAAAAAAAAAAAAA|h[Tailoring]|h|r",
 					[7893] = 6385,
-					[12076] = 10028,
-					[8764] = 7051,
+					[55906] = 41520,
+					[55899] = 41510,
 					[18451] = 14106,
 					[31460] = 24268,
-					[8762] = 7050,
+					[55903] = 41515,
 					[44958] = 34085,
-					[63742] = 45626,
-					[3845] = 4312,
-					[12055] = 10004,
+					[2395] = 2578,
+					[55908] = 41522,
+					[2396] = 2579,
 					[27659] = 22248,
 					["Rank"] = 423,
-					[6690] = 5766,
-					[8489] = 6796,
+					[2399] = 2582,
+					[18419] = 14107,
 					[2397] = 2580,
-					[12044] = 10045,
+					[12045] = 10046,
 					[3861] = 4326,
-					[8483] = 6795,
+					[12060] = 10009,
 					[2394] = 2577,
-					[7892] = 6384,
+					[8758] = 7046,
 					[2393] = 2576,
-					[3915] = 4344,
+					[3865] = 4339,
 					[3866] = 4330,
 					[18424] = 13871,
 					[3839] = 4305,
-					[3865] = 4339,
+					[3915] = 4344,
 					[3840] = 4307,
-					[8758] = 7046,
+					[7892] = 6384,
 					[3841] = 4308,
-					[12060] = 10009,
+					[8483] = 6795,
 					[3842] = 4309,
-					[12045] = 10046,
+					[12044] = 10045,
 					[3843] = 4310,
-					[18419] = 14107,
-					[2399] = 2582,
-					[2396] = 2579,
-					[55908] = 41522,
-					[2395] = 2578,
-					[55903] = 41515,
-					[55899] = 41510,
-					[55906] = 41520,
-					[6688] = 5763,
+					[8489] = 6796,
+					[6690] = 5766,
+					[12055] = 10004,
+					[3845] = 4312,
+					[63742] = 45626,
+					[8762] = 7050,
+					[8764] = 7051,
+					[12076] = 10028,
+					[18410] = 14143,
 					[3848] = 4314,
-					[18458] = 14153,
+					[18420] = 14103,
 				},
 				["Archaeology"] = {
 					["Rank"] = 13,
@@ -32338,9 +32462,9 @@ NxData = {
 					["Rank"] = 40,
 				},
 				["Cooking"] = {
-					[7751] = 6290,
+					[62044] = 44836,
 					[45022] = 34411,
-					[7753] = 4592,
+					[8604] = 6888,
 					["Link"] = "|cffffd000|Htrade:51296:409:450:3800000047D3256:GAAAwBBAEAAAAAAIAEEAAAAAAgPAAAAAAAAAAAIAA|h[Cooking]|h|r",
 					[2538] = 2679,
 					[62049] = 44840,
@@ -32348,17 +32472,17 @@ NxData = {
 					[62050] = 44837,
 					[2540] = 2681,
 					[62051] = 44839,
-					[62044] = 44836,
+					[7751] = 6290,
 					[7752] = 787,
-					[8604] = 6888,
+					[7753] = 4592,
 					[62045] = 44838,
 					[37836] = 30816,
 					["Rank"] = 424,
 				},
 				["First Aid"] = {
-					["Link"] = "|cffffd000|Htrade:3273:2:75:3800000047D3256:FAAAAAAA|h[First Aid]|h|r",
-					[3275] = 1251,
 					["Rank"] = 2,
+					[3275] = 1251,
+					["Link"] = "|cffffd000|Htrade:3273:2:75:3800000047D3256:FAAAAAAA|h[First Aid]|h|r",
 				},
 				["Enchanting"] = {
 					[25126] = 0,
@@ -32385,100 +32509,100 @@ NxData = {
 					[13419] = 0,
 					[33991] = 0,
 					[13421] = 0,
-					[34002] = 0,
-					[25124] = 0,
-					[60609] = 0,
+					[7428] = 0,
+					[33990] = 0,
+					[42615] = 22448,
 					[13648] = 0,
 					[13935] = 0,
-					[13794] = 0,
+					[33995] = 0,
 					[13937] = 0,
-					[20011] = 0,
+					[13943] = 0,
 					[13939] = 0,
-					[20015] = 0,
+					[15596] = 0,
 					[13941] = 0,
 					[13815] = 0,
-					[13943] = 0,
+					[20011] = 0,
 					[20013] = 0,
-					[15596] = 0,
-					[13890] = 0,
+					[20015] = 0,
+					[20032] = 0,
 					[13693] = 0,
 					[13948] = 0,
 					[20023] = 0,
 					[27899] = 0,
 					[28028] = 0,
-					[7421] = 0,
+					[20030] = 0,
 					[27905] = 0,
 					[20033] = 0,
 					[20035] = 0,
 					[13702] = 11145,
 					[13700] = 0,
-					[28027] = 0,
+					[13887] = 0,
 					[7454] = 0,
 					[25125] = 0,
 					[33996] = 0,
 					[7457] = 0,
 					[34004] = 0,
-					[20020] = 0,
+					[13503] = 0,
 					[13695] = 0,
-					[13628] = 11130,
+					[20016] = 0,
 					[13917] = 0,
-					[13626] = 0,
+					[7861] = 0,
 					[63746] = 0,
 					[7779] = 0,
-					[20051] = 16207,
+					[13501] = 0,
 					[13464] = 0,
 					[27945] = 0,
 					[13642] = 0,
-					[13836] = 0,
+					[13635] = 0,
 					[7782] = 0,
-					[13622] = 0,
+					[7859] = 0,
 					[7863] = 0,
 					[27957] = 0,
 					["Link"] = "|cffffd000|Htrade:51313:366:450:3800000047D3256:4b9d7/x/zZtJr+8/keXOAA4ADwgFAArZhnAAAAAAAoAAAQAAAAAAAAAAAAAAAAA|h[Enchanting]|h|r",
 					[27961] = 0,
-					[21931] = 0,
+					[13607] = 0,
 					[32664] = 22461,
 					[7786] = 0,
 					[13858] = 0,
 					[44383] = 0,
-					[17180] = 0,
 					[7788] = 0,
+					[17180] = 0,
 					[7420] = 0,
-					[20012] = 0,
-					[7771] = 0,
+					[42613] = 22448,
+					[13822] = 0,
 					[33993] = 0,
 					[13485] = 0,
 					[34001] = 0,
-					[13663] = 0,
 					["Rank"] = 371,
-					[13822] = 0,
-					[42613] = 22448,
+					[13663] = 0,
+					[7771] = 0,
+					[20012] = 0,
 					[7857] = 0,
 					[13746] = 0,
-					[13607] = 0,
+					[21931] = 0,
 					[7795] = 6339,
-					[7859] = 0,
-					[13635] = 0,
+					[13622] = 0,
+					[13836] = 0,
 					[20008] = 0,
-					[13501] = 0,
-					[7861] = 0,
+					[20051] = 16207,
+					[13626] = 0,
 					[20014] = 0,
-					[20016] = 0,
+					[13628] = 11130,
 					[7418] = 0,
-					[13503] = 0,
+					[20020] = 0,
 					[13631] = 0,
 					[13378] = 0,
-					[13887] = 0,
+					[28027] = 0,
 					[20028] = 0,
-					[20030] = 0,
-					[20032] = 0,
+					[7421] = 0,
+					[13890] = 0,
 					[13637] = 0,
 					[20036] = 0,
-					[33995] = 0,
+					[13794] = 0,
 					[13640] = 0,
-					[42615] = 22448,
-					[33990] = 0,
-					[7428] = 0,
+					[60609] = 0,
+					[25124] = 0,
+					[34002] = 0,
 				},
 			},
 			["LXP"] = 9645,
@@ -32501,21 +32625,21 @@ NxData = {
 				["NxMap1TB"] = {
 					["Space"] = 1,
 					["AlignR"] = true,
-					["AlignB"] = true,
 					["Size"] = 22,
+					["AlignB"] = true,
 				},
 			},
 			["TimePlayed"] = 396009,
 			["Level"] = 75,
 			["XP"] = 9645,
 			["L"] = {
-				["Quest"] = {
-				},
+				["Version"] = 0.1,
 				["Social"] = {
+				},
+				["Quest"] = {
 				},
 				["Events"] = {
 				},
-				["Version"] = 0.1,
 			},
 			["Q"] = {
 				[11157] = "C1321070947",
@@ -32631,10 +32755,10 @@ NxData = {
 				[13644] = "C1296183502",
 				[28343] = "W0",
 				[10607] = "C1320663117",
-				[12237] = "C1321762083",
+				[29509] = "C1360376420",
 				[27400] = "C1296183502",
-				[27397] = "C1296183502",
-				[12444] = "C1322447938",
+				[14218] = "C1296183502",
+				[28519] = "C1314005533",
 				[28471] = "C1313893647",
 				[29510] = "C1360376564",
 				[28503] = "C1299811776",
@@ -32642,56 +32766,56 @@ NxData = {
 				[28535] = "C1314005353",
 				[11333] = "C1320748893",
 				[10711] = "C1320227955",
-				[12212] = "C1322447969",
-				[12372] = "C1321674219",
-				[28709] = "C1320794181",
+				[9999] = "W0",
+				[11989] = "C1322449794",
+				[12093] = "C1322564271",
 				[28631] = "C1314092776",
 				[12309] = "C1321762842",
 				[14051] = "C1322280426",
 				[28708] = "C1314782463",
 				[27672] = "W0",
 				[25642] = "C1299297924",
-				[26473] = "C1299152901",
+				[12261] = "C1322276229",
 				[13868] = "C1299118934",
 				[13876] = "C1299151783",
 				[13884] = "W0",
 				[13892] = "C1296183502",
-				[11958] = "C1321525308",
+				[11982] = "C1322561962",
 				[10839] = "W0",
 				[10847] = "C1315906576",
-				[14028] = "C1321959288",
+				[10935] = "C1315023116",
 				[10863] = "C1315559596",
-				[11982] = "C1322561962",
+				[14252] = "C1299386094",
 				[13948] = "C1296183502",
 				[26873] = "C1296183502",
 				[13964] = "C1299114847",
 				[10903] = "C1314870478",
-				[10022] = "W0",
-				[10014] = "C1316164240",
-				[14098] = "C1296183502",
-				[10935] = "C1315023116",
+				[12068] = "C1322563401",
+				[12060] = "C1321667050",
+				[25111] = "C1300413680",
+				[11958] = "C1321525308",
 				[26985] = "C1299806624",
 				[9928] = "C1318585081",
-				[9936] = "C1318584955",
+				[14028] = "C1321959288",
 				[11990] = "C1322475437",
 				[11998] = "C1322564345",
 				[28088] = "C1299993651",
 				[9968] = "C1315560522",
-				[14268] = "C1299497547",
+				[12222] = "W0",
 				[25067] = "C1300414218",
 				[28152] = "C1313807183",
 				[27145] = "C1299988659",
 				[25115] = "C1300414093",
 				[10016] = "C1315993455",
 				[12070] = "C1322562230",
-				[28148] = "W0",
+				[27125] = "C1300410595",
 				[10040] = "W0",
 				[12094] = "W0",
-				[12028] = "C1321525799",
-				[14284] = "C1299498046",
+				[9982] = "C1318842886",
+				[12238] = "W0",
 				[12118] = "C1321068964",
 				[27305] = "W0",
-				[14396] = "C1296183502",
+				[11327] = "C1321439536",
 				[27337] = "C1296183502",
 				[27353] = "C1296183502",
 				[14204] = "C1296183502",
@@ -32702,15 +32826,15 @@ NxData = {
 				[25403] = "C1299720131",
 				[10160] = "C1314782747",
 				[14260] = "C1299384798",
-				[12222] = "W0",
+				[14268] = "C1299497547",
 				[28536] = "C1314005609",
-				[12238] = "W0",
+				[14284] = "C1299498046",
 				[14292] = "C1299497872",
 				[25515] = "C1299842422",
 				[12262] = "C1322276226",
 				[14316] = "W0",
 				[28632] = "C1314092803",
-				[14412] = "C1296183502",
+				[11343] = "C1320795606",
 				[12294] = "C1322448392",
 				[14348] = "C1296183502",
 				[25627] = "C1299898967",
@@ -32718,19 +32842,19 @@ NxData = {
 				[12326] = "C1321872369",
 				[10288] = "C1314782485",
 				[27737] = "W0",
-				[11327] = "C1321439536",
+				[14396] = "C1296183502",
 				[14404] = "C1296183502",
-				[11343] = "C1320795606",
+				[14412] = "C1296183502",
 				[8282] = "C1314416459",
-				[12276] = "C1321871219",
+				[9415] = "C1314264347",
 				[28856] = "C1314177371",
 				[8306] = "C1314609946",
+				[12030] = "C1321668670",
 				[25835] = "C1299989420",
-				[12414] = "C1322477572",
-				[11199] = "C1321352848",
-				[12166] = "C1321612146",
+				[12277] = "C1321871598",
+				[25402] = "C1299718882",
 				[12460] = "C1321672177",
-				[11510] = "C1321267193",
+				[11469] = "C1321354480",
 				[12454] = "C1322278184",
 				[12157] = "C1321612264",
 				[12470] = "C1322279342",
@@ -32738,11 +32862,11 @@ NxData = {
 				[13509] = "C1296183502",
 				[11471] = "C1321355026",
 				[11479] = "C1321354665",
-				[11511] = "C1321353529",
-				[11495] = "C1321008420",
-				[11519] = "C1321267604",
 				[13557] = "C1296183502",
+				[11495] = "C1321008420",
 				[13565] = "C1296183502",
+				[11511] = "C1321353529",
+				[11519] = "C1321267604",
 				[11527] = "C1321267833",
 				[27146] = "C1299988627",
 				[13589] = "C1296183502",
@@ -32754,154 +32878,154 @@ NxData = {
 				[11182] = "C1321070813",
 				[9855] = "C1318326187",
 				[10584] = "C1320226061",
-				[11509] = "C1321266825",
-				[25609] = "C1299898475",
+				[27445] = "C1314420656",
+				[10895] = "C1314869318",
 				[10608] = "C1320227369",
 				[27354] = "C1296183502",
-				[25052] = "C1300326750",
+				[10798] = "C1320661769",
 				[10632] = "C1320313094",
 				[27402] = "C1296183502",
-				[10799] = "C1320662103",
+				[11494] = "C1321008411",
 				[27434] = "C1296183502",
 				[11278] = "C1320835582",
 				[11255] = "C1320795008",
 				[11277] = "C1320835237",
-				[25468] = "C1299841924",
 				[28537] = "C1314005921",
+				[25468] = "C1299841924",
 				[10007] = "C1316078735",
-				[9800] = "C1318326754",
+				[9992] = "C1315993609",
 				[12766] = "C1321672104",
 				[25532] = "C1299842706",
 				[25401] = "C1299718845",
 				[12790] = "C1323808085",
-				[25448] = "C1299637506",
+				[10446] = "W0",
 				[9920] = "C1316166842",
-				[28121] = "W0",
+				[9856] = "C1318413386",
 				[9990] = "C1315906508",
 				[13853] = "C1296183502",
 				[25660] = "C1299899189",
 				[10800] = "C1320662233",
 				[13877] = "C1299287391",
 				[10254] = "C1314782642",
-				[27673] = "W0",
-				[27320] = "C1299991006",
+				[14275] = "C1296183502",
+				[25449] = "W0",
 				[25756] = "C1299843272",
-				[26488] = "W0",
+				[24472] = "C1296183502",
 				[28857] = "W0",
-				[10344] = "C1315021566",
+				[14091] = "C1296183502",
 				[9849] = "C1320140664",
 				[9857] = "C1316166071",
 				[10382] = "C1315302718",
 				[10896] = "W0",
-				[11959] = "C1321525529",
+				[27994] = "W0",
 				[13981] = "C1299066756",
 				[26939] = "C1299117080",
-				[10936] = "C1315023170",
 				[9913] = "C1318411493",
+				[11959] = "C1321525529",
 				[9921] = "C1318372053",
-				[9575] = "W0",
-				[27444] = "C1314420621",
+				[10112] = "C1315561580",
+				[25398] = "C1299670607",
 				[11991] = "C1322475714",
+				[12007] = "C1322476501",
 				[25021] = "C1313746027",
-				[14053] = "C1322280120",
-				[26872] = "C1296183502",
+				[14276] = "C1296183502",
 				[25053] = "C1300326758",
 				[12031] = "C1321669519",
-				[27396] = "C1296183502",
+				[25350] = "W0",
 				[14093] = "C1296183502",
 				[12055] = "C1321613046",
 				[11040] = "C1320227706",
-				[25640] = "C1299297091",
+				[27275] = "C1299990169",
 				[10033] = "W0",
-				[13867] = "C1299118919",
-				[13182] = "W0",
-				[12215] = "C1322447977",
+				[29433] = "W0",
+				[11240] = "C1321438387",
+				[14357] = "C1299378779",
 				[14157] = "C1296183502",
 				[12119] = "C1321672003",
-				[12223] = "W0",
+				[14269] = "C1296183502",
 				[27323] = "C1299991390",
-				[14301] = "C1299498255",
+				[11224] = "C1321352385",
 				[27355] = "C1296183502",
-				[10113] = "C1316164954",
+				[13182] = "W0",
 				[12167] = "C1321612990",
 				[14221] = "C1296183502",
-				[14309] = "C1299584670",
+				[12263] = "C1322276402",
 				[27435] = "C1296183502",
-				[14365] = "C1299382729",
+				[12311] = "C1321763106",
 				[14253] = "C1299386107",
-				[351] = "W0",
-				[14269] = "C1296183502",
+				[12215] = "C1322447977",
+				[12223] = "W0",
 				[14277] = "C1296183502",
 				[14285] = "C1296183502",
 				[14293] = "C1296183502",
-				[25517] = "C1299813206",
-				[12263] = "C1322276402",
+				[14301] = "C1299498255",
+				[14309] = "C1299584670",
 				[28618] = "C1314006259",
-				[8275] = "C1314263492",
+				[11328] = "C1321440234",
 				[12287] = "W0",
 				[12295] = "C1322448978",
 				[25613] = "C1299289084",
 				[11288] = "C1320835177",
-				[12319] = "C1321763140",
+				[14365] = "C1299382729",
 				[25661] = "C1299900186",
-				[10557] = "C1320225393",
+				[13626] = "C1296183502",
 				[27739] = "C1297485786",
 				[14397] = "C1296183502",
 				[14405] = "C1296183502",
-				[11344] = "C1320922926",
+				[8275] = "C1314263492",
 				[8283] = "C1314416182",
 				[25465] = "C1299717417",
-				[26972] = "C1299288457",
-				[11464] = "C1321267316",
-				[25054] = "C1300326767",
+				[24616] = "C1296183502",
+				[13510] = "C1296183502",
+				[11512] = "C1321355133",
 				[8323] = "C1314696507",
-				[9914] = "C1318584793",
+				[11960] = "C1321671325",
 				[25869] = "C1299989929",
 				[12439] = "C1321611135",
 				[12447] = "C1322275464",
 				[12455] = "W0",
-				[27140] = "C1299988635",
-				[11448] = "C1320920668",
+				[25094] = "W0",
+				[26972] = "C1299288457",
 				[11456] = "C1321067316",
-				[13510] = "C1296183502",
+				[11464] = "C1321267316",
 				[13518] = "C1296183502",
 				[11480] = "C1321354730",
 				[12511] = "C1322446241",
 				[27068] = "C1313811450",
 				[11504] = "C1321266463",
-				[11512] = "C1321355133",
+				[25054] = "C1300326767",
 				[13566] = "C1296183502",
-				[27436] = "C1296183502",
+				[10657] = "C1320227333",
 				[27148] = "C1299988603",
 				[13590] = "C1296183502",
 				[13598] = "C1296183502",
 				[26173] = "C1314782306",
 				[11568] = "C1321439902",
-				[27108] = "C1299897023",
+				[13562] = "C1296183502",
 				[13630] = "C1296183502",
-				[10485] = "C1314869603",
-				[11436] = "C1321009219",
+				[11508] = "C1321266618",
+				[24902] = "C1296183502",
 				[1454] = "C1299383478",
 				[1455] = "C1299386385",
 				[1456] = "C1299498456",
 				[10609] = "C1320312643",
 				[27356] = "C1296183502",
-				[25790] = "C1299902914",
-				[10937] = "W0",
+				[25774] = "C1299902814",
+				[26973] = "C1299300944",
 				[27404] = "C1296183502",
-				[11476] = "C1321354564",
-				[10657] = "C1320227333",
+				[28051] = "C1299894888",
+				[27436] = "C1296183502",
 				[25406] = "C1299720115",
-				[11468] = "W0",
+				[13514] = "C1296183502",
 				[28507] = "C1300067064",
-				[11460] = "W0",
+				[26996] = "W0",
 				[28539] = "C1299065183",
 				[25486] = "C1299812056",
-				[11984] = "C1322449738",
+				[14030] = "C1321959678",
 				[24495] = "C1296183502",
-				[9978] = "C1315560838",
+				[9954] = "C1318498144",
 				[27596] = "W0",
-				[24902] = "C1296183502",
+				[12459] = "C1322279262",
 				[10753] = "C1320400083",
 				[24575] = "C1296183502",
 				[25614] = "C1299289238",
@@ -32909,89 +33033,89 @@ NxData = {
 				[25646] = "C1299297880",
 				[25662] = "W0",
 				[10801] = "C1320662281",
-				[9986] = "W0",
-				[10002] = "C1316078727",
+				[12032] = "C1321670799",
+				[14094] = "C1296183502",
 				[10825] = "C1320663110",
 				[9810] = "C1320140649",
 				[9818] = "C1316166199",
 				[10849] = "C1315906808",
-				[28859] = "C1314263492",
-				[26174] = "C1314782394",
+				[25790] = "C1299902914",
+				[27437] = "C1296183502",
 				[9850] = "C1318326174",
 				[9858] = "C1318326201",
-				[14358] = "C1299377914",
+				[10026] = "C1316080247",
 				[9874] = "C1318413671",
 				[9882] = "C1320140172",
 				[8867] = "W0",
 				[26941] = "C1299117713",
 				[8883] = "C1296183839",
-				[26973] = "C1299300944",
+				[9914] = "C1318584793",
 				[9922] = "C1318413636",
 				[14022] = "C1321956967",
-				[9938] = "W0",
-				[12419] = "C1321673769",
+				[11984] = "C1322449738",
+				[14465] = "C1296183502",
 				[12000] = "C1321526933",
 				[14054] = "C1322280842",
-				[14214] = "C1296183502",
-				[28124] = "C1299993927",
-				[14078] = "C1296183502",
+				[11153] = "C1321069298",
+				[9978] = "C1315560838",
+				[9986] = "W0",
 				[9994] = "C1315906971",
-				[14094] = "C1296183502",
-				[28460] = "C1313892040",
-				[27437] = "C1296183502",
-				[10026] = "C1316080247",
-				[28540] = "C1313891351",
-				[27565] = "C1313810582",
+				[10002] = "C1316078727",
+				[11289] = "C1320835652",
+				[28492] = "C1296183440",
+				[26174] = "C1314782394",
+				[10146] = "C1314870349",
+				[14278] = "C1296183502",
 				[10050] = "W0",
 				[10058] = "C1315022834",
-				[10325] = "C1318585179",
-				[10210] = "C1315473660",
-				[24592] = "C1296183502",
+				[8279] = "C1314611058",
+				[12272] = "C1321871558",
+				[25615] = "C1299289297",
 				[27325] = "C1299991459",
 				[13167] = "W0",
 				[27357] = "C1299992257",
-				[11289] = "C1320835652",
-				[12168] = "C1321612997",
+				[12312] = "C1321763111",
+				[14214] = "C1296183502",
 				[14222] = "C1296183502",
-				[14366] = "C1296183502",
-				[10146] = "C1314870349",
+				[12320] = "C1321763201",
+				[28460] = "C1313892040",
 				[14246] = "C1299381509",
 				[14254] = "C1299382089",
 				[12216] = "C1322449869",
-				[11465] = "W0",
-				[14278] = "C1296183502",
+				[13511] = "C1296183502",
+				[28540] = "C1313891351",
 				[14286] = "C1296183502",
 				[14294] = "C1296183502",
-				[14302] = "C1299498516",
+				[27565] = "C1313810582",
 				[12264] = "C1322276870",
 				[26574] = "C1299808833",
-				[28722] = "C1314092888",
-				[12456] = "W0",
+				[11300] = "C1320835459",
+				[26942] = "C1299118271",
 				[11273] = "C1320794904",
-				[25615] = "C1299289297",
-				[12312] = "C1321763111",
-				[25647] = "C1299297206",
-				[12307] = "C1322449395",
+				[24592] = "C1296183502",
+				[14358] = "C1299377914",
+				[14366] = "C1296183502",
+				[25621] = "C1299289571",
 				[14382] = "C1296183502",
 				[24672] = "C1296183502",
 				[14398] = "C1296183502",
 				[14406] = "C1296183502",
 				[8276] = "C1314263492",
 				[8284] = "C1314610331",
-				[12299] = "C1322449355",
-				[13511] = "C1296183502",
+				[11276] = "C1320834302",
+				[9419] = "C1314265879",
 				[8308] = "C1314609870",
-				[13623] = "C1299152975",
+				[10482] = "C1314783473",
 				[12416] = "C1321672687",
 				[9355] = "C1315301608",
 				[27917] = "C1296183502",
 				[12440] = "C1321611135",
-				[27603] = "C1314411896",
-				[26942] = "C1299118271",
+				[12275] = "C1321762191",
+				[12456] = "W0",
 				[12464] = "W0",
 				[27997] = "W0",
 				[11457] = "C1321067584",
-				[9419] = "C1314265879",
+				[11465] = "W0",
 				[11473] = "C1321354385",
 				[13527] = "C1296183502",
 				[11489] = "C1321007148",
@@ -33000,433 +33124,433 @@ NxData = {
 				[28125] = "W0",
 				[13567] = "C1296183502",
 				[11529] = "C1321268114",
-				[28610] = "C1314006248",
+				[12267] = "C1322277277",
 				[13591] = "C1296183502",
 				[13599] = "C1296183502",
 				[26175] = "W0",
-				[27571] = "W0",
-				[10554] = "C1315474961",
-				[11228] = "C1320748165",
-				[10594] = "C1320312547",
-				[12235] = "C1321670264",
-				[12227] = "C1322448143",
+				[14305] = "C1299441838",
+				[13623] = "C1299152975",
+				[12251] = "C1321762115",
 				[27310] = "C1299991000",
+				[14281] = "C1296183502",
+				[14273] = "C1296183502",
+				[10594] = "C1320312547",
 				[24464] = "C1296183502",
 				[9587] = "C1315021270",
-				[11188] = "C1321268234",
-				[27733] = "W0",
+				[14257] = "C1299384648",
+				[25466] = "C1299717424",
 				[25469] = "W0",
 				[26383] = "C1296183502",
 				[28045] = "C1299894895",
-				[28472] = "C1313893825",
-				[12171] = "C1321612364",
+				[26870] = "C1296183502",
+				[27395] = "C1296183502",
 				[10674] = "C1320400176",
 				[10682] = "W0",
 				[27147] = "C1299988622",
-				[27363] = "C1296183502",
+				[10109] = "C1316166745",
 				[25488] = "C1299812293",
 				[25504] = "C1299812343",
 				[12768] = "C1321673681",
 				[24481] = "C1296183502",
 				[25400] = "C1299718834",
-				[11244] = "C1320748574",
+				[24438] = "C1296183502",
 				[27446] = "C1300067060",
+				[25616] = "C1299297076",
 				[24593] = "C1296183502",
-				[10770] = "C1320399999",
 				[28522] = "C1313891907",
-				[27677] = "W0",
-				[10810] = "C1320400057",
+				[13554] = "C1296183502",
+				[13522] = "C1296183502",
 				[10802] = "C1320663160",
-				[24673] = "C1296183502",
+				[10810] = "C1320400057",
 				[11252] = "W0",
-				[25481] = "C1299841924",
+				[24465] = "C1296183502",
 				[25744] = "C1299843110",
 				[9819] = "C1318326304",
-				[12067] = "C1321667513",
-				[27403] = "C1296183502",
-				[26470] = "W0",
+				[10021] = "C1315475964",
+				[24920] = "C1296183502",
+				[25871] = "C1299989909",
 				[9851] = "C1318413413",
 				[9859] = "C1318499471",
-				[13506] = "C1296183502",
-				[25479] = "C1299841924",
+				[14274] = "C1296183502",
+				[25407] = "C1299717850",
 				[14313] = "C1296183502",
-				[14369] = "C1296183502",
-				[9931] = "C1318844548",
-				[27071] = "C1313811455",
-				[27103] = "C1299897464",
-				[9923] = "C1318372115",
+				[28467] = "C1313892045",
 				[14023] = "C1321957890",
-				[11985] = "C1322562478",
-				[14159] = "C1296183502",
-				[9955] = "W0",
-				[12009] = "C1321526038",
-				[9971] = "C1315560218",
+				[14055] = "C1322280128",
 				[9979] = "C1315560908",
-				[27119] = "W0",
-				[27567] = "C1313810908",
-				[4602] = "C1299116330",
-				[25121] = "C1300325998",
-				[12065] = "C1321667492",
-				[12297] = "C1321756520",
-				[12081] = "C1322563520",
-				[28702] = "W0",
-				[10051] = "W0",
-				[14287] = "C1296183502",
+				[9923] = "C1318372115",
+				[9931] = "C1318844548",
+				[11985] = "C1322562478",
 				[12113] = "W0",
+				[9955] = "W0",
+				[27071] = "C1313811455",
+				[9971] = "C1315560218",
+				[27103] = "C1299897464",
+				[27119] = "W0",
 				[11218] = "C1321352405",
 				[25521] = "C1300414757",
+				[25121] = "C1300325998",
+				[12065] = "C1321667492",
+				[24578] = "C1296183502",
+				[12081] = "C1322563520",
+				[25409] = "C1299718911",
+				[10051] = "W0",
+				[11202] = "C1321353092",
+				[14159] = "C1296183502",
+				[10211] = "C1315474676",
+				[14311] = "C1299584210",
 				[27327] = "C1299992235",
 				[27343] = "C1296183502",
-				[14367] = "C1296183502",
-				[26883] = "C1297527794",
+				[12265] = "C1322276874",
+				[9869] = "C1318326292",
 				[12169] = "C1321613806",
-				[24578] = "C1296183502",
-				[11290] = "C1320795590",
+				[11274] = "C1320795060",
+				[14359] = "C1299378892",
 				[27439] = "C1296183502",
 				[14247] = "C1299379857",
 				[10163] = "C1315021772",
 				[12217] = "C1322448403",
 				[12225] = "C1322446434",
 				[14279] = "C1296183502",
-				[24466] = "C1296183502",
+				[14287] = "C1296183502",
 				[24482] = "C1296183502",
-				[10211] = "C1315474676",
-				[14311] = "C1299584210",
-				[12321] = "C1321763478",
+				[27567] = "C1313810908",
+				[4602] = "C1299116330",
+				[12417] = "C1321673206",
 				[12281] = "C1321871658",
 				[25585] = "C1299844018",
-				[11274] = "C1320795060",
-				[11466] = "C1321267502",
-				[14359] = "C1299378892",
-				[25649] = "C1299297535",
+				[12297] = "C1321756520",
+				[28031] = "C1299894274",
+				[28702] = "W0",
+				[14367] = "C1296183502",
 				[14375] = "C1296183502",
-				[28047] = "C1299897821",
+				[11474] = "C1320920677",
 				[24674] = "C1296183502",
 				[14399] = "C1296183502",
-				[13913] = "C1299066749",
+				[9821] = "C1318326775",
 				[8277] = "C1314179438",
 				[8285] = "C1314610437",
 				[13408] = "W0",
-				[26976] = "W0",
+				[13504] = "C1296183502",
 				[8309] = "C1314609863",
 				[25825] = "C1299989267",
 				[14463] = "C1296183502",
-				[28031] = "C1299894274",
+				[13512] = "C1296183502",
 				[25873] = "C1299989942",
-				[11474] = "C1320920677",
+				[13520] = "C1296183502",
 				[11426] = "C1320922976",
 				[11434] = "C1321267225",
-				[9789] = "C1316166052",
-				[24930] = "C1296183502",
+				[24677] = "C1296183502",
+				[26976] = "W0",
 				[11458] = "C1321068127",
-				[13512] = "C1296183502",
-				[13520] = "C1296183502",
+				[11466] = "C1321267502",
+				[28047] = "C1299897821",
 				[13528] = "C1296183502",
-				[27104] = "W0",
+				[13560] = "C1296183502",
 				[25026] = "C1300407546",
 				[10483] = "C1314868364",
-				[28127] = "W0",
+				[27104] = "W0",
 				[14321] = "C1296183502",
 				[11530] = "C1321268158",
 				[26129] = "C1296183502",
-				[27698] = "C1299636604",
+				[25652] = "C1299298217",
 				[25025] = "C1313746280",
-				[28530] = "C1313893630",
-				[25432] = "W0",
+				[28626] = "C1314091487",
+				[10812] = "C1320400071",
 				[13624] = "C1296183502",
 				[13632] = "C1296183502",
-				[31726] = "W0",
+				[12802] = "C1322477027",
 				[25588] = "C1299844045",
-				[28625] = "C1314091425",
+				[25556] = "C1300407546",
 				[27312] = "C1299990673",
 				[25447] = "C1299637466",
 				[27344] = "C1296183502",
-				[24501] = "C1296183502",
+				[25524] = "C1299842267",
 				[13844] = "C1296183502",
-				[28479] = "C1314004861",
+				[27440] = "C1314496342",
 				[26385] = "C1296183502",
-				[26465] = "C1296183502",
+				[25426] = "W0",
 				[25394] = "C1299669822",
-				[25410] = "C1299719220",
+				[28479] = "C1314004861",
 				[10675] = "W0",
-				[28511] = "C1299585093",
+				[26465] = "C1296183502",
 				[25458] = "C1299716293",
 				[28543] = "C1313747394",
-				[24681] = "C1296183502",
+				[27568] = "C1314411366",
 				[24483] = "C1296183502",
 				[25522] = "C1313746005",
-				[28513] = "C1314005207",
-				[24627] = "C1296183502",
-				[13880] = "W0",
-				[25091] = "C1300414426",
-				[27968] = "C1296183502",
-				[10771] = "C1320400024",
-				[26993] = "C1299300891",
+				[26467] = "W0",
 				[25650] = "C1299297887",
+				[13872] = "C1299118951",
+				[9996] = "C1316080179",
+				[14024] = "C1321958339",
+				[10771] = "C1320400024",
+				[11986] = "C1322564353",
+				[24627] = "C1296183502",
 				[10795] = "C1320491663",
 				[10803] = "C1320663164",
-				[24675] = "C1296183502",
+				[13880] = "W0",
 				[10819] = "C1320660815",
 				[9804] = "C1318843967",
-				[9940] = "C1318844647",
+				[12002] = "W0",
 				[25762] = "C1299902843",
 				[25778] = "C1299902865",
-				[9956] = "C1318499843",
-				[27362] = "C1296183502",
+				[12226] = "C1322447987",
+				[10620] = "W0",
 				[9852] = "W0",
-				[9996] = "C1316080179",
+				[12042] = "C1322476604",
 				[26881] = "C1297525747",
 				[27920] = "C1296183502",
-				[10108] = "C1318583579",
-				[27569] = "C1314413899",
-				[9900] = "C1320140107",
-				[14256] = "C1299382898",
-				[26466] = "C1296183502",
-				[9924] = "C1318413564",
+				[10020] = "C1316080385",
+				[28464] = "C1313891632",
+				[27968] = "C1296183502",
+				[27697] = "C1299375614",
+				[26402] = "C1299670873",
+				[26993] = "C1299300891",
 				[9932] = "C1318844554",
-				[28048] = "C1299897841",
-				[27441] = "C1296183502",
-				[14048] = "C1322281751",
-				[14312] = "C1299584232",
+				[9940] = "C1318844647",
+				[12258] = "C1321762788",
+				[9956] = "C1318499843",
+				[14272] = "C1296183502",
 				[14064] = "C1321870726",
 				[27105] = "W0",
-				[28624] = "C1314006424",
-				[12042] = "C1322476604",
-				[31725] = "W0",
+				[28544] = "C1313891024",
+				[25091] = "C1300414426",
+				[24468] = "C1296183502",
 				[10012] = "C1316080262",
 				[27185] = "W0",
 				[10028] = "W0",
 				[12082] = "C1322563655",
-				[24628] = "C1296183502",
+				[14304] = "C1299441869",
 				[12098] = "C1321668775",
-				[14384] = "C1299298944",
+				[12266] = "C1322277542",
 				[12114] = "W0",
 				[10076] = "C1320140450",
-				[13513] = "C1296183502",
+				[11251] = "C1320833955",
 				[27329] = "C1299992928",
-				[8278] = "C1314266230",
-				[27361] = "C1296183502",
+				[28656] = "C1313891380",
+				[10108] = "C1318583579",
 				[25331] = "C1296183502",
-				[10340] = "C1315009202",
+				[11299] = "C1320835330",
 				[11155] = "C1321071027",
 				[10140] = "C1314782585",
-				[28464] = "C1313891632",
-				[27921] = "C1296183502",
-				[11187] = "C1321070961",
-				[14264] = "C1299497310",
+				[27441] = "C1296183502",
+				[26898] = "C1297524668",
+				[14256] = "C1299382898",
+				[26466] = "C1296183502",
 				[28528] = "C1314263492",
 				[14280] = "C1296183502",
 				[14288] = "C1296183502",
 				[24484] = "C1296183502",
-				[12258] = "C1321762788",
-				[11243] = "C1320748324",
-				[14320] = "C1296183502",
+				[27569] = "C1314413899",
+				[14312] = "C1299584232",
+				[28624] = "C1314006424",
 				[12282] = "C1321762727",
-				[14336] = "C1296183502",
+				[31725] = "W0",
 				[12298] = "C1321756520",
-				[13505] = "C1296183502",
+				[11459] = "C1321354408",
 				[11291] = "C1320795964",
-				[14368] = "C1296183502",
-				[11507] = "C1321266573",
-				[26706] = "C1296183502",
+				[24628] = "C1296183502",
+				[10484] = "C1314869298",
+				[14384] = "C1299298944",
 				[24676] = "C1296183502",
 				[14400] = "C1296183502",
-				[10444] = "C1315991826",
-				[14416] = "C1296183502",
-				[13537] = "C1296183502",
-				[28848] = "C1314006016",
-				[13529] = "C1296183502",
+				[11467] = "C1321354445",
+				[8278] = "C1314266230",
+				[11491] = "C1321007190",
+				[10340] = "C1315009202",
+				[11483] = "C1321006838",
 				[8310] = "C1314609878",
 				[8318] = "C1314179393",
 				[12418] = "C1321673635",
 				[26882] = "C1297527859",
-				[26898] = "C1297524668",
+				[27921] = "C1296183502",
 				[9373] = "C1315302487",
 				[11427] = "C1321006269",
 				[12458] = "C1322278314",
 				[11443] = "C1320748855",
-				[11475] = "C1320922832",
-				[11459] = "C1321354408",
-				[11467] = "C1321354445",
 				[13521] = "C1296183502",
-				[11483] = "C1321006838",
-				[11491] = "C1321007190",
+				[13505] = "C1296183502",
+				[13513] = "C1296183502",
+				[11475] = "C1320922832",
+				[13529] = "C1296183502",
+				[13537] = "C1296183502",
 				[10476] = "C1318372099",
-				[10484] = "C1314869298",
+				[11507] = "C1321266573",
 				[13561] = "C1296183502",
 				[13569] = "C1296183502",
-				[11299] = "C1320835330",
-				[28656] = "C1313891380",
-				[11251] = "C1320833955",
-				[12266] = "C1322277542",
-				[14304] = "C1299441869",
-				[24468] = "C1296183502",
-				[28544] = "C1313891024",
-				[14272] = "C1296183502",
+				[28848] = "C1314006016",
+				[14416] = "C1296183502",
+				[10444] = "C1315991826",
+				[26706] = "C1296183502",
+				[14368] = "C1296183502",
+				[14336] = "C1296183502",
+				[14320] = "C1296183502",
+				[11243] = "C1320748324",
 				[28289] = "C1313887753",
-				[26402] = "C1299670873",
-				[27697] = "C1299375614",
+				[14264] = "C1299497310",
+				[11187] = "C1321070961",
 				[27314] = "C1299990426",
-				[10020] = "C1316080385",
+				[27361] = "C1296183502",
 				[9589] = "W0",
-				[10620] = "W0",
-				[12226] = "C1322447987",
-				[12002] = "W0",
-				[11986] = "C1322564353",
-				[14024] = "C1321958339",
+				[27362] = "C1296183502",
+				[14048] = "C1322281751",
+				[28048] = "C1299897841",
+				[9924] = "C1318413564",
+				[9900] = "C1320140107",
 				[25396] = "C1299670365",
-				[13872] = "C1299118951",
+				[24675] = "C1296183502",
 				[29520] = "C1360376354",
-				[26467] = "W0",
-				[27568] = "C1314411366",
-				[25426] = "W0",
-				[27440] = "C1314496342",
+				[28513] = "C1314005207",
+				[24681] = "C1296183502",
+				[28511] = "C1299585093",
+				[25410] = "C1299719220",
 				[24485] = "C1296183502",
-				[25524] = "C1299842267",
+				[24501] = "C1296183502",
 				[28609] = "C1314004800",
-				[25556] = "C1300407546",
+				[28625] = "C1314091425",
 				[12794] = "C1323808037",
-				[12802] = "C1322477027",
-				[10812] = "C1320400071",
-				[28626] = "C1314091487",
+				[31726] = "W0",
+				[25432] = "W0",
+				[28530] = "C1313893630",
 				[13849] = "C1296183502",
-				[25652] = "C1299298217",
+				[27698] = "C1299636604",
 				[10796] = "C1320491703",
-				[13560] = "C1296183502",
-				[24677] = "C1296183502",
+				[28127] = "W0",
+				[9789] = "C1316166052",
 				[10820] = "C1320661057",
 				[9805] = "C1318844408",
-				[13504] = "C1296183502",
-				[9821] = "C1318326775",
+				[24930] = "C1296183502",
+				[13913] = "C1299066749",
 				[10852] = "W0",
 				[25796] = "C1299988703",
-				[12417] = "C1321673206",
+				[25649] = "C1299297535",
 				[9853] = "W0",
 				[9861] = "C1316166140",
-				[9869] = "C1318326292",
-				[12265] = "C1322276874",
+				[26883] = "C1297527794",
+				[12321] = "C1321763478",
 				[10908] = "C1315559596",
 				[10916] = "C1314870632",
-				[11202] = "C1321353092",
-				[25409] = "C1299718911",
+				[24466] = "C1296183502",
+				[11290] = "C1320795590",
 				[9917] = "C1316164624",
 				[9925] = "C1320140145",
 				[9933] = "C1318844724",
 				[14033] = "C1322044230",
 				[11995] = "C1321526219",
-				[14055] = "C1322280128",
+				[12009] = "C1321526038",
 				[28098] = "C1299993843",
-				[28467] = "C1313892045",
+				[14369] = "C1296183502",
 				[27107] = "W0",
-				[25407] = "C1299717850",
-				[14274] = "C1296183502",
-				[25871] = "C1299989909",
-				[24920] = "C1296183502",
-				[10021] = "C1315475964",
-				[24465] = "C1296183502",
+				[25479] = "C1299841924",
+				[13506] = "C1296183502",
+				[26470] = "W0",
+				[27403] = "C1296183502",
+				[12067] = "C1321667513",
+				[25481] = "C1299841924",
 				[12083] = "C1321668574",
-				[13522] = "C1296183502",
-				[13554] = "C1296183502",
+				[24673] = "C1296183502",
+				[27677] = "W0",
 				[12107] = "C1321671534",
-				[25616] = "C1299297076",
+				[10770] = "C1320399999",
 				[12123] = "C1321673738",
-				[24438] = "C1296183502",
+				[11244] = "C1320748574",
 				[10093] = "C1315302433",
 				[14193] = "C1299377593",
-				[10109] = "C1316166745",
+				[27363] = "C1296183502",
 				[25333] = "C1299808272",
-				[27395] = "C1296183502",
-				[26870] = "C1296183502",
+				[12171] = "C1321612364",
+				[28472] = "C1313893825",
 				[10141] = "C1314782805",
 				[25397] = "C1299670370",
-				[25466] = "C1299717424",
-				[14257] = "C1299384648",
+				[27733] = "W0",
+				[11188] = "C1321268234",
 				[14265] = "C1296183502",
-				[14273] = "C1296183502",
-				[14281] = "C1296183502",
+				[12227] = "C1322448143",
+				[12235] = "C1321670264",
 				[14289] = "C1296183502",
-				[12251] = "C1321762115",
-				[14305] = "C1299441838",
-				[12267] = "C1322277277",
-				[12275] = "C1321762191",
-				[10482] = "C1314783473",
+				[11228] = "C1320748165",
+				[27571] = "W0",
+				[28610] = "C1314006248",
+				[27603] = "C1314411896",
+				[10554] = "C1315474961",
 				[6661] = "W0",
-				[11276] = "C1320834302",
-				[25621] = "C1299289571",
+				[12299] = "C1322449355",
+				[12307] = "C1322449395",
 				[14361] = "C1299382449",
-				[11300] = "C1320835459",
+				[28722] = "C1314092888",
 				[24646] = "C1296183502",
-				[12320] = "C1321763201",
+				[25647] = "C1299297206",
 				[24678] = "C1296183502",
 				[14401] = "C1296183502",
-				[12272] = "C1321871558",
-				[8279] = "C1314611058",
+				[14302] = "C1299498516",
+				[10325] = "C1318585179",
 				[8287] = "C1314611125",
 				[28850] = "C1296183502",
-				[28492] = "C1296183440",
+				[12168] = "C1321612997",
 				[25813] = "C1299989138",
-				[11153] = "C1321069298",
-				[14465] = "C1296183502",
+				[10210] = "C1315473660",
+				[12419] = "C1321673769",
 				[26884] = "C1297527840",
 				[12435] = "C1321673873",
 				[11420] = "C1320835664",
-				[12032] = "C1321670799",
-				[12459] = "C1322279262",
-				[9954] = "C1318498144",
-				[14030] = "C1321959678",
-				[26996] = "W0",
-				[13514] = "C1296183502",
-				[28051] = "C1299894888",
+				[14078] = "C1296183502",
+				[11436] = "C1321009219",
+				[28124] = "C1299993927",
+				[9938] = "W0",
+				[11460] = "W0",
+				[11468] = "W0",
+				[11476] = "C1321354564",
 				[11484] = "C1321006844",
-				[25774] = "C1299902814",
+				[28859] = "C1314263492",
 				[27076] = "C1313811466",
-				[11508] = "C1321266618",
-				[13562] = "C1296183502",
+				[10485] = "C1314869603",
+				[27108] = "C1299897023",
 				[13570] = "C1296183502",
-				[25094] = "W0",
-				[11960] = "C1321671325",
+				[27140] = "C1299988635",
+				[10937] = "W0",
 				[13594] = "C1299152893",
 				[13602] = "C1296183502",
-				[24616] = "C1296183502",
+				[11448] = "C1320920668",
 				[11572] = "C1321439996",
-				[13626] = "C1296183502",
-				[11328] = "C1321440234",
-				[12311] = "C1321763106",
+				[10557] = "C1320225393",
+				[11344] = "C1320922926",
+				[12319] = "C1321763140",
 				[9558] = "C1315302541",
-				[11224] = "C1321352385",
+				[25517] = "C1299813206",
 				[27316] = "C1299990423",
-				[14357] = "C1299378779",
-				[11240] = "C1321438387",
-				[29433] = "W0",
-				[27275] = "C1299990169",
-				[25350] = "W0",
-				[14276] = "C1296183502",
-				[12007] = "C1322476501",
-				[25398] = "C1299670607",
-				[10112] = "C1315561580",
+				[351] = "W0",
+				[10113] = "C1316164954",
+				[13867] = "C1299118919",
+				[25640] = "C1299297091",
+				[27396] = "C1296183502",
+				[26872] = "C1296183502",
+				[14053] = "C1322280120",
+				[27444] = "C1314420621",
+				[9575] = "W0",
 				[26453] = "C1296183440",
-				[27994] = "W0",
+				[10936] = "C1315023170",
 				[28531] = "C1299298817",
-				[14091] = "C1296183502",
-				[24472] = "C1296183502",
-				[25449] = "W0",
-				[14275] = "C1296183502",
+				[10344] = "C1315021566",
+				[26488] = "W0",
+				[27320] = "C1299991006",
+				[27673] = "W0",
 				[25542] = "C1299842829",
 				[28627] = "C1314091515",
-				[9856] = "C1318413386",
+				[28121] = "W0",
 				[25590] = "C1299843946",
-				[10446] = "W0",
+				[25448] = "C1299637506",
 				[25622] = "C1299292551",
-				[9992] = "C1315993609",
+				[9800] = "C1318326754",
 				[25654] = "C1299637527",
 				[10797] = "C1320491668",
 				[13874] = "C1299153006",
 				[24679] = "C1296183502",
 				[10821] = "W0",
-				[11494] = "C1321008411",
-				[10798] = "C1320661769",
-				[10895] = "C1314869318",
-				[27445] = "C1314420656",
+				[10799] = "C1320662103",
+				[25052] = "C1300326750",
+				[25609] = "C1299898475",
+				[11509] = "C1321266825",
 				[25798] = "C1299988708",
 				[10869] = "W0",
 				[9854] = "C1316166062",
@@ -33436,380 +33560,37 @@ NxData = {
 				[10909] = "C1315022850",
 				[10917] = "C1315906597",
 				[24903] = "C1296183502",
-				[11469] = "C1321354480",
+				[11510] = "C1321267193",
 				[9918] = "C1316166786",
-				[25402] = "C1299718882",
-				[12277] = "C1321871598",
-				[12030] = "C1321668670",
-				[9415] = "C1314264347",
+				[12166] = "C1321612146",
+				[11199] = "C1321352848",
+				[12414] = "C1322477572",
+				[12276] = "C1321871219",
 				[12004] = "C1321613025",
 				[28100] = "C1313747475",
 				[28116] = "W0",
-				[9982] = "C1318842886",
-				[27125] = "C1300410595",
+				[12028] = "C1321525799",
+				[28148] = "W0",
 				[9998] = "C1315993030",
-				[25111] = "C1300413680",
-				[12060] = "C1321667050",
-				[12068] = "C1322563401",
-				[14252] = "C1299386094",
+				[14098] = "C1296183502",
+				[10014] = "C1316164240",
+				[10022] = "W0",
+				[9936] = "C1318584955",
 				[10038] = "C1315993697",
 				[12092] = "C1321668557",
-				[12261] = "C1322276229",
+				[26473] = "C1299152901",
 				[14154] = "C1296183502",
 				[12116] = "W0",
 				[10078] = "C1314784218",
-				[12093] = "C1322564271",
-				[11989] = "C1322449794",
-				[9999] = "W0",
+				[28709] = "C1320794181",
+				[12372] = "C1321674219",
+				[12212] = "C1322447969",
 				[27365] = "C1296183502",
-				[28519] = "C1314005533",
-				[14218] = "C1296183502",
-				[29509] = "C1360376420",
+				[12444] = "C1322447938",
+				[27397] = "C1296183502",
+				[12237] = "C1321762083",
 			},
-			["XPRest"] = 1282500,
-			["ArenaPts"] = 0,
-			["QHAskedGet"] = true,
-			["Money"] = 15363,
-			["WareInv"] = {
-				"HeadSlot^|cffe6cc80|Hitem:61937:0:0:0:0:0:0:0:75:0:0|h[Stained Shadowcraft Cap]|h|r", -- [1]
-				"NeckSlot^|cff1eff00|Hitem:20649:0:0:0:0:0:0:487030336:75:0:0|h[Sunprism Pendant]|h|r", -- [2]
-				"ShoulderSlot^|cff1eff00|Hitem:37985:0:0:0:0:0:0:991462144:75:0:0|h[Violet Stalker Shoulderpads]|h|r", -- [3]
-				"BackSlot^|cffe6cc80|Hitem:62039:884:0:0:0:0:0:0:75:0:0|h[Inherited Cape of the Black Baron]|h|r", -- [4]
-				"ShirtSlot^|cffffffff|Hitem:6796:0:0:0:0:0:0:1995449600:75:0:0|h[Red Swashbuckler's Shirt]|h|r", -- [5]
-				"TabardSlot^|cffa335ee|Hitem:69210:0:0:0:0:0:0:0:75:0:0|h[Renowned Guild Tabard]|h|r", -- [6]
-				"WristSlot^|cff1eff00|Hitem:37987:1593:0:0:0:0:0:1747863552:75:0:0|h[Violet Stalker Bracers]|h|r", -- [7]
-				"HandsSlot^|cff1eff00|Hitem:37983:1594:0:0:0:0:0:1281786496:75:0:0|h[Gloves of the Emerald Stalker]|h|r", -- [8]
-				"WaistSlot^|cff1eff00|Hitem:38008:0:0:0:0:0:0:771473984:75:0:0|h[Lothalar Woodwalker Belt]|h|r", -- [9]
-				"LegsSlot^|cff1eff00|Hitem:39019:0:0:0:0:0:0:949137280:75:0:0|h[Iron-Shatter Leggings]|h|r", -- [10]
-				"FeetSlot^|cff1eff00|Hitem:37984:929:0:0:0:0:0:1167950976:75:0:0|h[Deathtouched Boots]|h|r", -- [11]
-				"Finger0Slot^|cff1eff00|Hitem:25779:0:0:0:0:0:0:794569728:75:0:0|h[Warmaul Slayer's Band]|h|r", -- [12]
-				"Finger1Slot^|cff1eff00|Hitem:25046:0:0:0:0:0:-18:-1760231402:75:0:0|h[Spined Ring of Agility]|h|r", -- [13]
-				"Trinket0Slot^|cff0070dd|Hitem:17744:0:0:0:0:0:0:1898738560:75:0:0|h[Heart of Noxxion]|h|r", -- [14]
-				"Trinket1Slot^|cff0070dd|Hitem:38259:0:0:0:0:0:0:1965031808:75:0:0|h[First Mate's Pocketwatch]|h|r", -- [15]
-				"MainHandSlot^|cff1eff00|Hitem:25622:963:0:0:0:0:0:1742865408:75:0:0|h[Staff of the Four Golden Coins]|h|r", -- [16]
-				"Bag0Slot^|cff1eff00|Hitem:67526:0:0:0:0:0:0:0:75:0:0|h[Darnassian Satchel]|h|r", -- [17]
-				"Bag1Slot^|cff1eff00|Hitem:21841:0:0:0:0:0:0:1625516416:75:0:0|h[Netherweave Bag]|h|r", -- [18]
-				"Bag2Slot^|cff1eff00|Hitem:67532:0:0:0:0:0:0:0:75:0:0|h[Gilnean Satchel]|h|r", -- [19]
-				"Bag3Slot^|cffffffff|Hitem:30748:0:0:0:0:0:0:0:75:0:0|h[Enchanter's Satchel]|h|r", -- [20]
-			},
-			["W"] = {
-				["NxHUD"] = {
-					["A"] = "TOP",
-					["_W"] = 8,
-					["FI"] = 1,
-					["FO"] = 0.15,
-					["W"] = 140.9999731034044,
-					["Y"] = 98.99973721802627,
-					["H"] = 40,
-					["_H"] = 40,
-					["Hide"] = true,
-					["X"] = -10.00207647678142,
-					["_Y"] = -0.17,
-					["_X"] = 999999,
-				},
-				["NxQuestList"] = {
-					["_W"] = -0.52,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 831.9999876022341,
-					["Y"] = 179.9999858736994,
-					["X"] = 383.9999942779542,
-					["_H"] = -0.65,
-					["_X"] = -0.24,
-					["H"] = 779.9999387860307,
-					["_Y"] = -0.15,
-					["Hide"] = true,
-				},
-				["NxMap1"] = {
-					["9010L"] = 1,
-					["9009Y"] = -0.4,
-					["9008L"] = 1,
-					["FO"] = 0,
-					["9002L"] = 1,
-					["9013X"] = -0.0001,
-					["9012Y"] = -0.4,
-					["9001Y"] = -0.4,
-					["9004W"] = -0.19,
-					["9012L"] = 1,
-					["_H"] = -0.3,
-					["_L"] = 1,
-					["9009W"] = -0.19,
-					["9003Y"] = -0.4,
-					["9010W"] = -0.19,
-					["9011X"] = -0.0001,
-					["9008H"] = -0.3,
-					["9002X"] = -0.0001,
-					["9012H"] = -0.3,
-					["9001H"] = -0.3,
-					["9003H"] = -0.3,
-					["9010X"] = -0.0001,
-					["9002H"] = -0.3,
-					["9002W"] = -0.19,
-					["9003W"] = -0.19,
-					["9001W"] = -0.19,
-					["9012X"] = -0.0001,
-					["9009X"] = -0.0001,
-					["9011H"] = -0.3,
-					["9008Y"] = -0.4,
-					["9004L"] = 1,
-					["A"] = "BOTTOMRIGHT",
-					["9013L"] = 1,
-					["9010H"] = -0.3,
-					["9002Y"] = -0.4,
-					["9013W"] = -0.19,
-					["9004Y"] = -0.4,
-					["9011L"] = 1,
-					["9009H"] = -0.3,
-					["H"] = 269.3996961504266,
-					["9004H"] = -0.3,
-					["9003L"] = 1,
-					["9003X"] = -0.0001,
-					["9009L"] = 1,
-					["L"] = 1,
-					["_X"] = -0.0001,
-					["9001L"] = 1,
-					["9013Y"] = -0.4,
-					["_W"] = -0.19,
-					["9012W"] = -0.19,
-					["9013H"] = -0.3,
-					["9010Y"] = -0.4,
-					["9008W"] = -0.19,
-					["W"] = 322.5600766754139,
-					["9008X"] = -0.0001,
-					["Y"] = 2.594888171629784,
-					["X"] = -5.340218464430891,
-					["9011W"] = -0.19,
-					["9011Y"] = -0.4,
-					["9004X"] = -0.0001,
-					["9001X"] = -0.0001,
-					["_Y"] = -0.4,
-					["FI"] = 1,
-				},
-				["NxDD"] = {
-					["_W"] = 207,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 207,
-					["Y"] = 0,
-					["H"] = 209,
-					["_H"] = 209,
-					["_X"] = 0,
-					["X"] = 0,
-					["_Y"] = 0,
-					["Hide"] = true,
-				},
-				["NxQuestWatch"] = {
-					["A"] = "TOPRIGHT",
-					["MinW"] = 123.9999561905867,
-					["FI"] = 1,
-					["FO"] = 0.15,
-					["MinX"] = 0,
-					["H"] = 40,
-					["_H"] = -0.1,
-					["MinY"] = 31.0002560764513,
-					["Mode"] = "Min",
-					["_W"] = -0.2,
-					["W"] = 124.0000076293945,
-					["Min"] = true,
-					["X"] = -74.0001220703125,
-					["MinH"] = 40,
-					["MinA"] = "TOPRIGHT",
-					["Y"] = 80.99996185302734,
-					["_Y"] = -0.35,
-					["_X"] = -0.8,
-				},
-				["NxCombat"] = {
-					["_W"] = -0.3,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 479.9999928474427,
-					["Y"] = 839.9999340772638,
-					["H"] = 71.99999434947975,
-					["_H"] = -0.06,
-					["_X"] = -0.7,
-					["X"] = 1119.9999833107,
-					["_Y"] = -0.7,
-					["Hide"] = true,
-				},
-				["NxSocial"] = {
-					["_W"] = -0.5,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 799.9999880790713,
-					["Y"] = 215.9999830484393,
-					["X"] = 399.9999940395356,
-					["_H"] = -0.64,
-					["Hide"] = true,
-					["H"] = 767.9999397277841,
-					["_Y"] = -0.18,
-					["_X"] = -0.25,
-				},
-				["NxMapDock"] = {
-					["A"] = "TOPRIGHT",
-					["_W"] = 52,
-					["FI"] = 1,
-					["FO"] = 0,
-					["W"] = 47.99997735023532,
-					["Y"] = 50.00007078051462,
-					["H"] = 40,
-					["X"] = -5.000114366410458,
-					["_H"] = 69,
-					["_L"] = 2,
-					["L"] = 2,
-					["_Y"] = -0.08,
-					["_X"] = 100045,
-				},
-				["NxGuide1"] = {
-					["_W"] = -0.63,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 1007.99998497963,
-					["Y"] = 239.9999811649325,
-					["H"] = 599.9999529123313,
-					["_H"] = -0.5,
-					["Hide"] = true,
-					["X"] = 239.9999964237214,
-					["_Y"] = -0.2,
-					["_X"] = -0.15,
-				},
-				["Version"] = 0.31,
-				["NxEventsList"] = {
-					["_W"] = -0.25,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 399.9999940395356,
-					["Y"] = 719.9999434947976,
-					["H"] = 119.9999905824663,
-					["_H"] = -0.1,
-					["_X"] = -0.75,
-					["X"] = 1199.999982118607,
-					["_Y"] = -0.6,
-					["Hide"] = true,
-				},
-				["NxPunkHUD"] = {
-					["A"] = "TOPRIGHT",
-					["_W"] = 135,
-					["FI"] = 0.5,
-					["FO"] = 0,
-					["W"] = 134.0000609457484,
-					["Y"] = 56.99956332147772,
-					["H"] = 40,
-					["_H"] = 87,
-					["X"] = -49.00050090252607,
-					["_Y"] = -0.1,
-					["_X"] = -0.6,
-				},
-				["NxOpts"] = {
-					["_W"] = -0.5,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 799.9999880790713,
-					["Y"] = 119.9999886751177,
-					["H"] = 839.9999111890807,
-					["_H"] = -0.7,
-					["_X"] = -0.25,
-					["X"] = 399.9999940395356,
-					["_Y"] = -0.1,
-					["Hide"] = true,
-				},
-				["NxTeamHUD"] = {
-					["_W"] = 107,
-					["FI"] = 0.5,
-					["FO"] = 0,
-					["W"] = 107,
-					["Y"] = 359.9999717473988,
-					["H"] = 40,
-					["_H"] = 40,
-					["_X"] = -0.6,
-					["X"] = 959.9999856948855,
-					["_Y"] = -0.3,
-					["Hide"] = true,
-				},
-				["NxWarehouse"] = {
-					["_W"] = -0.5,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 799.9999880790713,
-					["Y"] = 179.999978244305,
-					["X"] = 399.9999940395356,
-					["_H"] = -0.6,
-					["_X"] = -0.25,
-					["H"] = 719.9999129772199,
-					["_Y"] = -0.15,
-					["Hide"] = true,
-				},
-			},
-			["Class"] = "Druid",
-			["LXPRest"] = 2168278,
-			["WareBags"] = {
-				["Rancid Signet"] = "1^|cff1eff00|Hitem:38746:0:0:0:0:0:0:1860306176:75:0:0|h[Rancid Signet]|h|r",
-				["Arcane Dust"] = "6^|cffffffff|Hitem:22445:0:0:0:0:0:0:1382629599:75:0:0|h[Arcane Dust]|h|r",
-				["Lord Prestor's Drape"] = "1^|cff1eff00|Hitem:37988:2662:0:0:0:0:0:1622564224:75:0:0|h[Lord Prestor's Drape]|h|r",
-				["Silk Cloth"] = "35^|cffffffff|Hitem:4306:0:0:0:0:0:0:760155248:75:0:0|h[Silk Cloth]|h|r",
-				["Mendicant's Charm"] = "1^|cff1eff00|Hitem:38760:0:0:0:0:0:0:1316569728:75:0:0|h[Mendicant's Charm]|h|r",
-				["Darkmoon Adventurer's Guide"] = "1^|cffffffff|Hitem:71634:0:0:0:0:0:0:2778909:75:0:0|h[Darkmoon Adventurer's Guide]|h|r",
-				["Runed Fel Iron Rod"] = "1^|cff0070dd|Hitem:22461:0:0:0:0:0:0:1704217472:75:0:0|h[Runed Fel Iron Rod]|h|r",
-				["Giant's Toewrap of the Thief"] = "1^|cff0070dd|Hitem:44696:0:0:0:0:0:-89:1057947718:75:0:0|h[Giant's Toewrap of the Thief]|h|r",
-				["Large Brilliant Shard"] = "7^|cff0070dd|Hitem:14344:0:0:0:0:0:0:974158277:75:0:0|h[Large Brilliant Shard]|h|r",
-				["Baleen Braided Collar"] = "1^|cff1eff00|Hitem:37939:0:0:0:0:0:0:1606554752:75:0:0|h[Baleen Braided Collar]|h|r",
-				["Large Glimmering Shard"] = "5^|cff0070dd|Hitem:11084:0:0:0:0:0:0:-157366434:75:0:0|h[Large Glimmering Shard]|h|r",
-				["Large Prismatic Shard"] = "3^|cff0070dd|Hitem:22449:0:0:0:0:0:0:1336570223:75:0:0|h[Large Prismatic Shard]|h|r",
-				["Greater Magic Essence"] = "8^|cff1eff00|Hitem:10939:0:0:0:0:0:0:1270461184:75:0:0|h[Greater Magic Essence]|h|r",
-				["Greater Planar Essence"] = "1^|cff1eff00|Hitem:22446:0:0:0:0:0:0:2011423744:75:0:0|h[Greater Planar Essence]|h|r",
-				["Grinder of Reverse Emancipation"] = "1^|cff1eff00|Hitem:39116:0:0:0:0:0:0:1356036224:75:0:0|h[Grinder of Reverse Emancipation]|h|r",
-				["Shard of Gavrock"] = "1^|cffffffff|Hitem:36787:0:0:0:0:0:0:412685728:75:0:0|h[Shard of Gavrock]|h|r",
-				["Small Radiant Shard"] = "14^|cff0070dd|Hitem:11177:0:0:0:0:0:0:15295568:75:0:0|h[Small Radiant Shard]|h|r",
-				["Infinite Dust"] = "50^|cffffffff|Hitem:34054:0:0:0:0:0:0:1382668694:75:0:0|h[Infinite Dust]|h|r",
-				["Lesser Planar Essence"] = "1^|cff1eff00|Hitem:22447:0:0:0:0:0:0:1010852659:75:0:0|h[Lesser Planar Essence]|h|r",
-				["Staats' Fishing Pole"] = "1^|cffffffff|Hitem:46337:0:0:0:0:0:0:1953228160:75:0:0|h[Staats' Fishing Pole]|h|r",
-				["Lesser Cosmic Essence"] = "19^|cff1eff00|Hitem:34056:0:0:0:0:0:0:1607394752:75:0:0|h[Lesser Cosmic Essence]|h|r",
-				["Ethereal Hood"] = "1^|cff1eff00|Hitem:38716:0:0:0:0:0:0:1308980480:75:0:0|h[Ethereal Hood]|h|r",
-				["Dandred Bindings of the Bandit"] = "1^|cff1eff00|Hitem:55637:0:0:0:0:0:-40:1054736593:75:0:0|h[Dandred Bindings of the Bandit]|h|r",
-				["Small Glowing Shard"] = "8^|cff0070dd|Hitem:11138:0:0:0:0:0:0:-13384590:75:0:0|h[Small Glowing Shard]|h|r",
-				["Small Prismatic Shard"] = "6^|cff0070dd|Hitem:22448:0:0:0:0:0:0:1004226432:75:0:0|h[Small Prismatic Shard]|h|r",
-				["Mageweave Cloth"] = "131^|cffffffff|Hitem:4338:0:0:0:0:0:0:1862528768:75:0:0|h[Mageweave Cloth]|h|r",
-				["Dementia Trousers of the Eagle"] = "1^|cff1eff00|Hitem:24730:0:0:0:0:0:-6:1179320363:75:0:0|h[Dementia Trousers of the Eagle]|h|r",
-				["Hearthstone"] = "1^|cffffffff|Hitem:6948:0:0:0:0:0:0:0:75:0:0|h[Hearthstone]|h|r",
-				["Siegemaster's Torch Ring"] = "1^|cff1eff00|Hitem:38284:0:0:0:0:0:0:457928096:75:0:0|h[Siegemaster's Torch Ring]|h|r",
-				["Small Dream Shard"] = "3^|cff0070dd|Hitem:34053:0:0:0:0:0:0:1375653377:75:0:0|h[Small Dream Shard]|h|r",
-				["Nightseye"] = "1^|cff0070dd|Hitem:23441:0:0:0:0:0:0:-2118889600:75:0:0|h[Nightseye]|h|r",
-				["Bolt of Frostweave"] = "1^|cffffffff|Hitem:41510:0:0:0:0:0:0:1811007104:75:0:0|h[Bolt of Frostweave]|h|r",
-				["Void Crystal"] = "1^|cffa335ee|Hitem:22450:0:0:0:0:0:0:561205376:75:0:0|h[Void Crystal]|h|r",
-				["Netherweave Cloth"] = "2^|cffffffff|Hitem:21877:0:0:0:0:0:0:1816831744:75:0:0|h[Netherweave Cloth]|h|r",
-				["Lesser Astral Essence"] = "2^|cff1eff00|Hitem:10998:0:0:0:0:0:0:1828902912:75:0:0|h[Lesser Astral Essence]|h|r",
-				["Feathered Waistband of the Elder"] = "1^|cff0070dd|Hitem:31229:0:0:0:0:0:-42:1241514024:75:0:0|h[Feathered Waistband of the Elder]|h|r",
-				["Nexus Crystal"] = "2^|cffa335ee|Hitem:20725:0:0:0:0:0:0:1464049536:75:0:0|h[Nexus Crystal]|h|r",
-				["Herbalist's Pauldrons"] = "1^|cff1eff00|Hitem:39062:0:0:0:0:0:0:1561060224:75:0:0|h[Herbalist's Pauldrons]|h|r",
-				["Sacred Feather Vest"] = "1^|cff0070dd|Hitem:28050:1144:0:0:0:0:0:955144832:75:0:0|h[Sacred Feather Vest]|h|r",
-				["Greater Mystic Essence"] = "6^|cff1eff00|Hitem:11135:0:0:0:0:0:0:962235557:75:0:0|h[Greater Mystic Essence]|h|r",
-				["Hypnotic Dust"] = "7^|cffffffff|Hitem:52555:0:0:0:0:0:0:1558454400:75:0:0|h[Hypnotic Dust]|h|r",
-				["Ironforge Tabard"] = "1^|cffffffff|Hitem:45577:0:0:0:0:0:0:0:75:0:0|h[Ironforge Tabard]|h|r",
-				["Light Feather"] = "9^|cffffffff|Hitem:17056:0:0:0:0:0:0:1566125824:75:0:0|h[Light Feather]|h|r",
-				["Small Heavenly Shard"] = "1^|cff0070dd|Hitem:52720:0:0:0:0:0:0:727373312:75:0:0|h[Small Heavenly Shard]|h|r",
-				["Moonstruck Bands"] = "1^|cff1eff00|Hitem:28028:369:0:0:0:0:0:1109161216:75:0:0|h[Moonstruck Bands]|h|r",
-				["Helm of Rising Smoke"] = "1^|cff1eff00|Hitem:39022:0:0:0:0:0:0:1563332352:75:0:0|h[Helm of Rising Smoke]|h|r",
-				["Aeyla's Staff"] = "1^|cff0070dd|Hitem:66001:963:0:0:0:0:0:21664532:75:0:0|h[Aeyla's Staff]|h|r",
-				["Small Brilliant Shard"] = "17^|cff0070dd|Hitem:14343:0:0:0:0:0:0:69283763:75:0:0|h[Small Brilliant Shard]|h|r",
-				["Darkmoon Game Token"] = "24^|cff1eff00|Hitem:71083:0:0:0:0:0:0:921050432:75:0:0|h[Darkmoon Game Token]|h|r",
-				["Spirit Dust"] = "3^|cffffffff|Hitem:74249:0:0:0:0:0:0:1725947392:75:0:0|h[Spirit Dust]|h|r",
-				["Grips of the Windswept Plains"] = "1^|cff1eff00|Hitem:37319:2934:0:0:0:0:0:1484339840:75:0:0|h[Grips of the Windswept Plains]|h|r",
-				["Frostweave Cloth"] = "18^|cffffffff|Hitem:33470:0:0:0:0:0:0:699840464:75:0:0|h[Frostweave Cloth]|h|r",
-				["Lava Core"] = "21^|cff0070dd|Hitem:17011:0:0:0:0:0:0:-1436222720:75:0:0|h[Lava Core]|h|r",
-				["Whip-Stitched Wristguards"] = "1^|cff1eff00|Hitem:39056:0:0:0:0:0:0:1768860928:75:0:0|h[Whip-Stitched Wristguards]|h|r",
-				["Patchhide Pants"] = "1^|cff1eff00|Hitem:39030:0:0:0:0:0:0:1252167936:75:0:0|h[Patchhide Pants]|h|r",
-				["Oshu'gun Relic"] = "1^|cff1eff00|Hitem:25634:0:0:0:0:0:0:1153378688:75:0:0|h[Oshu'gun Relic]|h|r",
-				["Salted Venison"] = "6^|cffffffff|Hitem:33454:0:0:0:0:0:0:894264352:75:0:0|h[Salted Venison]|h|r",
-				["Glade Wanderer Boots"] = "1^|cff1eff00|Hitem:37993:0:0:0:0:0:0:1354909952:75:0:0|h[Glade Wanderer Boots]|h|r",
-				["Hozen Warrior Spear"] = "1^|cff0070dd|Hitem:86394:0:0:0:0:0:0:548585248:75:0:0|h[Hozen Warrior Spear]|h|r",
-				["Small Glimmering Shard"] = "15^|cff0070dd|Hitem:10978:0:0:0:0:0:0:-585887474:75:0:0|h[Small Glimmering Shard]|h|r",
-				["Halaa Research Token"] = "4^|cff1eff00|Hitem:26044:0:0:0:0:0:0:743378688:75:0:0|h[Halaa Research Token]|h|r",
-				["Simple Flour"] = "10^|cffffffff|Hitem:30817:0:0:0:0:0:0:0:75:0:0|h[Simple Flour]|h|r",
-				["Honey-Spiced Lichen"] = "5^|cffffffff|Hitem:33452:0:0:0:0:0:0:1477769344:75:0:0|h[Honey-Spiced Lichen]|h|r",
-				["Chilled Meat"] = "1^|cffffffff|Hitem:43013:0:0:0:0:0:0:-1956293120:75:0:0|h[Chilled Meat]|h|r",
-			},
-			["Version"] = 0.02,
-			["DurPercent"] = 97.59036144578313,
-			["Honor"] = 58,
+			["LvlTime"] = 1361077253,
 			["E"] = {
 				"I^134156652400^0^8df8cc^+28012 xp", -- [1]
 				"I^134156656200^0^86bae7^+28012 xp", -- [2]
@@ -33872,7 +33653,350 @@ NxData = {
 				"I^136037659700^42^ffaffa^Entered", -- [59]
 				"I^136107725400^42^000000^Entered", -- [60]
 			},
-			["LvlTime"] = 1361077253,
+			["QHAskedGet"] = true,
+			["Money"] = 15363,
+			["Honor"] = 58,
+			["W"] = {
+				["NxHUD"] = {
+					["A"] = "TOP",
+					["_W"] = 8,
+					["FI"] = 1,
+					["FO"] = 0.15,
+					["W"] = 140.9999731034044,
+					["Y"] = 98.99973721802627,
+					["H"] = 40,
+					["_H"] = 40,
+					["_X"] = 999999,
+					["X"] = -10.00207647678142,
+					["_Y"] = -0.17,
+					["Hide"] = true,
+				},
+				["NxQuestList"] = {
+					["_W"] = -0.52,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 831.9999876022341,
+					["Y"] = 179.9999858736994,
+					["X"] = 383.9999942779542,
+					["_H"] = -0.65,
+					["Hide"] = true,
+					["H"] = 779.9999387860307,
+					["_Y"] = -0.15,
+					["_X"] = -0.24,
+				},
+				["NxWarehouse"] = {
+					["_W"] = -0.5,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 799.9999880790713,
+					["Y"] = 179.999978244305,
+					["X"] = 399.9999940395356,
+					["_H"] = -0.6,
+					["Hide"] = true,
+					["H"] = 719.9999129772199,
+					["_Y"] = -0.15,
+					["_X"] = -0.25,
+				},
+				["NxDD"] = {
+					["_W"] = 207,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 207,
+					["Y"] = 0,
+					["H"] = 209,
+					["_H"] = 209,
+					["Hide"] = true,
+					["X"] = 0,
+					["_Y"] = 0,
+					["_X"] = 0,
+				},
+				["NxQuestWatch"] = {
+					["A"] = "TOPRIGHT",
+					["MinW"] = 123.9999561905867,
+					["FI"] = 1,
+					["FO"] = 0.15,
+					["MinX"] = 0,
+					["H"] = 40,
+					["_H"] = -0.1,
+					["MinY"] = 31.0002560764513,
+					["Mode"] = "Min",
+					["_W"] = -0.2,
+					["W"] = 124.0000076293945,
+					["Min"] = true,
+					["X"] = -74.0001220703125,
+					["MinH"] = 40,
+					["MinA"] = "TOPRIGHT",
+					["Y"] = 80.99996185302734,
+					["_Y"] = -0.35,
+					["_X"] = -0.8,
+				},
+				["NxTeamHUD"] = {
+					["_W"] = 107,
+					["FI"] = 0.5,
+					["FO"] = 0,
+					["W"] = 107,
+					["Y"] = 359.9999717473988,
+					["H"] = 40,
+					["_H"] = 40,
+					["Hide"] = true,
+					["X"] = 959.9999856948855,
+					["_Y"] = -0.3,
+					["_X"] = -0.6,
+				},
+				["NxOpts"] = {
+					["_W"] = -0.5,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 799.9999880790713,
+					["Y"] = 119.9999886751177,
+					["H"] = 839.9999111890807,
+					["_H"] = -0.7,
+					["Hide"] = true,
+					["X"] = 399.9999940395356,
+					["_Y"] = -0.1,
+					["_X"] = -0.25,
+				},
+				["NxMapDock"] = {
+					["A"] = "TOPRIGHT",
+					["_W"] = 52,
+					["FI"] = 1,
+					["FO"] = 0,
+					["W"] = 47.99997735023532,
+					["Y"] = 50.00007078051462,
+					["H"] = 40,
+					["X"] = -5.000114366410458,
+					["_H"] = 69,
+					["_L"] = 2,
+					["L"] = 2,
+					["_Y"] = -0.08,
+					["_X"] = 100045,
+				},
+				["NxGuide1"] = {
+					["_W"] = -0.63,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 1007.99998497963,
+					["Y"] = 239.9999811649325,
+					["H"] = 599.9999529123313,
+					["_H"] = -0.5,
+					["_X"] = -0.15,
+					["X"] = 239.9999964237214,
+					["_Y"] = -0.2,
+					["Hide"] = true,
+				},
+				["Version"] = 0.31,
+				["NxMap1"] = {
+					["9010L"] = 1,
+					["9009Y"] = -0.4,
+					["9008L"] = 1,
+					["FO"] = 0,
+					["FI"] = 1,
+					["9013X"] = -0.0001,
+					["9012L"] = 1,
+					["9001Y"] = -0.4,
+					["9003Y"] = -0.4,
+					["9012Y"] = -0.4,
+					["_H"] = -0.3,
+					["_L"] = 1,
+					["9009W"] = -0.19,
+					["9004W"] = -0.19,
+					["9010W"] = -0.19,
+					["9011X"] = -0.0001,
+					["9008H"] = -0.3,
+					["9002X"] = -0.0001,
+					["9012H"] = -0.3,
+					["9001H"] = -0.3,
+					["9011Y"] = -0.4,
+					["9011H"] = -0.3,
+					["9002H"] = -0.3,
+					["9002W"] = -0.19,
+					["9010H"] = -0.3,
+					["9002Y"] = -0.4,
+					["9012X"] = -0.0001,
+					["9008X"] = -0.0001,
+					["9010X"] = -0.0001,
+					["9008Y"] = -0.4,
+					["9004L"] = 1,
+					["A"] = "BOTTOMRIGHT",
+					["9013L"] = 1,
+					["9004Y"] = -0.4,
+					["9001W"] = -0.19,
+					["9013W"] = -0.19,
+					["9003W"] = -0.19,
+					["9011L"] = 1,
+					["9009H"] = -0.3,
+					["9008W"] = -0.19,
+					["H"] = 269.3996961504266,
+					["9003L"] = 1,
+					["9003X"] = -0.0001,
+					["9009L"] = 1,
+					["L"] = 1,
+					["_X"] = -0.0001,
+					["9001L"] = 1,
+					["9013Y"] = -0.4,
+					["_W"] = -0.19,
+					["9012W"] = -0.19,
+					["9013H"] = -0.3,
+					["9010Y"] = -0.4,
+					["9004H"] = -0.3,
+					["W"] = 322.5600766754139,
+					["9009X"] = -0.0001,
+					["Y"] = 2.594888171629784,
+					["X"] = -5.340218464430891,
+					["9011W"] = -0.19,
+					["9003H"] = -0.3,
+					["9004X"] = -0.0001,
+					["9001X"] = -0.0001,
+					["_Y"] = -0.4,
+					["9002L"] = 1,
+				},
+				["NxPunkHUD"] = {
+					["A"] = "TOPRIGHT",
+					["_W"] = 135,
+					["FI"] = 0.5,
+					["FO"] = 0,
+					["W"] = 134.0000609457484,
+					["Y"] = 56.99956332147772,
+					["H"] = 40,
+					["_H"] = 87,
+					["X"] = -49.00050090252607,
+					["_Y"] = -0.1,
+					["_X"] = -0.6,
+				},
+				["NxSocial"] = {
+					["_W"] = -0.5,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 799.9999880790713,
+					["Y"] = 215.9999830484393,
+					["X"] = 399.9999940395356,
+					["_H"] = -0.64,
+					["_X"] = -0.25,
+					["H"] = 767.9999397277841,
+					["_Y"] = -0.18,
+					["Hide"] = true,
+				},
+				["NxEventsList"] = {
+					["_W"] = -0.25,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 399.9999940395356,
+					["Y"] = 719.9999434947976,
+					["H"] = 119.9999905824663,
+					["_H"] = -0.1,
+					["Hide"] = true,
+					["X"] = 1199.999982118607,
+					["_Y"] = -0.6,
+					["_X"] = -0.75,
+				},
+				["NxCombat"] = {
+					["_W"] = -0.3,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 479.9999928474427,
+					["Y"] = 839.9999340772638,
+					["H"] = 71.99999434947975,
+					["_H"] = -0.06,
+					["Hide"] = true,
+					["X"] = 1119.9999833107,
+					["_Y"] = -0.7,
+					["_X"] = -0.7,
+				},
+			},
+			["Class"] = "Druid",
+			["LXPRest"] = 2168278,
+			["WareBags"] = {
+				["Rancid Signet"] = "1^|cff1eff00|Hitem:38746:0:0:0:0:0:0:1860306176:75:0:0|h[Rancid Signet]|h|r",
+				["Chilled Meat"] = "1^|cffffffff|Hitem:43013:0:0:0:0:0:0:-1956293120:75:0:0|h[Chilled Meat]|h|r",
+				["Lord Prestor's Drape"] = "1^|cff1eff00|Hitem:37988:2662:0:0:0:0:0:1622564224:75:0:0|h[Lord Prestor's Drape]|h|r",
+				["Arcane Dust"] = "6^|cffffffff|Hitem:22445:0:0:0:0:0:0:1382629599:75:0:0|h[Arcane Dust]|h|r",
+				["Honey-Spiced Lichen"] = "5^|cffffffff|Hitem:33452:0:0:0:0:0:0:1477769344:75:0:0|h[Honey-Spiced Lichen]|h|r",
+				["Darkmoon Adventurer's Guide"] = "1^|cffffffff|Hitem:71634:0:0:0:0:0:0:2778909:75:0:0|h[Darkmoon Adventurer's Guide]|h|r",
+				["Runed Fel Iron Rod"] = "1^|cff0070dd|Hitem:22461:0:0:0:0:0:0:1704217472:75:0:0|h[Runed Fel Iron Rod]|h|r",
+				["Simple Flour"] = "10^|cffffffff|Hitem:30817:0:0:0:0:0:0:0:75:0:0|h[Simple Flour]|h|r",
+				["Large Brilliant Shard"] = "7^|cff0070dd|Hitem:14344:0:0:0:0:0:0:974158277:75:0:0|h[Large Brilliant Shard]|h|r",
+				["Baleen Braided Collar"] = "1^|cff1eff00|Hitem:37939:0:0:0:0:0:0:1606554752:75:0:0|h[Baleen Braided Collar]|h|r",
+				["Greater Planar Essence"] = "1^|cff1eff00|Hitem:22446:0:0:0:0:0:0:2011423744:75:0:0|h[Greater Planar Essence]|h|r",
+				["Large Prismatic Shard"] = "3^|cff0070dd|Hitem:22449:0:0:0:0:0:0:1336570223:75:0:0|h[Large Prismatic Shard]|h|r",
+				["Small Glimmering Shard"] = "15^|cff0070dd|Hitem:10978:0:0:0:0:0:0:-585887474:75:0:0|h[Small Glimmering Shard]|h|r",
+				["Infinite Dust"] = "50^|cffffffff|Hitem:34054:0:0:0:0:0:0:1382668694:75:0:0|h[Infinite Dust]|h|r",
+				["Staats' Fishing Pole"] = "1^|cffffffff|Hitem:46337:0:0:0:0:0:0:1953228160:75:0:0|h[Staats' Fishing Pole]|h|r",
+				["Shard of Gavrock"] = "1^|cffffffff|Hitem:36787:0:0:0:0:0:0:412685728:75:0:0|h[Shard of Gavrock]|h|r",
+				["Small Radiant Shard"] = "14^|cff0070dd|Hitem:11177:0:0:0:0:0:0:15295568:75:0:0|h[Small Radiant Shard]|h|r",
+				["Mendicant's Charm"] = "1^|cff1eff00|Hitem:38760:0:0:0:0:0:0:1316569728:75:0:0|h[Mendicant's Charm]|h|r",
+				["Lesser Planar Essence"] = "1^|cff1eff00|Hitem:22447:0:0:0:0:0:0:1010852659:75:0:0|h[Lesser Planar Essence]|h|r",
+				["Grinder of Reverse Emancipation"] = "1^|cff1eff00|Hitem:39116:0:0:0:0:0:0:1356036224:75:0:0|h[Grinder of Reverse Emancipation]|h|r",
+				["Salted Venison"] = "6^|cffffffff|Hitem:33454:0:0:0:0:0:0:894264352:75:0:0|h[Salted Venison]|h|r",
+				["Ethereal Hood"] = "1^|cff1eff00|Hitem:38716:0:0:0:0:0:0:1308980480:75:0:0|h[Ethereal Hood]|h|r",
+				["Dandred Bindings of the Bandit"] = "1^|cff1eff00|Hitem:55637:0:0:0:0:0:-40:1054736593:75:0:0|h[Dandred Bindings of the Bandit]|h|r",
+				["Oshu'gun Relic"] = "1^|cff1eff00|Hitem:25634:0:0:0:0:0:0:1153378688:75:0:0|h[Oshu'gun Relic]|h|r",
+				["Small Prismatic Shard"] = "6^|cff0070dd|Hitem:22448:0:0:0:0:0:0:1004226432:75:0:0|h[Small Prismatic Shard]|h|r",
+				["Lesser Astral Essence"] = "2^|cff1eff00|Hitem:10998:0:0:0:0:0:0:1828902912:75:0:0|h[Lesser Astral Essence]|h|r",
+				["Dementia Trousers of the Eagle"] = "1^|cff1eff00|Hitem:24730:0:0:0:0:0:-6:1179320363:75:0:0|h[Dementia Trousers of the Eagle]|h|r",
+				["Hearthstone"] = "1^|cffffffff|Hitem:6948:0:0:0:0:0:0:0:75:0:0|h[Hearthstone]|h|r",
+				["Lesser Cosmic Essence"] = "19^|cff1eff00|Hitem:34056:0:0:0:0:0:0:1607394752:75:0:0|h[Lesser Cosmic Essence]|h|r",
+				["Small Glowing Shard"] = "8^|cff0070dd|Hitem:11138:0:0:0:0:0:0:-13384590:75:0:0|h[Small Glowing Shard]|h|r",
+				["Nightseye"] = "1^|cff0070dd|Hitem:23441:0:0:0:0:0:0:-2118889600:75:0:0|h[Nightseye]|h|r",
+				["Bolt of Frostweave"] = "1^|cffffffff|Hitem:41510:0:0:0:0:0:0:1811007104:75:0:0|h[Bolt of Frostweave]|h|r",
+				["Sacred Feather Vest"] = "1^|cff0070dd|Hitem:28050:1144:0:0:0:0:0:955144832:75:0:0|h[Sacred Feather Vest]|h|r",
+				["Lava Core"] = "21^|cff0070dd|Hitem:17011:0:0:0:0:0:0:-1436222720:75:0:0|h[Lava Core]|h|r",
+				["Frostweave Cloth"] = "18^|cffffffff|Hitem:33470:0:0:0:0:0:0:699840464:75:0:0|h[Frostweave Cloth]|h|r",
+				["Greater Mystic Essence"] = "6^|cff1eff00|Hitem:11135:0:0:0:0:0:0:962235557:75:0:0|h[Greater Mystic Essence]|h|r",
+				["Nexus Crystal"] = "2^|cffa335ee|Hitem:20725:0:0:0:0:0:0:1464049536:75:0:0|h[Nexus Crystal]|h|r",
+				["Herbalist's Pauldrons"] = "1^|cff1eff00|Hitem:39062:0:0:0:0:0:0:1561060224:75:0:0|h[Herbalist's Pauldrons]|h|r",
+				["Hypnotic Dust"] = "7^|cffffffff|Hitem:52555:0:0:0:0:0:0:1558454400:75:0:0|h[Hypnotic Dust]|h|r",
+				["Ironforge Tabard"] = "1^|cffffffff|Hitem:45577:0:0:0:0:0:0:0:75:0:0|h[Ironforge Tabard]|h|r",
+				["Void Crystal"] = "1^|cffa335ee|Hitem:22450:0:0:0:0:0:0:561205376:75:0:0|h[Void Crystal]|h|r",
+				["Feathered Waistband of the Elder"] = "1^|cff0070dd|Hitem:31229:0:0:0:0:0:-42:1241514024:75:0:0|h[Feathered Waistband of the Elder]|h|r",
+				["Light Feather"] = "9^|cffffffff|Hitem:17056:0:0:0:0:0:0:1566125824:75:0:0|h[Light Feather]|h|r",
+				["Small Heavenly Shard"] = "1^|cff0070dd|Hitem:52720:0:0:0:0:0:0:727373312:75:0:0|h[Small Heavenly Shard]|h|r",
+				["Moonstruck Bands"] = "1^|cff1eff00|Hitem:28028:369:0:0:0:0:0:1109161216:75:0:0|h[Moonstruck Bands]|h|r",
+				["Helm of Rising Smoke"] = "1^|cff1eff00|Hitem:39022:0:0:0:0:0:0:1563332352:75:0:0|h[Helm of Rising Smoke]|h|r",
+				["Aeyla's Staff"] = "1^|cff0070dd|Hitem:66001:963:0:0:0:0:0:21664532:75:0:0|h[Aeyla's Staff]|h|r",
+				["Small Brilliant Shard"] = "17^|cff0070dd|Hitem:14343:0:0:0:0:0:0:69283763:75:0:0|h[Small Brilliant Shard]|h|r",
+				["Darkmoon Game Token"] = "24^|cff1eff00|Hitem:71083:0:0:0:0:0:0:921050432:75:0:0|h[Darkmoon Game Token]|h|r",
+				["Spirit Dust"] = "3^|cffffffff|Hitem:74249:0:0:0:0:0:0:1725947392:75:0:0|h[Spirit Dust]|h|r",
+				["Grips of the Windswept Plains"] = "1^|cff1eff00|Hitem:37319:2934:0:0:0:0:0:1484339840:75:0:0|h[Grips of the Windswept Plains]|h|r",
+				["Mageweave Cloth"] = "131^|cffffffff|Hitem:4338:0:0:0:0:0:0:1862528768:75:0:0|h[Mageweave Cloth]|h|r",
+				["Netherweave Cloth"] = "2^|cffffffff|Hitem:21877:0:0:0:0:0:0:1816831744:75:0:0|h[Netherweave Cloth]|h|r",
+				["Whip-Stitched Wristguards"] = "1^|cff1eff00|Hitem:39056:0:0:0:0:0:0:1768860928:75:0:0|h[Whip-Stitched Wristguards]|h|r",
+				["Patchhide Pants"] = "1^|cff1eff00|Hitem:39030:0:0:0:0:0:0:1252167936:75:0:0|h[Patchhide Pants]|h|r",
+				["Small Dream Shard"] = "3^|cff0070dd|Hitem:34053:0:0:0:0:0:0:1375653377:75:0:0|h[Small Dream Shard]|h|r",
+				["Siegemaster's Torch Ring"] = "1^|cff1eff00|Hitem:38284:0:0:0:0:0:0:457928096:75:0:0|h[Siegemaster's Torch Ring]|h|r",
+				["Glade Wanderer Boots"] = "1^|cff1eff00|Hitem:37993:0:0:0:0:0:0:1354909952:75:0:0|h[Glade Wanderer Boots]|h|r",
+				["Hozen Warrior Spear"] = "1^|cff0070dd|Hitem:86394:0:0:0:0:0:0:548585248:75:0:0|h[Hozen Warrior Spear]|h|r",
+				["Greater Magic Essence"] = "8^|cff1eff00|Hitem:10939:0:0:0:0:0:0:1270461184:75:0:0|h[Greater Magic Essence]|h|r",
+				["Halaa Research Token"] = "4^|cff1eff00|Hitem:26044:0:0:0:0:0:0:743378688:75:0:0|h[Halaa Research Token]|h|r",
+				["Giant's Toewrap of the Thief"] = "1^|cff0070dd|Hitem:44696:0:0:0:0:0:-89:1057947718:75:0:0|h[Giant's Toewrap of the Thief]|h|r",
+				["Large Glimmering Shard"] = "5^|cff0070dd|Hitem:11084:0:0:0:0:0:0:-157366434:75:0:0|h[Large Glimmering Shard]|h|r",
+				["Silk Cloth"] = "35^|cffffffff|Hitem:4306:0:0:0:0:0:0:760155248:75:0:0|h[Silk Cloth]|h|r",
+			},
+			["Version"] = 0.02,
+			["DurPercent"] = 97.59036144578313,
+			["WareInv"] = {
+				"HeadSlot^|cffe6cc80|Hitem:61937:0:0:0:0:0:0:0:75:0:0|h[Stained Shadowcraft Cap]|h|r", -- [1]
+				"NeckSlot^|cff1eff00|Hitem:20649:0:0:0:0:0:0:487030336:75:0:0|h[Sunprism Pendant]|h|r", -- [2]
+				"ShoulderSlot^|cff1eff00|Hitem:37985:0:0:0:0:0:0:991462144:75:0:0|h[Violet Stalker Shoulderpads]|h|r", -- [3]
+				"BackSlot^|cffe6cc80|Hitem:62039:884:0:0:0:0:0:0:75:0:0|h[Inherited Cape of the Black Baron]|h|r", -- [4]
+				"ShirtSlot^|cffffffff|Hitem:6796:0:0:0:0:0:0:1995449600:75:0:0|h[Red Swashbuckler's Shirt]|h|r", -- [5]
+				"TabardSlot^|cffa335ee|Hitem:69210:0:0:0:0:0:0:0:75:0:0|h[Renowned Guild Tabard]|h|r", -- [6]
+				"WristSlot^|cff1eff00|Hitem:37987:1593:0:0:0:0:0:1747863552:75:0:0|h[Violet Stalker Bracers]|h|r", -- [7]
+				"HandsSlot^|cff1eff00|Hitem:37983:1594:0:0:0:0:0:1281786496:75:0:0|h[Gloves of the Emerald Stalker]|h|r", -- [8]
+				"WaistSlot^|cff1eff00|Hitem:38008:0:0:0:0:0:0:771473984:75:0:0|h[Lothalar Woodwalker Belt]|h|r", -- [9]
+				"LegsSlot^|cff1eff00|Hitem:39019:0:0:0:0:0:0:949137280:75:0:0|h[Iron-Shatter Leggings]|h|r", -- [10]
+				"FeetSlot^|cff1eff00|Hitem:37984:929:0:0:0:0:0:1167950976:75:0:0|h[Deathtouched Boots]|h|r", -- [11]
+				"Finger0Slot^|cff1eff00|Hitem:25779:0:0:0:0:0:0:794569728:75:0:0|h[Warmaul Slayer's Band]|h|r", -- [12]
+				"Finger1Slot^|cff1eff00|Hitem:25046:0:0:0:0:0:-18:-1760231402:75:0:0|h[Spined Ring of Agility]|h|r", -- [13]
+				"Trinket0Slot^|cff0070dd|Hitem:17744:0:0:0:0:0:0:1898738560:75:0:0|h[Heart of Noxxion]|h|r", -- [14]
+				"Trinket1Slot^|cff0070dd|Hitem:38259:0:0:0:0:0:0:1965031808:75:0:0|h[First Mate's Pocketwatch]|h|r", -- [15]
+				"MainHandSlot^|cff1eff00|Hitem:25622:963:0:0:0:0:0:1742865408:75:0:0|h[Staff of the Four Golden Coins]|h|r", -- [16]
+				"Bag0Slot^|cff1eff00|Hitem:67526:0:0:0:0:0:0:0:75:0:0|h[Darnassian Satchel]|h|r", -- [17]
+				"Bag1Slot^|cff1eff00|Hitem:21841:0:0:0:0:0:0:1625516416:75:0:0|h[Netherweave Bag]|h|r", -- [18]
+				"Bag2Slot^|cff1eff00|Hitem:67532:0:0:0:0:0:0:0:75:0:0|h[Gilnean Satchel]|h|r", -- [19]
+				"Bag3Slot^|cffffffff|Hitem:30748:0:0:0:0:0:0:0:75:0:0|h[Enchanter's Satchel]|h|r", -- [20]
+			},
+			["ArenaPts"] = 0,
+			["XPRest"] = 1282500,
 			["Pos"] = "2010^43.453670^66.173249",
 		},
 		["Khaz Modan.Dathsar"] = {
@@ -33918,44 +34042,44 @@ NxData = {
 				["Romantic Picnic Basket"] = "1^|cff0070dd|Hitem:34480:0:0:0:0:0:0:0:90:0:0|h[Romantic Picnic Basket]|h|r",
 				["Coren's Chilled Chromium Coaster"] = "1^|cffa335ee|Hitem:71335:0:0:0:0:0:0:529098896:90:0:0|h[Coren's Chilled Chromium Coaster]|h|r",
 				["Mark of Kil'jaeden"] = "9^|cffffffff|Hitem:29425:0:0:0:0:0:0:1507990144:90:0:0|h[Mark of Kil'jaeden]|h|r",
-				["Bounty of the Harvest"] = "1^|cffffffff|Hitem:19697:0:0:0:0:0:0:242888496:90:0:0|h[Bounty of the Harvest]|h|r",
-				["Winter Veil Disguise Kit"] = "1^|cffffffff|Hitem:17712:0:0:0:0:0:0:1735136512:90:0:0|h[Winter Veil Disguise Kit]|h|r",
+				["Green Winter Hat"] = "1^|cff1eff00|Hitem:21525:0:0:0:0:0:0:622613136:90:0:0|h[Green Winter Hat]|h|r",
+				["Elegant Dress"] = "1^|cffffffff|Hitem:19028:0:0:0:0:0:0:2076217472:90:0:0|h[Elegant Dress]|h|r",
 				["Tabard of the Explorer"] = "1^|cffa335ee|Hitem:43348:0:0:0:0:0:0:2003984896:90:0:0|h[Tabard of the Explorer]|h|r",
 				["Chalice of the Mountain Kings"] = "1^|cff0070dd|Hitem:64373:0:0:0:0:0:0:1909065472:90:0:0|h[Chalice of the Mountain Kings]|h|r",
 				["Purple Brewfest Hat"] = "1^|cffffffff|Hitem:33969:0:0:0:0:0:0:0:90:0:0|h[Purple Brewfest Hat]|h|r",
-				["Pilgrim's Attire"] = "1^|cffffffff|Hitem:46800:0:0:0:0:0:0:656380032:90:0:0|h[Pilgrim's Attire]|h|r",
-				["Shushen's Spittoon"] = "1^|cffffffff|Hitem:88387:0:0:0:0:0:0:324104800:90:0:0|h[Shushen's Spittoon]|h|r",
+				["Mark of Sargeras"] = "8^|cffffffff|Hitem:30809:0:0:0:0:0:0:1320970112:90:0:0|h[Mark of Sargeras]|h|r",
+				["Oshu'gun Crystal Powder Sample"] = "31^|cffffffff|Hitem:26043:0:0:0:0:0:0:-2123876224:90:0:0|h[Oshu'gun Crystal Powder Sample]|h|r",
 				["Festive Black Pant Suit"] = "1^|cffffffff|Hitem:21541:0:0:0:0:0:0:0:90:0:0|h[Festive Black Pant Suit]|h|r",
 				["Pilgrim's Boots"] = "1^|cffffffff|Hitem:44788:0:0:0:0:0:0:1701303808:90:0:0|h[Pilgrim's Boots]|h|r",
 				["Graccu's Mince Meat Fruitcake"] = "20^|cffffffff|Hitem:21215:0:0:0:0:0:0:-1729537920:90:0:0|h[Graccu's Mince Meat Fruitcake]|h|r",
 				["Elune's Lantern"] = "1^|cff1eff00|Hitem:21540:0:0:0:0:0:0:992158080:90:0:0|h[Elune's Lantern]|h|r",
-				["Sandals of Summer"] = "1^|cffffffff|Hitem:34683:0:0:0:0:0:0:0:90:0:0|h[Sandals of Summer]|h|r",
+				["Pilgrim's Dress"] = "1^|cffffffff|Hitem:44785:0:0:0:0:0:0:1607463296:90:0:0|h[Pilgrim's Dress]|h|r",
 				["Elder's Moonstone"] = "37^|cffffffff|Hitem:21745:0:0:0:0:0:0:1184915072:90:0:0|h[Elder's Moonstone]|h|r",
 				["Winterfall Spirit Beads"] = "2^|cffffffff|Hitem:21383:0:0:0:0:0:0:736524000:90:0:0|h[Winterfall Spirit Beads]|h|r",
-				["Brewfest Boots"] = "1^|cffffffff|Hitem:33868:0:0:0:0:0:0:0:90:0:0|h[Brewfest Boots]|h|r",
 				["Mantle of the Fire Festival"] = "1^|cffffffff|Hitem:23324:0:0:0:0:0:0:0:90:0:0|h[Mantle of the Fire Festival]|h|r",
-				["Vestment of Summer"] = "1^|cffffffff|Hitem:34685:0:0:0:0:0:0:0:90:0:0|h[Vestment of Summer]|h|r",
-				["Crown of the Fire Festival"] = "1^|cffffffff|Hitem:23323:0:0:0:0:0:0:988021312:90:0:0|h[Crown of the Fire Festival]|h|r",
+				["Brewfest Boots"] = "1^|cffffffff|Hitem:33868:0:0:0:0:0:0:0:90:0:0|h[Brewfest Boots]|h|r",
+				["Haunted War Drum"] = "1^|cff0070dd|Hitem:69777:0:0:0:0:0:0:2042810752:90:0:0|h[Haunted War Drum]|h|r",
 				["White Tuxedo Shirt"] = "1^|cffffffff|Hitem:6833:0:0:0:0:0:0:-1850328448:90:0:0|h[White Tuxedo Shirt]|h|r",
-				["Blossoming Branch"] = "1^|cffffffff|Hitem:44792:0:0:0:0:0:0:359675744:90:0:0|h[Blossoming Branch]|h|r",
+				["Crown of the Fire Festival"] = "1^|cffffffff|Hitem:23323:0:0:0:0:0:0:988021312:90:0:0|h[Crown of the Fire Festival]|h|r",
+				["Ancient Amber"] = "1^|cff0070dd|Hitem:69776:0:0:0:0:0:0:1409722880:90:0:0|h[Ancient Amber]|h|r",
 				["Insignia of the Alliance"] = "1^|cff0070dd|Hitem:40476:0:0:0:0:0:0:683236480:90:0:0|h[Insignia of the Alliance]|h|r",
 				["Gaudy Winter Veil Sweater"] = "1^|cff1eff00|Hitem:70923:0:0:0:0:0:0:2046842240:90:0:0|h[Gaudy Winter Veil Sweater]|h|r",
-				["Overflowing Purple Brewfest Stein"] = "1^|cff0070dd|Hitem:56836:0:0:0:0:0:0:1228971776:90:0:0|h[Overflowing Purple Brewfest Stein]|h|r",
+				["Blossoming Branch"] = "1^|cffffffff|Hitem:44792:0:0:0:0:0:0:359675744:90:0:0|h[Blossoming Branch]|h|r",
 				["Winterfin Clam"] = "11^|cffffffff|Hitem:34597:0:0:0:0:0:0:-2068098816:90:0:0|h[Winterfin Clam]|h|r",
 				["Juggling Torch"] = "10^|cffffffff|Hitem:34599:0:0:0:0:0:0:507480800:90:0:0|h[Juggling Torch]|h|r",
-				["Ancient Amber"] = "1^|cff0070dd|Hitem:69776:0:0:0:0:0:0:1409722880:90:0:0|h[Ancient Amber]|h|r",
+				["Overflowing Purple Brewfest Stein"] = "1^|cff0070dd|Hitem:56836:0:0:0:0:0:0:1228971776:90:0:0|h[Overflowing Purple Brewfest Stein]|h|r",
 				["Commander's Badge"] = "1^|cff0070dd|Hitem:32864:0:0:0:0:0:0:522174144:90:0:0|h[Commander's Badge]|h|r",
-				["Haunted War Drum"] = "1^|cff0070dd|Hitem:69777:0:0:0:0:0:0:2042810752:90:0:0|h[Haunted War Drum]|h|r",
+				["Vestment of Summer"] = "1^|cffffffff|Hitem:34685:0:0:0:0:0:0:0:90:0:0|h[Vestment of Summer]|h|r",
 				["Mistletoe"] = "17^|cffffffff|Hitem:21519:0:0:0:0:0:0:1112646144:90:0:0|h[Mistletoe]|h|r",
 				["Puntable Marmot"] = "1^|cffffffff|Hitem:88370:0:0:0:0:0:0:496531488:90:0:0|h[Puntable Marmot]|h|r",
-				["Pilgrim's Dress"] = "1^|cffffffff|Hitem:44785:0:0:0:0:0:0:1607463296:90:0:0|h[Pilgrim's Dress]|h|r",
+				["Sandals of Summer"] = "1^|cffffffff|Hitem:34683:0:0:0:0:0:0:0:90:0:0|h[Sandals of Summer]|h|r",
 				["Lorewalker's Map"] = "1^|cff1eff00|Hitem:87549:0:0:0:0:0:0:0:90:0:0|h[Lorewalker's Map]|h|r",
 				["Gin-Ji Knife Set"] = "1^|cff0070dd|Hitem:90175:0:0:0:0:0:0:0:90:0:0|h[Gin-Ji Knife Set]|h|r",
-				["Oshu'gun Crystal Powder Sample"] = "31^|cffffffff|Hitem:26043:0:0:0:0:0:0:-2123876224:90:0:0|h[Oshu'gun Crystal Powder Sample]|h|r",
-				["Mark of Sargeras"] = "8^|cffffffff|Hitem:30809:0:0:0:0:0:0:1320970112:90:0:0|h[Mark of Sargeras]|h|r",
+				["Shushen's Spittoon"] = "1^|cffffffff|Hitem:88387:0:0:0:0:0:0:324104800:90:0:0|h[Shushen's Spittoon]|h|r",
+				["Pilgrim's Attire"] = "1^|cffffffff|Hitem:46800:0:0:0:0:0:0:656380032:90:0:0|h[Pilgrim's Attire]|h|r",
 				["Lucky Rocket Cluster"] = "44^|cffffffff|Hitem:21744:0:0:0:0:0:0:1155910848:90:0:0|h[Lucky Rocket Cluster]|h|r",
-				["Elegant Dress"] = "1^|cffffffff|Hitem:19028:0:0:0:0:0:0:2076217472:90:0:0|h[Elegant Dress]|h|r",
-				["Green Winter Hat"] = "1^|cff1eff00|Hitem:21525:0:0:0:0:0:0:622613136:90:0:0|h[Green Winter Hat]|h|r",
+				["Winter Veil Disguise Kit"] = "1^|cffffffff|Hitem:17712:0:0:0:0:0:0:1735136512:90:0:0|h[Winter Veil Disguise Kit]|h|r",
+				["Bounty of the Harvest"] = "1^|cffffffff|Hitem:19697:0:0:0:0:0:0:242888496:90:0:0|h[Bounty of the Harvest]|h|r",
 			},
 			["WareMail"] = {
 			},
@@ -34053,74 +34177,74 @@ NxData = {
 					[125594] = 87230,
 					[15865] = 12214,
 					[42302] = 33052,
-					[6499] = 5525,
-					[25704] = 21072,
+					[125141] = 87226,
+					[88039] = 62671,
 					[104302] = 74647,
 					[7827] = 5095,
 					[7828] = 4594,
 					[88030] = 62657,
 					[88046] = 62658,
-					[15853] = 12209,
-					[104299] = 74645,
+					[88013] = 62680,
+					[33293] = 27664,
 					[3400] = 3729,
 					[125595] = 87232,
 					[33294] = 27665,
 					[62049] = 44840,
 					[125117] = 86057,
-					[33289] = 27660,
-					[58523] = 43491,
+					[124223] = 81400,
+					[124224] = 81401,
+					[104297] = 74641,
+					[124225] = 81402,
+					[104303] = 74648,
+					[45554] = 34753,
 					[18243] = 13931,
 					[88031] = 62667,
-					[104303] = 74648,
 					[88047] = 62656,
-					[88015] = 62790,
-					[18247] = 13935,
-					[45554] = 34753,
 					[45562] = 34761,
 					[58065] = 43268,
-					[46688] = 35565,
+					[124230] = 81409,
 					[125596] = 87234,
-					[25954] = 21217,
+					[88004] = 62665,
 					[88045] = 62675,
-					[124233] = 81412,
-					[124234] = 81413,
+					[124231] = 81410,
+					[45551] = 34750,
 					[15933] = 12218,
-					[88020] = 62662,
+					[88044] = 62672,
 					[124232] = 81411,
 					[104304] = 74644,
-					[88016] = 62666,
 					[124226] = 81403,
+					[88016] = 62666,
 					[15855] = 12210,
 					[88014] = 62664,
 					[88037] = 62652,
-					[21144] = 17198,
+					[62050] = 44837,
 					[2538] = 2679,
 					[125597] = 87236,
 					[2539] = 2680,
-					[62050] = 44837,
+					[21144] = 17198,
 					[2540] = 2681,
-					[88033] = 62660,
+					[88017] = 62673,
 					[2541] = 2684,
 					[58512] = 43490,
 					[2542] = 724,
 					[104305] = 74649,
 					[2543] = 733,
 					[124227] = 81404,
-					[2544] = 2683,
-					[65454] = 46691,
+					[88033] = 62660,
+					[43779] = 33924,
 					[45563] = 34762,
+					[43758] = 33866,
 					[124052] = 75026,
-					[2546] = 2687,
 					[125598] = 87238,
 					[88012] = 62655,
 					[125120] = 86073,
 					[42296] = 33048,
-					[18244] = 13932,
+					[124229] = 81408,
 					[2549] = 1017,
 					[8604] = 6888,
-					[45022] = 34411,
+					[88003] = 62661,
 					[104306] = 74650,
-					[33284] = 27655,
+					[104307] = 74651,
 					["Link"] = "|cffffd000|Htrade:104381:600:600:380000003FFE6F1:Gfbi/dx5W95DDrYIXmz//BAAwnvD+////3H+//vXC|h[Cooking]|h|r",
 					[88034] = 62668,
 					[45564] = 34763,
@@ -34128,78 +34252,49 @@ NxData = {
 					[88018] = 62677,
 					[124053] = 75037,
 					[125599] = 87240,
-					[124228] = 81405,
-					[62051] = 44839,
-					[88019] = 62649,
-					[125121] = 86070,
 					[18240] = 13928,
+					[62051] = 44839,
+					[125121] = 86070,
+					[88019] = 62649,
+					[124228] = 81405,
 					["Rank"] = 600,
 					[58521] = 43488,
-					[104307] = 74651,
-					[88003] = 62661,
-					[124229] = 81408,
+					[33284] = 27655,
+					[45022] = 34411,
+					[18244] = 13932,
 					[88035] = 62653,
-					[43758] = 33866,
-					[43779] = 33924,
-					[88017] = 62673,
+					[2546] = 2687,
+					[65454] = 46691,
+					[2544] = 2683,
 					[124054] = 75038,
 					[125600] = 87242,
 					[93741] = 67230,
 					[125122] = 86069,
 					[4094] = 4457,
 					[42305] = 33053,
-					[88044] = 62672,
-					[45551] = 34750,
-					[124231] = 81410,
+					[88020] = 62662,
+					[124234] = 81413,
+					[124233] = 81412,
 					[104308] = 74652,
-					[88004] = 62665,
-					[124230] = 81409,
+					[25954] = 21217,
+					[46688] = 35565,
 					[88036] = 62290,
-					[124225] = 81402,
-					[104297] = 74641,
-					[124224] = 81401,
-					[124223] = 81400,
+					[18247] = 13935,
+					[88015] = 62790,
+					[58523] = 43491,
+					[33289] = 27660,
 					[125601] = 87244,
 					[62044] = 44836,
 					[125123] = 86074,
-					[33293] = 27664,
-					[88013] = 62680,
-					[88039] = 62671,
-					[125141] = 87226,
+					[104299] = 74645,
+					[15853] = 12209,
+					[25704] = 21072,
+					[6499] = 5525,
 				},
 				["Archaeology"] = {
 					["Rank"] = 545,
 				},
 				["Herbalism"] = {
-					["Rank"] = 600,
-				},
-				["Fishing"] = {
-					["Rank"] = 552,
-				},
-				["First Aid"] = {
-					[74556] = 53049,
-					[74558] = 53051,
-					[10840] = 8544,
-					[3276] = 2581,
-					[3278] = 3531,
-					[10841] = 8545,
-					[7928] = 6450,
-					[18630] = 14530,
-					[102697] = 72985,
-					[102699] = 72986,
-					[27033] = 21991,
-					[74557] = 53050,
-					[7929] = 6451,
-					["Link"] = "|cffffd000|Htrade:110406:600:600:380000003FFE6F1:8LPPYdAB|h[First Aid]|h|r",
-					[3275] = 1251,
-					[3277] = 3530,
-					[88893] = 53051,
-					[18629] = 14529,
-					[7934] = 6452,
-					[45546] = 34722,
-					[102698] = 72986,
-					[45545] = 34721,
-					[27032] = 21990,
 					["Rank"] = 600,
 				},
 				["Inscription"] = {
@@ -34580,23 +34675,23 @@ NxData = {
 					[58306] = 43359,
 					[58338] = 43392,
 					[59489] = 43660,
-					[58473] = 1477,
-					[124450] = 85692,
+					[64314] = 45739,
+					[58316] = 43369,
 					[45382] = 1180,
 					[112265] = 80585,
 					[58482] = 43463,
 					[50602] = 33458,
 					[112457] = 87893,
-					[112440] = 87897,
+					[61288] = 0,
 					[94403] = 67485,
-					[112468] = 87887,
-					[58488] = 27503,
-					[57275] = 42471,
-					[112442] = 87895,
+					[112466] = 87885,
+					[94404] = 67486,
+					[64274] = 45736,
+					[64289] = 45772,
 					[56996] = 42899,
 					[61120] = 0,
-					[57163] = 43423,
-					[61119] = 0,
+					[122030] = 83107,
+					[57167] = 43427,
 					[64285] = 45762,
 					[57156] = 43416,
 					[57188] = 42402,
@@ -34605,118 +34700,147 @@ NxData = {
 					[58307] = 43360,
 					[58339] = 43393,
 					[94405] = 67483,
-					[59495] = 43666,
-					[64280] = 45753,
+					[57263] = 42459,
+					[58317] = 43342,
 					[59490] = 43661,
-					[59338] = 43825,
-					[58342] = 43395,
-					[58310] = 43361,
-					[111908] = 79333,
+					[59340] = 43827,
+					[123781] = 85221,
+					[112464] = 87883,
+					[86645] = 62238,
 					[64308] = 45744,
 					[57120] = 42961,
 					[94402] = 67484,
-					[57127] = 42968,
-					[48248] = 37118,
+					[64288] = 45771,
+					[126696] = 87277,
 					[50603] = 37091,
 					[48114] = 955,
 					[57266] = 42462,
 					[86615] = 61987,
 					[112430] = 80588,
 					[64311] = 45783,
-					[57164] = 43430,
+					[112266] = 80586,
 					[56965] = 44922,
 					[56997] = 42900,
 					[57029] = 41106,
-					[57274] = 42470,
+					[57025] = 41103,
 					[64254] = 45746,
 					[64286] = 45764,
 					[57157] = 43417,
-					[58308] = 43364,
+					[111910] = 79335,
 					[57221] = 43548,
 					[57253] = 44923,
-					[112460] = 87890,
+					[58308] = 43364,
 					[58340] = 43391,
-					[58303] = 43339,
+					[57121] = 42962,
 					[96284] = 68793,
 					[126704] = 87279,
 					[59491] = 44163,
 					[57268] = 42464,
-					[64294] = 45781,
-					[57124] = 42965,
-					[89372] = 63306,
-					[57028] = 41097,
-					[124460] = 79515,
-					[101057] = 71155,
+					[64277] = 45741,
+					[57277] = 42473,
+					[94401] = 67487,
+					[112458] = 87901,
+					[127625] = 87902,
+					[57026] = 41105,
 					[127019] = 87577,
-					[59315] = 43674,
+					[58481] = 33457,
 					[50604] = 37092,
 					[112461] = 87889,
 					[50620] = 37094,
-					[58321] = 43372,
-					[57267] = 42463,
-					[127020] = 87585,
-					[58480] = 27498,
-					[57030] = 41092,
-					[112462] = 87881,
+					[112264] = 80584,
+					[58288] = 43331,
+					[59326] = 43725,
+					[48116] = 1181,
 					[86375] = 0,
-					[57125] = 42966,
+					[58309] = 43362,
+					[57030] = 41092,
+					[132167] = 90715,
 					[95710] = 63416,
 					[111918] = 79340,
 					[57158] = 43418,
 					[57190] = 42404,
 					[57222] = 43549,
-					[132167] = 90715,
-					[58309] = 43362,
+					[57125] = 42966,
+					[112462] = 87881,
 					[58341] = 43394,
-					[48116] = 1181,
-					[59326] = 43725,
-					[58288] = 43331,
-					[112264] = 80584,
+					[58480] = 27498,
+					[127020] = 87585,
+					[57267] = 42463,
+					[58321] = 43372,
 					[99547] = 75079,
-					[58481] = 33457,
+					[59315] = 43674,
 					[58565] = 43515,
-					[57026] = 41105,
-					[127625] = 87902,
-					[112458] = 87901,
-					[94401] = 67487,
-					[57277] = 42473,
-					[64277] = 45741,
+					[101057] = 71155,
+					[124460] = 79515,
+					[57028] = 41097,
+					[89372] = 63306,
+					[57124] = 42965,
+					[64294] = 45781,
 					[50605] = 1712,
 					[112463] = 87882,
-					[57121] = 42962,
-					[111910] = 79335,
-					[57025] = 41103,
-					[112266] = 80586,
+					[58303] = 43339,
+					[112460] = 87890,
+					[57274] = 42470,
+					[57164] = 43430,
 					[52843] = 39469,
 					[99548] = 75066,
 					[56999] = 42902,
 					[57031] = 41108,
 					[92579] = 64493,
-					[126696] = 87277,
-					[64288] = 45771,
+					[48248] = 37118,
+					[57127] = 42968,
 					[57159] = 43419,
 					[57191] = 42405,
 					[57223] = 43550,
-					[86645] = 62238,
-					[112464] = 87883,
-					[123781] = 85221,
-					[59340] = 43827,
-					[58317] = 43342,
-					[57263] = 42459,
+					[111908] = 79333,
+					[58310] = 43361,
+					[58342] = 43395,
+					[59338] = 43825,
+					[64280] = 45753,
+					[59495] = 43666,
 					[59493] = 43663,
 					[99549] = 75069,
-					[57167] = 43427,
-					[122030] = 83107,
-					[64289] = 45772,
-					[64274] = 45736,
-					[94404] = 67486,
-					[112466] = 87885,
+					[61119] = 0,
+					[57163] = 43423,
+					[112442] = 87895,
+					[57275] = 42471,
+					[58488] = 27503,
+					[112468] = 87887,
 					[57703] = 43115,
-					[61288] = 0,
+					[112440] = 87897,
 					[50606] = 4424,
 					[112465] = 87884,
-					[58316] = 43369,
-					[64314] = 45739,
+					[124450] = 85692,
+					[58473] = 1477,
+				},
+				["First Aid"] = {
+					[74556] = 53049,
+					[74558] = 53051,
+					[10840] = 8544,
+					[3276] = 2581,
+					[3278] = 3531,
+					[10841] = 8545,
+					[7928] = 6450,
+					[18630] = 14530,
+					[102697] = 72985,
+					[102699] = 72986,
+					[27033] = 21991,
+					[74557] = 53050,
+					[7929] = 6451,
+					["Link"] = "|cffffd000|Htrade:110406:600:600:380000003FFE6F1:8LPPYdAB|h[First Aid]|h|r",
+					[3275] = 1251,
+					[3277] = 3530,
+					[88893] = 53051,
+					[18629] = 14529,
+					[7934] = 6452,
+					[27032] = 21990,
+					[102698] = 72986,
+					[45545] = 34721,
+					[45546] = 34722,
+					["Rank"] = 600,
+				},
+				["Fishing"] = {
+					["Rank"] = 552,
 				},
 			},
 			["LXP"] = 15574,
@@ -34800,8 +34924,8 @@ NxData = {
 				["NxMap1TB"] = {
 					["Space"] = 1,
 					["AlignR"] = true,
-					["Size"] = 22,
 					["AlignB"] = true,
+					["Size"] = 22,
 				},
 			},
 			["TimePlayed"] = 3203238,
@@ -36312,63 +36436,63 @@ NxData = {
 				[31286] = "C1349258180",
 				[11582] = "C1291601766",
 				[11646] = "C1291601766",
-				[30156] = "C1356835673",
+				[10909] = "C1291601766",
 				[11710] = "C1291601766",
 				[31670] = "C1357294734",
 				[31734] = "C1348565833",
-				[31194] = "C1356835669",
+				[28402] = "C1298599250",
 				[27767] = "C1291601766",
 				[11870] = "C1291601683",
 				[11902] = "C1291601766",
-				[31326] = "C1354013422",
+				[4421] = "C1291601766",
 				[31521] = "W0",
 				[12401] = "C1291601766",
 				[31698] = "C1356756098",
 				[28215] = "C1298860253",
 				[31959] = "W0",
-				[9398] = "C1291601766",
+				[9781] = "C1291601766",
 				[28407] = "C1298893435",
-				[28104] = "C1310783581",
+				[7028] = "C1291601766",
 				[30478] = "C1353815918",
 				[31325] = "C1353925619",
 				[12286] = "C1291601766",
-				[9588] = "C1291601766",
+				[9808] = "C1291601766",
 				[12350] = "C1291601766",
-				[13926] = "W0",
+				[31943] = "C1356920890",
 				[632] = "C1291601766",
 				[30472] = "C1354012996",
 				[30452] = "W0",
 				[31947] = "C1353061352",
 				[29175] = "W0",
-				[31209] = "C1353211635",
+				[27496] = "C1311395558",
 				[29303] = "W0",
-				[31949] = "C1353493165",
-				[9607] = "C1291601766",
+				[29750] = "C1348974539",
+				[31495] = "C1351474110",
 				[3790] = "C1291601766",
 				[25464] = "C1309656495",
 				[29623] = "C1349084004",
 				[29288] = "C1311760491",
 				[25656] = "C1309798794",
 				[31323] = "W0",
-				[31208] = "C1353211629",
+				[31599] = "C1352372812",
 				[1019] = "C1291601766",
 				[29553] = "C1348738063",
 				[31210] = "C1353211639",
 				[30135] = "C1351129026",
 				[25229] = "C1291601766",
-				[31189] = "C1351996338",
+				[31178] = "C1351158950",
 				[31516] = "C1351908658",
 				[31068] = "C1351653253",
-				[31185] = "C1351909914",
+				[31080] = "C1351848327",
 				[30519] = "C1353407458",
 				[6624] = "C1291601766",
-				[27874] = "C1309797790",
-				[28211] = "C1297909512",
+				[31782] = "C1351996806",
+				[31182] = "C1351907461",
 				[30775] = "C1350094969",
-				[30535] = "C1349345233",
+				[6612] = "C1291601766",
 				[31177] = "C1351158947",
 				[26872] = "C1317895509",
-				[31133] = "C1351764578",
+				[31321] = "C1351850685",
 				[13502] = "W0",
 				[31606] = "C1351652653",
 				[9471] = "C1291601766",
@@ -36376,28 +36500,28 @@ NxData = {
 				[9535] = "C1291601766",
 				[31762] = "C1351474559",
 				[31479] = "C1349345077",
-				[985] = "C1291601766",
+				[30384] = "C1349582517",
 				[31077] = "C1351763030",
 				[31671] = "C1357208739",
 				[27640] = "C1295241093",
-				[31095] = "C1352003519",
+				[31079] = "C1351848292",
 				[9791] = "C1291601766",
-				[25928] = "C1310175217",
+				[8871] = "C1327313773",
 				[13950] = "W0",
 				[31129] = "C1351761906",
 				[9919] = "C1291601766",
-				[30636] = "C1351310882",
-				[30237] = "W0",
+				[31242] = "C1351474669",
+				[31070] = "C1351763079",
 				[28216] = "C1297906083",
 				[10047] = "C1291601766",
 				[10079] = "C1291601766",
 				[28408] = "C1310698439",
 				[10143] = "C1291601766",
-				[31078] = "C1351764015",
+				[31755] = "C1351474548",
 				[10207] = "C1291601766",
 				[29451] = "W0",
 				[31754] = "C1351474545",
-				[28280] = "C1298862379",
+				[29587] = "C1348885431",
 				[30474] = "C1351475499",
 				[10367] = "C1291601766",
 				[10399] = "C1291601766",
@@ -36407,80 +36531,80 @@ NxData = {
 				[31088] = "C1350984224",
 				[29304] = "W0",
 				[25273] = "W0",
-				[31066] = "C1350899395",
-				[8912] = "C1291601766",
+				[32016] = "C1355714486",
+				[10254] = "C1291601766",
 				[29560] = "C1348738675",
 				[29624] = "C1349084230",
-				[31661] = "C1350641377",
+				[29166] = "W0",
 				[29752] = "C1348974543",
-				[31473] = "W0",
-				[31394] = "C1350703180",
-				[27660] = "C1311993862",
-				[29282] = "C1312537324",
+				[31020] = "C1351125953",
+				[31730] = "C1351159273",
+				[31398] = "C1350986440",
+				[31468] = "C1355718709",
 				[25977] = "C1308975462",
 				[30136] = "C1351128329",
 				[26105] = "C1308970224",
-				[3519] = "C1291601766",
+				[11071] = "C1296182393",
 				[30328] = "C1354937505",
-				[29982] = "C1349430408",
+				[29925] = "C1348971235",
 				[30631] = "C1350706721",
-				[967] = "C1291601766",
-				[31260] = "C1349583044",
+				[31512] = "C1350705107",
+				[30317] = "C1350697571",
 				[30648] = "C1349171451",
-				[9973] = "C1306144256",
+				[31689] = "C1350899441",
 				[30776] = "C1350095121",
-				[653] = "C1291601766",
-				[396] = "C1291601766",
+				[31003] = "C1350552316",
+				[30582] = "C1350699403",
 				[26873] = "C1317895513",
 				[31032] = "C1350381609",
 				[31096] = "C1352003620",
-				[31454] = "C1350697877",
-				[30347] = "C1349688850",
+				[31010] = "C1350641343",
+				[31001] = "C1350552222",
 				[31288] = "C1351070880",
-				[28103] = "C1310783569",
-				[31064] = "C1350466706",
+				[32198] = "C1354701987",
+				[30923] = "W0",
 				[31480] = "C1349345131",
 				[11679] = "C1291601766",
-				[27975] = "C1324464365",
+				[11942] = "C1291601766",
 				[31672] = "C1357640431",
 				[31736] = "C1348566652",
 				[31004] = "C1350552403",
-				[31942] = "C1356085628",
+				[11878] = "C1291601683",
 				[11871] = "W0",
 				[11903] = "C1291601766",
 				[11935] = "W0",
-				[10804] = "C1295292485",
+				[30324] = "W0",
 				[27641] = "C1295243187",
 				[32248] = "C1355719246",
-				[30583] = "C1350035584",
+				[31455] = "C1350092585",
 				[28281] = "C1298892476",
-				[29203] = "W0",
+				[30898] = "C1350295379",
 				[28409] = "C1310698443",
 				[12191] = "C1291601766",
 				[30922] = "W0",
-				[30968] = "C1350466909",
+				[10483] = "C1291601766",
 				[28783] = "C1296875974",
-				[1320] = "C1291601766",
+				[29725] = "C1348793318",
 				[4129] = "C1291601766",
-				[31366] = "C1351306889",
+				[11590] = "C1291601766",
 				[4161] = "C1291601766",
 				[12447] = "C1298775440",
 				[30480] = "C1349949091",
-				[31238] = "C1356751211",
+				[27143] = "C1323966241",
 				[29177] = "C1311671915",
 				[29241] = "W0",
 				[29305] = "W0",
 				[25274] = "C1310176041",
 				[29433] = "W0",
-				[30090] = "C1349578476",
+				[4124] = "C1291601766",
 				[4321] = "C1291601766",
-				[27987] = "C1323341924",
+				[30350] = "C1349582512",
 				[8704] = "W0",
 				[25658] = "C1306789787",
-				[30091] = "C1349491991",
+				[28362] = "C1346061104",
 				[29881] = "C1348887231",
-				[30772] = "C1350094985",
-				[30757] = "C1350701831",
+				[30827] = "C1350182008",
+				[28108] = "C1310783920",
 				[31392] = "C1350702874",
 				[30137] = "C1351129030",
 				[26106] = "C1308970370",
@@ -36489,43 +36613,43 @@ NxData = {
 				[13151] = "W0",
 				[30457] = "C1349947906",
 				[30521] = "C1353925018",
-				[31471] = "C1349427308",
-				[29917] = "C1349343152",
-				[10482] = "C1291601766",
+				[4731] = "C1291601766",
+				[30257] = "C1349345452",
+				[30354] = "C1349862274",
 				[30777] = "C1350178196",
 				[31476] = "C1349574326",
 				[29981] = "C1349430411",
-				[31319] = "C1349171326",
-				[31475] = "C1349574292",
+				[7261] = "C1291601766",
+				[30346] = "C1349688057",
 				[31097] = "C1352003998",
 				[30058] = "C1349429082",
 				[29918] = "C1349343403",
 				[29871] = "C1349346016",
 				[9536] = "C1291601766",
-				[10950] = "W0",
-				[30348] = "C1349688918",
+				[30086] = "C1349256154",
+				[29512] = "C1352111214",
 				[29165] = "W0",
-				[10854] = "C1295293544",
+				[29894] = "C1348740618",
 				[31673] = "C1356833509",
 				[27642] = "C1295243192",
 				[31801] = "C1351070708",
-				[29987] = "C1349487494",
-				[29988] = "C1349488225",
+				[469] = "C1291601766",
+				[27978] = "C1324067177",
 				[13951] = "W0",
-				[29989] = "C1349488417",
-				[29999] = "C1349086117",
+				[31252] = "C1350035592",
+				[30256] = "C1349345397",
 				[14047] = "C1291601766",
-				[29985] = "C1349487405",
+				[8462] = "C1291601766",
 				[31478] = "C1349428519",
 				[28282] = "C1298892562",
 				[28346] = "C1298892740",
 				[28410] = "C1310698449",
 				[10144] = "C1291601766",
-				[29446] = "W0",
+				[25351] = "C1291601766",
 				[10208] = "C1291601766",
 				[5121] = "C1291601766",
 				[24635] = "C1329387428",
-				[29916] = "C1349343147",
+				[29647] = "C1349084854",
 				[30352] = "C1349582553",
 				[10368] = "C1291601766",
 				[10400] = "C1291601766",
@@ -36534,186 +36658,186 @@ NxData = {
 				[5249] = "C1291601766",
 				[29242] = "W0",
 				[2641] = "C1291601766",
-				[30967] = "C1349948966",
+				[30565] = "C1349170191",
 				[29434] = "C1336728143",
 				[29900] = "C1348797219",
 				[29562] = "C1348739067",
 				[25531] = "C1310184852",
 				[10752] = "C1291601766",
 				[25659] = "C1306789902",
-				[31474] = "C1349574281",
+				[29990] = "C1349488580",
 				[29882] = "C1348887221",
 				[29618] = "C1348976864",
 				[25915] = "C1310118853",
-				[2745] = "C1291601766",
 				[30138] = "C1351129042",
-				[32045] = "C1349427748",
+				[2745] = "C1291601766",
+				[31945] = "C1349427418",
 				[947] = "C1291601766",
 				[30330] = "C1354012959",
-				[30002] = "C1349085685",
-				[30252] = "C1349344597",
+				[3702] = "C1291601766",
+				[32035] = "C1349428659",
 				[30522] = "C1353925223",
 				[5601] = "C1291601766",
 				[30650] = "C1350092336",
 				[458] = "C1291601766",
 				[30778] = "C1350181865",
-				[30970] = "C1350379939",
+				[29754] = "C1348975164",
 				[11360] = "C1291601766",
-				[26875] = "C1310272903",
-				[28248] = "C1311394941",
+				[30970] = "C1350379939",
+				[30005] = "C1349086119",
 				[30498] = "C1349086476",
 				[29992] = "C1349487411",
 				[1055] = "C1291601766",
-				[30502] = "C1349171324",
+				[29620] = "C1348977560",
 				[31354] = "C1351996559",
-				[7003] = "C1291601766",
+				[29927] = "C1348975694",
 				[11648] = "C1291601766",
 				[11680] = "C1291601766",
 				[11712] = "C1291601766",
 				[31674] = "C1355912359",
 				[31738] = "C1348651017",
-				[27046] = "C1310696967",
-				[27302] = "C1310779502",
-				[2977] = "C1291601766",
+				[30568] = "C1349170202",
+				[29626] = "C1348977929",
 				[11904] = "C1291601766",
+				[2977] = "C1291601766",
 				[29753] = "C1348975015",
 				[11968] = "C1291601766",
-				[31941] = "C1357813549",
+				[9830] = "C1291601766",
 				[29751] = "C1348974534",
-				[30001] = "C1349085687",
-				[27654] = "C1311993758",
+				[30004] = "C1349085921",
+				[9734] = "C1291601766",
 				[29670] = "C1348885379",
 				[28411] = "C1310698453",
-				[31821] = "W0",
-				[31593] = "W0",
-				[29559] = "C1348738662",
-				[25233] = "C1309657553",
+				[29586] = "C1348884906",
+				[28468] = "C1291601766",
+				[29926] = "C1348976316",
+				[9834] = "C1291601766",
 				[24636] = "C1329472466",
 				[12352] = "C1291601766",
-				[31365] = "C1351306884",
-				[31724] = "W0",
+				[9542] = "C1291601766",
+				[29578] = "C1348884683",
 				[8353] = "W0",
-				[27142] = "C1323966234",
+				[31237] = "W0",
 				[29115] = "W0",
 				[29179] = "W0",
 				[29243] = "W0",
 				[25212] = "C1291601766",
 				[3161] = "C1291601766",
-				[27943] = "C1298091094",
+				[29585] = "C1348884699",
 				[25404] = "C1309794528",
 				[29371] = "W0",
 				[29627] = "C1348978031",
-				[25904] = "C1310031377",
+				[12344] = "C1291601766",
 				[29755] = "C1348975356",
 				[1691] = "C1291601766",
 				[29883] = "C1348739830",
-				[156] = "C1291601766",
+				[9385] = "C1291601766",
 				[25916] = "C1306005310",
 				[29995] = "C1348970563",
 				[4761] = "C1291601766",
-				[29993] = "C1348970508",
+				[13088] = "C1291601766",
 				[30267] = "C1349428224",
 				[30331] = "C1355826676",
-				[125] = "C1291601766",
+				[30011] = "C1349085918",
 				[30459] = "C1349947871",
 				[30523] = "C1352715908",
 				[6625] = "C1291601766",
 				[30651] = "C1350092358",
-				[1023] = "C1291601766",
+				[12088] = "C1291601766",
 				[30779] = "C1350181870",
-				[6721] = "C1291601766",
+				[29455] = "C1336727962",
 				[13408] = "C1291601766",
-				[30971] = "C1350379931",
+				[6721] = "C1291601766",
 				[13472] = "C1291601766",
 				[27004] = "W0",
 				[434] = "C1291601766",
-				[25894] = "C1308314878",
-				[28815] = "C1295235115",
+				[29905] = "C1348824423",
+				[25317] = "C1309654966",
 				[31355] = "C1348882497",
-				[31130] = "C1348794522",
-				[12345] = "C1291601766",
-				[3441] = "C1291601766",
+				[29403] = "W0",
+				[4740] = "C1291601766",
 				[31611] = "C1350704459",
+				[3441] = "C1291601766",
 				[31675] = "C1357554112",
 				[31739] = "C1348651142",
-				[4127] = "C1291601766",
+				[4902] = "C1291601766",
 				[9793] = "C1291601766",
-				[25234] = "C1309657563",
+				[10552] = "C1291601766",
 				[27900] = "C1297997939",
-				[12933] = "C1315195840",
+				[25862] = "C1306791432",
 				[25297] = "C1309706605",
 				[7025] = "C1355714203",
 				[3521] = "C1291601766",
 				[29748] = "C1348973168",
-				[25975] = "C1308975370",
-				[25296] = "C1310183059",
+				[11692] = "C1291601766",
+				[4601] = "C1291601766",
 				[25807] = "C1309858571",
 				[7121] = "W0",
 				[28540] = "C1346061479",
-				[13101] = "C1306228068",
-				[25414] = "C1291601766",
+				[28622] = "C1298697917",
+				[29509] = "C1352111276",
 				[9726] = "C1291601766",
 				[9848] = "C1291601766",
 				[28860] = "C1318034587",
 				[10369] = "C1291601766",
 				[10401] = "C1291601766",
-				[14044] = "C1291601766",
-				[470] = "C1291601766",
+				[9902] = "C1291601766",
+				[12470] = "W0",
 				[29180] = "C1307351431",
 				[29244] = "C1313023877",
 				[456] = "C1291601766",
 				[28814] = "C1298179700",
 				[29436] = "C1336728308",
-				[394] = "C1291601766",
-				[11064] = "C1296180412",
+				[28366] = "C1346061335",
+				[11886] = "W0",
 				[29628] = "C1349083802",
 				[25597] = "C1310175631",
 				[29756] = "C1348975013",
-				[5561] = "C1291601766",
-				[634] = "C1291601766",
-				[12086] = "C1291601766",
+				[8911] = "C1291601766",
+				[4265] = "C1291601766",
+				[28753] = "C1309669313",
 				[25917] = "C1306005397",
 				[25981] = "C1308975376",
 				[30140] = "C1351129091",
 				[11009] = "C1325242988",
 				[11041] = "C1295295839",
-				[25330] = "C1310176394",
-				[27490] = "C1311395562",
+				[30460] = "C1349947891",
+				[11169] = "C1291601766",
 				[11137] = "C1291601766",
 				[30524] = "C1352716285",
 				[11201] = "C1291601766",
 				[30652] = "C1350092157",
-				[12261] = "W0",
+				[28613] = "C1298602924",
 				[30780] = "C1350181884",
-				[11950] = "C1291601766",
-				[6344] = "C1291601766",
+				[10903] = "C1291601766",
+				[3881] = "C1291601766",
 				[30972] = "C1350379991",
 				[7761] = "W0",
 				[31100] = "C1352003755",
 				[7793] = "C1291601766",
-				[27505] = "C1310782590",
+				[25382] = "C1309944301",
 				[3913] = "C1291601766",
 				[31356] = "C1348882492",
 				[11617] = "C1291601766",
-				[31676] = "C1350553236",
+				[3961] = "C1291601766",
 				[11681] = "C1291601766",
 				[11713] = "C1291601683",
-				[3961] = "C1291601766",
+				[31676] = "C1350553236",
 				[31740] = "C1348651335",
-				[28130] = "C1324067167",
-				[25199] = "C1291601766",
+				[29281] = "C1312537244",
+				[9407] = "C1291601766",
 				[11873] = "C1291601766",
 				[27901] = "C1297997953",
 				[28195] = "C1298513076",
 				[25316] = "C1309653962",
-				[29101] = "W0",
-				[27973] = "C1320055196",
-				[11160] = "C1291601766",
-				[10895] = "C1291601766",
+				[26829] = "C1310272710",
+				[11941] = "C1291601683",
+				[9962] = "C1306144065",
+				[8696] = "W0",
 				[5086] = "C1291601766",
 				[28413] = "C1298893560",
-				[386] = "C1291601766",
-				[2118] = "C1291601766",
+				[13845] = "W0",
+				[13833] = "C1306488880",
 				[27507] = "C1310783249",
 				[1025] = "C1291601766",
 				[1029] = "C1291601766",
@@ -36721,21 +36845,21 @@ NxData = {
 				[1037] = "C1291601766",
 				[1041] = "C1291601766",
 				[1045] = "C1291601766",
-				[29389] = "C1310001436",
+				[1032] = "C1291601766",
 				[29117] = "W0",
 				[29181] = "C1311327897",
 				[29245] = "C1312506507",
-				[28845] = "C1296176058",
+				[26190] = "C1306786464",
 				[25278] = "C1309707741",
 				[29437] = "W0",
-				[3791] = "C1291601766",
+				[464] = "C1291601766",
+				[5142] = "C1291601766",
 				[1085] = "C1291601766",
-				[29629] = "C1349083807",
-				[29757] = "C1349428424",
 				[1093] = "C1291601766",
+				[29757] = "C1349428424",
 				[10943] = "C1335780070",
 				[29885] = "C1348739838",
-				[9967] = "C1306144117",
+				[9839] = "C1291601766",
 				[25918] = "C1306005926",
 				[28002] = "C1298287875",
 				[647] = "C1291601766",
@@ -36743,11 +36867,11 @@ NxData = {
 				[26174] = "C1291601766",
 				[30333] = "C1353819143",
 				[29201] = "W0",
+				[4130] = "C1291601766",
 				[1141] = "C1291601766",
-				[30525] = "C1353925558",
 				[5057] = "C1291601766",
 				[4863] = "C1291601766",
-				[5741] = "C1291601766",
+				[159] = "C1291601766",
 				[30781] = "C1350181875",
 				[26750] = "C1309572684",
 				[656] = "C1291601766",
@@ -36756,21 +36880,21 @@ NxData = {
 				[1177] = "C1291601766",
 				[4722] = "C1291601766",
 				[25418] = "C1291601766",
-				[9538] = "C1291601766",
 				[31357] = "C1349581000",
-				[30468] = "C1349948981",
-				[2928] = "C1291601766",
+				[9538] = "C1291601766",
+				[11141] = "C1291601766",
+				[11062] = "C1325384485",
 				[13934] = "W0",
-				[12351] = "C1291601766",
-				[31741] = "C1348652738",
+				[26219] = "C1308968942",
 				[9730] = "C1291601766",
+				[31741] = "C1348652738",
 				[13930] = "W0",
 				[9794] = "C1291601766",
 				[696] = "C1291601766",
-				[32189] = "C1354701938",
+				[11057] = "C1325155544",
 				[27966] = "C1316320772",
 				[1241] = "C1291601766",
-				[1245] = "C1291601766",
+				[32189] = "C1354701938",
 				[1249] = "C1291601766",
 				[1253] = "C1291601766",
 				[10050] = "C1291601766",
@@ -36783,21 +36907,21 @@ NxData = {
 				[1285] = "C1291601766",
 				[11020] = "C1297477646",
 				[28862] = "C1318034625",
-				[25315] = "C1310184770",
+				[4602] = "C1291601766",
 				[5202] = "C1291601766",
 				[29054] = "W0",
+				[26413] = "C1295231644",
 				[29182] = "C1311328301",
-				[5250] = "C1291601766",
 				[29246] = "W0",
 				[29310] = "W0",
-				[27917] = "C1298860886",
+				[633] = "C1291601766",
 				[29438] = "C1336728249",
 				[25442] = "C1306004511",
-				[4762] = "C1291601766",
+				[29630] = "C1349083811",
 				[25535] = "C1306461309",
 				[25599] = "C1309794152",
 				[25663] = "C1309798501",
-				[29547] = "W0",
+				[631] = "C1291601766",
 				[26005] = "C1308968129",
 				[6073] = "C1291601766",
 				[25919] = "C1306005907",
@@ -36806,237 +36930,237 @@ NxData = {
 				[26111] = "C1309139041",
 				[26175] = "C1291601766",
 				[30334] = "W0",
-				[11138] = "C1291601766",
 				[30462] = "C1351475948",
+				[11138] = "C1291601766",
 				[30526] = "C1353819105",
-				[27752] = "C1297738816",
-				[685] = "C1291601766",
+				[3787] = "C1291601766",
+				[663] = "C1291601766",
 				[25303] = "C1309797627",
 				[30782] = "C1350182531",
-				[25581] = "C1306789986",
-				[332] = "C1291601766",
+				[11030] = "C1325384435",
+				[5242] = "C1291601766",
 				[26420] = "C1306786454",
-				[31230] = "C1348825072",
+				[5082] = "C1291601766",
 				[31102] = "C1352003401",
 				[1437] = "C1291601766",
-				[27135] = "C1295231644",
-				[7905] = "C1291601766",
-				[27540] = "C1291601766",
-				[4507] = "C1291601766",
+				[31230] = "C1348825072",
+				[652] = "C1291601766",
+				[13834] = "C1305884034",
+				[31742] = "C1348652746",
 				[31486] = "C1349344037",
 				[11682] = "C1291601766",
 				[1465] = "C1291601766",
-				[27711] = "C1311994865",
-				[27647] = "C1295241782",
 				[1477] = "C1291601766",
-				[8465] = "C1291601766",
+				[27647] = "C1295241782",
+				[27711] = "C1311994865",
+				[10096] = "C1291601766",
 				[11440] = "C1291601766",
 				[27903] = "C1297998203",
 				[27967] = "C1323880873",
 				[11970] = "C1308707772",
 				[2990] = "C1291601766",
-				[30097] = "W0",
+				[9782] = "C1291601766",
 				[28223] = "C1323795018",
-				[6762] = "C1291601766",
+				[28244] = "C1297856675",
 				[28351] = "C1298514348",
-				[621] = "C1291601766",
-				[3522] = "C1291601766",
+				[2982] = "C1291601766",
+				[7043] = "W0",
 				[693] = "C1291601766",
-				[9728] = "C1291601766",
+				[741] = "C1291601766",
 				[697] = "C1291601766",
 				[664] = "C1291601766",
-				[8471] = "C1291601766",
+				[5066] = "C1291601766",
 				[28863] = "C1318034602",
 				[3781] = "C1291601766",
 				[8355] = "W0",
 				[1218] = "C1291601766",
 				[29119] = "W0",
-				[9733] = "C1291601766",
+				[27652] = "C1311993754",
 				[29247] = "W0",
 				[25216] = "C1295231644",
 				[25280] = "C1309706317",
-				[9701] = "C1291601766",
+				[27588] = "C1311435013",
 				[25408] = "C1309794609",
 				[25472] = "C1309655479",
 				[25536] = "C1306462178",
 				[25600] = "C1309794329",
 				[29759] = "C1348738809",
-				[29631] = "C1349083724",
+				[684] = "C1291601766",
 				[29887] = "C1348740458",
-				[25664] = "C1309857226",
+				[1264] = "C1291601766",
 				[25920] = "C1306005901",
 				[30079] = "C1349488994",
-				[5085] = "C1291601766",
-				[1199] = "C1291601766",
+				[8867] = "C1327313885",
+				[12948] = "C1315196240",
 				[13090] = "C1291601766",
 				[30335] = "C1354012571",
-				[9541] = "C1291601766",
-				[10485] = "C1291601766",
+				[31363] = "C1353213765",
+				[6610] = "C1291601766",
 				[30527] = "C1354011269",
 				[1657] = "C1291601766",
-				[31235] = "C1356751939",
-				[26583] = "C1309572011",
+				[27140] = "C1323966229",
+				[29153] = "C1310262541",
 				[30783] = "C1350182737",
 				[26752] = "C1310270887",
 				[13410] = "C1291601766",
 				[6722] = "C1291601766",
 				[9558] = "C1291601766",
 				[31103] = "C1352004104",
-				[31359] = "C1350986429",
+				[31231] = "W0",
 				[9475] = "C1291601766",
-				[30979] = "C1350381560",
-				[9539] = "C1291601766",
-				[4811] = "C1291601766",
+				[3362] = "C1291601766",
+				[31359] = "C1350986429",
+				[30975] = "C1350380722",
 				[31487] = "C1355310232",
 				[11010] = "C1325384787",
 				[31735] = "C1348565924",
+				[98] = "C1291601766",
 				[27648] = "C1295241362",
-				[9731] = "C1291601766",
-				[31743] = "C1348652748",
+				[392] = "C1291601766",
 				[10390] = "C1291601766",
-				[25830] = "C1310001109",
+				[49] = "C1291601766",
 				[13954] = "W0",
 				[27968] = "C1304215479",
 				[29323] = "W0",
-				[10998] = "C1325242566",
+				[13089] = "C1291601766",
 				[7042] = "C1324292138",
 				[102] = "C1291601766",
-				[11053] = "C1295295852",
+				[29311] = "C1313575227",
 				[28352] = "C1298514336",
 				[10115] = "C1291601766",
-				[11605] = "C1291601766",
+				[4861] = "C1291601766",
 				[55] = "C1291601766",
 				[10211] = "C1291601766",
 				[11697] = "C1291601766",
-				[27006] = "W0",
+				[6186] = "C1291601766",
 				[4864] = "C1291601766",
 				[28864] = "C1318034594",
 				[940] = "C1291601766",
 				[10403] = "C1291601766",
-				[1070] = "C1291601766",
+				[8311] = "W0",
 				[29120] = "C1304039549",
 				[29184] = "C1307351431",
 				[29248] = "W0",
 				[25217] = "C1295231644",
-				[920] = "C1291601766",
-				[4493] = "C1291601766",
-				[29635] = "C1349084506",
-				[9430] = "C1291601766",
+				[3661] = "C1291601766",
+				[9718] = "C1291601766",
+				[25540] = "C1306462168",
+				[25537] = "C1306461953",
 				[29632] = "C1348977777",
 				[25601] = "C1310184543",
 				[25665] = "C1309798814",
-				[25412] = "C1309944218",
+				[29507] = "W0",
 				[29888] = "C1348794256",
-				[25348] = "C1291601766",
+				[29443] = "W0",
 				[25921] = "C1306461048",
 				[30080] = "C1349491382",
-				[25314] = "C1310184507",
-				[11604] = "C1291601766",
+				[11025] = "C1325242980",
+				[25985] = "C1309657893",
 				[26177] = "C1306919901",
 				[11075] = "C1295350458",
 				[11107] = "C1297479501",
 				[11139] = "C1291601766",
 				[30528] = "C1354012835",
-				[1008] = "C1291601766",
+				[6028] = "C1291601766",
 				[13107] = "C1306488911",
-				[3130] = "C1291601766",
+				[29123] = "W0",
 				[30784] = "C1350182962",
-				[1242] = "C1291601766",
+				[4125] = "C1291601766",
 				[667] = "C1291601766",
 				[30976] = "C1350380833",
 				[9970] = "C1306144170",
-				[9778] = "C1291601766",
+				[957] = "C1291601766",
 				[7794] = "C1291601766",
 				[31232] = "W0",
+				[1012] = "C1291601766",
 				[11587] = "C1291601766",
-				[31360] = "C1349580993",
-				[13939] = "C1291601766",
-				[10162] = "C1291601766",
-				[1001] = "C1291601766",
+				[10484] = "C1291601766",
+				[25055] = "C1291601766",
+				[281] = "C1291601766",
 				[11715] = "C1291601683",
-				[82] = "C1291601766",
+				[1071] = "C1291601766",
 				[31744] = "C1348652743",
 				[31808] = "C1356751022",
-				[2279] = "C1291601766",
+				[1059] = "C1291601766",
 				[31936] = "C1351646988",
 				[27905] = "C1297998473",
 				[27969] = "C1298287712",
-				[1140] = "C1291601766",
-				[10962] = "W0",
+				[986] = "C1291601766",
+				[25950] = "C1308975454",
 				[12035] = "C1291601766",
-				[954] = "C1291601766",
-				[2139] = "C1291601766",
+				[25310] = "C1310184382",
+				[917] = "C1291601766",
 				[28353] = "C1298514405",
 				[65] = "C1291601766",
-				[1057] = "C1291601766",
+				[29278] = "W0",
 				[953] = "C1291601766",
 				[4763] = "C1291601766",
 				[2871] = "C1291601766",
 				[12402] = "C1291601766",
 				[4131] = "C1291601766",
-				[1286] = "C1291601766",
+				[4284] = "C1291601766",
 				[982] = "C1291601766",
 				[8356] = "W0",
-				[2946] = "C1291601766",
+				[27651] = "C1297737878",
 				[29121] = "W0",
-				[25282] = "C1291601766",
+				[29249] = "W0",
 				[4243] = "C1291601766",
 				[25218] = "C1295231644",
-				[2138] = "C1291601766",
-				[27787] = "C1311996554",
+				[25282] = "C1291601766",
+				[10836] = "C1295292799",
 				[956] = "C1291601766",
+				[949] = "C1291601766",
 				[29633] = "C1349084450",
-				[25538] = "C1306462070",
-				[12337] = "C1291601766",
+				[265] = "C1291601766",
 				[27646] = "C1297737565",
-				[4732] = "C1291601766",
+				[8868] = "C1328324418",
 				[29889] = "C1348794339",
 				[25858] = "C1306791228",
 				[25922] = "C1306461166",
 				[30081] = "C1349492033",
 				[78] = "C1291601766",
-				[1002] = "C1291601766",
+				[26173] = "C1291601766",
 				[27243] = "C1291601766",
-				[1258] = "C1291601766",
+				[14033] = "C1291601766",
 				[1222] = "C1291601766",
-				[29276] = "W0",
+				[1054] = "C1291601766",
 				[30529] = "C1354013015",
 				[30593] = "C1350035599",
-				[9780] = "C1291601766",
+				[27645] = "C1295241237",
 				[25343] = "C1291601766",
 				[30785] = "C1350183092",
-				[13938] = "W0",
-				[27643] = "C1297737094",
+				[28861] = "C1318034621",
+				[27899] = "C1297997217",
 				[30977] = "C1350381648",
-				[2439] = "C1291601766",
-				[31233] = "C1356751957",
-				[4723] = "C1291601766",
+				[26488] = "C1306919890",
 				[9476] = "C1291601766",
+				[4723] = "C1291601766",
+				[31233] = "C1356751957",
 				[993] = "C1291601766",
 				[9540] = "C1291601766",
 				[74] = "C1291601766",
 				[11938] = "C1291601766",
 				[9349] = "C1291601766",
-				[27644] = "C1295241499",
-				[2746] = "C1291601766",
+				[31745] = "C1348653086",
+				[30146] = "C1356835613",
 				[27650] = "C1297737634",
-				[30082] = "C1349491581",
-				[10916] = "C1291601766",
+				[25987] = "C1308975446",
+				[25923] = "C1310175136",
 				[31937] = "C1352717510",
 				[13955] = "W0",
 				[27970] = "C1323255532",
 				[25180] = "C1291601766",
-				[29890] = "C1348796131",
+				[25795] = "C1309858472",
 				[28162] = "C1324465154",
 				[25276] = "C1310176090",
 				[9732] = "C1291601766",
-				[27649] = "C1295243179",
+				[343] = "C1291601766",
 				[10116] = "C1291601766",
 				[28482] = "C1298599585",
 				[5091] = "C1291601766",
-				[25539] = "C1306461944",
+				[29634] = "C1349084452",
 				[5123] = "C1291601766",
-				[31737] = "C1348566635",
+				[945] = "C1291601766",
 				[5155] = "C1291601766",
 				[10340] = "C1291601766",
 				[1244] = "C1291601766",
@@ -37049,382 +37173,394 @@ NxData = {
 				[25283] = "C1291601766",
 				[25347] = "C1291601766",
 				[25411] = "C1309944016",
-				[945] = "C1291601766",
-				[29634] = "C1349084452",
-				[343] = "C1291601766",
+				[31737] = "C1348566635",
+				[25539] = "C1306461944",
+				[27649] = "C1295243179",
 				[29762] = "C1348740449",
 				[25731] = "C1309857203",
-				[25795] = "C1309858472",
+				[29890] = "C1348796131",
 				[25859] = "C1306791628",
-				[25923] = "C1310175136",
-				[25987] = "C1308975446",
-				[30146] = "C1356835613",
-				[31745] = "C1348653086",
+				[10916] = "C1291601766",
+				[30082] = "C1349491581",
+				[2746] = "C1291601766",
+				[27644] = "C1295241499",
 				[30274] = "C1349578994",
 				[11076] = "C1297424343",
 				[11108] = "C1297479925",
 				[11140] = "C1291601766",
 				[11172] = "C1291601766",
-				[26488] = "C1306919890",
-				[27899] = "C1297997217",
-				[28861] = "C1318034621",
+				[2439] = "C1291601766",
+				[27643] = "C1297737094",
+				[13938] = "W0",
 				[30786] = "C1350095577",
-				[27645] = "C1295241237",
-				[1054] = "C1291601766",
+				[9780] = "C1291601766",
+				[29276] = "W0",
 				[30978] = "C1350381506",
-				[14033] = "C1291601766",
+				[1258] = "C1291601766",
 				[2866] = "C1291601766",
-				[26173] = "C1291601766",
+				[1002] = "C1291601766",
 				[31234] = "C1356751951",
-				[8868] = "C1328324418",
+				[4732] = "C1291601766",
 				[31362] = "C1349170571",
-				[265] = "C1291601766",
-				[949] = "C1291601766",
+				[12337] = "C1291601766",
+				[25538] = "C1306462070",
 				[11684] = "C1291601766",
-				[10836] = "C1295292799",
-				[29249] = "W0",
-				[27651] = "C1297737878",
+				[27787] = "C1311996554",
+				[2138] = "C1291601766",
+				[2946] = "C1291601766",
 				[2954] = "C1291601766",
-				[4284] = "C1291601766",
+				[1286] = "C1291601766",
 				[11876] = "C1291601683",
 				[11908] = "C1291601766",
 				[27971] = "C1323803126",
 				[11972] = "C1308967273",
-				[29278] = "W0",
+				[1057] = "C1291601766",
 				[28163] = "W0",
-				[917] = "C1291601766",
-				[25310] = "C1310184382",
-				[25950] = "C1308975454",
-				[986] = "C1291601766",
-				[1059] = "C1291601766",
-				[1071] = "C1291601766",
-				[281] = "C1291601766",
-				[25055] = "C1291601766",
-				[10484] = "C1291601766",
-				[1012] = "C1291601766",
-				[957] = "C1291601766",
+				[2139] = "C1291601766",
+				[954] = "C1291601766",
+				[10962] = "W0",
+				[1140] = "C1291601766",
+				[2279] = "C1291601766",
+				[82] = "C1291601766",
+				[1001] = "C1291601766",
+				[10162] = "C1291601766",
+				[13939] = "C1291601766",
+				[31360] = "C1349580993",
+				[9778] = "C1291601766",
 				[12420] = "W0",
 				[8357] = "W0",
-				[4125] = "C1291601766",
-				[29123] = "W0",
+				[1242] = "C1291601766",
+				[3130] = "C1291601766",
 				[25092] = "C1291601766",
-				[6028] = "C1291601766",
-				[25985] = "C1309657893",
-				[11025] = "C1325242980",
-				[29443] = "W0",
-				[29507] = "W0",
-				[25537] = "C1306461953",
-				[25540] = "C1306462168",
-				[9718] = "C1291601766",
-				[3661] = "C1291601766",
-				[8311] = "W0",
+				[1008] = "C1291601766",
+				[11604] = "C1291601766",
+				[25314] = "C1310184507",
+				[25348] = "C1291601766",
+				[25412] = "C1309944218",
+				[9430] = "C1291601766",
+				[29635] = "C1349084506",
+				[4493] = "C1291601766",
+				[920] = "C1291601766",
+				[1070] = "C1291601766",
 				[29891] = "C1348795668",
 				[25860] = "C1308966869",
-				[6186] = "C1291601766",
+				[27006] = "W0",
 				[30083] = "C1349577515",
 				[30147] = "C1356835619",
-				[4861] = "C1291601766",
-				[29311] = "C1313575227",
+				[11605] = "C1291601766",
+				[11053] = "C1295295852",
 				[13124] = "C1324637519",
-				[13089] = "C1291601766",
+				[10998] = "C1325242566",
 				[30467] = "C1349948910",
-				[49] = "C1291601766",
+				[25830] = "C1310001109",
 				[30595] = "C1350035089",
-				[392] = "C1291601766",
-				[98] = "C1291601766",
+				[31743] = "C1348652748",
+				[9731] = "C1291601766",
 				[30787] = "C1350095879",
 				[26756] = "C1291601766",
-				[30975] = "C1350380722",
-				[3362] = "C1291601766",
-				[31231] = "W0",
+				[4811] = "C1291601766",
+				[30979] = "C1350381560",
+				[9539] = "C1291601766",
 				[31107] = "C1350899446",
-				[29153] = "C1310262541",
-				[27140] = "C1323966229",
-				[6610] = "C1291601766",
-				[31363] = "C1353213765",
-				[12948] = "C1315196240",
-				[8867] = "C1327313885",
-				[1264] = "C1291601766",
-				[684] = "C1291601766",
-				[27588] = "C1311435013",
-				[27652] = "C1311993754",
+				[26583] = "C1309572011",
+				[31235] = "C1356751939",
+				[10485] = "C1291601766",
+				[9541] = "C1291601766",
+				[1199] = "C1291601766",
+				[5085] = "C1291601766",
+				[25664] = "C1309857226",
+				[29631] = "C1349083724",
+				[9701] = "C1291601766",
+				[9733] = "C1291601766",
 				[27716] = "C1306462678",
 				[27780] = "C1291601766",
-				[5066] = "C1291601766",
+				[8471] = "C1291601766",
 				[13956] = "W0",
 				[27972] = "C1324068895",
-				[741] = "C1291601766",
+				[9728] = "C1291601766",
 				[9957] = "C1291601766",
-				[7043] = "W0",
-				[2982] = "C1291601766",
-				[28244] = "C1297856675",
-				[9782] = "C1291601766",
+				[3522] = "C1291601766",
+				[621] = "C1291601766",
+				[6762] = "C1291601766",
+				[30097] = "W0",
 				[10117] = "C1291601766",
 				[10149] = "C1291601766",
-				[10096] = "C1291601766",
+				[8465] = "C1291601766",
 				[28612] = "C1298603421",
-				[31742] = "C1348652746",
-				[13834] = "C1305884034",
-				[652] = "C1291601766",
-				[5082] = "C1291601766",
+				[4507] = "C1291601766",
+				[27540] = "C1291601766",
+				[7905] = "C1291601766",
+				[27135] = "C1295231644",
 				[10373] = "C1291601766",
-				[5242] = "C1291601766",
-				[11030] = "C1325384435",
+				[332] = "C1291601766",
+				[25581] = "C1306789986",
 				[29124] = "C1304211913",
-				[663] = "C1291601766",
-				[3787] = "C1291601766",
+				[685] = "C1291601766",
+				[27752] = "C1297738816",
 				[29316] = "W0",
 				[25285] = "C1291601766",
 				[29444] = "C1347012136",
-				[631] = "C1291601766",
-				[29630] = "C1349083811",
+				[29547] = "W0",
+				[4762] = "C1291601766",
 				[29636] = "C1349084587",
-				[633] = "C1291601766",
-				[26413] = "C1295231644",
-				[4602] = "C1291601766",
+				[27917] = "C1298860886",
+				[5250] = "C1291601766",
+				[25315] = "C1310184770",
 				[29892] = "C1348795674",
 				[25861] = "C1306791385",
-				[11057] = "C1325155544",
+				[1245] = "C1291601766",
 				[30084] = "C1349577519",
 				[30148] = "C1356835625",
 				[11013] = "C1295293972",
-				[26219] = "C1308968942",
+				[12351] = "C1291601766",
 				[11077] = "C1297424334",
-				[11062] = "C1325384485",
-				[11141] = "C1291601766",
+				[2928] = "C1291601766",
+				[30468] = "C1349948981",
 				[11173] = "C1291601766",
 				[11205] = "C1291601766",
 				[30660] = "C1350092344",
-				[159] = "C1291601766",
+				[5741] = "C1291601766",
 				[30788] = "C1350096188",
 				[26757] = "C1291601766",
-				[4130] = "C1291601766",
+				[30525] = "C1353925558",
 				[30980] = "C1350381660",
 				[3882] = "C1291601766",
 				[31108] = "C1350899453",
 				[7795] = "C1291601766",
-				[9839] = "C1291601766",
+				[9967] = "C1306144117",
 				[3914] = "C1291601766",
 				[31364] = "C1353213772",
-				[5142] = "C1291601766",
-				[464] = "C1291601766",
-				[26190] = "C1306786464",
-				[1032] = "C1291601766",
+				[29629] = "C1349083807",
+				[3791] = "C1291601766",
+				[28845] = "C1296176058",
+				[29389] = "C1310001436",
 				[3962] = "C1291601766",
-				[13833] = "C1306488880",
-				[13845] = "W0",
+				[2118] = "C1291601766",
+				[386] = "C1291601766",
 				[31876] = "C1352890603",
-				[8696] = "W0",
-				[9962] = "C1306144065",
-				[11941] = "C1291601683",
-				[26829] = "C1310272710",
+				[10895] = "C1291601766",
+				[11160] = "C1291601766",
+				[27973] = "C1320055196",
+				[29101] = "W0",
 				[28101] = "C1310783335",
 				[28165] = "C1324093231",
-				[9407] = "C1291601766",
-				[29281] = "C1312537244",
+				[25199] = "C1291601766",
+				[28130] = "C1324067167",
 				[12133] = "W0",
-				[25382] = "C1309944301",
-				[3881] = "C1291601766",
-				[10903] = "C1291601766",
-				[28613] = "C1298602924",
-				[11169] = "C1291601766",
-				[30460] = "C1349947891",
-				[28753] = "C1309669313",
-				[4265] = "C1291601766",
-				[8911] = "C1291601766",
-				[11886] = "W0",
-				[28366] = "C1346061335",
+				[27505] = "C1310782590",
+				[6344] = "C1291601766",
+				[11950] = "C1291601766",
+				[12261] = "W0",
+				[27490] = "C1311395562",
+				[25330] = "C1310176394",
+				[12086] = "C1291601766",
+				[634] = "C1291601766",
+				[5561] = "C1291601766",
+				[11064] = "C1296180412",
+				[394] = "C1291601766",
 				[29125] = "W0",
 				[29189] = "W0",
-				[12470] = "W0",
-				[9902] = "C1291601766",
+				[470] = "C1291601766",
+				[14044] = "C1291601766",
 				[25286] = "C1291601766",
 				[29445] = "W0",
-				[29509] = "C1352111276",
-				[28622] = "C1298697917",
+				[25414] = "C1291601766",
+				[13101] = "C1306228068",
 				[29637] = "C1349084740",
-				[4601] = "C1291601766",
-				[11692] = "C1291601766",
+				[25296] = "C1310183059",
+				[25975] = "C1308975370",
 				[29829] = "W0",
 				[29893] = "C1348795678",
-				[25862] = "C1306791432",
-				[10552] = "C1291601766",
-				[4902] = "C1291601766",
+				[12933] = "C1315195840",
+				[25234] = "C1309657563",
+				[4127] = "C1291601766",
 				[30149] = "C1356835631",
-				[4740] = "C1291601766",
-				[29403] = "W0",
-				[25317] = "C1309654966",
-				[29905] = "C1348824423",
+				[12345] = "C1291601766",
+				[31130] = "C1348794522",
+				[28815] = "C1295235115",
+				[25894] = "C1308314878",
 				[30469] = "C1349948974",
-				[29455] = "C1336727962",
-				[12088] = "C1291601766",
-				[30011] = "C1349085918",
-				[13088] = "C1291601766",
+				[30971] = "C1350379931",
+				[1023] = "C1291601766",
+				[125] = "C1291601766",
+				[29993] = "C1348970508",
 				[30789] = "C1350096191",
 				[26758] = "C1291601766",
-				[9385] = "C1291601766",
+				[156] = "C1291601766",
 				[30981] = "C1350466700",
-				[12344] = "C1291601766",
+				[25904] = "C1310031377",
 				[31109] = "C1355310259",
-				[29585] = "C1348884699",
-				[31237] = "W0",
-				[29578] = "C1348884683",
-				[9542] = "C1291601766",
-				[9834] = "C1291601766",
-				[29926] = "C1348976316",
-				[28468] = "C1291601766",
-				[29586] = "C1348884906",
+				[27943] = "C1298091094",
+				[27142] = "C1323966234",
+				[31724] = "W0",
+				[31365] = "C1351306884",
+				[25233] = "C1309657553",
+				[29559] = "C1348738662",
+				[31593] = "W0",
+				[31821] = "W0",
 				[9702] = "C1291601766",
-				[9734] = "C1291601766",
-				[30004] = "C1349085921",
+				[27654] = "C1311993758",
+				[30001] = "C1349085687",
 				[27782] = "C1311995915",
-				[9830] = "C1291601766",
+				[31941] = "C1357813549",
 				[13957] = "W0",
 				[9894] = "C1291601766",
-				[29626] = "C1348977929",
-				[30568] = "C1349170202",
-				[29927] = "C1348975694",
-				[29620] = "C1348977560",
+				[27302] = "C1310779502",
+				[27046] = "C1310696967",
+				[7003] = "C1291601766",
+				[30502] = "C1349171324",
 				[28294] = "C1298892624",
 				[10086] = "C1291601766",
 				[10118] = "C1291601766",
-				[30005] = "C1349086119",
-				[29754] = "C1348975164",
+				[28248] = "C1311394941",
+				[26875] = "C1310272903",
 				[10214] = "C1291601766",
-				[32035] = "C1349428659",
-				[3702] = "C1291601766",
+				[30252] = "C1349344597",
+				[30002] = "C1349085685",
 				[5156] = "C1291601766",
-				[31945] = "C1349427418",
+				[32045] = "C1349427748",
 				[28934] = "W0",
 				[5204] = "C1291601766",
-				[29990] = "C1349488580",
+				[31474] = "C1349574281",
 				[29126] = "W0",
-				[30565] = "C1349170191",
+				[30967] = "C1349948966",
 				[29254] = "C1312506562",
 				[25223] = "C1310176402",
-				[29647] = "C1349084854",
-				[25351] = "C1291601766",
+				[29916] = "C1349343147",
+				[29446] = "W0",
 				[25415] = "C1291601766",
-				[8462] = "C1291601766",
-				[30256] = "C1349345397",
-				[31252] = "C1350035592",
-				[27978] = "C1324067177",
-				[469] = "C1291601766",
-				[29894] = "C1348740618",
+				[29985] = "C1349487405",
+				[29999] = "C1349086117",
+				[29989] = "C1349488417",
+				[29988] = "C1349488225",
+				[29987] = "C1349487494",
+				[10854] = "C1295293544",
 				[25863] = "C1306791632",
-				[29512] = "C1352111214",
-				[30086] = "C1349256154",
+				[30348] = "C1349688918",
+				[10950] = "W0",
 				[30150] = "W0",
 				[11014] = "C1295293995",
 				[26183] = "C1306142696",
-				[30346] = "C1349688057",
-				[7261] = "C1291601766",
+				[31475] = "C1349574292",
+				[31319] = "C1349171326",
 				[11142] = "C1291601766",
 				[11174] = "C1291601766",
-				[30354] = "C1349862274",
-				[30257] = "C1349345452",
-				[4731] = "C1291601766",
+				[10482] = "C1291601766",
+				[29917] = "C1349343152",
+				[31471] = "C1349427308",
 				[30790] = "C1350098490",
 				[26759] = "C1291601766",
-				[28108] = "C1310783920",
-				[30827] = "C1350182008",
-				[28362] = "C1346061104",
-				[30350] = "C1349582512",
-				[4124] = "C1291601766",
-				[27143] = "C1323966241",
+				[30757] = "C1350701831",
+				[30772] = "C1350094985",
+				[30091] = "C1349491991",
+				[27987] = "C1323341924",
+				[30090] = "C1349578476",
+				[31238] = "C1356751211",
 				[31302] = "C1349344909",
-				[11590] = "C1291601766",
-				[29725] = "C1348793318",
+				[31366] = "C1351306889",
+				[1320] = "C1291601766",
 				[31494] = "C1355310228",
-				[10483] = "C1291601766",
+				[30968] = "C1350466909",
 				[11718] = "W0",
-				[30898] = "C1350295379",
-				[31455] = "C1350092585",
+				[29203] = "W0",
+				[30583] = "C1350035584",
 				[27719] = "C1311994611",
-				[30324] = "W0",
-				[11878] = "C1291601683",
+				[10804] = "C1295292485",
+				[31942] = "C1356085628",
 				[11910] = "W0",
-				[11942] = "C1291601766",
-				[30923] = "W0",
-				[32198] = "C1354701987",
-				[31001] = "C1350552222",
-				[31010] = "C1350641343",
-				[30582] = "C1350699403",
-				[31003] = "C1350552316",
-				[31689] = "C1350899441",
-				[30317] = "C1350697571",
-				[31512] = "C1350705107",
+				[27975] = "C1324464365",
+				[31064] = "C1350466706",
+				[28103] = "C1310783569",
+				[30347] = "C1349688850",
+				[31454] = "C1350697877",
+				[396] = "C1291601766",
+				[653] = "C1291601766",
+				[9973] = "C1306144256",
+				[31260] = "C1349583044",
+				[967] = "C1291601766",
 				[12262] = "W0",
-				[29925] = "C1348971235",
-				[11071] = "C1296182393",
-				[31468] = "C1355718709",
-				[31398] = "C1350986440",
-				[31730] = "C1351159273",
-				[31020] = "C1351125953",
-				[29166] = "W0",
-				[10254] = "C1291601766",
-				[32016] = "C1355714486",
+				[29982] = "C1349430408",
+				[3519] = "C1291601766",
+				[29282] = "C1312537324",
+				[27660] = "C1311993862",
+				[31394] = "C1350703180",
+				[31473] = "W0",
+				[31661] = "C1350641377",
+				[8912] = "C1291601766",
+				[31066] = "C1350899395",
 				[29255] = "W0",
 				[25224] = "C1310176408",
 				[25288] = "C1291601766",
 				[25352] = "C1309797710",
 				[25416] = "C1291601766",
-				[29587] = "C1348885431",
+				[28280] = "C1298862379",
 				[25544] = "C1309859127",
 				[25608] = "C1310185206",
-				[31755] = "C1351474548",
-				[31070] = "C1351763079",
-				[31242] = "C1351474669",
+				[31078] = "C1351764015",
+				[30237] = "W0",
+				[30636] = "C1351310882",
 				[12934] = "C1315195906",
-				[8871] = "C1327313773",
-				[31079] = "C1351848292",
+				[25928] = "C1310175217",
+				[31095] = "C1352003519",
 				[26056] = "C1309138143",
-				[30384] = "C1349582517",
+				[985] = "C1291601766",
 				[13094] = "C1291601766",
 				[13126] = "C1324872736",
-				[31321] = "C1351850685",
+				[31133] = "C1351764578",
 				[30471] = "W0",
-				[6612] = "C1291601766",
-				[31182] = "C1351907461",
-				[31782] = "C1351996806",
-				[31080] = "C1351848327",
+				[30535] = "C1349345233",
+				[28211] = "C1297909512",
+				[27874] = "C1309797790",
+				[31185] = "C1351909914",
 				[30791] = "C1350098486",
 				[30855] = "C1349949548",
-				[31178] = "C1351158950",
+				[31189] = "C1351996338",
 				[9351] = "C1291601766",
 				[9383] = "C1291601766",
 				[31111] = "C1356583039",
 				[31175] = "C1351157876",
-				[31599] = "C1352372812",
+				[31208] = "C1353211629",
 				[31303] = "C1349170743",
 				[9543] = "C1291601766",
 				[9575] = "C1291601766",
-				[31495] = "C1351474110",
-				[29750] = "C1348974539",
-				[27496] = "C1311395558",
+				[9607] = "C1291601766",
+				[31949] = "C1353493165",
+				[31209] = "C1353211635",
 				[31687] = "C1350467046",
 				[13830] = "C1306401892",
 				[27720] = "C1311994909",
 				[27784] = "C1311995969",
-				[31943] = "C1356920890",
-				[9808] = "C1291601766",
+				[13926] = "W0",
+				[9588] = "C1291601766",
 				[9895] = "C1291601766",
 				[14022] = "C1353406709",
-				[7028] = "C1291601766",
-				[9781] = "C1291601766",
+				[28104] = "C1310783581",
+				[9398] = "C1291601766",
 				[28232] = "C1323795023",
 				[10055] = "C1291601766",
 				[10087] = "C1291601766",
 				[10119] = "C1291601766",
-				[4421] = "C1291601766",
-				[28402] = "C1298599250",
-				[10909] = "C1291601766",
+				[31326] = "C1354013422",
+				[31194] = "C1356835669",
+				[30156] = "C1356835673",
 			},
-			["LvlTime"] = 1360577769,
-			["LMoney"] = 46228811,
+			["XPRest"] = 0,
+			["L"] = {
+				["Version"] = 0.1,
+				["FavI"] = {
+				},
+				["FavF"] = {
+				},
+				["Social"] = {
+				},
+				["Quest"] = {
+				},
+				["Events"] = {
+				},
+			},
 			["QHAskedGet"] = true,
 			["Money"] = 46416866,
-			["Time"] = 1360580445,
+			["Honor"] = 295,
 			["W"] = {
 				["NxQuestWatch"] = {
 					["A"] = "TOPRIGHT",
@@ -37470,10 +37606,10 @@ NxData = {
 					["Y"] = 359.9999717473988,
 					["X"] = 959.9999856948855,
 					["_H"] = 40,
-					["Hide"] = true,
+					["_X"] = -0.6,
 					["H"] = 40,
 					["_Y"] = -0.3,
-					["_X"] = -0.6,
+					["Hide"] = true,
 				},
 				["NxEventsList"] = {
 					["A"] = "RIGHT",
@@ -37484,10 +37620,10 @@ NxData = {
 					["Y"] = 84.4996535107545,
 					["H"] = 311.0000182539222,
 					["_H"] = -0.1,
-					["Hide"] = true,
+					["_X"] = -0.75,
 					["X"] = 0,
 					["_Y"] = -0.6,
-					["_X"] = -0.75,
+					["Hide"] = true,
 				},
 				["NxSocial"] = {
 					["A"] = "CENTER",
@@ -37498,10 +37634,10 @@ NxData = {
 					["Y"] = 0,
 					["H"] = 767.9999427795418,
 					["_H"] = -0.64,
-					["Hide"] = true,
+					["_X"] = -0.25,
 					["X"] = 5.960464388721222e-005,
 					["_Y"] = -0.18,
-					["_X"] = -0.25,
+					["Hide"] = true,
 				},
 				["NxWarehouse"] = {
 					["_W"] = -0.5,
@@ -37511,10 +37647,10 @@ NxData = {
 					["Y"] = 179.999978244305,
 					["X"] = 399.9999940395356,
 					["_H"] = -0.6,
-					["_X"] = -0.25,
+					["Hide"] = true,
 					["H"] = 719.9999129772199,
 					["_Y"] = -0.15,
-					["Hide"] = true,
+					["_X"] = -0.25,
 				},
 				["NxQuestList"] = {
 					["_W"] = -0.52,
@@ -37524,10 +37660,10 @@ NxData = {
 					["Y"] = 179.9999847412109,
 					["H"] = 780,
 					["_H"] = -0.65,
-					["_X"] = -0.24,
+					["Hide"] = true,
 					["X"] = 384,
 					["_Y"] = -0.15,
-					["Hide"] = true,
+					["_X"] = -0.24,
 				},
 				["NxDD"] = {
 					["_W"] = 207,
@@ -37536,25 +37672,25 @@ NxData = {
 					["W"] = 207,
 					["Y"] = 0,
 					["H"] = 209,
-					["Hide"] = true,
+					["_X"] = 0,
 					["_H"] = 209,
 					["X"] = 0,
 					["L"] = 4,
 					["_Y"] = 0,
-					["_X"] = 0,
+					["Hide"] = true,
 				},
-				["NxCombat"] = {
-					["_W"] = -0.3,
+				["NxFav"] = {
+					["_W"] = -0.54,
 					["FI"] = 1,
 					["FO"] = 0.75,
-					["W"] = 479.9999928474427,
-					["Y"] = 839.9999340772638,
-					["X"] = 1119.9999833107,
-					["_H"] = -0.06,
+					["W"] = 864.0000023841858,
+					["Y"] = 299.9999764561657,
+					["H"] = 599.9999529123313,
+					["_H"] = -0.5,
 					["Hide"] = true,
-					["H"] = 71.99999434947975,
-					["_Y"] = -0.7,
-					["_X"] = -0.7,
+					["X"] = 367.9999868869783,
+					["_Y"] = -0.25,
+					["_X"] = -0.23,
 				},
 				["NxHelp"] = {
 					["_W"] = -0.5,
@@ -37576,10 +37712,10 @@ NxData = {
 					["Y"] = 239.9999694824219,
 					["H"] = 599.9998779296875,
 					["_H"] = -0.5,
-					["_X"] = -0.15,
+					["Hide"] = true,
 					["X"] = 240,
 					["_Y"] = -0.2,
-					["Hide"] = true,
+					["_X"] = -0.15,
 				},
 				["Version"] = 0.31,
 				["NxMap1"] = {
@@ -37631,7 +37767,7 @@ NxData = {
 					["A"] = "BOTTOMRIGHT",
 					["9001W"] = 304.0000298023219,
 					["9003W"] = 304.0000298023219,
-					["9002L"] = 1,
+					["9013Y"] = -0.4,
 					["9004H"] = 359.9999564886099,
 					["9003L"] = 1,
 					["9012L"] = 1,
@@ -37639,22 +37775,22 @@ NxData = {
 					["L"] = 1,
 					["MaxA"] = "BOTTOMRIGHT",
 					["9010H"] = -0.3,
-					["9012H"] = -0.3,
-					["9012W"] = -0.19,
-					["9001A"] = "BOTTOMRIGHT",
+					["H"] = 261.0000610351563,
+					["9003A"] = "BOTTOMRIGHT",
+					["9011W"] = -0.19,
 					["9013H"] = -0.3,
 					["9011Y"] = -0.4,
-					["9009X"] = 0.1600000052154063,
-					["W"] = 285.999755859375,
 					["9008X"] = -9.84001145005209,
+					["W"] = 285.999755859375,
+					["9009X"] = 0.1600000052154063,
 					["Y"] = 0.000147716433275491,
 					["X"] = 0.0009191245189867914,
-					["9011W"] = -0.19,
-					["9003A"] = "BOTTOMRIGHT",
-					["H"] = 261.0000610351563,
+					["9001A"] = "BOTTOMRIGHT",
+					["9012W"] = -0.19,
+					["9012H"] = -0.3,
 					["9001X"] = -21.84021440386453,
 					["_Y"] = -0.4,
-					["9013Y"] = -0.4,
+					["9002L"] = 1,
 				},
 				["NxPunkHUD"] = {
 					["A"] = "TOP",
@@ -37678,10 +37814,10 @@ NxData = {
 					["Y"] = -60.00000381469727,
 					["X"] = 0,
 					["_H"] = -0.7,
-					["Hide"] = true,
+					["_X"] = -0.25,
 					["H"] = 840,
 					["_Y"] = -0.1,
-					["_X"] = -0.25,
+					["Hide"] = true,
 				},
 				["NxHUD"] = {
 					["A"] = "TOP",
@@ -37692,22 +37828,22 @@ NxData = {
 					["Y"] = 4.999280452728272,
 					["X"] = 248.9938812255859,
 					["_H"] = 40,
-					["Hide"] = true,
+					["_X"] = 999999,
 					["H"] = 40,
 					["_Y"] = -0.17,
-					["_X"] = 999999,
+					["Hide"] = true,
 				},
-				["NxFav"] = {
-					["_W"] = -0.54,
+				["NxCombat"] = {
+					["_W"] = -0.3,
 					["FI"] = 1,
 					["FO"] = 0.75,
-					["W"] = 864.0000023841858,
-					["Y"] = 299.9999764561657,
-					["H"] = 599.9999529123313,
-					["_H"] = -0.5,
-					["_X"] = -0.23,
-					["X"] = 367.9999868869783,
-					["_Y"] = -0.25,
+					["W"] = 479.9999928474427,
+					["Y"] = 839.9999340772638,
+					["X"] = 1119.9999833107,
+					["_H"] = -0.06,
+					["_X"] = -0.7,
+					["H"] = 71.99999434947975,
+					["_Y"] = -0.7,
 					["Hide"] = true,
 				},
 			},
@@ -37760,50 +37896,38 @@ NxData = {
 				["Giant Mantis Shrimp"] = "7^|cffffffff|Hitem:74857:0:0:0:0:0:0:845279232:90:0:0|h[Giant Mantis Shrimp]|h|r",
 				["Raw Tiger Steak"] = "2^|cffffffff|Hitem:74833:0:0:0:0:0:0:1639738496:90:0:0|h[Raw Tiger Steak]|h|r",
 				["Striped Melon"] = "28^|cffffffff|Hitem:74848:0:0:0:0:0:0:2100403456:90:0:0|h[Striped Melon]|h|r",
-				["Scallions"] = "41^|cffffffff|Hitem:74843:0:0:0:0:0:0:-1755533312:90:0:0|h[Scallions]|h|r",
-				["Juicycrunch Carrot"] = "40^|cffffffff|Hitem:74841:0:0:0:0:0:0:1158404992:90:0:0|h[Juicycrunch Carrot]|h|r",
+				["Foot Ball"] = "1^|cff1eff00|Hitem:90888:0:0:0:0:0:0:-1673254528:90:0:0|h[Foot Ball]|h|r",
+				["Simple Flour"] = "5^|cffffffff|Hitem:30817:0:0:0:0:0:0:0:90:0:0|h[Simple Flour]|h|r",
 				["Pandaren Pottery Shard"] = "3^|cff1eff00|Hitem:79868:0:0:0:0:0:0:765872000:90:0:0|h[Pandaren Pottery Shard]|h|r",
-				["Golden Lotus"] = "13^|cff1eff00|Hitem:72238:0:0:0:0:0:0:1136203392:90:0:0|h[Golden Lotus]|h|r",
+				["Mote of Harmony"] = "4^|cffffffff|Hitem:89112:0:0:0:0:0:0:736495936:90:0:0|h[Mote of Harmony]|h|r",
 				["Spirit of Harmony"] = "14^|cff0070dd|Hitem:76061:0:0:0:0:0:0:707852544:90:0:0|h[Spirit of Harmony]|h|r",
-				["Wildfowl Breast"] = "10^|cffffffff|Hitem:74839:0:0:0:0:0:0:2089140480:90:0:0|h[Wildfowl Breast]|h|r",
+				["Life Spirit"] = "28^|cffffffff|Hitem:89640:0:0:0:0:0:0:1341331776:90:0:0|h[Life Spirit]|h|r",
 				["Witchberries"] = "13^|cffffffff|Hitem:74846:0:0:0:0:0:0:323652448:90:0:0|h[Witchberries]|h|r",
 				["Banquet of the Steamer"] = "5^|cffffffff|Hitem:87238:0:0:0:0:0:0:1412938496:90:0:0|h[Banquet of the Steamer]|h|r",
 				["Raw Turtle Meat"] = "23^|cffffffff|Hitem:74837:0:0:0:0:0:0:2039921664:90:0:0|h[Raw Turtle Meat]|h|r",
-				["Light Parchment"] = "49^|cffffffff|Hitem:39354:0:0:0:0:0:0:0:90:0:0|h[Light Parchment]|h|r",
-				["Darkmoon Game Token"] = "22^|cff1eff00|Hitem:71083:0:0:0:0:0:0:1349163776:90:0:0|h[Darkmoon Game Token]|h|r",
+				["Silkweed"] = "2^|cffffffff|Hitem:72235:0:0:0:0:0:0:975748224:90:0:0|h[Silkweed]|h|r",
+				["Spirit Dust"] = "7^|cffffffff|Hitem:74249:0:0:0:0:0:0:1011027520:90:0:0|h[Spirit Dust]|h|r",
 				["Mogu Pumpkin"] = "167^|cffffffff|Hitem:74842:0:0:0:0:0:0:745835584:90:0:0|h[Mogu Pumpkin]|h|r",
-				["Jade Lungfish"] = "4^|cffffffff|Hitem:74856:0:0:0:0:0:0:1301746880:90:0:0|h[Jade Lungfish]|h|r",
+				["Four of Serpents"] = "1^|cff0070dd|Hitem:79310:0:0:0:0:0:0:877216192:90:0:0|h[Four of Serpents]|h|r",
 				["Master Plow"] = "1^|cffffffff|Hitem:89815:0:0:0:0:0:0:921412032:90:0:0|h[Master Plow]|h|r",
 				["Wildfowl Roast"] = "2^|cffffffff|Hitem:74654:0:0:0:0:0:0:482903456:90:0:0|h[Wildfowl Roast]|h|r",
 				["Banquet of the Wok"] = "20^|cffffffff|Hitem:87230:0:0:0:0:0:0:2077544704:90:0:0|h[Banquet of the Wok]|h|r",
-				["Four of Serpents"] = "1^|cff0070dd|Hitem:79310:0:0:0:0:0:0:877216192:90:0:0|h[Four of Serpents]|h|r",
-				["Spirit Dust"] = "7^|cffffffff|Hitem:74249:0:0:0:0:0:0:1011027520:90:0:0|h[Spirit Dust]|h|r",
-				["Silkweed"] = "2^|cffffffff|Hitem:72235:0:0:0:0:0:0:975748224:90:0:0|h[Silkweed]|h|r",
+				["Jade Lungfish"] = "4^|cffffffff|Hitem:74856:0:0:0:0:0:0:1301746880:90:0:0|h[Jade Lungfish]|h|r",
+				["Darkmoon Game Token"] = "22^|cff1eff00|Hitem:71083:0:0:0:0:0:0:1349163776:90:0:0|h[Darkmoon Game Token]|h|r",
+				["Light Parchment"] = "49^|cffffffff|Hitem:39354:0:0:0:0:0:0:0:90:0:0|h[Light Parchment]|h|r",
 				["Glow Worm"] = "5^|cffffffff|Hitem:46006:0:0:0:0:0:0:1947915904:90:0:0|h[Glow Worm]|h|r",
 				["Starlight Ink"] = "7^|cff1eff00|Hitem:79255:0:0:0:0:0:0:1600180096:90:0:0|h[Starlight Ink]|h|r",
-				["Life Spirit"] = "28^|cffffffff|Hitem:89640:0:0:0:0:0:0:1341331776:90:0:0|h[Life Spirit]|h|r",
-				["Mote of Harmony"] = "4^|cffffffff|Hitem:89112:0:0:0:0:0:0:736495936:90:0:0|h[Mote of Harmony]|h|r",
-				["Simple Flour"] = "5^|cffffffff|Hitem:30817:0:0:0:0:0:0:0:90:0:0|h[Simple Flour]|h|r",
-				["Foot Ball"] = "1^|cff1eff00|Hitem:90888:0:0:0:0:0:0:-1673254528:90:0:0|h[Foot Ball]|h|r",
+				["Wildfowl Breast"] = "10^|cffffffff|Hitem:74839:0:0:0:0:0:0:2089140480:90:0:0|h[Wildfowl Breast]|h|r",
+				["Golden Lotus"] = "13^|cff1eff00|Hitem:72238:0:0:0:0:0:0:1136203392:90:0:0|h[Golden Lotus]|h|r",
+				["Juicycrunch Carrot"] = "40^|cffffffff|Hitem:74841:0:0:0:0:0:0:1158404992:90:0:0|h[Juicycrunch Carrot]|h|r",
+				["Scallions"] = "41^|cffffffff|Hitem:74843:0:0:0:0:0:0:-1755533312:90:0:0|h[Scallions]|h|r",
 				["Ink of Dreams"] = "11^|cffffffff|Hitem:79254:0:0:0:0:0:0:1031938752:90:0:0|h[Ink of Dreams]|h|r",
 			},
 			["Version"] = 0.02,
 			["DurPercent"] = 95.59748427672956,
-			["Honor"] = 295,
-			["L"] = {
-				["Version"] = 0.1,
-				["Events"] = {
-				},
-				["FavF"] = {
-				},
-				["Social"] = {
-				},
-				["Quest"] = {
-				},
-				["FavI"] = {
-				},
-			},
-			["XPRest"] = 0,
+			["Time"] = 1360580445,
+			["LMoney"] = 46228811,
+			["LvlTime"] = 1360577769,
 			["Pos"] = "6013^28.121173^59.204674",
 		},
 		["Khaz Modan.Doyjen"] = {
@@ -37816,8 +37940,8 @@ NxData = {
 					["Rank"] = 16,
 				},
 				["Blacksmithing"] = {
-					[12260] = 10421,
 					[2660] = 2862,
+					[12260] = 10421,
 					["Link"] = "|cffffd000|Htrade:2018:15:75:3800000057C779D:XAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA|h[Blacksmithing]|h|r",
 					[2662] = 2852,
 					[2663] = 2853,
@@ -37832,9 +37956,9 @@ NxData = {
 					["Rank"] = 12,
 				},
 				["First Aid"] = {
-					["Link"] = "|cffffd000|Htrade:3273:34:75:3800000057C779D:FAAAAAAA|h[First Aid]|h|r",
-					[3275] = 1251,
 					["Rank"] = 34,
+					[3275] = 1251,
+					["Link"] = "|cffffd000|Htrade:3273:34:75:3800000057C779D:FAAAAAAA|h[First Aid]|h|r",
 				},
 			},
 			["LXP"] = 5971,
@@ -37857,19 +37981,19 @@ NxData = {
 				["NxMap1TB"] = {
 					["Space"] = 1,
 					["AlignR"] = true,
-					["Size"] = 22,
 					["AlignB"] = true,
+					["Size"] = 22,
 				},
 			},
 			["TimePlayed"] = 14050,
 			["L"] = {
-				["Quest"] = {
+				["Events"] = {
 				},
 				["Social"] = {
 				},
-				["Version"] = 0.1,
-				["Events"] = {
+				["Quest"] = {
 				},
+				["Version"] = 0.1,
 			},
 			["XP"] = 5971,
 			["Time"] = 1358740479,
@@ -37902,58 +38026,312 @@ NxData = {
 				[28562] = "W0",
 				[30987] = "C1356086668",
 				[30989] = "C1356086928",
-				[29800] = "C1355915609",
-				[29409] = "C1348825469",
+				[29524] = "C1348825265",
+				[29423] = "C1348978605",
 				[29798] = "C1355914868",
-				[29665] = "C1355828597",
-				[29663] = "C1348979415",
-				[29789] = "C1353556155",
-				[29664] = "C1348978240",
-				[29793] = "C1355827852",
-				[29775] = "C1353553684",
-				[30767] = "C1355915030",
-				[29787] = "C1353555481",
-				[29678] = "C1353552036",
-				[29676] = "C1348979507",
-				[29662] = "C1348979381",
-				[31450] = "C1355915762",
+				[29788] = "C1353556146",
+				[29522] = "C1348826065",
+				[29799] = "C1355915412",
 				[29791] = "C1353556978",
-				[29795] = "C1353558082",
-				[29412] = "W0",
+				[29777] = "C1353554198",
+				[29785] = "C1353555124",
+				[30767] = "C1355915030",
+				[29406] = "C1348653846",
+				[29424] = "C1348825812",
+				[29422] = "C1348978452",
+				[29408] = "C1348825363",
+				[29418] = "C1348826589",
+				[29410] = "C1348825549",
+				[29414] = "C1348825964",
+				[29666] = "C1353551943",
 				[29769] = "C1353552950",
 				[29771] = "C1353553315",
 				[30027] = "C1348653736",
-				[29521] = "C1348979035",
+				[29775] = "C1353553684",
 				[29523] = "C1348826586",
 				[29779] = "C1353554579",
 				[29781] = "C1353554506",
 				[29783] = "C1353554210",
 				[30039] = "C1348653676",
-				[29406] = "C1348653846",
-				[29408] = "C1348825363",
-				[29410] = "C1348825549",
-				[29666] = "C1353551943",
-				[29414] = "C1348825964",
+				[29787] = "C1353555481",
+				[29789] = "C1353556155",
+				[29664] = "C1348978240",
+				[29793] = "C1355827852",
+				[29795] = "C1353558082",
 				[29797] = "C1355828594",
-				[29418] = "C1348826589",
+				[31450] = "C1355915762",
 				[29420] = "C1348826685",
-				[29422] = "C1348978452",
-				[29424] = "C1348825812",
+				[29676] = "C1348979507",
+				[29678] = "C1353552036",
 				[29680] = "C1353552322",
-				[29785] = "C1353555124",
-				[29777] = "C1353554198",
+				[29521] = "C1348979035",
+				[29412] = "W0",
 				[31591] = "W0",
-				[29799] = "C1355915412",
-				[29522] = "C1348826065",
-				[29788] = "C1353556146",
+				[29662] = "C1348979381",
+				[29663] = "C1348979415",
+				[29665] = "C1355828597",
 				[31726] = "W0",
-				[29423] = "C1348978605",
-				[29524] = "C1348825265",
+				[29409] = "C1348825469",
+				[29800] = "C1355915609",
 			},
-			["LvlTime"] = 1358740413,
-			["Level"] = 12,
+			["XPRest"] = 23100,
+			["Class"] = "Monk",
 			["Honor"] = 0,
 			["Money"] = 10879,
+			["QHAskedGet"] = true,
+			["W"] = {
+				["NxHUD"] = {
+					["A"] = "TOP",
+					["_W"] = 8,
+					["FI"] = 1,
+					["FO"] = 0.15,
+					["W"] = 120.9999847412109,
+					["Y"] = 209.9999847412109,
+					["H"] = 40,
+					["_H"] = 40,
+					["Hide"] = true,
+					["X"] = -173,
+					["_Y"] = -0.17,
+					["_X"] = 999999,
+				},
+				["NxQuestList"] = {
+					["_W"] = -0.52,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 832.0000634765626,
+					["Y"] = 180,
+					["H"] = 780,
+					["_H"] = -0.65,
+					["Hide"] = true,
+					["X"] = 384.000029296875,
+					["_Y"] = -0.15,
+					["_X"] = -0.24,
+				},
+				["NxDD"] = {
+					["_W"] = 207,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 207,
+					["Y"] = 0,
+					["H"] = 209,
+					["_H"] = 209,
+					["_X"] = 0,
+					["X"] = 0,
+					["_Y"] = 0,
+					["Hide"] = true,
+				},
+				["NxQuestWatch"] = {
+					["MinW"] = 123.9999618530273,
+					["FI"] = 1,
+					["FO"] = 0.15,
+					["MinX"] = 0,
+					["H"] = 40,
+					["_H"] = -0.1,
+					["MinY"] = 27.00007057189941,
+					["Mode"] = "Min",
+					["_W"] = -0.2,
+					["W"] = 124.0000076293945,
+					["Min"] = true,
+					["X"] = 1280.000122070313,
+					["MinH"] = 40,
+					["MinA"] = "TOPRIGHT",
+					["Y"] = 420,
+					["_Y"] = -0.35,
+					["_X"] = -0.8,
+				},
+				["NxEventsList"] = {
+					["_W"] = -0.25,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 400.0000305175781,
+					["Y"] = 720,
+					["H"] = 120,
+					["_H"] = -0.1,
+					["_X"] = -0.75,
+					["X"] = 1200.000091552734,
+					["_Y"] = -0.6,
+					["Hide"] = true,
+				},
+				["NxMapDock"] = {
+					["A"] = "TOPRIGHT",
+					["_W"] = 52,
+					["FI"] = 1,
+					["FO"] = 0,
+					["W"] = 47.99996566772461,
+					["Y"] = 89.99995422363281,
+					["H"] = 40,
+					["X"] = -20.00080490112305,
+					["_H"] = 69,
+					["_L"] = 2,
+					["L"] = 2,
+					["_Y"] = -0.08,
+					["_X"] = 100045,
+				},
+				["NxGuide1"] = {
+					["_W"] = -0.63,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 1008.000076904297,
+					["Y"] = 240,
+					["H"] = 600,
+					["_H"] = -0.5,
+					["Hide"] = true,
+					["X"] = 240.0000183105469,
+					["_Y"] = -0.2,
+					["_X"] = -0.15,
+				},
+				["Version"] = 0.31,
+				["NxMap1"] = {
+					["9010L"] = 1,
+					["9008L"] = 1,
+					["FO"] = 0,
+					["9013X"] = -0.0001,
+					["MaxY"] = -2.999484777450562,
+					["9012Y"] = -0.4,
+					["9009W"] = -0.19,
+					["9004W"] = -0.19,
+					["MaxL"] = 2,
+					["9011X"] = -0.0001,
+					["9008H"] = -0.3,
+					["9002X"] = -0.0001,
+					["9002H"] = -0.3,
+					["9002W"] = -0.19,
+					["9011H"] = -0.3,
+					["9008Y"] = -0.4,
+					["9004L"] = 1,
+					["9013L"] = 1,
+					["9002Y"] = -0.4,
+					["9013W"] = -0.19,
+					["9004Y"] = -0.4,
+					["9011L"] = 1,
+					["9009H"] = -0.3,
+					["9008W"] = -0.19,
+					["9003X"] = -0.0001,
+					["9001L"] = 1,
+					["_W"] = -0.19,
+					["9010Y"] = -0.4,
+					["9004X"] = -0.0001,
+					["9009Y"] = -0.4,
+					["FI"] = 1,
+					["9001Y"] = -0.4,
+					["9003H"] = -0.3,
+					["_H"] = -0.3,
+					["_L"] = 1,
+					["9003Y"] = -0.4,
+					["9010W"] = -0.19,
+					["9001H"] = -0.3,
+					["MaxX"] = -24.99962043762207,
+					["MaxH"] = 231.9998931884766,
+					["9012X"] = -0.0001,
+					["9010X"] = -0.0001,
+					["MaxW"] = 272.0000915527344,
+					["_X"] = -0.0001,
+					["A"] = "BOTTOMRIGHT",
+					["9001W"] = -0.19,
+					["9003W"] = -0.19,
+					["H"] = 230.3999786376953,
+					["9003L"] = 1,
+					["9009L"] = 1,
+					["L"] = 1,
+					["MaxA"] = "BOTTOMRIGHT",
+					["9012L"] = 1,
+					["9011Y"] = -0.4,
+					["9004H"] = -0.3,
+					["9013Y"] = -0.4,
+					["9013H"] = -0.3,
+					["9012W"] = -0.19,
+					["9008X"] = -0.0001,
+					["W"] = 194.5599517822266,
+					["9009X"] = -0.0001,
+					["Y"] = -1.40005362033844,
+					["X"] = -7.337570667266846,
+					["9011W"] = -0.19,
+					["9010H"] = -0.3,
+					["9002L"] = 1,
+					["9001X"] = -0.0001,
+					["_Y"] = -0.4,
+					["9012H"] = -0.3,
+				},
+				["NxPunkHUD"] = {
+					["A"] = "TOPRIGHT",
+					["_W"] = 135,
+					["FI"] = 0.5,
+					["FO"] = 0,
+					["W"] = 133.9998321533203,
+					["Y"] = 44.99995803833008,
+					["H"] = 40,
+					["_H"] = 87,
+					["X"] = -8.000136375427246,
+					["_Y"] = -0.1,
+					["_X"] = -0.6,
+				},
+				["NxSocial"] = {
+					["_W"] = -0.5,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 800.0000610351563,
+					["Y"] = 216,
+					["X"] = 400.0000305175781,
+					["_H"] = -0.64,
+					["Hide"] = true,
+					["H"] = 768,
+					["_Y"] = -0.18,
+					["_X"] = -0.25,
+				},
+				["NxCombat"] = {
+					["_W"] = -0.3,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 480.0000366210937,
+					["Y"] = 840,
+					["H"] = 72,
+					["_H"] = -0.06,
+					["_X"] = -0.7,
+					["X"] = 1120.000085449219,
+					["_Y"] = -0.7,
+					["Hide"] = true,
+				},
+				["NxTeamHUD"] = {
+					["_W"] = 107,
+					["FI"] = 0.5,
+					["FO"] = 0,
+					["W"] = 107,
+					["Y"] = 360,
+					["H"] = 40,
+					["_H"] = 40,
+					["_X"] = -0.6,
+					["X"] = 960.0000732421875,
+					["_Y"] = -0.3,
+					["Hide"] = true,
+				},
+			},
+			["WareInv"] = {
+				"HeadSlot^|cffe6cc80|Hitem:61937:0:0:0:0:0:0:0:12:0:0|h[Stained Shadowcraft Cap]|h|r", -- [1]
+				"ShoulderSlot^|cffe6cc80|Hitem:42952:0:0:0:0:0:0:0:12:0:0|h[Stained Shadowcraft Spaulders]|h|r", -- [2]
+				"BackSlot^|cffe6cc80|Hitem:62039:0:0:0:0:0:0:0:12:0:0|h[Inherited Cape of the Black Baron]|h|r", -- [3]
+				"ChestSlot^|cffe6cc80|Hitem:48689:908:0:0:0:0:0:0:12:0:0|h[Stained Shadowcraft Tunic]|h|r", -- [4]
+				"WristSlot^|cffffffff|Hitem:74578:0:0:0:0:0:0:682081536:12:0:0|h[Bindings of the Earth Spirit]|h|r", -- [5]
+				"HandsSlot^|cffffffff|Hitem:74595:0:0:0:0:0:0:387984160:12:0:0|h[Gloves of Verity]|h|r", -- [6]
+				"WaistSlot^|cffffffff|Hitem:74598:0:0:0:0:0:0:111514128:12:0:0|h[Ropes of Grieving]|h|r", -- [7]
+				"LegsSlot^|cffffffff|Hitem:74601:0:0:0:0:0:0:1609835520:12:0:0|h[Ceremonial Leggings]|h|r", -- [8]
+				"FeetSlot^|cffffffff|Hitem:74607:0:0:0:0:0:0:16192734:12:0:0|h[Boots of Courage]|h|r", -- [9]
+				"MainHandSlot^|cffffffff|Hitem:767:0:0:0:0:0:0:1253617984:12:0:0|h[Long Bo Staff]|h|r", -- [10]
+				"Bag0Slot^|cffffffff|Hitem:73241:0:0:0:0:0:0:455169824:12:0:0|h[Merchant's Satchel]|h|r", -- [11]
+				"Bag1Slot^|cffffffff|Hitem:73242:0:0:0:0:0:0:1755962624:12:0:0|h[Master's Haversack]|h|r", -- [12]
+			},
+			["LXPRest"] = 36934,
+			["WareBags"] = {
+				["Small Sugarcane Stalk"] = "3^|cffffffff|Hitem:77272:0:0:0:0:0:0:0:12:0:0|h[Small Sugarcane Stalk]|h|r",
+				["Copper Ore"] = "33^|cffffffff|Hitem:2770:0:0:0:0:0:0:359018712:12:0:0|h[Copper Ore]|h|r",
+				["Mining Pick"] = "1^|cffffffff|Hitem:2901:0:0:0:0:0:0:0:12:0:0|h[Mining Pick]|h|r",
+				["Hearthstone"] = "1^|cffffffff|Hitem:6948:0:0:0:0:0:0:0:12:0:0|h[Hearthstone]|h|r",
+				["Linen Bandage"] = "33^|cffffffff|Hitem:1251:0:0:0:0:0:0:1247520896:12:0:0|h[Linen Bandage]|h|r",
+				["Rough Stone"] = "18^|cffffffff|Hitem:2835:0:0:0:0:0:0:928126048:12:0:0|h[Rough Stone]|h|r",
+				["Rough Sharpening Stone"] = "14^|cffffffff|Hitem:2862:0:0:0:0:0:0:1562117376:12:0:0|h[Rough Sharpening Stone]|h|r",
+				["Blacksmith Hammer"] = "1^|cffffffff|Hitem:5956:0:0:0:0:0:0:0:12:0:0|h[Blacksmith Hammer]|h|r",
+			},
+			["Version"] = 0.02,
+			["DurPercent"] = 100,
 			["E"] = {
 				"I^135582859800^205^6bedcf^+775 xp", -- [1]
 				"I^135582859801^205^6bedcf^Level 12", -- [2]
@@ -38016,262 +38394,8 @@ NxData = {
 				"I^135772865800^84^ffaffa^Entered", -- [59]
 				"I^135874041300^84^000000^Entered", -- [60]
 			},
-			["W"] = {
-				["NxHUD"] = {
-					["A"] = "TOP",
-					["_W"] = 8,
-					["FI"] = 1,
-					["FO"] = 0.15,
-					["W"] = 120.9999847412109,
-					["Y"] = 209.9999847412109,
-					["H"] = 40,
-					["_H"] = 40,
-					["_X"] = 999999,
-					["X"] = -173,
-					["_Y"] = -0.17,
-					["Hide"] = true,
-				},
-				["NxQuestList"] = {
-					["_W"] = -0.52,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 832.0000634765626,
-					["Y"] = 180,
-					["H"] = 780,
-					["_H"] = -0.65,
-					["_X"] = -0.24,
-					["X"] = 384.000029296875,
-					["_Y"] = -0.15,
-					["Hide"] = true,
-				},
-				["NxDD"] = {
-					["_W"] = 207,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 207,
-					["Y"] = 0,
-					["H"] = 209,
-					["_H"] = 209,
-					["Hide"] = true,
-					["X"] = 0,
-					["_Y"] = 0,
-					["_X"] = 0,
-				},
-				["NxQuestWatch"] = {
-					["MinW"] = 123.9999618530273,
-					["FI"] = 1,
-					["FO"] = 0.15,
-					["MinX"] = 0,
-					["H"] = 40,
-					["_H"] = -0.1,
-					["MinY"] = 27.00007057189941,
-					["Mode"] = "Min",
-					["_W"] = -0.2,
-					["W"] = 124.0000076293945,
-					["Min"] = true,
-					["X"] = 1280.000122070313,
-					["MinH"] = 40,
-					["MinA"] = "TOPRIGHT",
-					["Y"] = 420,
-					["_Y"] = -0.35,
-					["_X"] = -0.8,
-				},
-				["NxGuide1"] = {
-					["_W"] = -0.63,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 1008.000076904297,
-					["Y"] = 240,
-					["H"] = 600,
-					["_H"] = -0.5,
-					["_X"] = -0.15,
-					["X"] = 240.0000183105469,
-					["_Y"] = -0.2,
-					["Hide"] = true,
-				},
-				["NxMapDock"] = {
-					["A"] = "TOPRIGHT",
-					["_W"] = 52,
-					["FI"] = 1,
-					["FO"] = 0,
-					["W"] = 47.99996566772461,
-					["Y"] = 89.99995422363281,
-					["H"] = 40,
-					["X"] = -20.00080490112305,
-					["_H"] = 69,
-					["_L"] = 2,
-					["L"] = 2,
-					["_Y"] = -0.08,
-					["_X"] = 100045,
-				},
-				["NxTeamHUD"] = {
-					["_W"] = 107,
-					["FI"] = 0.5,
-					["FO"] = 0,
-					["W"] = 107,
-					["Y"] = 360,
-					["H"] = 40,
-					["_H"] = 40,
-					["Hide"] = true,
-					["X"] = 960.0000732421875,
-					["_Y"] = -0.3,
-					["_X"] = -0.6,
-				},
-				["Version"] = 0.31,
-				["NxMap1"] = {
-					["9010L"] = 1,
-					["9008L"] = 1,
-					["FO"] = 0,
-					["9013X"] = -0.0001,
-					["MaxY"] = -2.999484777450562,
-					["9012Y"] = -0.4,
-					["9009W"] = -0.19,
-					["9004W"] = -0.19,
-					["MaxL"] = 2,
-					["9011X"] = -0.0001,
-					["9008H"] = -0.3,
-					["9002X"] = -0.0001,
-					["9002H"] = -0.3,
-					["9002W"] = -0.19,
-					["9011H"] = -0.3,
-					["9008Y"] = -0.4,
-					["9004L"] = 1,
-					["9013L"] = 1,
-					["9002Y"] = -0.4,
-					["9013W"] = -0.19,
-					["9004Y"] = -0.4,
-					["9011L"] = 1,
-					["9009H"] = -0.3,
-					["9008W"] = -0.19,
-					["9003X"] = -0.0001,
-					["9001L"] = 1,
-					["_W"] = -0.19,
-					["9010Y"] = -0.4,
-					["9004X"] = -0.0001,
-					["9009Y"] = -0.4,
-					["FI"] = 1,
-					["9001Y"] = -0.4,
-					["9003H"] = -0.3,
-					["_H"] = -0.3,
-					["_L"] = 1,
-					["9003Y"] = -0.4,
-					["9010W"] = -0.19,
-					["9001H"] = -0.3,
-					["MaxX"] = -24.99962043762207,
-					["MaxH"] = 231.9998931884766,
-					["9012X"] = -0.0001,
-					["9010X"] = -0.0001,
-					["MaxW"] = 272.0000915527344,
-					["_X"] = -0.0001,
-					["A"] = "BOTTOMRIGHT",
-					["9001W"] = -0.19,
-					["9003W"] = -0.19,
-					["H"] = 230.3999786376953,
-					["9003L"] = 1,
-					["9009L"] = 1,
-					["L"] = 1,
-					["MaxA"] = "BOTTOMRIGHT",
-					["9012H"] = -0.3,
-					["9011Y"] = -0.4,
-					["9004H"] = -0.3,
-					["9002L"] = 1,
-					["9013H"] = -0.3,
-					["9010H"] = -0.3,
-					["9009X"] = -0.0001,
-					["W"] = 194.5599517822266,
-					["9008X"] = -0.0001,
-					["Y"] = -1.40005362033844,
-					["X"] = -7.337570667266846,
-					["9011W"] = -0.19,
-					["9012W"] = -0.19,
-					["9013Y"] = -0.4,
-					["9001X"] = -0.0001,
-					["_Y"] = -0.4,
-					["9012L"] = 1,
-				},
-				["NxPunkHUD"] = {
-					["A"] = "TOPRIGHT",
-					["_W"] = 135,
-					["FI"] = 0.5,
-					["FO"] = 0,
-					["W"] = 133.9998321533203,
-					["Y"] = 44.99995803833008,
-					["H"] = 40,
-					["_H"] = 87,
-					["X"] = -8.000136375427246,
-					["_Y"] = -0.1,
-					["_X"] = -0.6,
-				},
-				["NxSocial"] = {
-					["_W"] = -0.5,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 800.0000610351563,
-					["Y"] = 216,
-					["X"] = 400.0000305175781,
-					["_H"] = -0.64,
-					["_X"] = -0.25,
-					["H"] = 768,
-					["_Y"] = -0.18,
-					["Hide"] = true,
-				},
-				["NxCombat"] = {
-					["_W"] = -0.3,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 480.0000366210937,
-					["Y"] = 840,
-					["H"] = 72,
-					["_H"] = -0.06,
-					["Hide"] = true,
-					["X"] = 1120.000085449219,
-					["_Y"] = -0.7,
-					["_X"] = -0.7,
-				},
-				["NxEventsList"] = {
-					["_W"] = -0.25,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 400.0000305175781,
-					["Y"] = 720,
-					["H"] = 120,
-					["_H"] = -0.1,
-					["Hide"] = true,
-					["X"] = 1200.000091552734,
-					["_Y"] = -0.6,
-					["_X"] = -0.75,
-				},
-			},
-			["WareInv"] = {
-				"HeadSlot^|cffe6cc80|Hitem:61937:0:0:0:0:0:0:0:12:0:0|h[Stained Shadowcraft Cap]|h|r", -- [1]
-				"ShoulderSlot^|cffe6cc80|Hitem:42952:0:0:0:0:0:0:0:12:0:0|h[Stained Shadowcraft Spaulders]|h|r", -- [2]
-				"BackSlot^|cffe6cc80|Hitem:62039:0:0:0:0:0:0:0:12:0:0|h[Inherited Cape of the Black Baron]|h|r", -- [3]
-				"ChestSlot^|cffe6cc80|Hitem:48689:908:0:0:0:0:0:0:12:0:0|h[Stained Shadowcraft Tunic]|h|r", -- [4]
-				"WristSlot^|cffffffff|Hitem:74578:0:0:0:0:0:0:682081536:12:0:0|h[Bindings of the Earth Spirit]|h|r", -- [5]
-				"HandsSlot^|cffffffff|Hitem:74595:0:0:0:0:0:0:387984160:12:0:0|h[Gloves of Verity]|h|r", -- [6]
-				"WaistSlot^|cffffffff|Hitem:74598:0:0:0:0:0:0:111514128:12:0:0|h[Ropes of Grieving]|h|r", -- [7]
-				"LegsSlot^|cffffffff|Hitem:74601:0:0:0:0:0:0:1609835520:12:0:0|h[Ceremonial Leggings]|h|r", -- [8]
-				"FeetSlot^|cffffffff|Hitem:74607:0:0:0:0:0:0:16192734:12:0:0|h[Boots of Courage]|h|r", -- [9]
-				"MainHandSlot^|cffffffff|Hitem:767:0:0:0:0:0:0:1253617984:12:0:0|h[Long Bo Staff]|h|r", -- [10]
-				"Bag0Slot^|cffffffff|Hitem:73241:0:0:0:0:0:0:455169824:12:0:0|h[Merchant's Satchel]|h|r", -- [11]
-				"Bag1Slot^|cffffffff|Hitem:73242:0:0:0:0:0:0:1755962624:12:0:0|h[Master's Haversack]|h|r", -- [12]
-			},
-			["LXPRest"] = 36934,
-			["WareBags"] = {
-				["Small Sugarcane Stalk"] = "3^|cffffffff|Hitem:77272:0:0:0:0:0:0:0:12:0:0|h[Small Sugarcane Stalk]|h|r",
-				["Copper Ore"] = "33^|cffffffff|Hitem:2770:0:0:0:0:0:0:359018712:12:0:0|h[Copper Ore]|h|r",
-				["Mining Pick"] = "1^|cffffffff|Hitem:2901:0:0:0:0:0:0:0:12:0:0|h[Mining Pick]|h|r",
-				["Hearthstone"] = "1^|cffffffff|Hitem:6948:0:0:0:0:0:0:0:12:0:0|h[Hearthstone]|h|r",
-				["Linen Bandage"] = "33^|cffffffff|Hitem:1251:0:0:0:0:0:0:1247520896:12:0:0|h[Linen Bandage]|h|r",
-				["Rough Stone"] = "18^|cffffffff|Hitem:2835:0:0:0:0:0:0:928126048:12:0:0|h[Rough Stone]|h|r",
-				["Rough Sharpening Stone"] = "14^|cffffffff|Hitem:2862:0:0:0:0:0:0:1562117376:12:0:0|h[Rough Sharpening Stone]|h|r",
-				["Blacksmith Hammer"] = "1^|cffffffff|Hitem:5956:0:0:0:0:0:0:0:12:0:0|h[Blacksmith Hammer]|h|r",
-			},
-			["Version"] = 0.02,
-			["DurPercent"] = 100,
-			["QHAskedGet"] = true,
-			["Class"] = "Monk",
-			["XPRest"] = 23100,
+			["Level"] = 12,
+			["LvlTime"] = 1358740413,
 			["Pos"] = "2020^50.672966^70.887411",
 		},
 		["Khaz Modan.Datinnite"] = {
@@ -38316,8 +38440,8 @@ NxData = {
 				["NxMap1TB"] = {
 					["Space"] = 1,
 					["AlignR"] = true,
-					["Size"] = 22,
 					["AlignB"] = true,
+					["Size"] = 22,
 				},
 			},
 			["TimePlayed"] = 30383,
@@ -38367,43 +38491,44 @@ NxData = {
 				[12724] = "C1304041446",
 				[12725] = "C1304041446",
 				[12727] = "C1304041446",
-				[12593] = "C1304041446",
-				[12641] = "C1304041446",
+				[13188] = "C1304041446",
+				[12842] = "C1304041446",
 				[12800] = "C1304041446",
 				[12706] = "C1304041446",
 				[12733] = "C1304041446",
-				[12750] = "C1304041446",
+				[6661] = "C1304041446",
 				[13165] = "C1304041446",
 				[12850] = "C1304041446",
-				[28650] = "C1304041446",
 				[12738] = "C1304041446",
+				[28650] = "C1304041446",
 				[12739] = "C1304041446",
-				[12619] = "C1304041446",
+				[12746] = "C1304041446",
 				[28649] = "C1304041446",
 				[12742] = "C1304041446",
 				[12743] = "C1304041446",
 				[12744] = "C1304041446",
 				[12745] = "C1304041446",
-				[12746] = "C1304041446",
+				[12619] = "C1304041446",
 				[12747] = "C1304041446",
 				[12748] = "C1304041446",
 				[12749] = "C1304041446",
-				[6661] = "C1304041446",
+				[12750] = "C1304041446",
 				[12751] = "C1304041446",
 				[6662] = "C1304041446",
-				[12842] = "C1304041446",
-				[13188] = "C1304041446",
+				[12641] = "C1304041446",
+				[12593] = "C1304041446",
 			},
-			["LvlTime"] = 1329618902,
-			["Class"] = "Death Knight",
+			["XPRest"] = 435000,
+			["L"] = {
+				["Events"] = {
+				},
+				["Quest"] = {
+				},
+				["Version"] = 0.1,
+			},
 			["Honor"] = 50,
 			["Money"] = 318375,
-			["WareInv"] = {
-				"Bag0Slot^|cffffffff|Hitem:38145:0:0:0:0:0:0:0:60:0|h[Deathweave Bag]|h|r", -- [1]
-				"Bag1Slot^|cffffffff|Hitem:38145:0:0:0:0:0:0:0:60:0|h[Deathweave Bag]|h|r", -- [2]
-				"Bag2Slot^|cffffffff|Hitem:38145:0:0:0:0:0:0:0:60:0|h[Deathweave Bag]|h|r", -- [3]
-				"Bag3Slot^|cffffffff|Hitem:38145:0:0:0:0:0:0:0:60:0|h[Deathweave Bag]|h|r", -- [4]
-			},
+			["QHAskedGet"] = true,
 			["W"] = {
 				["NxHUD"] = {
 					["_W"] = 8,
@@ -38413,10 +38538,10 @@ NxData = {
 					["Y"] = 203.9999839901927,
 					["H"] = 40,
 					["_H"] = 40,
-					["_X"] = 999999,
+					["Hide"] = true,
 					["X"] = 795.9999880790713,
 					["_Y"] = -0.17,
-					["Hide"] = true,
+					["_X"] = 999999,
 				},
 				["NxQuestList"] = {
 					["_W"] = -0.52,
@@ -38426,10 +38551,10 @@ NxData = {
 					["Y"] = 179.9999858736994,
 					["H"] = 779.9999387860307,
 					["_H"] = -0.65,
-					["_X"] = -0.24,
+					["Hide"] = true,
 					["X"] = 383.9999942779542,
 					["_Y"] = -0.15,
-					["Hide"] = true,
+					["_X"] = -0.24,
 				},
 				["NxDD"] = {
 					["_W"] = 207,
@@ -38439,10 +38564,10 @@ NxData = {
 					["Y"] = 0,
 					["H"] = 209,
 					["_H"] = 209,
-					["Hide"] = true,
+					["_X"] = 0,
 					["X"] = 0,
 					["_Y"] = 0,
-					["_X"] = 0,
+					["Hide"] = true,
 				},
 				["NxQuestWatch"] = {
 					["_W"] = -0.2,
@@ -38478,10 +38603,10 @@ NxData = {
 					["Y"] = 239.9999811649325,
 					["H"] = 599.9999529123313,
 					["_H"] = -0.5,
-					["_X"] = -0.15,
+					["Hide"] = true,
 					["X"] = 239.9999964237214,
 					["_Y"] = -0.2,
-					["Hide"] = true,
+					["_X"] = -0.15,
 				},
 				["Version"] = 0.31,
 				["NxMap1"] = {
@@ -38502,19 +38627,19 @@ NxData = {
 					["9001H"] = -0.3,
 					["9002H"] = -0.3,
 					["9002W"] = -0.19,
-					["9008L"] = 1,
+					["9010X"] = -0.0001,
 					["9011H"] = -0.3,
 					["9008Y"] = -0.4,
 					["_X"] = -0.0001,
 					["A"] = "LEFT",
 					["9010L"] = 1,
-					["9001W"] = -0.19,
 					["9002Y"] = -0.4,
+					["9001W"] = -0.19,
 					["9004W"] = -0.19,
 					["9003W"] = -0.19,
 					["9011L"] = 1,
 					["9009H"] = -0.3,
-					["9010H"] = -0.3,
+					["9004Y"] = -0.4,
 					["H"] = 255.3999099820866,
 					["9003L"] = 1,
 					["9003X"] = -0.0001,
@@ -38525,19 +38650,19 @@ NxData = {
 					["9008W"] = -0.19,
 					["_W"] = -0.19,
 					["9004H"] = -0.3,
-					["9008X"] = -0.0001,
+					["9009X"] = -0.0001,
 					["9010Y"] = -0.4,
 					["9004L"] = 1,
 					["W"] = 390.5601443266847,
-					["9009X"] = -0.0001,
+					["9008X"] = -0.0001,
 					["Y"] = 195.8998460188531,
 					["X"] = 42.10240301337237,
 					["9011W"] = -0.19,
-					["9004Y"] = -0.4,
+					["9010H"] = -0.3,
 					["9004X"] = -0.0001,
 					["9001X"] = -0.0001,
 					["_Y"] = -0.4,
-					["9010X"] = -0.0001,
+					["9008L"] = 1,
 				},
 				["NxPunkHUD"] = {
 					["A"] = "BOTTOMLEFT",
@@ -38552,18 +38677,18 @@ NxData = {
 					["_Y"] = -0.1,
 					["_X"] = -0.6,
 				},
-				["NxTeamHUD"] = {
-					["_W"] = 107,
-					["FI"] = 0.5,
-					["FO"] = 0,
-					["W"] = 107,
-					["Y"] = 359.9999717473988,
-					["H"] = 40,
-					["_H"] = 40,
+				["NxEventsList"] = {
+					["_W"] = -0.25,
+					["FI"] = 1,
+					["FO"] = 0.75,
+					["W"] = 399.9999940395356,
+					["Y"] = 719.9999434947976,
+					["H"] = 119.9999905824663,
+					["_H"] = -0.1,
+					["_X"] = -0.75,
+					["X"] = 1199.999982118607,
+					["_Y"] = -0.6,
 					["Hide"] = true,
-					["X"] = 959.9999856948855,
-					["_Y"] = -0.3,
-					["_X"] = -0.6,
 				},
 				["NxCombat"] = {
 					["_W"] = -0.3,
@@ -38573,23 +38698,23 @@ NxData = {
 					["Y"] = 839.9999340772638,
 					["H"] = 71.99999434947975,
 					["_H"] = -0.06,
-					["Hide"] = true,
+					["_X"] = -0.7,
 					["X"] = 1119.9999833107,
 					["_Y"] = -0.7,
-					["_X"] = -0.7,
-				},
-				["NxEventsList"] = {
-					["_W"] = -0.25,
-					["FI"] = 1,
-					["FO"] = 0.75,
-					["W"] = 399.9999940395356,
-					["Y"] = 719.9999434947976,
-					["H"] = 119.9999905824663,
-					["_H"] = -0.1,
 					["Hide"] = true,
-					["X"] = 1199.999982118607,
-					["_Y"] = -0.6,
-					["_X"] = -0.75,
+				},
+				["NxTeamHUD"] = {
+					["_W"] = 107,
+					["FI"] = 0.5,
+					["FO"] = 0,
+					["W"] = 107,
+					["Y"] = 359.9999717473988,
+					["H"] = 40,
+					["_H"] = 40,
+					["_X"] = -0.6,
+					["X"] = 959.9999856948855,
+					["_Y"] = -0.3,
+					["Hide"] = true,
 				},
 			},
 			["E"] = {
@@ -38600,20 +38725,19 @@ NxData = {
 			},
 			["LXPRest"] = 435000,
 			["WareBags"] = {
-				["Noth's Special Brew"] = "20^|cffffffff|Hitem:39327:0:0:0:0:0:0:1630041088:60:0|h[Noth's Special Brew]|h|r",
 				["Hearthstone"] = "1^|cffffffff|Hitem:6948:0:0:0:0:0:0:809191872:60:0|h[Hearthstone]|h|r",
+				["Noth's Special Brew"] = "20^|cffffffff|Hitem:39327:0:0:0:0:0:0:1630041088:60:0|h[Noth's Special Brew]|h|r",
 			},
 			["Version"] = 0.02,
 			["DurPercent"] = 95.86206896551724,
-			["QHAskedGet"] = true,
-			["L"] = {
-				["Quest"] = {
-				},
-				["Version"] = 0.1,
-				["Events"] = {
-				},
+			["WareInv"] = {
+				"Bag0Slot^|cffffffff|Hitem:38145:0:0:0:0:0:0:0:60:0|h[Deathweave Bag]|h|r", -- [1]
+				"Bag1Slot^|cffffffff|Hitem:38145:0:0:0:0:0:0:0:60:0|h[Deathweave Bag]|h|r", -- [2]
+				"Bag2Slot^|cffffffff|Hitem:38145:0:0:0:0:0:0:0:60:0|h[Deathweave Bag]|h|r", -- [3]
+				"Bag3Slot^|cffffffff|Hitem:38145:0:0:0:0:0:0:0:60:0|h[Deathweave Bag]|h|r", -- [4]
 			},
-			["XPRest"] = 435000,
+			["Class"] = "Death Knight",
+			["LvlTime"] = 1329618902,
 			["Pos"] = "9000^2480.113501^875.469048",
 		},
 	},
@@ -38621,16 +38745,6 @@ NxData = {
 		["Version"] = 0.2,
 		["Khaz Modan"] = {
 			["PkAct"] = {
-				["Noriste"] = {
-					["Y"] = 41.20483994483948,
-					["X"] = 51.22500658035278,
-					["Time"] = 4601.583000000001,
-					["DrawDir"] = 11.82716235294117,
-					["FinderName"] = "me",
-					["CircleTime"] = 4603.033,
-					["MId"] = 6009,
-					["Lvl"] = 0,
-				},
 				["Libmomag"] = {
 					["DrawDir"] = 3.695988235294117,
 					["Class"] = "Mage",
@@ -38638,9 +38752,9 @@ NxData = {
 					["X"] = 53.16616296768189,
 					["Time"] = 2864325.742,
 					["Lvl"] = 90,
-					["MId"] = 6010,
-					["CircleTime"] = 2864325.742,
 					["FinderName"] = "me",
+					["CircleTime"] = 2864325.742,
+					["MId"] = 6010,
 				},
 			},
 			["Pal"] = {
@@ -38653,1122 +38767,13 @@ NxData = {
 		},
 	},
 	["NXVer1"] = 4.031,
-	["NXInfo"] = {
-		["Version"] = 0.24,
-	},
-	["NXVerT"] = 1363599069,
-	["NXVendorV"] = {
-		["The Golden Lotus Quartermaster~Jaluu the Generous"] = {
-			"87781^|cffffff00400g", -- [1]
-			"87782^|cffffff002000g", -- [2]
-			"87783^|cffffff001200g", -- [3]
-			"89797^|cffffff008g", -- [4]
-			"93215^|cffffff0040g", -- [5]
-			"89653^1750 Justice Points", -- [6]
-			"89527^1250 Justice Points", -- [7]
-			"89232^1750 Justice Points", -- [8]
-			"89070^625 Valor Points", -- [9]
-			"89341^875 Valor Points", -- [10]
-			"89431^1125 Valor Points", -- [11]
-			"86235^|cffffff0020g", -- [12]
-			"86276^|cffffff0020g", -- [13]
-			"86295^|cffffff0020g", -- [14]
-			"86273^|cffffff0040g", -- [15]
-			"86237^|cffffff0040g", -- [16]
-			"86277^|cffffff0040g", -- [17]
-			"86278^|cffffff0040g", -- [18]
-			"86308^|cffffff0040g", -- [19]
-			"86309^|cffffff0040g", -- [20]
-			"86275^|cffffff0040g", -- [21]
-			"86274^|cffffff0040g", -- [22]
-			["T"] = 1363600510,
-			["POS"] = "6009^74.208760261536^42.794716358185",
-			["R"] = 1,
+	["NXWare"] = {
+		["Version"] = 0.15,
+		["Khaz Modan"] = {
+			["I was framed"] = {
+				["Money"] = 497324273,
+			},
 		},
-		["Innkeeper~Puli the Even Handed"] = {
-			"81406^|cffffff002g |cffbfbfbf16s", -- [1]
-			"81414^|cffffff002g |cffbfbfbf34s", -- [2]
-			"74636^|cffffff002g |cffbfbfbf34s", -- [3]
-			"81400^|cffffff002g |cffbfbfbf16s", -- [4]
-			"81401^|cffffff002g |cffbfbfbf16s", -- [5]
-			"81402^|cffffff002g |cffbfbfbf16s", -- [6]
-			"81403^|cffffff002g |cffbfbfbf16s", -- [7]
-			"81404^|cffffff002g |cffbfbfbf16s", -- [8]
-			"81405^|cffffff002g |cffbfbfbf16s", -- [9]
-			"81408^|cffffff002g |cffbfbfbf34s", -- [10]
-			"81409^|cffffff002g |cffbfbfbf34s", -- [11]
-			"81410^|cffffff002g |cffbfbfbf34s", -- [12]
-			"81411^|cffffff002g |cffbfbfbf34s", -- [13]
-			"81412^|cffffff002g |cffbfbfbf34s", -- [14]
-			"81413^|cffffff002g |cffbfbfbf34s", -- [15]
-			"82451^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [16]
-			["T"] = 1360380968,
-			["POS"] = "6003^284.52173256415^1767.7873869244",
-		},
-		["Leatherworking & Skinning Supplies~Tanner Pang"] = {
-			"86240^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [1]
-			"86241^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [2]
-			"86242^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [3]
-			"86243^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [4]
-			"86244^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [5]
-			"86245^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [6]
-			"86246^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [7]
-			"86247^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [8]
-			"86248^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [9]
-			"86249^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [10]
-			"86250^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [11]
-			"86251^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [12]
-			"86252^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [13]
-			"86253^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [14]
-			"86254^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [15]
-			"86255^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [16]
-			"86256^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [17]
-			"86257^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [18]
-			"86258^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [19]
-			"86259^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [20]
-			"86260^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [21]
-			"86261^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [22]
-			"86262^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [23]
-			"86263^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [24]
-			"86264^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [25]
-			"86265^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [26]
-			"86266^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [27]
-			"86267^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [28]
-			"86268^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [29]
-			"86269^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [30]
-			"86270^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [31]
-			"86271^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [32]
-			"7005^|cff7f7f0074c", -- [33]
-			"4289^|cff7f7f0045c", -- [34]
-			"2320^|cff7f7f009c", -- [35]
-			"2321^|cff7f7f0090c", -- [36]
-			"4291^|cffbfbfbf4s |cff7f7f0050c", -- [37]
-			"8343^|cffbfbfbf18s", -- [38]
-			"14341^|cffbfbfbf45s", -- [39]
-			"38426^|cffffff002g |cffbfbfbf70s", -- [40]
-			"2325^|cffbfbfbf9s", -- [41]
-			"6260^|cff7f7f0045c", -- [42]
-			"2604^|cff7f7f0045c", -- [43]
-			"2605^|cff7f7f0090c", -- [44]
-			"4340^|cffbfbfbf3s |cff7f7f0015c", -- [45]
-			"4341^|cffbfbfbf4s |cff7f7f0050c", -- [46]
-			"6261^|cffbfbfbf9s", -- [47]
-			"4342^|cffbfbfbf22s |cff7f7f0050c", -- [48]
-			"10290^|cffbfbfbf22s |cff7f7f0050c", -- [49]
-			["T"] = 1362653843,
-			["POS"] = "6013^75.518602132797^47.439563274384",
-		},
-		["~Supplier Qiao"] = {
-			"159^|cff7f7f0022c", -- [1]
-			"58274^|cffbfbfbf93s |cff7f7f0050c", -- [2]
-			"81400^|cffffff002g |cffbfbfbf4s", -- [3]
-			"60335^|cffffff0010g |cffbfbfbf20s", -- [4]
-			"4470^|cff7f7f0033c", -- [5]
-			["POS"] = "6008^54.19893860817^77.653682231903",
-			["T"] = 1361531197,
-			["R"] = 1,
-		},
-		["Chief Architect of Gnomish Engineering~Tinkmaster Overspark"] = {
-			"23799^|cffffff006g", -- [1]
-			"23807^|cffffff004g |cffbfbfbf50s", -- [2]
-			"23803^|cffffff004g |cffbfbfbf50s", -- [3]
-			"23816^|cffffff003g", -- [4]
-			"23805^|cffffff006g", -- [5]
-			["POS"] = "6002^16.527557373047^79.153871536255",
-			["T"] = 1361875898,
-			["R"] = 1,
-		},
-		["~Keeper Jaril"] = {
-			"81400^|cffffff002g |cffbfbfbf16s", -- [1]
-			"81401^|cffffff002g |cffbfbfbf16s", -- [2]
-			"81402^|cffffff002g |cffbfbfbf16s", -- [3]
-			"81403^|cffffff002g |cffbfbfbf16s", -- [4]
-			"81404^|cffffff002g |cffbfbfbf16s", -- [5]
-			"81405^|cffffff002g |cffbfbfbf16s", -- [6]
-			"81408^|cffffff002g |cffbfbfbf34s", -- [7]
-			"81409^|cffffff002g |cffbfbfbf34s", -- [8]
-			"81410^|cffffff002g |cffbfbfbf34s", -- [9]
-			"81411^|cffffff002g |cffbfbfbf34s", -- [10]
-			"81412^|cffffff002g |cffbfbfbf34s", -- [11]
-			"81413^|cffffff002g |cffbfbfbf34s", -- [12]
-			"82451^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [13]
-			"81406^|cffffff002g |cffbfbfbf16s", -- [14]
-			"81414^|cffffff002g |cffbfbfbf34s", -- [15]
-			"74636^|cffffff002g |cffbfbfbf34s", -- [16]
-			["T"] = 1361791016,
-			["POS"] = "6002^88.805615901947^35.31602025032",
-		},
-		["Spirit of Harmony Vendor~Krystel"] = {
-			"Ironpaw Token^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [1]
-			"87399^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [2]
-			"79255^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [3]
-			"72988^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [4]
-			"89610^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [5]
-			"72238^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [6]
-			"74249^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [7]
-			"74250^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [8]
-			"74247^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [9]
-			"72092^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [10]
-			"72093^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [11]
-			"72094^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [12]
-			"72103^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [13]
-			"72120^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [14]
-			"79101^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [15]
-			"76734^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [16]
-			["POS"] = "6013^287.49741259413^520.62374442682",
-			["T"] = 1360467857,
-		},
-		["Justice Quartermaster~Magatha Silverton"] = {
-			"71209^1250 Justice Points", -- [1]
-			"71129^1250 Justice Points", -- [2]
-			"71130^1250 Justice Points", -- [3]
-			"71045^2200 Justice Points", -- [4]
-			"71046^1650 Justice Points", -- [5]
-			"71047^|cffa335ee|Hitem:71668:0:0:0:0:0:0:0:87:0:0|h[Helm of the Fiery Vanquisher]|h|r", -- [6]
-			"71048^2200 Justice Points", -- [7]
-			"71049^", -- [8]
-			"71537^|cffa335ee|Hitem:71045:0:0:0:0:0:0:0:87:0:0|h[Dark Phoenix Tunic]|h|r", -- [9]
-			"71538^|cffa335ee|Hitem:71046:0:0:0:0:0:0:0:87:0:0|h[Dark Phoenix Gloves]|h|r", -- [10]
-			"71539^", -- [11]
-			"71540^|cffa335ee|Hitem:71048:0:0:0:0:0:0:0:87:0:0|h[Dark Phoenix Legguards]|h|r", -- [12]
-			"71541^", -- [13]
-			["POS"] = "2020^79.162740707397^69.450306892395",
-			["T"] = 1360666913,
-		},
-		["Brewmaster~Peiji Goldendraft"] = {
-			"81407^|cffffff002g |cffbfbfbf1s |cff7f7f0060c", -- [1]
-			"81415^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [2]
-			"81406^|cffffff002g |cffbfbfbf16s", -- [3]
-			"81414^|cffffff002g |cffbfbfbf34s", -- [4]
-			"74636^|cffffff002g |cffbfbfbf34s", -- [5]
-			"81400^|cffffff002g |cffbfbfbf16s", -- [6]
-			"81401^|cffffff002g |cffbfbfbf16s", -- [7]
-			"81402^|cffffff002g |cffbfbfbf16s", -- [8]
-			"81403^|cffffff002g |cffbfbfbf16s", -- [9]
-			"81404^|cffffff002g |cffbfbfbf16s", -- [10]
-			"81405^|cffffff002g |cffbfbfbf16s", -- [11]
-			"81408^|cffffff002g |cffbfbfbf34s", -- [12]
-			"81409^|cffffff002g |cffbfbfbf34s", -- [13]
-			"81410^|cffffff002g |cffbfbfbf34s", -- [14]
-			"81411^|cffffff002g |cffbfbfbf34s", -- [15]
-			"81412^|cffffff002g |cffbfbfbf34s", -- [16]
-			"81413^|cffffff002g |cffbfbfbf34s", -- [17]
-			"82451^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [18]
-			["POS"] = "6006^692.55133702542^1812.7397563104",
-			["T"] = 1359866588,
-		},
-		["Heirloom Prizes~Daenrand Dawncrest"] = {
-			"42943^160 Darkmoon Prize Ticket", -- [1]
-			"42944^110 Darkmoon Prize Ticket", -- [2]
-			"42945^110 Darkmoon Prize Ticket", -- [3]
-			"42946^160 Darkmoon Prize Ticket", -- [4]
-			"42947^160 Darkmoon Prize Ticket", -- [5]
-			"42948^110 Darkmoon Prize Ticket", -- [6]
-			"42949^110 Darkmoon Prize Ticket", -- [7]
-			"42950^110 Darkmoon Prize Ticket", -- [8]
-			"42951^110 Darkmoon Prize Ticket", -- [9]
-			"42952^110 Darkmoon Prize Ticket", -- [10]
-			"42984^110 Darkmoon Prize Ticket", -- [11]
-			"42985^110 Darkmoon Prize Ticket", -- [12]
-			"42991^130 Darkmoon Prize Ticket", -- [13]
-			"42992^130 Darkmoon Prize Ticket", -- [14]
-			"48677^110 Darkmoon Prize Ticket", -- [15]
-			"48683^110 Darkmoon Prize Ticket", -- [16]
-			"48685^110 Darkmoon Prize Ticket", -- [17]
-			"48687^110 Darkmoon Prize Ticket", -- [18]
-			"48689^110 Darkmoon Prize Ticket", -- [19]
-			"48691^110 Darkmoon Prize Ticket", -- [20]
-			"48716^110 Darkmoon Prize Ticket", -- [21]
-			"48718^160 Darkmoon Prize Ticket", -- [22]
-			"69889^110 Darkmoon Prize Ticket", -- [23]
-			"69890^110 Darkmoon Prize Ticket", -- [24]
-			"69893^110 Darkmoon Prize Ticket", -- [25]
-			"79131^160 Darkmoon Prize Ticket", -- [26]
-			"93843^|cffe6cc80|Hitem:42943:0:0:0:0:0:0:0:90:0:0|h[Bloodied Arcanite Reaper]|h|r160 Darkmoon Prize Ticket", -- [27]
-			"93844^|cffe6cc80|Hitem:79131:0:0:0:0:0:0:0:90:0:0|h[Burnished Warden Staff]|h|r160 Darkmoon Prize Ticket", -- [28]
-			"93845^|cffe6cc80|Hitem:69893:0:0:0:0:0:0:0:90:0:0|h[Bloodsoaked Skullforge Reaver]|h|r110 Darkmoon Prize Ticket", -- [29]
-			"93846^|cffe6cc80|Hitem:48718:0:0:0:0:0:0:0:90:0:0|h[Repurposed Lava Dredger]|h|r160 Darkmoon Prize Ticket", -- [30]
-			"93847^|cffe6cc80|Hitem:48716:0:0:0:0:0:0:0:90:0:0|h[Venerable Mass of McGowan]|h|r110 Darkmoon Prize Ticket", -- [31]
-			"93853^|cffe6cc80|Hitem:42948:0:0:0:0:0:0:0:90:0:0|h[Devout Aurastone Hammer]|h|r110 Darkmoon Prize Ticket", -- [32]
-			"93854^|cffe6cc80|Hitem:42947:0:0:0:0:0:0:0:90:0:0|h[Dignified Headmaster's Charge]|h|r160 Darkmoon Prize Ticket", -- [33]
-			"93855^|cffe6cc80|Hitem:42946:0:0:0:0:0:0:0:90:0:0|h[Charmed Ancient Bone Bow]|h|r160 Darkmoon Prize Ticket", -- [34]
-			"93856^|cffe6cc80|Hitem:42945:0:0:0:0:0:0:0:90:0:0|h[Venerable Dal'Rend's Sacred Charge]|h|r110 Darkmoon Prize Ticket", -- [35]
-			"93857^|cffe6cc80|Hitem:42944:0:0:0:0:0:0:0:90:0:0|h[Balanced Heartseeker]|h|r110 Darkmoon Prize Ticket", -- [36]
-			"93859^|cffe6cc80|Hitem:42985:0:0:0:0:0:0:0:90:0:0|h[Tattered Dreadmist Mantle]|h|r110 Darkmoon Prize Ticket", -- [37]
-			"93860^|cffe6cc80|Hitem:48691:0:0:0:0:0:0:0:90:0:0|h[Tattered Dreadmist Robe]|h|r110 Darkmoon Prize Ticket", -- [38]
-			"93862^|cffe6cc80|Hitem:42952:0:0:0:0:0:0:0:90:0:0|h[Stained Shadowcraft Spaulders]|h|r110 Darkmoon Prize Ticket", -- [39]
-			"93863^|cffe6cc80|Hitem:48689:0:0:0:0:0:0:0:90:0:0|h[Stained Shadowcraft Tunic]|h|r110 Darkmoon Prize Ticket", -- [40]
-			"93864^|cffe6cc80|Hitem:42984:0:0:0:0:0:0:0:90:0:0|h[Preened Ironfeather Shoulders]|h|r110 Darkmoon Prize Ticket", -- [41]
-			"93865^|cffe6cc80|Hitem:42984:0:0:0:0:0:0:0:90:0:0|h[Preened Ironfeather Shoulders]|h|r110 Darkmoon Prize Ticket", -- [42]
-			"93876^|cffe6cc80|Hitem:42951:0:0:0:0:0:0:0:90:0:0|h[Mystical Pauldrons of Elements]|h|r110 Darkmoon Prize Ticket", -- [43]
-			"93885^|cffe6cc80|Hitem:48683:0:0:0:0:0:0:0:90:0:0|h[Mystical Vest of Elements]|h|r110 Darkmoon Prize Ticket", -- [44]
-			"93887^|cffe6cc80|Hitem:42950:0:0:0:0:0:0:0:90:0:0|h[Champion Herod's Shoulder]|h|r110 Darkmoon Prize Ticket", -- [45]
-			"93888^|cffe6cc80|Hitem:48677:0:0:0:0:0:0:0:90:0:0|h[Champion's Deathdealer Breastplate]|h|r110 Darkmoon Prize Ticket", -- [46]
-			"93890^|cffe6cc80|Hitem:42949:0:0:0:0:0:0:0:90:0:0|h[Polished Spaulders of Valor]|h|r110 Darkmoon Prize Ticket", -- [47]
-			"93891^|cffe6cc80|Hitem:48685:0:0:0:0:0:0:0:90:0:0|h[Polished Breastplate of Valor]|h|r110 Darkmoon Prize Ticket", -- [48]
-			"93892^|cffe6cc80|Hitem:69889:0:0:0:0:0:0:0:90:0:0|h[Burnished Breastplate of Might]|h|r110 Darkmoon Prize Ticket", -- [49]
-			"93893^|cffe6cc80|Hitem:69890:0:0:0:0:0:0:0:90:0:0|h[Burnished Pauldrons of Might]|h|r110 Darkmoon Prize Ticket", -- [50]
-			"93896^|cffe6cc80|Hitem:42991:0:0:0:0:0:0:0:90:0:0|h[Swift Hand of Justice]|h|r130 Darkmoon Prize Ticket", -- [51]
-			"93897^|cffe6cc80|Hitem:42992:0:0:0:0:0:0:0:90:0:0|h[Discerning Eye of the Beast]|h|r130 Darkmoon Prize Ticket", -- [52]
-			["POS"] = "5005^47.785705327988^66.675502061844",
-			["T"] = 1362886132,
-		},
-		["Adventuring Supplies~Trader Jambeezi"] = {
-			"81584^|cffffff0052g |cffbfbfbf48s |cff7f7f0026c", -- [1]
-			"81593^|cffffff0050g |cffbfbfbf36s |cff7f7f007c", -- [2]
-			"81602^|cffffff0071g |cffbfbfbf44s |cff7f7f002c", -- [3]
-			"81611^|cffffff0066g |cffbfbfbf75s |cff7f7f008c", -- [4]
-			"81620^|cffffff0053g |cffbfbfbf9s |cff7f7f004c", -- [5]
-			"81629^|cffffff0036g |cffbfbfbf82s |cff7f7f0053c", -- [6]
-			"81638^|cffffff0035g |cffbfbfbf39s |cff7f7f0098c", -- [7]
-			"81647^|cffffff0036g |cffbfbfbf56s |cff7f7f0013c", -- [8]
-			"81653^|cffffff0030g |cffbfbfbf46s |cff7f7f0056c", -- [9]
-			"81658^|cffffff0029g |cffbfbfbf6s |cff7f7f0035c", -- [10]
-			"81663^|cffffff0043g |cffbfbfbf78s |cff7f7f0089c", -- [11]
-			"81668^|cffffff0050g |cffbfbfbf75s |cff7f7f0089c", -- [12]
-			"81679^|cffffff00100g |cffbfbfbf90s |cff7f7f0077c", -- [13]
-			"81680^|cffffff00101g |cffbfbfbf27s |cff7f7f0076c", -- [14]
-			"81685^|cffffff0095g |cffbfbfbf74s |cff7f7f0083c", -- [15]
-			"81686^|cffffff0096g |cffbfbfbf11s |cff7f7f0082c", -- [16]
-			["T"] = 1360318427,
-			["POS"] = "6010^55.86576461792^49.724364280701",
-			["R"] = 1,
-		},
-		["Guide to the Ways~Sungshin Ironpaw"] = {
-			"74854^|cffbfbfbf63s", -- [1]
-			"85583^|cffffff001g |cffbfbfbf8s", -- [2]
-			"74660^|cffffff001g |cffbfbfbf35s", -- [3]
-			"85584^|cffffff001g |cffbfbfbf53s", -- [4]
-			"74852^|cffffff001g |cffbfbfbf44s", -- [5]
-			"74851^|cffffff001g |cffbfbfbf26s", -- [6]
-			"85585^|cffffff002g |cffbfbfbf43s", -- [7]
-			"74659^|cffffff002g |cffbfbfbf70s", -- [8]
-			"74832^|cffffff001g |cffbfbfbf8s", -- [9]
-			"74845^|cffffff003g |cffbfbfbf15s", -- [10]
-			["T"] = 1360234221,
-			["POS"] = "6010^53.558337688446^51.116454601288",
-		},
-		["Adventuring Supplies~Singegruff"] = {
-			"81584^|cffffff0052g |cffbfbfbf48s |cff7f7f0026c", -- [1]
-			"81593^|cffffff0050g |cffbfbfbf36s |cff7f7f007c", -- [2]
-			"81602^|cffffff0071g |cffbfbfbf44s |cff7f7f002c", -- [3]
-			"81611^|cffffff0066g |cffbfbfbf75s |cff7f7f008c", -- [4]
-			"81620^|cffffff0053g |cffbfbfbf9s |cff7f7f004c", -- [5]
-			"81629^|cffffff0036g |cffbfbfbf82s |cff7f7f0053c", -- [6]
-			"81638^|cffffff0035g |cffbfbfbf39s |cff7f7f0098c", -- [7]
-			"81647^|cffffff0036g |cffbfbfbf56s |cff7f7f0013c", -- [8]
-			"81653^|cffffff0030g |cffbfbfbf46s |cff7f7f0056c", -- [9]
-			"81658^|cffffff0029g |cffbfbfbf6s |cff7f7f0035c", -- [10]
-			"81663^|cffffff0043g |cffbfbfbf78s |cff7f7f0089c", -- [11]
-			"81668^|cffffff0050g |cffbfbfbf75s |cff7f7f0089c", -- [12]
-			"81679^|cffffff00100g |cffbfbfbf90s |cff7f7f0077c", -- [13]
-			"81680^|cffffff00101g |cffbfbfbf27s |cff7f7f0076c", -- [14]
-			"81685^|cffffff0095g |cffbfbfbf74s |cff7f7f0083c", -- [15]
-			"81686^|cffffff0096g |cffbfbfbf11s |cff7f7f0082c", -- [16]
-			["T"] = 1359866650,
-			["POS"] = "6006^46.667170524597^45.633804798126",
-			["R"] = 1,
-		},
-		["Shado-Pan Quartermaster~Rushi the Fox"] = {
-			"89303^|cffffff0042g |cffbfbfbf50s", -- [1]
-			"89302^|cffffff0021g |cffbfbfbf25s", -- [2]
-			"89301^|cffffff008g |cffbfbfbf50s", -- [3]
-			"93220^|cffffff0042g |cffbfbfbf50s", -- [4]
-			"89522^1250 Justice Points", -- [5]
-			"89661^2250 Justice Points", -- [6]
-			"88995^1750 Justice Points", -- [7]
-			"89076^1250 Valor Points", -- [8]
-			"89082^1750 Valor Points", -- [9]
-			"89300^2250 Valor Points", -- [10]
-			"89307^|cffffff00425g", -- [11]
-			"89305^|cffffff001275g", -- [12]
-			"89306^|cffffff002125g", -- [13]
-			"90844^|cffffff0015g |cffbfbfbf7s |cff7f7f0073c", -- [14]
-			"89800^|cffffff008g |cffbfbfbf50s", -- [15]
-			["T"] = 1361678268,
-			["POS"] = "6008^48.921585083008^70.525050163269",
-			["R"] = 1,
-		},
-		["Souvenir & Toy Prizes~Gelvas Grimegate"] = {
-			"93730^10 Darkmoon Prize Ticket", -- [1]
-			"90899^90 Darkmoon Prize Ticket", -- [2]
-			"73762^90 Darkmoon Prize Ticket", -- [3]
-			"77256^20 Darkmoon Prize Ticket", -- [4]
-			"78340^90 Darkmoon Prize Ticket", -- [5]
-			"19295^Darkmoon Prize Ticket", -- [6]
-			"19291^Darkmoon Prize Ticket", -- [7]
-			"78341^160 Darkmoon Prize Ticket", -- [8]
-			"92966^Darkmoon Prize Ticket", -- [9]
-			"92967^Darkmoon Prize Ticket", -- [10]
-			"92968^Darkmoon Prize Ticket", -- [11]
-			"92969^Darkmoon Prize Ticket", -- [12]
-			"92970^Darkmoon Prize Ticket", -- [13]
-			"92959^Darkmoon Prize Ticket", -- [14]
-			"92958^Darkmoon Prize Ticket", -- [15]
-			"92956^Darkmoon Prize Ticket", -- [16]
-			"77158^Darkmoon Prize Ticket", -- [17]
-			["POS"] = "5005^48.032402992249^64.652198553085",
-			["T"] = 1362886211,
-		},
-		["~Lunar Festival Vendor"] = {
-			"21721^|cff7f7f0014c", -- [1]
-			"21747^|cffbfbfbf2s |cff7f7f0070c", -- [2]
-			"21558^|cff7f7f0023c", -- [3]
-			"21559^|cff7f7f0023c", -- [4]
-			"21557^|cff7f7f0023c", -- [5]
-			"21571^|cff7f7f0090c", -- [6]
-			"21574^|cff7f7f0090c", -- [7]
-			"21576^|cff7f7f0090c", -- [8]
-			["POS"] = "6013^290.97937698598^565.55799087076",
-			["T"] = 1360467759,
-		},
-		["Blacksmithing Supplies~Kaita Deepforge"] = {
-			"2901^|cff7f7f0057c", -- [1]
-			"5956^|cff7f7f0013c", -- [2]
-			"2880^|cff7f7f0070c", -- [3]
-			"3466^|cffbfbfbf14s", -- [4]
-			"18567^|cffffff002g |cffbfbfbf10s", -- [5]
-			"3857^|cffbfbfbf3s |cff7f7f0050c", -- [6]
-			"66117^20 |cffffffff|Hitem:52186:0:0:0:0:0:0:0:90:0:0|h[Elementium Bar]|h|r", -- [7]
-			"66118^20 |cffffffff|Hitem:52186:0:0:0:0:0:0:0:90:0:0|h[Elementium Bar]|h|r", -- [8]
-			"66125^20 |cffffffff|Hitem:52186:0:0:0:0:0:0:0:90:0:0|h[Elementium Bar]|h|r", -- [9]
-			"66126^20 |cffffffff|Hitem:52186:0:0:0:0:0:0:0:90:0:0|h[Elementium Bar]|h|r", -- [10]
-			"66103^20 |cffffffff|Hitem:52186:0:0:0:0:0:0:0:90:0:0|h[Elementium Bar]|h|r", -- [11]
-			"66119^20 |cffffffff|Hitem:52186:0:0:0:0:0:0:0:90:0:0|h[Elementium Bar]|h|r", -- [12]
-			"66107^20 |cffffffff|Hitem:52186:0:0:0:0:0:0:0:90:0:0|h[Elementium Bar]|h|r", -- [13]
-			"66105^20 |cffffffff|Hitem:52186:0:0:0:0:0:0:0:90:0:0|h[Elementium Bar]|h|r", -- [14]
-			"66109^20 |cffffffff|Hitem:52186:0:0:0:0:0:0:0:90:0:0|h[Elementium Bar]|h|r", -- [15]
-			"66127^20 |cffffffff|Hitem:52186:0:0:0:0:0:0:0:90:0:0|h[Elementium Bar]|h|r", -- [16]
-			"66120^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [17]
-			"67603^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [18]
-			"67606^5 |cff1eff00|Hitem:51950:0:0:0:0:0:0:0:90:0:0|h[Pyrium Bar]|h|r", -- [19]
-			"66113^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [20]
-			"66106^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [21]
-			"66111^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [22]
-			"66104^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [23]
-			"66108^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [24]
-			"66128^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [25]
-			"66121^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [26]
-			"66115^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [27]
-			"66112^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [28]
-			"66114^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [29]
-			"66110^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [30]
-			"66116^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [31]
-			"66129^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [32]
-			"66124^5 |cff1eff00|Hitem:51950:0:0:0:0:0:0:0:90:0:0|h[Pyrium Bar]|h|r", -- [33]
-			"66123^5 |cff1eff00|Hitem:51950:0:0:0:0:0:0:0:90:0:0|h[Pyrium Bar]|h|r", -- [34]
-			"66122^5 |cff1eff00|Hitem:51950:0:0:0:0:0:0:0:90:0:0|h[Pyrium Bar]|h|r", -- [35]
-			"66100^5 |cff1eff00|Hitem:51950:0:0:0:0:0:0:0:90:0:0|h[Pyrium Bar]|h|r", -- [36]
-			"66132^5 |cff1eff00|Hitem:51950:0:0:0:0:0:0:0:90:0:0|h[Pyrium Bar]|h|r", -- [37]
-			"66131^5 |cff1eff00|Hitem:51950:0:0:0:0:0:0:0:90:0:0|h[Pyrium Bar]|h|r", -- [38]
-			"66130^5 |cff1eff00|Hitem:51950:0:0:0:0:0:0:0:90:0:0|h[Pyrium Bar]|h|r", -- [39]
-			"66101^5 |cff1eff00|Hitem:51950:0:0:0:0:0:0:0:90:0:0|h[Pyrium Bar]|h|r", -- [40]
-			["POS"] = "2020^63.422650098801^37.651765346527",
-			["T"] = 1363082594,
-			["R"] = 1,
-		},
-		["~Magister Xintar"] = {
-			"64670^|cffbfbfbf30s", -- [1]
-			"63388^|cffbfbfbf33s |cff7f7f0075c", -- [2]
-			"79249^|cffbfbfbf37s |cff7f7f0050c", -- [3]
-			["POS"] = "6013^289.17162326522^584.58126171551",
-			["T"] = 1360467905,
-		},
-		["Engineering Supplies~Billibub Cogspinner"] = {
-			"59496^|cffffffff|Hitem:60222:0:0:0:0:0:0:0:90:0:0|h[Authentic Jr. Engineer Goggles]|h|r", -- [1]
-			"59493^|cff0070dd|Hitem:60217:0:0:0:0:0:0:0:90:0:0|h[Elementium Toolbox]|h|r", -- [2]
-			"59491^|cffffffff|Hitem:60853:0:0:0:0:0:0:0:90:0:0|h[Volatile Seaforium Blastpack]|h|r", -- [3]
-			"59480^|cffffffff|Hitem:60858:0:0:0:0:0:0:0:90:0:0|h[Goblin Barbecue]|h|r", -- [4]
-			"59479^4 |cffffffff|Hitem:60224:0:0:0:0:0:0:0:90:0:0|h[Handful of Obsidium Bolts]|h|r", -- [5]
-			"59478^4 |cffffffff|Hitem:60224:0:0:0:0:0:0:0:90:0:0|h[Handful of Obsidium Bolts]|h|r", -- [6]
-			"59477^3 |cffffffff|Hitem:67749:0:0:0:0:0:0:0:90:0:0|h[Electrified Ether]|h|r", -- [7]
-			"59489^|cff0070dd|Hitem:60218:0:0:0:0:0:0:0:90:0:0|h[Lure Master Tackle Box]|h|r", -- [8]
-			"68660^55 Honor Points", -- [9]
-			"5956^|cff7f7f0014c", -- [10]
-			"2901^|cff7f7f0061c", -- [11]
-			"90146^|cffffff001g |cffbfbfbf50s", -- [12]
-			"4399^|cffbfbfbf1s |cff7f7f0050c", -- [13]
-			"4400^|cffbfbfbf15s", -- [14]
-			"40533^|cffffff003g |cffbfbfbf75s", -- [15]
-			"39684^|cffbfbfbf67s |cff7f7f0050c", -- [16]
-			"2880^|cff7f7f0075c", -- [17]
-			"3466^|cffbfbfbf15s", -- [18]
-			"10647^|cffbfbfbf15s", -- [19]
-			"4357^|cff7f7f0012c", -- [20]
-			"4364^|cff7f7f0036c", -- [21]
-			"39354^|cff7f7f0012c", -- [22]
-			["T"] = 1362283643,
-			["POS"] = "2020^63.174730539322^32.08190202713",
-		},
-		["Master of Noodles~Chin"] = {
-			"81400^|cffffff002g |cffbfbfbf16s", -- [1]
-			"81401^|cffffff002g |cffbfbfbf16s", -- [2]
-			"81402^|cffffff002g |cffbfbfbf16s", -- [3]
-			"81403^|cffffff002g |cffbfbfbf16s", -- [4]
-			"81404^|cffffff002g |cffbfbfbf16s", -- [5]
-			"81405^|cffffff002g |cffbfbfbf16s", -- [6]
-			"81408^|cffffff002g |cffbfbfbf34s", -- [7]
-			"81409^|cffffff002g |cffbfbfbf34s", -- [8]
-			"81410^|cffffff002g |cffbfbfbf34s", -- [9]
-			"81411^|cffffff002g |cffbfbfbf34s", -- [10]
-			"81412^|cffffff002g |cffbfbfbf34s", -- [11]
-			"81413^|cffffff002g |cffbfbfbf34s", -- [12]
-			"82451^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [13]
-			["POS"] = "6006^46.344190835953^45.461970567703",
-			["T"] = 1359866450,
-		},
-		["Innkeeper~Stained Mug"] = {
-			"81406^|cffffff002g |cffbfbfbf16s", -- [1]
-			"81414^|cffffff002g |cffbfbfbf34s", -- [2]
-			"74636^|cffffff002g |cffbfbfbf34s", -- [3]
-			["POS"] = "6003^-68.268606016588^1742.5940507661",
-			["T"] = 1360986984,
-		},
-		["Adventurous Tinker~Gnimo"] = {
-			"14341^|cffbfbfbf45s", -- [1]
-			"38426^|cffffff002g |cffbfbfbf70s", -- [2]
-			"3371^|cff7f7f0090c", -- [3]
-			"6532^|cffbfbfbf2s |cff7f7f0025c", -- [4]
-			"39354^|cff7f7f0014c", -- [5]
-			"20815^|cffbfbfbf7s |cff7f7f0020c", -- [6]
-			"39505^|cffbfbfbf6s |cff7f7f0075c", -- [7]
-			"64670^|cffbfbfbf36s", -- [8]
-			"63388^|cffbfbfbf40s |cff7f7f0050c", -- [9]
-			"79249^|cffbfbfbf45s", -- [10]
-			"4565^|cffbfbfbf1s |cff7f7f0075c", -- [11]
-			["T"] = 1361590543,
-			["POS"] = "16223^71.609723567963^41.215980052948",
-			["R"] = 1,
-		},
-		["Food & Drink~Sway Dish Chef"] = {
-			"81406^|cffffff002g |cffbfbfbf16s", -- [1]
-			"81414^|cffffff002g |cffbfbfbf34s", -- [2]
-			"74636^|cffffff002g |cffbfbfbf34s", -- [3]
-			"81400^|cffffff002g |cffbfbfbf16s", -- [4]
-			"81401^|cffffff002g |cffbfbfbf16s", -- [5]
-			"81402^|cffffff002g |cffbfbfbf16s", -- [6]
-			"81403^|cffffff002g |cffbfbfbf16s", -- [7]
-			"81404^|cffffff002g |cffbfbfbf16s", -- [8]
-			"81405^|cffffff002g |cffbfbfbf16s", -- [9]
-			"81408^|cffffff002g |cffbfbfbf34s", -- [10]
-			"81409^|cffffff002g |cffbfbfbf34s", -- [11]
-			"81410^|cffffff002g |cffbfbfbf34s", -- [12]
-			"81411^|cffffff002g |cffbfbfbf34s", -- [13]
-			"81412^|cffffff002g |cffbfbfbf34s", -- [14]
-			"81413^|cffffff002g |cffbfbfbf34s", -- [15]
-			"82451^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [16]
-			["T"] = 1361076704,
-			["POS"] = "6013^39.230412244797^69.038319587708",
-		},
-		["Phoenix Egg Trader~Kai Featherfall"] = {
-			"89154^|cffa335ee|Hitem:90045:0:0:0:0:0:0:0:90:0:0|h[Ancestral Phoenix Egg]|h|r", -- [1]
-			"90710^|cffa335ee|Hitem:90045:0:0:0:0:0:0:0:90:0:0|h[Ancestral Phoenix Egg]|h|r", -- [2]
-			"90711^|cffa335ee|Hitem:90045:0:0:0:0:0:0:0:90:0:0|h[Ancestral Phoenix Egg]|h|r", -- [3]
-			"90712^|cffa335ee|Hitem:90045:0:0:0:0:0:0:0:90:0:0|h[Ancestral Phoenix Egg]|h|r", -- [4]
-			["T"] = 1361962997,
-			["POS"] = "6009^82.228338718414^33.996552228928",
-		},
-		["Used Yak Salesgrummle~Uncle Bigpocket"] = {
-			"87789^|cffffff002700g", -- [1]
-			"87788^|cffffff002700g", -- [2]
-			"84101^|cffffff00108000g", -- [3]
-			["POS"] = "6003^65.391659736633^61.685132980347",
-			["T"] = 1360463736,
-		},
-		["Innkeeper~Rude Sho"] = {
-			"81406^|cffffff002g |cffbfbfbf16s", -- [1]
-			"81414^|cffffff002g |cffbfbfbf34s", -- [2]
-			"74636^|cffffff002g |cffbfbfbf34s", -- [3]
-			["POS"] = "6002^75.772511959076^7.1938037872314",
-			["T"] = 1360148110,
-		},
-		["General Goods Vendor~Big Sal"] = {
-			"159^|cff7f7f0023c", -- [1]
-			"58274^|cffbfbfbf99s", -- [2]
-			"81400^|cffffff002g |cffbfbfbf16s", -- [3]
-			"60335^|cffffff0010g |cffbfbfbf80s", -- [4]
-			"4470^|cff7f7f0035c", -- [5]
-			["POS"] = "6003^57.712280750275^61.742091178894",
-			["T"] = 1360664922,
-		},
-		["Valor Quartermaster~Faldren Tillsdale"] = {
-			"77091^1250 Justice Points", -- [1]
-			"77111^1250 Justice Points", -- [2]
-			"77113^1650 Justice Points", -- [3]
-			"77095^1250 Justice Points", -- [4]
-			"77148^2200 Justice Points", -- [5]
-			"77126^2200 Justice Points", -- [6]
-			"77180^1650 Justice Points", -- [7]
-			"77173^1650 Justice Points", -- [8]
-			"77322^1250 Justice Points", -- [9]
-			"77161^1650 Justice Points", -- [10]
-			"78759^|cffa335ee|Hitem:78862:0:0:0:0:0:0:0:87:0:0|h[Chest of the Corrupted Vanquisher]|h|r", -- [11]
-			"78774^|cffa335ee|Hitem:78865:0:0:0:0:0:0:0:87:0:0|h[Gauntlets of the Corrupted Vanquisher]|h|r", -- [12]
-			"78794^|cffa335ee|Hitem:78868:0:0:0:0:0:0:0:87:0:0|h[Crown of the Corrupted Vanquisher]|h|r", -- [13]
-			"78803^|cffa335ee|Hitem:78871:0:0:0:0:0:0:0:87:0:0|h[Leggings of the Corrupted Vanquisher]|h|r", -- [14]
-			"78833^|cffa335ee|Hitem:78874:0:0:0:0:0:0:0:87:0:0|h[Shoulders of the Corrupted Vanquisher]|h|r", -- [15]
-			"77023^|cffa335ee|Hitem:78174:0:0:0:0:0:0:0:87:0:0|h[Chest of the Corrupted Vanquisher]|h|r", -- [16]
-			"77024^|cffa335ee|Hitem:78173:0:0:0:0:0:0:0:87:0:0|h[Gauntlets of the Corrupted Vanquisher]|h|r", -- [17]
-			"77025^|cffa335ee|Hitem:78172:0:0:0:0:0:0:0:87:0:0|h[Crown of the Corrupted Vanquisher]|h|r", -- [18]
-			"77026^|cffa335ee|Hitem:78171:0:0:0:0:0:0:0:87:0:0|h[Leggings of the Corrupted Vanquisher]|h|r", -- [19]
-			"77027^|cffa335ee|Hitem:78170:0:0:0:0:0:0:0:87:0:0|h[Shoulders of the Corrupted Vanquisher]|h|r", -- [20]
-			"78664^|cffa335ee|Hitem:78849:0:0:0:0:0:0:0:87:0:0|h[Chest of the Corrupted Vanquisher]|h|r", -- [21]
-			"78679^|cffa335ee|Hitem:78855:0:0:0:0:0:0:0:87:0:0|h[Gauntlets of the Corrupted Vanquisher]|h|r", -- [22]
-			"78699^|cffa335ee|Hitem:78852:0:0:0:0:0:0:0:87:0:0|h[Crown of the Corrupted Vanquisher]|h|r", -- [23]
-			"78708^|cffa335ee|Hitem:78858:0:0:0:0:0:0:0:87:0:0|h[Leggings of the Corrupted Vanquisher]|h|r", -- [24]
-			"78738^|cffa335ee|Hitem:78861:0:0:0:0:0:0:0:87:0:0|h[Shoulders of the Corrupted Vanquisher]|h|r", -- [25]
-			["POS"] = "2020^79.162740707397^69.450306892395",
-			["T"] = 1360666934,
-		},
-		["Brews~Taijing the Cyclone"] = {
-			"81407^|cffffff002g |cffbfbfbf1s |cff7f7f0060c", -- [1]
-			"81415^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [2]
-			"81406^|cffffff002g |cffbfbfbf16s", -- [3]
-			"81414^|cffffff002g |cffbfbfbf34s", -- [4]
-			"74636^|cffffff002g |cffbfbfbf34s", -- [5]
-			["POS"] = "6013^47.679167985916^48.557060956955",
-			["T"] = 1360467937,
-		},
-		["Valor Quartermaster~Commander Oxheart"] = {
-			"89431^2250 Valor Points", -- [1]
-			"89076^1250 Valor Points", -- [2]
-			"88868^1750 Valor Points", -- [3]
-			"89070^1250 Valor Points", -- [4]
-			"88744^1750 Valor Points", -- [5]
-			"89300^2250 Valor Points", -- [6]
-			"89090^2250 Valor Points", -- [7]
-			"89065^1250 Valor Points", -- [8]
-			"89341^1750 Valor Points", -- [9]
-			"89082^1750 Valor Points", -- [10]
-			"89060^1750 Valor Points", -- [11]
-			"88884^1250 Valor Points", -- [12]
-			"86643^|cffa335ee|Hitem:89264:0:0:0:0:0:0:0:90:0:0|h[Chest of the Shadowy Vanquisher]|h|r", -- [13]
-			"85303^", -- [14]
-			"87124^", -- [15]
-			"86642^", -- [16]
-			"85302^", -- [17]
-			"87125^", -- [18]
-			"86641^", -- [19]
-			"85301^", -- [20]
-			"87126^", -- [21]
-			"86640^", -- [22]
-			"85300^", -- [23]
-			"87127^", -- [24]
-			"86639^", -- [25]
-			"85299^", -- [26]
-			"87128^", -- [27]
-			["T"] = 1362285374,
-			["POS"] = "6008^37.908732891083^64.56401348114",
-			["R"] = 1,
-		},
-		["General Goods~Bonni Chang"] = {
-			"159^|cff7f7f0023c", -- [1]
-			"58274^|cffbfbfbf99s", -- [2]
-			"81400^|cffffff002g |cffbfbfbf16s", -- [3]
-			"60335^|cffffff0010g |cffbfbfbf80s", -- [4]
-			"4470^|cff7f7f0035c", -- [5]
-			["POS"] = "6013^37.504094839096^66.796940565109",
-			["T"] = 1363397737,
-		},
-		["Innkeeper~Chiyo Mistpaw"] = {
-			"81400^|cffffff002g |cffbfbfbf16s", -- [1]
-			"81401^|cffffff002g |cffbfbfbf16s", -- [2]
-			"81402^|cffffff002g |cffbfbfbf16s", -- [3]
-			"81403^|cffffff002g |cffbfbfbf16s", -- [4]
-			"81404^|cffffff002g |cffbfbfbf16s", -- [5]
-			"81405^|cffffff002g |cffbfbfbf16s", -- [6]
-			"81408^|cffffff002g |cffbfbfbf34s", -- [7]
-			"81409^|cffffff002g |cffbfbfbf34s", -- [8]
-			"81410^|cffffff002g |cffbfbfbf34s", -- [9]
-			"81411^|cffffff002g |cffbfbfbf34s", -- [10]
-			"81412^|cffffff002g |cffbfbfbf34s", -- [11]
-			"81413^|cffffff002g |cffbfbfbf34s", -- [12]
-			"82451^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [13]
-			"81406^|cffffff002g |cffbfbfbf16s", -- [14]
-			"81414^|cffffff002g |cffbfbfbf34s", -- [15]
-			"74636^|cffffff002g |cffbfbfbf34s", -- [16]
-			"81407^|cffffff002g |cffbfbfbf1s |cff7f7f0060c", -- [17]
-			"81415^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [18]
-			["T"] = 1360753642,
-			["POS"] = "6003^93.481014150524^1364.8790291473",
-		},
-		["Justice Quartermaster~Commander Lo Ping"] = {
-			"89667^2250 Justice Points", -- [1]
-			"89532^1250 Justice Points", -- [2]
-			"89522^1250 Justice Points", -- [3]
-			"89653^1750 Justice Points", -- [4]
-			"89661^2250 Justice Points", -- [5]
-			"89527^1250 Justice Points", -- [6]
-			"89645^1250 Justice Points", -- [7]
-			"92742^1000 Justice Points", -- [8]
-			"89232^1750 Justice Points", -- [9]
-			"88995^1750 Justice Points", -- [10]
-			["T"] = 1362285224,
-			["POS"] = "6008^37.908732891083^64.56401348114",
-			["R"] = 1,
-		},
-		["Repair Vendor~Black Arrow"] = {
-			"2901^|cff7f7f0073c", -- [1]
-			"5956^|cff7f7f0017c", -- [2]
-			"2880^|cff7f7f0090c", -- [3]
-			"3466^|cffbfbfbf18s", -- [4]
-			"18567^|cffffff002g |cffbfbfbf70s", -- [5]
-			"3857^|cffbfbfbf4s |cff7f7f0050c", -- [6]
-			["T"] = 1360463598,
-			["POS"] = "6003^66.641789674759^52.260184288025",
-			["R"] = 1,
-		},
-		["Fireworks Vendor~Pera Firestone"] = {
-			"5740^|cff7f7f0090c", -- [1]
-			"9314^|cff7f7f0045c", -- [2]
-			["T"] = 1360467872,
-			["POS"] = "6013^292.18343881102^514.96257007022",
-			["R"] = 1,
-		},
-		["Pet & Mount Prizes~Lhara"] = {
-			"73766^180 Darkmoon Prize Ticket", -- [1]
-			"72140^180 Darkmoon Prize Ticket", -- [2]
-			"91003^90 Darkmoon Prize Ticket", -- [3]
-			"73764^90 Darkmoon Prize Ticket", -- [4]
-			"74981^90 Darkmoon Prize Ticket", -- [5]
-			"73765^90 Darkmoon Prize Ticket", -- [6]
-			"73762^90 Darkmoon Prize Ticket", -- [7]
-			"73903^90 Darkmoon Prize Ticket", -- [8]
-			"73905^90 Darkmoon Prize Ticket", -- [9]
-			["POS"] = "5005^48.211550712585^69.312751293182",
-			["T"] = 1362886285,
-		},
-		["Adventuring Supplies~Alin the Finder"] = {
-			"82619^|cffffff0056g |cffbfbfbf40s |cff7f7f0062c", -- [1]
-			"82628^|cffffff0052g |cffbfbfbf70s |cff7f7f0036c", -- [2]
-			"82637^|cffffff0074g |cffbfbfbf79s |cff7f7f0081c", -- [3]
-			"82646^|cffffff0071g |cffbfbfbf80s |cff7f7f0083c", -- [4]
-			"82655^|cffffff0055g |cffbfbfbf58s |cff7f7f0028c", -- [5]
-			"82664^|cffffff0035g |cffbfbfbf83s |cff7f7f008c", -- [6]
-			"82673^|cffffff0037g |cffbfbfbf5s |cff7f7f0096c", -- [7]
-			"82682^|cffffff0035g |cffbfbfbf55s |cff7f7f0025c", -- [8]
-			"82688^|cffffff0030g |cffbfbfbf65s |cff7f7f0047c", -- [9]
-			"82693^|cffffff0030g |cffbfbfbf65s |cff7f7f0047c", -- [10]
-			"82698^|cffffff0046g |cffbfbfbf18s |cff7f7f0064c", -- [11]
-			"82703^|cffffff0053g |cffbfbfbf12s |cff7f7f0036c", -- [12]
-			"82714^|cffffff00108g |cffbfbfbf43s |cff7f7f0062c", -- [13]
-			"82715^|cffffff00108g |cffbfbfbf82s |cff7f7f0063c", -- [14]
-			"82720^|cffffff00100g |cffbfbfbf19s |cff7f7f0096c", -- [15]
-			"82721^|cffffff00100g |cffbfbfbf58s |cff7f7f0098c", -- [16]
-			["T"] = 1361072354,
-			["POS"] = "6008^71.449339389801^57.223081588745",
-			["R"] = 1,
-		},
-		["Operation: Shieldwall Quartermaster~Agent Malley"] = {
-			"93168^|cffffff001800g", -- [1]
-			"93231^|cffffff0045g", -- [2]
-			"93346^1750 Justice Points", -- [3]
-			"93243^1250 Valor Points", -- [4]
-			"93258^1750 Valor Points", -- [5]
-			"93278^1750 Valor Points", -- [6]
-			"93337^1750 Valor Points", -- [7]
-			["T"] = 1361790889,
-			["POS"] = "6002^89.703923463821^33.352971076965",
-			["R"] = 1,
-		},
-		["Archaeology Trainer~Brann Bronzebeard"] = {
-			"87533^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [1]
-			"87534^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [2]
-			"87535^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [3]
-			"87536^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [4]
-			"87537^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [5]
-			"87538^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [6]
-			"87539^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [7]
-			"87540^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [8]
-			"87541^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [9]
-			"87549^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [10]
-			"87548^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [11]
-			["T"] = 1361962950,
-			["POS"] = "6009^83.514070510864^30.949932336807",
-		},
-		["Engineering Supplies~Murphy Diremoor"] = {
-			"5956^|cff7f7f0017c", -- [1]
-			"2901^|cff7f7f0073c", -- [2]
-			"90146^|cffffff001g |cffbfbfbf80s", -- [3]
-			"4399^|cffbfbfbf1s |cff7f7f0080c", -- [4]
-			"4400^|cffbfbfbf18s", -- [5]
-			"40533^|cffffff004g |cffbfbfbf50s", -- [6]
-			"39684^|cffbfbfbf81s", -- [7]
-			"2880^|cff7f7f0090c", -- [8]
-			"3466^|cffbfbfbf18s", -- [9]
-			"39354^|cff7f7f0014c", -- [10]
-			"10647^|cffbfbfbf18s", -- [11]
-			["T"] = 1360468006,
-			["POS"] = "6013^58.800399303436^51.088804006577",
-			["R"] = 1,
-		},
-		["Adventuring Supplies~Len at Arms"] = {
-			"83163^|cffffff0055g |cffbfbfbf5s |cff7f7f0082c", -- [1]
-			"83172^|cffffff0051g |cffbfbfbf42s |cff7f7f0063c", -- [2]
-			"83181^|cffffff0073g |cff7f7f0088c", -- [3]
-			"83190^|cffffff0075g |cffbfbfbf40s |cff7f7f0021c", -- [4]
-			"83199^|cffffff0054g |cffbfbfbf24s |cff7f7f0063c", -- [5]
-			"83208^|cffffff0037g |cffbfbfbf64s |cff7f7f0038c", -- [6]
-			"83217^|cffffff0036g |cffbfbfbf16s |cff7f7f0075c", -- [7]
-			"83226^|cffffff0034g |cffbfbfbf69s |cff7f7f0050c", -- [8]
-			"83232^|cffffff0030g |cffbfbfbf2s |cff7f7f0051c", -- [9]
-			"83237^|cffffff0030g |cffbfbfbf2s |cff7f7f0051c", -- [10]
-			"83247^|cffffff0045g |cffbfbfbf23s |cff7f7f0079c", -- [11]
-			"83257^|cffffff0055g |cffbfbfbf26s |cff7f7f0039c", -- [12]
-			"83268^|cffffff0099g |cffbfbfbf29s |cff7f7f0087c", -- [13]
-			"83269^|cffffff0099g |cffbfbfbf68s |cff7f7f009c", -- [14]
-			"83274^|cffffff00104g |cffbfbfbf30s |cff7f7f0086c", -- [15]
-			"83275^|cffffff00104g |cffbfbfbf69s |cff7f7f007c", -- [16]
-			["T"] = 1362135598,
-			["POS"] = "6009^14.315903186798^78.84601354599",
-			["R"] = 1,
-		},
-		["Lorewalkers Quartermaster~Tan Shin Tiao"] = {
-			"87549^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [1]
-			"87548^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [2]
-			"89363^|cffffff00540g", -- [3]
-			"89795^|cffffff009g", -- [4]
-			"93230^|cffffff0045g", -- [5]
-			["POS"] = "6009^82.218772172928^29.293709993362",
-			["T"] = 1361962897,
-			["R"] = 1,
-		},
-		["Dragon Turtle Breeder~Old Whitenose"] = {
-			"83079^|cffbfbfbf9s", -- [1]
-			"92071^|cffffff001g |cffbfbfbf80s", -- [2]
-			"87795^|cffbfbfbf90s", -- [3]
-			"87796^|cffbfbfbf90s", -- [4]
-			"87797^|cffbfbfbf90s", -- [5]
-			"82765^|cffbfbfbf90s", -- [6]
-			"87799^|cffbfbfbf90s", -- [7]
-			"87800^|cffbfbfbf90s", -- [8]
-			"87802^|cffffff009g", -- [9]
-			"87803^|cffffff009g", -- [10]
-			"87804^|cffffff009g", -- [11]
-			"87801^|cffffff009g", -- [12]
-			"87805^|cffffff009g", -- [13]
-			"82811^|cffffff009g", -- [14]
-			["T"] = 1362283818,
-			["POS"] = "2020^67.60481595993^18.654483556747",
-		},
-		["Innkeeper~Nan Thunderfoot"] = {
-			"81400^|cffffff002g |cffbfbfbf16s", -- [1]
-			"81401^|cffffff002g |cffbfbfbf16s", -- [2]
-			"81402^|cffffff002g |cffbfbfbf16s", -- [3]
-			"81403^|cffffff002g |cffbfbfbf16s", -- [4]
-			"81404^|cffffff002g |cffbfbfbf16s", -- [5]
-			"81405^|cffffff002g |cffbfbfbf16s", -- [6]
-			"81408^|cffffff002g |cffbfbfbf34s", -- [7]
-			"81409^|cffffff002g |cffbfbfbf34s", -- [8]
-			"81410^|cffffff002g |cffbfbfbf34s", -- [9]
-			"81411^|cffffff002g |cffbfbfbf34s", -- [10]
-			"81412^|cffffff002g |cffbfbfbf34s", -- [11]
-			"81413^|cffffff002g |cffbfbfbf34s", -- [12]
-			"82451^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [13]
-			"81406^|cffffff002g |cffbfbfbf16s", -- [14]
-			"81414^|cffffff002g |cffbfbfbf34s", -- [15]
-			"74636^|cffffff002g |cffbfbfbf34s", -- [16]
-			["POS"] = "6010^464.83323278261^2128.6379904882",
-			["T"] = 1359867490,
-		},
-		["Traveling Trader~Cousin Slowhands"] = {
-			"81407^|cffffff002g |cffbfbfbf1s |cff7f7f0060c", -- [1]
-			"81415^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [2]
-			"81401^|cffffff002g |cffbfbfbf16s", -- [3]
-			"81409^|cffffff002g |cffbfbfbf34s", -- [4]
-			"81406^|cffffff002g |cffbfbfbf16s", -- [5]
-			"81414^|cffffff002g |cffbfbfbf34s", -- [6]
-			"74636^|cffffff002g |cffbfbfbf34s", -- [7]
-			"159^|cff7f7f0023c", -- [8]
-			"58274^|cffbfbfbf99s", -- [9]
-			"81400^|cffffff002g |cffbfbfbf16s", -- [10]
-			"60335^|cffffff0010g |cffbfbfbf80s", -- [11]
-			"4470^|cff7f7f0035c", -- [12]
-			"64670^|cffbfbfbf36s", -- [13]
-			"63388^|cffbfbfbf40s |cff7f7f0050c", -- [14]
-			"79249^|cffbfbfbf45s", -- [15]
-			["T"] = 1361961629,
-			["POS"] = "16236^69.449591636658^58.925980329514",
-			["R"] = 1,
-		},
-		["Supplies & Mender~Elyssa Nightquiver"] = {
-			"81403^|cffffff001g |cffbfbfbf80s", -- [1]
-			"81411^|cffffff001g |cffbfbfbf95s", -- [2]
-			"81406^|cffffff001g |cffbfbfbf80s", -- [3]
-			"81414^|cffffff001g |cffbfbfbf95s", -- [4]
-			"74636^|cffffff001g |cffbfbfbf95s", -- [5]
-			["POS"] = "6002^67.524027824402^32.292014360428",
-			["T"] = 1360061884,
-			["R"] = 1,
-		},
-		["Collector of Commissions~Field Merchant Skevin"] = {
-			"92432^5 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [1]
-			"92664^40 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [2]
-			"92428^60 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [3]
-			"92427^80 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [4]
-			["POS"] = "6002^17.634373903275^79.428267478943",
-			["T"] = 1361875930,
-		},
-		["Stockmaster~Nam Ironpaw"] = {
-			"74853^Ironpaw Token", -- [1]
-			"74662^Ironpaw Token", -- [2]
-			"74661^Ironpaw Token", -- [3]
-			"86559^50 Ironpaw Token", -- [4]
-			"86558^50 Ironpaw Token", -- [5]
-			"86468^50 Ironpaw Token", -- [6]
-			"75013^10 Ironpaw Token", -- [7]
-			"75017^10 Ironpaw Token", -- [8]
-			"86425^50 Ironpaw Token", -- [9]
-			"92748^10 Ironpaw Token", -- [10]
-			"88801^40 Ironpaw Token", -- [11]
-			"87706^Ironpaw Token", -- [12]
-			"87707^Ironpaw Token", -- [13]
-			"87708^Ironpaw Token", -- [14]
-			"87709^Ironpaw Token", -- [15]
-			"87710^Ironpaw Token", -- [16]
-			"87712^Ironpaw Token", -- [17]
-			"87713^Ironpaw Token", -- [18]
-			"87714^Ironpaw Token", -- [19]
-			"87715^Ironpaw Token", -- [20]
-			"87716^Ironpaw Token", -- [21]
-			"87721^Ironpaw Token", -- [22]
-			"87729^Ironpaw Token", -- [23]
-			"87722^Ironpaw Token", -- [24]
-			"87723^Ironpaw Token", -- [25]
-			"87724^Ironpaw Token", -- [26]
-			"87725^Ironpaw Token", -- [27]
-			"87726^Ironpaw Token", -- [28]
-			"87727^Ironpaw Token", -- [29]
-			"87728^Ironpaw Token", -- [30]
-			"87701^Ironpaw Token", -- [31]
-			"87702^Ironpaw Token", -- [32]
-			"87703^Ironpaw Token", -- [33]
-			"87704^Ironpaw Token", -- [34]
-			"87730^Ironpaw Token", -- [35]
-			"87705^Ironpaw Token", -- [36]
-			["T"] = 1360234253,
-			["POS"] = "6010^53.558337688446^51.116454601288",
-		},
-		["Kirin Tor Offensive Quartermaster~Hiren Loresong"] = {
-			"95054^Elder Charm of Good Fortune", -- [1]
-			"95093^Elder Charm of Good Fortune", -- [2]
-			"95053^Elder Charm of Good Fortune", -- [3]
-			"95052^Elder Charm of Good Fortune", -- [4]
-			"95055^Elder Charm of Good Fortune", -- [5]
-			"95056^3 Elder Charm of Good Fortune", -- [6]
-			"95489^", -- [7]
-			"95490^", -- [8]
-			"80433^400 Valor Points", -- [9]
-			"95528^|cffffff00255g", -- [10]
-			"97203^937 Valor Points", -- [11]
-			"97187^937 Valor Points", -- [12]
-			"95545^|cffffff0042g |cffbfbfbf50s", -- [13]
-			"95564^|cffffff002550g", -- [14]
-			"95591^|cffffff008g |cffbfbfbf50s", -- [15]
-			"95567^|cffffff0021g |cffbfbfbf25s", -- [16]
-			["T"] = 1362652239,
-			["POS"] = "6015^34.958362579346^89.87021446228",
-			["R"] = 1,
-		},
-		["Flowers~Aster"] = {
-			"3421^|cffbfbfbf1s |cff7f7f0080c", -- [1]
-			"3419^|cffbfbfbf4s |cff7f7f0050c", -- [2]
-			"3422^|cffbfbfbf18s", -- [3]
-			"3420^|cffbfbfbf45s", -- [4]
-			"3423^|cffffff001g |cffbfbfbf80s", -- [5]
-			"3424^|cffffff0045g", -- [6]
-			["T"] = 1360923461,
-			["POS"] = "6013^299.60265819101^537.17051951284",
-		},
-		["Blacksmithing Supplies~Cullen Hammerbrow"] = {
-			"2901^|cff7f7f0073c", -- [1]
-			"5956^|cff7f7f0017c", -- [2]
-			"2880^|cff7f7f0090c", -- [3]
-			"3466^|cffbfbfbf18s", -- [4]
-			"18567^|cffffff002g |cffbfbfbf70s", -- [5]
-			"3857^|cffbfbfbf4s |cff7f7f0050c", -- [6]
-			["T"] = 1362802194,
-			["POS"] = "6013^72.97340631485^50.86150765419",
-			["R"] = 1,
-		},
-		["Seed Vendor~Merchant Greenfield"] = {
-			"79102^|cffbfbfbf13s |cff7f7f0050c", -- [1]
-			"80590^|cffbfbfbf13s |cff7f7f0050c", -- [2]
-			"80591^|cffbfbfbf13s |cff7f7f0050c", -- [3]
-			"80592^|cffbfbfbf13s |cff7f7f0050c", -- [4]
-			"80593^|cffbfbfbf13s |cff7f7f0050c", -- [5]
-			"80594^|cffbfbfbf13s |cff7f7f0050c", -- [6]
-			"80595^|cffbfbfbf13s |cff7f7f0050c", -- [7]
-			"89328^|cffbfbfbf13s |cff7f7f0050c", -- [8]
-			"89326^|cffbfbfbf13s |cff7f7f0050c", -- [9]
-			"89329^|cffbfbfbf13s |cff7f7f0050c", -- [10]
-			"85267^|cffbfbfbf9s", -- [11]
-			"85268^|cffbfbfbf9s", -- [12]
-			"85269^|cffbfbfbf9s", -- [13]
-			"85216^|cffbfbfbf90s", -- [14]
-			"85217^|cffbfbfbf90s", -- [15]
-			"89202^|cffbfbfbf90s", -- [16]
-			"85215^|cffbfbfbf90s", -- [17]
-			"89197^|cffbfbfbf90s", -- [18]
-			"89233^|cffbfbfbf90s", -- [19]
-			["T"] = 1360578051,
-			["POS"] = "6010^52.854257822037^52.045249938965",
-		},
-		["Replica Armor Prizes~Baruma"] = {
-			"78262^55 Darkmoon Prize Ticket", -- [1]
-			"78263^75 Darkmoon Prize Ticket", -- [2]
-			"78264^55 Darkmoon Prize Ticket", -- [3]
-			"78265^55 Darkmoon Prize Ticket", -- [4]
-			"78266^55 Darkmoon Prize Ticket", -- [5]
-			"78267^75 Darkmoon Prize Ticket", -- [6]
-			"78268^75 Darkmoon Prize Ticket", -- [7]
-			"78269^75 Darkmoon Prize Ticket", -- [8]
-			["T"] = 1362886188,
-			["POS"] = "5005^47.759932279587^66.08921289444",
-			["R"] = 1,
-		},
-		["Blacksmith~Ironshaper Shou"] = {
-			"2901^|cff7f7f0073c", -- [1]
-			"5956^|cff7f7f0017c", -- [2]
-			"2880^|cff7f7f0090c", -- [3]
-			"3466^|cffbfbfbf18s", -- [4]
-			"18567^|cffffff002g |cffbfbfbf70s", -- [5]
-			"3857^|cffbfbfbf4s |cff7f7f0050c", -- [6]
-			["T"] = 1360751749,
-			["POS"] = "6003^57.381725311279^61.671614646912",
-			["R"] = 1,
-		},
-		["Trade Supplies~Tharynn Bouden"] = {
-			"7005^|cff7f7f0058c", -- [1]
-			"2901^|cff7f7f0057c", -- [2]
-			"85663^|cff7f7f0074c", -- [3]
-			"5956^|cff7f7f0013c", -- [4]
-			"6256^|cff7f7f0017c", -- [5]
-			"6217^|cff7f7f0087c", -- [6]
-			"2678^|cff7f7f007c", -- [7]
-			"30817^|cff7f7f0018c", -- [8]
-			"2320^|cff7f7f007c", -- [9]
-			"2880^|cff7f7f0070c", -- [10]
-			"3371^|cff7f7f0070c", -- [11]
-			"4289^|cff7f7f0035c", -- [12]
-			"6529^|cff7f7f0035c", -- [13]
-			"2604^|cff7f7f0035c", -- [14]
-			"2324^|cff7f7f0018c", -- [15]
-			"6260^|cff7f7f0035c", -- [16]
-			"39354^|cff7f7f0011c", -- [17]
-			"20815^|cffbfbfbf5s |cff7f7f0060c", -- [18]
-			"39505^|cffbfbfbf5s |cff7f7f0025c", -- [19]
-			"6325^|cff7f7f0028c", -- [20]
-			"6328^|cffbfbfbf2s |cff7f7f0080c", -- [21]
-			["POS"] = "2010^41.818886995316^67.066150903702",
-			["T"] = 1362886030,
-		},
-		["~Ironshaper Peng"] = {
-			"2901^|cff7f7f0069c", -- [1]
-			"5956^|cff7f7f0016c", -- [2]
-			"2880^|cff7f7f0085c", -- [3]
-			"3466^|cffbfbfbf17s", -- [4]
-			"18567^|cffffff002g |cffbfbfbf55s", -- [5]
-			"3857^|cffbfbfbf4s |cff7f7f0025c", -- [6]
-			["T"] = 1361441474,
-			["POS"] = "6008^75.777113437653^81.791841983795",
-			["R"] = 1,
-		},
-		["Supplies~Merchant Tantan"] = {
-			"2901^|cff7f7f0065c", -- [1]
-			"5956^|cff7f7f0015c", -- [2]
-			"2880^|cff7f7f0080c", -- [3]
-			"3466^|cffbfbfbf16s", -- [4]
-			"18567^|cffffff002g |cffbfbfbf40s", -- [5]
-			"3857^|cffbfbfbf4s", -- [6]
-			"81400^|cffffff001g |cffbfbfbf92s", -- [7]
-			"81401^|cffffff001g |cffbfbfbf92s", -- [8]
-			"81402^|cffffff001g |cffbfbfbf92s", -- [9]
-			"81403^|cffffff001g |cffbfbfbf92s", -- [10]
-			"81404^|cffffff001g |cffbfbfbf92s", -- [11]
-			"81405^|cffffff001g |cffbfbfbf92s", -- [12]
-			"81408^|cffffff002g |cffbfbfbf8s", -- [13]
-			"81409^|cffffff002g |cffbfbfbf8s", -- [14]
-			"81410^|cffffff002g |cffbfbfbf8s", -- [15]
-			"81411^|cffffff002g |cffbfbfbf8s", -- [16]
-			"81412^|cffffff002g |cffbfbfbf8s", -- [17]
-			"81413^|cffffff002g |cffbfbfbf8s", -- [18]
-			"82451^|cffffff002g |cffbfbfbf4s |cff7f7f0080c", -- [19]
-			"81406^|cffffff001g |cffbfbfbf92s", -- [20]
-			"81414^|cffffff002g |cffbfbfbf8s", -- [21]
-			"74636^|cffffff002g |cffbfbfbf8s", -- [22]
-			["T"] = 1363402497,
-			["POS"] = "6009^42.394751310349^45.978099107742",
-			["R"] = 1,
-		},
-		["Galley Chef~Malley"] = {
-			"81402^|cffffff002g |cffbfbfbf16s", -- [1]
-			"81410^|cffffff002g |cffbfbfbf34s", -- [2]
-			"81406^|cffffff002g |cffbfbfbf16s", -- [3]
-			"81414^|cffffff002g |cffbfbfbf34s", -- [4]
-			"74636^|cffffff002g |cffbfbfbf34s", -- [5]
-			["POS"] = "6002^17.625939846039^79.604232311249",
-			["T"] = 1361875923,
-		},
-		["Collector of Commissions~Proveditor Grantley"] = {
-			"91854^30 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [1]
-			"91855^30 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [2]
-			"91856^30 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [3]
-			"92432^5 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [4]
-			"92430^5 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [5]
-			"92431^5 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [6]
-			"92439^10 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [7]
-			"92435^10 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [8]
-			"92436^10 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [9]
-			"92437^10 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [10]
-			"92438^10 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [11]
-			"92433^10 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [12]
-			"92434^10 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [13]
-			"92429^30 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [14]
-			"92664^40 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [15]
-			"92428^60 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [16]
-			"92427^80 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [17]
-			"92531^25 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [18]
-			"92535^125 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [19]
-			"92533^500 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [20]
-			"92532^2000 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [21]
-			["POS"] = "6002^89.530390501022^33.411437273026",
-			["T"] = 1361873598,
-		},
-		["Repairs~Valaden Silverblade"] = {
-			"2901^|cff7f7f0069c", -- [1]
-			"5956^|cff7f7f0016c", -- [2]
-			"2880^|cff7f7f0085c", -- [3]
-			"3466^|cffbfbfbf17s", -- [4]
-			"18567^|cffffff002g |cffbfbfbf55s", -- [5]
-			"3857^|cffbfbfbf4s |cff7f7f0025c", -- [6]
-			["T"] = 1362652330,
-			["POS"] = "6015^35.397219657898^90.457379817963",
-			["R"] = 1,
-		},
-	},
-	["Version"] = 0.02,
-	["NXVendorVVersion"] = 0.55,
-	["NXQOpts"] = {
-		["NXWVisMax"] = 8,
-		["NXWHideDist"] = 20000,
-		["NXWPriGroup"] = -100,
-		["Version"] = 0.12,
-		["NXWPriLevel"] = 20,
-		["NXShowHeaders"] = true,
-		["NXWShowOnMap"] = true,
-		["NXWHideNotInZone"] = true,
-		["NXWHideGroup"] = false,
-		["NXSortWatchMode"] = 1,
-		["NXWWatchParty"] = false,
-		["NXWHideUnfinished"] = false,
-		["NXWPriComplete"] = 50,
-		["NXWHideNotInCont"] = false,
-		["NXShowObj"] = true,
-		["NXWPriDist"] = 1,
-	},
-	["NXFav"] = {
-		["Version"] = 0.13,
 	},
 	["NXCap"] = {
 		["Q"] = {
@@ -40566,56 +39571,56 @@ NxData = {
 			[51522] = "0Thisalee Crow#a02e^25e0540b53~Thisalee Crow#a02e^25e053eb4d~25e50fc174cdc3b4cdc61",
 			[59774] = "0Pearlkeeper Fujin#e6b2^3260964cfd~Pearlkeeper Fujin#e6b2^3260966cfe~326a6cdfa~326a96de8~326a87dc1~326a96de8",
 			[64060] = "0Master Angler Ju Lien#fb03^35a08c6ba4~Klaxxi'va Ik#ff73^35a08c258d",
-			[59822] = "0Ang Thunderfoot#db8f^0000d03400~Pang Thunderfoot#db8c^0000d60360~",
+			[60684] = "0Ren Firetongue#e7cf^32b06c0753~Ren Firetongue#e7cf^32b06c8756~32b6a282d64875f6447ab66a7d967e7ea6a6801",
 			[58848] = "0Merchant Lorvo#d69f^00008cc536~Merchant Lorvo#d69f^00008cd525~",
 			[60158] = "0Ken-Ken#db33^3590c2e127~Ken-Ken#db33^3590c2b125~12dc3614c~12dc5e161~12dc1117a~12dc20136",
 			[23946] = "0Warmage Kaitlyn#d8eb^20815c2cfa~Warmage Kaitlyn#d8eb^20815c5d0a~2085e5b0d",
-			[60570] = "0Sun Tenderheart#e7c9^32b0599bff~Sun Tenderheart#e7c9^32b059cc0d~32b55fb2a5d1b315d5b1e",
+			[19700] = "0Hemet Nesingwary#4704^1dd0b6f683~Hemet Nesingwary#4704^1dd0b6d684~1dd93a72e92c7788eb76288f8278ce8298ea74e90073d8ec7198bc7558b27849137149056fd",
 			[60386] = "0Cook Tope#e5c2^32b0568b3a~~32b3f1a74",
-			[62588] = "0Che Wildwalker#e7ca^32b0568b94~Anji Autumnlight#e487^32b056f619",
+			[60400] = "0Anji Autumnlight#e487^32b056f619~Anji Autumnlight#e487^32b056e61a~32b47457c47d57247e5693754ce40c3f93d941c3d246835c4f6",
 			[60478] = "0Dreyan^32b070bbb1~Che Wildwalker#e7ca^32b0572b8b~32b79aa84",
 			[65462] = "0Vereesa Windrunner#999^3a0058ce42~",
-			[19710] = "0Shado 'Fitz' Farstrider#4718^1dd0b6e678~Shado 'Fitz' Farstrider#4718^1dd0b6f67d~1dd84d9cb83c9aa8229f5832a1b821a38802a177f59e48049d07f09a97f097e8089a77f5957",
+			[60706] = "0Daggle Bombstrider#e59b^3590ad341a~Daggle Bombstrider#e59b^3590ad1420~359b5640ca434b99f454fa36553aee46badd49aa5f4c2a58503a36553a5c556aa5462a9441da6e45c9ed559a3e4bf",
 			[60670] = "0Farmer Yoon#e516^32708577cc~Farmer Yoon#e516^32708547cc~3274d05e14ce5ac4d15924cd59f4c95894c25704c65584a95514ee5154e75014cb5664b259a",
-			[60682] = "0He Softfoot#e7ce^32b06fb759~He Softfoot#e7ce^32b06fb761~32b6c76fa6bc7086c468b71467c63c8615f690a66e8bc6a885b",
-			[60618] = "0Anji Autumnlight#e461^32b09076f8~Anji Autumnlight#e461^32b090a6f7~32b8463a782c45c84d4b289e49b89c4318ca4858aa4598744eb8574ad87443e8a84268664b28d448975837973f385",
-			[23454] = "0General Arlos#62a2^1e6090eb97~Sergeant Hammerhill#64d8^1e60902b20",
+			[52494] = "0Maruut Stonebinder#a839^28007f1879~Stormcaller Mylra#a6bc^2800a487d9",
+			[24176] = "0Corporal Venn#664b^1e60d1c76a~Thassarian#663a^1e60d8e6aa",
+			[65362] = "0Vereesa Windrunner#12d8^32a07f9b08~Lady Jaina Proudmoore#998^3a027006b4~32a7f9b08~32a7006b4",
 			[60384] = "0Mayor Shiyo#e5c3^32b05a4bd5~Mayor Shiyo#e5c3^32b05a4bd2~32b53eba6540baf540bb1543bd0544bd2543bd3541bd2541bd2542bd2542bd2542bd2542bd2542bd2542bd2542bd2",
 			[60990] = "0Foreman Raike#e7ff^00007b69ca~Foreman Raike#e7ff^00007b79cb~~~~",
 			[61054] = "0Farmer Yoon#e516^32708567c6~Farmer Yoon#e516^32708577c6~3278447a18447a18447a18447a1~3278417a78417a78427a284379f~",
-			[65358] = "~Vereesa Windrunner#12d8^32a07f9b08",
+			[64232] = "0Marshal Troteman#82f^3590e5454a~Hilda Hornswaggle#ab3^3590cd22a1",
 			[61182] = "0Wei Palerage#da87^3280804c3d~Wei Palerage#da87^3280800c41~328817ce9858d6f858d6f889c4288ec1b899c4b918cba915ce7884cd5",
 			[63012] = "0Kaz'tik the Manipulator#f90e^35a08ac5b9~Kaz'tik the Manipulator#f90e^35a08a85b5~35a5fdba151ebfd524d974b5e594b2e344b7e454b4e3d4b1e014b4e3a4b3e3b523da441adbc487e194b8e394bbe24",
 			[63516] = "0Kun Autumnlight#e467^32b09076f8~Kun Autumnlight#e467^32b090a6f7~32b65042b6534266524276e52916dd39564230564e426",
-			[55076] = "0Thordun Hammerblow#b074^2bc0ca5c82~Talaa#b075^2bc0cb2c64~2bcab8840abe826ae5825aec82dac97eeab87ffabc7d1ab37bba9879eaac795",
+			[25672] = "0Ricket#72f4^1ef0689da5~Ricket#72f4^1ef068bda3~1ef4d9dae",
 			[24586] = "0Lieutenant Dumont#68fb^1ea051899d~Ivan#6b4d^1ea058d8df~",
 			[61502] = "0Lao-Chin the Iron Belly#f17c^32904ae9f5~Lao-Chin the Iron Belly#f17c^32904ab9f0~3294889c048b9bf45d9b445899b433972432970",
 			[61566] = "0Yalia Sagewhisper#edc0^32a0d31bb0~Yalia Sagewhisper#edc0^32a0d33bab~32ad45bb2d52bbdd52bbdd43bccd49bd8d79beed79beed8bc05cf9b69cfcb7ed17b74d19b73d1eb9cd1db9bd19bac",
 			[61630] = "0Orbiss#edb9^32a0adbad4~Orbiss#ecce^32a0adbad4~32aad9acdadbad4",
-			[54356] = "0Simon Chandler#b072^2bc0caac8a~Simon Chandler#b072^2bc0caac8c~2bcc7fce1c79cfac60d05c5fcf8c5fcdcc43d14c43d14c1ed3bc3ed4ec32d66",
+			[51260] = "0Rio Duran#9a0a^25e04834c4~Laina Nightsky#9bf7^25e0309684",
 			[57664] = "0Fargo Flintlocke#af06^12d043378d~Lieutenant Fawkes#bf7e^2bc0cf0cb0",
 			[59600] = "0Ji Firepaw#e18b^3280636dcc~Spirit of Master Shang Xi#dacd^32808397ba",
 			[61886] = "0Elder Shu#f037^3290a22497~Elder Shu#f037^3290a20493~329a7e448aca411af049cad048dabe46fb4948a",
 			[61950] = "0Lao-Chin the Iron Belly#ee58^32a09d9cad~Taran Zhu#f510^32a09c4d48~35a72919172718c72718c72819b72919d72a19b72c19972d19372d19372e19372519e7281a071f199722198722198~35a724199723192",
 			[62014] = "0Kil'ruk the Wind-Reaver#f44a^35a08ca56e~Kil'ruk the Wind-Reaver#f44a^35a08c8572~35a6906bc6a66c56d66fa6d66fa6f16ec7026be",
-			[53954] = "0King Varian Wrynn#73ab^12d0dab512~Major Samuelson#987^12d0da04fe",
 			[62142] = "0Thirsty Missho#f58b^35a082a1ca~Thirsty Missho#f58b^35a082d1c5~35a841308~35a8b0340~35a8f1318",
+			[53954] = "0King Varian Wrynn#73ab^12d0dab512~Major Samuelson#987^12d0da04fe",
 			[62206] = "0The Ballad of Liu Lang^0000000ffa~Lorewalker Cho#f20a^32b0d484ba",
-			[23856] = "0Sergeant Hammerhill#64d8^1e60903b1e~Gerald Green#65e3^1e6094ca08",
-			[59238] = "0Lin Tenderpaw#d681^00007313fa~Lin Tenderpaw#d681^00007313fe~12d74c45b74d45e74f46775b45874645374b46374745474d458",
+			[59978] = "0Master Bruised Paw#dd8a^00002ea500~Master Bruised Paw#dd8a^00002eb4ff~12d2e75232e75232e75232e75232e7523",
+			[23466] = "0Surristrasz#60db^1e6073d57a~Archmage Berinand#62e2^1e6054657c",
 			[59824] = "0Pang Thunderfoot#db8c^0000d60360~Liang Thunderfoot#db8d^0000c063dd~~~",
 			[62462] = "0Kil'ruk the Wind-Reaver#f44a^35a08ca5b6~Kil'ruk the Wind-Reaver#f44a^35a08cb5b7~35ab9f4acb994c6b83484b78487b6c47bb5342fb4f46db7b4b9bae38cba5389b963a8b973b0b693b2b5d460b6c45d",
 			[59542] = "0Jojo Ironbrow#d8b6^3280b0faa4~Jojo Ironbrow#d8b6^3280b0aaa5~328a34c4ca29c66a23c93a1fc9ca10ca4a20c97",
-			[63198] = "0Enormous Kunchong Mandibles^35a063d51b~Ambersmith Zikk#fc57^35a08ca5ad",
+			[60566] = "0Ren Firetongue#e465^32b09066e7~Ren Firetongue#e465^32b090d6e3~32b6f7736",
 			[62654] = "0Chen Stormstout#e938^36c1c1858a~Chen Stormstout#fb69^36c48147e5~36c7b8834",
 			[62718] = "0Kaz'tik the Manipulator#fb58^35a06a9b80~Kaz'tik the Manipulator#f90e^35a08ac5b5~35a6c1a49~35a6a6ae06a6acd6aaa906bea736a5a3f682a85629acc629acc5faa8566499d",
 			[59854] = "0Foreman Mann#dc1a^0000823453~Hao Mann#dc1b^00069d05ca~12da8049f",
 			[54354] = "0Simon Chandler#b072^2bc0caac8a~Simon Chandler#b072^2bc0caac8c~2bcc70d0bc5bd04c61cdbc62cd2c62cfdc22d35c21d1cc45d65",
 			[58816] = "0Master Shang Xi^000098c311~Master Shang Xi^000098c308~~",
 			[62974] = "0Kaz'tik the Manipulator#f90e^35a08ad5b9~Kaz'tik the Manipulator#f90e^35a08aa5b5~35a6dd5e07034ba6e95d96dd5507df5b17c755e7b34c87754b17d15ae7d155677557f71b4c27cb5b67d954078557e~35a6f35da6f35da6f35da7084af7094af7e35ad7d75c67b05cb7d156f7e354d7d65367b45c37d255b7d05357cd538",
-			[54352] = "0Elaborate Disc#o321d200^2ec0a5e4b7~Harrison Jones#b07c^2ec0a51492~2ecae5510",
+			[61614] = "0Sage Liao#ed71^32909af368~Sage Liao#ed71^32909ad36b~32998c4cb98c4cb9894bf",
 			[53994] = "0Major Samuelson#987^12d0da04fe~Anduin Wrynn#ad05^12d05783a5~12d5e87955b57dc5438315735155845175783a5",
-			[63524] = "0Anji Autumnlight#e461^32b09096f6~Anji Autumnlight#e461^32b09086fc~32b71934e76755d75c4426d72fe7202967775c4",
+			[54936] = "0Fargo Flintlocke#b070^2bc0c4bb2a~Fargo Flintlocke#b070^2bc0c4db2b~2bcb9db50~2bcb98b3e",
 			[61210] = "0Brother Rabbitsfoot#e83c^329084fabe~Brother Yakshoe#e9f6^3290814a42~329815a47",
 			[59200] = "0Zhang Yue#dde2^3270991474~Zhang Yue#dde2^3270990476~3279fc44b9fc44ba0d471a0d471a3e467a3e467a1f3e2a1f3e2a0c411a0d414a0d414a01464a01464a01464",
 			[59264] = "0Master Stone Fist#d68a^00006ea3f3~Master Stone Fist#d68a^00006e93f2~12d6ea3f36ee40e6ed40f6ec40a6eb4086eb3ff7004047033ff",
@@ -40628,50 +39633,50 @@ NxData = {
 			[23802] = "0Gerald Green#65e3^1e6094ca08~Plagued Grain#o2deb500^1e609138e4",
 			[59776] = "0Bold Karasshi#db9e^326096bd0d~Mouthwatering Brew#o333b500^3260895e9d",
 			[59840] = "0Syra Goldendraft#dd84^0000868616~Lo Wanderbrew#d9ec^0000868619~12d8695b4~12d8a1620~12d88e5e3",
-			[51614] = "0Choluna#a02d^25e0715762~Aviana#a15c^25e07167a6~25e7167a6",
+			[59174] = "0Shao the Defiant#d6e1^000068dbd3~Shao the Defiant#d6e1^000068ebd2~",
 			[59968] = "0Master Bruised Paw#dd8a^00002e8502~Master Bruised Paw#dd8a^00002eb4ff~",
 			[50984] = "0Rayne Feathersong#9d8b^25e0453a0d~~",
 			[53950] = "0King Varian Wrynn#73ab^12d0dab512~Supply Sergeant Graves#aecd^12d054f63f~12d54f63f",
 			[60160] = "0Mei Barrelbottom#e190^0000ffaffa~Yi-Mo Longbrow#e408^0000d00117~12dd00117",
-			[54676] = "0Kurdran Wildhammer#b06f^2bc0ca3c81~Lieutenant Emry#b071^2bc0c44b2d",
-			[54732] = "0Lieutenant Emry#b071^2bc0c44b2d~Lieutenant Emry#b071^2bc0c44b28~2bcc43b10c4bb0bc48b03c39af8c2cad8c26ae0c47ab5c58aadc57ad7c57ad7c57ad5c6eab8",
-			[60698] = "0Lyalia#e56f^3590ac5537~Lyalia#e56f^3590ac853e~3598e05e58df5f88c462289d62c89c63c8de63a8ce61c86f5a698a52998c50492252691b5068c25128b05018d0505~3598dd5dd8d361a87e62c8845fc87a5e48eb63c8f45458f45458ec5148b54d68cd4e88e44f3~3598c56158c66318b661f8e264490d5198b94d58cc51e89e560",
+			[55030] = "0Thordun Hammerblow#b074^2bc0ad1a8d~Thordun Hammerblow#b074^2bc0ad2a8d~2bcaa4a74a83a33a98a22a9ea37a9e9b3aac9bcad29c4ae999c",
+			[62920] = "0Mishka#e83b^329088bd44~Lorewalker Cho#f197^329092b9d9",
+			[50600] = "0Royce Duskwhisper#9a0b^25e04924d1~Eye of Twilight#o317c900^25e045559f",
 			[50606] = "0The Twilight Apocrypha#o317d800^25e041f6a6~The Twilight Apocrypha#o317d800^25e04236a6~25e41c6a8~25e41e6ad~25e4246ac~25e4246a5",
 			[60480] = "0Leven Dawnblade#e7cc^32b036eb5c~Leven Dawnblade#e7cc^32b036cb65~32b2f7acd",
 			[51310] = "0Thisalee Crow#a02e^25e06be742~Thisalee Crow#a02e^25e06bd740~25e64671465d72e61f71862171b60373560a6e45fe6ff5fa6cb6276f963468f",
 			[60608] = "0Kun Autumnlight#e488^32b056f619~Kun Autumnlight#e488^32b056e61a~32b4144413e54744454e64234583834963615003a344d2f14d136850438e455",
 			[59966] = "0Loon Mai#dd90^000031d919~Master Bruised Paw#dd8a^00002e8502",
-			[54184] = "0Jack Bauden#c381^12d05f2901~Pile of Explosives#o3218e00^12d080d6c7~12d8086a4",
+			[52516] = "0Maruut Stonebinder#a839^28007ee87e~Dreyan^280097b938~28096b92f",
 			[51330] = "0Mysterious Winged Spirit#a06c^25e0675713~Choluna#a02d^25e0716765",
-			[59796] = "0Anduin Wrynn#dc72^3260a88cab~Lina Whitepaw#dc71^3260a8bcaf~12daadd1d~12dabfd0e~12dadcd11~12da9fccb",
-			[59434] = "0An Windfur#d7ea^32605a39c6~An Windfur#d875^000076d73f~",
+			[19712] = "0Shado 'Fitz' Farstrider#4718^1dd0b6f67d~Shado 'Fitz' Farstrider#4718^1dd0b6e67f~1dd54040f",
+			[55338] = "0Harrison Jones#b0f0^2ec0a52478~Harrison Jones#bba2^2ec0a35569~2eca4d4c3",
 			[60992] = "0Waterspeaker Gorai#ee2d^3290c01e0b~Waterspeaker Gorai#ee2d^3290c01e17~329bf3cab",
 			[61056] = "0Farmer Yoon#e516^32708547cc~Farmer Yoon#e516^32708587cb~327533341",
-			[51970] = "0Tiala Whitemane#9f81^25e0a1b378~Choluna#a02d^25e0718764",
+			[63350] = "0Farmer Yoon#e516^32708587c7~Farmer Yoon#e516^32708577cd~3278417a88527bb84e7bc84d7ba8527bc",
 			[61184] = "0Brother Lintpocket#e935^32909479d0~Brother Trailscenter#e937^3290843ad4~329871aa6",
-			[59112] = "0Sky Admiral Rogers#2f4^32607abe1f~Nodd Codejack#d557^3260810e19~3267dfe757dfe757dfe75807e807f5e677f5e677f5e677eae777eae777e9e757dde4a7e6e537f2e2a7fae2a",
+			[25688] = "0Gretchen Fizzlespark#7321^1ef0693dc1~Gretchen Fizzlespark#7321^1ef0692dc2~1ef6a8b946a9b956b9bb56b1bd8680b6b685b95662b9064cb85",
 			[63352] = "0Kil'ruk the Wind-Reaver#f2fa^35a0b3841e~Kil'ruk the Wind-Reaver#f2fa^35a0b3741d~35ab3e457ae0499adf4a8ace51fad04ccada496",
-			[23292] = "0Librarian Donathan#62ae^1e6073c554~Librarian Normantis#6388^1e6076853f",
-			[51312] = "0Thisalee Crow#a02e^25e06be742~Thisalee Crow#a02e^25e06bd740~25e62f73262e72e60d72d60d72d5f26e95f86e260e6f260e6ef",
+			[51046] = "0Farden Talonshrike#9e82^0000000000~Farden Talonshrike#9e82^0000000000~25e000000",
+			[22636] = "0Neill Ramstein#5c06^01b089462b~~01b8ac710~01b89e7b2~01b88e88d",
 			[61504] = "0Ban Bearheart#f17b^32905a37e7~Ban Bearheart#f313^32905dd79e~3295dd79e",
 			[61568] = "0Ban Bearheart#ef4d^32a0d33bab~Ban Bearheart#ef4d^32a0d35bab~32ad77b58d6fb48",
 			[61632] = "0Li Hai#ec14^3290a164ae~Sage Liao#ed16^32909af368",
-			[50640] = "0Alysra#9805^25e07bf30b~Scout Larandia#9ca0^25e071d302",
+			[64378] = "0Merchant Greenfield#e55e^327087784f~Barnaby Fletcher#7ed^327088383c",
 			[25686] = "0Gretchen Fizzlespark#7321^1ef0693dc1~Gretchen Fizzlespark#7321^1ef0692dc2~1ef6a5b8f6a8bba68eb6c6a6bba6a3b92",
-			[62884] = "0Talking Skull#fc33^2fb141896e~Talking Skull#fc33^3821437965~382a80c43~38295c1ae~38265a56b~382718a32",
+			[25640] = "0Ricket#72f4^1ef068ada3~Ricket#72f4^1ef0689da2~1ef6dad366e6cf76f9d1b6d8d046eacf46edcf66f6cf96f4cfa6f2cfb6ecd016d4d0d",
 			[61888] = "0Lorewalker Cho#efbb^0000ffaffa~Lorewalker Cho#efbb^0000ffaffa~3299e647b9fb484a02485a0a487a08452",
 			[61952] = "0Taran Zhu#f510^32a09c4d48~Taran Zhu#f342^32a08a5c75",
 			[62016] = "0Ambersmith Zikk#fc57^35a08c95a9~Ambersmith Zikk#fc57^35a08cc5ad~35a63b67265164963d674661647657694",
-			[59356] = "0Old Man Liang#d6ec^3280c8b6d8~Doyjen^3280ca3622~328cbd63c~328ca760d",
+			[25048] = "0Debaar#6d80^1ed0459991~Debaar#6d80^1ed0459993~1ed5007df4fe7c14fe7c15167c35107a954e75c54d75054575553d73857473657373757273756974a577797577797",
 			[62144] = "0Lya of Ten Songs#f4cb^35a081b1e2~Lya of Ten Songs#f4cb^35a08191dd~35a864350~35a822350",
 			[54020] = "0Dreyan^2800b309ad~Dreyan^2800bf7a4c~280bf8a5c",
 			[62272] = "0Leven Dawnblade#e428^32b090a6f9~Leven Dawnblade#e428^32b09146f9~32bb328a4",
 			[51620] = "0Morthis Whisperwing#a02b^25e070a759~Farden Talonshrike#9e82^0000000000",
 			[54212] = "0Pile of Explosives#o3218e00^12d080d6c7~King Varian Wrynn#73ab^12d0db0517~12dd994fc~12dd9d52b",
 			[62464] = "0Korven the Prime#f2e4^35a08af5c2~Korven the Prime#f2e4^35a08b15c4~35ab42512b7256db6e59cb815b5b7a57fb6e59bb4a5f2b4150eb9b491ba44b0ba44c7b954d4b934c6b894b5b7e467",
-			[50638] = "0Malfurion Stormrage#9bb1^25e07a25aa~Malfurion Stormrage#9bb1^25e07a15ab~25e78751c7b94747a148b78d4ba~25e7be58c7c259a7b856c7905837955647b053d7a853d78f5117b14fc7cf4a3",
+			[59536] = "0Ji Firepaw#d8b5^3280b03a68~Ji Firepaw#d8b5^3280b04a66~3289fec4a",
 			[63642] = "0Audrey Burnhep#f86c^12d0b0f40a~~12db7f491",
-			[61576] = "0Orbiss#edb9^32a0adaacf~Orbiss#edb9^32a0adbad4~32ab43b26b52b1c",
+			[57482] = "0Dreyan^2f12ae9a3b~Finkle Einhorn#c144^2f12b018dd~2f1b0787c",
 			[62720] = "0Sinan the Dreamer#fbb0^37514e5323~Sinan the Dreamer#fbb0^375362bd1c~37561dc40616bff",
 			[62784] = "0Hopsmaster Chang#fbc0^32708f1846~Anduin Wrynn#fc1c^3290afe6e6",
 			[60710] = "0Kang Bramblestaff#db32^3590405585~Kang Bramblestaff#db32^3590405585~3593ec63d43064245f65446064046b65443664f44061844261843b60b41b68a",
@@ -40681,54 +39686,54 @@ NxData = {
 			[50822] = "0Tyrus Blackhorn#9bfd^25e038c72c~Subjugated Inferno Lord#9c9d^25e023d739~25e23d739",
 			[25816] = "0Mildred the Cruel#74bd^1ef071ab03~Lok'lira the Crone#7329^1ef06d8b02~",
 			[23594] = "0Sergeant Hammerhill#64d8^1e60902b20~Sergeant Hammerhill#64d8^1e60900b1a~1e68c7ade8d7aa08caaa48c1a7e8d4a5a8f5a55",
-			[62222] = "0Kil'ruk the Wind-Reaver#f44a^35a08cb5bc~Kil'ruk the Wind-Reaver#f44a^35a08ca5bc~35a5adb75596ba756ebf1566bed557bd552ebc1614b54629b6162fb6862db9b62aba1632bcf564cd4564cd456ccd0~35a59eb85595b9f598bb1586bdf57cbe5561be4616b55613b5462fb6862db89633b90636bb8564cd44d9e5f4d1e4d",
+			[64090] = "0Stonecarver Mac#fb3b^32708cc791~Stonecarver Mac#fb3b^32708d1792~3278ed568~3278fd40f~327833443",
 			[59266] = "0Master Stone Fist#d68a^00006e93f2~Master Stone Fist#d68a^00006eb3f4~",
 			[59330] = "0Jojo Ironbrow#da84^32806bedd0~Jojo Ironbrow#da84^32806bedcf~328679d87670d83676dd9647df9605d7d614d52604d0e5fddea",
 			[63488] = "0Sunke Khang#176^3260764d89~Sully \"The Pickle\" McLeary#d558^326069dcb8~12d661d0765ed0665dd016b7d226b9d216bcd226c2d1f",
-			[60688] = "0Lorekeeper Vaeldrin#e579^3590ac5536~Lorekeeper Vaeldrin#e579^3590ac7530~359af93ceaf53dbac43c3ab63b2aac3a2ab7385ac13c0ab63b0aae39fab437eab7366ad931e",
+			[51590] = "0Thisalee Crow#a02e^25e0540b4c~Choluna#a02d^25e0715762",
 			[63616] = "0Kaz'tik the Manipulator#f90e^35a08ad5bc~Kaz'tik the Manipulator#f90e^35a08ad5b4~35a81b69281b69881b69981d69281d69981e69981d69481d69081c69681f692~35a81b69981b69981b69981a6de81a6de8256f682a6ed82a6ed82a6ed8296ee8296ee80f6fa80f6fa79b6ef79d6f2",
 			[59586] = "0Ji Firepaw#da86^32805cfb91~Ji Firepaw#da86^32805cdb95~3285ffbb7611c12611c02610bff60ac495d8c145cfc245cfc24",
 			[59650] = "0Seer Ixit#d96a^20a1dfabae~~",
 			[51526] = "0Codex of Shadows#o319c700^25e04ffc54~Thisalee Crow#a02e^25e0540b53",
 			[59778] = "0Mouthwatering Brew#o333b500^3260895e9d~Lorewalker Cho#d6b1^3260894e9b~12d895e9c",
-			[59852] = "0Foreman Mann#dc1a^0000823453~Foreman Mann#dc1a^0000823454~12d7424ac7414b073db267314c47314c472a4d57d0af571f4de7114e65b4b915acbb4~12d7324c57414b673a49d73a49d7034ce73148f",
-			[26264] = "0Brigg Smallshanks#7897^20c27112d5~Brigg Smallshanks#7897^20c270e302~20c71590b",
+			[52512] = "0Dreyan^280097b938~Dreyan^28009ab967~2809ab967",
+			[50928] = "0Malfurion Stormrage#9bb1^25e07a05a8~Malfurion Stormrage#9bb1^25e079f5ab~25e713463713463713463713463713463713463714463714463715467713462713462713462713462713462713462",
 			[59970] = "0Master Bruised Paw#dd8a^00002ea4fe~Master Bruised Paw#dd8a^00002ec500~12d2ca6c72fa6a32fa6a332e65c3146363045fb2f75cf2db5cc2855c72855c726b5b02f35d7",
 			[23884] = "0Thassarian#663a^1e60d8d6a4~Thassarian#663a^1e60d8d6a4~1e6e12356~1e6d65340~1e6e4a49b",
 			[23916] = "0Elder Ko'nani#6652^1e807adbf6~Elder Ko'nani#6652^1e807afbf5~1e879bb617e9b1280fb417f0b487f1b47808aed",
 			[60162] = "0Ken-Ken#db33^0000c2f124~Ken-Ken#db33^0000c2c123~12dc191c5bfb1b3bfb1b3b951aa~12dc191c5c1b1cbc1e1d1c091c5~12dc071e4bdc20ebc71c9b9d19f",
-			[26414] = "0Brann Bronzebeard#6da6^20e1b507d4~Brann Bronzebeard#6da6^20e17fe1f3~20e803247",
+			[61000] = "0Lorewalker Cho#e81a^00007df9cf~Lorewalker Cho#e81a^00007e09d1~",
 			[59802] = "0?^3260a8bcaf~Admiral Taylor#ee2a^3260967d0e~12da86ca8",
 			[24044] = "0Boxey Boltspinner#6a4f^01b08be61a~~",
-			[63452] = "0Lindsay#73^024054e86d~~",
-			[50848] = "0Scout Larandia#9ca0^25e071c306~Alysra#9805^25e07bc30a",
-			[62358] = "0Skeer the Bloodseeker#f65f^35a041c81a~Kil'ruk the Wind-Reaver#f44a^35a08cb5b8~35a41a82741482341a82d41982d41982a41982a41982a41982a41982a41982a41982a~35a41882c",
+			[24034] = "0Tua'kea#6685^1e807acc2a~Tua'kea#6685^1e807a2c3e~1e877fc84",
+			[58844] = "0Master Li Fei#d377^000063440c~Huo#d603^00006484ad~",
+			[23864] = "0Private Brau#6333^1e6090eb6f~Ataika#6639^1e60a3175f",
 			[24172] = "0Ataika#6639^1e60a3175f~Corporal Venn#664b^1e60d1b76b",
-			[52492] = "0Captain's Log#o31df200^280088fbc9~Maruut Stonebinder#a839^28007ef87d",
+			[60680] = "0Merchant Tantan#e7cd^32b06c0753~Merchant Tantan#e7cd^32b06c4758~32b6ee81f6d08606c88616c886167883967883966183b66183b",
 			[62134] = "0Sapmaster Vu#f4ca^35a082b1d4~Sapmaster Vu#f4ca^35a082b1d1~35a8501c6",
-			[50856] = "0Tyrus Blackhorn#9bfd^25e038a72b~Tyrus Blackhorn#9bfd^25e038972d~25e25c6b1",
-			[51200] = "0Jordan Olafson#9f82^0000000000~Jordan Olafson#9f82^0000000000~25e000000",
-			[51152] = "0Yargra Blackscar#9f85^0000000000~Yargra Blackscar#9f85^0000000000~25e000000000000000000000000000000000000000000000000000000000000000000000000",
-			[64036] = "0Bolo#ddc6^0000ffaffa~Chen Stormstout#db45^3270dbe386",
+			[51168] = "0Ysera#9d61^25e09e53ff~Oomla Whitehorn#9a05^25e05b3321",
+			[52854] = "0First Mate Moody#a84a^2800a29716~First Mate Moody#a84a^28009be684~2809f17a1~280a4c87c",
+			[58840] = "0Master Shang Xi#d551^000080636d~Master Li Fei#d377^000063640e",
+			[19714] = "~Harold Lane#472a^1dd0b6967d~1ddb9b7beba47a9bab758baa74eb8e760b9173eb7f73ab356e7",
 			[61058] = "0Farmer Yoon#e516^32708567ce~Haohan Mudclaw#e03a^3270878846",
 			[62940] = "0Sungshin Ironpaw#fae7^000088f82f~Anthea Ironpaw#e559^000086e849~",
 			[61186] = "0Mishka#e83b^329088cd51~Mishka#e83b^3290895d50~3298f5c5f8f5c5f908c42922c3c926c3b926c3b924c3d938bfe94ebdb951bcd951bcd95cbb5967b88989c3c",
-			[63342] = "0Farmer Yoon#e516^32708557ca~Farmer Yoon#e516^32708577c9~32784f7b78507c08527ba84f7bf",
+			[64032] = "0Elder Lin#fa1d^3890ffaffa~Elder Lin#fa1d^3890ffaffa~32788c86288d86388d86688d86488f86288f86387984788d86788e869",
 			[59862] = "0Foreman Mann#dc1a^0000823454~Foreman Raike#e7ff^00007b69ca",
-			[63886] = "0Farmer Yoon#e516^32708567ca~Farmer Yoon#e516^32708567c8~32784f7bf8517b884f7b784b7a98517bd84f7c08517bf84f7b9",
+			[51462] = "0Thisalee Crow#a02e^25e06bd740~Thisalee Crow#a02e^25e06bc73d~25e726830~25e727836",
 			[24588] = "0Ivan#6b4d^1ea058d8df~Lieutenant Dumont#68fb^1ea051799e",
-			[63872] = "0\"Jinyu Princess\" Irrigation System^327084e7b6~Farmer Yoon#e516^32708557c8",
+			[57476] = "0Dreyan^2f126fa90e~Dreyan^2f127afa8e~2f17b2a96",
 			[61570] = "0Ban Bearheart#ef4d^32a0d35bab~Taran Zhu#ee8a^32a0c35d2f",
-			[64070] = "0Lolo Lio#e8c1^32708e1855~Silkmaster Tsai#e03d^0000a0398b",
-			[59856] = "0Foreman Mann#dc1a^0000823454~Foreman Mann#dc1a^0000823453~12d7a24f87a14f77ad4d17ad4d17c94d77ca4d57ce4d67b450a7855097ab4ce7ab4ce7ab4ce7824c8788512789516",
-			[62708] = "0Deck Boss Arie#f775^35a0907c20~Master Angler Ju Lien#fb03^35a08c6ba4",
+			[59976] = "0Master Bruised Paw#dd8a^00002e9501~Master Bruised Paw#dd8a^00002ea503~12d43a6df43a6df43a6df43a6df42a71342a71342a71343a72f43a72f43a72f~12d45077f45f7744306f33f8709~12d44d63d",
+			[51198] = "0Jordan Olafson#9f82^0000000000~Jordan Olafson#9f82^0000000000~25e000000~25e000000",
+			[59800] = "0Lina Whitepaw#dc71^3260a8acae~Ren Whitepaw#dc70^3260a8bcab~12daaacd2~12daa2cdc",
 			[57732] = "0Stormcaller Mylra#abea^2800a4cd1f~Earthwarden Yrsa#c380^3001897f2d",
 			[61890] = "0Steelbender Doshu#f038^3290a1d4e5~Steelbender Doshu#f038^3290a1c4e7~329aef479b45493b56497b6d4a1b9649db774d1",
 			[61954] = "0Rensai Oakhide#f346^32a08a0c7a~Rensai Oakhide#f346^32a089fc7b~32a85fd5485bd62857d2e858d38837d3a829d3f82ed3c831d15831d15863d38860d5a84ed7686dd34836d4c836d4c",
 			[62018] = "0Kor'ik#fd2f^35a08c356f~Dathsar^35a066563f~35a66563f",
 			[59858] = "0Hao Mann#dc1b^00009d05ca~Hao Mann#dc93^00007644b1~12d71d4d970d4897424b872e4807234c47054b670b48777b4e3",
 			[62146] = "0Sapmaster Vu#f4ca^35a082f1d2~Sapmaster Vu#f4ca^35a082d1ce~35a7ce2617df29179f27179e27c7ca2607df28e7592f27362f4",
-			[53536] = "0Stormcaller Mylra#abea^2800a4cd1f~Stormcaller Mylra#abea^2800a50d1e~280affcb6",
+			[25662] = "0Injured Goblin Miner#72fa^1ef06a1bf8~Injured Goblin Miner#72fa^1ef06c2bd2~1ef76eb65",
 			[59254] = "0Groundskeeper Wu#d683^00006a63c6~Groundskeeper Wu#d683^00006a63c8~12d69c3b66923b168a3cb68a3cb6993da69b3db~12d69b3dd~12d6ac3f2",
 			[57464] = "0Finkle Einhorn#c124^25e06d347f~Finkle Einhorn#c144^2f11545a9a~25effaffa",
 			[50624] = "0The Twilight Apocrypha#o317d800^25e04236a6~Royce Duskwhisper#9a0b^25e048f4d3",
@@ -40736,16 +39741,16 @@ NxData = {
 			[62530] = "0Deck Boss Arie#f775^35a08bfb85~Deck Boss Arie#f775^35a08c0b89~35a8c4b94",
 			[54406] = "0Naraat the Earthspeaker#b0aa^12d0be8305~Thrall#aff2^2ef0554806",
 			[59094] = "0?^2800ffaffa~Rell Nightwind#d9ed^12d0c9a65e~12dd165c6",
-			[55034] = "0Decrepit Skeleton#o322e400^2ec0a69565~Harrison Jones#b0f0^2ec0a4d477~2eca21533a28513a35515a4a50fa4b52c",
+			[59514] = "0Yan#ddc5^32709b1563~Yan#ddc5^32709b4563~3279f043b9ff456a0d471a2545da39468a57409a2a3d5a1f3e2",
 			[25260] = "0Stefan Vadu#6f66^1f00240bc7~Stefan Vadu#6f66^1f0023fbce~1f02a6b5f2e0b2f2d7b062a3b232c3afa29fb0028db11268b04244b09258aec",
 			[25590] = "0Bloodrose Datura#6f74^1f00249bd4~Commander Falstaav#6d9b^1f0064eab1",
 			[58820] = "0Master Shang Xi^0000a8f3a4~Merchant Lorvo#d69f^00008cc536",
 			[50706] = "0Ian Duran#9a09^25e04824c6~Spirit of Goldrinn^25e043a684~25e57c62b",
 			[63042] = "0Sungshin Ironpaw#fae7^327088d830~~~~~~~",
 			[50824] = "0Subjugated Inferno Lord#9c9d^25e023d739~Tyrus Blackhorn#9bfd^25e038a72b~25e18c5d8~25e1dc69b~25e24973f",
-			[50664] = "0Kristoff Manheim#9ad8^25e045a689~Royce Duskwhisper#9a0b^25e048f4d3~25e4565b9",
-			[60118] = "0Journeyman Chu#e050^0000a26954~Journeyman Chu#e050^0000a26958~~",
-			[59798] = "0Ren Whitepaw#dc70^3260a8acae~Ren Whitepaw#dc70^3260a8bcab~12da60ce5a61ccca61ccca61ce0a72d30a84d3a",
+			[52508] = "0Stormcaller Mylra#a6bc^28009cf6f8~Stormcaller Mylra#a6bc^28009fe7cf~280a1b847",
+			[62354] = "0Skeer the Bloodseeker#f65f^35a041b80c~Skeer the Bloodseeker#f65f^35a041c81a~35a4538c54708ea45593840f9444339474739824839d043e9b4",
+			[63874] = "0\"Thunder King\" Pest Repellers^32708517be~Farmer Yoon#e516^32708597cd",
 			[59268] = "0Master Stone Fist#d68a^00006e93f2~Master Stone Fist#d68a^00006eb3f4~",
 			[59332] = "0Old Man Liang#d6ec^0000b4d62f~Old Man Liang#d6ec^3280c8b6d8~",
 			[63490] = "0Rell Nightwind#415^0000ffaffa~Sky Admiral Rogers#2f4^32607abe1f~12d71dd63",
@@ -40756,219 +39761,219 @@ NxData = {
 			[51528] = "0Thisalee Crow#a02e^25e0540b53~Thisalee Crow#a02e^25e053eb4d~25e4dace7",
 			[59780] = "0Lorewalker Cho#dbdf^3260897e7c~Anduin Wrynn#dc72^3260a88cab~12d8b8eae",
 			[59844] = "0Elder Lusshan#d6b0^3260947cdf~Lorewalker Cho#f859^326077b75e~32693ed26",
-			[50596] = "0Twilight Cauldron#o317d200^25e048a5cf~Rio Duran#9a0a^25e04824c6~25e4905bc4735ce4745af4755914505f045561246b61947761a",
+			[63894] = "0Farmer Fung#dfd2^32707b3566~Farmer Fung#dfd2^32707b5569~32784d7bd84d7bc8467bb~32784e7b984b7b88487b9~",
 			[59972] = "0Master Bruised Paw#dd8a^00002eb4ff~Master Bruised Paw#dd8a^00002ec500~12d290526~12d2635dd~12d2e36a4",
 			[51154] = "0Jordan Olafson#9f82^0000000000~Jordan Olafson#9f82^0000000000~25e000000000000000000000000000000000000000000000000",
-			[62930] = "0Hisek the Swarmkeeper#fcc1^35a08f9936~Hisek the Swarmkeeper#f929^35a08c35c4~35a8dd83689a816901798",
+			[57474] = "0Dreyan^2f1189e372~Dreyan^2f124d42a4~2f14682c4",
 			[60164] = "0Yi-Mo Longbrow#e408^0000d00117~Mei Barrelbottom#e190^0000c21136~12dc4813c",
 			[25812] = "0Mildred the Cruel#74bd^1ef0719b03~Mildred the Cruel#74bd^1ef0719b03~1ef6fcb2f6ecb406dbad970bae5713aab71cac1",
 			[60292] = "0Jenova Longeye#e42d^326092e728~Jenova Longeye#e42d^326092772e~326a2f552a2f552a2f552a2f5529ad40f9ad40f9ad40f9ad40f9ad40f9ad40f9156ee9156ee9156ee9156ee9156ee",
-			[50632] = "0Emissary Windsong#9bb9^0f10742725~Ysera#9d61^25e09eb3f9",
-			[26188] = "0Image of Warmage Kaitlyn#d8f1^20815d1d47~Image of Warmage Kaitlyn#d8f1^20815c9d3d~20830a845",
-			[60676] = "0Ren Firetongue#e7cf^32b06c375c~Ren Firetongue#e7cf^32b06c6755~32b6867ce69a7ab69379969a7926767d26a27fc6a97f86cf81c",
-			[60548] = "0?^3590a924e1~Lorekeeper Vaeldrin#e579^3590ac5536~359ada509adc50a~359aa7509aa550b~359aa655eaa8562",
-			[60612] = "0Anji Autumnlight#e627^32b036bb74~Anji Autumnlight#e627^32b036eb72~32b320be1322bdf32bbe0326bd5322bc5322bc5322bc531cbc531ebc431ebc431ebc431dbbf31fbc731fbc731fbc7",
+			[20952] = "~~1ddbc19f7be09fdc46999c7a985c7a984bdba5cc15a5d",
+			[60310] = "0Instructor Skythorn#e374^3260931734~Elder Anli#e4c4^326093972f~326a4854ba4854ba54549a6a55ba53542a51540a4f53fa56502",
 			[52488] = "0Seer Kormo#a985^28007f0876~Seer Kormo#a985^28007f1879~2808d8b7d8e8b98908b7d92cb8791ec1c",
-			[63346] = "0Farmer Yoon#e516^32708557ce~Farmer Yoon#e516^32708597cc~32784f7b384c7ba",
-			[59508] = "0Pei-Zhi#d93e^0000712266~Dathsar^00006ff201~12d6ff201",
+			[26188] = "0Image of Warmage Kaitlyn#d8f1^20815d1d47~Image of Warmage Kaitlyn#d8f1^20815c9d3d~20830a845",
+			[60612] = "0Anji Autumnlight#e627^32b036bb74~Anji Autumnlight#e627^32b036eb72~32b320be1322bdf32bbe0326bd5322bc5322bc5322bc531cbc531ebc431ebc431ebc431dbbf31fbc731fbc731fbc7",
+			[60676] = "0Ren Firetongue#e7cf^32b06c375c~Ren Firetongue#e7cf^32b06c6755~32b6867ce69a7ab69379969a7926767d26a27fc6a97f86cf81c",
+			[26262] = "0Brigg Smallshanks#7897^20c27112d5~Brigg Smallshanks#7897^20c270e302~20c99aa81b328e5aed7eeaeb72faeb6c0~20c5455b6615a9fae1957~20c9cf70796438c~20c818d26",
+			[55022] = "0Harrison Jones#b0f0^2ec0a4f477~Dreyan^2ec0a2942b~2eca484a7~2eca22423~2eca78565",
 			[54272] = "0Seer Kormo#a985^28007f0876~~",
-			[54282] = "0Harrison Jones#af3c^2ec0a4938f~Harrison Jones#b07c^2ec0a52491~2eca55492",
+			[62470] = "0Kil'ruk the Wind-Reaver#f44a^35a08ca5b6~Kil'ruk the Wind-Reaver#f44a^35a08cc5bb~35ab9b491b9649cba04aeba44c7b9f4d1b9b4d0ba14d2b984c7b8e4b9b8146cb8146cb8146cb8146cb6f48cb98389",
 			[60996] = "0Elder Sage Wind-Yi#df9a^00008eb920~Admiral Taylor#d752^0000948ce2",
-			[25664] = "0Injured Goblin Miner#72fa^1ef06c2bd2~Ricket#72f4^1ef068bda3~1ef672c98",
-			[23180] = "0Librarian Donathan#62ae^1e6073c558~Librarian Donathan#62ae^1e6073c554~1e66e4622",
-			[58842] = "0Master Li Fei#d377^000063140b~Master Li Fei#d377^000063440c~",
+			[60138] = "0Sully \"The Pickle\" McLeary#d558^32606f7e7a~Rell Nightwind#d559^3260737f2e~12d703ea8703eb6703eb6705eb2705eb2722eba~12d6d3ee06d4ed9735f2d735f2d",
+			[59116] = "0Bold Karasshi#d79c^32608a8d2f~Bold Karasshi#d79c^32608a8d29~32689bd3e89ad31892d178a2d168a2d168a4d148a6cf9899cfc880cef880cf0880cf087fcf0",
+			[55904] = "0Earthcaller Yevaa#a64d^28007ea88b~Explorer Mowi#aeff^280079183b",
 			[59354] = "0Old Man Liang#d6ec^0000b4d62f~Old Man Liang#d6ec^3280c8b6d8~328c2b777",
 			[59244] = "0Xiao#d68e^00006e23c6~Instructor Xann#d685^00006a7488",
 			[61380] = "0Shado-Master Chong#eb01^0000000ffa~Shado-Master Chong#eb01^0000000ffa~329736dcf~329738dcc",
-			[51516] = "0Thisalee Crow#a02e^25e053cb51~Thisalee Crow#a02e^25e0540b53~25e4f4c2b50bc2750bc35502c604f2c5f4f0c414d8c2d4d5c6b",
+			[59246] = "0Instructor Xann#d685^00006a7488~Instructor Xann#d685^00006a8488~",
 			[58866] = "0Kerri Hicks#39f0^33707a8ab9~Kerri Hicks#39f0^33707adabf~3594035db4005f43f56093e86303e963a3f765040764741364b42163f46964746e65143f60e4455fb41367242168e",
 			[61572] = "0Orbiss#edb9^32a0adcad0~Orbiss#edb9^32a0adead2~32aaf0b76aefb6a",
 			[25788] = "0Crusader Lord Lantinga#73f7^1f00523c1b~Crusader MacKellar#73f9^1f00409a3b",
-			[62952] = "0Yan Ironpaw#e55b^3270867843~Yan Ironpaw#e55b^3270867843~327867843~327867843867843867843867843867843",
-			[25706] = "0Rin Duoctane#771a^0002503809~Jeer Sparksocket#72f7^1ef068ddce",
-			[59360] = "0Aysa Cloudsinger#d6bf^3280cc2644~Ji Firepaw#d8b5^3280b09a68",
+			[62912] = "0Farmhand Bo#f90a^3290898d6d~Lao Muskpaw#e7d9^3290b60b12",
+			[54374] = "0?^2ec0a674f3~Dreyan^2ec0a02511~2eca8e4fea9949eab245da9b48cae5510a32460a1343a9ff49ca094cda0d502a02511",
+			[57470] = "0Finkle Einhorn#c144^2f11545a99~Dreyan^2f11802b70~2f176bbb7",
 			[61892] = "0Lorewalker Cho#f928^0000ffaffa~Lorewalker Cho#f928^0000ffaffa~329ffaffa",
 			[61956] = "0Hawkmaster Nurong#ee5c^32a0840df3~Hawkmaster Nurong#ee5c^32a0840def~32a841df4841df4841df4841df4841df4841df4841df4841df4841df4841df4841df4841df4841df4841df4841df4~32a841df4841df4",
 			[62020] = "0Dathsar^35a066563f~Malik the Unscathed#f536^35a08c5573~35a72469f",
-			[52500] = "0Stormcaller Mylra#a6bc^2800a1a6c3~Stormcaller Mylra#a6bc^28009e3744~2809d6869",
+			[52520] = "0Dreyan^2800a64aa2~Forgemaster's Log#o3214e00^2800a2f8d9",
 			[62148] = "0Lya of Ten Songs#f4cb^35a08191dd~Lya of Ten Songs#f4cb^35a081b1de~35a71d2a9~35a6e5266",
 			[25722] = "0Chief Rageclaw#73fa^1f00523c14~Chief Rageclaw#73fa^1f00523c1b~1f057ccfa571d17568d2e56dd27563d44587d6b5a2d785aed96",
 			[54088] = "0Anduin Wrynn#ad05^12d054f63f~Farmer Wollerton#af07^12d08540fe~12d8540fe",
-			[61574] = "0Orbiss#edb9^32a0adead2~Orbiss#edb9^32a0adaacf~32aa8aad8a86aaca6da9aa58ab0a3daeca5cadcae8b0baa1adaa8ab0da6db34a7eb4aa61b51",
-			[59788] = "0Pearlkeeper Fujin#e6b2^3260966cfe~Bold Karasshi#db9e^326096ad0e~32695dd3a~32695dd39",
+			[57480] = "0Dreyan^2f12a7eb58~Dreyan^2f12a8cd27~2f1a8cd19",
+			[61166] = "0Sully \"The Pickle\" McLeary#e83a^32908a8d4c~Sully \"The Pickle\" McLeary#e83a^32908a6d51~329877ce87fed48802d4d815d30815d3083ad68855d8d869d69882ce988ece8",
 			[62468] = "0Rik'kal the Dissector#f660^35a08b05c0~Rik'kal the Dissector#f660^35a08b05c1~35ab1d3b9b1038eb2b3acae45ec",
 			[50650] = "0Captain Saynna Stormrunner#9ccb^25e090f302~Alysra#9cf2^25e085d2c5~25e8662c2",
-			[54006] = "0Adarrah#af21^0a104e1a79~Adarrah#b719^2ec098ab7a~0a14e5a76",
+			[55098] = "0Harrison Jones#b0f0^2ec0a4d477~Harrison Jones#b0f0^2ec0a4e476~2eca50496a3d489a7048ca824b8a1a4dfa214b4a10438",
 			[23150] = "0Midge#62a1^1e60956ad5~Librarian Donathan#62ae^1e6073a557",
 			[62724] = "0Lorewalker Cho#e8e4^0000966cf4~Lorewalker Cho#e813^0000725ab9~",
 			[62788] = "0Anduin Wrynn#fc1c^3290afe6e6~Anduin Wrynn#fc1c^3290afe6e5~329aff6deb016d9~329afd707b036fb~329afd707afa6f7~329af7707af8710",
 			[25804] = "0Crusader Lord Lantinga#73f7^1f00522c1a~Orders From Drakuru#o2ed1600^1f00597d6b",
 			[50634] = "0Ysera#9d61^25e09eb3f9~Malfurion Stormrage#9bb1^25e07a25aa",
-			[51480] = "0Skylord Omnuron#a025^25e06f3753~Thisalee Crow#a02e^25e053fb4c",
+			[25286] = "0Stefan Vadu#6f66^1f00241bcb~Stefan Vadu#6f66^1f0023fbce~1f02cdb3a2d1be1300c5533dbcc364bb6~1f0327c44340c2333abcd351baf377bab",
 			[50762] = "0Laina Nightsky#9bf7^25e0309684~Laina Nightsky#9bf7^25e030668c~25e2166bb2816f62886da29b72a21575f20b71224470d2116a922368c1fe5f0",
 			[59014] = "0Professor Thaddeus Paleo#39ff^0000000000~~",
 			[62916] = "0Hisek the Swarmkeeper#fcc1^35a08f9936~Hisek the Swarmkeeper#f929^35a08c35c4~35a89e83b8c880a9057968f479b8ed780~35a8e677d",
 			[25580] = "0Archmage Celindra#71e4^1f81905769~Archmage Celindra#71e4^1f818ff783~1f80c29e0~1fe2836c2",
-			[64396] = "0Barnaby Fletcher#7ed^327088383c~Barnaby Fletcher#7ed^327088383c",
+			[54200] = "0Maziel's Research^2800b78a4a~Dreyan^2800b66a94~280bae997b49a08b5ba6cb66a94",
 			[59270] = "0Master Stone Fist#d68a^00006eb3f4~Master Stone Fist#d68a^00006e93f3~",
-			[25276] = "0Stefan Vadu#6f66^1f00240bca~Stefan Vadu#6f66^1f00241bcb~1f0246bd1",
+			[50648] = "0Alysra#9805^25e07bc30a~Captain Saynna Stormrunner#9ccb^25e090f302",
 			[59170] = "0Gentle Mother Hanae#d646^00006eac23~Gentle Mother Hanae#d646^00006eac1a~",
-			[62910] = "0Admiral Taylor#e831^32908a1d50~Shado-Master Chong#eb01^0000000ffa",
+			[25692] = "0Gretchen Fizzlespark#7321^1ef0692dc2~Lok'lira the Crone#7329^1ef06d7b01",
 			[59526] = "0Defender Mordun#5e2f^20b1ae0b66~~20bc1f5b2",
 			[59590] = "0Korga Strongmane#ea8a^3280804c3d~Korga Strongmane#ea8a^3280803c48~32877dc6e81ad5c889c4288cc36912c9b911ced8e2c948a7cf87a2c007faca3",
-			[62350] = "0Kil'ruk the Wind-Reaver#f44a^35a08c95bb~Skeer the Bloodseeker#f65f^35a041b80c~35a41980f",
-			[64004] = "0Challenger Soong#fa1c^3890ffaffa~~",
+			[63212] = "0Rik'kal the Dissector#fee5^35a0515e37~Rik'kal the Dissector#613^35a0515e33~35a519e2f",
+			[59974] = "0Master Bruised Paw#dd8a^00002e84fd~Master Bruised Paw#dd8a^00002e9501~12d2ea5242ea5242ea5242ea524",
 			[59782] = "0Lorewalker Cho#ef22^32608a0e93~Lorewalker Cho#dbdf^3260897e7c~12d8c1e73896e2b902e9a920eaf924eb4938ee5947ecc95ce91~12d95ae87",
-			[52490] = "0Maruut Stonebinder#a839^28007ed878~Maruut Stonebinder#a839^28007ef87d~28088fbc9~2808f5bd7~28090dc35",
-			[23822] = "0Image of Warmage Kaitlyn#d8f0^20815efd12~Image of Warmage Kaitlyn#d8f0^20815f7ced~20891a89aa4e83ba6e83ea3b9ff",
+			[60678] = "0Merchant Tantan#e7cd^32b06c3756~Merchant Tantan#e7cd^32b06c1751~32b6237d360c74b6746c369c66b6cf6486db6c06c16bd6a16da6126b56406b97456516bf6c16d064776a69578a6a1",
+			[64004] = "0Challenger Soong#fa1c^3890ffaffa~~",
 			[23854] = "0Mark Hanes#662b^1e60911b1b~Leryssa#62a3^0000000000",
-			[60166] = "0Mei Barrelbottom#e190^0000c20136~Mei Barrelbottom#e190^0000ffaffa~327c078cfc248f0c1c90bc05909bf1904bdc8ffc088d4c088d4c51928c5a92f",
-			[23918] = "0Elder Ko'nani#6652^1e807afbf5~Elder Ko'nani#6652^1e807acbf3~1e876a972",
 			[28044] = "0Human Commoner#49ef^12d0bd38f4~Gregory Tabor#8773^01e057483b",
-			[28108] = "0Mary Allerton#8797^17d09e7769~Mary Allerton#8797^17d09e7769~",
+			[23918] = "0Elder Ko'nani#6652^1e807afbf5~Elder Ko'nani#6652^1e807acbf3~1e876a972",
+			[60166] = "0Mei Barrelbottom#e190^0000c20136~Mei Barrelbottom#e190^0000ffaffa~327c078cfc248f0c1c90bc05909bf1904bdc8ffc088d4c088d4c51928c5a92f",
 			[60294] = "0Jenova Longeye#e42d^326092e728~Jenova Longeye#e42d^326092772e~32685941685a41685a41685842f8134327ff3d08955d286d62e89e5a38505f38456158745ae",
-			[50646] = "0Malfurion Stormrage#9bb1^25e07a15ab~Malfurion Stormrage#9bb1^25e07a05a8~25e7d84b07d84b07d84b07d84b07d84b17d84b17d84b17d84b17d84b17d43ec7d43ec7d43ec7d43ec7d43ec7ae49e",
-			[23342] = "0Librarian Donathan#62ae^1e6073d555~Librarian Donathan#62ae^1e6073a558~1e66ae641",
+			[28108] = "0Mary Allerton#8797^17d09e7769~Mary Allerton#8797^17d09e7769~",
 			[19716] = "0Harold Lane#472a^1dd0b6967d~Harold Lane#472a^1dd0b6867c~1dd96471897a71d9606ff90476391076d91475b91174f91478d9027879047778ee7b6846872",
+			[23342] = "0Librarian Donathan#62ae^1e6073d555~Librarian Donathan#62ae^1e6073a558~1e66ae641",
+			[50646] = "0Malfurion Stormrage#9bb1^25e07a15ab~Malfurion Stormrage#9bb1^25e07a05a8~25e7d84b07d84b07d84b07d84b07d84b17d84b17d84b17d84b17d84b17d43ec7d43ec7d43ec7d43ec7d43ec7ae49e",
 			[60550] = "0Enormous Crocolisk Tail^3270918440~Yan#ddc5^32709af562~",
 			[60614] = "0Leven Dawnblade#e428^32b09076f8~Leven Dawnblade#e428^32b090a6f7~32b7ed49f79a43f72034f70f38471934e7d845d7d939c7d635e7c73547c53507a43c97ef40a7df40c7cc41d84c391",
-			[60678] = "0Merchant Tantan#e7cd^32b06c3756~Merchant Tantan#e7cd^32b06c1751~32b6237d360c74b6746c369c66b6cf6486db6c06c16bd6a16da6126b56406b97456516bf6c16d064776a69578a6a1",
-			[59974] = "0Master Bruised Paw#dd8a^00002e84fd~Master Bruised Paw#dd8a^00002e9501~12d2ea5242ea5242ea5242ea524",
-			[63212] = "0Rik'kal the Dissector#fee5^35a0515e37~Rik'kal the Dissector#613^35a0515e33~35a519e2f",
-			[25692] = "0Gretchen Fizzlespark#7321^1ef0692dc2~Lok'lira the Crone#7329^1ef06d7b01",
+			[52490] = "0Maruut Stonebinder#a839^28007ed878~Maruut Stonebinder#a839^28007ef87d~28088fbc9~2808f5bd7~28090dc35",
+			[23822] = "0Image of Warmage Kaitlyn#d8f0^20815efd12~Image of Warmage Kaitlyn#d8f0^20815f7ced~20891a89aa4e83ba6e83ea3b9ff",
+			[62350] = "0Kil'ruk the Wind-Reaver#f44a^35a08c95bb~Skeer the Bloodseeker#f65f^35a041b80c~35a41980f",
+			[62910] = "0Admiral Taylor#e831^32908a1d50~Shado-Master Chong#eb01^0000000ffa",
 			[60934] = "0Merchant Shi#e77f^3290bf9e32~Wu-Peng#e788^3290bf0c49",
-			[50648] = "0Alysra#9805^25e07bc30a~Captain Saynna Stormrunner#9ccb^25e090f302",
-			[54200] = "0Maziel's Research^2800b78a4a~Dreyan^2800b66a94~280bae997b49a08b5ba6cb66a94",
+			[25276] = "0Stefan Vadu#6f66^1f00240bca~Stefan Vadu#6f66^1f00241bcb~1f0246bd1",
+			[64396] = "0Barnaby Fletcher#7ed^327088383c~Barnaby Fletcher#7ed^327088383c",
 			[24430] = "0Master Woodsman Anderhol#6a8d^1ea051f995~Master Woodsman Anderhol#6a8d^1ea0520996~1ea2e0a6e2dfa6e30aac730aac730aac7312acd",
 			[61190] = "0Bao Jian#e9ad^3290985c80~Bao Jian#e9ad^3290985c7e~32993fc3e935c5293cc60930c92922c968fecba90cc3a923c0092fc1a93cc2a955c2495ec26",
-			[25286] = "0Stefan Vadu#6f66^1f00241bcb~Stefan Vadu#6f66^1f0023fbce~1f02cdb3a2d1be1300c5533dbcc364bb6~1f0327c44340c2333abcd351baf377bab",
+			[51480] = "0Skylord Omnuron#a025^25e06f3753~Thisalee Crow#a02e^25e053fb4c",
 			[65412] = "0Lady Jaina Proudmoore#12e2^3a00589e49~",
-			[55098] = "0Harrison Jones#b0f0^2ec0a4d477~Harrison Jones#b0f0^2ec0a4e476~2eca50496a3d489a7048ca824b8a1a4dfa214b4a10438",
+			[54006] = "0Adarrah#af21^0a104e1a79~Adarrah#b719^2ec098ab7a~0a14e5a76",
 			[61446] = "0Lin Silentstrike#f178^329059697b~Lin Silentstrike#f178^3290597977~3294e99cb4d59ea4cba094e7a264d9a3c4b6a1e4f6a0850ea165099f64d59ea4d7a384f9a29",
-			[61166] = "0Sully \"The Pickle\" McLeary#e83a^32908a8d4c~Sully \"The Pickle\" McLeary#e83a^32908a6d51~329877ce87fed48802d4d815d30815d3083ad68855d8d869d69882ce988ece8",
-			[57480] = "0Dreyan^2f12a7eb58~Dreyan^2f12a8cd27~2f1a8cd19",
+			[59788] = "0Pearlkeeper Fujin#e6b2^3260966cfe~Bold Karasshi#db9e^326096ad0e~32695dd3a~32695dd39",
+			[61574] = "0Orbiss#edb9^32a0adead2~Orbiss#edb9^32a0adaacf~32aa8aad8a86aaca6da9aa58ab0a3daeca5cadcae8b0baa1adaa8ab0da6db34a7eb4aa61b51",
 			[61638] = "0Sage Liao#ed71^32909ae368~Li Hai#ec14^3290a174b4",
-			[52520] = "0Dreyan^2800a64aa2~Forgemaster's Log#o3214e00^2800a2f8d9",
-			[57470] = "0Finkle Einhorn#c144^2f11545a99~Dreyan^2f11802b70~2f176bbb7",
-			[54374] = "0?^2ec0a674f3~Dreyan^2ec0a02511~2eca8e4fea9949eab245da9b48cae5510a32460a1343a9ff49ca094cda0d502a02511",
-			[62912] = "0Farmhand Bo#f90a^3290898d6d~Lao Muskpaw#e7d9^3290b60b12",
+			[52500] = "0Stormcaller Mylra#a6bc^2800a1a6c3~Stormcaller Mylra#a6bc^28009e3744~2809d6869",
+			[59360] = "0Aysa Cloudsinger#d6bf^3280cc2644~Ji Firepaw#d8b5^3280b09a68",
+			[25706] = "0Rin Duoctane#771a^0002503809~Jeer Sparksocket#72f7^1ef068ddce",
+			[62952] = "0Yan Ironpaw#e55b^3270867843~Yan Ironpaw#e55b^3270867843~327867843~327867843867843867843867843867843",
 			[61958] = "0Hawkmaster Nurong#ee5c^32a0840def~Hawkmaster Nurong#f542^32a08a1de3~32a897deb8abddc",
 			[62022] = "0Lorewalker Cho#efbb^0000ffaffa~Lorewalker Cho#f906^0000ffaffa~329ffaffa9fa4c2a064cda124d99f44d79e14c49e24c39f44d99e24c4a1d4c4~3299c64a79c64a79c64a79c64a89c64a8~329a3e4b9a4c4a0a4c49c",
-			[59246] = "0Instructor Xann#d685^00006a7488~Instructor Xann#d685^00006a8488~",
+			[51516] = "0Thisalee Crow#a02e^25e053cb51~Thisalee Crow#a02e^25e0540b53~25e4f4c2b50bc2750bc35502c604f2c5f4f0c414d8c2d4d5c6b",
 			[62150] = "0Sapmaster Vu#f4ca^35a082d1d5~Sapmaster Vu#f4ca^35a06182be",
 			[62214] = "0Malik the Unscathed#f536^35a08cd5a8~Malik the Unscathed#f536^35a08ca5aa~35a9ac31f98a32b98f31f99831b99931299c3069993089562db9572db9572ed",
-			[55904] = "0Earthcaller Yevaa#a64d^28007ea88b~Explorer Mowi#aeff^280079183b",
-			[59116] = "0Bold Karasshi#d79c^32608a8d2f~Bold Karasshi#d79c^32608a8d29~32689bd3e89ad31892d178a2d168a2d168a4d148a6cf9899cfc880cef880cf0880cf087fcf0",
-			[60138] = "0Sully \"The Pickle\" McLeary#d558^32606f7e7a~Rell Nightwind#d559^3260737f2e~12d703ea8703eb6703eb6705eb2705eb2722eba~12d6d3ee06d4ed9735f2d735f2d",
-			[62470] = "0Kil'ruk the Wind-Reaver#f44a^35a08ca5b6~Kil'ruk the Wind-Reaver#f44a^35a08cc5bb~35ab9b491b9649cba04aeba44c7b9f4d1b9b4d0ba14d2b984c7b8e4b9b8146cb8146cb8146cb8146cb6f48cb98389",
+			[58842] = "0Master Li Fei#d377^000063140b~Master Li Fei#d377^000063440c~",
+			[23180] = "0Librarian Donathan#62ae^1e6073c558~Librarian Donathan#62ae^1e6073c554~1e66e4622",
+			[25664] = "0Injured Goblin Miner#72fa^1ef06c2bd2~Ricket#72f4^1ef068bda3~1ef672c98",
+			[54282] = "0Harrison Jones#af3c^2ec0a4938f~Harrison Jones#b07c^2ec0a52491~2eca55492",
 			[62534] = "0Kil'ruk the Wind-Reaver#f44a^35a08cc5bc~Kil'ruk the Wind-Reaver#f44a^35a08ca5bd~35aad4911ad5917acd9299f59589f795b9ed92da13987a13987a279d1a219d0a219d0aa9a7c9df94c9f0965a06986",
-			[55022] = "0Harrison Jones#b0f0^2ec0a4f477~Dreyan^2ec0a2942b~2eca484a7~2eca22423~2eca78565",
-			[26262] = "0Brigg Smallshanks#7897^20c27112d5~Brigg Smallshanks#7897^20c270e302~20c99aa81b328e5aed7eeaeb72faeb6c0~20c5455b6615a9fae1957~20c9cf70796438c~20c818d26",
+			[59508] = "0Pei-Zhi#d93e^0000712266~Dathsar^00006ff201~12d6ff201",
+			[63346] = "0Farmer Yoon#e516^32708557ce~Farmer Yoon#e516^32708597cc~32784f7b384c7ba",
 			[62726] = "0Bowmistress Li#fbd3^36b19b5e20~Bowmistress Li#fbd3^36b19c1e1a~36b79d22979d22a",
-			[60310] = "0Instructor Skythorn#e374^3260931734~Elder Anli#e4c4^326093972f~326a4854ba4854ba54549a6a55ba53542a51540a4f53fa56502",
-			[20952] = "~~1ddbc19f7be09fdc46999c7a985c7a984bdba5cc15a5d",
+			[60548] = "0?^3590a924e1~Lorekeeper Vaeldrin#e579^3590ac5536~359ada509adc50a~359aa7509aa550b~359aa655eaa8562",
+			[50632] = "0Emissary Windsong#9bb9^0f10742725~Ysera#9d61^25e09eb3f9",
 			[58824] = "0Vin#d365^12d0965872~~",
-			[57474] = "0Dreyan^2f1189e372~Dreyan^2f124d42a4~2f14682c4",
+			[62930] = "0Hisek the Swarmkeeper#fcc1^35a08f9936~Hisek the Swarmkeeper#f929^35a08c35c4~35a8dd83689a816901798",
 			[50764] = "0Laina Nightsky#9bf7^25e0309684~Laina Nightsky#9bf7^25e030668c~25e24975223d7392af77c25273f24a74c23e739",
-			[63894] = "0Farmer Fung#dfd2^32707b3566~Farmer Fung#dfd2^32707b5569~32784d7bd84d7bc8467bb~32784e7b984b7b88487b9~",
-			[63874] = "0\"Thunder King\" Pest Repellers^32708517be~Farmer Yoon#e516^32708597cd",
-			[62354] = "0Skeer the Bloodseeker#f65f^35a041b80c~Skeer the Bloodseeker#f65f^35a041c81a~35a4538c54708ea45593840f9444339474739824839d043e9b4",
-			[52508] = "0Stormcaller Mylra#a6bc^28009cf6f8~Stormcaller Mylra#a6bc^28009fe7cf~280a1b847",
+			[50596] = "0Twilight Cauldron#o317d200^25e048a5cf~Rio Duran#9a0a^25e04824c6~25e4905bc4735ce4745af4755914505f045561246b61947761a",
+			[59798] = "0Ren Whitepaw#dc70^3260a8acae~Ren Whitepaw#dc70^3260a8bcab~12da60ce5a61ccca61ccca61ce0a72d30a84d3a",
+			[60118] = "0Journeyman Chu#e050^0000a26954~Journeyman Chu#e050^0000a26958~~",
+			[50664] = "0Kristoff Manheim#9ad8^25e045a689~Royce Duskwhisper#9a0b^25e048f4d3~25e4565b9",
 			[59272] = "0Master Stone Fist#d68a^00006e93f3~Instructor Myang#d686^000063a3da",
 			[51148] = "0Tholo Whitehoof#9d56^25e0a3b398~Tholo Whitehoof#9d56^25e0a3b399~25e8ea269",
-			[59514] = "0Yan#ddc5^32709b1563~Yan#ddc5^32709b4563~3279f043b9ff456a0d471a2545da39468a57409a2a3d5a1f3e2",
+			[55034] = "0Decrepit Skeleton#o322e400^2ec0a69565~Harrison Jones#b0f0^2ec0a4d477~2eca21533a28513a35515a4a50fa4b52c",
 			[25646] = "0Gino#72f8^1ef0811d0c~Gino#72f8^1ef0800d10~1ef810c70~1ef80ac6e",
 			[59528] = "0Defender Mordun#5e2f^20b1ae0b66~~20ba9b62dad83ec82252a75c418387603",
 			[59592] = "0Ji Firepaw#da86^32805cdb95~Delora Lionheart#da88^32806bedd0",
 			[59656] = "0Kurzel#d97d^21615b6d39~~",
-			[25662] = "0Injured Goblin Miner#72fa^1ef06a1bf8~Injured Goblin Miner#72fa^1ef06c2bd2~1ef76eb65",
+			[53536] = "0Stormcaller Mylra#abea^2800a4cd1f~Stormcaller Mylra#abea^2800a50d1e~280affcb6",
 			[59784] = "0Lorewalker Cho#ef22^32608a0e93~Lorewalker Cho#dbdf^3260897e7c~12d975e5395be89947e598e0e53978e6f",
-			[59800] = "0Lina Whitepaw#dc71^3260a8acae~Ren Whitepaw#dc70^3260a8bcab~12daaacd2~12daa2cdc",
-			[51198] = "0Jordan Olafson#9f82^0000000000~Jordan Olafson#9f82^0000000000~25e000000~25e000000",
-			[59976] = "0Master Bruised Paw#dd8a^00002e9501~Master Bruised Paw#dd8a^00002ea503~12d43a6df43a6df43a6df43a6df42a71342a71342a71343a72f43a72f43a72f~12d45077f45f7744306f33f8709~12d44d63d",
-			[57476] = "0Dreyan^2f126fa90e~Dreyan^2f127afa8e~2f17b2a96",
-			[51462] = "0Thisalee Crow#a02e^25e06bd740~Thisalee Crow#a02e^25e06bc73d~25e726830~25e727836",
+			[62708] = "0Deck Boss Arie#f775^35a0907c20~Master Angler Ju Lien#fb03^35a08c6ba4",
+			[59856] = "0Foreman Mann#dc1a^0000823454~Foreman Mann#dc1a^0000823453~12d7a24f87a14f77ad4d17ad4d17c94d77ca4d57ce4d67b450a7855097ab4ce7ab4ce7ab4ce7824c8788512789516",
+			[64070] = "0Lolo Lio#e8c1^32708e1855~Silkmaster Tsai#e03d^0000a0398b",
+			[63872] = "0\"Jinyu Princess\" Irrigation System^327084e7b6~Farmer Yoon#e516^32708557c8",
+			[63886] = "0Farmer Yoon#e516^32708567ca~Farmer Yoon#e516^32708567c8~32784f7bf8517b884f7b784b7a98517bd84f7c08517bf84f7b9",
 			[60168] = "0Mei Barrelbottom#e190^0000c20136~Mei Barrelbottom#e190^0000ffaffa~359b9c2df~359c012bb~359b672ce",
-			[64032] = "0Elder Lin#fa1d^3890ffaffa~Elder Lin#fa1d^3890ffaffa~32788c86288d86388d86688d86488f86288f86387984788d86788e869",
+			[63342] = "0Farmer Yoon#e516^32708557ca~Farmer Yoon#e516^32708577c9~32784f7b78507c08527ba84f7bf",
 			[60296] = "0Jenova Longeye#e42d^326092e728~Jenova Longeye#e42d^326092772e~326a44548a52542a4952da52516a52507a4b505a49517a4852ea4754aa54549a4852fa4a51aa5250da4b503a4b504",
-			[19714] = "~Harold Lane#472a^1dd0b6967d~1ddb9b7beba47a9bab758baa74eb8e760b9173eb7f73ab356e7",
-			[58840] = "0Master Shang Xi#d551^000080636d~Master Li Fei#d377^000063640e",
-			[52854] = "0First Mate Moody#a84a^2800a29716~First Mate Moody#a84a^28009be684~2809f17a1~280a4c87c",
-			[51168] = "0Ysera#9d61^25e09e53ff~Oomla Whitehorn#9a05^25e05b3321",
+			[64036] = "0Bolo#ddc6^0000ffaffa~Chen Stormstout#db45^3270dbe386",
+			[51152] = "0Yargra Blackscar#9f85^0000000000~Yargra Blackscar#9f85^0000000000~25e000000000000000000000000000000000000000000000000000000000000000000000000",
+			[51200] = "0Jordan Olafson#9f82^0000000000~Jordan Olafson#9f82^0000000000~25e000000",
+			[50856] = "0Tyrus Blackhorn#9bfd^25e038a72b~Tyrus Blackhorn#9bfd^25e038972d~25e25c6b1",
 			[60616] = "0Anji Autumnlight#e461^32b090e6fc~Anji Autumnlight#e461^32b09076f8~32b89c46789a40d6f52a472f25e6e1256",
-			[60680] = "0Merchant Tantan#e7cd^32b06c0753~Merchant Tantan#e7cd^32b06c4758~32b6ee81f6d08606c88616c886167883967883966183b66183b",
-			[23864] = "0Private Brau#6333^1e6090eb6f~Ataika#6639^1e60a3175f",
-			[58844] = "0Master Li Fei#d377^000063440c~Huo#d603^00006484ad~",
-			[24034] = "0Tua'kea#6685^1e807acc2a~Tua'kea#6685^1e807a2c3e~1e877fc84",
+			[52492] = "0Captain's Log#o31df200^280088fbc9~Maruut Stonebinder#a839^28007ef87d",
+			[62358] = "0Skeer the Bloodseeker#f65f^35a041c81a~Kil'ruk the Wind-Reaver#f44a^35a08cb5b8~35a41a82741482341a82d41982d41982a41982a41982a41982a41982a41982a41982a~35a41882c",
+			[50848] = "0Scout Larandia#9ca0^25e071c306~Alysra#9805^25e07bc30a",
+			[63452] = "0Lindsay#73^024054e86d~~",
 			[60936] = "0Swordmistress Mei#e789^3290bf0e2d~Swordmistress Mei#e789^3290bf2e2c~329bf5dd2be8dbbbe4db8befda5befda5bf0da3beed98becd87bf6d5ebf7d41bf1cd9bf2cb9bfbcb4befcadbf0c8d",
-			[61000] = "0Lorewalker Cho#e81a^00007df9cf~Lorewalker Cho#e81a^00007e09d1~",
-			[50928] = "0Malfurion Stormrage#9bb1^25e07a05a8~Malfurion Stormrage#9bb1^25e079f5ab~25e713463713463713463713463713463713463714463714463715467713462713462713462713462713462713462",
-			[52512] = "0Dreyan^280097b938~Dreyan^28009ab967~2809ab967",
-			[51590] = "0Thisalee Crow#a02e^25e0540b4c~Choluna#a02d^25e0715762",
-			[64090] = "0Stonecarver Mac#fb3b^32708cc791~Stonecarver Mac#fb3b^32708d1792~3278ed568~3278fd40f~327833443",
+			[26414] = "0Brann Bronzebeard#6da6^20e1b507d4~Brann Bronzebeard#6da6^20e17fe1f3~20e803247",
+			[26264] = "0Brigg Smallshanks#7897^20c27112d5~Brigg Smallshanks#7897^20c270e302~20c71590b",
+			[59852] = "0Foreman Mann#dc1a^0000823453~Foreman Mann#dc1a^0000823454~12d7424ac7414b073db267314c47314c472a4d57d0af571f4de7114e65b4b915acbb4~12d7324c57414b673a49d73a49d7034ce73148f",
+			[60688] = "0Lorekeeper Vaeldrin#e579^3590ac5536~Lorekeeper Vaeldrin#e579^3590ac7530~359af93ceaf53dbac43c3ab63b2aac3a2ab7385ac13c0ab63b0aae39fab437eab7366ad931e",
+			[62222] = "0Kil'ruk the Wind-Reaver#f44a^35a08cb5bc~Kil'ruk the Wind-Reaver#f44a^35a08ca5bc~35a5adb75596ba756ebf1566bed557bd552ebc1614b54629b6162fb6862db9b62aba1632bcf564cd4564cd456ccd0~35a59eb85595b9f598bb1586bdf57cbe5561be4616b55613b5462fb6862db89633b90636bb8564cd44d9e5f4d1e4d",
 			[61320] = "0Dathsar^329080ec8d~Admiral Taylor#e831^32908a1d55~3297d5c4a",
 			[61384] = "0Brother Trailscenter#e937^3290841ad5~Brother Oilyak#e96b^32906c8b03~3296fdb03",
 			[61448] = "0Lin Silentstrike#f178^3290598979~Suna Silentstrike#f00e^32904ae9f5~329587973",
 			[57418] = "0Hero's Call Board#o3251f00^12d0a0eb71~Recruitment Officer Blythe#62db^1e6093eace",
-			[57482] = "0Dreyan^2f12ae9a3b~Finkle Einhorn#c144^2f12b018dd~2f1b0787c",
+			[61576] = "0Orbiss#edb9^32a0adaacf~Orbiss#edb9^32a0adbad4~32ab43b26b52b1c",
 			[61640] = "0Li Hai#ec14^3290a174b4~Sage Liao#ed55^3290ab4557~329ab4557",
-			[59536] = "0Ji Firepaw#d8b5^3280b03a68~Ji Firepaw#d8b5^3280b04a66~3289fec4a",
+			[50638] = "0Malfurion Stormrage#9bb1^25e07a25aa~Malfurion Stormrage#9bb1^25e07a15ab~25e78751c7b94747a148b78d4ba~25e7be58c7c259a7b856c7905837955647b053d7a853d78f5117b14fc7cf4a3",
 			[61768] = "0Taran Zhu#ee8a^32a0c35d2f~Taoshi#f01d^32a0c4ac9a",
-			[25048] = "0Debaar#6d80^1ed0459991~Debaar#6d80^1ed0459993~1ed5007df4fe7c14fe7c15167c35107a954e75c54d75054575553d73857473657373757273756974a577797577797",
-			[25640] = "0Ricket#72f4^1ef068ada3~Ricket#72f4^1ef0689da2~1ef6dad366e6cf76f9d1b6d8d046eacf46edcf66f6cf96f4cfa6f2cfb6ecd016d4d0d",
+			[59356] = "0Old Man Liang#d6ec^3280c8b6d8~Doyjen^3280ca3622~328cbd63c~328ca760d",
+			[62884] = "0Talking Skull#fc33^2fb141896e~Talking Skull#fc33^3821437965~382a80c43~38295c1ae~38265a56b~382718a32",
 			[61960] = "0Hawkmaster Nurong#f542^32a08a1de3~Taran Zhu#f342^32a08a4c77",
-			[64378] = "0Merchant Greenfield#e55e^327087784f~Barnaby Fletcher#7ed^327088383c",
-			[22636] = "0Neill Ramstein#5c06^01b089462b~~01b8ac710~01b89e7b2~01b88e88d",
-			[51046] = "0Farden Talonshrike#9e82^0000000000~Farden Talonshrike#9e82^0000000000~25e000000",
+			[50640] = "0Alysra#9805^25e07bf30b~Scout Larandia#9ca0^25e071d302",
+			[51312] = "0Thisalee Crow#a02e^25e06be742~Thisalee Crow#a02e^25e06bd740~25e62f73262e72e60d72d60d72d5f26e95f86e260e6f260e6ef",
+			[23292] = "0Librarian Donathan#62ae^1e6073c554~Librarian Normantis#6388^1e6076853f",
 			[62216] = "0Ambersmith Zikk#fc57^35a08cc5ad~Ambersmith Zikk#fc57^35a08ca5aa~35a9562db94a2a194c29895326a",
-			[25688] = "0Gretchen Fizzlespark#7321^1ef0693dc1~Gretchen Fizzlespark#7321^1ef0692dc2~1ef6a8b946a9b956b9bb56b1bd8680b6b685b95662b9064cb85",
-			[63350] = "0Farmer Yoon#e516^32708587c7~Farmer Yoon#e516^32708577cd~3278417a88527bb84e7bc84d7ba8527bc",
-			[55338] = "0Harrison Jones#b0f0^2ec0a52478~Harrison Jones#bba2^2ec0a35569~2eca4d4c3",
-			[19712] = "0Shado 'Fitz' Farstrider#4718^1dd0b6f67d~Shado 'Fitz' Farstrider#4718^1dd0b6e67f~1dd54040f",
+			[59112] = "0Sky Admiral Rogers#2f4^32607abe1f~Nodd Codejack#d557^3260810e19~3267dfe757dfe757dfe75807e807f5e677f5e677f5e677eae777eae777e9e757dde4a7e6e537f2e2a7fae2a",
+			[51970] = "0Tiala Whitemane#9f81^25e0a1b378~Choluna#a02d^25e0718764",
+			[59434] = "0An Windfur#d7ea^32605a39c6~An Windfur#d875^000076d73f~",
+			[59796] = "0Anduin Wrynn#dc72^3260a88cab~Lina Whitepaw#dc71^3260a8bcaf~12daadd1d~12dabfd0e~12dadcd11~12da9fccb",
 			[62536] = "0Kaz'tik the Manipulator#f90e^35a08ad5ba~Kaz'tik the Manipulator#f90e^35a08af5b8~35aa97aa0a50ac6a6eb0aa70b09a3bb2da8dad6a8dab1a59ab9a3db23a8fac1a77b06a48b39a8dab9a73b10a3eb30",
-			[52516] = "0Maruut Stonebinder#a839^28007ee87e~Dreyan^280097b938~28096b92f",
+			[54184] = "0Jack Bauden#c381^12d05f2901~Pile of Explosives#o3218e00^12d080d6c7~12d8086a4",
 			[23152] = "0Librarian Garren#62cb^1e60731556~Librarian Garren#62cb^1e60731557~1e65776be",
 			[62728] = "0Bowmistress Li#fbd3^36b19b5e20~Bowmistress Li#fbd3^36b19c1e1a~36b7e189978fa8d",
 			[50510] = "0Oomla Whitehorn#9a05^25e05b3321~Oomla Whitehorn#9a05^25e05b5324~25e5ab3965d13c75753bc5ac4145a739f5c8372",
-			[50600] = "0Royce Duskwhisper#9a0b^25e04924d1~Eye of Twilight#o317c900^25e045559f",
-			[62920] = "0Mishka#e83b^329088bd44~Lorewalker Cho#f197^329092b9d9",
-			[55030] = "0Thordun Hammerblow#b074^2bc0ad1a8d~Thordun Hammerblow#b074^2bc0ad2a8d~2bcaa4a74a83a33a98a22a9ea37a9e9b3aac9bcad29c4ae999c",
+			[60698] = "0Lyalia#e56f^3590ac5537~Lyalia#e56f^3590ac853e~3598e05e58df5f88c462289d62c89c63c8de63a8ce61c86f5a698a52998c50492252691b5068c25128b05018d0505~3598dd5dd8d361a87e62c8845fc87a5e48eb63c8f45458f45458ec5148b54d68cd4e88e44f3~3598c56158c66318b661f8e264490d5198b94d58cc51e89e560",
+			[54732] = "0Lieutenant Emry#b071^2bc0c44b2d~Lieutenant Emry#b071^2bc0c44b28~2bcc43b10c4bb0bc48b03c39af8c2cad8c26ae0c47ab5c58aadc57ad7c57ad7c57ad5c6eab8",
+			[54676] = "0Kurdran Wildhammer#b06f^2bc0ca3c81~Lieutenant Emry#b071^2bc0c44b2d",
 			[23344] = "0Recruitment Officer Blythe#62db^1e6093eace~General Arlos#62a2^1e6090eb97",
 			[59018] = "0Stamp Thunderhorn#39fd^3370867ade~Stamp Thunderhorn#39fd^3370867ade~01e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
-			[59174] = "0Shao the Defiant#d6e1^000068dbd3~Shao the Defiant#d6e1^000068ebd2~",
+			[51614] = "0Choluna#a02d^25e0715762~Aviana#a15c^25e07167a6~25e7167a6",
 			[59146] = "0Artificer Morphalius#d5a4^0000000000~~~~~",
 			[59210] = "0Isfar#d638^0000000000~~",
 			[59274] = "0Instructor Myang#d686^000063a3da~Instructor Myang#d686^000063a3d9~",
 			[51150] = "0Jordan Olafson#9f82^0000000000~Jordan Olafson#9f82^0000000000~25e000000000000000000000000000000000000000000000000000000000000",
-			[54936] = "0Fargo Flintlocke#b070^2bc0c4bb2a~Fargo Flintlocke#b070^2bc0c4db2b~2bcb9db50~2bcb98b3e",
+			[63524] = "0Anji Autumnlight#e461^32b09096f6~Anji Autumnlight#e461^32b09086fc~32b71934e76755d75c4426d72fe7202967775c4",
 			[59466] = "0Rell Nightwind#d825^326096cd10~Rell Nightwind#d825^326096ad14~3267f7b52",
-			[61614] = "0Sage Liao#ed71^32909af368~Sage Liao#ed71^32909ad36b~32998c4cb98c4cb9894bf",
+			[54352] = "0Elaborate Disc#o321d200^2ec0a5e4b7~Harrison Jones#b07c^2ec0a51492~2ecae5510",
 			[59594] = "0Delora Lionheart#da88^32806bedd0~Delora Lionheart#da88^32806bedcf~328641e2160cd54611dde5b7de25ced515a4d845a2dc3607d50",
 			[63752] = "0Lorewalker Huynh#fcb3^32b0d174b4~Inkmaster Wei#db01^32608bb70d",
-			[60566] = "0Ren Firetongue#e465^32b09066e7~Ren Firetongue#e465^32b090d6e3~32b6f7736",
+			[63198] = "0Enormous Kunchong Mandibles^35a063d51b~Ambersmith Zikk#fc57^35a08ca5ad",
 			[59786] = "0Lorewalker Cho#ef22^32608a0e93~Lorewalker Cho#dbdf^3260897e7c~12d8b2e52896e2b89ce19890e3f8cee528f0e5a8f2e578f3e90",
 			[59850] = "0Toya#dc1c^0000788760~Lorewalker Cho#dc19^0000825454~",
-			[23466] = "0Surristrasz#60db^1e6073d57a~Archmage Berinand#62e2^1e6054657c",
-			[59978] = "0Master Bruised Paw#dd8a^00002ea500~Master Bruised Paw#dd8a^00002eb4ff~12d2e75232e75232e75232e75232e7523",
+			[59238] = "0Lin Tenderpaw#d681^00007313fa~Lin Tenderpaw#d681^00007313fe~12d74c45b74d45e74f46775b45874645374b46374745474d458",
+			[23856] = "0Sergeant Hammerhill#64d8^1e60903b1e~Gerald Green#65e3^1e6094ca08",
 			[23888] = "0Corporal Venn#664b^1e60d1b76b~Corporal Venn#664b^1e60d1c76a~1e6d15747d03726d2b719d44708d276e4d246bdd3e6d0",
 			[23920] = "0Trapper Mau'i#6674^1e807b7be0~Trapper Mau'i#6674^1e807b5be0~1e873ea337369d37439ce7439cc7439cc7369cc75d96f75a96b75c96878d9ce78d9ce7879d2",
-			[51260] = "0Rio Duran#9a0a^25e04834c4~Laina Nightsky#9bf7^25e0309684",
-			[25672] = "0Ricket#72f4^1ef0689da5~Ricket#72f4^1ef068bda3~1ef4d9dae",
+			[54356] = "0Simon Chandler#b072^2bc0caac8a~Simon Chandler#b072^2bc0caac8c~2bcc7fce1c79cfac60d05c5fcf8c5fcdcc43d14c43d14c1ed3bc3ed4ec32d66",
+			[55076] = "0Thordun Hammerblow#b074^2bc0ca5c82~Talaa#b075^2bc0cb2c64~2bcab8840abe826ae5825aec82dac97eeab87ffabc7d1ab37bba9879eaac795",
 			[60298] = "0Jenova Longeye#e42d^326092e728~Jenova Longeye#e42d^326092772e~326a373a9a373a9a373a9a373a9a373a992972c92972c92972c92972c92972c",
 			[56268] = "0King Phaoris#ba44^2ec08c653e~King Phaoris#ba44^2ec08c653d~2ec9a261f~2ec877469~2ec7f1642",
-			[64232] = "0Marshal Troteman#82f^3590e5454a~Hilda Hornswaggle#ab3^3590cd22a1",
+			[65358] = "~Vereesa Windrunner#12d8^32a07f9b08",
 			[60490] = "0Kun Autumnlight#e628^32b036ab68~Dreyan^32b028170c~32b1fe7442f85c420c616",
-			[65362] = "0Vereesa Windrunner#12d8^32a07f9b08~Lady Jaina Proudmoore#998^3a027006b4~32a7f9b08~32a7006b4",
-			[24176] = "0Corporal Venn#664b^1e60d1c76a~Thassarian#663a^1e60d8e6aa",
-			[52494] = "0Maruut Stonebinder#a839^28007f1879~Stormcaller Mylra#a6bc^2800a487d9",
-			[60706] = "0Daggle Bombstrider#e59b^3590ad341a~Daggle Bombstrider#e59b^3590ad1420~359b5640ca434b99f454fa36553aee46badd49aa5f4c2a58503a36553a5c556aa5462a9441da6e45c9ed559a3e4bf",
+			[23454] = "0General Arlos#62a2^1e6090eb97~Sergeant Hammerhill#64d8^1e60902b20",
+			[60618] = "0Anji Autumnlight#e461^32b09076f8~Anji Autumnlight#e461^32b090a6f7~32b8463a782c45c84d4b289e49b89c4318ca4858aa4598744eb8574ad87443e8a84268664b28d448975837973f385",
+			[60682] = "0He Softfoot#e7ce^32b06fb759~He Softfoot#e7ce^32b06fb761~32b6c76fa6bc7086c468b71467c63c8615f690a66e8bc6a885b",
+			[19710] = "0Shado 'Fitz' Farstrider#4718^1dd0b6e678~Shado 'Fitz' Farstrider#4718^1dd0b6f67d~1dd84d9cb83c9aa8229f5832a1b821a38802a177f59e48049d07f09a97f097e8089a77f5957",
 			[64904] = "0Amber Kearnen#d2c^3590e58530~Sky Admiral Rogers#73a^35902a4ca5",
-			[60400] = "0Anji Autumnlight#e487^32b056f619~Anji Autumnlight#e487^32b056e61a~32b47457c47d57247e5693754ce40c3f93d941c3d246835c4f6",
+			[62588] = "0Che Wildwalker#e7ca^32b0568b94~Anji Autumnlight#e487^32b056f619",
 			[60938] = "0Merchant Shi#e77f^3290bf9e32~Merchant Shi#e77f^3290bf8e2f~329becdb0befda0bebd76bded80bf8d2cbf4c89bebc7fbe2c64",
-			[19700] = "0Hemet Nesingwary#4704^1dd0b6f683~Hemet Nesingwary#4704^1dd0b6d684~1dd93a72e92c7788eb76288f8278ce8298ea74e90073d8ec7198bc7558b27849137149056fd",
+			[60570] = "0Sun Tenderheart#e7c9^32b0599bff~Sun Tenderheart#e7c9^32b059cc0d~32b55fb2a5d1b315d5b1e",
 			[16298] = "0Wagner Hammerstrike#3aa3^01b098a576~~016854d51",
 			[61130] = "0Sully \"The Pickle\" McLeary#e89e^000095cd25~Sully \"The Pickle\" McLeary#e89e^000095ad27~~",
-			[60684] = "0Ren Firetongue#e7cf^32b06c0753~Ren Firetongue#e7cf^32b06c8756~32b6a282d64875f6447ab66a7d967e7ea6a6801",
+			[59822] = "0Ang Thunderfoot#db8f^0000d03400~Pang Thunderfoot#db8c^0000d60360~",
 		},
 		["Version"] = 0.75,
 		["NPC"] = {
@@ -41137,133 +40142,1242 @@ NxData = {
 			["Silk Vendor~Mothwrangler Min~"] = "0^9e6976^0^M0",
 			["Brewmaster~Peiji Goldendraft~Welcome to Dawn's Blossom"] = "0^7516fd^0^M0",
 			["Kite Master~Ut-Nam~Pearlfin Jinyu"] = "0^944d30^0^G",
-			["Food and Drink~Master Tao Woodear~"] = "0^8c6a26^0^M0",
-			["Keeper of Sha'tari Heirlooms~Kelara~The Aldor"] = "79^3f7453^0^M0",
-			["Herbalism Trainer~Han Flowerbloom~"] = "0^89682e^0^T",
+			["?~Gina Mudclaw"] = "0^87e842^0^G",
+			["~Auntie Stormstout~"] = "0^c345fa^0^M0",
+			["Kitchen Storage Vendor~Merchant Cheng~"] = "0^876861^0^M0",
 			["Flight Master~Injar'i Lakebloom~"] = "0^91b70b^0^G",
-			["Innkeeper~Smilin' Slirk Brassknob~"] = "130^691dba^0^M0",
+			["Cooking Supplies~Noodles~"] = "0^85d839^0^M0",
 			["Fruit Dealer~Kim Won Gi~"] = "0^85d82b^0^M0",
 			["Keeper of Sha'tari Artifacts~Asuur~The Aldor"] = "79^3c753e^0^M1",
 			["Hippogryph Master~Furgu~Exodar"] = "64^8a7bff^0^G",
-			["~Pearlfin Recruit~Pearlfin Jinyu"] = "0^94dd6a^0^G",
-			["~Liang Thunderfoot~"] = "0^c033d9^0^G",
+			["Leatherworking Supplies~Jillian Tanner~Stormwind"] = "84^b6fa08^0^M0",
+			["Watersmith~Ot-Temmdo~Pearlfin Jinyu"] = "0^991d68^0^M1",
 			["~Nectarbreeze Farmer~Rally the Survivors"] = "0^724c12^0^G",
-			["?~Miss Fanny"] = "0^d46377^0^G",
-			["Flying Trainer~Maigra Keenfeather~Valiance Expedition"] = "122^96bae8^0^T",
-			["Master of the Steamer~Yan Ironpaw~"] = "0^869845^0^T",
+			["High Priestess of the Aldor~Ishanah~The Aldor"] = "79^3dc4c4^0^G",
+			["~High Elder Cloudfall~"] = "84^6d53b2^0^G",
+			["Tailoring and Leatherworking Supplies~Craftsman Yang~"] = "0^904a27^0^M1",
 			["~Pearlkeeper Fujin~Pearlfin Jinyu"] = "0^964cfe^0^G",
-			["Lorewalker Cho's Companion~Mishi~"] = "0^727ab5^0^G",
-			["~Taskmaster Emi~Love's Labor"] = "0^7999af^0^G",
+			["First Aid Trainer~Angela Leifeld~Stormwind"] = "84^855748^0^T",
+			["SI:7~Amber Kearnen~PvP"] = "0^96ad14^0^G",
 			["Innkeeper~Purser Boulian~PvP"] = "129^444976^0^M0",
 			["~Lorewalker Shuchun~"] = "0^b66351^0^G",
-			["Trade Supplies~Squirmworm~Knights of the Ebon Blade"] = "132^244bcd^0^M0",
-			["~Fizzcrank Fullthrottle~Valiance Expedition"] = "122^91b2fb^0^G",
-			["The Jade Fist Monk~Master Greenpaw~"] = "0^65d766^0^G",
+			["Gordok Brew Vendor~Gordok Brew Apprentice~PvP"] = "37^8de5e1^0^M0",
+			["Tailoring Supplies~Lessien~Argent Crusade"] = "132^526c0b^0^M0",
 			["Coffee Aficionado~Kevin Browning~"] = "79^b39881^0^M0",
+			["The Jade Fist Monk~Master Greenpaw~"] = "0^65d766^0^G",
 			["~Master Stone Fist~"] = "0^6ea3f2^0^G",
 			["Innkeeper~Jiayi Applebloom~PvP"] = "84^72bd7b^0^M0",
-			["Herbalism Trainer~Orchard Keeper Li Mei~"] = "84^743dc0^0^T",
-			["Banker~Lee Crester~Stormwind"] = "84^a6849d^0^G",
+			["Dragon Turtle Breeder~Old Whitenose~"] = "84^ad52eb^0^M0",
+			["~Tol'mar~"] = "136^837360^0^G",
 			["Stable Master~Jenova Stoneshield~Stormwind"] = "84^ab5606^0^G",
-			["~Highroad Grummle~The Road to Kun-Lai"] = "0^b343bc^0^G",
+			["SI:7~Sully \"The Pickle\" McLeary~"] = "84^69fcba^0^G",
 			["Leatherworking Trainer~Diane Cannings~Kirin Tor"] = "124^59c486^0^T",
 			["~Hemet Nesingwary~"] = "64^b6b685^0^G",
 			["Wands~Librarian Whitley~Kirin Tor"] = "122^76e534^0^M1",
 			["Money Changer~Usuri Brightcoin~PvP"] = "205^52e8d1^0^M0",
 			["Gilneas Quartermaster~Lord Candren~Gilneas"] = "32^5ef7a2^0^M0",
-			["Argent Tournament Valiant~Jean Pierre Poulain~Argent Crusade"] = "124^b5d797^0^G",
+			["~Lin Tenderpaw~"] = "0^72f3fd^0^G",
 			["~Artificer Morphalius~The Consortium"] = "7^000000^0^G",
-			["Innkeeper~Nan Thunderfoot~"] = "0^d5f33e^0^M0",
-			["Innkeeper~Caregiver Mumik~The Kalu'ak"] = "125^7b3bf5^0^M0",
+			["?~Dread Captain DeMeza"] = "175^669b94^0^G",
+			["Engineering Supplies~Billibub Cogspinner~Gnomeregan"] = "84^a1751e^0^M0",
 			["~Lieutenant Dumont~Stormwind"] = "126^51799e^0^G",
 			["~Xiao~"] = "0^d6e362^0^G",
-			["~Pandriarch Goldendraft~Getting Permission"] = "84^88f5e1^0^G",
+			["~Pearlfin Aqualyte~Pearlfin Jinyu"] = "84^9a7de4^0^G",
 			["~Pandriarch Windfur~Getting Permission"] = "84^8655b0^0^G",
 			["Inscription Trainer~Catarina Stanford~Stormwind"] = "84^7f0bf2^0^T",
 			["~Ricket~"] = "130^68bda3^0^G",
 			["Mining Supplies~Rissa Halding~Gilneas"] = "32^80353a^0^M0",
-			["Serpent Keeper~San Redscale~Order of the Cloud Serpent"] = "0^91171a^0^M1",
-			["~Surveyor Sawa~Love's Labor"] = "0^77e9a4^0^G",
-			["~Kitemaster Shoku~"] = "0^7b399a^0^G",
+			["Cooking Supplies~Uriku~Kurenai"] = "64^8fabb8^0^M0",
+			["Adventuring Supplies~Singegruff~"] = "0^77474d^0^M1",
+			["Exotic Goods~Inkmaster Trista~"] = "0^904a28^0^M0",
 			["The Jade Serpent~Fei~"] = "0^7e09d1^0^G",
 			["?~Widow Greenpaw"] = "84^643762^0^G",
 			["~Kurzel~PvP"] = "135^5bdd30^0^G",
-			["Master of Huojin~Ji Firepaw~"] = "0^805367^0^G",
-			["Tillers Quartermaster~Gina Mudclaw~The Tillers"] = "0^880847^0^G",
+			["Barleybrew Brew Vendor~Barleybrew Apprentice~"] = "42^57882c^0^M0",
+			["Cook~Little Elsa~"] = "0^b7cf0c^0^M0",
 			["~Seer Yong~PvP"] = "0^773d9a^0^G",
 			["~Surristrasz~"] = "122^73d57a^0^G",
-			["Gryphon Keeper~Durgan Thunderbeak~Valiance Expedition"] = "122^969ae4^0^M0",
+			["Master of Huojin~Ji Firepaw~"] = "0^805367^0^G",
 			["Maces & Staves~Archmage Berinand~Kirin Tor"] = "122^54657c^0^M1",
-			["Cook~Little Elsa~"] = "0^b7cf0c^0^M0",
-			["Banker~Curtis Crester~Stormwind"] = "84^a7048a^0^G",
+			["Tillers Quartermaster~Gina Mudclaw~The Tillers"] = "0^880847^0^G",
+			["?~Nancila"] = "64^8d5b44^0^M0",
 			["\"The Jade Witch\"~Widow Greenpaw~The Jade Witch"] = "0^647763^0^G",
 			["Riding Trainer~Darlene Stokx~Stormwind"] = "84^c61acb^0^T",
-			["?~Nancila"] = "64^8d5b44^0^M0",
-			["Leatherworking Trainer~Andellion~Kirin Tor"] = "124^572461^0^T",
+			["Banker~Curtis Crester~Stormwind"] = "84^a7048a^0^G",
+			["Valor Quartermaster~Faldren Tillsdale~Stormwind"] = "84^ca3b1e^0^M0",
+			["Leatherworking Trainer~Manfred Staller~Kirin Tor"] = "124^5754b0^0^T",
 			["~Master Woodsman Anderhol~Valiance Expedition"] = "126^520996^0^G",
-			["~Clever Ashyo~Ashyo's Vision"] = "0^97a46b^0^G",
 			["Skinning Trainer~Derik Marks~Kirin Tor"] = "124^59c486^0^T",
 			["Toolsmith~Jadori Ironeye~PvP"] = "0^71fd96^0^M1",
 			["Serpent Master~Instructor Windblade~Order of the Cloud Serpent"] = "0^95e6fb^0^G",
-			["~Librarian Garren~Kirin Tor"] = "122^730556^0^G",
+			["~Lorewalker Stonestep~"] = "0^8fe9a8^0^G",
 			["Trader~Craftsman Hui~PvP"] = "84^727db3^0^M0",
-			["~Aged Dalaran Wizard~"] = "24^000000^0^M0",
+			["~Archmage Pentarus~Kirin Tor"] = "124^af36da^0^G",
 			["Travelling Salesman~Thomas Yance~PvP"] = "24^000000^0^M1",
 			["General Goods~Ellandrieth~Darnassus"] = "32^9ad955^0^M0",
 			["~Brewmaster Lei Kanglei~"] = "84^6ac3f2^0^M0",
-			["~Yan~"] = "0^9ad566^0^G",
-			["Waterspeaker~Elder Lusshan~Pearlfin Jinyu"] = "0^948ce2^0^G",
+			["~Aged Dalaran Wizard~"] = "24^000000^0^M0",
 			["Mayor~Sunke Khang~PvP"] = "0^762d8b^0^G",
-			["~Archmage Pentarus~Kirin Tor"] = "124^af36da^0^G",
+			["Waterspeaker~Elder Lusshan~Pearlfin Jinyu"] = "0^948ce2^0^G",
+			["~Yan~"] = "0^9ad566^0^G",
 			["Blacksmithing Supplies~Kaita Deepforge~Stormwind"] = "84^a19609^0^M1",
-			["~Lorewalker Stonestep~"] = "0^8fe9a8^0^G",
+			["~Librarian Garren~Kirin Tor"] = "122^730556^0^G",
 			["Brewmaster~Kai Wanderbrew~"] = "0^778752^0^G",
-			["Leatherworking Trainer~Manfred Staller~Kirin Tor"] = "124^5754b0^0^T",
-			["Valor Quartermaster~Faldren Tillsdale~Stormwind"] = "84^ca3b1e^0^M0",
+			["~Clever Ashyo~Ashyo's Vision"] = "0^97a46b^0^G",
+			["Leatherworking Trainer~Andellion~Kirin Tor"] = "124^572461^0^T",
 			["Gryphon Master~Tomas Riverwell~Valiance Expedition"] = "122^96baeb^0^G",
 			["~First Mate Hapana~"] = "175^667b97^0^G",
-			["Barleybrew Brew Vendor~Barleybrew Apprentice~"] = "42^57882c^0^M0",
+			["Gryphon Keeper~Durgan Thunderbeak~Valiance Expedition"] = "122^969ae4^0^M0",
 			["~Thrall~PvP"] = "24^000000^0^G",
-			["Exotic Goods~Inkmaster Trista~"] = "0^904a28^0^M0",
-			["Adventuring Supplies~Singegruff~"] = "0^77474d^0^M1",
-			["Cooking Supplies~Uriku~Kurenai"] = "64^8fabb8^0^M0",
-			["~Pearlfin Aqualyte~Pearlfin Jinyu"] = "84^9a7de4^0^G",
-			["Engineering Supplies~Billibub Cogspinner~Gnomeregan"] = "84^a1751e^0^M0",
-			["?~Dread Captain DeMeza"] = "175^669b94^0^G",
-			["~Lin Tenderpaw~"] = "0^72f3fd^0^G",
-			["SI:7~Sully \"The Pickle\" McLeary~"] = "84^69fcba^0^G",
-			["~Tol'mar~"] = "136^837360^0^G",
-			["Dragon Turtle Breeder~Old Whitenose~"] = "84^ad52eb^0^M0",
+			["~Kitemaster Shoku~"] = "0^7b399a^0^G",
+			["~Surveyor Sawa~Love's Labor"] = "0^77e9a4^0^G",
+			["Serpent Keeper~San Redscale~Order of the Cloud Serpent"] = "0^91171a^0^M1",
+			["~Pandriarch Goldendraft~Getting Permission"] = "84^88f5e1^0^G",
+			["Innkeeper~Caregiver Mumik~The Kalu'ak"] = "125^7b3bf5^0^M0",
+			["Innkeeper~Nan Thunderfoot~"] = "0^d5f33e^0^M0",
+			["Argent Tournament Valiant~Jean Pierre Poulain~Argent Crusade"] = "124^b5d797^0^G",
+			["~Highroad Grummle~The Road to Kun-Lai"] = "0^b343bc^0^G",
+			["Banker~Lee Crester~Stormwind"] = "84^a6849d^0^G",
+			["Herbalism Trainer~Orchard Keeper Li Mei~"] = "84^743dc0^0^T",
 			["~Haohan Mudclaw~The Tillers"] = "0^875848^0^G",
 			["~Stefan Vadu~Knights of the Ebon Blade"] = "132^241bc9^0^G",
 			["Banker~Fineas G. Bankworthy~Stormwind"] = "84^a91448^0^G",
-			["Tailoring Supplies~Lessien~Argent Crusade"] = "132^526c0b^0^M0",
-			["Gordok Brew Vendor~Gordok Brew Apprentice~PvP"] = "37^8de5e1^0^M0",
+			["~Fizzcrank Fullthrottle~Valiance Expedition"] = "122^91b2fb^0^G",
+			["Trade Supplies~Squirmworm~Knights of the Ebon Blade"] = "132^244bcd^0^M0",
 			["\"The Mean Queen of Green\"~Foreman Mann~"] = "84^823454^0^G",
-			["SI:7~Amber Kearnen~PvP"] = "0^96ad14^0^G",
-			["First Aid Trainer~Angela Leifeld~Stormwind"] = "84^855748^0^T",
-			["Tailoring and Leatherworking Supplies~Craftsman Yang~"] = "0^904a27^0^M1",
-			["~High Elder Cloudfall~"] = "84^6d53b2^0^G",
-			["High Priestess of the Aldor~Ishanah~The Aldor"] = "79^3dc4c4^0^G",
-			["Watersmith~Ot-Temmdo~Pearlfin Jinyu"] = "0^991d68^0^M1",
-			["Leatherworking Supplies~Jillian Tanner~Stormwind"] = "84^b6fa08^0^M0",
+			["~Taskmaster Emi~Love's Labor"] = "0^7999af^0^G",
+			["Lorewalker Cho's Companion~Mishi~"] = "0^727ab5^0^G",
+			["Master of the Steamer~Yan Ironpaw~"] = "0^869845^0^T",
+			["Flying Trainer~Maigra Keenfeather~Valiance Expedition"] = "122^96bae8^0^T",
+			["?~Miss Fanny"] = "0^d46377^0^G",
+			["~Liang Thunderfoot~"] = "0^c033d9^0^G",
+			["~Pearlfin Recruit~Pearlfin Jinyu"] = "0^94dd6a^0^G",
 			["Leatherworking Trainer~Namha Moonwater~Kirin Tor"] = "124^5c14de^0^T",
-			["Cooking Supplies~Noodles~"] = "0^85d839^0^M0",
-			["Kitchen Storage Vendor~Merchant Cheng~"] = "0^876861^0^M0",
-			["~Auntie Stormstout~"] = "0^c345fa^0^M0",
-			["?~Gina Mudclaw"] = "0^87e842^0^G",
+			["Innkeeper~Smilin' Slirk Brassknob~"] = "130^691dba^0^M0",
+			["Herbalism Trainer~Han Flowerbloom~"] = "0^89682e^0^T",
+			["Keeper of Sha'tari Heirlooms~Kelara~The Aldor"] = "79^3f7453^0^M0",
+			["Food and Drink~Master Tao Woodear~"] = "0^8c6a26^0^M0",
 			["Bartender~Den Den~"] = "0^8ca810^0^M0",
 			["Banker~John Burnside~Stormwind"] = "84^9f5c79^0^G",
 			["~Bold Karasshi~Pearlfin Jinyu"] = "0^8a6d2e^0^G",
 		},
 	},
-	["NXWare"] = {
-		["Version"] = 0.15,
-		["Khaz Modan"] = {
-			["I was framed"] = {
-				["Money"] = 497324273,
-			},
+	["NXVendorV"] = {
+		["The Golden Lotus Quartermaster~Jaluu the Generous"] = {
+			"87781^|cffffff00400g", -- [1]
+			"87782^|cffffff002000g", -- [2]
+			"87783^|cffffff001200g", -- [3]
+			"89797^|cffffff008g", -- [4]
+			"93215^|cffffff0040g", -- [5]
+			"89653^1750 Justice Points", -- [6]
+			"89527^1250 Justice Points", -- [7]
+			"89232^1750 Justice Points", -- [8]
+			"89070^625 Valor Points", -- [9]
+			"89341^875 Valor Points", -- [10]
+			"89431^1125 Valor Points", -- [11]
+			"86235^|cffffff0020g", -- [12]
+			"86276^|cffffff0020g", -- [13]
+			"86295^|cffffff0020g", -- [14]
+			"86273^|cffffff0040g", -- [15]
+			"86237^|cffffff0040g", -- [16]
+			"86277^|cffffff0040g", -- [17]
+			"86278^|cffffff0040g", -- [18]
+			"86308^|cffffff0040g", -- [19]
+			"86309^|cffffff0040g", -- [20]
+			"86275^|cffffff0040g", -- [21]
+			"86274^|cffffff0040g", -- [22]
+			["T"] = 1363600510,
+			["POS"] = "6009^74.208760261536^42.794716358185",
+			["R"] = 1,
 		},
+		["Innkeeper~Puli the Even Handed"] = {
+			"81406^|cffffff002g |cffbfbfbf16s", -- [1]
+			"81414^|cffffff002g |cffbfbfbf34s", -- [2]
+			"74636^|cffffff002g |cffbfbfbf34s", -- [3]
+			"81400^|cffffff002g |cffbfbfbf16s", -- [4]
+			"81401^|cffffff002g |cffbfbfbf16s", -- [5]
+			"81402^|cffffff002g |cffbfbfbf16s", -- [6]
+			"81403^|cffffff002g |cffbfbfbf16s", -- [7]
+			"81404^|cffffff002g |cffbfbfbf16s", -- [8]
+			"81405^|cffffff002g |cffbfbfbf16s", -- [9]
+			"81408^|cffffff002g |cffbfbfbf34s", -- [10]
+			"81409^|cffffff002g |cffbfbfbf34s", -- [11]
+			"81410^|cffffff002g |cffbfbfbf34s", -- [12]
+			"81411^|cffffff002g |cffbfbfbf34s", -- [13]
+			"81412^|cffffff002g |cffbfbfbf34s", -- [14]
+			"81413^|cffffff002g |cffbfbfbf34s", -- [15]
+			"82451^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [16]
+			["POS"] = "6003^284.52173256415^1767.7873869244",
+			["T"] = 1360380968,
+		},
+		["Leatherworking & Skinning Supplies~Tanner Pang"] = {
+			"86240^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [1]
+			"86241^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [2]
+			"86242^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [3]
+			"86243^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [4]
+			"86244^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [5]
+			"86245^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [6]
+			"86246^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [7]
+			"86247^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [8]
+			"86248^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [9]
+			"86249^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [10]
+			"86250^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [11]
+			"86251^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [12]
+			"86252^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [13]
+			"86253^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [14]
+			"86254^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [15]
+			"86255^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [16]
+			"86256^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [17]
+			"86257^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [18]
+			"86258^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [19]
+			"86259^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [20]
+			"86260^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [21]
+			"86261^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [22]
+			"86262^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [23]
+			"86263^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [24]
+			"86264^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [25]
+			"86265^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [26]
+			"86266^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [27]
+			"86267^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [28]
+			"86268^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [29]
+			"86269^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [30]
+			"86270^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [31]
+			"86271^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:90:0:0|h[Spirit of Harmony]|h|r", -- [32]
+			"7005^|cff7f7f0074c", -- [33]
+			"4289^|cff7f7f0045c", -- [34]
+			"2320^|cff7f7f009c", -- [35]
+			"2321^|cff7f7f0090c", -- [36]
+			"4291^|cffbfbfbf4s |cff7f7f0050c", -- [37]
+			"8343^|cffbfbfbf18s", -- [38]
+			"14341^|cffbfbfbf45s", -- [39]
+			"38426^|cffffff002g |cffbfbfbf70s", -- [40]
+			"2325^|cffbfbfbf9s", -- [41]
+			"6260^|cff7f7f0045c", -- [42]
+			"2604^|cff7f7f0045c", -- [43]
+			"2605^|cff7f7f0090c", -- [44]
+			"4340^|cffbfbfbf3s |cff7f7f0015c", -- [45]
+			"4341^|cffbfbfbf4s |cff7f7f0050c", -- [46]
+			"6261^|cffbfbfbf9s", -- [47]
+			"4342^|cffbfbfbf22s |cff7f7f0050c", -- [48]
+			"10290^|cffbfbfbf22s |cff7f7f0050c", -- [49]
+			["POS"] = "6013^75.518602132797^47.439563274384",
+			["T"] = 1362653843,
+		},
+		["~Supplier Qiao"] = {
+			"159^|cff7f7f0022c", -- [1]
+			"58274^|cffbfbfbf93s |cff7f7f0050c", -- [2]
+			"81400^|cffffff002g |cffbfbfbf4s", -- [3]
+			"60335^|cffffff0010g |cffbfbfbf20s", -- [4]
+			"4470^|cff7f7f0033c", -- [5]
+			["POS"] = "6008^54.19893860817^77.653682231903",
+			["T"] = 1361531197,
+			["R"] = 1,
+		},
+		["Chief Architect of Gnomish Engineering~Tinkmaster Overspark"] = {
+			"23799^|cffffff006g", -- [1]
+			"23807^|cffffff004g |cffbfbfbf50s", -- [2]
+			"23803^|cffffff004g |cffbfbfbf50s", -- [3]
+			"23816^|cffffff003g", -- [4]
+			"23805^|cffffff006g", -- [5]
+			["POS"] = "6002^16.527557373047^79.153871536255",
+			["T"] = 1361875898,
+			["R"] = 1,
+		},
+		["~Keeper Jaril"] = {
+			"81400^|cffffff002g |cffbfbfbf16s", -- [1]
+			"81401^|cffffff002g |cffbfbfbf16s", -- [2]
+			"81402^|cffffff002g |cffbfbfbf16s", -- [3]
+			"81403^|cffffff002g |cffbfbfbf16s", -- [4]
+			"81404^|cffffff002g |cffbfbfbf16s", -- [5]
+			"81405^|cffffff002g |cffbfbfbf16s", -- [6]
+			"81408^|cffffff002g |cffbfbfbf34s", -- [7]
+			"81409^|cffffff002g |cffbfbfbf34s", -- [8]
+			"81410^|cffffff002g |cffbfbfbf34s", -- [9]
+			"81411^|cffffff002g |cffbfbfbf34s", -- [10]
+			"81412^|cffffff002g |cffbfbfbf34s", -- [11]
+			"81413^|cffffff002g |cffbfbfbf34s", -- [12]
+			"82451^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [13]
+			"81406^|cffffff002g |cffbfbfbf16s", -- [14]
+			"81414^|cffffff002g |cffbfbfbf34s", -- [15]
+			"74636^|cffffff002g |cffbfbfbf34s", -- [16]
+			["POS"] = "6002^88.805615901947^35.31602025032",
+			["T"] = 1361791016,
+		},
+		["Repairs~Valaden Silverblade"] = {
+			"2901^|cff7f7f0069c", -- [1]
+			"5956^|cff7f7f0016c", -- [2]
+			"2880^|cff7f7f0085c", -- [3]
+			"3466^|cffbfbfbf17s", -- [4]
+			"18567^|cffffff002g |cffbfbfbf55s", -- [5]
+			"3857^|cffbfbfbf4s |cff7f7f0025c", -- [6]
+			["T"] = 1362652330,
+			["POS"] = "6015^35.397219657898^90.457379817963",
+			["R"] = 1,
+		},
+		["Justice Quartermaster~Magatha Silverton"] = {
+			"71209^1250 Justice Points", -- [1]
+			"71129^1250 Justice Points", -- [2]
+			"71130^1250 Justice Points", -- [3]
+			"71045^2200 Justice Points", -- [4]
+			"71046^1650 Justice Points", -- [5]
+			"71047^|cffa335ee|Hitem:71668:0:0:0:0:0:0:0:87:0:0|h[Helm of the Fiery Vanquisher]|h|r", -- [6]
+			"71048^2200 Justice Points", -- [7]
+			"71049^", -- [8]
+			"71537^|cffa335ee|Hitem:71045:0:0:0:0:0:0:0:87:0:0|h[Dark Phoenix Tunic]|h|r", -- [9]
+			"71538^|cffa335ee|Hitem:71046:0:0:0:0:0:0:0:87:0:0|h[Dark Phoenix Gloves]|h|r", -- [10]
+			"71539^", -- [11]
+			"71540^|cffa335ee|Hitem:71048:0:0:0:0:0:0:0:87:0:0|h[Dark Phoenix Legguards]|h|r", -- [12]
+			"71541^", -- [13]
+			["T"] = 1360666913,
+			["POS"] = "2020^79.162740707397^69.450306892395",
+		},
+		["Brewmaster~Peiji Goldendraft"] = {
+			"81407^|cffffff002g |cffbfbfbf1s |cff7f7f0060c", -- [1]
+			"81415^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [2]
+			"81406^|cffffff002g |cffbfbfbf16s", -- [3]
+			"81414^|cffffff002g |cffbfbfbf34s", -- [4]
+			"74636^|cffffff002g |cffbfbfbf34s", -- [5]
+			"81400^|cffffff002g |cffbfbfbf16s", -- [6]
+			"81401^|cffffff002g |cffbfbfbf16s", -- [7]
+			"81402^|cffffff002g |cffbfbfbf16s", -- [8]
+			"81403^|cffffff002g |cffbfbfbf16s", -- [9]
+			"81404^|cffffff002g |cffbfbfbf16s", -- [10]
+			"81405^|cffffff002g |cffbfbfbf16s", -- [11]
+			"81408^|cffffff002g |cffbfbfbf34s", -- [12]
+			"81409^|cffffff002g |cffbfbfbf34s", -- [13]
+			"81410^|cffffff002g |cffbfbfbf34s", -- [14]
+			"81411^|cffffff002g |cffbfbfbf34s", -- [15]
+			"81412^|cffffff002g |cffbfbfbf34s", -- [16]
+			"81413^|cffffff002g |cffbfbfbf34s", -- [17]
+			"82451^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [18]
+			["T"] = 1359866588,
+			["POS"] = "6006^692.55133702542^1812.7397563104",
+		},
+		["Heirloom Prizes~Daenrand Dawncrest"] = {
+			"42943^160 Darkmoon Prize Ticket", -- [1]
+			"42944^110 Darkmoon Prize Ticket", -- [2]
+			"42945^110 Darkmoon Prize Ticket", -- [3]
+			"42946^160 Darkmoon Prize Ticket", -- [4]
+			"42947^160 Darkmoon Prize Ticket", -- [5]
+			"42948^110 Darkmoon Prize Ticket", -- [6]
+			"42949^110 Darkmoon Prize Ticket", -- [7]
+			"42950^110 Darkmoon Prize Ticket", -- [8]
+			"42951^110 Darkmoon Prize Ticket", -- [9]
+			"42952^110 Darkmoon Prize Ticket", -- [10]
+			"42984^110 Darkmoon Prize Ticket", -- [11]
+			"42985^110 Darkmoon Prize Ticket", -- [12]
+			"42991^130 Darkmoon Prize Ticket", -- [13]
+			"42992^130 Darkmoon Prize Ticket", -- [14]
+			"48677^110 Darkmoon Prize Ticket", -- [15]
+			"48683^110 Darkmoon Prize Ticket", -- [16]
+			"48685^110 Darkmoon Prize Ticket", -- [17]
+			"48687^110 Darkmoon Prize Ticket", -- [18]
+			"48689^110 Darkmoon Prize Ticket", -- [19]
+			"48691^110 Darkmoon Prize Ticket", -- [20]
+			"48716^110 Darkmoon Prize Ticket", -- [21]
+			"48718^160 Darkmoon Prize Ticket", -- [22]
+			"69889^110 Darkmoon Prize Ticket", -- [23]
+			"69890^110 Darkmoon Prize Ticket", -- [24]
+			"69893^110 Darkmoon Prize Ticket", -- [25]
+			"79131^160 Darkmoon Prize Ticket", -- [26]
+			"93843^|cffe6cc80|Hitem:42943:0:0:0:0:0:0:0:90:0:0|h[Bloodied Arcanite Reaper]|h|r160 Darkmoon Prize Ticket", -- [27]
+			"93844^|cffe6cc80|Hitem:79131:0:0:0:0:0:0:0:90:0:0|h[Burnished Warden Staff]|h|r160 Darkmoon Prize Ticket", -- [28]
+			"93845^|cffe6cc80|Hitem:69893:0:0:0:0:0:0:0:90:0:0|h[Bloodsoaked Skullforge Reaver]|h|r110 Darkmoon Prize Ticket", -- [29]
+			"93846^|cffe6cc80|Hitem:48718:0:0:0:0:0:0:0:90:0:0|h[Repurposed Lava Dredger]|h|r160 Darkmoon Prize Ticket", -- [30]
+			"93847^|cffe6cc80|Hitem:48716:0:0:0:0:0:0:0:90:0:0|h[Venerable Mass of McGowan]|h|r110 Darkmoon Prize Ticket", -- [31]
+			"93853^|cffe6cc80|Hitem:42948:0:0:0:0:0:0:0:90:0:0|h[Devout Aurastone Hammer]|h|r110 Darkmoon Prize Ticket", -- [32]
+			"93854^|cffe6cc80|Hitem:42947:0:0:0:0:0:0:0:90:0:0|h[Dignified Headmaster's Charge]|h|r160 Darkmoon Prize Ticket", -- [33]
+			"93855^|cffe6cc80|Hitem:42946:0:0:0:0:0:0:0:90:0:0|h[Charmed Ancient Bone Bow]|h|r160 Darkmoon Prize Ticket", -- [34]
+			"93856^|cffe6cc80|Hitem:42945:0:0:0:0:0:0:0:90:0:0|h[Venerable Dal'Rend's Sacred Charge]|h|r110 Darkmoon Prize Ticket", -- [35]
+			"93857^|cffe6cc80|Hitem:42944:0:0:0:0:0:0:0:90:0:0|h[Balanced Heartseeker]|h|r110 Darkmoon Prize Ticket", -- [36]
+			"93859^|cffe6cc80|Hitem:42985:0:0:0:0:0:0:0:90:0:0|h[Tattered Dreadmist Mantle]|h|r110 Darkmoon Prize Ticket", -- [37]
+			"93860^|cffe6cc80|Hitem:48691:0:0:0:0:0:0:0:90:0:0|h[Tattered Dreadmist Robe]|h|r110 Darkmoon Prize Ticket", -- [38]
+			"93862^|cffe6cc80|Hitem:42952:0:0:0:0:0:0:0:90:0:0|h[Stained Shadowcraft Spaulders]|h|r110 Darkmoon Prize Ticket", -- [39]
+			"93863^|cffe6cc80|Hitem:48689:0:0:0:0:0:0:0:90:0:0|h[Stained Shadowcraft Tunic]|h|r110 Darkmoon Prize Ticket", -- [40]
+			"93864^|cffe6cc80|Hitem:42984:0:0:0:0:0:0:0:90:0:0|h[Preened Ironfeather Shoulders]|h|r110 Darkmoon Prize Ticket", -- [41]
+			"93865^|cffe6cc80|Hitem:42984:0:0:0:0:0:0:0:90:0:0|h[Preened Ironfeather Shoulders]|h|r110 Darkmoon Prize Ticket", -- [42]
+			"93876^|cffe6cc80|Hitem:42951:0:0:0:0:0:0:0:90:0:0|h[Mystical Pauldrons of Elements]|h|r110 Darkmoon Prize Ticket", -- [43]
+			"93885^|cffe6cc80|Hitem:48683:0:0:0:0:0:0:0:90:0:0|h[Mystical Vest of Elements]|h|r110 Darkmoon Prize Ticket", -- [44]
+			"93887^|cffe6cc80|Hitem:42950:0:0:0:0:0:0:0:90:0:0|h[Champion Herod's Shoulder]|h|r110 Darkmoon Prize Ticket", -- [45]
+			"93888^|cffe6cc80|Hitem:48677:0:0:0:0:0:0:0:90:0:0|h[Champion's Deathdealer Breastplate]|h|r110 Darkmoon Prize Ticket", -- [46]
+			"93890^|cffe6cc80|Hitem:42949:0:0:0:0:0:0:0:90:0:0|h[Polished Spaulders of Valor]|h|r110 Darkmoon Prize Ticket", -- [47]
+			"93891^|cffe6cc80|Hitem:48685:0:0:0:0:0:0:0:90:0:0|h[Polished Breastplate of Valor]|h|r110 Darkmoon Prize Ticket", -- [48]
+			"93892^|cffe6cc80|Hitem:69889:0:0:0:0:0:0:0:90:0:0|h[Burnished Breastplate of Might]|h|r110 Darkmoon Prize Ticket", -- [49]
+			"93893^|cffe6cc80|Hitem:69890:0:0:0:0:0:0:0:90:0:0|h[Burnished Pauldrons of Might]|h|r110 Darkmoon Prize Ticket", -- [50]
+			"93896^|cffe6cc80|Hitem:42991:0:0:0:0:0:0:0:90:0:0|h[Swift Hand of Justice]|h|r130 Darkmoon Prize Ticket", -- [51]
+			"93897^|cffe6cc80|Hitem:42992:0:0:0:0:0:0:0:90:0:0|h[Discerning Eye of the Beast]|h|r130 Darkmoon Prize Ticket", -- [52]
+			["T"] = 1362886132,
+			["POS"] = "5005^47.785705327988^66.675502061844",
+		},
+		["Adventuring Supplies~Trader Jambeezi"] = {
+			"81584^|cffffff0052g |cffbfbfbf48s |cff7f7f0026c", -- [1]
+			"81593^|cffffff0050g |cffbfbfbf36s |cff7f7f007c", -- [2]
+			"81602^|cffffff0071g |cffbfbfbf44s |cff7f7f002c", -- [3]
+			"81611^|cffffff0066g |cffbfbfbf75s |cff7f7f008c", -- [4]
+			"81620^|cffffff0053g |cffbfbfbf9s |cff7f7f004c", -- [5]
+			"81629^|cffffff0036g |cffbfbfbf82s |cff7f7f0053c", -- [6]
+			"81638^|cffffff0035g |cffbfbfbf39s |cff7f7f0098c", -- [7]
+			"81647^|cffffff0036g |cffbfbfbf56s |cff7f7f0013c", -- [8]
+			"81653^|cffffff0030g |cffbfbfbf46s |cff7f7f0056c", -- [9]
+			"81658^|cffffff0029g |cffbfbfbf6s |cff7f7f0035c", -- [10]
+			"81663^|cffffff0043g |cffbfbfbf78s |cff7f7f0089c", -- [11]
+			"81668^|cffffff0050g |cffbfbfbf75s |cff7f7f0089c", -- [12]
+			"81679^|cffffff00100g |cffbfbfbf90s |cff7f7f0077c", -- [13]
+			"81680^|cffffff00101g |cffbfbfbf27s |cff7f7f0076c", -- [14]
+			"81685^|cffffff0095g |cffbfbfbf74s |cff7f7f0083c", -- [15]
+			"81686^|cffffff0096g |cffbfbfbf11s |cff7f7f0082c", -- [16]
+			["T"] = 1360318427,
+			["POS"] = "6010^55.86576461792^49.724364280701",
+			["R"] = 1,
+		},
+		["Guide to the Ways~Sungshin Ironpaw"] = {
+			"74854^|cffbfbfbf63s", -- [1]
+			"85583^|cffffff001g |cffbfbfbf8s", -- [2]
+			"74660^|cffffff001g |cffbfbfbf35s", -- [3]
+			"85584^|cffffff001g |cffbfbfbf53s", -- [4]
+			"74852^|cffffff001g |cffbfbfbf44s", -- [5]
+			"74851^|cffffff001g |cffbfbfbf26s", -- [6]
+			"85585^|cffffff002g |cffbfbfbf43s", -- [7]
+			"74659^|cffffff002g |cffbfbfbf70s", -- [8]
+			"74832^|cffffff001g |cffbfbfbf8s", -- [9]
+			"74845^|cffffff003g |cffbfbfbf15s", -- [10]
+			["POS"] = "6010^53.558337688446^51.116454601288",
+			["T"] = 1360234221,
+		},
+		["Galley Chef~Malley"] = {
+			"81402^|cffffff002g |cffbfbfbf16s", -- [1]
+			"81410^|cffffff002g |cffbfbfbf34s", -- [2]
+			"81406^|cffffff002g |cffbfbfbf16s", -- [3]
+			"81414^|cffffff002g |cffbfbfbf34s", -- [4]
+			"74636^|cffffff002g |cffbfbfbf34s", -- [5]
+			["T"] = 1361875923,
+			["POS"] = "6002^17.625939846039^79.604232311249",
+		},
+		["Shado-Pan Quartermaster~Rushi the Fox"] = {
+			"89303^|cffffff0042g |cffbfbfbf50s", -- [1]
+			"89302^|cffffff0021g |cffbfbfbf25s", -- [2]
+			"89301^|cffffff008g |cffbfbfbf50s", -- [3]
+			"93220^|cffffff0042g |cffbfbfbf50s", -- [4]
+			"89522^1250 Justice Points", -- [5]
+			"89661^2250 Justice Points", -- [6]
+			"88995^1750 Justice Points", -- [7]
+			"89076^1250 Valor Points", -- [8]
+			"89082^1750 Valor Points", -- [9]
+			"89300^2250 Valor Points", -- [10]
+			"89307^|cffffff00425g", -- [11]
+			"89305^|cffffff001275g", -- [12]
+			"89306^|cffffff002125g", -- [13]
+			"90844^|cffffff0015g |cffbfbfbf7s |cff7f7f0073c", -- [14]
+			"89800^|cffffff008g |cffbfbfbf50s", -- [15]
+			["T"] = 1361678268,
+			["POS"] = "6008^48.921585083008^70.525050163269",
+			["R"] = 1,
+		},
+		["Souvenir & Toy Prizes~Gelvas Grimegate"] = {
+			"93730^10 Darkmoon Prize Ticket", -- [1]
+			"90899^90 Darkmoon Prize Ticket", -- [2]
+			"73762^90 Darkmoon Prize Ticket", -- [3]
+			"77256^20 Darkmoon Prize Ticket", -- [4]
+			"78340^90 Darkmoon Prize Ticket", -- [5]
+			"19295^Darkmoon Prize Ticket", -- [6]
+			"19291^Darkmoon Prize Ticket", -- [7]
+			"78341^160 Darkmoon Prize Ticket", -- [8]
+			"92966^Darkmoon Prize Ticket", -- [9]
+			"92967^Darkmoon Prize Ticket", -- [10]
+			"92968^Darkmoon Prize Ticket", -- [11]
+			"92969^Darkmoon Prize Ticket", -- [12]
+			"92970^Darkmoon Prize Ticket", -- [13]
+			"92959^Darkmoon Prize Ticket", -- [14]
+			"92958^Darkmoon Prize Ticket", -- [15]
+			"92956^Darkmoon Prize Ticket", -- [16]
+			"77158^Darkmoon Prize Ticket", -- [17]
+			["T"] = 1362886211,
+			["POS"] = "5005^48.032402992249^64.652198553085",
+		},
+		["~Lunar Festival Vendor"] = {
+			"21721^|cff7f7f0014c", -- [1]
+			"21747^|cffbfbfbf2s |cff7f7f0070c", -- [2]
+			"21558^|cff7f7f0023c", -- [3]
+			"21559^|cff7f7f0023c", -- [4]
+			"21557^|cff7f7f0023c", -- [5]
+			"21571^|cff7f7f0090c", -- [6]
+			"21574^|cff7f7f0090c", -- [7]
+			"21576^|cff7f7f0090c", -- [8]
+			["T"] = 1360467759,
+			["POS"] = "6013^290.97937698598^565.55799087076",
+		},
+		["Used Yak Salesgrummle~Uncle Bigpocket"] = {
+			"87789^|cffffff002700g", -- [1]
+			"87788^|cffffff002700g", -- [2]
+			"84101^|cffffff00108000g", -- [3]
+			["T"] = 1360463736,
+			["POS"] = "6003^65.391659736633^61.685132980347",
+		},
+		["~Magister Xintar"] = {
+			"64670^|cffbfbfbf30s", -- [1]
+			"63388^|cffbfbfbf33s |cff7f7f0075c", -- [2]
+			"79249^|cffbfbfbf37s |cff7f7f0050c", -- [3]
+			["T"] = 1360467905,
+			["POS"] = "6013^289.17162326522^584.58126171551",
+		},
+		["~Ironshaper Peng"] = {
+			"2901^|cff7f7f0069c", -- [1]
+			"5956^|cff7f7f0016c", -- [2]
+			"2880^|cff7f7f0085c", -- [3]
+			"3466^|cffbfbfbf17s", -- [4]
+			"18567^|cffffff002g |cffbfbfbf55s", -- [5]
+			"3857^|cffbfbfbf4s |cff7f7f0025c", -- [6]
+			["T"] = 1361441474,
+			["POS"] = "6008^75.777113437653^81.791841983795",
+			["R"] = 1,
+		},
+		["Master of Noodles~Chin"] = {
+			"81400^|cffffff002g |cffbfbfbf16s", -- [1]
+			"81401^|cffffff002g |cffbfbfbf16s", -- [2]
+			"81402^|cffffff002g |cffbfbfbf16s", -- [3]
+			"81403^|cffffff002g |cffbfbfbf16s", -- [4]
+			"81404^|cffffff002g |cffbfbfbf16s", -- [5]
+			"81405^|cffffff002g |cffbfbfbf16s", -- [6]
+			"81408^|cffffff002g |cffbfbfbf34s", -- [7]
+			"81409^|cffffff002g |cffbfbfbf34s", -- [8]
+			"81410^|cffffff002g |cffbfbfbf34s", -- [9]
+			"81411^|cffffff002g |cffbfbfbf34s", -- [10]
+			"81412^|cffffff002g |cffbfbfbf34s", -- [11]
+			"81413^|cffffff002g |cffbfbfbf34s", -- [12]
+			"82451^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [13]
+			["T"] = 1359866450,
+			["POS"] = "6006^46.344190835953^45.461970567703",
+		},
+		["Innkeeper~Stained Mug"] = {
+			"81406^|cffffff002g |cffbfbfbf16s", -- [1]
+			"81414^|cffffff002g |cffbfbfbf34s", -- [2]
+			"74636^|cffffff002g |cffbfbfbf34s", -- [3]
+			["T"] = 1360986984,
+			["POS"] = "6003^-68.268606016588^1742.5940507661",
+		},
+		["General Goods Vendor~Big Sal"] = {
+			"159^|cff7f7f0023c", -- [1]
+			"58274^|cffbfbfbf99s", -- [2]
+			"81400^|cffffff002g |cffbfbfbf16s", -- [3]
+			"60335^|cffffff0010g |cffbfbfbf80s", -- [4]
+			"4470^|cff7f7f0035c", -- [5]
+			["T"] = 1360664922,
+			["POS"] = "6003^57.712280750275^61.742091178894",
+		},
+		["Blacksmith~Ironshaper Shou"] = {
+			"2901^|cff7f7f0073c", -- [1]
+			"5956^|cff7f7f0017c", -- [2]
+			"2880^|cff7f7f0090c", -- [3]
+			"3466^|cffbfbfbf18s", -- [4]
+			"18567^|cffffff002g |cffbfbfbf70s", -- [5]
+			"3857^|cffbfbfbf4s |cff7f7f0050c", -- [6]
+			["T"] = 1360751749,
+			["POS"] = "6003^57.381725311279^61.671614646912",
+			["R"] = 1,
+		},
+		["Phoenix Egg Trader~Kai Featherfall"] = {
+			"89154^|cffa335ee|Hitem:90045:0:0:0:0:0:0:0:90:0:0|h[Ancestral Phoenix Egg]|h|r", -- [1]
+			"90710^|cffa335ee|Hitem:90045:0:0:0:0:0:0:0:90:0:0|h[Ancestral Phoenix Egg]|h|r", -- [2]
+			"90711^|cffa335ee|Hitem:90045:0:0:0:0:0:0:0:90:0:0|h[Ancestral Phoenix Egg]|h|r", -- [3]
+			"90712^|cffa335ee|Hitem:90045:0:0:0:0:0:0:0:90:0:0|h[Ancestral Phoenix Egg]|h|r", -- [4]
+			["POS"] = "6009^82.228338718414^33.996552228928",
+			["T"] = 1361962997,
+		},
+		["Blacksmithing Supplies~Kaita Deepforge"] = {
+			"2901^|cff7f7f0057c", -- [1]
+			"5956^|cff7f7f0013c", -- [2]
+			"2880^|cff7f7f0070c", -- [3]
+			"3466^|cffbfbfbf14s", -- [4]
+			"18567^|cffffff002g |cffbfbfbf10s", -- [5]
+			"3857^|cffbfbfbf3s |cff7f7f0050c", -- [6]
+			"66117^20 |cffffffff|Hitem:52186:0:0:0:0:0:0:0:90:0:0|h[Elementium Bar]|h|r", -- [7]
+			"66118^20 |cffffffff|Hitem:52186:0:0:0:0:0:0:0:90:0:0|h[Elementium Bar]|h|r", -- [8]
+			"66125^20 |cffffffff|Hitem:52186:0:0:0:0:0:0:0:90:0:0|h[Elementium Bar]|h|r", -- [9]
+			"66126^20 |cffffffff|Hitem:52186:0:0:0:0:0:0:0:90:0:0|h[Elementium Bar]|h|r", -- [10]
+			"66103^20 |cffffffff|Hitem:52186:0:0:0:0:0:0:0:90:0:0|h[Elementium Bar]|h|r", -- [11]
+			"66119^20 |cffffffff|Hitem:52186:0:0:0:0:0:0:0:90:0:0|h[Elementium Bar]|h|r", -- [12]
+			"66107^20 |cffffffff|Hitem:52186:0:0:0:0:0:0:0:90:0:0|h[Elementium Bar]|h|r", -- [13]
+			"66105^20 |cffffffff|Hitem:52186:0:0:0:0:0:0:0:90:0:0|h[Elementium Bar]|h|r", -- [14]
+			"66109^20 |cffffffff|Hitem:52186:0:0:0:0:0:0:0:90:0:0|h[Elementium Bar]|h|r", -- [15]
+			"66127^20 |cffffffff|Hitem:52186:0:0:0:0:0:0:0:90:0:0|h[Elementium Bar]|h|r", -- [16]
+			"66120^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [17]
+			"67603^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [18]
+			"67606^5 |cff1eff00|Hitem:51950:0:0:0:0:0:0:0:90:0:0|h[Pyrium Bar]|h|r", -- [19]
+			"66113^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [20]
+			"66106^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [21]
+			"66111^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [22]
+			"66104^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [23]
+			"66108^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [24]
+			"66128^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [25]
+			"66121^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [26]
+			"66115^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [27]
+			"66112^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [28]
+			"66114^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [29]
+			"66110^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [30]
+			"66116^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [31]
+			"66129^2 |cffffffff|Hitem:53039:0:0:0:0:0:0:0:90:0:0|h[Hardened Elementium Bar]|h|r", -- [32]
+			"66124^5 |cff1eff00|Hitem:51950:0:0:0:0:0:0:0:90:0:0|h[Pyrium Bar]|h|r", -- [33]
+			"66123^5 |cff1eff00|Hitem:51950:0:0:0:0:0:0:0:90:0:0|h[Pyrium Bar]|h|r", -- [34]
+			"66122^5 |cff1eff00|Hitem:51950:0:0:0:0:0:0:0:90:0:0|h[Pyrium Bar]|h|r", -- [35]
+			"66100^5 |cff1eff00|Hitem:51950:0:0:0:0:0:0:0:90:0:0|h[Pyrium Bar]|h|r", -- [36]
+			"66132^5 |cff1eff00|Hitem:51950:0:0:0:0:0:0:0:90:0:0|h[Pyrium Bar]|h|r", -- [37]
+			"66131^5 |cff1eff00|Hitem:51950:0:0:0:0:0:0:0:90:0:0|h[Pyrium Bar]|h|r", -- [38]
+			"66130^5 |cff1eff00|Hitem:51950:0:0:0:0:0:0:0:90:0:0|h[Pyrium Bar]|h|r", -- [39]
+			"66101^5 |cff1eff00|Hitem:51950:0:0:0:0:0:0:0:90:0:0|h[Pyrium Bar]|h|r", -- [40]
+			["POS"] = "2020^63.422650098801^37.651765346527",
+			["T"] = 1363082594,
+			["R"] = 1,
+		},
+		["Innkeeper~Rude Sho"] = {
+			"81406^|cffffff002g |cffbfbfbf16s", -- [1]
+			"81414^|cffffff002g |cffbfbfbf34s", -- [2]
+			"74636^|cffffff002g |cffbfbfbf34s", -- [3]
+			["T"] = 1360148110,
+			["POS"] = "6002^75.772511959076^7.1938037872314",
+		},
+		["Adventurous Tinker~Gnimo"] = {
+			"14341^|cffbfbfbf45s", -- [1]
+			"38426^|cffffff002g |cffbfbfbf70s", -- [2]
+			"3371^|cff7f7f0090c", -- [3]
+			"6532^|cffbfbfbf2s |cff7f7f0025c", -- [4]
+			"39354^|cff7f7f0014c", -- [5]
+			"20815^|cffbfbfbf7s |cff7f7f0020c", -- [6]
+			"39505^|cffbfbfbf6s |cff7f7f0075c", -- [7]
+			"64670^|cffbfbfbf36s", -- [8]
+			"63388^|cffbfbfbf40s |cff7f7f0050c", -- [9]
+			"79249^|cffbfbfbf45s", -- [10]
+			"4565^|cffbfbfbf1s |cff7f7f0075c", -- [11]
+			["T"] = 1361590543,
+			["POS"] = "16223^71.609723567963^41.215980052948",
+			["R"] = 1,
+		},
+		["Valor Quartermaster~Faldren Tillsdale"] = {
+			"77091^1250 Justice Points", -- [1]
+			"77111^1250 Justice Points", -- [2]
+			"77113^1650 Justice Points", -- [3]
+			"77095^1250 Justice Points", -- [4]
+			"77148^2200 Justice Points", -- [5]
+			"77126^2200 Justice Points", -- [6]
+			"77180^1650 Justice Points", -- [7]
+			"77173^1650 Justice Points", -- [8]
+			"77322^1250 Justice Points", -- [9]
+			"77161^1650 Justice Points", -- [10]
+			"78759^|cffa335ee|Hitem:78862:0:0:0:0:0:0:0:87:0:0|h[Chest of the Corrupted Vanquisher]|h|r", -- [11]
+			"78774^|cffa335ee|Hitem:78865:0:0:0:0:0:0:0:87:0:0|h[Gauntlets of the Corrupted Vanquisher]|h|r", -- [12]
+			"78794^|cffa335ee|Hitem:78868:0:0:0:0:0:0:0:87:0:0|h[Crown of the Corrupted Vanquisher]|h|r", -- [13]
+			"78803^|cffa335ee|Hitem:78871:0:0:0:0:0:0:0:87:0:0|h[Leggings of the Corrupted Vanquisher]|h|r", -- [14]
+			"78833^|cffa335ee|Hitem:78874:0:0:0:0:0:0:0:87:0:0|h[Shoulders of the Corrupted Vanquisher]|h|r", -- [15]
+			"77023^|cffa335ee|Hitem:78174:0:0:0:0:0:0:0:87:0:0|h[Chest of the Corrupted Vanquisher]|h|r", -- [16]
+			"77024^|cffa335ee|Hitem:78173:0:0:0:0:0:0:0:87:0:0|h[Gauntlets of the Corrupted Vanquisher]|h|r", -- [17]
+			"77025^|cffa335ee|Hitem:78172:0:0:0:0:0:0:0:87:0:0|h[Crown of the Corrupted Vanquisher]|h|r", -- [18]
+			"77026^|cffa335ee|Hitem:78171:0:0:0:0:0:0:0:87:0:0|h[Leggings of the Corrupted Vanquisher]|h|r", -- [19]
+			"77027^|cffa335ee|Hitem:78170:0:0:0:0:0:0:0:87:0:0|h[Shoulders of the Corrupted Vanquisher]|h|r", -- [20]
+			"78664^|cffa335ee|Hitem:78849:0:0:0:0:0:0:0:87:0:0|h[Chest of the Corrupted Vanquisher]|h|r", -- [21]
+			"78679^|cffa335ee|Hitem:78855:0:0:0:0:0:0:0:87:0:0|h[Gauntlets of the Corrupted Vanquisher]|h|r", -- [22]
+			"78699^|cffa335ee|Hitem:78852:0:0:0:0:0:0:0:87:0:0|h[Crown of the Corrupted Vanquisher]|h|r", -- [23]
+			"78708^|cffa335ee|Hitem:78858:0:0:0:0:0:0:0:87:0:0|h[Leggings of the Corrupted Vanquisher]|h|r", -- [24]
+			"78738^|cffa335ee|Hitem:78861:0:0:0:0:0:0:0:87:0:0|h[Shoulders of the Corrupted Vanquisher]|h|r", -- [25]
+			["T"] = 1360666934,
+			["POS"] = "2020^79.162740707397^69.450306892395",
+		},
+		["Brews~Taijing the Cyclone"] = {
+			"81407^|cffffff002g |cffbfbfbf1s |cff7f7f0060c", -- [1]
+			"81415^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [2]
+			"81406^|cffffff002g |cffbfbfbf16s", -- [3]
+			"81414^|cffffff002g |cffbfbfbf34s", -- [4]
+			"74636^|cffffff002g |cffbfbfbf34s", -- [5]
+			["T"] = 1360467937,
+			["POS"] = "6013^47.679167985916^48.557060956955",
+		},
+		["Seed Vendor~Merchant Greenfield"] = {
+			"79102^|cffbfbfbf13s |cff7f7f0050c", -- [1]
+			"80590^|cffbfbfbf13s |cff7f7f0050c", -- [2]
+			"80591^|cffbfbfbf13s |cff7f7f0050c", -- [3]
+			"80592^|cffbfbfbf13s |cff7f7f0050c", -- [4]
+			"80593^|cffbfbfbf13s |cff7f7f0050c", -- [5]
+			"80594^|cffbfbfbf13s |cff7f7f0050c", -- [6]
+			"80595^|cffbfbfbf13s |cff7f7f0050c", -- [7]
+			"89328^|cffbfbfbf13s |cff7f7f0050c", -- [8]
+			"89326^|cffbfbfbf13s |cff7f7f0050c", -- [9]
+			"89329^|cffbfbfbf13s |cff7f7f0050c", -- [10]
+			"85267^|cffbfbfbf9s", -- [11]
+			"85268^|cffbfbfbf9s", -- [12]
+			"85269^|cffbfbfbf9s", -- [13]
+			"85216^|cffbfbfbf90s", -- [14]
+			"85217^|cffbfbfbf90s", -- [15]
+			"89202^|cffbfbfbf90s", -- [16]
+			"85215^|cffbfbfbf90s", -- [17]
+			"89197^|cffbfbfbf90s", -- [18]
+			"89233^|cffbfbfbf90s", -- [19]
+			["POS"] = "6010^52.854257822037^52.045249938965",
+			["T"] = 1360578051,
+		},
+		["General Goods~Bonni Chang"] = {
+			"159^|cff7f7f0023c", -- [1]
+			"58274^|cffbfbfbf99s", -- [2]
+			"81400^|cffffff002g |cffbfbfbf16s", -- [3]
+			"60335^|cffffff0010g |cffbfbfbf80s", -- [4]
+			"4470^|cff7f7f0035c", -- [5]
+			["T"] = 1363397737,
+			["POS"] = "6013^37.504094839096^66.796940565109",
+		},
+		["Innkeeper~Chiyo Mistpaw"] = {
+			"81400^|cffffff002g |cffbfbfbf16s", -- [1]
+			"81401^|cffffff002g |cffbfbfbf16s", -- [2]
+			"81402^|cffffff002g |cffbfbfbf16s", -- [3]
+			"81403^|cffffff002g |cffbfbfbf16s", -- [4]
+			"81404^|cffffff002g |cffbfbfbf16s", -- [5]
+			"81405^|cffffff002g |cffbfbfbf16s", -- [6]
+			"81408^|cffffff002g |cffbfbfbf34s", -- [7]
+			"81409^|cffffff002g |cffbfbfbf34s", -- [8]
+			"81410^|cffffff002g |cffbfbfbf34s", -- [9]
+			"81411^|cffffff002g |cffbfbfbf34s", -- [10]
+			"81412^|cffffff002g |cffbfbfbf34s", -- [11]
+			"81413^|cffffff002g |cffbfbfbf34s", -- [12]
+			"82451^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [13]
+			"81406^|cffffff002g |cffbfbfbf16s", -- [14]
+			"81414^|cffffff002g |cffbfbfbf34s", -- [15]
+			"74636^|cffffff002g |cffbfbfbf34s", -- [16]
+			"81407^|cffffff002g |cffbfbfbf1s |cff7f7f0060c", -- [17]
+			"81415^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [18]
+			["POS"] = "6003^93.481014150524^1364.8790291473",
+			["T"] = 1360753642,
+		},
+		["Blacksmithing Supplies~Cullen Hammerbrow"] = {
+			"2901^|cff7f7f0073c", -- [1]
+			"5956^|cff7f7f0017c", -- [2]
+			"2880^|cff7f7f0090c", -- [3]
+			"3466^|cffbfbfbf18s", -- [4]
+			"18567^|cffffff002g |cffbfbfbf70s", -- [5]
+			"3857^|cffbfbfbf4s |cff7f7f0050c", -- [6]
+			["T"] = 1362802194,
+			["POS"] = "6013^72.97340631485^50.86150765419",
+			["R"] = 1,
+		},
+		["Flowers~Aster"] = {
+			"3421^|cffbfbfbf1s |cff7f7f0080c", -- [1]
+			"3419^|cffbfbfbf4s |cff7f7f0050c", -- [2]
+			"3422^|cffbfbfbf18s", -- [3]
+			"3420^|cffbfbfbf45s", -- [4]
+			"3423^|cffffff001g |cffbfbfbf80s", -- [5]
+			"3424^|cffffff0045g", -- [6]
+			["POS"] = "6013^299.60265819101^537.17051951284",
+			["T"] = 1360923461,
+		},
+		["Fireworks Vendor~Pera Firestone"] = {
+			"5740^|cff7f7f0090c", -- [1]
+			"9314^|cff7f7f0045c", -- [2]
+			["T"] = 1360467872,
+			["POS"] = "6013^292.18343881102^514.96257007022",
+			["R"] = 1,
+		},
+		["Pet & Mount Prizes~Lhara"] = {
+			"73766^180 Darkmoon Prize Ticket", -- [1]
+			"72140^180 Darkmoon Prize Ticket", -- [2]
+			"91003^90 Darkmoon Prize Ticket", -- [3]
+			"73764^90 Darkmoon Prize Ticket", -- [4]
+			"74981^90 Darkmoon Prize Ticket", -- [5]
+			"73765^90 Darkmoon Prize Ticket", -- [6]
+			"73762^90 Darkmoon Prize Ticket", -- [7]
+			"73903^90 Darkmoon Prize Ticket", -- [8]
+			"73905^90 Darkmoon Prize Ticket", -- [9]
+			["T"] = 1362886285,
+			["POS"] = "5005^48.211550712585^69.312751293182",
+		},
+		["Adventuring Supplies~Alin the Finder"] = {
+			"82619^|cffffff0056g |cffbfbfbf40s |cff7f7f0062c", -- [1]
+			"82628^|cffffff0052g |cffbfbfbf70s |cff7f7f0036c", -- [2]
+			"82637^|cffffff0074g |cffbfbfbf79s |cff7f7f0081c", -- [3]
+			"82646^|cffffff0071g |cffbfbfbf80s |cff7f7f0083c", -- [4]
+			"82655^|cffffff0055g |cffbfbfbf58s |cff7f7f0028c", -- [5]
+			"82664^|cffffff0035g |cffbfbfbf83s |cff7f7f008c", -- [6]
+			"82673^|cffffff0037g |cffbfbfbf5s |cff7f7f0096c", -- [7]
+			"82682^|cffffff0035g |cffbfbfbf55s |cff7f7f0025c", -- [8]
+			"82688^|cffffff0030g |cffbfbfbf65s |cff7f7f0047c", -- [9]
+			"82693^|cffffff0030g |cffbfbfbf65s |cff7f7f0047c", -- [10]
+			"82698^|cffffff0046g |cffbfbfbf18s |cff7f7f0064c", -- [11]
+			"82703^|cffffff0053g |cffbfbfbf12s |cff7f7f0036c", -- [12]
+			"82714^|cffffff00108g |cffbfbfbf43s |cff7f7f0062c", -- [13]
+			"82715^|cffffff00108g |cffbfbfbf82s |cff7f7f0063c", -- [14]
+			"82720^|cffffff00100g |cffbfbfbf19s |cff7f7f0096c", -- [15]
+			"82721^|cffffff00100g |cffbfbfbf58s |cff7f7f0098c", -- [16]
+			["T"] = 1361072354,
+			["POS"] = "6008^71.449339389801^57.223081588745",
+			["R"] = 1,
+		},
+		["Operation: Shieldwall Quartermaster~Agent Malley"] = {
+			"93168^|cffffff001800g", -- [1]
+			"93231^|cffffff0045g", -- [2]
+			"93346^1750 Justice Points", -- [3]
+			"93243^1250 Valor Points", -- [4]
+			"93258^1750 Valor Points", -- [5]
+			"93278^1750 Valor Points", -- [6]
+			"93337^1750 Valor Points", -- [7]
+			["T"] = 1361790889,
+			["POS"] = "6002^89.703923463821^33.352971076965",
+			["R"] = 1,
+		},
+		["Stockmaster~Nam Ironpaw"] = {
+			"74853^Ironpaw Token", -- [1]
+			"74662^Ironpaw Token", -- [2]
+			"74661^Ironpaw Token", -- [3]
+			"86559^50 Ironpaw Token", -- [4]
+			"86558^50 Ironpaw Token", -- [5]
+			"86468^50 Ironpaw Token", -- [6]
+			"75013^10 Ironpaw Token", -- [7]
+			"75017^10 Ironpaw Token", -- [8]
+			"86425^50 Ironpaw Token", -- [9]
+			"92748^10 Ironpaw Token", -- [10]
+			"88801^40 Ironpaw Token", -- [11]
+			"87706^Ironpaw Token", -- [12]
+			"87707^Ironpaw Token", -- [13]
+			"87708^Ironpaw Token", -- [14]
+			"87709^Ironpaw Token", -- [15]
+			"87710^Ironpaw Token", -- [16]
+			"87712^Ironpaw Token", -- [17]
+			"87713^Ironpaw Token", -- [18]
+			"87714^Ironpaw Token", -- [19]
+			"87715^Ironpaw Token", -- [20]
+			"87716^Ironpaw Token", -- [21]
+			"87721^Ironpaw Token", -- [22]
+			"87729^Ironpaw Token", -- [23]
+			"87722^Ironpaw Token", -- [24]
+			"87723^Ironpaw Token", -- [25]
+			"87724^Ironpaw Token", -- [26]
+			"87725^Ironpaw Token", -- [27]
+			"87726^Ironpaw Token", -- [28]
+			"87727^Ironpaw Token", -- [29]
+			"87728^Ironpaw Token", -- [30]
+			"87701^Ironpaw Token", -- [31]
+			"87702^Ironpaw Token", -- [32]
+			"87703^Ironpaw Token", -- [33]
+			"87704^Ironpaw Token", -- [34]
+			"87730^Ironpaw Token", -- [35]
+			"87705^Ironpaw Token", -- [36]
+			["POS"] = "6010^53.558337688446^51.116454601288",
+			["T"] = 1360234253,
+		},
+		["Engineering Supplies~Murphy Diremoor"] = {
+			"5956^|cff7f7f0017c", -- [1]
+			"2901^|cff7f7f0073c", -- [2]
+			"90146^|cffffff001g |cffbfbfbf80s", -- [3]
+			"4399^|cffbfbfbf1s |cff7f7f0080c", -- [4]
+			"4400^|cffbfbfbf18s", -- [5]
+			"40533^|cffffff004g |cffbfbfbf50s", -- [6]
+			"39684^|cffbfbfbf81s", -- [7]
+			"2880^|cff7f7f0090c", -- [8]
+			"3466^|cffbfbfbf18s", -- [9]
+			"39354^|cff7f7f0014c", -- [10]
+			"10647^|cffbfbfbf18s", -- [11]
+			["T"] = 1360468006,
+			["POS"] = "6013^58.800399303436^51.088804006577",
+			["R"] = 1,
+		},
+		["Adventuring Supplies~Len at Arms"] = {
+			"83163^|cffffff0055g |cffbfbfbf5s |cff7f7f0082c", -- [1]
+			"83172^|cffffff0051g |cffbfbfbf42s |cff7f7f0063c", -- [2]
+			"83181^|cffffff0073g |cff7f7f0088c", -- [3]
+			"83190^|cffffff0075g |cffbfbfbf40s |cff7f7f0021c", -- [4]
+			"83199^|cffffff0054g |cffbfbfbf24s |cff7f7f0063c", -- [5]
+			"83208^|cffffff0037g |cffbfbfbf64s |cff7f7f0038c", -- [6]
+			"83217^|cffffff0036g |cffbfbfbf16s |cff7f7f0075c", -- [7]
+			"83226^|cffffff0034g |cffbfbfbf69s |cff7f7f0050c", -- [8]
+			"83232^|cffffff0030g |cffbfbfbf2s |cff7f7f0051c", -- [9]
+			"83237^|cffffff0030g |cffbfbfbf2s |cff7f7f0051c", -- [10]
+			"83247^|cffffff0045g |cffbfbfbf23s |cff7f7f0079c", -- [11]
+			"83257^|cffffff0055g |cffbfbfbf26s |cff7f7f0039c", -- [12]
+			"83268^|cffffff0099g |cffbfbfbf29s |cff7f7f0087c", -- [13]
+			"83269^|cffffff0099g |cffbfbfbf68s |cff7f7f009c", -- [14]
+			"83274^|cffffff00104g |cffbfbfbf30s |cff7f7f0086c", -- [15]
+			"83275^|cffffff00104g |cffbfbfbf69s |cff7f7f007c", -- [16]
+			["T"] = 1362135598,
+			["POS"] = "6009^14.315903186798^78.84601354599",
+			["R"] = 1,
+		},
+		["Lorewalkers Quartermaster~Tan Shin Tiao"] = {
+			"87549^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [1]
+			"87548^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [2]
+			"89363^|cffffff00540g", -- [3]
+			"89795^|cffffff009g", -- [4]
+			"93230^|cffffff0045g", -- [5]
+			["POS"] = "6009^82.218772172928^29.293709993362",
+			["T"] = 1361962897,
+			["R"] = 1,
+		},
+		["Dragon Turtle Breeder~Old Whitenose"] = {
+			"83079^|cffbfbfbf9s", -- [1]
+			"92071^|cffffff001g |cffbfbfbf80s", -- [2]
+			"87795^|cffbfbfbf90s", -- [3]
+			"87796^|cffbfbfbf90s", -- [4]
+			"87797^|cffbfbfbf90s", -- [5]
+			"82765^|cffbfbfbf90s", -- [6]
+			"87799^|cffbfbfbf90s", -- [7]
+			"87800^|cffbfbfbf90s", -- [8]
+			"87802^|cffffff009g", -- [9]
+			"87803^|cffffff009g", -- [10]
+			"87804^|cffffff009g", -- [11]
+			"87801^|cffffff009g", -- [12]
+			"87805^|cffffff009g", -- [13]
+			"82811^|cffffff009g", -- [14]
+			["POS"] = "2020^67.60481595993^18.654483556747",
+			["T"] = 1362283818,
+		},
+		["Innkeeper~Nan Thunderfoot"] = {
+			"81400^|cffffff002g |cffbfbfbf16s", -- [1]
+			"81401^|cffffff002g |cffbfbfbf16s", -- [2]
+			"81402^|cffffff002g |cffbfbfbf16s", -- [3]
+			"81403^|cffffff002g |cffbfbfbf16s", -- [4]
+			"81404^|cffffff002g |cffbfbfbf16s", -- [5]
+			"81405^|cffffff002g |cffbfbfbf16s", -- [6]
+			"81408^|cffffff002g |cffbfbfbf34s", -- [7]
+			"81409^|cffffff002g |cffbfbfbf34s", -- [8]
+			"81410^|cffffff002g |cffbfbfbf34s", -- [9]
+			"81411^|cffffff002g |cffbfbfbf34s", -- [10]
+			"81412^|cffffff002g |cffbfbfbf34s", -- [11]
+			"81413^|cffffff002g |cffbfbfbf34s", -- [12]
+			"82451^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [13]
+			"81406^|cffffff002g |cffbfbfbf16s", -- [14]
+			"81414^|cffffff002g |cffbfbfbf34s", -- [15]
+			"74636^|cffffff002g |cffbfbfbf34s", -- [16]
+			["T"] = 1359867490,
+			["POS"] = "6010^464.83323278261^2128.6379904882",
+		},
+		["Traveling Trader~Cousin Slowhands"] = {
+			"81407^|cffffff002g |cffbfbfbf1s |cff7f7f0060c", -- [1]
+			"81415^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [2]
+			"81401^|cffffff002g |cffbfbfbf16s", -- [3]
+			"81409^|cffffff002g |cffbfbfbf34s", -- [4]
+			"81406^|cffffff002g |cffbfbfbf16s", -- [5]
+			"81414^|cffffff002g |cffbfbfbf34s", -- [6]
+			"74636^|cffffff002g |cffbfbfbf34s", -- [7]
+			"159^|cff7f7f0023c", -- [8]
+			"58274^|cffbfbfbf99s", -- [9]
+			"81400^|cffffff002g |cffbfbfbf16s", -- [10]
+			"60335^|cffffff0010g |cffbfbfbf80s", -- [11]
+			"4470^|cff7f7f0035c", -- [12]
+			"64670^|cffbfbfbf36s", -- [13]
+			"63388^|cffbfbfbf40s |cff7f7f0050c", -- [14]
+			"79249^|cffbfbfbf45s", -- [15]
+			["T"] = 1361961629,
+			["POS"] = "16236^69.449591636658^58.925980329514",
+			["R"] = 1,
+		},
+		["Supplies & Mender~Elyssa Nightquiver"] = {
+			"81403^|cffffff001g |cffbfbfbf80s", -- [1]
+			"81411^|cffffff001g |cffbfbfbf95s", -- [2]
+			"81406^|cffffff001g |cffbfbfbf80s", -- [3]
+			"81414^|cffffff001g |cffbfbfbf95s", -- [4]
+			"74636^|cffffff001g |cffbfbfbf95s", -- [5]
+			["POS"] = "6002^67.524027824402^32.292014360428",
+			["T"] = 1360061884,
+			["R"] = 1,
+		},
+		["Collector of Commissions~Field Merchant Skevin"] = {
+			"92432^5 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [1]
+			"92664^40 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [2]
+			"92428^60 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [3]
+			"92427^80 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [4]
+			["T"] = 1361875930,
+			["POS"] = "6002^17.634373903275^79.428267478943",
+		},
+		["Archaeology Trainer~Brann Bronzebeard"] = {
+			"87533^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [1]
+			"87534^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [2]
+			"87535^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [3]
+			"87536^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [4]
+			"87537^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [5]
+			"87538^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [6]
+			"87539^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [7]
+			"87540^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [8]
+			"87541^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [9]
+			"87549^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [10]
+			"87548^|cffffffff|Hitem:87399:0:0:0:0:0:0:0:90:0:0|h[Restored Artifact]|h|r", -- [11]
+			["POS"] = "6009^83.514070510864^30.949932336807",
+			["T"] = 1361962950,
+		},
+		["Kirin Tor Offensive Quartermaster~Hiren Loresong"] = {
+			"95054^Elder Charm of Good Fortune", -- [1]
+			"95093^Elder Charm of Good Fortune", -- [2]
+			"95053^Elder Charm of Good Fortune", -- [3]
+			"95052^Elder Charm of Good Fortune", -- [4]
+			"95055^Elder Charm of Good Fortune", -- [5]
+			"95056^3 Elder Charm of Good Fortune", -- [6]
+			"95489^", -- [7]
+			"95490^", -- [8]
+			"80433^400 Valor Points", -- [9]
+			"95528^|cffffff00255g", -- [10]
+			"97203^937 Valor Points", -- [11]
+			"97187^937 Valor Points", -- [12]
+			"95545^|cffffff0042g |cffbfbfbf50s", -- [13]
+			"95564^|cffffff002550g", -- [14]
+			"95591^|cffffff008g |cffbfbfbf50s", -- [15]
+			"95567^|cffffff0021g |cffbfbfbf25s", -- [16]
+			["T"] = 1362652239,
+			["POS"] = "6015^34.958362579346^89.87021446228",
+			["R"] = 1,
+		},
+		["Repair Vendor~Black Arrow"] = {
+			"2901^|cff7f7f0073c", -- [1]
+			"5956^|cff7f7f0017c", -- [2]
+			"2880^|cff7f7f0090c", -- [3]
+			"3466^|cffbfbfbf18s", -- [4]
+			"18567^|cffffff002g |cffbfbfbf70s", -- [5]
+			"3857^|cffbfbfbf4s |cff7f7f0050c", -- [6]
+			["T"] = 1360463598,
+			["POS"] = "6003^66.641789674759^52.260184288025",
+			["R"] = 1,
+		},
+		["Justice Quartermaster~Commander Lo Ping"] = {
+			"89667^2250 Justice Points", -- [1]
+			"89532^1250 Justice Points", -- [2]
+			"89522^1250 Justice Points", -- [3]
+			"89653^1750 Justice Points", -- [4]
+			"89661^2250 Justice Points", -- [5]
+			"89527^1250 Justice Points", -- [6]
+			"89645^1250 Justice Points", -- [7]
+			"92742^1000 Justice Points", -- [8]
+			"89232^1750 Justice Points", -- [9]
+			"88995^1750 Justice Points", -- [10]
+			["T"] = 1362285224,
+			["POS"] = "6008^37.908732891083^64.56401348114",
+			["R"] = 1,
+		},
+		["Valor Quartermaster~Commander Oxheart"] = {
+			"89431^2250 Valor Points", -- [1]
+			"89076^1250 Valor Points", -- [2]
+			"88868^1750 Valor Points", -- [3]
+			"89070^1250 Valor Points", -- [4]
+			"88744^1750 Valor Points", -- [5]
+			"89300^2250 Valor Points", -- [6]
+			"89090^2250 Valor Points", -- [7]
+			"89065^1250 Valor Points", -- [8]
+			"89341^1750 Valor Points", -- [9]
+			"89082^1750 Valor Points", -- [10]
+			"89060^1750 Valor Points", -- [11]
+			"88884^1250 Valor Points", -- [12]
+			"86643^|cffa335ee|Hitem:89264:0:0:0:0:0:0:0:90:0:0|h[Chest of the Shadowy Vanquisher]|h|r", -- [13]
+			"85303^", -- [14]
+			"87124^", -- [15]
+			"86642^", -- [16]
+			"85302^", -- [17]
+			"87125^", -- [18]
+			"86641^", -- [19]
+			"85301^", -- [20]
+			"87126^", -- [21]
+			"86640^", -- [22]
+			"85300^", -- [23]
+			"87127^", -- [24]
+			"86639^", -- [25]
+			"85299^", -- [26]
+			"87128^", -- [27]
+			["T"] = 1362285374,
+			["POS"] = "6008^37.908732891083^64.56401348114",
+			["R"] = 1,
+		},
+		["Replica Armor Prizes~Baruma"] = {
+			"78262^55 Darkmoon Prize Ticket", -- [1]
+			"78263^75 Darkmoon Prize Ticket", -- [2]
+			"78264^55 Darkmoon Prize Ticket", -- [3]
+			"78265^55 Darkmoon Prize Ticket", -- [4]
+			"78266^55 Darkmoon Prize Ticket", -- [5]
+			"78267^75 Darkmoon Prize Ticket", -- [6]
+			"78268^75 Darkmoon Prize Ticket", -- [7]
+			"78269^75 Darkmoon Prize Ticket", -- [8]
+			["T"] = 1362886188,
+			["POS"] = "5005^47.759932279587^66.08921289444",
+			["R"] = 1,
+		},
+		["Food & Drink~Sway Dish Chef"] = {
+			"81406^|cffffff002g |cffbfbfbf16s", -- [1]
+			"81414^|cffffff002g |cffbfbfbf34s", -- [2]
+			"74636^|cffffff002g |cffbfbfbf34s", -- [3]
+			"81400^|cffffff002g |cffbfbfbf16s", -- [4]
+			"81401^|cffffff002g |cffbfbfbf16s", -- [5]
+			"81402^|cffffff002g |cffbfbfbf16s", -- [6]
+			"81403^|cffffff002g |cffbfbfbf16s", -- [7]
+			"81404^|cffffff002g |cffbfbfbf16s", -- [8]
+			"81405^|cffffff002g |cffbfbfbf16s", -- [9]
+			"81408^|cffffff002g |cffbfbfbf34s", -- [10]
+			"81409^|cffffff002g |cffbfbfbf34s", -- [11]
+			"81410^|cffffff002g |cffbfbfbf34s", -- [12]
+			"81411^|cffffff002g |cffbfbfbf34s", -- [13]
+			"81412^|cffffff002g |cffbfbfbf34s", -- [14]
+			"81413^|cffffff002g |cffbfbfbf34s", -- [15]
+			"82451^|cffffff002g |cffbfbfbf30s |cff7f7f0040c", -- [16]
+			["POS"] = "6013^39.230412244797^69.038319587708",
+			["T"] = 1361076704,
+		},
+		["Trade Supplies~Tharynn Bouden"] = {
+			"7005^|cff7f7f0058c", -- [1]
+			"2901^|cff7f7f0057c", -- [2]
+			"85663^|cff7f7f0074c", -- [3]
+			"5956^|cff7f7f0013c", -- [4]
+			"6256^|cff7f7f0017c", -- [5]
+			"6217^|cff7f7f0087c", -- [6]
+			"2678^|cff7f7f007c", -- [7]
+			"30817^|cff7f7f0018c", -- [8]
+			"2320^|cff7f7f007c", -- [9]
+			"2880^|cff7f7f0070c", -- [10]
+			"3371^|cff7f7f0070c", -- [11]
+			"4289^|cff7f7f0035c", -- [12]
+			"6529^|cff7f7f0035c", -- [13]
+			"2604^|cff7f7f0035c", -- [14]
+			"2324^|cff7f7f0018c", -- [15]
+			"6260^|cff7f7f0035c", -- [16]
+			"39354^|cff7f7f0011c", -- [17]
+			"20815^|cffbfbfbf5s |cff7f7f0060c", -- [18]
+			"39505^|cffbfbfbf5s |cff7f7f0025c", -- [19]
+			"6325^|cff7f7f0028c", -- [20]
+			"6328^|cffbfbfbf2s |cff7f7f0080c", -- [21]
+			["T"] = 1362886030,
+			["POS"] = "2010^41.818886995316^67.066150903702",
+		},
+		["Engineering Supplies~Billibub Cogspinner"] = {
+			"59496^|cffffffff|Hitem:60222:0:0:0:0:0:0:0:90:0:0|h[Authentic Jr. Engineer Goggles]|h|r", -- [1]
+			"59493^|cff0070dd|Hitem:60217:0:0:0:0:0:0:0:90:0:0|h[Elementium Toolbox]|h|r", -- [2]
+			"59491^|cffffffff|Hitem:60853:0:0:0:0:0:0:0:90:0:0|h[Volatile Seaforium Blastpack]|h|r", -- [3]
+			"59480^|cffffffff|Hitem:60858:0:0:0:0:0:0:0:90:0:0|h[Goblin Barbecue]|h|r", -- [4]
+			"59479^4 |cffffffff|Hitem:60224:0:0:0:0:0:0:0:90:0:0|h[Handful of Obsidium Bolts]|h|r", -- [5]
+			"59478^4 |cffffffff|Hitem:60224:0:0:0:0:0:0:0:90:0:0|h[Handful of Obsidium Bolts]|h|r", -- [6]
+			"59477^3 |cffffffff|Hitem:67749:0:0:0:0:0:0:0:90:0:0|h[Electrified Ether]|h|r", -- [7]
+			"59489^|cff0070dd|Hitem:60218:0:0:0:0:0:0:0:90:0:0|h[Lure Master Tackle Box]|h|r", -- [8]
+			"68660^55 Honor Points", -- [9]
+			"5956^|cff7f7f0014c", -- [10]
+			"2901^|cff7f7f0061c", -- [11]
+			"90146^|cffffff001g |cffbfbfbf50s", -- [12]
+			"4399^|cffbfbfbf1s |cff7f7f0050c", -- [13]
+			"4400^|cffbfbfbf15s", -- [14]
+			"40533^|cffffff003g |cffbfbfbf75s", -- [15]
+			"39684^|cffbfbfbf67s |cff7f7f0050c", -- [16]
+			"2880^|cff7f7f0075c", -- [17]
+			"3466^|cffbfbfbf15s", -- [18]
+			"10647^|cffbfbfbf15s", -- [19]
+			"4357^|cff7f7f0012c", -- [20]
+			"4364^|cff7f7f0036c", -- [21]
+			"39354^|cff7f7f0012c", -- [22]
+			["POS"] = "2020^63.174730539322^32.08190202713",
+			["T"] = 1362283643,
+		},
+		["Supplies~Merchant Tantan"] = {
+			"2901^|cff7f7f0065c", -- [1]
+			"5956^|cff7f7f0015c", -- [2]
+			"2880^|cff7f7f0080c", -- [3]
+			"3466^|cffbfbfbf16s", -- [4]
+			"18567^|cffffff002g |cffbfbfbf40s", -- [5]
+			"3857^|cffbfbfbf4s", -- [6]
+			"81400^|cffffff001g |cffbfbfbf92s", -- [7]
+			"81401^|cffffff001g |cffbfbfbf92s", -- [8]
+			"81402^|cffffff001g |cffbfbfbf92s", -- [9]
+			"81403^|cffffff001g |cffbfbfbf92s", -- [10]
+			"81404^|cffffff001g |cffbfbfbf92s", -- [11]
+			"81405^|cffffff001g |cffbfbfbf92s", -- [12]
+			"81408^|cffffff002g |cffbfbfbf8s", -- [13]
+			"81409^|cffffff002g |cffbfbfbf8s", -- [14]
+			"81410^|cffffff002g |cffbfbfbf8s", -- [15]
+			"81411^|cffffff002g |cffbfbfbf8s", -- [16]
+			"81412^|cffffff002g |cffbfbfbf8s", -- [17]
+			"81413^|cffffff002g |cffbfbfbf8s", -- [18]
+			"82451^|cffffff002g |cffbfbfbf4s |cff7f7f0080c", -- [19]
+			"81406^|cffffff001g |cffbfbfbf92s", -- [20]
+			"81414^|cffffff002g |cffbfbfbf8s", -- [21]
+			"74636^|cffffff002g |cffbfbfbf8s", -- [22]
+			["T"] = 1363687573,
+			["POS"] = "6009^42.27996468544^46.099907159805",
+			["R"] = 1,
+		},
+		["Adventuring Supplies~Singegruff"] = {
+			"81584^|cffffff0052g |cffbfbfbf48s |cff7f7f0026c", -- [1]
+			"81593^|cffffff0050g |cffbfbfbf36s |cff7f7f007c", -- [2]
+			"81602^|cffffff0071g |cffbfbfbf44s |cff7f7f002c", -- [3]
+			"81611^|cffffff0066g |cffbfbfbf75s |cff7f7f008c", -- [4]
+			"81620^|cffffff0053g |cffbfbfbf9s |cff7f7f004c", -- [5]
+			"81629^|cffffff0036g |cffbfbfbf82s |cff7f7f0053c", -- [6]
+			"81638^|cffffff0035g |cffbfbfbf39s |cff7f7f0098c", -- [7]
+			"81647^|cffffff0036g |cffbfbfbf56s |cff7f7f0013c", -- [8]
+			"81653^|cffffff0030g |cffbfbfbf46s |cff7f7f0056c", -- [9]
+			"81658^|cffffff0029g |cffbfbfbf6s |cff7f7f0035c", -- [10]
+			"81663^|cffffff0043g |cffbfbfbf78s |cff7f7f0089c", -- [11]
+			"81668^|cffffff0050g |cffbfbfbf75s |cff7f7f0089c", -- [12]
+			"81679^|cffffff00100g |cffbfbfbf90s |cff7f7f0077c", -- [13]
+			"81680^|cffffff00101g |cffbfbfbf27s |cff7f7f0076c", -- [14]
+			"81685^|cffffff0095g |cffbfbfbf74s |cff7f7f0083c", -- [15]
+			"81686^|cffffff0096g |cffbfbfbf11s |cff7f7f0082c", -- [16]
+			["T"] = 1359866650,
+			["POS"] = "6006^46.667170524597^45.633804798126",
+			["R"] = 1,
+		},
+		["Collector of Commissions~Proveditor Grantley"] = {
+			"91854^30 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [1]
+			"91855^30 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [2]
+			"91856^30 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [3]
+			"92432^5 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [4]
+			"92430^5 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [5]
+			"92431^5 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [6]
+			"92439^10 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [7]
+			"92435^10 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [8]
+			"92436^10 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [9]
+			"92437^10 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [10]
+			"92438^10 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [11]
+			"92433^10 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [12]
+			"92434^10 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [13]
+			"92429^30 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [14]
+			"92664^40 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [15]
+			"92428^60 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [16]
+			"92427^80 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [17]
+			"92531^25 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [18]
+			"92535^125 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [19]
+			"92533^500 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [20]
+			"92532^2000 |cffffffff|Hitem:91877:0:0:0:0:0:0:0:90:0:0|h[Domination Point Commission]|h|r", -- [21]
+			["T"] = 1361873598,
+			["POS"] = "6002^89.530390501022^33.411437273026",
+		},
+		["Spirit of Harmony Vendor~Krystel"] = {
+			"Ironpaw Token^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [1]
+			"87399^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [2]
+			"79255^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [3]
+			"72988^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [4]
+			"89610^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [5]
+			"72238^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [6]
+			"74249^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [7]
+			"74250^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [8]
+			"74247^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [9]
+			"72092^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [10]
+			"72093^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [11]
+			"72094^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [12]
+			"72103^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [13]
+			"72120^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [14]
+			"79101^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [15]
+			"76734^|cff0070dd|Hitem:76061:0:0:0:0:0:0:0:87:0:0|h[Spirit of Harmony]|h|r", -- [16]
+			["T"] = 1360467857,
+			["POS"] = "6013^287.49741259413^520.62374442682",
+		},
+	},
+	["Version"] = 0.02,
+	["NXVendorVVersion"] = 0.55,
+	["NXQOpts"] = {
+		["NXWPriDist"] = 1,
+		["NXWHideDist"] = 20000,
+		["NXWPriGroup"] = -100,
+		["NXShowObj"] = true,
+		["NXWHideUnfinished"] = false,
+		["NXShowHeaders"] = true,
+		["NXWPriComplete"] = 50,
+		["NXWHideNotInZone"] = true,
+		["NXWHideGroup"] = false,
+		["NXSortWatchMode"] = 1,
+		["Version"] = 0.12,
+		["NXWPriLevel"] = 20,
+		["NXWVisMax"] = 8,
+		["NXWHideNotInCont"] = false,
+		["NXWWatchParty"] = false,
+		["NXWShowOnMap"] = true,
+	},
+	["NXFav"] = {
+		["Version"] = 0.13,
+	},
+	["NXVerT"] = 1363684640,
+	["NXInfo"] = {
+		["Version"] = 0.24,
 	},
 }
 NxCombatOpts = {
@@ -41274,10 +41388,10 @@ NxMapOpts = {
 	["NXMaps"] = {
 		{
 			[0] = {
-				["NXMapPosX"] = 2223.391150936795,
+				["NXMapPosX"] = 2132.430455892802,
 				["NXPlyrFollow"] = true,
 				["NXWorldShow"] = true,
-				["NXMapPosY"] = 1987.141079960728,
+				["NXMapPosY"] = 1988.940679763937,
 				["NXScale"] = 4,
 			},
 			["NXDotRaidScale"] = 1,
@@ -41334,39 +41448,39 @@ NxMapOpts = {
 				["NXMapPosY"] = 1676.5,
 				["NXScale"] = 1.076487560278966,
 			},
-			["NXAutoScaleMin"] = 0.01,
+			["NXUnexploredAlpha"] = 0.35,
 			[9010] = {
-				["NXWorldShow"] = false,
 				["NXPlyrFollow"] = false,
+				["NXWorldShow"] = false,
 			},
 			["NXDotZoneScale"] = 1,
 			[9011] = {
-				["NXWorldShow"] = false,
 				["NXPlyrFollow"] = false,
+				["NXWorldShow"] = false,
 			},
 			["NXArchAlpha"] = 0.3,
 			[9012] = {
-				["NXWorldShow"] = false,
 				["NXPlyrFollow"] = false,
+				["NXWorldShow"] = false,
 			},
 			["NXMMDockAlpha"] = 1,
 			[9013] = {
-				["NXWorldShow"] = false,
 				["NXPlyrFollow"] = false,
+				["NXWorldShow"] = false,
 			},
 			["NXAutoScaleOn"] = true,
 			[9014] = {
-				["NXWorldShow"] = false,
 				["NXPlyrFollow"] = false,
+				["NXWorldShow"] = false,
 			},
 			["NXAutoScaleMax"] = 4,
 			["NXMMAlpha"] = 0,
-			["NXIconNavScale"] = 1,
-			["NXDotPartyScale"] = 1,
-			["NXMMDockScale"] = 1.29569999973268,
 			["NXPOIAtScale"] = 1,
+			["NXMMDockScale"] = 1.29569999973268,
+			["NXDotPartyScale"] = 1,
+			["NXIconNavScale"] = 1,
 			["NXIconScale"] = 1,
-			["NXUnexploredAlpha"] = 0.35,
+			["NXAutoScaleMin"] = 0.01,
 		}, -- [1]
 	},
 }

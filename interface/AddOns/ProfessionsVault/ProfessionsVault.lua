@@ -10,7 +10,7 @@ local PVLDB
 local minimapIcon = LibStub("LibDBIcon-1.0")
 vars.svnrev = vars.svnrev or {}
 local svnrev = vars.svnrev
-svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 428 $"):match("%d+"))
+svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 443 $"):match("%d+"))
 local DB_VERSION_MAJOR = 1
 local DB_VERSION_MINOR = 4
 local _G = _G
@@ -1569,8 +1569,11 @@ local function guid_expand(guid)
   guid = DB.guid_prefix .. string.rep("0",13-#bits) .. bits
   return guid
 end
+local function guid_normalize(guid)
+  return guid_expand(guid_compress(guid))
+end
 function addon:update_guid_cache(name, guid)
-  if UnitIsInMyGuild(name) then
+  if name and guid and UnitIsInMyGuild(name) then
     guid = guid_compress(guid)
     local oldval = DB.guid_cache[name]
     local changed
@@ -1835,6 +1838,7 @@ function addon:UpdateTrade(force)
       spellid, guid = string.match(link,"\124Htrade:(%d+):%d+:%d+:(%x+):")
     end
     if spellid and guid then 
+      guid = guid_normalize(guid)
       class,_,_,race,_,guidname = GetPlayerInfoByGUID(guid)
       local guidspell = GetSpellInfo(spellid)
       if guidname == charName or guidname ~= cname or guidspell ~= pname then force = false end

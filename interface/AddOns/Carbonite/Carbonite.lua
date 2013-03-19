@@ -27,7 +27,7 @@ function NXInit()
 	NXTITLEFULL = NXTITLE
 
 	Nx.VERMAJOR			= 5.1
-	Nx.VERMINOR			= .3			-- Not 0 is a test version
+	Nx.VERMINOR			= .6			-- Not 0 is a test version
 	Nx.BUILD				= 292
 
 	Nx.VERSION			= Nx.VERMAJOR + Nx.VERMINOR / 100
@@ -3537,11 +3537,11 @@ Nx.GatherInfo = {
 		{ 525, "inv_misc_herb_twilightjasmine",	"Twilight Jasmine",		"Schattenjasmin",							"Jasmin cr\195\169pusculaire","Jazm\195\173n Crepuscular" },
 -- Pandaria
 	    { 600, "inv_misc_herb_foolscap", "Fool's Cap","Narrenkappe","Berluette","Flor del inocente"},
-		{ 550, "inv_misc_herb_goldenlotus","Golden Lotus","Goldlotus","Lotus doré","Loto dorado"},
-		{ 500, "inv_misc_herb_jadetealeaf","Green Tea Leaf","Teepflanze","Feuille de thé vert","Hoja de té verde"},
+		{ 550, "inv_misc_herb_goldenlotus","Golden Lotus","Goldlotus","Lotus dorï¿½","Loto dorado"},
+		{ 500, "inv_misc_herb_jadetealeaf","Green Tea Leaf","Teepflanze","Feuille de thï¿½ vert","Hoja de tï¿½ verde"},
 		{ 525, "inv_misc_herb_rainpoppy","Rain Poppy","Regenmohn","Pavot de pluie","Amapola de lluvia"},
-		{ 575, "inv_misc_herb_shaherb","Sha-Touched Herb","Sha-berührtes Kraut","Plante touchée par les sha","Hierba influenciada por el sha"},
-		{ 545, "inv_misc_herb_silkweed","Silkweed","Seidenkraut","Herbe à soie","Hierba sedosa"},
+		{ 575, "inv_misc_herb_shaherb","Sha-Touched Herb","Sha-berï¿½hrtes Kraut","Plante touchï¿½e par les sha","Hierba influenciada por el sha"},
+		{ 545, "inv_misc_herb_silkweed","Silkweed","Seidenkraut","Herbe ï¿½ soie","Hierba sedosa"},
 		{ 575, "inv_misc_herb_snowlily","Snow Lily","Schneelilie","Lys des neiges","Lirio de las nieves"},		
 	},
 	["M"] = {	-- Mine node
@@ -3580,12 +3580,12 @@ Nx.GatherInfo = {
 		{ 525,	"inv_ore_arcanite_01",		"Pyrite Deposit",				"Pyritvorkommen",					"Gisement de pyrite",						"Dep\195\179sito de pirita" },
 		{ 525,	"inv_ore_arcanite_01",		"Rich Pyrite Deposit",		"Reiches Pyritvorkommen",		"Riche gisement de pyrite",				"Dep\195\179sito de pirita rico" },
 -- Pandaria
-        { 515, "inv_ore_ghostiron","Ghost Iron Deposit","Geistereisenvorkommen","Gisement d’ectofer","Depósito de hierro fantasma"},
-		{ 550, "inv_ore_ghostiron","Rich Ghost Iron Deposit","Reiches Geistereisenvorkommen","Riche gisement d’ectofer","Depósito de hierro fantasma rico"},
-		{ 550, "inv_ore_manticyte","Kyparite Deposit","Kyparitvorkommen","Gisement de kyparite","Depósito de kyparita"},
-		{ 575, "inv_ore_manticyte","Rich Kyparite Deposit","Reiches Kyparitvorkommen","Riche gisement de kyparite","Depósito de kyparita rico"},
-		{ 600, "inv_ore_trilliumwhite","Trillium Vein","Trilliumader","Filon de trillium","Filón de trillium"},
-		{ 600, "INV_Ore_TrilliumWhite","Rich Trillium Vein","Reiche Trilliumader","Riche filon de trillium","Filón de trillium enriquecido"},
+        { 515, "inv_ore_ghostiron","Ghost Iron Deposit","Geistereisenvorkommen","Gisement dï¿½ectofer","Depï¿½sito de hierro fantasma"},
+		{ 550, "inv_ore_ghostiron","Rich Ghost Iron Deposit","Reiches Geistereisenvorkommen","Riche gisement dï¿½ectofer","Depï¿½sito de hierro fantasma rico"},
+		{ 550, "inv_ore_manticyte","Kyparite Deposit","Kyparitvorkommen","Gisement de kyparite","Depï¿½sito de kyparita"},
+		{ 575, "inv_ore_manticyte","Rich Kyparite Deposit","Reiches Kyparitvorkommen","Riche gisement de kyparite","Depï¿½sito de kyparita rico"},
+		{ 600, "inv_ore_trilliumwhite","Trillium Vein","Trilliumader","Filon de trillium","Filï¿½n de trillium"},
+		{ 600, "INV_Ore_TrilliumWhite","Rich Trillium Vein","Reiche Trilliumader","Riche filon de trillium","Filï¿½n de trillium enriquecido"},
 	}	
 }
 

@@ -85,9 +85,14 @@ L:SetWarningLocalization({
 	specWarnFlock	= "%s %s (%d)"
 })
 
+L:SetTimerLocalization({
+	timerFlockCD	= "Nest (%d): %s"
+})
+
 L:SetOptionLocalization({
 	warnFlock		= DBM_CORE_AUTO_ANNOUNCE_OPTIONS.count:format("ej7348"),
 	specWarnFlock	= DBM_CORE_AUTO_SPEC_WARN_OPTIONS.switch:format("ej7348"),
+	timerFlockCD	= DBM_CORE_AUTO_TIMER_OPTIONS.nextcount:format("ej7348"),
 	RangeFrame		= "Show range frame (8) for $spell:138923"
 })
 
@@ -128,7 +133,7 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(820)
 
 L:SetOptionLocalization({
-	RangeFrame		= "Show range frame (5/2)"
+	RangeFrame			= "Show range frame (5/2)"
 })
 
 -----------------
@@ -159,7 +164,8 @@ L:SetWarningLocalization({
 
 L:SetOptionLocalization({
 	warnDeadZone	= DBM_CORE_AUTO_ANNOUNCE_OPTIONS.spell:format(137229),
-	RangeFrame		= "Show dynamic range frame\n(This is a smart range frame that shows when too many are too close)"
+	RangeFrame		= "Show dynamic range frame\n(This is a smart range frame that shows when too many are too close)",
+	InfoFrame		= "Show info frame for players with $spell:136193"
 })
 
 -------------------
@@ -181,7 +187,11 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(832)
 
 L:SetOptionLocalization({
-	RangeFrame		= "Show range frame"--For two different spells
+	RangeFrame			= "Show range frame",--For two different spells
+	StaticShockArrow	= "Show DBM Arrow when someone is affected by $spell:135695",
+	OverchargeArrow		= "Show DBM Arrow when someone is affected by $spell:136295",
+	SetIconOnOvercharge	= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(136295),
+	SetIconOnStaticShock= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(135695)
 })
 
 ------------

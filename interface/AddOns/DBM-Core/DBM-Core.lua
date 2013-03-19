@@ -44,9 +44,9 @@
 --  Globals/Default Options  --
 -------------------------------
 DBM = {
-	Revision = tonumber(("$Revision: 8829 $"):sub(12, -3)),
-	DisplayVersion = "5.2.0", -- the string that is shown as version
-	ReleaseRevision = 8828 -- the revision of the latest stable version that is available
+	Revision = tonumber(("$Revision: 8892 $"):sub(12, -3)),
+	DisplayVersion = "5.2.1", -- the string that is shown as version
+	ReleaseRevision = 8892 -- the revision of the latest stable version that is available
 }
 
 -- Legacy crap; that stupid "Version" field was never a good idea.
@@ -101,6 +101,8 @@ DBM.DefaultOptions = {
 	ShowLHFrame = true,
 	AlwaysShowHealthFrame = false,
 	ShowBigBrotherOnCombatStart = false,
+	AutologBosses = false,
+	AdvancedAutologBosses = false,
 	UseMasterVolume = true,
 	EnableModels = true,
 	RangeFrameFrames = "radar",
@@ -432,15 +434,17 @@ do
 		end
 	end
 
-	function DBM:UnregisterInCombatEvents()
+	function DBM:UnregisterInCombatEvents(ignore)
 		for event, mods in pairs(registeredEvents) do
-			for i = #mods, 1, -1 do
-				if mods[i] == self and checkEntry(self.inCombatOnlyEvents, event)  then
-					tremove(mods, i)
+			if event ~= ignore then
+				for i = #mods, 1, -1 do
+					if mods[i] == self and checkEntry(self.inCombatOnlyEvents, event)  then
+						tremove(mods, i)
+					end
 				end
-			end
-			if #mods == 0 then
-				unregisterEvent(event)
+				if #mods == 0 then
+					unregisterEvent(event)
+				end
 			end
 		end
 	end
@@ -1129,30 +1133,6 @@ do
 	function DBM:RegisterOnGuiLoadCallback(f, sort)
 		table.insert(callOnLoad, {f, sort or math.huge})
 	end
-end
-
---invoke using /script DBM:TaintTest()
---This will taint all 4 indexes
---Once done, just try to change a glyph. ;)
-local indexChanger = 0
-function DBM:TaintTest()
-	indexChanger = indexChanger + 1
-	StaticPopupDialogs["DBM_TAINT_TEST"] = {
-		preferredIndex = indexChanger,
-		text = "I am tainting your UI. ".."index: "..indexChanger,
-		button1 = DBM_CORE_OK,
-		OnAccept = function()
-			if indexChanger < 4 then
-				DBM:TaintTest()
-			else
-				indexChanger = 0
-			end
-		end,
-		timeout = 0,
-		exclusive = 1,
-		whileDead = 1
-	}
-	StaticPopup_Show("DBM_TAINT_TEST")
 end
 
 
@@ -1890,6 +1870,18 @@ end
 --  Handle Incoming Syncs  --
 -----------------------------
 do
+	local function checkForActualPull()
+		if #inCombat == 0 then
+			if DBM.Options.AutologBosses and LoggingCombat() then
+				LoggingCombat(0)
+				print(COMBATLOGDISABLED)
+			end
+			if DBM.Options.AdvancedAutologBosses and IsAddOnLoaded("Transcriptor") then
+				Transcriptor:StopLog()
+			end
+		end
+	end
+
 	local syncHandlers = {}
 	local whisperSyncHandlers = {}
 
@@ -1965,6 +1957,17 @@ do
 		end
 		if not DBM.Options.DontShowPTCountdownText then
 			TimerTracker_OnEvent(TimerTracker, "START_TIMER", 2, timer, timer)--Hopefully this doesn't taint. Initial tests show positive even though it is an intrusive way of calling a blizzard timer. It's too bad the max value doesn't seem to actually work
+		end
+		if DBM.Options.AutologBosses and not LoggingCombat() then--Start logging here to catch pre pots.
+			LoggingCombat(1)
+			print(COMBATLOGENABLED)
+			DBM:Unschedule(checkForActualPull)
+			DBM:Schedule(timer+10, checkForActualPull)--But if pull was canceled and we don't have a boss engaged within 10 seconds of pull timer ending, abort log
+		end
+		if DBM.Options.AdvancedAutologBosses and IsAddOnLoaded("Transcriptor") then
+			Transcriptor:StartLog()
+			DBM:Unschedule(checkForActualPull)
+			DBM:Schedule(timer+10, checkForActualPull)--But if pull was canceled and we don't have a boss engaged within 10 seconds of pull timer ending, abort log
 		end
 	end
 
@@ -2682,6 +2685,7 @@ function DBM:StartCombat(mod, delay, synced)
 			sendSync("C", (delay or 0).."\t"..mod.id.."\t"..(mod.revision or 0))
 		end
 		fireEvent("pull", mod, delay, synced)
+		DBM:ToggleRaidBossEmoteFrame(1)
 		if DBM.Options.ShowBigBrotherOnCombatStart and BigBrother and type(BigBrother.ConsumableCheck) == "function" then
 			if DBM.Options.BigBrotherAnnounceToRaid then
 				BigBrother:ConsumableCheck("RAID")
@@ -2689,7 +2693,13 @@ function DBM:StartCombat(mod, delay, synced)
 				BigBrother:ConsumableCheck("SELF")
 			end
 		end
-		DBM:ToggleRaidBossEmoteFrame(1)
+		if DBM.Options.AutologBosses and not LoggingCombat() then
+			LoggingCombat(1)
+			print(COMBATLOGENABLED)
+		end
+		if DBM.Options.AdvancedAutologBosses and IsAddOnLoaded("Transcriptor") then
+			Transcriptor:StartLog()
+		end
 	end
 end
 
@@ -2715,8 +2725,9 @@ function DBM:EndCombat(mod, wipe)
 		if not wipe then
 			mod.lastKillTime = GetTime()
 			if mod.inCombatOnlyEvents then
-				--mod:UnregisterInCombatEvents()
-				DBM:Schedule(3, mod.UnregisterInCombatEvents, mod) -- Delay unregister events to make sure icon clear functions get to run their course. We want to catch some SPELL_AURA_REMOVED events that fire after boss death and get those icons cleared
+				-- unregister all events except for SPELL_AURA_REMOVED events (might still be needed to remove icons etc...)
+				mod:UnregisterInCombatEvents("SPELL_AURA_REMOVED")
+				DBM:Schedule(2, mod.UnregisterInCombatEvents, mod) -- 2 seconds should be enough for all auras to fade
 				mod.inCombatOnlyEventsRegistered = nil
 			end
 		end
@@ -2878,6 +2889,13 @@ function DBM:EndCombat(mod, wipe)
 		DBM.BossHealth:Hide()
 		DBM.Arrow:Hide(true)
 		DBM:ToggleRaidBossEmoteFrame(0)
+		if DBM.Options.AutologBosses and LoggingCombat() then
+			LoggingCombat(0)
+			print(COMBATLOGDISABLED)
+		end
+		if DBM.Options.AdvancedAutologBosses and IsAddOnLoaded("Transcriptor") then
+			Transcriptor:StopLog()
+		end
 	end
 end
 
@@ -3262,6 +3280,8 @@ do
 	ChatFrame_AddMessageEventFilter("CHAT_MSG_RAID_WARNING", filterRaidWarning)
 	ChatFrame_AddMessageEventFilter("CHAT_MSG_PARTY", filterRaidWarning)
 	ChatFrame_AddMessageEventFilter("CHAT_MSG_PARTY_LEADER", filterRaidWarning)
+	ChatFrame_AddMessageEventFilter("CHAT_MSG_INSTANCE_CHAT", filterRaidWarning)
+	ChatFrame_AddMessageEventFilter("CHAT_MSG_INSTANCE_CHAT_LEADER", filterRaidWarning)
 	ChatFrame_AddMessageEventFilter("CHAT_MSG_SAY", filterSayYell)
 	ChatFrame_AddMessageEventFilter("CHAT_MSG_YELL", filterSayYell)
 end
@@ -3860,7 +3880,7 @@ do
 					for i = 1, select("#", GetFramesRegisteredForEvent("CHAT_MSG_RAID_WARNING")) do
 						local frame = select(i, GetFramesRegisteredForEvent("CHAT_MSG_RAID_WARNING"))
 						if frame ~= RaidWarningFrame and frame:GetScript("OnEvent") then
-							frame:GetScript("OnEvent")(frame, "CHAT_MSG_RAID_WARNING", text, UnitName("player"), GetDefaultLanguage("player"), "", UnitName("player"), "", 0, 0, "", 0, 99, "")
+							frame:GetScript("OnEvent")(frame, "CHAT_MSG_RAID_WARNING", text, UnitName("player"), GetDefaultLanguage("player"), "", UnitName("player"), "", 0, 0, "", 0, 99, UnitGUID("player"))
 						end
 					end
 				else

@@ -1,8 +1,7 @@
-if select(4, GetBuildInfo()) < 50200 then return end--Don't load on live
 local mod	= DBM:NewMod(829, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 8816 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 8866 $"):sub(12, -3))
 mod:SetCreatureID(68905, 68904)--Lu'lin 68905, Suen 68904
 mod:SetModelID(46975)--Lu'lin, 46974 Suen
 
@@ -29,11 +28,10 @@ local warnDay							= mod:NewSpellAnnounce("ej7645", 2, 122789)
 local warnLightOfDay					= mod:NewSpellAnnounce(137403, 2, nil, false)--Spammy, but leave it as an option at least
 local warnFanOfFlames					= mod:NewStackAnnounce(137408, 2, nil, mod:IsTank() or mod:IsHealer())
 local warnFlamesOfPassion				= mod:NewSpellAnnounce(137414, 3)--Todo, check target scanning
-local warnIceCommet						= mod:NewSpellAnnounce(137419, 2)
+local warnIceComet						= mod:NewSpellAnnounce(137419, 2)
 local warnNuclearInferno				= mod:NewCastAnnounce(137491, 4)--Heroic
 --Dusk
-local warnTidalForce					= mod:NewCastAnnounce(137531, 2)
-
+local warnTidalForce					= mod:NewCastAnnounce(137531, 3)
 
 --Darkness
 local specWarnCosmicBarrage				= mod:NewSpecialWarningSpell(136752, false, nil, nil, 2)
@@ -42,11 +40,10 @@ local specWarnBeastOfNightmares			= mod:NewSpecialWarningSpell(137375, mod:IsTan
 --Light
 local specWarnFanOfFlames				= mod:NewSpecialWarningStack(137408, mod:IsTank(), 2)
 local specWarnFanOfFlamesOther			= mod:NewSpecialWarningTarget(137408, mod:IsTank())
-local specWarnIceCommet					= mod:NewSpecialWarningSpell(137419, false)
+local specWarnIceComet					= mod:NewSpecialWarningSpell(137419, false)
 local specWarnNuclearInferno			= mod:NewSpecialWarningSpell(137491, nil, nil, nil, 2)--Heroic
 --Dusk
 local specWarnTidalForce				= mod:NewSpecialWarningSpell(137531, nil, nil, nil, 2)--Maybe switch to a stop dps warning, or a switch to Suen?
-
 
 --Darkness
 --Light of Day (137403) has a HIGHLY variable cd variation, every 6-14 seconds. Not to mention it requires using SPELL_DAMAGE and SPELL_MISSED. for now i'm excluding it on purpose
@@ -60,11 +57,10 @@ local timerLightOfDayCD					= mod:NewCDTimer(6, 137403, nil, false)--Trackable i
 local timerFanOfFlamesCD				= mod:NewNextTimer(12, 137408, nil, mod:IsTank() or mod:IsHealer())
 local timerFanOfFlames					= mod:NewTargetTimer(30, 137408, nil, mod:IsTank())
 local timerFlamesOfPassionCD			= mod:NewCDTimer(30, 137414)
-local timerIceCommetCD					= mod:NewCDTimer(25, 137419)--Every 25-35 seconds on normal. On heroic it's every 15 seconds almost precisely (i suspect heroic gets them more often to ensure RNG doesn't wipe you to Nuclear Inferno)
+local timerIceCometCD					= mod:NewCDTimer(19, 137419)--Every 19-25 seconds on normal. On heroic it's every 15 seconds almost precisely (i suspect heroic gets them more often to ensure RNG doesn't wipe you to Nuclear Inferno)
 local timerNuclearInfernoCD				= mod:NewCDTimer(55.5, 137491)
 --Dusk
 local timerTidalForceCD					= mod:NewCDTimer(74, 137531)
-
 
 local berserkTimer						= mod:NewBerserkTimer(600)
 
@@ -85,23 +81,15 @@ end
 
 function mod:SPELL_CAST_START(args)
 	if args:IsSpellID(137491) then
-		warnNuclearInferno:Show()
-		specWarnNuclearInferno:Show()
-		timerNuclearInfernoCD:Start()
+		self:SendSync("Inferno")
 	elseif args:IsSpellID(137531) then
-		warnTidalForce:Show()
-		specWarnTidalForce:Show()
-		timerTidalForceCD:Start()
+		self:SendSync("TidalForce")
 	end
 end
 
 function mod:SPELL_AURA_APPLIED(args)
 	if args:IsSpellID(136752) then
-		warnCosmicBarrage:Show()
-		specWarnCosmicBarrage:Show()
-		if timerDayCD:GetTime() < 165 then
-			timerCosmicBarrageCD:Start()
-		end
+		self:SendSync("CosmicBarrage")
 	elseif args:IsSpellID(137404) then
 		warnTearsOfSun:Show()
 		specWarnTearsOfSun:Show()
@@ -146,12 +134,12 @@ end
 
 function mod:SPELL_SUMMON(args)
 	if args:IsSpellID(137419) then
-		warnIceCommet:Show()
-		specWarnIceCommet:Show()
+		warnIceComet:Show()
+		specWarnIceComet:Show()
 		if self:IsDifficulty("heroic10", "heroic25") then
-			timerIceCommetCD:Start(15)
+			timerIceCometCD:Start(15)
 		else
-			timerIceCommetCD:Start()
+			timerIceCometCD:Start()
 		end
 	end
 end
@@ -162,11 +150,7 @@ end
 --"<339.3 18:38:02> [INSTANCE_ENCOUNTER_ENGAGE_UNIT] Fake Args:#1#1#Suen#0xF1310D2800005863#worldboss#410952978#nil#1#Unknown#0xF1310D2900005864#worldboss#310232488
 function mod:INSTANCE_ENCOUNTER_ENGAGE_UNIT(event)
 	if UnitExists("boss2") and tonumber(UnitGUID("boss2"):sub(6, 10), 16) == 68905 then--Make sure we don't trigger it off another engage such as wipe engage event
-		self:UnregisterShortTermEvents()
-		timerFanOfFlamesCD:Cancel()
-		timerIceCommetCD:Start(11)--This seems to reset, despite what last CD was (this can be a bad thing if it was do any second)
-		timerTidalForceCD:Start(20)
-		timerCosmicBarrageCD:Start(48)
+		self:SendSync("Phase3")
 	end
 end
 
@@ -195,6 +179,15 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 		timerTearsOfTheSunCD:Start(23)
 		timerBeastOfNightmaresCD:Start()
 	elseif spellId == 137187 and self:AntiSpam(2, 2) then--Lu'lin Ports away (Day Phase)
+		self:SendSync("Phase2")
+	elseif spellId == 138823 and self:AntiSpam(2, 3) then
+		warnLightOfDay:Show()
+		timerLightOfDayCD:Start()
+	end
+end
+
+function mod:OnSync(msg, guid)
+	if msg == "Phase2" then
 		timerCosmicBarrageCD:Cancel()
 		timerTearsOfTheSunCD:Cancel()
 		timerBeastOfNightmaresCD:Cancel()
@@ -204,17 +197,33 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 		timerFanOfFlamesCD:Start()
 		timerFlamesOfPassionCD:Start(12.5)
 		if self:IsDifficulty("heroic10", "heroic25") then
-			timerIceCommetCD:Start(15)
+			timerIceCometCD:Start(15)
 			timerNuclearInfernoCD:Start(52)
 		else
-			timerIceCommetCD:Start()
+			timerIceCometCD:Start()
 		end
 		self:RegisterShortTermEvents(
 			"INSTANCE_ENCOUNTER_ENGAGE_UNIT"
 		)
-	elseif spellId == 138823 and self:AntiSpam(2, 3) then
-		warnLightOfDay:Show()
-		timerLightOfDayCD:Start()
+	elseif msg == "Phase3" then
+		self:UnregisterShortTermEvents()
+		timerFanOfFlamesCD:Cancel()
+		timerIceCometCD:Start(11)--This seems to reset, despite what last CD was (this can be a bad thing if it was do any second)
+		timerTidalForceCD:Start(20)
+		timerCosmicBarrageCD:Start(48)
+	elseif msg == "TidalForce" then
+		warnTidalForce:Show()
+		specWarnTidalForce:Show()
+		timerTidalForceCD:Start()
+	elseif msg == "CosmicBarrage" then
+		warnCosmicBarrage:Show()
+		specWarnCosmicBarrage:Show()
+		if timerDayCD:GetTime() < 165 then
+			timerCosmicBarrageCD:Start()
+		end
+	elseif msg == "Inferno" then
+		warnNuclearInferno:Show()
+		specWarnNuclearInferno:Show()
+		timerNuclearInfernoCD:Start()
 	end
 end
-

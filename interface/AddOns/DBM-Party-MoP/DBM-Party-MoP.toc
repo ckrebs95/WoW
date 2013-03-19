@@ -31,7 +31,7 @@
 ## X-DBM-Mod-Name-frFR: Groupe (MoP)
 ## X-DBM-Mod-Sort: 25
 ## X-DBM-Mod-LoadZoneID: 867, 876, 877, 875, 885, 887, 898, 871, 874
-## X-Curse-Packaged-Version: 5.1.0-407-g1f9c0c4
+## X-Curse-Packaged-Version: 5.2.1
 ## X-Curse-Project-Name: Deadly Boss Mods
 ## X-Curse-Project-ID: deadly-boss-mods
 ## X-Curse-Repository-ID: wow/deadly-boss-mods/mainline
