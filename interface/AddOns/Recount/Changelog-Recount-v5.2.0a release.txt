@@ -1,0 +1,28 @@
+------------------------------------------------------------------------
+r1238 | elsia | 2013-03-26 13:23:30 +0000 (Tue, 26 Mar 2013) | 1 line
+Changed paths:
+   A /tags/v5.2.0a release (from /trunk:1237)
+
+Tagging as v5.2.0a release
+------------------------------------------------------------------------
+r1237 | elsia | 2013-03-23 17:03:11 +0000 (Sat, 23 Mar 2013) | 1 line
+Changed paths:
+   M /trunk/GUI_Config.lua
+   M /trunk/Recount.lua
+   M /trunk/deletion.lua
+   M /trunk/zonefilters.lua
+
+- Added "Scenario Instances" as zone filter type. Fixed various bugs that lead to data collection, deletion and zone filters to not work in scenarios. Improved group and raid classification for solo scenarios.
+------------------------------------------------------------------------
+r1236 | elsia | 2013-03-23 15:05:30 +0000 (Sat, 23 Mar 2013) | 1 line
+Changed paths:
+   M /trunk/GUI_Config.lua
+
+- Moved config window into DIALOG strata.
+------------------------------------------------------------------------
+r1234 | elsia | 2013-03-07 21:04:11 +0000 (Thu, 07 Mar 2013) | 1 line
+Changed paths:
+   M /trunk/Recount.toc
+
+- TOC bump.
+------------------------------------------------------------------------
