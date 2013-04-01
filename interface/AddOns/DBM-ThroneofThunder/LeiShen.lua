@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(832, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 8883 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 8974 $"):sub(12, -3))
 mod:SetCreatureID(68397)--Diffusion Chain Conduit 68696, Static Shock Conduit 68398, Bouncing Bolt conduit 68698, Overcharge conduit 68697
 mod:SetModelID(46770)
 mod:SetUsedIcons(8, 7, 6, 5, 4, 3, 2, 1)--All icons can be used, because if a pillar is level 3, it puts out 4 debuffs on 25 man (if both are level 3, then you will have 8)
@@ -129,7 +129,7 @@ function mod:OnCombatEnd()
 end
 
 function mod:SPELL_CAST_START(args)
-	if args:IsSpellID(135095) then
+	if args.spellId == 135095 then
 		warnThunderstruck:Show()
 		specWarnThunderstruck:Show()
 		if phase < 3 then
@@ -138,7 +138,7 @@ function mod:SPELL_CAST_START(args)
 			timerThunderstruckCD:Start(30)
 		end
 	--"<206.2 20:38:58> [UNIT_SPELLCAST_SUCCEEDED] Lei Shen [[boss1:Lightning Whip::0:136845]]", -- [13762] --This event comes about .5 seconds earlier than SPELL_CAST_START. Maybe worth using?
-	elseif args:IsSpellID(136850) then
+	elseif args.spellId == 136850 then
 		warnLightningWhip:Show()
 		specWarnLightningWhip:Show()
 		if phase < 3 then
@@ -146,7 +146,7 @@ function mod:SPELL_CAST_START(args)
 		else
 			timerLightningWhipCD:Start(30)
 		end
-	elseif args:IsSpellID(136478) then
+	elseif args.spellId == 136478 then
 		warnFusionSlash:Show()
 		specWarnFusionSlash:Show()
 		timerFussionSlashCD:Start()
@@ -163,7 +163,7 @@ function mod:SPELL_AURA_APPLIED(args)
 			specWarnDecapitateOther:Show(args.destName)
 		end
 	--Conduit activations
-	elseif args:IsSpellID(135695) then
+	elseif args.spellId == 135695 then
 		staticshockTargets[#staticshockTargets + 1] = args.destName
 		if self.Options.SetIconOnStaticShock then
 			self:SetIcon(args.destName, staticIcon)
@@ -195,7 +195,7 @@ function mod:SPELL_AURA_APPLIED(args)
 		end
 		self:Unschedule(warnStaticShockTargets)
 		self:Schedule(0.3, warnStaticShockTargets)
-	elseif args:IsSpellID(136295) then
+	elseif args.spellId == 136295 then
 		overchargeTarget[#overchargeTarget + 1] = args.destName
 		if self.Options.SetIconOnOvercharge then
 			self:SetIcon(args.destName, overchargeIcon)
@@ -227,17 +227,17 @@ function mod:SPELL_AURA_APPLIED(args)
 		end
 		self:Unschedule(warnOverchargeTargets)
 		self:Schedule(0.3, warnOverchargeTargets)
-	elseif args:IsSpellID(135680) and args:GetDestCreatureID() == 68397 then--North (Static Shock)
+	elseif args.spellId == 135680 and args:GetDestCreatureID() == 68397 then--North (Static Shock)
 		--start timers here when we have em
-	elseif args:IsSpellID(135681) and args:GetDestCreatureID() == 68397 then--East (Diffusion Chain)
+	elseif args.spellId == 135681 and args:GetDestCreatureID() == 68397 then--East (Diffusion Chain)
 		if self.Options.RangeFrame and self:IsRanged() then--Shouldn't target melee during a normal pillar, only during intermission when all melee are with ranged and out of melee range of boss
 			DBM.RangeCheck:Show(8)--Assume 8 since spell tooltip has no info
 		end
-	elseif args:IsSpellID(135682) and args:GetDestCreatureID() == 68397 then--South (Overcharge)
+	elseif args.spellId == 135682 and args:GetDestCreatureID() == 68397 then--South (Overcharge)
 	
-	elseif args:IsSpellID(135683) and args:GetDestCreatureID() == 68397 then--West (Bouncing Bolt)
+	elseif args.spellId == 135683 and args:GetDestCreatureID() == 68397 then--West (Bouncing Bolt)
 
-	elseif args:IsSpellID(136914) and (args.amount or 1) % 3 == 0 then
+	elseif args.spellId == 136914 and (args.amount or 1) % 3 == 0 then
 		warnElectricalShock:Show(args.destName, args.amount or 1)
 		if (args.amount or 1) >= 12 then
 			if args:IsPlayer() then
@@ -252,12 +252,12 @@ function mod:SPELL_AURA_APPLIED(args)
 end
 
 function mod:SPELL_CAST_SUCCESS(args)
-	if args:IsSpellID(135991) then
+	if args.spellId == 135991 then
 		warnDiffusionChain:Show(args.destName)
 		if not intermissionActive then
 			timerDiffusionChainCD:Start()
 		end
-	elseif args:IsSpellID(136543) and self:AntiSpam(2, 1) then
+	elseif args.spellId == 136543 and self:AntiSpam(2, 1) then
 		warnSummonBallLightning:Show()
 		specWarnSummonBallLightning:Show()
 		if phase < 3 then
@@ -271,9 +271,9 @@ end
 
 function mod:SPELL_AURA_REMOVED(args)
 	--Conduit deactivations
-	if args:IsSpellID(135680) and args:GetDestCreatureID() == 68397 then--North (Static Shock)
+	if args.spellId == 135680 and args:GetDestCreatureID() == 68397 then--North (Static Shock)
 		timerStaticShockCD:Cancel()
-	elseif args:IsSpellID(135681) and args:GetDestCreatureID() == 68397 then--East (Diffusion Chain)
+	elseif args.spellId == 135681 and args:GetDestCreatureID() == 68397 then--East (Diffusion Chain)
 		timerDiffusionChainCD:Cancel()
 		if self.Options.RangeFrame and self:IsRanged() then--Shouldn't target melee during a normal pillar, only during intermission when all melee are with ranged and out of melee range of boss
 			if phase == 1 then
@@ -282,14 +282,14 @@ function mod:SPELL_AURA_REMOVED(args)
 				DBM.RangeCheck:Show(6)--Switch back to Summon Lightning Orb spell range
 			end
 		end
-	elseif args:IsSpellID(135682) and args:GetDestCreatureID() == 68397 then--South (Overcharge)
+	elseif args.spellId == 135682 and args:GetDestCreatureID() == 68397 then--South (Overcharge)
 		timerOverchargeCD:Cancel()
-	elseif args:IsSpellID(135683) and args:GetDestCreatureID() == 68397 then--West (Bouncing Bolt)
+	elseif args.spellId == 135683 and args:GetDestCreatureID() == 68397 then--West (Bouncing Bolt)
 		timerBouncingBoltCD:Cancel()
 	--Conduit deactivations
-	elseif args:IsSpellID(135695) and self.Options.SetIconOnStaticShock then
+	elseif args.spellId == 135695 and self.Options.SetIconOnStaticShock then
 		self:SetIcon(args.destName, 0)
-	elseif args:IsSpellID(136295) and self.Options.SetIconOnOvercharge then
+	elseif args.spellId == 136295 and self.Options.SetIconOnOvercharge then
 		self:SetIcon(args.destName, 0)
 	end
 end
@@ -343,18 +343,18 @@ end
 
 local function LoopIntermission()
 	if not southDestroyed then
-		timerOverchargeCD:Start(10.5)
+		timerOverchargeCD:Start(6.5)
 	end
 	if not eastDestroyed then
-		timerDiffusionChainCD:Start(12)
+		timerDiffusionChainCD:Start(8)
 	end
 	if not northDestroyed then
-		timerStaticShockCD:Start(20)
+		timerStaticShockCD:Start(16)
 	end
 	if not westDestroyed then
-		warnBouncingBolt:Schedule(23)
-		specWarnBouncingBolt:Schedule(23)
-		timerBouncingBoltCD:Start(23)
+		warnBouncingBolt:Schedule(19)
+		specWarnBouncingBolt:Schedule(19)
+		timerBouncingBoltCD:Start(19)
 	end
 end
 
@@ -366,10 +366,10 @@ end
 "<190.6 00:17:56> [CLEU] SPELL_AURA_APPLIED#false#0xF1310B2D000066BE#Lei Shen#2632#0#0x0400000006055740#Rotund#1298#0#135695#Static Shock#1#DEBUFF", -- [39237] +18.9
 "<191.5 00:17:57> [CLEU] SPELL_DAMAGE#false#0xF1310B2D000066BE#Lei Shen#2632#0#0x040000000479BDA2#Oxey#1300#0#136366#Bouncing Bolt#8#209665#-1#8#nil#nil#nil#nil#nil#nil#nil", -- [39291] +19.8 (damage, so cast is more like 17.8)
 --Second Wave
-"<201.9 00:18:08> [CLEU] SPELL_AURA_APPLIED#false#0xF1310B2D000066BE#Lei Shen#2632#0#0x0400000004A6518D#Esoth#1300#0#136295#Overcharged#8#DEBUFF", -- [40207] +30.2 (11.2)
-"<203.6 00:18:09> [CLEU] SPELL_CAST_SUCCESS#false#0xF1310B2D000066BE#Lei Shen#2632#0#0x04000000062A79A0#Gemchihiro#1300#0#135991#Diffusion Chain#8", -- [40298] +31.9 (12.9)
-"<210.8 00:18:16> [CLEU] SPELL_AURA_APPLIED#false#0xF1310B2D000066BE#Lei Shen#2632#0#0x04000000062A79F6#Daltin#1300#0#135695#Static Shock#1#DEBUFF", -- [41408] +39.1 (20.1)
-"<215.6 00:18:21> [CLEU] SPELL_MISSED#false#0xF1310B2D000066BE#Lei Shen#2632#0#0x0400000006145709#Lifesqt#1300#0#136366#Bouncing Bolt#8#IMMUNE#nil", -- [42324] +43.9 (24.9)
+"<201.9 00:18:08> [CLEU] SPELL_AURA_APPLIED#false#0xF1310B2D000066BE#Lei Shen#2632#0#0x0400000004A6518D#Esoth#1300#0#136295#Overcharged#8#DEBUFF", -- [40207] +30.2 (7.2)
+"<203.6 00:18:09> [CLEU] SPELL_CAST_SUCCESS#false#0xF1310B2D000066BE#Lei Shen#2632#0#0x04000000062A79A0#Gemchihiro#1300#0#135991#Diffusion Chain#8", -- [40298] +31.9 (8.9)
+"<210.8 00:18:16> [CLEU] SPELL_AURA_APPLIED#false#0xF1310B2D000066BE#Lei Shen#2632#0#0x04000000062A79F6#Daltin#1300#0#135695#Static Shock#1#DEBUFF", -- [41408] +39.1 (16.1)
+"<215.6 00:18:21> [CLEU] SPELL_MISSED#false#0xF1310B2D000066BE#Lei Shen#2632#0#0x0400000006145709#Lifesqt#1300#0#136366#Bouncing Bolt#8#IMMUNE#nil", -- [42324] +43.9 (20.9)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 "<160.0 01:00:36> [UNIT_SPELLCAST_SUCCEEDED] Static Shock Conduit boss2:Supercharge Conduits::0:137146", -- [34700]
@@ -379,10 +379,10 @@ end
 "<178.8 01:00:55> [CLEU] SPELL_CAST_SUCCESS#false#0xF1310B2D00007501#Lei Shen#2632#0##nil#-2147483648#-2147483648#135695#Static Shock#1", -- [35995] +18.8
 "<179.7 01:00:56> [CLEU] SPELL_DAMAGE#false#0xF1310B2D00007501#Lei Shen#2632#0#0x040000000479BEA6#Settesh#1300#0#136366#Bouncing Bolt#8#15097#-1#8#nil#nil#69375#nil#nil#nil#nil", -- [36067] +19.7
 --Second Wave
-"<189.3 01:01:06> [CLEU] SPELL_AURA_APPLIED#false#0xF1310B2D00007501#Lei Shen#2632#0#0x040000000479BEA6#Settesh#1300#0#136295#Overcharged#8#DEBUFF", -- [36842] +29.3 (10.9)
-"<190.9 01:01:07> [CLEU] SPELL_CAST_SUCCESS#false#0xF1310B2D00007501#Lei Shen#2632#0#0x0400000006145709#Lifesqt#1300#0#135991#Diffusion Chain#8", -- [37073] +30.9 (11.9)
-"<199.4 01:01:16> [CLEU] SPELL_AURA_APPLIED#false#0xF1310B2D00007501#Lei Shen#2632#0#0x0400000005434EF9#Zaythan#1300#0#135695#Static Shock#1#DEBUFF", -- [37650] +39.4 (20.4)
-"<203.9 01:01:20> [CLEU] SPELL_DAMAGE#false#0xF1310B2D00007501#Lei Shen#2632#0#0x040000000479BDA2#Oxey#1300#0#136366#Bouncing Bolt#8#107881#-1#8#nil#nil#nil#nil#nil#nil#nil", -- [37866] +43.9 (24.9)
+"<189.3 01:01:06> [CLEU] SPELL_AURA_APPLIED#false#0xF1310B2D00007501#Lei Shen#2632#0#0x040000000479BEA6#Settesh#1300#0#136295#Overcharged#8#DEBUFF", -- [36842] +29.3 (6.9)
+"<190.9 01:01:07> [CLEU] SPELL_CAST_SUCCESS#false#0xF1310B2D00007501#Lei Shen#2632#0#0x0400000006145709#Lifesqt#1300#0#135991#Diffusion Chain#8", -- [37073] +30.9 (7.9)
+"<199.4 01:01:16> [CLEU] SPELL_AURA_APPLIED#false#0xF1310B2D00007501#Lei Shen#2632#0#0x0400000005434EF9#Zaythan#1300#0#135695#Static Shock#1#DEBUFF", -- [37650] +39.4 (16.4)
+"<203.9 01:01:20> [CLEU] SPELL_DAMAGE#false#0xF1310B2D00007501#Lei Shen#2632#0#0x040000000479BDA2#Oxey#1300#0#136366#Bouncing Bolt#8#107881#-1#8#nil#nil#nil#nil#nil#nil#nil", -- [37866] +43.9 (20.9)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 "<157.4 00:54:40> [UNIT_SPELLCAST_SUCCEEDED] Static Shock Conduit boss2:Supercharge Conduits::0:137146", -- [35636]
@@ -392,10 +392,10 @@ end
 "<176.2 00:54:59> [CLEU] SPELL_CAST_SUCCESS#false#0xF1310B2D000072DF#Lei Shen#2632#0##nil#-2147483648#-2147483648#135695#Static Shock#1", -- [36898] +18.8
 "<177.2 00:55:00> [CLEU] SPELL_DAMAGE#false#0xF1310B2D000072DF#Lei Shen#2632#0#0x0400000004DCB8F1#Anafielle#1300#0#136366#Bouncing Bolt#8#37686#-1#8#nil#nil#35110#nil#nil#nil#nil", -- [36968] +19.8
 --Second Wave
-"<186.8 00:55:10> [CLEU] SPELL_AURA_APPLIED#false#0xF1310B2D000072DF#Lei Shen#2632#0#0x040000000479C5C4#Prys#1300#0#136295#Overcharged#8#DEBUFF", -- [38051] +29.4 (10.4)
-"<188.4 00:55:11> [CLEU] SPELL_CAST_SUCCESS#false#0xF1310B2D000072DF#Lei Shen#2632#0#0x040000000479BFAE#Moshne#1300#0#135991#Diffusion Chain#8", -- [38176] +31 (12)
-"<196.9 00:55:20> [CLEU] SPELL_AURA_APPLIED#false#0xF1310B2D000072DF#Lei Shen#2632#0#0x04000000062A79F6#Daltin#1300#0#135695#Static Shock#1#DEBUFF", -- [39007] +39.5 (20.5)
-"<201.3 00:55:24> [CLEU] SPELL_DAMAGE#false#0xF1310B2D000072DF#Lei Shen#2632#0#0x04000000051261FC#Bellagraced#1300#0#136366#Bouncing Bolt#8#180443#-1#8#nil#nil#nil#nil#nil#nil#nil", -- [39422] +43.9 (24.9)
+"<186.8 00:55:10> [CLEU] SPELL_AURA_APPLIED#false#0xF1310B2D000072DF#Lei Shen#2632#0#0x040000000479C5C4#Prys#1300#0#136295#Overcharged#8#DEBUFF", -- [38051] +29.4 (6.4)
+"<188.4 00:55:11> [CLEU] SPELL_CAST_SUCCESS#false#0xF1310B2D000072DF#Lei Shen#2632#0#0x040000000479BFAE#Moshne#1300#0#135991#Diffusion Chain#8", -- [38176] +31 (8)
+"<196.9 00:55:20> [CLEU] SPELL_AURA_APPLIED#false#0xF1310B2D000072DF#Lei Shen#2632#0#0x04000000062A79F6#Daltin#1300#0#135695#Static Shock#1#DEBUFF", -- [39007] +39.5 (16.5)
+"<201.3 00:55:24> [CLEU] SPELL_DAMAGE#false#0xF1310B2D000072DF#Lei Shen#2632#0#0x04000000051261FC#Bellagraced#1300#0#136366#Bouncing Bolt#8#180443#-1#8#nil#nil#nil#nil#nil#nil#nil", -- [39422] +43.9 (20.9)
 --]]
 function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 	if spellId == 137146 and self:AntiSpam(2, 2) then--Supercharge Conduits (comes earlier than other events so we use this one)
@@ -423,7 +423,7 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 		if not northDestroyed then
 			timerStaticShockCD:Start(19)
 		end
-		self:Schedule(19, LoopIntermission)--Fire function to start second wave of specials timers
+		self:Schedule(23, LoopIntermission)--Fire function to start second wave of specials timers
 	elseif spellId == 136395 and self:AntiSpam(2, 3) then--Bouncing Bolt (Does NOT work in intermission phases though :\)
 		warnBouncingBolt:Show()
 		specWarnBouncingBolt:Show()

@@ -6,3 +6,10 @@ X: -112
 Y: -44
 W: 170
 H: 240
+Frame: DBMMinimapButton
+FrameLevel: 2
+Anchor: RIGHT
+X: -9
+Y: 213
+W: 32
+H: 32

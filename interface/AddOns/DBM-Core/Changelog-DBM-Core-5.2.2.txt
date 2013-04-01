@@ -1,0 +1,207 @@
+tag 5.2.2
+65c9738aca181b9015f7daf54990ec9c7b6f13fb
+subversion <svn@deadlybossmods.com>
+2013-03-28 17:38:31 +0100
+
+Tagging as 5.2.2
+
+
+--------------------
+
+subversion:
+	- increment version number to 5.2.2
+	- tandanu via svn r9084: remove "mod incomplete" warning message
+	- tandanu via svn r9083: change "fastest computer" to "lowest ping" as this is what actually matters most here
+	- nbluewiz via svn r9082: # Core : Fix text countdown not cancels on Stop method called. # Jinrokh : Add Ionization personal bar. # Jikun : Fix bad spellid. # koKR update.
+	- Omega via svn r9081: actually tweak last, ranged should not be hit by this unless they are bad. the spell is like a 10 yard radius. as for melee, clarify for them that they need to run from this attack or die to it.
+	- Omega via svn r9080: add trash warning for Monara's knockback
+	- Omega via svn r9079: Per tandanu, locals that aren't english should not have generic locals. it's just wasteful. English locals are loaded first, then, foreign ones are loaded and replace english ones, if the new value isn't actually new though, there is no reason to replace it.
+	- Omega via svn r9078: add auto range finder for beast shaman on horridon
+	- ultrashining via svn r9077: zhTW update
+	- Omega via svn r9076: good thing we didn't tag, missed some debug
+	- tandanu via svn r9075: fix error message when enabling the flag carrier display while being in an active bg
+	- Omega via svn r9074: another trash mod tweak to group up targets together
+	- tandanu via svn r9073: fix lua error
+	- tandanu via svn r9072: do not deliver events to trash mods while a real boss encounter is in progress
+	- Omega via svn r9071: Wanted to do some more but the game doesn't like wave files and my converter for ogg is apparently missing i don't have patience to find another one.
+	- tandanu via svn r9070: change yell warnings to say "<spell> on <playername>" instead of just "<spell> on me"
+	note: I can't update the asian localizations, because I don't know anything about these languages. sorry.
+	- tandanu via svn r9069: fix combat end messages in french localization
+	- tandanu via svn r9068: the start combat sync now contains the HP of the boss that was pulled to ignore best kill times from pulls while the player is out of range of the boss
+	- Omega via svn r9067: Now that i have a better understanding of my auto icon failures, i now see why the elegon icons never worked. readded them with propper () usage so they actually work this time. now pillars will get auto marked so boss health frame is much more useful identifying WHICH is which. (also, apparently when i removed it i half assed removed it anyways since it looks like all plumbing for it got left behind, oops) Fix a bug on first boss where run away sound never played.
+	- tandanu via svn r9066: fix lua error when joining a raid \n note: DBM.Version is a string (for legacy reasons) and shouldn't be used; DBM.Revision and DBM.DisplayVersion are the intersting values...
+	- Omega via svn r9065: better debug, lets find out WHO is sending bad version information (as a string instead of a number)
+	- Omega via svn r9064: add some debug to figure out how more shit broke in core
+	- Omega via svn r9063: Add feed young Cd bar
+	- Omega via svn r9062: Hopefully fix that lua error from trying to compare "" with a number. Fix world bosses reporting record time updates when they didn't actually record them.
+	- Omega via svn r9061: sometimes it's simplest things, although on plus did find the anti spam and mouseover bugs with the excessive debug. but the icon code works wonderously now. now to fix those lua errors in core on line 1439
+	- Omega via svn r9060: THIS has to be the rpobelm, the handler was working, so it's definitely THIS line that's acting up. lets see if it's as simple as adding ()
+	- Omega via svn r9059: Found one more bug. anti spam for reset was same number as shell debuff, so reset was failing to fire. However, there still seems to be a problem in event handler. so one more test is needed. also, move it closer to rest of function so it's easier to look at all grouped up
+	- Omega via svn r9058: also, turn testing mode back off when you leave raid group
+	- Omega via svn r9057: Ok, i saw from debug, syncing is working fine, the problem is in icon code itself. Fixed one of the obvious bugs in that code as well (mouseover code was clearly broken). however, the other code also set 0 icons and SOMEONE in raid was targeting those turtles, so figure out if the onupdate function is even doing anything. Also set iconset to 3 on pull so it's not wasting cpu until the adds spawn the first time, then for rest of fight it should only fire when it resets, and until it sets 3 icons, then it should return to resting.
+	- Omega via svn r9056: actually no, that won't work cause it's not compatable with other sync, we'll see with new debug what problem is i guess first instead of trying to blind fix it.
+	- Omega via svn r9055: The problem is probably multi arg syncs still so lets mash em together like we did for unsok
+	- Omega via svn r9054: Icons still not working, at a loss, no lua erorrs, so try even more debug
+	- Omega via svn r9053: The rest of greenfire mod, figured out the confusing logs
+	- Omega via svn r9052: Half of a warlock scenario mod. other boss not supported because logger didn't know how to properly log and i can't figure out where the hell they pulled the first boss. time stamp mismatches from combat log and transcriptor and everything. FYI, i prefer transcriptor logs that INCLUDE the CLEU and logs aren't split with two different time stamp formats.
+	- nbluewiz via svn r9051: # koKR update.
+	- Omega via svn r9050: add boss crash warning to troves
+	- Omega via svn r9049: adjust troves countdown by 1 second to sync up better with debuff
+	- nbluewiz via svn r9048: # Horridon : fix sync issue.
+	- Omega via svn r9047: While at it, lets give that a 10 second audio countdown as well
+	- Omega via svn r9046: Actually based on transcriptor log, it appears we'll need to use UNIT_AURA for that. also add statue stuff (off by default as it could be spammy)
+	- Omega via svn r9045: Some basic trove timer, will add more later after some testing and stuff
+	- Omega via svn r9044: A 5.3 scenario note, Scenarios are going to be big thing in 5.3 so that neglected area is going to start needing some loving. Guess time to dust off transcriptor
+	- tandanu via svn r9043: combat end handlers now work properly for bosses that were engaged while the fight was already in progress (world bosses)
+	- nbluewiz via svn r9042: # Core : 1.Seems that DBM:GetRaidRank() still bugged, try this. (My latest raid, I'm LFR leader. but Tortos icon function not worked at all.) 2. Also if you are not in party (solo), /dbm ver says that your DBM is not installed. Fix this. 3. More reduced timer to generate player info table.
+	- Omega via svn r9041: Revert main tank filter. I know of many bat tanks that taunt the boss for vengeance (including myself) (then main tank taunts back when bats spawn and you go get the bats with all that boss vengeance)
+	- Omega via svn r9040: Small fix to world bosses
+	- nbluewiz via svn r9039: # Tortos : Change Summon Bat to more clear text (use EJ text). Also filter maintank(code by TOM_RUS) # Jikun : More buff active and personal buff timer.
+	- Omega via svn r9038: tortos hard berserk on heroic is 10 minutes
+	- Omega via svn r9037: Add more stuff for bats. even though they always spawn within seconds of furious stone breath, there is a variation where sometimes they come 3 seconds EARLIER or 3 seconds AFTER. Or at same exact time. Do to variation, just give them their own bar and warnings
+	- ebmor via svn r9036: deDE update
+	- Omega via svn r9035: update dark animus timer to new hotfix timer (it's no longer variable, it's a static 24.2 second timer. Guess more consistent is right). Now I just need to find a really terrible normal mode log where he actually casts interrupting jolt twice, or some heroic logs for interrupting jolt + empowered golem timer updates
+	- nbluewiz via svn r9034: # Core : Add Countdown text option. (off by default.) Use the TimerTracker frame. Do not taints.
+	- nbluewiz via svn r9033: # Core : sorry for spam, this will be better.
+	- nbluewiz via svn r9032: # Core : Fix TargetScanner potential problem.
+	- nbluewiz via svn r9031: # Jinrokh : Oops, removed self Focused Lighting warning by conflict.
+	- nbluewiz via svn r9030: # Core : Add generic multiple Target Scanner. Many boss uses target scanning, this will be useful.
+	- Omega via svn r9029: Range frame fixes for jinrokh Also, just use the target scanning for focused lightning, it's much faster and i haven't seen it give invalid targets so we don't need whisper.
+	- Omega via svn r9028: Remove sand bolt target scanning. quite frankly, it's a huge waste of cpu (even when it was turned off it wasted that cpu). It just needs to be a simple count warning like asani was. Also, remove duplicate sul name
+	- Omega via svn r9027: Remove all but first and last message from pull raid spam. Truth of matter is, it just doesn't matter to non raiders in LFR (they ignore it anyways) and raiders all have boss mods that filter it. After doing this, we can flat out waste less cpu filtering it in near future since no mods will send *** messages any more.
+	- nbluewiz via svn r9026: # Core : Today, I do LFR run several times, and confirmed that all target scanning bug fixed. So remove all target scanning debug code.
+	- nbluewiz via svn r9025: # Core : Fix lua error.
+	- Omega via svn r9024: fix some stupid on my part
+	- tandanu via svn r9023: some micro-optimizations which are technically probably pointless as I don't have any proper profiling; the actual issue is probably somewhere else....
+	- nbluewiz via svn r9022: # Core : update comment and debug code.
+	- swix via svn r9021: ruRU update
+	- Omega via svn r9020: Do dark animus same way as lei shi, don't pass pets at all
+	- Omega via svn r9019: Add debug all over mods and core to figure out where bluewiz broke target scanning. (Because NONE Of these mods worked yesterday, i ran all LFRs and every single mod with target scanning failed. (should also note, every function that should set icons also failed because RaidRank stuff was broken too.)
+	- nbluewiz via svn r9018: # Core : 1. Remove unneeded GetNumSubgroupMembers(). 2. Fix more bug caused by recent DBM:GetRaidUnitId() changes. 3. Re-add IsTanking filter. Please see comments, Omega. (NOTE : I'm healer. And during encounter LFR Lei Shi, IsTanking function returns always true for summoned pets. This causes Spray bar SPAM. Like "Spray : Ghost Iron Dragonling" ...)
+	- nbluewiz via svn r9017: # Nalak : Add revision keyword.
+	- nbluewiz via svn r9016: # Core : Instead of world bosses have long wipe timer, do not wipe on player dead or ghost. Long wipe timer can cause unexpected problems if you attend LFR or LFG during world boss encounter.
+	- nbluewiz via svn r9015: # Core : Another scenario fix.
+	- nbluewiz via svn r9014: # Core : Revert GetRaidRank changes. There is too many mod GetRaidRank calls with no parameter. # Lei Shi & Tortos : Fix lua error. # ruRU update form tomrus.
+	- Omega via svn r9013: some fixes
+	- Omega via svn r9012: fix joshua
+	- nbluewiz via svn r9011: # koKR update.
+	- nbluewiz via svn r9010: # koKR update.
+	- Omega via svn r9009: Added an icon debug override mode so in future it's MUCH easier to debug (or ask someone else to debug) icon changes on the flick of a switch.
+	- nbluewiz via svn r9008: # Core : Add "count" special warning generic. Also, changed "stack" generic warning description more clear text. # Remove useless locals.
+	- nbluewiz via svn r9007: # Fix icon defaults Lei Shi and Tortos in koKR.
+	- nbluewiz via svn r9006: # Lei Shi : Change icon function default. Koreans do not like automated icon sets. I had too many complains about this function, too may received emails about this function. Although it can be very useful especially LFR, normal and heroic players DO NOT LIKE THIS FUNCTION. So in koKR, let this function on by raid leader's choice. # Tortos : Same reason for Tortos.
+	- nbluewiz via svn r9005: # Core : Do not use self called by scheduler. This can cause error.
+	- nbluewiz via svn r9004: # Meljarak : What fixs? Quickening counter is not normal counter. This is set counter. I made this for dispeler. (1 set dispel - Priest A, 2 set - Priest B, 3 set - Priest C.. and rotates). So DO NOT REMOVE COUNTER ON SPECIAL WARNING. THIS NOT SPAMS AT ALL. NOT BUGS.
+	- Omega via svn r9003: cannot warn fixated targets, but can get a cd to show up assuming at least one person in raid is targeting one
+	- Omega via svn r9002: fix a string bug in last and antispam bug. port it to tortos now, add debug to both.
+	- Omega via svn r9001: An end all solution to lei shi icons. Will port to tortos after more testing. New method: 1. On by default 2. Everyone with promoted status who has icon option turned ON, sends their GUID and dbm core version on boss engage 3. highest versions take priority 4. If multiple highest version, after 5 seconds, first person to send a sync to rest of raid wins and disables everyone elses icon function (fastest computer) 5. By end of this, one and only one person should be setting icons.
+	- Omega via svn r9000: this should fix it instead. that was supposed to be boss1target check so it wasn't nil
+	- Omega via svn r8999: Revert istanking change. that broke target scanning in ALL mods to be completely non functional, yet i've never seen the pet bug this is trying to fix (is a pet really boss1s highest threat or set to unitrole tank? if so you're doing fight wrong anyways)
+	- Omega via svn r8998: Fix quickening so it doesn't spam "quickening on 0" over and over again. fix that code
+	- Omega via svn r8997: self doesn't work there? not sure why. probably others that are wrong then
+	- Omega via svn r8996: Now for Salyis
+	- Omega via svn r8995: Improvements to oondasta yell pull detection Add Anger yell pull detection
+	- Omega via svn r8994: Small memory optimize (use self in all applicable places)
+	- nbluewiz via svn r8993: # Core : Reduced time to make player info 30s. Also do not overwrite raid info table if already generated. (pull timer issue)
+	- nbluewiz via svn r8992: # Core : Fix broken pull timer and etc.
+	- ultrashining via svn r8991: zhTW update
+	- nbluewiz via svn r8990: # Core : Fix world boss combat engage bug.
+	- ebmor via svn r8989: deDE update
+	- nbluewiz via svn r8988: # Core : Fix IsTanking returns always true for pets. # Oondasta : Adjust Crush CD. # koKR update.
+	- Omega via svn r8987: Finish field boss inprogress code so we ignore best kill recording and speed kill timers on engaging world bosses that are already in progress.
+	- Omega via svn r8986: Only start oondasta combat start timers on yell triggered pulls (only time we can actually say for sure that entering combat == PULL). TODO: The same for sha, galleon and Nalak
+	- nbluewiz via svn r8985: # Horridon : Add Cracked Shell warning support.
+	- nbluewiz via svn r8984: # Core : oops forgot move test code. thanks Tandanu :);
+	- tandanu via svn r8983: just wait a minute after logging in before accessing the player GUID
+	- tandanu via svn r8982: typo
+	- tandanu via svn r8981: add on load callback functions that are called once the addon is fully loaded, this is now being used to fix an error that only occurs when logging in, but not reloading in the new solo-raid support
+	- Omega via svn r8980: Refix Landfall interrupt while at it.
+	- Omega via svn r8979: Fix magaera bug
+	- nbluewiz via svn r8978: # Core : 1. Fix class coloring to work 1 man raid (noparty). 2. Do not call UnitName("player") multiple times. 3. Add DBM:GetFullNameByShortName function. because CHAT_MSG_RAID_BOSS_EMOTE not including server name and not works class coloring. 4. Shorten Transcriptor logging message. # Galleon : Do not start timer on combat start (world boss). # Scenario/Landfall : Fix interrupt warning bug. # Megaera : Cinders and Torrent of Ice icon stuff. / Adjust CD. # Council of Elders : Update Dark Power stuff. # Horridon : Fix charge warning bug in lfr. / Adjust CD. # Jinrokh : Adjust CD.
+	- nbluewiz via svn r8977: # koKR update.
+	- nbluewiz via svn r8976: # Tortos : fix breath timer (variables lfr only?).
+	- Omega via svn r8975: Even more attempts at fixing  it's hard to actually fix something i cannot test until sunday. Personally i'm just going to have someone smarter look at this tomorrow and code it much better. can't be too hard to aterlnate 3 icons if adds are still up, else use same 3 icons if none are up
+	- nbluewiz via svn r8974: # Cpu optimize for all mods. If warning have only 1 spell id, IsSpellID only wastes cpu.
+	- Omega via svn r8973: This should fix tortos i think
+	- ebmor via svn r8972: deDE update
+	- Omega via svn r8971: tortos code is so full of flaws trying to cator to guilds that kill shells too slow. if this doesn't work may just scrap the auto turtle marking
+	- Omega via svn r8970: fix one icon bug
+	- swix via svn r8969: ruRU update for HoF
+	- swix via svn r8968: ruRU update
+	- nbluewiz via svn r8967: # Council : Fix Dark Power CD. # koKR update.
+	- Omega via svn r8966: ion tweak
+	- Omega via svn r8965: Count direcall on horridon Add warning for hex on horridon Count stomp on tortos
+	- Omega via svn r8964: More heroic Ji-Kun data plus support for tripple nests
+	- Omega via svn r8963: Better wording/spelling
+	- Omega via svn r8962: clarify which adds the timers on horridon are by making the name more specific to the mob names of the ones in stands (the ones timers are actually for)
+	- nbluewiz via svn r8961: # Core : Fix warning filtering bug.
+	- nbluewiz via svn r8960: # Core : Add very very very experimental stuff to core and GUI load default option for individual bosses. This may works, but have many restriction. (In this stuff is useless, revert change. please) 1. Loaded default options cannot reflect current talent. Default options determined at when mod was loaded. 2. Do not refresh check box after default's loaded. After switch to other boss, and return to reseted boss, check box will be updated. 3. Reset button is very ugly :).
+	- nbluewiz via svn r8959: # Core : Fix some options not shown in GUI because variables duplicate. Also, greatly reduces saved variables duplicates. CAUTION : almost boss settings will be reset.
+	- Omega via svn r8958: Tortos has a 13 minute berserk.
+	- ultrashining via svn r8957: zhTW update
+	- Omega via svn r8956: verified, LFR is same as 10 Heroic, 3 down 3 up repeating, on a 40 second timer
+	- Omega via svn r8955: fix lua error
+	- Omega via svn r8954: Add some notes to dark animus, per todays hotfix, all timers need re-verification and updating.
+	- Omega via svn r8953: Small cpu optimize for oondasta. Not use the tabled shortcut for spells that only have one ID. technically should probably just do this in all mods anyways and just use the IsSpellID function for 2 or more spellid options? it's a trivial among of cpu on 99% of fights. Oondata though, 500 people attacking a world boss, anything that speeds up dbm parsing is a gain.
+	- nbluewiz via svn r8952: # JiKun : Fix Flock CD 10 man heroic. # Iron Qon : Add count to Fist Smash. / Fix phase 4 warning bug. / Fix first Fist Smash CD. (different 10 and 25). # Twin Consorts : Fix phase 3 warning now shows after wipe. / Hide range frame when Lulin dies. / Add Flame of Passion shit warning.
+	- Omega via svn r8951: Better to remove them on remove than on timer, that way they get removed if a person dies or immunities a debuff.
+	- ebmor via svn r8950: ToT CouncilofElders: set icon on BitingCold (cross) and FrostBite (square)
+	- nbluewiz via svn r8949: # Remove bad scroll bar element. (FrameXML.log error - Frame DBM_GUI_OptionsFramePanelContainerFOVScrollBar: Unknown script element OnVerticalScroll)
+	- nbluewiz via svn r8948: # ruRU update. (from tomrus) # remove bad comment.
+	- Omega via svn r8947: *remove note, apparently it's ignored anyways. *Fix regression caused by ignoring note. *Less spam on iron qon and better option defaults
+	- Omega via svn r8946: and another one
+	- Omega via svn r8945: missed one in lei shi
+	- nbluewiz via svn r8944: # Iron Qon : Add phase change warning / Add many phase 1 stuff. # Twin Consorts : Tidal Force CD bar. / Add dusk yell trigger.
+	- Omega via svn r8943: move some duplicate code into core so mods can call a simpler function and not constantly duplicate the same code again and again.
+	- nbluewiz via svn r8942: # ruRU update (from tomrus)
+	- Omega via svn r8941: Better icons for twin consort.
+	- ebmor via svn r8940: deDE update
+	- ebmor via svn r8939: DBM_CORE_ACHIEVEMENT_TIMER_SPEED_KILL renamed from "Fastest Victory" (wrong) to "Achievement"
+	DBM_CORE_ACHIEVEMENT_TIMER_SPEED_KILL [TimerSpeedKill] -> achievements (WOTLK)
+	DBM_SPEED_KILL_TIMER_TEXT/OPTION [SpeedKillTimer] -> record/fastest victory
+	- nbluewiz via svn r8938: # Add server name strip stuff. In most cases, server name is not needed for player (even raid leader). But, in code, server name is still needed to identify player (i.e : class coloring..). In that, DBM now hides server name in displayed warning. Still, you can turn off it manually.
+	- Omega via svn r8937: Use core function in old mods as well. Should remove tons of duplicate code
+	- ultrashining via svn r8936: zhTW update
+	- tandanu via svn r8935: DBM:GetFullPlayerNameByGUID(guid) is probably the better name for that new function. also added DBM:GetPlayerName which strips the server
+	Horridon: make use of the new API to fix the Charge sync
+	- tandanu via svn r8934: add function DBM:GetUnitFullNameByGUID which returns the full name (i.e. including the server if in a cross-server group) of a raid member by his/her GUID
+	- nbluewiz via svn r8933: # Core : Delay stop logging in order to catch kill events. Also, this will prevent logs generated by DBM counts as wipe on worldoflogs. (idea from tomrus) # ruRU update from tomrus (tomrus88@gmail.com).
+	- nbluewiz via svn r8932: # Council : Cancels Dark Power CD when possessed removes
+	- nbluewiz via svn r8931: # Tortos : Fix Shell Concussion bug.
+	- Omega via svn r8930: option default tweak
+	- nbluewiz via svn r8929: # Horridon : Add Orb of Control warning. # Council : Add experimental Dark Power stuff. needs more review.
+	- Omega via svn r8928: fix horridon sync name. while at it, make it LFR friendly
+	- Omega via svn r8927: Sync horridon emotes, since we are missing translations for about half the languages. It's likely there is at least one english client in the raid. this should give more clients working timers/warnings until we can get more localized text
+	- nbluewiz via svn r8926: # Twin Consorts : Change phase warning. EJ phase text is too long, better to use locals.
+	- nbluewiz via svn r8925: # Core : Change combat start and end message order in order to dbm message not beaten by Transcriptor messages.
+	- nbluewiz via svn r8924: # Council of Elders : Add unitname to Possessed	health bar.
+	- Omega via svn r8923: lets try 1 sec
+	- ultrashining via svn r8922: zhTW update
+	- nbluewiz via svn r8921: # Unsok : disable Massive Stomp for healer . not needed even in heroic.
+	- nbluewiz via svn r8920: # Tsulong : Add generic nightmare warning for 25 man.
+	- nbluewiz via svn r8919: # Core : Re add timer stop function to prevent rare timer errors. (some timer starts at SPELL_AURA_REMOVED) # Fix range radar always showing as red if raid setup changed. (especially in lfr.)
+	- nbluewiz via svn r8918: # Core : Rewrite talent check. / Add IsRangedDps() talent check. # Council : Fix health bar bug.
+	- nbluewiz via svn r8917: # Check Always show health frame option in Council and Lei Shi.
+	- nbluewiz via svn r8916: # Tortos : Change icon function option text. # Lei Shi : Fix healthframe check.
+	- Omega via svn r8915: *Add some icon setting code to tortos with additional experimentation from teh lei shi code to try and make icon setting stay synced up between multiple users (should be easier on tortos as well with a 1 second icon set speed as the icons should go out slower on tortos and have more time to sync up between users as well. there isn't as urgent of an icon priority on tortos as there was on lei shi). *Bumped range on durumu force near a little more. it's still catching people that are NOT targeted fairly often *Back port the hopefully code improvements from tortos back to lei shi as well.
+	- Omega via svn r8914: Don't start force timer if either beam phase is less than 20 seconds away
+	- nbluewiz via svn r8913: # Council of Elders : Add health frame stuff. # Durumu : Adjust 25 man normal timer (tested 25 man normal and good works). / Add berserk timer. NOTE: he ability seems to have longer cd after 2nd Disintegration Beam phase. Needs more review. (Also 10man / lfr timer is different?) # Jikun : Shows 2 count text on lower and upper warning. / Add flight timer. # Tortos : Do not refresh timer on 10% Call of tortos cast.
+	- nbluewiz via svn r8912: # Tortos : Bug fix for Shell Concussion stuff.
+	- Omega via svn r8911: comment out tortos spam for now, warnShellConcussion just spams like 7 times when you kick a shell and doesn't work right
+	- ultrashining via svn r8910: zhTW update
+	- Omega via svn r8909: add special warning for piercing roar. should have had one all along but i'm a warrior tank, i didn't even notice the thing had an interrupt/silence.
+	- Omega via svn r8908: start static burst CD on success instead of applied, since dks like to AMS this. That way we don't lose timers for it when they do. still warn on applied though for same reason, no reason to taunt if a DK AMSes it.
+	- nbluewiz via svn r8907: # Core : Prevent "You are not logging an encounter." message when pull timer used. # koKR update.
+	- Omega via svn r8906: revert storm timer change. 60 is def min cd (in fact, it's more often then not the common value) http://worldoflogs.com/reports/rt-48ea9cv68q4se383/xe/?enc=bosses&boss=69465&x=spellid+%3D+137313+or+spellid+%3D+137180 (note, emote event we use with actual target is 1.4 seconds BEFORE SPELL_CAST_START event we can actually find in WoL expression editor, account for that when reading the tons and tons of public logs out there.)
+	- ultrashining via svn r8905: zhTW update
+	- nbluewiz via svn r8904: # Horridon : fix Bestial Cry CD. # Jinrokh : fix Throw and Storm CD (changed?).
+	- Omega via svn r8903: adjust throttling on trash to try and include more in table
+	- Omega via svn r8902: rename speed kill to fastest victory. there are a lot of things you don't actually kill and the old text is a poor descriptor of that.
+	- Omega via svn r8901: add audio countdown for ion
+	- Omega via svn r8900: delay loop on lei shen more to prevent the timers from looping before first static shock goes off
+	- Omega via svn r8899: Add a sonic screech interrupt warning to trash mod Add model Ids to nalak and oondasta
+	- ultrashining via svn r8898: zhTW update
+	- nbluewiz via svn r8897: # Tortos : Add Shell Concussion debuff stuf. Also adjust some timer. # Also I will do other mods bug fix (tomorrow).
+	- ultrashining via svn r8896: zhTW update
+	- nbluewiz via svn r8895: # koKR update.
+	- tandanu via svn r8894: increment version number for alpha builds

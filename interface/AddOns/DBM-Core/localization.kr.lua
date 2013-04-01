@@ -8,13 +8,21 @@ DBM_CORE_LOAD_MOD_SUCCESS			= "'%s' 경보를 불러왔습니다 !"
 DBM_CORE_LOAD_GUI_ERROR				= "설정창을 불러올 수 없습니다: %s"
 DBM_CORE_LOAD_GUI_COMBAT			= "전투 중에는 설정창을 불러올 수 없습니다. 단, 전투 종료 후 설정창을 불러오고 난 이후에는 UI 재시작 또는 재접속전까지 전투 중에도 설정창을 불러올 수 있습니다."
 
+DBM_ABSOLUTE_MODE_ON				= "무제한 모드가 활성화 되었습니다."
+DBM_ABSOLUTE_MODE_OFF				= "무제한 모드가 비활성화 되었습니다. 공격대에 원래 버전을 알립니다."
+DBM_ABSOLUTE_MODE_NOTIFY_ON			= "%s|1이;가; 무제한 모드를 활성화 하였습니다. 이 사용자의 DBM만이 전술 목표 아이콘을 설정할 수 있습니다."
+DBM_ABSOLUTE_MODE_NOTIFY_OFF		= "%s|1이;가; 무제한 모드를 비활성화 하였습니다. 아이콘 설정 기능이 원래대로 돌아갑니다."
+
 DBM_CORE_COMBAT_STARTED				= "%s 작동됨. 행운을 빕니다! :)";
+DBM_CORE_COMBAT_STARTED_IN_PROGRESS	= "%s 전투 진행 도중 참가하였습니다. 행운을 빕니다! :)"
 DBM_CORE_BOSS_DOWN					= "%s 전투에서 승리하였습니다! (전투 시간: %s)"
 DBM_CORE_BOSS_DOWN_L				= "%s 전투에서 승리하였습니다! (전투 시간: %s, 최종 전투 기록: %s, 가장 빨랐던 기록: %s, 처치: %d회)"
 DBM_CORE_BOSS_DOWN_NR				= "%s 전투에서 승리하였습니다! (전투 시간: %s) 이 기록은 새로운 기록이군요! (과거 기록: %s, 처치: %d회)"
 DBM_CORE_COMBAT_ENDED_AT			= "%s 전투가 종료되었습니다. (전투 종료시 우두머리 체력: %s, 전투 시간: %s)"
 DBM_CORE_COMBAT_ENDED_AT_LONG		= "%s 전투가 종료되었습니다. (전투 종료시 우두머리 체력: %s, 전투 시간: %s, 전멸: %d회)"
 DBM_CORE_COMBAT_STATE_RECOVERED		= "%s 전투가 %s 전에 시작되었습니다. 바를 복구 합니다."
+DBM_CORE_TRANSCRIPTOR_LOG_START		= "Transcriptor 기록을 시작합니다."
+DBM_CORE_TRANSCRIPTOR_LOG_END		= "Transcriptor 기록을 중단합니다."
 
 DBM_CORE_TIMER_FORMAT_SECS			= "%d|4초:초;"
 DBM_CORE_TIMER_FORMAT_MINS			= "%d|4분:분;"
@@ -27,6 +35,7 @@ DBM_CORE_SEC_FMT					= "%d초"
 DBM_CORE_DEAD						= "죽음"
 DBM_CORE_OK							= "수락"
 
+DBM_CORE_GENERIC_WARNING_DUPLICATE	= "%s 중 1명"
 DBM_CORE_GENERIC_WARNING_BERSERK	= "%s %s 후에 광폭화"
 DBM_CORE_GENERIC_TIMER_BERSERK		= "광폭화"
 DBM_CORE_OPTION_TIMER_BERSERK		= "광폭화 시간 바 표시"
@@ -114,6 +123,7 @@ DBM_CORE_BOSSHEALTH_HIDE_FRAME		= "우두머리 체력 바 닫기"
 DBM_CORE_ALLIANCE					= "얼라이언스"
 DBM_CORE_HORDE						= "호드"
 
+DBM_CORE_WORLD_BOSS					= "야외 우두머리"
 DBM_CORE_UNKNOWN					= "알 수 없음"
 DBM_CORE_LEFT						= "왼쪽"
 DBM_CORE_RIGHT						= "오른쪽"
@@ -128,22 +138,22 @@ DBM_CORE_ANNOUNCE_BREAK_OVER		= "쉬는 시간이 종료되었습니다."
 
 DBM_CORE_TIMER_PULL					= "전투 시작 예정"
 DBM_CORE_ANNOUNCE_PULL				= "%d 초 뒤 시작 합니다."
-DBM_CORE_ANNOUNCE_PULL_NOW			= "시작했습니다. 긴장하세요.!"
+DBM_CORE_ANNOUNCE_PULL_NOW			= "시작합니다. 긴장하세요.!"
 
 DBM_CORE_ACHIEVEMENT_TIMER_SPEED_KILL = "Speed Kill(업적)"
 
 -- Auto-generated Timer Localizations
 DBM_CORE_AUTO_TIMER_TEXTS = {
-	target		= "%s: %%s",
+	target		= "%s: >%%s<",
 	cast 		= "%s",
 	active		= "%s 종료",--Buff/Debuff/event on boss
 	fades		= "%s 사라짐",--Buff/Debuff on players
 	cd 			= "%s 가능",
 	cdcount		= "%s 가능 (%%d)",
-	cdsource	= "%s 가능: %%s",
+	cdsource	= "%s 가능: >%%s<",
 	next 		= "다음 %s",
 	nextcount 	= "다음 %s (%%d)",
-	nextsource	= "다음 %s: %%s",
+	nextsource	= "다음 %s: >%%s<",
 	achievement	= "%s"
 }
 
@@ -195,37 +205,39 @@ DBM_CORE_AUTO_SPEC_WARN_OPTIONS = {
 	spell 		= "$spell:%s 특수 경고 보기",
 	dispel 		= "$spell:%s 특수 경고 보기(해제/마법훔치기)",
 	interrupt	= "$spell:%s 특수 경고 보기(차단)",	
-	you 		= "$spell:%s 주문의 대상이 당신일 경우 특수 경고 보기",
+	you 		= "$spell:%s 대상이 될 경우 특수 경고 보기",
 	target 		= "$spell:%s 주문의 영향을 누군가 받은 경우 특수 경고 보기",
 	close 		= "$spell:%s 대상이 근처에 있을 경우 특수 경고 보기",
 	move 		= "$spell:%s 주문의 영향을 받은 경우 특수 경고 보기(이동)",
 	run 		= "$spell:%s 특수 경고 보기(빠른 이동)",
 	cast 		= "$spell:%s 시전을 시작할 경우 특수 경고 보기",
+	count 		= "$spell:%s 특수 경고 보기",
 	stack 		= "$spell:%2$d 주문이 %1$d 중첩 이상시 특수 경고 보기",
 	switch		= "$spell:%s 특수 경고 보기(대상 전환)"
 }
 
 DBM_CORE_AUTO_SPEC_WARN_TEXTS = {
 	spell 		= "%s!",
-	dispel 		= "%s : %%s - 해제!",
-	interrupt 	= "%s : %%s - 차단!",
+	dispel 		= "%s : >%%s< - 해제!",
+	interrupt 	= "%s : >%%s< - 차단!",
 	you 		= "당신에게 %s",
-	target 		= "%s : %%s",
-	close 		= "당신 근처에 %s (%%s)!",
+	target 		= "%s : >%%s<",
+	close 		= "당신 근처에 %s (>%%s<)!",
 	move 		= "%s - 이동하세요!",
 	run 		= "%s - 도망치세요!",
-	cast 		= "%s - 시전 중지",
-	stack 		= "%s (%%d)",
-	switch		= "%s - 대상 전환!"
+	cast 		= "%s - 시전 중지!",
+	count 		= "%s! (%%d)",
+	stack 		= "당신에게 %s (%%d 중첩)",
+	switch		= ">%s< - 대상 전환!"
 }
 
 
 DBM_CORE_AUTO_ICONS_OPTION_TEXT			= "$spell:%s 대상에게 전술 목표 아이콘 설정"
-DBM_CORE_AUTO_SOUND_OPTION_TEXT			= "$spell:%s 주문의 영향을 받은 경우 별도 경고음 듣기"
+DBM_CORE_AUTO_SOUND_OPTION_TEXT			= "$spell:%s 대상이 될 경우 별도 경고음 듣기"
 DBM_CORE_AUTO_COUNTDOWN_OPTION_TEXT		= "$spell:%s 주문의 초읽기 소리 듣기"
 DBM_CORE_AUTO_COUNTOUT_OPTION_TEXT		= "$spell:%s 주문의 진행 시간 소리 듣기"
-DBM_CORE_AUTO_YELL_OPTION_TEXT			= "$spell:%s 주문의 영향을 받은 경우 대화로 알리기"
-DBM_CORE_AUTO_YELL_ANNOUNCE_TEXT		= "나에게 %s!"
+DBM_CORE_AUTO_YELL_OPTION_TEXT			= "$spell:%s 대상이 될 경우 대화로 알리기"
+DBM_CORE_AUTO_YELL_ANNOUNCE_TEXT		= UnitName("player").."에게 %s!"
 
 
 -- New special warnings

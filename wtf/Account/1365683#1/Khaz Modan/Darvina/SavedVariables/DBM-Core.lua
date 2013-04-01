@@ -11,28 +11,29 @@ DBM_SavedOptions = {
 	["RangeFrameX"] = 50,
 	["WarningColors"] = {
 		{
-			["b"] = 0.94,
-			["g"] = 0.8,
 			["r"] = 0.41,
+			["g"] = 0.8,
+			["b"] = 0.94,
 		}, -- [1]
 		{
-			["b"] = 0,
-			["g"] = 0.95,
 			["r"] = 0.95,
+			["g"] = 0.95,
+			["b"] = 0,
 		}, -- [2]
 		{
-			["b"] = 0,
-			["g"] = 0.5,
 			["r"] = 1,
+			["g"] = 0.5,
+			["b"] = 0,
 		}, -- [3]
 		{
-			["b"] = 0.1,
-			["g"] = 0.1,
 			["r"] = 1,
+			["g"] = 0.1,
+			["b"] = 0.1,
 		}, -- [4]
 	},
 	["AlwaysShowSpeedKillTimer"] = true,
 	["RangeFrameY"] = -50,
+	["FilterSayAndYell"] = false,
 	["EnableModels"] = true,
 	["ArrowPoint"] = "TOP",
 	["ModelSoundValue"] = "Short",
@@ -50,6 +51,7 @@ DBM_SavedOptions = {
 		["X"] = 0,
 		["Point"] = "TOP",
 	},
+	["DontPlayPTCountdown"] = false,
 	["ShowKillMessage"] = true,
 	["HealthFrameWidth"] = 200,
 	["DontSendBossWhispers"] = false,
@@ -59,6 +61,7 @@ DBM_SavedOptions = {
 	["MoviesSeen"] = {
 	},
 	["SettingsMessageShown"] = true,
+	["SpecialWarningSound3"] = "Sound\\Creature\\KilJaeden\\KILJAEDEN02.wav",
 	["ShowWarningsInChat"] = true,
 	["DontSetIcons"] = false,
 	["BigBrotherAnnounceToRaid"] = false,
@@ -71,45 +74,51 @@ DBM_SavedOptions = {
 	["RangeFrameRadarX"] = -60.00036150216518,
 	["ShowBigBrotherOnCombatStart"] = false,
 	["BlockVersionUpdatePopup"] = true,
+	["DontShowRangeFrame"] = false,
 	["InfoFrameShowSelf"] = false,
 	["SpecialWarningFont"] = "Fonts\\FRIZQT__.TTF",
+	["AdvancedAutologBosses"] = false,
 	["SpamBlockRaidWarning"] = true,
 	["ShowFakedRaidWarnings"] = false,
 	["LatencyThreshold"] = 200,
 	["BlockVersionUpdateNotice"] = false,
+	["DontShowInfoFrame"] = false,
+	["DontShowPT"] = true,
 	["HPFrameMaxEntries"] = 5,
+	["DontShowPTCountdownText"] = false,
+	["AutologBosses"] = false,
 	["RangeFramePoint"] = "CENTER",
-	["DisableCinematicsOutside"] = false,
-	["LastRevision"] = 8086,
+	["RangeFrameSound1"] = "none",
+	["WarningIconLeft"] = true,
 	["ShowEngageMessage"] = true,
-	["ShowRecoveryMessage"] = true,
+	["ArrowPosY"] = -150,
 	["WarningIconRight"] = true,
 	["ShowPizzaMessage"] = true,
 	["RangeFrameSound2"] = "none",
 	["ShowLHFrame"] = true,
 	["ShowLoadMessage"] = true,
-	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
+	["DontShowBossAnnounces"] = false,
 	["Enabled"] = true,
-	["AutoRespond"] = true,
-	["SpecialWarningFontColor"] = {
-		0, -- [1]
-		0, -- [2]
-		1, -- [3]
-	},
+	["DontSendBossAnnounces"] = false,
+	["HideBossEmoteFrame"] = false,
 	["DisableCinematics"] = false,
 	["MovieFilters"] = {
 	},
 	["UseMasterVolume"] = true,
 	["ShowWipeMessage"] = true,
-	["HideBossEmoteFrame"] = false,
-	["DontSendBossAnnounces"] = false,
-	["DontShowBossAnnounces"] = false,
+	["SpecialWarningFontColor"] = {
+		0, -- [1]
+		0, -- [2]
+		1, -- [3]
+	},
+	["AutoRespond"] = true,
+	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
 	["AlwaysShowHealthFrame"] = false,
 	["HPFrameX"] = -49.99999925494196,
-	["ArrowPosY"] = -150,
+	["ShowRecoveryMessage"] = true,
 	["SpamBlockBossWhispers"] = false,
-	["WarningIconLeft"] = true,
-	["RangeFrameSound1"] = "none",
+	["LastRevision"] = 8086,
+	["DisableCinematicsOutside"] = false,
 }
 DBT_SavedOptions = {
 	["DBM"] = {
@@ -117,7 +126,7 @@ DBT_SavedOptions = {
 		["TimerPoint"] = "TOPRIGHT",
 		["TimerX"] = -223.0000081211327,
 		["HugeTimerX"] = 0,
-		["TimerY"] = -259.9999961256982,
 		["HugeTimerY"] = -119.9999982118607,
+		["TimerY"] = -259.9999961256982,
 	},
 }

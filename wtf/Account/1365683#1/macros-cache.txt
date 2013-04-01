@@ -1,14 +1,14 @@
-MACRO64 0000000000000004 "Demeza" "INV_MISC_QUESTIONMARK"
+VER 3 0000000000000004 "Demeza" "INV_MISC_QUESTIONMARK"
 /targetbyname("Captain Demeza", true);
 END
-MACRO64 0000000000000001 "Location" "Ability_Hunter_Pathfinding"
+VER 3 0000000000000001 "Location" "Ability_Hunter_Pathfinding"
 /script SetMapToCurrentZone() local x,y=GetPlayerMapPosition("player") DEFAULT_CHAT_FRAME:AddMessage(format("%s, %s: %.1f, %.1f",GetZoneText(),GetSubZoneText(),x*100,y*100))
 END
-MACRO64 0000000000000003 "Noblegarden Eggs" "ACHIEVEMENT_GUILDPERK_HASTYHEARTH"
+VER 3 0000000000000003 "Noblegarden Eggs" "ACHIEVEMENT_GUILDPERK_HASTYHEARTH"
 #showtooltip Noblegarden Chocolate
 /use Egg Basket
 /use Brightly Colored Egg
 END
-MACRO64 0000000000000002 "Speed" "Ability_Hunter_PostHaste"
+VER 3 0000000000000002 "Speed" "Ability_Hunter_PostHaste"
 /script ChatFrame1:AddMessage(string.format("Player speed: %d%%", (GetUnitSpeed("Player") * 100000000) / 7))
 END

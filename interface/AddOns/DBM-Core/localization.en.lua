@@ -7,13 +7,21 @@ DBM_CORE_LOAD_MOD_SUCCESS			= "Loaded '%s' mods. For more options, type /dbm or 
 DBM_CORE_LOAD_GUI_ERROR				= "Could not load GUI: %s"
 DBM_CORE_LOAD_GUI_COMBAT			= "GUI cannot be initially loaded in combat. Please load GUI/configure options out of combat first, then it will be available in combat after that."
 
+DBM_ABSOLUTE_MODE_ON				= "Absolute mode enabled."
+DBM_ABSOLUTE_MODE_OFF				= "Absolute mode disabled. Broadcasting propper mod version again"
+DBM_ABSOLUTE_MODE_NOTIFY_ON			= "Absolute mode enabled by %s. Only their DBM can set raid icons."
+DBM_ABSOLUTE_MODE_NOTIFY_OFF		= "Absolute mode diabled by %s. Normal icon permissions restored."
+
 DBM_CORE_COMBAT_STARTED				= "%s engaged. Good luck and have fun! :)"
+DBM_CORE_COMBAT_STARTED_IN_PROGRESS	= "Engaged an in progress fight against %s. Good luck and have fun! :)"
 DBM_CORE_BOSS_DOWN					= "%s down after %s!"
 DBM_CORE_BOSS_DOWN_L				= "%s down after %s! Your last kill took %s and your fastest kill took %s. You have %d total victories."
 DBM_CORE_BOSS_DOWN_NR				= "%s down after %s! This is a new record! (Old record was %s). You have %d total victories."
 DBM_CORE_COMBAT_ENDED_AT			= "Combat against %s (%s) ended after %s."
 DBM_CORE_COMBAT_ENDED_AT_LONG		= "Combat against %s (%s) ended after %s. You have %d total wipes on this difficulty."
 DBM_CORE_COMBAT_STATE_RECOVERED		= "%s was engaged %s ago, recovering timers..."
+DBM_CORE_TRANSCRIPTOR_LOG_START		= "Transcriptor logging started."
+DBM_CORE_TRANSCRIPTOR_LOG_END		= "Transcriptor logging ended."
 
 DBM_CORE_TIMER_FORMAT_SECS			= "%d |4second:seconds;"
 DBM_CORE_TIMER_FORMAT_MINS			= "%d |4minute:minutes;"
@@ -26,6 +34,7 @@ DBM_CORE_SEC_FMT					= "%d sec"
 DBM_CORE_DEAD						= "dead"
 DBM_CORE_OK							= "Okay"
 
+DBM_CORE_GENERIC_WARNING_DUPLICATE	= "One of the %s"
 DBM_CORE_GENERIC_WARNING_BERSERK	= "Berserk in %s %s"
 DBM_CORE_GENERIC_TIMER_BERSERK		= "Berserk"
 DBM_CORE_OPTION_TIMER_BERSERK		= "Show timer for $spell:26662"
@@ -83,7 +92,7 @@ DBM_CORE_RANGECHECK_OPTION_SPEED	= "Update Rate (Reload Req.)"
 DBM_CORE_RANGECHECK_OPTION_SLOW		= "Slow (lowest CPU)"
 DBM_CORE_RANGECHECK_OPTION_AVERAGE	= "Medium"
 DBM_CORE_RANGECHECK_OPTION_FAST		= "Fast (Most real-time)"
-DBM_CORE_RANGERADAR_HEADER		= "Range Radar (%d yd)"
+DBM_CORE_RANGERADAR_HEADER			= "Range Radar (%d yd)"
 DBM_CORE_RANGERADAR_IN_RANGE_TEXT	= "%d players in range"
 
 DBM_CORE_INFOFRAME_LOCK				= "Lock frame"
@@ -113,6 +122,7 @@ DBM_CORE_BOSSHEALTH_HIDE_FRAME		= "Close health frame"
 DBM_CORE_ALLIANCE					= "Alliance"
 DBM_CORE_HORDE						= "Horde"
 
+DBM_CORE_WORLD_BOSS					= "World Boss"
 DBM_CORE_UNKNOWN					= "unknown"
 DBM_CORE_LEFT						= "Left"
 DBM_CORE_RIGHT						= "Right"
@@ -129,20 +139,20 @@ DBM_CORE_TIMER_PULL					= "Pull in"
 DBM_CORE_ANNOUNCE_PULL				= "Pull in %d sec"
 DBM_CORE_ANNOUNCE_PULL_NOW			= "Pull now!"
 
-DBM_CORE_ACHIEVEMENT_TIMER_SPEED_KILL = "Speed Kill"
+DBM_CORE_ACHIEVEMENT_TIMER_SPEED_KILL = "Achievement"
 
 -- Auto-generated Timer Localizations
 DBM_CORE_AUTO_TIMER_TEXTS = {
-	target		= "%s: %%s",
+	target		= "%s: >%%s<",
 	cast		= "%s",
 	active		= "%s ends",--Buff/Debuff/event on boss
 	fades		= "%s fades",--Buff/Debuff on players
 	cd			= "%s CD",
 	cdcount		= "%s CD (%%d)",
-	cdsource	= "%s CD: %%s",
+	cdsource	= "%s CD: >%%s<",
 	next		= "Next %s",
 	nextcount	= "Next %s (%%d)",
-	nextsource	= "Next %s: %%s",
+	nextsource	= "Next %s: >%%s<",
 	achievement	= "%s"
 }
 
@@ -201,22 +211,24 @@ DBM_CORE_AUTO_SPEC_WARN_OPTIONS = {
 	move 		= "Show special warning when you are affected by \n $spell:%s",
 	run 		= "Show special warning for $spell:%s",
 	cast 		= "Show special warning for $spell:%s cast",
-	stack 		= "Show special warning for >=%d stacks of \n $spell:%s",
+	count 		= "Show special warning for $spell:%s",
+	stack 		= "Show special warning when you are affected by >=%d stacks of \n $spell:%s",--too long?
 	switch		= "Show special warning to switch targets for \n $spell:%s"
 }
 
 DBM_CORE_AUTO_SPEC_WARN_TEXTS = {
 	spell = "%s!",
-	dispel = "%s on %%s - dispel now",
-	interrupt = "%s - interrupt %%s!",
+	dispel = "%s on >%%s< - dispel now",
+	interrupt = "%s - interrupt >%%s<!",
 	you = "%s on you",
-	target = "%s on %%s",
-	close = "%s on %%s near you",
+	target = "%s on >%%s<",
+	close = "%s on >%%s< near you",
 	move = "%s - move away",
 	run = "%s - run away",
 	cast = "%s - stop casting",
-	stack = "%s (%%d)",
-	switch = "%s - switch targets"
+	count = "%s! (%%d)",
+	stack = "%%d stacks of %s on you",--too long?
+	switch = ">%s< - switch targets"
 }
 
 
@@ -225,7 +237,7 @@ DBM_CORE_AUTO_SOUND_OPTION_TEXT			= "Play \"run away\" sound for $spell:%s"
 DBM_CORE_AUTO_COUNTDOWN_OPTION_TEXT		= "Play countdown sound for $spell:%s"
 DBM_CORE_AUTO_COUNTOUT_OPTION_TEXT		= "Play countout sound for $spell:%s duration"
 DBM_CORE_AUTO_YELL_OPTION_TEXT			= "Yell when you are affected by $spell:%s"
-DBM_CORE_AUTO_YELL_ANNOUNCE_TEXT		= "%s on me!"
+DBM_CORE_AUTO_YELL_ANNOUNCE_TEXT		= "%s on " .. UnitName("player") .. "!"
 
 
 -- New special warnings
@@ -245,8 +257,8 @@ DBM_ARROW_ERROR_USAGE	= {
 	"/dbm arrow move  makes the arrow movable",
 }
 
-DBM_SPEED_KILL_TIMER_TEXT	= "Record Kill"
-DBM_SPEED_KILL_TIMER_OPTION	= "Show a timer to beat your fastest kill"
+DBM_SPEED_KILL_TIMER_TEXT	= "Record Victory"
+DBM_SPEED_KILL_TIMER_OPTION	= "Show a timer to beat your fastest victory"
 
 
 DBM_REQ_INSTANCE_ID_PERMISSION		= "%s requested to see your current instance IDs and progress.\nDo you want to send this information to %s? He or she will be able to request this information during your current session (i. e. until you relog)."

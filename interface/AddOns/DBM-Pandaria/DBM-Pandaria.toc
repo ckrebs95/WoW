@@ -6,7 +6,7 @@
 ## Title-ruRU:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Пандария|r
 ## Title-zhCN:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0潘达利亚|r
 ## Title-frFR:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Pandarie|r
-## Author: MysticalOS/BlueNyx
+## Author: MysticalOS/nBlueWiz
 ## LoadOnDemand: 1
 ## RequiredDeps: DBM-Core
 ## SavedVariablesPerCharacter: DBMPandaria_SavedVars, DBMPandaria_SavedStats
@@ -24,7 +24,7 @@
 ## X-DBM-Mod-Name-zhCN: 潘达利亚
 ## X-DBM-Mod-Name-frFR: Pandarie
 ## X-DBM-Mod-Sort: 5
-## X-Curse-Packaged-Version: 5.2.1
+## X-Curse-Packaged-Version: 5.2.2
 ## X-Curse-Project-Name: Deadly Boss Mods
 ## X-Curse-Project-ID: deadly-boss-mods
 ## X-Curse-Repository-ID: wow/deadly-boss-mods/mainline

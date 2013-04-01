@@ -11,11 +11,6 @@ L:SetGeneralLocalization{
 	name = "賽拉摩攻防戰"
 }
 
-L:SetMiscLocalization{
---	AllianceVictory = "All of you have my deepest thanks. With the Focusing Iris removed, this lifeless bomb is merely a sickening testament to Garrosh's brutality. The winds of change blow fiercely; Azeroth is on the brink of war. My apologies, but you must excuse me... I have much to consider. Farewell.",
---	HordeVictory	= "My thanks! Shall we make our way off this miserable little island?"
-}
-
 ---------------------------
 -- Arena Of Annihilation --
 ---------------------------
@@ -49,4 +44,43 @@ L:SetWarningLocalization({
 
 L:SetOptionLocalization({
 	WarnAchFiveAlive	= "為成就\"五小福\"失敗顯示警告."
+})
+
+--------------------------------
+-- Troves of the Thunder King --
+--------------------------------
+
+L= DBM:GetModLocalization("Troves")
+
+L:SetGeneralLocalization{
+	name = "Troves of the Thunder King"
+}
+
+------------------------
+-- Warlock Green Fire --
+------------------------
+
+L= DBM:GetModLocalization("GreenFire")
+
+L:SetGeneralLocalization{
+	name = "Warlock Green Fire"--No idea what real name is. It's not something i can test or verify.
+}
+
+L:SetWarningLocalization({
+	specWarnLostSouls		= "Lost Souls!",
+	specWarnEnslavePitLord	= "Pit Lord - Enslave Now!"
+})
+
+L:SetTimerLocalization({
+	timerLostSoulsCD		= "Lost Souls CD"
+})
+
+L:SetOptionLocalization({
+	specWarnLostSouls		= "Show special warning when Lost Souls spawn",
+	specWarnEnslavePitLord	= "Show special warning to enslave demon when Pit Lord activates/breaks free",
+	timerLostSoulsCD		= "Show cooldown timer for next Lost Souls spawn"
+})
+
+L:SetMiscLocalization({
+	LostSouls				= "Face the souls of those your kind doomed to perish, Warlock!"
 })

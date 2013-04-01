@@ -49,3 +49,42 @@ L:SetWarningLocalization({
 L:SetOptionLocalization({
 	WarnAchFiveAlive	= "Show warning if achievement \"Number Five Is Alive\" failed."
 })
+
+--------------------------------
+-- Troves of the Thunder King --
+--------------------------------
+
+L= DBM:GetModLocalization("Troves")
+
+L:SetGeneralLocalization{
+	name = "Troves of the Thunder King"
+}
+
+------------------------
+-- Warlock Green Fire --
+------------------------
+
+L= DBM:GetModLocalization("GreenFire")
+
+L:SetGeneralLocalization{
+	name = "Warlock Green Fire"--No idea what real name is. It's not something i can test or verify.
+}
+
+L:SetWarningLocalization({
+	specWarnLostSouls		= "Lost Souls!",
+	specWarnEnslavePitLord	= "Pit Lord - Enslave Now!"
+})
+
+L:SetTimerLocalization({
+	timerLostSoulsCD		= "Lost Souls CD"
+})
+
+L:SetOptionLocalization({
+	specWarnLostSouls		= "Show special warning when Lost Souls spawn",
+	specWarnEnslavePitLord	= "Show special warning to enslave demon when Pit Lord activates/breaks free",
+	timerLostSoulsCD		= "Show cooldown timer for next Lost Souls spawn"
+})
+
+L:SetMiscLocalization({
+	LostSouls				= "Face the souls of those your kind doomed to perish, Warlock!"
+})

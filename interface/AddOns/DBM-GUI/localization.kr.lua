@@ -31,6 +31,7 @@ L.Button_OK 				= '확인'
 L.Button_Cancel 			= '취소'
 L.Button_LoadMod 			= '불러오기'
 L.Mod_Enabled				= "우두머리 경보 사용"
+L.Mod_Reset					= "이 우두머리의 기본 설정 불러오기(테스트중)"
 L.Reset 					= "초기화"
 
 L.Enable  					= "켜기"
@@ -95,6 +96,7 @@ L.ShowWarningsInChat 		= "알림을 대화 창에 보여줍니다."
 L.ShowFakedRaidWarnings 	= "알림을 공격대 경보 대화처럼 보여줍니다."
 L.WarningIconLeft 			= "왼쪽에 아이콘 표시"
 L.WarningIconRight 			= "오른쪽에 아이콘 표시"
+L.ShowCountdownText			= "초읽기 글자 보기"
 L.RaidWarnMessage 			= "<Deadly Boss Mods>를 사용해 주셔셔 감사합니다."
 L.BarWhileMove 				= "알림 위치 수정"
 L.RaidWarnSound				= "알림 소리"
@@ -161,13 +163,14 @@ L.HP_ShowDemo				= "체력 바 표시"
 L.BarWidth					= "바 길이: %d"
 
 -- Tab: Spam Filter
-L.Panel_SpamFilter				= "숨김 설정"
+L.Panel_SpamFilter				= "기타 설정"
 L.Area_SpamFilter				= "일반 설정"
 L.HideBossEmoteFrame			= "블리자드 기본 레이드 경보 숨기기"
+L.StripServerName				= "알림 및 바에서 서버명 보이지 않기"
 L.SpamBlockBossWhispers			= "전투 중 다른 공격대원 또는 파티원이 보내는 <DBM> 귓속말 감추기"
 L.BlockVersionUpdateNotice		= "업데이트 알림 창 끄기"
 L.ShowBigBrotherOnCombatStart	= "전투 시작시 BigBrother 버프 체크 실행하기"
-L.BigBrotherAnnounceToRaid		= "Big Brother 버프 체크 결과를 공격대에 알리기"
+L.BigBrotherAnnounceToRaid		= "BigBrother 버프 체크 결과를 공격대에 알리기"
 L.SpamBlockSayYell				= "전투 중 대화 말풍선 숨기기"
 
 

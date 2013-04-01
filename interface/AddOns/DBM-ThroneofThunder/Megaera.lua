@@ -1,10 +1,10 @@
 local mod	= DBM:NewMod(821, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 8862 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 8979 $"):sub(12, -3))
 mod:SetCreatureID(68065, 70212, 70235, 70247)--flaming 70212. Frozen 70235, Venomous 70247
 mod:SetModelID(47414)--Hydra Fire Head, 47415 Frost Head, 47416 Poison Head
-
+mod:SetUsedIcons(7, 6)
 
 mod:RegisterCombat("combat")
 
@@ -13,6 +13,7 @@ mod:RegisterEventsInCombat(
 	"SPELL_CAST_SUCCESS",
 	"SPELL_AURA_APPLIED",
 	"SPELL_AURA_APPLIED_DOSE",
+	"SPELL_AURA_REMOVED",
 	"SPELL_DAMAGE",
 	"SPELL_MISSED",
 	"CHAT_MSG_RAID_BOSS_EMOTE",
@@ -43,16 +44,19 @@ local specWarnTorrentofIce		= mod:NewSpecialWarningMove(139889)
 local specWarnNetherTear		= mod:NewSpecialWarningSwitch("ej7816", mod:IsDps())
 
 local timerRampage				= mod:NewBuffActiveTimer(21, 139458)
-local timerArcticFreezeCD		= mod:NewCDTimer(17, 139843, mod:IsTank() or mod:IsHealer())--breath cds are very often syncronized, but not always, sometimes if mobs not engaged same time they go off sync.
-local timerIgniteFleshCD		= mod:NewCDTimer(17, 137731, mod:IsTank() or mod:IsHealer())--So must start cd bars for both in case of engage delays
-local timerRotArmorCD			= mod:NewCDTimer(17, 139840, mod:IsTank() or mod:IsHealer())--This may have been PTR bug, if they stay synce don live, i will combine these 3 timers into 1
-local timerArcaneDiffusionCD	= mod:NewCDTimer(17, 139993, mod:IsTank() or mod:IsHealer())
+local timerArcticFreezeCD		= mod:NewCDTimer(16, 139843, mod:IsTank() or mod:IsHealer())--breath cds are very often syncronized, but not always, sometimes if mobs not engaged same time they go off sync.
+local timerIgniteFleshCD		= mod:NewCDTimer(16, 137731, mod:IsTank() or mod:IsHealer())--So must start cd bars for both in case of engage delays
+local timerRotArmorCD			= mod:NewCDTimer(16, 139840, mod:IsTank() or mod:IsHealer())--This may have been PTR bug, if they stay synce don live, i will combine these 3 timers into 1
+local timerArcaneDiffusionCD	= mod:NewCDTimer(16, 139993, mod:IsTank() or mod:IsHealer())
 --local timerCinderCD				= mod:NewCDTimer(20, 139822)--Honestly not sure if this is doable with accuracy, the number of heads in back affects it and they don't always sync up
 --local timerTorrentofIceCD		= mod:NewCDTimer(16, 139866)
 --local timerAcidRainCD			= mod:NewCDTimer(13.5, 139850)--Can only give time for next impact, no cast trigger so cannot warn cast very effectively. Maybe use some scheduling to pre warn. Although might be VERY spammy if you have many venomous up
 local timerNetherTearCD			= mod:NewCDTimer(30, 140138)--Heroic
 
 local soundTorrentofIce			= mod:NewSound(139889)
+
+mod:AddBoolOption("SetIconOnCinders", true)
+mod:AddBoolOption("SetIconOnTorrentofIce", true)
 
 --count will go to hell fast on a DC though. Need to figure out some kind of head status recovery to get active/inactive head counts.
 --Maybe add an info frame that shows head status too would be cool such as
@@ -71,14 +75,6 @@ local iceBehind = 0
 local arcaneBehind = 0
 local rampageCast = 0
 local activeHeadGUIDS = {}
-local guids = {}
-local guidTableBuilt = false--Entirely for DCs, so we don't need to reset between pulls cause it doesn't effect building table on combat start and after a DC then it will be reset to false always
-local function buildGuidTable()
-	table.wipe(guids)
-	for uId, i in DBM:GetGroupMembers() do
-		guids[UnitGUID(uId) or "none"] = GetRaidRosterInfo(i)
-	end
-end
 
 local function isTank(unit)
 	-- 1. check blizzard tanks first
@@ -109,8 +105,6 @@ local function isTank(unit)
 end
 
 function mod:OnCombatStart(delay)
-	buildGuidTable()
-	guidTableBuilt = true
 	table.wipe(activeHeadGUIDS)
 	rampageCast = 0
 	fireInFront = 0
@@ -135,13 +129,13 @@ function mod:OnCombatEnd()
 end
 
 function mod:SPELL_CAST_START(args)
-	if args:IsSpellID(139866) then
+	if args.spellId == 139866 then
 --		timerTorrentofIceCD:Start()
 	end
 end
 
 function mod:SPELL_CAST_SUCCESS(args)
-	if args:IsSpellID(140138) then
+	if args.spellId == 140138 then
 		warnNetherTear:Show()
 		specWarnNetherTear:Show()
 --		timerNetherTearCD:Start()--TODO: see if cast more often if more than 1 arcane head.
@@ -149,7 +143,7 @@ function mod:SPELL_CAST_SUCCESS(args)
 end
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args:IsSpellID(139843) then
+	if args.spellId == 139843 then
 		local uId = DBM:GetRaidUnitId(args.destName)
 		if isTank(uId) then
 			warnArcticFreeze:Show(args.destName, args.amount or 1)
@@ -160,7 +154,7 @@ function mod:SPELL_AURA_APPLIED(args)
 				end
 			end
 		end
-	elseif args:IsSpellID(137731) then
+	elseif args.spellId == 137731 then
 		local uId = DBM:GetRaidUnitId(args.destName)
 		if isTank(uId) then
 			warnIgniteFlesh:Show(args.destName, args.amount or 1)
@@ -171,7 +165,7 @@ function mod:SPELL_AURA_APPLIED(args)
 				end
 			end
 		end
-	elseif args:IsSpellID(139840) then
+	elseif args.spellId == 139840 then
 		local uId = DBM:GetRaidUnitId(args.destName)
 		if isTank(uId) then
 			warnRotArmor:Show(args.destName, args.amount or 1)
@@ -182,7 +176,7 @@ function mod:SPELL_AURA_APPLIED(args)
 				end
 			end
 		end
-	elseif args:IsSpellID(139993) then
+	elseif args.spellId == 139993 then
 		local uId = DBM:GetRaidUnitId(args.destName)
 		if isTank(uId) then
 			warnArcaneDiffusion:Show(args.destName, args.amount or 1)
@@ -193,16 +187,25 @@ function mod:SPELL_AURA_APPLIED(args)
 				end
 			end
 		end
-	elseif args:IsSpellID(139822) then
+	elseif args.spellId == 139822 then
 		warnCinders:Show(args.destName)
 --		timerCinderCD:Start()
 		if args:IsPlayer() then
 			specWarnCinders:Show()
 			yellCinders:Yell()
 		end
+		if self.Options.SetIconOnCinders then
+			self:SetIcon(args.destName, 7)
+		end
 	end
 end
 mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
+
+function mod:SPELL_AURA_REMOVED(args)
+	if args.spellId == 139822 and self.Options.SetIconOnCinders then
+		self:SetIcon(args.destName, 0)
+	end
+end
 
 function mod:SPELL_DAMAGE(sourceGUID, _, _, _, destGUID, _, _, _, spellId, spellName)
 	if spellId == 139850 and self:AntiSpam(2, 1) then
@@ -341,11 +344,11 @@ end
 
 --TODO, check for an aura method instead?
 function mod:OnSync(msg, guid)
-	if not guidTableBuilt then
-		buildGuidTable()
-		guidTableBuilt = true
-	end
-	if msg == "IceTarget" and guids[guid] then
-		warnTorrentofIce:Show(guids[guid])
+	if msg == "IceTarget" and guid then
+		local target = DBM:GetFullPlayerNameByGUID(guid)
+		warnTorrentofIce:Show(target)
+		if self.Options.SetIconOnTorrentofIce then
+			self:SetIcon(target, 6, 8)--do not have cleu, so use scheduler.
+		end
 	end
 end

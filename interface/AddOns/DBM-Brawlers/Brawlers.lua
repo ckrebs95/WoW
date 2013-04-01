@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Brawlers", "DBM-Brawlers")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 8443 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 8974 $"):sub(12, -3))
 --mod:SetCreatureID(60491)
 --mod:SetModelID(41448)
 mod:SetZone(DBM_DISABLE_ZONE_DETECTION)
@@ -38,12 +38,12 @@ function mod:PlayerFighting() -- for external mods
 end
 
 function mod:SPELL_CAST_START(args)
-	if args:IsSpellID(135385) then
+	if args.spellId == 135385 then
 		warnOrgPortal:Show()
 		if not playerIsFighting then--Do not distract player in arena with special warning
 			specWarnOrgPortal:Show()
 		end
-	elseif args:IsSpellID(135386) then
+	elseif args.spellId == 135386 then
 		warnStormPortal:Show()
 		if not playerIsFighting then--Do not distract player in arena with special warning
 			specWarnStormPortal:Show()

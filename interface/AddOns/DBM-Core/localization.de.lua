@@ -8,13 +8,21 @@ DBM_CORE_LOAD_MOD_SUCCESS			= "Boss Mods für '%s' geladen. Für weitere Einstel
 DBM_CORE_LOAD_GUI_ERROR				= "Konnte die grafische Benutzeroberfläche nicht laden: %s"
 DBM_CORE_LOAD_GUI_COMBAT			= "Die grafische Benutzeroberfläche kann nicht im Kampf geladen werden. Zur Vornahme von Einstellungen bitte diese zunächst außerhalb des Kampfes laden. Danach steht sie auch im Kampf zur Verfügung."
 
+DBM_ABSOLUTE_MODE_ON				= "Absoluter Modus aktiviert."
+DBM_ABSOLUTE_MODE_OFF				= "Absoluter Modus deaktiviert. Meldung der korrekten DBM-Version wiederhergestellt."
+DBM_ABSOLUTE_MODE_NOTIFY_ON			= "%s hat den absoluten Modus aktiviert. Nur das DBM dieses Spielers wird automatisch Schlachtzugzeichen setzen."
+DBM_ABSOLUTE_MODE_NOTIFY_OFF		= "%s hat den absoluten Modus deaktiviert. Es werdem wieder die normalen Regeln für das automatische Setzen von Schlachtzugzeichen durch DBM angewendet."
+
 DBM_CORE_COMBAT_STARTED				= "Kampf gegen %s hat begonnen. Viel Glück! :)";
+DBM_CORE_COMBAT_STARTED_IN_PROGRESS	= "Du wurdest in den laufenden Kampf gegen %s verwickelt. Viel Glück! :)"
 DBM_CORE_BOSS_DOWN					= "%s tot nach %s!"
 DBM_CORE_BOSS_DOWN_L				= "%s tot nach %s! Dein letzter Sieg hat %s gedauert und der schnellste %s. Das war dein %d. Sieg."
 DBM_CORE_BOSS_DOWN_NR				= "%s tot nach %s! Das ist ein neuer Rekord! (Der alte Rekord war %s.) Das war dein %d. Sieg."
 DBM_CORE_COMBAT_ENDED_AT			= "Kampf gegen %s (%s) hat nach %s aufgehört."
 DBM_CORE_COMBAT_ENDED_AT_LONG		= "Kampf gegen %s (%s) hat nach %s aufgehört. Das war deine %d. Niederlage auf diesem Schwierigkeitsgrad."
 DBM_CORE_COMBAT_STATE_RECOVERED		= "Kampf gegen %s hat vor %s begonnen, Neukalibrierung der Timer erfolgt..."
+DBM_CORE_TRANSCRIPTOR_LOG_START		= "\"Transcriptor\"-Aufzeichnung gestartet."
+DBM_CORE_TRANSCRIPTOR_LOG_END		= "\"Transcriptor\"-Aufzeichnung beendet."
 
 DBM_CORE_TIMER_FORMAT_SECS			= "%d |4Sekunde:Sekunden;"
 DBM_CORE_TIMER_FORMAT_MINS			= "%d |4Minute:Minuten;"
@@ -27,6 +35,7 @@ DBM_CORE_SEC_FMT					= "%d Sek"
 DBM_CORE_DEAD						= "Tot"
 DBM_CORE_OK							= "Okay"
 
+DBM_CORE_GENERIC_WARNING_DUPLICATE	= "Einer der %s"
 DBM_CORE_GENERIC_WARNING_BERSERK	= "Berserker in %s %s"
 DBM_CORE_GENERIC_TIMER_BERSERK		= "Berserker"
 DBM_CORE_OPTION_TIMER_BERSERK		= "Zeige Zeit bis $spell:26662"
@@ -114,6 +123,7 @@ DBM_CORE_BOSSHEALTH_HIDE_FRAME		= "Verstecken"
 DBM_CORE_ALLIANCE					= "Allianz"
 DBM_CORE_HORDE						= "Horde"
 
+DBM_CORE_WORLD_BOSS					= "Weltboss"
 DBM_CORE_UNKNOWN					= "unbekannt"
 DBM_CORE_LEFT						= "Links"
 DBM_CORE_RIGHT						= "Rechts"
@@ -130,20 +140,20 @@ DBM_CORE_TIMER_PULL					= "Pull in"
 DBM_CORE_ANNOUNCE_PULL				= "Pull in %d Sek"
 DBM_CORE_ANNOUNCE_PULL_NOW			= "Pull jetzt!"
 
-DBM_CORE_ACHIEVEMENT_TIMER_SPEED_KILL = "Speed Kill (Erfolg)"
+DBM_CORE_ACHIEVEMENT_TIMER_SPEED_KILL = "Zeit für Erfolg"
 
 -- Auto-generated Timer Localizations
 DBM_CORE_AUTO_TIMER_TEXTS = {
-	target		= "%s: %%s",
+	target		= "%s: >%%s<",
 	cast		= "%s",
 	active		= "%s endet",--Buff/Debuff/event on boss
 	fades		= "%s schwindet",--Buff/Debuff on players
 	cd			= "%s CD",
 	cdcount		= "%s CD (%%d)",
-	cdsource	= "%s CD: %%s",
+	cdsource	= "%s CD: >%%s<",
 	next		= "Nächster %s",
 	nextcount	= "Nächster %s (%%d)",
-	nextsource	= "Nächster %s: %%s",
+	nextsource	= "Nächster %s: >%%s<",
 	achievement	= "%s"
 }
 
@@ -202,22 +212,24 @@ DBM_CORE_AUTO_SPEC_WARN_OPTIONS = {
 	move 		= "Zeige Spezialwarnung, wenn du von $spell:%s betroffen bist",
 	run 		= "Zeige Spezialwarnung zum Weglaufen vor $spell:%s",
 	cast 		= "Zeige Spezialwarnung zum Zauberstopp bei $spell:%s",
-	stack 		= "Zeige Spezialwarnung für >=%d Stapel von $spell:%s",
+	count 		= "Zeige Spezialwarnung für $spell:%s",
+	stack 		= "Zeige Spezialwarnung für >=%d Stapel von $spell:%s auf dir",
 	switch 		= "Zeige Spezialwarnung für Zielwechsel auf $spell:%s"
 }
 
 DBM_CORE_AUTO_SPEC_WARN_TEXTS = {
 	spell = "%s!",
-	dispel = "%s auf %%s - jetzt reinigen",
-	interrupt = "%s - unterbreche %%s!",
+	dispel = "%s auf >%%s< - jetzt reinigen",
+	interrupt = "%s - unterbreche >%%s<!",
 	you = "%s auf dir",
-	target = "%s auf %%s",
-	close = "%s auf %%s in deiner Nähe",
+	target = "%s auf >%%s<",
+	close = "%s auf >%%s< in deiner Nähe",
 	move = "%s - geh weg",
 	run = "%s - lauf weg",
 	cast = "%s - stoppe Zauber",
+	count = "%s! (%%d)",
 	stack = "%s (%%d)",
-	switch = "%s - Ziel wechseln"
+	switch = ">%s< - Ziel wechseln"
 }
 
 
@@ -226,7 +238,7 @@ DBM_CORE_AUTO_SOUND_OPTION_TEXT			= "Spiele \"Lauf weg!\"-Sound für $spell:%s"
 DBM_CORE_AUTO_COUNTDOWN_OPTION_TEXT		= "Spiele Countdown-Sound für $spell:%s"
 DBM_CORE_AUTO_COUNTOUT_OPTION_TEXT		= "Spiele Countout-Sound für Dauer von $spell:%s"
 DBM_CORE_AUTO_YELL_OPTION_TEXT			= "Schreie, wenn du von $spell:%s betroffen bist"
-DBM_CORE_AUTO_YELL_ANNOUNCE_TEXT		= "%s auf mir!"
+DBM_CORE_AUTO_YELL_ANNOUNCE_TEXT		= "%s auf " .. UnitName("player") .. "!"
 
 
 -- New special warnings
@@ -246,7 +258,7 @@ DBM_ARROW_ERROR_USAGE	= {
 	"/dbm arrow move  macht den Pfeil beweglich",
 }
 
-DBM_SPEED_KILL_TIMER_TEXT	= "Speed Kill"
+DBM_SPEED_KILL_TIMER_TEXT	= "Rekordzeit"
 DBM_SPEED_KILL_TIMER_OPTION	= "Zeige einen Timer zur Verbesserung deines schnellsten Siegs"
 
 

@@ -8,23 +8,22 @@ L= DBM:GetModLocalization(745)
 
 L:SetWarningLocalization({
 	warnAttenuation		= "%s у %s (%s)",
+	warnEcho			= "Появилось эхо!",
+	warnEchoDown		= "Эхо повержено",
 	specwarnAttenuation	= "%s у %s (%s)",
 	specwarnPlatform	= "Смена платформы"
 })
 
 L:SetOptionLocalization({
-	warnAttenuation		= DBM_CORE_AUTO_ANNOUNCE_OPTIONS.spell:format(127834),
-	specwarnAttenuation	= DBM_CORE_AUTO_SPEC_WARN_OPTIONS.spell:format(127834),
+	warnEcho			= "Объявлять о появлении эха",
+	warnEchoDown		= "Объявлять о смерти эха",
 	specwarnPlatform	= "Спец-предупреждение, когда босс меняет платформу",
-	ArrowOnAttenuation	= "Показывать стрелку DBM во время $spell:127834",	
-	MindControlIcon		= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(122740)
+	ArrowOnAttenuation	= "Показывать стрелку DBM во время $spell:127834"
 })
 
 L:SetMiscLocalization({
 	Platform	= "%s летит к одной из своих платформ!",
-	Defeat		= "Мы не погрузимся в отчаяние. Если она хочет, чтобы мы погибли – так и будет.",
-	Left		= "Налево",
-	Right		= "Направо"
+	Defeat		= "Мы не погрузимся в отчаяние. Если она хочет, чтобы мы погибли – так и будет."
 })
 
 
@@ -50,10 +49,8 @@ L:SetWarningLocalization({
 })
 
 L:SetOptionLocalization({
-	warnCrush		= DBM_CORE_AUTO_ANNOUNCE_OPTIONS.spell:format(122774),
 	specwarnUnder	= "Спец-предупреждение, когда вы стоите под боссом",
-	countdownCrush	= DBM_CORE_AUTO_COUNTDOWN_OPTION_TEXT:format(122774).." (только в героическом режиме)",
-	PheromonesIcon	= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(122835)
+	countdownCrush	= DBM_CORE_AUTO_COUNTDOWN_OPTION_TEXT:format(122774).." (только в героическом режиме)"
 })
 
 L:SetMiscLocalization({
@@ -65,14 +62,6 @@ L:SetMiscLocalization({
 -- Wind Lord Mel'jarak --
 ----------------------
 L= DBM:GetModLocalization(741)
-
-L:SetOptionLocalization({
-	AmberPrisonIcons	= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(121885)
-})
-
-L:SetMiscLocalization({
-	Reinforcements		= "Повелитель ветров Мел'джарак призывает подкрепление!"
-})
 
 ------------
 -- Amber-Shaper Un'sok --
@@ -93,13 +82,14 @@ L:SetWarningLocalization({
 })
 
 L:SetTimerLocalization{
+	timerDestabalize			= "Дестабилизация (%2$d) : %1$s",
 	timerAmberExplosionAMCD		= "Взрыв: Чудовище"
 }
 
 L:SetOptionLocalization({
-	warnReshapeLife				= DBM_CORE_AUTO_ANNOUNCE_OPTIONS.target:format(122784),
 	warnReshapeLifeTutor		= "Показывать назначение способностей у мутировавшего организма",	
 	warnAmberExplosion			= "Предупреждение (с указанием источника) о начале применения $spell:122398",
+	warnAmberExplosionAM		= "Персональное предупреждение о начале применения $spell:122398(для прерывания)",
 	warnInterruptsAvailable		= "Показывать кто может сбить $spell:122402",
 	warnWillPower				= "Предупреждать об уровне силы воли на 80, 50, 30, 10 и 4.",
 	specwarnWillPower			= "Спец-предупреждение, когда уровень силы воли слишком низок",
@@ -128,8 +118,7 @@ L:SetWarningLocalization({
 L:SetOptionLocalization({
 	warnAmberTrap	= "Отображать прогресс создания $spell:125826", -- maybe bad translation.
 	InfoFrame		= "Информационное окно для игроков с $spell:125390",
-	RangeFrame		= "Окно проверки дистанции (5м) для $spell:123735",
-	StickyResinIcons	= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(124097)
+	RangeFrame		= "Окно проверки дистанции (5м) для $spell:123735"
 })
 
 L:SetMiscLocalization({
