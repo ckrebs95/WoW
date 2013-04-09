@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Kologarn", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 27 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 34 $"):sub(12, -3))
 mod:SetCreatureID(32930)--, 32933, 32934
 mod:SetModelID(28638)
 mod:SetUsedIcons(5, 6, 7, 8)
@@ -137,7 +137,7 @@ function mod:SPELL_AURA_APPLIED(args)
 end
 
 function mod:SPELL_AURA_APPLIED_DOSE(args)
-	if args:IsSpellID(64002) then		        -- Crunch Armor (25-man only)
+	if args.spellId == 64002 then		        -- Crunch Armor (25-man only)
 		warnCrunchArmor:Show(args.destName)
         if args.amount >= 2 then 
             if args:IsPlayer() then

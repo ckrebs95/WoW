@@ -1,11 +1,11 @@
 -- All data in this file is copyrighted to the author (oscarucb), all rights reserved
 local addonName, vars = ...
 vars.svnrev = vars.svnrev or {}
-vars.svnrev["PV_data.lua"] = tonumber(("$Revision: 457 $"):match("%d+"))
+vars.svnrev["PV_data.lua"] = tonumber(("$Revision: 459 $"):match("%d+"))
 
 vars.VersionInfo = {
 	   ["DBversion"] = 8,
-	   ["DBrevision"] = tonumber(("$Revision: 457 $"):match("%d+")),
+	   ["DBrevision"] = tonumber(("$Revision: 459 $"):match("%d+")),
            ["clientexpansion"] = 4,
            ["clientversion"] = "5.2.0",
            ["clientbuildmin"] = "16669",
@@ -44,6 +44,7 @@ if locale == "enUS" then Exceptions_ItoS_locale = {
   [{86354,82423}] = 125533, -- Pattern: Contender's Silk Rai(n)ment
   [{86362,82431}] = 125541, -- Pattern: Contender's Satin Rai(n)ment
   [{84208,82968}] = 122642, -- Plans: Masterwork Ligh(t)steel Shield
+  [{94570,94575}] = 138876, -- Plans: (The) Planar Edge, Reborn
 } elseif locale == "frFR" then Exceptions_ItoS_locale = {
   [{25910,25895}] = 32874, -- Diamant brûleciel énigmatique
   [{52426,52228}] = 73378, -- Emeraude de rve perforante

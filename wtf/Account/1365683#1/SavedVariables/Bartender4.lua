@@ -1680,7 +1680,9 @@ Bartender4DB = {
 						["parent"] = "SUI_ActionBarPlate",
 						["y"] = 167.9564049869303,
 					},
+					["padding"] = 1,
 					["rows"] = 2,
+					["version"] = 3,
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -1692,8 +1694,6 @@ Bartender4DB = {
 							["scale"] = 0.85,
 						},
 					},
-					["version"] = 3,
-					["padding"] = 1,
 				},
 				["Doyjen - Khaz Modan"] = {
 					["rows"] = 2,
@@ -1951,7 +1951,6 @@ Bartender4DB = {
 					["skin"] = {
 						["Zoom"] = true,
 					},
-					["padding"] = 1,
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -1963,6 +1962,7 @@ Bartender4DB = {
 							["scale"] = 0.85,
 						},
 					},
+					["padding"] = 1,
 					["position"] = {
 						["y"] = 167.7500022729591,
 						["x"] = -352.588480453774,

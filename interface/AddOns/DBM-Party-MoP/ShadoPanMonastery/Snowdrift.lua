@@ -1,11 +1,12 @@
 local mod	= DBM:NewMod(657, "DBM-Party-MoP", 3, 312)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 8974 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9120 $"):sub(12, -3))
 mod:SetCreatureID(56541)
 mod:SetModelID(39887)
 mod:SetZone()
 mod:SetMinSyncRevision(7888)
+mod:SetReCombatTime(60)
 
 -- pre-bosswave. Novice -> Black Sash (Fragrant Lotus, Flying Snow). this runs automaticially.
 -- maybe we need Black Sash wave warns.

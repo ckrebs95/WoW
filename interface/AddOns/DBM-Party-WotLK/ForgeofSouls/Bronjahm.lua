@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Bronjahm", "DBM-Party-WotLK", 14)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 7 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 34 $"):sub(12, -3))
 mod:SetCreatureID(36497)
 mod:SetModelID(30226)
 
@@ -25,14 +25,14 @@ function mod:OnCombatStart(delay)
 end
 
 function mod:SPELL_CAST_START(args)
-	if args:IsSpellID(68872) then							-- Soulstorm
+	if args.spellId == 68872 then							-- Soulstorm
 		specwarnSoulstorm:Show()
 		timerSoulstormCast:Start()
 	end
 end
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args:IsSpellID(68839) then							-- Corrupt Soul
+	if args.spellId == 68839 then							-- Corrupt Soul
 		warnCorruptSoul:Show(args.destName)
 	end
 end

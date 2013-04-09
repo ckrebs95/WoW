@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Oz", "DBM-Karazhan")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 311 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 436 $"):sub(12, -3))
 mod:SetCreatureID(18168)
 mod:SetModelID(17550)
 mod:RegisterCombat("yell", L.DBM_OZ_YELL_DOROTHEE)
@@ -66,7 +66,7 @@ function mod:CHAT_MSG_MONSTER_YELL(msg)
 end
 
 function mod:SPELL_CAST_START(args)
-	if args:IsSpellID(31014) then
+	if args.spellId == 31014 then
 		if self.Options.AnnounceBosses then
 			WarnTido:Schedule(1)
 		end

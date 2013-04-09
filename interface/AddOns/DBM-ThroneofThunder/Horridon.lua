@@ -1,9 +1,10 @@
 local mod	= DBM:NewMod(819, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9078 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9140 $"):sub(12, -3))
 mod:SetCreatureID(68476)
 mod:SetModelID(47325)
+mod:SetUsedIcons(1)
 
 mod:RegisterCombat("combat")
 
@@ -77,6 +78,7 @@ local berserkTimer				= mod:NewBerserkTimer(720)
 local soundDireFixate			= mod:NewSound(140946)
 
 mod:AddBoolOption("RangeFrame")
+mod:AddBoolOption("SetIconOnCharge")
 
 local doorNumber = 0
 local direNumber = 0
@@ -269,6 +271,9 @@ function mod:OnSync(msg, target)
 			specWarnCharge:Show()
 			yellCharge:Yell()
 		end
+		if UnitExists(target) and self.Options.SetIconOnCharge then
+			self:SetIcon(target, 1, 5)--star
+		end
 	elseif msg == "Door" and self:AntiSpam(60, 4) then--prevent bad doorNumber increase if very late sync received.
 	--Doors spawn every 131.5 seconds
 	--Halfway through it (literlaly exact center) Dinomancers spawn at 56.75
@@ -294,7 +299,7 @@ function mod:OnSync(msg, target)
 			timerAdds:Start(18.9, Amani)
 			warnAdds:Schedule(18.9, Amani)
 			self:Schedule(18.9, addsDelay, Amani)
-			if self.Options.RangeFrame then
+			if self.Options.RangeFrame and not self:IsDifficulty("lfr25") then
 				DBM.RangeCheck:Show(5)
 			end
 		end

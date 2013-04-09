@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Ick", "DBM-Party-WotLK", 15)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 32 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 34 $"):sub(12, -3))
 mod:SetCreatureID(36476)
 mod:SetModelID(30347)
 mod:SetUsedIcons(8)
@@ -50,10 +50,10 @@ function mod:OnCombatStart(delay)
 end
 
 function mod:SPELL_CAST_START(args)
-	if args:IsSpellID(68987) then							-- Pursuit
+	if args.spellId == 68987 then							-- Pursuit
 		warnPursuitCast:Show()
 		timerPursuitCast:Start()
-	elseif args:IsSpellID(68989) then				-- Poison Nova
+	elseif args.spellId == 68989 then				-- Poison Nova
 		warnPoisonNova:Show()
 		timerPoisonNova:Start()
 		specWarnPoisonNova:Show()
@@ -62,7 +62,7 @@ function mod:SPELL_CAST_START(args)
 end
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args:IsSpellID(69029) then							-- Pursuit Confusion
+	if args.spellId == 69029 then							-- Pursuit Confusion
 		timerPursuitConfusion:Show(args.destName)
 	end
 end

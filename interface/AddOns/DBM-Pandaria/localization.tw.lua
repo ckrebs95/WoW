@@ -11,7 +11,7 @@ L:SetOptionLocalization({
 })
 
 L:SetMiscLocalization({
-	Pull				= "Yes, YES! Bring your rage to bear! Try to strike me down!"
+	Pull				= "沒錯...沒錯!釋放你的怒火!試著擊敗我!"
 })
 
 -----------------------
@@ -20,7 +20,7 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(725)
 
 L:SetMiscLocalization({
-	Pull				= "Bring me their corpses!"
+	Pull				= "把他們的屍體帶給我!"
 })
 
 --------------
@@ -33,7 +33,7 @@ L:SetOptionLocalization({
 })
 
 L:SetMiscLocalization({
-	Pull				= "How dare you interrupt our preparations! The Zandalari will not be stopped, not this time!"
+	Pull				= "你們竟敢打擾我們的準備工作!贊達拉這次不會再被阻止了!"
 })
 
 ---------------------------

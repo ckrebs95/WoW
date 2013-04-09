@@ -2,7 +2,7 @@ local mod	= DBM:NewMod(176, "DBM-Party-Cataclysm", 11, 76)
 local L		= mod:GetLocalizedStrings()
 local Ohgan	= EJ_GetSectionInfo(2615)
 
-mod:SetRevision(("$Revision: 40 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 48 $"):sub(12, -3))
 mod:SetCreatureID(52151)
 mod:SetModelID(37816)
 mod:SetZone()
@@ -68,24 +68,24 @@ function mod:OnCombatStart(delay)
 end
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args:IsSpellID(96776) then
+	if args.spellId == 96776 then
 		warnBloodletting:Show(args.destName)
 		timerBloodletting:Start(args.destName)
 		timerBloodlettingCD:Start()
-	elseif args:IsSpellID(96800) then
+	elseif args.spellId == 96800 then
 		warnFrenzy:Show()
 	end
 end
 
 function mod:SPELL_CAST_START(args)
-	if args:IsSpellID(96484) then
+	if args.spellId == 96484 then
 		reviveCounter = reviveCounter - 1
 		warnRevive:Show(reviveCounter)
-	elseif args:IsSpellID(96740) then
+	elseif args.spellId == 96740 then
 		warnSlam:Show()
 		specWarnSlam:Show()
 		timerSlam:Start()
-	elseif args:IsSpellID(96724) then
+	elseif args.spellId == 96724 then
 		warnOhgan:Show()
 		timerOhgan:Start()
 		timerResOhgan:Start()--We start Cd here cause this is how it works. if it comes off CD while he's alive, then if he dies, he is rezed instantly
@@ -93,7 +93,7 @@ function mod:SPELL_CAST_START(args)
 end
 
 function mod:SPELL_CAST_SUCCESS(args)
-	if args:IsSpellID(96684) then
+	if args.spellId == 96684 then
 		warnDecapitate:Show(args.destName)
 		timerDecapitate:Start()
 	end

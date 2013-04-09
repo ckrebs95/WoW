@@ -42,10 +42,8 @@ L.IconsInUse				= "Von diesem Mod benutzte Zeichen"
 L.BossStatistics			= "Boss Statistiken"
 L.Statistic_Kills			= "Siege:"
 L.Statistic_Wipes			= "Niederlagen:"
+L.Statistic_Incompletes		= "Abgebrochen:"
 L.Statistic_BestKill		= "Schnellster:"
-L.Statistic_Heroic			= "Heroisch"
-L.Statistic_10Man			= "10 Spieler"
-L.Statistic_25Man			= "25 Spieler"
 
 -- Tab: General Options
 L.General 					= "Allgemeine DBM-Einstellungen"
@@ -57,6 +55,7 @@ L.DisableCinematicsOutside	= "Deaktiviere Videosequenzen außerhalb von Instanze
 L.SKT_Enabled				= "Zeige immer Timer für schnellsten Sieg (ignoriert Boss-spezifische Einstellung)"
 L.AutologBosses				= "Automatische Aufzeichnung von Bosskämpfen im spieleigenen Kampflog"
 L.AdvancedAutologBosses		= "Automatische Aufzeichnung von Bosskämpfen mit Addon \"Transcriptor\""
+L.LogOnlyRaidBosses			= "Nur Schlachtzugbosskämpfe aufzeichnen\n(ohne Schlachtzugsbrowser-/Dungeon-/Szenarien-/Weltbosskämpfe)"
 L.Latency_Text				= "Maximale Synchronisierungslatenz: %d"
 
 L.ModelOptions				= "Einstellungen für 3D-Modellanzeige"

@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(155, "DBM-ThroneFourWinds", nil, 75)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 43 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 48 $"):sub(12, -3))
 mod:SetCreatureID(46753)
 mod:SetModelID(35248)
 mod:SetZone()
@@ -103,7 +103,7 @@ function mod:OnCombatEnd()
 end
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args:IsSpellID(87904) then
+	if args.spellId == 87904 then
 		warnFeedback:Show(args.destName, args.amount or 1)
 		timerFeedback:Cancel()--prevent multiple timers spawning with diff args.
 		countdownFeedback:Cancel()
@@ -114,11 +114,11 @@ function mod:SPELL_AURA_APPLIED(args)
 			timerFeedback:Start(20, args.amount or 1)
 			countdownFeedback:Start(20)
 		end
-	elseif args:IsSpellID(88301) then--Acid Rain (phase 2 debuff)
+	elseif args.spellId == 88301 then--Acid Rain (phase 2 debuff)
 		if args.amount and args.amount > 1 and args:IsPlayer() then
 			warnAcidRain:Show(args.amount)
 		end
-	elseif args:IsSpellID(89668) then
+	elseif args.spellId == 89668 then
 		warnLightningRod:Show(args.destName)
 		timerLightningRod:Show(args.destName)
 		timerLightningRodCD:Start()
@@ -139,7 +139,7 @@ end
 mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
 
 function mod:SPELL_AURA_REMOVED(args)
-	if args:IsSpellID(89668) then
+	if args.spellId == 89668 then
 		timerLightningRod:Cancel(args.destName)
 		if self.Options.LightningRodIcon then
 			self:SetIcon(args.destName, 0)
@@ -153,7 +153,7 @@ function mod:SPELL_AURA_REMOVED(args)
 end
 
 function mod:SPELL_CAST_START(args)
-	if args:IsSpellID(87770) then--Phase 1 wind burst
+	if args.spellId == 87770 then--Phase 1 wind burst
 		warnWindBurst:Show()
 		specWarnWindBurst:Show()
 		timerWindBurstCD:Start()

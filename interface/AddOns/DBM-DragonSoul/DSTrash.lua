@@ -1,9 +1,10 @@
 local mod	= DBM:NewMod("DSTrash", "DBM-DragonSoul")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 40 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 51 $"):sub(12, -3))
 mod:SetModelID(39378)
 mod:SetZone()
+mod.isTrashMod = true
 
 mod:RegisterEvents(
 	"SPELL_CAST_START",
@@ -76,7 +77,7 @@ function mod:BoulderTarget(sGUID)
 end
 
 function mod:SPELL_CAST_START(args)
-	if args:IsSpellID(107597) then -- Spell cast 3 sec. Seems to location sets before cast completion. I tested 2.5 and good worked.
+	if args.spellId == 107597 then -- Spell cast 3 sec. Seems to location sets before cast completion. I tested 2.5 and good worked.
 		self:ScheduleMethod(2.5, "BoulderTarget", args.sourceGUID)
 	end
 end

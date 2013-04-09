@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Moorabi", "DBM-Party-WotLK", 5)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 7 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 34 $"):sub(12, -3))
 mod:SetCreatureID(29305)
 mod:SetModelID(27059)
 --mod:SetZone()
@@ -23,7 +23,7 @@ function mod:OnCombatStart()
 end
 
 function mod:SPELL_CAST_START(args)
-	if args:IsSpellID(55098) then
+	if args.spellId == 55098 then
 		warningTransform:Show()
 		if lowHealth then
 			timerTransform:Start(5) --cast every 5 seconds below 50% health

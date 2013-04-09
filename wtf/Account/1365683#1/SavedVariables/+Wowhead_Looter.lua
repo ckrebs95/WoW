@@ -1,8 +1,8 @@
 
 wlVersion = 50008
 wlUploaded = 3
-wlStats = "64^4^19^24^0^1^enUS^16769"
-wlExportData = "who=us.logon.worldofwarcraft.com,Khaz Modan,Dreyan,4&glyphs=409,394,406,398,397,400,407,391,410,468,393,733,465,466,467&projects=-1&timePlayedTotal=0;"
+wlStats = "75^3^5^4^0^1^enUS^16769"
+wlExportData = "who=us.logon.worldofwarcraft.com,Khaz Modan,Dreyan,4&glyphs=409,394,406,398,397,400,407,391,410,468,393,733,465,466,467&projects=-1&timePlayedTotal=641526;"
 wlRealmList = {
 	["us.logon.worldofwarcraft.com"] = 1,
 }
@@ -12,88 +12,74 @@ wlEvent = {
 	["Dreyan^Khaz Modan"] = {
 		{
 			{
-				["date"] = "4^1^2013",
+				["date"] = "4^9^2013",
 				["what"] = "login",
 			}, -- [1]
 			{
-				["targetkind"] = "npc",
-				["targetid"] = 70398,
-				["action"] = "turn-in",
+				["sharable"] = 1,
+				["targetid"] = 58646,
+				["action"] = "accept",
 				["what"] = "quest",
-				["progress"] = "",
-				["questid"] = 32684,
-				["targetname"] = "Ben of the Booming Voice",
-				["complete"] = "Ah!  Have you come to learn how to fish? You're talking to the right person. First, here - have some fish!",
+				["timer"] = 0,
+				["questid"] = 31671,
+				["targetkind"] = "npc",
+				["targetname"] = "Farmer Yoon",
 			}, -- [2]
 			{
-				["dl"] = 0,
-				["action"] = "Fishing",
-				["zone"] = "Valley of the Four Winds",
-				["y"] = 468,
-				["x"] = 589,
-				["drop"] = {
-					"74866^1", -- [1]
-				},
-				["dd"] = 0,
-				["isAoeLoot"] = 0,
-				["kind"] = "zone",
 				["flags"] = 1024,
+				["drop"] = {
+					"coin^16589", -- [1]
+				},
+				["action"] = "Killing",
 				["what"] = "loot",
+				["id"] = 64947,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["dd"] = 7,
 			}, -- [3]
 			{
-				["dl"] = 0,
-				["action"] = "Fishing",
-				["zone"] = "Valley of the Four Winds",
-				["y"] = 468,
-				["x"] = 589,
-				["drop"] = {
-					"74866^1", -- [1]
-				},
-				["dd"] = 0,
-				["isAoeLoot"] = 0,
-				["kind"] = "zone",
 				["flags"] = 1024,
+				["drop"] = {
+					"coin^269659", -- [1]
+				},
+				["action"] = "Opening",
 				["what"] = "loot",
+				["id"] = 95618,
+				["kind"] = "item",
+				["isAoeLoot"] = 0,
+				["dd"] = 7,
 			}, -- [4]
 			{
-				["dl"] = 0,
-				["action"] = "Fishing",
-				["zone"] = "Valley of the Four Winds",
-				["y"] = 468,
-				["x"] = 589,
-				["drop"] = {
-					"74866^1", -- [1]
-				},
-				["dd"] = 0,
-				["isAoeLoot"] = 0,
-				["kind"] = "zone",
 				["flags"] = 1024,
+				["drop"] = {
+					"coin^313484", -- [1]
+				},
+				["action"] = "Opening",
 				["what"] = "loot",
+				["id"] = 95618,
+				["kind"] = "item",
+				["isAoeLoot"] = 0,
+				["dd"] = 0,
 			}, -- [5]
 			{
-				["dl"] = 0,
-				["action"] = "Fishing",
-				["zone"] = "Valley of the Four Winds",
-				["y"] = 468,
-				["x"] = 589,
-				["drop"] = {
-					"74866^1", -- [1]
-				},
-				["dd"] = 0,
-				["isAoeLoot"] = 0,
-				["kind"] = "zone",
-				["flags"] = 1024,
-				["what"] = "loot",
+				["targetkind"] = "npc",
+				["targetid"] = 58646,
+				["action"] = "turn-in",
+				["what"] = "quest",
+				["progress"] = "Let's make sure we grow some good melons, $N. Those crafty hozen only like the sweetest melons.",
+				["questid"] = 30527,
+				["targetname"] = "Farmer Yoon",
+				["complete"] = "Wow, $N! Those are some big melons. Those are hard to grow, and I should know because I've tried! \n\nI don't know how I would run this place without you, $N.",
 			}, -- [6]
 			{
 				["targetkind"] = "npc",
-				["targetid"] = 70398,
+				["targetid"] = 58646,
 				["action"] = "turn-in",
 				["what"] = "quest",
-				["progress"] = "Catch 5 Golden Carp. Try it without a fishing pole!",
-				["questid"] = 32685,
-				["targetname"] = "Ben of the Booming Voice",
-				["complete"] = "Let me see...  Yes, these are nice. Good job! Here, have some more.",
+				["progress"] = "",
+				["questid"] = 31671,
+				["targetname"] = "Farmer Yoon",
+				["complete"] = "I can already smell those scallions from over here. Can't wait to pick 'em and sell 'em tomorrow. Thanks!",
 			}, -- [7]
 			{
 				["targetkind"] = "npc",
@@ -101,525 +87,70 @@ wlEvent = {
 				["action"] = "turn-in",
 				["what"] = "quest",
 				["progress"] = "",
-				["questid"] = 30252,
+				["questid"] = 30528,
 				["targetname"] = "Farmer Yoon",
-				["complete"] = "What? You cleared the rocks? That's great news!\n\nMaybe now I can actually start growing something on this farm!",
+				["complete"] = "The hozen chief is dead? Our plan worked, $N!",
 			}, -- [8]
 			{
-				["targetkind"] = "npc",
-				["targetid"] = 58646,
-				["action"] = "turn-in",
-				["what"] = "quest",
-				["progress"] = "How'd it go, partner? Did you get those seeds from Groanfur?\n\nErr... Greenfield?",
-				["questid"] = 30535,
-				["targetname"] = "Farmer Yoon",
-				["complete"] = "He waved at me! And he gave you the first pack of seeds for free?\n\nWell, what a nice guy!\n\nYou're doing a great job so far. Here's a little... seed money. Hah!",
-			}, -- [9]
-			{
-				["targetkind"] = "npc",
-				["targetid"] = 58646,
-				["action"] = "turn-in",
-				["what"] = "quest",
-				["progress"] = "",
-				["questid"] = 30254,
-				["targetname"] = "Farmer Yoon",
-				["complete"] = "Nicely done.\n\nNotice how those seeds sprouted immediately? That's part of what makes this valley so ideal for farming - something about the soil here just makes veggies grow like crazy!\n\nThe work's not done yet, though.",
-			}, -- [10]
-			{
-				["targetkind"] = "npc",
-				["targetid"] = 58646,
-				["action"] = "turn-in",
-				["what"] = "quest",
-				["progress"] = "",
-				["questid"] = 30255,
-				["targetname"] = "Farmer Yoon",
-				["complete"] = "Great, the cabbages are tended and looking good!\n\nToday they were thirsty, but you never know what they might need. Pay close attention to your crops and tend them accordingly.\n\nI got all kinds of advice from my grandpa, so if you're ever unsure of how to take care of something, feel free to ask!\n\nJust make sure it's strictly related to farming...",
-			}, -- [11]
-			{
-				["targetkind"] = "npc",
-				["targetid"] = 58646,
-				["action"] = "turn-in",
-				["what"] = "quest",
-				["progress"] = "Look at those... err, what do they say around here? Oh yeah, b'yoots!\n\nLook at those b'yoots!\n\nI think I'm getting the hang of this farmer thing.",
-				["questid"] = 30256,
-				["targetname"] = "Farmer Yoon",
-				["complete"] = "Well, those are the basics!\n\nTill the soil, plant the seeds, tend to any threats, then wait for the results!\n\nToday was easy, but stay on your toes: my grandfather told me all kinds of crazy stories about farming at Sunsong Ranch.\n\nFarming ain't all giant turnips and roses, you know.",
-			}, -- [12]
-			{
-				["dl"] = 0,
-				["action"] = "Opening",
-				["zone"] = "Valley of the Four Winds",
-				["drop"] = {
-					"79269^1", -- [1]
-				},
-				["y"] = 480,
-				["x"] = 528,
-				["name"] = "Dark Soil",
-				["dd"] = 0,
-				["isAoeLoot"] = 0,
-				["kind"] = "object",
-				["flags"] = 1024,
-				["what"] = "loot",
-			}, -- [13]
-			{
-				["targetkind"] = "npc",
-				["targetid"] = 58706,
-				["action"] = "turn-in",
-				["what"] = "quest",
-				["progress"] = "Hey, haven't seen your face around here before! What's your name?",
-				["questid"] = 30257,
-				["targetname"] = "Gina Mudclaw",
-				["complete"] = "Oh my, a marsh lily!\n\nHow did you know that these are my favorite? I just might take a liking to you, stranger.\n\nThank you!",
-			}, -- [14]
-			{
-				["targetkind"] = "npc",
-				["targetid"] = 57385,
-				["action"] = "turn-in",
-				["what"] = "quest",
-				["progress"] = "",
-				["questid"] = 30260,
-				["targetname"] = "Gai Lan",
-				["complete"] = "Oh yeah, Farmer Yoon. I've seen him around town.\n\nSeems like a nice enough fella.",
-			}, -- [15]
-			{
-				["dl"] = 0,
-				["action"] = "Opening",
-				["zone"] = "Valley of the Four Winds",
-				["drop"] = {
-					"80122^1", -- [1]
-				},
-				["y"] = 517,
-				["x"] = 374,
-				["name"] = "Spideroot",
-				["dd"] = 0,
-				["isAoeLoot"] = 0,
-				["kind"] = "object",
-				["flags"] = 1024,
-				["what"] = "loot",
-			}, -- [16]
-			{
-				["dl"] = 0,
-				["action"] = "Opening",
-				["zone"] = "Valley of the Four Winds",
-				["drop"] = {
-					"80122^1", -- [1]
-				},
-				["y"] = 509,
-				["x"] = 372,
-				["name"] = "Spideroot",
-				["dd"] = 0,
-				["isAoeLoot"] = 0,
-				["kind"] = "object",
-				["flags"] = 1024,
-				["what"] = "loot",
-			}, -- [17]
-			{
-				["dl"] = 0,
-				["action"] = "Opening",
-				["zone"] = "Valley of the Four Winds",
-				["drop"] = {
-					"80122^1", -- [1]
-				},
-				["y"] = 519,
-				["x"] = 367,
-				["name"] = "Spideroot",
-				["dd"] = 0,
-				["isAoeLoot"] = 0,
-				["kind"] = "object",
-				["flags"] = 1024,
-				["what"] = "loot",
-			}, -- [18]
-			{
-				["dl"] = 0,
-				["action"] = "Opening",
-				["zone"] = "Valley of the Four Winds",
-				["drop"] = {
-					"80122^1", -- [1]
-				},
-				["y"] = 531,
-				["x"] = 366,
-				["name"] = "Spideroot",
-				["dd"] = 0,
-				["isAoeLoot"] = 0,
-				["kind"] = "object",
-				["flags"] = 1024,
-				["what"] = "loot",
-			}, -- [19]
-			{
-				["dl"] = 0,
-				["action"] = "Opening",
-				["zone"] = "Valley of the Four Winds",
-				["drop"] = {
-					"79266^1", -- [1]
-				},
-				["y"] = 530,
-				["x"] = 365,
-				["name"] = "Dark Soil",
-				["dd"] = 0,
-				["isAoeLoot"] = 0,
-				["kind"] = "object",
-				["flags"] = 1024,
-				["what"] = "loot",
-			}, -- [20]
-			{
-				["dl"] = 0,
-				["action"] = "Opening",
-				["zone"] = "Valley of the Four Winds",
-				["drop"] = {
-					"80122^1", -- [1]
-				},
-				["y"] = 529,
-				["x"] = 363,
-				["name"] = "Spideroot",
-				["dd"] = 0,
-				["isAoeLoot"] = 0,
-				["kind"] = "object",
-				["flags"] = 1024,
-				["what"] = "loot",
-			}, -- [21]
-			{
-				["dl"] = 0,
-				["action"] = "Opening",
-				["zone"] = "Valley of the Four Winds",
-				["drop"] = {
-					"80122^1", -- [1]
-				},
-				["y"] = 533,
-				["x"] = 362,
-				["name"] = "Spideroot",
-				["dd"] = 0,
-				["isAoeLoot"] = 0,
-				["kind"] = "object",
-				["flags"] = 1024,
-				["what"] = "loot",
-			}, -- [22]
-			{
-				["targetkind"] = "npc",
-				["targetid"] = 57385,
-				["action"] = "turn-in",
-				["what"] = "quest",
-				["progress"] = "How did the root gathering go?",
-				["questid"] = 30516,
-				["targetname"] = "Gai Lan",
-				["complete"] = "Well what do we have here? You harvested enough to last me a while.\n\nMany thanks!",
-			}, -- [23]
-			{
-				["targetkind"] = "npc",
-				["targetid"] = 58710,
-				["action"] = "turn-in",
-				["what"] = "quest",
-				["progress"] = "It's hard work you know, interpreting all these visions.",
-				["questid"] = 30436,
-				["targetname"] = "Jogu the Drunk",
-				["complete"] = "Thanks.",
-			}, -- [24]
-			{
 				["flags"] = 1024,
 				["drop"] = {
-					"80590^2", -- [1]
-					"80591^2", -- [2]
+					"80594^2", -- [1]
+					"80595^2", -- [2]
 				},
 				["action"] = "Opening",
 				["what"] = "loot",
-				["id"] = 85224,
+				["id"] = 85226,
 				["kind"] = "item",
 				["isAoeLoot"] = 0,
 				["dd"] = 0,
-			}, -- [25]
-			{
-				["sharable"] = 1,
-				["targetid"] = 67995,
-				["action"] = "accept",
-				["what"] = "quest",
-				["timer"] = 0,
-				["questid"] = 32732,
-				["targetkind"] = "npc",
-				["targetname"] = "Captain Elleane Wavecrest",
-			}, -- [26]
-			{
-				["flags"] = 1024,
-				["drop"] = {
-					"coin^4718", -- [1]
-					"81412^1", -- [2]
-				},
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 67473,
-				["kind"] = "npc",
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-			}, -- [27]
-			{
-				["flags"] = 1024,
-				["drop"] = {
-					"coin^4855", -- [1]
-				},
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 67473,
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-				["kind"] = "npc",
-			}, -- [28]
-			{
-				["flags"] = 1024,
-				["drop"] = {
-					"coin^879", -- [1]
-				},
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 67473,
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-				["kind"] = "npc",
-			}, -- [29]
-			{
-				["flags"] = 1024,
-				["drop"] = {
-					"coin^1482", -- [1]
-				},
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 67473,
-				["kind"] = "npc",
-				["isAoeLoot"] = 0,
-				["dd"] = 0,
-			}, -- [30]
-			{
-				["flags"] = 1024,
-				["drop"] = {
-					"coin^5708", -- [1]
-				},
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 67473,
-				["kind"] = "npc",
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-			}, -- [31]
-			{
-				["flags"] = 1024,
-				["drop"] = {
-					"coin^2086", -- [1]
-					"81412^1", -- [2]
-				},
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 67473,
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-				["kind"] = "npc",
-			}, -- [32]
+			}, -- [9]
 			{
 				["targetkind"] = "npc",
-				["targetid"] = 67996,
+				["targetid"] = 57402,
 				["action"] = "turn-in",
 				["what"] = "quest",
 				["progress"] = "",
-				["questid"] = 32732,
-				["targetname"] = "Archmage Modera",
-				["complete"] = "You have good timing. I am quite in need of your assistance.",
-			}, -- [33]
-			{
-				["sharable"] = 1,
-				["targetid"] = 67996,
-				["action"] = "accept",
-				["what"] = "quest",
-				["timer"] = 0,
-				["questid"] = 32535,
-				["targetkind"] = "npc",
-				["targetname"] = "Archmage Modera",
-			}, -- [34]
-			{
-				["sharable"] = 1,
-				["targetid"] = 67996,
-				["action"] = "accept",
-				["what"] = "quest",
-				["timer"] = 0,
-				["questid"] = 32537,
-				["targetkind"] = "npc",
-				["targetname"] = "Archmage Modera",
-			}, -- [35]
-			{
-				["sharable"] = 1,
-				["targetid"] = 69675,
-				["action"] = "accept",
-				["what"] = "quest",
-				["timer"] = 0,
-				["questid"] = 32545,
-				["targetkind"] = "npc",
-				["targetname"] = "Lyalia",
-			}, -- [36]
-			{
-				["sharable"] = 1,
-				["targetid"] = 69677,
-				["action"] = "accept",
-				["what"] = "quest",
-				["timer"] = 0,
-				["questid"] = 32548,
-				["targetkind"] = "npc",
-				["targetname"] = "Sanitation Sorcerer Stephen Litmatch",
-			}, -- [37]
-			{
-				["flags"] = 1024,
-				["drop"] = {
-					"coin^3880", -- [1]
-				},
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 69228,
-				["kind"] = "npc",
-				["isAoeLoot"] = 0,
-				["dd"] = 0,
-			}, -- [38]
-			{
-				["flags"] = 1024,
-				["drop"] = {
-					"coin^5069", -- [1]
-					"81413^1", -- [2]
-				},
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 69210,
-				["kind"] = "npc",
-				["isAoeLoot"] = 0,
-				["dd"] = 0,
-			}, -- [39]
-			{
-				["flags"] = 1024,
-				["drop"] = {
-					"coin^4934", -- [1]
-				},
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 69400,
-				["kind"] = "npc",
-				["isAoeLoot"] = 0,
-				["dd"] = 0,
-			}, -- [40]
-			{
-				["flags"] = 1024,
-				["drop"] = {
-					"coin^3225", -- [1]
-					"81413^1", -- [2]
-				},
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 69338,
-				["kind"] = "npc",
-				["isAoeLoot"] = 0,
-				["dd"] = 0,
-			}, -- [41]
-			{
-				["flags"] = 1024,
-				["drop"] = {
-					"81414^1", -- [1]
-					"coin^5381", -- [2]
-					"90755^1", -- [3]
-				},
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 69227,
-				["kind"] = "npc",
-				["isAoeLoot"] = 0,
-				["dd"] = 0,
-			}, -- [42]
-			{
-				["targetkind"] = "npc",
-				["targetid"] = 67994,
-				["action"] = "turn-in",
-				["what"] = "quest",
-				["progress"] = "A great gloom looms over this island...",
-				["questid"] = 32571,
-				["targetname"] = "Warmage Yurias",
-				["complete"] = "Wonderful! I'll pass him off to our caretaker. Thank you.",
-			}, -- [43]
-			{
-				["targetkind"] = "npc",
-				["targetid"] = 67995,
-				["action"] = "turn-in",
-				["what"] = "quest",
-				["progress"] = "",
-				["questid"] = 32572,
-				["targetname"] = "Captain Elleane Wavecrest",
-				["complete"] = "Your efforts are appreciated, $c.",
-			}, -- [44]
+				["questid"] = 30529,
+				["targetname"] = "Haohan Mudclaw",
+				["complete"] = "Yoon needs a neighbor to lend a hand, eh? Well I'll be plenty happy to oblige.",
+			}, -- [10]
 		}, -- [1]
 	},
 }
 wlItemSuffix = {
-	[82262] = {
-		[-5] = 1,
-		["sF"] = 1246,
-	},
 }
 wlObject = {
 	[204988] = {
 		["0^Stormwind City"] = {
 			{
-				["y"] = 309,
-				["x"] = 622,
+				["y"] = 308,
+				["x"] = 620,
 				["dl"] = 0,
 				["n"] = 1,
 			}, -- [1]
 			["n"] = 1,
 		},
 	},
-	["Opening^Valley of the Four Winds^Spideroot"] = {
+	["Opening^Valley of the Four Winds^Pest Repeller"] = {
 		["0^Valley of the Four Winds"] = {
 			{
-				["y"] = 517,
-				["x"] = 374,
-				["dl"] = 0,
-				["n"] = 1,
-			}, -- [1]
-			{
-				["y"] = 509,
-				["x"] = 372,
+				["y"] = 484,
+				["x"] = 519,
 				["dl"] = 0,
 				["n"] = 2,
-			}, -- [2]
-			{
-				["y"] = 519,
-				["x"] = 367,
-				["dl"] = 0,
-				["n"] = 1,
-			}, -- [3]
-			{
-				["y"] = 531,
-				["x"] = 364,
-				["dl"] = 0,
-				["n"] = 3,
-			}, -- [4]
-			["n"] = 4,
+			}, -- [1]
+			["n"] = 1,
 		},
 	},
 	[212507] = {
 		["0^Valley of the Four Winds"] = {
 			{
-				["y"] = 499,
-				["x"] = 557,
+				["y"] = 498,
+				["x"] = 555,
 				["dl"] = 0,
 				["n"] = 1,
 			}, -- [1]
 			["n"] = 1,
-		},
-	},
-	["Opening^Valley of the Four Winds^Dark Soil"] = {
-		["0^Valley of the Four Winds"] = {
-			{
-				["y"] = 480,
-				["x"] = 528,
-				["dl"] = 0,
-				["n"] = 1,
-			}, -- [1]
-			{
-				["y"] = 530,
-				["x"] = 365,
-				["dl"] = 0,
-				["n"] = 1,
-			}, -- [2]
-			["n"] = 2,
 		},
 	},
 }
@@ -633,10 +164,211 @@ wlProfile = {
 	},
 }
 wlUnit = {
-	[60185] = {
+	[60410] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912399417273,
+			["90^Alliance^2"] = 912400093776,
+		},
+		["sex"] = {
+			[2] = 5,
+		},
+		["quote"] = {
+			["yell"] = {
+				["Existence ends... I become nothing..."] = "",
+				["Energy Vortex ramping down."] = "",
+				["Identification matrix mismatch. Unknown entities detected."] = "",
+				["Energy Conduits active, draw stable."] = "",
+				["Conduits offline."] = "",
+				["Let the energies consume you!"] = "",
+				["Approach! Feel the power of the titans!"] = "",
+				["Drawing from reserve power."] = "",
+				["Redirecting power."] = "",
+				["Entering defensive mode.  Disabling output failsafes."] = "",
+			},
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[7] = {
+				[-1] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 515,
+								["x"] = 207,
+								["dl"] = 3,
+								["n"] = 2,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 305295904,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[116997] = 20,
+					[117960] = 40,
+					[124967] = 4,
+					[119358] = 6,
+					[119360] = 3,
+					[118310] = 2,
+					[116994] = 4,
+					[117204] = 2,
+					[117954] = 6,
+					[119387] = 1,
+				},
+			},
+		},
+	},
+	[58910] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[117516] = 2,
+					[117507] = 2,
+				},
+			},
+		},
+	},
+	[66016] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912402205714,
+		},
+		["sex"] = {
+			4, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				{
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							{
+								["y"] = 484,
+								["x"] = 520,
+								["dl"] = 0,
+								["n"] = 51,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
+			},
+		},
+	},
+	[69334] = {
+		["isPvp"] = true,
+		["merchant"] = {
+			["83079^0^1^1000"] = -1,
+			["92071^0^1^20000"] = -1,
+		},
+		["reaction"] = {
+			["90^Alliance^5"] = 912398436711,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["class"] = "WARRIOR",
+		["gossip"] = {
+			["vendor"] = 1,
+		},
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Stormwind City"] = {
+							{
+								["y"] = 172,
+								["x"] = 680,
+								["dl"] = 0,
+								["n"] = 27,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 393941,
+					["powermax"] = 0,
+				},
+			},
+		},
+	},
+	[60708] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912399541244,
+		},
+		["sex"] = {
+			[2] = 3,
+		},
+		["quote"] = {
+			["yell"] = {
+				["You made me do it!"] = "",
+				["I... I don't want to die!"] = "",
+				["Slaughter yourselves for my amusement!"] = "",
+				["Enemies... everywhere! Kill! Kill them all!"] = "",
+				["None may stand against the imperial majesty of MENG!"] = "",
+				["Like rice stalks before the blade, all fall before me!"] = "",
+				["Don't bleed on me! Filthy! Disease!"] = "",
+			},
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[7] = {
+				[-1] = {
+					["powertype"] = 3,
+					["health"] = 69781920,
+					["powermax"] = 100,
+				},
+				["spell"] = {
+					[117708] = 62,
+					[117756] = 2,
+					[117833] = 15,
+					[117737] = 3,
+				},
+			},
+		},
+	},
+	[61347] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912399196221,
+		},
+		["sex"] = {
+			[2] = 3,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[7] = {
+				[92] = {
+					["powertype"] = 1,
+					["health"] = 6323880,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[119629] = 6,
+				},
+			},
+		},
+	},
+	[61502] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[124800] = 44,
+				},
+			},
+		},
+	},
+	[63161] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912402430635,
 		},
 		["sex"] = {
 			1, -- [1]
@@ -649,9 +381,9 @@ wlUnit = {
 						["Valley of the Four Winds"] = {
 							{
 								["y"] = 484,
-								["x"] = 521,
+								["x"] = 520,
 								["dl"] = 0,
-								["n"] = 1,
+								["n"] = 18,
 							}, -- [1]
 							["n"] = 1,
 						},
@@ -663,19 +395,64 @@ wlUnit = {
 			},
 		},
 	},
-	[69895] = {
+	[66128] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912402267343,
+		},
+		["sex"] = {
+			1, -- [1]
+		},
+		["class"] = "WARRIOR",
 		["spec"] = {
 			[0] = {
+				{
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							{
+								["y"] = 479,
+								["x"] = 517,
+								["dl"] = 0,
+								["n"] = 9,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
+			},
+		},
+	},
+	[64947] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912399858198,
+		},
+		["sex"] = {
+			[2] = 4,
+		},
+		["class"] = "PALADIN",
+		["spec"] = {
+			[7] = {
+				[92] = {
+					["powertype"] = 0,
+					["health"] = 12647760,
+					["powermax"] = 10312,
+				},
 				["spell"] = {
-					[138828] = 8,
+					[126955] = 12,
+					[126970] = 7,
+					[126958] = 18,
 				},
 			},
 		},
 	},
-	[63162] = {
+	[66017] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912401329126,
+			["90^Alliance^5"] = 912402805873,
 		},
 		["sex"] = {
 			1, -- [1]
@@ -688,7 +465,7 @@ wlUnit = {
 						["Valley of the Four Winds"] = {
 							{
 								["y"] = 482,
-								["x"] = 517,
+								["x"] = 519,
 								["dl"] = 0,
 								["n"] = 25,
 							}, -- [1]
@@ -702,155 +479,131 @@ wlUnit = {
 			},
 		},
 	},
-	[69210] = {
+	[60768] = {
+		["spec"] = {
+			[7] = {
+				["spell"] = {
+					[116550] = 82,
+				},
+			},
+		},
+	},
+	[60776] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^2"] = 912400682893,
+			["90^Alliance^2"] = 912400166704,
 		},
 		["sex"] = {
-			[2] = 2,
+			3, -- [1]
 		},
 		["class"] = {
 		},
 		["spec"] = {
-			[0] = {
-				[90] = {
-					["powertype"] = 1,
-					["health"] = 512123,
-					["powermax"] = 0,
-				},
-				["spell"] = {
-					[75967] = 4,
-					[33239] = 10,
-				},
-			},
-		},
-	},
-	[70348] = {
-		["spec"] = {
-			[0] = {
-				["spell"] = {
-					[22120] = 2,
-					[139385] = 7,
-				},
-			},
-		},
-	},
-	[69428] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^4"] = 912400301508,
-		},
-		["sex"] = {
-			1, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
+			[7] = {
 				[90] = {
 					["loc"] = {
-						["Isle of Thunder"] = {
+						["Mogu'shan Vaults"] = {
 							{
-								["y"] = 523,
-								["x"] = 535,
-								["dl"] = 0,
-								["n"] = 10,
+								["y"] = 574,
+								["x"] = 169,
+								["dl"] = 3,
+								["n"] = 3,
 							}, -- [1]
 							["n"] = 1,
 						},
 					},
 					["powertype"] = 1,
-					["health"] = 393941,
+					["health"] = 3348498,
 					["powermax"] = 0,
 				},
-			},
-		},
-	},
-	[69677] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912400609435,
-		},
-		["sex"] = {
-			[2] = 1,
-		},
-		["class"] = "MAGE",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Isle of Thunder"] = {
-							{
-								["y"] = 745,
-								["x"] = 556,
-								["dl"] = 0,
-								["n"] = 23,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 0,
-					["health"] = 3151530,
-					["powermax"] = 21262,
+				["spell"] = {
+					[132265] = 24,
+					[116989] = 12,
 				},
 			},
 		},
-		["faction"] = "Kirin Tor",
 	},
-	[64231] = {
-		["isPvp"] = false,
-		["training"] = {
-			["ROGUE"] = {
-				["125080^Cooking^495^0^36111"] = 1,
-				["124234^Cooking^390^0^23666"] = 1,
-				["124224^Cooking^150^0^4444"] = 1,
-				["124232^Cooking^450^0^23666"] = 1,
-				["124227^Cooking^90^0^4000"] = 1,
-				["124230^Cooking^480^0^23666"] = 1,
-				["125078^Cooking^240^0^4444"] = 1,
-				["124225^Cooking^60^0^4000"] = 1,
-				["88053^Cooking^425^0^555555"] = 1,
-				["51296^Cooking^350^0^388888"] = 1,
-				["125122^Cooking^520^0^36111"] = 1,
-				["33359^Cooking^275^0^111111"] = 1,
-				["104297^Cooking^300^0^5555"] = 1,
-				["124226^Cooking^180^0^4444"] = 1,
-				["104237^Cooking^270^0^4444"] = 1,
-				["125117^Cooking^1^0^111"] = 1,
-				["18260^Cooking^200^0^27777"] = 1,
-				["124233^Cooking^330^0^5555"] = 1,
-				["3413^Cooking^125^0^11111"] = 1,
-				["124231^Cooking^420^0^23666"] = 1,
-				["2550^^0^0^111"] = 1,
-				["124228^Cooking^210^0^4444"] = 1,
-				["125121^Cooking^510^0^36111"] = 1,
-				["124229^Cooking^360^0^5555"] = 1,
-				["124223^Cooking^120^0^4000"] = 1,
-				["3102^Cooking^50^0^555"] = 1,
-				["125067^Cooking^30^0^4000"] = 1,
+	[66184] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[119579] = 4,
+				},
 			},
 		},
+	},
+	[61423] = {
+		["spec"] = {
+			[7] = {
+				["spell"] = {
+					[119521] = 2,
+				},
+			},
+		},
+	},
+	[61427] = {
+		["spec"] = {
+			[7] = {
+				["spell"] = {
+					[119553] = 2,
+					[119554] = 2,
+					[119552] = 2,
+				},
+			},
+		},
+	},
+	[64606] = {
+		["isPvp"] = false,
+		["merchant"] = {
+			["85302^0^1^0^0#0#1<>89242"] = -1,
+			["86640^0^1^0^0#0#1<>89267"] = -1,
+			["89090^0^1^0^0#0#1125<>pvecurrency-valor<>Valor Points"] = -1,
+			["88884^0^1^0^0#0#625<>pvecurrency-valor<>Valor Points"] = -1,
+			["85303^0^1^0^0#0#1<>89239"] = -1,
+			["87126^0^1^0^0#0#1<>89258"] = -1,
+			["88868^0^1^0^0#0#875<>pvecurrency-valor<>Valor Points"] = -1,
+			["89065^0^1^0^0#0#625<>pvecurrency-valor<>Valor Points"] = -1,
+			["89076^0^1^0^0#0#625<>pvecurrency-valor<>Valor Points"] = -1,
+			["87127^0^1^0^0#0#1<>89252"] = -1,
+			["86641^0^1^0^0#0#1<>89273"] = -1,
+			["87125^0^1^0^0#0#1<>89255"] = -1,
+			["85300^0^1^0^0#0#1<>89245"] = -1,
+			["87128^0^1^0^0#0#1<>89261"] = -1,
+			["89070^0^1^0^0#0#625<>pvecurrency-valor<>Valor Points"] = -1,
+			["88744^0^1^0^0#0#875<>pvecurrency-valor<>Valor Points"] = -1,
+			["89341^0^1^0^0#0#875<>pvecurrency-valor<>Valor Points"] = -1,
+			["85299^0^1^0^0#0#1<>89248"] = -1,
+			["86642^0^1^0^0#0#1<>89270"] = -1,
+			["89431^0^1^0^0#0#1125<>pvecurrency-valor<>Valor Points"] = -1,
+			["87124^0^1^0^0#0#1<>89249"] = -1,
+			["89300^0^1^0^0#0#1125<>pvecurrency-valor<>Valor Points"] = -1,
+			["86639^0^1^0^0#0#1<>89276"] = -1,
+			["85301^0^1^0^0#0#1<>89234"] = -1,
+			["89060^0^1^0^0#0#875<>pvecurrency-valor<>Valor Points"] = -1,
+			["86643^0^1^0^0#0#1<>89264"] = -1,
+			["89082^0^1^0^0#0#875<>pvecurrency-valor<>Valor Points"] = -1,
+		},
 		["reaction"] = {
-			["90^Alliance^5"] = 912398667593,
+			["90^Alliance^5"] = 912401944460,
 		},
 		["sex"] = {
-			[3] = 2,
+			[3] = 1,
 		},
+		["canRepair"] = 1,
 		["class"] = "WARRIOR",
 		["gossip"] = {
 			["vendor"] = 2,
-			["trainer"] = 3,
 		},
 		["spec"] = {
 			[0] = {
 				[90] = {
 					["loc"] = {
-						["Valley of the Four Winds"] = {
+						["Townlong Steppes"] = {
 							{
-								["y"] = 513,
-								["x"] = 537,
+								["y"] = 645,
+								["x"] = 379,
 								["dl"] = 0,
-								["n"] = 303,
+								["n"] = 143,
 							}, -- [1]
 							["n"] = 1,
 						},
@@ -862,129 +615,34 @@ wlUnit = {
 			},
 		},
 	},
-	[58563] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912399405936,
-		},
-		["sex"] = {
-			8, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				{
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							{
-								["y"] = 484,
-								["x"] = 520,
-								["dl"] = 0,
-								["n"] = 151,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 84,
-					["powermax"] = 0,
-				}, -- [1]
+	[70296] = {
+		["isPvp"] = true,
+		["training"] = {
+			["ROGUE"] = {
+				["33388^^0^20^44444"] = 1,
+				["33391^^0^40^555555"] = 1,
 			},
 		},
-	},
-	[69675] = {
-		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912400602013,
+			["90^Alliance^5"] = 912398423678,
 		},
 		["sex"] = {
 			[3] = 1,
 		},
 		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Isle of Thunder"] = {
-							{
-								["y"] = 744,
-								["x"] = 557,
-								["dl"] = 0,
-								["n"] = 26,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 3939410,
-					["powermax"] = 0,
-				},
-			},
-		},
-		["faction"] = "Kirin Tor Offensive",
-	},
-	[70183] = {
-		["isPvp"] = true,
-		["merchant"] = {
-			["2901^0^1^81"] = -1,
-			["3857^0^1^500"] = -1,
-			["5956^0^1^18"] = -1,
-			["18567^0^1^30000"] = -1,
-			["2880^0^1^100"] = -1,
-			["3466^0^1^2000"] = -1,
-		},
 		["gossip"] = {
-			["vendor"] = 1,
+			["trainer"] = 1,
 		},
 		["spec"] = {
 			[0] = {
 				[90] = {
 					["loc"] = {
-						["Isle of Thunder"] = {
+						["Stormwind City"] = {
 							{
-								["y"] = 739,
-								["x"] = 647,
+								["y"] = 184,
+								["x"] = 676,
 								["dl"] = 0,
-								["n"] = 44,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 3939410,
-					["powermax"] = 0,
-				},
-			},
-		},
-		["reaction"] = {
-			["90^Alliance^5"] = 912400969475,
-		},
-		["faction"] = "Kirin Tor Offensive",
-		["canRepair"] = 1,
-		["sex"] = {
-			[2] = 1,
-		},
-		["class"] = "WARRIOR",
-	},
-	[64302] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912399195049,
-		},
-		["sex"] = {
-			[2] = 1,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							{
-								["y"] = 521,
-								["x"] = 530,
-								["dl"] = 0,
-								["n"] = 25,
+								["n"] = 20,
 							}, -- [1]
 							["n"] = 1,
 						},
@@ -996,13 +654,13 @@ wlUnit = {
 			},
 		},
 	},
-	[63146] = {
+	[66129] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912401293599,
+			["90^Alliance^5"] = 912402269981,
 		},
 		["sex"] = {
-			1, -- [1]
+			3, -- [1]
 		},
 		["class"] = "WARRIOR",
 		["spec"] = {
@@ -1011,10 +669,10 @@ wlUnit = {
 					["loc"] = {
 						["Valley of the Four Winds"] = {
 							{
-								["y"] = 484,
+								["y"] = 479,
 								["x"] = 517,
 								["dl"] = 0,
-								["n"] = 16,
+								["n"] = 30,
 							}, -- [1]
 							["n"] = 1,
 						},
@@ -1026,13 +684,13 @@ wlUnit = {
 			},
 		},
 	},
-	[59833] = {
+	[60185] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912399299177,
+			["90^Alliance^5"] = 912402801458,
 		},
 		["sex"] = {
-			2, -- [1]
+			1, -- [1]
 		},
 		["class"] = "WARRIOR",
 		["spec"] = {
@@ -1044,7 +702,7 @@ wlUnit = {
 								["y"] = 483,
 								["x"] = 520,
 								["dl"] = 0,
-								["n"] = 16,
+								["n"] = 2,
 							}, -- [1]
 							["n"] = 1,
 						},
@@ -1056,161 +714,276 @@ wlUnit = {
 			},
 		},
 	},
-	[67994] = {
+	[60701] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912400939310,
+			["90^Alliance^2"] = 912399441707,
 		},
 		["sex"] = {
 			[2] = 1,
-		},
-		["class"] = "MAGE",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Isle of Thunder"] = {
-							{
-								["y"] = 735,
-								["x"] = 635,
-								["dl"] = 0,
-								["n"] = 29,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 0,
-					["health"] = 3151530,
-					["powermax"] = 85048,
-				},
-			},
-		},
-		["faction"] = "Kirin Tor Offensive",
-	},
-	[59585] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912398653186,
-		},
-		["sex"] = {
-			[2] = 1,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							{
-								["y"] = 519,
-								["x"] = 557,
-								["dl"] = 0,
-								["n"] = 19,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 12160,
-					["powermax"] = 0,
-				},
-			},
-		},
-	},
-	[57421] = {
-		["spec"] = {
-			[0] = {
-				["spell"] = {
-					[12252] = 3,
-					[108801] = 2,
-					[109019] = 1,
-					[32914] = 2,
-					[80555] = 3,
-				},
-			},
-		},
-	},
-	[57648] = {
-		["spec"] = {
-			[0] = {
-				["spell"] = {
-					[13444] = 1,
-				},
-			},
-		},
-	},
-	[58646] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912399065304,
-		},
-		["sex"] = {
-			[2] = 7,
 		},
 		["quote"] = {
-			["say"] = {
-				["Just remember, real crops will take a day to grow, so after you've tilled and cared for your plants, come back the next day to harvest your bounty!"] = "",
-				["Those cabbages should be ready any minute now... wait for it..."] = "",
-				["B-but it's my family farm. I can't just sell it."] = "",
-				["Besides, once I've gotten the hang of this, I want to be a Tiller like the rest of you!"] = "",
-				["Hey <name>, didya know that all kinds of things can happen to your plants? If you don't know how to deal with something, just ask me!"] = "",
-				["Yessir! My grandfather left me this farm. Just moved in the other day. Nice to meet you, neighbor!"] = "",
-				["Never say never, my grandpa always said. I'm going to give it my best shot."] = "",
-				["You are THE Haohan Mudclaw, right? Head of the Tiller's Union? You are the master farmers in all of Pandaria!"] = "",
-				["Oh, oh my! Mr. Mudclaw! I didn't expect such an important visitor."] = "",
-				["Make sure to tend those scallions. After that, nothing to do but wait until tomorrow when they'll be nice and ripe."] = "",
-				["There we go! Ripe for the pickin's!"] = "",
-				["Hey, do I hear someone outside?"] = "",
+			["yell"] = {
+				["The darkness comes for you, and with it, death."] = "",
 			},
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[7] = {
+				[-1] = {
+					["powertype"] = 0,
+					["health"] = 69781920,
+					["powermax"] = 10514,
+				},
+				["spell"] = {
+					[117685] = 5,
+					[117506] = 4,
+					[117628] = 28,
+				},
+			},
+		},
+	},
+	[60709] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912399244834,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["quote"] = {
+			["yell"] = {
+				["My armies are endless, my power, unmatched."] = "",
+				["Flanking attack! March into battle!"] = "",
+				["Soldiers! Crush their flank!"] = "",
+				["Another victory."] = "",
+				["I will crush you, in body AND spirit."] = "",
+			},
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[7] = {
+				[-1] = {
+					["powertype"] = 1,
+					["health"] = 69781920,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[117948] = 4,
+					[117910] = 7,
+					[117920] = 2,
+				},
+			},
+		},
+	},
+	[62618] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912400218496,
+		},
+		["sex"] = {
+			2, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[7] = {
+				[90] = {
+					["powertype"] = 1,
+					["health"] = 984852,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[117870] = 7,
+				},
+			},
+		},
+	},
+	[57415] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[130830] = 17,
+				},
+			},
+		},
+	},
+	[58562] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912402217960,
+		},
+		["sex"] = {
+			13, -- [1]
 		},
 		["class"] = "WARRIOR",
 		["spec"] = {
 			[0] = {
-				[90] = {
+				{
 					["loc"] = {
 						["Valley of the Four Winds"] = {
 							{
-								["y"] = 480,
-								["x"] = 527,
+								["y"] = 483,
+								["x"] = 520,
 								["dl"] = 0,
-								["n"] = 39,
+								["n"] = 184,
 							}, -- [1]
 							{
-								["y"] = 488,
-								["x"] = 521,
+								["y"] = 477,
+								["x"] = 518,
 								["dl"] = 0,
-								["n"] = 300,
+								["n"] = 27,
 							}, -- [2]
 							["n"] = 2,
 						},
 					},
 					["powertype"] = 1,
-					["health"] = 393941,
+					["health"] = 84,
 					["powermax"] = 0,
+				}, -- [1]
+			},
+		},
+	},
+	[64063] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912399912953,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["class"] = "PALADIN",
+		["spec"] = {
+			[7] = {
+				[92] = {
+					["powertype"] = 0,
+					["health"] = 10118208,
+					["powermax"] = 10312,
+				},
+				["spell"] = {
+					[126973] = 72,
 				},
 			},
 		},
 	},
-	[69400] = {
+	[66043] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^4"] = 912400715062,
-			["90^Alliance^2"] = 912400774146,
+			["90^Alliance^5"] = 912402237459,
 		},
 		["sex"] = {
-			[2] = 2,
+			4, -- [1]
 		},
 		["class"] = "WARRIOR",
 		["spec"] = {
 			[0] = {
+				{
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							{
+								["y"] = 482,
+								["x"] = 518,
+								["dl"] = 0,
+								["n"] = 37,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
+			},
+		},
+	},
+	[60396] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912400850855,
+		},
+		["sex"] = {
+			[2] = 18,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[7] = {
+				[92] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 886,
+								["x"] = 705,
+								["dl"] = 3,
+								["n"] = 3,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 2529552,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[116525] = 78,
+				},
+			},
+		},
+	},
+	[60400] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912400941256,
+		},
+		["sex"] = {
+			[2] = 5,
+		},
+		["class"] = "PALADIN",
+		["spec"] = {
+			[7] = {
+				[-1] = {
+					["powertype"] = 0,
+					["health"] = 239875344,
+					["powermax"] = 20,
+				},
+				["spell"] = {
+					[116969] = 38,
+				},
+			},
+		},
+	},
+	[64595] = {
+		["isPvp"] = false,
+		["merchant"] = {
+			["93220^0^1^500000"] = -1,
+			["89800^0^1^100000"] = -1,
+			["89661^0^1^0^0#0#2250<>pvecurrency-justice<>Justice Points"] = -1,
+			["89302^0^1^250000"] = -1,
+			["90844^0^1^177380"] = -1,
+			["89076^0^1^0^0#0#625<>pvecurrency-valor<>Valor Points"] = -1,
+			["89522^0^1^0^0#0#1250<>pvecurrency-justice<>Justice Points"] = -1,
+			["89301^0^1^100000"] = -1,
+			["89307^0^1^5000000"] = -1,
+			["89303^0^1^500000"] = -1,
+			["89300^0^1^0^0#0#1125<>pvecurrency-valor<>Valor Points"] = -1,
+			["89306^0^1^25000000"] = -1,
+			["88995^0^1^0^0#0#1750<>pvecurrency-justice<>Justice Points"] = -1,
+			["89305^0^1^15000000"] = -1,
+			["89082^0^1^0^0#0#875<>pvecurrency-valor<>Valor Points"] = -1,
+		},
+		["gossip"] = {
+			["vendor"] = 1,
+		},
+		["spec"] = {
+			[0] = {
 				[90] = {
 					["loc"] = {
-						["Isle of Thunder"] = {
+						["Townlong Steppes"] = {
 							{
-								["y"] = 788,
-								["x"] = 480,
+								["y"] = 706,
+								["x"] = 488,
 								["dl"] = 0,
-								["n"] = 135,
+								["n"] = 226,
 							}, -- [1]
 							["n"] = 1,
 						},
@@ -1219,28 +992,540 @@ wlUnit = {
 					["health"] = 393941,
 					["powermax"] = 0,
 				},
+			},
+		},
+		["reaction"] = {
+			["90^Alliance^5"] = 912398849962,
+		},
+		["faction"] = "Shado-Pan",
+		["canRepair"] = 1,
+		["sex"] = {
+			[2] = 1,
+		},
+		["class"] = "WARRIOR",
+	},
+	[60793] = {
+		["spec"] = {
+			[7] = {
 				["spell"] = {
-					[138412] = 3,
-					[138414] = 2,
+					[117945] = 14,
+					[129711] = 6,
+					[117911] = 6,
+					[117870] = 3,
 				},
 			},
 		},
 	},
-	[67703] = {
+	[60039] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^4"] = 912400482026,
+			["90^Alliance^2"] = 912402919612,
+		},
+		["sex"] = {
+			1, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							{
+								["y"] = 484,
+								["x"] = 520,
+								["dl"] = 0,
+								["n"] = 4,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 393941,
+					["powermax"] = 0,
+				},
+			},
+		},
+	},
+	[58900] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[118228] = 2,
+					[6660] = 10,
+				},
+			},
+		},
+	},
+	[66020] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912402913235,
+		},
+		["sex"] = {
+			1, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				{
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							{
+								["y"] = 478,
+								["x"] = 518,
+								["dl"] = 0,
+								["n"] = 11,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
+			},
+		},
+	},
+	[70346] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912398947313,
+		},
+		["sex"] = {
+			[3] = 1,
+		},
+		["canRepair"] = 1,
+		["class"] = "WARRIOR",
+		["gossip"] = {
+			["vendor"] = 1,
+		},
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Townlong Steppes"] = {
+							{
+								["y"] = 645,
+								["x"] = 380,
+								["dl"] = 0,
+								["n"] = 263,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 393941,
+					["powermax"] = 0,
+				},
+			},
+		},
+	},
+	[61341] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912399124926,
 		},
 		["sex"] = {
 			[2] = 1,
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[7] = {
+				[92] = {
+					["powertype"] = 1,
+					["health"] = 8853432,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[119514] = 4,
+				},
+			},
+		},
+	},
+	[60710] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912399339724,
+		},
+		["sex"] = {
+			[2] = 2,
+		},
+		["quote"] = {
+			["yell"] = {
+				["All that is yours? Mine!"] = "",
+				["There is nothing I cannot take!"] = "",
+			},
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[7] = {
+				[-1] = {
+					["powertype"] = 1,
+					["health"] = 69781920,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[118048] = 8,
+					[118094] = 6,
+					[118105] = 6,
+					[118106] = 6,
+					[118047] = 5,
+					[118049] = 10,
+				},
+			},
+		},
+	},
+	[58563] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912402412970,
+		},
+		["sex"] = {
+			14, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				{
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							{
+								["y"] = 484,
+								["x"] = 520,
+								["dl"] = 0,
+								["n"] = 207,
+							}, -- [1]
+							{
+								["y"] = 476,
+								["x"] = 517,
+								["dl"] = 0,
+								["n"] = 34,
+							}, -- [2]
+							["n"] = 2,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
+			},
+		},
+	},
+	[58706] = {
+		["isPvp"] = false,
+		["merchant"] = {
+			["89814^0^1^777777"] = -1,
+			["90175^0^1^1944444"] = -1,
+			["80914^0^1^972222"] = -1,
+			["89390^0^1^25277777"] = -1,
+			["89784^0^1^77777"] = -1,
+			["89869^0^1^1944444"] = -1,
+			["89362^0^1^3888888"] = -1,
+			["89813^0^1^777777"] = -1,
+			["74658^0^1^7777"] = -1,
+			["74657^0^1^7777"] = -1,
+			["89391^0^1^11666666"] = -1,
+			["93226^0^1^388888"] = -1,
+			["89812^0^1^777777"] = -1,
+		},
+		["gossip"] = {
+			["vendor"] = 2,
+		},
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							{
+								["y"] = 517,
+								["x"] = 531,
+								["dl"] = 0,
+								["n"] = 185,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 393941,
+					["powermax"] = 0,
+				},
+			},
+		},
+		["reaction"] = {
+			["90^Alliance^5"] = 912402327601,
+		},
+		["sex"] = {
+			[3] = 1,
+		},
+		["quote"] = {
+			["say"] = {
+				["Congratulations!"] = "",
+			},
+		},
+		["canRepair"] = 1,
+		["class"] = "WARRIOR",
+	},
+	[61250] = {
+		["spec"] = {
+			[7] = {
+				["spell"] = {
+					[119365] = 55,
+				},
+			},
+		},
+	},
+	[61508] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[66060] = 8,
+					[125431] = 1,
+					[125436] = 16,
+				},
+			},
+		},
+	},
+	[62909] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912402014133,
+		},
+		["sex"] = {
+			[3] = 1,
+		},
+		["class"] = "WARRIOR",
+		["gossip"] = {
+			["taxi"] = 1,
+		},
+		["spec"] = {
+			[0] = {
+				[88] = {
+					["loc"] = {
+						["Townlong Steppes"] = {
+							{
+								["y"] = 720,
+								["x"] = 501,
+								["dl"] = 0,
+								["n"] = 12,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 271376,
+					["powermax"] = 0,
+				},
+			},
+		},
+	},
+	[66013] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912398600707,
+		},
+		["sex"] = {
+			1, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				{
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							{
+								["y"] = 486,
+								["x"] = 520,
+								["dl"] = 0,
+								["n"] = 13,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
+			},
+		},
+	},
+	[66410] = {
+		["spec"] = {
+			[7] = {
+				["spell"] = {
+					[31365] = 6,
+				},
+			},
+		},
+	},
+	[60397] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912400874469,
+		},
+		["sex"] = {
+			[2] = 11,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[7] = {
+				[92] = {
+					["loc"] = {
+						["Mogu'shan Vaults"] = {
+							{
+								["y"] = 867,
+								["x"] = 713,
+								["dl"] = 3,
+								["n"] = 3,
+							}, -- [1]
+							{
+								["y"] = 812,
+								["x"] = 703,
+								["dl"] = 3,
+								["n"] = 5,
+							}, -- [2]
+							{
+								["y"] = 802,
+								["x"] = 715,
+								["dl"] = 3,
+								["n"] = 2,
+							}, -- [3]
+							["n"] = 3,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 5480696,
+					["powermax"] = 0,
+				},
+			},
+		},
+	},
+	[61421] = {
+		["spec"] = {
+			[7] = {
+				["spell"] = {
+					[117685] = 2,
+				},
+			},
+		},
+	},
+	[61302] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[120416] = 20,
+					[120495] = 2,
+				},
+			},
+		},
+	},
+	[57402] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912402987055,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["quote"] = {
+			["say"] = {
+				["You go on ahead. I just need to get Thunder ready and I'll meet you at Sunsong Ranch in a jiffy."] = "",
+			},
+		},
+		["class"] = "PALADIN",
+		["spec"] = {
+			[0] = {
+				[86] = {
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							{
+								["y"] = 342,
+								["x"] = 446,
+								["dl"] = 0,
+								["n"] = 35,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 0,
+					["health"] = 184350,
+					["powermax"] = 9094,
+				},
+			},
+		},
+	},
+	[60072] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912402930069,
+		},
+		["sex"] = {
+			1, -- [1]
 		},
 		["class"] = "WARRIOR",
 		["spec"] = {
 			[0] = {
 				[90] = {
 					["powertype"] = 1,
-					["health"] = 512123,
+					["health"] = 393941,
 					["powermax"] = 0,
+				},
+			},
+		},
+	},
+	[66411] = {
+		["spec"] = {
+			[7] = {
+				["spell"] = {
+					[31365] = 2,
+				},
+			},
+		},
+	},
+	[63616] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[130315] = 6,
+				},
+			},
+		},
+	},
+	[66019] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912402887171,
+		},
+		["sex"] = {
+			3, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				{
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							{
+								["y"] = 483,
+								["x"] = 518,
+								["dl"] = 0,
+								["n"] = 40,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
+			},
+		},
+	},
+	[62354] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[79849] = 2,
 				},
 			},
 		},
@@ -1249,16 +1534,121 @@ wlUnit = {
 		["spec"] = {
 			[0] = {
 				["spell"] = {
-					[127907] = 22,
+					[127907] = 24,
 				},
 			},
 		},
 	},
-	[61146] = {
+	[66046] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912402817720,
+		},
+		["sex"] = {
+			2, -- [1]
+		},
+		["class"] = "WARRIOR",
 		["spec"] = {
 			[0] = {
+				{
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							{
+								["y"] = 485,
+								["x"] = 517,
+								["dl"] = 0,
+								["n"] = 15,
+							}, -- [1]
+							{
+								["y"] = 476,
+								["x"] = 517,
+								["dl"] = 0,
+								["n"] = 12,
+							}, -- [2]
+							["n"] = 2,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
+			},
+		},
+	},
+	[66048] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912402843145,
+		},
+		["sex"] = {
+			2, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				{
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							{
+								["y"] = 476,
+								["x"] = 518,
+								["dl"] = 0,
+								["n"] = 2,
+							}, -- [1]
+							{
+								["y"] = 486,
+								["x"] = 519,
+								["dl"] = 0,
+								["n"] = 3,
+							}, -- [2]
+							["n"] = 2,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
+			},
+		},
+	},
+	[59567] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912402539279,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["quote"] = {
+			["say"] = {
+				["What's that? A sweet juju?"] = "",
+				["Pretty juju? Me want to eat!"] = "",
+				["What you put in that juju?"] = "",
+				["Something bad in that juju..."] = "",
+			},
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							{
+								["y"] = 205,
+								["x"] = 324,
+								["dl"] = 0,
+								["n"] = 5,
+							}, -- [1]
+							["n"] = 1,
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 11818230,
+					["powermax"] = 0,
+				},
 				["spell"] = {
-					[118585] = 3,
+					[114578] = 2,
+					[114586] = 4,
 				},
 			},
 		},
@@ -1266,7 +1656,7 @@ wlUnit = {
 	[60231] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912399847446,
+			["90^Alliance^5"] = 912398625873,
 		},
 		["sex"] = {
 			[3] = 1,
@@ -1282,9 +1672,9 @@ wlUnit = {
 						["Valley of the Four Winds"] = {
 							{
 								["y"] = 503,
-								["x"] = 565,
+								["x"] = 564,
 								["dl"] = 0,
-								["n"] = 17,
+								["n"] = 14,
 							}, -- [1]
 							["n"] = 1,
 						},
@@ -1296,31 +1686,100 @@ wlUnit = {
 			},
 		},
 	},
-	[58721] = {
+	[61514] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[66060] = 8,
+					[125436] = 11,
+				},
+			},
+		},
+	},
+	[60731] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912398986871,
+			["90^Alliance^2"] = 912399682783,
+		},
+		["sex"] = {
+			1, -- [1]
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[7] = {
+				[92] = {
+					["powertype"] = 1,
+					["health"] = 421592,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[118303] = 16,
+					[117539] = 6,
+					[117514] = 10,
+				},
+			},
+		},
+	},
+	[58718] = {
+		["isPvp"] = false,
+		["merchant"] = {
+			["95449^0^1^300000"] = -1,
+			["95445^0^1^300000"] = -1,
+			["80592^0^1^1500"] = -1,
+			["89847^0^1^45000"] = -1,
+			["89326^0^1^1500"] = -1,
+			["95451^0^1^300000"] = -1,
+			["80595^0^1^1500"] = -1,
+			["85153^0^1^45000"] = -1,
+			["80590^0^1^1500"] = -1,
+			["95457^0^1^300000"] = -1,
+			["85268^0^1^1000"] = -1,
+			["89329^0^1^1500"] = -1,
+			["89197^0^1^10000"] = -1,
+			["80591^0^1^1500"] = -1,
+			["85216^0^1^10000"] = -1,
+			["89233^0^1^10000"] = -1,
+			["79102^0^1^1500"] = -1,
+			["84782^0^1^45000"] = -1,
+			["85267^0^1^1000"] = -1,
+			["89849^0^1^45000"] = -1,
+			["95454^0^1^300000"] = -1,
+			["89328^0^1^1500"] = -1,
+			["85158^0^1^45000"] = -1,
+			["85163^0^1^45000"] = -1,
+			["80593^0^1^1500"] = -1,
+			["85217^0^1^10000"] = -1,
+			["89848^0^1^45000"] = -1,
+			["84783^0^1^45000"] = -1,
+			["85215^0^1^10000"] = -1,
+			["80809^0^1^45000"] = -1,
+			["89202^0^1^10000"] = -1,
+			["80594^0^1^1500"] = -1,
+			["85269^0^1^1000"] = -1,
+			["85162^0^1^45000"] = -1,
+			["95447^0^1^300000"] = -1,
+		},
+		["reaction"] = {
+			["90^Alliance^5"] = 912402373238,
 		},
 		["sex"] = {
 			[2] = 1,
 		},
-		["quote"] = {
-			["say"] = {
-				["You can find me in my house if you need me."] = "",
-				["Take over for me... uh... what's your name? <name>? Thank you, <name>. I need a break."] = "",
-			},
-		},
 		["class"] = "WARRIOR",
+		["gossip"] = {
+			["vendor"] = 1,
+		},
 		["spec"] = {
 			[0] = {
 				[90] = {
 					["loc"] = {
 						["Valley of the Four Winds"] = {
 							{
-								["y"] = 481,
-								["x"] = 520,
+								["y"] = 520,
+								["x"] = 529,
 								["dl"] = 0,
-								["n"] = 11,
+								["n"] = 84,
 							}, -- [1]
 							["n"] = 1,
 						},
@@ -1332,436 +1791,153 @@ wlUnit = {
 			},
 		},
 	},
-	[62909] = {
+	[66229] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[130830] = 4,
+				},
+			},
+		},
+	},
+	[61345] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912401007403,
+			["90^Alliance^2"] = 912399162923,
 		},
 		["sex"] = {
-			[3] = 1,
+			[2] = 5,
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[7] = {
+				[92] = {
+					["powertype"] = 1,
+					["health"] = 6745472,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[119524] = 83,
+				},
+			},
+		},
+	},
+	[65068] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912398428428,
+		},
+		["sex"] = {
+			[2] = 1,
 		},
 		["class"] = "WARRIOR",
 		["gossip"] = {
-			["taxi"] = 1,
+			["vendor"] = 1,
 		},
 		["spec"] = {
 			[0] = {
-				[88] = {
+				[90] = {
 					["loc"] = {
-						["Townlong Steppes"] = {
+						["Stormwind City"] = {
 							{
-								["y"] = 719,
-								["x"] = 501,
+								["y"] = 184,
+								["x"] = 676,
 								["dl"] = 0,
-								["n"] = 18,
+								["n"] = 27,
 							}, -- [1]
-							["n"] = 1,
+							{
+								["y"] = 178,
+								["x"] = 681,
+								["dl"] = 0,
+								["n"] = 1,
+							}, -- [2]
+							["n"] = 2,
 						},
 					},
 					["powertype"] = 1,
-					["health"] = 271376,
+					["health"] = 393941,
 					["powermax"] = 0,
 				},
 			},
 		},
 	},
-	[59985] = {
+	[58646] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912399221621,
+			["90^Alliance^5"] = 912398592960,
 		},
 		["sex"] = {
-			2, -- [1]
+			[2] = 6,
 		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				{
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							{
-								["y"] = 485,
-								["x"] = 521,
-								["dl"] = 0,
-								["n"] = 56,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 84,
-					["powermax"] = 0,
-				}, -- [1]
+		["quote"] = {
+			["say"] = {
+				["Yes, it's true! Thanks to <name>, the Kunzen's leader is dead. Those monkeys shouldn't bother Mr. Mudclaw any more."] = "",
+				["I need more time to prepare the mixture, <name>. I'll let you know when it's ready."] = "",
 			},
-		},
-	},
-	[59987] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912399265784,
-		},
-		["sex"] = {
-			3, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				{
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							{
-								["y"] = 484,
-								["x"] = 521,
-								["dl"] = 0,
-								["n"] = 74,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 84,
-					["powermax"] = 0,
-				}, -- [1]
-			},
-		},
-	},
-	[69247] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^4"] = 912400620307,
-		},
-		["sex"] = {
-			2, -- [1]
 		},
 		["class"] = "WARRIOR",
 		["spec"] = {
 			[0] = {
 				[90] = {
 					["loc"] = {
-						["Isle of Thunder"] = {
+						["Valley of the Four Winds"] = {
 							{
-								["y"] = 800,
-								["x"] = 479,
+								["y"] = 489,
+								["x"] = 522,
 								["dl"] = 0,
-								["n"] = 6,
+								["n"] = 265,
 							}, -- [1]
 							["n"] = 1,
 						},
 					},
 					["powertype"] = 1,
-					["health"] = 196970,
+					["health"] = 393941,
 					["powermax"] = 0,
 				},
 			},
 		},
 	},
-	[59991] = {
+	[64068] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912399295431,
-		},
-		["sex"] = {
-			2, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				{
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							{
-								["y"] = 484,
-								["x"] = 520,
-								["dl"] = 0,
-								["n"] = 18,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 84,
-					["powermax"] = 0,
-				}, -- [1]
-			},
-		},
-	},
-	[59489] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912399630617,
+			["90^Alliance^2"] = 912399965847,
 		},
 		["sex"] = {
 			[2] = 1,
 		},
 		["class"] = "PALADIN",
 		["spec"] = {
-			[0] = {
-				[86] = {
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							{
-								["y"] = 485,
-								["x"] = 520,
-								["dl"] = 0,
-								["n"] = 53,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
+			[7] = {
+				[92] = {
 					["powertype"] = 0,
-					["health"] = 184350,
-					["powermax"] = 9094,
+					["health"] = 15177312,
+					["powermax"] = 10312,
 				},
 			},
 		},
 	},
-	[69399] = {
+	[64061] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^4"] = 912400883291,
+			["90^Alliance^2"] = 912399871147,
 		},
 		["sex"] = {
-			[2] = 1,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Isle of Thunder"] = {
-							{
-								["y"] = 745,
-								["x"] = 499,
-								["dl"] = 0,
-								["n"] = 34,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 275759,
-					["powermax"] = 0,
-				},
-			},
-		},
-	},
-	[69227] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912400832671,
-			["90^Alliance^4"] = 912400848529,
-		},
-		["sex"] = {
-			[2] = 3,
+			[2] = 2,
 		},
 		["class"] = {
 		},
 		["spec"] = {
-			[0] = {
-				[90] = {
-					["powertype"] = 1,
-					["health"] = 512123,
-					["powermax"] = 0,
+			[7] = {
+				[92] = {
+					["powertype"] = 0,
+					["health"] = 12647760,
+					["powermax"] = 10312,
 				},
 				["spell"] = {
-					[22120] = 1,
-					[139385] = 4,
-				},
-			},
-		},
-	},
-	[63149] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912399718580,
-		},
-		["sex"] = {
-			2, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				{
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							{
-								["y"] = 484,
-								["x"] = 520,
-								["dl"] = 0,
-								["n"] = 3,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 84,
-					["powermax"] = 0,
-				}, -- [1]
-			},
-		},
-	},
-	[66184] = {
-		["spec"] = {
-			[0] = {
-				["spell"] = {
-					[119580] = 2,
-					[119578] = 1,
-					[119579] = 8,
-				},
-			},
-		},
-	},
-	[69338] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^4"] = 912400658514,
-			["90^Alliance^2"] = 912400835125,
-		},
-		["sex"] = {
-			[2] = 3,
-		},
-		["quote"] = {
-			["say"] = {
-				["You die now."] = "",
-			},
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Isle of Thunder"] = {
-							{
-								["y"] = 790,
-								["x"] = 501,
-								["dl"] = 0,
-								["n"] = 9,
-							}, -- [1]
-							{
-								["y"] = 752,
-								["x"] = 486,
-								["dl"] = 0,
-								["n"] = 8,
-							}, -- [2]
-							["n"] = 2,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 1969705,
-					["powermax"] = 0,
-				},
-				["spell"] = {
-					[138422] = 9,
-					[138433] = 5,
-				},
-			},
-		},
-	},
-	[67704] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^4"] = 912400531925,
-		},
-		["sex"] = {
-			1, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Isle of Thunder"] = {
-							{
-								["y"] = 669,
-								["x"] = 484,
-								["dl"] = 0,
-								["n"] = 9,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 393941,
-					["powermax"] = 0,
-				},
-			},
-		},
-	},
-	[27893] = {
-		["spec"] = {
-			[0] = {
-				["spell"] = {
-					[55078] = 1,
-					[55095] = 1,
-				},
-			},
-		},
-	},
-	[67970] = {
-		["spec"] = {
-			[0] = {
-				["spell"] = {
-					[137503] = 1,
-				},
-			},
-		},
-	},
-	[58562] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912399396644,
-		},
-		["sex"] = {
-			8, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				{
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							{
-								["y"] = 485,
-								["x"] = 521,
-								["dl"] = 0,
-								["n"] = 180,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 84,
-					["powermax"] = 0,
-				}, -- [1]
-			},
-		},
-	},
-	[69242] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^4"] = 912400680920,
-		},
-		["sex"] = {
-			1, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Isle of Thunder"] = {
-							{
-								["y"] = 800,
-								["x"] = 479,
-								["dl"] = 0,
-								["n"] = 3,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 19697,
-					["powermax"] = 0,
+					[126955] = 14,
+					[126970] = 8,
+					[126958] = 21,
 				},
 			},
 		},
@@ -1769,7 +1945,7 @@ wlUnit = {
 	[66023] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912398565693,
+			["90^Alliance^5"] = 912398485087,
 		},
 		["sex"] = {
 			[2] = 1,
@@ -1784,10 +1960,10 @@ wlUnit = {
 					["loc"] = {
 						["The Jade Forest"] = {
 							{
-								["y"] = 851,
+								["y"] = 850,
 								["x"] = 460,
 								["dl"] = 0,
-								["n"] = 29,
+								["n"] = 17,
 							}, -- [1]
 							["n"] = 1,
 						},
@@ -1799,52 +1975,29 @@ wlUnit = {
 			},
 		},
 	},
-	[69228] = {
+	[60913] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^2"] = 912400623738,
+			["90^Alliance^2"] = 912400152220,
 		},
 		["sex"] = {
-			[2] = 3,
+			3, -- [1]
 		},
-		["quote"] = {
-			["say"] = {
-				["I'll throw your corpse in the filth-pool!"] = "",
-			},
-		},
-		["class"] = {
-		},
+		["class"] = "WARRIOR",
 		["spec"] = {
-			[0] = {
-				["spell"] = {
-					[83012] = 12,
-				},
+			[7] = {
 				[90] = {
-					["loc"] = {
-						["Isle of Thunder"] = {
-							{
-								["y"] = 761,
-								["x"] = 548,
-								["dl"] = 0,
-								["n"] = 8,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
 					["powertype"] = 1,
-					["health"] = 512123,
+					["health"] = 886367,
 					["powermax"] = 0,
-				},
-				["rep"] = {
-					["The Black Prince^6^25^0"] = 1,
 				},
 			},
 		},
 	},
-	[63169] = {
+	[66039] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912401297098,
+			["90^Alliance^5"] = 912402917392,
 		},
 		["sex"] = {
 			1, -- [1]
@@ -1857,9 +2010,9 @@ wlUnit = {
 						["Valley of the Four Winds"] = {
 							{
 								["y"] = 484,
-								["x"] = 518,
+								["x"] = 520,
 								["dl"] = 0,
-								["n"] = 19,
+								["n"] = 9,
 							}, -- [1]
 							["n"] = 1,
 						},
@@ -1871,242 +2024,70 @@ wlUnit = {
 			},
 		},
 	},
-	[67996] = {
+	[61131] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912400586240,
+			["90^Alliance^2"] = 912399781540,
 		},
 		["sex"] = {
-			[3] = 1,
-		},
-		["class"] = "MAGE",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Isle of Thunder"] = {
-							{
-								["y"] = 744,
-								["x"] = 557,
-								["dl"] = 0,
-								["n"] = 69,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 0,
-					["health"] = 3151530,
-					["powermax"] = 10631000,
-				},
-			},
-		},
-		["faction"] = "Kirin Tor",
-	},
-	[67992] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912400200541,
-		},
-		["sex"] = {
-			[3] = 1,
-		},
-		["class"] = "MAGE",
-		["spec"] = {
-			[0] = {
-				[-1] = {
-					["loc"] = {
-						["Isle of Thunder"] = {
-							{
-								["y"] = 723,
-								["x"] = 633,
-								["dl"] = 0,
-								["n"] = 46,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 0,
-					["health"] = 279127200,
-					["powermax"] = 1792480,
-				},
-			},
-		},
-		["faction"] = "Kirin Tor Offensive",
-	},
-	[63616] = {
-		["spec"] = {
-			[0] = {
-				["spell"] = {
-					[130315] = 4,
-				},
-			},
-		},
-	},
-	[56531] = {
-		["spec"] = {
-			[0] = {
-				["spell"] = {
-					[117468] = 4,
-				},
-			},
-		},
-	},
-	[70398] = {
-		["isPvp"] = false,
-		["training"] = {
-			["ROGUE"] = {
-				["7620^^0^5^111"] = 1,
-				["110410^Fishing^500^1^333333"] = 1,
-				["33095^Fishing^275^1^111111"] = 1,
-				["88868^Fishing^425^1^277777"] = 1,
-				["7732^Fishing^125^1^11111"] = 1,
-				["18248^Fishing^200^1^27777"] = 1,
-				["51294^Fishing^350^1^166666"] = 1,
-				["7731^Fishing^50^0^555"] = 1,
-			},
-		},
-		["reaction"] = {
-			["90^Alliance^5"] = 912398734622,
-		},
-		["sex"] = {
-			[2] = 1,
-		},
-		["merchant"] = {
-			["6530^0^1^100"] = -1,
-			["6533^0^1^250"] = 2,
-			["6256^0^1^23"] = -1,
-			["6532^0^1^250"] = -1,
-			["6529^0^1^50"] = -1,
-		},
-		["class"] = "WARRIOR",
-		["gossip"] = {
-			["vendor"] = 8,
-			["trainer"] = 8,
-		},
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							{
-								["y"] = 469,
-								["x"] = 588,
-								["dl"] = 0,
-								["n"] = 710,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 393941,
-					["powermax"] = 0,
-				},
-			},
-		},
-	},
-	[57385] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912399459237,
-		},
-		["sex"] = {
-			[2] = 2,
+			[2] = 7,
 		},
 		["quote"] = {
 			["say"] = {
-				["You go on ahead. I'll gather my tools and meet you at Sunsong Ranch."] = "",
+				["Lo-kal..."] = "",
+			},
+		},
+		["spec"] = {
+			[7] = {
+				[92] = {
+					["powertype"] = 0,
+					["health"] = 21079600,
+					["powermax"] = 10312,
+				},
+				["spell"] = {
+					[118552] = 385,
+					[118529] = 204,
+				},
 			},
 		},
 		["class"] = "PALADIN",
-		["spec"] = {
-			[0] = {
-				[86] = {
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							{
-								["y"] = 518,
-								["x"] = 387,
-								["dl"] = 0,
-								["n"] = 59,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 0,
-					["health"] = 184350,
-					["powermax"] = 9094,
-				},
-			},
-		},
 	},
-	[58710] = {
+	[60398] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912399664942,
+			["90^Alliance^2"] = 912400904971,
 		},
 		["sex"] = {
-			[2] = 1,
-		},
-		["quote"] = {
-			["say"] = {
-				["You are so kind mishter... hic!"] = "",
-			},
+			[2] = 6,
 		},
 		["class"] = "WARRIOR",
 		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							{
-								["y"] = 525,
-								["x"] = 535,
-								["dl"] = 0,
-								["n"] = 83,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 393941,
-					["powermax"] = 0,
-				},
-			},
-		},
-	},
-	[70347] = {
-		["spec"] = {
-			[0] = {
-				["spell"] = {
-					[80515] = 8,
-					[80514] = 33,
-				},
-			},
-		},
-	},
-	[69998] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912400305461,
-		},
-		["sex"] = {
-			1, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
+			[7] = {
 				[92] = {
 					["powertype"] = 1,
-					["health"] = 10539800,
+					["health"] = 2107960,
 					["powermax"] = 0,
+				},
+				["spell"] = {
+					[116778] = 6,
+					[117485] = 7,
 				},
 			},
 		},
 	},
-	[60039] = {
+	[60399] = {
+		["spec"] = {
+			[7] = {
+				["spell"] = {
+					[132425] = 26,
+				},
+			},
+		},
+	},
+	[60153] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^2"] = 912401301313,
+			["90^Alliance^5"] = 912402220823,
 		},
 		["sex"] = {
 			2, -- [1]
@@ -2114,263 +2095,14 @@ wlUnit = {
 		["class"] = "WARRIOR",
 		["spec"] = {
 			[0] = {
-				[90] = {
+				{
 					["loc"] = {
 						["Valley of the Four Winds"] = {
 							{
-								["y"] = 483,
+								["y"] = 484,
 								["x"] = 518,
 								["dl"] = 0,
-								["n"] = 7,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 393941,
-					["powermax"] = 0,
-				},
-			},
-		},
-	},
-	[58718] = {
-		["isPvp"] = false,
-		["merchant"] = {
-			["95449^0^1^300000"] = -1,
-			["95445^0^1^300000"] = -1,
-			["85215^0^1^10000"] = -1,
-			["89847^0^1^45000"] = -1,
-			["89326^0^1^1500"] = -1,
-			["80594^0^1^1500"] = -1,
-			["80595^0^1^1500"] = -1,
-			["85153^0^1^45000"] = -1,
-			["80590^0^1^1500"] = -1,
-			["80593^0^1^1500"] = -1,
-			["85268^0^1^1000"] = -1,
-			["89329^0^1^1500"] = -1,
-			["89197^0^1^10000"] = -1,
-			["84783^0^1^45000"] = -1,
-			["85216^0^1^10000"] = -1,
-			["89233^0^1^10000"] = -1,
-			["79102^0^1^1500"] = -1,
-			["84782^0^1^45000"] = -1,
-			["85267^0^1^1000"] = -1,
-			["89849^0^1^45000"] = -1,
-			["95454^0^1^300000"] = -1,
-			["89328^0^1^1500"] = -1,
-			["85158^0^1^45000"] = -1,
-			["85163^0^1^45000"] = -1,
-			["85217^0^1^10000"] = -1,
-			["89848^0^1^45000"] = -1,
-			["95447^0^1^300000"] = -1,
-			["80591^0^1^1500"] = -1,
-			["80592^0^1^1500"] = -1,
-			["80809^0^1^45000"] = -1,
-			["89202^0^1^10000"] = -1,
-			["85269^0^1^1000"] = -1,
-			["95451^0^1^300000"] = -1,
-			["85162^0^1^45000"] = -1,
-			["95457^0^1^300000"] = -1,
-		},
-		["gossip"] = {
-			["vendor"] = 2,
-		},
-		["class"] = "WARRIOR",
-		["reaction"] = {
-			["90^Alliance^5"] = 912399176934,
-		},
-		["sex"] = {
-			[2] = 3,
-		},
-		["quote"] = {
-			["say"] = {
-				["First packet of seeds is on the house! Come back to me anytime you want to buy more seeds, ya hear?"] = "",
-			},
-		},
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							{
-								["y"] = 520,
-								["x"] = 529,
-								["dl"] = 0,
-								["n"] = 121,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 393941,
-					["powermax"] = 0,
-				},
-			},
-		},
-	},
-	[69229] = {
-		["spec"] = {
-			[0] = {
-				["spell"] = {
-					[138490] = 4,
-					[138492] = 5,
-					[138479] = 6,
-					[138481] = 4,
-				},
-			},
-		},
-	},
-	[67995] = {
-		["isPvp"] = true,
-		["reaction"] = {
-			["90^Alliance^5"] = 912400218538,
-		},
-		["sex"] = {
-			[3] = 2,
-		},
-		["class"] = "PALADIN",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Isle of Thunder"] = {
-							{
-								["y"] = 736,
-								["x"] = 626,
-								["dl"] = 0,
-								["n"] = 43,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 0,
-					["health"] = 3939410,
-					["powermax"] = 9916,
-				},
-			},
-		},
-		["faction"] = "Kirin Tor Offensive",
-	},
-	[67473] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912400350120,
-		},
-		["sex"] = {
-			9, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				["spell"] = {
-					[140202] = 11,
-					[140207] = 2,
-					[140199] = 5,
-				},
-				[90] = {
-					["loc"] = {
-						["Isle of Thunder"] = {
-							{
-								["y"] = 651,
-								["x"] = 493,
-								["dl"] = 0,
-								["n"] = 53,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 787882,
-					["powermax"] = 0,
-				},
-				["rep"] = {
-					["The Black Prince^6^50^0"] = 2,
-				},
-			},
-		},
-	},
-	[62380] = {
-		["spec"] = {
-			[0] = {
-				["spell"] = {
-					[130958] = 2,
-				},
-			},
-		},
-	},
-	[58706] = {
-		["isPvp"] = false,
-		["merchant"] = {
-			["89362^0^1^5000000"] = -1,
-			["89784^0^1^100000"] = -1,
-			["89391^0^1^15000000"] = -1,
-			["89390^0^1^32500000"] = -1,
-			["89814^0^1^1000000"] = -1,
-			["93226^0^1^500000"] = -1,
-			["89812^0^1^1000000"] = -1,
-			["90175^0^1^2500000"] = -1,
-			["89813^0^1^1000000"] = -1,
-			["89869^0^1^2500000"] = -1,
-			["74658^0^1^10000"] = -1,
-			["80914^0^1^1250000"] = -1,
-			["74657^0^1^10000"] = -1,
-		},
-		["gossip"] = {
-			["vendor"] = 6,
-		},
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							{
-								["y"] = 517,
-								["x"] = 532,
-								["dl"] = 0,
-								["n"] = 251,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 393941,
-					["powermax"] = 0,
-				},
-			},
-		},
-		["reaction"] = {
-			["90^Alliance^5"] = 912398695605,
-		},
-		["sex"] = {
-			[3] = 3,
-		},
-		["quote"] = {
-			["say"] = {
-				["Now that we're acquaintances, <name>, let me give you a tip. Folks 'round here can help spruce up your farm, but you gotta become friends with them first. Make friends by helping them out with daily tasks, or by giving them gifts like the one you just gave me."] = "",
-			},
-		},
-		["canRepair"] = 1,
-		["class"] = "WARRIOR",
-	},
-	[59990] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912399234423,
-		},
-		["sex"] = {
-			2, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				{
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							{
-								["y"] = 482,
-								["x"] = 521,
-								["dl"] = 0,
-								["n"] = 45,
+								["n"] = 3,
 							}, -- [1]
 							["n"] = 1,
 						},
@@ -2382,106 +2114,20 @@ wlUnit = {
 			},
 		},
 	},
-	[59488] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912399495360,
-		},
-		["sex"] = {
-			13, -- [1]
-		},
-		["class"] = "WARRIOR",
+	[58899] = {
 		["spec"] = {
 			[0] = {
-				[90] = {
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							{
-								["y"] = 523,
-								["x"] = 367,
-								["dl"] = 0,
-								["n"] = 16,
-							}, -- [1]
-							{
-								["y"] = 531,
-								["x"] = 366,
-								["dl"] = 0,
-								["n"] = 76,
-							}, -- [2]
-							["n"] = 2,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 39394,
-					["powermax"] = 0,
-				},
 				["spell"] = {
-					[744] = 13,
-				},
-			},
-		},
-	},
-	[63151] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912399762130,
-		},
-		["sex"] = {
-			2, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				{
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							{
-								["y"] = 483,
-								["x"] = 519,
-								["dl"] = 0,
-								["n"] = 37,
-							}, -- [1]
-							["n"] = 1,
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 84,
-					["powermax"] = 0,
-				}, -- [1]
-			},
-		},
-	},
-	[62346] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912398616354,
-		},
-		["sex"] = {
-			1, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[-1] = {
-					["powertype"] = 1,
-					["health"] = 320560704,
-					["powermax"] = 0,
+					[13608] = 3,
 				},
 			},
 		},
 	},
 }
 wlBaseStats = {
-	["ROGUE^Dwarf^90"] = {
-		["SPIRIT"] = 76,
-		["DODGEPERAGI"] = 0.001384282640687049,
-		["INTELLECT"] = 47,
-		["STAMINA"] = 124,
-		["STRENGTH"] = 137,
-		["AGILITY"] = 232,
-	},
 }
 wlItemDurability = {
+	[45579] = 0,
 	[72163] = 0,
 	[72986] = 0,
 	[94221] = 0,
@@ -2489,36 +2135,40 @@ wlItemDurability = {
 	[75014] = 0,
 	[72120] = 0,
 	[74833] = 0,
-	[80822] = 0,
+	[76097] = 0,
 	[74841] = 0,
+	[93048] = 0,
 	[74849] = 0,
 	[84240] = 0,
-	[95143] = 0,
+	[74857] = 0,
 	[87209] = 0,
-	[86520] = 100,
+	[89985] = 165,
+	[7005] = 20,
 	[86843] = 55,
+	[86910] = 80,
 	[94222] = 0,
+	[79328] = 0,
 	[80433] = 0,
 	[74641] = 0,
 	[74834] = 0,
-	[45579] = 0,
-	[86762] = 80,
+	[86791] = 0,
+	[74842] = 0,
 	[74846] = 0,
 	[74850] = 0,
-	[89967] = 0,
-	[86198] = 100,
+	[95624] = 0,
+	[89070] = 0,
 	[85824] = 55,
 	[86899] = 55,
-	[93048] = 0,
+	[30817] = 0,
 	[89112] = 0,
-	[72988] = 0,
-	[81265] = 0,
-	[86791] = 0,
-	[89070] = 0,
-	[86864] = 80,
-	[90585] = 165,
-	[74839] = 0,
 	[49] = 0,
+	[91866] = 0,
+	[95143] = 0,
+	[86804] = 100,
+	[86864] = 80,
+	[85559] = 0,
+	[74839] = 0,
+	[74843] = 0,
 	[71634] = 0,
 	[89341] = 100,
 	[87266] = 0,
@@ -2529,18 +2179,18 @@ wlItemDurability = {
 	[95350] = 0,
 	[6948] = 0,
 	[38426] = 0,
-	[86804] = 100,
-	[7005] = 20,
-	[6256] = 16,
-	[85559] = 0,
-	[95567] = 0,
-	[74844] = 0,
-	[30817] = 0,
-	[94130] = 0,
 	[21383] = 0,
-	[87208] = 0,
+	[71096] = 0,
+	[74643] = 0,
 	[74837] = 0,
-	[79323] = 0,
+	[74840] = 0,
+	[74844] = 0,
+	[95567] = 0,
+	[94130] = 0,
+	[74856] = 0,
+	[87208] = 0,
+	[76061] = 0,
+	[6256] = 16,
 }
 wlBattlePetStats = {
 	["0x000000000077C403"] = {

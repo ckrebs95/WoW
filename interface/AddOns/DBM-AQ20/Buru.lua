@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Buru", "DBM-AQ20", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 432 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 436 $"):sub(12, -3))
 mod:SetCreatureID(15370)
 mod:SetModelID(15654)
 mod:RegisterCombat("combat")
@@ -24,7 +24,7 @@ function mod:OnCombatStart(delay)
 end
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args:IsSpellID(96) then
+	if args.spellId == 96 then
 		if (args.amount or 1) >= 5 and args:IsPlayer() then
 			specWarnDismember:Show(args.amount)
 		end

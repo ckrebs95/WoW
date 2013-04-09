@@ -42,12 +42,10 @@ L.IconsInUse				= "Icons used by this mod"
 
 -- Tab: Boss Statistics
 L.BossStatistics			= "Boss Statistics"
-L.Statistic_Kills			= "Kills:"
+L.Statistic_Kills			= "Victories:"
 L.Statistic_Wipes			= "Wipes:"
-L.Statistic_BestKill		= "Best Kill:"
-L.Statistic_Heroic			= "Heroic"
-L.Statistic_10Man			= "10man raid"
-L.Statistic_25Man			= "25man raid"
+L.Statistic_Incompletes		= "Incompletes:"--For scenarios, TODO, figure out a clean way to replace any Statistic_Wipes with Statistic_Incompletes for scenario mods
+L.Statistic_BestKill		= "Best Victory:"
 
 -- Tab: General Options
 L.General 					= "General DBM Options"
@@ -59,6 +57,7 @@ L.DisableCinematicsOutside	= "Disable in-game cinematics outside instances"
 L.SKT_Enabled				= "Always show speed kill timer (Overrides boss-specific option)"
 L.AutologBosses				= "Automatically record boss encounters using blizzard combat log"
 L.AdvancedAutologBosses		= "Automatically record boss encounters with Transcriptor"
+L.LogOnlyRaidBosses			= "Only record raid boss encounters (exclude Raid Finder/party/scenario)"
 L.Latency_Text				= "Set max latency sync threshold: %d"
 
 L.ModelOptions				= "3D Model Viewer Options"

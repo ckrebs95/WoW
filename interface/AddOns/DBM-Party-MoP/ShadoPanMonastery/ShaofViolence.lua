@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(685, "DBM-Party-MoP", 3, 312)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 8974 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9120 $"):sub(12, -3))
 mod:SetCreatureID(56719)
 mod:SetModelID(43283)
 mod:SetZone()
@@ -24,8 +24,7 @@ local specWarnShaSpike			= mod:NewSpecialWarningMove(106877)
 local timerDisorientingSmashCD	= mod:NewCDTimer(13, 106872)--variables. not confirmed
 local timerShaSpikeCD			= mod:NewNextTimer(9, 106877)
 
-function mod:ShaSpikeTarget()
-	local targetname = self:GetBossTarget(56719)
+function mod:ShaSpikeTarget(targetname)
 	if not targetname then return end
 	warnShaSpike:Show(targetname)
 	if targetname == UnitName("player") then
@@ -41,7 +40,7 @@ end
 
 function mod:SPELL_CAST_START(args)
 	if args.spellId == 106877 then
-		self:ScheduleMethod(0.2, "ShaSpikeTarget")
+		self:BossTargetScanner(56719, "ShaSpikeTarget", 0.02, 20)
 		timerShaSpikeCD:Start()
 	end
 end

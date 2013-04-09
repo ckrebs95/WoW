@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Nefarian-Classic", "DBM-BWL", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 432 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 436 $"):sub(12, -3))
 mod:SetCreatureID(11583)
 mod:SetModelID(11380)
 mod:RegisterCombat("yell", L.YellPull)
@@ -39,20 +39,20 @@ function mod:OnCombatStart(delay)
 end
 
 function mod:SPELL_CAST_START(args)
-	if args:IsSpellID(22539) and self:IsInCombat() then
+	if args.spellId == 22539 and self:IsInCombat() then
 		warnShadowFlame:Show()
 		timerShadowFlame:Start()
-	elseif args:IsSpellID(22686) and self:IsInCombat() then
+	elseif args.spellId == 22686 and self:IsInCombat() then
 		warnFear:Show()
 		timerFearNext:Start()
 	end
 end
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args:IsSpellID(22687) then
+	if args.spellId == 22687 then
 		warnVeilShadow:Show(args.destName)
 		timerVeilShadow:Start(args.destName)
-	elseif args:IsSpellID(22667) then
+	elseif args.spellId == 22667 then
 		warnMC:Show(args.destName)
 		specwarnMC:Show(args.destName)
 		timerMC:Start(args.destName)
@@ -60,7 +60,7 @@ function mod:SPELL_AURA_APPLIED(args)
 end
 
 function mod:SPELL_AURA_REMOVED(args)
-	if args:IsSpellID(22687) then
+	if args.spellId == 22687 then
 		timerVeilShadow:Cancel(args.destName)
 	end
 end

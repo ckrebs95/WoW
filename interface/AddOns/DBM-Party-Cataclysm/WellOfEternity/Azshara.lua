@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(291, "DBM-Party-Cataclysm", 13, 185)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 44 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 48 $"):sub(12, -3))
 mod:SetCreatureID(54853)
 mod:SetModelID(39391)
 mod:SetZone()
@@ -45,7 +45,7 @@ function mod:OnCombatStart(delay)
 end
 
 function mod:SPELL_CAST_START(args)
-	if args:IsSpellID(103241) then
+	if args.spellId == 103241 then
 		warnObedience:Show()
 		specWarnObedience:Show(args.sourceName)
 --		timerObedienceCD:Start()

@@ -62,30 +62,23 @@ L:SetMiscLocalization{
 L= DBM:GetModLocalization(709)
 
 L:SetWarningLocalization({
-	MoveWarningForward			= "Пробегите через босса",
-	MoveWarningRight			= "Перейдите направо",
-	MoveWarningBack				= "Вернитесь назад",
+	MoveForward					= "Пробегите через босса",
+	MoveRight					= "Перейдите направо",
+	MoveBack					= "Вернитесь назад",
 	specWarnBreathOfFearSoon	= "Скоро дыхание страха - зайдите в конус света!"
 })
 
 L:SetTimerLocalization({
-	timerSpecialAbilityCD		= "Следующая спец-способность",
-	timerSpoHudCD				= "Страх / Изводень CD",
-	timerSpoStrCD				= "Изводень / Клив CD",
-	timerHudStrCD				= "Страх / Клив CD"
+	timerSpecialAbilityCD	= "Следующая спец-способность",
+	timerSpoHudCD			= "Восст. Страх / Изводень",
+	timerSpoStrCD			= "Восст. Изводень / Клив",
+	timerHudStrCD			= "Восст. Страх / Клив"
 })
 
 L:SetOptionLocalization({
-	specWarnBreathOfFearSoon	= "Предупреждать заранее о $spell:119414 (если на вас нет $spell:117964)"
-})
-
-L:SetOptionLocalization({
-	RangeFrame					= "Показывать окно проверки дистанции (2 м) для $spell:119519",
-	MoveWarningForward			= "Предупреждать, когда нужно пробежать через босса во время $spell:120047",
-	MoveWarningRight			= "Предупреждать, когда нужно перейти направо, во время $spell:120047",
-	MoveWarningBack				= "Предупреждать, когда нужно вернуть назад, во время $spell:120047",
-	timerSpecialAbilityCD		= "Отсчет времени до следующей спец-способности на второй фазе",
-	timerSpoHudCD				= "Отсчет времени до следующих возможных $spell:120629 или $spell:120519",
-	timerSpoStrCD				= "Отсчет времени до следующих возможных $spell:120519 или $spell:120672",
-	timerHudStrCD				= "Отсчет времени до следующих возможных $spell:120629 или $spell:120672"
+	warnBreathOnPlatform		= "Предупреждать о $spell:119414 когда вы на платформе\n(не рекомендуется, для рейд лидера)",
+	specWarnBreathOfFearSoon	= "Предупреждать заранее о $spell:119414, если на вас нет баффа $spell:117964",
+	specWarnMovement			= "Спец-предупреждение куда двигаться при выстрелах $spell:120047\n(http://mysticalos.com/terraceofendlesssprings.jpg)",
+	timerSpecialAbility			= "Отсчет времени до следующей спец-способности на второй фазе",
+	RangeFrame					= "Показывать окно проверки дистанции (2 м) для $spell:119519"
 })

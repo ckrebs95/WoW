@@ -11,8 +11,9 @@
 ## RequiredDeps: DBM-Core
 ## SavedVariablesPerCharacter: DBMPandaria_SavedVars, DBMPandaria_SavedStats
 ## X-DBM-Mod: 1
+## X-DBM-Mod-Type: RAID
 ## X-DBM-Mod-Category: MOP
-## X-DBM-Mod-Has-Heroic-Mode: 0
+## X-DBM-Mod-Has-Single-Format: 1
 ## X-DBM-Mod-Name: Pandaria
 ## X-DBM-Mod-Name-koKR: 판다리아
 ## X-DBM-Mod-Name-deDE: Pandaria
@@ -24,7 +25,7 @@
 ## X-DBM-Mod-Name-zhCN: 潘达利亚
 ## X-DBM-Mod-Name-frFR: Pandarie
 ## X-DBM-Mod-Sort: 5
-## X-Curse-Packaged-Version: 5.2.2
+## X-Curse-Packaged-Version: 5.2.3
 ## X-Curse-Project-Name: Deadly Boss Mods
 ## X-Curse-Project-ID: deadly-boss-mods
 ## X-Curse-Repository-ID: wow/deadly-boss-mods/mainline

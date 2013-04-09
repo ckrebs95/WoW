@@ -6,20 +6,22 @@ DBM_HOW_TO_USE_MOD					= "歡迎使用DBM。在聊天頻道輸入 /dbm 打開設
 DBM_CORE_LOAD_MOD_ERROR				= "載入%s模組時發生錯誤：%s"
 DBM_CORE_LOAD_MOD_SUCCESS			= "成功載入%s模組。輸入/dbm或/dbm help有更多選項。"
 DBM_CORE_LOAD_GUI_ERROR				= "無法載入圖形介面：%s"
-DBM_CORE_LOAD_GUI_COMBAT			= "圖形介面不能在戰鬥中初始化。請先在於戰鬥外讀取圖形介面，這樣就能夠在戰鬥中使用。"
-
-DBM_ABSOLUTE_MODE_ON				= "專制模式開啟。"
-DBM_ABSOLUTE_MODE_OFF				= "專制模式關閉。再次廣播模組版本。"
-DBM_ABSOLUTE_MODE_NOTIFY_ON			= "專制模式被%s開啟。只有他們的DBM能夠設置團隊圖示。"
-DBM_ABSOLUTE_MODE_NOTIFY_OFF		= "專制模式被%s關閉。還原一般圖示權限。"
+DBM_CORE_LOAD_GUI_COMBAT			= "圖形介面不能在戰鬥中初始化。圖形介面將在戰鬥後自動讀取，這樣就能夠在戰鬥中使用。"
 
 DBM_CORE_COMBAT_STARTED				= "%s開戰。祝好運與盡興! :)"
 DBM_CORE_COMBAT_STARTED_IN_PROGRESS	= "開戰%s已進行的戰鬥。祝好運與盡興! :)"
+DBM_CORE_SCENARIO_STARTED			= "%s開始。祝好運與盡興! :)"
 DBM_CORE_BOSS_DOWN					= "擊敗%s，經過%s!"
+DBM_CORE_BOSS_DOWN_I				= "擊敗%s!你已勝利了%d次。"
 DBM_CORE_BOSS_DOWN_L				= "擊敗%s!本次經過%s，上次經過%s，最快紀錄為%s。你總共戰勝了%d次。"
 DBM_CORE_BOSS_DOWN_NR				= "擊敗%s!經過%s! 這是一個新記錄! (舊紀錄為%s) 你總共戰勝了%d次。"
+DBM_CORE_SCENARIO_COMPLETE			= "%s完成!經過%s!"
+DBM_CORE_SCENARIO_COMPLETE_L		= "%s完成!本次經過%s，上次經過%s，最快紀錄為%s。你總共完成了%d次。"
+DBM_CORE_SCENARIO_COMPLETE_NR		= "%s完成! 這是一個新記錄! (舊紀錄為%s) 你總共完成了%d次。"
 DBM_CORE_COMBAT_ENDED_AT			= "%s(%s)的戰鬥經過%s結束。"
 DBM_CORE_COMBAT_ENDED_AT_LONG		= "%s(%s)的戰鬥經過%s結束。你在這個難度總共滅團了%d次。"
+DBM_CORE_SCENARIO_ENDED_AT			= "%s結束!經過%s!"
+DBM_CORE_SCENARIO_ENDED_AT_LONG		= "%s結束!本次經過%s，你已有共%d次未完成的嘗試在這個難度裡。"
 DBM_CORE_COMBAT_STATE_RECOVERED		= "%s的戰鬥在%s前開始，恢復計時器中..."
 DBM_CORE_TRANSCRIPTOR_LOG_START		= "Transcriptor開始記錄."
 DBM_CORE_TRANSCRIPTOR_LOG_END		= "Transcriptor結束紀錄."
@@ -141,6 +143,77 @@ DBM_CORE_ANNOUNCE_PULL_NOW			= "拉怪囉!"
 
 DBM_CORE_ACHIEVEMENT_TIMER_SPEED_KILL 		= "最速勝利"
 
+-- Auto-generated Warning Localizations
+DBM_CORE_AUTO_ANNOUNCE_TEXTS = {
+	target					= "%s:>%%s<",
+	targetcount				= "%s (%%d):>%%s<",
+	spell					= "%s",
+	ends 					= "%s結束",
+	fades					= "%s消散",
+	adds					= "%s還剩餘:%%d",
+	cast					= "施放%s:%.1f秒",
+	soon					= "%s即將到來",
+	prewarn					= "%s在%s",
+	phase					= "第%s階段",
+	prephase				= "第%s階段 即將到來",
+	count					= "%s (%%d)",
+	stack					= "%s中了>%%s< (%%d)"
+}
+
+local prewarnOption			= "為$spell:%s顯示預先警告"
+DBM_CORE_AUTO_ANNOUNCE_OPTIONS = {
+	target					= "提示$spell:%s的目標",
+	targetcount				= "提示$spell:%s的目標",
+	spell					= "為$spell:%s顯示警告",
+	ends					= "為$spell:%s結束顯示警告",
+	fades					= "為$spell:%s消散顯示警告",
+	adds					= "提示$spell:%s的剩餘數量",
+	cast					= "當$spell:%s施放時顯示警告",
+	soon					= prewarnOption,
+	prewarn					= prewarnOption,
+	phase					= "提示第%s階段",
+	prephase				= "為第%s階段顯示預先警告",
+	count					= "為$spell:%s顯示警告",
+	stack					= "提示$spell:%s的堆疊"
+}
+
+DBM_CORE_AUTO_SPEC_WARN_TEXTS = {
+	spell					= "%s!",
+	ends 					= "%s結束",
+	fades					= "%s消散",
+	soon					= "%s即將到來",
+	dispel					= ">%%s<中了%s - 現在驅散",
+	interrupt				= "%s - 快中斷>%%s< !",
+	you						= "你中了%s",
+	target					= ">%%s<中了%s",
+	close					= "你附近的>%%s<中了%s",
+	move					= "%s - 快移動",
+	run						= "%s - 快跑開",
+	cast					= "%s - 停止施法",
+	count					= "%s! (%%d)",
+	stack					= "你中了%%d層%s",
+	switch					= ">%s< - 快更換目標!"
+}
+
+-- Auto-generated Special Warning Localizations
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS = {
+	spell					= "為$spell:%s顯示特別警告",
+	ends 					= "為$spell:%s結束顯示特別警告",
+	fades 					= "為$spell:%s消散顯示特別警告",
+	soon 					= "為$spell:%s顯示預先特別警告",
+	dispel					= "需對$spell:%s驅散/竊取時顯示特別警告",
+	interrupt				= "需對$spell:%s斷法時顯示特別警告",
+	you						= "當你中了$spell:%s時顯示特別警告",
+	target					= "當有人中了$spell:%s時顯示特別警告",
+	close					= "當你附近有人中了$spell:%s時顯示特別警告",
+	move					= "當你中了$spell:%s時顯示特別警告",
+	run						= "為$spell:%s顯示特別警告",
+	cast					= "為$spell:%s施放時顯示特別警告",
+	count 					= "為$spell:%s顯示特別警告",
+	stack					= "為>=%d層$spell:%s時顯示特別警告",
+	switch					= "需對$spell:%s更換目標時顯示特別警告"
+}
+
 -- Auto-generated Timer Localizations
 DBM_CORE_AUTO_TIMER_TEXTS = {
 	target					= "%s:>%%s<",
@@ -170,65 +243,6 @@ DBM_CORE_AUTO_TIMER_OPTIONS = {
 	achievement				= "為成就:%s顯示計時器"
 }
 
--- Auto-generated Warning Localizations
-DBM_CORE_AUTO_ANNOUNCE_TEXTS = {
-	target					= "%s:>%%s<",
-	targetcount				= "%s (%%d):>%%s<",
-	spell					= "%s",
-	adds					= "%s還剩餘:%%d",
-	cast					= "施放%s:%.1f秒",
-	soon					= "%s即將到來",
-	prewarn					= "%s在%s",
-	phase					= "第%s階段",
-	prephase				= "第%s階段 即將到來",
-	count					= "%s (%%d)",
-	stack					= "%s在>%%s< (%%d)"
-}
-
-local prewarnOption			= "為$spell:%s顯示預先警告"
-DBM_CORE_AUTO_ANNOUNCE_OPTIONS = {
-	target					= "提示$spell:%s的目標",
-	targetcount				= "提示$spell:%s的目標",
-	spell					= "為$spell:%s顯示警告",
-	adds					= "提示$spell:%s的剩餘數量",
-	cast					= "當$spell:%s施放時顯示警告",
-	soon					= prewarnOption,
-	prewarn					= prewarnOption,
-	phase					= "提示第%s階段",
-	prephase				= "為第%s階段顯示預先警告",
-	count					= "為$spell:%s顯示警告",
-	stack					= "提示$spell:%s的堆疊"
-}
-
--- Auto-generated Special Warning Localizations
-DBM_CORE_AUTO_SPEC_WARN_OPTIONS = {
-	spell					= "為$spell:%s顯示特別警告",
-	dispel					= "需對$spell:%s驅散/竊取時顯示特別警告",
-	interrupt				= "需對$spell:%s斷法時顯示特別警告",
-	you						= "當你中了$spell:%s時顯示特別警告",
-	target					= "當有人中了$spell:%s時顯示特別警告",
-	close					= "當你附近有人中了$spell:%s時顯示特別警告",
-	move					= "當你中了$spell:%s時顯示特別警告",
-	run						= "為$spell:%s顯示特別警告",
-	cast					= "為$spell:%s施放時顯示特別警告",
-	stack					= "為>=%d層$spell:%s時顯示特別警告",
-	switch					= "需對$spell:%s更換目標時顯示特別警告"
-}
-
-DBM_CORE_AUTO_SPEC_WARN_TEXTS = {
-	spell					= "%s!",
-	dispel					= ">%%s<中了%s - 現在驅散",
-	interrupt				= "%s - 快中斷>%%s< !",
-	you						= "你中了%s",
-	target					= ">%%s<中了%s",
-	close					= "你附近的>%%s<中了%s",
-	move					= "%s - 快移動",
-	run						= "%s - 快跑開",
-	cast					= "%s - 停止施法",
-	stack					= "%s(%%d)",
-	switch					= ">%s< - 快更換目標!"
-}
-
 
 DBM_CORE_AUTO_ICONS_OPTION_TEXT			= "為$spell:%s的目標設置標記"
 DBM_CORE_AUTO_SOUND_OPTION_TEXT			= "當你中了$spell:%s時播放音效"
@@ -255,8 +269,8 @@ DBM_ARROW_ERROR_USAGE	= {
 	"/dbm arrow move  可移動箭頭",
 }
 
-DBM_SPEED_KILL_TIMER_TEXT			= "記錄擊敗"
-DBM_SPEED_KILL_TIMER_OPTION			= "顯示一個計時器來打敗你上次的最快擊敗"
+DBM_SPEED_KILL_TIMER_TEXT			= "勝利紀錄"
+DBM_SPEED_KILL_TIMER_OPTION			= "顯示一個計時器來打敗你上次的最快勝利"
 
 
 DBM_REQ_INSTANCE_ID_PERMISSION		= "%s想要查看你的副本ID和進度鎖定情況。\n你想發送該訊息給%s嗎? 在你的當前進程（除非你下線）他可以一直查閱該訊息。"

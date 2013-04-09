@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(737, "DBM-HeartofFear", nil, 330)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 8974 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9141 $"):sub(12, -3))
 mod:SetCreatureID(62511)
 mod:SetModelID(43126)
 mod:SetZone()
@@ -48,8 +48,6 @@ local warnInterruptsAvailable	= mod:NewAnnounce("warnInterruptsAvailable", 1, 12
 
 --Boss
 local specwarnAmberScalpel			= mod:NewSpecialWarningSpell(121994, nil, nil, nil, 2)
---local yellAmberScalpel				= mod:NewYell(121994)
---local specwarnAmberScalpelNear		= mod:NewSpecialWarningClose(121994)
 local specwarnReshape				= mod:NewSpecialWarningYou(122784)
 local specwarnParasiticGrowth		= mod:NewSpecialWarningTarget(121949, mod:IsHealer())
 local specwarnParasiticGrowthYou	= mod:NewSpecialWarningYou(121949) -- This warn will be needed at player is clustered together. Especially on Phase 3.

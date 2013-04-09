@@ -67,7 +67,7 @@ L:SetGeneralLocalization{
 L= DBM:GetModLocalization("GreenFire")
 
 L:SetGeneralLocalization{
-	name = "Warlock Green Fire"--No idea what real name is. It's not something i can test or verify.
+	name = "Pursuing the Black Harvest"
 }
 
 L:SetWarningLocalization({
@@ -76,12 +76,14 @@ L:SetWarningLocalization({
 })
 
 L:SetTimerLocalization({
+	timerCombatStarts		= "Combat starts",
 	timerLostSoulsCD		= "Lost Souls CD"
 })
 
 L:SetOptionLocalization({
 	specWarnLostSouls		= "Show special warning when Lost Souls spawn",
 	specWarnEnslavePitLord	= "Show special warning to enslave demon when Pit Lord activates/breaks free",
+	timerCombatStarts		= "Show time for start of combat",
 	timerLostSoulsCD		= "Show cooldown timer for next Lost Souls spawn"
 })
 

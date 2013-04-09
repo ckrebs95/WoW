@@ -2,7 +2,7 @@
 local mod	= DBM:NewMod("Thaddius", "DBM-Naxx", 2)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 7 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 34 $"):sub(12, -3))
 mod:SetCreatureID(15928)
 mod:SetModelID(16137)
 mod:RegisterCombat("yell", L.Yell)
@@ -52,7 +52,7 @@ end
 
 local lastShift = 0
 function mod:SPELL_CAST_START(args)
-	if args:IsSpellID(28089) then
+	if args.spellId == 28089 then
 		phase2 = true
 		timerNextShift:Start()
 		timerShiftCast:Start()

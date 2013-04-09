@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(825, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9061 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9136 $"):sub(12, -3))
 mod:SetCreatureID(67977)
 mod:SetModelID(46559)
 mod:SetUsedIcons(8, 7, 6, 5, 4, 3)
@@ -50,6 +50,7 @@ if GetLocale() == "koKR" then
 else
 	mod:AddBoolOption("SetIconOnTurtles", true)
 end
+mod:AddBoolOption("ClearIconOnTurtles", false)--Different option, because you may want auto marking but not auto clearing. or you may want auto clearning when they "die" but not auto marking when they spawn
 
 local shelldName = GetSpellInfo(137633)
 local shellConcussion = GetSpellInfo(136431)
@@ -94,7 +95,6 @@ function mod:OnCombatStart(delay)
 	timerCallTortosCD:Start(21-delay)
 	timerStompCD:Start(29-delay, 1)
 	timerBreathCD:Start(-delay)
-	berserkTimer:Start(-delay)
 	if self.Options.InfoFrame and self:IsDifficulty("heroic10", "heroic25") then
 		DBM.InfoFrame:SetHeader(L.WrongDebuff:format(shelldName))
 		DBM.InfoFrame:Show(5, "playergooddebuff", 137633)
@@ -116,7 +116,9 @@ end
 function mod:SPELL_CAST_START(args)
 	if args.spellId == 133939 then
 		warnStoneBreath:Show()
-		specWarnStoneBreath:Show(args.sourceName)
+		if not self:IsDifficulty("lfr25") then
+			specWarnStoneBreath:Show(args.sourceName)
+		end
 		timerBreathCD:Start()
 	elseif args.spellId == 136294 then
 		warnCallofTortos:Show()
@@ -180,6 +182,15 @@ function mod:SPELL_AURA_APPLIED(args)
 	if args.spellId == 133971 then--Shell Block (turtles dying and becoming kickable)
 		shellsRemaining = shellsRemaining + 1
 		addsActivated = addsActivated - 1
+		if DBM:GetRaidRank() > 0 and self.Options.ClearIconOnTurtles then
+			for i = 1, DBM:GetNumGroupMembers() do
+				local uId = "raid"..i.."target"
+				local guid = UnitGUID(uId)
+				if args.destGUID == guid then
+					SetRaidTarget(uId, 0)
+				end
+			end
+		end
 	elseif args.spellId == 133974 and self.Options.SetIconOnTurtles then--Spinning Shell
 		if self:AntiSpam(5, 6) then
 			resetaddstate()

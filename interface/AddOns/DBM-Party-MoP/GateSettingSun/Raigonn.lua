@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(649, "DBM-Party-MoP", 4, 303)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 8974 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9120 $"):sub(12, -3))
 mod:SetCreatureID(56877)
 mod:SetModelID(39519)
 mod:SetZone()
@@ -57,7 +57,7 @@ function mod:SPELL_AURA_REMOVED(args)
 	if args.spellId == 111723 then
 		timerFixate:Cancel(args.destName)
 	elseif args.spellId == 111600 then
-		timerScreechingSwarm:Cancel(args.destname)
+		timerScreechingSwarm:Cancel(args.destName)
 	end
 end
 

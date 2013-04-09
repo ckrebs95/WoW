@@ -1,8 +1,9 @@
 local mod	= DBM:NewMod("PlagueworksTrash", "DBM-Icecrown", 2)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 7 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 37 $"):sub(12, -3))
 mod:SetModelID(30483)
+mod.isTrashMod = true
 
 mod:RegisterEvents(
 	"SPELL_AURA_APPLIED",
@@ -31,7 +32,7 @@ mod:RemoveOption("HealthFrame")
 mod:RemoveOption("SpeedKillTimer")
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args:IsSpellID(71127) then
+	if args.spellId == 71127 then
 		warnMortalWound:Show(args.spellName, args.destName, args.amount or 1)
 		timerMortalWound:Start(args.destName)
 		if args:IsPlayer() and (args.amount or 1) >= 5 then
@@ -43,19 +44,19 @@ end
 mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
 
 function mod:SPELL_SUMMON(args)
-	if args:IsSpellID(71159) and self:AntiSpam(5) then
+	if args.spellId == 71159 and self:AntiSpam(5) then
 		warnZombies:Show()
 		timerZombies:Start()
 	end
 end
 
 function mod:SPELL_CAST_START(args)
-	if args:IsSpellID(71123) then
+	if args.spellId == 71123 then
 		specWarnDecimate:Show()
 		warnDecimateSoon:Cancel()	-- in case the first 1 is inaccurate, you wont have an invalid soon warning
 		warnDecimateSoon:Schedule(28)
 		timerDecimate:Start()
-	elseif args:IsSpellID(71088) then
+	elseif args.spellId == 71088 then
 		specWarnBlightBomb:Show()
 		timerBlightBomb:Start()
 	end

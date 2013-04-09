@@ -1,7 +1,7 @@
 ﻿local mod	= DBM:NewMod(186, "DBM-Party-Cataclysm", 10, 77)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 44 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 48 $"):sub(12, -3))
 mod:SetCreatureID(23574)
 mod:SetModelID(21630)
 mod:SetZone()
@@ -62,7 +62,7 @@ function mod:OnCombatEnd()
 end
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args:IsSpellID(97318) then
+	if args.spellId == 97318 then
 		if args:IsDestTypePlayer() then
 			warnPlucked:Show(args.destName)	
 		else
@@ -72,7 +72,7 @@ function mod:SPELL_AURA_APPLIED(args)
 end
 
 function mod:SPELL_CAST_SUCCESS(args)
-	if args:IsSpellID(43648) then
+	if args.spellId == 43648 then
 		warnStorm:Show(args.destName)
 		specWarnStorm:Show()
 		timerStorm:Start()

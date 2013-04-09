@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Lanathel", "DBM-Icecrown", 3)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 32 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 36 $"):sub(12, -3))
 mod:SetCreatureID(37955)
 mod:SetModelID(31165)
 mod:SetUsedIcons(4, 5, 6, 7, 8)
@@ -88,7 +88,7 @@ function mod:OnCombatEnd()
 end
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args:IsSpellID(71340) then		--Pact of the Darkfallen
+	if args.spellId == 71340 then		--Pact of the Darkfallen
 		pactTargets[#pactTargets + 1] = args.destName
 		if args:IsPlayer() then
 			specWarnPactDarkfallen:Show()
@@ -108,7 +108,7 @@ function mod:SPELL_AURA_APPLIED(args)
 		if self.Options.BloodMirrorIcon then
 			self:SetIcon(args.destName, 7)
 		end
-	elseif args:IsSpellID(70877) then
+	elseif args.spellId == 70877 then
 		warnBloodthirst:Show(args.destName)
 		if args:IsPlayer() then
 			specWarnBloodthirst:Show()
@@ -133,17 +133,17 @@ function mod:SPELL_AURA_APPLIED(args)
 				warnBloodthirstSoon:Schedule(55)
 			end
 		end
-	elseif args:IsSpellID(70923) then
+	elseif args.spellId == 70923 then
 		warnMindControlled:Show(args.destName)
 		specWarnMindConrolled:Show(args.destName)
-	elseif args:IsSpellID(71772) then
+	elseif args.spellId == 71772 then
 		specWarnBloodBolt:Show()
 		timerBloodBolt:Start()
 	end
 end
 
 function mod:SPELL_AURA_REMOVED(args)
-	if args:IsSpellID(71340) then				--Pact of the Darkfallen
+	if args.spellId == 71340 then				--Pact of the Darkfallen
 		if self.Options.SetIconOnDarkFallen then
 			self:SetIcon(args.destName, 0)		--Clear icon once you got to where you are supposed to be
 		end
@@ -151,7 +151,7 @@ function mod:SPELL_AURA_REMOVED(args)
 		if self.Options.BloodMirrorIcon then
 			self:SetIcon(args.destName, 0)
 		end
-	elseif args:IsSpellID(70877) then
+	elseif args.spellId == 70877 then
 		if args:IsPlayer() then
 			timerBloodThirst:Cancel()
 		end
@@ -159,7 +159,7 @@ function mod:SPELL_AURA_REMOVED(args)
 end
 
 function mod:SPELL_CAST_SUCCESS(args)
-	if args:IsSpellID(73070) then				--Incite Terror (fear before air phase)
+	if args.spellId == 73070 then				--Incite Terror (fear before air phase)
 		warnInciteTerror:Show()
 		timerInciteTerror:Start()
 		timerNextSwarmingShadows:Start()--This resets the swarming shadows timer
@@ -187,6 +187,7 @@ mod.SPELL_PERIODIC_MISSED = mod.SPELL_PERIODIC_DAMAGE
 
 function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg, _, _, _, target)
 	if msg:match(L.SwarmingShadows) then
+		local target = DBM:GetFullNameByShortName(target)
 		warnSwarmingShadows:Show(target)
 		timerNextSwarmingShadows:Start()
 		if target == UnitName("player") then

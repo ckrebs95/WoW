@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("ToTTrash", "DBM-ThroneofThunder")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9081 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9172 $"):sub(12, -3))
 --mod:SetModelID(39378)
 mod:SetZone()
 
@@ -30,7 +30,8 @@ local specWarnConductiveShield	= mod:NewSpecialWarningTarget(140296)
 local timerSpiritfireCD			= mod:NewCDTimer(12, 139895)
 local timerShadowNovaCD			= mod:NewCDTimer(12, 139899)
 local timerFixatedCD			= mod:NewNextTimer(15.7, 140306)
-local timerConductiveShieldCD	= mod:NewNextSourceTimer(20, 140296)
+local timerConductiveShield		= mod:NewTargetTimer(10, 140296)
+local timerConductiveShieldCD	= mod:NewCDSourceTimer(20, 140296)--On 25 man, it always 20, But 10 man, it variables.
 
 mod:RemoveOption("HealthFrame")
 mod:RemoveOption("SpeedKillTimer")
@@ -49,7 +50,7 @@ local function warnStormCloudTargets()
 	table.wipe(stormCloudTargets)
 end
 
-function mod:SpiritFireTarget(sGUID)
+local function SpiritFireTarget(sGUID)
 	local targetname = nil
 	for i=1, DBM:GetNumGroupMembers() do
 		if UnitGUID("raid"..i.."target") == sGUID then
@@ -57,14 +58,15 @@ function mod:SpiritFireTarget(sGUID)
 			break
 		end
 	end
-	if targetname and self:AntiSpam(2, targetname) then--Anti spam using targetname as an identifier, will prevent same target being announced double/tripple but NOT prevent multiple targets being announced at once :)
+	if targetname and mod:AntiSpam(2, targetname) then--Anti spam using targetname as an identifier, will prevent same target being announced double/tripple but NOT prevent multiple targets being announced at once :)
 		warnSpiritFire:Show(targetname)
 	end
 end
 
 function mod:SPELL_CAST_START(args)
+	if not mod.Options.Enabled then return end
 	if args.spellId == 139895 then
-		self:ScheduleMethod(0.2, "SpiritFireTarget", args.sourceGUID)--Untested scan timing (don't even know if scanning works
+		self:Schedule(0.2, SpiritFireTarget, args.sourceGUID)
 		timerSpiritfireCD:Start()
 		if self.Options.RangeFrame and not DBM.RangeCheck:IsShown() then
 			DBM.RangeCheck:Show(3)
@@ -79,6 +81,7 @@ function mod:SPELL_CAST_START(args)
 end
 
 function mod:SPELL_AURA_APPLIED(args)
+	if not mod.Options.Enabled then return end
 	if args.spellId == 139322 then--Or 139559, not sure which
 		stormEnergyTargets[#stormEnergyTargets + 1] = args.destName
 		if args:IsPlayer() then
@@ -101,12 +104,16 @@ function mod:SPELL_AURA_APPLIED(args)
 		self:Schedule(0.5, warnStormCloudTargets)
 	elseif args.spellId == 140296 then
 		warnConductiveShield:Show(args.destName)
-		specWarnConductiveShield:Show(args.destName)
+		timerConductiveShield:Start(nil, args.destName)
 		timerConductiveShieldCD:Start(20, args.destName, args.sourceGUID)
+		if self:AntiSpam(3, 2) then
+			specWarnConductiveShield:Show(args.destName)
+		end
 	end
 end
 
 function mod:UNIT_DIED(args)
+	if not mod.Options.Enabled then return end
 	local cid = self:GetCIDFromGUID(args.destGUID)
 	if cid == 70308 then--Soul-Fed Construct
 		timerSpiritfireCD:Cancel()
@@ -124,6 +131,7 @@ function mod:UNIT_DIED(args)
 			DBM.RangeCheck:Hide()
 		end
 	elseif cid == 69834 or cid == 69821 then
+		timerConductiveShield:Cancel(args.destName)
 		timerConductiveShieldCD:Cancel(args.destName, args.destGUID)
 	elseif cid == 68220 then--Gastropod
 		timerFixatedCD:Cancel(args.destGUID)
@@ -132,7 +140,8 @@ end
 
 --"<1.0 17:57:05> [UNIT_SPELLCAST_SUCCEEDED] Gastropod [[target:Fixated::0:140306]]", -- [23]
 function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
-	if spellId == 140306 and self:AntiSpam() then
+	if not mod.Options.Enabled then return end
+	if spellId == 140306 and self:AntiSpam(3, 2) then
 		self:SendSync("OMGSnail", UnitGUID(uId))
 	end
 end
