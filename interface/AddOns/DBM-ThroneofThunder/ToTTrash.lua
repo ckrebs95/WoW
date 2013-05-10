@@ -1,8 +1,8 @@
 local mod	= DBM:NewMod("ToTTrash", "DBM-ThroneofThunder")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9172 $"):sub(12, -3))
---mod:SetModelID(39378)
+mod:SetRevision(("$Revision: 9361 $"):sub(12, -3))
+mod:SetModelID(47785)
 mod:SetZone()
 
 mod.isTrashMod = true
@@ -48,6 +48,10 @@ end
 local function warnStormCloudTargets()
 	warnStormCloud:Show(table.concat(stormCloudTargets, "<, >"))
 	table.wipe(stormCloudTargets)
+end
+
+local function hideRangeFrame()
+	DBM.RangeCheck:Hide()
 end
 
 local function SpiritFireTarget(sGUID)
@@ -118,17 +122,17 @@ function mod:UNIT_DIED(args)
 	if cid == 70308 then--Soul-Fed Construct
 		timerSpiritfireCD:Cancel()
 		if self.Options.RangeFrame then
-			DBM.RangeCheck:Hide()
+			self:Schedule(3, hideRangeFrame)
 		end
 	elseif cid == 70440 then--Monara
 		timerShadowNovaCD:Cancel()
 	elseif cid == 70236 then--Zandalari Storm-Caller
 		if self.Options.RangeFrame then
-			DBM.RangeCheck:Hide()
+			self:Schedule(3, hideRangeFrame)
 		end
 	elseif cid == 70445 then--Stormbringer Draz'kil
 		if self.Options.RangeFrame then
-			DBM.RangeCheck:Hide()
+			self:Schedule(3, hideRangeFrame)
 		end
 	elseif cid == 69834 or cid == 69821 then
 		timerConductiveShield:Cancel(args.destName)

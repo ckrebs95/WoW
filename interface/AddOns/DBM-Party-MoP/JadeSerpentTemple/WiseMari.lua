@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(672, "DBM-Party-MoP", 1, 313)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 8974 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9241 $"):sub(12, -3))
 mod:SetCreatureID(56448)
 mod:SetModelID(41125)
 mod:SetZone()
@@ -36,7 +36,7 @@ local addsRemaining = 4--Also 4 on heroic?
 local addsName = EJ_GetSectionInfo(5616)
 
 function mod:UNIT_TARGET()
-	if self.Options.SetIconOnAdds and UnitName("target") == addsName then
+	if self.Options.SetIconOnAdds and not DBM.Options.DontSetIcons and UnitName("target") == addsName then
 		SetRaidTarget("target", 8)
 	end
 end

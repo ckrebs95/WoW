@@ -4,8 +4,8 @@
 ## Interface: 50200
 ## SavedVariables: SwatterData
 ##
-## Version: 5.15.5383 (LikeableLyrebird)
-## Revision: $Id: !Swatter.toc 345 2012-11-27 20:42:39Z mentalpower $
+## Version: 5.16.5405 (MousyMulgara)
+## Revision: $Id: !Swatter.toc 347 2013-03-08 06:44:50Z Esamynn $
 ## Author: Norganna's AddOns
 ## X-Part-Of: Libraries
 ## X-Category: Library

@@ -10,7 +10,7 @@ local PVLDB
 local minimapIcon = LibStub("LibDBIcon-1.0")
 vars.svnrev = vars.svnrev or {}
 local svnrev = vars.svnrev
-svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 443 $"):match("%d+"))
+svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 478 $"):match("%d+"))
 local DB_VERSION_MAJOR = 1
 local DB_VERSION_MINOR = 4
 local _G = _G
@@ -103,6 +103,7 @@ local usehashes = true
 if Is64BitClient() and IsMacClient() then
   usehashes = false -- ticket 77: Mac64 messes up bit arithmetic
 end
+local link2build = 16896
 local einstein = L["All Recipes"]
 local allexpand = "All Expand"
 local allexpandplus = "Interface\\Buttons\\UI-PlusButton-UP"
@@ -113,6 +114,9 @@ local rcolortable
 local DB, DBc, settings
 local charName
 local optionsFrame, colorFrame, unhideFrame
+local allianceRace = { -- Pandaren handed specially
+         ["Human"]=true, ["Dwarf"]=true, ["Gnome"]=true, ["NightElf"]=true, ["Draenei"]=true, ["Worgen"]=true
+      }
 
 
 BINDING_NAME_PROFESSIONSVAULT = L["Show/Hide the ProfessionsVault window"]
@@ -209,7 +213,7 @@ local primaryProf = {  -- 0 == no tradeskill, 1 == broken
 		    26801, -- Shadoweave Tailoring
 		 },
 	[PID_SKIN] =  vs(0), -- Skinning
-	[PID_HERB] =  vs(0), -- Herbalism
+	[PID_HERB] =  { vs(0), PID_HERB, NAME_HERB }, -- Herbalism
 	[PID_MINE] =  vs(0), -- Mining
 	[PID_SMELT] =  vs(1), -- Smelting
 }
@@ -225,6 +229,7 @@ local nolinkProf = {  -- professions that dont have a trade: link
 	[GetSpellInfo(PID_SMELT)] = true,
 	[GetSpellInfo(PID_FISH)] = true, 
 	[GetSpellInfo(PID_ARCH)] = true, 
+	[GetSpellInfo(PID_HERB)] = true, 
 	[NAME_HERB]              = true, 
 	[GetSpellInfo(PID_SKIN)] = true, 
 	[GetSpellInfo(53428)] = true, -- Runeforging
@@ -232,6 +237,7 @@ local nolinkProf = {  -- professions that dont have a trade: link
 local nocastProf = { -- professions that can't be safely cast
 	[GetSpellInfo(PID_MINE)] = true,  
 	[GetSpellInfo(PID_FISH)] = true, 
+	[GetSpellInfo(PID_HERB)] = true, 
 	[NAME_HERB]              = true, 
 	[GetSpellInfo(PID_SKIN)] = true, 
 }
@@ -251,7 +257,7 @@ local function translateIDs(t)
         r[name].patlen = v[1]
 	table.remove(v,1)
 	for _,a in ipairs(v) do
-	  local an = GetSpellInfo(a)
+	  local an = (tonumber(a) and GetSpellInfo(a)) or a
 	  table.insert(aliases, an)
 	end
       else
@@ -1513,8 +1519,8 @@ local function processSystemMessage(msg)
 	  return
 	end
     end --]]
-        --local orank = string.match(DBc[profname].link, "\124Htrade:%d+:(%d+):")
-        --DBc[profname].link = string.gsub(DBc[profname].link, "(\124Htrade:%d+:)%d+:", "%1"..nrank..":")
+	--local spellid, orank, rankmax, guid, databits, specdata, text = addon:link_parse(DBc[profname].link) 
+        --DBc[profname].link = addon:link_build(spellid, nrank, rankmax, guid, databits, specdata, text)
 	--chatMsg(format(L["Updated %s's %s"].." (%s "..L["skill points"]..")", charName, profname, (nrank-orank)))
     local rchange, schange, profchange = addon:ScanSecondary()
     --print(rchange.." : "..schange)
@@ -1596,10 +1602,10 @@ function addon:update_guid_cache(name, guid)
 end
 function addon:link_cnameguid(link)
    if not link then return end
-   local guid = string.match(link,"\124Htrade:%d+:%d+:%d+:(%x+):")
+   local guid = select(4,addon:link_parse(link))
    if not guid or #guid < 10 then return end
    guid = string.rep("0",16-#guid)..guid -- restore leading zeros
-   local cname = select(6,GetPlayerInfoByGUID(guid)) -- sometimes failed if not encountered by client
+   local cname = select(7,pcall(GetPlayerInfoByGUID,guid)) -- sometimes failed if not encountered by client
    return guid, cname
 end
 function addon:update_guid_cache_fromlink(link)
@@ -1609,6 +1615,57 @@ end
 
 function addon:CHAT_MSG_X(event, msg, sender, _,_,_,_,_,_,_,_, counter, guid)
   addon:update_guid_cache(sender, guid)
+end
+
+local function guid_survey_helper(guid, faction, class)
+  addon.guid_survey_list = addon.guid_survey_list or {}
+  if not guid or guid == "0" then return end
+  if not faction or not class then
+    local status, race
+    status, _, class, _, race = pcall(GetPlayerInfoByGUID,guid)
+    if not status or not race or not class then -- try to force a guid load
+      local link = addon:fakeLink((GetSpellInfo(PID_FA)), guid)
+      --print(link)
+      SetItemRef(addon:cleanlink(link),link,"LeftButton",ChatFrame1)
+    end
+    status, _, class, _, race = pcall(GetPlayerInfoByGUID,guid)
+    if not status or not race or not class then return end
+    if race == "Pandaren" then return end
+    faction = allianceRace[race] and "Alliance" or "Horde"
+  end
+  local key = class.."#"..faction
+  addon.guid_survey_list[key] = guid
+end
+
+function addon:guid_survey()
+  addon.classlist = wipe(addon.classlist or {})
+  FillLocalizedClassList(addon.classlist)
+  for _,cguid in pairs(DB.guid_cache) do
+    guid_survey_helper(guid_expand(cguid))
+  end
+  for _,tinfo in pairs(DB.chars) do
+     local faction, class
+     if tinfo.data then
+       faction = tinfo.data.faction
+       class = tinfo.data.class
+       for uclass, lclass in pairs(addon.classlist) do -- delocalize class
+         if class == lclass then
+	   class = uclass
+	   break
+	 end
+       end
+     end
+     for _, pinfo in pairs(tinfo) do
+        if pinfo.link then
+	   local guid = select(4,addon:link_parse(pinfo.link))
+           guid_survey_helper(guid, faction, class)
+	end
+     end
+  end
+  local c = 0
+  for _ in pairs(addon.guid_survey_list) do c = c + 1 end
+  print("guid_survey found "..c.." exemplars.")
+  return addon.guid_survey_list
 end
 
 -- show the TradeSkillLinkButton when we can
@@ -1648,18 +1705,28 @@ local function TSLNhide()
      and addon.lastTSL then -- einstein ranks get corrupted for profs we have
      rank, rankmax = addon:link_rank(addon.lastTSL) 
   end
-  if rankmax == 0 then
-     if TradeSkillLinkNameButton and TradeSkillLinkNameButton:IsVisible() then
-       TradeSkillLinkNameButton:Hide()
-       debug(TradeSkillLinkNameButton:GetName()..":Hide()")
+  if rankmax == 0 and not IsTradeSkillGuild() then
+     if TradeSkillLinkNameButton then
+       TradeSkillLinkNameButton:Show()
+       TradeSkillLinkNameButton:EnableMouse(false)
+       if TradeSkillLinkNameButtonTitleText then
+         TradeSkillLinkNameButtonTitleText:SetText("("..einstein..")")
+	 TradeSkillLinkNameButton:SetWidth(TRADE_SKILL_LINKED_NAME_WIDTH or 120)
+         TradeSkillLinkNameButtonTitleText:SetWidth(TRADE_SKILL_LINKED_NAME_WIDTH or 120)
+	 TradeSkillLinkNameButtonTitleText:SetJustifyH("LEFT")
+       end
      end
      if TradeSkillRankFrame and TradeSkillRankFrame:IsVisible() then
        TradeSkillRankFrame:Hide()
        debug(TradeSkillRankFrame:GetName()..":Hide()")
      end
      if TradeSkillFrameTitleText then
-       TradeSkillFrameTitleText:SetText(pname.." ("..einstein..")")
+       TradeSkillFrameTitleText:SetText(pname)
      end
+  else
+    if TradeSkillLinkNameButton then
+      TradeSkillLinkNameButton:EnableMouse(true)
+    end
   end
 end
 
@@ -1798,12 +1865,14 @@ function addon:UpdateTrade(force)
     debug("Guild Tradeskill: "..(cname or "NIL").." "..(pname or "NIL"))
     -- cname will occasionally arrive after the SHOW event
     if not pname or 
-      cname and cname == charName then
-      force = false
-    elseif nolinkProf[pname] then -- mining
+      nolinkProf[pname] then -- mining
       force = false
     else
-      addon:SaveButtonShow()
+      if cname and cname == charName then -- disallow self-save
+        force = false
+      else
+        addon:SaveButtonShow()
+      end
       if not cname or not DB.guid_cache[cname] then
         addon:SaveButton():Disable()
 	addon.savecname = cname
@@ -1832,10 +1901,10 @@ function addon:UpdateTrade(force)
       return
     end
   else -- linked trade window
-    local spellid, guid, guidname
-    link = addon:normalize_link(addon.lastTSL)
+    local spellid, guid, guidname, _
+    link = addon:normalize_link(addon.lastTSL, true)
     if link then
-      spellid, guid = string.match(link,"\124Htrade:(%d+):%d+:%d+:(%x+):")
+      spellid, _, _, guid = addon:link_parse(link)
     end
     if spellid and guid then 
       guid = guid_normalize(guid)
@@ -1867,12 +1936,15 @@ function addon:UpdateTrade(force)
     if linked then
       dbc.data = dbc.data or {}
       dbc.data.name = cname
-      local allianceRace = {
-         ["Human"]=true, ["Dwarf"]=true, ["Gnome"]=true, ["NightElf"]=true, ["Draenei"]=true, ["Worgen"]=true
-      }
       dbc.data.class = class
       dbc.data.faction = UnitFactionGroup(cname) -- may fail
-                         or (race and ((allianceRace[race] and "Alliance") or "Horde"))
+      if not dbc.data.faction then
+        if race == "Pandaren" then
+	  dbc.data.faction = UnitFactionGroup("player") -- assume its the same as player
+        else
+          dbc.data.faction = race and ((allianceRace[race] and "Alliance") or "Horde")
+        end
+      end
       local level = UnitLevel(cname) -- may fail
       if level > 0 then
         dbc.data.level = level
@@ -1998,6 +2070,9 @@ local function cleanlink(link)
   end
   debug("cleanlink("..link..") => ".. res)
   return res
+end
+function addon:cleanlink(link)
+  return cleanlink(link)
 end
 
 function addon:dirtylink(cl)
@@ -2759,30 +2834,22 @@ function addon:spellLink(pname)
     return "\124cff71d5ff\124Hspell:"..spellid.."\124h["..pname.."]\124h\124r"
   end
 end
-function addon:fakeLink(profName, guid, spellid, rank, rankmax, patlen) 
+function addon:fakeLink(profName, guid, spellid, rank, rankmax, patlen, specdata) 
   spellid = spellid or allProf[profName].spellid
   patlen = patlen or allProf[profName].patlen
-  guid = guid or UnitGUID("player")
-  rankmax = rankmax or gamerankmax
-  rank = rank or rankmax
-  guid = string.gsub(guid,"0x","")
   local deadbits = spellid and vars.PatDBL and vars.PatDBL[spellid] and vars.PatDBL[spellid][0].deadbitmask
  if deadbits and allProf[profName] and #deadbits == patlen and patlen == allProf[profName].patlen then -- exclude dead bits
   local bitlist = {}
-  local deadlink = "\124Htrade:"..spellid..":"..rank..":"..rankmax..":"..guid..":"..deadbits.."\124h"
+  local deadlink = addon:link_build(spellid, rank, rankmax, guid, deadbits, nil, nil, true)
   for bit = 0,(patlen*6)-1 do
     if not addon:link_bit(deadlink, bit) then
       table.insert(bitlist, bit)
     end
   end
-  return addon:bitlist_to_link(profName, bitlist, rank, rankmax, guid)
+  return addon:bitlist_to_link(profName, bitlist, rank, rankmax, guid, specdata)
  else
   local known = string.rep("/",patlen)
-  local link = 
-         "\124cffffd000"..
-         "\124Htrade:"..spellid..":"..rank..":"..rankmax..":"..
-          guid..":"..known.."\124h["..profName.."]\124h"..
-         "\124r"
+  local link = addon:link_build(spellid, rank, rankmax, guid, known, specdata, nil, true)
   --print(patlen..": "..link)
   return link
  end
@@ -2874,6 +2941,9 @@ function addon:CleanDatabase() -- remove links that are dead due to a patch
 	  (oldclientbuild < 16656 and clientbuild >= 16656 and 
               (pname == GetSpellInfo(PID_ALCH)) ) or
 
+	  -- 5.3.0: all trade links reformatted
+	  (oldclientbuild < link2build and clientbuild >= link2build) or
+
 	  (pname == GetSpellInfo(PID_SMELT)) -- smelting db permanently deprecated
 
 	  then
@@ -2907,7 +2977,7 @@ function addon:AddEinstein() -- a toon that knows all the patterns
 	rankmax = gamerankmax,
 	-- not linkable with fake text, server bans it
 	--link = addon:fakeLink(pname.." ("..einstein..")", nil, allProf[pname].spellid, 0, 0, allProf[pname].patlen)
-	link = addon:fakeLink(pname, nil, nil, 0, 0, nil)
+	link = addon:fakeLink(pname, nil, nil, 0, 0, nil, vars.EinsteinSpec[allProf[pname].spellid])
       }
     end
   end
@@ -3187,17 +3257,86 @@ function addon:build_tables()
   collectgarbage("collect")
 end 
 
+function addon:link_parse(link)
+  addon.clientbuild = addon.clientbuild or tonumber((select(2,GetBuildInfo())))
+  if not link then return nil end
+  local spellid, rank, rankmax, guid, databits, specdata 
+  local f1, f2, f3, f4, rem = 
+     link:match("\124Htrade:([^:]*):([^:]*):([^:]*):([^:]*):([^\124]*)\124h")
+  local text = link:match("\124h%[([^\124]+)%]\124h")
+  if addon.clientbuild < link2build then
+    spellid, rank, rankmax, guid = f1, f2, f3, f4
+    databits = rem
+  else
+    guid, spellid, rank, rankmax = f1, f2, f3, f4
+    databits, specdata = rem:match("^([^:]*):?(.*)$")
+  end
+  return tonumber(spellid), tonumber(rank), tonumber(rankmax), guid, databits, specdata, text
+end
+
+function addon:link_build(spellorprof, rank, rankmax, guid, databits, specdata, text, color)
+  addon.clientbuild = addon.clientbuild or tonumber((select(2,GetBuildInfo())))
+  local profid, profname
+  if tonumber(spellorprof) then -- accept prof via either spellid or spellname
+    profid = tonumber(spellorprof)
+    profname = GetSpellInfo(profid)
+  else
+    profname = spellorprof
+  end
+  if not profname then return nil end
+  -- normalize spellid
+  if not allProf[profname] then
+    for k,v in pairs(allProf) do
+      if k:lower() == profname:lower() then
+        profname = k
+        break
+      end
+      for _,a in ipairs(v.aliases) do
+        if a:lower() == profname:lower() then
+          profname = k
+          break
+        end
+      end
+    end
+  end
+  if not allProf[profname] then
+     chatMsg("ERROR: Unrecognized profession "..profname.." ("..spellorprof.."-"..GetLocale().."). Please report this bug!")
+     return 
+  end
+  profid = allProf[profname].spellid
+  -- normalize other arguments
+  rankmax = tonumber(rankmax) or gamerankmax
+  rank = tonumber(rank) or rankmax
+  text = text or profname
+  text = strtrim(strtrim(text):gsub("^%[(.*)%]$","%1")) -- strip brackets and ws
+  guid = guid or UnitGUID("player")
+  guid = guid_normalize(guid)
+  local pre,link
+  if addon.clientbuild < link2build then
+    pre = profid..":"..rank..":"..rankmax..":"..guid
+    specdata = nil
+  else
+    pre = guid..":"..profid..":"..rank..":"..rankmax
+  end
+  link = "\124Htrade:"..pre..":"..databits
+  if specdata and #specdata > 0 then
+    link = link..":"..specdata
+  end
+  link = link.."\124h["..text.."]\124h"
+  if color then -- colored link
+     link = "\124cffffd000"..link.."\124r"
+  end
+  return link
+end
+
 function addon:extract_bits(link)
   if not link then return nil end
-  local databits = string.match(link, "\124Htrade:%d+:%d+:%d+:%x+:([^\124]+)\124h")
-  return databits
+  return (select(5,addon:link_parse(link)))
 end
 
 function addon:link_rank(link)
   if not link then return nil end
-  local rank, rankmax = string.match(link, "\124Htrade:%d+:(%d+):(%d+):")
-  rank = tonumber(rank)
-  rankmax = tonumber(rankmax)
+  local rank, rankmax = select(2,addon:link_parse(link))
   return rank, rankmax
 end
 
@@ -3218,9 +3357,8 @@ end
 
 -- count the number of bits set in a trade link (excludes dead bits)
 function addon:link_bit_count(link)
-  local databits = addon:extract_bits(link)
+  local profid, _, _, _, databits, specdata = addon:link_parse(link)
   if not databits then return 0 end
-  local profid = tonumber(string.match(link,"\124Htrade:(%d+):"))
   local deadbits = profid and vars.PatDBL and vars.PatDBL[profid] and vars.PatDBL[profid][0].deadbitmask
   if deadbits and #deadbits ~= #databits then deadbits = nil end
   --print(databits) ; print(deadbits)
@@ -3240,6 +3378,24 @@ function addon:link_bit_count(link)
       bits = bit.rshift(bits,1)
     end
   end
+  while specdata and #specdata > 0 do
+    local sid, srank, srankmax, sdata, rest = specdata:match("^(%d*):(%d*):(%d*):([^:]*):?(.*)$")
+    local speccnt = 0
+    specdata = rest
+    if srank and tonumber(srank) ~= 0 and sdata then
+      for chunkid=0,#sdata-1 do
+        local chunk = string.sub(sdata, chunkid+1, chunkid+1)
+        local bits = vars.code_to_bits[chunk]
+        while bits and bits > 0 do
+          speccnt = speccnt + bit.band(bits,1)
+          bits = bit.rshift(bits,1)
+        end
+      end
+    end
+    if speccnt > 1 then
+      result = result + speccnt - 1 -- one dead bit per spec
+    end
+  end
   return result
 end
 
@@ -3247,10 +3403,6 @@ end
 function addon:singlebit_link(profName, bitidx, rank, rankmax, guid)
   local spellid = allProf[profName].spellid
   local patlen = allProf[profName].patlen
-  guid = guid or UnitGUID("player")
-  guid = string.gsub(guid,"0x","")
-  rankmax = rankmax or gamerankmax
-  rank = rank or rankmax
   local chunkid = math.floor(bitidx / 6)
   local chunkbit = bitidx % 6
 
@@ -3258,21 +3410,49 @@ function addon:singlebit_link(profName, bitidx, rank, rankmax, guid)
                vars.bits_to_code[2^chunkbit] ..
                string.rep(vars.bits_to_code[0],patlen-chunkid-1)
 
-  local link = "\124Htrade:"..spellid..":"..rank..":"..rankmax..":"..
-          guid..":"..bits.."\124h["..profName.."]\124h"
+  return addon:link_build(spellid, rank, rankmax, guid, bits)
+end
 
-  return link
+function addon:singlebit_link_info(link)
+  if not link then return nil end
+  --printlink(link)
+  SetItemRef(cleanlink(link),link,"LeftButton",ChatFrame1)
+  if not GetTradeSkillLine() or 
+     not IsTradeSkillLinked() or 
+     GetNumTradeSkills() == 0 then 
+     return nil 
+  end
+
+  local idx = GetFirstTradeSkill()
+  local skillName, skillType = GetTradeSkillInfo(idx)
+  if not skillName or not skillType or skillType == "header" then return nil end
+
+  return skillName, GetTradeSkillItemLink(idx), GetTradeSkillRecipeLink(idx)
+end
+
+-- create a single-bit link that passes server filtering from provided guids
+-- returns best-try link, (skillname or nil), itemlink, recipelink
+function addon:best_singlebit_link(profName, bitidx, guids)
+  local selflink = addon:singlebit_link(profName, bitidx)
+  local skillName, itemlink, recipelink = addon:singlebit_link_info(selflink)
+  if skillName then -- simple, common case - server accepted self
+    return selflink, skillName, itemlink, recipelink
+  end
+  for _,guid in pairs(guids) do -- try guids
+    local link = addon:singlebit_link(profName, bitidx, nil, nil, guid)
+    skillName, itemlink, recipelink = addon:singlebit_link_info(link)
+    if skillName then
+      return link, skillName, itemlink, recipelink
+    end
+  end
+  
+  return selflink, nil -- failed, probable dead bit
 end
 
 -- converts an array of { bitidx1, bitidx2 } into a link
-function addon:bitlist_to_link(profName, bitlist, rank, rankmax, guid)
-  local spellid = allProf[profName].spellid
+function addon:bitlist_to_link(profName, bitlist, rank, rankmax, guid, specdata)
   local patlen = allProf[profName].patlen
   local ibitlist = table_invert(bitlist)
-  guid = guid or UnitGUID("player")
-  guid = string.gsub(guid,"0x","")
-  rankmax = rankmax or gamerankmax
-  rank = rank or rankmax
 
   local bits = ""
   for chunkid = 0, patlen-1 do
@@ -3287,44 +3467,25 @@ function addon:bitlist_to_link(profName, bitlist, rank, rankmax, guid)
     bits = bits..vars.bits_to_code[chunk]
   end
 
-  local link = "\124cffffd000\124Htrade:"..spellid..":"..rank..":"..rankmax..":"..
-          guid..":"..bits.."\124h["..profName.."]\124h\124r"
-
-  return link
+  return addon:link_build(profName, rank, rankmax, guid, bits, specdata, nil, true)
 end
 
--- normalize the profession clauses of a trade link 
-function addon:normalize_link(link)
+-- normalize the profession clauses of a trade link, color output true/false/nil=same
+function addon:normalize_link(link, color)
    if not link then return nil end
-   local oldlink = link
-   local oldspell, oldtag = string.match(link,"\124Htrade:(%d+):.*\124h(.*)\124h")
-   if not oldspell then -- ticket 72, handle non-prof links
-     return link
+
+   local profid, rank, rankmax, guid, databits, specdata, text = addon:link_parse(link)
+   if not profid then -- ticket 72, handle non-prof links
+      return link
    end
-   --print(link.." "..(oldspell or "NIL"))
-   local oldprof = GetSpellInfo(oldspell)
-   local profname = oldprof
-   if not allProf[profname] then
-     for k,v in pairs(allProf) do
-       for _,a in ipairs(v.aliases) do
-         if a == oldprof then
-           profname = k
-	   break
-         end
-       end
-     end
+   local newlink = addon:link_build(profid, rank, rankmax, guid, databits, specdata, 
+                                    nil, color or (color == nil and link:find("\124c")))
+
+   if link ~= newlink then
+     debug("normalize_link("..link..") => "..newlink)
+     profid, rank, rankmax, guid, databits, specdata, text = addon:link_parse(newlink)
    end
-   if not allProf[profname] then
-     chatMsg("ERROR: Unrecognized profession "..oldprof.." ("..oldspell.."-"..GetLocale()..") in trade link "..oldlink..". Please report this bug!")
-     return oldlink
-   end
-   local newspell = allProf[profname].spellid
-   link = string.gsub(link, "\124Htrade:"..oldspell..":", "\124Htrade:"..newspell..":")
-   link = string.gsub(link, "\124h(.*)\124h", "\124h["..profname.."]\124h")
-   if link ~= oldlink then
-     debug("normalize_link("..oldlink..") => "..link)
-   end
-   return link, profname, newspell
+   return newlink, text, profid
 end
 
 
@@ -3376,7 +3537,7 @@ function addon:populate_database(profName,showall)
     print("patDB wiped")
     return
   end
-  CastSpellByName("Cooking")
+  CastSpellByName((GetSpellInfo(PID_COOK)))
   addon:expandAllTradeSkills()
   CloseTradeSkill()
 
@@ -3401,16 +3562,11 @@ function addon:populate_database(profName,showall)
   for idx,bit in pairs(vars.PatDBL[profid]) do
     oldbit_to_idx[bit] = idx
   end
+  local guids = addon:guid_survey()
   print("Scanning "..bitlen.." "..profName.." bits")
   for bitidx = 0,bitlen-1 do
-    local link = addon:singlebit_link(profName, bitidx)
-    --printlink(link)
-    SetItemRef(cleanlink(link),link,"LeftButton",ChatFrame1)
-    if GetTradeSkillLine() and IsTradeSkillLinked() then
-      local num = GetNumTradeSkills()
-      local idx = GetFirstTradeSkill()
-      local skillName, skillType = GetTradeSkillInfo(idx)
-      if (num == 0 or not skillName or not skillType or skillType == "header") then
+    local link, skillName, itemlink, recipelink = addon:best_singlebit_link(profName, bitidx, guids)
+    if not skillName then
 	checkstr = checkstr..",empty"
 	table.insert(deadbits, bitidx)
 	local delpat = oldbit_to_idx[bitidx]
@@ -3418,10 +3574,7 @@ function addon:populate_database(profName,showall)
 	  delpats[delpat] = true
 	end
         print(link.." bit "..bitidx..": empty bit"..((delpat and ", was:"..delpat) or ""))
-      else
-        local itemlink = GetTradeSkillItemLink(idx)
-        local recipelink = GetTradeSkillRecipeLink(idx)
-
+    else
         local spellid = string.match(recipelink, "\124Henchant:(%d+)\124h")
 	local show = showall
         patcnt = patcnt + 1
@@ -3456,7 +3609,6 @@ function addon:populate_database(profName,showall)
 	if show then
           print(link.." bit "..bitidx..": "..skillName.." "..spellid.." "..itemlink.." "..recipelink)
 	end
-      end
     end
   end
   for _,del in pairs(delpats) do
@@ -3595,7 +3747,7 @@ end
 function addon:ScanJC()
   local jcdb = {}
 
-  local pname = GetSpellInfo(25229)
+  local pname = GetSpellInfo(PID_JC)
   local link = DB.chars[einstein][pname].link
   local gemClass = select(6,GetItemInfo(23077))
   SetItemRef(cleanlink(link),link,"LeftButton",ChatFrame1)

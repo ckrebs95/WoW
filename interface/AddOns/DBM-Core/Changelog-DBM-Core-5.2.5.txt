@@ -1,0 +1,111 @@
+tag 5.2.5
+14adafb06824dc3821a3f9f1aee75a206b6f8963
+subversion <svn@deadlybossmods.com>
+2013-05-03 00:46:43 +0200
+
+Tagging as 5.2.5
+
+
+--------------------
+
+svn:
+	- increment version number
+subversion:
+	- tandanu via svn r9413: deuglify some buttons in the UI
+	- Omega via svn r9412: switch a few countdowns to fades prototype for  any of them that are debuff timers and not cooldowns
+	- Omega via svn r9411: add a second countdown prototype for fading debuffs that supports having two countdowns options for same spellid at same time (one for CD and one for fades). make existing one clarified that it's an ability cd countdown as the option text didn't really say what it was counting down. now it does. Added audio countdown fades option (off by default) to static shock.
+	- tandanu via svn r9410: add new link to the new forums at deadlybossmods.com (yay)
+	- Omega via svn r9409: re-add soon warning though
+	- Omega via svn r9408: revert jikun mod, tom's method is highly broken on 25 man. this also means reverting pre warn warning for now.
+	- Omega via svn r9407: oops, do it withtout breaking other stuff, i hope
+	- Omega via svn r9406: better way to start combat with scenarios
+	- Omega via svn r9405: static shock update for LFR, now all intermission timers are good in LFR
+	- tandanu via svn r9404: typo
+	- ebmor via svn r9403: deDE update
+	- Omega via svn r9402: more option text changes for GUI, this time to flag really the two things that really should be left at their defaults to ensure best user experience and functionality
+	- Omega via svn r9401: make descriptions more clear
+	- Omega via svn r9400: now add a UI option for it and it's done
+	- Omega via svn r9399: *Iron Qon: Add icon to lightning storm on Iron Qon *Core: Fix bug with raid boss only recording not excluding LFR like the description text says it does. *Ji-Kun: Add nest guardian soon warning for tanks. *Unused locals cleanup.
+	- Omega via svn r9398: fix logic issue
+	- Omega via svn r9397: off by default though
+	- Omega via svn r9396: auto hide quest objectives frame when engaging bosses (ie this excludes scenario). restores on combat end will add UI option for it in a bit
+	- Omega via svn r9395: update site url
+	- Omega via svn r9394: this should fix scenario mods not starting after the very first scenario (or if you manually loaded them). I need to run more tests to see if still necessary to schedule multiple checks (does it still completely fail in a loading screen? etc)
+	- Omega via svn r9393: greenstone village mod complete
+	- Omega via svn r9392: add council berserk timer
+	- Omega via svn r9391: even better, full normal/heroic detection in 5.3 without breaking 5.2
+	- Omega via svn r9390: fix another bug, mod type is case sensitive
+	- nbluewiz via svn r9389: # koKR update.
+	- Omega via svn r9388: fix scenario code, since 5.2 fixed the instancetype bug
+	- Omega via svn r9387: remove unused local variable
+	- Omega via svn r9386: that scenario criteria check is better off as a prototype method, it will be used a lot more in future scenarios, especially heroic ones.
+	- Omega via svn r9385: Merge some stuff from TOM_RUS
+	- Omega via svn r9384: Fix a couple bugs
+	- Omega via svn r9383: #actually, make sure mod:SetZone() is in all ToT mods. #Filter constellation runners from radar on twin consorts
+	- Omega via svn r9382: Small timer adjust and additional comments. seems cd changes based on number of comets before first inferno. similar to smash on ragnaros type deal? or just hard coded timer extender if comet event is too close to inferno event.
+	- Omega via svn r9381: remove none working tank warnings. add setzone to twins so players outside stop getting warnings/timers (do to the syncs)
+	- Omega via svn r9380: oops it was a dusk probelm not day, but fix in both just in case
+	- Omega via svn r9379: Plug a blank greenstone village mod while at it with mapdata and engaging at least for stats. Will collect data and input some stuff into it in next couple days. Then all that will be left will be the 4 new ones on ptr
+	- Omega via svn r9378: #Dagger in the Dark scenario mod
+	- Omega via svn r9377: push a LFR update for lei shen. intermissions have very different timing, verified 4 different LFR runs. need to get a run that doesn't overload static shock first though to get that last timing.
+	- ultrashining via svn r9376: zhTW update
+	- nbluewiz via svn r9375: # koKR update.
+	- ebmor via svn r9374: deDE update
+	- Omega via svn r9373: fix burrow cd timer
+	- Omega via svn r9372: Brewmoon Festival mod
+	- tandanu via svn r9371: small cleanup
+	- Omega via svn r9370: push more scenario specific locals, switch core to using all new scenario locals. Scenario mods will be big deal soon, should get all messaging localized ASAP.
+	- Omega via svn r9369: fix some fail
+	- Omega via svn r9368: improve the monk filter on iron qon
+	- tandanu via svn r9367: add DBM.RangeCheck:GetDistance(uId1, uId2) to get the distance between two units (where one of them might not be the player)
+	- Omega via svn r9366: test push
+	- Omega via svn r9365: *Re-enable cosmic barrage timer. Very important on heroic for us. Variation does not matter. Timer isn't so much for figuring out when next one IS, but rathor when it is NOT (that guarenteed 22 seconds we can group up safely) *Ignore monks completely in iron qons target scanning. (he chooses monks as a target THEN decides whether or not they are eligible, if they are in melee, he switches to a 2nd target instead. This is a quick fix for now. something more elaborate needed later to check monk location against highest threat tank) *fix another iron qon herioc bug (don't schedule throw spear in phase 4) *Improve range and info frame stuff to reappear in phase 4 since new lightning storms/arcing lightning go out.
+	- Omega via svn r9364: more checks to prevent windstorm warnings from being scheduled when he pushes and casts it at same time.
+	- Omega via svn r9363: fix lua error
+	- Omega via svn r9362: fix wrong achievement for ungaingoo
+	- Omega via svn r9361: While at it, give ToTTrash a model id. hello Gastropod. :)
+	- Omega via svn r9360: Sometimes, trash mobs get spells off as they are dying and range frame gets opened again after UNIT_DIED event and gets stuck open. to fix, we now call a 3 second delay on hide range frame on mob deaths so we don't get lingering range frames on trash mods.
+	- tandanu via svn r9359: fix issue with mods not loading if PLAYER_REGEN_ENABLED fires while InCombatLockdown() is still true (which shouldn't happen, technically.)
+	- Omega via svn r9358: loadDelay is broken, if you zone in while in combat, throne of thunder never loads, ever (confirmed in LFR and heroic, had to manually load mod cause trash was being fought when i entered). i look at code, i can't find ANY reason this should happen, seems impossible. tandanu? On a side note, maybe fix primoridus icons not resetting?
+	- Omega via svn r9357: #Add more warnings to Zanvess #Add Unga Ingoo scenario
+	- ebmor via svn r9356: JiKun: uuups, fix IsDifficulty LUA error
+	- Omega via svn r9355: prep some gametooltip localization for the quest flags icon Switch icons around cause it makes more sense to check off ones that are done vs ones that aren't.
+	- ebmor via svn r9354: JiKun nests: normal10 double nests added, double definition of current/next nest direction eliminated, overall readability improved
+	- Omega via svn r9353: Looks like quest flags bug is tied to reloadui? update comment. I'll post bug report and hope they address it.
+	- Omega via svn r9352: revision flag
+	- Omega via svn r9351: Add very simple checkbox or X that says whether or not you are loot eligible (excluding normal/heroic. quest flags are for once a week flags like LFR loot, legendary quest items, boss rep) NOTE, IsQuestFlaggedCompleted sucks. It's buggy and returns invalid half the time. None the less, I add feature anyways cause it's cool when it actually works. when it fails, people can rage at blizzard about it
+	- Omega via svn r9350: Add another scenario that's basically skeleton right now Add all quest ID flags for world bosses and ToT. Working on a feature to show whether or not a boss has been killed that week that will show up in GUI on mod load and update when boss dies in the EndCombat handler too.
+	- Omega via svn r9349: a little patience scenario. i have 4 more mods i'm working on at same time but i will commit them one at a time to get localizers started. this mod does almost nothing though because transcriptor didn't record a single buff for the resource gathering. that stuff doesn't record in CLEU so i'll have to run again and pay closer attention to buff names and use UNIT_AURA for resource process and timers
+	- ultrashining via svn r9348: zhTW update
+	- Omega via svn r9347: remove unused local variable Cache another global that's called very often (every single time you mouseover something or change targets.
+	- Omega via svn r9346: #Added LFR activation sequence for dark animus #added 10 minute berserk for dark animus
+	- ebmor via svn r9345: deDE update
+	- Omega via svn r9344: fix an icon bug on primordius
+	- Omega via svn r9343: actually, there wasn't much to fix, this pretty much covers heroic mod
+	- Omega via svn r9342: Fix some obvious bugs in heroic iron qon. i will review mod further with my complete transcriptor log after GoT
+	- Omega via svn r9341: This should fix "1099: attempt to compare number with string"
+	- tandanu via svn r9340: * change mod load delay to support loading of multiple mods for one instance * remove delayed garbage collection for in-combat loading of mods
+	- nbluewiz via svn r9339: # Meljarak : Prevent Wind Bomb target warning spam. (spam can be seen from Ragewin's video)
+	- nbluewiz via svn r9338: # koKR update.
+	- nbluewiz via svn r9337: # Core : Do not use LoadDelay if you are not in instance. (worldboss)
+	- Omega via svn r9336: While at it, fix the issues a bad load cases as well 1. attempt to index field 'stats' (a nil value) 2. attempt to perform arithmetic on field 'pull' (a nil value) Core should now detect that if stats are nil, mod load failed for whatever reason and we must alert user to reloadui as soon as possible (although hopefully with first fix to avoid combat loading in most cases, should have a lot less issues all around I hope)
+	- Omega via svn r9335: Lots of reports of "script ran too long" errors when entering a LFR that's in combat with trash. To try to avoid this as much as possible, we will now refuse to load mods in combat unless a boss encounter is in progress, then we'll try to load it anyways cause there isn't much choice then. Else, we'll just delay load until combat has ended in all other cases.
+	- Omega via svn r9334: also, unregister events on sync receive too.
+	- Omega via svn r9333: #The auto marking code was pretty good, so stick with that method, but now lets make it mark kill order too since we're already marking. if 0 oozes up when we detect one, mark it skull. if one is already up when we detect a new one, mark it X, etc. Wipe oozes from table on death to support this feature #Another heroic fix to iron qon (Register UNIT_DIED in all modes not just normal)
+	- ebmor via svn r9332: deDE update
+	- nbluewiz via svn r9331: # ruRU update and locale cleanup. (from tomrus) # koKR update. # Add missing locale to Primordius. # Cancel Phase 3 special ability on other mob dies.
+	- oscarucb via svn r9330: Tortos: add an optional spoken countdown for Furious Stone Breath, to help the kicker (off by default)
+	- Omega via svn r9329: Lets try a low cpu usage solution to auto marking viscious oozes. if it's too slow may have to use more cpu to pull it off, but we'll try efficiency first. The efficiency method of course requires more to turn it (and have assist) on to be effective though. Option default on FOR NOW to test how functional it is if everyone has it on. It will be changed to off by default after some testing so leave it be for now and give some testing to this method. I get feeling it'll be changed to raid target scanning anyways
+	- Omega via svn r9328: addon syncs are more useful when you send them to a channel...
+	- Omega via svn r9327: also make tortos every, depending on dps you may go 4 or even 5 without cd not back up
+	- Omega via svn r9326: fix CD optinos not working and always just counting "every" no matter what
+	- Omega via svn r9325: #ra-den drycodes using spellinfo off wowhead, also better option defaults for those that haven't done ToT since last release. for those that have, just use the load defaults button or turn off the stuff useless to your spec/role on ra-den mod
+	- Omega via svn r9324: ##Greatly reduce comm spam on raid join by throttling version sending in a more reasonable fassion ##Request bigwigs version information on raid join so we get versions from people who joined raid before us. #Add lei shen berserk timer.
+	- Omega via svn r9323: if lu'lin dies, also cancel day and dusk phase timers (because in normal, and ESPECIALLY in LFR, you CAN kill her in phase 1 and jump right to phase 4 instantly)
+	- Omega via svn r9322: raise world boss wipe check more. give time to eat, get mana etc before jumping back in
+	- tandanu via svn r9321: sort BigWigs users by version in the version check
+	- Omega via svn r9320: Add some range frame values to option text that were missing.
+	- Omega via svn r9319: comment out raden abilities, damage is probably done though, everyone is going to have crap option defaults on this fight (ALL ON) unless we write some hack to force reset defaults when better defaults than "all on" are implemented.
+	- nbluewiz via svn r9318: # Lei Shen : Fix intermission warning not works. / Fix 3rd phase audio countdown.
+	- tandanu via svn r9317: add flag disableHealthCombat to mods to disable UNIT_HEALTH based pull detection (e.g. to prevent premature combat on Brutallus)
+	- tandanu via svn r9316: increment version number for alpha builds

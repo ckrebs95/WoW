@@ -4,15 +4,15 @@
 --                                     --
 --                                     --
 --    Patch: 5.2.0                     --
---    Updated: March 15, 2013           --
+--    Updated: May 6, 2013             --
 --    E-mail: feedback@wowhead.com     --
 --                                     --
 -----------------------------------------
 
 
 local WL_NAME = "|cffffff7fWowhead Looter|r";
-local WL_VERSION = 50008;
-local WL_VERSION_PATCH = 2;
+local WL_VERSION = 50009;
+local WL_VERSION_PATCH = 4;
 
 
 -- SavedVariables
@@ -43,6 +43,7 @@ local WL_SPELL_BLACKLIST = {
 	[1604] = true,  -- Dazed
 	[15571] = true, -- Dazed
 	[61394] = true, -- Frozen Wake (Glyph of Freezing Trap)
+	[132951] = true,-- Flare
 	[135299] = true, -- Ice Trap
 	[135373] = true, -- Entrapment
 };
@@ -77,6 +78,7 @@ local WL_CURRENCIES = {
 	["pvpcurrency-honor-horde"] = 392,
 	["achievement_zone_tolbarad"] = 391,
 	["inv_misc_markoftheworldtree"] = 416,
+	["inv_misc_ticket_darkmoon_01"] = 515, -- Darkmoon Prize Ticket
 	["inv_misc_coin_17"] = 697, -- Elder Charm of Good Fortune
 	["inv_misc_coin_18"] = 738, -- Lesser Charm of Good Fortune
 	["archaeology_5_0_mogucoin"] = 752, -- Mogu Rune of Fate
@@ -554,19 +556,20 @@ end
 function wlRegisterUnitLocation(id, level)
 	local dd = wlGetInstanceDifficulty();
 	local zone, x, y, dl = wlGetLocation();
+	local mapAreaID = wlGetCurrentMapAreaID();
 
-	wlUpdateVariable(wlUnit, id, "spec", dd, level, "loc", zone, "init", { n = 0 });
+	wlUpdateVariable(wlUnit, id, "spec", dd, level, "loc", zone, mapAreaID, "init", { n = 0 });
 
-	local i = wlGetLocationIndex(wlUnit[id].spec[dd][level].loc[zone], x, y, dl, 5);
+	local i = wlGetLocationIndex(wlUnit[id].spec[dd][level].loc[zone][mapAreaID], x, y, dl, 5);
 	if i then
-		local n = wlUnit[id].spec[dd][level].loc[zone][i].n;
+		local n = wlUnit[id].spec[dd][level].loc[zone][mapAreaID][i].n;
 
-		wlUnit[id].spec[dd][level].loc[zone][i].x = floor((wlUnit[id].spec[dd][level].loc[zone][i].x * n + x) / (n + 1) + 0.5);
-		wlUnit[id].spec[dd][level].loc[zone][i].y = floor((wlUnit[id].spec[dd][level].loc[zone][i].y * n + y) / (n + 1) + 0.5);
-		wlUnit[id].spec[dd][level].loc[zone][i].n = n + 1;
+		wlUnit[id].spec[dd][level].loc[zone][mapAreaID][i].x = floor((wlUnit[id].spec[dd][level].loc[zone][mapAreaID][i].x * n + x) / (n + 1) + 0.5);
+		wlUnit[id].spec[dd][level].loc[zone][mapAreaID][i].y = floor((wlUnit[id].spec[dd][level].loc[zone][mapAreaID][i].y * n + y) / (n + 1) + 0.5);
+		wlUnit[id].spec[dd][level].loc[zone][mapAreaID][i].n = n + 1;
 	else
-		i = wlUpdateVariable(wlUnit, id, "spec", dd, level, "loc", zone, "n", "add", 1);
-		wlUpdateVariable(wlUnit, id, "spec", dd, level, "loc", zone, i, "set", {
+		i = wlUpdateVariable(wlUnit, id, "spec", dd, level, "loc", zone, mapAreaID, "n", "add", 1);
+		wlUpdateVariable(wlUnit, id, "spec", dd, level, "loc", zone, mapAreaID, i, "set", {
 			x = x,
 			y = y,
 			dl = dl,
@@ -1138,21 +1141,22 @@ function wlRegisterObject(id)
 	end
 
 	local zone, x, y, dl = wlGetLocation();
+	local mapAreaID = wlGetCurrentMapAreaID();
 
 	zone = wlConcat(wlGetInstanceDifficulty(), zone);
 
-	wlUpdateVariable(wlObject, id, zone, "init", { n = 0 });
+	wlUpdateVariable(wlObject, id, zone, mapAreaID, "init", { n = 0 });
 
-	local i = wlGetLocationIndex(wlObject[id][zone], x, y, dl, 5);
+	local i = wlGetLocationIndex(wlObject[id][zone][mapAreaID], x, y, dl, 5);
 	if i then
-		local n = wlObject[id][zone][i].n;
+		local n = wlObject[id][zone][mapAreaID][i].n;
 
-		wlObject[id][zone][i].x = floor((wlObject[id][zone][i].x * n + x) / (n + 1) + 0.5);
-		wlObject[id][zone][i].y = floor((wlObject[id][zone][i].y * n + y) / (n + 1) + 0.5);
-		wlObject[id][zone][i].n = n + 1;
+		wlObject[id][zone][mapAreaID][i].x = floor((wlObject[id][zone][mapAreaID][i].x * n + x) / (n + 1) + 0.5);
+		wlObject[id][zone][mapAreaID][i].y = floor((wlObject[id][zone][mapAreaID][i].y * n + y) / (n + 1) + 0.5);
+		wlObject[id][zone][mapAreaID][i].n = n + 1;
 	else
-		i = wlUpdateVariable(wlObject, id, zone, "n", "add", 1);
-		wlUpdateVariable(wlObject, id, zone, i, "set", {
+		i = wlUpdateVariable(wlObject, id, zone, mapAreaID, "n", "add", 1);
+		wlUpdateVariable(wlObject, id, zone, mapAreaID, i, "set", {
 			x = x,
 			y = y,
 			dl = dl,
@@ -1232,7 +1236,7 @@ function wlEvent_QUEST_LOG_UPDATE(self)
 					if index and done and wlQuestObjectives[3 - wlCurrentQuestObj][index].done ~= done then
 						wlUpdateVariable(wlEvent, wlId, wlN, eventId, "initArray", 0);
 						wlEvent[wlId][wlN][eventId].what = "questStatus";
-						wlEvent[wlId][wlN][eventId][wlConcat(questId, objId, done)] = wlConcat(wlGetLocation());
+						wlEvent[wlId][wlN][eventId][wlConcat(questId, objId, done)] = wlConcat(wlGetLocation(),wlGetCurrentMapAreaID());
 					end
 				end
 			end
@@ -1860,6 +1864,10 @@ function wlEvent_LOOT_OPENED(self)
 	local instanceDiff = wlGetInstanceDifficulty();
 	wlEvent[wlId][wlN][eventId].dd = instanceDiff;
 
+	if wlEvent[wlId][wlN][eventId].zone ~= nil then
+		wlEvent[wlId][wlN][eventId].mapAreaID = wlGetCurrentMapAreaID();
+	end
+	
 	local flags = 0;
 
 	-- Vitreous Focuser
@@ -4882,4 +4890,20 @@ function wlArrayLength(array, depth)
 	return count;
 end
 
+--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--
+
+function wlGetCurrentMapAreaID()
+
+	local dl = GetCurrentMapDungeonLevel() or 0; -- Save DL
+	local temp = GetCurrentMapAreaID(); -- Save Location
+	
+	SetMapToCurrentZone(); -- Move Map
+	local mapAreaID = GetCurrentMapAreaID();
+	
+	SetMapByID(temp); -- Restore Map
+	SetDungeonMapLevel(dl); -- Restore Dungeon Level
+	
+	return mapAreaID;
+end
+	
 --**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--

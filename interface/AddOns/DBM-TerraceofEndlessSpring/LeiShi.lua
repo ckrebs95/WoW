@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(729, "DBM-TerraceofEndlessSpring", nil, 320)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9129 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9248 $"):sub(12, -3))
 mod:SetCreatureID(62983)--62995 Animated Protector
 mod:SetModelID(42811)
 
@@ -41,11 +41,7 @@ local berserkTimer						= mod:NewBerserkTimer(600)
 mod:AddBoolOption("HealthFrame", true)
 mod:AddBoolOption("GWHealthFrame", true)
 mod:AddBoolOption("RangeFrame", true)
-if GetLocale() == "koKR" then
-	mod:AddBoolOption("SetIconOnProtector", false)
-else
-	mod:AddBoolOption("SetIconOnProtector", true)
-end
+mod:AddBoolOption("SetIconOnProtector", false)
 
 local getAwayHP = 0 -- because max health is different between Asian and US 25-man encounter. Calculate manually.
 local specialsCast = 0
@@ -141,7 +137,7 @@ function mod:OnCombatStart(delay)
 	else
 		berserkTimer:Start(-delay)
 	end
-	if DBM:GetRaidRank() > 0 and self.Options.SetIconOnProtector then--You can set marks and you have icons turned on
+	if DBM:GetRaidRank() > 0 and self.Options.SetIconOnProtector and not DBM.Options.DontSetIcons then--You can set marks and you have icons turned on
 		self:SendSync("IconCheck", UnitGUID("player"), tostring(DBM.Revision))
 	end
 end

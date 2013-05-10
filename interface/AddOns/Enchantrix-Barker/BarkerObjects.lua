@@ -1,6 +1,6 @@
 --[[
 	Enchantrix:Barker Addon for World of Warcraft(tm).
-	Version: 5.15.5383 (LikeableLyrebird)
+	Version: 5.16.5405 (MousyMulgara)
 	Revision: $Id: BarkerObjects.lua 3581 2008-10-11 12:36:19Z Norganna $
 	URL: http://enchantrix.org/
 
@@ -28,7 +28,7 @@
 		since that is it's designated purpose as per:
 		http://www.fsf.org/licensing/licenses/gpl-faq.html#InterpreterIncompat
 ]]
-EnchantrixBarker_RegisterRevision("$URL: http://svn.norganna.org/auctioneer/branches/5.15/Enchantrix-Barker/BarkerObjects.lua $", "$Rev: 3581 $")
+EnchantrixBarker_RegisterRevision("$URL: http://svn.norganna.org/auctioneer/branches/5.16/Enchantrix-Barker/BarkerObjects.lua $", "$Rev: 3581 $")
 
 -- Barker namespace
 Barker = {

@@ -1,9 +1,11 @@
 local mod	= DBM:NewMod(832, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9206 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9411 $"):sub(12, -3))
 mod:SetCreatureID(68397)--Diffusion Chain Conduit 68696, Static Shock Conduit 68398, Bouncing Bolt conduit 68698, Overcharge conduit 68697
 mod:SetModelID(46770)
+mod:SetQuestID(32756)
+mod:SetZone()
 mod:SetUsedIcons(8, 7, 6, 5, 4, 3, 2, 1)--All icons can be used, because if a pillar is level 3, it puts out 4 debuffs on 25 man (if both are level 3, then you will have 8)
 
 mod:RegisterCombat("combat")
@@ -38,7 +40,6 @@ local warnSummonBallLightning			= mod:NewSpellAnnounce(136543, 3)--This seems to
 --Phase 3
 local warnPhase3						= mod:NewPhaseAnnounce(3)
 local warnViolentGaleWinds				= mod:NewSpellAnnounce(136889, 3)
-local warnElectricalShock				= mod:NewStackAnnounce(136914, 3, nil, mod:IsTank())
 
 --Conduits (All phases)
 local specWarnStaticShock				= mod:NewSpecialWarningYou(135695)
@@ -59,9 +60,6 @@ local specWarnFusionSlash				= mod:NewSpecialWarningSpell(136478, mod:IsTank(), 
 local specWarnLightningWhip				= mod:NewSpecialWarningSpell(136850, nil, nil, nil, 2)
 local specWarnSummonBallLightning		= mod:NewSpecialWarningSpell(136543, nil, nil, nil, 2)
 local specWarnOverloadedCircuits		= mod:NewSpecialWarningMove(137176)
---Phase 3
-local specWarnElectricalShock			= mod:NewSpecialWarningStack(136914, mod:IsTank(), 12)--You get about 12 stacks in 8 seconds, which is about how often you'll swap
-local specWarnElectricalShockOther		= mod:NewSpecialWarningTarget(136914, mod:IsTank())
 
 --Conduits (All phases)
 local timerStaticShock					= mod:NewBuffFadesTimer(8, 135695)
@@ -83,6 +81,11 @@ local timerSummonBallLightningCD		= mod:NewNextTimer(45.5, 136543)--Seems exact 
 --Phase 3
 local timerViolentGaleWinds				= mod:NewBuffActiveTimer(18, 136889)
 local timerViolentGaleWindsCD			= mod:NewNextTimer(30.5, 136889)
+
+local berserkTimer						= mod:NewBerserkTimer(900)--Confirmed in LFR, probably the same in all modes though?
+
+local countdownThunderstruck			= mod:NewCountdown(46, 135095)
+local countdownStaticShockFades			= mod:NewCountdownFades(7, 135695, false)--May confuse with thundershock option default so off as default.
 
 local soundDecapitate					= mod:NewSound(134912)
 
@@ -129,7 +132,9 @@ function mod:OnCombatStart(delay)
 	southDestroyed = false
 	westDestroyed = false
 	timerThunderstruckCD:Start(25-delay)
+	countdownThunderstruck:Start(25-delay)
 	timerDecapitateCD:Start(40-delay)--First seems to be 45, rest 50. it's a CD though, not a "next"
+	berserkTimer:Start(-delay)
 	self:RegisterShortTermEvents(
 		"UNIT_HEALTH_FREQUENT"
 	)-- Do not use on phase 3.
@@ -152,8 +157,10 @@ function mod:SPELL_CAST_START(args)
 		timerThunderstruck:Start()
 		if phase < 3 then
 			timerThunderstruckCD:Start()
+			countdownThunderstruck:Start()
 		else
 			timerThunderstruckCD:Start(30)
+			countdownThunderstruck:Start(30)
 		end
 	--"<206.2 20:38:58> [UNIT_SPELLCAST_SUCCEEDED] Lei Shen [[boss1:Lightning Whip::0:136845]]", -- [13762] --This event comes about .5 seconds earlier than SPELL_CAST_START. Maybe worth using?
 	elseif args.spellId == 136850 then
@@ -196,6 +203,7 @@ function mod:SPELL_AURA_APPLIED(args)
 			specWarnStaticShock:Show()
 			yellStaticShock:Yell()
 			timerStaticShock:Start()
+			countdownStaticShockFades:Start()
 		else
 			if not intermissionActive and self:IsMelee() then return end--Melee do not help soak these during normal phases, only during intermissions
 			local uId = DBM:GetRaidUnitId(args.destName)
@@ -254,17 +262,6 @@ function mod:SPELL_AURA_APPLIED(args)
 	elseif args.spellId == 135681 and args:GetDestCreatureID() == 68397 then--East (Diffusion Chain)
 		if self.Options.RangeFrame and self:IsRanged() then--Shouldn't target melee during a normal pillar, only during intermission when all melee are with ranged and out of melee range of boss
 			DBM.RangeCheck:Show(8)--Assume 8 since spell tooltip has no info
-		end
-	elseif args.spellId == 136914 and (args.amount or 1) % 3 == 0 then
-		warnElectricalShock:Show(args.destName, args.amount or 1)
-		if (args.amount or 1) >= 12 then
-			if args:IsPlayer() then
-				specWarnElectricalShock:Show(args.amount)
-			else
-				if not UnitDebuff("player", GetSpellInfo(136914)) and not UnitIsDeadOrGhost("player") then
-					specWarnElectricalShockOther:Show(args.destName)
-				end
-			end
 		end
 	elseif args.spellId == 137176 and self:AntiSpam(3, 5) and args:IsPlayer() then
 		specWarnOverloadedCircuits:Show()
@@ -357,6 +354,7 @@ function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg, _, _, _, target)
 			timerViolentGaleWindsCD:Start(20)
 			timerLightningWhipCD:Start(21.5)
 			timerThunderstruckCD:Start(36)
+			countdownThunderstruck:Start(36)
 			timerSummonBallLightningCD:Start(41.5)
 		end
 	end
@@ -364,23 +362,37 @@ end
 
 local function LoopIntermission()
 	if not southDestroyed then
-		timerOverchargeCD:Start(6.5)
+		if mod:IsDifficulty("lfr25") then
+			timerOverchargeCD:Start(17.5)
+		else
+			timerOverchargeCD:Start(6.5)
+		end
 	end
 	if not eastDestroyed then
-		timerDiffusionChainCD:Start(8)
+		if mod:IsDifficulty("lfr25") then
+			timerDiffusionChainCD:Start(17.5)
+		else
+			timerDiffusionChainCD:Start(8)
+		end
 	end
 	if not westDestroyed then
-		warnBouncingBolt:Schedule(15)
-		specWarnBouncingBolt:Schedule(15)
-		timerBouncingBoltCD:Start(15)
+		if mod:IsDifficulty("lfr25") then
+			warnBouncingBolt:Schedule(9)
+			specWarnBouncingBolt:Schedule(9)
+			timerBouncingBoltCD:Start(9)
+		else
+			warnBouncingBolt:Schedule(15)
+			specWarnBouncingBolt:Schedule(15)
+			timerBouncingBoltCD:Start(15)
+		end
 	end
-	if not northDestroyed then
+	if not mod:IsDifficulty("lfr25") and not northDestroyed then--Doesn't cast a 2nd one in LFR
 		timerStaticShockCD:Start(16)
 	end
 end
 
 function mod:UNIT_HEALTH_FREQUENT(uId)
-	if uId == "boss1" then
+	if UnitName(uId) == L.name then
 		local hp = UnitHealth(uId) / UnitHealthMax(uId) * 100
 		if hp > 65 and hp < 66.5 and warnedCount == 0 then
 			warnedCount = 1
@@ -397,6 +409,7 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 	if spellId == 137146 and self:AntiSpam(2, 2) then--Supercharge Conduits (comes earlier than other events so we use this one)
 		intermissionActive = true
 		timerThunderstruckCD:Cancel()
+		countdownThunderstruck:Cancel()
 		timerDecapitateCD:Cancel()
 		timerFussionSlashCD:Cancel()
 		timerLightningWhipCD:Cancel()
@@ -407,21 +420,33 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 		timerOverchargeCD:Cancel()
 		timerBouncingBoltCD:Cancel()
 		if not eastDestroyed then
-			timerDiffusionChainCD:Start(6)
+			if self:IsDifficulty("lfr25") then
+				timerDiffusionChainCD:Start(10)
+			else
+				timerDiffusionChainCD:Start(6)
+			end
 			if self.Options.RangeFrame then
 				DBM.RangeCheck:Show(8)
 			end
 		end
 		if not southDestroyed then
-			timerOverchargeCD:Start(6)
+			if self:IsDifficulty("lfr25") then
+				timerOverchargeCD:Start(10)
+			else
+				timerOverchargeCD:Start(6)
+			end
 		end
-		if not westDestroyed then
+		if not westDestroyed and not self:IsDifficulty("lfr25") then--Doesn't get cast in first wave in LFR, only second
 			warnBouncingBolt:Schedule(14)
 			specWarnBouncingBolt:Schedule(14)
 			timerBouncingBoltCD:Start(14)
 		end
 		if not northDestroyed then
-			timerStaticShockCD:Start(19)
+			if self:IsDifficulty("lfr25") then
+				timerStaticShockCD:Start(21)
+			else
+				timerStaticShockCD:Start(19)
+			end
 		end
 		self:Schedule(23, LoopIntermission)--Fire function to start second wave of specials timers
 	elseif spellId == 136395 and self:AntiSpam(2, 3) and not intermissionActive then--Bouncing Bolt (During intermission phases, it fires randomly, use scheduler and filter this :\)

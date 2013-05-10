@@ -1,9 +1,11 @@
 local mod	= DBM:NewMod(818, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9178 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9385 $"):sub(12, -3))
 mod:SetCreatureID(68036)--Crimson Fog 69050, 
 mod:SetModelID(47189)
+mod:SetQuestID(32750)
+mod:SetZone()
 mod:SetUsedIcons(7, 6, 4, 1)
 
 mod:RegisterCombat("combat")
@@ -117,13 +119,12 @@ local function BeamEnded()
 		timerIceWallCD:Start(26)
 	end
 	if mod:IsDifficulty("lfr25") then
-		timerLightSpectrumCD:Start(56)
-		timerDisintegrationBeamCD:Start(177)
+		timerLightSpectrumCD:Start(66)
+		timerDisintegrationBeamCD:Start(186)
 	else
 		timerLightSpectrumCD:Start(33)
 		timerDisintegrationBeamCD:Start()
 	end
-	--Life Drain comes beam ended after 1~3 sec.
 end
 
 local function HideInfoFrame()
@@ -191,13 +192,13 @@ end
 function mod:SPELL_AURA_APPLIED(args)
 	if args.spellId == 133767 then
 		timerSeriousWound:Start(args.destName)
-		if args:IsPlayer() then
-			if (args.amount or 1) >= 4 then
+		if (args.amount or 1) >= 5 then
+			if args:IsPlayer() then
 				specWarnSeriousWound:Show(args.amount)
-			end
-		else
-			if (args.amount or 1) >= 3 and not UnitDebuff("player", GetSpellInfo(133767)) and not UnitIsDeadOrGhost("player") then
-				specWarnSeriousWoundOther:Show(args.destName)
+			else
+				if not UnitDebuff("player", GetSpellInfo(133767)) and not UnitIsDeadOrGhost("player") then
+					specWarnSeriousWoundOther:Show(args.destName)
+				end
 			end
 		end
 	elseif args.spellId == 133597 then--Dark Parasite
@@ -283,7 +284,7 @@ function mod:CHAT_MSG_MONSTER_EMOTE(msg, npc, _, _, target)
 					x, y = GetPlayerMapPosition(uId)
 				end
 				local inRange = DBM.RangeCheck:GetDistance("player", x, y)
-				if inRange and inRange < 16 then--Range hard to get perfect, a player 30 yards away might still be in it. I say 15 is probably good middle ground to catch most of the "near"
+				if inRange and inRange < 21 then--Range hard to get perfect, a player 30 yards away might still be in it. I say 15 is probably good middle ground to catch most of the "near"
 					specWarnForceOfWillNear:Show(target)
 				end
 			end
@@ -367,8 +368,14 @@ function mod:CHAT_MSG_MONSTER_EMOTE(msg, npc, _, _, target)
 		timerLifeDrainCD:Cancel()
 		warnDisintegrationBeam:Show()
 		specWarnDisintegrationBeam:Show()
-		timerDisintegrationBeam:Start()
-		self:Schedule(64, BeamEnded)--Best to start next phase bars when this one ends, so artifically create a "phase end" trigger
+		--Best to start next phase bars when this one ends, so artifically create a "phase end" trigger
+		if self:IsDifficulty("lfr25") then
+			timerDisintegrationBeam:Start(55)
+			self:Schedule(55, BeamEnded)
+		else
+			timerDisintegrationBeam:Start()
+			self:Schedule(64, BeamEnded)
+		end
 	end
 end
 
@@ -410,15 +417,15 @@ function mod:UNIT_DIED(args)
 		if totalFogs >= 1 then
 			warnAddsLeft:Show(totalFogs)
 		else--No adds left, force ability is re-enabled
-			lastRed = nil
-			lastBlue = nil
-			lastYellow = nil
 			timerObliterateCD:Cancel()
 			timerForceOfWillCD:Start(15)
 			if self.Options.SetIconRays and lastRed then
 				self:SetIcon(lastRed, 0)
 				self:SetIcon(lastBlue, 0)
 			end
+			lastRed = nil
+			lastBlue = nil
+			lastYellow = nil
 		end
 	elseif cid == 69051 then--Amber Fog
 		--Maybe do something for heroic here too, if timers for the crap this thing does gets added.
@@ -428,15 +435,15 @@ function mod:UNIT_DIED(args)
 				--LFR does something completely different than kill 3 crimson adds to end phase. in LFR, they kill 1 of each color (which is completely against what you do in 10N, 25N, 10H, 25H)
 				warnAddsLeft:Show(totalFogs)
 			else--No adds left, force ability is re-enabled
-				lastRed = nil
-				lastBlue = nil
-				lastYellow = nil
 				timerObliterateCD:Cancel()
 				timerForceOfWillCD:Start(15)
 				if self.Options.SetIconRays and lastRed then
 					self:SetIcon(lastRed, 0)
 					self:SetIcon(lastBlue, 0)
 				end
+				lastRed = nil
+				lastBlue = nil
+				lastYellow = nil
 			end
 		end
 	elseif cid == 69052 then--Azure Fog (endlessly respawn in all but LFR, so we ignore them dying anywhere else)
@@ -447,15 +454,15 @@ function mod:UNIT_DIED(args)
 				--LFR does something completely different than kill 3 crimson adds to end phase. in LFR, they kill 1 of each color (which is completely against what you do in 10N, 25N, 10H, 25H)
 				warnAddsLeft:Show(totalFogs)
 			else--No adds left, force ability is re-enabled
-				lastRed = nil
-				lastBlue = nil
-				lastYellow = nil
 				timerObliterateCD:Cancel()
 				timerForceOfWillCD:Start(15)
 				if self.Options.SetIconRays and lastRed then
 					self:SetIcon(lastRed, 0)
 					self:SetIcon(lastBlue, 0)
 				end
+				lastRed = nil
+				lastBlue = nil
+				lastYellow = nil
 			end
 		end
 	end

@@ -12,7 +12,7 @@ L:SetWarningLocalization({
 
 L:SetOptionLocalization({
 	specWarnWaterMove	= "為$spell:137313施放前或$spell:138732效果消失前前顯示特別警告",
-	RangeFrame			= "顯示距離框架"
+	RangeFrame			= "顯示距離框架(8碼/4碼)"
 })
 
 --------------
@@ -55,8 +55,9 @@ L:SetWarningLocalization({
 })
 
 L:SetOptionLocalization({
-	PHealthFrame		= "為$spell:136442消散顯示剩餘血量框架(需要首領血量框架開啟)",
-	RangeFrame			= "顯示距離框架"
+	PHealthFrame		= "為$spell:136442退去前顯示剩餘血量框架(需要首領血量框架開啟)",
+	RangeFrame			= "顯示距離框架",
+	AnnounceCooldowns	= "為團隊冷卻數出哪次$spell:137166施放數出",
 })
 
 ------------
@@ -65,15 +66,16 @@ L:SetOptionLocalization({
 L= DBM:GetModLocalization(825)
 
 L:SetWarningLocalization({
-	warnKickShell			= "%s被>%s<使用 (還剩餘%d)",
+	warnKickShell			= "%s被>%s<使用(還剩餘%d)",
 	specWarnCrystalShell	= "取得%s"
 })
 
 L:SetOptionLocalization({
 	specWarnCrystalShell	= "當你沒有$spell:137633減益時顯示特別警告",
 	InfoFrame				= "為玩家沒有$spell:137633顯示訊息框架",
-	SetIconOnTurtles		= "為$journal:7129標示團隊圖示(超過一名以上的團隊助理時不可靠)",
-	ClearIconOnTurtles		= "當$journal:7129中了$spell:133971清除團隊圖示"
+	SetIconOnTurtles		= "為$journal:7129標示團隊圖示",
+	ClearIconOnTurtles		= "當$journal:7129中了$spell:133971清除團隊圖示",
+	AnnounceCooldowns		= "為團隊冷卻數出哪次$spell:134920施放"
 })
 
 L:SetMiscLocalization({
@@ -90,7 +92,14 @@ L:SetTimerLocalization({
 })
 
 L:SetOptionLocalization({
-	timerBreaths			= "為下一次吐息顯示計時器"
+	timerBreaths			= "為下一次吐息顯示計時器",
+	AnnounceCooldowns		= "為團隊冷卻數出哪次暴怒施放",
+	Never					= "絕不",
+	Every					= "每次(連續)",
+	EveryTwo				= "數到2",
+	EveryThree				= "數到3",
+	EveryTwoExcludeDiff		= "數到2(除了祕法散射)",
+	EveryThreeExcludeDiff	= "數到3(除了祕法散射)"
 })
 
 L:SetMiscLocalization({
@@ -122,8 +131,8 @@ L:SetMiscLocalization({
 	Upper			= "上層",
 	Lower			= "下層",
 	UpperAndLower	= "上層和下層",
-	TrippleD		= "Tripple (2xDwn)",
-	TrippleU		= "Tripple (2xUp)",
+	TrippleD		= "三個巢(下層x2)",
+	TrippleU		= "三個巢(上層x2)",
 	SouthWest		= "西南",
 	SouthEast		= "東南",
 	NorthWest		= "西北",
@@ -160,12 +169,13 @@ L:SetOptionLocalization({
 L= DBM:GetModLocalization(820)
 
 L:SetWarningLocalization({
-	warnDebuffCount				= "突變: %d/5有益& %有害",
+	warnDebuffCount				= "突變:%d/5有益&%有害",
 })
 
 L:SetOptionLocalization({
 	warnDebuffCount				= "當你吃池水時顯示減益計算警告",
 	RangeFrame					= "顯示距離框架(2碼/5碼)",
+	SetIconOnBigOoze			= "為$journal:6969設定團隊圖示"
 })
 
 -----------------
@@ -240,7 +250,7 @@ L:SetWarningLocalization({
 
 L:SetOptionLocalization({
 	specWarnIntermissionSoon	= "在中場階段前顯示預先特別警告",
-	RangeFrame					= "顯示距離框架",
+	RangeFrame					= "顯示距離框架(8碼/6碼)",
 	StaticShockArrow			= "當某人中了$spell:135695顯示DBM箭頭",
 	OverchargeArrow				= "當某人中了$spell:136295顯示DBM箭頭"
 })

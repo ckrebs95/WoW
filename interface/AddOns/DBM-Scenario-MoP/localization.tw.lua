@@ -1,42 +1,63 @@
 ﻿if GetLocale() ~= "zhTW" then return end
 local L
 
+---------------------
+-- A Brewing Storm --
+---------------------
+L= DBM:GetModLocalization("d517")
+
+L:SetTimerLocalization{
+	timerEvent			= "釀酒完成(大約的時間)"
+}
+
+L:SetOptionLocalization{
+	timerEvent			= "為釀酒完成顯示大約時間的計時器"
+}
+
+L:SetMiscLocalization{
+	BrewStart			= "風暴開始了!準備好。",
+	BrewFinish			= "你成功了!讓我們把這酒帶去靜修居...",
+	BorokhulaPull		= "該死了，你這個舌頭分岔的滑溜爬蟲!",
+	BorokhulaAdds		= "呼叫援助!"
+}
+
+-----------------------
+-- A Little Patience --
+-----------------------
+L= DBM:GetModLocalization("d589")
+
+L:SetMiscLocalization{
+	ScargashPull		= "Your Alliance is WEAK!"--Not yet in use but could be with more logs and combat start timers
+}
+
+-------------------------
+-- Assault of Zan'vess --
+-------------------------
+L= DBM:GetModLocalization("d593")
+
+L:SetMiscLocalization{
+	TelvrakPull			= "Zan'vess will never fall!"
+}
+
+------------------------------
+-- Crypt of Forgotten Kings --
+------------------------------
+L= DBM:GetModLocalization("d504")
+
 ----------------------
 -- Theramore's Fall --
 ----------------------
-
-L= DBM:GetModLocalization("TheramoreFall")
-
-L:SetGeneralLocalization{
-	name = "賽拉摩攻防戰"
-}
+L= DBM:GetModLocalization("d566")
 
 ---------------------------
 -- Arena Of Annihilation --
 ---------------------------
-
-L= DBM:GetModLocalization("ArenaAnnihilation")
-
-L:SetGeneralLocalization{
-	name = "殲滅競技場"
-}
+L= DBM:GetModLocalization("d511")
 
 --------------
 -- Landfall --
 --------------
-
 L = DBM:GetModLocalization("Landfall")
-
-local landfall
-if UnitFactionGroup("player") == "Alliance" then
-	landfall = "雄獅灘"
-else
-	landfall = "制霸岬"
-end
-
-L:SetGeneralLocalization({
-	name = landfall
-})
 
 L:SetWarningLocalization({
 	WarnAchFiveAlive	= "成就\"五小福\"失敗"
@@ -49,22 +70,12 @@ L:SetOptionLocalization({
 --------------------------------
 -- Troves of the Thunder King --
 --------------------------------
-
-L= DBM:GetModLocalization("Troves")
-
-L:SetGeneralLocalization{
-	name = "雷王的珍寶"
-}
+L= DBM:GetModLocalization("d620")
 
 ------------------------
 -- Warlock Green Fire --
 ------------------------
-
-L= DBM:GetModLocalization("GreenFire")
-
-L:SetGeneralLocalization{
-	name = "追擊黑穫議會"
-}
+L= DBM:GetModLocalization("d594")
 
 L:SetWarningLocalization({
 	specWarnLostSouls		= "靈魂迷失!",

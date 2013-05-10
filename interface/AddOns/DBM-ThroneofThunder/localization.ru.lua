@@ -12,7 +12,7 @@ L:SetWarningLocalization({
 
 L:SetOptionLocalization({
 	specWarnWaterMove	= "Спец-предупреждение, если вы стоите в $spell:138470\n(В случае, если скоро $spell:137313 или спадает дебафф $spell:138732)",
-	RangeFrame			= "Показывать окно проверки дистанции"
+	RangeFrame			= "Показывать окно проверки дистанции (8/4 м)"
 })
 
 --------------
@@ -56,7 +56,8 @@ L:SetWarningLocalization({
 
 L:SetOptionLocalization({
 	PHealthFrame		= "Показывать оставшееся здоровье босса до спадения $spell:136442\n(Требуется включить окно отображения здоровья босса)",
-	RangeFrame			= "Показывать окно проверки дистанции"
+	RangeFrame			= "Показывать окно проверки дистанции",
+	AnnounceCooldowns	= "Отсчитывать (до 3) какой сейчас каст $spell:137166 для рейдовых кулдаунов",
 })
 
 ------------
@@ -73,7 +74,8 @@ L:SetOptionLocalization({
 	specWarnCrystalShell	= "Спец-предупреждение, когда на Вас нет дебаффа $spell:137633",
 	InfoFrame				= "Информационное окно для игроков без $spell:137633",
 	SetIconOnTurtles		= "Устанавливать метки на $journal:7129",
-	ClearIconOnTurtles		= "Убирать метки с $journal:7129, когда активируется $spell:133971"
+	ClearIconOnTurtles		= "Убирать метки с $journal:7129, когда активируется $spell:133971",
+	AnnounceCooldowns		= "Отсчитывать какой сейчас каст $spell:134920 для рейдовых кулдаунов"
 })
 
 L:SetMiscLocalization({
@@ -90,7 +92,14 @@ L:SetTimerLocalization({
 })
 
 L:SetOptionLocalization({
-	timerBreaths			= "Отсчёт времени до следующего дыхания"
+	timerBreaths			= "Отсчёт времени до следующего дыхания",
+	AnnounceCooldowns		= "Отсчитывать какой сейчас каст Буйство для рейдовых кулдаунов",
+	Never					= "Никогда",
+	Every					= "Каждый (последовательно)",
+	EveryTwo				= "Кулдауны каждый 2",
+	EveryThree				= "Кулдауны каждый 3",
+	EveryTwoExcludeDiff		= "Кулдауны каждый 2 (искл. Диффузия)",
+	EveryThreeExcludeDiff	= "Кулдауны каждый 3 (искл. Диффузия)"
 })
 
 L:SetMiscLocalization({
@@ -103,9 +112,10 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(828)
 
 L:SetWarningLocalization({
-	warnFlock		= "%s %s (%s)",
-	specWarnFlock	= "%s %s (%s)",
-	specWarnBigBird	= "Страж гнезда: %s"
+	warnFlock			= "%s %s %s",
+	specWarnFlock		= "%s %s %s",
+	specWarnBigBird		= "Страж гнезда: %s",
+	specWarnBigBirdSoon	= "Скоро Страж гнезда: %s"
 })
 
 L:SetTimerLocalization({
@@ -165,7 +175,8 @@ L:SetWarningLocalization({
 
 L:SetOptionLocalization({
 	warnDebuffCount				= "Показывать предупреждения о числе дебаффов, когда Вы поглощаете лужи",
-	RangeFrame					= "Показывать окно проверки дистанции (5/2 м)"
+	RangeFrame					= "Показывать окно проверки дистанции (5/2 м)",
+	SetIconOnBigOoze			= "Устанавливать метки на $journal:6969"
 })
 
 -----------------
@@ -195,7 +206,7 @@ L:SetWarningLocalization({
 })
 
 L:SetOptionLocalization({
-	RangeFrame			= "Показывать динамическое окно проверки дистанции",
+	RangeFrame			= "Показывать динамическое окно проверки дистанции (10 м)",
 	InfoFrame			= "Информационное окно для игроков с $spell:136193"
 })
 
@@ -239,7 +250,7 @@ L:SetWarningLocalization({
 
 L:SetOptionLocalization({
 	specWarnIntermissionSoon	= "Спец-предупреждение перед началом промежуточной фазы",
-	RangeFrame					= "Показывать окно проверки дистанции",--Для двух разных спеллов
+	RangeFrame					= "Показывать окно проверки дистанции (8/6 м)",--Для двух разных спеллов
 	StaticShockArrow			= "Показывать стрелку DBM, когда на ком-то $spell:135695",
 	OverchargeArrow				= "Показывать стрелку DBM, когда на ком-то $spell:136295"
 })

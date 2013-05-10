@@ -66,7 +66,7 @@ DBM_PIZZA_ERROR_USAGE				= "命令：/dbm [broadcast] timer <时间（秒）> <�
 
 DBM_CORE_ERROR_DBMV3_LOADED			= "目前有2个版本的Deadly Boss Mods正在运行：DBMv3和DBMv4。\n单击“确定”按钮可将DBMv3关闭并重载用户界面。\n我们建议将插件目录下的DBMv3删除。"
 
-DBM_CORE_MINIMAP_TOOLTIP_HEADER		= "Deadly Boss Mods"
+--DBM_CORE_MINIMAP_TOOLTIP_HEADER (Same as English locales)
 DBM_CORE_MINIMAP_TOOLTIP_FOOTER		= "Shift+拖动 / 右键拖动：拖动\nAlt+Shift+拖动：自由拖动"
 
 DBM_CORE_RANGECHECK_HEADER			= "距离监视（%d码）"
@@ -137,92 +137,80 @@ DBM_CORE_ANNOUNCE_PULL_NOW			= "开怪！"
 DBM_CORE_ACHIEVEMENT_TIMER_SPEED_KILL = "成就：快速击杀"
 
 -- Auto-generated Timer Localizations
-DBM_CORE_AUTO_TIMER_TEXTS = {
-	target		= "%s: >%%s<",
-	cast		= "%s",
-	active		= "%s结束",--Buff/Debuff/event on boss
-	fades		= "%s消失",--Buff/Debuff on players
-	cd			= "%s冷却",
-	cdcount		= "%s冷却（%%d）",
-	cdsource	= "%s冷却: >%%s<",
-	next 		= "下一次%s",
-	nextcount	= "下一次%s（%%d）",
-	nextsource	= "下一次%s: >%%s<",
-	achievement = "%s",
-}
+DBM_CORE_AUTO_TIMER_TEXTS.target		= "%s: >%%s<"
+DBM_CORE_AUTO_TIMER_TEXTS.cast			= "%s"
+DBM_CORE_AUTO_TIMER_TEXTS.active		= "%s结束" --Buff/Debuff/event on boss
+DBM_CORE_AUTO_TIMER_TEXTS.fades			= "%s消失" --Buff/Debuff on players
+DBM_CORE_AUTO_TIMER_TEXTS.cd			= "%s冷却"
+DBM_CORE_AUTO_TIMER_TEXTS.cdcount		= "%s冷却（%%d）"
+DBM_CORE_AUTO_TIMER_TEXTS.cdsource		= "%s冷却: >%%s<"
+DBM_CORE_AUTO_TIMER_TEXTS.next 			= "下一次%s"
+DBM_CORE_AUTO_TIMER_TEXTS.nextcount		= "下一次%s（%%d）"
+DBM_CORE_AUTO_TIMER_TEXTS.nextsource	= "下一次%s: >%%s<"
+DBM_CORE_AUTO_TIMER_TEXTS.achievement	= "%s"
 
-DBM_CORE_AUTO_TIMER_OPTIONS = {
-	target		= "计时条：$spell:%s减益效果持续时间",
-	cast		= "计时条：$spell:%s施法时间",
-	active		= "计时条：$spell:%s效果持续时间",
-	fades		= "计时条：$spell:%s何时从玩家身上消失",
-	cd			= "计时条：$spell:%s冷却时间",
-	cdcount		= "计时条：$spell:%s冷却时间",
-	cdsource	= "计时条：$spell:%s冷却时间以及来源",
-	next		= "计时条：下一次$spell:%s",
-	nextcount	= "计时条：下一次$spell:%s",
-	nextsource	= "计时条：下一次$spell:%s以及来源",
-	achievement	= "计时条：成就%s"
-}
+DBM_CORE_AUTO_TIMER_OPTIONS.target		= "计时条：$spell:%s减益效果持续时间"
+DBM_CORE_AUTO_TIMER_OPTIONS.cast		= "计时条：$spell:%s施法时间"
+DBM_CORE_AUTO_TIMER_OPTIONS.active		= "计时条：$spell:%s效果持续时间"
+DBM_CORE_AUTO_TIMER_OPTIONS.fades		= "计时条：$spell:%s何时从玩家身上消失"
+DBM_CORE_AUTO_TIMER_OPTIONS.cd			= "计时条：$spell:%s冷却时间"
+DBM_CORE_AUTO_TIMER_OPTIONS.cdcount		= "计时条：$spell:%s冷却时间"
+DBM_CORE_AUTO_TIMER_OPTIONS.cdsource	= "计时条：$spell:%s冷却时间以及来源"
+DBM_CORE_AUTO_TIMER_OPTIONS.next		= "计时条：下一次$spell:%s"
+DBM_CORE_AUTO_TIMER_OPTIONS.nextcount	= "计时条：下一次$spell:%s"
+DBM_CORE_AUTO_TIMER_OPTIONS.nextsource	= "计时条：下一次$spell:%s以及来源"
+DBM_CORE_AUTO_TIMER_OPTIONS.achievement	= "计时条：成就%s"
 
 -- Auto-generated Warning Localizations
-DBM_CORE_AUTO_ANNOUNCE_TEXTS = {
-	target					= "%s -> >%%s<",
-	targetcount				= "%s (%%d) -> >%%s<",
-	spell					= "%s",
-	adds					= "%s剩余：%%d",
-	cast					= "正在施放 %s：%.1f秒",
-	soon					= "即将 %s",
-	prewarn					= "%2$s后 %1$s",
-	phase					= "第%s阶段",
-	prephase				= "第%s阶段 即将到来",
-	count					= "%s (%%d)",
-	stack					= "%s -> >%%s< (%%d)",
-}
+DBM_CORE_AUTO_ANNOUNCE_TEXTS.target			= "%s -> >%%s<"
+DBM_CORE_AUTO_ANNOUNCE_TEXTS.targetcount	= "%s (%%d) -> >%%s<"
+DBM_CORE_AUTO_ANNOUNCE_TEXTS.spell			= "%s"
+DBM_CORE_AUTO_ANNOUNCE_TEXTS.adds			= "%s剩余：%%d"
+DBM_CORE_AUTO_ANNOUNCE_TEXTS.cast			= "正在施放 %s：%.1f秒"
+DBM_CORE_AUTO_ANNOUNCE_TEXTS.soon			= "即将 %s"
+DBM_CORE_AUTO_ANNOUNCE_TEXTS.prewarn		= "%2$s后 %1$s"
+DBM_CORE_AUTO_ANNOUNCE_TEXTS.phase			= "第%s阶段"
+DBM_CORE_AUTO_ANNOUNCE_TEXTS.prephase		= "第%s阶段 即将到来"
+DBM_CORE_AUTO_ANNOUNCE_TEXTS.count			= "%s (%%d)"
+DBM_CORE_AUTO_ANNOUNCE_TEXTS.stack			= "%s -> >%%s< (%%d)"
 
 local prewarnOption			= "预警：$spell:%s"
-DBM_CORE_AUTO_ANNOUNCE_OPTIONS = {
-	target					= "警报：$spell:%s的目标",
-	targetcount				= "警报：$spell:%s的目标",
-	spell					= "警报：$spell:%s",
-	adds					= "警报：$spell:%s剩余数量",
-	cast					= "警报：$spell:%s的施放",
-	soon					= prewarnOption,
-	prewarn					= prewarnOption,
-	phase					= "警报：第%s阶段",
-	prephase				= "预警：第%s阶段",
-	count					= "警报：$spell:%s",
-	stack					= "警报：$spell:%s叠加层数",
-}
+DBM_CORE_AUTO_ANNOUNCE_OPTIONS.target		= "警报：$spell:%s的目标"
+DBM_CORE_AUTO_ANNOUNCE_OPTIONS.targetcount	= "警报：$spell:%s的目标"
+DBM_CORE_AUTO_ANNOUNCE_OPTIONS.spell		= "警报：$spell:%s"
+DBM_CORE_AUTO_ANNOUNCE_OPTIONS.adds			= "警报：$spell:%s剩余数量"
+DBM_CORE_AUTO_ANNOUNCE_OPTIONS.cast			= "警报：$spell:%s的施放"
+DBM_CORE_AUTO_ANNOUNCE_OPTIONS.soon			= prewarnOption
+DBM_CORE_AUTO_ANNOUNCE_OPTIONS.prewarn		= prewarnOption
+DBM_CORE_AUTO_ANNOUNCE_OPTIONS.phase		= "警报：第%s阶段"
+DBM_CORE_AUTO_ANNOUNCE_OPTIONS.prephase		= "预警：第%s阶段"
+DBM_CORE_AUTO_ANNOUNCE_OPTIONS.count		= "警报：$spell:%s"
+DBM_CORE_AUTO_ANNOUNCE_OPTIONS.stack		= "警报：$spell:%s叠加层数"
 
 -- Auto-generated Special Warning Localizations
-DBM_CORE_AUTO_SPEC_WARN_OPTIONS = {
-	spell					= "特殊警报：$spell:%s",
-	dispel					= "特殊警报：需要驱散或偷取$spell:%s",
-	interrupt				= "特殊警报：需要打断$spell:%s",
-	you						= "特殊警报：当你受到$spell:%s影响时",
-	target					= "特殊警报：当他人受到$spell:%s影响时",
-	close					= "特殊警报：当你附近有人受到$spell:%s影响时",
-	move					= "特殊警报：当你受到$spell:%s影响时",
-	run						= "特殊警报：$spell:%s",
-	cast					= "特殊警报：$spell:%s的施放",
-	stack					= "特殊警报：当叠加了至少%d层$spell:%s时",
-	switch 					= "特殊警报：针对$spell:%s需要转换目标"
-}
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.spell		= "特殊警报：$spell:%s"
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.dispel		= "特殊警报：需要驱散或偷取$spell:%s"
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.interrupt	= "特殊警报：需要打断$spell:%s"
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.you			= "特殊警报：当你受到$spell:%s影响时"
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.target		= "特殊警报：当他人受到$spell:%s影响时"
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.close		= "特殊警报：当你附近有人受到$spell:%s影响时"
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.move		= "特殊警报：当你受到$spell:%s影响时"
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.run			= "特殊警报：$spell:%s"
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.cast		= "特殊警报：$spell:%s的施放"
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.stack		= "特殊警报：当叠加了至少%d层$spell:%s时"
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.switch 		= "特殊警报：针对$spell:%s需要转换目标"
 
-DBM_CORE_AUTO_SPEC_WARN_TEXTS = {
-	spell					= "%s!",
-	dispel					= ">%%s<中了%s - 快驱散",
-	interrupt				= "%s - 快打断",
-	you						= "你中了%s",
-	target					= ">%%s<中了%s",
-	close					= "你附近的>%%s<中了%s",
-	move					= "%s - 快躲开",
-	run						= "%s - 快跑",
-	cast					= "%s - 停止施法",
-	stack					= "%s (%%d)",
-	switch					= ">%s< - 转换目标"
-}
+DBM_CORE_AUTO_SPEC_WARN_TEXTS.spell		= "%s!"
+DBM_CORE_AUTO_SPEC_WARN_TEXTS.dispel	= ">%%s<中了%s - 快驱散"
+DBM_CORE_AUTO_SPEC_WARN_TEXTS.interrupt	= "%s - 快打断"
+DBM_CORE_AUTO_SPEC_WARN_TEXTS.you		= "你中了%s"
+DBM_CORE_AUTO_SPEC_WARN_TEXTS.target	= ">%%s<中了%s"
+DBM_CORE_AUTO_SPEC_WARN_TEXTS.close		= "你附近的>%%s<中了%s"
+DBM_CORE_AUTO_SPEC_WARN_TEXTS.move		= "%s - 快躲开"
+DBM_CORE_AUTO_SPEC_WARN_TEXTS.run		= "%s - 快跑"
+DBM_CORE_AUTO_SPEC_WARN_TEXTS.cast		= "%s - 停止施法"
+DBM_CORE_AUTO_SPEC_WARN_TEXTS.stack		= "%s (%%d)"
+DBM_CORE_AUTO_SPEC_WARN_TEXTS.switch	= ">%s< - 转换目标"
 
 
 DBM_CORE_AUTO_ICONS_OPTION_TEXT			= "为$spell:%s的目标添加团队标记"

@@ -1,6 +1,6 @@
 --[[
 	Auctioneer - BasicFilter
-	Version: 5.15.5383 (LikeableLyrebird)
+	Version: 5.16.5405 (MousyMulgara)
 	Revision: $Id: BasicFilter.lua 5318 2012-08-06 10:15:53Z brykrys $
 	URL: http://auctioneeraddon.com/
 
@@ -420,4 +420,4 @@ private.IgnorePrompt.no:SetPoint("BOTTOMRIGHT", private.IgnorePrompt, "BOTTOMRIG
 private.IgnorePrompt.no:SetScript("OnClick", private.OnPromptNo)
 private.IgnorePrompt.no:SetText(NO)
 
-AucAdvanced.RegisterRevision("$URL: http://svn.norganna.org/auctioneer/branches/5.15/Auc-Filter-Basic/BasicFilter.lua $", "$Rev: 5318 $")
+AucAdvanced.RegisterRevision("$URL: http://svn.norganna.org/auctioneer/branches/5.16/Auc-Filter-Basic/BasicFilter.lua $", "$Rev: 5318 $")

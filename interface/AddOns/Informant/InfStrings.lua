@@ -4,8 +4,8 @@
 	http://localizer.norganna.org/
 
 	AddOn: Informant
-	Revision: $Id: InfStrings.lua 5381 2012-11-27 19:42:13Z mentalpower $
-	Version: 5.15.5383 (LikeableLyrebird)
+	Revision: $Id: InfStrings.lua 5346 2012-09-06 04:00:44Z LocalizerAutoCommit $
+	Version: 5.16.5405 (MousyMulgara)
 
 	License:
 		This program is free software; you can redistribute it and/or

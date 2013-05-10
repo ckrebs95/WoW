@@ -1,16 +1,16 @@
 ## Title: TipHelper |cff224477(lib)
 ## Notes: An embeddable library that assists AddOns wishing to use the LibExtraTip tooltip library.
 ##
-## Interface: 50100
+## Interface: 50200
 ## LoadOnDemand: 0
 ## OptionalDependencies: !nLog, LibExtraTip
 ##
-## Version: 5.15.5383 (LikeableLyrebird)
-## Revision: $Id: TipHelper.toc 345 2012-11-27 20:42:39Z mentalpower $
+## Version: 5.16.5405 (MousyMulgara)
+## Revision: $Id: TipHelper.toc 347 2013-03-08 06:44:50Z Esamynn $
 ## Author: Norganna's AddOns
 ## X-Part-Of: Libraries
 ## X-Category: Library
-## X-Max-Interface: 50100
+## X-Max-Interface: 50200
 ## X-URL: http://zip.norganna.org/libs/TipHelper/
 ## X-Feedback: http://forums.norganna.org
 ##

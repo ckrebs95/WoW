@@ -4,8 +4,8 @@
 	http://localizer.norganna.org/
 
 	AddOn: Enchantrix
-	Revision: $Id: EnxStrings.lua 5381 2012-11-27 19:42:13Z mentalpower $
-	Version: 5.15.5383 (LikeableLyrebird)
+	Revision: $Id: EnxStrings.lua 5402 2013-04-01 14:03:25Z brykrys $
+	Version: 5.16.5405 (MousyMulgara)
 
 	License:
 		This program is free software; you can redistribute it and/or
@@ -1429,6 +1429,7 @@ EnchantrixLocalizations = {
 		["GuiValuateEnable"]	= "Activer l'évaluation";
 		["GuiValuateHeader"]	= "Évaluation";
 		["GuiValuateMedian"]	= "Évaluer avec les moyennes d'Auctioneer";
+		["HelpAltChatlink"]	= "Permet l'ouverture d'une info-bulle par un clic gauche sur un lien d'objet dans le chat pendant que la touche Alt est enfoncée.";
 		["HelpClear"]	= "Efface les données de l'objet spécifié (vous devez maj-cliquer le ou les objets dans la ligne de commande) Vous pouvez également spécifier le mot-clef \"tout\"";
 		["HelpDefault"]	= "Réinitialise une option d'Enchantrix à sa valeur par défaut. Vous pouvez spécifier le mot-clef \"tout\" pour réinitialiser toutes les options d'Enchantrix.";
 		["HelpDisable"]	= "Empêche le chargement automatique d'Enchantrix lors de votre prochaine connexion.";
@@ -2792,7 +2793,7 @@ EnchantrixLocalizations = {
 		-- Section: Commands
 		["CmdClear"]	= "Очистить";
 		["CmdDefault"]	= "Стандартные";
-		["CmdDisable"]	= "выведите из строя";
+		["CmdDisable"]	= "Выключить";
 		["CmdFindBidauct"]	= "bidbroker";
 		["CmdFindBidauctShort"]	= "bb";
 		["CmdFindBuyauct"]	= "percentless";
@@ -2807,6 +2808,7 @@ EnchantrixLocalizations = {
 		["ShowDEMaterials"]	= "материалы";
 		["ShowEmbed"]	= "вставлять";
 		["ShowGuessAuctioneerVal"]	= "оценить-val";
+		["ShowGuessBaseline"]	= "базовая оценка";
 		["ShowTerse"]	= "сжатый";
 		["ShowUI"]	= "показать";
 		["ShowValue"]	= "Оценка стоимости";
@@ -2814,9 +2816,9 @@ EnchantrixLocalizations = {
 		["StatOn"]	= "Показывать сконфигурированные данные по зачаровыванию";
 
 		-- Section: Config Text
-		["GuiLoad"]	= "Load Enchantrix";
-		["GuiLoad_Always"]	= "always";
-		["GuiLoad_Never"]	= "never";
+		["GuiLoad"]	= "Загрузка Enchantrix";
+		["GuiLoad_Always"]	= "всегда";
+		["GuiLoad_Never"]	= "никогда";
 
 		-- Section: Game Constants
 		["ArgSpellMillingName"]	= "Измельчение";
@@ -2967,7 +2969,7 @@ EnchantrixLocalizations = {
 		["GuiAutoDeEpicItems"]	= "Автораспыление превосходных предметов (\"эпиков\")";
 		["GuiAutoDeOptions"]	= "Автоматизация";
 		["GuiAutoDePromptLine1"]	= "Вы хотите распылить:";
-		["GuiAutoDePromptLine3"]	= "Оценено:";
+		["GuiAutoDePromptLine3"]	= "Оценено: %s";
 		["GuiAutoDEPurchaseReason"]	= "Куплен за %s";
 		["GuiAutoDeRareItems"]	= "Автораспыление редких (\"синих\") предметов";
 		["GuiAutoDESuggestion"]	= "Предложение: %s за эту вещь";
@@ -3142,13 +3144,14 @@ EnchantrixLocalizations = {
 		["MesgAuctVersion"]	= "Enchantrix 需要Auctioneer v4.0 或更新的版本。部份功能在您未更新您的Auctioneer前无法使用。";
 
 		-- Section: Help Text
+		["GuiAltChatlink"]	= "使用Alt左键点击聊天链接打开工具提示";
 		["GuiClearall"]	= "清除全部附魔助手数据。";
 		["GuiClearallButton"]	= "全部清除";
 		["GuiClearallHelp"]	= "点此清除对于当前服务器-阵营的全部附魔助手数据。";
 		["GuiClearallNote"]	= "对于当前服务器-阵营";
 		["GuiDefaultAll"]	= "重置所有Enchantrix选项";
 		["GuiDefaultAllButton"]	= "全部重置";
-		["GuiDefaultAllHelp"]	= "点此重置全部附魔助手选项为默认值。警告：此操作无法还原。";
+		["GuiDefaultAllHelp"]	= "点此重置全部附魔助手选项为默认值。\n警告：此操作无法还原。";
 		["GuiDefaultOption"]	= "重置该设置";
 		["GuiDELevels"]	= "在提示中显示分解需要的等级";
 		["GuiDEMaterials"]	= "在提示中显示分解材料信息";
@@ -3167,6 +3170,7 @@ EnchantrixLocalizations = {
 		["GuiValuateEnable"]	= "启用估价";
 		["GuiValuateHeader"]	= "估价";
 		["GuiValuateMedian"]	= "以拍卖助手中位数进行估价。";
+		["HelpAltChatlink"]	= "允许在聊天时用Alt+左键点击一个链接打开提示。";
 		["HelpClear"]	= "清除指定物品的数据(必须Shift+点击将物品插入命令)。你也可以指定特定关键字\"all\"。";
 		["HelpDefault"]	= "设置某个附魔助手选项为默认值。你也可以输入特定关键字\"all\" 来设置所有附魔助手选项为默认值。";
 		["HelpDisable"]	= "阻止附魔助手下一次登录时自动加载。";

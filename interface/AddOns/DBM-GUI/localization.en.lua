@@ -4,7 +4,10 @@ local L = DBM_GUI_Translations
 
 L.MainFrame = "Deadly Boss Mods"
 
-L.TranslationBy 			= "Nitram, Tandanu & Tennberg"
+L.TranslationByPrefix		= "Translated by "
+L.TranslationBy 			= nil -- your name here, localizers!
+L.Website					= "Visit our new discussion and support forums at |cFF73C2FBwww.deadlybossmods.com|r (hosted by Elitist Jerks!)"
+L.WebsiteButton				= "Forums"
 
 L.OTabBosses	= "Bosses"
 L.OTabOptions	= "Options"
@@ -30,7 +33,7 @@ L.Button_OK 				= 'OK'
 L.Button_Cancel 			= 'Cancel'
 L.Button_LoadMod 			= 'Load AddOn'
 L.Mod_Enabled				= "Enable boss mod"
-L.Mod_Reset					= "Load default options for this mod (WIP)"
+L.Mod_Reset					= "Load default options"
 L.Reset 					= "Reset"
 
 L.Enable  					= "Enable"
@@ -39,6 +42,9 @@ L.Disable					= "Disable"
 L.NoSound					= "No sound"
 
 L.IconsInUse				= "Icons used by this mod"
+
+L.QuestComplete				= "Already completed weekly rep/LFR/legendary credit on this encounter."
+L.QuestIncomplete			= "Still eligable for weekly rep/LFR/legendary credit on this encounter. NOTE: Reloaded UI or relog too soon after pulling complete status will result in invalid return of not complete"
 
 -- Tab: Boss Statistics
 L.BossStatistics			= "Boss Statistics"
@@ -51,7 +57,8 @@ L.Statistic_BestKill		= "Best Victory:"
 L.General 					= "General DBM Options"
 L.EnableDBM 				= "Enable DBM"
 L.EnableMiniMapIcon			= "Show minimap button"
-L.UseMasterVolume			= "Use Master audio channel to play sound files."
+L.SetPlayerRole				= "Automatically set player role (Enabled recommended)"
+L.UseMasterVolume			= "Use Master audio channel to play sound files"
 L.DisableCinematics			= "Disable in-game cinematics in instances"
 L.DisableCinematicsOutside	= "Disable in-game cinematics outside instances"
 L.SKT_Enabled				= "Always show speed kill timer (Overrides boss-specific option)"
@@ -163,10 +170,11 @@ L.BarWidth					= "Bar width: %d"
 -- Tab: Spam Filter
 L.Panel_SpamFilter				= "Global and Spam Filters"
 L.Area_SpamFilter				= "Spam Filter Options"
-L.HideBossEmoteFrame			= "Hide raid boss emote frame"
+L.HideBossEmoteFrame			= "Hide raid boss emote frame during boss fights"
+L.HideWatchFrame				= "Hide watch (objectives) frame during boss fights"
 L.StripServerName				= "Strip realm name in warnings and timers"
 L.SpamBlockBossWhispers			= "Filter <DBM> warning whispers while fighting"
-L.BlockVersionUpdateNotice		= "Disable update notification popup"
+L.BlockVersionUpdateNotice		= "Disable update notification popup (Not recommended)"
 L.ShowBigBrotherOnCombatStart	= "Perform Big Brother buff check on combat start"
 L.BigBrotherAnnounceToRaid		= "Announce Big Brother results to raid"
 L.SpamBlockSayYell				= "Hide chat bubbles announces from the chat frame"

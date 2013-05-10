@@ -16,9 +16,9 @@ L:SetTimerLocalization({
 })
 
 L:SetOptionLocalization({
-	ColorByClass	= "Показывать имена цветом класса в таблице очков",
-	ShowInviteTimer	= "Отсчет времени до входа на ПБ",
-	AutoSpirit		= "Автоматически покидать тело",
+	ColorByClass		= "Показывать имена цветом класса в таблице очков",
+	ShowInviteTimer		= "Отсчет времени до входа на поле боя",
+	AutoSpirit			= "Автоматически покидать тело",
 	HideBossEmoteFrame	= "Скрыть фрейм эмоций рейдового босса"
 })
 
@@ -50,11 +50,7 @@ L:SetMiscLocalization({
 ----------------------
 --  Alterac Valley  --
 ----------------------
-L = DBM:GetModLocalization("AlteracValley")
-
-L:SetGeneralLocalization({
-	name = "Альтеракская долина"
-})
+L = DBM:GetModLocalization("z30")
 
 L:SetTimerLocalization({
 	TimerTower	= "%s",
@@ -70,20 +66,7 @@ L:SetOptionLocalization({
 --------------------
 --  Arathi Basin  --
 --------------------
-L = DBM:GetModLocalization("ArathiBasin")
-
-L:SetGeneralLocalization({
-	name = "Низина Арати"
-})
-
-L:SetMiscLocalization({
-	ScoreExpr	= "(%d+)/1600",
-	Alliance	= "Альянса",
-	Horde		= "Орды",
-	WinBarText	= "Победа %s",
-	BasesToWin	= "Захвачено баз: %d",
-	Flag		= "Флаг"
-})
+L = DBM:GetModLocalization("z529")
 
 L:SetTimerLocalization({
 	TimerCap	= "%s"
@@ -92,17 +75,32 @@ L:SetTimerLocalization({
 L:SetOptionLocalization({
 	TimerWin				= "Отсчет времени до победы",
 	TimerCap				= "Отсчет времени до захвата",
-	ShowAbEstimatedPoints	= "Отображать предполагаемые очки оставшиеся до победы/поражения",
-	ShowAbBasesToWin		= "Отображать базы, которые необходимо захватить"
+	ShowAbEstimatedPoints	= "Отображать предполагаемое кол-во очков, оставшееся до победы/поражения",
+	ShowAbBasesToWin		= "Отображать кол-во баз, необходимое для победы"
+})
+
+L:SetMiscLocalization({
+	ScoreExpr	= "(%d+)/1600",
+	Alliance	= "Альянса",
+	Horde		= "Орды",
+	WinBarText	= "Победа %s",
+	BasesToWin	= "Баз для победы: %d",
+	Flag		= "Флаг"
 })
 
 ------------------------
 --  Eye of the Storm  --
 ------------------------
-L = DBM:GetModLocalization("EyeoftheStorm")
+L = DBM:GetModLocalization("z566")
 
-L:SetGeneralLocalization({
-	name = "Око Бури"
+L:SetTimerLocalization({
+	TimerFlag		= "Восстановление флага"
+})
+
+L:SetOptionLocalization({
+	TimerWin 		= "Отсчет времени до победы",
+	TimerFlag 		= "Отсчет времени до восстановления флага",
+	ShowPointFrame	= "Отображать флагоносца и предполагаемые очки"
 })
 
 L:SetMiscLocalization({
@@ -118,23 +116,21 @@ L:SetMiscLocalization({
 
 })
 
-L:SetTimerLocalization({
-	TimerFlag	= "Флаг восстановлен"
-})
-
-L:SetOptionLocalization({
-	TimerWin 		= "Отсчет времени до победы",
-	TimerFlag 		= "Отсчет времени до восстановления флага",
-	ShowPointFrame	= "Отображать флагоносца и предполагаемые очки"
-})
-
 ---------------------
 --  Warsong Gulch  --
 ---------------------
-L = DBM:GetModLocalization("WarsongGulch")
+L = DBM:GetModLocalization("z489")
 
-L:SetGeneralLocalization({
-	name = "Ущелье Песни Войны"
+L:SetTimerLocalization({
+	TimerStart	= "Битва начнется через",
+	TimerFlag	= "Восстановление флага"
+})
+
+L:SetOptionLocalization({
+	TimerStart					= "Отсчет времени до начала битвы",
+	TimerFlag					= "Отсчет времени до восстановления флага",
+	ShowFlagCarrier				= "Показывать флагоносца",
+	ShowFlagCarrierErrorNote	= "Сообщение об ошибке выбора флагоносца в режиме боя"
 })
 
 L:SetMiscLocalization({
@@ -142,36 +138,20 @@ L:SetMiscLocalization({
 	BgStart30 			= "Битва начнется через 30 секунд. Приготовиться!",
 	Alliance 			= "Альянса",
 	Horde 				= "Орды",
-	InfoErrorText		= "Функция выбора флагоносца, будет восстановлена после выхода из режима боя.",
+	InfoErrorText		= "Функция выбора флагоносца будет восстановлена после выхода из режима боя.",
 	ExprFlagPickUp		= "(.+) несет флаг (%w+)!",
-	ExprFlagPickUp2		= "Флаг (%w+) у (.+)!",				-- only used for Russian language
+	ExprFlagPickUp2		= "Флаг (%w+) у (.+)!", -- only used for Russian language
 	ExprFlagCaptured	= "(.+) захватывает флаг (%w+)!",
-	ExprFlagReturn		= "(.+) возвращает на базу .лаг (%w+)!", --
+	ExprFlagReturn		= "(.+) возвращает на базу .лаг (%w+)!",
 	FlagAlliance		= "Флаг Альянса: ",
 	FlagHorde			= "Флаг Орды: ",
 	FlagBase			= "База"
 })
 
-L:SetTimerLocalization({
-	TimerStart	= "Битва начнется через", 
-	TimerFlag	= "Восстановление флага"
-})
-
-L:SetOptionLocalization({
-	TimerStart					= "Отсчет времени до начала битвы",
-	TimerFlag					= "Отсчет времени до восстановления флага",
-	ShowFlagCarrier				= "Показать флагоносца",
-	ShowFlagCarrierErrorNote	= "Сообщения об ошибках в режиме боя"
-})
-
 ------------------------
 --  Isle of Conquest  --
 ------------------------
-L = DBM:GetModLocalization("IsleofConquest")
-
-L:SetGeneralLocalization({
-	name = "Остров Завоеваний"
-})
+L = DBM:GetModLocalization("z628")
 
 L:SetWarningLocalization({
 	WarnSiegeEngine		= "Осадная машина готова!",
@@ -179,23 +159,20 @@ L:SetWarningLocalization({
 })
 
 L:SetTimerLocalization({
-	TimerStart			= "Битва начнется через", 
 	TimerPOI			= "%s",
-	TimerSiegeEngine	= "Осадная машина"
+	TimerSiegeEngine	= "Осадная машина готова"
 })
 
 L:SetOptionLocalization({
-	TimerStart			= "Отсчет времени до начала битвы", 
 	TimerPOI			= "Отсчет времени до захвата",
 	TimerSiegeEngine	= "Отсчет времени до создания Осадной машины",
-	WarnSiegeEngine		= "Показать сообщение когда создание Осадной машины завершено",
-	WarnSiegeEngineSoon	= "Показать сообщение когда создание Осадной машины почти завершено"
+	WarnSiegeEngine		= "Предупреждение, когда создание Осадной машины завершено",
+	WarnSiegeEngineSoon	= "Предупреждение, когда создание Осадной машины почти завершено",
+	ShowGatesHealth		= "Отображать здоровье поврежденых ворот (значение здоровья может быть некорректным после захода в уже начавшееся поле боя!)"
 })
 
 L:SetMiscLocalization({
-	BgStart60				= "Битва начнется через 60 секунд.",
-	BgStart30				= "Битва начнется через 30 секунд.",
-	BgStart15				= "Битва начнется через 15 секунд.",
+	GatesHealthFrame		= "Поврежденые ворота",
 	SiegeEngine				= "Осадная машина",
 	GoblinStartAlliance		= "See those seaforium bombs? Use them on the gates while I repair the siege engine!",
 	GoblinStartHorde		= "Я буду работать над осадной машиной, я ты меня прикрывай. Вот, можешь пользоваться этими сефориевыми бомбами, если тебе надо взорвать ворота.",
@@ -210,10 +187,18 @@ L:SetMiscLocalization({
 ------------------
 --  Twin Peaks  --
 ------------------
-L = DBM:GetModLocalization("TwinPeaks")
+L = DBM:GetModLocalization("z726")
 
-L:SetGeneralLocalization({
-	name = "Два Пика"
+L:SetTimerLocalization({
+	TimerStart	= "Битва начнется через",
+	TimerFlag	= "Восстановление флага"
+})
+
+L:SetOptionLocalization({
+	TimerStart					= "Отсчет времени до начала битвы",
+	TimerFlag					= "Отсчет времени до восстановления флага",
+	ShowFlagCarrier				= "Показывать флагоносца",
+	ShowFlagCarrierErrorNote	= "Сообщение об ошибке выбора флагоносца в режиме боя"
 })
 
 L:SetMiscLocalization({
@@ -222,7 +207,7 @@ L:SetMiscLocalization({
 	ZoneName 			= "Два Пика",
 	Alliance			= "Альянса",
 	Horde				= "Орды",
-	InfoErrorText		= "Функция выбора флагоносца, будет восстановлена после выхода из режима боя.",
+	InfoErrorText		= "Функция выбора флагоносца будет восстановлена после выхода из режима боя.",
 	ExprFlagPickUp		= "(.+) несет флаг (%w+)!", --"Флаг (%w+) у (.+)!"
 	ExprFlagCaptured	= "(.+) захватывает флаг (%w+)!",
 	ExprFlagReturn		= "(.+) возвращает на базу флаг (%w+)!",
@@ -233,26 +218,20 @@ L:SetMiscLocalization({
 	Vulnerable2			= "Персонажи, несущие флаг, стали еще более уязвимы!"
 })
 
+------------------------------
+--  The Battle for Gilneas  --
+------------------------------
+L = DBM:GetModLocalization("z761")
+
 L:SetTimerLocalization({
-	TimerStart	= "Битва начнется через", 
-	TimerFlag	= "Восстановление флага"
+	TimerCap	= "%s"
 })
 
 L:SetOptionLocalization({
-	TimerStart					= "Отсчет времени до начала битвы",
-	TimerFlag					= "Отсчет времени до восстановления флага",
-	ShowFlagCarrier				= "Показать флагоносца",
-	ShowFlagCarrierErrorNote	= "Сообщения об ошибках в режиме боя"
-})
-
-
---------------------------
---  Battle for Gilneas  --
---------------------------
-L = DBM:GetModLocalization("Gilneas")
-
-L:SetGeneralLocalization({
-	name = "Битва за Гилнеас"
+	TimerWin					= "Отсчет времени до победы",
+	TimerCap					= "Отсчет времени до захвата",
+	ShowGilneasEstimatedPoints	= "Отображать предполагаемое кол-во очков, оставшееся до победы/поражения",
+	ShowGilneasBasesToWin		= "Отображать кол-во баз, необходимое для победы"
 })
 
 L:SetMiscLocalization({
@@ -260,17 +239,44 @@ L:SetMiscLocalization({
 	Alliance	= "Альянса",
 	Horde		= "Орды",
 	WinBarText	= "Победа %s",
-	BasesToWin	= "Захвачено баз: %d",
+	BasesToWin	= "Баз для победы: %d",
 	Flag		= "Флаг"
 })
 
+-------------------------
+--  Silvershard Mines  --
+-------------------------
+L = DBM:GetModLocalization("z727")
+
 L:SetTimerLocalization({
-	TimerCap	= "%s"
+	TimerCart	= "Восстановление вагонетки"
 })
 
 L:SetOptionLocalization({
-	TimerWin				= "Отсчет времени до победы",
-	TimerCap				= "Отсчет времени до захвата",
-	ShowGilneasEstimatedPoints	= "Отображать предполагаемые очки оставшиеся до победы/поражения",
-	ShowGilneasBasesToWin		= "Отображать базы, которые необходимо захватить"
+	TimerCart	= "Отсчет времени до восстановления вагонетки"
+})
+
+L:SetMiscLocalization({
+	Capture		= "захвачена"
+})
+
+-------------------------
+--  Temple of Kotmogu  --
+-------------------------
+L = DBM:GetModLocalization("z998")
+
+L:SetOptionLocalization({
+	TimerWin					= "Отсчет времени до победы",
+	ShowKotmoguEstimatedPoints	= "Отображать предполагаемое кол-во очков, оставшееся до победы/поражения",
+	ShowKotmoguOrbsToWin		= "Отображать кол-во сфер, необходимое для победы"
+})
+
+L:SetMiscLocalization({
+	OrbTaken 	= "(%S+) захватывает (%S+) сферу!",
+	OrbReturn 	= "(%S+) сфера возвращена!",
+	ScoreExpr	= "(%d+)/1600",
+	Alliance	= "Альянс",
+	Horde		= "Орда",
+	WinBarText	= "Предположительно %s побеждает",
+	OrbsToWin	= "Сфер для победы: %d"
 })

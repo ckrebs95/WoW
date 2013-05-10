@@ -1,10 +1,13 @@
 local mod	= DBM:NewMod(816, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9200 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9392 $"):sub(12, -3))
 mod:SetCreatureID(69078, 69132, 69134, 69131)--69078 Sul the Sandcrawler, 69132 High Prestess Mar'li, 69131 Frost King Malakk, 69134 Kazra'jin --Adds: 69548 Shadowed Loa Spirit,
 mod:SetModelID(47229)--Kazra'jin, 47505 Sul the Sandcrawler, 47506 Frost King Malakk, 47730 High Priestes Mar'li
+mod:SetQuestID(32746)
+mod:SetZone()
 mod:SetUsedIcons(7, 6)
+mod:SetBossHPInfoToHighest()
 
 mod:RegisterCombat("combat")
 
@@ -49,10 +52,12 @@ local warnFrostBite					= mod:NewTargetAnnounce(136922, 4)--136990 is cast ID ve
 local warnFrigidAssault				= mod:NewStackAnnounce(136903, 3, nil, mod:IsTank() or mod:IsHealer())
 --Kazra'jin
 local warnRecklessCharge			= mod:NewCastAnnounce(137122, 3, 2, nil, false)
+local warnDischarge					= mod:NewCountAnnounce(137166, 3)
 
 --All
 local specWarnPossessed				= mod:NewSpecialWarning("specWarnPossessed", mod:IsDps())
 local specWarnDarkPower				= mod:NewSpecialWarningSpell(136507, nil, nil, nil, 2)
+local specWarnSoulFragment			= mod:NewSpecialWarningYou(137641)
 --Sul the Sandcrawler
 local specWarnSandBolt				= mod:NewSpecialWarningInterrupt(136189, false)
 local specWarnSandStorm				= mod:NewSpecialWarningSpell(136894, nil, nil, nil, 2)
@@ -69,6 +74,8 @@ local specWarnFrostBite				= mod:NewSpecialWarningYou(136922)--This one you do n
 local specWarnFrigidAssault			= mod:NewSpecialWarningStack(136903, mod:IsTank(), 8)
 local specWarnFrigidAssaultOther	= mod:NewSpecialWarningTarget(136903, mod:IsTank())
 local specWarnChilled				= mod:NewSpecialWarningYou(137085, false)--Heroic
+--Kazra'jin
+local specWarnDischarge				= mod:NewSpecialWarningCount(137166, nil, nil, nil, 2)
 
 --All
 local timerDarkPowerCD				= mod:NewCDTimer(68, 136507)
@@ -83,7 +90,9 @@ local timerShadowedLoaSpiritCD		= mod:NewCDTimer(33, 137350)--Possessed version 
 local timerTwistedFateCD			= mod:NewCDTimer(33, 137891)--On heroic, this replaces shadowed loa spirit
 local timerMarkedSoul				= mod:NewTargetTimer(20, 137359)
 --Frost King Malak
+local timerBitingCold				= mod:NewBuffFadesTimer(30, 136917)
 local timerBitingColdCD				= mod:NewCDTimer(45, 136917)--10 man Cds (and probably LFR), i have no doubt on 25 man this will either have a shorter cd or affect 3 targets with same CD. Watch for timer diffs though
+local timerFrostBite				= mod:NewBuffFadesTimer(30, 136990)
 local timerFrostBiteCD				= mod:NewCDTimer(45, 136990)--^same comment as above
 local timerFrigidAssault			= mod:NewTargetTimer(15, 136903)
 local timerFrigidAssaultCD			= mod:NewCDTimer(30, 136904)--30 seconds after last one ended (maybe even a next timer, i'll change it with more logs.)
@@ -91,19 +100,21 @@ local timerFrigidAssaultCD			= mod:NewCDTimer(30, 136904)--30 seconds after last
 
 local soundMarkedSoul				= mod:NewSound(137359)
 
---local berserkTimer				= mod:NewBerserkTimer(490)
+local berserkTimer				= mod:NewBerserkTimer(720)
 
 mod:AddBoolOption("HealthFrame", true)
 mod:AddBoolOption("PHealthFrame", true)
 mod:AddBoolOption("RangeFrame")--For Sand Bolt and charge and biting cold
 mod:AddBoolOption("SetIconOnBitingCold", true)
 mod:AddBoolOption("SetIconOnFrostBite", true)
+mod:AddBoolOption("AnnounceCooldowns", mod:HasRaidCooldown())
 
 local lingeringPresence = GetSpellInfo(136467)
 local chilledDebuff = GetSpellInfo(137085)
 local boltCasts = 0
 local kazraPossessed = false
 local possessesDone = 0
+local dischargeCount = 0
 local chilledWarned = false
 local darkPowerWarned = false
 
@@ -154,6 +165,7 @@ function mod:OnCombatStart(delay)
 	timerRecklessChargeCD:Start(10-delay)--the trigger is 6 seconds from pull, charge will happen at 10. I like timer ending at cast finish for this one though vs tryng to have TWO timers for something that literally only has 6 second cd
 	timerBitingColdCD:Start(15-delay)--15 seconds until debuff, 13 til cast.
 	timerBlessedLoaSpiritCD:Start(25-delay)
+	berserkTimer:Start(-delay)
 	if self.Options.RangeFrame and not self:IsDifficulty("lfr25") then
 		DBM.RangeCheck:Show(5)
 	end
@@ -193,19 +205,6 @@ function mod:SPELL_CAST_START(args)
 	end
 end
 
--- Dark Power lfr25 samples:
---   07 Apr 2013, 14:46:39.203 SPELL_AURA_APPLIED(136442), 14:48:16.468 SPELL_MISSED(136507), 14:48:21.671 SPELL_AURA_REMOVED(136442) - Kazra'jin (0) : 97.265
--- Dark Power normal10 samples:
---   27 Mar 2013, 21:29:02.625 SPELL_AURA_APPLIED(136442), 21:30:10.750 SPELL_DAMAGE(136507), 21:30:19.187 SPELL_AURA_REMOVED(136442) - Malakk    (0) : 68.126
---   27 Mar 2013, 21:30:24.843 SPELL_AURA_APPLIED(136442), 21:31:32.984 SPELL_MISSED(136507), 21:31:45.484 SPELL_AURA_REMOVED(136442) - Kazra'jin (0) : 68.141
---   27 Mar 2013, 21:31:50.734 SPELL_AURA_APPLIED(136442), 21:32:58.796 SPELL_DAMAGE(136507), 21:32:59.203 SPELL_AURA_REMOVED(136442) - Mar'li    (0) : 68.062
---   03 Apr 2013, 21:57:56.250 SPELL_AURA_APPLIED(136442), 21:59:04.265 SPELL_MISSED(136507), 21:59:08.781 SPELL_AURA_REMOVED(136442) - Malakk    (0) : 68.015
---   03 Apr 2013, 21:59:13.656 SPELL_AURA_APPLIED(136442), 22:00:21.734 SPELL_DAMAGE(136507), 22:00:30.218 SPELL_AURA_REMOVED(136442) - Mar'li    (0) : 68.078
---   03 Apr 2013, 22:00:34.687 SPELL_AURA_APPLIED(136442), 22:01:42.843 SPELL_DAMAGE(136507), 22:01:47.281 SPELL_AURA_REMOVED(136442) - Kazra'jin (0) : 68.156
---   27 Mar 2013, 21:35:04.171 SPELL_AURA_APPLIED(136442), 21:36:06.265 SPELL_MISSED(136507), 21:36:07.843 SPELL_AURA_REMOVED(136442) - Mar'li    (1) : 62.094
---   03 Apr 2013, 22:03:37.328 SPELL_AURA_APPLIED(136442), 22:04:39.421 SPELL_DAMAGE(136507), 22:04:39.796 SPELL_AURA_REMOVED(136442) - Kazra'jin (1) : 62.468
---   27 Mar 2013, 21:36:11.890 SPELL_AURA_APPLIED(136442), 21:37:09.156 SPELL_MISSED(136507), 21:37:10.390 SPELL_AURA_REMOVED(136442) - Kazra'jin (2) : 57.266
-
 function mod:SPELL_AURA_APPLIED(args)
 	if args.spellId == 136442 then--Possessed
 		local cid = args:GetDestCreatureID()
@@ -222,19 +221,21 @@ function mod:SPELL_AURA_APPLIED(args)
 		if uid and UnitBuff(uid, lingeringPresence) then
 			local _, _, _, stack = UnitBuff(uid, lingeringPresence)
 			if self:IsDifficulty("heroic10", "heroic25") then
-				timerDarkPowerCD:Start(math.floor(68/(0.15*stack+1.0)+0.5))--need review (68, 59, 52, 47)
-			elseif self:IsDifficulty("normal10", "normal25") then
-				timerDarkPowerCD:Start(math.floor(68/(0.10*stack+1.0)+0.5))--need review (68, 62, 57, 52)
-			else -- lfr
-				timerDarkPowerCD:Start(math.floor(97/(0.05*stack+1.0)+0.5))--need review (97, 92, 88, 84)
+				timerDarkPowerCD:Start(math.floor(68/(0.15*stack+1.0)+0.5))--(68, 59, 52, 47)
+			elseif self:IsDifficulty("normal25") then--This is now 25man normal only
+				timerDarkPowerCD:Start(math.floor(68/(0.10*stack+1.0)+0.5))--(68, 62, 57, 52)
+			elseif self:IsDifficulty("normal10") then--Updated 10 man data post hotfix as seen in this log here http://worldoflogs.com/reports/8sy56hojz9x3ej7j/xe/?s=6609&e=7296&x=spellid+%3D+136442+or+spellid+%3D+136507+and+targetname+%3D+%22Slayhoof%22
+				timerDarkPowerCD:Start(math.floor(68/(0.10*(stack-1)+1.0)+0.5))--(76, 68, 62, x)
+			else -- lfr (13 Apr 2013: 11:54:49.500->11:56:26.609 => 97.109 [0 stacks] | 70/100 after ~63.9 => ~91 [1 stack] | 11:59:44.515->12:01:09.593 => 85.078 [2 stacks])
+				timerDarkPowerCD:Start(math.floor(68/(0.05*(stack-6)+1.0)+0.5))--(97, 91, 85, x)
 			end
 		else
-			if self:IsDifficulty("heroic10", "heroic25") then
-				timerDarkPowerCD:Start(68)
-			elseif self:IsDifficulty("normal10", "normal25") then
-				timerDarkPowerCD:Start(68)
-			else
+			if self:IsDifficulty("lfr25") then
 				timerDarkPowerCD:Start(97)
+			elseif self:IsDifficulty("normal10") then
+				timerDarkPowerCD:Start(76)
+			else
+				timerDarkPowerCD:Start(68)
 			end
 		end
 		if cid == 69078 then--Sul the Sandcrawler
@@ -263,6 +264,7 @@ function mod:SPELL_AURA_APPLIED(args)
 				"UNIT_AURA"
 			)
 		elseif cid == 69134 then--Kazra'jin
+			dischargeCount = 0
 			kazraPossessed = true
 			self:UnregisterShortTermEvents()
 		end
@@ -272,7 +274,7 @@ function mod:SPELL_AURA_APPLIED(args)
 		end
 	elseif args.spellId == 136903 then--Player Debuff version, not cast version
 		timerFrigidAssault:Start(args.destName)
-		if self:AntiSpam(3, 1) then--Might need to adjust slightly to 2 or 4.
+		if self:AntiSpam(2.5, 1) then
 			warnFrigidAssault:Show(args.destName, args.amount or 1)
 			if args:IsPlayer() then
 				if (args.amount or 1) >= 8 then
@@ -292,6 +294,7 @@ function mod:SPELL_AURA_APPLIED(args)
 		timerBitingColdCD:Start()
 		if args:IsPlayer() then
 			specWarnBitingCold:Show()
+			timerBitingCold:Start()
 			yellBitingCold:Yell()
 		end
 	elseif args.spellId == 136922 and (args.amount or 1) == 1 then--Player Debuff version, not cast version (amount is just a spam filter for ignoring SPELL_AURA_APPLIED_DOSE on this event)
@@ -302,6 +305,7 @@ function mod:SPELL_AURA_APPLIED(args)
 		timerFrostBiteCD:Start()
 		if args:IsPlayer() then
 			specWarnFrostBite:Show()
+			timerFrostBite:Start()
 		end
 	elseif args:IsSpellID(136860, 136878) and args:IsPlayer() and self:AntiSpam(2, 3) then--Trigger off initial quicksand debuff and ensnared stacks. much less cpu them registering damage events and just as effective.
 		specWarnQuickSand:Show()
@@ -312,6 +316,19 @@ function mod:SPELL_AURA_APPLIED(args)
 			specWarnMarkedSoul:Show()
 			soundMarkedSoul:Play()
 		end
+	elseif args.spellId == 137166 then
+		dischargeCount = dischargeCount + 1
+		warnDischarge:Show(dischargeCount)
+		specWarnDischarge:Show(dischargeCount)
+		if self.Options.AnnounceCooldowns then
+			if DBM.Options.UseMasterVolume then
+				PlaySoundFile("Interface\\AddOns\\DBM-Core\\Sounds\\Corsica_S\\"..dischargeCount..".ogg", "Master")
+			else
+				PlaySoundFile("Interface\\AddOns\\DBM-Core\\Sounds\\Corsica_S\\"..dischargeCount..".ogg")
+			end
+		end
+	elseif args.spellId == 137641 and args:IsPlayer() then
+		specWarnSoulFragment:Show()
 	end
 end
 mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
@@ -357,8 +374,14 @@ function mod:SPELL_AURA_REMOVED(args)
 		timerMarkedSoul:Cancel(args.destName)
 	elseif args.spellId == 136992 and self.Options.SetIconOnBitingCold then
 		self:SetIcon(args.destName, 0)
+		if args:IsPlayer() then
+			timerBitingCold:Cancel()
+		end
 	elseif args.spellId == 136922 and self.Options.SetIconOnFrostBite then
-		self:SetIcon(args.destName, 0)--Square
+		self:SetIcon(args.destName, 0)
+		if args:IsPlayer() then
+			timerFrostBite:Cancel()
+		end
 	end
 end
 

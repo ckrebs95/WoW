@@ -41,6 +41,9 @@ L.NoSound					= "靜音"
 
 L.IconsInUse				= "此模組已使用的標記"
 
+L.QuestComplete				= "你已經完成這個首領的每周聲望/隨機團隊/傳奇任務的取得權。"
+L.QuestIncomplete			= "你尚未取得這個首領的每周聲望/隨機團隊/傳奇任務的取得權。注意:在開戰後重載UI或是重登太快可能會導致結果顯示尚未取得。"
+
 -- Tab: Boss Statistics
 L.BossStatistics			= "首領狀態"
 L.Statistic_Kills			= "勝利："
@@ -52,6 +55,7 @@ L.Statistic_BestKill		= "最快記錄："
 L.General 					= "DBM綜合設置"
 L.EnableDBM 				= "啟用DBM"
 L.EnableMiniMapIcon			= "顯示小地圖圖示"
+L.SetPlayerRole				= "自動的設定玩家角色"
 L.UseMasterVolume			= "使用主要聲音頻道來播放音效檔。"
 L.DisableCinematics			= "禁用遊戲中副本裡的過場動畫"
 L.DisableCinematicsOutside	= "禁用遊戲中副本以外的過場動畫"

@@ -1,6 +1,6 @@
 --[[
 	Enchantrix Addon for World of Warcraft(tm).
-	Version: 5.15.5383 (LikeableLyrebird)
+	Version: 5.16.5405 (MousyMulgara)
 	Revision: $Id: EnxTooltip.lua 5291 2012-04-18 19:27:33Z brykrys $
 	URL: http://enchantrix.org/
 
@@ -28,7 +28,7 @@
 		since that is its designated purpose as per:
 		http://www.fsf.org/licensing/licenses/gpl-faq.html#InterpreterIncompat
 ]]
-Enchantrix_RegisterRevision("$URL: http://svn.norganna.org/auctioneer/branches/5.15/Enchantrix/EnxTooltip.lua $", "$Rev: 5291 $")
+Enchantrix_RegisterRevision("$URL: http://svn.norganna.org/auctioneer/branches/5.16/Enchantrix/EnxTooltip.lua $", "$Rev: 5291 $")
 
 -- Global functions
 local addonLoaded	-- Enchantrix.Tooltip.AddonLoaded()

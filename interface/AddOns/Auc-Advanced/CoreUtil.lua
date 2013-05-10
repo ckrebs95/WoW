@@ -1,7 +1,7 @@
 --[[
 	Auctioneer
-	Version: 5.15.5383 (LikeableLyrebird)
-	Revision: $Id: CoreUtil.lua 5381 2012-11-27 19:42:13Z mentalpower $
+	Version: 5.16.5405 (MousyMulgara)
+	Revision: $Id: CoreUtil.lua 5359 2012-09-21 09:12:12Z brykrys $
 	URL: http://auctioneeraddon.com/
 
 	This is an addon for World of Warcraft that adds statistical history to the auction data that is collected
@@ -922,4 +922,4 @@ function lib.CreateMoney(height)
 	return (tooltip:CreateMoney(height))
 end
 
-AucAdvanced.RegisterRevision("$URL: http://svn.norganna.org/auctioneer/branches/5.15/Auc-Advanced/CoreUtil.lua $", "$Rev: 5381 $")
+AucAdvanced.RegisterRevision("$URL: http://svn.norganna.org/auctioneer/branches/5.16/Auc-Advanced/CoreUtil.lua $", "$Rev: 5359 $")

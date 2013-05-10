@@ -1,11 +1,11 @@
 ## Title: Auc:Util:SimpleAuction
 ## Notes: Creates a simplified "Post" frame within the main Auction House window for those who want a bit more utility and information when creating auctions.
 ##
-## Interface: 50100
+## Interface: 50200
 ## Dependancies: Auc-Advanced
 ##
-## Version: 5.15.5383 (LikeableLyrebird)
-## Revision: $Id: Auc-Util-SimpleAuction.toc 5383 2012-11-27 20:05:32Z mentalpower $
+## Version: 5.16.5405 (MousyMulgara)
+## Revision: $Id: Auc-Util-SimpleAuction.toc 5395 2013-03-17 05:09:19Z prowell $
 ## Author: Norganna's AddOns
 ## X-Part-Of: Auctioneer
 ## X-Category: Auction House

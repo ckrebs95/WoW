@@ -1,11 +1,11 @@
 ## Title: Babylonian |cff224477(lib)
 ## Notes: Provides the facilites to support languages other than those supported by the client locale.
 ##
-## Interface: 50100
+## Interface: 50200
 ## LoadOnDemand: 0
 ##
-## Version: 5.15.5383 (LikeableLyrebird)
-## Revision: $Id: Babylonian.toc 345 2012-11-27 20:42:39Z mentalpower $
+## Version: 5.16.5405 (MousyMulgara)
+## Revision: $Id: Babylonian.toc 347 2013-03-08 06:44:50Z Esamynn $
 ## Author: Norganna's AddOns
 ## X-Part-Of: Libraries
 ## X-Category: Library

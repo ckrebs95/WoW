@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("TeronGorefiend", "DBM-BlackTemple")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 436 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 444 $"):sub(12, -3))
 mod:SetCreatureID(22871)
 mod:SetModelID(21254)
 mod:SetZone()
@@ -12,6 +12,7 @@ mod:RegisterCombat("combat")
 mod:RegisterEvents(
 	"SPELL_AURA_APPLIED",
 	"SPELL_AURA_APPLIED_DOSE",
+	"SPELL_AURA_REMOVED",
 	"SPELL_CAST_SUCCESS"
 )
 
@@ -63,11 +64,18 @@ function mod:SPELL_AURA_APPLIED(args)
 		end
 	end
 end
+mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
+
+function mod:SPELL_AURA_REMOVED(args)
+	if args.spellId == 40243 then
+		if self.Options.CrushIcon then
+			self:SetIcon(args.destName, 0)
+		end
+	end
+end
 
 function mod:SPELL_CAST_SUCCESS(args)
 	if args.spellId == 40239 then
 		warnIncinerate:Show(args.destName)
 	end
 end
-
-mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED

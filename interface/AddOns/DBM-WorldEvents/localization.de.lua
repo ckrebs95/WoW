@@ -10,14 +10,10 @@ L:SetGeneralLocalization({
 	name = "Omen"
 })
 
------------------------
---  Apothecary Trio  --
------------------------
-L = DBM:GetModLocalization("ApothecaryTrio")
-
-L:SetGeneralLocalization({
-	name = "Apotheker-Trio"
-})
+------------------------------
+--  The Crown Chemical Co.  --
+------------------------------
+L = DBM:GetModLocalization("d288")
 
 L:SetTimerLocalization{
 	HummelActive		= "Hummel wird aktiv",
@@ -33,14 +29,10 @@ L:SetMiscLocalization({
 	SayCombatStart		= "Haben sie sich die Mühe gemacht und Euch gesagt, wer ich bin und warum ich das hier tue?"
 })
 
--------------
---  Ahune  --
--------------
-L = DBM:GetModLocalization("Ahune")
-
-L:SetGeneralLocalization({
-	name = "Ahune"
-})
+----------------------------
+--  The Frost Lord Ahune  --
+----------------------------
+L = DBM:GetModLocalization("d286")
 
 L:SetWarningLocalization({
 	Submerged		= "Ahune ist abgetaucht",
@@ -70,11 +62,7 @@ L:SetMiscLocalization({
 ----------------------
 --  Coren Direbrew  --
 ----------------------
-L = DBM:GetModLocalization("CorenDirebrew")
-
-L:SetGeneralLocalization({
-	name = "Coren Düsterbräu"
-})
+L = DBM:GetModLocalization("d287")
 
 L:SetWarningLocalization({
 	specWarnBrew		= "Werde das Bier los, bevor sie dir noch eins zuwirft!",
@@ -91,14 +79,10 @@ L:SetMiscLocalization({
 	YellBarrel			= "Stecke im Fass!"
 })
 
--------------------------
---  Headless Horseman  --
--------------------------
-L = DBM:GetModLocalization("HeadlessHorseman")
-
-L:SetGeneralLocalization({
-	name = "Der kopflose Reiter"
-})
+-----------------------------
+--  The Headless Horseman  --
+-----------------------------
+L = DBM:GetModLocalization("d285")
 
 L:SetWarningLocalization({
 	WarnPhase				= "Phase %d",

@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(682, "DBM-MogushanVaults", nil, 317)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 8974 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9412 $"):sub(12, -3))
 mod:SetCreatureID(60143)
 mod:SetModelID(41256)
 mod:SetZone()
@@ -48,9 +48,9 @@ local timerFrailSoul				= mod:NewBuffFadesTimer(30, 117723)
 
 local berserkTimer					= mod:NewBerserkTimer(360)
 
-local countdownCrossedOver			= mod:NewCountdown(29, 116161)
+local countdownCrossedOver			= mod:NewCountdownFades(29, 116161)
 
-mod:AddBoolOption("SetIconOnVoodoo", true)
+mod:AddBoolOption("SetIconOnVoodoo", false)
 
 local totemCount = 0
 local voodooDollTargets = {}
@@ -78,11 +78,6 @@ local function removeIcon(target)
 	end
 end
 
---[[
-local function ClearVoodooTargets()
-	table.wipe(voodooDollTargetIcons)
-end--]]
-
 do
 	local function sort_by_group(v1, v2)
 		return DBM:GetRaidSubgroup(DBM:GetUnitFullName(v1)) < DBM:GetRaidSubgroup(DBM:GetUnitFullName(v2))
@@ -97,7 +92,6 @@ do
 			self:SetIcon(v, voodooIcon)
 			voodooIcon = voodooIcon - 1
 		end
---		self:Schedule(1.5, ClearVoodooTargets)--Table wipe delay so if icons go out too early do to low fps or bad latency, when they get new target on table, resort and reapplying should auto correct teh icon within .2-.4 seconds at most.
 	end
 end
 
@@ -220,10 +214,20 @@ function mod:OnSync(msg, guid)
 		self:Unschedule(warnVoodooDollTargets)
 		self:Schedule(0.3, warnVoodooDollTargets)
 		if self.Options.SetIconOnVoodoo then
-			table.insert(voodooDollTargetIcons, DBM:GetRaidUnitId(targetname))
+			local targetUnitID = DBM:GetRaidUnitId(targetname)
+			--Added to fix a bug with duplicate entries of same person in icon table more than once
+			local foundDuplicate = false
+			for i = #voodooDollTargetIcons, 1, -1 do
+				if voodooDollTargetIcons[i].targetUnitID then--make sure they aren't in table before inserting into table again. (not sure why this happens in LFR but it does, probably someone really high ping that cranked latency check way up)
+					foundDuplicate = true
+				end
+			end
+			if not foundDuplicate then
+				table.insert(voodooDollTargetIcons, targetUnitID)
+			end
 			self:UnscheduleMethod("SetVoodooIcons")
 			if self:LatencyCheck() then--lag can fail the icons so we check it before allowing.
-				if #voodooDollTargetIcons >= 4 and self:IsDifficulty("normal25", "heroic25") or #voodooDollTargetIcons >= 3 and self:IsDifficulty("normal10", "heroic10") then
+				if #voodooDollTargetIcons >= 4 and self:IsDifficulty("normal25", "heroic25", "lfr25") or #voodooDollTargetIcons >= 3 and self:IsDifficulty("normal10", "heroic10") then
 					self:SetVoodooIcons()
 				else
 					self:ScheduleMethod(1, "SetVoodooIcons")

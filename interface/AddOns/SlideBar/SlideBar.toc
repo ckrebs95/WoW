@@ -6,12 +6,12 @@
 ## LoadOnDemand: 0
 ## SavedVariables: SlideBarConfig
 ##
-## Version: 5.15.5383 (LikeableLyrebird)
-## Revision: $Id: SlideBar.toc 345 2012-11-27 20:42:39Z mentalpower $
+## Version: 5.16.5405 (MousyMulgara)
+## Revision: $Id: SlideBar.toc 347 2013-03-08 06:44:50Z Esamynn $
 ## Author: Norganna's AddOns
 ## X-Part-Of: Libraries
 ## X-Category: Library
-## X-Max-Interface: 50100
+## X-Max-Interface: 50200
 ## X-URL: http://zip.norganna.org/libs/SlideBar/
 ## X-Feedback: http://forums.norganna.org
 ##

@@ -12,25 +12,20 @@ Quartz3DB = {
 		["Pet"] = {
 			["profiles"] = {
 				["Default"] = {
-					["x"] = 699.9999880790713,
+					["x"] = 860,
 				},
 			},
 		},
 		["Mirror"] = {
 		},
-		["Focus"] = {
-			["profiles"] = {
-				["Default"] = {
-					["x"] = 699.9999880790713,
-				},
-			},
-		},
 		["Player"] = {
 			["profiles"] = {
 				["Default"] = {
-					["x"] = 674.9999880790713,
+					["x"] = 835,
 				},
 			},
+		},
+		["EnemyCasts"] = {
 		},
 		["GCD"] = {
 		},
@@ -52,13 +47,18 @@ Quartz3DB = {
 		["Target"] = {
 			["profiles"] = {
 				["Default"] = {
-					["x"] = 699.9999880790713,
+					["x"] = 860,
 				},
 			},
 		},
 		["Range"] = {
 		},
-		["EnemyCasts"] = {
+		["Focus"] = {
+			["profiles"] = {
+				["Default"] = {
+					["x"] = 860,
+				},
+			},
 		},
 		["Latency"] = {
 		},

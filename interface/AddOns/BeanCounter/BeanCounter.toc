@@ -6,8 +6,8 @@
 ## OptionalDeps: !nLog, Babylonian, DebugLib, SlideBar, Auc-Advanced, Configator, LibExtraTip, TipHelper, LibDataBroker
 ## SavedVariables: BeanCounterDB, BeanCounterDBSettings, BeanCounterDBNames, BeanCounterAccountDB
 ##
-## Version: 5.15.5383 (LikeableLyrebird)
-## Revision: $Id: BeanCounter.toc 5383 2012-11-27 20:05:32Z mentalpower $
+## Version: 5.16.5405 (MousyMulgara)
+## Revision: $Id: BeanCounter.toc 5395 2013-03-17 05:09:19Z prowell $
 ## Author: Norganna's AddOns
 ## X-Part-Of: Auctioneer
 ## X-Category: Auction House

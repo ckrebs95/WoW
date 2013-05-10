@@ -1,14 +1,16 @@
 local mod	= DBM:NewMod("Brutallus", "DBM-Sunwell")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 436 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 443 $"):sub(12, -3))
 mod:SetCreatureID(24882)
 mod:SetModelID(22711)
-mod:SetMinSyncRevision(358)--Block bad pulls from old versions
+mod:SetMinSyncRevision(441)--Block bad pulls from old versions
 mod:SetZone()
 mod:SetUsedIcons(1, 2, 3, 4, 5, 6, 7, 8)
 
 mod:RegisterCombat("yell", L.Pull)
+mod.disableHealthCombat = true
+
 
 mod:RegisterEvents(
 	"SPELL_CAST_START",
@@ -31,7 +33,7 @@ local timerBurnCD		= mod:NewCDTimer(20, 46394)
 local berserkTimer		= mod:NewBerserkTimer(360)
 
 mod:AddBoolOption("BurnIcon", true)
-mod:AddBoolOption("BurnWhisper", true, "announce")
+mod:AddBoolOption("BurnWhisper", false, "announce")
 
 local burnIcon = 8
 
@@ -57,7 +59,7 @@ function mod:SPELL_AURA_APPLIED(args)
 				burnIcon = burnIcon - 1
 			end
 		end
-		if DBM:GetRaidRank() > 0 and self.Options.BurnWhisper then
+		if DBM:GetRaidRank() > 0 and self.Options.BurnWhisper and args.destName ~= UnitName("player") then
 			self:SendWhisper(L.BurnWhisper, args.destName)
 		end
 		if args:IsPlayer() then
