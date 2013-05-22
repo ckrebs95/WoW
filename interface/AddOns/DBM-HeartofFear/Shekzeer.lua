@@ -1,9 +1,8 @@
 local mod	= DBM:NewMod(743, "DBM-HeartofFear", nil, 330)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 8974 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9469 $"):sub(12, -3))
 mod:SetCreatureID(62837)--62847 Dissonance Field, 63591 Kor'thik Reaver, 63589 Set'thik Windblade
-mod:SetModelID(42730)
 mod:SetZone()
 mod:SetUsedIcons(1, 2)
 

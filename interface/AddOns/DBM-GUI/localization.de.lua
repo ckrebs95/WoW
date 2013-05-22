@@ -4,7 +4,10 @@ local L = DBM_GUI_Translations
 
 L.MainFrame = "Deadly Boss Mods"
 
-L.TranslationBy 			= "Nitram & Tandanu"
+L.TranslationByPrefix		= "Übersetzt von "
+L.TranslationBy 			= "Ebmor@EU-Malorne"
+L.Website					= "Besuche unsere neuen Diskussions- und Support-Foren: |cFF73C2FBwww.deadlybossmods.com|r (gehostet von Elitist Jerks!)"
+L.WebsiteButton				= "Foren"
 
 L.OTabBosses	= "Bosse"
 L.OTabOptions	= "Optionen"
@@ -30,7 +33,7 @@ L.Button_OK 				= 'OK'
 L.Button_Cancel 			= 'Abbrechen'
 L.Button_LoadMod 			= 'Lade Boss Mod'
 L.Mod_Enabled				= "Aktiviere Boss Mod"
-L.Mod_Reset					= "Lade Standardeinstellungen für diese Seite (IN ENTWICKLUNG!)"
+L.Mod_Reset					= "Lade Standardeinstellungen"
 L.Reset 					= "Zurücksetzen"
 
 L.Enable  					= "Aktiviere"
@@ -50,19 +53,25 @@ L.Statistic_Wipes			= "Niederlagen:"
 L.Statistic_Incompletes		= "Abgebrochen:"
 L.Statistic_BestKill		= "Schnellster:"
 
--- Tab: General Options
-L.General 					= "Allgemeine DBM-Einstellungen"
+-- Tab: General Core Options
+L.General 					= "Allgemeine Grundeinstellungen"
 L.EnableDBM 				= "Aktiviere DBM"
 L.EnableMiniMapIcon			= "Aktiviere Minimap-Symbol"
 L.SetPlayerRole				= "Automatisch eigene Rolle (Schutz/Heilung/Schaden) setzen (empfohlen)"
 L.UseMasterVolume			= "Benutze Master-Audiokanal um Sounddateien abzuspielen"
 L.DisableCinematics			= "Deaktiviere Videosequenzen innerhalb von Instanzen"
 L.DisableCinematicsOutside	= "Deaktiviere Videosequenzen außerhalb von Instanzen"
-L.SKT_Enabled				= "Zeige immer Timer für schnellsten Sieg (ignoriert Boss-spezifische Einstellung)"
 L.AutologBosses				= "Automatische Aufzeichnung von Bosskämpfen im spieleigenen Kampflog"
 L.AdvancedAutologBosses		= "Automatische Aufzeichnung von Bosskämpfen mit Addon \"Transcriptor\""
 L.LogOnlyRaidBosses			= "Nur Schlachtzugbosskämpfe aufzeichnen\n(ohne Schlachtzugsbrowser-/Dungeon-/Szenarien-/Weltbosskämpfe)"
 L.Latency_Text				= "Maximale Synchronisierungslatenz: %d"
+-- Tab: General Timer Options
+L.TimerGeneral 				= "Allgemeine Einstellungen für Timer"
+L.SKT_Enabled				= "Zeige immer Timer für schnellsten Sieg (ignoriert Boss-spezifische Einstellung)"
+L.ChallengeTimerOptions		= "Timer für den schnellsten Abschluss im Herausforderungsmodus"
+L.ChallengeTimerPersonal	= "Persönliche Bestzeit"
+L.ChallengeTimerGuild		= "Bestzeit der Gilde"
+L.ChallengeTimerRealm		= "Bestzeit des Realms"
 
 L.ModelOptions				= "Einstellungen für 3D-Modellanzeige"
 L.EnableModels				= "Aktiviere 3D-Modelle in den Bosseinstellungen"
@@ -105,7 +114,7 @@ L.RaidWarnSound				= "Sound für Schlachtzugwarnung"
 L.CountdownVoice			= "Stimme für Countdown- und Countout-Sounds"
 L.SpecialWarnSound			= "Sound für Spezialwarnungen, die dich oder deine Rolle betreffen"
 L.SpecialWarnSound2			= "Sound für Spezialwarnungen, die jeden betreffen"
-L.SpecialWarnSound3			= "Sound für SEHR wichtige Spezialwarnungen (tödlich für dich/Schlachtzug)"
+L.SpecialWarnSound3			= "Sound für SEHR wichtige Spezialwarnungen"
 
 -- Tab: Generalwarnings
 L.Tab_GeneralMessages 		= "Allgemeine Meldungen"
@@ -148,13 +157,14 @@ L.Panel_SpecWarnFrame		= "Spezialwarnungen"
 L.Area_SpecWarn				= "Einstellungen für Spezialwarnungen"
 L.SpecWarn_Enabled			= "Zeige Spezialwarnungen für Bossfähigkeiten"
 L.SpecWarn_LHFrame			= "Aktiviere aufblinkenden Bildschirm bei Spezialwarnungen"
+L.SpecWarn_AdSound			= "Erweiterte Soundeinstellungen für Spezialwarnungen (benötigt /reload)"
 L.SpecWarn_Font				= "Schriftart für Spezialwarnungen" --unused
 L.SpecWarn_DemoButton		= "Zeige Beispiel"
 L.SpecWarn_MoveMe			= "Positionieren"
 L.SpecWarn_FontSize			= "Schriftgröße"
 L.SpecWarn_FontColor		= "Schriftfarbe"
 L.SpecWarn_FontType			= "Schriftart für Spezialwarnungen"
-L.SpecWarn_ResetMe			= "Auf Standard zurücksetzen"
+L.SpecWarn_ResetMe			= "Zurücksetzen"
 
 -- Tab: HealthFrame
 L.Panel_HPFrame				= "Lebensanzeige"

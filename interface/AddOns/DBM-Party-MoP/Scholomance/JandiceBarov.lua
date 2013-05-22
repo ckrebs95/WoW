@@ -1,9 +1,8 @@
 local mod	= DBM:NewMod(663, "DBM-Party-MoP", 7, 246)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 8974 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9469 $"):sub(12, -3))
 mod:SetCreatureID(59184)--59220 seem to be her mirror images
-mod:SetModelID(40639)
 mod:SetZone()
 
 mod:RegisterCombat("combat")

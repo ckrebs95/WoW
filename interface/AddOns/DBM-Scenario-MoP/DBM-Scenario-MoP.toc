@@ -1,4 +1,4 @@
-﻿## Interface: 50200
+﻿## Interface: 50300
 ## X-Min-Interface: 50001
 ## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Scenario-MoP|r
 ## Title-ruRU:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Сценарии-MoP|r
@@ -22,7 +22,7 @@
 ## X-DBM-Mod-Name-frFR: Scénario (MoP)
 ## X-DBM-Mod-Sort: 35
 ## X-DBM-Mod-LoadZoneID: 906, 851, 899, 911, 920, 934, 919, 900, 878, 912, 883, 882, 884, 914, 880
-## X-Curse-Packaged-Version: 5.2.5
+## X-Curse-Packaged-Version: 5.3.0
 ## X-Curse-Project-Name: Deadly Boss Mods
 ## X-Curse-Project-ID: deadly-boss-mods
 ## X-Curse-Repository-ID: wow/deadly-boss-mods/mainline
@@ -33,29 +33,16 @@ localization.tw.lua
 localization.cn.lua
 localization.fr.lua
 localization.ru.lua
-ABrewingStorm\MapSizes.lua
 ABrewingStorm\BrewingStorm.lua
-ALittlePatience\MapSizes.lua
 ALittlePatience\ALittlePatience.lua
-ArenaOfAnnihilation\MapSizes.lua
 ArenaOfAnnihilation\ArenaOfAnnihilation.lua
-AssaultofZanvess\MapSizes.lua
 AssaultofZanvess\AssaultofZanvess.lua
-BrewmoonFestival\MapSizes.lua
 BrewmoonFestival\BrewmoonFestival.lua
-CryptofForgotenKings\MapSizes.lua
 CryptofForgotenKings\CryptofKings.lua
-DaggerInDark\MapSizes.lua
 DaggerInDark\DaggerInDark.lua
-GreenstoneVillage\MapSizes.lua
 GreenstoneVillage\GreenstoneVillage.lua
-Landfall\MapSizes.lua
 Landfall\Landfall.lua
-TheramoresFall\MapSizes.lua
 TheramoresFall\Theramore.lua
-TrovesThunderKing\MapSizes.lua
 TrovesThunderKing\Troves.lua
-UngaIngoo\MapSizes.lua
 UngaIngoo\UngaIngoo.lua
-WarlockSolo\MapSizes.lua
 WarlockSolo\GreenFire.lua

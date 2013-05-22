@@ -1,4 +1,4 @@
-﻿## Interface: 50200
+﻿## Interface: 50300
 ## X-Min-Interface: 50001
 ## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Party-MoP|r
 ## Title-koKR:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf05인던전-판다리아의 안개|r
@@ -26,7 +26,7 @@
 ## X-DBM-Mod-Name-frFR: Groupe (MoP)
 ## X-DBM-Mod-Sort: 25
 ## X-DBM-Mod-LoadZoneID: 867, 876, 877, 875, 885, 887, 898, 871, 874
-## X-Curse-Packaged-Version: 5.2.5
+## X-Curse-Packaged-Version: 5.3.0
 ## X-Curse-Project-Name: Deadly Boss Mods
 ## X-Curse-Project-ID: deadly-boss-mods
 ## X-Curse-Repository-ID: wow/deadly-boss-mods/mainline
@@ -39,45 +39,36 @@ localization.ru.lua
 localization.tw.lua
 localization.cn.lua
 localization.br.lua
-JadeSerpentTemple\MapSizes.lua
 JadeSerpentTemple\WiseMari.lua
 JadeSerpentTemple\LibraryEvent.lua
 JadeSerpentTemple\LiuFlameheart.lua
 JadeSerpentTemple\ShaofDoubt.lua
-StormstoutBrewery\MapSizes.lua
 StormstoutBrewery\OokOok.lua
 StormstoutBrewery\Hoptallus.lua
 StormstoutBrewery\YanZhu.lua
-ShadoPanMonastery\MapSizes.lua
 ShadoPanMonastery\GuCloudStrike.lua
 ShadoPanMonastery\Snowdrift.lua
 ShadoPanMonastery\ShaofViolence.lua
 ShadoPanMonastery\TaranZhu.lua
-GateSettingSun\MapSizes.lua
 GateSettingSun\Kiptilak.lua
 GateSettingSun\Gadok.lua
 GateSettingSun\Rimok.lua
 GateSettingSun\Raigonn.lua
-MogushanPalace\MapSizes.lua
 MogushanPalace\TrialoftheKing.lua
 MogushanPalace\Gekkan.lua
 MogushanPalace\WeaponmasterXin.lua
-NiuzaoTemple\MapSizes.lua
 NiuzaoTemple\Jinbak.lua
 NiuzaoTemple\Vojak.lua
 NiuzaoTemple\Pavalak.lua
 NiuzaoTemple\Neronok.lua
-Scholomance\MapSizes.lua
 Scholomance\Chillheart.lua
 Scholomance\JandiceBarov.lua
 Scholomance\Rattlegore.lua
 Scholomance\LillianVoss.lua
 Scholomance\DarkmasterGandling.lua
-ScarletHalls\MapSizes.lua
 ScarletHalls\Braun.lua
 ScarletHalls\Harlan.lua
 ScarletHalls\FlameweaverKoegler.lua
-ScarletCathedral\MapSizes.lua
 ScarletCathedral\ThalnosSoulrender.lua
 ScarletCathedral\Korlof.lua
 ScarletCathedral\Durand.lua

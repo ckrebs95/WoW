@@ -1,12 +1,12 @@
 local mod	= DBM:NewMod(817, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9399 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9560 $"):sub(12, -3))
 mod:SetCreatureID(68078, 68079, 68080, 68081)--Ro'shak 68079, Quet'zal 68080, Dam'ren 68081, Iron Qon 68078
 mod:SetMainBossID(68078)
-mod:SetModelID(46627) -- Iron Qon, 46628 Ro'shak, 46629 Quet'zal, 46630 Dam'ren
 mod:SetQuestID(32754)
 mod:SetZone()
+mod:SetUsedIcons(8)
 mod:SetBossHPInfoToHighest()
 
 mod:RegisterCombat("combat")
@@ -87,6 +87,11 @@ local Damren = select(2, EJ_GetCreatureInfo(4, 817))
 local arcingName = GetSpellInfo(136193)
 local phase = 1--Not sure this is useful yet, coding it in, in case spear cd is different in different phases
 local fistSmashCount = 0
+--Spear/arcing methods called VERY often, so cache these globals locally
+local UnitDetailedThreatSituation = UnitDetailedThreatSituation
+local UnitExists = UnitExists
+local UnitClass = UnitClass
+local UnitDebuff = UnitDebuff
 
 local function updateHealthFrame()
 	if DBM.BossHealth:IsShown() then
@@ -310,7 +315,6 @@ end
 
 function mod:SPELL_SUMMON(args)
 	if args.spellId == 134926 and phase < 4 then
---		warnThrowSpear:Show()
 		if self:AntiSpam(15, 8) then--Basically, if the target scanning failed, we do an aoe warning on the actual summon.
 			specWarnThrowSpear:Show()
 		end
@@ -435,11 +439,10 @@ function mod:UNIT_DIED(args)
 			if self.Options.RangeFrame then
 				DBM.RangeCheck:Show(10, nil, nil, 1)--Switch range frame back to 1. Range is assumed 10, no spell info
 			end
-			if self.Options.InfoFrame then
+			if self.Options.InfoFrame and not self:IsDifficulty("lfr25") then
 				DBM.InfoFrame:SetHeader(arcingName)
 				DBM.InfoFrame:Show(5, "playerbaddebuff", 136193)
 			end
-			--Only one log, but i looks like spear cd from phase 1 remains intact
 			phase = 2
 			updateHealthFrame()
 			timerLightningStormCD:Start(17)
@@ -458,7 +461,13 @@ function mod:UNIT_DIED(args)
 		warnWindStorm:Cancel()
 		specWarnWindStorm:Cancel()
 		timerWindStorm:Cancel()
-		checkArcing()
+		if not self:IsDifficulty("lfr25") then--LFR has no concept of clearing arcing, they certainly don't use info/range frames
+			checkArcing()
+		else--So just hide range frame when quet'zal dies
+			if self.Options.RangeFrame then
+				DBM.RangeCheck:Hide()
+			end
+		end
 		if self:IsDifficulty("heroic10", "heroic25") then--In heroic, all mounts die in phase 4.
 			DBM.BossHealth:RemoveBoss(cid)
 		else

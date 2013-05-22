@@ -3,6 +3,10 @@
 DBM_CORE_NEED_SUPPORT				= "Вы - программист или хороший переводчик? Команда разработчиков DBM нуждается в вашей помощи. Присоединяйтесь к нам -  зайдите на www.deadlybossmods.com или отправьте сообщение на tandanu@deadlybossmods.com или nitram@deadlybossmods.com."
 DBM_HOW_TO_USE_MOD					= "Добро пожаловать в DBM. Для доступа к настройкам наберите /dbm в чате. При желании, загрузите определенные зоны вручную для изменений специфических настроек для каждого босса. DBM пытается подстраиваться под вас на основе вашей специализации на момент первого запуска, но некоторые могут захотеть включить дополнительные опции."
 
+DBM_FORUMS_MESSAGE					= "Нашли баг или неправильный таймер? Вы считаете что какому-то модулю требуется дополнительное предупреждение, таймер или особенность?\nПосетите новые форумы Deadly Boss Mods для обсуждений, сообщений об ошибках и запроса новых возможностей на |HDBM:forums|h|cff3588ffhttp://www.deadlybossmods.com|r (вы можете нажать на ссылку, чтобы скопировать URL)"
+DBM_FORUMS_COPY_URL_DIALOG			= "Посетите наши новые форумы обсуждения и поддержки\r\n(организовано Elitist Jerks!)"
+
+
 DBM_CORE_LOAD_MOD_ERROR				= "Ошибка при загрузке босс модуля для %s: %s"
 DBM_CORE_LOAD_MOD_SUCCESS			= "Загружен модуль для '%s'. Для дополнительных настроек введите /dbm или /dbm help в чате."
 DBM_CORE_LOAD_GUI_ERROR				= "Не удалось загрузить GUI: %s"
@@ -44,6 +48,8 @@ DBM_CORE_GENERIC_WARNING_DUPLICATE	= "Один из %s"
 DBM_CORE_GENERIC_WARNING_BERSERK	= "Берсерк через %s %s"
 DBM_CORE_GENERIC_TIMER_BERSERK		= "Берсерк"
 DBM_CORE_OPTION_TIMER_BERSERK		= "Отсчет времени до $spell:26662"
+DBM_CORE_GENERIC_TIMER_COMBAT		= "Бой начинается"
+DBM_CORE_OPTION_TIMER_COMBAT		= "Отсчет времени до начала боя"
 DBM_CORE_OPTION_HEALTH_FRAME		= "Отображать здоровье босса"
 
 DBM_CORE_OPTION_CATEGORY_TIMERS		= "Индикаторы"
@@ -53,7 +59,7 @@ DBM_CORE_OPTION_CATEGORY_MISC		= "Прочее"
 DBM_CORE_AUTO_RESPONDED				= "Авто-ответ."
 DBM_CORE_STATUS_WHISPER				= "%s: %s, %d/%d человек живые"
 --Bosses
-DBM_CORE_AUTO_RESPOND_WHISPER		= "%s сейчас занят, в бою против %s (%s, %d/%d человек живые)"
+DBM_CORE_AUTO_RESPOND_WHISPER				= "%s сейчас занят, в бою против %s (%s, %d/%d человек живые)"
 DBM_CORE_WHISPER_COMBAT_END_KILL			= "%s одержал победу над %s!"
 DBM_CORE_WHISPER_COMBAT_END_KILL_STATS		= "%s одержал победу над %s! Общее количество побед у них - %d."
 DBM_CORE_WHISPER_COMBAT_END_WIPE_AT			= "%s потерпел поражение от %s на %s"
@@ -74,9 +80,10 @@ DBM_CORE_YOUR_VERSION_OUTDATED      = "Ваша версия Deadly Boss Mods у
 --DBM_BIG_WIGS
 --DBM_BIG_WIGS_ALPHA
 
-DBM_CORE_UPDATEREMINDER_HEADER		= "Ваша версия Deadly Boss Mods устарела.\n Версия %s (r%d) доступна для загрузки здесь:"
-DBM_CORE_UPDATEREMINDER_FOOTER		= "Нажмите " .. (IsMacClient() and "Cmd-C" or "Ctrl-C")  ..  ", чтобы скопировать ссылку загрузки в буфер обмена."
-DBM_CORE_UPDATEREMINDER_NOTAGAIN	= "Всплывающее сообщение при наличии новой версии"
+DBM_CORE_UPDATEREMINDER_HEADER			= "Ваша версия Deadly Boss Mods устарела.\n Версия %s (r%d) доступна для загрузки здесь:"
+DBM_CORE_UPDATEREMINDER_FOOTER			= "Нажмите " .. (IsMacClient() and "Cmd-C" or "Ctrl-C")  ..  ", чтобы скопировать ссылку загрузки в буфер обмена."
+DBM_CORE_UPDATEREMINDER_FOOTER_GENERIC	= "Нажмите " .. (IsMacClient() and "Cmd-C" or "Ctrl-C")  ..  ", чтобы скопировать ссылку в буфер обмена."
+DBM_CORE_UPDATEREMINDER_NOTAGAIN		= "Всплывающее сообщение при наличии новой версии"
 
 DBM_CORE_MOVABLE_BAR				= "Перетащите!"
 
@@ -104,10 +111,6 @@ DBM_CORE_RANGECHECK_OPTION_FRAMES	= "Фреймы"
 DBM_CORE_RANGECHECK_OPTION_RADAR	= "Показывать радар"
 DBM_CORE_RANGECHECK_OPTION_TEXT		= "Показывать текстовый фрейм"
 DBM_CORE_RANGECHECK_OPTION_BOTH		= "Показывать оба фрейма"
-DBM_CORE_RANGECHECK_OPTION_SPEED	= "Частота обновления (необх. /reload)"
-DBM_CORE_RANGECHECK_OPTION_SLOW		= "Медленная (не нагружает CPU)"
-DBM_CORE_RANGECHECK_OPTION_AVERAGE	= "Средняя"
-DBM_CORE_RANGECHECK_OPTION_FAST		= "Быстрая (в реальном времени)"
 DBM_CORE_RANGERADAR_HEADER			= "Радар (%d ярдов)"
 DBM_CORE_RANGERADAR_IN_RANGE_TEXT	= "%d игроков в радиусе"
 
@@ -191,6 +194,7 @@ DBM_CORE_AUTO_SPEC_WARN_TEXTS.spell		= "%s!"
 DBM_CORE_AUTO_SPEC_WARN_TEXTS.ends		= "%s заканчивается"
 DBM_CORE_AUTO_SPEC_WARN_TEXTS.fades		= "%s спадает"
 DBM_CORE_AUTO_SPEC_WARN_TEXTS.soon		= "Скоро %s"
+DBM_CORE_AUTO_SPEC_WARN_TEXTS.prewarn	= "%s через %s"
 DBM_CORE_AUTO_SPEC_WARN_TEXTS.dispel 	= "%s на |3-5(>%%s<) - рассейте заклинание"
 DBM_CORE_AUTO_SPEC_WARN_TEXTS.interrupt	= "%s - прервите"
 DBM_CORE_AUTO_SPEC_WARN_TEXTS.you 		= "%s на вас"
@@ -208,17 +212,18 @@ DBM_CORE_AUTO_SPEC_WARN_OPTIONS.spell 		= "Спец-предупреждение
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.ends 		= "Спец-предупреждение об окончании $spell:%s"
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.fades 		= "Спец-предупреждение о спадении $spell:%s"
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.soon 		= "Спец-предупреждение что скоро $spell:%s"
-DBM_CORE_AUTO_SPEC_WARN_OPTIONS.dispel 		= "Спец-предупреждение для рассеивания/похищения заклинания \n $spell:%s"
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.prewarn 	= "Спец-предупреждение за %d сек. до $spell:%s"
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.dispel 		= "Спец-предупреждение для рассеивания/похищения заклинания $spell:%s"
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.interrupt	= "Спец-предупреждение для прерывания заклинания $spell:%s"
-DBM_CORE_AUTO_SPEC_WARN_OPTIONS.you 		= "Спец-предупреждение, когда на вас \n $spell:%s"
-DBM_CORE_AUTO_SPEC_WARN_OPTIONS.target 		= "Спец-предупреждение, когда на ком-то \n $spell:%s"
-DBM_CORE_AUTO_SPEC_WARN_OPTIONS.close 		= "Спец-предупреждение, когда на ком-то рядом с вами \n $spell:%s"
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.you 		= "Спец-предупреждение, когда на вас $spell:%s"
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.target 		= "Спец-предупреждение, когда на ком-то $spell:%s"
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.close 		= "Спец-предупреждение, когда на ком-то рядом с вами $spell:%s"
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.move 		= "Спец-предупреждение \"отбегите\" для $spell:%s"
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.run 		= "Спец-предупреждение \"убегайте\" для $spell:%s"
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.cast 		= "Спец-предупреждение о применении заклинания $spell:%s"
 DBM_CORE_AUTO_SPEC_WARN_OPTIONS.count 		= "Спец-предупреждение для $spell:%s"
-DBM_CORE_AUTO_SPEC_WARN_OPTIONS.stack 		= "Спец-предупреждение, когда на вас >=%d стаков \n $spell:%s"
-DBM_CORE_AUTO_SPEC_WARN_OPTIONS.switch		= "Спец-предупреждение о смене цели для \n $spell:%s"
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.stack 		= "Спец-предупреждение, когда на вас >=%d стаков $spell:%s"
+DBM_CORE_AUTO_SPEC_WARN_OPTIONS.switch		= "Спец-предупреждение о смене цели для $spell:%s"
 
 -- Auto-generated Timer Localizations
 DBM_CORE_AUTO_TIMER_TEXTS.target 		= "%s: >%%s<"
@@ -246,12 +251,15 @@ DBM_CORE_AUTO_TIMER_OPTIONS.nextsource	= "Отсчет времени до сл�
 DBM_CORE_AUTO_TIMER_OPTIONS.achievement = "Отсчет времени для %s"
 
 
-DBM_CORE_AUTO_ICONS_OPTION_TEXT		= "Устанавливать метки на цели заклинания $spell:%s"
-DBM_CORE_AUTO_SOUND_OPTION_TEXT		= "Звуковой сигнал \"бегите\" для $spell:%s"
-DBM_CORE_AUTO_COUNTDOWN_OPTION_TEXT	= "Звуковой отсчет для $spell:%s"
-DBM_CORE_AUTO_COUNTOUT_OPTION_TEXT	= "Звуковой отсчет во время действия $spell:%s"
-DBM_CORE_AUTO_YELL_OPTION_TEXT		= "Кричать, когда на вас $spell:%s"
-DBM_CORE_AUTO_YELL_ANNOUNCE_TEXT	= "%s на " .. UnitName("player") .. "!"
+DBM_CORE_AUTO_ICONS_OPTION_TEXT			= "Устанавливать метки на цели заклинания $spell:%s"
+DBM_CORE_AUTO_SOUND_OPTION_TEXT			= "Звуковой сигнал \"бегите\" для $spell:%s"
+DBM_CORE_AUTO_COUNTDOWN_OPTION_TEXT		= "Звуковой отсчет до восстановления $spell:%s"
+DBM_CORE_AUTO_COUNTDOWN_OPTION_TEXT2	= "Звуковой отсчет до спадения $spell:%s"
+DBM_CORE_AUTO_COUNTOUT_OPTION_TEXT		= "Звуковой отсчет во время действия $spell:%s"
+DBM_CORE_AUTO_YELL_OPTION_TEXT			= "Кричать, когда на вас $spell:%s"
+DBM_CORE_AUTO_YELL_ANNOUNCE_TEXT		= "%s на " .. UnitName("player") .. "!"
+DBM_CORE_AUTO_RANGE_OPTION_TEXT			= "Показывать окно проверки дистанции (%s м) для $spell:%s"--string used for range so we can use things like "5/2" as a value for that field
+DBM_CORE_AUTO_RANGE_OPTION_TEXT_SHORT	= "Показывать окно проверки дистанции (%s м)"--For when a range frame is just used for more than one thing
 
 
 -- New special warnings
@@ -272,7 +280,8 @@ DBM_ARROW_ERROR_USAGE	= {
 }
 
 DBM_SPEED_KILL_TIMER_TEXT	= "Рекордная победа"
-DBM_SPEED_KILL_TIMER_OPTION	= "Отсчет времени вашей самой быстрой победы"
+DBM_SPEED_KILL_TIMER_OPTION	= "Отсчёт времени вашей самой быстрой победы"
+DBM_SPEED_CLEAR_TIMER_TEXT	= "Лучшее прохождение"
 
 
 DBM_REQ_INSTANCE_ID_PERMISSION		= "%s запрашивает разрешение на просмотр ваших текущих сохранений подземелий.\nВы хотите предоставить %s такое право? Этот игрок получит возможность запрашивать эту информацию без уведомления в течение вашей текущей игровой сессии."

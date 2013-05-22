@@ -1,8 +1,8 @@
 
 wlVersion = 50009
 wlUploaded = 3
-wlStats = "38^3^8^5^0^1^enUS^16826"
-wlExportData = "who=us.logon.worldofwarcraft.com,Khaz Modan,Dreyan,4&glyphs=409,394,406,398,397,400,407,391,410,468,393,402,733,465,466,467&projects=-1&timePlayedTotal=741525;"
+wlStats = "26^4^1^0^0^1^enUS^16981"
+wlExportData = "who=us.logon.worldofwarcraft.com,Khaz Modan,Dreyan,4&glyphs=409,394,406,398,397,400,407,391,410,468,393,402,733,465,466,467&projects=-1&timePlayedTotal=774987;"
 wlRealmList = {
 	["us.logon.worldofwarcraft.com"] = 1,
 }
@@ -12,196 +12,73 @@ wlEvent = {
 	["Dreyan^Khaz Modan"] = {
 		{
 			{
-				["date"] = "5^10^2013",
+				["date"] = "5^22^2013",
+				["what"] = "login",
+			}, -- [1]
+		}, -- [1]
+		{
+			{
+				["date"] = "5^22^2013",
 				["what"] = "login",
 			}, -- [1]
 			{
 				["targetkind"] = "npc",
-				["targetid"] = 14841,
+				["targetid"] = 61962,
 				["action"] = "turn-in",
 				["what"] = "quest",
-				["progress"] = "Have you had a chance to make those prizes?",
-				["questid"] = 29517,
-				["targetname"] = "Rinling",
-				["complete"] = "Excellent work! These look just like the others. Thank you for your help.\n\nIf you ever want to help again, look for me next time the Darkmoon Faire is in town.",
+				["progress"] = "",
+				["questid"] = 32892,
+				["targetname"] = "Lorewalker Cho",
+				["complete"] = "Ah! Welcome my friend. I am very glad that I was able to get your attention. Great deeds are at work that require a hero such as yourself.",
 			}, -- [2]
-			{
-				["targetkind"] = "npc",
-				["targetid"] = 14832,
-				["action"] = "turn-in",
-				["what"] = "quest",
-				["progress"] = "No pain, no gain.",
-				["questid"] = 29433,
-				["targetname"] = "Kerri Hicks",
-				["complete"] = "Did you seek out worthy challenges, or did you simply find some field of boars and slaughter them?\n\nThere is a reason I am the strongest.\n\nPerhaps, one day you will see just how strong I really am, $c.  Until then, keep pushing yourself.  But don't forget to take a break from time to time.\n\nLike now.  Here, enjoy the Darkmoon Faire.",
-			}, -- [3]
-			{
-				["sharable"] = 0,
-				["targetid"] = 14845,
-				["action"] = "accept",
-				["what"] = "quest",
-				["timer"] = 0,
-				["questid"] = 29513,
-				["targetkind"] = "npc",
-				["targetname"] = "Stamp Thunderhorn",
-			}, -- [4]
-			{
-				["sharable"] = 0,
-				["targetid"] = 14845,
-				["action"] = "accept",
-				["what"] = "quest",
-				["timer"] = 0,
-				["questid"] = 29509,
-				["targetkind"] = "npc",
-				["targetname"] = "Stamp Thunderhorn",
-			}, -- [5]
-			{
-				["targetkind"] = "npc",
-				["targetid"] = 14845,
-				["action"] = "turn-in",
-				["what"] = "quest",
-				["progress"] = "Do I smell fresh crunchy frog?",
-				["questid"] = 29509,
-				["targetname"] = "Stamp Thunderhorn",
-				["complete"] = "These are perfectly cooked, $N. You've done an excellent job.",
-			}, -- [6]
-			{
-				["targetkind"] = "npc",
-				["targetid"] = 14833,
-				["action"] = "turn-in",
-				["what"] = "quest",
-				["progress"] = "",
-				["questid"] = 29512,
-				["targetname"] = "Chronos",
-				["complete"] = "Thank you for your help, $N. It takes all of us to keep the faire up and running.",
-			}, -- [7]
-			{
-				["targetkind"] = "npc",
-				["targetid"] = 14833,
-				["action"] = "turn-in",
-				["what"] = "quest",
-				["progress"] = "",
-				["questid"] = 29519,
-				["targetname"] = "Chronos",
-				["complete"] = "Thanks for the help, $N. I'll never forget your contribution to the Darkmoon Faire.\n\nAnd if you feel inclined, come back and help again next time we're in town.",
-			}, -- [8]
-			{
-				["dl"] = 0,
-				["action"] = "Fishing",
-				["zone"] = "Darkmoon Island",
-				["mapAreaID"] = 823,
-				["y"] = 884,
-				["x"] = 603,
-				["drop"] = {
-					"73269^1", -- [1]
-					"6303^1", -- [2]
-				},
-				["dd"] = 0,
-				["isAoeLoot"] = 0,
-				["kind"] = "zone",
-				["flags"] = 1024,
-				["what"] = "loot",
-			}, -- [9]
-			{
-				["dl"] = 0,
-				["action"] = "Fishing",
-				["zone"] = "Darkmoon Island",
-				["mapAreaID"] = 823,
-				["y"] = 884,
-				["x"] = 603,
-				["drop"] = {
-					"73269^1", -- [1]
-					"6361^1", -- [2]
-				},
-				["dd"] = 0,
-				["isAoeLoot"] = 0,
-				["kind"] = "zone",
-				["flags"] = 1024,
-				["what"] = "loot",
-			}, -- [10]
-			{
-				["dl"] = 0,
-				["action"] = "Fishing",
-				["zone"] = "Darkmoon Island",
-				["mapAreaID"] = 823,
-				["y"] = 884,
-				["x"] = 603,
-				["drop"] = {
-					"73269^1", -- [1]
-					"6361^1", -- [2]
-				},
-				["dd"] = 0,
-				["isAoeLoot"] = 0,
-				["kind"] = "zone",
-				["flags"] = 1024,
-				["what"] = "loot",
-			}, -- [11]
-			{
-				["dl"] = 0,
-				["action"] = "Fishing",
-				["zone"] = "Darkmoon Island",
-				["mapAreaID"] = 823,
-				["y"] = 884,
-				["x"] = 603,
-				["drop"] = {
-					"73269^1", -- [1]
-					"6303^1", -- [2]
-				},
-				["dd"] = 0,
-				["isAoeLoot"] = 0,
-				["kind"] = "zone",
-				["flags"] = 1024,
-				["what"] = "loot",
-			}, -- [12]
-			{
-				["dl"] = 0,
-				["action"] = "Fishing",
-				["zone"] = "Darkmoon Island",
-				["mapAreaID"] = 823,
-				["y"] = 884,
-				["x"] = 603,
-				["drop"] = {
-					"73269^1", -- [1]
-					"6358^1", -- [2]
-				},
-				["dd"] = 0,
-				["isAoeLoot"] = 0,
-				["kind"] = "zone",
-				["flags"] = 1024,
-				["what"] = "loot",
-			}, -- [13]
-			{
-				["targetkind"] = "npc",
-				["targetid"] = 14845,
-				["action"] = "turn-in",
-				["what"] = "quest",
-				["progress"] = "Do you have those fish?",
-				["questid"] = 29513,
-				["targetname"] = "Stamp Thunderhorn",
-				["complete"] = "These are wonderful! Here are your tickets, as promised.",
-			}, -- [14]
-		}, -- [1]
+		}, -- [2]
 	},
 }
 wlItemSuffix = {
 }
 wlObject = {
+	[204988] = {
+		["0^Stormwind City"] = {
+			[301] = {
+				{
+					["y"] = 312,
+					["x"] = 622,
+					["dl"] = 0,
+					["n"] = 1,
+				}, -- [1]
+				["n"] = 1,
+			},
+		},
+	},
 	["Opening^Valley of the Four Winds^Pest Repeller"] = {
 		["0^Valley of the Four Winds"] = {
 			[807] = {
 				{
-					["y"] = 478,
-					["x"] = 518,
+					["y"] = 483,
+					["x"] = 519,
 					["dl"] = 0,
 					["n"] = 1,
 				}, -- [1]
 				{
-					["y"] = 484,
-					["x"] = 519,
+					["y"] = 477,
+					["x"] = 518,
 					["dl"] = 0,
 					["n"] = 1,
 				}, -- [2]
 				["n"] = 2,
+			},
+		},
+	},
+	[206294] = {
+		["0^Stormwind City"] = {
+			[301] = {
+				{
+					["y"] = 301,
+					["x"] = 623,
+					["dl"] = 0,
+					["n"] = 1,
+				}, -- [1]
+				["n"] = 1,
 			},
 		},
 	},
@@ -209,31 +86,18 @@ wlObject = {
 		["0^Valley of the Four Winds"] = {
 			[807] = {
 				{
-					["y"] = 478,
-					["x"] = 516,
-					["dl"] = 0,
-					["n"] = 1,
-				}, -- [1]
-				{
 					["y"] = 484,
 					["x"] = 516,
 					["dl"] = 0,
 					["n"] = 1,
-				}, -- [2]
-				["n"] = 2,
-			},
-		},
-	},
-	[201987] = {
-		["0^Stormwind City"] = {
-			[301] = {
+				}, -- [1]
 				{
-					["y"] = 572,
-					["x"] = 546,
+					["y"] = 477,
+					["x"] = 517,
 					["dl"] = 0,
 					["n"] = 1,
-				}, -- [1]
-				["n"] = 1,
+				}, -- [2]
+				["n"] = 2,
 			},
 		},
 	},
@@ -244,14 +108,1015 @@ wlProfile = {
 		["faction"] = "Alliance",
 		["class"] = "ROGUE",
 		["sex"] = 3,
-		["n"] = 1,
+		["n"] = 2,
 	},
 }
 wlUnit = {
-	[60185] = {
+	[68982] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912400788343,
+			["90^Alliance^5"] = 1369212331504,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["class"] = "MAGE",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Shrine of Seven Stars"] = {
+							[811] = {
+								{
+									["y"] = 727,
+									["x"] = 889,
+									["dl"] = 0,
+									["n"] = 439,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 0,
+					["health"] = 945459,
+					["powermax"] = 63786,
+				},
+			},
+		},
+	},
+	[60039] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912398661994,
+		},
+		["sex"] = {
+			1, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							[807] = {
+								{
+									["y"] = 477,
+									["x"] = 517,
+									["dl"] = 0,
+									["n"] = 5,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 393941,
+					["powermax"] = 0,
+				},
+			},
+		},
+	},
+	[70447] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912398569484,
+		},
+		["sex"] = {
+			2, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							[807] = {
+								{
+									["y"] = 479,
+									["x"] = 519,
+									["dl"] = 0,
+									["n"] = 46,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 393941,
+					["powermax"] = 0,
+				},
+			},
+		},
+	},
+	[60072] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 912398650933,
+		},
+		["sex"] = {
+			1, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							[807] = {
+								{
+									["y"] = 477,
+									["x"] = 517,
+									["dl"] = 0,
+									["n"] = 4,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 393941,
+					["powermax"] = 0,
+				},
+			},
+		},
+	},
+	[66020] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912398645945,
+		},
+		["sex"] = {
+			1, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				{
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							[807] = {
+								{
+									["y"] = 478,
+									["x"] = 518,
+									["dl"] = 0,
+									["n"] = 20,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
+			},
+		},
+	},
+	[64029] = {
+		["isPvp"] = true,
+		["reaction"] = {
+			["90^Alliance^5"] = 1369212284455,
+		},
+		["sex"] = {
+			[3] = 1,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Shrine of Seven Stars"] = {
+							[811] = {
+								{
+									["y"] = 626,
+									["x"] = 851,
+									["dl"] = 0,
+									["n"] = 30,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 393941,
+					["powermax"] = 0,
+				},
+			},
+		},
+	},
+	[60231] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912398709951,
+		},
+		["sex"] = {
+			[3] = 1,
+		},
+		["class"] = "PALADIN",
+		["spec"] = {
+			[0] = {
+				[85] = {
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							[807] = {
+								{
+									["y"] = 503,
+									["x"] = 563,
+									["dl"] = 0,
+									["n"] = 25,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 0,
+					["health"] = 158079,
+					["powermax"] = 8908,
+				},
+			},
+		},
+		["gossip"] = {
+			["taxi"] = 1,
+		},
+	},
+	[64101] = {
+		["isPvp"] = true,
+		["reaction"] = {
+			["90^Alliance^5"] = 1369212246245,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["class"] = "WARRIOR",
+		["gossip"] = {
+			["vendor"] = 1,
+		},
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Shrine of Seven Stars"] = {
+							[811] = {
+								{
+									["y"] = 670,
+									["x"] = 879,
+									["dl"] = 0,
+									["n"] = 60,
+								}, -- [1]
+								{
+									["y"] = 676,
+									["x"] = 882,
+									["dl"] = 0,
+									["n"] = 1,
+								}, -- [2]
+								["n"] = 2,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 393941,
+					["powermax"] = 0,
+				},
+			},
+		},
+	},
+	[64480] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[128229] = 1,
+					[6668] = 2,
+					[11543] = 1,
+					[11540] = 2,
+					[128228] = 1,
+					[128227] = 1,
+				},
+			},
+		},
+	},
+	[64605] = {
+		["isPvp"] = false,
+		["merchant"] = {
+			["89363^0^1^6000000"] = -1,
+			["87549^0^1^0^0#0#1<>87399"] = -1,
+			["89795^0^1^100000"] = -1,
+			["95509^0^1^0^0#0#1<>87399"] = -1,
+			["87548^0^1^0^0#0#1<>87399"] = -1,
+			["93230^0^1^500000"] = -1,
+		},
+		["gossip"] = {
+			["vendor"] = 1,
+		},
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Vale of Eternal Blossoms"] = {
+							[811] = {
+								{
+									["y"] = 294,
+									["x"] = 822,
+									["dl"] = 0,
+									["n"] = 142,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 393941,
+					["powermax"] = 0,
+				},
+			},
+		},
+		["reaction"] = {
+			["90^Alliance^5"] = 1369212179032,
+		},
+		["faction"] = "The Lorewalkers",
+		["canRepair"] = 1,
+		["sex"] = {
+			[3] = 1,
+		},
+		["class"] = "WARRIOR",
+	},
+	[64691] = {
+		["isPvp"] = false,
+		["training"] = {
+			["ROGUE"] = {
+				["112452^Inscription^360^0^55555"] = 1,
+				["112458^Inscription^380^0^55555"] = 1,
+				["67600^Inscription^100^0^444"] = 1,
+				["57226^Inscription^305^0^22222"] = 1,
+				["58309^Inscription^75^0^333"] = 1,
+				["50609^Inscription^295^0^22222"] = 1,
+				["57245^Inscription^140^0^833"] = 1,
+				["56972^Inscription^335^0^33333"] = 1,
+				["57222^Inscription^350^0^33333"] = 1,
+				["57259^Inscription^85^0^333"] = 1,
+				["59480^Inscription^125^0^833"] = 1,
+				["57005^Inscription^130^0^833"] = 1,
+				["56955^Inscription^80^0^333"] = 1,
+				["57198^Inscription^375^0^55555"] = 1,
+				["71101^Inscription^250^0^11111"] = 1,
+				["58485^Inscription^80^0^444"] = 1,
+				["57036^Inscription^375^0^55555"] = 1,
+				["48121^Inscription^100^0^444"] = 1,
+				["57242^Inscription^215^0^5000"] = 1,
+				["86004^Inscription^425^0^88888"] = 1,
+				["56981^Inscription^175^0^1111"] = 1,
+				["57113^Inscription^340^0^33333"] = 1,
+				["111909^Inscription^560^0^222222"] = 1,
+				["59487^Inscription^175^0^833"] = 1,
+				["57210^Inscription^265^0^11111"] = 1,
+				["59486^Inscription^175^0^833"] = 1,
+				["58478^Inscription^225^0^5000"] = 1,
+				["86642^Inscription^510^0^133333"] = 1,
+				["56994^Inscription^175^0^1111"] = 1,
+				["126995^Inscription^570^0^222222"] = 1,
+				["111917^Inscription^560^0^222222"] = 1,
+				["57709^Inscription^200^0^3333"] = 1,
+				["57716^Inscription^375^0^55555"] = 1,
+				["61120^Inscription^400^0^83333"] = 1,
+				["57114^Inscription^80^0^333"] = 1,
+				["57244^Inscription^235^0^6666"] = 1,
+				["48248^Inscription^35^0^55"] = 1,
+				["85785^Inscription^500^0^133333"] = 1,
+				["112444^Inscription^370^0^55555"] = 1,
+				["112437^Inscription^220^0^5000"] = 1,
+				["57266^Inscription^95^0^444"] = 1,
+				["50604^Inscription^410^0^66666"] = 1,
+				["56956^Inscription^200^0^3333"] = 1,
+				["57158^Inscription^95^0^444"] = 1,
+				["50610^Inscription^355^0^55555"] = 1,
+				["57168^Inscription^320^0^22222"] = 1,
+				["58489^Inscription^305^0^22222"] = 1,
+				["56991^Inscription^315^0^22222"] = 1,
+				["56973^Inscription^130^0^833"] = 1,
+				["111645^Inscription^500^0^222222"] = 1,
+				["56978^Inscription^90^0^444"] = 1,
+				["56953^Inscription^170^0^1111"] = 1,
+				["57711^Inscription^250^0^11111"] = 1,
+				["59326^Inscription^100^0^444"] = 1,
+				["57024^Inscription^230^0^6666"] = 1,
+				["57275^Inscription^325^0^33333"] = 1,
+				["52739^Inscription^35^0^166"] = 1,
+				["112457^Inscription^255^0^11111"] = 1,
+				["57240^Inscription^125^0^833"] = 1,
+				["111921^Inscription^560^0^222222"] = 1,
+				["61288^Inscription^75^0^1111"] = 1,
+				["57186^Inscription^120^0^555"] = 1,
+				["57161^Inscription^170^0^1111"] = 1,
+				["86640^Inscription^475^0^100000"] = 1,
+				["89815^Inscription^465^0^88888"] = 1,
+				["126994^Inscription^570^0^222222"] = 1,
+				["50600^Inscription^215^0^5000"] = 1,
+				["50617^Inscription^250^0^11111"] = 1,
+				["53462^Inscription^75^0^333"] = 1,
+				["89369^Inscription^465^0^88888"] = 1,
+				["58488^Inscription^265^0^11111"] = 1,
+				["111908^Inscription^560^0^222222"] = 1,
+				["50614^Inscription^155^0^833"] = 1,
+				["57274^Inscription^240^0^8333"] = 1,
+				["86403^Inscription^500^0^83333"] = 1,
+				["45359^Inscription^125^20^5555"] = 1,
+				["89368^Inscription^445^0^88888"] = 1,
+				["86643^Inscription^510^0^133333"] = 1,
+				["56957^Inscription^260^0^11111"] = 1,
+				["112440^Inscription^355^0^55555"] = 1,
+				["59489^Inscription^225^0^6666"] = 1,
+				["56943^Inscription^350^0^33333"] = 1,
+				["58480^Inscription^270^0^11111"] = 1,
+				["127020^Inscription^575^0^222222"] = 1,
+				["57000^Inscription^200^0^3333"] = 1,
+				["89244^Inscription^500^0^111111"] = 1,
+				["45358^Inscription^50^10^555"] = 1,
+				["50603^Inscription^360^0^55555"] = 1,
+				["57704^Inscription^100^0^444"] = 1,
+				["57703^Inscription^85^0^444"] = 1,
+				["58487^Inscription^220^0^5000"] = 1,
+				["57277^Inscription^190^0^3333"] = 1,
+				["57029^Inscription^105^0^555"] = 1,
+				["111920^Inscription^560^0^222222"] = 1,
+				["92026^Inscription^75^0^444"] = 1,
+				["57219^Inscription^280^0^11111"] = 1,
+				["57001^Inscription^225^0^6666"] = 1,
+				["112469^Inscription^490^0^111111"] = 1,
+				["50606^Inscription^160^0^833"] = 1,
+				["86008^Inscription^425^75^555555"] = 1,
+				["58476^Inscription^175^0^833"] = 1,
+				["112462^Inscription^485^0^111111"] = 1,
+				["56959^Inscription^220^0^5000"] = 1,
+				["86401^Inscription^500^0^83333"] = 1,
+				["57185^Inscription^270^0^11111"] = 1,
+				["57239^Inscription^85^0^333"] = 1,
+				["57008^Inscription^315^0^22222"] = 1,
+				["57270^Inscription^215^0^5000"] = 1,
+				["50618^Inscription^290^0^22222"] = 1,
+				["57132^Inscription^235^0^6666"] = 1,
+				["57712^Inscription^275^0^11111"] = 1,
+				["50598^Inscription^75^0^444"] = 1,
+				["57007^Inscription^150^0^833"] = 1,
+				["58484^Inscription^15^0^55"] = 1,
+				["86005^Inscription^475^0^100000"] = 1,
+				["89371^Inscription^455^0^88888"] = 1,
+				["48247^Inscription^85^0^555"] = 1,
+				["112451^Inscription^155^0^833"] = 1,
+				["45363^Inscription^350^65^388888"] = 1,
+				["57172^Inscription^345^0^33333"] = 1,
+				["50608^Inscription^255^0^11111"] = 1,
+				["94403^Inscription^120^0^555"] = 1,
+				["110417^Inscription^500^80^666666"] = 1,
+				["60337^Inscription^350^0^55555"] = 1,
+				["58346^Inscription^80^0^333"] = 1,
+				["57706^Inscription^125^0^833"] = 1,
+				["124459^Inscription^455^0^88888"] = 1,
+				["61117^Inscription^400^0^83333"] = 1,
+				["57188^Inscription^135^0^833"] = 1,
+				["56971^Inscription^115^0^555"] = 1,
+				["58472^Inscription^15^0^55"] = 1,
+				["56963^Inscription^85^0^333"] = 1,
+				["59497^Inscription^400^0^66666"] = 1,
+				["124452^Inscription^440^0^88888"] = 1,
+				["57265^Inscription^110^0^555"] = 1,
+				["89370^Inscription^470^0^88888"] = 1,
+				["94401^Inscription^120^0^555"] = 1,
+				["57713^Inscription^290^0^22222"] = 1,
+				["64053^Inscription^350^0^55555"] = 1,
+				["126989^Inscription^600^0^55555"] = 1,
+				["86652^Inscription^515^0^166666"] = 1,
+				["56995^Inscription^100^0^444"] = 1,
+				["57020^Inscription^180^0^1111"] = 1,
+				["64262^Inscription^255^0^11111"] = 1,
+				["94402^Inscription^330^0^33333"] = 1,
+				["56997^Inscription^115^0^555"] = 1,
+				["57163^Inscription^110^0^555"] = 1,
+				["124442^Inscription^450^0^88888"] = 1,
+				["59495^Inscription^325^0^22222"] = 1,
+				["59484^Inscription^175^0^833"] = 1,
+				["56979^Inscription^225^0^6666"] = 1,
+				["57123^Inscription^135^0^833"] = 1,
+				["61119^Inscription^400^0^83333"] = 1,
+				["71102^Inscription^375^0^55555"] = 1,
+				["50607^Inscription^210^0^5000"] = 1,
+				["58483^Inscription^420^0^66666"] = 1,
+				["94405^Inscription^150^0^833"] = 1,
+				["56980^Inscription^375^0^55555"] = 1,
+				["60336^Inscription^200^0^3333"] = 1,
+				["57165^Inscription^190^0^3333"] = 1,
+				["57154^Inscription^240^0^8333"] = 1,
+				["57246^Inscription^95^0^444"] = 1,
+				["59498^Inscription^400^0^66666"] = 1,
+				["57213^Inscription^285^0^16666"] = 1,
+				["124445^Inscription^460^0^88888"] = 1,
+				["57221^Inscription^300^0^22222"] = 1,
+				["45361^Inscription^275^50^111111"] = 1,
+				["57162^Inscription^85^0^333"] = 1,
+				["58490^Inscription^365^0^55555"] = 1,
+				["45357^^0^5^11"] = 1,
+				["59340^Inscription^340^0^33333"] = 1,
+				["127007^Inscription^600^0^55555"] = 1,
+				["126988^Inscription^600^0^55555"] = 1,
+				["58486^Inscription^170^0^833"] = 1,
+				["111830^Inscription^600^0^222222"] = 1,
+				["127009^Inscription^600^0^55555"] = 1,
+				["86375^Inscription^500^0^83333"] = 1,
+				["50620^Inscription^400^0^66666"] = 1,
+				["124455^Inscription^465^0^88888"] = 1,
+				["127024^Inscription^575^0^222222"] = 1,
+				["57708^Inscription^175^0^833"] = 1,
+				["86609^Inscription^450^0^88888"] = 1,
+				["59478^Inscription^125^0^833"] = 1,
+				["50619^Inscription^350^0^55555"] = 1,
+				["50611^Inscription^405^0^66666"] = 1,
+				["57710^Inscription^225^0^6666"] = 1,
+				["64259^Inscription^255^0^11111"] = 1,
+				["57157^Inscription^125^0^833"] = 1,
+				["127023^Inscription^575^0^222222"] = 1,
+				["126997^Inscription^570^0^222222"] = 1,
+				["52843^Inscription^35^0^55"] = 1,
+				["111919^Inscription^560^0^222222"] = 1,
+				["56948^Inscription^150^0^833"] = 1,
+				["111910^Inscription^560^0^222222"] = 1,
+				["86649^Inscription^505^0^133333"] = 1,
+				["57200^Inscription^180^0^1111"] = 1,
+				["58344^Inscription^80^0^333"] = 1,
+				["127016^Inscription^540^0^222222"] = 1,
+				["127017^Inscription^540^0^222222"] = 1,
+				["57167^Inscription^140^0^833"] = 1,
+				["86653^Inscription^515^0^166666"] = 1,
+				["112996^Inscription^525^0^555555"] = 1,
+				["86615^Inscription^525^0^222222"] = 1,
+				["127018^Inscription^540^0^222222"] = 1,
+				["57241^Inscription^185^0^3333"] = 1,
+				["64258^Inscription^250^0^11111"] = 1,
+				["86616^Inscription^475^0^100000"] = 1,
+				["86641^Inscription^510^0^133333"] = 1,
+				["111918^Inscription^560^0^222222"] = 1,
+				["50612^Inscription^75^0^444"] = 1,
+				["111646^Inscription^500^0^222222"] = 1,
+				["86402^Inscription^500^0^83333"] = 1,
+				["112463^Inscription^495^0^111111"] = 1,
+				["58481^Inscription^310^0^22222"] = 1,
+				["124451^Inscription^380^0^55555"] = 1,
+				["61118^Inscription^400^0^83333"] = 1,
+				["57201^Inscription^210^0^5000"] = 1,
+				["59503^Inscription^325^0^22222"] = 1,
+				["57121^Inscription^120^0^555"] = 1,
+				["61177^Inscription^385^0^111111"] = 1,
+				["127021^Inscription^575^0^222222"] = 1,
+				["89372^Inscription^460^0^88888"] = 1,
+				["59387^Inscription^200^0^3333"] = 1,
+				["57002^Inscription^260^0^11111"] = 1,
+				["96284^Inscription^275^0^11111"] = 1,
+				["92027^Inscription^475^0^100000"] = 1,
+				["50599^Inscription^165^0^833"] = 1,
+				["57225^Inscription^375^0^55555"] = 1,
+				["92579^Inscription^180^0^1111"] = 1,
+				["57714^Inscription^325^0^22222"] = 1,
+				["57224^Inscription^330^0^33333"] = 1,
+				["124453^Inscription^445^0^88888"] = 1,
+				["124456^Inscription^470^0^88888"] = 1,
+				["57031^Inscription^135^0^833"] = 1,
+				["57022^Inscription^80^0^333"] = 1,
+				["112454^Inscription^365^0^55555"] = 1,
+				["57715^Inscription^350^0^55555"] = 1,
+				["57183^Inscription^230^0^6666"] = 1,
+				["59338^Inscription^310^0^22222"] = 1,
+				["126801^Inscription^440^0^88888"] = 1,
+				["58491^Inscription^415^0^66666"] = 1,
+				["57238^Inscription^110^0^555"] = 1,
+				["58565^Inscription^85^0^555"] = 1,
+				["59490^Inscription^225^0^6666"] = 1,
+				["112045^Inscription^580^0^222222"] = 1,
+				["50605^Inscription^75^0^444"] = 1,
+				["59494^Inscription^275^0^11111"] = 1,
+				["57257^Inscription^350^0^33333"] = 1,
+				["56987^Inscription^400^0^66666"] = 1,
+				["127019^Inscription^540^0^222222"] = 1,
+				["57030^Inscription^120^0^555"] = 1,
+				["57271^Inscription^165^0^833"] = 1,
+				["57197^Inscription^160^0^833"] = 1,
+				["57133^Inscription^285^0^16666"] = 1,
+				["57006^Inscription^375^0^55555"] = 1,
+				["57004^Inscription^80^0^333"] = 1,
+				["64261^Inscription^250^0^11111"] = 1,
+				["59504^Inscription^400^0^66666"] = 1,
+				["86648^Inscription^480^0^100000"] = 1,
+				["57120^Inscription^105^0^555"] = 1,
+				["62162^Inscription^375^0^55555"] = 1,
+				["57248^Inscription^375^0^55555"] = 1,
+				["57025^Inscription^265^0^11111"] = 1,
+				["57184^Inscription^105^0^555"] = 1,
+				["58482^Inscription^370^0^55555"] = 1,
+				["124463^Inscription^380^0^55555"] = 1,
+				["45360^Inscription^200^35^55555"] = 1,
+				["58313^Inscription^75^0^333"] = 1,
+				["56974^Inscription^155^0^833"] = 1,
+				["57122^Inscription^305^0^22222"] = 1,
+				["57707^Inscription^150^0^833"] = 1,
+				["57251^Inscription^275^0^11111"] = 1,
+				["57125^Inscription^160^0^833"] = 1,
+				["57003^Inscription^350^0^33333"] = 1,
+				["56984^Inscription^325^0^33333"] = 1,
+				["57129^Inscription^185^0^3333"] = 1,
+				["89373^Inscription^450^0^88888"] = 1,
+				["56951^Inscription^130^0^833"] = 1,
+				["57026^Inscription^300^0^22222"] = 1,
+				["59493^Inscription^275^0^11111"] = 1,
+				["57227^Inscription^345^0^33333"] = 1,
+				["59491^Inscription^225^0^6666"] = 1,
+				["126996^Inscription^570^0^222222"] = 1,
+				["57249^Inscription^165^0^833"] = 1,
+				["57033^Inscription^335^0^33333"] = 1,
+				["94404^Inscription^150^0^833"] = 1,
+				["57194^Inscription^80^0^333"] = 1,
+				["57252^Inscription^330^0^33333"] = 1,
+				["50602^Inscription^300^0^22222"] = 1,
+				["59475^Inscription^125^0^833"] = 1,
+				["57131^Inscription^210^0^5000"] = 1,
+				["112883^Inscription^500^0^222222"] = 1,
+				["56961^Inscription^90^0^444"] = 1,
+				["57027^Inscription^90^0^444"] = 1,
+				["57196^Inscription^95^0^444"] = 1,
+				["59339^Inscription^320^0^22222"] = 1,
+				["57262^Inscription^125^0^833"] = 1,
+				["112442^Inscription^320^0^22222"] = 1,
+				["57187^Inscription^315^0^22222"] = 1,
+				["56952^Inscription^310^0^22222"] = 1,
+				["57269^Inscription^140^0^833"] = 1,
+				["57119^Inscription^95^0^444"] = 1,
+				["56945^Inscription^115^0^555"] = 1,
+				["57236^Inscription^300^0^22222"] = 1,
+				["57192^Inscription^350^0^33333"] = 1,
+				["112450^Inscription^295^0^16666"] = 1,
+				["57023^Inscription^205^0^5000"] = 1,
+				["57156^Inscription^285^0^16666"] = 1,
+				["57009^Inscription^90^0^444"] = 1,
+				["64266^Inscription^275^0^11111"] = 1,
+				["59502^Inscription^275^0^11111"] = 1,
+				["57216^Inscription^270^0^11111"] = 1,
+				["127625^Inscription^255^0^11111"] = 1,
+				["59496^Inscription^325^0^22222"] = 1,
+				["58473^Inscription^85^0^444"] = 1,
+				["50601^Inscription^260^0^11111"] = 1,
+				["64260^Inscription^255^0^11111"] = 1,
+				["56976^Inscription^80^0^333"] = 1,
+				["69385^Inscription^440^0^133333"] = 1,
+				["94406^Inscription^250^0^11111"] = 1,
+				["50616^Inscription^205^0^5000"] = 1,
+			},
+		},
+		["reaction"] = {
+			["90^Alliance^5"] = 1369212167195,
+		},
+		["sex"] = {
+			[3] = 1,
+		},
+		["class"] = "WARRIOR",
+		["gossip"] = {
+			["trainer"] = 1,
+		},
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Vale of Eternal Blossoms"] = {
+							[811] = {
+								{
+									["y"] = 294,
+									["x"] = 820,
+									["dl"] = 0,
+									["n"] = 54,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 393941,
+					["powermax"] = 0,
+				},
+			},
+		},
+	},
+	[58562] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912398588687,
+		},
+		["sex"] = {
+			2, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				{
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							[807] = {
+								{
+									["y"] = 478,
+									["x"] = 518,
+									["dl"] = 0,
+									["n"] = 35,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
+			},
+		},
+	},
+	[61962] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 1369212035640,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["quote"] = {
+			["say"] = {
+				["And so Moira and the High King set out into the snow to save the city, leaving the others to think about their actions."] = "",
+				["Once upon a time - moments ago, in fact - a great king sought the help from a trio of powerful dwarves: The Council of Three Hammers."] = "",
+				["\"We cannot help you,\" said the Wildhammer dwarf. \"For if we turn our back on the Dark Irons, they will defeat the Bronzebeard and take over Ironforge!\""] = "",
+				["Surely, the king thought, if he helped them with their troll problem, they would give him more troops for his campaign against the Horde."] = "",
+				["What happens next? I must know!"] = "",
+				["The king was furious. \"If none of you help, then Ironforge will fall under siege!\""] = "",
+				["The king's scouts had discovered that Zandalari trolls threatened the dwarven capital."] = "",
+				["But what the king did not realize is that the dwarves did not trust one another!"] = "",
+				["\"We cannot help you,\" said the Bronzebeard dwarf, \"For if we turn our back on the Dark Irons, they will defeat the Wildhammer and take over Ironforge!\""] = "",
+				["Only one dwarf offered to help the king. \"We will lend you our strength,\" said Moira, of the Dark Iron. \"We will trust our dwarven brothers, and we will show them what loyalty means!\""] = "",
+			},
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Vale of Eternal Blossoms"] = {
+							[811] = {
+								{
+									["y"] = 298,
+									["x"] = 831,
+									["dl"] = 0,
+									["n"] = 82,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 393941,
+					["powermax"] = 0,
+				},
+			},
+		},
+	},
+	[66023] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 1369211701839,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["class"] = "PALADIN",
+		["gossip"] = {
+			["taxi"] = 1,
+		},
+		["spec"] = {
+			[0] = {
+				[85] = {
+					["loc"] = {
+						["The Jade Forest"] = {
+							[806] = {
+								{
+									["y"] = 851,
+									["x"] = 461,
+									["dl"] = 0,
+									["n"] = 18,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 0,
+					["health"] = 158079,
+					["powermax"] = 8908,
+				},
+			},
+		},
+	},
+	[43690] = {
+		["isPvp"] = true,
+		["reaction"] = {
+			["90^Alliance^5"] = 1369211534646,
+		},
+		["sex"] = {
+			[2] = 1,
+		},
+		["gossip"] = {
+			["auctioneer"] = 1,
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Stormwind City"] = {
+							[301] = {
+								{
+									["y"] = 324,
+									["x"] = 603,
+									["dl"] = 0,
+									["n"] = 380,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 1181823,
+					["powermax"] = 0,
+				},
+			},
+		},
+		["faction"] = "Stormwind",
+	},
+	[66016] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912398519798,
+		},
+		["sex"] = {
+			8, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				{
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							[807] = {
+								{
+									["y"] = 478,
+									["x"] = 517,
+									["dl"] = 0,
+									["n"] = 71,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
+			},
+		},
+	},
+	[66044] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912398481112,
+		},
+		["sex"] = {
+			2, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				{
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							[807] = {
+								{
+									["y"] = 484,
+									["x"] = 520,
+									["dl"] = 0,
+									["n"] = 23,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
+			},
+		},
+	},
+	[66046] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912398511042,
+		},
+		["sex"] = {
+			2, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				{
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							[807] = {
+								{
+									["y"] = 483,
+									["x"] = 518,
+									["dl"] = 0,
+									["n"] = 26,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
+			},
+		},
+	},
+	[66017] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912398631016,
+		},
+		["sex"] = {
+			3, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				{
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							[807] = {
+								{
+									["y"] = 477,
+									["x"] = 518,
+									["dl"] = 0,
+									["n"] = 36,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
+			},
+		},
+	},
+	[5512] = {
+		["isPvp"] = true,
+		["faction"] = "Stormwind",
+		["reaction"] = {
+			["90^Alliance^5"] = 912398832863,
+		},
+		["sex"] = {
+			[3] = 1,
+		},
+		["spec"] = {
+			[0] = {
+				[30] = {
+					["loc"] = {
+						["Stormwind City"] = {
+							[301] = {
+								{
+									["y"] = 374,
+									["x"] = 634,
+									["dl"] = 0,
+									["n"] = 60,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 2005,
+					["powermax"] = 0,
+				},
+			},
+		},
+		["canRepair"] = 1,
+		["class"] = "WARRIOR",
+		["gossip"] = {
+			["vendor"] = 1,
+		},
+	},
+	[66048] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 912398486025,
 		},
 		["sex"] = {
 			1, -- [1]
@@ -267,752 +1132,7 @@ wlUnit = {
 									["y"] = 484,
 									["x"] = 519,
 									["dl"] = 0,
-									["n"] = 2,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 84,
-					["powermax"] = 0,
-				}, -- [1]
-			},
-		},
-	},
-	[60768] = {
-		["spec"] = {
-			[7] = {
-				["spell"] = {
-					[116550] = 65,
-				},
-			},
-		},
-	},
-	[66021] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912400843599,
-		},
-		["sex"] = {
-			1, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				{
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							[807] = {
-								{
-									["y"] = 477,
-									["x"] = 518,
-									["dl"] = 0,
 									["n"] = 1,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 84,
-					["powermax"] = 0,
-				}, -- [1]
-			},
-		},
-	},
-	[60396] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912399373016,
-		},
-		["sex"] = {
-			[2] = 10,
-		},
-		["class"] = {
-		},
-		["spec"] = {
-			[7] = {
-				[92] = {
-					["powertype"] = 1,
-					["health"] = 2529552,
-					["powermax"] = 0,
-				},
-				["spell"] = {
-					[116525] = 40,
-				},
-			},
-		},
-	},
-	[60398] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912399385422,
-		},
-		["sex"] = {
-			[2] = 4,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[7] = {
-				[92] = {
-					["loc"] = {
-						["Mogu'shan Vaults"] = {
-							[896] = {
-								{
-									["y"] = 771,
-									["x"] = 746,
-									["dl"] = 3,
-									["n"] = 6,
-								}, -- [1]
-								{
-									["y"] = 806,
-									["x"] = 659,
-									["dl"] = 3,
-									["n"] = 2,
-								}, -- [2]
-								{
-									["y"] = 793,
-									["x"] = 649,
-									["dl"] = 3,
-									["n"] = 5,
-								}, -- [3]
-								{
-									["y"] = 788,
-									["x"] = 655,
-									["dl"] = 3,
-									["n"] = 1,
-								}, -- [4]
-								["n"] = 4,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 2107960,
-					["powermax"] = 0,
-				},
-				["spell"] = {
-					[116778] = 4,
-					[117485] = 6,
-				},
-			},
-		},
-	},
-	[60400] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912399424144,
-		},
-		["sex"] = {
-			[2] = 4,
-		},
-		["class"] = "PALADIN",
-		["spec"] = {
-			[7] = {
-				[-1] = {
-					["powertype"] = 0,
-					["health"] = 239875344,
-					["powermax"] = 20,
-				},
-				["spell"] = {
-					[116969] = 12,
-				},
-			},
-		},
-	},
-	[58707] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912400916242,
-		},
-		["sex"] = {
-			[2] = 1,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							[807] = {
-								{
-									["y"] = 519,
-									["x"] = 531,
-									["dl"] = 0,
-									["n"] = 49,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 393941,
-					["powermax"] = 0,
-				},
-			},
-		},
-	},
-	[56069] = {
-		["isPvp"] = false,
-		["merchant"] = {
-			["4594^0^5^1000"] = -1,
-			["33451^0^5^8500"] = -1,
-			["21552^0^5^2000"] = -1,
-			["4592^0^5^20"] = -1,
-			["58262^0^5^18000"] = -1,
-			["4593^0^5^500"] = -1,
-			["6256^0^1^23"] = -1,
-			["6532^0^1^250"] = -1,
-			["82448^0^5^22400"] = -1,
-			["27858^0^5^5600"] = -1,
-			["6325^0^1^40"] = -1,
-			["787^0^5^25"] = -1,
-			["6330^0^1^1200"] = -1,
-			["35951^0^5^16000"] = -1,
-			["8957^0^5^4000"] = -1,
-			["6530^0^1^100"] = -1,
-			["82449^0^5^25600"] = -1,
-			["6529^0^1^50"] = -1,
-			["58263^0^5^20000"] = -1,
-		},
-		["reaction"] = {
-			["90^Alliance^5"] = 912400021483,
-		},
-		["sex"] = {
-			[3] = 1,
-		},
-		["gossip"] = {
-			["vendor"] = 1,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[35] = {
-					["loc"] = {
-						["Darkmoon Island"] = {
-							[823] = {
-								{
-									["y"] = 884,
-									["x"] = 526,
-									["dl"] = 0,
-									["n"] = 34,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 2440,
-					["powermax"] = 0,
-				},
-			},
-		},
-		["faction"] = "Darkmoon Faire",
-	},
-	[60172] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912400674213,
-		},
-		["sex"] = {
-			1, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				{
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							[807] = {
-								{
-									["y"] = 482,
-									["x"] = 520,
-									["dl"] = 0,
-									["n"] = 6,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 84,
-					["powermax"] = 0,
-				}, -- [1]
-			},
-		},
-	},
-	[54441] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912398525111,
-		},
-		["sex"] = {
-			[2] = 1,
-		},
-		["class"] = "MAGE",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Stormwind City"] = {
-							[301] = {
-								{
-									["y"] = 602,
-									["x"] = 505,
-									["dl"] = 0,
-									["n"] = 857,
-								}, -- [1]
-								{
-									["y"] = 608,
-									["x"] = 503,
-									["dl"] = 0,
-									["n"] = 3,
-								}, -- [2]
-								["n"] = 2,
-							},
-						},
-					},
-					["powertype"] = 0,
-					["health"] = 945459,
-					["powermax"] = 63786,
-				},
-			},
-		},
-	},
-	[61121] = {
-		["isPvp"] = true,
-		["reaction"] = {
-			["90^Alliance^5"] = 912400554119,
-		},
-		["sex"] = {
-			[3] = 1,
-		},
-		["class"] = "PALADIN",
-		["gossip"] = {
-			["taxi"] = 1,
-		},
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Shrine of Seven Stars"] = {
-							[811] = {
-								{
-									["y"] = 625,
-									["x"] = 847,
-									["dl"] = 0,
-									["n"] = 15,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 0,
-					["health"] = 393941,
-					["powermax"] = 9916,
-				},
-			},
-		},
-	},
-	[66] = {
-		["isPvp"] = true,
-		["merchant"] = {
-			["2320^0^1^10"] = -1,
-			["2324^0^1^25"] = -1,
-			["20815^0^1^800"] = -1,
-			["39505^0^1^750"] = -1,
-			["6328^0^1^400"] = -1,
-			["85663^0^1^105"] = -1,
-			["2604^0^1^50"] = -1,
-			["39354^0^1^15"] = -1,
-			["6325^0^1^40"] = -1,
-			["7005^0^1^82"] = -1,
-			["4289^0^1^50"] = -1,
-			["6217^0^1^124"] = -1,
-			["30817^0^5^25"] = -1,
-			["2901^0^1^81"] = -1,
-			["6260^0^1^50"] = -1,
-			["3371^0^5^100"] = -1,
-			["6529^0^1^50"] = -1,
-			["2678^0^5^10"] = -1,
-			["6256^0^1^24"] = -1,
-			["2880^0^1^100"] = -1,
-			["5956^0^1^18"] = -1,
-		},
-		["reaction"] = {
-			["90^Alliance^5"] = 912398806176,
-		},
-		["sex"] = {
-			[2] = 1,
-		},
-		["gossip"] = {
-			["vendor"] = 1,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[10] = {
-					["loc"] = {
-						["Elwynn Forest"] = {
-							[30] = {
-								{
-									["y"] = 671,
-									["x"] = 418,
-									["dl"] = 0,
-									["n"] = 634,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 396,
-					["powermax"] = 0,
-				},
-			},
-		},
-		["faction"] = "Stormwind",
-	},
-	[66046] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912400807021,
-		},
-		["sex"] = {
-			2, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				{
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							[807] = {
-								{
-									["y"] = 482,
-									["x"] = 517,
-									["dl"] = 0,
-									["n"] = 29,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 84,
-					["powermax"] = 0,
-				}, -- [1]
-			},
-		},
-	},
-	[54642] = {
-		["spec"] = {
-			[0] = {
-				["spell"] = {
-					[102227] = 9,
-					[102341] = 12,
-				},
-			},
-		},
-	},
-	[54518] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912399146165,
-		},
-		["sex"] = {
-			[3] = 2,
-			[2] = 2,
-		},
-		["quote"] = {
-			["say"] = {
-				["Thank you, rogue."] = "",
-				["I can't thank you enough!"] = "",
-			},
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[25] = {
-					["loc"] = {
-						["Darkmoon Island"] = {
-							[823] = {
-								{
-									["y"] = 706,
-									["x"] = 553,
-									["dl"] = 0,
-									["n"] = 30,
-								}, -- [1]
-								{
-									["y"] = 699,
-									["x"] = 554,
-									["dl"] = 0,
-									["n"] = 23,
-								}, -- [2]
-								{
-									["y"] = 708,
-									["x"] = 563,
-									["dl"] = 0,
-									["n"] = 20,
-								}, -- [3]
-								{
-									["y"] = 715,
-									["x"] = 566,
-									["dl"] = 0,
-									["n"] = 13,
-								}, -- [4]
-								{
-									["y"] = 723,
-									["x"] = 560,
-									["dl"] = 0,
-									["n"] = 35,
-								}, -- [5]
-								["n"] = 5,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 1398,
-					["powermax"] = 0,
-				},
-			},
-		},
-		["faction"] = "Darkmoon Faire",
-	},
-	[14832] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912399072831,
-		},
-		["sex"] = {
-			[3] = 1,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Darkmoon Island"] = {
-							[823] = {
-								{
-									["y"] = 672,
-									["x"] = 480,
-									["dl"] = 0,
-									["n"] = 24,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 393941,
-					["powermax"] = 0,
-				},
-			},
-		},
-		["faction"] = "Darkmoon Faire",
-	},
-	[14833] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912399134675,
-		},
-		["sex"] = {
-			[2] = 2,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[55] = {
-					["loc"] = {
-						["Darkmoon Island"] = {
-							[823] = {
-								{
-									["y"] = 706,
-									["x"] = 549,
-									["dl"] = 0,
-									["n"] = 131,
-								}, -- [1]
-								{
-									["y"] = 712,
-									["x"] = 552,
-									["dl"] = 0,
-									["n"] = 7,
-								}, -- [2]
-								["n"] = 2,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 5228,
-					["powermax"] = 0,
-				},
-			},
-		},
-		["faction"] = "Darkmoon Faire",
-	},
-	[5512] = {
-		["isPvp"] = true,
-		["canRepair"] = 1,
-		["reaction"] = {
-			["90^Alliance^5"] = 912398430234,
-		},
-		["sex"] = {
-			[3] = 1,
-		},
-		["gossip"] = {
-			["vendor"] = 1,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[30] = {
-					["loc"] = {
-						["Stormwind City"] = {
-							[301] = {
-								{
-									["y"] = 375,
-									["x"] = 634,
-									["dl"] = 0,
-									["n"] = 62,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 2005,
-					["powermax"] = 0,
-				},
-			},
-		},
-		["faction"] = "Stormwind",
-	},
-	[66019] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912400772227,
-		},
-		["sex"] = {
-			2, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				{
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							[807] = {
-								{
-									["y"] = 477,
-									["x"] = 517,
-									["dl"] = 0,
-									["n"] = 25,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 84,
-					["powermax"] = 0,
-				}, -- [1]
-			},
-		},
-	},
-	[60397] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912399369399,
-		},
-		["sex"] = {
-			[2] = 8,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[7] = {
-				[92] = {
-					["powertype"] = 1,
-					["health"] = 5480696,
-					["powermax"] = 0,
-				},
-			},
-		},
-	},
-	[60399] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912399503220,
-		},
-		["sex"] = {
-			[2] = 1,
-		},
-		["class"] = "PALADIN",
-		["spec"] = {
-			[7] = {
-				[-1] = {
-					["powertype"] = 0,
-					["health"] = 239875344,
-					["powermax"] = 20,
-				},
-				["spell"] = {
-					[132425] = 62,
-				},
-			},
-		},
-	},
-	[66039] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912400890095,
-		},
-		["sex"] = {
-			1, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				{
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							[807] = {
-								{
-									["y"] = 482,
-									["x"] = 520,
-									["dl"] = 0,
-									["n"] = 18,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 84,
-					["powermax"] = 0,
-				}, -- [1]
-			},
-		},
-	},
-	[66043] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912400638966,
-		},
-		["sex"] = {
-			8, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				{
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							[807] = {
-								{
-									["y"] = 484,
-									["x"] = 520,
-									["dl"] = 0,
-									["n"] = 86,
 								}, -- [1]
 								["n"] = 1,
 							},
@@ -1028,10 +1148,10 @@ wlUnit = {
 	[60153] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912400660968,
+			["90^Alliance^5"] = 912398428132,
 		},
 		["sex"] = {
-			2, -- [1]
+			1, -- [1]
 		},
 		["class"] = "WARRIOR",
 		["spec"] = {
@@ -1041,18 +1161,12 @@ wlUnit = {
 						["Valley of the Four Winds"] = {
 							[807] = {
 								{
-									["y"] = 484,
+									["y"] = 483,
 									["x"] = 518,
 									["dl"] = 0,
-									["n"] = 2,
+									["n"] = 1,
 								}, -- [1]
-								{
-									["y"] = 478,
-									["x"] = 517,
-									["dl"] = 0,
-									["n"] = 3,
-								}, -- [2]
-								["n"] = 2,
+								["n"] = 1,
 							},
 						},
 					},
@@ -1063,132 +1177,10 @@ wlUnit = {
 			},
 		},
 	},
-	[58761] = {
+	[60185] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912400927605,
-		},
-		["sex"] = {
-			[3] = 1,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							[807] = {
-								{
-									["y"] = 518,
-									["x"] = 530,
-									["dl"] = 0,
-									["n"] = 25,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 393941,
-					["powermax"] = 0,
-				},
-			},
-		},
-	},
-	[64319] = {
-		["isPvp"] = false,
-		["merchant"] = {
-			["81414^0^5^26000"] = -1,
-			["81407^0^1^22400"] = -1,
-			["81406^0^5^24000"] = -1,
-			["74636^0^5^26000"] = -1,
-			["81415^0^1^25600"] = -1,
-		},
-		["reaction"] = {
-			["90^Alliance^5"] = 912400944909,
-		},
-		["sex"] = {
-			[2] = 1,
-		},
-		["class"] = "WARRIOR",
-		["gossip"] = {
-			["vendor"] = 1,
-		},
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Halfhill"] = {
-							[807] = {
-								{
-									["y"] = 504,
-									["x"] = 550,
-									["dl"] = 0,
-									["n"] = 101,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 393941,
-					["powermax"] = 0,
-				},
-			},
-		},
-	},
-	[56068] = {
-		["isPvp"] = false,
-		["training"] = {
-			["ROGUE"] = {
-				["7620^^0^5^112"] = 1,
-				["110410^Fishing^500^1^337500"] = 1,
-				["7731^Fishing^50^0^562"] = 1,
-				["33095^Fishing^275^1^112500"] = 1,
-				["51294^Fishing^350^1^168750"] = 1,
-				["18248^Fishing^200^1^28125"] = 1,
-				["7732^Fishing^125^1^11250"] = 1,
-				["88868^Fishing^425^1^281250"] = 1,
-			},
-		},
-		["reaction"] = {
-			["90^Alliance^5"] = 912400016634,
-		},
-		["sex"] = {
-			[2] = 1,
-		},
-		["gossip"] = {
-			["trainer"] = 1,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[35] = {
-					["loc"] = {
-						["Darkmoon Island"] = {
-							[823] = {
-								{
-									["y"] = 884,
-									["x"] = 526,
-									["dl"] = 0,
-									["n"] = 23,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 2440,
-					["powermax"] = 0,
-				},
-			},
-		},
-		["faction"] = "Darkmoon Faire",
-	},
-	[60072] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912400894026,
+			["90^Alliance^5"] = 912398625728,
 		},
 		["sex"] = {
 			1, -- [1]
@@ -1196,64 +1188,31 @@ wlUnit = {
 		["class"] = "WARRIOR",
 		["spec"] = {
 			[0] = {
-				[90] = {
+				{
 					["loc"] = {
 						["Valley of the Four Winds"] = {
 							[807] = {
 								{
-									["y"] = 481,
-									["x"] = 519,
+									["y"] = 478,
+									["x"] = 517,
 									["dl"] = 0,
-									["n"] = 5,
+									["n"] = 2,
 								}, -- [1]
 								["n"] = 1,
 							},
 						},
 					},
 					["powertype"] = 1,
-					["health"] = 393941,
+					["health"] = 84,
 					["powermax"] = 0,
-				},
+				}, -- [1]
 			},
 		},
 	},
-	[14841] = {
+	[66043] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912399032805,
-		},
-		["sex"] = {
-			[2] = 1,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[55] = {
-					["loc"] = {
-						["Darkmoon Island"] = {
-							[823] = {
-								{
-									["y"] = 609,
-									["x"] = 494,
-									["dl"] = 0,
-									["n"] = 133,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 5228,
-					["powermax"] = 0,
-				},
-			},
-		},
-		["faction"] = "Darkmoon Faire",
-	},
-	[66016] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912400700326,
+			["90^Alliance^5"] = 912398419009,
 		},
 		["sex"] = {
 			8, -- [1]
@@ -1266,74 +1225,10 @@ wlUnit = {
 						["Valley of the Four Winds"] = {
 							[807] = {
 								{
-									["y"] = 478,
-									["x"] = 517,
-									["dl"] = 0,
-									["n"] = 62,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 84,
-					["powermax"] = 0,
-				}, -- [1]
-			},
-		},
-	},
-	[66048] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912400869487,
-		},
-		["sex"] = {
-			1, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				{
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							[807] = {
-								{
-									["y"] = 486,
-									["x"] = 517,
-									["dl"] = 0,
-									["n"] = 2,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 84,
-					["powermax"] = 0,
-				}, -- [1]
-			},
-		},
-	},
-	[58563] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912400831579,
-		},
-		["sex"] = {
-			1, -- [1]
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				{
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							[807] = {
-								{
-									["y"] = 484,
+									["y"] = 483,
 									["x"] = 520,
 									["dl"] = 0,
-									["n"] = 17,
+									["n"] = 72,
 								}, -- [1]
 								["n"] = 1,
 							},
@@ -1346,106 +1241,10 @@ wlUnit = {
 			},
 		},
 	},
-	[58718] = {
-		["isPvp"] = false,
-		["merchant"] = {
-			["95449^0^1^300000"] = -1,
-			["95445^0^1^300000"] = -1,
-			["80592^0^1^1500"] = -1,
-			["89847^0^1^45000"] = -1,
-			["89326^0^1^1500"] = -1,
-			["95451^0^1^300000"] = -1,
-			["80595^0^1^1500"] = -1,
-			["85153^0^1^45000"] = -1,
-			["80590^0^1^1500"] = -1,
-			["95457^0^1^300000"] = -1,
-			["85268^0^1^1000"] = -1,
-			["89329^0^1^1500"] = -1,
-			["89197^0^1^10000"] = -1,
-			["80591^0^1^1500"] = -1,
-			["85216^0^1^10000"] = -1,
-			["89233^0^1^10000"] = -1,
-			["79102^0^1^1500"] = -1,
-			["84782^0^1^45000"] = -1,
-			["85267^0^1^1000"] = -1,
-			["89849^0^1^45000"] = -1,
-			["95454^0^1^300000"] = -1,
-			["89328^0^1^1500"] = -1,
-			["85158^0^1^45000"] = -1,
-			["85163^0^1^45000"] = -1,
-			["80593^0^1^1500"] = -1,
-			["85217^0^1^10000"] = -1,
-			["89848^0^1^45000"] = -1,
-			["84783^0^1^45000"] = -1,
-			["85215^0^1^10000"] = -1,
-			["80809^0^1^45000"] = -1,
-			["89202^0^1^10000"] = -1,
-			["80594^0^1^1500"] = -1,
-			["85269^0^1^1000"] = -1,
-			["85162^0^1^45000"] = -1,
-			["95447^0^1^300000"] = -1,
-		},
-		["reaction"] = {
-			["90^Alliance^5"] = 912400819234,
-		},
-		["sex"] = {
-			[2] = 1,
-		},
-		["class"] = "WARRIOR",
-		["gossip"] = {
-			["vendor"] = 1,
-		},
-		["spec"] = {
-			[0] = {
-				[90] = {
-					["loc"] = {
-						["Valley of the Four Winds"] = {
-							[807] = {
-								{
-									["y"] = 521,
-									["x"] = 529,
-									["dl"] = 0,
-									["n"] = 25,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 393941,
-					["powermax"] = 0,
-				},
-			},
-		},
-	},
-	[61131] = {
+	[66012] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^2"] = 912399238275,
-		},
-		["sex"] = {
-			[2] = 2,
-		},
-		["class"] = {
-		},
-		["spec"] = {
-			[7] = {
-				[92] = {
-					["powertype"] = 0,
-					["health"] = 21079600,
-					["powermax"] = 10312,
-				},
-				["spell"] = {
-					[118552] = 170,
-					[118529] = 101,
-				},
-			},
-		},
-	},
-	[66017] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^5"] = 912400762430,
+			["90^Alliance^5"] = 912398644340,
 		},
 		["sex"] = {
 			1, -- [1]
@@ -1459,9 +1258,9 @@ wlUnit = {
 							[807] = {
 								{
 									["y"] = 478,
-									["x"] = 518,
+									["x"] = 519,
 									["dl"] = 0,
-									["n"] = 12,
+									["n"] = 7,
 								}, -- [1]
 								["n"] = 1,
 							},
@@ -1474,55 +1273,10 @@ wlUnit = {
 			},
 		},
 	},
-	[57850] = {
-		["spec"] = {
-			[0] = {
-				["spell"] = {
-					[109244] = 1,
-				},
-			},
-		},
-	},
-	[14845] = {
+	[66019] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["90^Alliance^5"] = 912399089587,
-		},
-		["sex"] = {
-			[2] = 2,
-		},
-		["gossip"] = {
-			["vendor"] = 4,
-		},
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[35] = {
-					["loc"] = {
-						["Darkmoon Island"] = {
-							[823] = {
-								{
-									["y"] = 681,
-									["x"] = 528,
-									["dl"] = 0,
-									["n"] = 203,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 2440,
-					["powermax"] = 0,
-				},
-			},
-		},
-		["faction"] = "Darkmoon Faire",
-	},
-	[60174] = {
-		["isPvp"] = false,
-		["reaction"] = {
-			["90^Alliance^2"] = 912400675904,
+			["90^Alliance^5"] = 912398676917,
 		},
 		["sex"] = {
 			1, -- [1]
@@ -1530,24 +1284,24 @@ wlUnit = {
 		["class"] = "WARRIOR",
 		["spec"] = {
 			[0] = {
-				[90] = {
+				{
 					["loc"] = {
 						["Valley of the Four Winds"] = {
 							[807] = {
 								{
-									["y"] = 481,
-									["x"] = 520,
+									["y"] = 476,
+									["x"] = 517,
 									["dl"] = 0,
-									["n"] = 6,
+									["n"] = 14,
 								}, -- [1]
 								["n"] = 1,
 							},
 						},
 					},
 					["powertype"] = 1,
-					["health"] = 393941,
+					["health"] = 84,
 					["powermax"] = 0,
-				},
+				}, -- [1]
 			},
 		},
 	},
@@ -1559,86 +1313,84 @@ wlItemDurability = {
 	[94154] = 0,
 	[95567] = 0,
 	[87209] = 0,
-	[71096] = 0,
+	[88868] = 80,
 	[72120] = 0,
-	[76097] = 0,
+	[81415] = 0,
+	[88154] = 0,
 	[74843] = 0,
 	[91877] = 0,
-	[89980] = 55,
 	[95457] = 0,
 	[85559] = 0,
 	[95624] = 0,
 	[87266] = 0,
-	[81194] = 0,
-	[89124] = 0,
+	[74844] = 0,
+	[45580] = 0,
 	[49] = 0,
-	[86640] = 120,
+	[72162] = 0,
 	[74837] = 0,
-	[80433] = 0,
+	[86910] = 80,
 	[7005] = 20,
-	[71083] = 0,
-	[74647] = 0,
+	[72988] = 0,
+	[88744] = 55,
 	[74655] = 0,
 	[94221] = 0,
+	[82291] = 85,
 	[6948] = 0,
 	[74846] = 0,
-	[82252] = 85,
 	[75037] = 0,
 	[94222] = 0,
-	[86864] = 80,
 	[6256] = 16,
-	[45580] = 0,
 	[95143] = 0,
-	[86910] = 80,
+	[87530] = 0,
 	[74839] = 0,
 	[74847] = 0,
-	[93048] = 0,
+	[93509] = 85,
 	[89341] = 100,
 	[95445] = 0,
-	[79328] = 0,
-	[75014] = 0,
-	[74641] = 0,
+	[74834] = 0,
+	[93048] = 0,
+	[94130] = 0,
 	[95350] = 0,
 	[87230] = 0,
-	[86791] = 0,
-	[89070] = 0,
+	[90746] = 40,
+	[85849] = 55,
 	[88884] = 55,
 	[38426] = 0,
-	[81688] = 65,
-	[89978] = 120,
+	[75014] = 0,
+	[71083] = 0,
 	[74840] = 0,
 	[74848] = 0,
 	[74856] = 0,
 	[74864] = 0,
-	[86899] = 55,
-	[89431] = 165,
+	[74850] = 0,
+	[21383] = 0,
 	[89112] = 0,
 	[74642] = 0,
-	[86804] = 100,
-	[72162] = 0,
 	[76061] = 0,
-	[72163] = 0,
+	[79101] = 0,
 	[71634] = 0,
-	[72986] = 0,
-	[89815] = 0,
+	[85850] = 165,
+	[81413] = 0,
+	[74865] = 0,
+	[84240] = 0,
 	[74833] = 0,
 	[74841] = 0,
 	[74849] = 0,
 	[74857] = 0,
-	[74865] = 0,
+	[89978] = 120,
 	[30817] = 0,
 	[85787] = 165,
-	[87208] = 0,
-	[21383] = 0,
-	[84240] = 0,
-	[93509] = 85,
-	[74844] = 0,
+	[89815] = 0,
+	[72986] = 0,
+	[72163] = 0,
+	[86804] = 100,
+	[86791] = 0,
 	[94233] = 0,
-	[90558] = 0,
-	[74850] = 0,
-	[94130] = 0,
-	[74834] = 0,
-	[72988] = 0,
+	[81414] = 0,
+	[89070] = 0,
+	[89431] = 165,
+	[86899] = 55,
+	[79328] = 0,
 }
 wlBattlePetStats = {
 	["0x000000000077C403"] = {
@@ -1951,14 +1703,14 @@ wlBattlePetStats = {
 			11, -- [6]
 		}, -- [1]
 	},
-	["0x0000000000826E9C"] = {
+	["0x00000000002FF406"] = {
 		{
-			850, -- [1]
+			85, -- [1]
 			3, -- [2]
 			50, -- [3]
-			151, -- [4]
-			10, -- [5]
-			10, -- [6]
+			156, -- [4]
+			9, -- [5]
+			11, -- [6]
 		}, -- [1]
 	},
 	["0x00000000002FF3F7"] = {
@@ -1991,14 +1743,14 @@ wlBattlePetStats = {
 			12, -- [6]
 		}, -- [1]
 	},
-	["0x00000000002FF406"] = {
+	["0x0000000000826E9C"] = {
 		{
-			85, -- [1]
+			850, -- [1]
 			3, -- [2]
 			50, -- [3]
-			156, -- [4]
-			9, -- [5]
-			11, -- [6]
+			151, -- [4]
+			10, -- [5]
+			10, -- [6]
 		}, -- [1]
 	},
 	["0x00000000002FF415"] = {
@@ -2011,15 +1763,15 @@ wlBattlePetStats = {
 			10, -- [6]
 		}, -- [1]
 	},
-	["0x00000000002FF40B"] = {
-		{
-			64, -- [1]
-			3, -- [2]
-			50, -- [3]
-			156, -- [4]
-			9, -- [5]
-			11, -- [6]
-		}, -- [1]
+	["0x0000000000C9CDEE"] = {
+		[3] = {
+			1062, -- [1]
+			1, -- [2]
+			120, -- [3]
+			234, -- [4]
+			23, -- [5]
+			28, -- [6]
+		},
 	},
 	["0x0000000000EA5CC1"] = {
 		{
@@ -2051,16 +1803,6 @@ wlBattlePetStats = {
 			10, -- [6]
 		}, -- [1]
 	},
-	["0x000000000050A808"] = {
-		{
-			220, -- [1]
-			3, -- [2]
-			50, -- [3]
-			153, -- [4]
-			10, -- [5]
-			11, -- [6]
-		}, -- [1]
-	},
 	["0x00000000002FF42A"] = {
 		{
 			306, -- [1]
@@ -2070,6 +1812,16 @@ wlBattlePetStats = {
 			11, -- [5]
 			11, -- [6]
 		}, -- [1]
+	},
+	["0x000000000075185C"] = {
+		[3] = {
+			385, -- [1]
+			1, -- [2]
+			120, -- [3]
+			226, -- [4]
+			24, -- [5]
+			28, -- [6]
+		},
 	},
 	["0x00000000002FF3EC"] = {
 		{
@@ -2081,9 +1833,19 @@ wlBattlePetStats = {
 			10, -- [6]
 		}, -- [1]
 	},
-	["0x00000000002FF412"] = {
+	["0x0000000000307771"] = {
 		{
-			120, -- [1]
+			286, -- [1]
+			4, -- [2]
+			50, -- [3]
+			164, -- [4]
+			12, -- [5]
+			9, -- [6]
+		}, -- [1]
+	},
+	["0x00000000002FF3F8"] = {
+		{
+			225, -- [1]
 			3, -- [2]
 			50, -- [3]
 			151, -- [4]
@@ -2091,44 +1853,34 @@ wlBattlePetStats = {
 			10, -- [6]
 		}, -- [1]
 	},
-	["0x0000000000DE2396"] = {
+	["0x00000000002FF40B"] = {
 		{
-			118, -- [1]
+			64, -- [1]
 			3, -- [2]
 			50, -- [3]
-			151, -- [4]
-			10, -- [5]
-			10, -- [6]
+			156, -- [4]
+			9, -- [5]
+			11, -- [6]
 		}, -- [1]
 	},
-	["0x00000000002FF410"] = {
+	["0x000000000050A808"] = {
 		{
-			118, -- [1]
-			3, -- [2]
-			50, -- [3]
-			151, -- [4]
-			10, -- [5]
-			10, -- [6]
-		}, -- [1]
-	},
-	["0x00000000002FF40C"] = {
-		{
-			136, -- [1]
+			220, -- [1]
 			3, -- [2]
 			50, -- [3]
 			153, -- [4]
-			11, -- [5]
-			10, -- [6]
+			10, -- [5]
+			11, -- [6]
 		}, -- [1]
 	},
-	["0x00000000007519BF"] = {
-		[3] = {
-			387, -- [1]
-			1, -- [2]
-			120, -- [3]
-			220, -- [4]
-			26, -- [5]
-			27, -- [6]
+	["0x00000000002FF407"] = {
+		[5] = {
+			145, -- [1]
+			3, -- [2]
+			280, -- [3]
+			355, -- [4]
+			45, -- [5]
+			60, -- [6]
 		},
 	},
 	["0x0000000000307773"] = {
@@ -2151,14 +1903,14 @@ wlBattlePetStats = {
 			13, -- [6]
 		}, -- [1]
 	},
-	["0x00000000002FF423"] = {
+	["0x00000000002FF40C"] = {
 		{
-			310, -- [1]
-			4, -- [2]
+			136, -- [1]
+			3, -- [2]
 			50, -- [3]
-			152, -- [4]
-			12, -- [5]
-			12, -- [6]
+			153, -- [4]
+			11, -- [5]
+			10, -- [6]
 		}, -- [1]
 	},
 	["0x00000000002FF403"] = {
@@ -2171,24 +1923,24 @@ wlBattlePetStats = {
 			10, -- [6]
 		}, -- [1]
 	},
-	["0x00000000002FF400"] = {
+	["0x0000000000FD0492"] = {
 		{
-			65, -- [1]
+			847, -- [1]
 			3, -- [2]
 			50, -- [3]
-			156, -- [4]
-			9, -- [5]
+			153, -- [4]
+			10, -- [5]
 			10, -- [6]
 		}, -- [1]
 	},
-	["0x000000000077D7E7"] = {
+	["0x00000000002FF42C"] = {
 		{
-			404, -- [1]
-			1, -- [2]
+			270, -- [1]
+			4, -- [2]
 			50, -- [3]
-			143, -- [4]
-			8, -- [5]
-			9, -- [6]
+			161, -- [4]
+			11, -- [5]
+			10, -- [6]
 		}, -- [1]
 	},
 	["0x00000000002FF417"] = {
@@ -2211,25 +1963,25 @@ wlBattlePetStats = {
 			10, -- [6]
 		}, -- [1]
 	},
-	["0x0000000000C9CE33"] = {
+	["0x00000000002FF412"] = {
 		{
-			1061, -- [1]
-			4, -- [2]
-			50, -- [3]
-			152, -- [4]
-			10, -- [5]
-			13, -- [6]
-		}, -- [1]
-	},
-	["0x0000000000F9452F"] = {
-		{
-			675, -- [1]
+			120, -- [1]
 			3, -- [2]
 			50, -- [3]
-			150, -- [4]
+			151, -- [4]
 			10, -- [5]
-			11, -- [6]
+			10, -- [6]
 		}, -- [1]
+	},
+	["0x00000000002FF41B"] = {
+		[6] = {
+			244, -- [1]
+			4, -- [2]
+			450, -- [3]
+			467, -- [4]
+			77, -- [5]
+			51, -- [6]
+		},
 	},
 	["0x00000000002FF427"] = {
 		{
@@ -2241,14 +1993,14 @@ wlBattlePetStats = {
 			12, -- [6]
 		}, -- [1]
 	},
-	["0x00000000002FF40F"] = {
+	["0x000000000077D7E7"] = {
 		{
-			160, -- [1]
-			4, -- [2]
+			404, -- [1]
+			1, -- [2]
 			50, -- [3]
-			152, -- [4]
-			13, -- [5]
-			10, -- [6]
+			143, -- [4]
+			8, -- [5]
+			9, -- [6]
 		}, -- [1]
 	},
 	["0x00000000002FF405"] = {
@@ -2271,14 +2023,14 @@ wlBattlePetStats = {
 			64, -- [6]
 		},
 	},
-	["0x000000000085AA69"] = {
+	["0x00000000002FF429"] = {
 		{
-			166, -- [1]
+			319, -- [1]
 			3, -- [2]
 			50, -- [3]
-			156, -- [4]
-			11, -- [5]
-			8, -- [6]
+			141, -- [4]
+			12, -- [5]
+			11, -- [6]
 		}, -- [1]
 	},
 	["0x00000000002FF3EE"] = {
@@ -2321,24 +2073,24 @@ wlBattlePetStats = {
 			11, -- [6]
 		}, -- [1]
 	},
-	["0x00000000002FF3F5"] = {
+	["0x0000000000751376"] = {
 		{
-			125, -- [1]
-			3, -- [2]
+			419, -- [1]
+			1, -- [2]
 			50, -- [3]
-			148, -- [4]
-			10, -- [5]
-			12, -- [6]
+			145, -- [4]
+			8, -- [5]
+			9, -- [6]
 		}, -- [1]
 	},
-	["0x000000000077D45C"] = {
+	["0x00000000002FF422"] = {
 		{
-			440, -- [1]
-			3, -- [2]
+			318, -- [1]
+			4, -- [2]
 			50, -- [3]
-			148, -- [4]
+			152, -- [4]
 			12, -- [5]
-			10, -- [6]
+			11, -- [6]
 		}, -- [1]
 	},
 	["0x0000000000F37D0E"] = {
@@ -2351,14 +2103,14 @@ wlBattlePetStats = {
 			11, -- [6]
 		}, -- [1]
 	},
-	["0x0000000000751376"] = {
+	["0x00000000002FF42B"] = {
 		{
-			419, -- [1]
-			1, -- [2]
+			341, -- [1]
+			3, -- [2]
 			50, -- [3]
-			145, -- [4]
-			8, -- [5]
-			9, -- [6]
+			151, -- [4]
+			10, -- [5]
+			10, -- [6]
 		}, -- [1]
 	},
 	["0x00000000002FF40D"] = {
@@ -2371,34 +2123,24 @@ wlBattlePetStats = {
 			10, -- [6]
 		}, -- [1]
 	},
-	["0x00000000002FF3F1"] = {
+	["0x000000000077D45C"] = {
 		{
-			122, -- [1]
+			440, -- [1]
 			3, -- [2]
 			50, -- [3]
 			148, -- [4]
-			10, -- [5]
-			12, -- [6]
+			12, -- [5]
+			10, -- [6]
 		}, -- [1]
 	},
-	["0x00000000002FF402"] = {
+	["0x00000000002FF411"] = {
 		{
-			45, -- [1]
+			166, -- [1]
 			3, -- [2]
 			50, -- [3]
-			145, -- [4]
+			156, -- [4]
 			11, -- [5]
-			11, -- [6]
-		}, -- [1]
-	},
-	["0x00000000002FF42D"] = {
-		{
-			289, -- [1]
-			3, -- [2]
-			50, -- [3]
-			169, -- [4]
-			10, -- [5]
-			7, -- [6]
+			8, -- [6]
 		}, -- [1]
 	},
 	["0x00000000002FF408"] = {
@@ -2421,16 +2163,6 @@ wlBattlePetStats = {
 			10, -- [6]
 		}, -- [1]
 	},
-	["0x00000000002FF401"] = {
-		{
-			43, -- [1]
-			3, -- [2]
-			50, -- [3]
-			145, -- [4]
-			11, -- [5]
-			10, -- [6]
-		}, -- [1]
-	},
 	["0x00000000002FF428"] = {
 		{
 			321, -- [1]
@@ -2438,6 +2170,26 @@ wlBattlePetStats = {
 			50, -- [3]
 			160, -- [4]
 			10, -- [5]
+			10, -- [6]
+		}, -- [1]
+	},
+	["0x00000000002FF40F"] = {
+		{
+			160, -- [1]
+			4, -- [2]
+			50, -- [3]
+			152, -- [4]
+			13, -- [5]
+			10, -- [6]
+		}, -- [1]
+	},
+	["0x00000000002FF401"] = {
+		{
+			43, -- [1]
+			3, -- [2]
+			50, -- [3]
+			145, -- [4]
+			11, -- [5]
 			10, -- [6]
 		}, -- [1]
 	},
@@ -2461,34 +2213,34 @@ wlBattlePetStats = {
 			11, -- [6]
 		}, -- [1]
 	},
-	["0x00000000002FF411"] = {
+	["0x00000000002FF42D"] = {
 		{
-			166, -- [1]
+			289, -- [1]
 			3, -- [2]
 			50, -- [3]
-			156, -- [4]
-			11, -- [5]
-			8, -- [6]
-		}, -- [1]
-	},
-	["0x00000000002FF42B"] = {
-		{
-			341, -- [1]
-			3, -- [2]
-			50, -- [3]
-			151, -- [4]
+			169, -- [4]
 			10, -- [5]
-			10, -- [6]
+			7, -- [6]
 		}, -- [1]
 	},
-	["0x00000000002FF422"] = {
+	["0x00000000002FF402"] = {
 		{
-			318, -- [1]
-			4, -- [2]
+			45, -- [1]
+			3, -- [2]
 			50, -- [3]
-			152, -- [4]
-			12, -- [5]
+			145, -- [4]
+			11, -- [5]
 			11, -- [6]
+		}, -- [1]
+	},
+	["0x00000000002FF3F1"] = {
+		{
+			122, -- [1]
+			3, -- [2]
+			50, -- [3]
+			148, -- [4]
+			10, -- [5]
+			12, -- [6]
 		}, -- [1]
 	},
 	["0x00000000002FF41D"] = {
@@ -2501,14 +2253,14 @@ wlBattlePetStats = {
 			10, -- [6]
 		}, -- [1]
 	},
-	["0x00000000002FF429"] = {
+	["0x00000000002FF423"] = {
 		{
-			319, -- [1]
-			3, -- [2]
+			310, -- [1]
+			4, -- [2]
 			50, -- [3]
-			141, -- [4]
+			152, -- [4]
 			12, -- [5]
-			11, -- [6]
+			12, -- [6]
 		}, -- [1]
 	},
 	["0x00000000002FF3EF"] = {
@@ -2521,35 +2273,65 @@ wlBattlePetStats = {
 			10, -- [6]
 		}, -- [1]
 	},
-	["0x00000000002FF41B"] = {
-		[6] = {
-			244, -- [1]
-			4, -- [2]
-			450, -- [3]
-			467, -- [4]
-			77, -- [5]
-			51, -- [6]
-		},
-	},
-	["0x00000000002FF42C"] = {
+	["0x0000000000F9452F"] = {
 		{
-			270, -- [1]
-			4, -- [2]
-			50, -- [3]
-			161, -- [4]
-			11, -- [5]
-			10, -- [6]
-		}, -- [1]
-	},
-	["0x0000000000FD0492"] = {
-		{
-			847, -- [1]
+			675, -- [1]
 			3, -- [2]
 			50, -- [3]
-			153, -- [4]
+			150, -- [4]
 			10, -- [5]
+			11, -- [6]
+		}, -- [1]
+	},
+	["0x0000000000C9CE33"] = {
+		{
+			1061, -- [1]
+			4, -- [2]
+			50, -- [3]
+			152, -- [4]
+			10, -- [5]
+			13, -- [6]
+		}, -- [1]
+	},
+	["0x000000000085AA69"] = {
+		{
+			166, -- [1]
+			3, -- [2]
+			50, -- [3]
+			156, -- [4]
+			11, -- [5]
+			8, -- [6]
+		}, -- [1]
+	},
+	["0x00000000002FF400"] = {
+		{
+			65, -- [1]
+			3, -- [2]
+			50, -- [3]
+			156, -- [4]
+			9, -- [5]
 			10, -- [6]
 		}, -- [1]
+	},
+	["0x00000000002FF3F5"] = {
+		{
+			125, -- [1]
+			3, -- [2]
+			50, -- [3]
+			148, -- [4]
+			10, -- [5]
+			12, -- [6]
+		}, -- [1]
+	},
+	["0x00000000007519BF"] = {
+		[3] = {
+			387, -- [1]
+			1, -- [2]
+			120, -- [3]
+			220, -- [4]
+			26, -- [5]
+			27, -- [6]
+		},
 	},
 	["0x0000000000307772"] = {
 		{
@@ -2561,29 +2343,9 @@ wlBattlePetStats = {
 			10, -- [6]
 		}, -- [1]
 	},
-	["0x00000000002FF407"] = {
-		[5] = {
-			145, -- [1]
-			3, -- [2]
-			280, -- [3]
-			355, -- [4]
-			45, -- [5]
-			60, -- [6]
-		},
-	},
-	["0x0000000000750FFD"] = {
+	["0x00000000002FF410"] = {
 		{
-			447, -- [1]
-			3, -- [2]
-			50, -- [3]
-			151, -- [4]
-			10, -- [5]
-			11, -- [6]
-		}, -- [1]
-	},
-	["0x00000000002FF3F8"] = {
-		{
-			225, -- [1]
+			118, -- [1]
 			3, -- [2]
 			50, -- [3]
 			151, -- [4]
@@ -2591,25 +2353,15 @@ wlBattlePetStats = {
 			10, -- [6]
 		}, -- [1]
 	},
-	["0x0000000000307771"] = {
+	["0x0000000000DE2396"] = {
 		{
-			286, -- [1]
-			4, -- [2]
+			118, -- [1]
+			3, -- [2]
 			50, -- [3]
-			164, -- [4]
-			12, -- [5]
-			9, -- [6]
+			151, -- [4]
+			10, -- [5]
+			10, -- [6]
 		}, -- [1]
-	},
-	["0x000000000075185C"] = {
-		[3] = {
-			385, -- [1]
-			1, -- [2]
-			120, -- [3]
-			226, -- [4]
-			24, -- [5]
-			28, -- [6]
-		},
 	},
 	["0x00000000002FF3F2"] = {
 		{
@@ -2631,15 +2383,15 @@ wlBattlePetStats = {
 			13, -- [6]
 		}, -- [1]
 	},
-	["0x0000000000C9CDEE"] = {
-		[3] = {
-			1062, -- [1]
-			1, -- [2]
-			120, -- [3]
-			234, -- [4]
-			23, -- [5]
-			28, -- [6]
-		},
+	["0x0000000000750FFD"] = {
+		{
+			447, -- [1]
+			3, -- [2]
+			50, -- [3]
+			151, -- [4]
+			10, -- [5]
+			11, -- [6]
+		}, -- [1]
 	},
 	["0x00000000002FF3FA"] = {
 		{

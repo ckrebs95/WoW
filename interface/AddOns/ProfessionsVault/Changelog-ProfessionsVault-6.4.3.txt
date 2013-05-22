@@ -1,0 +1,134 @@
+------------------------------------------------------------------------
+r486 | oscarucb | 2013-05-22 06:07:59 +0000 (Wed, 22 May 2013) | 1 line
+Changed paths:
+   A /tags/6.4.3 (from /trunk:485)
+
+Tagging as 6.4.3
+------------------------------------------------------------------------
+r485 | oscarucb | 2013-05-22 06:07:25 +0000 (Wed, 22 May 2013) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+build bump
+
+------------------------------------------------------------------------
+r482 | oscarucb | 2013-05-21 14:20:27 +0000 (Tue, 21 May 2013) | 1 line
+Changed paths:
+   M /trunk/ProfessionsVault.toc
+
+5.3 ToC update
+------------------------------------------------------------------------
+r481 | oscarucb | 2013-05-21 14:12:04 +0000 (Tue, 21 May 2013) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+5.3 data updates
+
+------------------------------------------------------------------------
+r480 | oscarucb | 2013-05-19 17:43:52 +0000 (Sun, 19 May 2013) | 3 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+minor performance tweaks
+disable CastSpell hooks in favor of lighter alternatives
+
+------------------------------------------------------------------------
+r478 | oscarucb | 2013-05-01 10:09:35 +0000 (Wed, 01 May 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+cosmetic fix to guild trade skills
+
+------------------------------------------------------------------------
+r476 | oscarucb | 2013-04-30 10:11:11 +0000 (Tue, 30 Apr 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+tweak 5.3 build number
+
+------------------------------------------------------------------------
+r474 | oscarucb | 2013-04-24 15:12:50 +0000 (Wed, 24 Apr 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+make bit scanning more aggressive to handle new server filtering
+
+------------------------------------------------------------------------
+r473 | oscarucb | 2013-04-21 23:26:02 +0000 (Sun, 21 Apr 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+re-fix Herbalism
+
+------------------------------------------------------------------------
+r472 | oscarucb | 2013-04-21 19:45:56 +0000 (Sun, 21 Apr 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+more tweaks to new code
+
+------------------------------------------------------------------------
+r471 | oscarucb | 2013-04-21 18:16:37 +0000 (Sun, 21 Apr 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+improve formatting of einstein title in default trade skill UI
+
+------------------------------------------------------------------------
+r470 | oscarucb | 2013-04-21 18:04:24 +0000 (Sun, 21 Apr 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+fix link button for self from guild roster
+
+------------------------------------------------------------------------
+r469 | oscarucb | 2013-04-21 17:40:39 +0000 (Sun, 21 Apr 2013) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+   M /trunk/ProfessionsVault.lua
+
+add cooking specdata to Einstein
+
+------------------------------------------------------------------------
+r468 | oscarucb | 2013-04-21 10:54:52 +0000 (Sun, 21 Apr 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+add spec bit counting
+
+------------------------------------------------------------------------
+r467 | oscarucb | 2013-04-21 10:12:46 +0000 (Sun, 21 Apr 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+5.3 link cleaning
+
+------------------------------------------------------------------------
+r466 | oscarucb | 2013-04-21 09:23:35 +0000 (Sun, 21 Apr 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+more tweaks to new code
+
+------------------------------------------------------------------------
+r465 | oscarucb | 2013-04-21 07:56:11 +0000 (Sun, 21 Apr 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+fix faction handling of save link from Pandaren players
+
+------------------------------------------------------------------------
+r464 | oscarucb | 2013-04-21 07:44:11 +0000 (Sun, 21 Apr 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+first round of factorizing link code
+
+------------------------------------------------------------------------
+r463 | oscarucb | 2013-04-17 04:17:35 +0000 (Wed, 17 Apr 2013) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+ticket 103: Planar Edge
+
+------------------------------------------------------------------------

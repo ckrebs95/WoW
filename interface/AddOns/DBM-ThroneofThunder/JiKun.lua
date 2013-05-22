@@ -1,9 +1,8 @@
 local mod	= DBM:NewMod(828, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9409 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9562 $"):sub(12, -3))
 mod:SetCreatureID(69712)
-mod:SetModelID(46675)
 mod:SetQuestID(32749)
 mod:SetZone()
 
@@ -56,13 +55,14 @@ local flockName = EJ_GetSectionInfo(7348)
 function mod:OnCombatStart(delay)
 	flockCount = 0
 	quillsCount = 0
+	timerTalonRakeCD:Start(24)
 	if self:IsDifficulty("normal10", "heroic10", "lfr25") then
 		timerQuillsCD:Start(60-delay, 1)
 	else
 		timerQuillsCD:Start(42.5-delay, 1)
 	end
 	timerDowndraftCD:Start(91-delay)
-	if self.Options.RangeFrame and not self:IsDifficulty("lfr25") then
+	if self.Options.RangeFrame then
 		DBM.RangeCheck:Show(10)
 	end
 end
@@ -216,9 +216,28 @@ local function GetNestPositions(flockC)
 	if mod:IsDifficulty("lfr25") then
 		--LFR: L, L, L, U, U, U (Repeating)
 		if ((flockC-1) % 6) < 3 then dir = L.Lower -- 1,2,3,7,8,9,...
-		else                         dir = L.Upper -- 6,7,8,10,11,12,...
+		else                         dir = L.Upper -- 4,5,6,10,11,12,...
 		end
-	elseif mod:IsDifficulty("normal10", "heroic10") then
+	elseif mod:IsDifficulty("normal10") then
+		--TODO, find out locations for these to improve the warnings.
+		if     flockC ==  1 then dir, loc = L.Lower, "1-"..L.NorthEast	--01    loc = L.NorthEast
+		elseif flockC ==  2 then dir, loc = L.Lower, "2-"..L.SouthEast	--02    loc = L.SouthEast
+		elseif flockC ==  3 then dir, loc = L.Lower, "3-"..L.SouthWest	--03    loc = L.SouthWest
+		elseif flockC ==  4 then dir = L.Upper  		--04   loc = unknown
+		elseif flockC ==  5 then dir = L.Upper			--05   loc = unknown
+		elseif flockC ==  6 then dir, loc = L.Upper, "6-"..U.Middle	--06    loc = U.Middle
+		elseif flockC ==  7 then dir, loc = L.Lower, "7-"..L.NorthEast	--07    loc = L.NorthEast
+		elseif flockC ==  8 then dir, loc = L.Lower, "8-"..L.SouthEast	--08    loc = L.SouthEast
+		elseif flockC ==  9 then dir = L.UpperAndLower	--09-10
+		elseif flockC == 10 then dir = L.Upper			--11
+		elseif flockC == 11 then dir = L.Upper			--12    loc = L.NorthWest
+		elseif flockC == 12 then dir = L.Lower			--13
+		elseif flockC == 13 then dir = L.Lower			--14
+		elseif flockC == 14 then dir = L.UpperAndLower	--15-16
+		elseif flockC == 15 then dir = L.Upper			--17
+		elseif flockC == 16 then dir = L.Upper			--18
+		end
+	elseif mod:IsDifficulty("heroic10") then
 		--TODO, find out locations for these to improve the warnings.
 		if     flockC ==  1 then dir = L.Lower			--01
 		elseif flockC ==  2 then dir = L.Lower			--02    loc = L.SouthEast

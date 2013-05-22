@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("LordMarrowgar", "DBM-Icecrown", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 34 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 40 $"):sub(12, -3))
 mod:SetCreatureID(36612)
 mod:SetModelID(31119)
 mod:SetUsedIcons(1, 2, 3, 4, 5, 6, 7, 8)
@@ -19,7 +19,7 @@ mod:RegisterEvents(
 
 local preWarnWhirlwind   	= mod:NewSoonAnnounce(69076, 3)
 local warnBoneSpike			= mod:NewCastAnnounce(69057, 2)
-local warnImpale			= mod:NewAnnounce("WarnImpale", 4, 72669)
+local warnImpale			= mod:NewTargetAnnounce(72669, 3)
 
 local specWarnColdflame		= mod:NewSpecialWarningMove(69146)
 local specWarnWhirlwind		= mod:NewSpecialWarningRun(69076)

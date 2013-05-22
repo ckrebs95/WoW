@@ -36,7 +36,8 @@ L:SetOptionLocalization({
 	warnOrbofControl		= "$journal:7092 떨어짐시 알림 보기",
 	specWarnOrbofControl	= "$journal:7092 떨어짐시 특수 경고 보기",
 	timerDoor				= "다음 부족의 문 열림 바 표시",
-	timerAdds				= "다음 추가 병력 바 표시"
+	timerAdds				= "다음 추가 병력 바 표시",
+	RangeFrame				= "$spell:136480 주문에 대한 거리 창 보기(5m)",
 })
 
 L:SetMiscLocalization({
@@ -111,9 +112,10 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(828)
 
 L:SetWarningLocalization({
-	warnFlock		= "%2$s : %1$s %3$s",
-	specWarnFlock	= "%2$s : %1$s %3$s",
-	specWarnBigBird	= "둥지 수호자 : %s"
+	warnFlock			= "%2$s : %1$s %3$s",
+	specWarnFlock		= "%2$s : %1$s %3$s",
+	specWarnBigBird		= "곧 둥지 수호자 : %s",
+	specWarnBigBird		= "둥지 수호자 : %s"
 })
 
 L:SetTimerLocalization({
@@ -159,7 +161,12 @@ L:SetOptionLocalization({
 	warnAddsLeft				= "안개도깨비 남은 횟수 알림 보기",
 	specWarnFogRevealed			= "안개도깨비가 드러날 때 특수 경고 보기",
 	ArrowOnBeam					= "$journal:6882 시전 중에 이동해야 될 방향을 DBM 화살표로 보기",
-	InfoFrame					= "$spell:133795 중첩 정보 창 보기"
+	InfoFrame					= "$spell:133795 중첩 정보 창 보기",
+	SetParticle					= "전투 시작시 입자 밀도를 최저로 설정하기\n(전투 종료후 원래 설정이 복구됩니다.)"
+})
+
+L:SetMiscLocalization({
+	LifeYell					= "%s에게 생명력 흡수! (%d)"
 })
 
 ----------------
@@ -225,11 +232,6 @@ L:SetTimerLocalization({
 })
 
 L:SetOptionLocalization({
-	warnNight		= "밤 단계 알림 보기",
-	warnDay			= "낮 단계 알림 보기",
-	warnDusk		= "황혼 단계 알림 보기",
-	timerDayCD		= "낮 단계 바 표시",
-	timerDuskCD		= "황혼 단계 바 표시",
 	RangeFrame		= "거리 창 보기(8m)"
 })
 

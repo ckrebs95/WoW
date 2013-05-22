@@ -3,3 +3,4 @@ SpartanUI_PlayerFrames: disabled
 SpartanUI_PartyFrames: disabled
 SpartanUI_FilmEffects: disabled
 SpartanUI: disabled
+_NPCScan: disabled

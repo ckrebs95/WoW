@@ -1,9 +1,8 @@
 local mod	= DBM:NewMod(737, "DBM-HeartofFear", nil, 330)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9141 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9469 $"):sub(12, -3))
 mod:SetCreatureID(62511)
-mod:SetModelID(43126)
 mod:SetZone()
 mod:SetMinSyncRevision(8052)
 

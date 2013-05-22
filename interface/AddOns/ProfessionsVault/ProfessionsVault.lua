@@ -10,7 +10,7 @@ local PVLDB
 local minimapIcon = LibStub("LibDBIcon-1.0")
 vars.svnrev = vars.svnrev or {}
 local svnrev = vars.svnrev
-svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 478 $"):match("%d+"))
+svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 480 $"):match("%d+"))
 local DB_VERSION_MAJOR = 1
 local DB_VERSION_MINOR = 4
 local _G = _G
@@ -1097,14 +1097,18 @@ local function SetLDBProf(pname)
   end
 end
 
-local function PV_CastSpellHook(...)
+local function PV_CastSpellHook(arg1, arg2)
         if InCombatLockdown() then return end
-	local arg1, arg2 = ...
-	local status,pname = pcall(GetSpellInfo,arg1,arg2)
-	if not status then
-	  status,pname = pcall(GetSpellInfo,arg1)
+	--debug("PV_CastSpellHook :"..tostring(arg1).." "..tostring(arg2))
+	local pname = arg1
+	if type(arg1) == "number" then
+	  if arg2 == "professions" then
+	    pname = GetSpellInfo(arg1, arg2)
+	  else
+	    return 
+	  end
 	end
-	if status and pname and allProf[pname] then
+	if pname and allProf[pname] then
 	  debug("CastSpell("..pname..")")
 	  addon.lastTSL = nil
 	  SetLDBProf(pname)
@@ -1113,6 +1117,7 @@ end
 
 local function PV_UseActionHook(actionslot, target, button)
         if InCombatLockdown() then return end
+	--debug("PV_UseActionHook :"..tostring(actionslot).." "..tostring(target).." "..tostring(button))
 	local atype, id, subType = GetActionInfo(actionslot)
 	if (atype == "spell" and subType == "spell") then
 	  local pname = GetSpellInfo(id)
@@ -1246,10 +1251,12 @@ function addon:OnEnable()
     end
     hooksecurefunc("SetItemRef", PV_ShowItemRefTooltip)
     hooksecurefunc("GetGuildMemberRecipes", function () addon.lastTSL = nil end)
+    --[[
     hooksecurefunc("CastSpell", PV_CastSpellHook)
     hooksecurefunc("CastSpellByID", PV_CastSpellHook)
     hooksecurefunc("CastSpellByName", PV_CastSpellHook)
     hooksecurefunc("UseAction", PV_UseActionHook)
+    --]]
   else
     GameTooltip:HookScript("OnTooltipSetItem", PV_ShowTooltip)
     ItemRefTooltip:HookScript("OnTooltipSetItem", PV_ShowTooltip)
@@ -1861,6 +1868,8 @@ function addon:UpdateTrade(force)
   addon:update_guid_cache_fromlink(link)
   if not linked then
     cname = charName
+    addon.lastTSL = nil
+    SetLDBProf(pname)
   elseif not link then -- guild trade window
     debug("Guild Tradeskill: "..(cname or "NIL").." "..(pname or "NIL"))
     -- cname will occasionally arrive after the SHOW event
@@ -1890,6 +1899,7 @@ function addon:UpdateTrade(force)
         linked = true
         local guid = guid_expand(DB.guid_cache[cname])
         if guid then
+	  local _
           class,_,_,race,_,_ = GetPlayerInfoByGUID(guid)
         end
         race = race or UnitRace("player") -- fake it to get faction
@@ -2120,6 +2130,7 @@ function addon:ActivateLink(cname,pname,link,nodropdown)
     if not pname then
       return
     elseif cname == charName then
+      SetLDBProf(pname)
       if not nocastProf[pname] then
         debug("CastSpellByName("..pname..")")
         CastSpellByName(pname)

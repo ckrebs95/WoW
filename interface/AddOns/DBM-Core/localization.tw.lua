@@ -3,6 +3,10 @@
 DBM_CORE_NEED_SUPPORT				= "你是否擁有良好的程式開發或語言能力? 如果是的話, DBM團隊真的需要你的幫助以保持成為WOW裡最佳的首領模組。觀看 www.deadlybossmods.com 或發送郵件到 tandanu@deadlybossmods.com 或 nitram@deadlybossmods.com 來加入團隊。"
 DBM_HOW_TO_USE_MOD					= "歡迎使用DBM。在聊天頻道輸入 /dbm 打開設定開始設定。你可以載入特定區域後為任何首領設定你喜歡的特別設置。DBM會在第一次啟動時嘗試掃描你的職業天賦，但有些選項你可能想打開。"
 
+DBM_FORUMS_MESSAGE					= "發現臭蟲或錯誤的計時器?你希望要讓某些模組有新的警告，計時器或是特別功能?\n拜訪新的Deadly Boss Mods討論，臭蟲回報與功能要求論壇 |HDBM:forums|h|cff3588ffhttp://www.deadlybossmods.com|r (你可以點擊連結去複製網址)"
+DBM_FORUMS_COPY_URL_DIALOG			= "來拜訪我們新的討論與支援論壇\r\n(代管於Elitist Jerks!)"
+
+
 DBM_CORE_LOAD_MOD_ERROR				= "載入%s模組時發生錯誤：%s"
 DBM_CORE_LOAD_MOD_SUCCESS			= "成功載入%s模組。輸入/dbm或/dbm help有更多選項。"
 DBM_CORE_LOAD_GUI_ERROR				= "無法載入圖形介面：%s"
@@ -44,6 +48,8 @@ DBM_CORE_GENERIC_WARNING_DUPLICATE		= "%s之一"
 DBM_CORE_GENERIC_WARNING_BERSERK		= "%s%s後狂暴"
 DBM_CORE_GENERIC_TIMER_BERSERK			= "狂暴"
 DBM_CORE_OPTION_TIMER_BERSERK			= "為$spell:26662顯示計時器"
+DBM_CORE_GENERIC_TIMER_COMBAT			= "戰鬥開始"
+DBM_CORE_OPTION_TIMER_COMBAT			= "為戰鬥開始顯示計時器"
 DBM_CORE_OPTION_HEALTH_FRAME			= "顯示首領血量框架"
 
 DBM_CORE_OPTION_CATEGORY_TIMERS			= "計時器"
@@ -75,7 +81,8 @@ DBM_CORE_YOUR_VERSION_OUTDATED			= "你的 Deadly Boss Mod 已經過期。請到
 --DBM_BIG_WIGS_ALPHA (Same as English locales)
 
 DBM_CORE_UPDATEREMINDER_HEADER			= "你的 Deadly Boss Mod 已經過期。\n你可以在此網址下載到新版本%s(r%d)："
-DBM_CORE_UPDATEREMINDER_FOOTER			= "" .. (IsMacClient() and "Cmd-C" or "Ctrl-C")  ..  "：複製下載網址到剪貼簿。"
+DBM_CORE_UPDATEREMINDER_FOOTER			= "按下" .. (IsMacClient() and "Cmd-C" or "Ctrl-C")  ..  "：複製下載網址到剪貼簿。"
+DBM_CORE_UPDATEREMINDER_FOOTER_GENERIC	= "按下" .. (IsMacClient() and "Cmd-C" or "Ctrl-C")  ..  "：複製網址到剪貼簿。"
 DBM_CORE_UPDATEREMINDER_NOTAGAIN		= "當有新版本時顯示彈出提示"
 
 DBM_CORE_MOVABLE_BAR				= "拖動我!"
@@ -104,10 +111,6 @@ DBM_CORE_RANGECHECK_OPTION_FRAMES	= "框架"
 DBM_CORE_RANGECHECK_OPTION_RADAR	= "顯示雷達框架"
 DBM_CORE_RANGECHECK_OPTION_TEXT		= "顯示文字框"
 DBM_CORE_RANGECHECK_OPTION_BOTH		= "兩者都顯示"
-DBM_CORE_RANGECHECK_OPTION_SPEED	= "更新頻率(需要重載介面)"
-DBM_CORE_RANGECHECK_OPTION_SLOW		= "慢(CPU使用量低)"
-DBM_CORE_RANGECHECK_OPTION_AVERAGE	= "中"
-DBM_CORE_RANGECHECK_OPTION_FAST		= "快(幾近即時)"
 DBM_CORE_RANGERADAR_HEADER			= "距離雷達(%d碼)"
 DBM_CORE_RANGERADAR_IN_RANGE_TEXT	= "%d玩家在範圍內"
 
@@ -195,6 +198,7 @@ DBM_CORE_AUTO_SPEC_WARN_TEXTS = {
 	ends 					= "%s結束",
 	fades					= "%s退去",
 	soon					= "%s即將到來",
+	prewarn					= "%s在%s",
 	dispel					= ">%%s<中了%s - 現在驅散",
 	interrupt				= "%s - 快中斷>%%s< !",
 	you						= "你中了%s",
@@ -214,6 +218,7 @@ DBM_CORE_AUTO_SPEC_WARN_OPTIONS = {
 	ends 					= "為$spell:%s結束顯示特別警告",
 	fades 					= "為$spell:%s退去顯示特別警告",
 	soon 					= "為$spell:%s顯示預先特別警告",
+	prewarn 				= "為$spell:%s%d秒顯示預先特別警告",
 	dispel					= "需對$spell:%s驅散/竊取時顯示特別警告",
 	interrupt				= "需對$spell:%s斷法時顯示特別警告",
 	you						= "當你中了$spell:%s時顯示特別警告",
@@ -259,10 +264,13 @@ DBM_CORE_AUTO_TIMER_OPTIONS = {
 
 DBM_CORE_AUTO_ICONS_OPTION_TEXT			= "為$spell:%s的目標設置標記"
 DBM_CORE_AUTO_SOUND_OPTION_TEXT			= "當你中了$spell:%s時播放音效"
-DBM_CORE_AUTO_COUNTDOWN_OPTION_TEXT		= "為$spell:%s播放倒數計時音效"
+DBM_CORE_AUTO_COUNTDOWN_OPTION_TEXT		= "為$spell:%s的冷卻播放倒數計時音效"
+DBM_CORE_AUTO_COUNTDOWN_OPTION_TEXT2	= "為$spell:%s的減益播放倒數計時音效"
 DBM_CORE_AUTO_COUNTOUT_OPTION_TEXT		= "為$spell:%s的持續時間播放倒數計時音效"
 DBM_CORE_AUTO_YELL_OPTION_TEXT			= "當你中了$spell:%s時大喊"
 DBM_CORE_AUTO_YELL_ANNOUNCE_TEXT		= "" .. UnitName("player") .. "中了%s!"
+DBM_CORE_AUTO_RANGE_OPTION_TEXT			= "為$spell:%s顯示距離框架(%s)"
+DBM_CORE_AUTO_RANGE_OPTION_TEXT_SHORT	= "顯示距離框架(%s)"
 
 
 -- New special warnings
@@ -284,6 +292,7 @@ DBM_ARROW_ERROR_USAGE	= {
 
 DBM_SPEED_KILL_TIMER_TEXT			= "勝利紀錄"
 DBM_SPEED_KILL_TIMER_OPTION			= "顯示一個計時器來打敗你上次的最快勝利"
+DBM_SPEED_CLEAR_TIMER_TEXT			= "最佳紀錄"
 
 
 DBM_REQ_INSTANCE_ID_PERMISSION		= "%s想要查看你的副本ID和進度鎖定情況。\n你想發送該訊息給%s嗎? 在你的當前進程（除非你下線）他可以一直查閱該訊息。"

@@ -1,10 +1,9 @@
 local mod	= DBM:NewMod(821, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9383 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9560 $"):sub(12, -3))
 mod:SetCreatureID(68065, 70212, 70235, 70247)--flaming 70212. Frozen 70235, Venomous 70247
 mod:SetMainBossID(68065)
-mod:SetModelID(47414)--Hydra Fire Head, 47415 Frost Head, 47416 Poison Head
 mod:SetQuestID(32748)
 mod:SetZone()
 mod:SetUsedIcons(7, 6, 4, 2)
@@ -69,7 +68,6 @@ local timerBreathsCD			= mod:NewTimer(16, "timerBreathsCD", 137731, nil, false)-
 local timerCinderCD				= mod:NewCDTimer(25, 139822, nil, not mod:IsTank())--The cd is either 25 or 28 (either or apparently, no in between). it can even swap between teh two in SAME pull
 local timerTorrentofIce			= mod:NewBuffFadesTimer(11, 139866)
 local timerTorrentofIceCD		= mod:NewCDTimer(25, 139866, nil, not mod:IsTank())--Same as bove, either 25 or 28
---local timerAcidRainCD			= mod:NewCDTimer(13.5, 139850, nil, false)--Can only give time for next impact, no cast trigger so cannot warn cast very effectively. Also seems not possible to separate heads on this one. In my log every cast came from same head GUID
 local timerNetherTearCD			= mod:NewCDTimer(25, 140138)--Heroic. Also either 25 or 28. On by default since these require more pre planning than fire and ice.
 
 local soundCinders				= mod:NewSound(139822)
@@ -82,13 +80,6 @@ mod:AddDropdownOption("AnnounceCooldowns", {"Never", "Every", "EveryTwo", "Every
 --CD order options that change based on raid dps and diffusion strat. With high dps, you need 3 groups, with lower dps (and typically heroic) you need 3. Also, on heroic, many don't cd rampage when high stack diffusion tank can be healed off of to heal raid.
 --"Every": for groups that prefer to assign certain rampage numbers to players (e.g. for CD at the 4th rampage only) (maybe "Every" should even be the default option for everyone, beside of any cooldowns?)
 
---count will go to hell fast on a DC though. Need to figure out some kind of head status recovery to get active/inactive head counts.
---Maybe add an info frame that shows head status too would be cool such as
----------------------------
---Flaming head: A: 0 I: 2 -
---Frozen head: A: 1 I: 1  -
---Venomous head: A: 1 I: 1-
----------------------------
 local fireInFront = 0
 local venomInFront = 0
 local iceInFront = 0
@@ -259,8 +250,6 @@ end
 function mod:SPELL_DAMAGE(sourceGUID, _, _, _, destGUID, _, _, _, spellId)
 	if spellId == 139836 and destGUID == UnitGUID("player") and self:AntiSpam(2, 4) then
 		specWarnCindersMove:Show()
-	--[[elseif spellId == 139850 and self:AntiSpam(2, 1) then--Does not work right because sourceguid is not the head, it's an invisible mob and it seems that invisible mob can be used by more than one head (so no way to separate teh Cds of 2 or more heads
-		timerAcidRainCD:Start(sourceGUID)--]]
 	end
 end
 mod.SPELL_MISSED = mod.SPELL_DAMAGE
@@ -282,7 +271,6 @@ function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg, _, _, _, target)
 		timerBreathsCD:Cancel()
 		timerCinderCD:Cancel()
 		timerTorrentofIceCD:Cancel()
---		timerAcidRainCD:Cancel()
 		timerNetherTearCD:Cancel()
 		timerRampage:Start()
 		if not (self.Options.AnnounceCooldowns == "Every") then
@@ -319,9 +307,6 @@ function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg, _, _, _, target)
 				timerCinderCD:Start(5)--5-8 second variatio
 			end
 		end
---[[		if venomBehind > 0 then
-			timerAcidRainCD:Start(15)--15-20 seconds after rampage ends, unknown heroic value, this number is from normal log.
-		end--]]
 		if arcaneBehind > 0 then
 			timerNetherTearCD:Start(15)--15-18 seconds after rampages end
 		end
@@ -414,7 +399,6 @@ local function warnTorrent(name)
 		specWarnTorrentofIceYou:Show()
 		timerTorrentofIce:Start()
 		yellTorrentofIce:Yell()
-		mod:SendSync("IceTarget", UnitGUID("player")) -- Remain sync stuff for older version.
 	else
 		local uId = DBM:GetRaidUnitId(name)
 			if uId then
@@ -431,6 +415,7 @@ local function warnTorrent(name)
 	end
 end
 
+--Combat log bugged, UNIT_AURA only good way to work around.
 function mod:UNIT_AURA(uId)
 	local name = DBM:GetUnitFullName(uId)
 	if not name then return end

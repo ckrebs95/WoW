@@ -11,24 +11,24 @@ DBM_SavedOptions = {
 	["RangeFrameX"] = 50,
 	["WarningColors"] = {
 		{
-			["r"] = 0.41,
-			["g"] = 0.8,
 			["b"] = 0.94,
+			["g"] = 0.8,
+			["r"] = 0.41,
 		}, -- [1]
 		{
-			["r"] = 0.95,
-			["g"] = 0.95,
 			["b"] = 0,
+			["g"] = 0.95,
+			["r"] = 0.95,
 		}, -- [2]
 		{
-			["r"] = 1,
-			["g"] = 0.5,
 			["b"] = 0,
+			["g"] = 0.5,
+			["r"] = 1,
 		}, -- [3]
 		{
-			["r"] = 1,
-			["g"] = 0.1,
 			["b"] = 0.1,
+			["g"] = 0.1,
+			["r"] = 1,
 		}, -- [4]
 	},
 	["AlwaysShowSpeedKillTimer"] = true,
@@ -57,6 +57,7 @@ DBM_SavedOptions = {
 	["DontSendBossWhispers"] = false,
 	["RangeFrameLocked"] = false,
 	["HPFrameY"] = 49.99999925494196,
+	["HideWatchFrame"] = false,
 	["ShowMinimapButton"] = true,
 	["MoviesSeen"] = {
 	},
@@ -73,30 +74,39 @@ DBM_SavedOptions = {
 	["RangeFrameFrames"] = "radar",
 	["RangeFrameRadarX"] = -60.00036150216518,
 	["ShowBigBrotherOnCombatStart"] = false,
+	["ArrowPosY"] = -150,
 	["BlockVersionUpdatePopup"] = true,
+	["WarningIconRight"] = true,
+	["ShowRecoveryMessage"] = true,
 	["DontShowRangeFrame"] = false,
+	["ForumsMessageShown"] = 9413,
 	["InfoFrameShowSelf"] = false,
 	["SpecialWarningFont"] = "Fonts\\FRIZQT__.TTF",
-	["AdvancedAutologBosses"] = false,
+	["ShowCountdownText"] = false,
+	["DisableCinematicsOutside"] = false,
 	["SpamBlockRaidWarning"] = true,
 	["ShowFakedRaidWarnings"] = false,
 	["LatencyThreshold"] = 200,
 	["BlockVersionUpdateNotice"] = false,
-	["DontShowInfoFrame"] = false,
-	["DontShowPT"] = true,
-	["HPFrameMaxEntries"] = 5,
+	["LastRevision"] = 8086,
 	["DontShowPTCountdownText"] = false,
-	["AutologBosses"] = false,
-	["RangeFramePoint"] = "CENTER",
+	["HPFrameMaxEntries"] = 5,
+	["SetPlayerRole"] = true,
 	["RangeFrameSound1"] = "none",
+	["RangeFramePoint"] = "CENTER",
 	["WarningIconLeft"] = true,
-	["ShowEngageMessage"] = true,
-	["ArrowPosY"] = -150,
-	["WarningIconRight"] = true,
-	["ShowPizzaMessage"] = true,
+	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
+	["AutoRespond"] = true,
+	["SpecialWarningFontColor"] = {
+		0, -- [1]
+		0, -- [2]
+		1, -- [3]
+	},
 	["RangeFrameSound2"] = "none",
+	["ShowPizzaMessage"] = true,
+	["AdvancedAutologBosses"] = false,
 	["ShowLHFrame"] = true,
-	["ShowLoadMessage"] = true,
+	["UseMasterVolume"] = true,
 	["DontShowBossAnnounces"] = false,
 	["Enabled"] = true,
 	["DontSendBossAnnounces"] = false,
@@ -104,21 +114,17 @@ DBM_SavedOptions = {
 	["DisableCinematics"] = false,
 	["MovieFilters"] = {
 	},
-	["UseMasterVolume"] = true,
+	["ShowLoadMessage"] = true,
 	["ShowWipeMessage"] = true,
-	["SpecialWarningFontColor"] = {
-		0, -- [1]
-		0, -- [2]
-		1, -- [3]
-	},
-	["AutoRespond"] = true,
-	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
+	["LogOnlyRaidBosses"] = false,
+	["StripServerName"] = true,
+	["ShowEngageMessage"] = true,
 	["AlwaysShowHealthFrame"] = false,
 	["HPFrameX"] = -49.99999925494196,
-	["ShowRecoveryMessage"] = true,
+	["AutologBosses"] = false,
 	["SpamBlockBossWhispers"] = false,
-	["LastRevision"] = 8086,
-	["DisableCinematicsOutside"] = false,
+	["DontShowPT"] = true,
+	["DontShowInfoFrame"] = false,
 }
 DBT_SavedOptions = {
 	["DBM"] = {
@@ -126,7 +132,7 @@ DBT_SavedOptions = {
 		["TimerPoint"] = "TOPRIGHT",
 		["TimerX"] = -223.0000081211327,
 		["HugeTimerX"] = 0,
-		["HugeTimerY"] = -119.9999982118607,
 		["TimerY"] = -259.9999961256982,
+		["HugeTimerY"] = -119.9999982118607,
 	},
 }
