@@ -1,6 +1,6 @@
 --[[
 	Auctioneer
-	Version: 5.16.5405 (MousyMulgara)
+	Version: 5.17.5413 (NeedyNoddy)
 	Revision: $Id: CoreManifest.lua 5403 2013-04-03 16:50:32Z brykrys $
 	URL: http://auctioneeraddon.com/
 
@@ -72,7 +72,7 @@ end
 AucAdvanced = {}
 local lib = AucAdvanced
 
-lib.Version="5.16.5405";
+lib.Version="5.17.5413";
 if (lib.Version == "<".."%version%>") then
 	lib.Version = "5.16.DEV";
 end
@@ -125,4 +125,4 @@ function lib.ValidateInstall()
 	return true --NoOp for the moment
 end
 
-AucAdvanced.RegisterRevision("$URL: http://svn.norganna.org/auctioneer/branches/5.16/Auc-Advanced/CoreManifest.lua $", "$Rev: 5403 $")
+AucAdvanced.RegisterRevision("$URL: http://svn.norganna.org/auctioneer/branches/5.17/Auc-Advanced/CoreManifest.lua $", "$Rev: 5403 $")

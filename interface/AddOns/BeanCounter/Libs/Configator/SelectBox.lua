@@ -1,6 +1,6 @@
 --[[
 	SelectBox
-	Version: 5.16.5405 (MousyMulgara)
+	Version: 5.17.5413 (NeedyNoddy)
 	Revision: $Id: SelectBox.lua 312 2011-06-14 07:33:25Z brykrys $
 	URL: http://auctioneeraddon.com/dl/
 

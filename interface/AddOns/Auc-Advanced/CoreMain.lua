@@ -1,6 +1,6 @@
 ﻿--[[
 	Auctioneer
-	Version: 5.16.5405 (MousyMulgara)
+	Version: 5.17.5413 (NeedyNoddy)
 	Revision: $Id: CoreMain.lua 5378 2012-11-12 19:49:23Z brykrys $
 	URL: http://auctioneeraddon.com/
 
@@ -471,4 +471,4 @@ function AucAdvanced.Debug.Assert(test, message)
 	return DebugLib.Assert(addonName, test, message)
 end
 
-AucAdvanced.RegisterRevision("$URL: http://svn.norganna.org/auctioneer/branches/5.16/Auc-Advanced/CoreMain.lua $", "$Rev: 5378 $")
+AucAdvanced.RegisterRevision("$URL: http://svn.norganna.org/auctioneer/branches/5.17/Auc-Advanced/CoreMain.lua $", "$Rev: 5378 $")

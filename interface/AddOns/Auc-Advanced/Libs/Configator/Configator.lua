@@ -1,6 +1,6 @@
 --[[
 	Configator - A library to help you create a gui config
-	Version: 5.16.5405 (MousyMulgara)
+	Version: 5.17.5413 (NeedyNoddy)
 	Revision: $Id: Configator.lua 344 2012-10-06 15:56:26Z Esamynn $
 	URL: http://auctioneeraddon.com/dl/
 

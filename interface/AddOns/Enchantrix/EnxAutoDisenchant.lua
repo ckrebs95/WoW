@@ -1,6 +1,6 @@
 ﻿--[[
 	Enchantrix Addon for World of Warcraft(tm).
-	Version: 5.16.5405 (MousyMulgara)
+	Version: 5.17.5413 (NeedyNoddy)
 	Revision: $Id: EnxAutoDisenchant.lua 5401 2013-04-01 13:22:32Z brykrys $
 	URL: http://enchantrix.org/
 
@@ -28,7 +28,7 @@
 		since that is its designated purpose as per:
 		http://www.fsf.org/licensing/licenses/gpl-faq.html#InterpreterIncompat
 ]]
-Enchantrix_RegisterRevision("$URL: http://svn.norganna.org/auctioneer/branches/5.16/Enchantrix/EnxAutoDisenchant.lua $", "$Rev: 5401 $")
+Enchantrix_RegisterRevision("$URL: http://svn.norganna.org/auctioneer/branches/5.17/Enchantrix/EnxAutoDisenchant.lua $", "$Rev: 5401 $")
 
 local auto_de_session_ignore_list = {}
 local auto_de_frame

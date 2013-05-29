@@ -4,7 +4,7 @@ local BossIDs = LibStub("LibBossIDs-1.0")
 
 local Recount = _G.Recount
 
-local revision = tonumber(string.sub("$Revision: 1219 $", 12, -3))
+local revision = tonumber(string.sub("$Revision: 1242 $", 12, -3))
 if Recount.Version < revision then Recount.Version = revision end
 
 local dbCombatants
@@ -244,7 +244,8 @@ local AbsorbSpellDuration =
 	[1463] = 8, -- Incanter's Ward (Mage) (may have unverified aura trigger), MOP
 	-- Monk, MOP
 	[116849] = 12, -- Life Cocoon (may have unverified aura trigger), MOP
-	[123402] = 30, -- Guard (Ox Stance, Brewmaster) (may have unverified aura trigger), MOP
+--	[123402] = 30, -- Guard (Ox Stance, Brewmaster) (may have unverified aura trigger), MOP
+	[115295] = 30, -- Guard (Ox Stance, Brewmaster) (may have unverified aura trigger), MOP
 	-- Paladin
 	[58597] = 6, -- Sacred Shield (Paladin) proc (Fixed, thanks to Julith)
 	[86273] = 6, -- Illuminated Healing

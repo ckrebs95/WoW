@@ -4,14 +4,14 @@
 --                                     --
 --                                     --
 --    Patch: 5.3.0                     --
---    Updated: May 21, 2013            --
+--    Updated: May 23, 2013            --
 --    E-mail: feedback@wowhead.com     --
 --                                     --
 -----------------------------------------
 
 
 local WL_NAME = "|cffffff7fWowhead Looter|r";
-local WL_VERSION = 50009;
+local WL_VERSION = 50010;
 local WL_VERSION_PATCH = 4;
 
 
@@ -251,6 +251,7 @@ local wlN = 0;
 local wlEventId = 1;
 local wlForgeSpells = {};
 local wlAnvilSpells = {};
+local wlRegisterCooldown = {};
 
 local isBetaClient = false;
 if (tonumber(select(4, GetBuildInfo())) >= 50001) then
@@ -554,9 +555,27 @@ end
 --**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--
 
 function wlRegisterUnitLocation(id, level)
+	
+	local now = wlGetTime();
+	
+	-- Clean cooldowns
+	for k, v in pairs(wlRegisterCooldown) do
+		if v < now - 30000 then -- 30 seconds
+			wlRegisterCooldown[k] = nil;
+		end
+	end
+	
+	-- Check for CD
+	if wlRegisterCooldown[id] then
+		return;
+	end
+	
+	-- Start CD
+	wlRegisterCooldown[id] = now;
+	
 	local dd = wlGetInstanceDifficulty();
-	local zone, x, y, dl = wlGetLocation();
 	local mapAreaID = wlGetCurrentMapAreaID();
+	local zone, x, y, dl = wlGetLocation();
 
 	wlUpdateVariable(wlUnit, id, "spec", dd, level, "loc", zone, mapAreaID, "init", { n = 0 });
 
@@ -2590,14 +2609,24 @@ end
 
 function wlGetLocation()
 	local zone = GetRealZoneText() or "";
-	-- Make sure coords are for the real zone
-	-- Disabled if not in the world
-	if(wlSelectOne(3,GetInstanceInfo()) == 0) then
+	local mainZone, _, _, isMicroZone, microZone = GetMapInfo();
+	
+	-- Save Map
+	local currentDL = GetCurrentMapDungeonLevel() or 0;
+	local currentId = GetCurrentMapAreaID();
+	local wasMicroZone = isMicroZone;
+	local oldMicroZone = microZone;
+	
+	-- Obtain true coords
+	SetMapToCurrentZone();
+	mainZone, _, _, isMicroZone, microZone = GetMapInfo();
+	if((wlSelectOne(3,GetInstanceInfo()) == 0) and (microZone ~= "ShrineofSevenStars") and(microZone ~= "ShrineofTwoMoons") and (isMicroZone == true)) then
 		SetMapByID(GetCurrentMapAreaID());
 	end
+	
 	local x, y = GetPlayerMapPosition("player");
 	local dl = GetCurrentMapDungeonLevel() or 0;
-
+	
 	if not x or not y then
 		x, y = 0, 0;
 	end
@@ -2621,6 +2650,20 @@ function wlGetLocation()
 		dl = dl - 1;
 	end
 
+	-- Restore Map
+	if wasMicroZone then
+		if oldMicroZone == "ShrineofSevenStars" then
+			SetMapByID(905);
+		elseif oldMicroZone == "ShrineofTwoMoons" then
+			SetMapByID(903);
+		else
+			SetMapToCurrentZone();
+		end
+	else
+		SetMapByID(currentId);
+	end
+	SetDungeonMapLevel(currentDL); 
+	
 	return zone, floor(x * 1000 + 0.5), floor(y * 1000 + 0.5), dl;
 end
 
@@ -4893,15 +4936,38 @@ end
 --**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--
 
 function wlGetCurrentMapAreaID()
-
+	
 	local dl = GetCurrentMapDungeonLevel() or 0; -- Save DL
-	local temp = GetCurrentMapAreaID(); -- Save Location
+	local currentId = GetCurrentMapAreaID(); -- Save Location
+	local mapAreaID = 0;
+	
+	local mainZone, _, _, isMicroZone, microZone = GetMapInfo();
+	local wasMicroZone = isMicroZone;
+	local oldMicroZone = microZone;
 	
 	SetMapToCurrentZone(); -- Move Map
-	local mapAreaID = GetCurrentMapAreaID();
+	mainZone, _, _, isMicroZone, microZone = GetMapInfo();
+	if microZone == "ShrineofSevenStars" then
+		mapAreaID = 905;
+	elseif microZone == "ShrineofTwoMoons" then
+		mapAreaID = 903;
+	else
+		mapAreaID = GetCurrentMapAreaID();
+	end
 	
-	SetMapByID(temp); -- Restore Map
-	SetDungeonMapLevel(dl); -- Restore Dungeon Level
+	-- Restore Map
+	if wasMicroZone then
+		if oldMicroZone == "ShrineofSevenStars" then
+			SetMapByID(905);
+		elseif oldMicroZone == "ShrineofTwoMoons" then
+			SetMapByID(903);
+		else
+			SetMapToCurrentZone();
+		end
+	else
+		SetMapByID(currentId);
+	end
+	SetDungeonMapLevel(dl); 
 	
 	return mapAreaID;
 end

@@ -1,6 +1,6 @@
 ﻿--[[
 	Auctioneer - Price Level Utility module
-	Version: 5.16.5405 (MousyMulgara)
+	Version: 5.17.5413 (NeedyNoddy)
 	Revision: $Id: CompactUI.lua 5400 2013-03-30 11:58:47Z brykrys $
 	URL: http://auctioneeraddon.com/
 
@@ -861,4 +861,4 @@ function private.SetupConfigGui(gui)
 
 end
 
-AucAdvanced.RegisterRevision("$URL: http://svn.norganna.org/auctioneer/branches/5.16/Auc-Util-CompactUI/CompactUI.lua $", "$Rev: 5400 $")
+AucAdvanced.RegisterRevision("$URL: http://svn.norganna.org/auctioneer/branches/5.17/Auc-Util-CompactUI/CompactUI.lua $", "$Rev: 5400 $")

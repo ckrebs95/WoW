@@ -28,7 +28,7 @@ Y: -27
 W: 124
 H: 19
 Frame: NxPunkHUD
-FrameLevel: 11
+FrameLevel: 9
 Anchor: TOPRIGHT
 X: -8
 Y: -45
@@ -42,7 +42,7 @@ Y: 222
 W: 32
 H: 32
 Frame: Recount_MainWindow
-FrameLevel: 17
+FrameLevel: 14
 Anchor: BOTTOMLEFT
 X: 6
 Y: 7

@@ -1,6 +1,6 @@
 --[[
 	Auctioneer Advanced
-	Version: 5.16.5405 (MousyMulgara)
+	Version: 5.17.5413 (NeedyNoddy)
 	Revision: $Id: CoreAPI.lua 5398 2013-03-27 19:22:01Z brykrys $
 	URL: http://auctioneeraddon.com/
 
@@ -1183,4 +1183,4 @@ do
 
 end
 
-AucAdvanced.RegisterRevision("$URL: http://svn.norganna.org/auctioneer/branches/5.16/Auc-Advanced/CoreAPI.lua $", "$Rev: 5398 $")
+AucAdvanced.RegisterRevision("$URL: http://svn.norganna.org/auctioneer/branches/5.17/Auc-Advanced/CoreAPI.lua $", "$Rev: 5398 $")

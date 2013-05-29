@@ -1,0 +1,15 @@
+------------------------------------------------------------------------
+r1243 | elsia | 2013-05-27 20:35:39 +0000 (Mon, 27 May 2013) | 1 line
+Changed paths:
+   A /tags/v5.3.0 release (from /trunk:1242)
+
+Tagging as v5.3.0 release
+------------------------------------------------------------------------
+r1242 | elsia | 2013-05-27 20:34:08 +0000 (Mon, 27 May 2013) | 2 lines
+Changed paths:
+   M /trunk/Recount.toc
+   M /trunk/Tracker.lua
+
+*) Toc bump.
+*) Fixed Guard aura tracking (thanks minithegreat)
+------------------------------------------------------------------------

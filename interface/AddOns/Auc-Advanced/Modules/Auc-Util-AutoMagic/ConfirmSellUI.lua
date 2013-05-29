@@ -1,6 +1,6 @@
 --[[
 	Auctioneer - AutoMagic Utility module
-	Version: 5.16.5405 (MousyMulgara)
+	Version: 5.17.5413 (NeedyNoddy)
 	Revision: $Id: ConfirmSellUI.lua 5345 2012-09-05 11:17:00Z brykrys $
 	URL: http://auctioneeraddon.com/
 
@@ -331,4 +331,4 @@ function lib.makeconfirmsellui()
 end
 
 lib.makeconfirmsellui()
-AucAdvanced.RegisterRevision("$URL: http://svn.norganna.org/auctioneer/branches/5.16/Auc-Util-AutoMagic/ConfirmSellUI.lua $", "$Rev: 5345 $")
+AucAdvanced.RegisterRevision("$URL: http://svn.norganna.org/auctioneer/branches/5.17/Auc-Util-AutoMagic/ConfirmSellUI.lua $", "$Rev: 5345 $")
