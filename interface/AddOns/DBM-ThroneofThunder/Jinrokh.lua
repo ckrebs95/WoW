@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(827, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9561 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9619 $"):sub(12, -3))
 mod:SetCreatureID(69465)
 mod:SetQuestID(32744)
 mod:SetZone()
@@ -110,7 +110,7 @@ function mod:SPELL_CAST_START(args)
 		warnStorm:Show()
 		specWarnStorm:Show()
 		timerStorm:Start()
-		timerStaticBurstCD:Start(20.5)
+		timerStaticBurstCD:Start(20.5)--May need tweaking (20.1-24.2)
 		timerThrowCD:Start()
 		if self:IsDifficulty("heroic10", "heroic25") then
 			timerIonizationCD:Start()
@@ -119,7 +119,7 @@ function mod:SPELL_CAST_START(args)
 	elseif args.spellId == 138732 then
 		warnIonization:Show()
 		specWarnIonization:Show()
-		if timerStaticBurstCD:GetTime() == 0 or timerStaticBurstCD:GetTime() > 10 then--Static Burst will be delayed
+		if timerStaticBurstCD:GetTime() == 0 or timerStaticBurstCD:GetTime() > 5 then -- Static Burst will be delayed by Ionization
 			timerStaticBurstCD:Start(12)
 		end
 	end

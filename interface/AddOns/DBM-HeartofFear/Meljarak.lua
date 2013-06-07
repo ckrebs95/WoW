@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(741, "DBM-HeartofFear", nil, 330)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9576 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9626 $"):sub(12, -3))
 mod:SetCreatureID(62397)
 mod:SetZone()
 mod:SetUsedIcons(1, 2)
@@ -23,7 +23,7 @@ mod:RegisterEventsInCombat(
 	"SPELL_PERIODIC_MISSED",
 	"UNIT_DIED",
 	"UNIT_SPELLCAST_SUCCEEDED",
-	"UNIT_AURA"
+	"UNIT_AURA_UNFILTERED"
 )
 
 local isDispeller = select(2, UnitClass("player")) == "MAGE"
@@ -259,7 +259,7 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 	end
 end
 
-function mod:UNIT_AURA(uId)
+function mod:UNIT_AURA_UNFILTERED(uId)
 	if UnitDebuff(uId, strikeSpell) and not strikeTarget then
 		strikeTarget = uId
 		local name = DBM:GetUnitFullName(uId)

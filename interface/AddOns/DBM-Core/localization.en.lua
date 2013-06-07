@@ -5,12 +5,14 @@ DBM_HOW_TO_USE_MOD					= "Welcome to DBM. Type /dbm help for a list of supported
 DBM_FORUMS_MESSAGE					= "Found a bug or wrong timer? Do you think some mod would need an additional warning, timer or special feature?\nVisit the new Deadly Boss Mods discussion, bug report and feature request forums at |HDBM:forums|h|cff3588ffhttp://www.deadlybossmods.com|r (you can click the link to copy the URL)"
 DBM_FORUMS_COPY_URL_DIALOG			= "Come visit our new discussion and support forums\r\n(hosted by Elitist Jerks!)"
 
-
 DBM_CORE_LOAD_MOD_ERROR				= "Error while loading boss mods for %s: %s"
 DBM_CORE_LOAD_MOD_SUCCESS			= "Loaded '%s' mods. For more options, type /dbm or /dbm help in your chat."
+DBM_CORE_LOAD_MOD_COMBAT			= "Loading of '%s' delayed until you leave combat"
 DBM_CORE_LOAD_GUI_ERROR				= "Could not load GUI: %s"
 DBM_CORE_LOAD_GUI_COMBAT			= "GUI cannot be initially loaded in combat. GUI will be loaded out of combat. After GUI loaded, you can load GUI in combat."
 DBM_CORE_BAD_LOAD					= "DBM has detected your mod for this instance failed to fully load correctly because of combat. As soon as you are out of combat, please do /console reloadui as soon as possible."
+
+DBM_CORE_LOOT_SPEC_REMINDER			= "Your current spec is %s. Your current loot choice is %s."
 
 DBM_CORE_BIGWIGS_ICON_CONFLICT		= "DBM has detected that you have raid icons turned on in both BigWigs and DBM. Please disable icons in one of them to avoid conflict with your group leader"
 
@@ -40,8 +42,6 @@ DBM_CORE_MIN						= "min"
 DBM_CORE_MIN_FMT					= "%d min"
 DBM_CORE_SEC						= "sec"
 DBM_CORE_SEC_FMT					= "%d sec"
-DBM_CORE_DEAD						= "dead"--DEAD
-DBM_CORE_OK							= "Okay"--OKAY
 
 DBM_CORE_GENERIC_WARNING_DUPLICATE	= "One of the %s"
 DBM_CORE_GENERIC_WARNING_BERSERK	= "Berserk in %s %s"
@@ -53,7 +53,6 @@ DBM_CORE_OPTION_HEALTH_FRAME		= "Show boss health frame"
 
 DBM_CORE_OPTION_CATEGORY_TIMERS		= "Bars"
 DBM_CORE_OPTION_CATEGORY_WARNINGS	= "Announces"
-DBM_CORE_OPTION_CATEGORY_MISC		= "Miscellaneous"--MISCELLANEOUS
 
 DBM_CORE_AUTO_RESPONDED						= "Auto-responded."
 DBM_CORE_STATUS_WHISPER						= "%s: %s, %d/%d people alive"
@@ -90,8 +89,6 @@ DBM_PIZZA_SYNC_INFO					= "|Hplayer:%1$s|h[%1$s]|h sent you a DBM timer: '%2$s'\
 DBM_PIZZA_CONFIRM_IGNORE			= "Do you really want to ignore DBM timers from %s for this session?"
 DBM_PIZZA_ERROR_USAGE				= "Usage: /dbm [broadcast] timer <time> <text>"
 
-DBM_CORE_ERROR_DBMV3_LOADED			= "Deadly Boss Mods is running twice because you have DBMv3 and DBMv4 installed and enabled!\nClick \"Okay\" to disable DBMv3 and reload your interface.\nYou should also clean up your AddOns folder by deleting the old DBMv3 folders."
-
 DBM_CORE_MINIMAP_TOOLTIP_HEADER		= "Deadly Boss Mods"
 DBM_CORE_MINIMAP_TOOLTIP_FOOTER		= "Shift+click or right-click to move\nAlt+shift+click for free drag and drop"
 
@@ -103,9 +100,7 @@ DBM_CORE_RANGECHECK_SOUND_OPTION_2	= "Sound when more than one player is in rang
 DBM_CORE_RANGECHECK_SOUND_0			= "No sound"
 DBM_CORE_RANGECHECK_SOUND_1			= "Default sound"
 DBM_CORE_RANGECHECK_SOUND_2			= "Annoying beep"
-DBM_CORE_RANGECHECK_HIDE			= "Hide"--HIDE
 DBM_CORE_RANGECHECK_SETRANGE_TO		= "%d yd"
-DBM_CORE_RANGECHECK_LOCK			= "Lock frame"--LOCK_FRAME
 DBM_CORE_RANGECHECK_OPTION_FRAMES	= "Frames"
 DBM_CORE_RANGECHECK_OPTION_RADAR	= "Show radar frame"
 DBM_CORE_RANGECHECK_OPTION_TEXT		= "Show text frame"
@@ -113,8 +108,6 @@ DBM_CORE_RANGECHECK_OPTION_BOTH		= "Show both frames"
 DBM_CORE_RANGERADAR_HEADER			= "Range Radar (%d yd)"
 DBM_CORE_RANGERADAR_IN_RANGE_TEXT	= "%d players in range"
 
-DBM_CORE_INFOFRAME_LOCK				= "Lock frame"--LOCK_FRAME
-DBM_CORE_INFOFRAME_HIDE				= "Hide"--HIDE
 DBM_CORE_INFOFRAME_SHOW_SELF		= "Always show your power"		-- Always show your own power value even if you are below the threshold
 
 DBM_LFG_INVITE						= "LFG Invite"
@@ -136,9 +129,6 @@ DBM_CORE_SLASHCMD_HELP				= {
 DBM_ERROR_NO_PERMISSION				= "You don't have the required permission to do this."
 
 DBM_CORE_BOSSHEALTH_HIDE_FRAME		= "Close health frame"
-
-DBM_CORE_ALLIANCE					= "Alliance"--FACTION_ALLIANCE
-DBM_CORE_HORDE						= "Horde"--FACTION_HORDE
 
 DBM_CORE_WORLD_BOSS					= "World Boss"
 DBM_CORE_UNKNOWN					= "unknown"--UNKNOWN which is "Unknown" (does u vs U matter?)

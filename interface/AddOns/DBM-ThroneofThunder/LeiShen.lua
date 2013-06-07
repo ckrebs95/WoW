@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(832, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9572 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9726 $"):sub(12, -3))
 mod:SetCreatureID(68397)--Diffusion Chain Conduit 68696, Static Shock Conduit 68398, Bouncing Bolt conduit 68698, Overcharge conduit 68697
 mod:SetQuestID(32756)
 mod:SetZone()
@@ -44,7 +44,7 @@ local warnHelmOfCommand					= mod:NewTargetAnnounce(139011, 3)
 
 --Conduits (All phases)
 local specWarnStaticShock				= mod:NewSpecialWarningYou(135695)
-local yellStaticShock					= mod:NewYell(135695)
+local yellStaticShock					= mod:NewYell(135695, L.StaticYell)
 local specWarnStaticShockNear			= mod:NewSpecialWarningClose(135695)
 local specWarnDiffusionChainSoon		= mod:NewSpecialWarningPreWarn(135991, nil, 4)
 local specWarnOvercharged				= mod:NewSpecialWarningYou(136295)
@@ -64,7 +64,7 @@ local specWarnLightningWhip				= mod:NewSpecialWarningSpell(136850, nil, nil, ni
 local specWarnSummonBallLightning		= mod:NewSpecialWarningSpell(136543, nil, nil, nil, 2)
 local specWarnOverloadedCircuits		= mod:NewSpecialWarningMove(137176)
 --Herioc
-local specWarnHelmOfCommand				= mod:NewSpecialWarningYou(139011)
+local specWarnHelmOfCommand				= mod:NewSpecialWarningYou(139011, nil, nil, nil, 3)
 
 --Conduits (All phases)
 local timerStaticShock					= mod:NewBuffFadesTimer(8, 135695)
@@ -75,11 +75,11 @@ local timerOverchargeCD					= mod:NewCDTimer(40, 136295)
 local timerBouncingBoltCD				= mod:NewCDTimer(40, 136361)
 local timerSuperChargedConduits			= mod:NewBuffActiveTimer(47, 137045)--Actually intermission only, but it fits best with conduits
 --Phase 1
-local timerDecapitateCD					= mod:NewCDTimer(50, 134912)--Cooldown with some variation. 50-57ish or so.
+local timerDecapitateCD					= mod:NewCDTimer(50, 134912, nil, mod:IsTank())--Cooldown with some variation. 50-57ish or so.
 local timerThunderstruck				= mod:NewCastTimer(4.8, 135095)--4 sec cast. + landing 0.8~1.3 sec.
 local timerThunderstruckCD				= mod:NewNextTimer(46, 135095)--Seems like an exact bar
 --Phase 2
-local timerFussionSlashCD				= mod:NewCDTimer(42.5, 136478)
+local timerFussionSlashCD				= mod:NewCDTimer(42.5, 136478, nil, mod:IsTank())
 local timerLightningWhip				= mod:NewCastTimer(4, 136850)
 local timerLightningWhipCD				= mod:NewNextTimer(45.5, 136850)--Also an exact bar
 local timerSummonBallLightningCD		= mod:NewNextTimer(45.5, 136543)--Seems exact on live, versus the variable it was on PTR
@@ -92,6 +92,7 @@ local timerHelmOfCommand				= mod:NewCDTimer(14, 139011)
 local berserkTimer						= mod:NewBerserkTimer(900)--Confirmed in LFR, probably the same in all modes though?
 
 local countdownThunderstruck			= mod:NewCountdown(46, 135095)
+local countdownBouncingBolt				= mod:NewCountdown(40, 136361, nil, nil, nil, nil, true)--Pretty big deal on heroic, it's the one perminent ability you see in all strats. Should now play nice with thunderstruck with alternate voice code in ;)
 local countdownStaticShockFades			= mod:NewCountdownFades(7, 135695, false)--May confuse with thundershock option default so off as default.
 
 local soundDecapitate					= mod:NewSound(134912)
@@ -149,7 +150,7 @@ function mod:OnCombatStart(delay)
 	timerDecapitateCD:Start(40-delay)--First seems to be 45, rest 50. it's a CD though, not a "next"
 	berserkTimer:Start(-delay)
 	self:RegisterShortTermEvents(
-		"UNIT_HEALTH_FREQUENT"
+		"UNIT_HEALTH_FREQUENT boss1"
 	)-- Do not use on phase 3.
 end
 
@@ -216,7 +217,13 @@ function mod:SPELL_AURA_APPLIED(args)
 		self:Schedule(0.3, warnStaticShockTargets)
 		if args:IsPlayer() then
 			specWarnStaticShock:Show()
-			yellStaticShock:Yell()
+			if not self:IsDifficulty("lfr25") then
+				yellStaticShock:Schedule(7, 1)
+				yellStaticShock:Schedule(6, 2)
+				yellStaticShock:Schedule(5, 3)
+				yellStaticShock:Schedule(4, 4)
+			end
+			yellStaticShock:Schedule(3, 5)
 			timerStaticShock:Start()
 			countdownStaticShockFades:Start()
 		else
@@ -324,6 +331,7 @@ function mod:SPELL_AURA_REMOVED(args)
 		timerOverchargeCD:Cancel()
 	elseif args.spellId == 135683 and args:GetDestCreatureID() == 68397 and not intermissionActive then--West (Bouncing Bolt)
 		timerBouncingBoltCD:Cancel()
+		countdownBouncingBolt:Cancel()
 		specWarnBouncingBoltSoon:Cancel()
 	--Conduit deactivations
 	elseif args.spellId == 135695 and self.Options.SetIconOnStaticShock then
@@ -379,6 +387,7 @@ function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg, _, _, _, target)
 			end
 			if westDestroyed then
 				timerBouncingBoltCD:Start(14)
+				countdownBouncingBolt:Start(14)
 			end
 		end
 		if phase == 2 then--Start Phase 2 timers
@@ -451,6 +460,8 @@ end
 function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 	if spellId == 137146 and self:AntiSpam(2, 2) then--Supercharge Conduits (comes earlier than other events so we use this one)
 		intermissionActive = true
+		specWarnDiffusionChainSoon:Cancel()
+		specWarnBouncingBoltSoon:Cancel()
 		timerThunderstruckCD:Cancel()
 		countdownThunderstruck:Cancel()
 		timerDecapitateCD:Cancel()
@@ -462,6 +473,7 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 		timerDiffusionChainCD:Cancel()
 		timerOverchargeCD:Cancel()
 		timerBouncingBoltCD:Cancel()
+		countdownBouncingBolt:Cancel()
 		if not eastDestroyed then
 			if self:IsDifficulty("lfr25") then
 				timerDiffusionChainCD:Start(10)
@@ -499,6 +511,7 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 		warnBouncingBolt:Show()
 		specWarnBouncingBolt:Show()
 		timerBouncingBoltCD:Start()
+		countdownBouncingBolt:Start()
 		specWarnBouncingBoltSoon:Schedule(36)
 	elseif spellId == 136869 and self:AntiSpam(2, 4) then--Violent Gale Winds
 		warnViolentGaleWinds:Show()

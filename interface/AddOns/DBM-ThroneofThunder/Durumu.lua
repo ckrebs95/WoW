@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(818, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9566 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9678 $"):sub(12, -3))
 mod:SetCreatureID(68036)--Crimson Fog 69050, 
 mod:SetQuestID(32750)
 mod:SetZone()
@@ -20,7 +20,7 @@ mod:RegisterEventsInCombat(
 	"SPELL_PERIODIC_DAMAGE",
 	"SPELL_PERIODIC_MISS",
 	"CHAT_MSG_MONSTER_EMOTE",
-	"UNIT_AURA"
+	"UNIT_DIED"
 )
 
 local warnHardStare					= mod:NewSpellAnnounce(133765, 3, nil, mod:IsTank() or mod:IsHealer())--Announce CAST not debuff, cause it misses a lot, plus we have 1 sec to hit an active mitigation
@@ -238,8 +238,7 @@ function mod:SPELL_CAST_START(args)
 end
 
 local function findBeamJump(spellName, spellId)
-	for i=1, DBM:GetNumGroupMembers() do
-		local uId = "raid"..i
+	for uId in DBM:GetGroupMembers() do
 		local name = DBM:GetUnitFullName(uId)
 		if spellId == 139202 and UnitDebuff(uId, spellName) and lastBlue ~= name then
 			lastBlue = name
@@ -251,7 +250,7 @@ local function findBeamJump(spellName, spellId)
 				end
 			end
 			if mod.Options.SetIconRays then
-				mod:SetIcon(name, 6)--Square
+				SetRaidTarget(uId, 6)--Square
 			end
 			return
 		elseif spellId == 139204 and UnitDebuff(uId, spellName) and lastRed ~= name then
@@ -260,7 +259,7 @@ local function findBeamJump(spellName, spellId)
 				specWarnRedBeam:Show()
 			end
 			if mod.Options.SetIconRays then
-				mod:SetIcon(name, 7)--Cross
+				SetRaidTarget(uId, 7)--Cross
 			end
 			return
 		end
@@ -358,7 +357,6 @@ function mod:SPELL_AURA_APPLIED(args)
 		darkParasiteTargets[#darkParasiteTargets + 1] = args.destName
 		local _, _, _, _, _, duration = UnitDebuff(args.destName, args.spellName)
 		timerDarkParasite:Start(duration, args.destName)
-		self:Unschedule(warnDarkParasiteTargets)
 		if #darkParasiteTargets >= 3 and self:IsDifficulty("heroic25") or self:IsDifficulty("heroic10") then
 			warnDarkParasiteTargets()
 		else
@@ -485,6 +483,7 @@ function mod:UNIT_DIED(args)
 		if totalFogs >= 1 then
 			warnAddsLeft:Show(totalFogs)
 		else--No adds left, force ability is re-enabled
+			self:Unschedule(findBeamJump)
 			timerObliterateCD:Cancel()
 			timerForceOfWillCD:Start(15)
 			if self.Options.SetIconRays and lastRed then
@@ -502,6 +501,7 @@ function mod:UNIT_DIED(args)
 		if self:IsDifficulty("lfr25") then
 			totalFogs = totalFogs - 1
 			if totalFogs >= 1 then
+				self:Unschedule(findBeamJump)
 				--LFR does something completely different than kill 3 crimson adds to end phase. in LFR, they kill 1 of each color (which is completely against what you do in 10N, 25N, 10H, 25H)
 				warnAddsLeft:Show(totalFogs)
 			else--No adds left, force ability is re-enabled
@@ -521,6 +521,7 @@ function mod:UNIT_DIED(args)
 	elseif cid == 69052 then--Azure Fog (endlessly respawn in all but LFR, so we ignore them dying anywhere else)
 		--Maybe do something for heroic here too, if timers for the crap this thing does gets added.
 		if self:IsDifficulty("lfr25") then
+			self:Unschedule(findBeamJump)
 			totalFogs = totalFogs - 1
 			if totalFogs >= 1 then
 				--LFR does something completely different than kill 3 crimson adds to end phase. in LFR, they kill 1 of each color (which is completely against what you do in 10N, 25N, 10H, 25H)

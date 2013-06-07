@@ -14,11 +14,11 @@ L:SetWarningLocalization{
 }
 
 L:SetTimerLocalization{
-	NextPlatform	= "Nächste Plattform"
+	NextPlatform	= "Max. Plattformdauer"
 }
 
 L:SetOptionLocalization{
-	NextPlatform	= "Zeige Zeit bis Al'ar die Plattform wechselt"
+	NextPlatform	= "Zeige Zeit bis Al'ar spätestens die Plattform wechselt\n(wechselt möglicherweise früher, aber fast nie später)"
 }
 
 L:SetMiscLocalization{
@@ -117,8 +117,8 @@ L:SetOptionLocalization{
 	WarnGaze		= "Zeige Warnung für Ziele von Thaladreds Blick",
 	WarnMobDead		= "Zeige Warnung für getötete Waffen in Phase 2",
 	WarnEgg			= "Zeige Warnung, wenn Phönixei erscheint",
-	SpecWarnGaze	= "Zeige Spezialwarnung, wenn dich Thaladred anblickt",
-	SpecWarnEgg		= "Zeige Spezialwarnung, wenn Phönixei erscheint",
+	SpecWarnGaze	= "Spezialwarnung, wenn dich Thaladred anblickt",
+	SpecWarnEgg		= "Spezialwarnung, wenn Phönixei erscheint",
 	TimerPhase		= "Zeige Zeit bis nächste Phase",
 	TimerPhase1mob	= "Zeige Zeit bis Berater in Phase 1 aktiv werden",
 	TimerNextGaze	= "Zeige Zeit bis Thaladred ein neues Ziel anblickt",

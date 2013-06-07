@@ -1,10 +1,11 @@
 local mod	= DBM:NewMod(829, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9568 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9705 $"):sub(12, -3))
 mod:SetCreatureID(68905, 68904)--Lu'lin 68905, Suen 68904
 mod:SetQuestID(32755)
 mod:SetZone()
+mod:SetBossHPInfoToHighest()
 
 mod:RegisterCombat("combat")
 
@@ -17,7 +18,7 @@ mod:RegisterEventsInCombat(
 	"SPELL_SUMMON",
 	"CHAT_MSG_MONSTER_YELL",
 	"UNIT_DIED",
-	"UNIT_SPELLCAST_SUCCEEDED"
+	"UNIT_SPELLCAST_SUCCEEDED boss1 boss2"
 )
 
 local Lulin = EJ_GetSectionInfo(7629)
@@ -209,33 +210,42 @@ function mod:UNIT_DIED(args)
 		if self.Options.RangeFrame then
 			DBM.RangeCheck:Hide()
 		end
+		phase3Started = true
 	elseif cid == 68904 then--Suen
 		--timerFlamesOfPassionCD:Cancel()
-		--timerBeastOfNightmaresCD:Start()--My group kills Lu'lin first. Need log of Suen being killed first to get first beast timer value
+		timerBeastOfNightmaresCD:Start(64)
 		timerNuclearInfernoCD:Cancel()
 		warnNight:Show()
+		phase3Started = true
 	end
 end
 
 function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
-	if spellId == 137105 and self:AntiSpam(2, 1) then--Suen Ports away (Night Phase)
-		timerLightOfDayCD:Cancel()
-		timerFanOfFlamesCD:Cancel()
-		--timerFlamesOfPassionCD:Cancel()
+	if spellId == 137105 then--Suen Ports away (Night Phase)
 		warnNight:Show()
 		timerDayCD:Start()
 		timerDuskCD:Start()
-		--timerCosmicBarrageCD:Start(17)--I want to analyze a few logs and readd this once I know for certain this IS the minimum time.
+		timerCosmicBarrageCD:Start(17)
 		timerTearsOfTheSunCD:Start(28.5)
 		timerBeastOfNightmaresCD:Start()
-	elseif spellId == 137187 and self:AntiSpam(2, 2) then--Lu'lin Ports away (Day Phase)
+	elseif spellId == 137187 then--Lu'lin Ports away (Day Phase)
 		self:SendSync("Phase2")
-	elseif spellId == 138823 and self:AntiSpam(2, 3) then
+	elseif spellId == 138823 then
 		warnLightOfDay:Show()
 		timerLightOfDayCD:Start()
 	end
 end
 
+--[[
+patch 5.3 week 1 (want to see at least couple more logs to see if the "no second comet" bug is truely fixed.)
+"<244.6 22:35:04> [UNIT_SPELLCAST_SUCCEEDED] Lu'lin [boss1:Dissipate::0:137187]",
+"<266.0 22:35:26> [CLEU] SPELL_SUMMON#false#0xF1310D29000056FC#Lu'lin#2632#0#0xF1310FDC0000BA57#Ice Comet#2600#0#137419#Ice Comet#16",
+"<290.2 22:35:50> [CLEU] SPELL_SUMMON#false#0xF1310D29000056FC#Lu'lin#2632#0#0xF1310FDC0000BB18#Ice Comet#2600#0#137419#Ice Comet#16",
+"<293.5 22:35:53> [CLEU] SPELL_CAST_START#false#0xF1310D280000569B#Suen#68168#0##nil#-2147483648#-2147483648#137491#Nuclear Inferno#4",
+"<315.4 22:36:15> [CLEU] SPELL_SUMMON#false#0xF1310D29000056FC#Lu'lin#2632#0#0xF1310FDC0000BBCB#Ice Comet#2600#0#137419#Ice Comet#16",
+"<335.2 22:36:35> [CLEU] SPELL_SUMMON#false#0xF1310D29000056FC#Lu'lin#2632#0#0xF1310FDC0000BC4A#Ice Comet#2600#0#137419#Ice Comet#16",
+"<362.8 22:37:02> [CLEU] SPELL_SUMMON#false#0xF1310D29000056FC#Lu'lin#2632#0#0xF1310FDC0000BCE1#Ice Comet#2600#0#137419#Ice Comet#16",
+--]]
 function mod:OnSync(msg)
 	if msg == "Phase2" and GetTime() - self.combatInfo.pull >= 5 then--Rare cases, this fires on pull, we need to ignore it if it happens within 5 sec of pull
 		timerCosmicBarrageCD:Cancel()
@@ -247,8 +257,9 @@ function mod:OnSync(msg)
 		timerFanOfFlamesCD:Start()
 		--timerFlamesOfPassionCD:Start(12.5)
 		--Apparently changing in 5.3, so new logs will be needed once patch is deployed.
+		--Got one 5.3 log, doesn't look like they changed a thing.
 		if self:IsDifficulty("heroic10", "heroic25") then
-			timerNuclearInfernoCD:Start(45)--45-50 second variation (cd is 45, but there is  hard code failsafe that if a commet has spawned recently it's extended
+			timerNuclearInfernoCD:Start(45)--45-50 second variation (cd is 45, but there is hard code failsafe that if a commet has spawned recently it's extended?
 		end
 		self:RegisterShortTermEvents(
 			"INSTANCE_ENCOUNTER_ENGAGE_UNIT"
@@ -261,7 +272,7 @@ function mod:OnSync(msg)
 		if self:IsDifficulty("heroic10", "heroic25") then
 			timerNuclearInfernoCD:Start(63)
 		end
-		--timerCosmicBarrageCD:Start(54)--I want to analyze a few logs and readd this once I know for certain this IS the minimum time.
+		timerCosmicBarrageCD:Start(54)--I want to analyze a few logs and readd this once I know for certain this IS the minimum time.
 	elseif msg == "Phase3" and GetTime() - self.combatInfo.pull >= 5 then
 		self:UnregisterShortTermEvents()
 		timerFanOfFlamesCD:Cancel()--DO NOT CANCEL THIS ON YELL
@@ -273,7 +284,7 @@ function mod:OnSync(msg)
 			if self:IsDifficulty("heroic10", "heroic25") then
 				timerNuclearInfernoCD:Start(57)
 			end
-			--timerCosmicBarrageCD:Start(48)--I want to analyze a few logs and readd this once I know for certain this IS the minimum time.
+			timerCosmicBarrageCD:Start(48)--I want to analyze a few logs and readd this once I know for certain this IS the minimum time.
 		end
 	elseif msg == "Comet" then
 		warnIceComet:Show()

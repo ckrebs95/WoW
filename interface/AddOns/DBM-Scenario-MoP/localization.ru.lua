@@ -43,6 +43,16 @@ L:SetMiscLocalization{
 	TelvrakPull			= "Зан'весс никогда не падет!"
 }
 
+------------------------------
+-- Battle on the High Seas ---
+------------------------------
+L= DBM:GetModLocalization("d652")
+
+-----------------------
+-- Blood in the Snow --
+-----------------------
+L= DBM:GetModLocalization("d646")
+
 -----------------------
 -- Brewmoon Festival --
 -----------------------
@@ -85,6 +95,15 @@ L:SetMiscLocalization{
 	LizardLord		= "Пещеру сторожат сауроки. Займемся ими."
 }
 
+----------------------------
+-- Dark Heart of Pandaria --
+----------------------------
+L= DBM:GetModLocalization("d647")
+
+L:SetMiscLocalization{
+	summonElemental		= "Прислужники, уничтожьте этих букашек!"
+}
+
 ------------------------
 -- Greenstone Village --
 ------------------------
@@ -101,6 +120,16 @@ L:SetWarningLocalization{
 
 L:SetOptionLocalization{
 	WarnAchFiveAlive	= "Показывать предупреждение, если достижение \"Неубиваемая пятерка\" провалено"
+}
+
+----------------------------
+-- The Secret of Ragefire --
+----------------------------
+L= DBM:GetModLocalization("d649")
+
+L:SetMiscLocalization{
+	XorenthPull		= "Низшие расы – враги истинной Орды!",
+	ElagloPull		= "Глупцы! Истинную Орду такие, как вы, не остановят."
 }
 
 ----------------------

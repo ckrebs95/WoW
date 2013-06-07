@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(825, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9578 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9709 $"):sub(12, -3))
 mod:SetCreatureID(67977)
 mod:SetQuestID(32747)
 mod:SetZone()
@@ -14,8 +14,8 @@ mod:RegisterEventsInCombat(
 	"SPELL_AURA_REMOVED",
 	"SPELL_CAST_START",
 	"SPELL_CAST_SUCCESS",
-	"UNIT_AURA",
-	"UNIT_SPELLCAST_SUCCEEDED"
+	"UNIT_AURA boss1",
+	"UNIT_SPELLCAST_SUCCEEDED boss1"
 )
 
 local warnBite						= mod:NewSpellAnnounce(135251, 3, nil, mod:IsTank())
@@ -79,6 +79,18 @@ local function clearStomp()
 	end
 end
 
+local function checkCrystalShell()
+	if not UnitDebuff("player", shelldName) and not UnitIsDeadOrGhost("player") then
+		local percent = (UnitHealth("player") / UnitHealthMax("player")) * 100
+		if percent > 90 then
+			specWarnCrystalShell:Show(shelldName)
+		else
+			mod:Unschedule(checkCrystalShell)
+			mod:Schedule(5, checkCrystalShell)
+		end
+	end
+end
+
 function mod:OnCombatStart(delay)
 	stompActive = false
 	stompCount = 0
@@ -98,9 +110,12 @@ function mod:OnCombatStart(delay)
 	countdownStomp:Start(29-delay)
 	timerBreathCD:Start(-delay)
 	countdownBreath:Start(-delay)
-	if self.Options.InfoFrame and self:IsDifficulty("heroic10", "heroic25") then
-		DBM.InfoFrame:SetHeader(L.WrongDebuff:format(shelldName))
-		DBM.InfoFrame:Show(5, "playergooddebuff", 137633)
+	if self:IsDifficulty("heroic10", "heroic25") then
+		if self.Options.InfoFrame then
+			DBM.InfoFrame:SetHeader(L.WrongDebuff:format(shelldName))
+			DBM.InfoFrame:Show(5, "playergooddebuff", 137633)
+		end
+		checkCrystalShell()
 		berserkTimer:Start(600-delay)
 	else
 		berserkTimer:Start(-delay)
@@ -142,12 +157,8 @@ function mod:SPELL_CAST_START(args)
 		timerRockfallCD:Start(7.4)--When the spam of rockfalls start
 		timerStompCD:Start(nil, stompCount+1)
 		countdownStomp:Start()
-		if self.Options.AnnounceCooldowns and stompCount < 11 then
-			if DBM.Options.UseMasterVolume then
-				PlaySoundFile("Interface\\AddOns\\DBM-Core\\Sounds\\Corsica_S\\"..stompCount..".ogg", "Master")
-			else
-				PlaySoundFile("Interface\\AddOns\\DBM-Core\\Sounds\\Corsica_S\\"..stompCount..".ogg")
-			end
+		if self.Options.AnnounceCooldowns then
+			DBM:PlayCountSound(stompCount)
 		end
 	end
 end
@@ -171,9 +182,9 @@ end
 
 mod:RegisterOnUpdateHandler(function(self)
 	if hasHighestVersion and not (iconsSet == 3) then
-		for i = 1, DBM:GetNumGroupMembers() do
-			local uId = "raid"..i.."target"
-			local guid = UnitGUID(uId)
+		for uId in DBM:GetGroupMembers() do
+			local unitid = uId.."target"
+			local guid = UnitGUID(unitid)
 			if adds[guid] then
 				for g,i in pairs(adds) do
 					if i == 8 and g ~= guid then -- always set skull on first we see
@@ -182,7 +193,7 @@ mod:RegisterOnUpdateHandler(function(self)
 						break
 					end
 				end
-				SetRaidTarget(uId, adds[guid])
+				SetRaidTarget(unitid, adds[guid])
 				iconsSet = iconsSet + 1
 				adds[guid] = nil
 			end
@@ -208,11 +219,11 @@ function mod:SPELL_AURA_APPLIED(args)
 		shellsRemaining = shellsRemaining + 1
 		addsActivated = addsActivated - 1
 		if DBM:GetRaidRank() > 0 and self.Options.ClearIconOnTurtles then
-			for i = 1, DBM:GetNumGroupMembers() do
-				local uId = "raid"..i.."target"
-				local guid = UnitGUID(uId)
+			for uId in DBM:GetGroupMembers() do
+				local unitid = uId.."target"
+				local guid = UnitGUID(unitid)
 				if args.destGUID == guid then
-					SetRaidTarget(uId, 0)
+					SetRaidTarget(unitid, 0)
 				end
 			end
 		end
@@ -228,7 +239,7 @@ end
 
 function mod:SPELL_AURA_REMOVED(args)
 	if args.spellId == 137633 and args:IsPlayer() then
-		specWarnCrystalShell:Show(shelldName)
+		checkCrystalShell()
 	end
 end
 
@@ -257,7 +268,6 @@ end
 
 --Does not show in combat log, so UNIT_AURA must be used instead
 function mod:UNIT_AURA(uId)
-	if uId ~= "boss1" then return end
 	local _, _, _, _, _, duration, expires = UnitDebuff(uId, shellConcussion)
 	if expires and lastConcussion ~= expires then
 		lastConcussion = expires
@@ -269,32 +279,29 @@ function mod:UNIT_AURA(uId)
 end
 
 function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
-	if spellId == 136685 and self:AntiSpam(2, 5) then --Don't filter main tank, bat tank often taunts boss just before bats for vengeance, otherwise we lose threat to dps. Then main tank taunts back after bats spawn and we go get them, fully vengeanced (if you try to pick up bats without vengeance you will not hold aggro for shit)
+	if spellId == 136685 then --Don't filter main tank, bat tank often taunts boss just before bats for vengeance, otherwise we lose threat to dps. Then main tank taunts back after bats spawn and we go get them, fully vengeanced (if you try to pick up bats without vengeance you will not hold aggro for shit)
 		warnSummonBats:Show()
 		specWarnSummonBats:Show()
 		timerSummonBatsCD:Start()
 	end
 end
 
-local function FindFastestHighestVersion()
-	mod:SendSync("FastestPerson", UnitGUID("player"))
-end
-
 function mod:OnSync(msg, guid, ver)
 	if msg == "IconCheck" and guid and ver then
-		if tonumber(ver) > highestVersion then
-			highestVersion = tonumber(ver)--Keep bumping highest version to highest we recieve from the icon setters
+		ver = tonumber(ver) or 0
+		if ver > highestVersion then
+			highestVersion = ver--Keep bumping highest version to highest we recieve from the icon setters
 			if guid == UnitGUID("player") then--Check if that highest version was from ourself
 				hasHighestVersion = true
-				self:Unschedule(FindFastestHighestVersion)
-				self:Schedule(5, FindFastestHighestVersion)
+				self:Unschedule(self.SendSync)
+				self:Schedule(5, self.SendSync, self, "FastestPerson", UnitGUID("player"))
 			else--Not from self, it means someone with a higher version than us probably sent it
-				self:Unschedule(FindFastestHighestVersion)
+				self:Unschedule(self.SendSync)
 				hasHighestVersion = false
 			end
 		end
 	elseif msg == "FastestPerson" and guid and self:AntiSpam(10, 4) then--Whoever sends this sync first wins all. They have highest version and fastest computer
-		self:Unschedule(FindFastestHighestVersion)
+		self:Unschedule(self.SendSync)
 		if guid == UnitGUID("player") then
 			hasHighestVersion = true
 		else

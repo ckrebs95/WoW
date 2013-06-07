@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(816, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9560 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9709 $"):sub(12, -3))
 mod:SetCreatureID(69078, 69132, 69134, 69131)--69078 Sul the Sandcrawler, 69132 High Prestess Mar'li, 69131 Frost King Malakk, 69134 Kazra'jin --Adds: 69548 Shadowed Loa Spirit,
 mod:SetQuestID(32746)
 mod:SetZone()
@@ -18,7 +18,7 @@ mod:RegisterEventsInCombat(
 	"SPELL_DAMAGE",
 	"SPELL_MISSED",
 	"UNIT_DIED",
-	"UNIT_SPELLCAST_SUCCEEDED"
+	"UNIT_SPELLCAST_SUCCEEDED boss1 boss2 boss3 boss4 boss5"
 )
 
 local Sul = EJ_GetSectionInfo(7049)
@@ -70,9 +70,8 @@ local specWarnTwistedFate			= mod:NewSpecialWarningSwitch(137891)
 local specWarnBitingCold			= mod:NewSpecialWarningYou(136992)
 local yellBitingCold				= mod:NewYell(136992)--This one you just avoid so chat bubble is useful
 local specWarnFrostBite				= mod:NewSpecialWarningYou(136922)--This one you do not avoid you clear it hugging people so no chat bubble
-local specWarnFrigidAssault			= mod:NewSpecialWarningStack(136903, mod:IsTank(), 8)
+local specWarnFrigidAssault			= mod:NewSpecialWarningStack(136903, mod:IsTank(), 9)
 local specWarnFrigidAssaultOther	= mod:NewSpecialWarningTarget(136903, mod:IsTank())
-local specWarnChilled				= mod:NewSpecialWarningYou(137085, false)--Heroic
 --Kazra'jin
 local specWarnDischarge				= mod:NewSpecialWarningCount(137166, nil, nil, nil, 2)
 
@@ -109,12 +108,10 @@ mod:AddBoolOption("SetIconOnFrostBite", true)
 mod:AddBoolOption("AnnounceCooldowns", mod:HasRaidCooldown())
 
 local lingeringPresence = GetSpellInfo(136467)
-local chilledDebuff = GetSpellInfo(137085)
 local boltCasts = 0
 local kazraPossessed = false
 local possessesDone = 0
 local dischargeCount = 0
-local chilledWarned = false
 local darkPowerWarned = false
 
 local showDamagedHealthBar, hideDamagedHealthBar
@@ -156,7 +153,6 @@ end
 
 function mod:OnCombatStart(delay)
 	kazraPossessed = false
-	chilledWarned = false
 	darkPowerWarned = false
 	possessesDone = 0
 	boltCasts = 0
@@ -258,13 +254,9 @@ function mod:SPELL_AURA_APPLIED(args)
 			if elapsed and total and total ~= 0 then--If for some reason it was nil, like it JUST came off cd, do nothing, he should cast frost bite right away.
 				timerFrostBiteCD:Update(elapsed, total)
 			end
-			self:RegisterShortTermEvents(
-				"UNIT_AURA"
-			)
 		elseif cid == 69134 then--Kazra'jin
 			dischargeCount = 0
 			kazraPossessed = true
-			self:UnregisterShortTermEvents()
 		end
 		if (self.Options.HealthFrame or DBM.Options.AlwaysShowHealthFrame) and self.Options.PHealthFrame then
 			local bossHealth = math.floor(UnitHealthMax(uid or "boss4") * 0.25)
@@ -275,11 +267,11 @@ function mod:SPELL_AURA_APPLIED(args)
 		if self:AntiSpam(2.5, 1) then
 			warnFrigidAssault:Show(args.destName, args.amount or 1)
 			if args:IsPlayer() then
-				if (args.amount or 1) >= 8 then
+				if (args.amount or 1) >= 9 then
 					specWarnFrigidAssault:Show(args.amount)
 				end
 			else
-				if (args.amount or 1) >= 8 and not UnitDebuff("player", GetSpellInfo(136903)) and not UnitIsDeadOrGhost("player") then
+				if (args.amount or 1) >= 9 and not UnitDebuff("player", GetSpellInfo(136903)) and not UnitIsDeadOrGhost("player") then
 					specWarnFrigidAssaultOther:Show(args.destName)
 				end
 			end
@@ -319,11 +311,7 @@ function mod:SPELL_AURA_APPLIED(args)
 		warnDischarge:Show(dischargeCount)
 		specWarnDischarge:Show(dischargeCount)
 		if self.Options.AnnounceCooldowns then
-			if DBM.Options.UseMasterVolume then
-				PlaySoundFile("Interface\\AddOns\\DBM-Core\\Sounds\\Corsica_S\\"..dischargeCount..".ogg", "Master")
-			else
-				PlaySoundFile("Interface\\AddOns\\DBM-Core\\Sounds\\Corsica_S\\"..dischargeCount..".ogg")
-			end
+			DBM:PlayCountSound(dischargeCount)
 		end
 	elseif args.spellId == 137641 and args:IsPlayer() then
 		specWarnSoulFragment:Show()
@@ -391,16 +379,6 @@ function mod:SPELL_DAMAGE(_, _, _, _, destGUID, _, _, _, spellId)
 end
 mod.SPELL_MISSED = mod.SPELL_DAMAGE
 
-function mod:UNIT_AURA(uId)
-	if uId ~= "player" then return end
-	if UnitDebuff("player", chilledDebuff) and not chilledWarned then
-		specWarnChilled:Show()
-		chilledWarned = true
-	elseif not UnitDebuff("player", chilledDebuff) and chilledWarned then
-		chilledWarned = false
-	end
-end
-
 function mod:UNIT_DIED(args)
 	local cid = self:GetCIDFromGUID(args.destGUID)
 	if cid == 69078 then--Sul the Sandcrawler
@@ -419,7 +397,7 @@ function mod:UNIT_DIED(args)
 end
 
 function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
-	if spellId == 137107 and self:AntiSpam(2, 2) then--Pre cast trigger. there are other later spellids but they aren't consistent, only this one is.
+	if spellId == 137107 then--Pre cast trigger. there are other later spellids but they aren't consistent, only this one is.
 		warnRecklessCharge:Schedule(2)--warning 4 seconds early on something cast every 6 seconds seems silly. Lets warn 2 seconds early.
 		if kazraPossessed then--While possessed he gains "Overload" which will make his charge cd way different.
 			timerRecklessChargeCD:Schedule(4, 25)--Will have timer actualy sync up to the cast finish so it also kind serves as a cast bar.

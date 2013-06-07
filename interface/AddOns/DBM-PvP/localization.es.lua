@@ -95,7 +95,6 @@ L:SetOptionLocalization({
 L = DBM:GetModLocalization("z566")
 
 L:SetMiscLocalization({
-	ZoneName		= "Ojo de la Tormenta",
 	ScoreExpr		= "(%d+)/1600",
 	Alliance 		= "Alianza",
 	Horde 			= "Horda",
@@ -192,7 +191,6 @@ L = DBM:GetModLocalization("z726")
 L:SetMiscLocalization({
 	BgStart60 			= "La batalla comienza en 1 minuto.",
 	BgStart30 			= "La batalla comienza en 30 segundos. ¡Preparaos!",
-	ZoneName 			= "Twin",	-- translate
 	Alliance 			= "Alianza",
 	Horde 				= "Horda",
 	InfoErrorText		= "La función de targetear al portador de la bandera se restaurará cuando estés fuera de combate.",

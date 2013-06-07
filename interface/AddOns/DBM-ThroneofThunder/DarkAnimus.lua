@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(824, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9583 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9726 $"):sub(12, -3))
 mod:SetCreatureID(69427)
 mod:SetQuestID(32752)
 mod:SetZone()
@@ -57,6 +57,7 @@ local berserkTimer					= mod:NewBerserkTimer(600)
 
 local countdownActivation			= mod:NewCountdown(60, 139537)
 local countdownInterruptingJolt		= mod:NewCountdown(21.5, 138763)
+local countdownAnimaRing			= mod:NewCountdown(24.2, 136954, mod:IsTank(), nil, nil, nil, true)
 
 local soundCrimsonWake				= mod:NewSound(138480)
 
@@ -91,6 +92,7 @@ function mod:SPELL_CAST_START(args)
 	if args.spellId == 136954 then
 		self:BossTargetScanner(69427, "AnimaRingTarget", 0.02, 12)
 		timerAnimaRingCD:Start()
+		countdownAnimaRing:Start()
 	elseif args:IsSpellID(138763, 139867, 139869) then--Normal version is 2.2 sec cast. Heroic is 1.4 second cast. LFR is 3.8 sec cast (thus why it has different spellid)
 		jolt = jolt + 1
 		warnInterruptingJolt:Show(jolt)
@@ -196,6 +198,7 @@ function mod:INSTANCE_ENCOUNTER_ENGAGE_UNIT()
 		if self:IsDifficulty("heroic10", "heroic25") then
 			timerAnimaFontCD:Start(14)
 			timerAnimaRingCD:Start(23)
+			countdownAnimaRing:Start(23)
 			timerSiphonAnimaCD:Start(120, 1)--VERY important on heroic. boss activaet on pull, you have 2 minutes to do as much with adds as you can before he starts using siphon anima
 		elseif self:IsDifficulty("normal10", "normal25") then
 			timerSiphonAnimaCD:Start(5.3, 1)
@@ -206,6 +209,10 @@ end
 function mod:OnSync(msg, guid)
 	if msg == "WakeTarget" and guid then
 		warnCrimsonWake:Show(DBM:GetFullPlayerNameByGUID(guid))
+	elseif msg == "TestFunction" then
+		countdownAnimaRing:Start(13)
+		timerAnimaRingCD:Start(13)
+		countdownInterruptingJolt:Start(11)
+		timerInterruptingJoltCD:Start(11)
 	end
 end
-

@@ -6,12 +6,13 @@ DBM_HOW_TO_USE_MOD					= "DBM 사용을 환영합니다. 대화창에서 /dbm he
 DBM_FORUMS_MESSAGE					= "오류나 잘못된 바를 발견하셨나요? 일부 전투에서 추가 알림, 특수 경고 또는 바가 있으면 좋을텐데라고 생각하셨나요?\n새로 개설된 Deadly Boss Mods 토론, 오류 제보 및 요청 게시판을 방문해 보세요. 주소는 |HDBM:forums|h|cff3588ffhttp://www.deadlybossmods.com|r 입니다. (링크를 클릭하신 후 주소를 복사하실 수 있습니다.)"
 DBM_FORUMS_COPY_URL_DIALOG			= "새로운 게시판을 방문해보세요.\r\n(Elitist Jerks에서 서비스를 제공합니다!)"
 
-
 DBM_CORE_LOAD_MOD_ERROR				= "%s 경보를 불러오는 중 오류 발생: %s"
 DBM_CORE_LOAD_MOD_SUCCESS			= "'%s' 경보를 불러왔습니다 !"
 DBM_CORE_LOAD_GUI_ERROR				= "설정창을 불러올 수 없습니다: %s"
 DBM_CORE_LOAD_GUI_COMBAT			= "전투 중에는 설정창을 불러올 수 없습니다. 전투가 종료되면 설정창이 열릴 것입니다. 이후에는 전투 중이라도 설정창을 불러 올 수 있습니다."
 DBM_CORE_BAD_LOAD					= "DBM이 현재 인스턴스의 경고를 완전히 불러오지 못한 것을 발견했습니다. 전투가 종료된 후에, /console reloadui 명령어를 입력하여 경고를 다시 불러오시기 바랍니다."
+
+DBM_CORE_LOOT_SPEC_REMINDER			= "현재 전문화는 %s 입니다. 현재 선택된 전리품 전문화는 %s 입니다."
 
 DBM_CORE_BIGWIGS_ICON_CONFLICT		= "DBM이 BigWigs와 DBM의 전술 목표 아이콘 설정이 모두 활성화 된것을 발견했습니다. 아이콘 충돌을 방지하기 위해 둘 중 하나의 아이콘 설정을 비활성화 해주시기 바랍니다."
 
@@ -41,8 +42,6 @@ DBM_CORE_MIN						= "분"
 DBM_CORE_MIN_FMT					= "%d분"
 DBM_CORE_SEC						= "초"
 DBM_CORE_SEC_FMT					= "%d초"
-DBM_CORE_DEAD						= "죽음"--DEAD
-DBM_CORE_OK							= "수락"--OKAY
 
 DBM_CORE_GENERIC_WARNING_DUPLICATE	= "%s 중 1명"
 DBM_CORE_GENERIC_WARNING_BERSERK	= "%s %s 후에 광폭화"
@@ -54,7 +53,6 @@ DBM_CORE_OPTION_HEALTH_FRAME		= "우두머리 체력 바 보기"
 
 DBM_CORE_OPTION_CATEGORY_TIMERS		= "바"
 DBM_CORE_OPTION_CATEGORY_WARNINGS	= "알림"
-DBM_CORE_OPTION_CATEGORY_MISC		= "기타 추가 기능"--MISCELLANEOUS
 
 DBM_CORE_AUTO_RESPONDED						= "전투중 받은 귓속말에 자동 응답합니다."
 DBM_CORE_STATUS_WHISPER						= "%s: %s, %d/%d 명이 생존해 있습니다."
@@ -91,8 +89,6 @@ DBM_PIZZA_SYNC_INFO					= "|Hplayer:%1$s|h[%1$s]|h님이 당신에게 DBM 바 �
 DBM_PIZZA_CONFIRM_IGNORE			= "현재 공격대에서 %s님이 보낸 DBM 바를 무시하도록 하겠습니까?"
 DBM_PIZZA_ERROR_USAGE				= "사용법: /dbm [broadcast] timer <시간> <글자>"
 
-DBM_CORE_ERROR_DBMV3_LOADED			= "DBMv3와 DBMv4가 동시에 실행중 입니다.\n\n\"수락\"을 클릭하시면 DBMv3를 차단하고, UI가 다시시작 될 것입니다.\n이후, 애드온 폴더 내에서 DBMv3 폴더를 삭제하시길 권장합니다."
-
 --DBM_CORE_MINIMAP_TOOLTIP_HEADER (Same as English locales)
 DBM_CORE_MINIMAP_TOOLTIP_FOOTER		= "Shift+클릭 또는 오른쪽 클릭으로 움직이세요.\nAlt+Shift+클릭으로 움직이면 자유롭게 배치할 수 있습니다."
 
@@ -104,9 +100,7 @@ DBM_CORE_RANGECHECK_SOUND_OPTION_2	= "지정 거리 이내 사람이 1명 이상
 DBM_CORE_RANGECHECK_SOUND_0			= "소리 없음"
 DBM_CORE_RANGECHECK_SOUND_1			= "기본 소리"
 DBM_CORE_RANGECHECK_SOUND_2			= "짜증나는 소리(-_-;)"
-DBM_CORE_RANGECHECK_HIDE			= "숨기기"--HIDE
 DBM_CORE_RANGECHECK_SETRANGE_TO		= "%d m"
-DBM_CORE_RANGECHECK_LOCK			= "창 잠금"--LOCK_FRAME
 DBM_CORE_RANGECHECK_OPTION_FRAMES	= "창 표시 방법"
 DBM_CORE_RANGECHECK_OPTION_RADAR	= "아이콘으로 표시"
 DBM_CORE_RANGECHECK_OPTION_TEXT		= "글자로 표시"
@@ -114,8 +108,6 @@ DBM_CORE_RANGECHECK_OPTION_BOTH		= "모두 표시"
 DBM_CORE_RANGERADAR_HEADER			= "거리 확인 (%dm)"
 DBM_CORE_RANGERADAR_IN_RANGE_TEXT	= "거리 이내 : %d명"
 
-DBM_CORE_INFOFRAME_LOCK				= "창 잠금"--LOCK_FRAME
-DBM_CORE_INFOFRAME_HIDE				= "숨기기"--HIDE
 DBM_CORE_INFOFRAME_SHOW_SELF		= "내 정보 항상 보기"
 
 DBM_LFG_INVITE						= "던전 입장"
@@ -137,9 +129,6 @@ DBM_CORE_SLASHCMD_HELP				= {
 DBM_ERROR_NO_PERMISSION				= "해당 명령어를 실행하기 위한 권한을 가지고 있지 않습니다."
 
 DBM_CORE_BOSSHEALTH_HIDE_FRAME		= "우두머리 체력 바 닫기"
-
-DBM_CORE_ALLIANCE					= "얼라이언스"--FACTION_ALLIANCE
-DBM_CORE_HORDE						= "호드"--FACTION_HORDE
 
 DBM_CORE_WORLD_BOSS					= "야외 우두머리"
 DBM_CORE_UNKNOWN					= "알 수 없음"--UNKNOWN
@@ -254,6 +243,8 @@ DBM_CORE_AUTO_COUNTDOWN_OPTION_TEXT2	= "$spell:%s 효과의 남은시간 초읽�
 DBM_CORE_AUTO_COUNTOUT_OPTION_TEXT		= "$spell:%s 주문의 진행시간 초읽기 소리 듣기"
 DBM_CORE_AUTO_YELL_OPTION_TEXT			= "$spell:%s 대상이 될 경우 대화로 알리기"
 DBM_CORE_AUTO_YELL_ANNOUNCE_TEXT		= UnitName("player").."에게 %s!"
+DBM_CORE_AUTO_RANGE_OPTION_TEXT			= "$spell:%2$s 주문에 대한 거리 창 표시(%1$sm)"
+DBM_CORE_AUTO_RANGE_OPTION_TEXT_SHORT	= "거리 창 표시(%sm)"
 
 
 -- New special warnings

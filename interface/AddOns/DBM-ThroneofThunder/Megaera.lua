@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(821, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9560 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9721 $"):sub(12, -3))
 mod:SetCreatureID(68065, 70212, 70235, 70247)--flaming 70212. Frozen 70235, Venomous 70247
 mod:SetMainBossID(68065)
 mod:SetQuestID(32748)
@@ -20,8 +20,7 @@ mod:RegisterEventsInCombat(
 	"SPELL_PERIODIC_DAMAGE",
 	"SPELL_PERIODIC_MISSED",
 	"CHAT_MSG_RAID_BOSS_EMOTE",
-	"UNIT_AURA",
-	"UNIT_SPELLCAST_SUCCEEDED",
+	"UNIT_SPELLCAST_SUCCEEDED boss1 boss2 boss3 boss4 boss5",
 	"UNIT_DIED"
 )
 
@@ -65,7 +64,7 @@ local timerBreathsCD			= mod:NewTimer(16, "timerBreathsCD", 137731, nil, false)-
 
 --TODO, maybe monitor length since last cast and if it's 28 instead of 25, make next timer also 28 for remainder of that head phase (then return to 25 after rampage unless we detect another 28)
 --TODO, Verify timers on normal. WoL bugs out and combines GUIDs making it hard to determine actual CDs in my logs.
-local timerCinderCD				= mod:NewCDTimer(25, 139822, nil, not mod:IsTank())--The cd is either 25 or 28 (either or apparently, no in between). it can even swap between teh two in SAME pull
+local timerCinderCD				= mod:NewCDTimer(25, 139822, nil, not mod:IsTank())--The cd is either 25 or 28 (either or apparently, no in between). it can even swap between the two in SAME pull
 local timerTorrentofIce			= mod:NewBuffFadesTimer(11, 139866)
 local timerTorrentofIceCD		= mod:NewCDTimer(25, 139866, nil, not mod:IsTank())--Same as bove, either 25 or 28
 local timerNetherTearCD			= mod:NewCDTimer(25, 140138)--Heroic. Also either 25 or 28. On by default since these require more pre planning than fire and ice.
@@ -96,6 +95,8 @@ local activeHeadGUIDS = {}
 local iceTorrent = GetSpellInfo(139857)
 local torrentExpires = {}
 local arcaneRecent = false
+local UnitExists = UnitExists
+local UnitDetailedThreatSituation = UnitDetailedThreatSituation
 
 local function isTank(unit)
 	-- 1. check blizzard tanks first
@@ -107,22 +108,94 @@ local function isTank(unit)
 	if UnitGroupRolesAssigned(unit) == "TANK" then
 		return true
 	end
-	if UnitExists("boss1target") and UnitDetailedThreatSituation(unit, "boss1") then
-		return true
-	end
-	if UnitExists("boss2target") and UnitDetailedThreatSituation(unit, "boss2") then
-		return true
-	end
-	if UnitExists("boss3target") and UnitDetailedThreatSituation(unit, "boss3") then
-		return true
-	end
-	if UnitExists("boss4target") and UnitDetailedThreatSituation(unit, "boss4") then
-		return true
-	end
-	if UnitExists("boss5target") and UnitDetailedThreatSituation(unit, "boss5") then
-		return true
+	for i = 1, 5 do
+		if UnitExists("boss"..i.."target") and UnitDetailedThreatSituation(unit, "boss"..i) then
+			return true
+		end
 	end
 	return false
+end
+
+local function warnTorrent(name)
+	if not name then return end
+	warnTorrentofIce:Show(name)
+	if name == UnitName("player") then
+		specWarnTorrentofIceYou:Show()
+		timerTorrentofIce:Start()
+		yellTorrentofIce:Yell()
+	else
+		local uId = DBM:GetRaidUnitId(name)
+			if uId then
+				local x, y = GetPlayerMapPosition(uId)
+				if x == 0 and y == 0 then
+				SetMapToCurrentZone()
+				x, y = GetPlayerMapPosition(uId)
+			end
+			local inRange = DBM.RangeCheck:GetDistance("player", x, y)
+			if inRange and inRange < 6 then
+				specWarnTorrentofIceNear:Show(name)
+			end
+		end
+	end
+end
+
+local function findTorrent()
+	for uId in DBM:GetGroupMembers() do
+		local name = DBM:GetUnitFullName(uId)
+		if not name then return end
+		local expires = select(7, UnitDebuff(uId, iceTorrent)) or 0
+		local spellId = select(11, UnitDebuff(uId, iceTorrent)) or 0
+		if spellId == 139857 and expires > 0 and not torrentExpires[expires] then
+			torrentExpires[expires] = true
+			warnTorrent(name)
+			if mod.Options.SetIconOnTorrentofIce then
+				mod:SetIcon(uId, iceIcon, 11)
+				if iceIcon == 6 then
+					iceIcon = 4
+				else
+					iceIcon = 6
+				end
+			end
+		end
+		return--Stop loop once found
+	end
+	mod:Schedule(0.1, findTorrent)
+end
+
+local function CheckHeads(GUID)
+	for i = 1, 5 do
+		if UnitExists("boss"..i) and not activeHeadGUIDS[UnitGUID("boss"..i)] then--Check if new units exist we haven't detected and added yet.
+			activeHeadGUIDS[UnitGUID("boss"..i)] = true
+			local cid = mod:GetCIDFromGUID(UnitGUID("boss"..i))
+			if cid == 70235 then--Frozen
+				iceInFront = iceInFront + 1
+				if iceBehind > 0 then
+					iceBehind = iceBehind - 1
+				end
+			elseif cid == 70212 then--Flaming
+				fireInFront = fireInFront + 1
+				if fireBehind > 0 then
+					fireBehind = fireBehind - 1
+				end
+			elseif cid == 70247 then--Venomous
+				venomInFront = venomInFront + 1
+				if venomBehind > 0 then
+					venomBehind = venomBehind - 1
+				end
+			elseif cid == 70248 then--Arcane
+				arcaneInFront = arcaneInFront + 1
+				if arcaneBehind > 0 then
+					arcaneBehind = arcaneBehind - 1
+				end
+			end
+		end
+	end
+--	print("DBM Boss Debug: ", "Active Heads: ".."Fire: "..fireInFront.." Ice: "..iceInFront.." Venom: "..venomInFront.." Arcane: "..arcaneInFront)
+--	print("DBM Boss Debug: ", "Inactive Heads: ".."Fire: "..fireBehind.." Ice: "..iceBehind.." Venom: "..venomBehind.." Arcane: "..arcaneBehind)
+end
+
+local function clearHeadGUID(GUID)
+	activeHeadGUIDS[GUID] = nil
 end
 
 function mod:OnCombatStart(delay)
@@ -165,6 +238,7 @@ function mod:SPELL_CAST_SUCCESS(args)
 		timerNetherTearCD:Start(args.sourceGUID)
 	elseif args.spellId == 139866 then
 		timerTorrentofIceCD:Start(args.sourceGUID)
+		findTorrent()
 	end
 end
 
@@ -261,7 +335,7 @@ function mod:SPELL_PERIODIC_DAMAGE(_, _, _, _, destGUID, _, _, _, spellId)
 end
 mod.SPELL_PERIODIC_MISSED = mod.SPELL_PERIODIC_DAMAGE
 
-function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg, _, _, _, target)
+function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg)
 	if msg:find("spell:139458") then
 		rampageCount = rampageCount + 1
 		warnRampage:Show(rampageCount)
@@ -279,12 +353,7 @@ function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg, _, _, _, target)
 		end
 		if (self.Options.AnnounceCooldowns == "Never") or (arcaneInFront > 0 or arcaneRecent) and ((self.Options.AnnounceCooldowns == "EveryTwoExcludeDiff") or (self.Options.AnnounceCooldowns == "EveryThreeExcludeDiff")) then return end--You have a diffused player, don't call out cds
 		rampageCast = rampageCast + 1
-		if rampageCast > 10 then return end --failsafe
-		if DBM.Options.UseMasterVolume then
-			PlaySoundFile("Interface\\AddOns\\DBM-Core\\Sounds\\Corsica_S\\"..rampageCast..".ogg", "Master")
-		else
-			PlaySoundFile("Interface\\AddOns\\DBM-Core\\Sounds\\Corsica_S\\"..rampageCast..".ogg")
-		end
+		DBM:PlayCountSound(rampageCast)
 	elseif msg == L.rampageEnds or msg:find(L.rampageEnds) then
 		arcaneRecent = false
 		warnRampageFaded:Show()
@@ -302,47 +371,15 @@ function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg, _, _, _, target)
 		end
 		if fireBehind > 0 then
 			if self:IsDifficulty("lfr25") then
-				timerCinderCD:Start(12)--12-15 second variatio
+				timerCinderCD:Start(12)--12-15 second variation
 			else
-				timerCinderCD:Start(5)--5-8 second variatio
+				timerCinderCD:Start(5)--5-8 second variation
 			end
 		end
 		if arcaneBehind > 0 then
 			timerNetherTearCD:Start(15)--15-18 seconds after rampages end
 		end
 	end
-end
-
-local function CheckHeads(GUID)
-	for i = 1, 5 do
-		if UnitExists("boss"..i) and not activeHeadGUIDS[UnitGUID("boss"..i)] then--Check if new units exist we haven't detected and added yet.
-			activeHeadGUIDS[UnitGUID("boss"..i)] = true
-			local cid = mod:GetCIDFromGUID(UnitGUID("boss"..i))
-			if cid == 70235 then--Frozen
-				iceInFront = iceInFront + 1
-				if iceBehind > 0 then
-					iceBehind = iceBehind - 1
-				end
-			elseif cid == 70212 then--Flaming
-				fireInFront = fireInFront + 1
-				if fireBehind > 0 then
-					fireBehind = fireBehind - 1
-				end
-			elseif cid == 70247 then--Venomous
-				venomInFront = venomInFront + 1
-				if venomBehind > 0 then
-					venomBehind = venomBehind - 1
-				end
-			elseif cid == 70248 then--Arcane
-				arcaneInFront = arcaneInFront + 1
-				if arcaneBehind > 0 then
-					arcaneBehind = arcaneBehind - 1
-				end
-			end
-		end
-	end
---	print("DBM Boss Debug: ", "Active Heads: ".."Fire: "..fireInFront.." Ice: "..iceInFront.." Venom: "..venomInFront.." Arcane: "..arcaneInFront)
---	print("DBM Boss Debug: ", "Inactive Heads: ".."Fire: "..fireBehind.." Ice: "..iceBehind.." Venom: "..venomBehind.." Arcane: "..arcaneBehind)
 end
 
 --Only real way to detect heads moving from back to front.
@@ -353,7 +390,7 @@ end
 
 --Unfortunately we need to update the counts sooner than UNIT_DIED fires because we need those counts BEFORE CHAT_MSG_RAID_BOSS_EMOTE fires.
 function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
-	if spellId == 70628 and self:AntiSpam(2, 3) then--Permanent Feign Death
+	if spellId == 70628 then--Permanent Feign Death
 		local cid = self:GetCIDFromGUID(UnitGUID(uId))
 		if cid == 70235 then--Frozen
 			iceInFront = iceInFront - 1
@@ -374,10 +411,6 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 	end
 end
 
-local function clearHeadGUID(GUID)
-	activeHeadGUIDS[GUID] = nil
-end
-
 --Nil out front boss GUIDs and cancel timers for correct died unit so those units can activate again later
 function mod:UNIT_DIED(args)
 	local cid = self:GetCIDFromGUID(args.destGUID)
@@ -389,48 +422,5 @@ function mod:UNIT_DIED(args)
 		self:Schedule(5, clearHeadGUID, args.destGUID)
 	elseif cid == 70248 then--Arcane
 		self:Schedule(5, clearHeadGUID, args.destGUID)
-	end
-end
-
-local function warnTorrent(name)
-	if not name then return end
-	warnTorrentofIce:Show(name)
-	if name == UnitName("player") then
-		specWarnTorrentofIceYou:Show()
-		timerTorrentofIce:Start()
-		yellTorrentofIce:Yell()
-	else
-		local uId = DBM:GetRaidUnitId(name)
-			if uId then
-				local x, y = GetPlayerMapPosition(uId)
-				if x == 0 and y == 0 then
-				SetMapToCurrentZone()
-				x, y = GetPlayerMapPosition(uId)
-			end
-			local inRange = DBM.RangeCheck:GetDistance("player", x, y)
-			if inRange and inRange < 6 then
-				specWarnTorrentofIceNear:Show(name)
-			end
-		end
-	end
-end
-
---Combat log bugged, UNIT_AURA only good way to work around.
-function mod:UNIT_AURA(uId)
-	local name = DBM:GetUnitFullName(uId)
-	if not name then return end
-	local expires = select(7, UnitDebuff(uId, iceTorrent)) or 0
-	local spellId = select(11, UnitDebuff(uId, iceTorrent)) or 0
-	if spellId == 139857 and expires > 0 and not torrentExpires[expires] then
-		torrentExpires[expires] = true
-		warnTorrent(name)
-		if self.Options.SetIconOnTorrentofIce then
-			self:SetIcon(uId, iceIcon, 11)
-			if iceIcon == 6 then
-				iceIcon = 4
-			else
-				iceIcon = 6
-			end
-		end
 	end
 end

@@ -93,7 +93,6 @@ L:SetOptionLocalization({
 L = DBM:GetModLocalization("z566")
 
 L:SetMiscLocalization({
-	ZoneName		= "Olho da Tormenta",
 	ScoreExpr		= "(%d+)/1600",
 	Alliance 		= "Aliança",
 	Horde 			= "Horda",
@@ -190,7 +189,6 @@ L = DBM:GetModLocalization("z726")
 L:SetMiscLocalization({
 	BgStart60 			= "The battle begins in 1 minute.",
 	BgStart30 			= "The battle begins in 30 seconds.  Prepare yourselves!",
-	ZoneName 			= "Montes Gêmeos",
 	Alliance 			= "Aliança",
 	Horde 				= "Horda",
 	InfoErrorText		= "A funcionalidade de portador de bandeira será restaurada quando você sair de combate.",

@@ -4,7 +4,7 @@
 --                                     --
 --                                     --
 --    Patch: 5.3.0                     --
---    Updated: May 23, 2013            --
+--    Updated: May 31, 2013            --
 --    E-mail: feedback@wowhead.com     --
 --                                     --
 -----------------------------------------
@@ -257,7 +257,6 @@ local isBetaClient = false;
 if (tonumber(select(4, GetBuildInfo())) >= 50001) then
 	isBetaClient = true;
 end
-local doMerchantUpdate = false;
 
 -- Hooks
 local wlDefaultGetQuestReward;
@@ -768,19 +767,12 @@ end
 function wlEvent_MERCHANT_SHOW(self)
 	wlRegisterUnitGossip("vendor");
 	wlEvent_MERCHANT_UPDATE(self);
-	doMerchantUpdate = true;
 end
 
 --**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--**--
 
 function wlEvent_MERCHANT_UPDATE(self)
-	-- to fix crashes in MoP
-	if (doMerchantUpdate == false) then
-		return;
-	else
-		doMerchantUpdate = false;
-	end
-	
+
 	local id, kind = wlUnitGUID("npc");
 
 	if not id or kind ~= "npc" or not wlUnit[id] then

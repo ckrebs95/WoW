@@ -1,15 +1,15 @@
 -- All data in this file is copyrighted to the author (oscarucb), all rights reserved
 local addonName, vars = ...
 vars.svnrev = vars.svnrev or {}
-vars.svnrev["PV_data.lua"] = tonumber(("$Revision: 485 $"):match("%d+"))
+vars.svnrev["PV_data.lua"] = tonumber(("$Revision: 489 $"):match("%d+"))
 
 vars.VersionInfo = {
 	   ["DBversion"] = 8,
-	   ["DBrevision"] = tonumber(("$Revision: 485 $"):match("%d+")),
+	   ["DBrevision"] = tonumber(("$Revision: 489 $"):match("%d+")),
            ["clientexpansion"] = 4,
            ["clientversion"] = "5.3.0",
            ["clientbuildmin"] = "16965",
-           ["clientbuildmax"] = "16981",
+           ["clientbuildmax"] = "16992",
 }
 
 local _fakeid = 1000000

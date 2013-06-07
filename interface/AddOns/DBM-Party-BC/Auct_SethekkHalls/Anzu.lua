@@ -1,7 +1,7 @@
 local mod = DBM:NewMod("Anzu", "DBM-Party-BC", 9)
 local L = mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 432 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 452 $"):sub(12, -3))
 
 mod:SetCreatureID(23035)
 mod:SetModelID(21492)
@@ -11,7 +11,7 @@ mod:RegisterEvents(
 	"SPELL_CAST_START",
 	"SPELL_AURA_APPLIED",
 	"SPELL_AURA_REMOVED",
-	"UNIT_HEALTH",
+	"UNIT_HEALTH target focus mouseover" ,
 	"CHAT_MSG_MONSTER_EMOTE"
 )
 

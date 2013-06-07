@@ -96,7 +96,6 @@ L:SetOptionLocalization({
 L = DBM:GetModLocalization("z566")
 
 L:SetMiscLocalization({
-	ZoneName			= "L'Œil du cyclone",
 	ScoreExpr			= "(%d+)/1600",
 	Alliance 			= "Alliance",
 	Horde 				= "Horde",
@@ -199,7 +198,6 @@ L = DBM:GetModLocalization("z726")
 L:SetMiscLocalization({
 	BgStart60 			= "Début de la bataille dans 60 secondes.",
 	BgStart30 			= "Début de la bataille dans 30 secondes. Préparez vous!",
-	ZoneName 			= "Pics-Jumeaux",
 	Alliance 			= "Alliance",
 	Horde 				= "Horde",
 	InfoErrorText		= "Le ciblage du drapeau est restoré lorsque vous êtes hors de combat.",

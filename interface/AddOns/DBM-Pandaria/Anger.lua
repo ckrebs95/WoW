@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(691, "DBM-Pandaria", nil, 322)	-- 322 = Pandaria/Outdoor I assume
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9469 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9627 $"):sub(12, -3))
 mod:SetCreatureID(60491)
 mod:SetQuestID(32099)
 mod:SetZone(809)--Kun-Lai Summit
@@ -13,7 +13,7 @@ mod:RegisterEventsInCombat(
 	"SPELL_CAST_START",
 	"SPELL_AURA_APPLIED",
 	"SPELL_AURA_REMOVED",
-	"UNIT_AURA"
+	"UNIT_AURA player"
 )
 
 mod:RegisterEvents(
@@ -177,7 +177,6 @@ function mod:SPELL_AURA_REMOVED(args)
 end
 
 function mod:UNIT_AURA(uId)
-	if uId ~= "player" then return end
 	if UnitDebuff("player", bitterThought) and self:AntiSpam(2) and not playerMCed then
 		specWarnBitterThoughts:Show()
 	end

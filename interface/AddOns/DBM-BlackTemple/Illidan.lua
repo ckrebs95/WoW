@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Illidan", "DBM-BlackTemple")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 438 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 455 $"):sub(12, -3))
 mod:SetCreatureID(22917)
 mod:SetModelID(21135)
 mod:SetUsedIcons(8)
@@ -15,7 +15,7 @@ mod:RegisterEvents(
 	"SPELL_DAMAGE",
 	"SPELL_MISSED",
 	"CHAT_MSG_MONSTER_YELL",
-	"UNIT_HEALTH",
+	"UNIT_HEALTH target focus mouseover",
 	"UNIT_DIED"
 )
 

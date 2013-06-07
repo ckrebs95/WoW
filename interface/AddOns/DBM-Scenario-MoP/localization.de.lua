@@ -43,6 +43,16 @@ L:SetMiscLocalization{
 	TelvrakPull			= "Zan'vess will never fall!"--translate (trigger)
 }
 
+------------------------------
+-- Battle on the High Seas ---
+------------------------------
+L= DBM:GetModLocalization("d652")
+
+-----------------------
+-- Blood in the Snow --
+-----------------------
+L= DBM:GetModLocalization("d646")
+
 -----------------------
 -- Brewmoon Festival --
 -----------------------
@@ -85,6 +95,15 @@ L:SetMiscLocalization{
 	LizardLord		= "Diese Saurok bewachen die Höhle. Räumen wir sie aus'm Weg!"
 }
 
+----------------------------
+-- Dark Heart of Pandaria --
+----------------------------
+L= DBM:GetModLocalization("d647")
+
+L:SetMiscLocalization{
+	summonElemental		= "Meine Diener, vernichtet diese Insekten!"
+}
+
 ------------------------
 -- Greenstone Village --
 ------------------------
@@ -101,6 +120,16 @@ L:SetWarningLocalization{
 
 L:SetOptionLocalization{
 	WarnAchFiveAlive	= "Zeige Warnung bei Fehlschlag des Erfolgs \"Nummer 5 lebt!\""
+}
+
+----------------------------
+-- The Secret of Ragefire --
+----------------------------
+L= DBM:GetModLocalization("d649")
+
+L:SetMiscLocalization{
+	XorenthPull		= "All lesser races are enemies of the true Horde!",--translate (trigger)
+	ElagloPull		= "Fools! The true horde cannot be stopped by the likes of you."--translate (trigger)
 }
 
 ----------------------

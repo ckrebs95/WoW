@@ -1,0 +1,79 @@
+------------------------------------------------------------------------
+r490 | oscarucb | 2013-05-24 02:32:11 +0000 (Fri, 24 May 2013) | 1 line
+Changed paths:
+   A /tags/6.4.5 (from /trunk:489)
+
+Tagging as 6.4.5
+------------------------------------------------------------------------
+r489 | oscarucb | 2013-05-24 02:30:05 +0000 (Fri, 24 May 2013) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+16992 bump
+
+------------------------------------------------------------------------
+r487 | oscarucb | 2013-05-23 15:18:35 +0000 (Thu, 23 May 2013) | 3 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+   M /trunk/ProfessionsVault.lua
+
+database bump to 16983
+tweak guid_survey
+
+------------------------------------------------------------------------
+r485 | oscarucb | 2013-05-22 06:07:25 +0000 (Wed, 22 May 2013) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+build bump
+
+------------------------------------------------------------------------
+r482 | oscarucb | 2013-05-21 14:20:27 +0000 (Tue, 21 May 2013) | 1 line
+Changed paths:
+   M /trunk/ProfessionsVault.toc
+
+5.3 ToC update
+------------------------------------------------------------------------
+r481 | oscarucb | 2013-05-21 14:12:04 +0000 (Tue, 21 May 2013) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+5.3 data updates
+
+------------------------------------------------------------------------
+r480 | oscarucb | 2013-05-19 17:43:52 +0000 (Sun, 19 May 2013) | 3 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+minor performance tweaks
+disable CastSpell hooks in favor of lighter alternatives
+
+------------------------------------------------------------------------
+r478 | oscarucb | 2013-05-01 10:09:35 +0000 (Wed, 01 May 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+cosmetic fix to guild trade skills
+
+------------------------------------------------------------------------
+r476 | oscarucb | 2013-04-30 10:11:11 +0000 (Tue, 30 Apr 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+tweak 5.3 build number
+
+------------------------------------------------------------------------
+r474 | oscarucb | 2013-04-24 15:12:50 +0000 (Wed, 24 Apr 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+make bit scanning more aggressive to handle new server filtering
+
+------------------------------------------------------------------------
+r473 | oscarucb | 2013-04-21 23:26:02 +0000 (Sun, 21 Apr 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+re-fix Herbalism
+
+------------------------------------------------------------------------

@@ -10,7 +10,7 @@ local PVLDB
 local minimapIcon = LibStub("LibDBIcon-1.0")
 vars.svnrev = vars.svnrev or {}
 local svnrev = vars.svnrev
-svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 480 $"):match("%d+"))
+svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 487 $"):match("%d+"))
 local DB_VERSION_MAJOR = 1
 local DB_VERSION_MINOR = 4
 local _G = _G
@@ -395,6 +395,13 @@ local function table_clone(t)
     r[nk] = nv
   end
   return r
+end
+
+local function table_size(t)
+  if not t then return 0 end
+  local c = 0
+  for _ in pairs(t) do c = c + 1 end
+  return c
 end
 
 local function myOptions() 
@@ -1626,12 +1633,12 @@ end
 
 local function guid_survey_helper(guid, faction, class)
   addon.guid_survey_list = addon.guid_survey_list or {}
-  if not guid or guid == "0" then return end
+  if not guid or guid == "0" or guid_compress(guid) == 0 then return end
   if not faction or not class then
     local status, race
     status, _, class, _, race = pcall(GetPlayerInfoByGUID,guid)
     if not status or not race or not class then -- try to force a guid load
-      local link = addon:fakeLink((GetSpellInfo(PID_FA)), guid)
+      local link = addon:fakeLink((GetSpellInfo(PID_FA)), guid, nil, nil, nil, 0) -- force a bogus patlen to prevent open
       --print(link)
       SetItemRef(addon:cleanlink(link),link,"LeftButton",ChatFrame1)
     end
@@ -1647,6 +1654,10 @@ end
 function addon:guid_survey()
   addon.classlist = wipe(addon.classlist or {})
   FillLocalizedClassList(addon.classlist)
+  if table_size(addon.guid_survey_list) == 2*table_size(addon.classlist) then
+    print("skipping guid_survey(), table complete")
+    return addon.guid_survey_list
+  end
   for _,cguid in pairs(DB.guid_cache) do
     guid_survey_helper(guid_expand(cguid))
   end
@@ -1669,9 +1680,7 @@ function addon:guid_survey()
 	end
      end
   end
-  local c = 0
-  for _ in pairs(addon.guid_survey_list) do c = c + 1 end
-  print("guid_survey found "..c.." exemplars.")
+  print("guid_survey found "..table_size(addon.guid_survey_list).." exemplars.")
   return addon.guid_survey_list
 end
 

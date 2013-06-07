@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(819, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9578 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9683 $"):sub(12, -3))
 mod:SetCreatureID(68476)
 mod:SetQuestID(32745)
 mod:SetZone()
@@ -146,15 +146,15 @@ end
 
 mod:RegisterOnUpdateHandler(function(self)
 	if hasHighestVersion and not (iconsSet == addsJumped) then
-		for i = 1, DBM:GetNumGroupMembers() do
-			local uId = "raid"..i.."target"
-			local guid = UnitGUID(uId)
+		for uId in DBM:GetGroupMembers() do
+			local unitid = uId.."target"
+			local guid = UnitGUID(unitid)
 			local cid = self:GetCIDFromGUID(guid)
 			if not adds[guid] and balcMobs[cid] then
 				if cid == 69221 then--Dinomancer always skull
-					SetRaidTarget(uId, 8)
+					SetRaidTarget(unitid, 8)
 				else
-					SetRaidTarget(uId, AddIcon)
+					SetRaidTarget(unitid, AddIcon)
 					AddIcon = AddIcon - 1
 				end
 				iconsSet = iconsSet + 1
@@ -329,7 +329,9 @@ function mod:UNIT_DIED(args)
 	end
 end
 
-function mod:OnSync(msg, target)
+function mod:OnSync(msg, targetOrGuid, ver)
+	local target = targetOrGuid
+	local guid = targetOrGuid
 	if msg == "ChargeTo" and target then
 		local target = DBM:GetFullNameByShortName(target)
 		warnCharge:Show(target)
@@ -385,19 +387,20 @@ function mod:OnSync(msg, target)
 			end
 		end
 	elseif msg == "IconCheck" and guid and ver then
-		if tonumber(ver) > highestVersion then
-			highestVersion = tonumber(ver)--Keep bumping highest version to highest we recieve from the icon setters
+		ver = tonumber(ver) or 0
+		if ver > highestVersion then
+			highestVersion = ver--Keep bumping highest version to highest we recieve from the icon setters
 			if guid == UnitGUID("player") then--Check if that highest version was from ourself
 				hasHighestVersion = true
-				self:Unschedule(FindFastestHighestVersion)
-				self:Schedule(5, FindFastestHighestVersion)
+				self:Unschedule(self.SendSync)
+				self:Schedule(5, self.SendSync, self, "FastestPerson", UnitGUID("player"))
 			else--Not from self, it means someone with a higher version than us probably sent it
-				self:Unschedule(FindFastestHighestVersion)
+				self:Unschedule(self.SendSync)
 				hasHighestVersion = false
 			end
 		end
 	elseif msg == "FastestPerson" and guid and self:AntiSpam(10, 4) then--Whoever sends this sync first wins all. They have highest version and fastest computer
-		self:Unschedule(FindFastestHighestVersion)
+		self:Unschedule(self.SendSync)
 		if guid == UnitGUID("player") then
 			hasHighestVersion = true
 		else
