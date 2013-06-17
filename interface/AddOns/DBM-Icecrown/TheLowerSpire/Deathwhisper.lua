@@ -1,13 +1,13 @@
 local mod	= DBM:NewMod("Deathwhisper", "DBM-Icecrown", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 40 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 58 $"):sub(12, -3))
 mod:SetCreatureID(36855)
 mod:SetModelID(30893)
 mod:SetUsedIcons(4, 5, 6, 7, 8)
-mod:RegisterCombat("yell", L.YellPull)
+mod:RegisterCombat("combat")
 
-mod:RegisterEvents(
+mod:RegisterEventsInCombat(
 	"SPELL_AURA_APPLIED",
 	"SPELL_AURA_APPLIED_DOSE",
 	"SPELL_AURA_REMOVED",
@@ -15,7 +15,7 @@ mod:RegisterEvents(
 	"SPELL_INTERRUPT",
 	"SPELL_SUMMON",
 	"CHAT_MSG_MONSTER_YELL",
-	"UNIT_TARGET"
+	"UNIT_TARGET_UNFILTERED"
 )
 
 local canPurge = select(2, UnitClass("player")) == "MAGE"
@@ -87,20 +87,11 @@ do	-- add the additional Shield Bar
 	local last = 100
 	local shieldName = GetSpellInfo(70842)
 	local function getShieldPercent()
-		local guid = UnitGUID("focus")
-		if mod:GetCIDFromGUID(guid) == 36855 then 
-			last = math.floor(UnitMana("focus")/UnitManaMax("focus") * 100)
+		local guid = UnitGUID("boss1")
+		if guid and mod:GetCIDFromGUID(guid) == 36855 then 
+			last = math.floor(UnitMana("boss1")/UnitManaMax("boss1") * 100)
 			return last
 		end
-		for i = 0, DBM:GetNumGroupMembers(), 1 do
-			local unitId = ((i == 0) and "target") or "raid"..i.."target"
-			local guid = UnitGUID(unitId)
-			if mod:GetCIDFromGUID(guid) == 36855 then
-				last = math.floor(UnitMana(unitId)/UnitManaMax(unitId) * 100)
-				return last
-			end
-		end
-		return last
 	end
 	function mod:CreateShieldHPFrame()
 		DBM.BossHealth:AddBoss(getShieldPercent, shieldName)
@@ -123,13 +114,13 @@ end
 
 function mod:TrySetTarget()
 	if DBM:GetRaidRank() >= 1 then
-		for i = 1, DBM:GetNumGroupMembers() do
-			if UnitGUID("raid"..i.."target") == deformedFanatic and self.Options.SetIconOnDeformedFanatic then
+		for uId in DBM:GetGroupMembers() do
+			if UnitGUID(uId.."target") == deformedFanatic and self.Options.SetIconOnDeformedFanatic then
 				deformedFanatic = nil
-				SetRaidTarget("raid"..i.."target", 8)
-			elseif UnitGUID("raid"..i.."target") == empoweredAdherent and self.Options.SetIconOnEmpoweredAdherent then
+				SetRaidTarget(uId.."target", 8)
+			elseif UnitGUID(uId.."target") == empoweredAdherent and self.Options.SetIconOnEmpoweredAdherent then
 				empoweredAdherent = nil
-				SetRaidTarget("raid"..i.."target", 7)
+				SetRaidTarget(uId.."target", 7)
 			end
 			if not (deformedFanatic or empoweredAdherent) then
 				break
@@ -169,7 +160,7 @@ do
 		elseif args.spellId == 70674 and not args:IsDestTypePlayer() and (UnitName("target") == L.Fanatic1 or UnitName("target") == L.Fanatic2 or UnitName("target") == L.Fanatic3) then
 			specWarnVampricMight:Show(args.destName)
 		elseif args.spellId == 71204 then
-			warnTouchInsignificance:Show(args.spellName, args.destName, args.amount or 1)
+			warnTouchInsignificance:Show(args.destName, args.amount or 1)
 			timerTouchInsignificance:Start(args.destName)
 			if args:IsPlayer() and (args.amount or 1) >= 3 and self:IsDifficulty("normal10", "normal25") then
 				specWarnTouchInsignificance:Show(args.amount)
@@ -228,7 +219,7 @@ function mod:SPELL_SUMMON(args)
 	end
 end
 
-function mod:UNIT_TARGET()
+function mod:UNIT_TARGET_UNFILTERED()
 	if empoweredAdherent or deformedFanatic then
 		self:TrySetTarget()
 	end

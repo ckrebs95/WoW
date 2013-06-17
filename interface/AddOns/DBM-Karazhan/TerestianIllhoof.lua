@@ -1,13 +1,12 @@
 local mod	= DBM:NewMod("TerestianIllhoof", "DBM-Karazhan")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 436 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 474 $"):sub(12, -3))
 mod:SetCreatureID(15688)
 mod:SetModelID(11343)
 
-mod:RegisterCombat("yell", L.DBM_TI_YELL_PULL)
---mod:RegisterCombat("combat", 15688)
---17229--imp, for future use
+--mod:RegisterCombat("yell", L.DBM_TI_YELL_PULL)
+mod:RegisterCombat("combat", 15688)
 
 mod:RegisterEvents(
 	"SPELL_AURA_APPLIED",

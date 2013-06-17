@@ -22,7 +22,7 @@
 ## X-DBM-Mod-Name-frFR: Scénario (MoP)
 ## X-DBM-Mod-Sort: 35
 ## X-DBM-Mod-LoadZoneID: 906, 851, 899, 911, 920, 934, 919, 900, 878, 912, 883, 882, 884, 914, 880, 939, 937, 940, 938
-## X-Curse-Packaged-Version: 5.3.2
+## X-Curse-Packaged-Version: 5.3.3
 ## X-Curse-Project-Name: Deadly Boss Mods
 ## X-Curse-Project-ID: deadly-boss-mods
 ## X-Curse-Repository-ID: wow/deadly-boss-mods/mainline

@@ -1,14 +1,14 @@
 local mod	= DBM:NewMod("Lanathel", "DBM-Icecrown", 3)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 36 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 58 $"):sub(12, -3))
 mod:SetCreatureID(37955)
 mod:SetModelID(31165)
 mod:SetUsedIcons(4, 5, 6, 7, 8)
 
 mod:RegisterCombat("combat")
 
-mod:RegisterEvents(
+mod:RegisterEventsInCombat(
 	"SPELL_AURA_APPLIED",
 	"SPELL_AURA_REMOVED",
 	"SPELL_CAST_SUCCESS",
@@ -32,6 +32,7 @@ local specWarnBloodBolt				= mod:NewSpecialWarningSpell(71772)
 local specWarnPactDarkfallen		= mod:NewSpecialWarningYou(71340)
 local specWarnEssenceoftheBloodQueen= mod:NewSpecialWarningYou(70867)
 local specWarnBloodthirst			= mod:NewSpecialWarningYou(70877)
+local yellBloodthirst				= mod:NewYell(70877, L.YellFrenzy)
 local specWarnSwarmingShadows		= mod:NewSpecialWarningMove(71266)
 local specWarnMindConrolled			= mod:NewSpecialWarningTarget(70923, mod:IsTank())
 
@@ -112,9 +113,7 @@ function mod:SPELL_AURA_APPLIED(args)
 		warnBloodthirst:Show(args.destName)
 		if args:IsPlayer() then
 			specWarnBloodthirst:Show()
-			if self.Options.YellOnFrenzy then
-				SendChatMessage(L.YellFrenzy, "SAY")
-			end
+			yellBloodthirst:Yell()
 			if self:IsDifficulty("normal10", "heroic10") then
 				timerBloodThirst:Start(15)--15 seconds on 10 man
 			else

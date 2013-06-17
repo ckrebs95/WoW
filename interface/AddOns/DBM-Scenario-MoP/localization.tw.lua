@@ -101,7 +101,7 @@ L:SetMiscLocalization{
 L= DBM:GetModLocalization("d647")
 
 L:SetMiscLocalization{
-	summonElemental		= "Minions, destroy these insects!"
+	summonElemental		= "我的元素們，消滅這些害蟲!"
 }
 
 ------------------------
@@ -139,8 +139,8 @@ L:SetOptionLocalization{
 L= DBM:GetModLocalization("d649")
 
 L:SetMiscLocalization{
-	XorenthPull		= "All lesser races are enemies of the true Horde!",
-	ElagloPull		= "Fools! The true horde cannot be stopped by the likes of you."
+	XorenthPull		= "所有低等種族都是正統部落的敵人。",
+	ElagloPull		= "蠢貨!像你這種廢物無法阻止正統的部落!"
 }
 
 ----------------------

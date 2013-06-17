@@ -136,7 +136,15 @@ L:SetOptionLocalization({
 	specWarnBigBird		= DBM_CORE_AUTO_SPEC_WARN_OPTIONS.switch:format("ej7827"),
 	specWarnBigBirdSoon	= DBM_CORE_AUTO_SPEC_WARN_OPTIONS.soon:format("ej7827"),
 	timerFlockCD		= DBM_CORE_AUTO_TIMER_OPTIONS.nextcount:format("ej7348"),
-	RangeFrame			= DBM_CORE_AUTO_RANGE_OPTION_TEXT:format(10, 138923)
+	RangeFrame			= DBM_CORE_AUTO_RANGE_OPTION_TEXT:format(10, 138923),
+	ShowNestArrows		= "Show DBM arrow for nest activations",
+	Never				= "Never",
+	Northeast			= "Blue - Lower & Upper NE",
+	Southeast			= "Green - Lower & Upper SE",
+	Southwest			= "Purple - Lower SW & Upper SW(25) or Upper Middle(10)",
+	West				= "Red - Lower W & Upper Middle (25 only)",
+	Northwest			= "Yellow - Lower & Upper NW (25 only)",
+	Guardians			= "Nest Guardians"
 })
 
 L:SetMiscLocalization({
@@ -147,12 +155,15 @@ L:SetMiscLocalization({
 	UpperAndLower	= "Upper & Lower",
 	TrippleD		= "Tripple (2xDwn)",
 	TrippleU		= "Tripple (2xUp)",
-	SouthWest		= "SW",
-	SouthEast		= "SE",
-	NorthWest		= "NW",
-	NorthEast		= "NE",
-	West			= "W",
-	Middle			= "M"
+	NorthEast		= "|cff0000ffNE|r",--Blue
+	SouthEast		= "|cFF088A08SE|r",--Green
+	SouthWest		= "|cFF9932CDSW|r",--Purple
+	West			= "|cffff0000W|r",--Red
+	NorthWest		= "|cffffff00NW|r",--Yellow
+	Middle10		= "|cFF9932CDMiddle|r",--Purple (Middle is upper southwest on 10 man/LFR)
+	Middle25		= "|cffff0000Middle|r",--Red (Middle is upper west on 25 man)
+	ArrowUpper		= " |TInterface\\Icons\\misc_arrowlup:12:12|t ",
+	ArrowLower		= " |TInterface\\Icons\\misc_arrowdown:12:12|t "
 })
 
 --------------------------

@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("PlagueworksTrash", "DBM-Icecrown", 2)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 40 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 45 $"):sub(12, -3))
 mod:SetModelID(30483)
 mod.isTrashMod = true
 
@@ -34,7 +34,7 @@ mod:RemoveOption("SpeedKillTimer")
 function mod:SPELL_AURA_APPLIED(args)
 	if args.spellId == 71127 then
 		local amount = args.amount or 1
-		warnMortalWound:Show(args.spellName, args.destName, amount)
+		warnMortalWound:Show(args.destName, amount)
 		timerMortalWound:Start(args.destName)
 		if args:IsPlayer() and amount >= 5 then
 			specWarnMortalWound:Show(amount)

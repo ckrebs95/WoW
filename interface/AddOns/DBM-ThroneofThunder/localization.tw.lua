@@ -69,7 +69,7 @@ L:SetWarningLocalization({
 })
 
 L:SetOptionLocalization({
-	specWarnCrystalShell	= "當你沒有$spell:137633減益時顯示特別警告",
+	specWarnCrystalShell	= "當你沒有$spell:137633減益並且血量大於90%時顯示特別警告",
 	InfoFrame				= "為玩家沒有$spell:137633顯示訊息框架",
 	SetIconOnTurtles		= "為$journal:7129標示團隊圖示",
 	ClearIconOnTurtles		= "當$journal:7129中了$spell:133971清除團隊圖示",
@@ -116,8 +116,15 @@ L:SetWarningLocalization({
 	specWarnBigBirdSoon	= "巢穴守護者即將出現:%s"
 })
 
-L:SetTimerLocalization({
-	timerFlockCD	= "蛋巢 (%d): %s"
+L:SetOptionLocalization({
+	ShowNestArrows		= "為蛋巢孵化顯示DBM箭頭",
+	Never				= "從不",
+	Northeast			= "藍 - 上層&下層 東北",
+	Southeast			= "綠 - 上層&下層 東南",
+	Southwest			= "紫 - 下層 西南 & 上層 西南(25)或上層 中間(10)",
+	West				= "紅 - 下層 西 & 上層 中間(只有25)",
+	Northwest			= "黃 - 下層 & 上層 西北(只有25)",
+	Guardians			= "巢穴守護者"
 })
 
 L:SetMiscLocalization({
@@ -128,12 +135,13 @@ L:SetMiscLocalization({
 	UpperAndLower	= "上層和下層",
 	TrippleD		= "三個巢(下層x2)",
 	TrippleU		= "三個巢(上層x2)",
-	SouthWest		= "西南",
-	SouthEast		= "東南",
-	NorthWest		= "西北",
-	NorthEast		= "西南",
-	West			= "西邊",
-	Middle			= "中間"
+	NorthEast		= "|cff0000ff東北|r",--Blue
+	SouthEast		= "|cFF088A08東南|r",--Green
+	SouthWest		= "|cFF9932CD西南|r",--Purple
+	West			= "|cffff0000西邊|r",--Red
+	NorthWest		= "|cffffff00西北|r",--Yellow
+	Middle10		= "|cFF9932CD中間|r",--Purple (Middle is upper southwest on 10 man/LFR)
+	Middle25		= "|cffff0000中間|r"--Red (Middle is upper west on 25 man)
 })
 
 --------------------------
@@ -191,7 +199,7 @@ L:SetOptionLocalization({
 })
 
 L:SetMiscLocalization({
-	Pull	= "寶珠爆炸了!"
+	Pull	= "血靈球體爆炸了!"
 })
 
 --------------
@@ -234,14 +242,18 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(832)
 
 L:SetWarningLocalization({
-	specWarnIntermissionSoon	= "超級導雷管階段即將到來"
+	specWarnIntermissionSoon	= "超級充能導雷管階段即將到來"
 })
 
 
 L:SetOptionLocalization({
-	specWarnIntermissionSoon	= "在超級導雷管階段前顯示預先特別警告",
+	specWarnIntermissionSoon	= "在超級充能導雷管階段前顯示預先特別警告",
 	StaticShockArrow			= "當某人中了$spell:135695顯示DBM箭頭",
 	OverchargeArrow				= "當某人中了$spell:136295顯示DBM箭頭"
+})
+
+L:SetMiscLocalization({
+	StaticYell		= "%s中了靜電震擊(%d)"
 })
 
 ------------

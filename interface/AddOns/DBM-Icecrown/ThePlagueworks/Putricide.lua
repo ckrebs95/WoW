@@ -1,23 +1,23 @@
 local mod	= DBM:NewMod("Putricide", "DBM-Icecrown", 2)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 40 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 58 $"):sub(12, -3))
 mod:SetCreatureID(36678)
 mod:SetModelID(30881)
 mod:SetUsedIcons(5, 6, 7, 8)
 --mod:SetMinSyncRevision(3860)
 mod:SetMinSyncRevision(7)--Could break if someone is running out of date version with higher revision
 
-mod:RegisterCombat("yell", L.YellPull)
+mod:RegisterCombat("combat")
 
-mod:RegisterEvents(
+mod:RegisterEventsInCombat(
 	"SPELL_CAST_START",
 	"SPELL_CAST_SUCCESS",
 	"SPELL_AURA_APPLIED",
 	"SPELL_AURA_APPLIED_DOSE",
 	"SPELL_AURA_REFRESH",
 	"SPELL_AURA_REMOVED",
-	"UNIT_HEALTH"
+	"UNIT_HEALTH boss1"
 )
 
 local warnSlimePuddle				= mod:NewSpellAnnounce(70341, 2)
@@ -25,13 +25,13 @@ local warnUnstableExperimentSoon	= mod:NewSoonAnnounce(70351, 3)
 local warnUnstableExperiment		= mod:NewSpellAnnounce(70351, 4)
 local warnVolatileOozeAdhesive		= mod:NewTargetAnnounce(70447, 3)
 local warnGaseousBloat				= mod:NewTargetAnnounce(70672, 3)
-local warnPhase2Soon				= mod:NewAnnounce("WarnPhase2Soon", 2)
+local warnPhase2Soon				= mod:NewPrePhaseAnnounce(2)
 local warnTearGas					= mod:NewSpellAnnounce(71617, 2)		-- Phase transition normal
 local warnVolatileExperiment		= mod:NewSpellAnnounce(72840, 4)		-- Phase transition heroic
 local warnMalleableGoo				= mod:NewSpellAnnounce(72295, 2)		-- Phase 2 ability
 local warnChokingGasBombSoon		= mod:NewPreWarnAnnounce(71255, 5, 3, nil, mod:IsMelee())
 local warnChokingGasBomb			= mod:NewSpellAnnounce(71255, 3, nil, mod:IsMelee())		-- Phase 2 ability
-local warnPhase3Soon				= mod:NewAnnounce("WarnPhase3Soon", 2)
+local warnPhase3Soon				= mod:NewPrePhaseAnnounce(3)
 local warnMutatedPlague				= mod:NewStackAnnounce(72451, 3, nil, mod:IsTank() or mod:IsHealer()) -- Phase 3 ability
 local warnUnboundPlague				= mod:NewTargetAnnounce(70911, 3)		-- Heroic Ability
 

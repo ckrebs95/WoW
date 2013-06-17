@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("ForgemasterGarfrost", "DBM-Party-WotLK", 15)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 34 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 51 $"):sub(12, -3))
 mod:SetCreatureID(36494)
 mod:SetModelID(30843)
 mod:SetUsedIcons(8)
@@ -28,17 +28,8 @@ mod:AddBoolOption("SetIconOnSaroniteRockTarget", true)
 mod:AddBoolOption("AchievementCheck", false, "announce")
 
 local warnedfailed = false
-local guids = {}
-local function buildGuidTable()
-	table.wipe(guids)
-	guids[UnitGUID("player")] = DBM:GetUnitFullName("player")
-	for i = 1, DBM:GetNumGroupMembers() do
-		guids[UnitGUID("party"..i) or "none"] = DBM:GetUnitFullName("party"..i)
-	end
-end
 
 function mod:OnCombatStart(delay)
-	buildGuidTable()
 	warnedfailed = false
 end
 
@@ -81,8 +72,11 @@ function mod:RAID_BOSS_WHISPER(msg)
 end 
 
 function mod:OnSync(msg, guid)
+	local target
+	if guid then
+		target = DBM:GetFullPlayerNameByGUID(guid)
+	end
 	if msg == "SaroniteRock" and guid then
-		local target = guids[guid]
 		if target then
 			warnSaroniteRock:Show(target)
 			local uId = DBM:GetRaidUnitId(target)

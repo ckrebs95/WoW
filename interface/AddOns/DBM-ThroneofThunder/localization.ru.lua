@@ -69,7 +69,7 @@ L:SetWarningLocalization({
 })
 
 L:SetOptionLocalization({
-	specWarnCrystalShell  = "Спец-предупреждение, когда на Вас нет дебаффа $spell:137633 и более 90% здоровья",
+	specWarnCrystalShell	= "Спец-предупреждение, когда на Вас нет дебаффа $spell:137633 и более 90% здоровья",
 	InfoFrame				= "Информационное окно для игроков без $spell:137633",
 	SetIconOnTurtles		= "Устанавливать метки на $journal:7129",
 	ClearIconOnTurtles		= "Убирать метки с $journal:7129, когда активируется $spell:133971",
@@ -120,6 +120,17 @@ L:SetTimerLocalization({
 	timerFlockCD	= "Выводок (%d): %s"
 })
 
+L:SetOptionLocalization({
+	ShowNestArrows		= "Показывать стрелку DBM при активации гнезд",
+	Never				= "Никогда",
+	Northeast			= "Синий - Низ & Верх СВ",
+	Southeast			= "Зеленый - Низ & Верх ЮВ",
+	Southwest			= "Фиолетовый - Низ ЮЗ & Верх ЮЗ(25) или Верх Центр(10)",
+	West				= "Красный - Низ З & Верх Центр (только 25)",
+	Northwest			= "Желтый - Низ & Верх СЗ (только 25)",
+	Guardians			= "Стражи гнезда"
+})
+
 L:SetMiscLocalization({
 	eggsHatchL		= "Яйца в одном из нижних гнезд начинают проклевываться!",
 	eggsHatchU		= "Яйца в одном из верхних гнезд начинают проклевываться!",
@@ -128,12 +139,13 @@ L:SetMiscLocalization({
 	UpperAndLower	= "Верхний и Нижний",
 	TrippleD		= "Тройной (2 нижних)",
 	TrippleU		= "Тройной (2 верхних)",
-	SouthWest		= "ЮЗ",
-	SouthEast		= "ЮВ",
-	NorthWest		= "СЗ",
-	NorthEast		= "СВ",
-	West			= "З",
-	Middle			= "Середина"
+	NorthEast		= "|cff0000ffСВ|r",--Синий
+	SouthEast		= "|cFF088A08ЮВ|r",--Зеленый
+	SouthWest		= "|cFF9932CDЮЗ|r",--Фиолетовый
+	West			= "|cffff0000З|r",--Красный
+	NorthWest		= "|cffffff00СЗ|r",--Желтый
+	Middle10		= "|cFF9932CDЦентр|r",--Фиолетовый (Центр это верх юго-запад для 10 ппл/LFR)
+	Middle25		= "|cffff0000Центр|r"--Красный (Центр это верх запад для 25 ппл)
 })
 
 --------------------------
@@ -241,6 +253,10 @@ L:SetOptionLocalization({
 	specWarnIntermissionSoon	= "Спец-предупреждение перед началом промежуточной фазы",
 	StaticShockArrow			= "Показывать стрелку DBM, когда на ком-то $spell:135695",
 	OverchargeArrow				= "Показывать стрелку DBM, когда на ком-то $spell:136295"
+})
+
+L:SetMiscLocalization({
+	StaticYell		= "Статический шок на %s (%d)"
 })
 
 ------------

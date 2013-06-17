@@ -55,7 +55,7 @@ L:SetWarningLocalization({
 
 L:SetOptionLocalization({
 	PHealthFrame		= "우두머리 체력 바 사용시 $spell:136442 사라짐까지 남은 체력도 함께 보기",
-	AnnounceCooldowns	= "공격대 생존기 사용을 위해 $spell:137166 시전 횟수 음성으로 알리기\n(카즈라진의 빙의가 풀리면 초기화됨)"
+	AnnounceCooldowns	= "공격대 생존기 사용을 위해 $spell:137166 시전 횟수를 음성으로 듣기\n(카즈라진의 빙의가 풀리면 초기화됨)"
 })
 
 ------------
@@ -69,11 +69,11 @@ L:SetWarningLocalization({
 })
 
 L:SetOptionLocalization({
-	specWarnCrystalShell	= "$spell:137633 효과가 없을 경우 특수 경고 보기",
+	specWarnCrystalShell	= "$spell:137633 효과가 없고, 체력이 90% 이상인 경우 특수 경고 보기",
 	InfoFrame				= "$spell:137633 효과가 없는 대상을 정보 창에서 보기",
 	SetIconOnTurtles		= "$journal:7129에 전술 목표 아이콘 설정",
 	ClearIconOnTurtles		= "$journal:7129이 $spell:133971의 영향을 받은 경우 전술 목표 아이콘 지우기",
-	AnnounceCooldowns		= "공격대 생존기 사용을 위해 $spell:134920 시전 횟수 음성으로 알리기"
+	AnnounceCooldowns		= "공격대 생존기 사용을 위해 $spell:134920 시전 횟수를 음성으로 듣기"
 })
 
 L:SetMiscLocalization({
@@ -91,7 +91,7 @@ L:SetTimerLocalization({
 
 L:SetOptionLocalization({
 	timerBreaths			= "다음 숨결 바 표시",
-	AnnounceCooldowns		= "공격대 생존기 사용을 위해 광란/확산 시전 횟수 음성으로 알리기",
+	AnnounceCooldowns		= "공격대 생존기 사용을 위해 광란/확산 시전 횟수를 음성으로 듣기",
 	Never					= "알리지 않음",
 	Every					= "횟수 초기화 하지 않음",
 	EveryTwo				= "2번 시전후 초기화",
@@ -120,6 +120,17 @@ L:SetTimerLocalization({
 	timerFlockCD	= "둥지 (%d): %s"
 })
 
+L:SetOptionLocalization({
+	ShowNestArrows		= "활성화된 둥지에 화살표 표시",
+	Never				= "표시안함",
+	Northeast			= "파랑 - 아래/위 북동쪽",
+	Southeast			= "초록 - 아래/위 남동쪽",
+	Southwest			= "보라 - 아래 남서쪽 & 위 남서쪽(25인) / 위 중앙(10인)",
+	West				= "빨강 - 아래 서쪽 & 위 중앙(25인)",
+	Northwest			= "노랑 - 아래/위 북서쪽(25인)",
+	Guardians			= "둥지 수호자"
+})
+
 L:SetMiscLocalization({
 	eggsHatchL		= "아랫둥지에 있는 알들이 부화하기 시작합니다!",
 	eggsHatchU		= "위쪽 둥지에 있는 알들이 부화하기 시작합니다!",
@@ -128,12 +139,13 @@ L:SetMiscLocalization({
 	UpperAndLower	= "윗쪽 + 아래쪽",
 	TrippleD		= "윗쪽 + 아래쪽 + 아래쪽",
 	TrippleU		= "윗쪽 + 윗쪽 + 아래쪽",
-	SouthWest		= "남서쪽",
-	SouthEast		= "남동쪽",
-	NorthWest		= "북서쪽",
-	NorthEast		= "북동쪽",
-	West			= "서쪽",
-	Middle			= "중앙"
+	NorthEast		= "|cff0000ff북동쪽|r",
+	SouthEast		= "|cFF088A08남동쪽|r",
+	SouthWest		= "|cFF9932CD남서쪽|r",
+	West			= "|cffff0000서쪽|r",
+	NorthWest		= "|cffffff00북서쪽|r",
+	Middle10		= "|cFF9932CD중앙|r",
+	Middle25		= "|cffff0000중앙|r"
 })
 
 --------------------------
@@ -241,6 +253,10 @@ L:SetOptionLocalization({
 	specWarnIntermissionSoon	= "사잇단계 진입 전에 특수 경고 보기",
 	StaticShockArrow			= "$spell:135695 주문의 영향을 누군가 받은 경우 DBM 화살표 보기",
 	OverchargeArrow				= "$spell:136295 주문의 영향을 누군가 받은 경우 DBM 화살표 보기"
+})
+
+L:SetMiscLocalization({
+	StaticYell		= "%s에게 전하 충격! (%d)"
 })
 
 ------------

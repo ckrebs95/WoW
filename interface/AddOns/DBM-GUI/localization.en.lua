@@ -107,6 +107,7 @@ L.ShowWarningsInChat 		= "Show warnings in chat frame"
 L.ShowFakedRaidWarnings 	= "Show warnings as faked raid warning messages"
 L.WarningIconLeft 			= "Show icon on left side"
 L.WarningIconRight 			= "Show icon on right side"
+L.WarningIconChat 			= "Show icons in chat frame"
 L.ShowCountdownText			= "Show countdown text"
 L.RaidWarnMessage 			= "Thanks for using Deadly Boss Mods"
 L.BarWhileMove 				= "Raid warning movable"
@@ -198,6 +199,7 @@ L.Area_PullTimer				= "Pull Timer Filter Options"
 L.DontShowPT					= "Do not show Pull Timer bar"
 L.DontShowPTCountdownText		= "Do not show Pull Timer countdown text"
 L.DontPlayPTCountdown			= "Do not play Pull Timer countdown audio"
+L.DontShowPTText				= "Do not show announce text for Pull Timer"
 
 -- Misc
 L.FontHeight	= 16

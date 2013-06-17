@@ -128,12 +128,13 @@ L:SetMiscLocalization({
 	UpperAndLower	= "Oben & Unten",
 	TrippleD		= "Dreifach (2xUnten)",
 	TrippleU		= "Dreifach (2xOben)",
-	SouthWest		= "SW",
-	SouthEast		= "SO",
-	NorthWest		= "NW",
-	NorthEast		= "NO",
-	West			= "W",
-	Middle			= "Mitte"
+	NorthEast		= "|cff0000ffNO|r",
+	SouthEast		= "|cFF088A08SO|r",
+	SouthWest		= "|cFF9932CDSW|r",
+	West			= "|cffff0000W|r",
+	NorthWest		= "|cffffff00NW|r",
+	Middle10		= "|cFF9932CDMitte|r",
+	Middle25		= "|cffff0000Mitte|r"
 })
 
 --------------------------

@@ -57,14 +57,8 @@ L:SetGeneralLocalization{
 	name = "Crimson Hall Trash"
 }
 
-L:SetWarningLocalization{
-}
-
 L:SetOptionLocalization{
 	BloodMirrorIcon		= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(70451)
-}
-
-L:SetMiscLocalization{
 }
 
 ---------------------------
@@ -80,13 +74,8 @@ L:SetWarningLocalization{
 	SpecWarnGosaEvent	= "Sindragosa gauntlet started!"
 }
 
-L:SetTimerLocalization{
-	GosaTimer			= "Time remaining"
-}
-
 L:SetOptionLocalization{
-	SpecWarnGosaEvent	= "Show special warning for Sindragosa gauntlet event",
-	GosaTimer			= "Show timer for Sindragosa gauntlet event duration"
+	SpecWarnGosaEvent	= "Show special warning for Sindragosa gauntlet event"
 }
 
 L:SetMiscLocalization{
@@ -140,7 +129,6 @@ L:SetOptionLocalization{
 }
 
 L:SetMiscLocalization{
-	YellPull				= "What is this disturbance? You dare trespass upon this hallowed ground? This shall be your final resting place!",
 	YellReanimatedFanatic	= "Arise, and exult in your pure form!",
 	Fanatic1				= "Cult Fanatic",
 	Fanatic2				= "Deformed Fanatic",
@@ -241,7 +229,6 @@ L:SetGeneralLocalization{
 
 L:SetWarningLocalization{
 	WarnOozeSpawn				= "Little Ooze spawning",
-	WarnUnstableOoze			= "%s on >%s< (%d)",			-- Unstable Ooze on >args.destName< (args.amount)
 	SpecWarnLittleOoze			= "Little Ooze attacking you - Run Away"--creatureid 36897
 }
 
@@ -249,7 +236,6 @@ L:SetOptionLocalization{
 	WarnOozeSpawn				= "Show warning for Little Ooze spawning",
 	SpecWarnLittleOoze			= "Show special warning when you are attacked by Little Ooze",--creatureid 36897
 	RangeFrame					= "Show range frame (8 yards)",
-	WarnUnstableOoze			= DBM_CORE_AUTO_ANNOUNCE_OPTIONS.spell:format(69558),
 	InfectionIcon				= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(69674),
 	TankArrow					= "Show DBM arrow for Big Ooze kiter"
 }
@@ -268,25 +254,12 @@ L:SetGeneralLocalization{
 	name = "Professor Putricide"
 }
 
-L:SetWarningLocalization{
-	WarnPhase2Soon				= "Phase 2 soon",
-	WarnPhase3Soon				= "Phase 3 soon",
-	SpecWarnMalleableGoo		= "Malleable Goo on you - Move away",
-	SpecWarnMalleableGooNear	= "Malleable Goo near you - Watch out"
-}
-
 L:SetOptionLocalization{
-	WarnPhase2Soon				= "Show pre-warning for Phase 2 (at ~83%)",
-	WarnPhase3Soon				= "Show pre-warning for Phase 3 (at ~38%)",
 	OozeAdhesiveIcon			= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(70447),
 	GaseousBloatIcon			= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(70672),
 	UnboundPlagueIcon			= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(70911),
 	MalleableGooIcon			= "Set icon on first $spell:72295 target",
 	GooArrow					= "Show DBM arrow when $spell:72295 is near you"
-}
-
-L:SetMiscLocalization{
-	YellPull		= "Good news, everyone! I think I've perfected a plague that will destroy all life on Azeroth!"
 }
 
 ----------------------------
@@ -333,18 +306,11 @@ L:SetGeneralLocalization{
 	name = "Blood-Queen Lana'thel"
 }
 
-L:SetWarningLocalization{
-}
-
-L:SetTimerLocalization{
-}
-
 L:SetOptionLocalization{
 	SetIconOnDarkFallen		= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(71340),
 	SwarmingShadowsIcon		= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(71266),
 	BloodMirrorIcon			= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(70838),
-	RangeFrame				= "Show range frame (8 yards)",
-	YellOnFrenzy			= "Yell on $spell:70877"
+	RangeFrame				= "Show range frame (8 yards)"
 }
 
 L:SetMiscLocalization{
@@ -394,22 +360,20 @@ L:SetGeneralLocalization{
 	name = "Sindragosa"
 }
 
+L:SetWarningLocalization{
+	WarnAirphase			= "Air phase",
+	WarnGroundphaseSoon		= "Sindragosa landing soon"
+}
+
 L:SetTimerLocalization{
 	TimerNextAirphase		= "Next air phase",
 	TimerNextGroundphase	= "Next ground phase",
 	AchievementMystic		= "Time to clear Mystic stacks"
 }
 
-L:SetWarningLocalization{
-	WarnPhase2soon			= "Phase 2 soon",
-	WarnAirphase			= "Air phase",
-	WarnGroundphaseSoon		= "Sindragosa landing soon"
-}
-
 L:SetOptionLocalization{
 	WarnAirphase			= "Announce air phase",
 	WarnGroundphaseSoon		= "Show pre-warning for ground phase",
-	WarnPhase2soon			= "Show pre-warning for Phase 2 (at ~38%)",
 	TimerNextAirphase		= "Show timer for next air phase",
 	TimerNextGroundphase	= "Show timer for next ground phase",
 	AnnounceFrostBeaconIcons= "Announce icons for $spell:70126 targets to raid chat\n(requires raid leader)",
@@ -427,8 +391,7 @@ L:SetMiscLocalization{
 	YellPhase2Dem		= "Zar kiel xi romathIs zilthuras revos ruk toralar ",--Demonic, since curse of tonges is used by some guilds and it messes up yell detection.
 	BeaconIconSet		= "Frost Beacon icon {rt%d} set on %s",
 	AchievementWarning	= "Warning: %s has 5 stacks of Mystic Buffet",
-	AchievementFailed	= ">> ACHIEVEMENT FAILED: %s has %d stacks of Mystic Buffet <<",
-	YellPull			= "You are fools to have come to this place. The icy winds of Northrend will consume your souls!"--Not currently in use.
+	AchievementFailed	= ">> ACHIEVEMENT FAILED: %s has %d stacks of Mystic Buffet <<"
 }
 
 ---------------------
@@ -441,8 +404,6 @@ L:SetGeneralLocalization{
 }
 
 L:SetWarningLocalization{
-	WarnPhase2Soon			= "Phase 2 transition soon",
-	WarnPhase3Soon			= "Phase 3 transition soon",
 	ValkyrWarning			= ">%s< has been grabbed!",
 	SpecWarnYouAreValkd		= "You have been grabbed",
 	WarnNecroticPlagueJump	= "Necrotic Plague jumped to >%s<",
@@ -462,8 +423,6 @@ L:SetOptionLocalization{
 	WarnNecroticPlagueJump	= "Announce $spell:70337 jump targets",
 	TimerNecroticPlagueCleanse	= "Show timer to cleanse Necrotic Plague before\nthe first tick",
 	PhaseTransition			= "Show time for phase transitions",
-	WarnPhase2Soon			= "Show pre-warning for Phase 2 transition (at ~73%)",
-	WarnPhase3Soon			= "Show pre-warning for Phase 3 transition (at ~43%)",
 	ValkyrWarning			= "Announce who has been grabbed by Val'kyr Shadowguards",
 	SpecWarnYouAreValkd		= "Show special warning when you have been grabbed by a Val'kyr Shadowguard",--npc36609
 	DefileIcon				= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(72762),
@@ -479,7 +438,6 @@ L:SetOptionLocalization{
 
 L:SetMiscLocalization{
 	LKPull					= "So the Light's vaunted justice has finally arrived? Shall I lay down Frostmourne and throw myself at your mercy, Fordring?",
-	YellValk				= "I've been grabbed!",
 	LKRoleplay				= "Is it truly righteousness that drives you? I wonder...",
 	ValkGrabbedIcon			= "Valkyr Shadowguard {rt%d} grabbed %s",
 	ValkGrabbed				= "Valkyr Shadowguard grabbed %s",

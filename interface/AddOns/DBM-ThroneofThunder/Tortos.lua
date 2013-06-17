@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(825, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9709 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9795 $"):sub(12, -3))
 mod:SetCreatureID(67977)
 mod:SetQuestID(32747)
 mod:SetZone()
@@ -86,7 +86,7 @@ local function checkCrystalShell()
 			specWarnCrystalShell:Show(shelldName)
 		else
 			mod:Unschedule(checkCrystalShell)
-			mod:Schedule(5, checkCrystalShell)
+			mod:Schedule(3, checkCrystalShell)
 		end
 	end
 end
@@ -181,6 +181,7 @@ local function resetaddstate()
 end
 
 mod:RegisterOnUpdateHandler(function(self)
+	if DBM:GetLowestBossHealth() * 100 < 10 then return end
 	if hasHighestVersion and not (iconsSet == 3) then
 		for uId in DBM:GetGroupMembers() do
 			local unitid = uId.."target"

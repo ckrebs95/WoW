@@ -1,6 +1,5 @@
 ﻿if GetLocale() ~= "zhTW" then return end
-DBM_GUI_Translations = DBM_GUI_Translations or {}
-
+if not DBM_GUI_Translations then DBM_GUI_Translations = {} end
 local L = DBM_GUI_Translations
 
 L.MainFrame		 = "Deadly Boss Mods"
@@ -112,7 +111,8 @@ L.ShowCountdownText			= "顯示倒數文字"
 L.RaidWarnMessage 			= "感謝您使用Deadly Boss Mods"
 L.BarWhileMove 				= "可移動的團隊警告"
 L.RaidWarnSound				= "發出團隊警告時播放音效"
-L.CountdownVoice			= "設置倒計時聲音"
+L.CountdownVoice			= "設置主要的倒數計時聲音"
+L.CountdownVoice2			= "設置次要的倒數計時聲音"
 L.SpecialWarnSound			= "設定只作用於你或你的角色天賦的特別警告的音效"
 L.SpecialWarnSound2			= "設定作用於全團的特別警告的音效"
 L.SpecialWarnSound3			= "設定作用於極度重要的特別警告的音效"
@@ -198,6 +198,7 @@ L.Area_PullTimer				= "開怪計時器過濾選項"
 L.DontShowPT					= "不要顯示開怪倒數計時條"
 L.DontShowPTCountdownText		= "不要顯示開怪倒數文字"
 L.DontPlayPTCountdown			= "不要使用開怪倒數音效"
+L.DontShowPTText				= "不要顯示開怪提示文字"
 
 -- Misc
 L.FontHeight	= 18

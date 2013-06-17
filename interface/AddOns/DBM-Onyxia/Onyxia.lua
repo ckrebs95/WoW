@@ -1,8 +1,9 @@
 local mod	= DBM:NewMod("Onyxia", "DBM-Onyxia")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 43 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 59 $"):sub(12, -3))
 mod:SetCreatureID(10184)
+mod:SetZone(141, 718)--We don't want it to load in 141, unfortunately we got an issue where ZCNA doesn't fire inside so LastZoneID will be 141, so we ensure mod still works even if DBM thinks we are in dustwallow
 mod:SetModelID(8570)
 
 mod:RegisterCombat("combat")
@@ -12,14 +13,14 @@ mod:RegisterEvents(
 	"SPELL_CAST_START",
 	"SPELL_DAMAGE",
 	"UNIT_DIED",
-	"UNIT_HEALTH"
+	"UNIT_HEALTH target focus mouseover"
 )
 
 local warnWhelpsSoon		= mod:NewAnnounce("WarnWhelpsSoon", 1, 69004)
 local warnPhase2			= mod:NewPhaseAnnounce(2)
 local warnPhase3			= mod:NewPhaseAnnounce(3)
-local warnPhase2Soon		= mod:NewAnnounce("WarnPhase2Soon", 1, "Interface\\Icons\\Spell_Nature_WispSplode")
-local warnPhase3Soon		= mod:NewAnnounce("WarnPhase3Soon", 1, "Interface\\Icons\\Spell_Nature_WispSplode")
+local warnPhase2Soon		= mod:NewPrePhaseAnnounce(2)
+local warnPhase3Soon		= mod:NewPrePhaseAnnounce(3)
 
 local specWarnBreath		= mod:NewSpecialWarningSpell(18584, nil, nil, nil, true)
 local specWarnBlastNova		= mod:NewSpecialWarningRun(68958, mod:IsMelee())
@@ -47,6 +48,14 @@ function mod:OnCombatStart(delay)
 	sndFunny:Play("Interface\\AddOns\\DBM-Onyxia\\sounds\\dps-very-very-slowly.ogg")
 	sndFunny:Schedule(20, "Interface\\AddOns\\DBM-Onyxia\\sounds\\hit-it-like-you-mean-it.ogg")
 	sndFunny:Schedule(30, "Interface\\AddOns\\DBM-Onyxia\\sounds\\now-hit-it-very-hard-and-fast.ogg")
+	--Show correct achievement text
+	if self:IsDifficulty("normal25") then
+		timerAchieve		= mod:NewAchievementTimer(300, 4405) 
+		timerAchieveWhelps	= mod:NewAchievementTimer(10, 4406)
+	else
+		timerAchieve		= mod:NewAchievementTimer(300, 4402) 
+		timerAchieveWhelps	= mod:NewAchievementTimer(10, 4403) 
+	end
 end
 
 function mod:Whelps()--Not right, need to fix

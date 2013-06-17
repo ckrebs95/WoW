@@ -1,9 +1,8 @@
 
 wlScans = {
-	["archaeology"] = {
-	},
-	["timePlayedTotal"] = 0,
-	["glyphs"] = "",
+	["archaeology"] = "-1",
+	["timePlayedTotal"] = 14182,
+	["glyphs"] = "-1",
 	["guid"] = "0x03800000057C779D",
 }
 wlSetting = {

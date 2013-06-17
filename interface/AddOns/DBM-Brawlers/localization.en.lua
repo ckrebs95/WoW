@@ -151,3 +151,18 @@ L= DBM:GetModLocalization("BrawlRare2")
 L:SetGeneralLocalization({
 	name = "Brawlers: Challenges 2"
 })
+
+L:SetWarningLocalization({
+	specWarnRPS			= "Use %s!"
+})
+
+L:SetOptionLocalization({
+	specWarnRPS			= "Show special warning on what to use for $spell:141206",
+	SpeakOutStrikes		= "Count out number of $spell:141190 attacks"
+})
+
+L:SetMiscLocalization({
+	rock			= "Rock",
+	paper			= "Paper",
+	scissors		= "Scissors"
+})

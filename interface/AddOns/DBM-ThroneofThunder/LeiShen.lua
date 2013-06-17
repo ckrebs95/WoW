@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(832, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9726 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9794 $"):sub(12, -3))
 mod:SetCreatureID(68397)--Diffusion Chain Conduit 68696, Static Shock Conduit 68398, Bouncing Bolt conduit 68698, Overcharge conduit 68697
 mod:SetQuestID(32756)
 mod:SetZone()
@@ -12,13 +12,8 @@ mod:RegisterCombat("combat")
 mod:RegisterEventsInCombat(
 	"SPELL_CAST_START",
 	"SPELL_AURA_APPLIED",
-	"SPELL_AURA_APPLIED_DOSE",
 	"SPELL_AURA_REMOVED",
 	"SPELL_CAST_SUCCESS",
-	"SPELL_DAMAGE",
-	"SPELL_MISSED",
-	"SPELL_PERIODIC_DAMAGE",
-	"SPELL_PERIODIC_MISSED",
 	"CHAT_MSG_RAID_BOSS_EMOTE",
 	"UNIT_SPELLCAST_SUCCEEDED"
 )
@@ -35,7 +30,8 @@ local warnThunderstruck					= mod:NewSpellAnnounce(135095, 3)--Target scanning s
 local warnPhase2						= mod:NewPhaseAnnounce(2)
 local warnFusionSlash					= mod:NewSpellAnnounce(136478, 4, nil, mod:IsTank() or mod:IsHealer())
 local warnLightningWhip					= mod:NewSpellAnnounce(136850, 3)
-local warnSummonBallLightning			= mod:NewSpellAnnounce(136543, 3)--This seems to be VERY important to spread for. It spawns an orb for every person who takes damage. MUST range 6 this.
+local warnSummonBallLightning			= mod:NewCountAnnounce(136543, 3)--This seems to be VERY important to spread for. It spawns an orb for every person who takes damage. MUST range 6 this.
+local warnGorefiendsGrasp				= mod:NewSpellAnnounce(108199, 1)
 --Phase 3
 local warnPhase3						= mod:NewPhaseAnnounce(3)
 local warnViolentGaleWinds				= mod:NewSpellAnnounce(136889, 3)
@@ -61,8 +57,9 @@ local specWarnIntermissionSoon			= mod:NewSpecialWarning("specWarnIntermissionSo
 --Phase 2
 local specWarnFusionSlash				= mod:NewSpecialWarningSpell(136478, mod:IsTank(), nil, nil, 3)--Cast (394514 is debuff. We warn for cast though because it knocks you off platform if not careful)
 local specWarnLightningWhip				= mod:NewSpecialWarningSpell(136850, nil, nil, nil, 2)
-local specWarnSummonBallLightning		= mod:NewSpecialWarningSpell(136543, nil, nil, nil, 2)
+local specWarnSummonBallLightning		= mod:NewSpecialWarningCount(136543)
 local specWarnOverloadedCircuits		= mod:NewSpecialWarningMove(137176)
+local specWarnGorefiendsGrasp			= mod:NewSpecialWarningSpell(108199, false)--For heroic, gorefiends+stun timing is paramount to success
 --Herioc
 local specWarnHelmOfCommand				= mod:NewSpecialWarningYou(139011, nil, nil, nil, 3)
 
@@ -82,7 +79,7 @@ local timerThunderstruckCD				= mod:NewNextTimer(46, 135095)--Seems like an exac
 local timerFussionSlashCD				= mod:NewCDTimer(42.5, 136478, nil, mod:IsTank())
 local timerLightningWhip				= mod:NewCastTimer(4, 136850)
 local timerLightningWhipCD				= mod:NewNextTimer(45.5, 136850)--Also an exact bar
-local timerSummonBallLightningCD		= mod:NewNextTimer(45.5, 136543)--Seems exact on live, versus the variable it was on PTR
+local timerSummonBallLightningCD		= mod:NewNextCountTimer(45.5, 136543)--Seems exact on live, versus the variable it was on PTR
 --Phase 3
 local timerViolentGaleWinds				= mod:NewBuffActiveTimer(18, 136889)
 local timerViolentGaleWindsCD			= mod:NewNextTimer(30.5, 136889)
@@ -115,6 +112,8 @@ local staticIcon = 8--Start high and count down
 local overchargeTarget = {}
 local overchargeIcon = 1--Start low and count up
 local helmOfCommandTarget = {}
+local playerName = UnitName("player")
+local ballsCount = 0
 
 local function warnStaticShockTargets()
 	warnStaticShock:Show(table.concat(staticshockTargets, "<, >"))
@@ -145,12 +144,17 @@ function mod:OnCombatStart(delay)
 	eastDestroyed = false
 	southDestroyed = false
 	westDestroyed = false
+	ballsCount = 0
 	timerThunderstruckCD:Start(25-delay)
 	countdownThunderstruck:Start(25-delay)
 	timerDecapitateCD:Start(40-delay)--First seems to be 45, rest 50. it's a CD though, not a "next"
 	berserkTimer:Start(-delay)
 	self:RegisterShortTermEvents(
-		"UNIT_HEALTH_FREQUENT boss1"
+		"UNIT_HEALTH_FREQUENT boss1",
+		"SPELL_DAMAGE",
+		"SPELL_MISSED",
+		"SPELL_PERIODIC_DAMAGE",
+		"SPELL_PERIODIC_MISSED"
 	)-- Do not use on phase 3.
 end
 
@@ -218,12 +222,12 @@ function mod:SPELL_AURA_APPLIED(args)
 		if args:IsPlayer() then
 			specWarnStaticShock:Show()
 			if not self:IsDifficulty("lfr25") then
-				yellStaticShock:Schedule(7, 1)
-				yellStaticShock:Schedule(6, 2)
-				yellStaticShock:Schedule(5, 3)
-				yellStaticShock:Schedule(4, 4)
+				yellStaticShock:Schedule(7, playerName, 1)
+				yellStaticShock:Schedule(6, playerName, 2)
+				yellStaticShock:Schedule(5, playerName, 3)
+				yellStaticShock:Schedule(4, playerName, 4)
 			end
-			yellStaticShock:Schedule(3, 5)
+			yellStaticShock:Schedule(3, playerName, 5)
 			timerStaticShock:Start()
 			countdownStaticShockFades:Start()
 		else
@@ -303,13 +307,17 @@ function mod:SPELL_CAST_SUCCESS(args)
 			specWarnDiffusionChainSoon:Schedule(36)
 		end
 	elseif args.spellId == 136543 and self:AntiSpam(2, 1) then
-		warnSummonBallLightning:Show()
-		specWarnSummonBallLightning:Show()
+		ballsCount = ballsCount + 1
+		warnSummonBallLightning:Show(ballsCount)
+		specWarnSummonBallLightning:Show(ballsCount)
 		if phase < 3 then
-			timerSummonBallLightningCD:Start()
+			timerSummonBallLightningCD:Start(nil, ballsCount+1)
 		else
-			timerSummonBallLightningCD:Start(30)
+			timerSummonBallLightningCD:Start(30, ballsCount+1)
 		end
+	elseif args.spellId == 108199 and self:IsInCombat() then
+		warnGorefiendsGrasp:Show()
+		specWarnGorefiendsGrasp:Show()
 	end
 end
 
@@ -372,7 +380,8 @@ function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg, _, _, _, target)
 		elseif msg:find("spell:135683") then--West (Bouncing Bolt)
 			westDestroyed = true
 		end
-		if self:IsDifficulty("heroic10", "heroic25") then
+--[[		if self:IsDifficulty("heroic10", "heroic25") then
+			--Not consistent, more work needed?
 			--On heroic he gains ability perm when pillar dies.
 			--it will be cast 14 seconds later unless you get him to cast one of other ones first then it may be at 15-16 right after the other one
 			--not sure how it works after second intermission, probably up in air which one he casts first and other right after. thats why these are CD timers.
@@ -389,7 +398,7 @@ function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg, _, _, _, target)
 				timerBouncingBoltCD:Start(14)
 				countdownBouncingBolt:Start(14)
 			end
-		end
+		end--]]
 		if phase == 2 then--Start Phase 2 timers
 			warnPhase2:Show()
 			timerSummonBallLightningCD:Start(15)

@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Moorabi", "DBM-Party-WotLK", 5)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 34 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 47 $"):sub(12, -3))
 mod:SetCreatureID(29305)
 mod:SetModelID(27059)
 --mod:SetZone()
@@ -10,7 +10,7 @@ mod:RegisterCombat("combat")
 
 mod:RegisterEvents(
 	"SPELL_CAST_START",
-	"UNIT_HEALTH"
+	"UNIT_HEALTH boss1 target focus mouseover"
 )
 
 local warningTransform	= mod:NewSpellAnnounce(55098, 3)

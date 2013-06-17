@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Sindragosa", "DBM-Icecrown", 4)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 40 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 58 $"):sub(12, -3))
 mod:SetCreatureID(36853)
 --mod:SetModelID(30362)--Does not scale correctly
 mod:SetUsedIcons(3, 4, 5, 6, 7, 8)
@@ -10,23 +10,23 @@ mod:SetMinSyncRevision(7)--Could break if someone is running out of date version
 
 mod:RegisterCombat("combat")
 
-mod:RegisterEvents(
+mod:RegisterEventsInCombat(
 	"SPELL_CAST_START",
 	"SPELL_AURA_APPLIED",
 	"SPELL_AURA_APPLIED_DOSE",
 	"SPELL_AURA_REMOVED",
 	"SPELL_CAST_SUCCESS",
-	"UNIT_HEALTH",
+	"UNIT_HEALTH boss1",
 	"CHAT_MSG_MONSTER_YELL"
 )
 
 local warnAirphase				= mod:NewAnnounce("WarnAirphase", 2, 43810)
 local warnGroundphaseSoon		= mod:NewAnnounce("WarnGroundphaseSoon", 2, 43810)
-local warnPhase2soon			= mod:NewAnnounce("WarnPhase2soon", 1)
+local warnPhase2soon			= mod:NewPrePhaseAnnounce(2)
 local warnPhase2				= mod:NewPhaseAnnounce(2, 2)
-local warnInstability			= mod:NewStackAnnounce(69766, 2, nil, false)
-local warnChilledtotheBone		= mod:NewStackAnnounce(70106, 2, nil, false)
-local warnMysticBuffet			= mod:NewStackAnnounce(70128, 2, nil, false)
+local warnInstability			= mod:NewCountAnnounce(69766, 2, nil, false)
+local warnChilledtotheBone		= mod:NewCountAnnounce(70106, 2, nil, false)
+local warnMysticBuffet			= mod:NewCountAnnounce(70128, 2, nil, false)
 local warnFrostBeacon			= mod:NewTargetAnnounce(70126, 4)
 local warnBlisteringCold		= mod:NewSpellAnnounce(70123, 3)
 local warnFrostBreath			= mod:NewSpellAnnounce(69649, 2, nil, mod:IsTank() or mod:IsHealer())
