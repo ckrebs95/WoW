@@ -23,1606 +23,2456 @@
 -------------------------------------------------------------------------------
 -- Tables
 
-Nx.OptsVars = {
-	["BGShowStats"] = "~B~T",
-	["CameraForceMaxDist"] = "~B",
-	["CaptureEnable"] = "~B~T",
-	["CaptureShare"] = "~B~T",
-	["ChatMsgFrm"] = "~CH~~Chat",
-	["ComNoGlobal"] = "~B",
-	["ComNoZone"] = "~B",
-	["EmuCartWP"] = "~B",
-	["EmuTomTom"] = "~B~T",
-	["FontS"] = "~CH~Friz~FontFace",
-	["FontSSize"] = "~I~10~6~14",
-	["FontSH"] = "~I~0~-10~20",
-	["FontM"] = "~CH~Friz~FontFace",
-	["FontMSize"] = "~I~12~6~20",
-	["FontMH"] = "~I~0~-10~20",
-	["FontInfo"] = "~CH~Arial~FontFace",
-	["FontInfoSize"] = "~I~11~6~20",
-	["FontInfoH"] = "~I~0~-10~20",
-	["FontMap"] = "~CH~Friz~FontFace",
-	["FontMapSize"] = "~I~10~6~14",
-	["FontMapLoc"] = "~CH~Friz~FontFace",
-	["FontMapLocSize"] = "~I~10~6~14",
-	["FontMenu"] = "~CH~Friz~FontFace",
-	["FontMenuSize"] = "~I~10~6~14",
-	["FontQuest"] = "~CH~Friz~FontFace",
-	["FontQuestSize"] = "~I~12~6~20",
-	["FontQuestH"] = "~I~1~-10~20",
-	["FontWatch"] = "~CH~Arial~FontFace",
-	["FontWatchSize"] = "~I~11~6~20",
-	["FontWatchH"] = "~I~2~-10~20",
-	["FontWarehouseI"] = "~CH~Friz~FontFace",
-	["FontWarehouseISize"] = "~I~11~6~20",
-	["FontWarehouseIH"] = "~I~6~-10~20",
-	["GryphonsHide"] = "~B~T",
-	["GuideVendorVMax"] = "~I~60~1~1000",
-	["HUDHide"] = "~B",
-	["HUDHideInBG"] = "~B",
-	["HUDLock"] = "~W~NxHUD^L",
-	["HUDShowDir"] = "~B",
-	["HUDAGfx"] = "~CH~Gloss~HUDAGfx",
-	["HUDASize"] = "~I~44~8~100",
-	["HUDAXO"] = "~F",
-	["HUDAYO"] = "~F",
-	["HUDTBut"] = "~B~T",
-	["HUDTButColor"] = "~C~5",
-	["HUDTButCombatColor"] = "~C~ff00001a",
-	["HUDTSoundOn"] = "~B~T",
-	["HUDATBGPal"] = "~B~T",
-	["HUDATCorpse"] = "~B~T",
-	["HUDATTaxi"] = "~B~T",
-	["InfoLvlUpShow"] = "~B~T",
-	["InfoToF"] = "~B~T",
-	["InfoToG"] = "~B~T",
-	["InfoToZ"] = "~B~T",
-	["ItemRequest"] = "~B",
-	["IWinEnable"] = "~B~T",
-	["IWinBGCol"] = "",					-- Delete
-	["IWinListCol"] = "~C~0",
-	["IWinLock"] = "~B~T",
-	["LoginHideVer"] = "~B",
-	["MapButLAlt"] = "~CH~None~MapFunc",
-	["MapButLCtrl"] = "~CH~Goto~MapFunc",
-	["MapButM"] = "~CH~Show Player Zone~MapFunc",
-	["MapButMAlt"] = "~CH~None~MapFunc",
-	["MapButMCtrl"] = "~CH~None~MapFunc",
-	["MapButR"] = "~CH~Menu~MapFunc",
-	["MapButRAlt"] = "~CH~None~MapFunc",
-	["MapButRCtrl"] = "~CH~None~MapFunc",
-	["MapBut4"] = "~CH~Show Selected Zone~MapFunc",
-	["MapBut4Alt"] = "~CH~Add Note~MapFunc",
-	["MapBut4Ctrl"] = "~CH~None~MapFunc",
-	["MapDetailSize"] = "~I~6~2~40",
-	["MapIconPOIAlpha"] = "~F~1",
-	["MapIconGatherAlpha"] = "",		-- Delete
-	["MapIconGatherA"] = "~F~.7",
-	["MapIconGatherAtScale"] = "~F~.5",
-	["MapLineThick"] = "~F~1~0~10",
-	["MapLocTipAnchor"] = "~CH~TopRight~Anchor0",
-	["MapLocTipAnchorRel"] = "~CH~None~Anchor0",
-	["MapMaxCenter"] = "~B~T",
-	["MapMaxMouseIgnore"] = "~B",
-	["MapMaxOverride"] = "~B~T",
-	["MapMaxRestoreHide"] = "~B",
-	["MapMouseIgnore"] = "~B",
-	["MapMMAboveIcons"] = "~B",
-	["MapMMButColumns"] = "~I~1~1~999",
-	["MapMMButCorner"] = "~CH~TopRight~Corner",
-	["MapMMButHide"] = "~W~NxMapDock^H",
-	["MapMMButLock"] = "~W~NxMapDock^L",
-	["MapMMButOwn"] = "~B",
-	["MapMMButShowCarb"] = "~B~T",
-	["MapMMButShowCalendar"] = "~B~T",
-	["MapMMButShowClock"] = "~B~T",
-	["MapMMButShowWorldMap"] = "~B~T",
-	["MapMMButShowTime"] = "",				-- Old
-	["MapMMButSpacing"] = "~F~29~25~90",
-	["MapMMDockHigh"] = "",
-	["MapMMDockAlways"] = "~B",
-	["MapMMDockBugged"]="~B~T",
-	["MapMMDockIndoors"] = "~B~T",
-	["MapMMDockOnMax"] = "~B",
-	["MapMMDockSquare"] = "~B~T",
-	["MapMMDockBottom"] = "~B",
-	["MapMMDockRight"] = "~B",
-	["MapMMDockIScale"] = "~F~1~.01~10",
-	["MapMMDockZoom"] = "~I~0",
-	["MapMMDXO"] = "~F",
-	["MapMMDYO"] = "~F",
-	["MapMMHideOnMax"] = "~B",
-	["MapMMInstanceTogFullSize"] = "~B",
-	["MapMMIndoorTogFullSize"] = "~B",
-	["MapMMBuggedTogFullSize"]="~B",
-	["MapMMIScale"] = "~F~1~.01~10",
-	["MapMMMoveCapBars"] = "~B~T",
-	["MapMMNodeGD"] = "~F~.4~0~999999",
-	["MapMMOwn"] = "~B",
-	["MapMMShowOldNameplate"] = "~B~T",
-	["MapMMSquare"] = "~B",
-	["MapPlyrArrowSize"] = "~F~32~10~100",
-	["MapRestoreScaleAfterTrack"] = "~B~T",
-	["MapRouteTest"] = "",					-- Cause delete
-	["MapRouteUse"] = "~B~T",
-	["MapTopTooltip"] = "~B",
-	["MapIconScaleMin"] = "~I~-1~-1~50",
-	["MapShowCCity"] = "~B",				-- Continental
-	["MapShowCExtra"] = "~B~T",
-	["MapShowCTown"] = "~B",
-	["MapShowGather"] = "",					-- Old
-	["MapShowGatherA"] = "-~B",
-	["MapShowGatherH"] = "-~B",
-	["MapShowGatherM"] = "-~B",
-	["MapShowMailboxes"] = "~B~T",
-	["MapShowNotes"] = "~B~T",
-	["MapShowPunks"] = "~B~T",
-	["MapShowOthersInCities"] = "~B",
-	["MapShowOthersInZ"] = "~B~T",
-	["MapShowPalsInCities"] = "~B~T",
-	["MapShowPOI"] = "~B~T",
-	["MapShowTitleName"] = "~B~T",
-	["MapShowTitleXY"] = "~B~T",
-	["MapShowTitleSpeed"] = "~B~T",
-	["MapShowTitle2"] = "~B",
-	["MapShowToolBar"] = "~B~T",
-	["MapShowTrail"] = "~B~T",
-	["MapTrailCnt"] = "~I~100~0~2000",
-	["MapTrailDist"] = "~F~2~.1~20",
-	["MapTrailTime"] = "~I~90~1~99999",
-	["MapWOwn"] = "~B~T",					-- Own blizz map window
-	["MapZoneDrawCnt"] = "~I~3~1~20",
---	["MapFollowChangeScale"] = "~B~T",	-- Old
-	["MenuCenterH"] = "~B",
-	["MenuCenterV"] = "~B",
-	["MMButWinMinimize"] = "~B",
-	["PunkAreaColor"] = "~C~200e0eff",
-	["PunkAreaSize"] = "~F~80~0~5000",
-	["PunkBGAreaColor"] = "~C~240909ff",
-	["PunkBGAreaSize"] = "~F~60~0~5000",
-	["PunkIconColor"] = "~C~ff8080ff",
-	["PunkMAreaColor"] = "~C~187018ff",
-	["PunkMAreaSize"] = "~F~200~0~5000",
-	["PunkMAlertText"] = "~B~T",
-	["PunkMAlertSnd"] = "~B~T",
-	["PunkShowInNorthrend"] = "~B",
-	["PunkShowInSafeArea"] = "~B",
-	["PunkNewLocalWarnChat"] = "~B~T",
-	["PunkNewLocalWarnSnd"] = "~B",
-	["PunkShowInBG"] = "~B~T",
-	["PunkShowTButtons"] = "",				-- Old
-	["PunkTWinTitle"] = "~S~Punks:",
-	["PunkTWinHide"] = "~W~NxPunkHUD^H",
-	["PunkTWinLock"] = "~W~NxPunkHUD^L",
-	["PunkTWinMaxButs"] = "~I~5~1~30",
-	["QEnable"] = "~B~T",
-	["QAddTooltip"] = "~B~T",
-	["QAutoAccept"] = "~B",
-	["QAutoTurnIn"] = "~B",
-	["QAutoTurnInAC"] = "~B",
-	["QBroadcastQChanges"] = "~B~T",
-	["QBroadcastQChangesObj"] = "",		-- Old
-	["QBroadcastQChangesNum"] = "~I~999~1~999",	
-	["QDetailBC"] = "~C~c0c070ff",
-	["QDetailTC"] = "~RGB~201008ff",
-	["QDetailScale"] = "~F~.95~.5~2",
-	["QHCheckCompleted"] = "~B~T",
-	["QLevelsToLoad2"] = "",				-- Old
-	["QLevelsToLoad3"] = "~I~90~0~90",
-	["QMapShowQuestGivers"] = "",			-- Old
-	["QMapShowQuestGivers3"] = "-~I~1",
-	["QMapQuestGiversHighLevel"] = "~I~85",
-	["QMapQuestGiversLowLevel"] = "~I~85",
-	["QMapShowWatchAreas"] = "~B~T",
-	["QMapWatchAreaAlpha"] = "~C~ffffff60",
-	["QMapWatchAreaGfx"] = "~CH~Solid~QArea",
-	["QMapWatchAreaTrackColor"] = "~C~b0b0b080",
-	["QMapWatchAreaHoverColor"] = "~C~ffffff98",
-	["QMapWatchColorPerQ"] = "~B~T",
-	["QMapWatchColorCnt"] = "~I~12~1~12",
-	["QMapWatchC1"] = "~RGB~ff0000ff",
-	["QMapWatchC2"] = "~RGB~00ff00ff",
-	["QMapWatchC3"] = "~RGB~3333ffff",
-	["QMapWatchC4"] = "~RGB~ffff00ff",
-	["QMapWatchC5"] = "~RGB~00ffffff",
-	["QMapWatchC6"] = "~RGB~ff00ffff",
-	["QMapWatchC7"] = "~RGB~ff7f00ff",
-	["QMapWatchC8"] = "~RGB~00ff7fff",
-	["QMapWatchC9"] = "~RGB~7f11ffff",
-	["QMapWatchC10"] = "~RGB~7fff00ff",
-	["QMapWatchC11"] = "~RGB~007fffff",
-	["QMapWatchC12"] = "~RGB~ff007fff",
-	["QPartyShare"] = "~B~T",
-	["QShowDailyCount"]="~B~T",
-	["QShowDailyReset"] = "~B~T",
-	["QShowId"] = "~B",
-	["QShowLinkExtra"] = "~B~T",
-	["QSideBySide"] = "~B~T",
-	["QSync"] = "~B~T",
-	["QUseAltLKey"] = "~B",
-	["QWAchTrack"] = "~B~T",			-- Track achievements
-	["QWAchZoneShow"] = "~B~T",		-- Zone achievement
-	["QWAddNew"] = "~B~T",
-	["QWAddChanged"] = "~B~T",
-	["QWBGColor"] = "~C~55",
-	["QWBlizzModify"] = "~B~T",
-	["QWChalTrack"] = "~B~T",
-	["QWFadeAll"] = "~B",
-	["QWFixedSize"] = "~B",
-	["QWGrowUp"] = "~B",
-	["QWHide"] = "~W~NxQuestWatch^H",
-	["QWHideBlizz"] = "~B~T",
-	["QWHideDoneObj"] = "~B",
-	["QWHideRaid"] = "~B",
-	["QWItemAlpha"] = "~C~ffffffa6",
-	["QWItemScale"] = "~F~10~0~50",
-	["QWKeyUseItem"] = "~S",
-	["QWLargeFont"] = "~B",
-	["QWLock"] = "~W~NxQuestWatch^L",
-	["QWOCntFirst"] = "~B",
-	["QWOMaxLen"] = "~I~60~20~999",
-	["QWRemoveComplete"] = "~B",
-	["QWScenTrack"] = "~B~T",
-	["QWShowClose"] = "~B",
-	["QWShowDist"] = "~B~T",
-	["QWShowPerColor"] = "~B",
-	["QWCompleteColor"] = "~RGB~ffd200ff",
-	["QWIncompleteColor"] = "~RGB~bf9b00ff",
-	["QWOCompleteColor"] = "~RGB~ffffffff",
-	["QWOIncompleteColor"] = "~RGB~ccccccff",
-	["QSndPlayCompleted"] = "~B~T",
-	["QSnd1"] = "~B~T",
-	["QSnd2"] = "~B",
-	["QSnd3"] = "~B",
-	["QSnd4"] = "~B",
-	["QSnd5"] = "~B",
-	["QSnd6"] = "~B",
-	["QSnd7"] = "~B",
-	["QSnd8"] = "~B",
-	["RouteGatherRadius"] = "~I~60",
-	["RouteMergeRadius"] = "~I~20",
-	["RouteRecycle"] = "~B",
-	["SocialEnable"] = "~B~T",
-	["SkinDef"] = "~B",
-	["SkinWinBdColor"] = "~C~ccccffff",
-	["SkinWinFixedBgColor"] = "~C~80808080",
-	["SkinWinSizedBgColor"] = "~C~1f1f1fe0",
-	["TeamTWinEnable"] = "~B~T",
-	["TeamTWinHide"] = "~W~NxTeamHUD^H",
-	["TeamTWinMaxButs"] = "~I~15~1~40",
-	["TitleOff"] = "~B",
-	["TitleSoundOn"] = "~B",
-	["WarehouseEnable"] = "~B~T",
-	["WarehouseAddTooltip"] = "~B~T",
-}
+local AceConfig 	= LibStub("AceConfig-3.0")
+local AceConfigReg 	= LibStub("AceConfigRegistry-3.0")
+local AceConfigDialog 	= LibStub("AceConfigDialog-3.0")
 
-Nx.OptsData = {
-	{
-		N = "Welcome",
-		1,
-		"Select an options page using the list on the left",
-	},
-	{
-		N = "Combat",
-		"Combat options",
-		1,
-		{
-			N = "Show Battleground Stats",
-			V = "BGShowStats",
-		},
-	},
-	{
-		N = "Favorites",
-		"Favorite settings",
-		1,
-		{
-			N = "Import Cartographer Notes",
-			F = "NXCmdFavCartImport"
-		},
-	},
-	{
-		N = "Font",
-		"Font options",
---PAIDS!
-		1,
-		"Small Font",
-		{
-			N = "",
-			V = "FontS",
-			VF = "NXCmdFontChange"
-		},
-		{
-			N = "Size",
-			V = "FontSSize",
-			VF = "NXCmdFontChange"
-		},
-		{
-			N = "Spacing",
-			V = "FontSH",
-			VF = "NXCmdFontChange"
-		},
-		1,
-		"Normal Font",
-		{
-			N = "",
-			V = "FontM",
-			VF = "NXCmdFontChange"
-		},
-		{
-			N = "Size",
-			V = "FontMSize",
-			VF = "NXCmdFontChange"
-		},
-		{
-			N = "Spacing",
-			V = "FontMH",
-			VF = "NXCmdFontChange"
-		},
-		1,
-		"Info List Font",
-		{
-			N = "",
-			V = "FontInfo",
-			VF = "NXCmdFontChange"
-		},
-		{
-			N = "Size",
-			V = "FontInfoSize",
-			VF = "NXCmdFontChange"
-		},
-		{
-			N = "Spacing",
-			V = "FontInfoH",
-			VF = "NXCmdFontChange"
-		},
-		1,
-		"Map Font",
-		{
-			N = "",
-			V = "FontMap",
-			VF = "NXCmdFontChange"
-		},
-		{
-			N = "Size",
-			V = "FontMapSize",
-			VF = "NXCmdFontChange"
-		},
-		1,
-		"Map Location Tip Font",
-		{
-			N = "",
-			V = "FontMapLoc",
-			VF = "NXCmdFontChange"
-		},
-		{
-			N = "Size",
-			V = "FontMapLocSize",
-			VF = "NXCmdFontChange"
-		},
-		1,
-		"Menu Font",
-		{
-			N = "",
-			V = "FontMenu",
-			VF = "NXCmdFontChange"
-		},
-		{
-			N = "Size",
-			V = "FontMenuSize",
-			VF = "NXCmdFontChange"
-		},
-		1,
-		"Quest List Font",
-		{
-			N = "",
-			V = "FontQuest",
-			VF = "NXCmdFontChange"
-		},
-		{
-			N = "Size",
-			V = "FontQuestSize",
-			VF = "NXCmdFontChange"
-		},
-		{
-			N = "Spacing",
-			V = "FontQuestH",
-			VF = "NXCmdFontChange"
-		},
---PAIDE!
-		1,
-		"Quest Watch List Font",
-		{
-			N = "",
-			V = "FontWatch",
-			VF = "NXCmdFontChange"
-		},
-		{
-			N = "Size",
-			V = "FontWatchSize",
-			VF = "NXCmdFontChange"
-		},
---PAIDS!
-		{
-			N = "Spacing",
-			V = "FontWatchH",
-			VF = "NXCmdFontChange"
-		},
-		1,
-		"Warehouse Item Font",
-		{
-			N = "",
-			V = "FontWarehouseI",
-			VF = "NXCmdFontChange"
-		},
-		{
-			N = "Size",
-			V = "FontWarehouseISize",
-			VF = "NXCmdFontChange"
-		},
-		{
-			N = "Spacing",
-			V = "FontWarehouseIH",
-			VF = "NXCmdFontChange"
-		},
---PAIDE!
-	},
-	{
-		N = "General",
-		"General options",
-		1,
-		{
-			N = "Hide login messages",
-			V = "LoginHideVer",
-		},
-		{
-			N = "Hide login title",
-			V = "TitleOff",
-		},
-		{
-			N = "Play title sound",
-			V = "TitleSoundOn",
-		},
-		1,
-		{
-			N = "Chat window for Carbonite messages",
-			V = "ChatMsgFrm",
-			VF = "NXCmdUIChange"
-		},
-		1,
-		{
-			N = "Force 'Max Camera Distance' setting higher than slider allows",
-			V = "CameraForceMaxDist",
-			VF = "NXCmdCamForceMaxDist"
-		},
-		{
-			N = "Hide action bar gryphon graphics",
-			V = "GryphonsHide",
-			VF = "NXCmdGryphonsUpdate"
-		},
-		{
-			N = "Emulate Cartographer Waypoints",
-			V = "EmuCartWP",
-			VF = "NXCmdReload"
-		},
-		{
-			N = "Emulate TomTom",
-			V = "EmuTomTom",
-			VF = "NXCmdReload"
-		},
-		{
-			N = "Enable request for missing items from server",
-			V = "ItemRequest",
-		},
-		{
-			N = "Show Warehouse info in item tooltips",
-			V = "WarehouseAddTooltip",
-		},
-	},
-	{
-		N = "Guide",
-		"Guide options",
-		1,
-		{
-			N = "Maximum vendors to record",
-			V = "GuideVendorVMax",
-		},
-		1,
-		{
-			N = "Delete Herbalism gather locations",
-			F = "NXCmdDeleteHerb"
-		},
-		{
-			N = "Delete Mining gather locations",
-			F = "NXCmdDeleteMine"
-		},
-		{
-			N = "Delete Misc (artifacts, gas) gather locations",
-			F = "NXCmdDeleteMisc"
-		},
-		1,
-		{
-			N = "Import Carbonite Nodes Herbalism locations",
-			F = "NXCmdImportCarbHerb"
-		},
-		{
-			N = "Import Carbonite Nodes Mining locations",
-			F = "NXCmdImportCarbMine"
-		},
-		{
-			N = "Import Carbonite Nodes Misc (artifacts, gas) locations",
-			F = "NXCmdImportCarbMisc"
-		},
---[[
-		1,
-		{
-			N = "Import Cartographer Herbalism locations (OLD)",
-			F = "NXCmdImportCartHerb"
-		},
-		{
-			N = "Import Cartographer Mining locations (OLD)",
-			F = "NXCmdImportCartMine"
-		},
---]]
-	},
-	{
-		N = "Info Windows",
-		"Info window options",
-		1,
-		{
-			N = "Lock all windows",
-			V = "IWinLock",
-			VF = "NXCmdInfoWinUpdate",
-		},
-		{
-			N = "List background color",
-			V = "IWinListCol",
-			VF = "NXCmdInfoWinUpdate",
-		},
-	},
-	{
-		N = "Map",
-		"Map options",
-		1,
-		{
-			N = "Maximize Carbonite map instead of opening normal map",
-			V = "MapMaxOverride",
-		},
-		{
-			N = "Center on selected zone when maximizing",
-			V = "MapMaxCenter",
-		},
-		{
-			N = "Ignore mouse on map except when Alt key pressed",
-			V = "MapMouseIgnore",
-		},
-		{
-			N = "Ignore mouse on maximized map except when Alt key pressed",
-			V = "MapMaxMouseIgnore",
-		},
-		{
-			N = "Move fullscreen map data into maximized Carbonite map",
-			V = "MapWOwn",
-		},
-		{
-			N = "Hide maximized map when ESC or map toggle (M) key pressed",
-			V = "MapMaxRestoreHide",
-		},
-		1,
-		{
-			N = "Show friend and guild positions in city",
-			V = "MapShowPalsInCities",
-		},
-		{
-			N = "Show other player positions in city",
-			V = "MapShowOthersInCities",
-		},
-		{
-			N = "Show other player positions in zone",
-			V = "MapShowOthersInZ",
-		},
-		1,
-		{
-			N = "Restore map scale after tracking cleared",
-			V = "MapRestoreScaleAfterTrack",
-		},
-		{
-			N = "Use travel routing",
-			V = "MapRouteUse",
-		},
-		{
-			N = "Show player movement trail",
-			V = "MapShowTrail",
-		},
-		{
-			N = "Player movement trail dot separation",
-			V = "MapTrailDist",
-		},
-		{
-			N = "Player movement trail max dot count",
-			V = "MapTrailCnt",
-			VF = "NXCmdReload"
-		},
-		{
-			N = "Player movement trail fade time (seconds)",
-			V = "MapTrailTime",
-		},
-		{
-			N = "Player arrow size",
-			V = "MapPlyrArrowSize",
-		},
-		{
-			N = "Show map tool bar",
-			V = "MapShowToolBar",
-			VF = "NXCmdMapToolBarUpdate"
-		},
-		{
-			N = "Location tip anchor",
-			V = "MapLocTipAnchor",
-		},
-		{
-			N = "Location tip anchor to map",
-			V = "MapLocTipAnchorRel",
-		},
-		{
-			N = "Show all tool tips above map",
-			V = "MapTopTooltip",
-		},
-		{
-			N = "Show 'Points of Interest' map icons",
-			V = "MapShowPOI",
-		},
-		{
-			N = "Icon scale minimum size. -1 disables scaling for Guide and Favorite Icons",
-			V = "MapIconScaleMin",
-		},
-		{
-			N = "Icon health bar thickness (0 hides)",
-			V = "MapLineThick",
-		},
-		{
-			N = "Maximum number of zones to draw at a time",
-			V = "MapZoneDrawCnt",
-		},
-		{
-			N = "Detail graphics visible area",
-			V = "MapDetailSize",
-			VF = "NXCmdReload"
-		},
-		1,
-		"Map window title bar",
-		{
-			N = "Show map name",
-			V = "MapShowTitleName",
-		},
-		{
-			N = "Show coordinates",
-			V = "MapShowTitleXY",
-		},
-		{
-			N = "Show speed",
-			V = "MapShowTitleSpeed",
-		},
-		{
-			N = "Show title line 2 (subzone, pvp, xy)",
-			V = "MapShowTitle2",
-			VF = "NXCmdReload"
-		},
-		1,
-		"Mouse button click on map actions",
-		{
-			N = "Alt left click map",
-			V = "MapButLAlt",
-		},
-		{
-			N = "Ctrl left click map",
-			V = "MapButLCtrl",
-		},
-		{
-			N = "Middle click map",
-			V = "MapButM",
-		},
-		{
-			N = "Alt middle click map",
-			V = "MapButMAlt",
-		},
-		{
-			N = "Ctrl middle click map",
-			V = "MapButMCtrl",
-		},
-		{
-			N = "Right click map",
-			V = "MapButR",
-		},
-		{
-			N = "Alt right click map",
-			V = "MapButRAlt",
-		},
-		{
-			N = "Ctrl right click map",
-			V = "MapButRCtrl",
-		},
-		{
-			N = "Button 4 click map",
-			V = "MapBut4",
-		},
-		{
-			N = "Alt button 4 click map",
-			V = "MapBut4Alt",
-		},
-		{
-			N = "Ctrl button 4 click map",
-			V = "MapBut4Ctrl",
-		},
-	},
-	{
-		N = "Map Minimap",
-		"Map Minimap options",
-		1,
---PAIDS!
-		{
-			N = "Move Minimap into Carbonite map (reload required)",
-			V = "MapMMOwn",
-			VF = "NXCmdMMOwnChange"
-		},
-		{
-			N = "Move Minimap buttons into Carbonite button window (reload required)",
-			V = "MapMMButOwn",
-			VF = "NXCmdReload",
-		},
-		1,
-		{
-			N = "Minimap shape is square",
-			V = "MapMMSquare",
-		},
-		{
-			N = "Minimap is drawn above icons (ctrl key toggles)",
-			V = "MapMMAboveIcons",
-		},
-		{
-			N = "Minimap icon/dots scale",
-			V = "MapMMIScale",
-		},
-		{
-			N = "Minimap herb/ore dot glow delay (0 is off)",
-			V = "MapMMNodeGD",
-			VF = "NXCmdMMChange"
-		},
-		{
-			N = "Minimap docks always",
-			V = "MapMMDockAlways",
-		},
-		{
-			N = "Minimap docks in indoor areas",
-			V = "MapMMDockIndoors",
-		},
-		{
-		    N = "Minimap docks in known bugged zones",
-			V="MapMMDockBugged",
-		},
-		{
-			N = "Minimap docks when map is maximized",
-			V = "MapMMDockOnMax",
-		},
-		{
-			N = "Minimap hides when map is maximized",
-			V = "MapMMHideOnMax",
-		},
-		{
-			N = "Minimap docked shape is square",
-			V = "MapMMDockSquare",
-		},
-		{
-			N = "Minimap docks to bottom",
-			V = "MapMMDockBottom",
-		},
-		{
-			N = "Minimap docks to right",
-			V = "MapMMDockRight",
-		},
-		{
-			N = "Minimap dock X offset",
-			V = "MapMMDXO",
-		},
-		{
-			N = "Minimap dock Y offset",
-			V = "MapMMDYO",
-		},
-		{
-			N = "Minimap dock icon/dots scale",
-			V = "MapMMDockIScale",
-		},
-		{
-			N = "Minimap toggles full size for indoor areas (not in cities)",
-			V = "MapMMIndoorTogFullSize",
-		},
-		{
-		    N = "Minimap toggles full size in known bugged areas",
-			V = "MapMMBuggedTogFullSize",
-		},
-		{
-			N = "Minimap toggles full size for instances",
-			V = "MapMMInstanceTogFullSize",
-		},
-		{
-			N = "Move capture bars under map",
-			V = "MapMMMoveCapBars",
-		},
-		{
-			N = "Show standard Minimap nameplate",
-			V = "MapMMShowOldNameplate",
-			VF = "NXCmdMMButUpdate"
-		},
-		1,
-		"Minimap buttons",
-		{
-			N = "Hide button window",
-			V = "MapMMButHide",
-			VF = "NXCmdMMButUpdate"
-		},
-		{
-			N = "Lock button window",
-			V = "MapMMButLock",
-			VF = "NXCmdMMButUpdate"
-		},
-		{
-			N = "Button columns",
-			V = "MapMMButColumns",
-		},
-		{
-			N = "Button spacing",
-			V = "MapMMButSpacing",
-		},
-		{
-			N = "Corner for first button",
-			V = "MapMMButCorner",
-		},
---PAIDE!
-		{
-			N = "Show 'Carbonite' minimap button",
-			V = "MapMMButShowCarb",
-			VF = "NXCmdMMButUpdate"
-		},
-		{
-			N = "Show 'Calendar' minimap button",
-			V = "MapMMButShowCalendar",
-			VF = "NXCmdMMButUpdate"
-		},
-		{
-			N = "Show 'Clock' minimap button",
-			V = "MapMMButShowClock",
-			VF = "NXCmdMMButUpdate"
-		},
-		{
-			N = "Show 'World Map' minimap button",
-			V = "MapMMButShowWorldMap",
-			VF = "NXCmdMMButUpdate"
-		},
-	},
-	{
-		N = "Menu",
-		"Menu options",
-		1,
-		{
-			N = "Center menus horizontally on cursor",
-			V = "MenuCenterH",
-		},
-		{
-			N = "Center menus vertically on cursor",
-			V = "MenuCenterV",
-		},
-	},
---PAIDS!
-	{
-		N = "Modules",
-		"Module settings (reload UI after changing these)",
-		"Allows disabling of major features in the addon",
-		1,
-		{
-			N = "Reload UI",
-			F = "NXCmdReload"
-		},
-		1,
---		{
---			N = "Enable Auction Assist",
---			V = "AuctionEnable",
---		},
-		{
-			N = "Enable Info windows",
-			V = "IWinEnable",
-		},
-		{
-			N = "Enable Questing",
-			V = "QEnable",
-		},
-		{
-			N = "Enable Team window",
-			V = "TeamTWinEnable",
-		},
-		{
-			N = "Enable Warehouse",
-			V = "WarehouseEnable",
-		},
-	},
---PAIDE!
-	{
-		N = "Privacy & Com",
-		"Click buttons below to change privacy or communication settings",
-		1,
-		{
-			N = "Send position and level ups",
-		},
-		{
-			N = " To friends",
-			V = "InfoToF",
-		},
-		{
-			N = " To guild",
-			V = "InfoToG",
-		},
-		{
-			N = " To zone",
-			V = "InfoToZ",
-		},
-		1,
-		{
-			N = "Show received level ups",
-			V = "InfoLvlUpShow",
-		},
-		1,
-		"Reload UI required for these settings to take effect",
-		{
-			N = "Disable global channel (you won't know about version updates)",
-			V = "ComNoGlobal",
-		},
-		{
-			N = "Disable zone channel (you won't know about players or punks in your zone)",
-			V = "ComNoZone",
-		},
-		1,
-		1,
---[[
-		{
-			N = "Capture quest and loot data for developers",
-			V = "CaptureEnable",
-		},
---]]
-		{
-			N = "Share quest data",
-			V = "CaptureShare",
-		},
-	},
-	{
-		N = "Quest",
-		"Quest list options",
-		{
-			N = "Show quest list and details side by side",
-			V = "QSideBySide",
-			VF = "NXCmdQuestSidebySide"
-		},
-		{
-			N = "Sync Carbonite Watched with Blizzard Watched (enables minimap blobs to work)",
-			V = "QSync",
-		},
-		{
-			N = "Show daily reset time",
-			V = "QShowDailyReset",
-		},
-		{
-		    N = "Show daily quest count",
-			V = "QShowDailyCount",
-		},
-		{
-			N = "Show quest id in list",
-			V = "QShowId",
-		},
-		{
-			N = "Open Carbonite quest window using Alt-L",
-			V = "QUseAltLKey",
-		},
-		{
-			N = "Details background color",
-			V = "QDetailBC",
-		},
-		{
-			N = "Details text color",
-			V = "QDetailTC",
-		},
-		{
-			N = "Details scale",
-			V = "QDetailScale",
-		},
-		1,
-		"Quest options",
-		{
-			N = "Show quest info in tooltips",
-			V = "QAddTooltip",
-		},
-		{
-			N = "Number of quest levels below player level to keep in memory (90 keeps all)",
-			V = "QLevelsToLoad3",
-			VF = "NXCmdReload",
-		},
-		{
-			N = "Share quest status with party and show theirs",
-			V = "QPartyShare",
-		},
-		{
-			N = "Auto accept quests (shift+ctrl inverts)",
-			V = "QAutoAccept",
-		},
-		{
-			N = "Auto turn in quests when talking to NPC (shift+ctrl inverts)",
-			V = "QAutoTurnIn",
-		},
-		{
-			N = "Auto trigger self completion quests",
-			V = "QAutoTurnInAC",
-		},
-		{
-			N = "Broadcast quest change messages to party",
-			V = "QBroadcastQChanges",
-		},
-		{
-			N = "Broadcast after number of objectives are completed",
-			V = "QBroadcastQChangesNum",
-		},
-		{
-			N = "Show level and part number in quest links",
-			V = "QShowLinkExtra",
-		},
-		{
-			N = "Update completed quest history on login (gets from server)",
-			V = "QHCheckCompleted",
-		},
-		1,
-		"Quest map options",
-		{
-			N = "Always show watched quest areas on map",
-			V = "QMapShowWatchAreas",
-		},
-		{
-			N = "Color of watch areas when tracked",
-			V = "QMapWatchAreaTrackColor",
-		},
-		{
-			N = "Color of watch areas on mouse over",
-			V = "QMapWatchAreaHoverColor",
-		},
-		{
-			N = "Graphic of watch areas",
-			V = "QMapWatchAreaGfx",
-			VF = "NXCmdQMapWatchColor"
-		},
-		{
-			N = "Transparency of watch areas",
-			V = "QMapWatchAreaAlpha",
-			VF = "NXCmdQMapWatchColor"
-		},
-		{
-			N = "Use one color per quest",
-			V = "QMapWatchColorPerQ",
-		},
-		{
-			N = "Total colors to use",
-			V = "QMapWatchColorCnt",
-			VF = "NXCmdQMapWatchColor"
-		},
-		{
-			N = "Watch color 1",
-			V = "QMapWatchC1",
-			VF = "NXCmdQMapWatchColor"
-		},
-		{
-			N = "Watch color 2",
-			V = "QMapWatchC2",
-			VF = "NXCmdQMapWatchColor"
-		},
-		{
-			N = "Watch color 3",
-			V = "QMapWatchC3",
-			VF = "NXCmdQMapWatchColor"
-		},
-		{
-			N = "Watch color 4",
-			V = "QMapWatchC4",
-			VF = "NXCmdQMapWatchColor"
-		},
-		{
-			N = "Watch color 5",
-			V = "QMapWatchC5",
-			VF = "NXCmdQMapWatchColor"
-		},
-		{
-			N = "Watch color 6",
-			V = "QMapWatchC6",
-			VF = "NXCmdQMapWatchColor"
-		},
-		{
-			N = "Watch color 7",
-			V = "QMapWatchC7",
-			VF = "NXCmdQMapWatchColor"
-		},
-		{
-			N = "Watch color 8",
-			V = "QMapWatchC8",
-			VF = "NXCmdQMapWatchColor"
-		},
-		{
-			N = "Watch color 9",
-			V = "QMapWatchC9",
-			VF = "NXCmdQMapWatchColor"
-		},
-		{
-			N = "Watch color 10",
-			V = "QMapWatchC10",
-			VF = "NXCmdQMapWatchColor"
-		},
-		{
-			N = "Watch color 11",
-			V = "QMapWatchC11",
-			VF = "NXCmdQMapWatchColor"
-		},
-		{
-			N = "Watch color 12",
-			V = "QMapWatchC12",
-			VF = "NXCmdQMapWatchColor"
-		},
-	},
-	{
-		N = "Quest Watch",
-		"Watch window options",
-		1,
-		{
-			N = "Hide",
-			V = "QWHide",
-		},
-		{
-			N = "Lock",
-			V = "QWLock",
-		},
-		{   N = "Hide Blizzard Tracker",
-		    V = "QWHideBlizz",
-		},
-		1,
-		{
-			N = "Auto watch new quests",
-			V = "QWAddNew",
-		},
-		{
-			N = "Auto watch changed quests",
-			V = "QWAddChanged",
-		},
-		{
-			N = "Auto remove watched quests when completed",
-			V = "QWRemoveComplete",
-		},
-		1,
-		{
-		    N = "Add Scenario Objectives To Watch",
-			V = "QWScenTrack",
-		},
-		{
-		    N = "Add Achievement Tracks To Watch",
-			V = "QWAchTrack",
-		},
-		{
-		    N = "Add Challenge Timers To Watch",
-			V = "QWChalTrack",		
-		},
-		1,
-		{
-			N = "Background color",
-			V = "QWBGColor",
-		},
-		{
-			N = "Show close button",
-			V = "QWShowClose",
-			VF = "NXCmdReload"
-		},
-		{
-			N = "Show distance to quest",
-			V = "QWShowDist",
-		},
-		{
-			N = "Fade all parts of window",
-			V = "QWFadeAll",
-			VF = "NXCmdQWFadeAll"
-		},
-		{
-			N = "Quest complete color",
-			V = "QWCompleteColor",
-		},
-		{
-			N = "Quest incomplete color",
-			V = "QWIncompleteColor",
-		},
-		{
-			N = "Objective complete color",
-			V = "QWOCompleteColor",
-		},
-		{
-			N = "Objective incomplete color",
-			V = "QWOIncompleteColor",
-		},
-		{
-			N = "Show objective percent done color",
-			V = "QWShowPerColor",
-		},
-		{
-			N = "Hide objectives that are 100% done",
-			V = "QWHideDoneObj",
-		},
-		{
-			N = "Put objective counts before objective names",
-			V = "QWOCntFirst",
-		},
-		{
-			N = "Objective text length to wrap lines",
-			V = "QWOMaxLen",
-		},
-		{
-			N = "Hide when in a raid group",
-			V = "QWHideRaid",
-			VF = "NXCmdQWHideRaid"
-		},
-		{
-			N = "Item button scale (0 hides)",
-			V = "QWItemScale",
-		},
-		{
-			N = "Item button transparency",
-			V = "QWItemAlpha",
-		},
-		{
-			N = "Show tracked achievements. Hide Blizzard's watch list",
-			V = "QWAchTrack",
-		},
-		{
-			N = "Show questing achievement for zone",
-			V = "QWAchZoneShow",
-		},
-		{
-			N = "Grow list upwards",
-			V = "QWGrowUp",
-		},
-		{
-			N = "Use fixed size list",
-			V = "QWFixedSize",
-			VF = "NXCmdReload"
-		},
-		{
-			N = "Modify game objective settings: Instant, no auto watch",
-			V = "QWBlizzModify",
-		},
-	},
---PAIDS!
-	{
-		N = "Quest Sounds",
-		"Quest sound options",
-		{
-			N = "Play sound when quest is completed",
-			V = "QSndPlayCompleted",
-			VF = "NXCmdQSound"
-		},
-		"Check one or more sounds. They will be randomly played",
-		{
-			N = "Carbonite QuestComplete",
-			V = "QSnd1",
-			VF = "NXCmdQSound"
-		},
-		{
-			N = "PeonBuildingComplete1",
-			V = "QSnd2",
-			VF = "NXCmdQSound"
-		},
-		{
-			N = "UndeadMaleCongratulations02",
-			V = "QSnd3",
-			VF = "NXCmdQSound"
-		},
-		{
-			N = "HumanFemaleCongratulations01",
-			V = "QSnd4",
-			VF = "NXCmdQSound"
-		},
-		{
-			N = "DwarfMaleCongratulations04",
-			V = "QSnd5",
-			VF = "NXCmdQSound"
-		},
-		{
-			N = "GnomeMaleCongratulations03",
-			V = "QSnd6",
-			VF = "NXCmdQSound"
-		},
-		{
-			N = "TaurenYes3",
-			V = "QSnd7",
-			VF = "NXCmdQSound"
-		},
-		{
-			N = "UndeadMaleWarriorNPCGreeting01",
-			V = "QSnd8",
-			VF = "NXCmdQSound"
-		},
-	},
---PAIDE!
-	{
-		N = "Reset",
-		"Click items below to reset or import",
-		1,
-		{
-			N = "Import settings from a character",
-			F = "NXCmdImportCharSettings"
-		},
-		1,
-		{
-			N = "Delete settings of a character",
-			F = "NXCmdDeleteCharSettings"
-		},
-		1,
-		{
-			N = "Reset global and quest options",
-			F = "NXCmdResetOpts"
-		},
-		{
-			N = "Reset window layouts of current character",
-			F = "NXCmdResetWinLayouts"
-		},
-		{
-			N = "Reset Watch Window layout",
-			F = "NXCmdResetWatchWinLayout"
-		},
-		1,
-		{
-			N = "Reload UI",
-			F = "NXCmdReload"
-		},
-	},
-	{
-		N = "Skin",
-		"UI skinning options",
---PAIDS!
-		1,
-		{
-			N = "Border color of windows",
-			V = "SkinWinBdColor",
-			VF = "NXCmdSkinColor",
-		},
-		{
-			N = "Background color of fixed size windows",
-			V = "SkinWinFixedBgColor",
-			VF = "NXCmdSkinColor",
-		},
-		{
-			N = "Background color of sizable windows",
-			V = "SkinWinSizedBgColor",
-			VF = "NXCmdSkinColor",
-		},
---PAIDE!
-		1,
-		"Click below to set a skin",
-		1,
-		{
-			N = "Default",
-			F = "NXCmdSkin",
-		},
-		{
-			N = "Blackout",
-			F = "NXCmdSkin",
-			Data = "Blackout"
-		},
-		{
-			N = "Blackout Blues",
-			F = "NXCmdSkin",
-			Data = "BlackoutBlues"
-		},
-		{
-			N = "Dialog Blue",
-			F = "NXCmdSkin",
-			Data = "DialogBlue"
-		},
-		{
-			N = "Dialog Gold",
-			F = "NXCmdSkin",
-			Data = "DialogGold"
-		},
-		{
-			N = "Simple Blue",
-			F = "NXCmdSkin",
-			Data = "SimpleBlue"
-		},
-		{
-			N = "Stone",
-			F = "NXCmdSkin",
-			Data = "Stone"
-		},
-		{
-			N = "Tool Blue",
-			F = "NXCmdSkin",
-			Data = "ToolBlue"
-		},
-	},
-	{
-		N = "Social & Punks",
-		"Social Window, Team and Punks options",
-		1,
-		{
-			N = "Use enhanced social window",
-			V = "SocialEnable",
-			VF = "NXCmdReload"
-		},
-		1,
-		"Team options",
-		1,
-		{
-			N = "Hide team target button window",
-			V = "TeamTWinHide",
-		},
-		{
-			N = "Max team target buttons",
-			V = "TeamTWinMaxButs",
-			VF = "NXCmdReload"
-		},
-		1,
-		"Punks options",
-		1,
-		{
-			N = "Hide punk target button window",
-			V = "PunkTWinHide",
-		},
-		{
-			N = "Lock punk target button window",
-			V = "PunkTWinLock",
-		},
-		{
-			N = "Punk target button window title",
-			V = "PunkTWinTitle",
-		},
-		{
-			N = "Max punk target buttons",
-			V = "PunkTWinMaxButs",
-			VF = "NXCmdReload"
-		},
-		{
-			N = "Show alert text on match",
-			V = "PunkMAlertText",
-		},
-		{
-			N = "Play alert sound on match",
-			V = "PunkMAlertSnd",
-		},
-		{
-			N = "Show punk detections in Northrend",
-			V = "PunkShowInNorthrend",
-		},
-		{
-			N = "Show punk detections in safe areas (sanctuary)",
-			V = "PunkShowInSafeArea",
-		},
-		{
-			N = "Show chat warning on new local punk detections",
-			V = "PunkNewLocalWarnChat",
-		},
-		{
-			N = "Play sound on new local punk detections",
-			V = "PunkNewLocalWarnSnd",
-		},
-		1,
-		{
-			N = "Show on map",
-			V = "MapShowPunks",
-		},
-		{
-			N = "Icon color",
-			V = "PunkIconColor",
-		},
-		{
-			N = "Area color",
-			V = "PunkAreaColor",
-		},
-		{
-			N = "Area size",
-			V = "PunkAreaSize",
-		},
-		{
-			N = "Match area color",
-			V = "PunkMAreaColor",
-		},
-		{
-			N = "Match area size",
-			V = "PunkMAreaSize",
-		},
-		{
-			N = "Show in battlegrounds",
-			V = "PunkShowInBG",
-		},
-		{
-			N = "Battleground area color",
-			V = "PunkBGAreaColor",
-		},
-		{
-			N = "Battleground area size",
-			V = "PunkBGAreaSize",
-		},
-	},
-	{
-		N = "Tracking HUD",
-		"Tracking Arrow HUD options",
-		1,
-		{
-			N = "Hide",
-			V = "HUDHide",
-		},
-		{
-			N = "Hide in battlegrounds",
-			V = "HUDHideInBG",
-		},
-		{
-			N = "Lock",
-			V = "HUDLock",
-			VF = "NXCmdHUDChange"
-		},
-		{
-			N = "Arrow Graphic",
-			V = "HUDAGfx",
-			VF = "NXCmdHUDChange"
-		},
-		{
-			N = "Arrow Size",
-			V = "HUDASize",
-			VF = "NXCmdHUDChange"
-		},
-		{
-			N = "Arrow X offset",
-			V = "HUDAXO",
-			VF = "NXCmdHUDChange"
-		},
-		{
-			N = "Arrow Y offset",
-			V = "HUDAYO",
-			VF = "NXCmdHUDChange"
-		},
-		{
-			N = "Show direction text",
-			V = "HUDShowDir",
-		},
-		{
-			N = "Enable target button on arrow",
-			V = "HUDTBut",
-			VF = "NXCmdHUDChange"
-		},
-		{
-			N = "Target button color",
-			V = "HUDTButColor",
-			VF = "NXCmdHUDChange"
-		},
-		{
-			N = "Target button color in combat",
-			V = "HUDTButCombatColor",
-			VF = "NXCmdHUDChange"
-		},
-		{
-			N = "Play target reached sound",
-			V = "HUDTSoundOn",
-		},
-		1,
-		"Auto tracking options",
-		{
-			N = "Pals in battlegrounds",
-			V = "HUDATBGPal",
-		},
-		{
-			N = "Taxi destination",
-			V = "HUDATTaxi",
-		},
-		{
-			N = "Your corpse",
-			V = "HUDATCorpse",
-		},
-	},
-}
+local modular_config = {}
+local config
+
+local function mainConfig()
+	if not config then	
+		config = {
+			type = "group",
+			name = "Carbonite",
+			args = {
+				main = {
+					order = 1,
+					type = "group",
+					name = "Main Options",
+					args = {
+						title = {
+							type = "description",
+							name = "\nCarbonite is a full featured, powerful map addon providing a versitile easy to use google style map which either can replace or work with the current blizzard maps.\n\nThrough modules it can also be expanded to do even more to help make your game easier." ..
+							       "\n\n\n|cff9999ffRelease Version: |cffd700ff" .. Nx.VERMAJOR .. "." .. (Nx.VERMINOR*10) .. "\n" ..
+								   "|cff9999ffMaintained by: |cffd700ffRythal of Moon Guard\n" ..
+								   "|cff9999ffWebsite: |cffd700ffhttp://www.wowinterface.com/downloads/info12965-Carbonite.html\n"..
+								   "\n"..
+								   "|cd700ffffFor support, please visit the forums for Carbonite on WoW Interface.",
+						},
+					},
+				},
+			},
+		}
+		if NxData and NxData.Version then
+			config = {
+				type = "group",
+				name = "Carbonite",
+				args = {
+					main = {
+						order = 1,
+						type = "group",
+						name = "Main Options",
+						args = {
+							title = {
+								type = "description",
+								order = 1,
+								name = "\nCarbonite is a full featured, powerful map addon providing a versitile easy to use google style map which either can replace or work with the current blizzard maps.\n\nThrough modules it can also be expanded to do even more to help make your game easier." ..
+									   "\n\n\n|cff9999ffRelease Version: |cffd700ff" .. Nx.VERMAJOR .. "." .. (Nx.VERMINOR*10) .. "\n" ..
+									   "|cff9999ffMaintained by: |cffd700ffRythal of Moon Guard\n" ..
+									   "|cff9999ffWebsite: |cffd700ffhttp://www.wowinterface.com/downloads/info12965-Carbonite.html\n"..
+									   "\n"..
+									   "|cd700ffffFor support, please visit the forums for Carbonite on WoW Interface.",
+							},
+							spacer1 = {
+								order = 2,
+								type = "description",
+								name = " ",
+								width = "full",
+							},
+							import = {
+								order = 3,
+								type = "execute",
+								width = "full",
+								func = function()
+									if NxData then
+										if NxData.Characters then
+											Nx.db.global.Characters = NxData.Characters									
+										end
+										if NxData.Gather then
+											Nx.db.profile.GatherData = NxData.NXGather
+										end
+										if Nx.fdb then
+											if NxData.NXFav then
+												Nx.fdb.profile.Notes = NxData.NXFav
+											end
+										end									
+										Nx.Opts.NXCmdReload()
+									end
+								end,
+								name = "Import Old Carbonite Settings"
+							},
+							desc = {
+								order = 4,
+								type = "description",
+								name = "The import button will bring Warehouse, Node, and Notes from the 5.1.x series forward",
+								width = "full",
+							},				
+							dele = {
+								order = 5,
+								type = "execute",
+								width = "full",
+								func = function()
+									NxData = {}
+									Nx.Opts.NXCmdReload()
+								end,
+								name = "Delete Old Carbonite Settings"
+							},
+							ddesc = {
+								order = 6,
+								type = "description",
+								name = "The delete button will clear the old 5.1.x saved settings freeing memory and removing these buttons",
+								width = "full",
+							},
+						},
+					},
+				},
+			}			
+		end
+		for k, v in pairs(modular_config) do
+			config.args[k] = (type(v) == "function") and v() or v
+		end
+	end
+  return config
+end
+
+local battlegrounds
+local function BGConfig()
+	if not battlegrounds then	
+		battlegrounds = {
+			type = "group",
+			name = "Battlegrounds",
+			args = {
+				bgstats = {
+					type = "toggle",
+					name = "Show Battleground Stats",
+					width = "full",
+					desc = "Turns on or off displaying your battleground k/d and honor gained in chat during a match.",
+					get = function()
+						return Nx.db.profile.Battleground.ShowStats 
+					end,
+					set = function()
+						Nx.db.profile.Battleground.ShowStats = not Nx.db.profile.Battleground.ShowStats
+					end,
+				},
+			},	  
+		}
+	end
+	return battlegrounds
+end
+
+local general
+local function generalOptions()
+	if not general then
+		general = {
+			type = "group",
+			name = "General Options",
+			args = {
+				loginMsg = {
+					order = 1,
+					type = "toggle",
+					width = "full",
+					name = "Show Login Message",
+					desc = "When Enabled, displays the Carbonite loading messages in chat.",
+					get = function()
+						return Nx.db.profile.General.LoginHideVer 
+					end,
+					set = function()
+						Nx.db.profile.General.LoginHideVer = not Nx.db.profile.General.LoginHideVer
+					end,				
+				},
+				loginWin = {
+					order = 2,
+					type = "toggle",
+					width = "full",
+					name = "Show Login Graphic",
+					desc = "When Enabled, displays the Carbonite graphic during initialization.\n",
+					get = function()
+						return Nx.db.profile.General.TitleOff 
+					end,
+					set = function()
+						Nx.db.profile.General.TitleOff = not Nx.db.profile.General.TitleOff
+					end,				
+				},			
+				loginSnd = {
+					order = 3,
+					type = "toggle",
+					width = "full",
+					name = "Play Login Sound",
+					desc = "When Enabled, plays a sound when Carbonite is loaded.",
+					get = function()
+						return Nx.db.profile.General.TitleSoundOn
+					end,
+					set = function()
+						Nx.db.profile.General.TitleSoundOn = not Nx.db.profile.General.TitleSoundOn
+					end,				
+				},		
+				spacer1 = {
+					order = 4,
+					type = "description",
+					name = "\n",
+				},
+				chatWindow = {
+					order = 5,
+					type	= "select",
+					name	= "Default Chat Channel",
+					desc	= "Allows selection of which chat window to display Carbonite messages",
+					get	= function()
+						local vals = Nx.Opts:CalcChoices("Chat")
+						for a,b in pairs(vals) do
+						  if (b == Nx.db.profile.General.ChatMsgFrm) then
+						     return a
+						  end
+						end
+						return ""
+					end,
+					set	= function(info, name)
+						local vals = Nx.Opts:CalcChoices("Chat")						
+						Nx.db.profile.General.ChatMsgFrm = vals[name]
+						Nx.Opts:NXCmdUIChange()
+					end,
+					values	= function()
+					    return Nx.Opts:CalcChoices("Chat")
+					end,
+				},				
+				spacer2 = {
+					order = 6,
+					type = "description",
+					name = "\n",
+				},
+				maxCamera = {
+					order = 7,
+					type = "toggle",
+					width = "full",
+					name = "Force Max Camera Distance\n",
+					desc = "When enabled, sets the max camera distance higher then Blizzards options normally allows.",
+					get = function()
+						return Nx.db.profile.General.CameraForceMaxDist
+					end,
+					set = function()
+						Nx.db.profile.General.CameraForceMaxDist = not Nx.db.profile.General.CameraForceMaxDist
+						Nx.Opts:NXCmdCamForceMaxDist()
+					end,				
+				},		
+				hideGriff = {
+					order = 8,
+					type = "toggle",
+					width = "full",
+					name = "Hide Action Bar Gryphon Graphics",
+					desc = "Attempts to hide the two gryphons on your action bar.",
+					get = function()
+						return Nx.db.profile.General.GryphonsHide
+					end,
+					set = function()
+						Nx.db.profile.General.GryphonsHide = not Nx.db.profile.General.GryphonsHide
+						Nx.Opts:NXCmdGryphonsUpdate()
+					end,				
+				},						
+			},
+		}
+	end
+	return general
+end
+
+local map
+local function mapConfig ()
+	if not map then
+		map = {
+			type = "group",
+			name = "Map Options",
+			childGroups	= "tab",
+			args = {
+				mainMap = {
+					type = "group",
+					name = "Map Options",
+					order = 1,
+					args = {
+						maxMap = {
+							order = 1,
+							type = "toggle",
+							width = "full",
+							name = "Use Carbonite Map instead of Blizzards (Alt-M will open world map)\n",
+							desc = "When enabled, pressing 'M' will maximize the carbonite map instead of opening the world map.",
+							get = function()
+								return Nx.db.profile.Map.MaxOverride
+							end,
+							set = function()
+								Nx.db.profile.Map.MaxOverride = not Nx.db.profile.Map.MaxOverride							
+							end,				
+						},			
+						compatability = {
+							order = 2,
+							type = "toggle",
+							width = "full",
+							name = "Enable Compatability Mode",
+							desc = "When Enabled, Carbonite will performe combat checks before any map/window functions. This eliminates other UI's from causing protected mode errors.",
+							get = function()
+								return Nx.db.profile.Map.Compatability
+							end,
+							set = function()
+								Nx.db.profile.Map.Compatability = not Nx.db.profile.Map.Compatability
+							end,
+						},
+						centerMap = {
+							order = 2,
+							type = "toggle",
+							width = "full",
+							name = "Center map when maximizing\n",
+							desc = "When enabled, the map will center on your current zone when you maximize it",
+							get = function()
+								return Nx.db.profile.Map.MaxCenter
+							end,
+							set = function()
+								Nx.db.profile.Map.MaxCenter = not Nx.db.profile.Map.MaxCenter
+							end,				
+						},							  						
+						mouseIgnore = {
+							order = 3,
+							type = "toggle",
+							width = "full",
+							name = "Ignore mouse on map except when ALT is pressed\n",
+							desc = "When enabled, the small game map will ignore all mouse clicks unless the ALT key is held down.",
+							get = function()
+								return Nx.db.profile.Map.MouseIgnore
+							end,
+							set = function()
+								Nx.db.profile.Map.MouseIgnore = not Nx.db.profile.Map.MouseIgnore							
+							end,				
+						},							  						
+						maxMouseIgnore = {
+							order = 4,
+							type = "toggle",
+							width = "full",
+							name = "Ignore mouse on full-sized map except when ALT is pressed\n",
+							desc = "When enabled, the full size map will ignore all mouse clicks unless the ALT key is held down.",
+							get = function()
+								return Nx.db.profile.Map.MaxMouseIgnore
+							end,
+							set = function()
+								Nx.db.profile.Map.MaxMouseIgnore = not Nx.db.profile.Map.MaxMouseIgnore
+							end,				
+						},
+						ownMap = {
+							order = 5,
+							type = "toggle",
+							width = "full",
+							name = "Move Worldmap Data into Maximized Map\n",
+							desc = "When enabled, Carbonite will attempt to move anything drawn on your world map onto the Maximized Map.",
+							get = function()
+								return Nx.db.profile.Map.WOwn
+							end,
+							set = function()
+								Nx.db.profile.Map.WOwn = not Nx.db.profile.Map.WOwn
+							end,				
+						},				
+						restoreMap = {
+							order = 6,
+							type = "toggle",
+							width = "full",
+							name = "Close Map instead of minimize\n",
+							desc = "When enabled, pressing either 'M' or ESC will close the maximized map instead of switching back to small map.",
+							get = function()
+								return Nx.db.profile.Map.MaxRestoreHide
+							end,
+							set = function()
+								Nx.db.profile.Map.MaxRestoreHide = not Nx.db.profile.Map.MaxRestoreHide
+							end,				
+						},		
+						spacer1 = {
+							order = 7,
+							type = "description",
+							name = "\n",
+						},
+						showPals = {
+							order = 8,
+							type = "toggle",							
+							name = "Show Friends/Guildmates in Cities",
+							width = "full",
+							desc = "When enabled, will attempt to draw a marker on the map for friends & guildmates positions.",
+							get = function()
+								return Nx.db.profile.Map.ShowPalsInCities
+							end,
+							set = function()
+								Nx.db.profile.Map.ShowPalsInCities = not Nx.db.profile.Map.ShowPalsInCities
+							end,				
+						},
+						showOthers = {
+							order = 9,
+							type = "toggle",							
+							width = "full",
+							name = "Show Other people in Cities",
+							desc = "When enabled, will attempt to draw a marker on the map for other Carbonite users.",
+							get = function()
+								return Nx.db.profile.Map.ShowOthersInCities
+							end,
+							set = function()
+								Nx.db.profile.Map.ShowOthersInCities = not Nx.db.profile.Map.ShowOthersInCities
+							end,				
+						},
+						showOthersZ = {
+							order = 10,
+							type = "toggle",			
+							width = "full",
+							name = "Show Other people In Zone",
+							desc = "When enabled, will attempt to draw a marker on the map for other Carbonite users.",
+							get = function()
+								return Nx.db.profile.Map.ShowOthersInZone
+							end,
+							set = function()
+								Nx.db.profile.Map.ShowOthersInZone = not Nx.db.profile.Map.ShowOthersInZone
+							end,				
+						},
+						spacer2 = {
+							order = 11,
+							type = "description",
+							name = "\n",
+						},				
+						restoreScale = {
+							order = 12,
+							type = "toggle",							
+							name = "Restore map scale after track",
+							width = "full",
+							desc = "When enabled, restores your previous map scale when tracking is cleared.",
+							get = function()
+								return Nx.db.profile.Map.RestoreScaleAfterTrack
+							end,
+							set = function()
+								Nx.db.profile.Map.RestoreScaleAfterTrack = not Nx.db.profile.Map.RestoreScaleAfterTrack
+							end,				
+						},
+						useRoute = {
+							order = 13,
+							type = "toggle",							
+							name = "Use Travel Routing",
+							width = "full",
+							desc = "When enabled, attempts to route your travel when destination is in another zone.",
+							get = function()
+								return Nx.db.profile.Map.RouteUse
+							end,
+							set = function()
+								Nx.db.profile.Map.RouteUse = not Nx.db.profile.Map.RouteUse
+							end,				
+						},						
+						restoreScale = {
+							order = 14,
+							type = "toggle",							
+							name = "Restore map scale after track",
+							width = "full",
+							desc = "When enabled, restores your previous map scale when tracking is cleared.",
+							get = function()
+								return Nx.db.profile.Map.RestoreScaleAfterTrack
+							end,
+							set = function()
+								Nx.db.profile.Map.RestoreScaleAfterTrack = not Nx.db.profile.Map.RestoreScaleAfterTrack
+							end,				
+						},				
+						spacer3 = {
+							order = 15,
+							type = "description",
+							name = "\n",
+						},				
+						showTrail = {
+							order = 16,
+							type = "toggle",							
+							name = "Show Movement Trail",
+							width = "full",
+							desc = "When enabled, draws a trail on the map to show your movements.",
+							get = function()
+								return Nx.db.profile.Map.ShowTrail
+							end,
+							set = function()
+								Nx.db.profile.Map.ShowTrail = not Nx.db.profile.Map.ShowTrail
+							end,				
+						},									
+						trailDist = {
+							order = 17,
+							type = "range",							
+							name = "Movement trail distance",
+							desc = "sets the distance of movement between the trail marks",
+							min = .1,
+							max = 20,
+							step = .1,
+							bigStep = .1,
+							get = function()
+								return Nx.db.profile.Map.TrailDist
+							end,
+							set = function(info,value)
+								Nx.db.profile.Map.TrailDist = value
+							end,				
+						},
+						trailCnt = {
+							order = 18,
+							type = "range",							
+							name = "Movement dot count",
+							desc = "sets the number of movement dots to draw on the map",
+							min = 0,
+							max = 1000,
+							step = 10,
+							bigStep = 10,
+							get = function()
+								return Nx.db.profile.Map.TrailCnt
+							end,
+							set = function(info,value)
+								Nx.db.profile.Map.TrailCnt = value
+							end,				
+						},				
+						trailTime = {
+							order = 19,
+							type = "range",							
+							name = "Movement trail fade time",							
+							desc = "sets the time trail marks last on the map (in seconds)",
+							min = 0,
+							max = 1000,
+							step = 10,
+							bigStep = 10,
+							get = function()
+								return Nx.db.profile.Map.TrailTime
+							end,
+							set = function(info,value)
+								Nx.db.profile.Map.TrailTime = value
+							end,				
+						},						
+						spacer4 = {
+							order = 20,
+							type = "description",
+							name = "\n",
+						},					
+						showToolBar = {
+							order = 21,
+							type = "toggle",							
+							name = "Show Map Toolbar",
+							width = "full",
+							desc = "When enabled, shows the quickbutton toolbar on the map.",
+							get = function()
+								return Nx.db.profile.Map.ShowToolBar
+							end,
+							set = function()
+								Nx.db.profile.Map.ShowToolBar = not Nx.db.profile.Map.ShowToolBar
+								Nx.Opts:NXCmdMapToolBarUpdate()
+							end,				
+						},
+						TooltipAnchor = {
+							order = 22,
+							type	= "select",
+							name	= "  Map Tooltip Anchor",
+							desc	= "Sets the anchor point for tooltips on the map",
+							get	= function()
+								local vals = Nx.Opts:CalcChoices("Anchor0")
+								for a,b in pairs(vals) do
+								  if (b == Nx.db.profile.Map.LocTipAnchor) then
+									 return a
+								  end
+								end
+								return ""
+							end,
+							set	= function(info, name)
+								local vals = Nx.Opts:CalcChoices("Anchor0")
+								Nx.db.profile.Map.LocTipAnchor = vals[name]								
+							end,
+							values	= function()
+								return Nx.Opts:CalcChoices("Anchor0")
+							end,
+						},
+						TooltipAnchorRel = {
+							order = 23,
+							type	= "select",
+							name	= "  Map Tooltip Anchor To Map",
+							desc	= "Sets the secondary anchor point for tooltips on the map",
+							get	= function()
+								local vals = Nx.Opts:CalcChoices("Anchor0")
+								for a,b in pairs(vals) do
+								  if (b == Nx.db.profile.Map.LocTipAnchorRel) then
+									 return a
+								  end
+								end
+								return ""
+							end,
+							set	= function(info, name)
+								local vals = Nx.Opts:CalcChoices("Anchor0")
+								Nx.db.profile.Map.LocTipAnchorRel = vals[name]								
+							end,
+							values	= function()
+								return Nx.Opts:CalcChoices("Anchor0")
+							end,
+						},		
+						TopToolTip = {
+							order = 24,
+							type = "toggle",							
+							name = "Show All Tooltips Above Map",
+							width = "full",
+							desc = "When enabled, makes sure the map tooltips are always on the top layer.",
+							get = function()
+								return Nx.db.profile.Map.TopTooltip
+							end,
+							set = function()
+								Nx.db.profile.Map.TopTooltip = not Nx.db.profile.Map.TopTooltip								
+							end,				
+						},				
+						showTitleName = {
+							order = 25,
+							type = "toggle",							
+							name = "Show Map Name",							
+							desc = "When enabled, shows current map zone name in the titlebar.",
+							get = function()
+								return Nx.db.profile.Map.ShowTitleName
+							end,
+							set = function()
+								Nx.db.profile.Map.ShowTitleName = not Nx.db.profile.Map.ShowTitleName
+							end,				
+						},
+						showTitleXY = {
+							order = 26,
+							type = "toggle",							
+							name = "Show Coordinates",							
+							desc = "When enabled, Shows your current coordinates in the titlebar.",
+							get = function()
+								return Nx.db.profile.Map.ShowTitleXY
+							end,
+							set = function()
+								Nx.db.profile.Map.ShowTitleXY = not Nx.db.profile.Map.ShowTitleXY
+							end,				
+						},
+						showTitleSpeed = {
+							order = 27,
+							type = "toggle",							
+							name = "Show Speed",							
+							desc = "When enabled, Shows your current movement speed in the titlebar.",
+							get = function()
+								return Nx.db.profile.Map.ShowTitleSpeed
+							end,
+							set = function()
+								Nx.db.profile.Map.ShowTitleSpeed = not Nx.db.profile.Map.ShowTitleSpeed
+							end,				
+						},
+						showTitle2 = {
+							order = 28,
+							type = "toggle",							
+							name = "Show Second Title Line",
+							width = "full",
+							desc = "When enabled, Shows a second line of info in the titlebar with PVP & subzone info. (REQUIRES RELOAD)",
+							get = function()
+								return Nx.db.profile.Map.ShowTitle2
+							end,
+							set = function()
+								Nx.db.profile.Map.ShowTitle2 = not Nx.db.profile.Map.ShowTitle2
+								Nx.Opts.NXCmdReload()
+							end,				
+						},						
+						spacer5 = {
+							order = 29,
+							type = "description",
+							name = "\n",
+						},									
+						showPOI = {
+							order = 30,
+							type = "toggle",							
+							name = "Show Map POI",
+							width = "full",
+							desc = "When enabled, shows Points of Interest on the map.",
+							get = function()
+								return Nx.db.profile.Map.ShowPOI
+							end,
+							set = function()
+								Nx.db.profile.Map.ShowPOI = not Nx.db.profile.Map.ShowPOI								
+							end,				
+						},									
+						spacer6 = {
+							order = 31,
+							type = "description",
+							name = "\n",
+						},															
+						plyrArrowSize = {
+							order = 32,
+							type = "range",							
+							name = "Player Arrow Size",							
+							width = "double",
+							desc = "Sets the size of the player arrow on the map",
+							min = 10,
+							max = 100,
+							step = 1,
+							bigStep = 1,
+							get = function()
+								return Nx.db.profile.Map.PlyrArrowSize
+							end,
+							set = function(info,value)
+								Nx.db.profile.Map.PlyrArrowSize = value
+							end,				
+						},		
+						iconScaleMin = {
+							order = 33,
+							type = "range",	
+							width = "double",							
+							name = "Icon Scale Min",							
+							desc = "Sets the smallest size for icons on the map while zooming (-1 disabled any size changes)",
+							min = -1,
+							max = 50,
+							step = 1,
+							bigStep = 1,
+							get = function()
+								return Nx.db.profile.Map.IconScaleMin
+							end,
+							set = function(info,value)
+								Nx.db.profile.Map.IconScaleMin = value
+							end,				
+						},		
+						mapLineThick = {
+							order = 34,
+							type = "range",							
+							width = "double",
+							name = "Map Health Bar Thickness",							
+							desc = "Sets the thickness of the health bar (0 disables)",
+							min = 0,
+							max = 10,
+							step = 1,
+							bigStep = 1,
+							get = function()
+								return Nx.db.profile.Map.LineThick
+							end,
+							set = function(info,value)
+								Nx.db.profile.Map.LineThick = value
+							end,				
+						},		
+						zoneDrawCnt = {
+							order = 35,
+							type = "range",							
+							width = "double",
+							name = "Maximum Zones To Draw At Once",							
+							desc = "Sets the number of zones you can display at once on the map",
+							min = 1,
+							max = 20,
+							step = 1,
+							bigStep = 1,
+							get = function()
+								return Nx.db.profile.Map.ZoneDrawCnt
+							end,
+							set = function(info,value)
+								Nx.db.profile.Map.ZoneDrawCnt = value
+							end,				
+						},						
+						detailSize = {
+							order = 36,
+							type = "range",							
+							name = "Detail Graphics Visible Area",							
+							width = "double",
+							desc = "Sets the area size available when zoomed into satelite mode on the map (REQUIRES RELOAD)",
+							min = 2,
+							max = 40,
+							step = 1,
+							bigStep = 1,
+							get = function()
+								return Nx.db.profile.Map.DetailSize
+							end,
+							set = function(info,value)
+								Nx.db.profile.Map.DetailSize = value
+								Nx.Opts.NXCmdReload()								
+							end,				
+						},					
+						spacer7 = {
+							order = 37,
+							type = "description",
+							name = "\n",
+						},			
+						header = {
+							order	= 38,
+							type	= "header",
+							name	= "Map Mouse Button Binds",
+						},						
+						ButLAlt = {
+							order = 39,
+							type	= "select",
+							name	= "           Alt Left Click",
+							desc	= "Sets the action performed when left clicking holding ALT",
+							get	= function()
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								for a,b in pairs(vals) do
+								  if (b == Nx.db.profile.Map.ButLAlt) then
+									 return a
+								  end
+								end
+								return ""
+							end,
+							set	= function(info, name)
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								Nx.db.profile.Map.ButLAlt = vals[name]								
+							end,
+							values	= function()
+								return Nx.Opts:CalcChoices("MapFunc")
+							end,
+						},		
+						ButLCtrl = {
+							order = 40,
+							type	= "select",
+							name	= "           Ctrl Left Click",
+							desc	= "Sets the action performed when left clicking holding CTRL",
+							get	= function()
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								for a,b in pairs(vals) do
+								  if (b == Nx.db.profile.Map.ButLCtrl) then
+									 return a
+								  end
+								end
+								return ""
+							end,
+							set	= function(info, name)
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								Nx.db.profile.Map.ButLCtrl = vals[name]								
+							end,
+							values	= function()
+								return Nx.Opts:CalcChoices("MapFunc")
+							end,
+						},								
+						ButM = {
+							order = 41,
+							type	= "select",
+							name	= "           Middle Click",
+							desc	= "Sets the action performed when clicking your middle mouse button",
+							get	= function()
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								for a,b in pairs(vals) do
+								  if (b == Nx.db.profile.Map.ButM) then
+									 return a
+								  end
+								end
+								return ""
+							end,
+							set	= function(info, name)
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								Nx.db.profile.Map.ButM = vals[name]								
+							end,
+							values	= function()
+								return Nx.Opts:CalcChoices("MapFunc")
+							end,
+						},								
+						ButMAlt = {
+							order = 42,
+							type	= "select",
+							name	= "           Alt Middle Click",
+							desc	= "Sets the action performed when middle clicking holding ALT",
+							get	= function()
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								for a,b in pairs(vals) do
+								  if (b == Nx.db.profile.Map.ButMAlt) then
+									 return a
+								  end
+								end
+								return ""
+							end,
+							set	= function(info, name)
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								Nx.db.profile.Map.ButMAlt = vals[name]								
+							end,
+							values	= function()
+								return Nx.Opts:CalcChoices("MapFunc")
+							end,
+						},								
+						ButMCtrl = {
+							order = 43,
+							type	= "select",
+							name	= "           Ctrl Left Click",
+							desc	= "Sets the action performed when middle clicking holding CTRL",
+							get	= function()
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								for a,b in pairs(vals) do
+								  if (b == Nx.db.profile.Map.ButMCtrl) then
+									 return a
+								  end
+								end
+								return ""
+							end,
+							set	= function(info, name)
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								Nx.db.profile.Map.ButMCtrl = vals[name]								
+							end,
+							values	= function()
+								return Nx.Opts:CalcChoices("MapFunc")
+							end,
+						},								
+						ButR = {
+							order = 44,
+							type	= "select",
+							name	= "           Right Click",
+							desc	= "Sets the action performed when right clicking the map",
+							get	= function()
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								for a,b in pairs(vals) do
+								  if (b == Nx.db.profile.Map.ButR) then
+									 return a
+								  end
+								end
+								return ""
+							end,
+							set	= function(info, name)
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								Nx.db.profile.Map.ButR = vals[name]								
+							end,
+							values	= function()
+								return Nx.Opts:CalcChoices("MapFunc")
+							end,
+						},								
+						ButRAlt = {
+							order = 45,
+							type	= "select",
+							name	= "           Alt Right Click",
+							desc	= "Sets the action performed when Right clicking holding ALT",
+							get	= function()
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								for a,b in pairs(vals) do
+								  if (b == Nx.db.profile.Map.ButRAlt) then
+									 return a
+								  end
+								end
+								return ""
+							end,
+							set	= function(info, name)
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								Nx.db.profile.Map.ButRAlt = vals[name]								
+							end,
+							values	= function()
+								return Nx.Opts:CalcChoices("MapFunc")
+							end,
+						},								
+						ButRCtrl = {
+							order = 46,
+							type	= "select",
+							name	= "           Ctrl Right Click",
+							desc	= "Sets the action performed when right clicking holding CTRL",
+							get	= function()
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								for a,b in pairs(vals) do
+								  if (b == Nx.db.profile.Map.ButRCtrl) then
+									 return a
+								  end
+								end
+								return ""
+							end,
+							set	= function(info, name)
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								Nx.db.profile.Map.ButRCtrl = vals[name]								
+							end,
+							values	= function()
+								return Nx.Opts:CalcChoices("MapFunc")
+							end,
+						},		
+						But4 = {
+							order = 47,
+							type	= "select",
+							name	= "           Button 4 Click",
+							desc	= "Sets the action performed when clicking mouse button 4",
+							get	= function()
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								for a,b in pairs(vals) do
+								  if (b == Nx.db.profile.Map.But4) then
+									 return a
+								  end
+								end
+								return ""
+							end,
+							set	= function(info, name)
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								Nx.db.profile.Map.But4 = vals[name]								
+							end,
+							values	= function()
+								return Nx.Opts:CalcChoices("MapFunc")
+							end,
+						},		
+						But4Alt = {
+							order = 48,
+							type	= "select",
+							name	= "           Alt Button 4 Click",
+							desc	= "Sets the action performed when pressing mouse 4 while holding ALT",
+							get	= function()
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								for a,b in pairs(vals) do
+								  if (b == Nx.db.profile.Map.But4Alt) then
+									 return a
+								  end
+								end
+								return ""
+							end,
+							set	= function(info, name)
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								Nx.db.profile.Map.But4Alt = vals[name]								
+							end,
+							values	= function()
+								return Nx.Opts:CalcChoices("MapFunc")
+							end,
+						},		
+						But4Ctrl = {
+							order = 49,
+							type	= "select",
+							name	= "           Ctrl Button 4 Click",
+							desc	= "Sets the action performed when clicking 4th mouse button holding CTRL",
+							get	= function()
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								for a,b in pairs(vals) do
+								  if (b == Nx.db.profile.Map.But4Ctrl) then
+									 return a
+								  end
+								end
+								return ""
+							end,
+							set	= function(info, name)
+								local vals = Nx.Opts:CalcChoices("MapFunc")
+								Nx.db.profile.Map.But4Ctrl = vals[name]								
+							end,
+							values	= function()
+								return Nx.Opts:CalcChoices("MapFunc")
+							end,
+						},								
+					},
+				},
+				miniMap = {
+					type = "group",
+					name = "MiniMap Options",
+					order = 2,
+					args = {
+						MMOwn = {
+							order = 1,
+							type = "toggle",
+							width = "full",
+							name = "Combine Blizzard Minimap with Carbonite Minimap",
+							desc = "When enabled, Carbonite will combine the minimap into itself to create a more functional minimap for you (RELOAD REQUIRED)",
+							get = function()
+								return Nx.db.profile.MiniMap.Own
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.Own = not Nx.db.profile.MiniMap.Own
+								Nx.Opts:NXCmdMMOwnChange(_,Nx.db.profile.MiniMap.Own)								
+							end,				
+						},							  						  
+						spacer1 = {
+							order = 3,
+							type = "description",
+							name = "\n",
+						},			
+						MMSquare = {
+							order = 4,
+							type = "toggle",
+							width = "full",
+							name = "Minimap Shape is Square",
+							desc = "When enabled, Carbonite will change the minimap shape from circle to square",
+							get = function()
+								return Nx.db.profile.MiniMap.Square
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.Square = not Nx.db.profile.MiniMap.Square								
+							end,				
+						},
+						MMAboveIcons = {
+							order = 5,
+							type = "toggle",
+							width = "full",
+							name = "Minimap is drawn above icons",
+							desc = "When enabled, Carbonite will draw the minimap above your map icons, you can use the CTRL key on your keyboard to toggle which layer is top",
+							get = function()
+								return Nx.db.profile.MiniMap.AboveIcons
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.AboveIcons = not Nx.db.profile.MiniMap.AboveIcons								
+							end,				
+						},						
+						MMIconScale = {
+							order = 6,
+							type = "range",							
+							name = "Minimap Icon Scale",														
+							desc = "Sets the scale of the icons drawn in the minimap portion of the map",
+							min = .1,
+							max = 10,
+							step = .1,
+							bigStep = .1,
+							get = function()
+								return Nx.db.profile.MiniMap.IScale
+							end,
+							set = function(info,value)
+								Nx.db.profile.MiniMap.IScale = value
+							end,				
+						},					
+						MMDockIScale = {
+							order = 7,
+							type = "range",							
+							name = "Docked Minimap Icon Scale",													
+							desc = "Sets the scale of the icons drawn in the minimap portion of the map while docked",
+							min = .1,
+							max = 10,
+							step = .1,
+							bigStep = .1,
+							get = function()
+								return Nx.db.profile.MiniMap.DockIScale
+							end,
+							set = function(info,value)
+								Nx.db.profile.MiniMap.DockIScale = value
+							end,				
+						},					
+						
+						MMGlow = {
+							order = 8,
+							type = "range",							
+							name = "Minimap Node Glow Delay",														
+							desc = "Sets the delay (in seconds) between the glow change on gathering nodes (0 is off)",
+							min = 0,
+							max = 4,
+							step = .1,
+							bigStep = .1,
+							get = function()
+								return Nx.db.profile.MiniMap.NodeGD
+							end,
+							set = function(info,value)
+								Nx.db.profile.MiniMap.NodeGD = value
+								Nx.Opts:NXCmdMMChange()
+							end,				
+						},						
+						spacer2 = {
+							order = 9,
+							type = "description",
+							name = "\n",
+						},									
+						MMDockAlways = {
+							order = 10,
+							type = "toggle",
+							width = "full",
+							name = "Always dock minimap",
+							desc = "When enabled, The minimap will always dock into the corner of the carbonite map.",
+							get = function()
+								return Nx.db.profile.MiniMap.DockAlways
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.DockAlways = not Nx.db.profile.MiniMap.DockAlways								
+							end,				
+						},				
+						MMDockIndoors = {
+							order = 11,
+							type = "toggle",
+							width = "full",
+							name = "Dock The Minimap when indoors",
+							desc = "When enabled, The minimap will dock if wow says your indoors",
+							get = function()
+								return Nx.db.profile.MiniMap.DockIndoors
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.DockIndoors = not Nx.db.profile.MiniMap.DockIndoors
+							end,				
+						},												
+						MMDockBugged = {
+							order = 12,
+							type = "toggle",
+							width = "full",
+							name = "Dock The Minimap in Bugged Zones",
+							desc = "When enabled, The minimap will dock if your in a known transparency bug zone (Pitch black minimap)",
+							get = function()
+								return Nx.db.profile.MiniMap.DockBugged
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.DockBugged = not Nx.db.profile.MiniMap.DockBugged
+							end,				
+						},						
+						MMDockOnMax = {
+							order = 13,
+							type = "toggle",
+							width = "full",
+							name = "Dock The Minimap when Fullsized",
+							desc = "When enabled, The minimap will dock if your viewing the fullsized map.",
+							get = function()
+								return Nx.db.profile.MiniMap.DockOnMax
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.DockOnMax = not Nx.db.profile.MiniMap.DockOnMax								
+							end,				
+						},		
+						MMHideOnMax = {
+							order = 14,
+							type = "toggle",
+							width = "full",
+							name = "Hide The Minimap when Fullsized",
+							desc = "When enabled, The minimap will hide if your viewing the fullsized map.",
+							get = function()
+								return Nx.db.profile.MiniMap.HideOnMax
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.HideOnMax = not Nx.db.profile.MiniMap.HideOnMax
+							end,				
+						},						
+						
+						MMDockSquare = {
+							order = 15,
+							type = "toggle",
+							width = "full",
+							name = "Minimap Docked Shape is Square",
+							desc = "When enabled, The minimap will be square shaped while docked.",
+							get = function()
+								return Nx.db.profile.MiniMap.DockSquare
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.DockSquare = not Nx.db.profile.MiniMap.DockSquare
+							end,				
+						},						
+						MMDockBottom = {
+							order = 16,
+							type = "toggle",
+							width = "full",
+							name = "Minimap Docks Bottom",
+							desc = "When enabled, The minimap will dock to the bottom of the map.",
+							get = function()
+								return Nx.db.profile.MiniMap.DockBottom
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.DockBottom = not Nx.db.profile.MiniMap.DockBottom
+							end,				
+						},						
+						MMDockRight = {
+							order = 17,
+							type = "toggle",
+							width = "full",
+							name = "Minimap Docks Right",
+							desc = "When enabled, The minimap will dock to the right side of the map.",
+							get = function()
+								return Nx.db.profile.MiniMap.DockRight
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.DockRight = not Nx.db.profile.MiniMap.DockRight
+							end,				
+						},										
+						MMDXO = {
+							order = 18,
+							type = "range",							
+							name = "Minimap Dock X-Offset",														
+							desc = "Sets the X - offset the minimap draws while docked",
+							min = 0,
+							max = 200,
+							step = 1,
+							bigStep = 1,
+							get = function()
+								return Nx.db.profile.MiniMap.DXO
+							end,
+							set = function(info,value)
+								Nx.db.profile.MiniMap.DXO = value
+							end,				
+						},					
+						MMDYO = {
+							order = 19,
+							type = "range",							
+							name = "Minimap Dock Y-Offset",														
+							desc = "Sets the Y - offset the minimap draws while docked",
+							min = 0,
+							max = 200,
+							step = 1,
+							bigStep = 1,
+							get = function()
+								return Nx.db.profile.MiniMap.DYO
+							end,
+							set = function(info,value)
+								Nx.db.profile.MiniMap.DYO = value
+							end,				
+						},
+						MMIndoorTogFullSize = {
+							order = 20,
+							type = "toggle",
+							width = "full",
+							name = "Minimap goes full sized Indoors",
+							desc = "When enabled, The minimap will expand to full map window size when indoors.",
+							get = function()
+								return Nx.db.profile.MiniMap.IndoorTogFullSize
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.IndoorTogFullSize = not Nx.db.profile.MiniMap.IndoorTogFullSize
+							end,				
+						},
+						MMDockBuggedTogFullSize = {
+							order = 21,
+							type = "toggle",
+							width = "full",
+							name = "Minimap goes full sized in bugged areas",
+							desc = "When enabled, The minimap will expand to full map window size in known transparency bugged areas.",
+							get = function()
+								return Nx.db.profile.MiniMap.BuggedTogFullSize
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.BuggedTogFullSize = not Nx.db.profile.MiniMap.BuggedTogFullSize
+							end,				
+						},
+						MMDockInstanceTogFullSize = {
+							order = 22,
+							type = "toggle",
+							width = "full",
+							name = "Minimap goes full sized in instances",
+							desc = "When enabled, The minimap expand to full map window size when you enter a raid/instance.",
+							get = function()
+								return Nx.db.profile.MiniMap.InstanceTogFullSize
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.InstanceTogFullSize = not Nx.db.profile.MiniMap.InstanceTogFullSize
+							end,				
+						},
+						MMMoveCapBars = {
+							order = 23,
+							type = "toggle",
+							width = "full",
+							name = "Move capture bars under map",
+							desc = "When enabled, Objective capture bars will be drawn under the map.",
+							get = function()
+								return Nx.db.profile.MiniMap.MoveCapBars
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.MoveCapBars = not Nx.db.profile.MiniMap.MoveCapBars
+							end,				
+						},
+						MMShowOldNameplate = {
+							order = 24,
+							type = "toggle",
+							width = "full",
+							name = "Show Old Nameplates",
+							desc = "When enabled, The minimap will display the old nameplates above the map.",
+							get = function()
+								return Nx.db.profile.MiniMap.ShowOldNameplate
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.ShowOldNameplate = not Nx.db.profile.MiniMap.ShowOldNameplate
+								Nx.Opts:NXCmdMMButUpdate()
+							end,				
+						},						
+					},
+				},	
+				buttonFrame = {
+					type = "group",
+					name = "Minimap Button Options",
+					order = 3,
+					args = {
+						MMButOwn = {
+							order = 1,
+							type = "toggle",
+							width = "full",
+							name = "Move Minimap Buttons into Carbonite Minimap Frame",
+							desc = "When enabled, Carbonite will pull all minimap icons into it's own button frame which can be moved around and minimized as needed (RELOAD REQUIRED)",
+							get = function()
+								return Nx.db.profile.MiniMap.ButOwn
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.ButOwn = not Nx.db.profile.MiniMap.ButOwn
+								Nx.Opts:NXCmdReload()
+							end,				
+						},			
+						spacer1 = {
+							order = 3,
+							type = "description",
+							name = "\n",
+						},
+						MMButHide = {
+							order = 4,
+							type = "toggle",
+							width = "full",
+							name = "Hide Minimap Button Window",
+							desc = "Hides the button frame holding minimap icons",
+							get = function()
+								return Nx.db.profile.MiniMap.ButHide
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.ButHide = not Nx.db.profile.MiniMap.ButHide								
+								Nx.Window:SetAttribute("NxMapDock","H",Nx.db.profile.MiniMap.ButHide)
+							end,				
+						},
+						MMButLock = {
+							order = 5,
+							type = "toggle",
+							width = "full",
+							name = "Lock Minimap Button Window",
+							desc = "Locks the button frame holding minimap icons",
+							get = function()
+								return Nx.db.profile.MiniMap.ButLock
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.ButLock = not Nx.db.profile.MiniMap.ButLock
+								Nx.Window:SetAttribute("NxMapDock","L",Nx.db.profile.MiniMap.ButLock)
+							end,				
+						},
+						spacer2 = {
+							order = 6,
+							type = "description",
+							name = "\n",
+						},		
+						MMButColumns = {
+							order = 7,
+							type = "range",							
+							name = "# Of Minimap Button Columns",													
+							width = "double",
+							desc = "Sets the number of columns to be used for minimap icons",
+							min = 1,
+							max = 10,
+							step = 1,
+							bigStep = 1,
+							get = function()
+								return Nx.db.profile.MiniMap.ButColumns
+							end,
+							set = function(info,value)
+								Nx.db.profile.MiniMap.ButColumns = value
+							end,				
+						},					
+						MMButSpacing = {
+							order = 8,
+							type = "range",							
+							name = "Minimap Button Spacing",	
+							width = "double",
+							desc = "Sets the spacing between buttons in the minimap button bar",
+							min = 25,
+							max = 90,
+							step = 1,
+							bigStep = 1,
+							get = function()
+								return Nx.db.profile.MiniMap.ButSpacing
+							end,
+							set = function(info,value)
+								Nx.db.profile.MiniMap.ButSpacing = value
+							end,				
+						},				
+						ButCorner = {
+							order = 9,
+							type	= "select",
+							name	= "Corner For First Button",
+							desc	= "Sets the anchor point in multi-column setups for first minimap button",
+							get	= function()
+								local vals = Nx.Opts:CalcChoices("Corner")
+								for a,b in pairs(vals) do
+								  if (b == Nx.db.profile.MiniMap.ButCorner) then
+									 return a
+								  end
+								end
+								return ""
+							end,
+							set	= function(info, name)
+								local vals = Nx.Opts:CalcChoices("Corner")
+								Nx.db.profile.MiniMap.ButCorner = vals[name]								
+							end,
+							values	= function()
+								return Nx.Opts:CalcChoices("Corner")
+							end,
+						},						
+						spacer3 = {
+							order = 10,
+							type = "description",
+							name = "\n",
+						},		
+						MMButShowCarb = {
+							order = 11,
+							type = "toggle",
+							width = "full",
+							name = "Enable Carbonite Minimap Button",
+							desc = "Shows the carbonite minimap button in the button panel",
+							get = function()
+								return Nx.db.profile.MiniMap.ButShowCarb
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.ButShowCarb = not Nx.db.profile.MiniMap.ButShowCarb
+								Nx.Opts:NXCmdMMButUpdate()
+							end,
+						},
+						MMButShowCalendar = {
+							order = 12,
+							type = "toggle",
+							width = "full",
+							name = "Enable Calendar Minimap Button",
+							desc = "Shows the calendar minimap button in the button panel",
+							get = function()
+								return Nx.db.profile.MiniMap.ButShowCalendar
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.ButShowCalendar = not Nx.db.profile.MiniMap.ButShowCalendar
+								Nx.Opts:NXCmdMMButUpdate()
+							end,
+						},
+						MMButShowClock = {
+							order = 13,
+							type = "toggle",
+							width = "full",
+							name = "Enable Clock Minimap Button",
+							desc = "Shows the clock minimap button in the button panel",
+							get = function()
+								return Nx.db.profile.MiniMap.ButShowClock
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.ButShowClock = not Nx.db.profile.MiniMap.ButShowClock
+								Nx.Opts:NXCmdMMButUpdate()
+							end,
+						},
+						MMButShowWorldMap = {
+							order = 14,
+							type = "toggle",
+							width = "full",
+							name = "Enable World Map Minimap Button",
+							desc = "Shows the world map minimap button in the button panel",
+							get = function()
+								return Nx.db.profile.MiniMap.ButShowWorldMap
+							end,
+							set = function()
+								Nx.db.profile.MiniMap.ButShowWorldMap = not Nx.db.profile.MiniMap.ButShowWorldMap
+								Nx.Opts:NXCmdMMButUpdate()
+							end,
+						},						
+					},	
+				},
+			},
+		}
+	end
+	return map
+end
+
+local font
+local function fontConfig()
+	if not font then	
+		font = {
+			type = "group",
+			name = "Font Options",
+			args = {	
+				SmallFont = {
+					order = 1,
+					type	= "select",
+					name	= "Small Font",
+					desc	= "Sets the font to be used for small text",
+					get	= function()
+						local vals = Nx.Opts:CalcChoices("FontFace","Get")
+						for a,b in pairs(vals) do
+						  if (b == Nx.db.profile.Font.Small) then
+							 return a
+						  end
+						end
+						return ""
+					end,
+					set	= function(info, name)
+						local vals = Nx.Opts:CalcChoices("FontFace","Get")
+						Nx.db.profile.Font.Small = vals[name]						
+						Nx.Opts:NXCmdFontChange()
+					end,
+					values	= function()
+						return Nx.Opts:CalcChoices("FontFace","Get")
+					end,					
+				},
+				SmallFontSize = {
+					order = 2,
+					type = "range",							
+					name = "Small Font Size",						
+					desc = "Sets the size of the small font",
+					min = 6,
+					max = 14,
+					step = 1,
+					bigStep = 1,
+					get = function()
+						return Nx.db.profile.Font.SmallSize
+					end,
+					set = function(info,value)
+						Nx.db.profile.Font.SmallSize = value
+						Nx.Opts:NXCmdFontChange()
+					end,				
+				},		
+				SmallFontSpacing = {
+					order = 3,
+					type = "range",							
+					name = "Small Font Spacing",						
+					desc = "Sets the spacing of the small font",
+					min = -10,
+					max = 20,
+					step = 1,
+					bigStep = 1,
+					get = function()
+						return Nx.db.profile.Font.SmallSpacing
+					end,
+					set = function(info,value)
+						Nx.db.profile.Font.SmallSpacing = value
+						Nx.Opts:NXCmdFontChange()
+					end,				
+				},		
+				MediumFont = {
+					order = 4,
+					type	= "select",
+					name	= "Normal Font",
+					desc	= "Sets the font to be used for normal text",
+					get	= function()
+						local vals = Nx.Opts:CalcChoices("FontFace","Get")
+						for a,b in pairs(vals) do
+						  if (b == Nx.db.profile.Font.Medium) then
+							 return a
+						  end
+						end
+						return ""
+					end,
+					set	= function(info, name)
+						local vals = Nx.Opts:CalcChoices("FontFace","Get")
+						Nx.db.profile.Font.Medium = vals[name]	
+						Nx.Opts:NXCmdFontChange()
+					end,
+					values	= function()
+						return Nx.Opts:CalcChoices("FontFace","Get")
+					end,					
+				},
+				MediumFontSize = {
+					order = 5,
+					type = "range",							
+					name = "Medium Font Size",						
+					desc = "Sets the size of the normal font",
+					min = 6,
+					max = 20,
+					step = 1,
+					bigStep = 1,
+					get = function()
+						return Nx.db.profile.Font.MediumSize
+					end,
+					set = function(info,value)
+						Nx.db.profile.Font.MediumSize = value
+						Nx.Opts:NXCmdFontChange()
+					end,				
+				},		
+				MediumFontSpacing = {
+					order = 6,
+					type = "range",							
+					name = "Medium Font Spacing",						
+					desc = "Sets the spacing of the normal font",
+					min = -10,
+					max = 20,
+					step = 1,
+					bigStep = 1,
+					get = function()
+						return Nx.db.profile.Font.MediumSpacing
+					end,
+					set = function(info,value)
+						Nx.db.profile.Font.MediumSpacing = value
+						Nx.Opts:NXCmdFontChange()
+					end,				
+				},					
+				MapFont = {
+					order = 7,
+					type	= "select",
+					name	= "Map Font",
+					desc	= "Sets the font to be used on the map",
+					get	= function()
+						local vals = Nx.Opts:CalcChoices("FontFace","Get")
+						for a,b in pairs(vals) do
+						  if (b == Nx.db.profile.Font.Map) then
+							 return a
+						  end
+						end
+						return ""
+					end,
+					set	= function(info, name)
+						local vals = Nx.Opts:CalcChoices("FontFace","Get")
+						Nx.db.profile.Font.Map = vals[name]	
+						Nx.Opts:NXCmdFontChange()
+					end,
+					values	= function()
+						return Nx.Opts:CalcChoices("FontFace","Get")
+					end,					
+				},
+				MapFontSize = {
+					order = 8,
+					type = "range",							
+					name = "Map Font Size",						
+					desc = "Sets the size of the map font",
+					min = 6,
+					max = 14,
+					step = 1,
+					bigStep = 1,
+					get = function()
+						return Nx.db.profile.Font.MapSize
+					end,
+					set = function(info,value)
+						Nx.db.profile.Font.MapSize = value
+						Nx.Opts:NXCmdFontChange()
+					end,				
+				},		
+				MapFontSpacing = {
+					order = 9,
+					type = "range",							
+					name = "Map Font Spacing",						
+					desc = "Sets the spacing of the map font",
+					min = -10,
+					max = 20,
+					step = 1,
+					bigStep = 1,
+					get = function()
+						return Nx.db.profile.Font.MapSpacing
+					end,
+					set = function(info,value)
+						Nx.db.profile.Font.MapSpacing = value
+						Nx.Opts:NXCmdFontChange()
+					end,				
+				},									
+				spacer = {
+					type = "description",
+					name = "",
+					order = 10,
+				},
+				MapLocFont = {
+					order = 11,
+					type	= "select",
+					name	= "Map Location Tip Font",
+					desc	= "Sets the font to be used on the map tooltip",
+					get	= function()
+						local vals = Nx.Opts:CalcChoices("FontFace","Get")
+						for a,b in pairs(vals) do
+						  if (b == Nx.db.profile.Font.MapLoc) then
+							 return a
+						  end
+						end
+						return ""
+					end,
+					set	= function(info, name)
+						local vals = Nx.Opts:CalcChoices("FontFace","Get")
+						Nx.db.profile.Font.MapLoc = vals[name]	
+						Nx.Opts:NXCmdFontChange()
+					end,
+					values	= function()
+						return Nx.Opts:CalcChoices("FontFace","Get")
+					end,					
+				},
+				MapLocFontSize = {
+					order = 12,
+					type = "range",							
+					name = "Map Location Tip Font Size",						
+					desc = "Sets the size of the map tooltip font",
+					min = 6,
+					max = 14,
+					step = 1,
+					bigStep = 1,
+					get = function()
+						return Nx.db.profile.Font.MapLocSize
+					end,
+					set = function(info,value)
+						Nx.db.profile.Font.MapLocSize = value
+						Nx.Opts:NXCmdFontChange()
+					end,				
+				},
+				MapLocFontSpacing = {
+					order = 13,
+					type = "range",							
+					name = "Map Loc Font Spacing",						
+					desc = "Sets the spacing of the map loc font",
+					min = -10,
+					max = 20,
+					step = 1,
+					bigStep = 1,
+					get = function()
+						return Nx.db.profile.Font.MapLocSpacing
+					end,
+					set = function(info,value)
+						Nx.db.profile.Font.MapLocSpacing = value
+						Nx.Opts:NXCmdFontChange()
+					end,				
+				},									
+				spacer2 = {
+					type = "description",
+					name = "",
+					order = 14,
+				},				
+				MenuFont = {
+					order = 15,
+					type	= "select",
+					name	= "Menu Font",
+					desc	= "Sets the font to be used on the memus",
+					get	= function()
+						local vals = Nx.Opts:CalcChoices("FontFace","Get")
+						for a,b in pairs(vals) do
+						  if (b == Nx.db.profile.Font.Menu) then
+							 return a
+						  end
+						end
+						return ""
+					end,
+					set	= function(info, name)
+						local vals = Nx.Opts:CalcChoices("FontFace","Get")
+						Nx.db.profile.Font.Menu = vals[name]	
+						Nx.Opts:NXCmdFontChange()
+					end,
+					values	= function()
+						return Nx.Opts:CalcChoices("FontFace","Get")
+					end,					
+				},
+				MenuFontSize = {
+					order = 16,
+					type = "range",							
+					name = "Menu Font Size",						
+					desc = "Sets the size of the menu font",
+					min = 6,
+					max = 14,
+					step = 1,
+					bigStep = 1,
+					get = function()
+						return Nx.db.profile.Font.MenuSize
+					end,
+					set = function(info,value)
+						Nx.db.profile.Font.MenuSize = value
+						Nx.Opts:NXCmdFontChange()
+					end,				
+				},				
+				MenuFontSpacing = {
+					order = 17,
+					type = "range",							
+					name = "Menu Font Spacing",						
+					desc = "Sets the spacing of the menu font",
+					min = -10,
+					max = 20,
+					step = 1,
+					bigStep = 1,
+					get = function()
+						return Nx.db.profile.Font.MenuSpacing
+					end,
+					set = function(info,value)
+						Nx.db.profile.Font.MenuSpacing = value
+						Nx.Opts:NXCmdFontChange()
+					end,				
+				},									
+			},
+		}
+	end
+	return font
+end
+
+local guidegather
+local function guidegatherConfig ()
+	if not guidegather then
+		guidegather = {
+			type = "group",
+			name = "Guide Options",
+			childGroups	= "tab",
+			args = {
+				guideOpts = {
+					type = "group",
+					name = "Guide Options",
+					order = 1,
+					args = {
+						GuideVendorVMax = {
+							order = 1,
+							type = "range",							
+							name = "Max Vendors To Record",						
+							desc = "Sets the number of vendors you visit that will be held in memory for recall in the guide.",
+							min = 0,
+							max = 100,
+							step = 1,
+							bigStep = 1,
+							get = function()
+								return Nx.db.profile.Guide.VendorVMax
+							end,
+							set = function(info,value)
+								Nx.db.profile.Guide.VendorVMax = value								
+							end,				
+						},						
+					},
+				},
+				gatherOpts = {
+					type = "group",
+					name = "Gather Options",
+					order = 2,
+					args = {
+						gatherEnable = {						
+							order = 1,
+							type = "toggle",
+							width = "full",
+							name = "Enable Saving Gathered Nodes",
+							desc = "When enabled, will record all the resource nodes you gather",
+							get = function()
+								return Nx.db.profile.Guide.GatherEnabled
+							end,
+							set = function()
+								Nx.db.profile.Guide.GatherEnabled = not Nx.db.profile.Guide.GatherEnabled								
+							end,							
+						},
+						spacer1 = {
+							order = 2,
+							type = "description",
+							name = "\n",
+						},			
+						CmdDelHerb = {
+							order = 3,
+							type = "execute",
+							width = "full",
+							name = "Delete Herbalism Gather Locations",
+							func = function ()
+								Nx.Opts:NXCmdDeleteHerb()
+							end,
+						},
+						CmdDelMine = {
+							order = 4,
+							type = "execute",
+							width = "full",
+							name = "Delete Mining Gather Locations",
+							func = function ()
+								Nx.Opts:NXCmdDeleteMine()
+							end,
+						},						
+						CmdDelHerb = {
+							order = 5,
+							type = "execute",
+							width = "full",
+							name = "Delete Misc Gather Locations",
+							func = function ()
+								Nx.Opts:NXCmdDeleteMisc()
+							end,
+						},						
+						spacer2 = {
+							order = 2,
+							type = "description",
+							name = "\n",
+						},								
+						CmdImportHerb = {
+							order = 7,
+							type = "execute",
+							width = "full",
+							name = "Import Herbs From Carbonite Nodes",
+							func = function ()
+								Nx.Opts:NXCmdImportCarbHerb()
+							end,
+						},						
+						CmdImportMine = {
+							order = 8,
+							type = "execute",
+							width = "full",
+							name = "Import Mines From Carbonite Nodes",
+							func = function ()
+								Nx.Opts:NXCmdImportCarbMine()
+							end,
+						},						
+						CmdImportMisc = {
+							order = 9,
+							type = "execute",
+							width = "full",
+							name = "Import Misc From Carbonite Nodes",
+							func = function ()
+								Nx.Opts:NXCmdImportCarbMisc()
+							end,
+						},												
+					},					
+				},
+			},
+		}
+	end
+	return guidegather
+end
+
+local menuoptions
+
+local function menuConfig()
+	if not menuoptions then
+		menuoptions = {		
+			type = "group",
+			name = "Menu Options",
+			args = {
+				menuCenterX = {
+					order = 1,
+					type = "toggle",
+					width = "full",
+					name = "Center Menus Horizontally On Cursor",
+					desc = "When Enabled, Carbonite Menus Will Be Drawn Horizontally Centered On The Mouse",
+					get = function()
+						return Nx.db.profile.Menu.CenterH 
+					end,
+					set = function()
+						Nx.db.profile.Menu.CenterH = not Nx.db.profile.Menu.CenterH
+					end,				
+				},	
+				menuCenterY = {
+					order = 2,
+					type = "toggle",
+					width = "full",
+					name = "Center Menus Vertically On Cursor",
+					desc = "When Enabled, Carbonite Menus Will Be Drawn Vertically Centered On The Mouse",
+					get = function()
+						return Nx.db.profile.Menu.CenterV 
+					end,
+					set = function()
+						Nx.db.profile.Menu.CenterV = not Nx.db.profile.Menu.CenterV
+					end,				
+				},						
+			},
+		}
+	end
+	return menuoptions
+end
+
+local commoptions
+local function commConfig()
+	if not commoptions then
+		commoptions = {
+			type = "group",
+			name = "Privacy Options",
+			args = {
+				commLTF = {
+					order = 1,
+					type = "toggle",
+					width = "full",
+					name = "Send Position & Level Ups To Friends",
+					desc = "When Enabled, Carbonite will send your current location and any levelups you get to your other friends using carbonite",
+					get = function()
+						return Nx.db.profile.Comm.SendToFriends 
+					end,
+					set = function()
+						Nx.db.profile.Comm.SendToFriends = not Nx.db.profile.Comm.SendToFriends
+					end,				
+				},	
+				commLTG = {
+					order = 2,
+					type = "toggle",
+					width = "full",
+					name = "Send Position & Level Ups To Guild",
+					desc = "When Enabled, Carbonite will send your current location and any levelups you get to your other guildmates using carbonite",
+					get = function()
+						return Nx.db.profile.Comm.SendToGuild 
+					end,
+					set = function()
+						Nx.db.profile.Comm.SendToGuild = not Nx.db.profile.Comm.SendToGuild
+					end,				
+				},		
+				commLTZ = {
+					order = 3,
+					type = "toggle",
+					width = "full",
+					name = "Send Position & Level Ups To Zone",
+					desc = "When Enabled, Carbonite will send your current location and any levelups you get to other carbonite useres in your current zone",
+					get = function()
+						return Nx.db.profile.Comm.SendToZone 
+					end,
+					set = function()
+						Nx.db.profile.Comm.SendToZone = not Nx.db.profile.Comm.SendToZone
+					end,				
+				},		
+				commShowLevel = {
+					order = 4,
+					type = "toggle",
+					width = "full",
+					name = "Show Received Levelups",
+					desc = "When Enabled, Carbonite will show a message in chat whenever it gets a notice someone leveled up",
+					get = function()
+						return Nx.db.profile.Comm.LvlUpShow
+					end,
+					set = function()
+						Nx.db.profile.Comm.LvlUpShow = not Nx.db.profile.Comm.LvlUpShow
+					end,				
+				},		
+				commDisG = {
+					order = 5,
+					type = "toggle",
+					width = "full",
+					name = "Enable Global Channel (Used for version checks/notices)",
+					desc = "When Enabled, Carbonite will listen on a global channel for versions others are using so it can tell you if an update is available",
+					get = function()
+						return Nx.db.profile.Comm.Global 
+					end,
+					set = function()
+						Nx.db.profile.Comm.Global = not Nx.db.profile.Comm.Global
+					end,				
+				},		
+				commDisZ = {
+					order = 6,
+					type = "toggle",
+					width = "full",
+					name = "Enable Zone Channel (Used for locations of others in your zone)",
+					desc = "When Enabled, Carbonite will send your current location and listen for messages from others who are in the same zone as you",
+					get = function()
+						return Nx.db.profile.Comm.Zone 
+					end,
+					set = function()
+						Nx.db.profile.Comm.Zone = not Nx.db.profile.Comm.Zone
+					end,				
+				},		
+				
+			},			
+		}
+	end
+	return commoptions
+end
+
+local skinoptions
+local function skinConfig()
+	if not skinoptions then
+		skinoptions = {
+			type = "group",
+			name = "Skin Options",
+			args = {		
+				SkinSelect = {
+					order = 1,
+					type	= "select",
+					name	= "Current Skin",
+					desc	= "Sets the current skin for carbonite windows",
+					get	= function()
+						local vals = Nx.Opts:CalcChoices("Skins")
+						for a,b in pairs(vals) do
+						  if (b == Nx.db.profile.Skin.Name) then
+							 return a
+						  end
+						end
+						return ""
+					end,
+					set	= function(info, name)
+						local vals = Nx.Opts:CalcChoices("Skins")
+						Nx.db.profile.Skin.Name = vals[name]	
+						if vals[name] == "Default" then
+							Nx.db.profile.Skin.Name = ""
+						end
+						Nx.Skin:Set(Nx.db.profile.Skin.Name)
+					end,
+					values	= function()
+						return Nx.Opts:CalcChoices("Skins")
+					end,					
+				},
+				skinBord = {
+					order = 2,
+					type = "color",
+					width = "full",
+					name = "Border Color of Windows",
+					hasAlpha = true,
+					get = function()
+						local arr = { Nx.Split("|",Nx.db.profile.Skin.WinBdColor) }
+						local r = arr[1]
+						local g = arr[2]
+						local b = arr[3]
+						local a = arr[4]
+						return r,g,b,a
+					end,
+					set = function(_,r,g,b,a)
+						Nx.db.profile.Skin.WinBdColor = r .. "|" .. g .. "|" .. b .. "|" .. a
+						Nx.Skin:Update()
+					end,						
+				},				
+				skinFixBG = {
+					order = 3,
+					type = "color",
+					width = "full",
+					name = "Background Color of Fixed Sized Windows",
+					hasAlpha = true,
+					get = function()
+						local arr = { Nx.Split("|",Nx.db.profile.Skin.WinFixedBgColor) }
+						local r = arr[1]
+						local g = arr[2]
+						local b = arr[3]
+						local a = arr[4]
+						return r,g,b,a
+					end,
+					set = function(_,r,g,b,a)
+						Nx.db.profile.Skin.WinFixedBgColor = r .. "|" .. g .. "|" .. b .. "|" .. a
+						Nx.Skin:Update()
+					end,						
+				},		
+				skinSizeBG = {
+					order = 4,
+					type = "color",
+					width = "full",
+					name = "Background Color of Resizable Windows",
+					hasAlpha = true,
+					get = function()
+						local arr = { Nx.Split("|",Nx.db.profile.Skin.WinSizedBgColor) }
+						local r = arr[1]
+						local g = arr[2]
+						local b = arr[3]
+						local a = arr[4]
+						return r,g,b,a
+					end,
+					set = function(_,r,g,b,a)
+						Nx.db.profile.Skin.WinSizedBgColor = r .. "|" .. g .. "|" .. b .. "|" .. a
+						Nx.Skin:Update()
+					end,						
+				},		
+				
+			},
+		}
+	end
+	return skinoptions
+end
+
+local trackoptions
+
+local function trackConfig()
+	if not trackoptions then
+		trackoptions = {		
+			type = "group",
+			name = "Tracking Options",
+			args = {
+				hideHUD = {
+					order = 1,
+					type = "toggle",
+					width = "full",
+					name = "Hide Tracking HUD",
+					desc = "When Enabled, Carbonite will hide the tracking hud from display",
+					get = function()
+						return Nx.db.profile.Track.Hide
+					end,
+					set = function()
+						Nx.db.profile.Track.Hide = not Nx.db.profile.Track.Hide
+					end,				
+				},		
+				hideHUDBG = {
+					order = 2,
+					type = "toggle",
+					width = "full",
+					name = "Hide Tracking HUD in BG's",
+					desc = "When Enabled, Carbonite will hide the tracking hud from display in Battlegrounds",
+					get = function()
+						return Nx.db.profile.Track.HideInBG
+					end,
+					set = function()
+						Nx.db.profile.Track.HideInBG = not Nx.db.profile.Track.HideInBG
+					end,				
+				},		
+				hideLock = {
+					order = 3,
+					type = "toggle",
+					width = "full",
+					name = "Lock Tracking HUD Position",
+					desc = "When Enabled, Carbonite will lock the Tracking HUD in position",
+					get = function()
+						return Nx.db.profile.Track.Lock
+					end,
+					set = function()
+						Nx.db.profile.Track.Lock = not Nx.db.profile.Track.Lock
+						Nx.HUD:UpdateOptions()
+					end,				
+				},		
+				TrackArrow = {
+					order = 4,
+					type	= "select",
+					name	= "Tracking HUD Arrow Graphic",
+					desc	= "Sets the current arrow to be used in the tracking hud",
+					get	= function()
+						local vals = Nx.Opts:CalcChoices("HUDAGfx")
+						for a,b in pairs(vals) do
+						  if (b == Nx.db.profile.Track.AGfx) then
+							 return a
+						  end
+						end
+						return ""
+					end,
+					set	= function(info, name)
+						local vals = Nx.Opts:CalcChoices("HUDAGfx")
+						Nx.db.profile.Track.AGfx = vals[name]	
+						Nx.HUD:UpdateOptions()
+					end,
+					values	= function()
+						return Nx.Opts:CalcChoices("HUDAGfx")
+					end,					
+				},
+				spacer = {
+					order = 5,
+					type = "description",
+					width = "double",
+					name = "",
+				},
+				ArrowSize = {
+					order = 6,
+					type = "range",							
+					name = "Arrow Size",						
+					desc = "Sets the number of size of the tracking hud arrow.",
+					min = 8,
+					max = 100,
+					step = 1,
+					bigStep = 1,
+					get = function()
+						return Nx.db.profile.Track.ASize
+					end,
+					set = function(info,value)
+						Nx.db.profile.Track.ASize = value								
+						Nx.HUD:UpdateOptions()
+					end,				
+				},								
+				AXO = {
+					order = 7,
+					type = "range",							
+					name = "Arrow X Offset",						
+					desc = "Sets the X offset of the tracking hud arrow.",
+					min = -100,
+					max = 100,
+					step = 1,
+					bigStep = 1,
+					get = function()
+						return Nx.db.profile.Track.AXO
+					end,
+					set = function(info,value)
+						Nx.db.profile.Track.AXO = value								
+						Nx.HUD:UpdateOptions()
+					end,				
+				},								
+				AYO = {
+					order = 8,
+					type = "range",							
+					name = "Arrow Y Offset",						
+					desc = "Sets the Y offset of the tracking hud arrow.",
+					min = -100,
+					max = 100,
+					step = 1,
+					bigStep = 1,
+					get = function()
+						return Nx.db.profile.Track.AYO
+					end,
+					set = function(info,value)
+						Nx.db.profile.Track.AYO = value								
+						Nx.HUD:UpdateOptions()
+					end,				
+				},								
+				showText = {
+					order = 9,
+					type = "toggle",
+					width = "full",
+					name = "Show Direction Text",
+					desc = "When Enabled, shows additional direction text in the hud",
+					get = function()
+						return Nx.db.profile.Track.ShowDir
+					end,
+					set = function()
+						Nx.db.profile.Track.ShowDir = not Nx.db.profile.Track.ShowDir
+						Nx.HUD:UpdateOptions()
+					end,				
+				},						
+				addTbut = {
+					order = 10,
+					type = "toggle",
+					width = "full",
+					name = "Enable Target Button",
+					desc = "When Enabled, Adds a target button to the tracking hud",
+					get = function()
+						return Nx.db.profile.Track.TBut
+					end,
+					set = function()
+						Nx.db.profile.Track.TBut = not Nx.db.profile.Track.TBut
+						Nx.HUD:UpdateOptions()
+					end,				
+				},										
+				Tbutcol = {
+					order = 11,
+					type = "color",
+					width = "full",
+					name = "Color of target button",
+					hasAlpha = true,
+					get = function()
+						local arr = { Nx.Split("|",Nx.db.profile.Track.TButColor) }
+						local r = arr[1]
+						local g = arr[2]
+						local b = arr[3]
+						local a = arr[4]
+						return r,g,b,a
+					end,
+					set = function(_,r,g,b,a)
+						Nx.db.profile.Track.TButColor = r .. "|" .. g .. "|" .. b .. "|" .. a
+						Nx.HUD:UpdateOptions()
+					end,						
+				},						
+				Tbutcomcol = {
+					order = 12,
+					type = "color",
+					width = "full",
+					name = "Color of target button in combat",
+					hasAlpha = true,
+					get = function()
+						local arr = { Nx.Split("|",Nx.db.profile.Track.TButCombatColor) }
+						local r = arr[1]
+						local g = arr[2]
+						local b = arr[3]
+						local a = arr[4]
+						return r,g,b,a
+					end,
+					set = function(_,r,g,b,a)
+						Nx.db.profile.Track.TButCombatColor = r .. "|" .. g .. "|" .. b .. "|" .. a
+						Nx.Skin:Update()
+					end,						
+				},						
+				addsound = {
+					order = 13,
+					type = "toggle",
+					width = "full",
+					name = "Enable Target Reached Sound",
+					desc = "When Enabled, Plays a sound when you reach your target destination",
+					get = function()
+						return Nx.db.profile.Track.TSoundOn
+					end,
+					set = function()
+						Nx.db.profile.Track.TSoundOn = not Nx.db.profile.Track.TSoundOn
+						Nx.HUD:UpdateOptions()
+					end,				
+				},					
+				spacer2 = {
+					order = 14,
+					type = "description",
+					width = "full",
+					name = " ",
+				},
+				autopals = {
+					order = 15,
+					type = "toggle",
+					width = "full",
+					name = "Auto Track Pals In BattleGrounds",
+					desc = "When Enabled, Will auto track your friends in battleground",
+					get = function()
+						return Nx.db.profile.Track.ATBGPal
+					end,
+					set = function()
+						Nx.db.profile.Track.ATBGPal = not Nx.db.profile.Track.ATBGPal						
+					end,				
+				},					
+				autotaxi = {
+					order = 16,
+					type = "toggle",
+					width = "full",
+					name = "Auto Track Taxi Destination",
+					desc = "When Enabled, Will automatically track your taxi destination",
+					get = function()
+						return Nx.db.profile.Track.ATTaxi
+					end,
+					set = function()
+						Nx.db.profile.Track.ATtaxi = not Nx.db.profile.Track.ATTaxi
+						Nx.HUD:UpdateOptions()
+					end,				
+				},					
+				autocorpse = {
+					order = 17,
+					type = "toggle",
+					width = "full",
+					name = "Auto Track Corpse",
+					desc = "When Enabled, Will automatically track your corpse upon death",
+					get = function()
+						return Nx.db.profile.Track.ATCorpse
+					end,
+					set = function()
+						Nx.db.profile.Track.ATCorpse = not Nx.db.profile.Track.ATCorpse
+						Nx.HUD:UpdateOptions()
+					end,				
+				},									
+				spacer3 = {
+					order = 18,
+					type = "description",
+					width = "full",
+					name = " ",
+				},				
+				emutomtom = {
+					order = 19,
+					type = "toggle",
+					width = "full",
+					name = "Enable TomTom Emulation",
+					desc = "When Enabled, Attempts to emulate tomtom's features (requires reload)",
+					get = function()
+						return Nx.db.profile.Track.EmuTomTom
+					end,
+					set = function()
+						Nx.db.profile.Track.EmuTomTom = not Nx.db.profile.Track.EmuTomTom
+						Nx.HUD:UpdateOptions()
+					end,				
+				},									
+			},
+		}
+	end
+	return trackoptions
+end
+function Nx:SetupConfig()
+	AceConfig:RegisterOptionsTable("Carbonite", mainConfig)
+	Nx.optionsFrame = AceConfigDialog:AddToBlizOptions("Carbonite", "Carbonite",nil,"main")
+	Nx:AddToConfig("General",generalOptions(),"General")
+	Nx:AddToConfig("Battlegrounds", BGConfig(), "Battlegrounds")
+	Nx:AddToConfig("Fonts",fontConfig(),"Fonts")
+	Nx:AddToConfig("Guide & Gather", guidegatherConfig(),"Guide & Gather")
+	Nx:AddToConfig("Maps",mapConfig(),"Maps")
+	Nx:AddToConfig("Menus",menuConfig(),"Menus")
+	Nx:AddToConfig("Privacy",commConfig(),"Privacy")
+	Nx:AddToConfig("Skin",skinConfig(),"Skin")
+	Nx:AddToConfig("Tracking HUD",trackConfig(),"Tracking HUD")
+end
+
+function Nx:AddToConfig(name, optionsTable, displayName)
+	modular_config[name] = optionsTable
+	Nx.optionsFrame[name] = AceConfigDialog:AddToBlizOptions("Carbonite", displayName, "Carbonite", name)
+end
+
+local function giveProfiles()
+	return LibStub("AceDBOptions-3.0"):GetOptionsTable(Nx.db)
+end
 
 Nx.OptsDataSounds = {
 	"Interface\\AddOns\\Carbonite\\Snd\\QuestComplete.ogg",
@@ -1653,6 +2503,10 @@ function Nx.Opts:Init()
 		"Left", "Center", "Right",
 		"BottomLeft", "Bottom", "BottomRight",
 	}
+	self.Skins = {		
+		"Blackout","Blackout Blues","Dialog Blue",
+		"Dialog Gold","Simple Blue","Stone","Tool Blue",
+	}
 	self.ChoicesCorner = { "TopLeft", "TopRight", "BottomLeft", "BottomRight", }
 
 	self.ChoicesQArea = {
@@ -1666,7 +2520,7 @@ function Nx.Opts:Init()
 	self:Reset (true)
 	self:UpdateCom()
 
-	Nx.Timer:Start ("OptsInit", .5, self, self.InitTimer)
+	OptsInit = Nx:ScheduleTimer(self.InitTimer, .5, self)
 
 --	Nx.prt ("cvar %s", GetCVar ("farclip") or "nil")
 
@@ -1686,30 +2540,26 @@ function Nx.Opts:InitTimer()
 	self:NXCmdGryphonsUpdate()
 	self:NXCmdCamForceMaxDist()
 
-	Nx.Timer:Start ("OptsQO", 2, self, self.QuickOptsTimer)
+	OptsQO = Nx:ScheduleTimer(self.QuickOptsTimer,2,self)
 end
 
 --------
 -- Show quick options timer
 
 function Nx.Opts:QuickOptsTimer()
-
---	Nx.prt ("cvar %s", GetCVar ("farclip") or "nil")
-
-	local opts = Nx:GetGlobalOpts()
-	local i = opts["OptsQuickVer"] or 0
+	
+	local i = Nx.db.profile.Version.QuickVer or 0
 
 	local ver = 5
 
-	opts["OptsQuickVer"] = ver
+	Nx.db.profile.Version.QuickVer = ver
 
 	if i < ver then
 
-		local function func()
-			local opts = Nx:GetGlobalOpts()
-			opts["MapMMOwn"] = true
-			opts["MapMMButOwn"] = true
-			opts["MapMMShowOldNameplate"] = false
+		local function func()			
+			Nx.db.profile.MiniMap.Own = true
+			Nx.db.profile.MiniMap.ButOwn = true
+			Nx.db.profile.MiniMap.ShowOldNameplate = false
 			ReloadUI()
 		end
 
@@ -1723,73 +2573,12 @@ end
 -- Reset options (can be called before Init)
 
 function Nx.Opts:Reset (onlyNew)
-
-	self.Opts = Nx:GetGlobalOpts()
 	self.COpts = Nx.CurCharacter["Opts"]
-
+	self.Opts = Nx.db.profile
+	
 	if not onlyNew then
 		Nx.prt ("Reset global options")
-	end
-
-	for name, v in pairs (Nx.OptsVars) do
-
-		local scope, typ, val = strsplit ("~", v)
-		local opts = scope == "-" and self.COpts or self.Opts
-
-		if scope == "-" and self.Opts[name] ~= nil then
---			Nx.prt ("deleted %s", name)
-			self.Opts[name] = nil			-- Kill old global
-		end
-
-		if not onlyNew or opts[name] == nil then
-
-			if typ == "B" then		-- Bool
-
-				opts[name] = false
-				if val == "T" then
-					opts[name] = true
-				end
-
-			elseif typ == "C" or typ == "RGB" then	-- Color
-
-				opts[name] = 0xffffffff	-- RGBA
-				if val then
-					opts[name] = tonumber (val, 16)
-				end
-
-			elseif typ == "CH" then	-- Choice
-
-				opts[name] = ""
-				if val then
-					opts[name] = val
-				end
-
-			elseif typ == "F" then	-- Float
-
-				opts[name] = 0
-				if val then
-					opts[name] = tonumber (val)
-				end
-
-			elseif typ == "I" then	-- Int
-
-				opts[name] = 0
-				if val then
-					opts[name] = tonumber (val)
-				end
-
-			elseif typ == "S" then	-- String
-
-				opts[name] = ""
-				if val then
-					opts[name] = val
-				end
-
-			elseif typ == "" then	-- Kill it?
-				opts[name] = nil
-
-			end
-		end
+		Nx.db:ResetDB("Default")
 	end
 end
 
@@ -1797,30 +2586,8 @@ end
 -- Open options
 
 function Nx.Opts:Open (pageName)
-
-	local win = self.Win
-
-	if not win then
-		self:Create()
-		win = self.Win
-	end
-
-	win:Show()
-
-	if pageName then
-
-		for n, t in ipairs (Nx.OptsData) do
-
-			if t.N == pageName then
-				self.PageList:Select (n)
-				self.PageSel = n
-				self.PageList:Update()
-				break
-			end
-		end
-	end
-
-	self:Update()
+	InterfaceOptionsFrame_OpenToCategory("Carbonite")
+	InterfaceOptionsFrame_OpenToCategory("Carbonite")
 end
 
 --------
@@ -1867,7 +2634,7 @@ function Nx.Opts:Create()
 
 	-- Item list
 
-	Nx.List:SetCreateFont ("FontM", 24)
+	Nx.List:SetCreateFont ("Font.Medium", 24)
 
 	local list = Nx.List:Create (false, 0, 0, 1, 1, win.Frm)
 	self.List = list
@@ -1900,13 +2667,13 @@ function Nx.Opts:NXCmdCamForceMaxDist()
 
 --	Nx.prt ("Cam %s", GetCVar ("cameraDistanceMaxFactor"))
 
-	if self.Opts["CameraForceMaxDist"] then
+	if Nx.db.profile.General.CameraForceMaxDist then
 		SetCVar ("cameraDistanceMaxFactor", 3.4)
 	end
 end
 
 function Nx.Opts:NXCmdGryphonsUpdate()
-	if self.Opts["GryphonsHide"] then
+	if Nx.db.profile.General.GryphonsHide then
 		MainMenuBarLeftEndCap:Hide()
 		MainMenuBarRightEndCap:Hide()
 	else
@@ -1988,9 +2755,8 @@ function Nx.Opts:NXCmdInfoWinUpdate()
 end
 
 function Nx.Opts:NXCmdMMOwnChange (item, var)
-
-	self:SetVar ("MapMMShowOldNameplate", not var)		-- Nameplate is opposite of integration
-	self:SetVar ("MapMMButOwn", var)
+	Nx.db.profile.MiniMap.ShowOldNameplate = not var		-- Nameplate is opposite of integration
+	Nx.db.profile.MiniMap.ButOwn = var
 	self:Update()
 	self:NXCmdReload()
 end
@@ -2012,14 +2778,6 @@ function Nx.Opts:NXCmdMapToolBarUpdate()
 	map:UpdateToolBar()
 end
 
-function Nx.Opts:NXCmdQuestSidebySide()
-	Nx.Quest.List:AttachFrames()
-end
-
-function Nx.Opts:NXCmdQMapWatchColor()
-	Nx.Quest:CalcWatchColors()
-end
-
 --function Nx.Opts:NXCmdWatchFont()
 --	Nx.Quest.Watch:SetFont()
 --end
@@ -2030,15 +2788,6 @@ end
 
 function Nx.Opts:NXCmdQWHideRaid()
 	Nx.Quest.Watch.Win.Frm:Show()
-end
-
-function Nx.Opts:NXCmdQSound (item, var)
-	if var then
-		local sndI = tonumber (gsub (item.V, "%a", ""), 10)	-- gsub returns 2 params!
---		Nx.prtVar ("item", item)
---		Nx.prtVar ("sndI", sndI)
-		Nx.Quest:PlaySound (sndI)
-	end
 end
 
 function Nx.Opts:NXCmdImportCharSettings()
@@ -2059,7 +2808,7 @@ function Nx.Opts:NXCmdImportCharSettings()
 
 	local t = {}
 
-	for rc in pairs (NxData.Characters) do
+	for rc in pairs (Nx.db.global.Characters) do
 		tinsert (t, rc)
 	end
 
@@ -2088,7 +2837,7 @@ function Nx.Opts:NXCmdDeleteCharSettings()
 
 	local t = {}
 
-	for rc in pairs (NxData.Characters) do
+	for rc in pairs (Nx.db.global.Characters) do
 		if rc ~= rcName then
 			tinsert (t, rc)
 		end
@@ -2140,14 +2889,6 @@ function Nx.Opts:NXCmdReload()
 	end
 
 	Nx:ShowMessage ("Reload UI?", "Reload", func, "Cancel")
-end
-
-function Nx.Opts:NXCmdSkinColor()
-	Nx.Skin:Update()
-end
-
-function Nx.Opts:NXCmdSkin (item)
-	Nx.Skin:Set (item.Data)
 end
 
 function Nx.Opts:NXCmdHUDChange()
@@ -2327,15 +3068,15 @@ function Nx.Opts:UpdateCom()
 
 	local mask = 0
 
-	if opts["InfoToF"] then
+	if Nx.db.profile.Comm.SendToFriends then
 		mask = mask + 1
 	end
 
-	if opts["InfoToG"] then
+	if Nx.db.profile.Comm.SendToGuild then
 		mask = mask + 2
 	end
 
-	if opts["InfoToZ"] then
+	if Nx.db.profile.Comm.SendToZone then
 		mask = mask + 4
 	end
 
@@ -2474,7 +3215,8 @@ function Nx.Opts:CalcChoices (name, mode, val)
 		end
 
 		return
-
+	elseif name == "Skins" then
+		return self.Skins
 	elseif name == "HUDAGfx" then
 
 		return Nx.HUD.TexNames
@@ -2512,7 +3254,7 @@ end
 function Nx.Opts:ParseVar (varName)
 
 	local data = Nx.OptsVars[varName]
-	local scope, typ, val, a1 = strsplit ("~", data)
+	local scope, typ, val, a1 = Nx.Split ("~", data)	
 	local opts = scope == "-" and self.COpts or self.Opts
 
 --	Nx.prtVar ("Parse " .. varName, opts[varName])
@@ -2538,7 +3280,7 @@ function Nx.Opts:ParseVar (varName)
 
 	elseif typ == "W" then
 
-		local winName, atName = strsplit ("^", val)
+		local winName, atName = Nx.Split ("^", val)
 		local typ, val = Nx.Window:GetAttribute (winName, atName)
 
 		if typ == "B" then
@@ -2562,7 +3304,7 @@ function Nx.Opts:GetVar (varName)
 	local data = Nx.OptsVars[varName]
 	if data then
 
-		local scope, typ, val = strsplit ("~", data)
+		local scope, typ, val = Nx.Split ("~", data)
 		local opts = scope == "-" and self.COpts or self.Opts
 
 		if typ == "B" then
@@ -2586,7 +3328,7 @@ function Nx.Opts:SetVar (varName, val)
 --	Nx.prtVar ("Set " .. varName, val)
 
 	local data = Nx.OptsVars[varName]
-	local scope, typ, vdef, vmin, vmax = strsplit ("~", data)
+	local scope, typ, vdef, vmin, vmax = Nx.Split ("~", data)
 	local opts = scope == "-" and self.COpts or self.Opts
 
 	if typ == "B" then
@@ -2614,7 +3356,7 @@ function Nx.Opts:SetVar (varName, val)
 
 	elseif typ == "W" then
 
-		local winName, atName = strsplit ("^", vdef)
+		local winName, atName = Nx.Split ("^", vdef)
 		Nx.Window:SetAttribute (winName, atName, val)
 
 	else

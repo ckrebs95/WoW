@@ -1,0 +1,16 @@
+
+NXWeek = {
+	["profileKeys"] = {
+		["Dreyan - Khaz Modan"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["WeeklyData"] = {
+				["Version"] = 0.1,
+			},
+			["Weekly"] = {
+				["SecondsToReset"] = 1372669122,
+			},
+		},
+	},
+}

@@ -1,35 +1,24 @@
-## Interface: 50200
-## Title: Carbonite 5.1.6
-## Version: 5.1.6
+## Interface: 50300
+## Title: Carbonite 5.3.0 alpha 1 r2 
+## Version: 5.3.0 alpha 1 r1
 ## Author: Rythal
 ## Notes: Released Under GPL
 ## DefaultState: Enabled
 ## LoadOnDemand: 0
-## SavedVariables: NxData, NxCombatOpts, NxMapOpts
-## SavedVariablesPerCharacter: NxCData
+## SavedVariables: CarbData NxData
 
-Localization.lua
+Libs\libs.xml
+Locales\Localization.lua
 NxLocalization.lua
 Carbonite.lua
 NxUI.lua
 NxHelp.lua
 NxOptions.lua
 NxCom.lua
-NxFav.lua
 NxHUD.lua
-NxInfo.lua
-Zones.lua
+Data\data.xml
 NxMapData.lua
 NxMap.lua
 NxMapGuide.lua
-NxQuest.lua
-NxSocial.lua
 NxTravel.lua
-NxWarehouse.lua
-NxSec.lua
-NxTimer.lua
-MapWorldHotspots.lua
-Guide.lua
-Quests.lua
-ZoneConnections.lua
 Carbonite.xml

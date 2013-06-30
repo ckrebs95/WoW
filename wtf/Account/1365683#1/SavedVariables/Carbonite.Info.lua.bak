@@ -1,0 +1,13 @@
+
+NXInfo = {
+	["profileKeys"] = {
+		["Dreyan - Khaz Modan"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["InfoData"] = {
+				["Version"] = 0.24,
+			},
+		},
+	},
+}

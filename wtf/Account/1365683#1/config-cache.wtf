@@ -1,4 +1,5 @@
 SET spellActivationOverlayOpacity "1"
+SET autoQuestWatch "0"
 SET autoQuestProgress "0"
 SET flaggedTutorials "v"
 SET profanityFilter "0"

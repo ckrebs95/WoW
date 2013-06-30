@@ -18,22 +18,14 @@ Quartz3DB = {
 		},
 		["Mirror"] = {
 		},
-		["Procs"] = {
+		["EnemyCasts"] = {
+		},
+		["Player"] = {
 			["profiles"] = {
 				["Default"] = {
-					["spells"] = {
-						["heroism"] = {
-							["sound"] = "None",
-						},
-						["bloodlust"] = {
-							["sound"] = "None",
-						},
-					},
-					["fixCustomProcCaps"] = false,
+					["x"] = 835,
 				},
 			},
-		},
-		["EnemyCasts"] = {
 		},
 		["GCD"] = {
 		},
@@ -53,10 +45,18 @@ Quartz3DB = {
 		},
 		["Range"] = {
 		},
-		["Player"] = {
+		["Procs"] = {
 			["profiles"] = {
 				["Default"] = {
-					["x"] = 835,
+					["fixCustomProcCaps"] = false,
+					["spells"] = {
+						["heroism"] = {
+							["sound"] = "None",
+						},
+						["bloodlust"] = {
+							["sound"] = "None",
+						},
+					},
 				},
 			},
 		},
@@ -67,8 +67,9 @@ Quartz3DB = {
 		["Dethamett - Khaz Modan"] = "Default",
 		["Darvina - Khaz Modan"] = "Default",
 		["Deyndis - Khaz Modan"] = "Default",
-		["Dreyan - Khaz Modan"] = "Default",
 		["Doyjen - Khaz Modan"] = "Default",
+		["Dreyan - Khaz Modan"] = "Default",
+		["Desamil - Khaz Modan"] = "Default",
 		["Datinnite - Khaz Modan"] = "Default",
 		["Dathsar - Khaz Modan"] = "Default",
 	},

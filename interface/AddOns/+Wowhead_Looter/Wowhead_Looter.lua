@@ -4,14 +4,14 @@
 --                                     --
 --                                     --
 --    Patch: 5.3.0                     --
---    Updated: May 31, 2013            --
+--    Updated: June 19, 2013           --
 --    E-mail: feedback@wowhead.com     --
 --                                     --
 -----------------------------------------
 
 
 local WL_NAME = "|cffffff7fWowhead Looter|r";
-local WL_VERSION = 50010;
+local WL_VERSION = 50011;
 local WL_VERSION_PATCH = 4;
 
 
@@ -43,6 +43,7 @@ local WL_SPELL_BLACKLIST = {
 	[1604] = true,  -- Dazed
 	[15571] = true, -- Dazed
 	[61394] = true, -- Frozen Wake (Glyph of Freezing Trap)
+	[121308] = true, -- Disguise (Glyph of Disguise)
 	[132951] = true,-- Flare
 	[135299] = true, -- Ice Trap
 	[135373] = true, -- Entrapment

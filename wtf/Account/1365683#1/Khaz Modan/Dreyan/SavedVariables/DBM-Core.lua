@@ -12,24 +12,24 @@ DBM_SavedOptions = {
 	["RangeFrameX"] = 50,
 	["WarningColors"] = {
 		{
-			["b"] = 0.94,
-			["g"] = 0.8,
 			["r"] = 0.41,
+			["g"] = 0.8,
+			["b"] = 0.94,
 		}, -- [1]
 		{
-			["b"] = 0,
-			["g"] = 0.95,
 			["r"] = 0.95,
+			["g"] = 0.95,
+			["b"] = 0,
 		}, -- [2]
 		{
-			["b"] = 0,
-			["g"] = 0.5,
 			["r"] = 1,
+			["g"] = 0.5,
+			["b"] = 0,
 		}, -- [3]
 		{
-			["b"] = 0.1,
-			["g"] = 0.1,
 			["r"] = 1,
+			["g"] = 0.1,
+			["b"] = 0.1,
 		}, -- [4]
 	},
 	["AlwaysShowSpeedKillTimer"] = true,
@@ -68,10 +68,16 @@ DBM_SavedOptions = {
 	["DontSetIcons"] = false,
 	["BigBrotherAnnounceToRaid"] = false,
 	["CountdownVoice"] = "Corsica",
-	["WarningIconRight"] = true,
+	["SpecialWarningFontColor"] = {
+		0, -- [1]
+		0, -- [2]
+		1, -- [3]
+	},
+	["LastRevision"] = 8086,
+	["HealthFrameLocked"] = false,
 	["InfoFrameY"] = -96.00009155273438,
 	["ShowSpecialWarnings"] = true,
-	["HealthFrameLocked"] = false,
+	["WarningIconRight"] = true,
 	["HealthFrameGrowUp"] = false,
 	["RangeFrameRadarX"] = 429.9999389648438,
 	["HideBossEmoteFrame"] = false,
@@ -83,7 +89,7 @@ DBM_SavedOptions = {
 	["ForumsMessageShown"] = 9413,
 	["AutologBosses"] = false,
 	["DontShowRangeFrame"] = false,
-	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
+	["RangeFrameRadarY"] = -61.99983978271484,
 	["InfoFrameShowSelf"] = false,
 	["SpecialWarningFont"] = "Fonts\\FRIZQT__.TTF",
 	["DontShowInfoFrame"] = false,
@@ -93,36 +99,32 @@ DBM_SavedOptions = {
 	["LatencyThreshold"] = 200,
 	["BlockVersionUpdateNotice"] = false,
 	["RangeFrameFrames"] = "radar",
-	["AutoRespond"] = true,
+	["DisableCinematicsOutside"] = false,
 	["DontShowBossAnnounces"] = false,
 	["SetPlayerRole"] = true,
-	["RangeFramePoint"] = "CENTER",
 	["ArrowPosY"] = -150,
-	["LastRevision"] = 8086,
-	["ShowLoadMessage"] = true,
-	["RangeFrameLocked"] = false,
+	["RangeFramePoint"] = "CENTER",
+	["WarningIconChat"] = true,
+	["ShowRecoveryMessage"] = true,
+	["SpecialWarningSound2"] = "Sound\\Creature\\AlgalonTheObserver\\UR_Algalon_BHole01.wav",
 	["HPFrameMaxEntries"] = 5,
-	["SpecialWarningFontColor"] = {
-		0, -- [1]
-		0, -- [2]
-		1, -- [3]
-	},
+	["RangeFrameSound2"] = "none",
 	["ShowPizzaMessage"] = true,
 	["AdvancedAutologBosses"] = false,
 	["ShowLHFrame"] = true,
 	["DontSendBossWhispers"] = false,
-	["RangeFrameSound2"] = "none",
+	["DontShowPTText"] = false,
 	["Enabled"] = true,
-	["SpecialWarningSound2"] = "Sound\\Creature\\AlgalonTheObserver\\UR_Algalon_BHole01.wav",
-	["ShowRecoveryMessage"] = true,
+	["RangeFrameLocked"] = false,
+	["ShowLoadMessage"] = true,
 	["DisableCinematics"] = false,
 	["MovieFilters"] = {
 	},
-	["DisableCinematicsOutside"] = false,
+	["AutoRespond"] = true,
 	["ShowWipeMessage"] = true,
 	["LogOnlyRaidBosses"] = false,
 	["StripServerName"] = true,
-	["RangeFrameRadarY"] = -61.99983978271484,
+	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
 	["AlwaysShowHealthFrame"] = false,
 	["HPFrameX"] = -180.9999084472656,
 	["ChallengeBest"] = "Realm",
@@ -136,7 +138,7 @@ DBT_SavedOptions = {
 		["TimerPoint"] = "TOPRIGHT",
 		["TimerX"] = -223.0000305175781,
 		["HugeTimerX"] = 0,
-		["TimerY"] = -260,
 		["HugeTimerY"] = -120,
+		["TimerY"] = -260,
 	},
 }

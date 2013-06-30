@@ -1,0 +1,15 @@
+Version: 1
+Frame: DBMMinimapButton
+FrameLevel: 35
+Anchor: BOTTOMRIGHT
+X: -414
+Y: 241
+W: 32
+H: 32
+Frame: Recount_MainWindow
+FrameLevel: 23
+Anchor: BOTTOMLEFT
+X: 32
+Y: -7
+W: 278
+H: 102

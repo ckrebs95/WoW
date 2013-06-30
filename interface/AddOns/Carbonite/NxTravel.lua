@@ -29,20 +29,16 @@
 --------
 
 function Nx.Travel:Init()
-
-	local gopts = Nx.GetGlobalOpts()
-	self.GOpts = gopts
-
 	self.OrigTakeTaxiNode = TakeTaxiNode
 	TakeTaxiNode = self.TakeTaxiNode		-- Hook it
 
 	local tr = {}
+	for n = 1, 6 do		
+		tr[n] = {}
+	end	
 	self.Travel = tr
 
-	for n = 1, 4 do
-		tr[n] = {}
-		self:Add ("Flight Master", n)
-	end
+	self:Add ("Flight Master")
 
 --	if Nx:GetUnitClass() == "DRUID" then
 --		local taxiT = NxCData["Taxi"]
@@ -54,48 +50,38 @@ function Nx.Travel:Init()
 	self.FlySkillPandaria=115913
 end
 
-function Nx.Travel:Add (typ, cont)
+function Nx.Travel:Add (typ)
 
-	local tdata = self.Travel[cont]
 
-	local Map = Nx.Map
-	local Quest = Nx.Quest
+	local Map = Nx.Map	
 	local hideFac = UnitFactionGroup ("player") == "Horde" and 1 or 2
-
-	if 1 then
-
-		local dataStr = Nx.GuideData[typ][cont] or ""
-
-		for n = 1, #dataStr, 2 do
-
-			local npcI = (strbyte (dataStr, n) - 35) * 221 + (strbyte (dataStr, n + 1) - 35)
-			local npcStr = Nx.NPCData[npcI]
-
-			local fac = strbyte (npcStr, 1) - 35
-			if fac ~= hideFac then
-
-				local oStr = strsub (npcStr, 2)
-				local desc, zone, loc = Quest:UnpackObjective (oStr)
-				local name, locName = strsplit ("!", desc)
-
---				local locName = strsplit (",", locName)
-
-				if strbyte (oStr, loc) == 32 then  -- Points
-
-					local mapId = Map.NxzoneToMapId[zone]
-					local x, y = Quest:UnpackLocPtOff (oStr, loc + 1)
-					local wx, wy = Map:GetWorldPos (mapId, x, y)
-
-					local node = {}
-					node.Name = desc
-					node.LocName = NXlTaxiNames[locName] or locName		-- Localize it
-					node.MapId = mapId
-					node.WX = wx
-					node.WY = wy
-					tinsert (tdata, node)
-
-				else
-					assert (0)
+	for a,b in pairs(Nx.GuideData[typ]) do					
+		if a ~= "Mode" then
+			local ext = { Nx.Split("|",b) }		
+			for c,d in pairs(ext) do
+				if d then
+					local side,x,y,num = Nx.Split(",",d)					
+					local fac,name,locName,zone,x,y = Nx.Split("|",Nx.NPCData[tonumber(num)])						
+					fac,zone,x,y = tonumber(fac),tonumber(zone),tonumber(x),tonumber(y)			
+					local _, _, _, _, cont, _, _ = Nx.Split ("|", Nx.Zones[tonumber(zone)])						
+					if cont == "7" then
+						cont = 4
+					end
+					if cont == "8" then
+						cont = 5
+					end			
+					local tdata = self.Travel[tonumber(cont)]				
+					if fac ~= hideFac then								
+						local mapId = Map.NxzoneToMapId[zone]				
+						local wx, wy = Map:GetWorldPos (mapId, x, y)
+						local node = {}
+						node.Name = locName
+						node.LocName = NXlTaxiNames[locName] or locName		-- Localize it
+						node.MapId = mapId
+						node.WX = wx
+						node.WY = wy					
+						tinsert (tdata, node)
+					end			
 				end
 			end
 		end
@@ -121,11 +107,11 @@ function Nx.Travel:CaptureTaxi()
 
 	self.TaxiNameStart = false
 
-	local taxiT = NxCData["Taxi"]
+	local taxiT = Nx.db.char.Travel.Taxi["Taxi"]
 
 	for n = 1, NumTaxiNodes() do
 
---		local locName = strsplit (",", TaxiNodeName (n))
+--		local locName = Nx.Split (",", TaxiNodeName (n))
 		local locName = TaxiNodeName (n)
 
 		taxiT[locName] = true
@@ -134,7 +120,7 @@ function Nx.Travel:CaptureTaxi()
 
 			self.TaxiNameStart = locName
 
-			if NxData.DebugMap then
+			if Nx.db.profile.Debug.DebugMap then
 				local name = Nx.Map.Guide:FindTaxis (locName)
 				Nx.prt ("Taxi current %s (%s)", name or "nil", locName)
 			end
@@ -150,7 +136,7 @@ function Nx.Travel.TakeTaxiNode (node)
 	local self = Nx.Travel
 	local map = Nx.Map
 
---	map.TaxiName = strsplit (",", TaxiNodeName (node))
+--	map.TaxiName = Nx.Split (",", TaxiNodeName (node))
 	map.TaxiName = TaxiNodeName (node)
 
 	local name, x, y = Nx.Map.Guide:FindTaxis (map.TaxiName)
@@ -164,10 +150,10 @@ function Nx.Travel.TakeTaxiNode (node)
 	if tm > 0 and self.TaxiNameStart then
 
 		self.TaxiTimeEnd = GetTime() + tm
-		Nx.Timer:Start ("TaxiTime", 1, self, self.TaxiTimer)
+		TaxiTime = Nx:ScheduleTimer(self.TaxiTimer,1,self)
 	end
 
-	if NxData.DebugMap then
+	if Nx.db.profile.Debug.DebugMap then
 		Nx.prt ("Taxi %s (%s) %.2f secs, node %d, %s %s", name or "nil", map.TaxiName, tm, node, x or "?", y or "?")
 	end
 
@@ -202,8 +188,8 @@ function Nx.Travel:TaxiCalcTime (dest)
 
 			if srcNode and destNode then
 
---				local srcName = strsplit (",", TaxiNodeName (srcNode))
---				local destName = strsplit (",", TaxiNodeName (destNode))
+--				local srcName = Nx.Split (",", TaxiNodeName (srcNode))
+--				local destName = Nx.Split (",", TaxiNodeName (destNode))
 
 				local srcName = TaxiNodeName (srcNode)
 				local destName = TaxiNodeName (destNode)
@@ -214,13 +200,13 @@ function Nx.Travel:TaxiCalcTime (dest)
 
 				if t == 0 then
 
-					local tt = NxData.NXTravel["TaxiTime"]
+					local tt = Nx.db.char.Travel["TaxiTime"]
 
 					t = tt[routeName]
 
 					if not t then
 
-						if NxData.DebugMap then
+						if Nx.db.profile.Debug.DebugMap then
 							Nx.prt (" No taxi data %s to %s", srcName, destName)
 						end
 
@@ -234,7 +220,7 @@ function Nx.Travel:TaxiCalcTime (dest)
 
 				tm = tm + t
 
-				if NxData.DebugMap then
+				if Nx.db.profile.Debug.DebugMap then
 					Nx.prt (" #%s %s to %s, %s secs", n, srcName, destName, t)
 				end
 
@@ -270,9 +256,6 @@ end
 -- 
 
 function Nx.Travel:TaxiFindConnectionTime (srcName, destName)
-
-	local Quest = Nx.Quest
-
 	local srcNPCName, x, y = Nx.Map.Guide:FindTaxis (srcName)
 	local destNPCName, x, y = Nx.Map.Guide:FindTaxis (destName)
 
@@ -298,8 +281,8 @@ function Nx.Travel:TaxiFindConnectionTime (srcName, destName)
 		if npc then
 
 			local oStr = strsub (npc, 2)
-			local desc, zone, loc = Quest:UnpackObjective (oStr)
-			local name = strsplit ("!", desc)
+			local desc, zone, loc = Nx.Map:UnpackObjective (oStr)
+			local name = Nx.Split ("!", desc)
 
 			if name == srcNPCName then
 
@@ -310,8 +293,8 @@ function Nx.Travel:TaxiFindConnectionTime (srcName, destName)
 				if npc then
 
 					local oStr = strsub (npc, 2)
-					local desc, zone, loc = Quest:UnpackObjective (oStr)
-					local name = strsplit ("!", desc)
+					local desc, zone, loc = Nx.Map:UnpackObjective (oStr)
+					local name = Nx.Split ("!", desc)
 
 					if name == destNPCName then
 
@@ -349,7 +332,7 @@ function Nx.Travel:TaxiSaveTime (tm)
 
 	if self.TaxiSaveName then		-- Need?
 
-		NxData.NXTravel["TaxiTime"][self.TaxiSaveName] = tm
+		Nx.db.char.Travel["TaxiTime"][self.TaxiSaveName] = tm
 		self.TaxiSaveName = false
 	end
 end
@@ -384,9 +367,8 @@ end
 --  *          *             *
 --  ************************
 
-function Nx.Travel:MakePath (tracking, srcMapId, srcX, srcY, dstMapId, dstX, dstY, targetType)
-
-	if not self.GOpts["MapRouteUse"] then
+function Nx.Travel:MakePath (tracking, srcMapId, srcX, srcY, dstMapId, dstX, dstY, targetType)	
+	if not Nx.db.profile.Map.RouteUse then
 		return
 	end
 
@@ -409,8 +391,8 @@ function Nx.Travel:MakePath (tracking, srcMapId, srcX, srcY, dstMapId, dstX, dst
 	if srcMapId == dstMapId and tarDist < 500 / 4.575 then		-- Short travel?
 		return
 	end
-
-	local riding = Nx.Warehouse.SkillRiding
+	
+	local riding = Nx.Travel:GetRidingSkill()
 
 	if IsAltKeyDown() then
 --		Nx.prt ("Riding %s", riding)
@@ -701,8 +683,6 @@ end
 -- (mapid, world x, world y)
 
 function Nx.Travel:FindClosest (mapId, posX, posY)
-
-	local Quest = Nx.Quest
 	local Map = Nx.Map
 
 --	local cont = Map:GetContFromPos (posX, posY)
@@ -713,7 +693,7 @@ function Nx.Travel:FindClosest (mapId, posX, posY)
 		return
 	end
 
-	local taxiT = NxCData["Taxi"]
+	local taxiT = Nx.db.char.Travel.Taxi["Taxi"]
 
 	local closeNode
 	local closeDist = 9000111222333444
@@ -866,8 +846,8 @@ function Nx.Travel:DebugCaptureTaxi()
 		local map = Nx.Map:GetMap (1)
 		local mid = map:GetRealMapId()
 
-		local cap = NxData.TaxiCap or {}
-		NxData.TaxiCap = cap
+		local cap = Nx.db.char.TaxiCap or {}
+		Nx.db.char.TaxiCap = cap
 		local d = {}
 		cap[mid] = d
 
@@ -907,6 +887,24 @@ function Nx.Travel:DebugCaptureTaxi()
 	end
 end
 
+function Nx.Travel:GetRidingSkill()
+	local RidingSpells = {
+		[75] = GetSpellInfo (33389) or "",
+		[150] = GetSpellInfo (33392) or "",
+		[225] = GetSpellInfo (34092) or "",		-- Expert
+		[300] = GetSpellInfo (34093) or "",		-- Artisan
+		[375] = GetSpellInfo (90265) or "",		-- Master
+	}
+	local SkillRiding = 0
+
+	for skill, name in pairs (RidingSpells) do
+		if GetSpellInfo (name) then
+			SkillRiding = skill
+			break
+		end
+	end
+	return SkillRiding
+end
 -------------------------------------------------------------------------------
 -- EOF
 

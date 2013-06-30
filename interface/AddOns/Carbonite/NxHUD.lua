@@ -53,9 +53,6 @@ function Nx.HUD:Create()
 
 	local inst = self
 
-	local gopts = Nx.GetGlobalOpts()
-	inst.GOpts = gopts
-
 	inst.ETADelay = 0
 
 	-- Create Window
@@ -154,20 +151,24 @@ function Nx.HUD:UpdateOptions()
 --		self.Frm:EnableMouse (not lock)
 	end
 --PAIDE!
-
+	
 	local gopts = self.GOpts
 
-	local name = gopts["HUDAGfx"]
+	local name = Nx.db.profile.Track.AGfx
 	self.Frm.texture:SetTexture ("Interface\\AddOns\\Carbonite\\Gfx\\Map\\HUDArrow" .. name)
 
 	local f = self.Frm
+	
+	f:SetPoint ("CENTER", Nx.db.profile.Track.AXO, -win.TitleH / 2 - 32 - Nx.db.profile.Track.AYO)
 
-	f:SetPoint ("CENTER", gopts["HUDAXO"], -win.TitleH / 2 - 32 - gopts["HUDAYO"])
-
-	local wh = gopts["HUDASize"]
+	local wh = Nx.db.profile.Track.ASize
 	f:SetWidth (wh)
 	f:SetHeight (wh)
-
+	if (Nx.db.profile.Track.Lock) then
+		win:Lock(true,true)
+	else
+		win:Lock(false,true)
+	end
 --PAIDS!
 	if not InCombatLockdown() then
 		local f = self.But
@@ -177,8 +178,8 @@ function Nx.HUD:UpdateOptions()
 	end
 --PAIDE!
 
-	self.ButR, self.ButG, self.ButB, self.ButA = Nx.Util_num2rgba (gopts["HUDTButColor"])
-	self.ButCR, self.ButCG, self.ButCB, self.ButCA = Nx.Util_num2rgba (gopts["HUDTButCombatColor"])
+	self.ButR, self.ButG, self.ButB, self.ButA = Nx.Util_str2rgba (Nx.db.profile.Track.TButColor)
+	self.ButCR, self.ButCG, self.ButCB, self.ButCA = Nx.Util_str2rgba (Nx.db.profile.Track.TButCombatColor)
 end
 
 --[[
@@ -201,7 +202,7 @@ function Nx.HUD:Update (map)
 	local opts = Nx:GetHUDOpts()
 	local noLockDown = not InCombatLockdown()
 
-	if map.TrackDir and not gopts["HUDHide"] and not (Nx.InBG and gopts["HUDHideInBG"]) then
+	if map.TrackDir and not Nx.db.profile.Track.Hide and not (Nx.InBG and Nx.db.profile.Track.HideInBG) then
 
 		local frm = self.Frm
 		local but = self.But
@@ -235,7 +236,7 @@ function Nx.HUD:Update (map)
 		local col = dirDist < 5 and "|cffa0a0ff" or ""
 		local str = format ("%s%d yds", col, dist)
 
-		if gopts["HUDShowDir"] then
+		if Nx.db.profile.Track.ShowDir then
 			local fmt = dirDist < 1 and " %.1f deg" or " %d deg"
 			str = str .. format (fmt, dirDist)
 		end
@@ -286,7 +287,7 @@ function Nx.HUD:Update (map)
 		win:SetSize (tw, 0, true)
 
 --PAIDS!
-		if gopts["HUDTBut"] and not win:IsCombatHidden() then
+		if Nx.db.profile.Track.TBut and not win:IsCombatHidden() then
 
 			if noLockDown then
 				but:SetPoint ("TOPLEFT", UIParent, "BOTTOMLEFT", frm:GetLeft(), frm:GetTop())

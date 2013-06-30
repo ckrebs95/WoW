@@ -1,0 +1,12 @@
+## Interface: 50300
+## Title: Carbonite Notes 1.0
+## Version: 1.0
+## Author: Rythal
+## Notes: Released Under GPL
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariables: NXNotes
+## RequiredDeps: Carbonite
+
+NxFav.lua
+

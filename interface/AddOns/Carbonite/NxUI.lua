@@ -20,6 +20,8 @@
 -- along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ---------------------------------------------------------------------------------------
 
+local NotInitializedWins = {}
+
 function Nx:UIInit()
 
 	local qc = {}
@@ -49,7 +51,7 @@ end
 ---------------------------
 
 function Nx.prtStack (str)
-	local s = debugstack (3, 3, 0)
+	local s = debugstack (2, 3, 2)
 	s = gsub (s, "Interface\\AddOns\\", "")
 	Nx.prt ("%s: %s", str, s)
 end
@@ -77,15 +79,11 @@ function Nx:prtGetChatFrames()
 end
 
 function Nx:prtSetChatFrame()
-
-	Nx.prtChatFrm = DEFAULT_CHAT_FRAME
-
-	local name = Nx:GetGlobalOpts()["ChatMsgFrm"]
-
+	Nx.prtChatFrm = DEFAULT_CHAT_FRAME	
 	for n = 1, 10 do
 		local cfrm = _G["ChatFrame" .. n]
 		if cfrm then
-			if cfrm["name"] == name then
+			if cfrm["name"] == Nx.db.profile.General.ChatMsgFrm then
 				Nx.prtChatFrm = cfrm
 			end
 		end
@@ -94,7 +92,14 @@ end
 
 function Nx.prt (msg, ...)
 	local f = Nx.prtChatFrm or DEFAULT_CHAT_FRAME
+--    msg = debugstack(2,3,2)
 	f:AddMessage (Nx.TXTBLUE..NXTITLE.." |cffffffff".. (format (msg, ...) or "nil"), 1, 1, 1)
+end
+
+function Nx.prtraw (msg)
+	local f = Nx.prtChatFrm or DEFAULT_CHAT_FRAME
+--    msg = debugstack(2,3,2)
+	f:AddMessage (Nx.TXTBLUE..NXTITLE.." |cffffffff".. msg, 1, 1, 1)
 end
 
 function Nx.prtError (msg, ...)
@@ -384,65 +389,35 @@ function Nx.Util_t2strRecurse (t)
 end
 
 --------
--- Convert hex color string to R G B floats (0-1)
-
-function Nx.Util_c2rgb (colors)
-
-	-- Replace with table lookups?
-	local r = tonumber (strsub (colors, 1, 2), 16) / 255
-	local g = tonumber (strsub (colors, 3, 4), 16) / 255
-	local b = tonumber (strsub (colors, 5, 6), 16) / 255
-	return r, g, b
-end
-
---------
--- Convert hex color string to R G B A floats (0-1)
-
-function Nx.Util_c2rgba (colors)
-
-	local r = tonumber (strsub (colors, 1, 2), 16) / 255
-	local g = tonumber (strsub (colors, 3, 4), 16) / 255
-	local b = tonumber (strsub (colors, 5, 6), 16) / 255
-	local a = tonumber (strsub (colors, 7, 8), 16) / 255
-	return r, g, b, a
-end
-
---------
 -- Convert hex color number to R G B A floats (0-1)
 -- (RRGGBBAA number)
 
-function Nx.Util_num2rgba (colors)
+function Nx.Util_str2rgba (colors)		
+	local arr = { Nx.Split("|",colors) }
+	return arr[1], arr[2], arr[3], arr[4]
+end
 
-	local rshift = bit.rshift
-	local band = bit.band
-
-	local r = rshift (colors, 24) / 255
-	local g = band (rshift (colors, 16), 0xff) / 255
-	local b = band (rshift (colors, 8), 0xff) / 255
-	local a = band (colors, 0xff) / 255
-	return r, g, b, a
+function Nx.Util_str2rgb (colors)
+	local arr = { Nx.Split("|",colors) }
+	return arr[1], arr[2], arr[3]
 end
 
 --------
 -- Convert hex color number to alpha float (0-1)
 -- (RRGGBBAA number)
 
-function Nx.Util_num2a (colors)
-
-	return bit.band (colors, 0xff) / 255
+function Nx.Util_str2a (colors)
+	local arr = { Nx.Split("|",colors) }
+	return arr[4]
 end
 
 --------
 -- Convert hex color number to color string
 -- (RGBA number)
 
-function Nx.Util_num2colstr (colors)
-
-	local rshift = bit.rshift
-	local band = bit.band
-
-	return format ("|c%02x%02x%02x%02x", band (colors, 0xff),
-			rshift (colors, 24), band (rshift (colors, 16), 0xff), band (rshift (colors, 8), 0xff))
+function Nx.Util_str2colstr (colors)
+	local arr = { Nx.Split("|",colors) }
+	return format ("|c%02x%02x%02x%02x",arr[4]*255,arr[1]*255,arr[2]*255,arr[3]*255)
 end
 
 --------
@@ -669,6 +644,15 @@ function Nx.Util_GetTimeElapsedStr (seconds)
 	return format ("%d mins", mins)
 end
 
+function Nx.Util_SecondsToDays (seconds)
+	fdays = math.floor(seconds/86400)
+	fhours = math.floor((bit.mod(seconds,86400))/3600)
+	fminutes = math.floor(bit.mod((bit.mod(seconds,86400)),3600)/60)
+	fseconds = math.floor(bit.mod(bit.mod((bit.mod(seconds,86400)),3600),60))
+	return fdays.." days, "..fhours.." hours, "..fminutes.." minutes, "..fseconds.." seconds"
+end
+
+
 --------
 -- Get a string from a seconds in 00:00 minute:second format
 
@@ -685,7 +669,7 @@ function Nx:SetTooltipText (str)
 
 --		Nx.prt ("Item %s", str)
 
-		local link, s = strsplit ("^", str)
+		local link, s = Nx.Split ("^", str)
 
 		if not s or #s < 1 or IsAltKeyDown() then
 			str = strsub (link, 2)
@@ -713,14 +697,14 @@ function Nx:SetTooltipText (str)
 	local s1, s2 = strfind (str, "\n")
 	if s1 then
 
-		local t = { strsplit ("\n", str) }
+		local t = { Nx.Split ("\n", str) }
 
 		GameTooltip:SetText (t[1], 1, 1, 1, 1, 1)		-- Wrap text
 		tremove (t, 1)
 
 		for _, line in ipairs (t) do
 
-			local s1, s2 = strsplit ("\t", line)
+			local s1, s2 = Nx.Split ("\t", line)
 			if s2 then
 				GameTooltip:AddDoubleLine (s1, s2, 1, 1, 1, 1, 1, 1)
 			else
@@ -764,15 +748,11 @@ function Nx.Font:Init()
 	-- Some code uses the "Nx" named font directly
 
 	self.Fonts = {
-		["FontS"] = { "NxFontS", "GameFontNormalSmall" },
-		["FontM"] = { "NxFontM", "GameFontNormal" },
-		["FontInfo"] = { "NxFontI", "GameFontNormal" },
-		["FontMap"] = { "NxFontMap", "GameFontNormalSmall" },
-		["FontMapLoc"] = { "NxFontMapLoc", "GameFontNormalSmall" },
-		["FontMenu"] = { "NxFontMenu", "GameFontNormalSmall" },
-		["FontQuest"] = { "NxFontQ", "GameFontNormal" },
-		["FontWatch"] = { "NxFontW", "GameFontNormal" },
-		["FontWarehouseI"] = { "NxFontWHI", "GameFontNormal" },
+		["Font.Small"] = { "NxFontS", "GameFontNormalSmall", "db" },
+		["Font.Medium"] = { "NxFontM", "GameFontNormal", "db" },
+		["Font.Map"] = { "NxFontMap", "GameFontNormalSmall", "db" },
+		["Font.MapLoc"] = { "NxFontMapLoc", "GameFontNormalSmall", "db" },
+		["Font.Menu"] = { "NxFontMenu", "GameFontNormalSmall", "db" },		
 	}
 
 	self.Faces = {
@@ -795,9 +775,19 @@ function Nx.Font:Init()
 		local font = CreateFont (v[1])
 		v.Font = font
 		font:SetFontObject(v[2])
+		v.Font.db = v[3]
 	end
 
 	self:Update()
+end
+
+function Nx.Font:ModuleAdd (key, value)  
+  self.Fonts[key] = value
+  local font = CreateFont (value[1])
+  value.Font = font
+  font:SetFontObject(value[2])
+  value.Font.db = value[3]  
+  self:Update()
 end
 
 function Nx.Font:AddonLoaded()
@@ -853,12 +843,12 @@ function Nx.Font:FontScan (ace, libName)
 	end
 end
 
-function Nx.Font:GetObj (name)
+function Nx.Font:GetObj (name)		
 	return self.Fonts[name].Font
 end
 
 function Nx.Font:GetH (name)
---	Nx.prt ("Font %s", name or "nil")
+--	Nx.prt ("Font %s", name or "nil")			
 	return self.Fonts[name].H
 end
 
@@ -878,7 +868,7 @@ end
 
 function Nx.Font:GetFile (name)
 
-	for k, v in ipairs (self.Faces) do
+	for k, v in ipairs (self.Faces) do		
 		if v[1] == name then
 			return v[2]
 		end
@@ -889,21 +879,18 @@ end
 
 function Nx.Font:Update()
 
-	local opts = Nx:GetGlobalOpts()
-
 	for name, v in pairs (self.Fonts) do
 
 		local font = v.Font
-		local fname, size, flags = font:GetFont()
-
+		local dbloc = v.Font.db
+		local fname, size, flags = font:GetFont()		
+		local optname = "Nx." .. dbloc .. ".profile." .. name
 --		Nx.prt ("Font %s %s %s", fname, size, flags)
-
-		local file = self:GetFile (opts[name])
-
-		local size = opts[name .. "Size"]
-		font:SetFont (file, size, flags)
-
-		v.H = max (size + (opts[name .. "H"] or 0), 6)
+		local parts1, parts2 = Nx.Split(".",name) 		
+		local file = self:GetFile (Nx[dbloc].profile[parts1][parts2])       
+		local size = Nx[dbloc].profile[parts1][parts2 .. "Size"]
+		font:SetFont (file, size, flags)		
+		v.H = max (size + (Nx[dbloc].profile[parts1][parts2 .. "Spacing"] or 0), 6)				
 	end
 
 	Nx.List:NextUpdateFull()
@@ -930,10 +917,10 @@ function Nx.Skin:Init()
 				["edgeSize"] = 8,
 				["insets"] = { ["left"] = 0, ["right"] = 0, ["top"] = 0, ["bottom"] = 0 }
 			},
-			["BdCol"] = 0xff,
-			["BgCol"] = 0xff,
+			["BdCol"] = "0|0|0|1",
+			["BgCol"] = "0|0|0|1",
 		},
-		["BlackoutBlues"] = {
+		["Blackout Blues"] = {
 			["Folder"] = "",
 			["WinBrH"] = "WinBrH",
 			["WinBrV"] = "WinBrV",
@@ -947,10 +934,10 @@ function Nx.Skin:Init()
 				["edgeSize"] = 9,
 				["insets"] = { ["left"] = 1, ["right"] = 1, ["top"] = 1, ["bottom"] = 1 }
 			},
-			["BdCol"] = 0xccccffff,
-			["BgCol"] = 0xff,
+			["BdCol"] = ".8|.8|1|1",
+			["BgCol"] = "0|0|0|1",
 		},
-		["DialogBlue"] = {
+		["Dialog Blue"] = {
 			["Folder"] = "",
 			["WinBrH"] = "WinBrH",
 			["WinBrV"] = "WinBrV",
@@ -964,10 +951,10 @@ function Nx.Skin:Init()
 				["edgeSize"] = 16,
 				["insets"] = { ["left"] = 2, ["right"] = 2, ["top"] = 2, ["bottom"] = 2 }
 			},
-			["BdCol"] = 0xccccffff,
-			["BgCol"] = 0x1f1f1fe0,		-- { .125, .125, .125, .88 },
+			["BdCol"] = ".8|.8|1|1",
+			["BgCol"] = ".125|.125|.125|.88",
 		},
-		["DialogGold"] = {
+		["Dialog Gold"] = {
 			["Folder"] = "",
 			["WinBrH"] = "WinBrH",
 			["WinBrV"] = "WinBrV",
@@ -981,10 +968,10 @@ function Nx.Skin:Init()
 				["edgeSize"] = 16,
 				["insets"] = { ["left"] = 2, ["right"] = 2, ["top"] = 2, ["bottom"] = 2 }
 			},
-			["BdCol"] = 0xffffffff,
-			["BgCol"] = 0x262600e0,		-- { .15, .15, 0, .88 },
+			["BdCol"] = "1|1|1|1",
+			["BgCol"] = ".15|.15|0|.88",		-- { .15, .15, 0, .88 },
 		},
-		["SimpleBlue"] = {
+		["Simple Blue"] = {
 			["Folder"] = "",
 			["WinBrH"] = "WinBrH",
 			["WinBrV"] = "WinBrV",
@@ -999,8 +986,8 @@ function Nx.Skin:Init()
 				["edgeSize"] = 8,
 				["insets"] = { ["left"] = 0, ["right"] = 0, ["top"] = 0, ["bottom"] = 0 }
 			},
-			["BdCol"] = 0xb2b2ffcc,
-			["BgCol"] = 0x1f1f1fe0,		-- { .125, .125, .125, .88 },
+			["BdCol"] = "0.7|0.7|1|0.8",
+			["BgCol"] = ".125|.125|.125|.88",		-- { .125, .125, .125, .88 },
 		},
 		["Stone"] = {
 			["Folder"] = "",
@@ -1016,10 +1003,10 @@ function Nx.Skin:Init()
 				["edgeSize"] = 16,
 				["insets"] = { ["left"] = 3, ["right"] = 2, ["top"] = 2, ["bottom"] = 2 }
 			},
-			["BdCol"] = 0xffffffff,
-			["BgCol"] = 0x0f0f0ff0,
+			["BdCol"] = "1|1|1|1",
+			["BgCol"] = "0.06|0.06|0.06|.9",
 		},
-		["ToolBlue"] = {
+		["Tool Blue"] = {
 			["Folder"] = "",
 			["WinBrH"] = "WinBrH",
 			["WinBrV"] = "WinBrV",
@@ -1034,14 +1021,11 @@ function Nx.Skin:Init()
 				["edgeSize"] = 9,
 				["insets"] = { ["left"] = 1, ["right"] = 1, ["top"] = 1, ["bottom"] = 1 }
 			},
-			["BdCol"] = 0xccccffff,
-			["BgCol"] = 0x1f1f1fe0,		-- { .125, .125, .125, .88 },
+			["BdCol"] = ".8|1|1|.8",
+			["BgCol"] = ".125|.125|.125|.88",		-- { .125, .125, .125, .88 },
 		},
 	}
-
-	local opts = Nx:GetGlobalOpts()
-	self.GOpts = opts
-	self:Set (opts["SkinName"], true)
+	self:Set (Nx.db.profile.Skin["Name"], true)
 end
 
 function Nx.Skin:Set (skinName, init)
@@ -1049,32 +1033,29 @@ function Nx.Skin:Set (skinName, init)
 	self.Data = Nx.Skins[skinName or ""]
 
 	if not self.Data then
-		skinName = "ToolBlue"
+		skinName = "Tool Blue"
 		self.Data = Nx.Skins[skinName]
 	end
 
-	self.GOpts["SkinName"] = skinName
+	Nx.db.profile.Skin.Name = skinName
 
 	local data = self.Data
 
 	self.Path = "Interface\\Addons\\Carbonite\\Gfx\\Skin\\" .. data["Folder"]
 
 	if not init then
-		self.GOpts["SkinWinBdColor"] = data["BdCol"]
-		self.GOpts["SkinWinFixedBgColor"] = 0x80808080
-		self.GOpts["SkinWinSizedBgColor"] = data["BgCol"]
+		Nx.db.profile.Skin.WinBdColor = data["BdCol"]
+		Nx.db.profile.Skin.WinFixedBgColor = ".5|.5|.5|.5"
+		Nx.db.profile.Skin.WinSizedBgColor = data["BgCol"]
 	end
 
 	self:Update()
 end
 
 function Nx.Skin:Update()
-
-	local opts = self.GOpts
-
-	self.BdCol = { Nx.Util_num2rgba (opts["SkinWinBdColor"]) }
-	self.BgCol = { Nx.Util_num2rgba (opts["SkinWinSizedBgColor"]) }
-	self.FixedBgCol = { Nx.Util_num2rgba (opts["SkinWinFixedBgColor"]) }
+	self.BdCol = { Nx.Util_str2rgba (Nx.db.profile.Skin.WinBdColor) }
+	self.BgCol = { Nx.Util_str2rgba (Nx.db.profile.Skin.WinSizedBgColor) }
+	self.FixedBgCol = { Nx.Util_str2rgba (Nx.db.profile.Skin.WinFixedBgColor) }
 
 	Nx.Window:ResetBackdrops()
 	Nx.Menu:ResetSkins()
@@ -1440,7 +1421,7 @@ end
 
 function Nx.Window:Create (name, minResizeW, minResizeH, secure, titleLines, borderType, hide, noButs)
 
-	local c2rgba = Nx.Util_c2rgba
+	local c2rgba = Nx.Util_str2rgba
 
 	local wd = Nx:GetData ("Win")
 	local svdata = name and wd[name]
@@ -1526,9 +1507,9 @@ function Nx.Window:Create (name, minResizeW, minResizeH, secure, titleLines, bor
 	f:SetPoint ("TOPLEFT", 100, -100)
 	f:SetMovable (true)
 	f:SetResizable (true)
-
+	tinsert(NotInitializedWins,f)
 	f:SetScript ("OnEvent", self.OnEvent)
-	f:RegisterEvent ("PLAYER_LOGIN")
+--	f:RegisterEvent ("PLAYER_LOGIN")
 
 	f:SetScript ("OnMouseDown", self.OnMouseDown)
 	f:SetScript ("OnMouseUp", self.OnMouseUp)
@@ -1539,7 +1520,7 @@ function Nx.Window:Create (name, minResizeW, minResizeH, secure, titleLines, bor
 	if not win.Border then
 
 		local t = f:CreateTexture()
-		t:SetTexture (c2rgba ("202020d8"))
+		t:SetTexture (c2rgba (".125|.125|.125|.75"))
 		t:SetAllPoints (f)
 		f.texture = t
 	end
@@ -1603,6 +1584,12 @@ end
 --------
 -- Create buttons
 
+function Nx.InitWins()
+	for a,b in pairs(NotInitializedWins) do
+		Nx.FixWin(b)
+	end
+end
+
 function Nx.Window:CreateButtons (closer, maxer, miner)
 
 --	assert (not self.NoButs)
@@ -1642,7 +1629,7 @@ end
 
 function Nx.Window:CreateBorders()
 
-	local c2rgba = Nx.Util_c2rgba
+	local c2rgba = Nx.Util_str2rgba
 	local Skin = Nx.Skin
 --[[
 	local winBorders = self.Borders
@@ -1782,7 +1769,9 @@ end
 -- Adjust title width and child frames to fit our client area
 
 function Nx.Window:Adjust (skipChildren)
-
+	if InCombatLockdown() and Nx.db.profile.Map.Compatability then
+		return
+	end
 	local f = self.Frm
 
 	local w = f:GetWidth() - self.BorderW * 2
@@ -2168,8 +2157,7 @@ end
 --------
 -- Set our background color
 
-function Nx.Window:SetBGColor (r, g, b, a)
-
+function Nx.Window:SetBGColor (r, g, b, a)	
 	if self.Frm.texture then
 		self.Frm.texture:SetTexture (r, g, b, a or 1)
 	end
@@ -2345,7 +2333,9 @@ end
 -- self = Win
 
 function Nx.Window:SetLayoutMode (mode)
-
+	if InCombatLockdown() and Nx.db.profile.Map.Compatability then
+		return
+	end
 	local data = self.SaveData
 
 	if mode == 1 then
@@ -2466,13 +2456,13 @@ function Nx.Window:SetLayoutMode (mode)
 	if aPt == "TOPLEFT" then
 		if data[mode.."X"] > sw - 20 then
 			data[mode.."X"] = sw - 20
-			Nx.prt ("Fix %s x", self.Name)
+--			Nx.prt ("Fix %s x", self.Name)
 		end
 	end
 	if aPt == "TOPRIGHT" or aPt == "RIGHT" or aPt == "BOTTOMRIGHT" then
 		if data[mode.."X"] > 20 then
 			data[mode.."X"] = 20
-			Nx.prt ("Fix %s x", self.Name)
+--			Nx.prt ("Fix %s x", self.Name)
 		end
 	end
 
@@ -2658,8 +2648,7 @@ end
 -- Register for event and set event handler
 -- (event name, handler to call)
 
-function Nx.Window:RegisterEvent (event, handler)
-
+function Nx.Window:RegisterEvent (event, handler)	
 	self.Frm:RegisterEvent (event)
 
 	if not self.Events then
@@ -2759,25 +2748,24 @@ end
 -- Handle events
 -- self is frame
 
+function Nx.FixWin (frm)
+	local win = frm.NxWin
+--	Nx.prt ("Win Event %s", win.Name)
+	Nx.Window.LoginDone = true
+	win.LayoutMode = false
+	win:SetLayoutMode(1)
+end
+
 function Nx.Window:OnEvent (event, ...)
 
 	--V4 this
 	local win = self.NxWin
+--	local win = self
 
 --	Nx.prt ("Win Event %s %s", win.Name, event)
 
-	if event == "PLAYER_LOGIN" then
-
-		Nx.Window.LoginDone = true
-
-		-- Fix sizes after WOW sets them from layout cache
-
-		win.LayoutMode = false
-		win:SetLayoutMode (1)
-	end
-
 	if win.Events and win.Events[event] then
-		win.Events[event] (win.User, event, ...)
+		win.Events[event] (win.User, event)
 	end
 end
 
@@ -3198,14 +3186,14 @@ Nx.Button.TypeData = {
 		Skin = true,
 		Up = "ButMax",
 		Dn = "ButMax",
-		VRGBAUp = "ffffffff",
+		VRGBAUp = "1|1|1|1",
 	},
 	["MaxOn"] = {
 		Tip = "Restore",
 		Skin = true,
 		Up = "ButMax",
 		Dn = "ButMax",
-		VRGBAUp = "7f7fffff",
+		VRGBAUp = ".5|.5|1|1",
 	},
 	["Min"] = {
 		Tip = "Minimize",
@@ -3213,8 +3201,8 @@ Nx.Button.TypeData = {
 		Skin = true,
 		Up = "ButWatchShow",
 		Dn = "ButWatchMini",
-		VRGBAUp = "ffffff7f",
-		VRGBADn = "9f9fffff",
+		VRGBAUp = "1|1|1|.5",
+		VRGBADn = ".62|.62|1|1",
 	},
 	["MapAutoScale"] = {
 		Tip = "Auto Scale",
@@ -3233,18 +3221,8 @@ Nx.Button.TypeData = {
 		SizeUp = 22,
 		SizeDn = 22,
 	},
-	["MapFav"] = {
-		Up = "$INV_Torch_Lit",
-		SizeUp = 22,
-		SizeDn = 22,
-	},
 	["MapGuide"] = {
 		Up = "$INV_Misc_QuestionMark",
-		SizeUp = 22,
-		SizeDn = 22,
-	},
-	["MapWarehouse"] = {
-		Up = "$INV_Misc_EngGizmos_17",
 		SizeUp = 22,
 		SizeDn = 22,
 	},
@@ -3292,186 +3270,6 @@ Nx.Button.TypeData = {
 		SizeUp = 14,
 		SizeDn = 14,
 	},
-	["QuestHdr"] = {
-		Bool = true,
-		Skin = true,
-		Up = "RoundMinus",
-		Dn = "RoundPlus",
-		SizeUp = 11,
-		SizeDn = 11,
-		VRGBAUp = "8f8f8fff",
-		VRGBADn = "8f8f8fff",
-	},
-	["QuestWatching"] = {
-		Bool = true,
-		Up = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		Dn = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		SizeUp = 11,
-		SizeDn = 11,
-		VRGBAUp = "ffff3f7f",
-		VRGBADn = "dfdf2fef",
-	},
-	["QuestWatchMenu"] = {
-		Tip = "Menu",
-		Skin = true,
-		Up = "ButWatchMenu",
-		Dn = "ButWatchMenu",
-		SizeUp = 14,
-		SizeDn = 14,
-		VRGBAUp = "ffffff7f",
-		VRGBADn = "ffffffbf",
-	},
-	["QuestWatchPri"] = {
-		Tip = "Priorities",
-		Skin = true,
-		Up = "ButWatchMenu",
-		Dn = "ButWatchMenu",
-		SizeUp = 14,
-		SizeDn = 14,
-		VRGBAUp = "ffff7f7f",
-		VRGBADn = "ffff7fbf",
-	},
-	["QuestWatchShowOnMap"] = {
-		Tip = "Show Quests On Map",
-		Bool = true,
-		Up = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		Dn = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		SizeUp = 10,
-		SizeDn = 13,
-		VRGBAUp = "3fff3f8f",
-		VRGBADn = "3fff3fdf",
-	},
-	["QuestWatchATrack"] = {
-		Tip = "Auto Track",
-		Bool = true,
-		Up = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		Dn = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		SizeUp = 10,
-		SizeDn = 13,
-		VRGBAUp = "ff00ff8f",
-		VRGBADn = "ff40ffdf",
-	},
-	["QuestWatchGivers"] = {
-		Tip = "Quest Givers",
-		States = 3,
-		Tx = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		{
-			Size = 10,
-			VRGBA = "ffcf3f8f",
-		},
-		{
-			Size = 13,
-			VRGBA = "ffcf3fdf",
-		},
-		{
-			Size = 13,
-			VRGBA = "8f8fffdf",
-		}
-	},
-	["QuestWatchParty"] = {
-		Tip = "Show Party Quests",
-		Bool = true,
-		Up = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		Dn = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		SizeUp = 10,
-		SizeDn = 13,
-		VRGBAUp = "cfcfcf8f",
-		VRGBADn = "ffffffdf",
-	},
-	["QuestWatch"] = {
-		Bool = true,
-		Up = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		Dn = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		SizeUp = 9,
-		SizeDn = 9,
-		AlphaUp = .3,
-		AlphaDn = .85,
-	},
-	["QuestWatchAC"] = {		-- Auto complete
-		Up = "Interface\\Addons\\Carbonite\\Gfx\\Map\\IconQuestion",
-		SizeUp = 15,
-		VRGBAUp = "bfffbfff",
-	},
-	["QuestWatchTip"] = {
-		Up = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		Dn = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		SizeUp = 7,
-		SizeDn = 7,
-		VRGBAUp = "00000050",
-		VRGBADn = "00000080",
-		WatchTip = 1
-	},
-	["QuestWatchTipItem"] = {
-		SizeUp = 11,
-		SizeDn = 11,
-		VRGBAUp = "ffffffc0",
-		VRGBADn = "ffffffff",
-		WatchTip = 1
-	},
-	["QuestWatchTarget"] = {
-		Bool = true,
-		Up = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		Dn = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		SizeUp = 12,
-		SizeDn = 12,
-		AlphaUp = .4,
-		AlphaDn = 1,
-	},
-	["QuestWatchErr"] = {
-		Up = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		Dn = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		SizeUp = 9,
-		SizeDn = 12,
-		VRGBAUp = "ff80206f",
-		VRGBADn = "ff8020ef",
-		WatchError = 1
-	},
-	["QuestWatchTrial"] = {
-		Up = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		Dn = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		SizeUp = 9,
-		SizeDn = 12,
-		VRGBAUp = "ffff40af",
-		VRGBADn = "ffff40ff",
-	},
-	["QuestListWatch"] = {
-		Bool = true,
-		Up = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		Dn = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		SizeUp = 9,
-		SizeDn = 9,
-		VRGBAUp = "ffffff4f",
-		VRGBADn = "ffffffd8",
-	},
---[[
-	["QuestWatchR"] = {
-		Bool = true,
-		Up = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		Dn = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		SizeUp = 9,
-		SizeDn = 9,
-		VRGBAUp = "ff3f3f4f",
-		VRGBADn = "ff3f3fd8",
-	},
-	["QuestWatchG"] = {
-		Bool = true,
-		Up = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		Dn = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		SizeUp = 9,
-		SizeDn = 9,
-		VRGBAUp = "3fff3f4f",
-		VRGBADn = "3fff3fd8",
-	},
-	["QuestWatchB"] = {
-		Bool = true,
-		Up = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		Dn = "Interface\\Addons\\Carbonite\\Gfx\\Buttons\\DotOn",
-		SizeUp = 9,
-		SizeDn = 9,
-		VRGBAUp = "8f8fff4f",
-		VRGBADn = "8f8fffe0",
-	},
---]]
 	["Txt"] = {
 		RGBUp = "604040",
 		RGBDn = "503030",
@@ -3488,28 +3286,8 @@ Nx.Button.TypeData = {
 		Skin = true,
 		Up = "ButEmpty64",
 		Dn = "ButEmpty64",
-		VRGBAUp = "ffffffff",
-		VRGBADn = "ff5f5fff",
-	},
-	["Warehouse"] = {
-		Bool = true,
-		Up = "$INV_Misc_QuestionMark",
-		Dn = "$INV_Misc_QuestionMark",
-		SizeUp = 18,
-		SizeDn = 11,
-	},
-	["WarehouseItem"] = {
-		Up = "$INV_Misc_QuestionMark",
-		Dn = "$INV_Misc_QuestionMark",
-		SizeUp = 16,
-		SizeDn = 16,
-	},
-	["WarehouseProf"] = {
-		Up = "Interface\\TradeSkillFrame\\UI-TradeSkill-LinkButton",
-		Dn = "Interface\\TradeSkillFrame\\UI-TradeSkill-LinkButton",
-		SizeUp = 16,
-		SizeDn = 14,
-		UpUV = { 0, 1, 0, .5 },
+		VRGBAUp = "1|1|1|1",
+		VRGBADn = "1|.373|.373|1",
 	},
 }
 
@@ -3525,7 +3303,7 @@ function Nx.Button:Init()
 	f:Hide()
 
 	local t = f:CreateTexture()
-	t:SetTexture (Nx.Util_c2rgba ("101040ff"))
+	t:SetTexture (Nx.Util_str2rgba ("0.06|0.06|0.250|1"))
 	t:SetAllPoints (f)
 	t:SetBlendMode ("ADD")
 	f.texture = t
@@ -3949,7 +3727,7 @@ function Nx.Button:Update()
 				if type (txName) == "string" then
 					txName = gsub (txName, "%$", "Interface\\Icons\\")
 				else
-					tx:SetTexture (Nx.Util_num2rgba (txName))
+					tx:SetTexture (Nx.Util_str2rgba (txName))
 					txName = nil
 				end
 			end
@@ -3960,14 +3738,14 @@ function Nx.Button:Update()
 		else
 			local rgb = stateT.RGB
 			if rgb then
-				tx:SetTexture (Nx.Util_c2rgb (rgb))
+				tx:SetTexture (Nx.Util_str2rgb (rgb))
 			end
 		end
 
 		if stateT.Alpha then
 			tx:SetVertexColor (1, 1, 1, stateT.Alpha)
 		elseif stateT.VRGBA then
-			tx:SetVertexColor (Nx.Util_c2rgba (stateT.VRGBA))
+			tx:SetVertexColor (Nx.Util_str2rgba (stateT.VRGBA))
 		end
 
 		local sz = stateT.Size
@@ -3989,7 +3767,7 @@ function Nx.Button:Update()
 					if type (txName) == "string" then
 						txName = gsub (txName, "%$", "Interface\\Icons\\")
 					else
-						tx:SetTexture (Nx.Util_num2rgba (txName))
+						tx:SetTexture (Nx.Util_str2rgba (txName))
 						txName = nil
 					end
 				end
@@ -4000,14 +3778,14 @@ function Nx.Button:Update()
 			else
 				local rgb = typ.RGBDn
 				if rgb then
-					tx:SetTexture (Nx.Util_c2rgb (rgb))
+					tx:SetTexture (Nx.Util_str2rgb (rgb))
 				end
 			end
 
 			if typ.AlphaDn then
 				tx:SetVertexColor (1, 1, 1, typ.AlphaDn)
 			elseif typ.VRGBADn then
-				tx:SetVertexColor (Nx.Util_c2rgba (typ.VRGBADn))
+				tx:SetVertexColor (Nx.Util_str2rgba (typ.VRGBADn))
 			end
 
 			local sz = typ.SizeDn
@@ -4028,7 +3806,7 @@ function Nx.Button:Update()
 						txName = gsub (txName, "%$", "Interface\\Icons\\")
 					else
 --						Nx.prt ("But %s", txName)
-						tx:SetTexture (Nx.Util_num2rgba (txName))
+						tx:SetTexture (Nx.Util_str2rgba (txName))
 						txName = nil
 					end
 				end
@@ -4043,14 +3821,14 @@ function Nx.Button:Update()
 			else
 				local rgb = typ.RGBUp
 				if rgb then
-					tx:SetTexture (Nx.Util_c2rgb (rgb))
+					tx:SetTexture (Nx.Util_str2rgb (rgb))
 				end
 			end
 
 			if typ.AlphaUp then
 				tx:SetVertexColor (1, 1, 1, typ.AlphaUp)
 			elseif typ.VRGBAUp then
-				tx:SetVertexColor (Nx.Util_c2rgba (typ.VRGBAUp))
+				tx:SetVertexColor (Nx.Util_str2rgba (typ.VRGBAUp))
 			end
 
 			local sz = typ.SizeUp
@@ -4078,9 +3856,9 @@ function Nx.Button:Update()
 		of:SetHeight (f:GetHeight() + 2)
 
 		if self.Pressed then
-			of.texture:SetTexture (Nx.Util_c2rgba ("303080ff"))
+			of.texture:SetTexture (Nx.Util_str2rgba (".188|.188|.5|1"))
 		else
-			of.texture:SetTexture (Nx.Util_c2rgba ("101040ff"))
+			of.texture:SetTexture (Nx.Util_str2rgba ("0.06|0.06|.250|1"))
 		end
 
 --		local lev = f:GetFrameLevel()
@@ -4379,7 +4157,7 @@ end
 
 function Nx.Menu:Create (parentFrm, width)
 
-	local c2rgba = Nx.Util_c2rgba
+	local c2rgba = Nx.Util_str2rgba
 
 	local menu = {}	-- New menu
 
@@ -4569,8 +4347,7 @@ end
 ------
 -- Set slider position and optionally min and max values
 
-function Nx.MenuI:SetSlider (pos, min, max, step, varName)
-
+function Nx.MenuI:SetSlider (pos, min, max, step, varName)	
 	if type (pos) == "table" then
 		assert (varName)
 		self.Table = pos
@@ -4666,14 +4443,12 @@ function Nx.Menu:Open()
 
 --	prt (format ("Menu Open (%f, %f)", cx, cy))
 
-	local opts = Nx:GetGlobalOpts()
-
 	local x = cx - 4
 	local y = cy + 4
-	if opts["MenuCenterH"] then
+	if Nx.db.profile.Menu.CenterH then
 		x = cx - menuW * .5
 	end
-	if opts["MenuCenterV"] then
+	if Nx.db.profile.Menu.CenterV then
 		y = cy + menuH * .5
 	end
 
@@ -5220,7 +4995,7 @@ end
 function Nx.List:Create (saveName, xpos, ypos, width, height, parentFrm, showAll, noHeader)
 
 	if not self.CFont then		-- Not set?
-		self:SetCreateFont ("FontS")	-- Default
+		self:SetCreateFont ("Font.Small")	-- Default
 	end
 
 	local inst = {}	-- New instance
@@ -5235,7 +5010,7 @@ function Nx.List:Create (saveName, xpos, ypos, width, height, parentFrm, showAll
 		inst.Save = save
 
 		if save["ColW"] then
-			inst.SaveColumnWidths = { strsplit ("^", save["ColW"]) }
+			inst.SaveColumnWidths = { Nx.Split ("^", save["ColW"]) }
 		end
 	end
 
@@ -5243,7 +5018,7 @@ function Nx.List:Create (saveName, xpos, ypos, width, height, parentFrm, showAll
 	inst.Strs = {}
 	inst.Buts = {}
 
-	inst.Font = self.CFont
+	inst.Font = self.CFont	
 	inst.FontObj = Nx.Font:GetObj (inst.Font)
 --	inst.LineH = self.CLineH
 	inst.LineHPad = 0
@@ -5375,8 +5150,7 @@ end
 -- Set list background color
 -- self = instance
 
-function Nx.List:SetBGColor (r, g, b, a, noFade)
-
+function Nx.List:SetBGColor (r, g, b, a, noFade)	
 	if self.Frm.texture then
 		self.Frm.texture:SetTexture (r, g, b, a or 1)
 	end
@@ -5418,8 +5192,8 @@ function Nx.List:SetLineHeight (height, hdrH)
 	self:Update()
 end
 
-function Nx.List:GetLineH()
-	return Nx.Font:GetH (self.Font) + self.LineHPad
+function Nx.List:GetLineH()	
+	return Nx.Font:GetH (self.Font) + self.LineHPad	
 end
 
 --------
@@ -5886,7 +5660,7 @@ function Nx.List:Update (showLast)
 
 			if data then
 
-				local typ, v1, v2, v3 = strsplit ("~", data)
+				local typ, v1, v2, v3 = Nx.Split ("~", data)
 
 --				Nx.prt ("%s", -(n - 1) * lineH - adjY - offY)
 
@@ -5926,24 +5700,22 @@ function Nx.List:Update (showLast)
 					end
 
 					if doBind then
-						doBind = false
-
-						local opts = Nx:GetGlobalOpts()
+						doBind = false						
 						local key = GetBindingKey ("NxWATCHUSEITEM")
 						if key then
-							opts["QWKeyUseItem"] = key
+							Nx.qdb.profile.QuestWatch.KeyUseItem = key
 							Nx.prt ("Key %s transfered to Watch List Item", key)
 						end
 
-						if #opts["QWKeyUseItem"] > 0 and not InCombatLockdown() then
+						if #Nx.qdb.profile.QuestWatch.KeyUseItem > 0 and not InCombatLockdown() then
 
-							local s = GetBindingAction (opts["QWKeyUseItem"])
+							local s = GetBindingAction (Nx.qdb.profile.QuestWatch.KeyUseItem)
 							s = strmatch (s, "CLICK (.+):")
 --							Nx.prt ("Key's frm %s", s or "nil")
 							if s ~= f:GetName() then
-								local ok = SetBindingClick (opts["QWKeyUseItem"], f:GetName())
-								Nx.prt ("Key %s %s #%s %s", opts["QWKeyUseItem"], f:GetName(), line, ok or "nil")
-								opts["QWKeyUseItem"] = ""
+								local ok = SetBindingClick (Nx.qdb.profile.QuestWatch.KeyUseItem, f:GetName())
+								Nx.prt ("Key %s %s #%s %s", Nx.qdb.profile.QuestWatch.KeyUseItem, f:GetName(), line, ok or "nil")
+								Nx.qdb.profile.QuestWatch.KeyUseItem = ""
 							end
 						end
 					end
@@ -6143,7 +5915,7 @@ function Nx.List:Sort()
 	-- Convert sorted to number
 
 	for n = 1, #t do
-		local _, i = strsplit ("~", t[n])
+		local _, i = Nx.Split ("~", t[n])
 		t[n] = tonumber (i)
 	end
 
@@ -6547,7 +6319,7 @@ function Nx.List:OpenColorDialog (id)
 
 	local col = f.NXTbl[f.NXVName]
 	f["previousValues"] = col
-	local r, g, b, a = Nx.Util_num2rgba (col)
+	local r, g, b, a = Nx.Util_str2rgba (col)
 
 	f:SetColorRGB (r, g, b)
 	f["opacity"] = 1 - a
@@ -6584,7 +6356,7 @@ function Nx.DropDown:Init()
 
 	-- List
 
-	Nx.List:SetCreateFont ("FontM")
+	Nx.List:SetCreateFont ("Font.Medium")
 
 	local list = Nx.List:Create (false, 0, 0, 1, 1, frm, false, true)
 	self.List = list
@@ -6684,7 +6456,7 @@ end
 
 function Nx.TabBar:Create (name, parentFrm, width, height)
 
-	local c2rgba = Nx.Util_c2rgba
+	local c2rgba = Nx.Util_str2rgba
 
 	parentFrm = parentFrm or UIParent
 
@@ -6718,7 +6490,7 @@ function Nx.TabBar:Create (name, parentFrm, width, height)
 --	f:SetScript ("OnUpdate", self.OnUpdate)
 
 	local t = f:CreateTexture()
-	t:SetTexture (c2rgba ("00000080"))
+	t:SetTexture (c2rgba ("0|0|0|.5"))
 	t:SetAllPoints (f)
 	f.texture = t
 
@@ -6736,7 +6508,7 @@ end
 
 function Nx.TabBar:CreateBorders()
 
-	local c2rgba = Nx.Util_c2rgba
+	local c2rgba = Nx.Util_str2rgba
 
 	local f = CreateFrame ("Frame", nil, self.Frm)
 
@@ -6749,7 +6521,7 @@ function Nx.TabBar:CreateBorders()
 	f:SetHeight (4)
 
 	local t = f:CreateTexture()
-	t:SetTexture (c2rgba ("505050ff"))
+	t:SetTexture (c2rgba (".313|.313|.313|1"))
 	t:SetAllPoints (f)
 	f.texture = t
 
@@ -7011,7 +6783,7 @@ end
 
 function Nx.ToolBar:Create (name, parentFrm, size, alignR, alignB)
 
-	local c2rgba = Nx.Util_c2rgba
+	local c2rgba = Nx.Util_str2rgba
 
 	parentFrm = parentFrm or UIParent
 
@@ -7048,8 +6820,16 @@ function Nx.ToolBar:Create (name, parentFrm, size, alignR, alignB)
 	bar.Size = size		-- Default
 
 	-- Create window frame
-
-	local f = CreateFrame ("Frame", name, parentFrm)
+	local f = nil
+	local kids = { parentFrm:GetChildren() };
+	for _, child in ipairs(kids) do
+		if (child:GetName() == name) then
+		  f = child
+		end
+	end
+	if f == nil then
+		f = CreateFrame ("Frame", name, parentFrm)
+	end
 	bar.Frm = f
 	f.NxInst = bar
 
@@ -7348,6 +7128,14 @@ function Nx.Slider:Set (pos, min, max, visSize)
 
 end
 
+function Nx.Util_c2rgb (colors)
+
+	local r = tonumber (strsub (colors, 1, 2), 16) / 255
+	local g = tonumber (strsub (colors, 3, 4), 16) / 255
+	local b = tonumber (strsub (colors, 5, 6), 16) / 255
+	return r, g, b
+end
+
 function Nx.Slider:OnMouseDown (button)
 
 	local this = self			--V4
@@ -7537,7 +7325,7 @@ end
 
 function Nx.Graph:Create (width, height, parentFrm)
 
-	local c2rgba = Nx.Util_c2rgba
+	local c2rgba = Nx.Util_str2rgba
 
 --	prt ("Graph "..width)
 
@@ -7565,7 +7353,7 @@ function Nx.Graph:Create (width, height, parentFrm)
 	f:SetPoint ("TOPLEFT", 0, 0)
 
 	local t = f:CreateTexture()
-	t:SetTexture (c2rgba ("202020a0"))
+	t:SetTexture (c2rgba (".125|.125|.125|.625"))
 	t:SetAllPoints (f)
 	f.texture = t
 
