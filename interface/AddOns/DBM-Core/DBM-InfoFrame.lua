@@ -61,6 +61,7 @@ local infoFrameThreshold
 local pIndex
 local extraPIndex
 local lowestFirst
+local tankIgnored
 local iconModifier
 local headerText = "DBM Info Frame"	-- this is only used if DBM.InfoFrame:SetHeader(text) is not called before :Show()
 local currentEvent
@@ -87,6 +88,8 @@ local GetSpellInfo = GetSpellInfo
 local UnitThreatSituation = UnitThreatSituation
 local GetRaidRosterInfo = GetRaidRosterInfo
 local GetRealZoneText = GetRealZoneText
+local GetPartyAssignment = GetPartyAssignment
+local UnitGroupRolesAssigned = UnitGroupRolesAssigned
 
 ---------------------
 --  Dropdown Menu  --
@@ -185,6 +188,7 @@ end
 ------------------------
 --  Update functions  --
 ------------------------
+local updateCallbacks = {}
 local function sortFuncDesc(a, b) return lines[a] > lines[b] end
 local function sortFuncAsc(a, b) return lines[a] < lines[b] end
 local function updateLines()
@@ -196,6 +200,9 @@ local function updateLines()
 		table.sort(sortedLines, sortFuncAsc)
 	else
 		table.sort(sortedLines, sortFuncDesc)
+	end
+	for i, v in ipairs(updateCallbacks) do
+		v(sortedLines)
 	end
 end
 
@@ -275,6 +282,7 @@ local function updateGoodPlayerDebuffs()
 	table.wipe(lines)
 	if IsInGroup() then
 		for uId in DBM:GetGroupMembers() do
+			if tankIgnored and (UnitGroupRolesAssigned(uId) == "TANK" or GetPartyAssignment("MAINTANK", uId, 1)) then break end
 			if not UnitDebuff(uId, GetSpellInfo(infoFrameThreshold)) and not UnitIsDeadOrGhost(uId) then
 				lines[UnitName(uId)] = ""
 			end
@@ -288,9 +296,25 @@ end
 local function updateBadPlayerDebuffs()
 	table.wipe(lines)
 	if IsInGroup() then
-		for uId in DBM:GetGroupMembers() do
+		for uId, i in DBM:GetGroupMembers() do
+			if tankIgnored and (UnitGroupRolesAssigned(uId) == "TANK" or GetPartyAssignment("MAINTANK", uId, 1)) then break end
 			if UnitDebuff(uId, GetSpellInfo(infoFrameThreshold)) and not UnitIsDeadOrGhost(uId) then
-				lines[UnitName(uId)] = ""
+				lines[UnitName(uId)] = i
+			end
+		end
+	end
+	updateLines()
+	updateIcons()
+end
+
+--Debuffs that are bad to have, but we want to show players who do NOT have them
+local function updateReverseBadPlayerDebuffs()
+	table.wipe(lines)
+	if IsInGroup() then
+		for uId, i in DBM:GetGroupMembers() do
+			if tankIgnored and (UnitGroupRolesAssigned(uId) == "TANK" or GetPartyAssignment("MAINTANK", uId, 1)) then break end
+			if not UnitDebuff(uId, GetSpellInfo(infoFrameThreshold)) and not UnitIsDeadOrGhost(uId) then
+				lines[UnitName(uId)] = i
 			end
 		end
 	end
@@ -356,9 +380,9 @@ end
 local function updatePlayerTargets()
 	table.wipe(lines)
 	if IsInGroup() then
-		for uId in DBM:GetGroupMembers() do
+		for uId, i in DBM:GetGroupMembers() do
 			if getUnitCreatureId(uId.."target") ~= infoFrameThreshold and (UnitGroupRolesAssigned(uId) == "DAMAGER" or UnitGroupRolesAssigned(uId) == "NONE") then
-				lines[UnitName(uId)] = ""
+				lines[UnitName(uId)] = i
 			end
 		end
 	end
@@ -388,6 +412,8 @@ function onUpdate(self, elapsed)
 		updateGoodPlayerDebuffs()
 	elseif currentEvent == "playerbaddebuff" then
 		updateBadPlayerDebuffs()
+	elseif currentEvent == "reverseplayerbaddebuff" then
+		updateReverseBadPlayerDebuffs()
 	elseif currentEvent == "playeraggro" then
 		updatePlayerAggro()
 	elseif currentEvent == "playerbuffstacks" then
@@ -422,7 +448,7 @@ function onUpdate(self, elapsed)
 				addedSelf = true
 				if currentEvent == "playerbuff" or currentEvent == "playerbaddebuff" or currentEvent == "playergooddebuff" or currentEvent == "health" or currentEvent == "playertargets" or (currentEvent == "playeraggro" and infoFrameThreshold == 3) then--Player name on frame bad a thing make it red.
 					self:AddDoubleLine(name, power, 255, 0, 0, 255, 255, 255)	-- (leftText, rightText, left.R, left.G, left.B, right.R, right.G, right.B)
-				elseif currentEvent == "playerbuffstacks" or (currentEvent == "playeraggro" and infoFrameThreshold == 0) or currentEvent == "enemypower" then--Player name on frame is a good thing, make it green
+				elseif currentEvent == "playerbuffstacks" or (currentEvent == "playeraggro" and infoFrameThreshold == 0) or currentEvent == "enemypower" or currentEvent == "reverseplayerbaddebuff" then--Player name on frame is a good thing, make it green
 					self:AddDoubleLine(name, power, 0, 255, 0, 255, 255, 255)	-- (leftText, rightText, left.R, left.G, left.B, right.R, right.G, right.B)
 				else--it's not defined a color, so default to white.
 					self:AddDoubleLine(name, power, color.R, color.G, color.B, 255, 255, 255)	-- (leftText, rightText, left.R, left.G, left.B, right.R, right.G, right.B)
@@ -442,7 +468,7 @@ end
 ---------------
 --  Methods  --
 ---------------
-function infoFrame:Show(maxLines, event, threshold, powerIndex, iconMod, extraPowerIndex, sortLowest, ...)
+function infoFrame:Show(maxLines, event, threshold, powerIndex, iconMod, extraPowerIndex, sortLowest, ignoreTank, ...)
 	if DBM.Options.DontShowInfoFrame and (event or 0) ~= "test" then return end
 	maxLines = maxLines or 5
 	
@@ -452,6 +478,7 @@ function infoFrame:Show(maxLines, event, threshold, powerIndex, iconMod, extraPo
 	iconModifier = iconMod
 	extraPIndex = extraPowerIndex
 	lowestFirst = sortLowest
+	tankIgnored = ignoreTank
 	currentEvent = event
 	frame = frame or createFrame()
 
@@ -471,6 +498,8 @@ function infoFrame:Show(maxLines, event, threshold, powerIndex, iconMod, extraPo
 		updateGoodPlayerDebuffs()
 	elseif event == "playerbaddebuff" then
 		updateBadPlayerDebuffs()
+	elseif currentEvent == "reverseplayerbaddebuff" then
+		updateReverseBadPlayerDebuffs()
 	elseif currentEvent == "playeraggro" then
 		updatePlayerAggro()
 	elseif currentEvent == "playerbuffstacks" then
@@ -489,6 +518,10 @@ function infoFrame:Show(maxLines, event, threshold, powerIndex, iconMod, extraPo
 	onUpdate(frame, 0)
 end
 
+function infoFrame:RegisterCallback(cb)
+	updateCallbacks[#updateCallbacks + 1] = cb
+end
+
 function infoFrame:Update(event)
 	if event == "health" then
 		updateHealth()
@@ -502,6 +535,8 @@ function infoFrame:Update(event)
 		updateGoodPlayerDebuffs()
 	elseif event == "playerbaddebuff" then
 		updateBadPlayerDebuffs()
+	elseif currentEvent == "reverseplayerbaddebuff" then
+		updateReverseBadPlayerDebuffs()
 	elseif event == "playeraggro" then
 		updatePlayerAggro()
 	elseif event == "playerbuffstacks" then
@@ -518,12 +553,16 @@ end
 function infoFrame:Hide()
 	table.wipe(lines)
 	table.wipe(sortedLines)
+	table.wipe(updateCallbacks)
 	headerText = "DBM Info Frame"
 	sortingAsc = false
 	infoFrameThreshold = nil
 	pIndex = nil
 	currentEvent = nil
 	maxlines = nil
+	lowestFirst = nil
+	tankIgnored = nil
+	extraPIndex = nil
 	if frame then
 		frame:Hide()
 	end

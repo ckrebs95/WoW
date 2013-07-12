@@ -1,0 +1,149 @@
+tag 5.3.4
+b6b46fc32a9d7d105e56552e6cff5fdc58d3ae2b
+subversion <svn@deadlybossmods.com>
+2013-07-02 22:19:54 +0200
+
+Tagging as 5.3.4
+
+
+--------------------
+
+subversion:
+	- increment version number to 5.3.4
+root:
+	- tandanu via svn r9947: typos
+	- Omega via svn r9946: fix ra-den bug.
+	- Omega via svn r9945: code improve last
+	- Omega via svn r9944: paragons stuff. incomplete do to limited testing. also a lot of abilities are too variable or bugged right now to add cds. Calculated stuff untested and pretty complicated so may be buggy
+	- Omega via svn r9943: some adjustments, no time to really work on mod now, cram testing, will finish it later
+	- Omega via svn r9942: another scan adjust
+	- Omega via svn r9941: target scan adjust
+	- Omega via svn r9940: remove some extra
+	- Omega via svn r9939: add some debug. expel corruption has multiple versions, need to identify which is which, unfortunately only dps and healers will even see it (meaning i won't ever see it)
+	- tandanu via svn r9938: typo
+	- tandanu via svn r9937: typos
+	- tandanu via svn r9936: typo
+	- Omega via svn r9935: missed one timer
+	- Omega via svn r9934: Malkorok mod done
+	- Omega via svn r9933: anti spam quick fix
+	- Omega via svn r9932: Ironjuggernaut, at least the spells that are named correctly in EJ. some spell names are flat out wrong making them difficult to find spellids for.
+	- Omega via svn r9931: small local tweak
+	- Omega via svn r9930: Blackfuse drycode
+	- Omega via svn r9929: Paragons of klaxxi finally fully drycoded. (hate council fights. ugg)
+	- Omega via svn r9928: Trigger timer off cast instead of applied for frostbite, for smokebomb strats
+	- Omega via svn r9927: some more paragons work, hard to get a lot done with so much other stuff to do on live :\
+	- Omega via svn r9926: ru update
+	- Omega via svn r9925: Small start on paragons mod. mainly for tanks pickups for now and preliminary activation stuff
+	- Omega via svn r9924: Add missed localization
+	- Omega via svn r9923: Ru Update Finish sha of pride mod Add Malkorok mod Fix a bug on tortos crystal shell warning
+	- Omega via svn r9922: missed one
+	- Omega via svn r9921: fix a variable name (wasn't broken, just wasn't conforming)
+	- Omega via svn r9920: real fix i hope
+	- ultrashining via svn r9919: zhTW update
+	- ultrashining via svn r9918: zhTW update
+	- Omega via svn r9917: Add in rest of flex raid stats GUI, just missing a global change over for 5.4
+	- Omega via svn r9916: more adjustments
+	- Omega via svn r9915: err, my mistake, this i mean
+	- Omega via svn r9914: try that
+	- Omega via svn r9913: that needs an antispam but looks good
+	- Omega via svn r9912: move fatal strike special warning to be useful
+	- Omega via svn r9911: more fixes, small feature add
+	- Omega via svn r9910: fix another bug
+	- Omega via svn r9909: maybe this fix it? i dunno. maybe callback is just not gonna work
+	- Omega via svn r9908: test some mod fixes
+	- Omega via svn r9907: fix an obvious typo "players" is not a valid unit id
+	- tandanu via svn r9906: add warnings for vita soaker
+	- tandanu via svn r9905: add infoframe callbacks
+	- Omega via svn r9904: add some warnings and localizing while tandanu fixes other code bits
+	- ebmor via svn r9903: deDE update
+	- tandanu via svn r9902: InfoFrame now sorts by raid id for previously unsorted events
+	- Omega via svn r9901: hide info frame on combat end
+	- Omega via svn r9900: Add ra-den infoframe that will show players without vita sensitivity Also fixed some other infoframe bugs were sorting or extra power might fail to reset after a boss fight.
+	- Omega via svn r9899: switch that to mapID since instanceID will not properly filter movies outside of instances
+	- Omega via svn r9898: Seems there are no args in Cinematic_start :\
+	- Omega via svn r9897: small tweak
+	- Omega via svn r9896: add debug to that cause i have no idea if that's right arg or if it even works that way
+	- Omega via svn r9895: untested cinematic code changes.
+	- Omega via svn r9894: Fix second bouncing bolt timer on heroic. 303 pulls, and i watched timer be 2 seconds off 303 times, and never got around to fixing it, oops.
+	- Omega via svn r9893: Sha of tables, er, pride. (SOO MANY multi target abilities)
+	- Omega via svn r9892: Norushen drycode Some small updates to Fallen protectors and Dark shaman
+	- Omega via svn r9891: Fix interrupt warning in crypt of kings
+	- ebmor via svn r9890: fix SiegeOfOrgrimmar load errors on live; deDE update
+	- Omega via svn r9889: GeneralNazgrim mod commit
+	- ebmor via svn r9888: fix defect auto-load of brawlers mod
+	- Omega via svn r9887: commit my Immerseus mod
+	- Omega via svn r9886: Prep a General Nazgrim mod
+	- Omega via svn r9885: oh, and add other CID
+	- Omega via svn r9884: The rest of Dark Shaman mod
+	- Omega via svn r9883: Fix scenario startcombat
+	- Omega via svn r9882: Prep Immerseus mod for tomorrow
+	- Omega via svn r9881: And, that should be a complete Fallen protectors mod (well minus berserk, no idea what that is)
+	- Omega via svn r9880: and another error fix
+	- Omega via svn r9879: fix another bug
+	- Omega via svn r9878: this should fix mods
+	- Omega via svn r9877: remove the build checks, just flat don't work, will just deal with the lua errors on live
+	- nbluewiz via svn r9876: # koKR update.
+	- Omega via svn r9875: A complete drycode of second boss tested tomorrow added missing CIDs for rest of SoO
+	- Omega via svn r9874: Some CIDS for org raid, still missing some
+	- Omega via svn r9873: delay unregister so diffusion spread warning works in second intermission
+	- Omega via svn r9872: Did i mention how much i hate council mods? anyways, here is a full drycode for tomorrows first test. Fallen protectors. It just needs a CIDs to be functional.
+	- Omega via svn r9871: Xuen and Yulon
+	- Omega via svn r9870: Ordos
+	- Omega via svn r9869: fix bug in core
+	- Omega via svn r9868: Niuzao, The Black Ox
+	- Omega via svn r9867: Chi-Ji, The Red Crane mod Small resort in mod order (to match Encounter Journal)
+	- Omega via svn r9866: creatureids for all 5 world bosses on isle of timeless
+	- ebmor via svn r9865: deDE update
+	- Omega via svn r9864: more 5.4 prep Plus some reduced calls that were redundant and inefficient.
+	- Omega via svn r9863: change that icon to star. my guild uses skull and x as kill targets on this fight, i imagine others do as well.
+	- oscarucb via svn r9862: add an icon on Dark Animus Anima Font target
+	- Omega via svn r9861: comment out bad CIDs
+	- Omega via svn r9860: TOC is still 50300 in 5.4, so have to use a diff method for checking Add pandaria mods for 5.4
+	- Omega via svn r9859: small fix for non heroic. so bouncing bolt and diffusion countdowns always enabled, cause in non heroic it's impossible to have both at same time.
+	- ultrashining via svn r9858: zhTW update
+	- Omega via svn r9857: fix logic fail in SoO loading
+	- Omega via svn r9856: Ahune now has INSTANCE_ENCOUNTER_ENGAGE_UNIT event so switch it to combat (besides, the say was removed apparently.) Update timer, they have changed somewhat.
+	- Omega via svn r9855: #fix a flaw in lei shen mod where it disabled timers and range frame during intermission on heroic if a conduit is overloaded. no abilities are ever disabled during intermission on heroic. #Also fix it opening range frame to 6 (instead of 8) on heroic after intermission if diffusion chain is overloaded.
+	- Omega via svn r9854: #improve conduit bars some. add timer for first conduit of phase 1 and phase 2 (obviously a generic bar as which conduit that is is determined after bar starts) #Fix countdown for diffusion and bouncing bolt so that they work like this: *If using diffusion strat, play sounds on both diffusion and bouncing when only one of either one is up. if BOTH are active, prefer the countdown for diffusion conduit. *if using bouncing strat, play both when solo, prefer bouncing count when both are active. #Improved spread warning to only go off if there is an actual spread. also made it filter cast target so it only announces the spreads (since cast target is already announced in other warning)
+	- Omega via svn r9853: there is no 12345, so lets use Joe's god mode
+	- Omega via svn r9852: add countdown for diffusion. shouldn't have it and bouncing at same time, ever. so kolt voice good here too
+	- Omega via svn r9851: more test stuff
+	- Omega via svn r9850: some testing
+	- Omega via svn r9849: fix another error
+	- Omega via svn r9848: better ptr fix
+	- Omega via svn r9847: add buff active timer for mass spell reflect
+	- Omega via svn r9846: fix another Lei shen bug
+	- Omega via svn r9845: fix a messup
+	- Omega via svn r9844: revert 45 sec change for phase 3. unfortunately it's not quite that simple. todo, see if i can auto correct timers mid fight. they are still 40 second cds but a lower cast priority than thunderstruck, lightning whip and balls. as such, often delayed by 1-5 seconds which is why seeing 45 second spacing is common (but not a guarentee)
+	- Omega via svn r9843: Fix couple holiday bosses
+	- Omega via svn r9842: Lei shen updates: Add optional warning (off by default) to announce diffusion spread targets Add mass spell reflect helper warnings Change gorefriends grasp warnings to count warnings
+	- Omega via svn r9841: it appears for mods that require combat detection, setzone is required, so be it. world bosses will setzone the entirety of pandaria, kalimdor, eastern kingdoms and outlands. they register events in combat anyways
+	- Omega via svn r9840: This should fix nalak and plants
+	- Omega via svn r9839: This should fix pull timers, and maybe world boss behaviors too
+	- Omega via svn r9838: refix world bosses, have to use mod:SetZone(DBM_DISABLE_ZONE_DETECTION) not just remove it
+	- Omega via svn r9837: small code refactor so SetMapToCurrentZone isn't called more than needed.
+	- Omega via svn r9836: Fixes to last, tested working now.
+	- Omega via svn r9835: move zone change event handlers to range frame, only register them when needed.
+	- Omega via svn r9834: remove setzone from outdoor encounters, since it won't work with new method. most of them should only register events in combat anyways.
+	- Omega via svn r9833: ##F*ck the map. ##(All map based loading has been deleted!!!. All mods are now loaded using new method only.)
+	- Omega via svn r9832: Fix crypt of kings bug causing relentless warnings not to work Added fear and guardian strike warnings for Maragor
+	- ultrashining via svn r9831: zhTW update
+	- Omega via svn r9830: double frequency of crashing thunder warning
+	- Omega via svn r9829: add synced check to that
+	- Omega via svn r9828: ignore boss pulls in world if you aren't in combat. seeing nalak pulled/wiped in an endless loop cause a guildy is fighting nalak when i'm not is annoying.
+	- Omega via svn r9827: add a trivial check method. gonna be refining old mods for things like "standing in crap" to choose whether or not to warn based on this check. abilities become irrelevant at a certain point and people want to run old mods without warnings yelling at 90s telling em they should move out of that fire that's doing like 500 damage per second to their 1Million HP health pool :)
+	- Omega via svn r9826: kill infinite loop, that part of debug not necessary, just nil check should fix problem
+	- Omega via svn r9825: not sure why "addmsg" is a nil value, so change them to prints, addmsg almost never works when i try to use it.
+	- Omega via svn r9824: Add some stuff, reference http://elitistjerks.com/f104/t132814-lua_error_lfr_tot_zone/
+	- Omega via svn r9823: Missed couple special warnings
+	- Omega via svn r9822: more counts on lei shen. Reset counts on phase 3 start.
+	- Omega via svn r9821: Fix phase 3 heroic pillar timers. (they are 45 here, not 40)
+	- ultrashining via svn r9820: zhTW update
+	- Omega via svn r9819: seems working but needs throttle
+	- Omega via svn r9818: lets try again to make this tank debuff work on lei shen
+	- Omega via svn r9817: fix a div by 0 on ptr do to blizz bug
+	- Omega via svn r9816: Some twin consorts requests
+	- Omega via svn r9815: Hopefully fix dark parasite warning on durumu
+	- ebmor via svn r9814: deDE update
+	- ebmor via svn r9813: deDE update
+	- tandanu via svn r9812: increment version number for alphas

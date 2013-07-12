@@ -25,8 +25,8 @@
 ## X-DBM-Mod-Name-frFR: Bastonneurs
 ## X-DBM-Mod-Name-ruRU: Бойцовская гильдия
 ## X-DBM-Mod-Sort: 30
-## X-DBM-Mod-LoadZoneID: 922,925
-## X-Curse-Packaged-Version: 5.3.3
+## X-DBM-Mod-MapID: 369,1043
+## X-Curse-Packaged-Version: 5.3.4
 ## X-Curse-Project-Name: Deadly Boss Mods
 ## X-Curse-Project-ID: deadly-boss-mods
 ## X-Curse-Repository-ID: wow/deadly-boss-mods/mainline

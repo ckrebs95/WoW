@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Golemagg", "DBM-MC", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 452 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 477 $"):sub(12, -3))
 mod:SetCreatureID(11988)--, 11672
 mod:SetModelID(11986)
 mod:RegisterCombat("combat")
@@ -12,7 +12,7 @@ mod:RegisterEvents(
 )
 
 local warnTrust		= mod:NewSpellAnnounce(20553)
-local warnP2Soon	= mod:NewAnnounce("WarnP2Soon")
+local warnP2Soon	= mod:NewPrePhaseAnnounce(2)
 local warnP2		= mod:NewPhaseAnnounce(2)
 
 local prewarn_p2

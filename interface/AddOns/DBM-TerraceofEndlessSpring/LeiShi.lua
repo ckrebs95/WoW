@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(729, "DBM-TerraceofEndlessSpring", nil, 320)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9683 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9871 $"):sub(12, -3))
 mod:SetCreatureID(62983)--62995 Animated Protector
 
 mod:RegisterCombat("combat")
@@ -219,13 +219,14 @@ function mod:SPELL_AURA_APPLIED(args)
 	elseif args.spellId == 123121 then
 		local uId = DBM:GetRaidUnitId(args.destName)
 		if self:IsTanking(uId, "boss1") then--Only want sprays that are on tanks, not bads standing on tanks.
+			local amount = args.amount or 1
 			timerSpray:Start(args.destName)
-			if (args.amount or 1) % 3 == 0 then
-				warnSpray:Show(args.destName, args.amount)
-				if args.amount >= 6 and args:IsPlayer() then
-					specWarnSpray:Show(args.amount)
+			if amount % 3 == 0 then
+				warnSpray:Show(args.destName, amount)
+				if amount >= 6 and args:IsPlayer() then
+					specWarnSpray:Show(amount)
 				else
-					if args.amount >= 6 and not UnitDebuff("player", GetSpellInfo(123121)) and not UnitIsDeadOrGhost("player") then
+					if amount >= 6 and not UnitDebuff("player", GetSpellInfo(123121)) and not UnitIsDeadOrGhost("player") then
 						specWarnSprayOther:Show(args.destName)
 					end
 				end

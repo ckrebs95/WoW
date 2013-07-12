@@ -1,9 +1,9 @@
 local mod	= DBM:NewMod("Onyxia", "DBM-Onyxia")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 59 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 63 $"):sub(12, -3))
 mod:SetCreatureID(10184)
-mod:SetZone(141, 718)--We don't want it to load in 141, unfortunately we got an issue where ZCNA doesn't fire inside so LastZoneID will be 141, so we ensure mod still works even if DBM thinks we are in dustwallow
+mod:SetZone()
 mod:SetModelID(8570)
 
 mod:RegisterCombat("combat")

@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Viscidus", "DBM-AQ40", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 433 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 477 $"):sub(12, -3))
 mod:SetCreatureID(15299)
 mod:SetModelID(15686)
 mod:SetMinSyncRevision(428)
@@ -12,8 +12,8 @@ mod:RegisterEvents(
 	"CHAT_MSG_MONSTER_EMOTE"
 )
 
-local warnFreeze		= mod:NewAnnounce("WarnFreeze", 2)
-local warnShatter		= mod:NewAnnounce("WarnShatter", 2)
+local warnFreeze		= mod:NewAnnounce("WarnFreeze", 2, 33395)
+local warnShatter		= mod:NewAnnounce("WarnShatter", 2, 12982)
 
 local timerFrozen		= mod:NewBuffActiveTimer(30, 25937)
 

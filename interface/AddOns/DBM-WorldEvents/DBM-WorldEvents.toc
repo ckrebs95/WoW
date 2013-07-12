@@ -35,9 +35,9 @@
 ## X-DBM-Mod-Name-deDE: Weltereignisse
 ## X-DBM-Mod-Name-ptBR: Eventos Mundiais
 ## X-DBM-Mod-Name-frFR: Évènements Mondiaux
+## X-DBM-Mod-MapID: 230,189,33,547,974,1
 ## X-DBM-Mod-Sort: 50
-## X-DBM-Mod-LoadZoneID: 704,762,764,728,823
-## X-Curse-Packaged-Version: 5.3.3
+## X-Curse-Packaged-Version: 5.3.4
 ## X-Curse-Project-Name: Deadly Boss Mods
 ## X-Curse-Project-ID: deadly-boss-mods
 ## X-Curse-Repository-ID: wow/deadly-boss-mods/mainline

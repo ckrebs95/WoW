@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(831, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9678 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9946 $"):sub(12, -3))
 mod:SetCreatureID(69473)--69888
 mod:SetQuestID(32753)
 mod:SetZone()
@@ -14,7 +14,9 @@ mod:RegisterEventsInCombat(
 	"SPELL_CAST_START",
 	"SPELL_CAST_SUCCESS",
 	"SPELL_AURA_APPLIED",
-	"UNIT_SPELLCAST_SUCCEEDED boss1"
+	"SPELL_AURA_REMOVED",
+	"UNIT_SPELLCAST_SUCCEEDED boss1",
+	"UNIT_POWER_FREQUENT boss1"
 )
 
 --Anima
@@ -25,7 +27,8 @@ local warnSanguineHorror		= mod:NewCountAnnounce(138338, 3, nil, not mod:IsHeale
 --Vita
 local warnVita					= mod:NewSpellAnnounce(138332, 2)--Switched to vita phase
 local warnFatalStrike			= mod:NewSpellAnnounce(138334, 4, nil, mod:IsTank() or mod:IsHealer())--Tank (think thrash, like sha. Gains buff, uses on next melee attack)
-local warnUnstableVita			= mod:NewTargetAnnounce(138297, 3)
+local warnVitaSoakerSoon		= mod:NewAnnounce("warnVitaSoakerSoon", 2, 138297)
+local warnUnstableVita			= mod:NewTargetAnnounce(138297, 4)
 local warnCracklingStalker		= mod:NewCountAnnounce(138339, 3, nil, not mod:IsHealer())--Adds
 --General
 local warnCreation				= mod:NewCountAnnounce(138321, 3)--aka Orbs/Balls
@@ -42,7 +45,9 @@ local yellUnstableAnima			= mod:NewYell(138288, nil, false)
 local specWarnFatalStrike		= mod:NewSpecialWarningSpell(138334, mod:IsTank(), nil, nil, 3)
 local specWarnCracklingStalker	= mod:NewSpecialWarningSwitch(138339, mod:IsRangedDps() or mod:IsTank())
 local specWarnVitaSensitive		= mod:NewSpecialWarningYou(138372)
+local specWarnVitaSoaker		= mod:NewSpecialWarning("specWarnVitaSoaker")
 local specWarnUnstablVita		= mod:NewSpecialWarningYou(138297, nil, nil, nil, 3)
+local specWarnUnstablVitaJump	= mod:NewSpecialWarningYou(138308, nil, nil, nil, 1)
 local yellUnstableVita			= mod:NewYell(138297, nil, false)
 --General
 local specWarnCreation			= mod:NewSpecialWarningSpell(138321, mod:IsDps())
@@ -60,8 +65,10 @@ local timerCreationCD			= mod:NewCDCountTimer(32.5, 138321)--32.5-35second varia
 local timerCallEssenceCD		= mod:NewNextTimer(15.5, 139040)
 
 local countdownUnstableVita		= mod:NewCountdownFades(11, 138297)
+local countdownCreation			= mod:NewCountdown(32.5, 138321, nil, nil, nil, nil, true)
 
 mod:AddBoolOption("SetIconsOnVita", false)--Both the vita target and furthest from vita target
+mod:AddBoolOption("InfoFrame")
 
 local creationCount = 0
 local stalkerCount = 0
@@ -69,6 +76,12 @@ local horrorCount = 0
 local lastStalker = 0
 local playerWithVita = nil
 local furthestDistancePlayer = nil
+local lastfurthestDistancePlayer = nil
+local lastPlayerOne = nil
+local lastPlayerTwo = nil
+local playerName = UnitName("player")
+local vitaName = GetSpellInfo(138332)
+local animaName = GetSpellInfo(138331)
 
 function mod:checkVitaDistance()
 	if not playerWithVita then--Failsafe more or less. This shouldn't happen unless combat log lag fires events out of order
@@ -85,15 +98,45 @@ function mod:checkVitaDistance()
 			end
 		end
 	end
-	SetRaidTarget(furthestDistancePlayer, 2)
+	if furthestDistancePlayer ~= lastfurthestDistancePlayer then--Set icon throttling to avoid hitting blizzard throttle
+		SetRaidTarget(furthestDistancePlayer, 2)
+		lastfurthestDistancePlayer = furthestDistancePlayer
+	end
 	self:ScheduleMethod(1, "checkVitaDistance")
+end
+
+local function infoFrameChanged(players)
+	if players[1] == playerName and playerName ~= lastPlayerOne then
+		specWarnVitaSoaker:Show()
+	elseif players[2] == playerName and playerName ~= lastPlayerTwo then
+		warnVitaSoakerSoon:Show()
+	end
+	lastPlayerOne = players[1]
+	lastPlayerTwo = players[2]
 end
 
 function mod:OnCombatStart(delay)
 	creationCount = 0
 	stalkerCount = 0
 	horrorCount = 0
+	lastPlayerOne = nil
+	lastPlayerTwo = nil
 	timerCreationCD:Start(11-delay, 1)
+	countdownCreation:Start(11-delay)
+	if self.Options.InfoFrame then
+		DBM.InfoFrame:SetHeader(L.NoSensitivity)
+		DBM.InfoFrame:Show(10, "reverseplayerbaddebuff", 138372, nil, nil, nil, true, true)
+		DBM.InfoFrame:RegisterCallback(infoFrameChanged)
+	elseif self.Options[specWarnVitaSoaker.option or ""] or self.Options[warnVitaSoakerSoon.option or ""] then
+		self:AddMsg(L.VitaSoakerOptionConflict)
+	end
+
+end
+
+function mod:OnCombatEnd()
+	if self.Options.InfoFrame then
+		DBM.InfoFrame:Hide()
+	end
 end
 
 function mod:SPELL_CAST_START(args)
@@ -113,16 +156,16 @@ function mod:SPELL_CAST_START(args)
 		warnCreation:Show(creationCount)
 		specWarnCreation:Show()
 		timerCreationCD:Start(nil, creationCount+1)
+		countdownCreation:Start()
 	end
 end
 
 function mod:SPELL_CAST_SUCCESS(args)
 	if args.spellId == 138333 then
 		warnMurderousStrike:Show()
-		specWarnMurderousStrike:Show()
+		timerMurderousStrikeCD:Start()
 	elseif args.spellId == 138334 then
 		warnFatalStrike:Show()
-		specWarnFatalStrike:Show()
 		timerFatalStrikeCD:Start()
 	end
 end
@@ -166,18 +209,31 @@ function mod:SPELL_AURA_APPLIED(args)
 			specWarnUnstableAnima:Show()
 			yellUnstableAnima:Yell()
 		end
-	elseif args:IsSpellID(138297, 138308) then--Unstable Vita
+	elseif args:IsSpellID(138297, 138308) then--Unstable Vita (138297 cast, 138308 jump)
 		if self.Options.SetIconsOnVita then
 			playerWithVita = DBM:GetRaidUnitId(args.destName)
 			self:SetIcon(args.destName, 1)
-			self:ScheduleMethod(6, "checkVitaDistance")--Wait about 6 seconds for initial. don't want to spam icons before next target actually runs out. May raise initial even higher, debuff is 12 seconds. so maybe 7-8 if 6 too soon 
 		end
 		warnUnstableVita:Show(args.destName)
-		timerUnstableVita:Start(args.destName)
+		if self:IsDifficulty("heroic25") then
+			timerUnstableVita:Start(5, args.destName)
+			self:ScheduleMethod(1, "checkVitaDistance")--4 seconds before
+		else
+			timerUnstableVita:Start(args.destName)
+			self:ScheduleMethod(8, "checkVitaDistance")--4 seconds before
+		end
 		if args:IsPlayer() then
-			specWarnUnstablVita:Show()
+			if args.spellId == 138297 then
+				specWarnUnstablVita:Show()
+			else
+				specWarnUnstablVitaJump:Show()
+			end
 			yellUnstableVita:Yell()
-			countdownUnstableVita:Start()
+			if self:IsDifficulty("heroic25") then
+				countdownUnstableVita:Start(5)
+			else
+				countdownUnstableVita:Start()
+			end
 		end
 	end
 end
@@ -203,19 +259,27 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 		warnCallEssence:Show()
 		specWarnCallEssence:Show()
 		timerCallEssenceCD:Start()
+		countdownCreation:Start(15)
 	elseif spellId == 139073 then--Phase 2 (the Ruin Trigger)
-		self:SendSync("Phase2")
-	end
-end
-
-function mod:OnSync(msg)
-	if msg == "Phase2" then
 		warnPhase2:Show()
 		timerCracklingStalkerCD:Cancel()
 --		timerSanguineHorrorCD:Cancel()
 		timerMurderousStrikeCD:Cancel()
 		timerFatalStrikeCD:Cancel()
 		timerCreationCD:Cancel()
+		countdownCreation:Cancel()
 		timerCallEssenceCD:Start()
+		if self.Options.InfoFrame then
+			DBM.InfoFrame:Hide()
+		end
+	end
+end
+
+function mod:UNIT_POWER_FREQUENT(uId)
+	local power = UnitPower(uId)
+	if power == 90 and UnitBuff(uId, vitaName) and self:AntiSpam(3, 1) then
+		specWarnFatalStrike:Show()
+	elseif power == 96 and UnitBuff(uId, animaName) and self:AntiSpam(3, 2) then
+		specWarnMurderousStrike:Show()
 	end
 end

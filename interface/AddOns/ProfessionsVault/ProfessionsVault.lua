@@ -10,7 +10,7 @@ local PVLDB
 local minimapIcon = LibStub("LibDBIcon-1.0")
 vars.svnrev = vars.svnrev or {}
 local svnrev = vars.svnrev
-svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 487 $"):match("%d+"))
+svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 493 $"):match("%d+"))
 local DB_VERSION_MAJOR = 1
 local DB_VERSION_MINOR = 4
 local _G = _G
@@ -4478,8 +4478,15 @@ function addon:ShowTooltip(tt)
 	recipeClasses = recipeClasses or text:match(recipeMatchClass)
 	local races = text:match(recipeMatchRace)
 	if races and not recipeFaction then
-	  local r = UnitRace("player")
+	  local r,ru = UnitRace("player")
 	  local f = UnitFactionGroup("player")
+	  if ru == "Pandaren" then
+	    if f == "Alliance" then
+	      r = L["Human"]
+	    else
+	      r = L["Orc"]
+	    end
+	  end
 	  if races:match(r) then
 	    recipeFaction = f
 	  else

@@ -15,8 +15,8 @@
 ## X-DBM-Mod-Category: MOP
 ## X-DBM-Mod-Has-Single-Format: 1
 ## X-DBM-Mod-Sort: 5
-## X-DBM-Mod-MapID: 870
-## X-Curse-Packaged-Version: 5.3.3
+## X-DBM-Mod-MapID: 870,1064
+## X-Curse-Packaged-Version: 5.3.4
 ## X-Curse-Project-Name: Deadly Boss Mods
 ## X-Curse-Project-ID: deadly-boss-mods
 ## X-Curse-Repository-ID: wow/deadly-boss-mods/mainline
@@ -31,5 +31,10 @@ localization.cn.lua
 localization.br.lua
 Anger.lua
 Salyis.lua
-Oondasta.lua
 Nalak.lua
+Oondasta.lua
+ChiJi.lua
+Yulon.lua
+Niuzao.lua
+Xuen.lua
+Ordos.lua

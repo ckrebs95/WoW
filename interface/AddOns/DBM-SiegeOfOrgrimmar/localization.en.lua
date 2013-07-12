@@ -1,4 +1,3 @@
-if select(4, GetBuildInfo()) >= 50400 then return end
 local L
 
 ---------------
@@ -49,6 +48,8 @@ L:SetWarningLocalization({
 })
 
 L:SetOptionLocalization({
+	SetIconOnMark		= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(144351),
+	InfoFrame			= "Show info frame for $journal:8255"
 })
 
 L:SetMiscLocalization({
@@ -80,6 +81,7 @@ L:SetTimerLocalization({
 })
 
 L:SetOptionLocalization({
+	RangeFrame				= DBM_CORE_AUTO_RANGE_OPTION_TEXT:format(6, 144154)
 })
 
 L:SetMiscLocalization({
@@ -94,6 +96,8 @@ L:SetWarningLocalization({
 })
 
 L:SetOptionLocalization({
+	SetIconOnToxicMists		= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(144089),
+	RangeFrame				= DBM_CORE_AUTO_RANGE_OPTION_TEXT:format(4, 143990)
 })
 
 L:SetMiscLocalization({
@@ -110,6 +114,14 @@ L:SetWarningLocalization({
 L:SetOptionLocalization({
 })
 
+L:SetMiscLocalization({
+	newForces1				= "Warriors, on the double!",
+	newForces2				= "Defend the gate!",
+	newForces3				= "Rally the forces!",
+	newForces4				= "Kor'kron, at my side!",
+	newForces5				= "Next squad, to the front!"
+})
+
 -----------------
 -- Malkorok -----
 -----------------
@@ -119,9 +131,12 @@ L:SetWarningLocalization({
 })
 
 L:SetOptionLocalization({
+	SetIconOnDisplacedEnergy= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(142913),
+	RangeFrame				= DBM_CORE_AUTO_RANGE_OPTION_TEXT_SHORT:format("8/5")
 })
 
 L:SetMiscLocalization({
+	bloodRageEnds	= "subsides!"
 })
 
 ------------------------
@@ -171,10 +186,24 @@ L:SetMiscLocalization({
 ----------------------------
 L= DBM:GetModLocalization(853)
 
+L:SetWarningLocalization({
+	specWarnActivatedVulnerable		= "You are vulnerable to %s - Avoid!",
+	specWarnCriteriaLinked			= "You are linked to %s!"
+})
+
 L:SetOptionLocalization({
+	warnToxicCatalyst				= DBM_CORE_AUTO_ANNOUNCE_OPTIONS.spell:format("ej8036"),
+	specWarnToxicInjection			= DBM_CORE_AUTO_SPEC_WARN_OPTIONS.you:format(142528),
+	specWarnToxicCatalyst			= DBM_CORE_AUTO_SPEC_WARN_OPTIONS.you:format("ej8036"),
+	specWarnActivatedVulnerable		= "Show special warning when a paragon you are vulnerable to activates",
+	specWarnCriteriaLinked			= "Show special warning when you are linked to $spell:144095",
+	SetIconOnAim					= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(142948),
+	yellToxicCatalyst				= DBM_CORE_AUTO_YELL_OPTION_TEXT:format("ej8036"),
+	RangeFrame						= DBM_CORE_AUTO_RANGE_OPTION_TEXT_SHORT:format("6/5")
 })
 
 L:SetMiscLocalization({
+	calculatedTarget	= "calculating eye!"
 })
 
 ------------------------
@@ -194,7 +223,7 @@ L:SetMiscLocalization({
 L = DBM:GetModLocalization("FoOTrash")
 
 L:SetGeneralLocalization({
-	name =	"Fall of Orgrimmar Trash"
+	name =	"Siege of Orgrimmar Trash"
 })
 
 L:SetOptionLocalization({

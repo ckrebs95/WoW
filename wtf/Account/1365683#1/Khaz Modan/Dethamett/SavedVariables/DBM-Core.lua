@@ -12,24 +12,24 @@ DBM_SavedOptions = {
 	["RangeFrameX"] = 50,
 	["WarningColors"] = {
 		{
-			["b"] = 0.94,
-			["g"] = 0.8,
 			["r"] = 0.41,
+			["g"] = 0.8,
+			["b"] = 0.94,
 		}, -- [1]
 		{
-			["b"] = 0,
-			["g"] = 0.95,
 			["r"] = 0.95,
+			["g"] = 0.95,
+			["b"] = 0,
 		}, -- [2]
 		{
-			["b"] = 0,
-			["g"] = 0.5,
 			["r"] = 1,
+			["g"] = 0.5,
+			["b"] = 0,
 		}, -- [3]
 		{
-			["b"] = 0.1,
-			["g"] = 0.1,
 			["r"] = 1,
+			["g"] = 0.1,
+			["b"] = 0.1,
 		}, -- [4]
 	},
 	["AlwaysShowSpeedKillTimer"] = true,
@@ -68,12 +68,18 @@ DBM_SavedOptions = {
 	["DontSetIcons"] = false,
 	["BigBrotherAnnounceToRaid"] = false,
 	["CountdownVoice"] = "Corsica",
-	["DontShowPT"] = true,
+	["HPFrameMaxEntries"] = 5,
+	["LastRevision"] = 8086,
+	["DontSendBossWhispers"] = false,
 	["InfoFrameY"] = -75,
 	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
 	["AutoRespond"] = true,
 	["HealthFrameGrowUp"] = false,
-	["ChatFrame"] = "DEFAULT_CHAT_FRAME",
+	["SpecialWarningFontColor"] = {
+		0, -- [1]
+		0, -- [2]
+		1, -- [3]
+	},
 	["RangeFrameFrames"] = "radar",
 	["RangeFrameRadarX"] = 100,
 	["ShowBigBrotherOnCombatStart"] = false,
@@ -83,52 +89,48 @@ DBM_SavedOptions = {
 	["ShowRecoveryMessage"] = true,
 	["DontShowInfoFrame"] = false,
 	["DontShowRangeFrame"] = false,
-	["ShowCountdownText"] = false,
+	["ForumsMessageShown"] = 9413,
 	["InfoFrameShowSelf"] = false,
 	["SpecialWarningFont"] = "Fonts\\FRIZQT__.TTF",
 	["DontShowPTCountdownText"] = false,
-	["ShowLoadMessage"] = true,
+	["BlockVersionUpdateNotice"] = false,
 	["SpamBlockRaidWarning"] = true,
 	["ShowFakedRaidWarnings"] = false,
 	["LatencyThreshold"] = 200,
-	["BlockVersionUpdateNotice"] = false,
+	["ShowLoadMessage"] = true,
 	["HealthFrameLocked"] = false,
-	["AutologBosses"] = false,
+	["ShowSpecialWarnings"] = true,
 	["DontShowBossAnnounces"] = false,
 	["SetPlayerRole"] = true,
 	["DisableCinematicsOutside"] = false,
 	["RangeFramePoint"] = "CENTER",
-	["LastRevision"] = 8086,
-	["RangeFrameLocked"] = false,
-	["SpecialWarningSound2"] = "Sound\\Creature\\AlgalonTheObserver\\UR_Algalon_BHole01.wav",
+	["WarningIconChat"] = true,
+	["HideBossEmoteFrame"] = false,
+	["ArrowPosY"] = -150,
 	["WarningIconRight"] = true,
-	["HPFrameMaxEntries"] = 5,
+	["AdvancedAutologBosses"] = false,
 	["ShowPizzaMessage"] = true,
 	["RangeFrameSound2"] = "none",
 	["ShowLHFrame"] = true,
 	["RangeFrameRadarY"] = -100,
-	["AdvancedAutologBosses"] = false,
+	["DontShowPTText"] = false,
 	["Enabled"] = true,
-	["ArrowPosY"] = -150,
-	["HideBossEmoteFrame"] = false,
+	["SpecialWarningSound2"] = "Sound\\Creature\\AlgalonTheObserver\\UR_Algalon_BHole01.wav",
+	["RangeFrameLocked"] = false,
 	["DisableCinematics"] = false,
 	["MovieFilters"] = {
 	},
-	["ShowSpecialWarnings"] = true,
+	["AutologBosses"] = false,
 	["ShowWipeMessage"] = true,
 	["LogOnlyRaidBosses"] = false,
 	["StripServerName"] = true,
-	["ForumsMessageShown"] = 9413,
+	["ShowCountdownText"] = false,
 	["AlwaysShowHealthFrame"] = false,
 	["HPFrameX"] = -50,
 	["ChallengeBest"] = "Realm",
 	["SpamBlockBossWhispers"] = false,
-	["SpecialWarningFontColor"] = {
-		0, -- [1]
-		0, -- [2]
-		1, -- [3]
-	},
-	["DontSendBossWhispers"] = false,
+	["ChatFrame"] = "DEFAULT_CHAT_FRAME",
+	["DontShowPT"] = true,
 }
 DBT_SavedOptions = {
 	["DBM"] = {

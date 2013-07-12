@@ -1446,8 +1446,25 @@ BeanCounterDB = {
 			["vendorsell"] = {
 			},
 			["postedBids"] = {
+				["2318"] = {
+					["item:2318:0:0:0:0:0:0:1289926144:80:0:0"] = {
+					},
+				},
+				["2673"] = {
+					["item:2673:0:0:0:0:0:0:1227003520:80:0:0"] = {
+					},
+				},
 			},
 			["postedAuctions"] = {
+				["10978"] = {
+					["item:10978:0:0:0:0:0:0:1165574272:80:0:0"] = {
+						"1;5317;5908;2880;100;1373450775;", -- [1]
+					},
+				},
+				["10940"] = {
+					["item:10940:0:0:0:0:0:0:322980480:80:0:0"] = {
+					},
+				},
 			},
 			["completedBidsBuyoutsNeutral"] = {
 			},
@@ -1460,12 +1477,27 @@ BeanCounterDB = {
 			["failedBids"] = {
 			},
 			["completedAuctions"] = {
+				["10940"] = {
+					["item:10940:0:0:0:0:0:0:322980480:80:0:0"] = {
+						"5;107754;100;5666;113320;111990;Jóhn;1373571553;;A", -- [1]
+					},
+				},
 			},
 			["failedAuctionsNeutral"] = {
 			},
 			["completedAuctionsNeutral"] = {
 			},
 			["completedBidsBuyouts"] = {
+				["2318"] = {
+					["item:2318:0:0:0:0:0:0:1289926144:80:0:0"] = {
+						"2;;;;19305;19305;Fireatwill;1372906470;;A", -- [1]
+					},
+				},
+				["2673"] = {
+					["item:2673:0:0:0:0:0:0:1227003520:80:0:0"] = {
+						"1;;;;5043;5043;Healendaii;1373166900;;A", -- [1]
+					},
+				},
 			},
 		},
 		["Dethamett"] = {
@@ -4004,11 +4036,11 @@ BeanCounterDB = {
 				},
 				["79011"] = {
 					["item:79011:0:0:0:0:0:0:0:80:0"] = {
-						"20;;;;784000;784000;Xeroc;1364292417;;A", -- [1]
+						"20;;;;803250;803250;Heirus;1364292430;;A", -- [1]
 						"20;;;;803250;803250;Heirus;1364292424;;A", -- [2]
-						"20;;;;784000;784000;Xeroc;1364292412;;A", -- [3]
-						"20;;;;800000;800000;Didkid;1364292421;;A", -- [4]
-						"20;;;;803250;803250;Heirus;1364292430;;A", -- [5]
+						"20;;;;800000;800000;Didkid;1364292421;;A", -- [3]
+						"20;;;;784000;784000;Xeroc;1364292417;;A", -- [4]
+						"20;;;;784000;784000;Xeroc;1364292412;;A", -- [5]
 					},
 				},
 				["11026"] = {
@@ -5752,10 +5784,78 @@ BeanCounterDB = {
 				},
 			},
 		},
+		["Doyjen"] = {
+			["vendorsell"] = {
+			},
+			["postedBids"] = {
+			},
+			["postedAuctions"] = {
+			},
+			["completedBidsBuyoutsNeutral"] = {
+			},
+			["vendorbuy"] = {
+			},
+			["failedAuctions"] = {
+			},
+			["failedBidsNeutral"] = {
+			},
+			["completedBidsBuyouts"] = {
+			},
+			["completedAuctions"] = {
+			},
+			["failedAuctionsNeutral"] = {
+			},
+			["completedAuctionsNeutral"] = {
+			},
+			["failedBids"] = {
+			},
+		},
+		["Datinnite"] = {
+			["vendorsell"] = {
+			},
+			["postedBids"] = {
+			},
+			["postedAuctions"] = {
+			},
+			["completedBidsBuyoutsNeutral"] = {
+			},
+			["vendorbuy"] = {
+			},
+			["failedAuctions"] = {
+			},
+			["failedBidsNeutral"] = {
+			},
+			["completedBidsBuyouts"] = {
+			},
+			["completedAuctions"] = {
+			},
+			["failedAuctionsNeutral"] = {
+			},
+			["completedAuctionsNeutral"] = {
+			},
+			["failedBids"] = {
+			},
+		},
 		["Dreyan"] = {
 			["vendorsell"] = {
 			},
 			["postedBids"] = {
+				["74719"] = {
+					["item:74719:0:0:0:0:0:0:173163904:80:0:0"] = {
+					},
+				},
+				["76692"] = {
+					["item:76692:0:0:0:0:0:0:1790398976:80:0:0"] = {
+					},
+				},
+				["74726"] = {
+					["item:74726:0:0:0:0:0:0:280608384:80:0:0"] = {
+					},
+				},
+				["76680"] = {
+					["item:76680:0:0:0:0:0:0:1366262272:80:0:0"] = {
+					},
+				},
 			},
 			["postedAuctions"] = {
 				["82200"] = {
@@ -8127,6 +8227,9 @@ BeanCounterDB = {
 						"1;;;;179999;179999;Shammis;1365590610;;A", -- [2]
 						"1;;;;82430;82430;Øath;1364609702;;A", -- [3]
 					},
+					["item:74719:0:0:0:0:0:0:173163904:80:0:0"] = {
+						"1;;;;1399999;1399999;Shammis;1372563140;;A", -- [1]
+					},
 					["item:74719:0:0:0:0:0:0:1532929024:80:0:0"] = {
 						"1;;;;1479997;1479997;Shammis;1369537295;;A", -- [1]
 					},
@@ -8189,12 +8292,15 @@ BeanCounterDB = {
 					},
 				},
 				["74726"] = {
-					["item:74726:0:0:0:0:0:0:1643242880:80:0:0"] = {
-						"1;;;;39980000;39980000;Israelite;1368697458;;A", -- [1]
-					},
 					["item:74726:0:0:0:0:0:0:0:80:0"] = {
 						"1;;;;32490000;32490000;Drneilpreist;1366510707;;A", -- [1]
 						"1;;;;33950000;33950000;Saina;1366510704;;A", -- [2]
+					},
+					["item:74726:0:0:0:0:0:0:1643242880:80:0:0"] = {
+						"1;;;;39980000;39980000;Israelite;1368697458;;A", -- [1]
+					},
+					["item:74726:0:0:0:0:0:0:280608384:80:0:0"] = {
+						"1;;;;26979888;26979888;Standur;1372563028;;A", -- [1]
 					},
 				},
 				["52326"] = {
@@ -8378,6 +8484,10 @@ BeanCounterDB = {
 						"1;;;;803999;803999;Parada;1367920656;;A", -- [2]
 						"1;;;;1239999;1239999;Deuceswild;1365306798;;A", -- [3]
 					},
+					["item:76680:0:0:0:0:0:0:1366262272:80:0:0"] = {
+						"1;;;;980990;980990;Shammis;1372563077;;A", -- [1]
+						"1;;;;980990;980990;Shammis;1372563080;;A", -- [2]
+					},
 					["item:76680:0:0:0:0:0:0:80230400:80:0:0"] = {
 						"1;;;;1050000;1050000;Igoroth;1364609793;;A", -- [1]
 					},
@@ -8499,6 +8609,9 @@ BeanCounterDB = {
 					},
 				},
 				["76692"] = {
+					["item:76692:0:0:0:0:0:0:1790398976:80:0:0"] = {
+						"1;;;;650000;650000;Jademonk;1372563185;;A", -- [1]
+					},
 					["item:76692:0:0:0:0:0:0:552458112:80:0:0"] = {
 						"1;;;;797997;797997;Thundernutz;1370744526;;A", -- [1]
 					},
@@ -8577,32 +8690,6 @@ BeanCounterDB = {
 						"1;;;;300000;300000;Tyralon;1345198472;;A", -- [1]
 					},
 				},
-			},
-		},
-		["Doyjen"] = {
-			["vendorsell"] = {
-			},
-			["postedBids"] = {
-			},
-			["postedAuctions"] = {
-			},
-			["completedBidsBuyoutsNeutral"] = {
-			},
-			["vendorbuy"] = {
-			},
-			["failedAuctions"] = {
-			},
-			["failedBidsNeutral"] = {
-			},
-			["completedBidsBuyouts"] = {
-			},
-			["completedAuctions"] = {
-			},
-			["failedAuctionsNeutral"] = {
-			},
-			["completedAuctionsNeutral"] = {
-			},
-			["failedBids"] = {
 			},
 		},
 		["Deyndis"] = {
@@ -9067,44 +9154,18 @@ BeanCounterDB = {
 			["failedBids"] = {
 			},
 		},
-		["Datinnite"] = {
-			["vendorsell"] = {
-			},
-			["postedBids"] = {
-			},
-			["postedAuctions"] = {
-			},
-			["completedBidsBuyoutsNeutral"] = {
-			},
-			["vendorbuy"] = {
-			},
-			["failedAuctions"] = {
-			},
-			["failedBidsNeutral"] = {
-			},
-			["completedBidsBuyouts"] = {
-			},
-			["completedAuctions"] = {
-			},
-			["failedAuctionsNeutral"] = {
-			},
-			["completedAuctionsNeutral"] = {
-			},
-			["failedBids"] = {
-			},
-		},
 	},
 }
 BeanCounterDBSettings = {
 	["configator.left"] = 400.0001525878906,
 	["Khaz Modan"] = {
 		["Darvina"] = {
-			["tasks.sortArray"] = 1370438524,
+			["tasks.sortArray"] = 1373407919,
 			["version"] = 3.03,
 			["faction"] = "Alliance",
-			["tasks.compactDB"] = 1370438524,
+			["tasks.compactDB"] = 1373407919,
 			["wealth"] = 54866,
-			["tasks.prunePostedDB"] = 1371527429,
+			["tasks.prunePostedDB"] = 1373105713,
 			["mailbox"] = {
 				{
 					["subject"] = "P.U.G.",
@@ -9119,18 +9180,24 @@ BeanCounterDBSettings = {
 			["version"] = 3.03,
 			["faction"] = "Alliance",
 			["tasks.compactDB"] = 1372499505,
-			["wealth"] = 335,
+			["wealth"] = 4436025,
 			["tasks.prunePostedDB"] = 1372499505,
 			["mailbox"] = {
+				{
+					["read"] = 2,
+					["sender"] = "Alliance Auction House",
+					["time"] = 29.41562461853027,
+					["subject"] = "Auction successful: Strange Dust (5)",
+				}, -- [1]
 			},
 		},
 		["Dethamett"] = {
-			["tasks.sortArray"] = 1369946637,
+			["tasks.sortArray"] = 1372964651,
 			["version"] = 3.03,
 			["faction"] = "Alliance",
-			["tasks.compactDB"] = 1369946637,
-			["wealth"] = 60164,
-			["tasks.prunePostedDB"] = 1371480705,
+			["tasks.compactDB"] = 1372964651,
+			["wealth"] = 90017,
+			["tasks.prunePostedDB"] = 1373030891,
 			["mailbox"] = {
 				{
 					["sender"] = "Alliance Auction House",
@@ -9165,12 +9232,12 @@ BeanCounterDBSettings = {
 			},
 		},
 		["Dathsar"] = {
-			["tasks.sortArray"] = 1370571029,
+			["tasks.sortArray"] = 1373424684,
 			["version"] = 3.03,
 			["faction"] = "Alliance",
-			["tasks.compactDB"] = 1370571029,
+			["tasks.compactDB"] = 1373424684,
 			["wealth"] = 9543212,
-			["tasks.prunePostedDB"] = 1372090354,
+			["tasks.prunePostedDB"] = 1373818654,
 			["mailbox"] = {
 				{
 					["read"] = 2,
@@ -9216,39 +9283,79 @@ BeanCounterDBSettings = {
 				}, -- [7]
 			},
 		},
-		["Dreyan"] = {
-			["tasks.sortArray"] = 1372196197,
-			["version"] = 3.03,
-			["faction"] = "Alliance",
-			["tasks.compactDB"] = 1372196197,
-			["wealth"] = 105431916,
-			["tasks.prunePostedDB"] = 1372623747,
-			["mailbox"] = {
-				{
-					["subject"] = "Auction expired: Heavy Windwool Bandage (20)",
-					["read"] = 2,
-					["time"] = 29.99907493591309,
-					["sender"] = "Alliance Auction House",
-				}, -- [1]
-			},
-		},
 		["Doyjen"] = {
 			["tasks.sortArray"] = 1372270249,
 			["version"] = 3.03,
 			["faction"] = "Alliance",
 			["tasks.compactDB"] = 1372270249,
 			["wealth"] = 10819,
-			["tasks.prunePostedDB"] = 1372113239,
+			["tasks.prunePostedDB"] = 1373819910,
 			["mailbox"] = {
 			},
 		},
+		["Datinnite"] = {
+			["tasks.sortArray"] = 1372187147,
+			["version"] = 3.03,
+			["faction"] = "Alliance",
+			["tasks.compactDB"] = 1372187147,
+			["wealth"] = 318375,
+			["tasks.prunePostedDB"] = 1372348510,
+			["mailbox"] = {
+			},
+		},
+		["Dreyan"] = {
+			["tasks.sortArray"] = 1372196197,
+			["version"] = 3.03,
+			["faction"] = "Alliance",
+			["tasks.compactDB"] = 1372196197,
+			["wealth"] = 75571032,
+			["tasks.prunePostedDB"] = 1372623747,
+			["mailbox"] = {
+				{
+					["subject"] = "Auction won: Delicate Primordial Ruby",
+					["read"] = 2,
+					["time"] = 29.9998950958252,
+					["sender"] = "Alliance Auction House",
+				}, -- [1]
+				{
+					["subject"] = "Auction won: Enchant Gloves - Greater Haste",
+					["read"] = 1,
+					["time"] = 29.99937438964844,
+					["sender"] = "Alliance Auction House",
+				}, -- [2]
+				{
+					["subject"] = "Auction won: Glinting Imperial Amethyst",
+					["read"] = 1,
+					["time"] = 29.99868011474609,
+					["sender"] = "Alliance Auction House",
+				}, -- [3]
+				{
+					["subject"] = "Auction won: Glinting Imperial Amethyst",
+					["read"] = 1,
+					["time"] = 29.9986457824707,
+					["sender"] = "Alliance Auction House",
+				}, -- [4]
+				{
+					["subject"] = "Auction won: Enchant Weapon - Dancing Steel",
+					["read"] = 1,
+					["time"] = 29.99806785583496,
+					["sender"] = "Alliance Auction House",
+				}, -- [5]
+				{
+					["subject"] = "Auction expired: Heavy Windwool Bandage (20)",
+					["read"] = 2,
+					["time"] = 29.99907493591309,
+					["sender"] = "Alliance Auction House",
+				}, -- [6]
+			},
+		},
 		["Deyndis"] = {
-			["tasks.sortArray"] = 1370641811,
+			["tasks.sortArray"] = 1373505528,
 			["version"] = 3.03,
 			["faction"] = "Horde",
-			["tasks.compactDB"] = 1370641811,
+			["tasks.compactDB"] = 1373505528,
 			["wealth"] = 757344,
-			["tasks.prunePostedDB"] = 1371738339,
+			["tasks.prunePostedDB"] = 1373357661,
 			["mailbox"] = {
 				{
 					["read"] = 2,
@@ -9292,16 +9399,6 @@ BeanCounterDBSettings = {
 					["time"] = 25.41500091552734,
 					["subject"] = "Auction successful: Netherweave Cloth (20)",
 				}, -- [7]
-			},
-		},
-		["Datinnite"] = {
-			["tasks.sortArray"] = 1372187147,
-			["version"] = 3.03,
-			["faction"] = "Alliance",
-			["tasks.compactDB"] = 1372187147,
-			["wealth"] = 318375,
-			["tasks.prunePostedDB"] = 1372348510,
-			["mailbox"] = {
 			},
 		},
 	},
@@ -9434,6 +9531,7 @@ BeanCounterDBNames = {
 	["61978:0"] = "cffffffff;Blackfallow Ink",
 	["42970:0"] = "cffffffff;Glyph of Sap",
 	["82290:-7"] = "cff1eff00;Temple Helm of the Bear",
+	["10978:0"] = "cff0070dd;Small Glimmering Shard",
 	["13442:0"] = "cffffffff;Mighty Rage Potion",
 	["2447:0"] = "cffffffff;Peacebloom",
 	["23441:0"] = "cff0070dd;Nightseye",
@@ -9446,6 +9544,7 @@ BeanCounterDBNames = {
 	["55614:-91"] = "cff1eff00;Nazferiti Spaulders of the Marksman",
 	["43122:0"] = "cffffffff;Shimmering Ink",
 	["4239:0"] = "cff1eff00;Embossed Leather Gloves",
+	["10940:0"] = "cffffffff;Strange Dust",
 	["13466:0"] = "cffffffff;Sorrowmoss",
 	["55439:-36"] = "cff1eff00;Mereldar Spellblade of the Sorcerer",
 	["42972:0"] = "cffffffff;Glyph of Sinister Strike",
@@ -9976,23 +10075,24 @@ BeanCounterDBNames = {
 	["55710:-130"] = "cff1eff00;Mystral Wristwraps of the Fireflash",
 	["85824:0"] = "cffa335ee;Greyshadow Gloves",
 	["55635:-91"] = "cff1eff00;Aboraz Bindings of the Marksman",
-	["82246:-40"] = "cff1eff00;Yak Legguards of the Bandit",
+	["2673:0"] = "cffffffff;Coyote Meat",
 	["58264:0"] = "cffffffff;Sour Green Apple",
-	["46398:0"] = "cffffffff;Calico Cat",
 	["7370:853"] = "cff1eff00;Elder's Sash of the Eagle",
+	["46398:0"] = "cffffffff;Calico Cat",
 	["82189:-5"] = "cff1eff00;Mountain Greaves of the Monkey",
 	["43009:0"] = "cffffffff;Shoveltusk Flank",
-	["82255:-129"] = "cff1eff00;Waterfall Shoulderpads of the Wildfire",
+	["8486:0"] = "cffffffff;Cat Carrier (Cornish Rex)",
 	["55674:-136"] = "cff1eff00;Haldarr Hood of the Zephyr",
 	["43123:0"] = "cff1eff00;Ink of the Sky",
-	["29904:0"] = "cffffffff;White Moth Egg",
 	["39502:0"] = "cffffffff;Resilient Parchment",
+	["29904:0"] = "cffffffff;White Moth Egg",
 	["42253:0"] = "cffffffff;Iceweb Spider Silk",
-	["50449:0"] = "cffa335ee;Stiffened Corpse Shoulderpads",
+	["43377:0"] = "cffffffff;Glyph of Pick Lock",
+	["74834:0"] = "cffffffff;Mushan Ribs",
 	["38558:0"] = "cffffffff;Nerubian Chitin",
 	["90481:-132"] = "cff0070dd;Stormscale Boots of the Wavecrest",
 	["10561:0"] = "cffffffff;Mithril Casing",
-	["74834:0"] = "cffffffff;Mushan Ribs",
+	["87487:0"] = "cff0070dd;Turpster's Sonorous Shield",
 	["82288:-139"] = "cff1eff00;Temple Gauntlets of the Mercenary",
 	["42960:0"] = "cffffffff;Glyph of Evasion",
 	["71715:0"] = "cff0070dd;A Treatise on Strategy",
@@ -10001,256 +10101,256 @@ BeanCounterDBNames = {
 	["55493:-41"] = "cff1eff00;Ravencrest Vambraces of the Beast",
 	["10193:392"] = "cff1eff00;Crusader's Armor of Intellect",
 	["35627:0"] = "cff1eff00;Eternal Shadow",
-	["81978:-5"] = "cff1eff00;Silent Gloves of the Monkey",
 	["55423:-7"] = "cff1eff00;Blackwolf Ring of the Bear",
 	["55481:-6"] = "cff1eff00;Sishir Wand of the Eagle",
 	["36315:-15"] = "cff1eff00;Wyrmskull Girdle of Spirit",
-	["85836:-137"] = "cff1eff00;Misthide Gloves of the Windstorm",
 	["55436:-138"] = "cff1eff00;Sishir Spellblade of the Feverflare",
+	["85836:-137"] = "cff1eff00;Misthide Gloves of the Windstorm",
 	["785:0"] = "cffffffff;Mageroyal",
 	["23438:0"] = "cff0070dd;Star of Elune",
-	["52722:0"] = "cffa335ee;Maelstrom Crystal",
+	["35967:-38"] = "cff1eff00;Bloodspore Hood of the Prophet",
 	["82209:-40"] = "cff1eff00;Thresher Waistband of the Bandit",
-	["23118:0"] = "cff1eff00;Solid Azure Moonstone",
+	["81995:-41"] = "cff1eff00;Wall Sabatons of the Beast",
 	["81966:-8"] = "cff1eff00;Stitched Cord of the Whale",
+	["23427:0"] = "cff1eff00;Eternium Ore",
 	["82031:-37"] = "cff1eff00;Reed Handwraps of the Seer",
-	["82251:-39"] = "cff1eff00;Waterfall Handwraps of the Invoker",
 	["82042:-133"] = "cff1eff00;Whisper Jerkin of the Stormblast",
 	["24834:-13"] = "cff1eff00;Nexus-Strider Helmet of the Wolf",
-	["6377:0"] = "cff1eff00;Formula: Enchant Boots - Minor Agility",
+	["25700:0"] = "cffffffff;Fel Scales",
 	["7286:0"] = "cffffffff;Black Whelp Scale",
-	["12808:0"] = "cff1eff00;Essence of Undeath",
-	["52220:0"] = "cff0070dd;Glinting Demonseye",
-	["36605:-36"] = "cff1eff00;Wind Scythe of the Sorcerer",
+	["765:0"] = "cffffffff;Silverleaf",
 	["39343:0"] = "cffffffff;Azure Pigment",
-	["48118:0"] = "cffffffff;Leaping Hatchling",
+	["12808:0"] = "cff1eff00;Essence of Undeath",
+	["36605:-36"] = "cff1eff00;Wind Scythe of the Sorcerer",
 	["4265:0"] = "cffffffff;Heavy Armor Kit",
-	["85839:-134"] = "cff1eff00;Misthide Shoulders of the Galeburst",
+	["48118:0"] = "cffffffff;Leaping Hatchling",
 	["15287:846"] = "cff1eff00;Crusader Bow of the Eagle",
+	["85839:-134"] = "cff1eff00;Misthide Shoulders of the Galeburst",
 	["8836:0"] = "cffffffff;Arthas' Tears",
-	["74856:0"] = "cffffffff;Jade Lungfish",
 	["37701:0"] = "cffffffff;Crystallized Earth",
-	["34055:0"] = "cff1eff00;Greater Cosmic Essence",
+	["74856:0"] = "cffffffff;Jade Lungfish",
 	["52983:0"] = "cffffffff;Cinderbloom",
-	["35625:0"] = "cff1eff00;Eternal Life",
-	["22789:0"] = "cffffffff;Terocone",
-	["79287:0"] = "cff0070dd;Five of Tigers",
+	["34055:0"] = "cff1eff00;Greater Cosmic Essence",
+	["29903:0"] = "cffffffff;Yellow Moth Egg",
 	["10323:0"] = "cffffffff;Pattern: Tuxedo Pants",
-	["16255:0"] = "cff1eff00;Formula: Enchant 2H Weapon - Major Spirit",
+	["22789:0"] = "cffffffff;Terocone",
+	["35625:0"] = "cff1eff00;Eternal Life",
+	["2408:0"] = "cff1eff00;Pattern: Fine Leather Gloves",
 	["72235:0"] = "cffffffff;Silkweed",
-	["3369:0"] = "cffffffff;Grave Moss",
+	["82130:-41"] = "cff1eff00;Miner Vambraces of the Beast",
 	["72120:0"] = "cffffffff;Exotic Leather",
 	["14908:875"] = "cff1eff00;Brutish Legguards of the Eagle",
-	["34052:0"] = "cff0070dd;Dream Shard",
 	["85803:0"] = "cff0070dd;Contender's Leather Leggings",
-	["18649:0"] = "cffffffff;Schematic: Blue Firework",
+	["34052:0"] = "cff0070dd;Dream Shard",
+	["11754:0"] = "cff1eff00;Black Diamond",
 	["71952:0"] = "cff0070dd;Captured Insignia",
 	["4371:0"] = "cffffffff;Bronze Tube",
 	["74610:0"] = "cff0070dd;Lunar Lantern",
+	["2840:0"] = "cffffffff;Copper Bar",
 	["82255:-39"] = "cff1eff00;Waterfall Shoulderpads of the Invoker",
 	["82286:-6"] = "cff1eff00;Immaculate Wand of the Eagle",
-	["5643:0"] = "cffffffff;Recipe: Great Rage Potion",
 	["34085:0"] = "cffffffff;Red Winter Clothes",
+	["6349:0"] = "cffffffff;Formula: Enchant 2H Weapon - Lesser Intellect",
 	["31136:0"] = "cff0070dd;Breastplate of Blade Turning",
-	["82221:-5"] = "cff1eff00;Inlaid Spear of the Monkey",
+	["7354:769"] = "cff1eff00;Elder's Boots of the Owl",
 	["22578:0"] = "cffffffff;Mote of Water",
-	["77529:0"] = "cff0070dd;Lord Blastington's Scope of Doom",
-	["55742:-41"] = "cff1eff00;Baradin Cowl of the Beast",
+	["82221:-5"] = "cff1eff00;Inlaid Spear of the Monkey",
 	["74719:0"] = "cffffffff;Enchant Gloves - Greater Haste",
+	["55742:-41"] = "cff1eff00;Baradin Cowl of the Beast",
 	["58262:0"] = "cffffffff;Sliced Raw Billfish",
 	["7910:0"] = "cff1eff00;Star Ruby",
 	["36025:-36"] = "cff1eff00;Aerie Shoulderpads of the Sorcerer",
 	["85842:-135"] = "cff1eff00;Stormscale Boots of the Windflurry",
-	["15238:857"] = "cff1eff00;Warlord's Axe of the Eagle",
 	["55684:-134"] = "cff1eff00;Ravenholdt Britches of the Galeburst",
+	["82257:-131"] = "cff1eff00;Vine Bindings of the Undertow",
 	["82243:-40"] = "cff1eff00;Yak Gauntlets of the Bandit",
 	["81966:-41"] = "cff1eff00;Stitched Cord of the Beast",
-	["82049:-5"] = "cff1eff00;Bronzed Dagger of the Monkey",
-	["81976:-5"] = "cff1eff00;Silent Britches of the Monkey",
-	["13465:0"] = "cffffffff;Mountain Silversage",
 	["82079:-40"] = "cff1eff00;Snake Greaves of the Bandit",
+	["82049:-5"] = "cff1eff00;Bronzed Dagger of the Monkey",
+	["13465:0"] = "cffffffff;Mountain Silversage",
 	["64392:0"] = "cff1eff00;Orc Blood Text",
 	["58146:0"] = "cffffffff;Golemblood Potion",
 	["55340:-135"] = "cff1eff00;Mardenholde Staff of the Windflurry",
+	["10822:0"] = "cffffffff;Dark Whelpling",
 	["74847:0"] = "cffffffff;Jade Squash",
 	["82263:-131"] = "cff1eff00;Vine Shoulders of the Undertow",
 	["73260:0"] = "cffffffff;Salty Sea Dog",
-	["10822:0"] = "cffffffff;Dark Whelpling",
+	["85835:-137"] = "cff1eff00;Misthide Chestguard of the Windstorm",
 	["82117:-129"] = "cff1eff00;Shamanic Crystal of the Wildfire",
 	["55340:-40"] = "cff1eff00;Mardenholde Staff of the Bandit",
-	["85835:-137"] = "cff1eff00;Misthide Chestguard of the Windstorm",
 	["82267:-118"] = "cff1eff00;Engraved Broadaxe of the Faultline",
 	["2985:0"] = "cff1eff00;Inscribed Leather Breastplate",
 	["7290:0"] = "cffffffff;Pattern: Red Whelp Gloves",
-	["20753:0"] = "cffffffff;Formula: Lesser Wizard Oil",
 	["9881:861"] = "cff1eff00;Sorcerer Mantle of the Eagle",
-	["82283:-37"] = "cff1eff00;Immaculate Ring of the Seer",
+	["20753:0"] = "cffffffff;Formula: Lesser Wizard Oil",
+	["67126:0"] = "cff0070dd;Roffle's Ruffly Gloves",
 	["6573:1103"] = "cff1eff00;Defender Boots of the Boar",
+	["74715:0"] = "cffffffff;Enchant Boots - Greater Haste",
 	["25671:0"] = "cff1eff00;Thick Draenic Vest",
 	["55374:-6"] = "cff1eff00;Mirkfallon Crystal of the Eagle",
 	["82073:-14"] = "cff1eff00;Brick Sabatons of the Tiger",
-	["22793:0"] = "cffffffff;Mana Thistle",
 	["22790:0"] = "cffffffff;Ancient Lichen",
-	["36918:0"] = "cff0070dd;Scarlet Ruby",
 	["4291:0"] = "cffffffff;Silken Thread",
+	["36918:0"] = "cff0070dd;Scarlet Ruby",
 	["18653:0"] = "cff1eff00;Schematic: Goblin Jumper Cables XL",
+	["33452:0"] = "cffffffff;Honey-Spiced Lichen",
 	["36047:-19"] = "cff1eff00;Crystalsong Crown of Intellect",
-	["43124:0"] = "cffffffff;Ethereal Ink",
+	["25094:-26"] = "cff1eff00;Eldr'naan Scepter of Intellect",
 	["8488:0"] = "cffffffff;Cat Carrier (Silver Tabby)",
 	["42465:0"] = "cffffffff;Glyph of Imp",
 	["7332:786"] = "cff1eff00;Regal Armor of the Owl",
-	["25094:-26"] = "cff1eff00;Eldr'naan Scepter of Intellect",
-	["9794:113"] = "cff1eff00;Ivycloth Cloak of Spirit",
-	["23426:0"] = "cff1eff00;Khorium Ore",
+	["43124:0"] = "cffffffff;Ethereal Ink",
 	["55652:-5"] = "cff1eff00;Yojamba Boots of the Monkey",
+	["9794:113"] = "cff1eff00;Ivycloth Cloak of Spirit",
 	["8845:0"] = "cffffffff;Ghost Mushroom",
-	["52718:0"] = "cff1eff00;Lesser Celestial Essence",
 	["22785:0"] = "cffffffff;Felweed",
+	["52718:0"] = "cff1eff00;Lesser Celestial Essence",
+	["4382:0"] = "cffffffff;Bronze Framework",
 	["75068:0"] = "cff0070dd;Vicious Amberjewel Band",
 	["35960:-37"] = "cff1eff00;Farshire Pants of the Seer",
-	["55521:-139"] = "cff1eff00;Stonewrought Gauntlets of the Mercenary",
 	["4304:0"] = "cffffffff;Thick Leather",
-	["82238:-139"] = "cff1eff00;Highpeak Sabatons of the Mercenary",
-	["14047:0"] = "cffffffff;Runecloth",
+	["55521:-139"] = "cff1eff00;Stonewrought Gauntlets of the Mercenary",
 	["2304:0"] = "cffffffff;Light Armor Kit",
+	["14047:0"] = "cffffffff;Runecloth",
+	["82238:-139"] = "cff1eff00;Highpeak Sabatons of the Mercenary",
 	["74833:0"] = "cffffffff;Raw Tiger Steak",
 	["62007:0"] = "cff0070dd;Four of the Winds",
 	["21301:0"] = "cffffffff;Green Helper Box",
 	["4387:0"] = "cffffffff;Iron Strut",
 	["70139:0"] = "cff0070dd;Flintlocke's Woodchucker",
 	["85220:0"] = "cff0070dd;Terrible Turnip",
-	["18661:0"] = "cff1eff00;Schematic: World Enlarger",
 	["6530:0"] = "cffffffff;Nightcrawlers",
-	["11083:0"] = "cffffffff;Soul Dust",
 	["82259:-132"] = "cff1eff00;Vine Britches of the Wavecrest",
+	["11083:0"] = "cffffffff;Soul Dust",
+	["24756:-39"] = "cff1eff00;Daggerfen Bindings of the Invoker",
 	["62233:0"] = "cff0070dd;Lord Rottington's Pressed Wisp Book",
-	["55669:-91"] = "cff1eff00;Mosshide Hood of the Marksman",
-	["55755:-42"] = "cff1eff00;Mystral Leggings of the Elder",
 	["10285:0"] = "cffffffff;Shadow Silk",
+	["55755:-42"] = "cff1eff00;Mystral Leggings of the Elder",
 	["82235:-123"] = "cff1eff00;Highpeak Helm of the Earthbreaker",
+	["85832:-134"] = "cff1eff00;Misthide Belt of the Galeburst",
 	["10075:1122"] = "cff1eff00;Righteous Spaulders of the Boar",
 	["81994:-118"] = "cff1eff00;Wall Gauntlets of the Faultline",
 	["74726:0"] = "cff0070dd;Enchant Weapon - Dancing Steel",
 	["82289:-45"] = "cff1eff00;Temple Girdle of the Champion",
-	["29740:0"] = "cff1eff00;Fel Armament",
 	["43125:0"] = "cff1eff00;Darkflame Ink",
 	["10314:0"] = "cffffffff;Pattern: Lavender Mageweave Shirt",
+	["82285:-6"] = "cff1eff00;Immaculate Spellblade of the Eagle",
 	["34053:0"] = "cff0070dd;Small Dream Shard",
 	["56499:-132"] = "cff1eff00;Darkbrand Belt of the Wavecrest",
-	["16249:0"] = "cff1eff00;Formula: Enchant 2H Weapon - Major Intellect",
-	["82195:-36"] = "cff1eff00;Trellised Cowl of the Sorcerer",
 	["6361:0"] = "cffffffff;Raw Rainbow Fin Albacore",
+	["82195:-36"] = "cff1eff00;Trellised Cowl of the Sorcerer",
 	["94043:-120"] = "cff1eff00;Primordial Bloodsoaked Vambraces of the Earthshaker",
+	["59230:0"] = "cffffffff;Fungus Squeezings",
 	["82221:-41"] = "cff1eff00;Inlaid Spear of the Beast",
 	["87216:0"] = "cffffffff;Thermal Anvil",
-	["59230:0"] = "cffffffff;Fungus Squeezings",
 	["21884:0"] = "cff1eff00;Primal Fire",
 	["76158:0"] = "cffa335ee;Courtier's Slippers",
+	["4338:0"] = "cffffffff;Mageweave Cloth",
 	["2934:0"] = "cffffffff;Ruined Leather Scraps",
 	["82195:-129"] = "cff1eff00;Trellised Cowl of the Wildfire",
 	["11137:0"] = "cffffffff;Vision Dust",
 	["45912:0"] = "cff1eff00;Book of Glyph Mastery",
 	["29363:0"] = "cffffffff;Mana Wyrmling",
-	["83794:-134"] = "cff1eff00;Shadowfire Necklace of the Galeburst",
+	["16202:0"] = "cff1eff00;Lesser Eternal Essence",
 	["20856:0"] = "cffffffff;Design: Heavy Golden Necklace of Battle",
 	["83007:0"] = "cffa335ee;Greater Tiger Claw Inscription",
-	["16202:0"] = "cff1eff00;Lesser Eternal Essence",
-	["82276:-134"] = "cff1eff00;Engraved Spear of the Galeburst",
+	["20869:0"] = "cff0070dd;Amber Idol",
+	["36906:0"] = "cffffffff;Icethorn",
 	["71716:0"] = "cff0070dd;Soothsayer's Runes",
 	["7288:0"] = "cff1eff00;Pattern: Rugged Leather Pants",
-	["36906:0"] = "cffffffff;Icethorn",
+	["18731:0"] = "cffffffff;Pattern: Heavy Leather Ball",
 	["858:0"] = "cffffffff;Lesser Healing Potion",
 	["54479:0"] = "cff0070dd;Spiritmend Shoulders",
-	["18731:0"] = "cffffffff;Pattern: Heavy Leather Ball",
-	["4608:0"] = "cffffffff;Raw Black Truffle",
 	["68784:0"] = "cff0070dd;Enchant Bracer - Agility",
-	["21219:0"] = "cffffffff;Recipe: Sagefish Delight",
+	["4608:0"] = "cffffffff;Raw Black Truffle",
+	["39690:0"] = "cffffffff;Volatile Blasting Trigger",
+	["3857:0"] = "cffffffff;Coal",
 	["24479:0"] = "cff1eff00;Shadow Pearl",
 	["52976:0"] = "cffffffff;Savage Leather",
-	["3857:0"] = "cffffffff;Coal",
 	["37705:0"] = "cffffffff;Crystallized Water",
+	["36916:0"] = "cffffffff;Cobalt Bar",
 	["55426:-42"] = "cff1eff00;Rethban Shield of the Elder",
 	["7068:0"] = "cffffffff;Elemental Fire",
 	["43379:0"] = "cffffffff;Glyph of Blurred Speed",
-	["10393:0"] = "cffffffff;Cockroach",
-	["71808:0"] = "cffa335ee;Lava Coral",
 	["6564:842"] = "cff1eff00;Shimmering Cloak of the Eagle",
+	["71808:0"] = "cffa335ee;Lava Coral",
+	["52177:0"] = "cff1eff00;Carnelian",
 	["10286:0"] = "cffffffff;Heart of the Wild",
 	["82037:-5"] = "cff1eff00;Whisper Bindings of the Monkey",
-	["52177:0"] = "cff1eff00;Carnelian",
+	["38404:0"] = "cff1eff00;Arctic Boots",
 	["82063:-139"] = "cff1eff00;Gemmed Ring of the Mercenary",
-	["82288:-41"] = "cff1eff00;Temple Gauntlets of the Beast",
 	["87276:0"] = "cffffffff;Glyph of Holy Resurrection",
+	["43549:0"] = "cffffffff;Glyph of Raise Dead",
 	["52987:0"] = "cffffffff;Twilight Jasmine",
 	["23107:0"] = "cff1eff00;Shadow Draenite",
-	["36428:-12"] = "cff1eff00;Bouquet Ring of the Boar",
 	["2772:0"] = "cffffffff;Iron Ore",
-	["74641:0"] = "cffffffff;Fish Cake",
 	["2313:0"] = "cffffffff;Medium Armor Kit",
+	["74641:0"] = "cffffffff;Fish Cake",
 	["43119:0"] = "cff1eff00;Royal Ink",
+	["82200:-37"] = "cff1eff00;Trellised Shoulderpads of the Seer",
 	["72092:0"] = "cffffffff;Ghost Iron Ore",
-	["64396:0"] = "cff1eff00;Nerubian Obelisk",
+	["39339:0"] = "cffffffff;Emerald Pigment",
 	["15994:0"] = "cffffffff;Thorium Widget",
 	["82092:-135"] = "cff1eff00;Mushan Hide Bindings of the Windflurry",
-	["39339:0"] = "cffffffff;Emerald Pigment",
+	["19299:0"] = "cffffffff;Fizzy Faire Drink",
 	["36375:-12"] = "cff1eff00;Kraken Helm of the Boar",
 	["82253:-39"] = "cff1eff00;Waterfall Robe of the Invoker",
-	["41432:0"] = "cff1eff00;Perfect Bold Bloodstone",
-	["74249:0"] = "cffffffff;Spirit Dust",
 	["90481:-137"] = "cff0070dd;Stormscale Boots of the Windstorm",
+	["74249:0"] = "cffffffff;Spirit Dust",
 	["5787:0"] = "cffffffff;Pattern: Murloc Scale Breastplate",
-	["37094:0"] = "cffffffff;Scroll of Stamina VIII",
 	["55744:-8"] = "cff1eff00;Brightwood Cowl of the Whale",
-	["1990:1203"] = "cff1eff00;Ballast Maul of the Bear",
+	["37094:0"] = "cffffffff;Scroll of Stamina VIII",
 	["44315:0"] = "cffffffff;Scroll of Recall III",
+	["1990:1203"] = "cff1eff00;Ballast Maul of the Bear",
 	["22452:0"] = "cff1eff00;Primal Earth",
+	["41432:0"] = "cff1eff00;Perfect Bold Bloodstone",
 	["74864:0"] = "cffffffff;Reef Octopus",
 	["83798:0"] = "cff0070dd;Roguestone Shadowband",
 	["13047:0"] = "cff0070dd;Twig of the World Tree",
-	["19299:0"] = "cffffffff;Fizzy Faire Drink",
+	["64396:0"] = "cff1eff00;Nerubian Obelisk",
 	["13007:0"] = "cff0070dd;Mageflame Cloak",
 	["24741:-40"] = "cff1eff00;Ranger Belt of the Bandit",
-	["82200:-37"] = "cff1eff00;Trellised Shoulderpads of the Seer",
 	["82235:-45"] = "cff1eff00;Highpeak Helm of the Champion",
 	["25300:-6"] = "cff1eff00;Lightning Dagger of the Eagle",
+	["36428:-12"] = "cff1eff00;Bouquet Ring of the Boar",
 	["43007:0"] = "cffffffff;Northern Spices",
-	["43549:0"] = "cffffffff;Glyph of Raise Dead",
+	["82288:-41"] = "cff1eff00;Temple Gauntlets of the Beast",
 	["36125:-5"] = "cff1eff00;Muradin Chestpiece of the Monkey",
 	["3048:0"] = "cff1eff00;Lambent Scale Legguards",
-	["38404:0"] = "cff1eff00;Arctic Boots",
+	["10393:0"] = "cffffffff;Cockroach",
 	["13464:0"] = "cffffffff;Golden Sansam",
 	["22574:0"] = "cffffffff;Mote of Fire",
-	["36916:0"] = "cffffffff;Cobalt Bar",
 	["55657:-134"] = "cff1eff00;Ravenholdt Boots of the Galeburst",
+	["21219:0"] = "cffffffff;Recipe: Sagefish Delight",
 	["44446:0"] = "cff0070dd;Pack of Endless Pockets",
-	["39690:0"] = "cffffffff;Volatile Blasting Trigger",
-	["82245:-5"] = "cff1eff00;Yak Helm of the Monkey",
 	["6617:766"] = "cff1eff00;Sage's Mantle of the Owl",
+	["82245:-5"] = "cff1eff00;Yak Helm of the Monkey",
+	["82276:-134"] = "cff1eff00;Engraved Spear of the Galeburst",
 	["82200:-36"] = "cff1eff00;Trellised Shoulderpads of the Sorcerer",
-	["20869:0"] = "cff0070dd;Amber Idol",
+	["83794:-134"] = "cff1eff00;Shadowfire Necklace of the Galeburst",
 	["8153:0"] = "cff1eff00;Wildvine",
 	["6550:924"] = "cff1eff00;Soldier's Wristguards of the Gorilla",
 	["7076:0"] = "cff1eff00;Essence of Earth",
 	["80433:0"] = "cff0070dd;Blood Spirit",
 	["52773:0"] = "cffffffff;Enchant Cloak - Greater Intellect",
 	["68781:0"] = "cff0070dd;Design: Agile Shadowspirit Diamond",
-	["4338:0"] = "cffffffff;Mageweave Cloth",
 	["39774:0"] = "cffffffff;Midnight Ink",
 	["55645:-5"] = "cff1eff00;Rocktusk Jerkin of the Monkey",
 	["13113:0"] = "cff0070dd;Feathermoon Headdress",
+	["16249:0"] = "cff1eff00;Formula: Enchant 2H Weapon - Major Intellect",
 	["20758:0"] = "cffffffff;Formula: Minor Wizard Oil",
 	["13864:0"] = "cff1eff00;Runecloth Boots",
-	["82285:-6"] = "cff1eff00;Immaculate Spellblade of the Eagle",
 	["3358:0"] = "cffffffff;Khadgar's Whisker",
+	["29740:0"] = "cff1eff00;Fel Armament",
 	["22787:0"] = "cffffffff;Ragveil",
 	["71638:0"] = "cff0070dd;Ornate Weapon",
 	["16049:0"] = "cff1eff00;Schematic: Dark Iron Bomb",
-	["85832:-134"] = "cff1eff00;Misthide Belt of the Galeburst",
 	["52217:0"] = "cff0070dd;Veiled Demonseye",
+	["55669:-91"] = "cff1eff00;Mosshide Hood of the Marksman",
 	["15416:0"] = "cffffffff;Black Dragonscale",
 	["10235:-14"] = "cff1eff00;Engraved Helm of the Tiger",
 	["81995:-43"] = "cff1eff00;Wall Sabatons of the Soldier",
-	["24756:-39"] = "cff1eff00;Daggerfen Bindings of the Invoker",
+	["18661:0"] = "cff1eff00;Schematic: World Enlarger",
 	["22573:0"] = "cffffffff;Mote of Earth",
 	["52185:0"] = "cffffffff;Elementium Ore",
 	["82169:-91"] = "cff1eff00;Rigid Sword of the Marksman",
@@ -10260,87 +10360,87 @@ BeanCounterDBNames = {
 	["82236:-139"] = "cff1eff00;Highpeak Legplates of the Mercenary",
 	["55708:-114"] = "cff1eff00;Brightwood Wristwraps of the Flameblaze",
 	["43297:0"] = "cff1eff00;Damaged Necklace",
-	["4382:0"] = "cffffffff;Bronze Framework",
 	["10602:0"] = "cffffffff;Schematic: Deadly Scope",
+	["23426:0"] = "cff1eff00;Khorium Ore",
 	["8176:0"] = "cff1eff00;Nightscape Headband",
 	["10118:-69"] = "cff1eff00;Ornate Breastplate of the Eagle",
 	["25073:-33"] = "cff1eff00;Emperor Shield of Frost Protection",
-	["33452:0"] = "cffffffff;Honey-Spiced Lichen",
 	["36428:-16"] = "cff1eff00;Bouquet Ring of Stamina",
 	["52212:0"] = "cff0070dd;Delicate Inferno Ruby",
+	["22793:0"] = "cffffffff;Mana Thistle",
 	["13446:0"] = "cffffffff;Major Healing Potion",
 	["22307:0"] = "cffffffff;Pattern: Enchanted Mageweave Pouch",
-	["74715:0"] = "cffffffff;Enchant Boots - Greater Haste",
+	["82283:-37"] = "cff1eff00;Immaculate Ring of the Seer",
 	["29958:0"] = "cffffffff;Blue Dragonhawk Hatchling",
-	["67126:0"] = "cff0070dd;Roffle's Ruffly Gloves",
 	["3864:0"] = "cff1eff00;Citrine",
 	["55774:-138"] = "cff1eff00;Bluefen Cord of the Feverflare",
 	["93509:0"] = "cff0070dd;Crafted Dreadful Gladiator's Ironskin Helm",
 	["58266:0"] = "cffffffff;Violet Morel",
 	["82191:-134"] = "cff1eff00;Mountain Legguards of the Galeburst",
 	["24701:-26"] = "cff1eff00;Haal'eshi Cord of Intellect",
-	["5740:0"] = "cffffffff;Red Fireworks Rocket",
 	["75014:0"] = "cffffffff;Raw Crocolisk Belly",
+	["5740:0"] = "cffffffff;Red Fireworks Rocket",
 	["7078:0"] = "cff1eff00;Essence of Fire",
+	["81976:-5"] = "cff1eff00;Silent Britches of the Monkey",
 	["7407:214"] = "cff1eff00;Infiltrator Armor of Intellect",
 	["55467:-123"] = "cff1eff00;Bladefist Greatsword of the Earthbreaker",
-	["82257:-131"] = "cff1eff00;Vine Bindings of the Undertow",
+	["15238:857"] = "cff1eff00;Warlord's Axe of the Eagle",
 	["52179:0"] = "cff1eff00;Alicite",
 	["22446:0"] = "cff1eff00;Greater Planar Essence",
 	["52327:0"] = "cffffffff;Volatile Earth",
-	["7354:769"] = "cff1eff00;Elder's Boots of the Owl",
+	["77529:0"] = "cff0070dd;Lord Blastington's Scope of Doom",
 	["72237:0"] = "cffffffff;Rain Poppy",
-	["6349:0"] = "cffffffff;Formula: Enchant 2H Weapon - Lesser Intellect",
+	["5643:0"] = "cffffffff;Recipe: Great Rage Potion",
 	["25843:0"] = "cffffffff;Fel Iron Rod",
 	["43378:0"] = "cffffffff;Glyph of Safe Fall",
-	["2840:0"] = "cffffffff;Copper Bar",
 	["37765:0"] = "cff0070dd;Leggings of the Water Moccasin",
 	["82228:-7"] = "cff1eff00;Bejeweled Ring of the Bear",
+	["18649:0"] = "cffffffff;Schematic: Blue Firework",
 	["27854:0"] = "cffffffff;Smoked Talbuk Venison",
-	["11754:0"] = "cff1eff00;Black Diamond",
 	["74857:0"] = "cffffffff;Giant Mantis Shrimp",
+	["3369:0"] = "cffffffff;Grave Moss",
 	["36976:0"] = "cff0070dd;Ring-Lord's Leggings",
-	["82130:-41"] = "cff1eff00;Miner Vambraces of the Beast",
+	["16255:0"] = "cff1eff00;Formula: Enchant 2H Weapon - Major Spirit",
 	["43012:0"] = "cffffffff;Rhino Meat",
-	["2408:0"] = "cff1eff00;Pattern: Fine Leather Gloves",
+	["79287:0"] = "cff0070dd;Five of Tigers",
 	["79310:0"] = "cff0070dd;Four of Serpents",
-	["29903:0"] = "cffffffff;Yellow Moth Egg",
 	["36043:-8"] = "cff1eff00;Crystalsong Sash of the Whale",
 	["14227:0"] = "cffffffff;Ironweb Spider Silk",
-	["36082:-40"] = "cff1eff00;Winterfin Bindings of the Bandit",
 	["23437:0"] = "cff0070dd;Talasite",
+	["36082:-40"] = "cff1eff00;Winterfin Bindings of the Bandit",
 	["52985:0"] = "cffffffff;Azshara's Veil",
+	["52220:0"] = "cff0070dd;Glinting Demonseye",
 	["76142:0"] = "cff0070dd;Sun's Radiance",
-	["765:0"] = "cffffffff;Silverleaf",
+	["6377:0"] = "cff1eff00;Formula: Enchant Boots - Minor Agility",
 	["11177:0"] = "cff0070dd;Small Radiant Shard",
-	["25700:0"] = "cffffffff;Fel Scales",
 	["4306:0"] = "cffffffff;Silk Cloth",
+	["82251:-39"] = "cff1eff00;Waterfall Handwraps of the Invoker",
 	["33459:0"] = "cffffffff;Scroll of Protection VI",
-	["23427:0"] = "cff1eff00;Eternium Ore",
+	["23118:0"] = "cff1eff00;Solid Azure Moonstone",
 	["43490:0"] = "cffffffff;Tasty Cupcake",
-	["81995:-41"] = "cff1eff00;Wall Sabatons of the Beast",
+	["52722:0"] = "cffa335ee;Maelstrom Crystal",
 	["36658:-36"] = "cff1eff00;Extinguished Spark of the Sorcerer",
-	["35967:-38"] = "cff1eff00;Bloodspore Hood of the Prophet",
 	["10326:0"] = "cffffffff;Pattern: Tuxedo Jacket",
 	["24644:-19"] = "cff1eff00;Mistyreed Bracers of Intellect",
 	["82111:-118"] = "cff1eff00;Barbarian Spear of the Faultline",
 	["56483:-137"] = "cff1eff00;Darkbrand Bracers of the Windstorm",
 	["2449:0"] = "cffffffff;Earthroot",
+	["81978:-5"] = "cff1eff00;Silent Gloves of the Monkey",
 	["43011:0"] = "cffffffff;Worg Haunch",
 	["55745:-138"] = "cff1eff00;Everstill Cowl of the Feverflare",
 	["15259:191"] = "cff1eff00;Hefty Battlehammer of Strength",
 	["6045:0"] = "cff1eff00;Plans: Iron Counterweight",
-	["87487:0"] = "cff0070dd;Turpster's Sonorous Shield",
+	["50449:0"] = "cffa335ee;Stiffened Corpse Shoulderpads",
 	["16206:0"] = "cffffffff;Arcanite Rod",
-	["43377:0"] = "cffffffff;Glyph of Pick Lock",
 	["24658:-38"] = "cff1eff00;Consortium Pants of the Prophet",
 	["6037:0"] = "cff1eff00;Truesilver Bar",
 	["2289:0"] = "cffffffff;Scroll of Strength II",
+	["82255:-129"] = "cff1eff00;Waterfall Shoulderpads of the Wildfire",
 	["24836:-9"] = "cff1eff00;Nexus-Strider Mantle of the Owl",
-	["8486:0"] = "cffffffff;Cat Carrier (Cornish Rex)",
 	["24701:-40"] = "cff1eff00;Haal'eshi Cord of the Bandit",
-	["82007:-39"] = "cff1eff00;Intricate Amulet of the Invoker",
 	["82289:-139"] = "cff1eff00;Temple Girdle of the Mercenary",
+	["82007:-39"] = "cff1eff00;Intricate Amulet of the Invoker",
+	["82246:-40"] = "cff1eff00;Yak Legguards of the Bandit",
 	["5425:0"] = "cff0070dd;Runescale Girdle",
 }
 BeanCounterAccountDB = {

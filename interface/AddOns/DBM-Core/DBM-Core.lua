@@ -43,9 +43,9 @@
 --  Globals/Default Options  --
 -------------------------------
 DBM = {
-	Revision = tonumber(("$Revision: 9810 $"):sub(12, -3)),
-	DisplayVersion = "5.3.3", -- the string that is shown as version
-	ReleaseRevision = 9810 -- the revision of the latest stable version that is available
+	Revision = tonumber(("$Revision: 9947 $"):sub(12, -3)),
+	DisplayVersion = "5.3.4", -- the string that is shown as version
+	ReleaseRevision = 9947 -- the revision of the latest stable version that is available
 }
 
 -- Legacy crap; that stupid "Version" field was never a good idea.
@@ -159,11 +159,9 @@ DBM.DefaultOptions = {
 	SettingsMessageShown = false,
 	ForumsMessageShown = false,
 	AlwaysShowSpeedKillTimer = true,
-	DisableCinematics = false,
-	DisableCinematicsOutside = false,
 --	HelpMessageShown = false,
 	MoviesSeen = {},
-	MovieFilters = {},
+	MovieFilter = "Never",
 	LastRevision = 0,
 	FilterSayAndYell = false,
 	ChatFrame = "DEFAULT_CHAT_FRAME",
@@ -206,7 +204,7 @@ local checkWipe
 local fireEvent
 local playerName = UnitName("player")
 local _, class = UnitClass("player")
-local LastZoneMapID = -1
+local LastInstanceMapID = -1
 local queuedBattlefield = {}
 local loadDelay = nil
 local loadDelay2 = nil
@@ -414,7 +412,7 @@ do
 			local zones = v.zones
 			local handler = v[event]
 			local modEvents = v.registeredUnitEvents
-			if handler and (not isUnitEvent or not modEvents or modEvents[event .. ...])  and (not zones or zones[LastZoneMapID]) and not (v.isTrashMod and IsEncounterInProgress()) then
+			if handler and (not isUnitEvent or not modEvents or modEvents[event .. ...])  and (not zones or zones[LastInstanceMapID]) and not (v.isTrashMod and IsEncounterInProgress()) then
 				handler(v, ...)
 			end
 		end
@@ -697,15 +695,15 @@ do
 			if not DBM.Options.ShowMinimapButton then self:HideMinimapButton() end
 			self.AddOns = {}
 			for i = 1, GetNumAddOns() do
-				local name = GetAddOnInfo(i)
-				if GetAddOnMetadata(i, "X-DBM-Mod") and not checkEntry(bannedMods, name) then
+				local addonName = GetAddOnInfo(i)
+				if GetAddOnMetadata(i, "X-DBM-Mod") and not checkEntry(bannedMods, addonName) then
+					local mapIdTable = {strsplit(",", GetAddOnMetadata(i, "X-DBM-Mod-MapID") or "")}
 					table.insert(self.AddOns, {
 						sort			= tonumber(GetAddOnMetadata(i, "X-DBM-Mod-Sort") or math.huge) or math.huge,
 						type			= GetAddOnMetadata(i, "X-DBM-Mod-Type") or "OTHER",
 						category		= GetAddOnMetadata(i, "X-DBM-Mod-Category") or "Other",
-						name			= GetAddOnMetadata(i, "X-DBM-Mod-Name") or GetRealZoneText(tonumber(GetAddOnMetadata(i, "X-DBM-Mod-MapID"))) or "",
-						zoneId			= {strsplit(",", GetAddOnMetadata(i, "X-DBM-Mod-LoadZoneID") or "")},--Still used by SetZone so all mods should still have even if they load off mapId
-						mapId			= {strsplit(",", GetAddOnMetadata(i, "X-DBM-Mod-MapID") or "")},
+						name			= GetAddOnMetadata(i, "X-DBM-Mod-Name") or GetRealZoneText(tonumber(mapIdTable[1])) or "",
+						mapId			= mapIdTable,
 						subTabs			= GetAddOnMetadata(i, "X-DBM-Mod-SubCategoriesID") and {strsplit(",", GetAddOnMetadata(i, "X-DBM-Mod-SubCategoriesID"))} or GetAddOnMetadata(i, "X-DBM-Mod-SubCategories") and {strsplit(",", GetAddOnMetadata(i, "X-DBM-Mod-SubCategories"))},
 						oneFormat		= tonumber(GetAddOnMetadata(i, "X-DBM-Mod-Has-Single-Format") or 0) == 1,
 						hasLFR			= tonumber(GetAddOnMetadata(i, "X-DBM-Mod-Has-LFR") or 0) == 1,
@@ -713,16 +711,8 @@ do
 						hasChallenge	= tonumber(GetAddOnMetadata(i, "X-DBM-Mod-Has-Challenge") or 0) == 1,
 						noHeroic		= tonumber(GetAddOnMetadata(i, "X-DBM-Mod-No-Heroic") or 0) == 1,
 						noStatistics	= tonumber(GetAddOnMetadata(i, "X-DBM-Mod-No-Statistics") or 0) == 1,
-						modId			= name,
+						modId			= addonName,
 					})
-					for i = #self.AddOns[#self.AddOns].zoneId, 1, -1 do
-						local id = tonumber(self.AddOns[#self.AddOns].zoneId[i])
-						if id then
-							self.AddOns[#self.AddOns].zoneId[i] = id
-						else
-							table.remove(self.AddOns[#self.AddOns].zoneId, i)
-						end
-					end
 					for i = #self.AddOns[#self.AddOns].mapId, 1, -1 do
 						local id = tonumber(self.AddOns[#self.AddOns].mapId[i])
 						if id then
@@ -746,9 +736,6 @@ do
 			table.sort(self.AddOns, function(v1, v2) return v1.sort < v2.sort end)
 			self:RegisterEvents(
 				"COMBAT_LOG_EVENT_UNFILTERED",
-				"ZONE_CHANGED_NEW_AREA",
-				"ZONE_CHANGED",
-				"ZONE_CHANGED_INDOORS",
 				"GROUP_ROSTER_UPDATE",
 				--"INSTANCE_GROUP_SIZE_CHANGED",
 				"CHAT_MSG_ADDON",
@@ -779,25 +766,12 @@ do
 				"ACTIVE_TALENT_GROUP_CHANGED",
 				"LOADING_SCREEN_DISABLED"
 			)
-			self:ZONE_CHANGED_NEW_AREA()
 			self:GROUP_ROSTER_UPDATE()
 			self:Schedule(1.5, function()
         		combatInitialized = true
 			end)
 			self:Schedule(20, function()--Delay UNIT_HEALTH combat start for 20 sec. (to not break Timer Recovery stuff)
         		healthCombatInitialized = true
-			end)
-			-- setup MovieFrame hook (TODO: replace this by a proper filtering function that only filters certain movie IDs (which requires some API for boss mods to specify movie IDs and default actions)))
-			local oldMovieEventHandler = MovieFrame:GetScript("OnEvent")
-			MovieFrame:SetScript("OnEvent", function(self, event, movieId, ...)
-				if event == "PLAY_MOVIE" and (DBM.Options.DisableCinematics and IsInInstance() or (DBM.Options.DisableCinematicsOutside and not IsInInstance())) then
-					-- you still have to call OnMovieFinished, even if you never actually told the movie frame to start the movie, otherwise you will end up in a weird state (input stops working)
-					MovieFrame_OnMovieFinished(MovieFrame)
-					return
-				else
-					-- other event or cinematics enabled
-					return oldMovieEventHandler and oldMovieEventHandler(self, event, movieId, ...)
-				end
 			end)
 		end
 	end
@@ -972,7 +946,7 @@ do
 
 		-- execute OnUpdate handlers of all modules
 		for i, v in pairs(updateFunctions) do
-			if i.Options.Enabled and (not i.zones or i.zones[LastZoneMapID]) then
+			if i.Options.Enabled and (not i.zones or i.zones[LastInstanceMapID]) then
 				i.elapsed = (i.elapsed or 0) + elapsed
 				if i.elapsed >= (i.updateInterval or 0) then
 					v(i, i.elapsed)
@@ -1097,7 +1071,7 @@ SlashCmdList["DEADLYBOSSMODS"] = function(msg)
 			return DBM:AddMsg(DBM_ERROR_NO_PERMISSION)
 		end
 		local timer = tonumber(cmd:sub(5)) or 10
-		sendSync("PT", timer, LastZoneMapID)
+		sendSync("PT", timer, LastInstanceMapID)
 	elseif cmd:sub(1, 5) == "arrow" then
 		if not DBM:IsInRaid() then
 			DBM:AddMsg(DBM_ARROW_NO_RAIDGROUP)
@@ -1614,7 +1588,7 @@ do
 
 --[[
 	function DBM:INSTANCE_GROUP_SIZE_CHANGED()
-		local _, instanceType, difficulty, _, maxPlayers, playerDifficulty, isDynamicInstance, _, instanceGroupSize = GetInstanceInfo()
+		I don't feel this will really be needed. we'll update size on combatstart. unless someone leaving group in middle of boss fight updates boss scaling WHILE ENGAGED, this is probably not nessesary but we'll see.
 	end
 --]]
 
@@ -1941,9 +1915,15 @@ function DBM:PLAYER_TARGET_CHANGED()
 	end
 end
 
-function DBM:CINEMATIC_START()
-	if DBM.Options.DisableCinematics and IsInInstance() or (DBM.Options.DisableCinematicsOutside and not IsInInstance()) then--This will also kill non movie cinematics, like the bridge in firelands
+function DBM:CINEMATIC_START(...)
+	if DBM.Options.MovieFilter == "Never" then return end
+	SetMapToCurrentZone()
+	local currentMapID = GetCurrentMapAreaID()
+	local currentFloor = GetCurrentMapDungeonLevel() or 0
+	if DBM.Options.MovieFilter == "Block" or DBM.Options.MovieFilter == "AfterFirst" and DBM.Options.MoviesSeen[currentMapID..currentFloor] then
 		CinematicFrame_CancelCinematic()
+	else
+		DBM.Options.MoviesSeen[currentMapID..currentFloor] = true
 	end
 end
 
@@ -1979,62 +1959,35 @@ function DBM:WORLD_STATE_TIMER_START()
 end
 
 function DBM:WORLD_STATE_TIMER_STOP()
-	if DBM.Options.ChallengeBest == "None" or not C_Scenario.IsChallengeMode() then return end
-	if not C_Scenario.IsChallengeMode() then return end
+	if (DBM.Options.ChallengeBest == "None") or not C_Scenario.IsChallengeMode() then return end
 	if DBM.Bars:GetBar(DBM_SPEED_CLEAR_TIMER_TEXT) then
 		DBM.Bars:CancelBar(DBM_SPEED_CLEAR_TIMER_TEXT)
 	end
 end
 
-function DBM:ZONE_CHANGED()
-	if DBM.RangeCheck:IsShown() or DBM.Arrow:IsShown() then--If either arrow or range frame are shown when we change areas, force a map update
-		SetMapToCurrentZone()
-		DBM:UpdateMapSizes()
-	end
-end
-DBM.ZONE_CHANGED_INDOORS = DBM.ZONE_CHANGED
-
 function DBM:GetCurrentArea()
-	return LastZoneMapID
+	return LastInstanceMapID
 end
 
 --------------------------------
 --  Load Boss Mods on Demand  --
 --------------------------------
-do
-	--Primarily for outdoor mods that can't load off GetInstanceInfo()
-	function DBM:ZONE_CHANGED_NEW_AREA()
-		--Work around for the zone ID/area updating slow because the world map doesn't always have correct information on zone change
-		if WorldMapFrame:IsVisible() and not IsInInstance() then --World map is open and we're not in an instance, (such as flying from zone to zone doing archaeology)
-			local openMapID = GetCurrentMapAreaID()--Save current map settings.
-			SetMapToCurrentZone()--Force to right zone
-			local correctMapID = GetCurrentMapAreaID()--Get right info after we set map to right place.
-			LastZoneMapID = correctMapID or -1 --Set accurate zone area id into cache
-			if openMapID ~= correctMapID then
-				SetMapByID(openMapID)--Restore old map settings if they differed to what they were prior to forcing mapchange and user has map open.
-			end
-		else--Map isn't open, no reason to save/restore settings, just make sure the information is correct and that's it.
-			SetMapToCurrentZone()
-			LastZoneMapID = GetCurrentMapAreaID() --Set accurate zone area id into cache
-		end
---		self:AddMsg(GetZoneText()..", "..LastZoneMapID)--Debug
-		self:LoadModsOnDemand("zoneId", LastZoneMapID)
-		DBM:UpdateMapSizes()
-	end
-	
+do	
 	--Faster and more accurate loading for instances, but useless outside of them
 	function DBM:LOADING_SCREEN_DISABLED()
-		if not IsInInstance() then return end
 		local _, instanceType, _, _, _, _, _, mapID = GetInstanceInfo()
+		LastInstanceMapID = mapID
+		if instanceType == "none" and (mapID ~= 369) and (mapID ~= 1043) then return end -- instance type of brawlers guild is none ("Shlae'gararena none 0  5 0 false 1043")
 		self:LoadModsOnDemand("mapId", mapID)
 		if instanceType == "scenario" and self:GetModByName("d511") then--mod already loaded
-			self:Schedule(1, DBM.InstanceCheck, self)--Delayed because LOADING_SCREEN_DISABLED fires before ZONE_CHANGED_NEW_AREA but requires an updated LastZoneMapID
+			DBM:InstanceCheck()
 		end
 	end
 
 	function DBM:LoadModsOnDemand(checkTable, checkValue)
 		for i, v in ipairs(DBM.AddOns) do
-			if not IsAddOnLoaded(v.modId) and checkEntry(v[checkTable], checkValue) then
+			local modTable = v[checkTable]
+			if not IsAddOnLoaded(v.modId) and modTable and checkEntry(modTable, checkValue) then
 				if self:LoadMod(v) and v.type == "SCENARIO" then
 					DBM:InstanceCheck()
 				end
@@ -2045,9 +1998,9 @@ end
 
 --Scenario mods
 function DBM:InstanceCheck()
-	if combatInfo[LastZoneMapID] then
-		for i, v in ipairs(combatInfo[LastZoneMapID]) do
-			if (v.type == "scenario") and checkEntry(v.msgs, LastZoneMapID) then
+	if combatInfo[LastInstanceMapID] then--Scenarios not yet moved over to LastInstanceMapID
+		for i, v in ipairs(combatInfo[LastInstanceMapID]) do
+			if (v.type == "scenario") and checkEntry(v.msgs, LastInstanceMapID) then
 				DBM:StartCombat(v.mod, 0)
 			end
 		end
@@ -2163,7 +2116,7 @@ do
 		mod = DBM:GetModByName(mod or "")
 		revision = tonumber(revision or 0) or 0
 		startHp = tonumber(startHp or -1) or -1
-		if mod and delay and (not mod.zones or mod.zones[LastZoneMapID]) and (not mod.minSyncRevision or revision >= mod.minSyncRevision) then
+		if mod and delay and (not mod.zones or mod.zones[LastInstanceMapID]) and (not mod.minSyncRevision or revision >= mod.minSyncRevision) then
 			DBM:StartCombat(mod, delay + lag, true, startHp, nil, "Sync from: "..sender)
 		end
 	end
@@ -2179,7 +2132,7 @@ do
 		if select(2, IsInInstance()) == "pvp" or DBM:GetRaidRank(sender) == 0 or IsEncounterInProgress() then
 			return
 		end
-		if mapid and mapid ~= LastZoneMapID then return end
+		if mapid and mapid ~= LastInstanceMapID then return end
 		timer = tonumber(timer or 0)
 		if timer > 60 then
 			return
@@ -2730,8 +2683,8 @@ do
 		lastCombatStarted = GetTime()
 		healthCombatInitialized = false
 		if not combatInitialized then return end
-		if combatInfo[LastZoneMapID] then
-			for i, v in ipairs(combatInfo[LastZoneMapID]) do
+		if combatInfo[LastInstanceMapID] then
+			for i, v in ipairs(combatInfo[LastInstanceMapID]) do
 				if v.type == "combat" then
 					if v.multiMobPullDetection then
 						for _, mob in ipairs(v.multiMobPullDetection) do
@@ -2764,8 +2717,8 @@ do
 	end
 
 	function DBM:INSTANCE_ENCOUNTER_ENGAGE_UNIT()
-		if combatInfo[LastZoneMapID] then
-			for i, v in ipairs(combatInfo[LastZoneMapID]) do
+		if combatInfo[LastInstanceMapID] then
+			for i, v in ipairs(combatInfo[LastInstanceMapID]) do
 				if v.type == "combat" and isBossEngaged(v.multiMobPullDetection or v.mob) then
 					self:StartCombat(v.mod, 0, nil, nil, nil, "INSTANCE_ENCOUNTER_ENGAGE_UNIT")
 				end
@@ -2788,8 +2741,8 @@ do
 	-- called for all mob chat events
 	local function onMonsterMessage(type, msg)
 		-- pull detection
-		if combatInfo[LastZoneMapID] then
-			for i, v in ipairs(combatInfo[LastZoneMapID]) do
+		if combatInfo[LastInstanceMapID] then
+			for i, v in ipairs(combatInfo[LastInstanceMapID]) do
 				if v.type == type and checkEntry(v.msgs, msg)
 				or v.type == type .. "_regex" and checkExpressionList(v.msgs, msg) then
 					DBM:StartCombat(v.mod, 0, nil, nil, nil, "CHAT_MSG")
@@ -2837,6 +2790,7 @@ end
 local bossHealth = {}
 local savedDifficulty
 local difficultyText
+local flexSize
 
 function checkWipe(confirm)
 	if #inCombat > 0 then
@@ -2878,14 +2832,7 @@ function checkWipe(confirm)
 	end
 end
 
-function DBM:StartCombat(mod, delay, synced, syncedStartHp, noKillRecord, triggerEvent)
-	local _, instanceType = GetInstanceInfo()
-	--Seeing more and more bad pulls during raids. Need to track down source of this problem. Bosses "engaging" during trash that should be impossible. Trolled syncs, or a mysterious bug on our end?
-	--I've concluded all genuine RAID pulls, IsEncounterInProgress is ALWAYS true.
-	--So lets refine this debug to just printing bad pulls and only in "raid" until we know for sure there is no other cause of bad pulls except bad syncs.
-	if triggerEvent and not IsEncounterInProgress() and instanceType == "raid" then
-		print("DBM Combat Debug: Combat started by "..triggerEvent..". Encounter in progress: "..tostring(IsEncounterInProgress()))
-	end
+function DBM:StartCombat(mod, delay, synced, syncedStartHp, noKillRecord)
 	if not checkEntry(inCombat, mod) then
 		if not mod.Options.Enabled then return end
 		-- HACK: makes sure that we don't detect a false pull if the event fires again when the boss dies...
@@ -2894,6 +2841,8 @@ function DBM:StartCombat(mod, delay, synced, syncedStartHp, noKillRecord, trigge
 		if mod.combatInfo.noCombatInVehicle and UnitInVehicle("player") then -- HACK
 			return
 		end
+		savedDifficulty, difficultyText, flexSize = self:GetCurrentInstanceDifficulty()
+		if synced and savedDifficulty == "worldboss" and not UnitAffectingCombat("player") then return end--Ignore world boss pulls if you aren't fighting them.
 		table.insert(inCombat, mod)
 		bossHealth[mod.combatInfo.mob or -1] = 1
 		if mod.multiMobPullDetection then
@@ -2901,7 +2850,6 @@ function DBM:StartCombat(mod, delay, synced, syncedStartHp, noKillRecord, trigge
 				if not bossHealth[mob] then bossHealth[mob] = 1 end
 			end
 		end
-		savedDifficulty, difficultyText = self:GetCurrentInstanceDifficulty()
 		if mod.inCombatOnlyEvents and not mod.inCombatOnlyEventsRegistered then
 			mod.inCombatOnlyEventsRegistered = 1
 			mod:RegisterEvents(unpack(mod.inCombatOnlyEvents))
@@ -3005,12 +2953,13 @@ function DBM:StartCombat(mod, delay, synced, syncedStartHp, noKillRecord, trigge
 end
 
 function DBM:UNIT_HEALTH(uId)
+	if not UnitExists(uId) then return end
 	local cId = UnitGUID(uId) and tonumber(UnitGUID(uId):sub(6, 10), 16)
-	local health = (UnitHealth(uId) or 0) / (UnitHealthMax(uId) or 1)
 	if not cId then return end
+	local health = (UnitHealth(uId) or 0) / (UnitHealthMax(uId) or 1)
 	if #inCombat == 0 and bossIds[cId] and InCombatLockdown() and UnitAffectingCombat(uId) and healthCombatInitialized then -- StartCombat by UNIT_HEALTH event, for older instances.
-		if combatInfo[LastZoneMapID] then
-			for i, v in ipairs(combatInfo[LastZoneMapID]) do
+		if combatInfo[LastInstanceMapID] then
+			for i, v in ipairs(combatInfo[LastInstanceMapID]) do
 				if not v.mod.disableHealthCombat and (v.type == "combat" and v.multiMobPullDetection and checkEntry(v.multiMobPullDetection, cId) or v.mob == cId) then
 					self:StartCombat(v.mod, health > 0.97 and 0.5 or math.min(20, (lastCombatStarted and GetTime() - lastCombatStarted) or 2.1), nil, health, health < 0.90, "UNIT_HEALTH") -- Above 97%, boss pulled during combat, set min delay (0.5) / Below 97%, combat enter detection failure, use normal delay (max 20s) / Do not record kill time below 90% (late combat detection)
 				end
@@ -3332,8 +3281,7 @@ end
 
 function DBM:StartLogging(timer, checkFunc)
 	self:Unschedule(DBM.StopLogging)
-	local difficulty = self:GetCurrentInstanceDifficulty()
-	if DBM.Options.LogOnlyRaidBosses and difficulty ~= "normal10" and difficulty ~= "normal25" and difficulty ~= "heroic10" and difficulty ~= "heroic25" then return end
+	if DBM.Options.LogOnlyRaidBosses and savedDifficulty ~= "normal10" and savedDifficulty ~= "normal25" and savedDifficulty ~= "heroic10" and savedDifficulty ~= "heroic25" then return end
 	if DBM.Options.AutologBosses and not LoggingCombat() then--Start logging here to catch pre pots.
 		self:AddMsg("|cffffff00"..COMBATLOGENABLED.."|r")
 		LoggingCombat(1)
@@ -3342,7 +3290,7 @@ function DBM:StartLogging(timer, checkFunc)
 			self:Schedule(timer+10, checkFunc)--But if pull was canceled and we don't have a boss engaged within 10 seconds of pull timer ending, abort log
 		end
 	end
-	if DBM.Options.AdvancedAutologBosses and IsAddOnLoaded("Transcriptor") then
+	if DBM.Options.AdvancedAutologBosses and Transcriptor then
 		if not Transcriptor:IsLogging() then
 			self:AddMsg("|cffffff00"..DBM_CORE_TRANSCRIPTOR_LOG_START.."|r")
 			Transcriptor:StartLog(1)
@@ -3359,7 +3307,7 @@ function DBM:StopLogging()
 		DBM:AddMsg("|cffffff00"..COMBATLOGDISABLED.."|r")
 		LoggingCombat(0)
 	end
-	if DBM.Options.AdvancedAutologBosses and IsAddOnLoaded("Transcriptor") then
+	if DBM.Options.AdvancedAutologBosses and Transcriptor then
 		if Transcriptor:IsLogging() then
 			DBM:AddMsg("|cffffff00"..DBM_CORE_TRANSCRIPTOR_LOG_END.."|r")
 			Transcriptor:StopLog(1)
@@ -3368,7 +3316,7 @@ function DBM:StopLogging()
 end
 
 function DBM:GetCurrentInstanceDifficulty()
-	local _, instanceType, difficulty, difficultyName, maxPlayers = GetInstanceInfo()
+	local _, instanceType, difficulty, difficultyName, maxPlayers, _, _, _, instanceGroupSize = GetInstanceInfo()
 	if difficulty == 0 then
 		return "worldboss", DBM_CORE_WORLD_BOSS.." - "
 	elseif difficulty == 1 then
@@ -3394,7 +3342,7 @@ function DBM:GetCurrentInstanceDifficulty()
 	elseif difficulty == 12 then--5.3 normal scenario
 		return "normal5", difficultyName.." - "
 	elseif difficulty == 14 then
-		return "flex", RAID_DIFFICULTY5
+		return "flex", difficultyName.." - ", instanceGroupSize
 	else--failsafe
 		return "normal5", ""
 	end
@@ -3445,7 +3393,7 @@ do
 					if not bossHealth[mob] then bossHealth[mob] = 1 end
 				end
 			end
-			savedDifficulty, difficultyText = self:GetCurrentInstanceDifficulty()
+			savedDifficulty, difficultyText, flexSize = self:GetCurrentInstanceDifficulty()
 			if mod.inCombatOnlyEvents and not mod.inCombatOnlyEventsRegistered then
 				mod.inCombatOnlyEventsRegistered = 1
 				mod:RegisterEvents(unpack(mod.inCombatOnlyEvents))
@@ -3915,6 +3863,7 @@ end
 
 function DBM:UpdateMapSizes()
 	-- try custom map size first
+	SetMapToCurrentZone()
 	local mapName = GetMapInfo()
 	local floor, a1, b1, c1, d1 = GetCurrentMapDungeonLevel()
 	local dims = DBM.MapSizes[mapName] and DBM.MapSizes[mapName][floor]
@@ -3937,7 +3886,6 @@ end
 
 function DBM:GetMapSizes()
 	if not currentSizes then
-		SetMapToCurrentZone()
 		DBM:UpdateMapSizes()
 	end
 	return currentSizes
@@ -3948,28 +3896,14 @@ end
 -------------------
 MovieFrame:HookScript("OnEvent", function(self, event, id)
 	if event == "PLAY_MOVIE" and id then
-		if DBM.Options.MovieFilters[id] == "Block" or DBM.Options.MovieFilters[id] == "OnlyFirst" and DBM.Options.MoviesSeen[id] then
+		if DBM.Options.MovieFilter == "Never" then return end
+		if DBM.Options.MovieFilter == "Block" or DBM.Options.MovieFilter == "AfterFirst" and DBM.Options.MoviesSeen[id] then
 			MovieFrame_OnMovieFinished(self)
+		else
+			DBM.Options.MoviesSeen[id] = true
 		end
 	end
 end)
-
-function DBM:MovieFilter(mod, ...)
-	local i = 1
-	while i <= select("#", ...) do
-		local id, name, default = select(i, ...)
-		if type(default) == "string" then
-			-- id, name, defaultSetting
-			i = i + 3
-		else
-			-- id, name
-			i = i + 2
-			default = nil
-		end
-		mod:AddBoolOption(tostring(id), default == "OnlyFirst", "BlockMovies")
-		-- mod:AddButton
-	end
-end
 
 
 --------------------------
@@ -4021,14 +3955,14 @@ do
 
 		if tonumber(name) then
 			local t = EJ_GetEncounterInfo(tonumber(name))
-			obj.localization.general.name = string.split(",", t or "")
+			obj.localization.general.name = string.split(",", t or name)
 			obj.modelId = select(4, EJ_GetCreatureInfo(1, tonumber(name)))
 		elseif name:match("z%d+") then
 			local t = GetRealZoneText(string.sub(name, 2))
-			obj.localization.general.name = string.split(",", t or "")
+			obj.localization.general.name = string.split(",", t or name)
 		elseif name:match("d%d+") then
 			local t = GetDungeonInfo(string.sub(name, 2))
-			obj.localization.general.name = string.split(",", t or "")
+			obj.localization.general.name = string.split(",", t or name)
 		end
 		table.insert(self.Mods, obj)
 		modsById[name] = obj
@@ -4055,8 +3989,8 @@ bossModPrototype.UnregisterShortTermEvents = DBM.UnregisterShortTermEvents
 function bossModPrototype:SetZone(...)
 	if select("#", ...) == 0 then
 		self.zones = {}
-		if self.addon and self.addon.zoneId then
-			for i, v in ipairs(self.addon.zoneId) do
+		if self.addon and self.addon.mapId then
+			for i, v in ipairs(self.addon.mapId) do
 				self.zones[v] = true
 			end
 		end
@@ -4249,16 +4183,18 @@ function bossModPrototype:Stop(cid)
 	self:Unschedule()
 end
 
-bossModPrototype.GetDifficulty = DBM.GetCurrentInstanceDifficulty
-
 function bossModPrototype:IsDifficulty(...)
-	local diff = self:GetDifficulty()
+	local diff = DBM:GetCurrentInstanceDifficulty()
 	for i = 1, select("#", ...) do
 		if diff == select(i, ...) then
 			return true
 		end
 	end
 	return false
+end
+
+function bossModPrototype:FlexSize()
+	return flexSize
 end
 
 function bossModPrototype:SetUsedIcons(...)
@@ -4270,6 +4206,13 @@ end
 
 function bossModPrototype:LatencyCheck()
 	return select(4, GetNetStats()) < DBM.Options.LatencyThreshold
+end
+
+function bossModPrototype:IsTrivial(level)
+	if UnitLevel("player") >= level then
+		return true
+	end
+	return false
 end
 
 -- An anti spam function to throttle spammy events (e.g. SPELL_AURA_APPLIED on all group members)
@@ -4421,6 +4364,10 @@ end
 
 function bossModPrototype:CanRemoveEnrage()
 	return class == "HUNTER" or class == "ROGUE" or class == "DRUID"
+end
+
+function bossModPrototype:IsMagicDispeller()
+	return class == "MAGE" or class == "PRIEST" or class == "SHAMAN"
 end
 
 ----------------------------

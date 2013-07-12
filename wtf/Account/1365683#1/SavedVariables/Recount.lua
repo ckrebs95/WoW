@@ -16,10 +16,10 @@ RecountDB = {
 			["GraphWindowY"] = 0,
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -522.5003509521484,
-					["x"] = 639.0000610351563,
-					["w"] = 294.0001525878906,
-					["h"] = 158.9999237060547,
+					["y"] = -480.5001449584961,
+					["x"] = -783.9999542236328,
+					["w"] = 294.0000915527344,
+					["h"] = 132.9999237060547,
 				},
 			},
 			["MainWindowMode"] = 2,
@@ -36,9 +36,9 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = -409.9998474121094,
-			["MainWindowHeight"] = 158.999907985331,
+			["MainWindowHeight"] = 132.9999237060547,
 			["GraphWindowX"] = 0,
-			["MainWindowWidth"] = 294.0000299513335,
+			["MainWindowWidth"] = 294.0000915527344,
 			["DetailWindowX"] = 619.0000610351563,
 		},
 		["Doyjen - Khaz Modan"] = {
@@ -139,8 +139,8 @@ RecountDB = {
 			["GraphWindowY"] = 0,
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -544.000244140625,
-					["x"] = -649.0002822875977,
+					["y"] = -492.0002403259277,
+					["x"] = -766.0002899169922,
 					["w"] = 268.0001525878906,
 					["h"] = 113.9999389648438,
 				},
@@ -196,7 +196,7 @@ RecountDB = {
 				},
 			},
 			["MainWindowMode"] = 2,
-			["LastInstanceName"] = "Dagger in the Dark",
+			["LastInstanceName"] = "Throne of Thunder",
 			["CurDataSet"] = "LastFightData",
 			["Colors"] = {
 				["Bar"] = {
@@ -209,21 +209,22 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["DetailWindowX"] = 0,
+			["MainWindowHeight"] = 102.000015646219,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 283.0000263005491,
-			["MainWindowHeight"] = 102.000015646219,
+			["DetailWindowX"] = 0,
 		},
 		["Desamil - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -495.9998817443848,
-					["x"] = -788.9999084472656,
+					["y"] = -495.9998779296875,
+					["x"] = -788.9997482299805,
 					["w"] = 278.0000305175781,
 					["h"] = 101.9999923706055,
 				},
 			},
+			["MainWindowMode"] = 2,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -236,10 +237,11 @@ RecountDB = {
 			},
 			["DetailWindowY"] = 0,
 			["DetailWindowX"] = 0,
+			["GraphWindowX"] = 0,
+			["LastInstanceName"] = "Shadowfang Keep",
+			["CurDataSet"] = "OverallData",
 			["MainWindowWidth"] = 278.0000305175781,
 			["MainWindowHeight"] = 101.9999923706055,
-			["GraphWindowX"] = 0,
-			["CurDataSet"] = "OverallData",
 		},
 		["Deyndis - Khaz Modan"] = {
 			["GraphWindowY"] = 0,

@@ -1,8 +1,7 @@
-if select(4, GetBuildInfo()) >= 50400 then return end
-local mod	= DBM:NewMod("FoOTrash", "DBM-FallOfOrgrimmar")
+local mod	= DBM:NewMod("FoOTrash", "DBM-SiegeOfOrgrimmar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9798 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9878 $"):sub(12, -3))
 --mod:SetModelID(47785)
 mod:SetZone()
 

@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Prince", "DBM-Karazhan")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 436 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 477 $"):sub(12, -3))
 mod:SetCreatureID(15690)
 mod:SetModelID(19274)
 mod:RegisterCombat("combat")
@@ -48,7 +48,7 @@ function mod:SPELL_CAST_START(args)
 	if args.spellId == 30852 then
 		warningNovaCast:Show()
 		timerNovaCast:Start()
-		specWarnNova:Show()
+		specWarnNova:Show()--Trivial damage, but because of enfeeble, don't want to do a blind level check here
 	end
 end
 

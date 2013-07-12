@@ -120,6 +120,17 @@ L:SetTimerLocalization({
 	timerFlockCD	= "Nest (%d): %s"
 })
 
+L:SetOptionLocalization({
+	ShowNestArrows		= "Zeige DBM-Pfeil für Nestaktivierung",
+	Never				= "Nie",
+	Northeast			= "Blau - Unten NO & Oben NO",
+	Southeast			= "Grün - Unten SO & Oben SO",
+	Southwest			= "Violett/Rot - Unten SW & Oben SW/Mitte (25er/10er)",
+	West				= "Rot - Unten W & Oben Mitte (nur 25er)",
+	Northwest			= "Gelb - Unten NW & Oben NW (nur 25er)",
+	Guardians			= "Nestwächter"
+})
+
 L:SetMiscLocalization({
 	eggsHatchL		= "Die Eier in einem der unteren Nester beginnen, aufzubrechen!",
 	eggsHatchU		= "Die Eier in einem der oberen Nester beginnen, aufzubrechen!",
@@ -222,7 +233,7 @@ L:SetWarningLocalization({
 
 L:SetTimerLocalization({
 	timerDayCD		= "Nächste Tagphase",
-	timerDuskCD		= "Nächste Dämmerungsphase",
+	timerDuskCD		= "Nächste Dämmerungsphase"
 })
 
 L:SetMiscLocalization({
@@ -235,11 +246,18 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(832)
 
 L:SetWarningLocalization({
-	specWarnIntermissionSoon	= "Unterbrechung bald"
+	specWarnIntermissionSoon	= "Unterbrechung bald",
+	warnDiffusionChainSpread	= "%s gesprungen auf >%s<"
+})
+
+L:SetTimerLocalization({
+	timerConduitCD				= "Erste Leitung CD"
 })
 
 L:SetOptionLocalization({
 	specWarnIntermissionSoon	= "Spezialvorwarnung für Unterbrechung",
+	warnDiffusionChainSpread	= "Verkünde Sprungziele von $spell:135991",
+	timerConduitCD				= "Abklingzeit der Fähigkeit der ersten Leitung anzeigen",
 	StaticShockArrow			= "Zeige DBM-Pfeil, wenn jemand von $spell:135695 betroffen ist",
 	OverchargeArrow				= "Zeige DBM-Pfeil, wenn jemand von $spell:136295 betroffen ist"
 })
@@ -254,11 +272,13 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(831)
 
 L:SetOptionLocalization({
-	SetIconsOnVita		= "Setze Zeichen auf den Spieler mit dem Debuff $spell:138297 und den am weitesten davon entfernten Spieler"
+	SetIconsOnVita		= "Setze Zeichen auf den Spieler mit dem Debuff $spell:138297 und den am weitesten davon entfernten Spieler",
+	InfoFrame			= "Zeige Infofenster für Spieler ohne $spell:138372 (ausgenommen Tanks)"
 })
 
 L:SetMiscLocalization({
-	Defeat		= "Wait! I am... I am not your enemy."--translate (trigger)
+	Defeat			= "Wait! I am... I am not your enemy.",--translate (trigger)
+	NoSensitivity	= "No Sensitivity"--translate (trigger)
 })
 
 -------------

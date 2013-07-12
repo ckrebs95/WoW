@@ -1,9 +1,8 @@
-if select(4, GetBuildInfo()) >= 50400 then return end
-local mod	= DBM:NewMod(868, "DBM-FallOfOrgrimmar", nil, 369)
+local mod	= DBM:NewMod(868, "DBM-SiegeOfOrgrimmar", nil, 369)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9798 $"):sub(12, -3))
---mod:SetCreatureID(69465)
+mod:SetRevision(("$Revision: 9878 $"):sub(12, -3))
+mod:SetCreatureID(72249)
 --mod:SetQuestID(32744)
 mod:SetZone()
 

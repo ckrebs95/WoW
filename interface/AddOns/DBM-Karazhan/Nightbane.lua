@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Nightbane", "DBM-Karazhan")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 436 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 477 $"):sub(12, -3))
 mod:SetCreatureID(17225)
 mod:SetModelID(18062)
 mod:RegisterCombat("combat")
@@ -54,7 +54,7 @@ function mod:SPELL_CAST_SUCCESS(args)
 end
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args.spellId == 30129 and args:IsPlayer() then
+	if args.spellId == 30129 and args:IsPlayer() and not self:IsTrivial(85) then
 		specWarnCharred:Show()
 	elseif args.spellId == 30130 then
 		warningAsh:Show(args.destName)

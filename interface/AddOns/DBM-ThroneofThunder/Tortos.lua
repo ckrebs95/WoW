@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(825, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9795 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 9923 $"):sub(12, -3))
 mod:SetCreatureID(67977)
 mod:SetQuestID(32747)
 mod:SetZone()
@@ -84,10 +84,9 @@ local function checkCrystalShell()
 		local percent = (UnitHealth("player") / UnitHealthMax("player")) * 100
 		if percent > 90 then
 			specWarnCrystalShell:Show(shelldName)
-		else
-			mod:Unschedule(checkCrystalShell)
-			mod:Schedule(3, checkCrystalShell)
 		end
+		mod:Unschedule(checkCrystalShell)
+		mod:Schedule(3, checkCrystalShell)
 	end
 end
 

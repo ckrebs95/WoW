@@ -1,9 +1,11 @@
 
 NXQuest = {
 	["profileKeys"] = {
+		["Dethamett - Khaz Modan"] = "Default",
+		["Darvina - Khaz Modan"] = "Default",
+		["Deyndis - Khaz Modan"] = "Default",
 		["Dreyan - Khaz Modan"] = "Default",
 		["Desamil - Khaz Modan"] = "Default",
-		["Deyndis - Khaz Modan"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -27,6 +29,8 @@ NXQuest = {
 			["Quest"] = {
 				["Snd1"] = false,
 				["SndPlayCompleted"] = false,
+				["PartyShare"] = false,
+				["BroadcastQChanges"] = false,
 			},
 		},
 	},

@@ -1,0 +1,35 @@
+------------------------------------------------------------------------
+r497 | oscarucb | 2013-06-28 20:42:16 +0000 (Fri, 28 Jun 2013) | 1 line
+Changed paths:
+   A /tags/6.4.8 (from /trunk:496)
+
+Tagging as 6.4.8
+------------------------------------------------------------------------
+r496 | oscarucb | 2013-06-28 20:40:36 +0000 (Fri, 28 Jun 2013) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+build 17128 database bump
+
+------------------------------------------------------------------------
+r494 | oscarucb | 2013-06-26 17:26:06 +0000 (Wed, 26 Jun 2013) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+build 17116 database bump
+
+------------------------------------------------------------------------
+r493 | oscarucb | 2013-06-18 10:01:34 +0000 (Tue, 18 Jun 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+fix recipe faction detection when the player is Pandaren
+
+------------------------------------------------------------------------
+r491 | oscarucb | 2013-06-12 02:23:05 +0000 (Wed, 12 Jun 2013) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+
+build 17055 bump
+
+------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Kazrogal", "DBM-Hyjal")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 436 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 477 $"):sub(12, -3))
 mod:SetCreatureID(17888)
 mod:SetModelID(17886)
 mod:SetZone()
@@ -12,7 +12,7 @@ mod:RegisterEvents(
 	"SPELL_CAST_START"
 )
 
-local warnMark			= mod:NewAnnounce("WarnMark", 3 , 31447)
+local warnMark			= mod:NewCountAnnounce(31447, 3)
 
 local timerMark			= mod:NewCDTimer(45, 31447)
 
