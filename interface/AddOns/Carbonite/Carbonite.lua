@@ -108,17 +108,22 @@ Nx.RequestTime = false
 Nx.FirstTry = true
 Nx.Loaded = false
 Nx.Initialized = false
+Nx.RealTom =  false
 Nx.PlayerFnd = false
 Nx.ModQAction = ""
 Nx.ModPAction = ""
 
+if _G.TomTom then 
+  Nx.RealTom = false
+end
+
 function Nx.EmulateTomTom() 
-	if _G.TomTom then
+	if _G.TomTom and Nx.RealTom then
 		return
 	end
-	local tom = {}
+	local tom = {}	
 	_G.TomTom = tom
-	tom["version"] = "v40200"
+	tom["version"] = "v40200"	
 	tom["AddWaypoint"] = Nx.TTAddWaypoint
 	tom["AddZWaypoint"] = Nx.TTAddZWaypoint
 	tom["SetCustomWaypoint"] = Nx.TTSetCustomWaypoint
@@ -255,7 +260,7 @@ local defaults = {
 			TrailCnt = 100,
 			TrailDist = 2,
 			TrailTime = 90,
-			WOwn = true,
+			WOwn = false,
 			ZoneDrawCnt = 3,   
 		},
 		MiniMap = {
@@ -329,7 +334,47 @@ local defaults = {
    },
 }
 
+Nx.BrokerMenuTemplate = {
+	{ text = "Carbonite", icon = icon, isTitle = true },
+	{ text = "Help", func = function() Nx.Help:Open() end },
+	{ text = "Options", func = function() Nx.Opts:Open() end },
+	{ text = "Toggle Map", func = function() Nx.Map:ToggleSize(0) end },
+	{ text = "Toggle Combat Graph", func = function() Nx.Combat:Open() end },	
+	{ text = "Toggle Events", func = function() Nx.UEvents.List:Open() end },	
+}
 
+local menuFrame = CreateFrame("Frame", "CarboniteMenuFrame", UIParent, "UIDropDownMenuTemplate")
+
+Nx.Broker = LibStub("LibDataBroker-1.1"):NewDataObject("Broker_Carbonite", {
+						type = "data source",
+						icon = "Interface\\AddOns\\Carbonite\\Gfx\\MMBut",
+						label = "Carbonite",
+						text = "Carbonite",
+						OnTooltipShow = function(tooltip)
+											if not tooltip or not tooltip.AddLine then return end
+											tooltip:AddLine("Carbonite")
+											tooltip:AddLine("Left-Click to Toggle Map")
+											if Nx.db.profile.MiniMap.ButOwn then
+												tooltip:AddLine("Shift Left-Click to Toggle Minimize")
+											end
+											tooltip:AddLine("Middle-Click to Toggle Guide")
+											tooltip:AddLine("Right-Click for Menu")
+										end,
+						OnClick = function(frame, msg)
+									if msg == "LeftButton" then
+										if (IsShiftKeyDown()) then
+											Nx.db.profile.MiniMap.ButWinMinimize = not Nx.db.profile.MiniMap.ButWinMinimize
+											Nx.Map.Dock:UpdateOptions()
+										else
+											Nx.Map:ToggleSize(0)
+										end
+									elseif msg == "MiddleButton" then
+										Nx.Map:GetMap(1).Guide:ToggleShow()
+									elseif msg == "RightButton" then
+										EasyMenu(Nx.BrokerMenuTemplate, menuFrame, "cursor", 0, 0, "MENU")
+									end
+								end,
+						})
 function Nx:OnInitialize()
 	local ver = GetBuildInfo()
 	local v1, v2, v3 = Nx.Split (".", ver)

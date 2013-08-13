@@ -159,12 +159,12 @@ DBM_CORE_AUTO_ANNOUNCE_TEXTS = {
 	spell		= "%s",
 	ends 		= "%s結束",
 	fades		= "%s退去",
-	adds		= "%s還剩餘:%%d",
+	adds		= "%s還剩下:%%d",
 	cast		= "施放%s:%.1f秒",
 	soon		= "%s即將到來",
 	prewarn		= "%s在%s",
 	phase		= "第%s階段",
-	prephase	= "第%s階段 即將到來",
+	prephase	= "第%s階段即將到來",
 	count		= "%s(%%d)",
 	stack		= ">%%s<中了%s(%%d)"
 }
@@ -200,7 +200,7 @@ DBM_CORE_AUTO_SPEC_WARN_TEXTS = {
 	move		= "%s - 快移動",
 	run			= "%s - 快跑開",
 	cast		= "%s - 停止施法",
-	count		= "%s! (%%d)",
+	count		= "%s!(%%d)",
 	stack		= "你中了%%d層%s",
 	switch		= ">%s< - 快更換目標!"
 }
@@ -211,7 +211,7 @@ DBM_CORE_AUTO_SPEC_WARN_OPTIONS = {
 	ends 		= "為$spell:%s結束顯示特別警告",
 	fades 		= "為$spell:%s退去顯示特別警告",
 	soon 		= "為$spell:%s顯示預先特別警告",
-	prewarn 	= "為$spell:%s%d秒顯示預先特別警告",
+	prewarn 	= "在%d秒前為$spell:%s顯示預先特別警告",
 	dispel		= "需對$spell:%s驅散/竊取時顯示特別警告",
 	interrupt	= "需對$spell:%s斷法時顯示特別警告",
 	you			= "當你中了$spell:%s時顯示特別警告",
@@ -221,7 +221,7 @@ DBM_CORE_AUTO_SPEC_WARN_OPTIONS = {
 	run			= "為$spell:%s顯示特別警告",
 	cast		= "為$spell:%s施放時顯示特別警告",
 	count 		= "為$spell:%s顯示特別警告",
-	stack		= "為>=%d層$spell:%s時顯示特別警告",
+	stack		= "為中了>=%d層$spell:%s時顯示特別警告",
 	switch		= "需對$spell:%s更換目標時顯示特別警告"
 }
 
@@ -262,8 +262,8 @@ DBM_CORE_AUTO_COUNTDOWN_OPTION_TEXT2	= "為$spell:%s的減益播放倒數計時�
 DBM_CORE_AUTO_COUNTOUT_OPTION_TEXT		= "為$spell:%s的持續時間播放倒數計時音效"
 DBM_CORE_AUTO_YELL_OPTION_TEXT			= "當你中了$spell:%s時大喊"
 DBM_CORE_AUTO_YELL_ANNOUNCE_TEXT		= "" .. UnitName("player") .. "中了%s!"
-DBM_CORE_AUTO_RANGE_OPTION_TEXT			= "為$spell:%s顯示距離框架(%s)"
-DBM_CORE_AUTO_RANGE_OPTION_TEXT_SHORT	= "顯示距離框架(%s)"
+DBM_CORE_AUTO_RANGE_OPTION_TEXT			= "為$spell:%2$s顯示距離框架(%1$s碼)"
+DBM_CORE_AUTO_RANGE_OPTION_TEXT_SHORT	= "顯示距離框架(%s碼)"
 
 
 -- New special warnings

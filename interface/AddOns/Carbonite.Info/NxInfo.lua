@@ -159,6 +159,7 @@ function CarboniteInfo:OnInitialize()
 	end
 	Nx.NXMiniMapBut.Menu:AddItem(0, "Show Info 1 2", func, Nx.NXMiniMapBut)		
 	CarboniteInfo:RegisterEvent("PLAYER_LOGIN")
+	tinsert(Nx.BrokerMenuTemplate,{ text = "Toggle Info Windows", func = function() Nx.Info:ToggleShow()end })
 end
 
 function CarboniteInfo:PLAYER_LOGIN()

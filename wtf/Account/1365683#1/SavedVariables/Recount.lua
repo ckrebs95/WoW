@@ -17,7 +17,7 @@ RecountDB = {
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = -480.5001449584961,
-					["x"] = -783.9999542236328,
+					["x"] = -783.9999847412109,
 					["w"] = 294.0000915527344,
 					["h"] = 132.9999237060547,
 				},
@@ -117,7 +117,7 @@ RecountDB = {
 					false, -- [8]
 				},
 			},
-			["DetailWindowY"] = -227.9999542236328,
+			["GraphWindowX"] = 0,
 			["CurDataSet"] = "LastFightData",
 			["Colors"] = {
 				["Bar"] = {
@@ -129,7 +129,7 @@ RecountDB = {
 					},
 				},
 			},
-			["GraphWindowX"] = 0,
+			["DetailWindowY"] = -227.9999542236328,
 			["MainWindowMode"] = 2,
 			["HideCollect"] = true,
 			["MainWindowWidth"] = 397.0000017136335,
@@ -139,8 +139,8 @@ RecountDB = {
 			["GraphWindowY"] = 0,
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -492.0002403259277,
-					["x"] = -766.0002899169922,
+					["y"] = -492.0002746582031,
+					["x"] = -766.0002593994141,
 					["w"] = 268.0001525878906,
 					["h"] = 113.9999389648438,
 				},
@@ -238,7 +238,7 @@ RecountDB = {
 			["DetailWindowY"] = 0,
 			["DetailWindowX"] = 0,
 			["GraphWindowX"] = 0,
-			["LastInstanceName"] = "Shadowfang Keep",
+			["LastInstanceName"] = "Maraudon",
 			["CurDataSet"] = "OverallData",
 			["MainWindowWidth"] = 278.0000305175781,
 			["MainWindowHeight"] = 101.9999923706055,

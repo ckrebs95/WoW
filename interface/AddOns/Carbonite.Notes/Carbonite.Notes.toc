@@ -1,6 +1,6 @@
 ## Interface: 50300
-## Title: Carbonite Notes 1.0
-## Version: 1.0
+## Title: Carbonite Notes 1.1
+## Version: 1.1
 ## Author: Rythal
 ## Notes: Released Under GPL
 ## DefaultState: Enabled

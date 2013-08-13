@@ -1163,10 +1163,10 @@ Bartender4DB = {
 					},
 				},
 				["Desamil - Khaz Modan"] = {
-					["version"] = 3,
 					["BlizzardArt"] = {
 						["enabled"] = false,
 					},
+					["version"] = 3,
 					["position"] = {
 						["y"] = 223.0000081211327,
 						["x"] = -31.49990034848599,
@@ -2066,7 +2066,9 @@ Bartender4DB = {
 						["y"] = 167.9564049869303,
 						["parent"] = "SUI_ActionBarPlate",
 					},
+					["padding"] = 1,
 					["rows"] = 2,
+					["version"] = 3,
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -2078,8 +2080,6 @@ Bartender4DB = {
 							["scale"] = 0.85,
 						},
 					},
-					["version"] = 3,
-					["padding"] = 1,
 				},
 				["Desamil - Khaz Modan"] = {
 					["rows"] = 2,
@@ -2143,17 +2143,17 @@ Bartender4DB = {
 					},
 				},
 				["Darvina - Khaz Modan"] = {
+					["skin"] = {
+						["Zoom"] = true,
+					},
+					["padding"] = 1,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 167.7500022729591,
 						["x"] = -352.588480453774,
 						["point"] = "BOTTOM",
 						["scale"] = 0.699999988079071,
 						["parent"] = "SUI_ActionBarPlate",
-					},
-					["padding"] = 1,
-					["version"] = 3,
-					["skin"] = {
-						["Zoom"] = true,
 					},
 				},
 				["Deyndis - Khaz Modan"] = {
@@ -2238,6 +2238,14 @@ Bartender4DB = {
 						["Zoom"] = true,
 					},
 					["version"] = 3,
+					["padding"] = 1,
+					["position"] = {
+						["y"] = 167.7500022729591,
+						["x"] = -352.588480453774,
+						["point"] = "BOTTOM",
+						["scale"] = 0.699999988079071,
+						["parent"] = "SUI_ActionBarPlate",
+					},
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -2249,14 +2257,6 @@ Bartender4DB = {
 							["scale"] = 0.85,
 						},
 					},
-					["position"] = {
-						["y"] = 167.7500022729591,
-						["x"] = -352.588480453774,
-						["point"] = "BOTTOM",
-						["scale"] = 0.699999988079071,
-						["parent"] = "SUI_ActionBarPlate",
-					},
-					["padding"] = 1,
 				},
 				["Desamil - Khaz Modan"] = {
 					["BlizzardArt"] = {

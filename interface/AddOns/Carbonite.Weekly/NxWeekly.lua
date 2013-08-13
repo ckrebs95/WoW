@@ -260,6 +260,7 @@ function CarboniteWeekly:OnInitialize()
 		Nx.Weekly:Reset()		
 	end	
 	Nx:AddToConfig("Weekly Status Module",WeeklyOptions(),"Weekly Status Module")
+	tinsert(Nx.BrokerMenuTemplate,{ text = "Toggle Weekly List", func = function() Nx.Weekly:ToggleShow() end })
 end
 
 function CarboniteWeekly:EventHandler(event, arg1, arg2, arg3)

@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(846, "DBM-SiegeOfOrgrimmar", nil, 369)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9935 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10049 $"):sub(12, -3))
 mod:SetCreatureID(71454)
 --mod:SetQuestID(32744)
 mod:SetZone()
@@ -14,8 +14,7 @@ mod:RegisterEventsInCombat(
 	"SPELL_AURA_APPLIED",
 	"SPELL_AURA_APPLIED_DOSE",
 	"SPELL_AURA_REMOVED",
-	"UNIT_SPELLCAST_SUCCEEDED boss1",
-	"CHAT_MSG_RAID_BOSS_EMOTE"
+	"UNIT_SPELLCAST_SUCCEEDED boss1"
 )
 
 --Endless Rage
@@ -45,7 +44,7 @@ local timerBloodRageCD					= mod:NewNextTimer(124.7, 142879)
 local timerArcingSmashCD				= mod:NewNextCountTimer(17.5, 142815)--17-18 variation (the 23 second ones are delayed by Breath of Yshaarj)
 local timerSeismicSlamCD				= mod:NewNextCountTimer(17.5, 142851)--Works exactly same as arcingsmash 18 sec unless delayed by breath. two sets of 3
 local timerBreathofYShaarjCD			= mod:NewNextCountTimer(59, 142842)
-local timerFatalStrike					= mod:NewTargetTimer(30, 142990, mod:IsTank())
+local timerFatalStrike					= mod:NewTargetTimer(30, 142990, nil, mod:IsTank())
 
 local berserkTimer						= mod:NewBerserkTimer(360)
 
@@ -146,6 +145,18 @@ function mod:SPELL_CAST_START(args)
 			timerArcingSmashCD:Start(11, 1)
 			timerBreathofYShaarjCD:Start(nil, 2)
 		end
+	elseif args.spellId == 143199 then
+		breathCast = 0
+		arcingSmashCount = 0
+		seismicSlamCount = 0
+		specWarnBloodRageEnded:Show()
+		timerSeismicSlamCD:Start(5, 1)
+		timerArcingSmashCD:Start(11, 1)
+		timerBreathofYShaarjCD:Start()
+		timerBloodRageCD:Start()
+		if self.Options.RangeFrame then
+			DBM.RangeCheck:Show(5)
+		end
 	end
 end
 
@@ -205,23 +216,6 @@ function mod:SPELL_AURA_REMOVED(args)
 		end
 		if self.Options.SetIconOnDisplacedEnergy then
 			self:SetIcon(args.destName, 0)
-		end
-	end
-end
-
---No CLEU, the lack of TWO spell events in combat log (SPELL_AURA_APPLIED/REMOVED) on blood rage means localizing is only way to support this phase change
-function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg)
-	if msg == L.bloodRageEnds or msg:find(L.bloodRageEnds) then
-		breathCast = 0
-		arcingSmashCount = 0
-		seismicSlamCount = 0
-		specWarnBloodRageEnded:Show()
-		timerSeismicSlamCD:Start(5, 1)
-		timerArcingSmashCD:Start(11, 1)
-		timerBreathofYShaarjCD:Start()
-		timerBloodRageCD:Start()
-		if self.Options.RangeFrame then
-			DBM.RangeCheck:Show(5)
 		end
 	end
 end

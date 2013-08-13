@@ -1165,11 +1165,11 @@ function Nx.Map.Guide:UpdateList (list, pathI, listSide)
 	end
 	list:Update()
 end
-function Nx.Map.Guide:UpdateMapIcons()    
+function Nx.Map.Guide:UpdateMapIcons()    	
 	local Nx = Nx	
 	local Map = Nx.Map
 	local map = self.Map
-	assert (map)
+	if not map then return end
 	local hideFac = self:GetHideFaction()
 	map:InitIconType ("!G", "WP", "", 16, 16)
 	map:SetIconTypeChop ("!G", true)
@@ -1187,13 +1187,14 @@ function Nx.Map.Guide:UpdateMapIcons()
 	map:SetIconTypeChop ("!GQC", true)
 	local cont1 = 1
 	local cont2 = Map.ContCnt
-	local mapId = map:GetCurrentMapId()
-	if not mapId then return end
-    if Nx.Map:IsMicroDungeon(mapId) then return end 
+	local mapId = map:GetCurrentMapId()	
+	if not mapId then return end	
+    if Nx.Map:IsMicroDungeon(mapId) then return end 		
+	if Nx.Map:IsInstanceMap(Nx.Map:GetRealMapId()) then	return end	
 	if not self.ShowAllCont then
 		cont1 = map:IdToContZone (mapId)
 		cont2 = cont1
-	end
+	end	
 	for showType, folder in pairs (self.ShowFolders) do		
 		local mode = strbyte (showType)		
 		local tx = "Interface\\Icons\\" .. (folder.Tx or "")
@@ -1450,6 +1451,7 @@ function Nx.Map.Guide:UpdateZonePOIIcons()
 	local s = atScale - alphaRange
 	local draw = map.ScaleDraw > s and Nx.db.profile.Map.ShowPOI
     if Nx.Map:IsMicroDungeon(mapId) then draw = false end 
+	if Nx.Map:IsInstanceMap(Nx.Map:GetRealMapId()) then	draw = false end	
 	local alpha = min ((map.ScaleDraw - s) / alphaRange, 1) * Nx.db.profile.Map.IconPOIAlpha
 	map:SetIconTypeAlpha ("!POI", alpha)
 	map:SetIconTypeAlpha ("!POIIn", alpha)

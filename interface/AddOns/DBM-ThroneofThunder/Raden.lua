@@ -1,14 +1,13 @@
 local mod	= DBM:NewMod(831, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9946 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10044 $"):sub(12, -3))
 mod:SetCreatureID(69473)--69888
 mod:SetQuestID(32753)
 mod:SetZone()
 mod:SetUsedIcons(2, 1)
 
 mod:RegisterCombat("combat")
-mod:RegisterKill("yell_regex", L.Defeat)--Does not die, just yells
 
 mod:RegisterEventsInCombat(
 	"SPELL_CAST_START",
@@ -16,7 +15,9 @@ mod:RegisterEventsInCombat(
 	"SPELL_AURA_APPLIED",
 	"SPELL_AURA_REMOVED",
 	"UNIT_SPELLCAST_SUCCEEDED boss1",
-	"UNIT_POWER_FREQUENT boss1"
+	"UNIT_POWER_FREQUENT boss1",
+	"UNIT_DIED",
+	"CHAT_MSG_MONSTER_YELL"
 )
 
 --Anima
@@ -27,7 +28,7 @@ local warnSanguineHorror		= mod:NewCountAnnounce(138338, 3, nil, not mod:IsHeale
 --Vita
 local warnVita					= mod:NewSpellAnnounce(138332, 2)--Switched to vita phase
 local warnFatalStrike			= mod:NewSpellAnnounce(138334, 4, nil, mod:IsTank() or mod:IsHealer())--Tank (think thrash, like sha. Gains buff, uses on next melee attack)
-local warnVitaSoakerSoon		= mod:NewAnnounce("warnVitaSoakerSoon", 2, 138297)
+local warnVitaSoakerSoon		= mod:NewAnnounce("warnVitaSoakerSoon", 2, 138297, mod:IsDifficulty("normal10", "heroic10"))
 local warnUnstableVita			= mod:NewTargetAnnounce(138297, 4)
 local warnCracklingStalker		= mod:NewCountAnnounce(138339, 3, nil, not mod:IsHealer())--Adds
 --General
@@ -45,9 +46,9 @@ local yellUnstableAnima			= mod:NewYell(138288, nil, false)
 local specWarnFatalStrike		= mod:NewSpecialWarningSpell(138334, mod:IsTank(), nil, nil, 3)
 local specWarnCracklingStalker	= mod:NewSpecialWarningSwitch(138339, mod:IsRangedDps() or mod:IsTank())
 local specWarnVitaSensitive		= mod:NewSpecialWarningYou(138372)
-local specWarnVitaSoaker		= mod:NewSpecialWarning("specWarnVitaSoaker")
+local specWarnVitaSoaker		= mod:NewSpecialWarning("specWarnVitaSoaker", mod:IsDifficulty("normal10", "heroic10"), nil, nil, 3)
 local specWarnUnstablVita		= mod:NewSpecialWarningYou(138297, nil, nil, nil, 3)
-local specWarnUnstablVitaJump	= mod:NewSpecialWarningYou(138308, nil, nil, nil, 1)
+local specWarnUnstablVitaJump	= mod:NewSpecialWarning("specWarnUnstablVitaJump", nil, nil, nil, 1)
 local yellUnstableVita			= mod:NewYell(138297, nil, false)
 --General
 local specWarnCreation			= mod:NewSpecialWarningSpell(138321, mod:IsDps())
@@ -68,7 +69,8 @@ local countdownUnstableVita		= mod:NewCountdownFades(11, 138297)
 local countdownCreation			= mod:NewCountdown(32.5, 138321, nil, nil, nil, nil, true)
 
 mod:AddBoolOption("SetIconsOnVita", false)--Both the vita target and furthest from vita target
-mod:AddBoolOption("InfoFrame")
+mod:AddBoolOption("AnnounceVitaSoaker", false)
+mod:AddBoolOption("InfoFrame", mod:IsDifficulty("normal10", "heroic10"))
 
 local creationCount = 0
 local stalkerCount = 0
@@ -106,9 +108,14 @@ function mod:checkVitaDistance()
 end
 
 local function infoFrameChanged(players)
-	if players[1] == playerName and playerName ~= lastPlayerOne then
-		specWarnVitaSoaker:Show()
-	elseif players[2] == playerName and playerName ~= lastPlayerTwo then
+	if players[1] and players[1] ~= lastPlayerOne then
+		if players[1] == playerName then
+			specWarnVitaSoaker:Show()
+		end
+		if mod.Options.AnnounceVitaSoaker and DBM:GetRaidRank() > 1 then
+			SendChatMessage(L.VitaChatMessage:format(players[1]), "RAID_WARNING")
+		end
+	elseif players[2] and players[2] == playerName and playerName ~= lastPlayerTwo then
 		warnVitaSoakerSoon:Show()
 	end
 	lastPlayerOne = players[1]
@@ -123,14 +130,9 @@ function mod:OnCombatStart(delay)
 	lastPlayerTwo = nil
 	timerCreationCD:Start(11-delay, 1)
 	countdownCreation:Start(11-delay)
-	if self.Options.InfoFrame then
-		DBM.InfoFrame:SetHeader(L.NoSensitivity)
-		DBM.InfoFrame:Show(10, "reverseplayerbaddebuff", 138372, nil, nil, nil, true, true)
-		DBM.InfoFrame:RegisterCallback(infoFrameChanged)
-	elseif self.Options[specWarnVitaSoaker.option or ""] or self.Options[warnVitaSoakerSoon.option or ""] then
+	if not self.Options.InfoFrame and (self.Options[specWarnVitaSoaker.option or ""] or self.Options[warnVitaSoakerSoon.option or ""]) then
 		self:AddMsg(L.VitaSoakerOptionConflict)
 	end
-
 end
 
 function mod:OnCombatEnd()
@@ -210,6 +212,15 @@ function mod:SPELL_AURA_APPLIED(args)
 			yellUnstableAnima:Yell()
 		end
 	elseif args:IsSpellID(138297, 138308) then--Unstable Vita (138297 cast, 138308 jump)
+		if self.Options.InfoFrame then
+			if DBM.InfoFrame:IsShown() then
+				DBM.InfoFrame:Update("reverseplayerbaddebuff")
+			else
+				DBM.InfoFrame:SetHeader(L.NoSensitivity)
+				DBM.InfoFrame:Show(10, "reverseplayerbaddebuff", 138372, nil, nil, nil, true, true)
+				DBM.InfoFrame:RegisterCallback(infoFrameChanged)
+			end
+		end
 		if self.Options.SetIconsOnVita then
 			playerWithVita = DBM:GetRaidUnitId(args.destName)
 			self:SetIcon(args.destName, 1)
@@ -277,9 +288,21 @@ end
 
 function mod:UNIT_POWER_FREQUENT(uId)
 	local power = UnitPower(uId)
-	if power == 90 and UnitBuff(uId, vitaName) and self:AntiSpam(3, 1) then
+	if power == 80 and UnitBuff(uId, vitaName) and self:AntiSpam(3, 1) then
 		specWarnFatalStrike:Show()
-	elseif power == 96 and UnitBuff(uId, animaName) and self:AntiSpam(3, 2) then
+	elseif power == 95 and UnitBuff(uId, animaName) and self:AntiSpam(3, 2) then
 		specWarnMurderousStrike:Show()
+	end
+end
+
+function mod:CHAT_MSG_MONSTER_YELL(msg)
+	if msg == L.Defeat or msg:find(L.Defeat) then
+		DBM:EndCombat(self)
+	end
+end
+
+function mod:UNIT_DIED(args)
+	if not args:IsDestTypeHostile() and self.Options.InfoFrame then
+		DBM.InfoFrame:Update("reverseplayerbaddebuff")--Force update so player dies it reflects this
 	end
 end

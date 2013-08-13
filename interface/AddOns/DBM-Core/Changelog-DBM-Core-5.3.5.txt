@@ -1,0 +1,121 @@
+tag 5.3.5
+956d949fcfecc817de3ca0568dc5ae7afdc86c87
+subversion <svn@deadlybossmods.com>
+2013-07-19 21:25:50 +0200
+
+Tagging as 5.3.5
+
+
+--------------------
+
+subversion:
+	- increment version number to 5.3.5
+root:
+	- tandanu via svn r10055: remove pvp mods
+	- ebmor via svn r10052: DBM-InfoFrame: the only purpose of IsInGroup seems to be that the InfoFrame does not work as expected if you are not in a group - removed! (solo "for uId in DBM:GetGroupMembers()": "player")
+	- ebmor via svn r10051: fix defect InfoFrame, not working since r9485 / 10 May 2013 (maybe certain areas/localizations only)
+	do not use GetRealZoneText(), e.g. ThronofThunder deDE:
+	RaidRosterInfo: "Der Thron des Donners"
+	RealZoneText: "Thron des Donners"
+	- Omega via svn r10050: Improve proving ground mods support (all proving grounds instances are name format "Proving Grounds: Location" so lets just strip the redundant first part ;)
+	- Omega via svn r10049: Fix nasty bug in all SoO mods
+	- ebmor via svn r10048: deDE update
+	- tandanu via svn r10047: typo
+	- Omega via svn r10046: comment some stuff out
+	- tandanu via svn r10045: show a warning if someone is running deprecated mods that might cause problems
+	- tandanu via svn r10044: fix bad logic
+	- Omega via svn r10043: change other 2 options too
+	- Omega via svn r10042: make infoframe on ra-den only on by default for 10 man (should work for most, unless they load mod by hand outside of raid first time) Make info frame on ra-den only show up after first debuff as gone out This should be in very good shape for 10 man use now. 25 man use works too but it's not as fast at calling names out as calebs mod so most don't use it on 25 man still.
+	- Omega via svn r10041: revert SpecWarn_FlashColor change, adding number to them messes up layout (text goes to new line) and i don't feel like messing with all that
+	- Omega via svn r10040: try this for loading
+	- ultrashining via svn r10039: zhTW update
+	- Omega via svn r10038: while at it, add these too
+	- Omega via svn r10037: small norushen add
+	- Omega via svn r10036: add numbers to flash color
+	- Omega via svn r10035: add additional note to alpha update notification bug. Remove some other debug
+	- Omega via svn r10034: better option default on Norushen
+	- Omega via svn r10033: ru update
+	- Omega via svn r10032: removed one too many things
+	- Omega via svn r10031: prettier
+	- Omega via svn r10030: warning/option tweak for jump so you can actually tell it from other warning
+	- Omega via svn r10029: fix bugs
+	- Omega via svn r10028: not so smart code, revert it and just nto deal with it
+	- Omega via svn r10027: norushen mod
+	- ebmor via svn r10026: fix misplaced (currently unused) Nalak ready check option; deDE update
+	- Omega via svn r10025: update flash frame itself to new values if called with no args
+	- Omega via svn r10024: Add in smart code for second overcharge on intermission in all difficulties except LFR (it delays chat yell, special warning, and arrow until 2nd diffusion is cast
+	- Omega via svn r10023: Lets try this fix for JuJu
+	- Omega via svn r10022: test delayed, i had time to localize that infoframe now
+	- alcortes via svn r10021: More ES localization updates
+	- Omega via svn r10020: quick infoframe push
+	- alcortes via svn r10019: ES localization update
+	- Omega via svn r10018: maybe reset will work now
+	- Omega via svn r10017: bump sound and color priority on vita soaker warning
+	- Omega via svn r10016: add some load debuff that only a specific person can reproduce
+	- Omega via svn r10015: disable tank swap warnings in LFR on lei shen, it's a one tank fight in LFR
+	- Omega via svn r10014: fix decap to use a higher priority flash color/sound
+	- Omega via svn r10013: tweaks
+	- Omega via svn r10012: 1 too hard to see, this better
+	- Omega via svn r10011: force reset alpha settings now that they are right, for anyone that used an in between.
+	- Omega via svn r10010: ok i like this more. i think i'm done messing with the defaults now
+	- Omega via svn r10009: this is even better i think this should work
+	- Omega via svn r10008: actually this is better, tone down default alphas more
+	- Omega via svn r10007: more fixes, and force defaults reset by renaming all variables
+	- Omega via svn r10006: more tweaks
+	- Omega via svn r10005: some defaults tweaks
+	- Omega via svn r10004: fix some new flash bugs
+	- Omega via svn r10003: Thok prep
+	- tandanu via svn r10002: * change special warning fade in/out animation to a quadratic curve which gives a much smoother result * update default values for the display duration * change font size slider to not offer way too big font sizes as these won't work anyways...
+	- Omega via svn r10001: small norushen update for tomorrow
+	- Omega via svn r10000: special warnings now have unique flash colors for each of 3 types of special warning. all with configurable colors, durations and alphas. (or you could just as easily set them all to same should you wish.
+	- Omega via svn r9999: support a flash with no args that will just use all defaults for easier 3rd party TODO tomorrow. some cooler stuff. :)
+	- Omega via svn r9998: small optimize for Jinrokh
+	- Omega via svn r9997: filter proving grounds from scenario check. NOt sure what to do with these yet. Probably will just be mods that have no "combat"
+	- Omega via svn r9996: add new 5.4 Halfhill scenario (blank mod for now that just detects scenario start/finish
+	- Omega via svn r9995: add a readycheck option for world bosses that allows you to not miss pulls by being tabbed out. killing world bosses involves a lot of camping sometimes and nothing worse than missing the kill after waiting 2-3 hours for enough people to show up to pull it.
+	- Omega via svn r9994: fix dark moon fair loading
+	- Omega via svn r9993: Iron Juggernaut mod
+	- Omega via svn r9992: cancel pull timer text on new send
+	- Omega via svn r9991: Completed sha of pride mod
+	- tandanu via svn r9990: stupid PTR floating point exceptions; 0/0 == NaN would be a perfectly acceptable value here...
+	- Omega via svn r9989: fix error that broke all seige mods
+	- nbluewiz via svn r9988: # koKR update.
+	- ultrashining via svn r9987: zhTW update
+	- Omega via svn r9986: Fix leaked flash frame global Add additional function calls to flash frame Small optimize to flash and arrow
+	- Omega via svn r9985: Fix option default resetting
+	- Omega via svn r9984: fix tab whitespace
+	- Omega via svn r9983: apparently this fixes it
+	- Omega via svn r9982: add a note about decimal values
+	- Omega via svn r9981: ru update
+	- Omega via svn r9980: also, try to fix ra-den victory detection
+	- Omega via svn r9979: refine flash duration setting to be 1-3 instead of 1-4 but to now support steps of 0.5 instead of 1
+	- Omega via svn r9978: tank warning adjustment
+	- Omega via svn r9977: fix two more bugs. hopefully this is solid next week
+	- Omega via svn r9976: Fix calling out dead players Force update when debuff changes hands to speed up call outs
+	- Omega via svn r9975: the rest of GUI and control done
+	- Omega via svn r9974: fix small text bug
+	- Omega via svn r9973: This is working, just no slider to control duration or alpha yet
+	- Omega via svn r9972: forgot to commit this
+	- Omega via svn r9971: here is what i have so far, options work, and are linked up, but GUI is a disaster
+	- ebmor via svn r9970: deDE update
+	- Omega via svn r9969: Redid paragons mod to work correctly (and be even uglier than ever)
+	- tandanu via svn r9968: fix debuff table
+	- tandanu via svn r9967: bad global access
+	- Omega via svn r9966: fancy didn't work, lets just try it this way
+	- Omega via svn r9965: disable wake yell in LFR
+	- Omega via svn r9964: Add GUID scanning support to targetscanner prototype, untested so no live mods are using it yet Drycode some spoils of pandaria stuff
+	- Omega via svn r9963: fix oondasta error
+	- Omega via svn r9962: restore name (refer to commit 9809)
+	- ultrashining via svn r9961: zhTW update
+	- nbluewiz via svn r9960: # koKR update. # Siege OF Orgirmmar TOC : Remove X-DBM-Mod-Name. Not Needed.
+	- Omega via svn r9959: brawlers doesn't use saved states so creating those variables is pointless
+	- ultrashining via svn r9958: zhTW update
+	- Omega via svn r9957: some paragons stuff
+	- Omega via svn r9956: small heroic bouncing bolt adjust, now it's perfect Make info frame only show raid number on the frame specific to ra-den only. the number don't make sense in regular debuff tracking frames.
+	- Omega via svn r9955: add chat message option for raid leader on vita soaking
+	- Omega via svn r9954: forgot to register a needed event
+	- ebmor via svn r9953: deDE update
+	- ebmor via svn r9952: deDE update
+	- Omega via svn r9951: Commit what i have for blackfuse fix a paragons bug
+	- tandanu via svn r9950: add a debug print to see who is responsible for an alpha-out-of-date warning
+	- tandanu via svn r9949: increment version number

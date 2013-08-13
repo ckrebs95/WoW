@@ -2,8 +2,8 @@ Version: 1
 Frame: LootFrame
 FrameLevel: 22
 Anchor: BOTTOMRIGHT
-X: -289
-Y: 110
+X: -62
+Y: 116
 W: 170
 H: 240
 Frame: DBMMinimapButton
@@ -14,7 +14,7 @@ Y: 226
 W: 32
 H: 32
 Frame: Recount_MainWindow
-FrameLevel: 21
+FrameLevel: 17
 Anchor: BOTTOMLEFT
 X: 60
 Y: -9

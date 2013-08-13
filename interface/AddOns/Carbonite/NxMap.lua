@@ -196,8 +196,9 @@ function Nx.Map:Init()
 
 	-- Emulate TomTom
 	if not Nx.db.profile.Track.EmuTomTom then
-		TomTom = {}
+--		TomTom = {}
 	else
+		TomTom = {}
 		Nx.EmulateTomTom() 
 	end	
 end
@@ -1187,8 +1188,7 @@ end
 function Nx.Map:SetLocationTip (tipStr)
 
 	local f = self.LocTipFrm
-	local a = Nx.db.profile.Map.LocTipAnchor
-
+	local a = Nx.db.profile.Map.LocTipAnchor	
 	if tipStr and a ~= "None" then
 
 		local ar = Nx.db.profile.Map.LocTipAnchorRel
@@ -1290,23 +1290,21 @@ end
 --------
 --
 
-function Nx.Map:AttachWorldMap()
-
-	if not Nx.db.profile.Map.WOwn then
+function Nx.Map:AttachWorldMap()	
+	if not Nx.db.profile.Map.WOwn then		
 		return
 	end
-
 	local f = _G["WorldMapButton"]
 	if f then
-
+		
 --		Nx.prt ("AttachWorldMap")
 
-		self.WorldMapFrm = f
+		self.WorldMapFrm = f		
 		self.WorldMapFrmParent = f:GetParent()
 		self.WorldMapFrmScale = f:GetScale()
-
-		f:SetParent (self.TextFrm)
-		f:Show()
+		f:SetParent (self.TextScFrm:GetScrollChild())
+		f:SetSize(WorldMapButton:GetSize())
+--		f:Show()
 
 		f:EnableMouse (false)
 
@@ -1377,7 +1375,7 @@ end
 -- Update Blizzard world map frame if we grabbed it
 
 function Nx.Map:UpdateWorldMap()
-
+	
 	local f = self.WorldMapFrm
 	
 	for factionIndex = 1, GetNumFactions() do
@@ -1397,7 +1395,6 @@ function Nx.Map:UpdateWorldMap()
 			if tipf then
 				tipf:SetFrameStrata ("TOOLTIP")
 			end
-
 			local af = _G["WorldMapFrameAreaFrame"]
 			if af then
 				af:SetFrameStrata ("HIGH")
@@ -1419,8 +1416,8 @@ function Nx.Map:UpdateWorldMap()
 			end
 		end
 
-		for k, f in ipairs (_G["MAP_VEHICLES"]) do
-			f:SetScale (.001)
+		for k, v in ipairs (_G["MAP_VEHICLES"]) do
+			v:SetScale (.001)
 		end
 	end
 	if not InCombatLockdown() then	
@@ -1515,7 +1512,7 @@ end
 -- Set scale on world map icons
 
 function Nx.Map:SetWorldMapIcons (scale)
-
+		
 	for n = 1, MAX_PARTY_MEMBERS do
 		local f = _G["WorldMapParty" .. n]
 		if f then
@@ -2337,7 +2334,7 @@ function Nx.Map:MinimapUpdate()
 			self.MMZoomChanged = true
 		end
 	end
-
+	
 	if self.MMZoomType ~= zoomType or zoomType > 0 and self.MMScale ~= self.ScaleDraw
 			or indoorChange then
 
@@ -2389,8 +2386,7 @@ function Nx.Map:MinimapUpdate()
 
 		local sc = self.MMFScale
 
-		self.MMFScale = Nx.InBG and lOpts.NXMMDockScaleBG or lOpts.NXMMDockScale
-
+		self.MMFScale = Nx.InBG and lOpts.NXMMDockScaleBG or lOpts.NXMMDockScale	
 		if lOpts.NXMMFull then
 			self.MMFScale = min (self.MapW, self.MapH) / 140
 		end
@@ -2953,7 +2949,7 @@ end
 -- Favorite icon
 
 function Nx.Map:GMenu_OnFindNote()
-	Nx.Fav:ShowIconNote (self.ClickIcon)
+	Nx.Notes:ShowIconNote (self.ClickIcon)
 end
 
 --------
@@ -3679,7 +3675,6 @@ function Nx.Map.OnUpdate (this, elapsed)	--V4 this
 	Nx.Map:UpdateOptions (map.MapIndex)
 
 	local winx, winy = Nx.Util_IsMouseOver (this)
-
 	if not this:IsVisible() or not map.MouseEnabled then
 		winx = nil
 		map.Scrolling = false
@@ -3800,8 +3795,7 @@ function Nx.Map.OnUpdate (this, elapsed)	--V4 this
 --				Nx.prt ("CheckWorldHotspots Time %s", GetTime() - tm)
 			end
 
-			local x, y = map:GetZonePos (map.MapId, wx, wy)
-
+			local x, y = map:GetZonePos (map.MapId, wx, wy)			
 			x = floor (x * 10) / 10	-- Chop fraction to tenths
 			y = floor (y * 10) / 10
 			local dist = ((wx - map.PlyrX) ^ 2 + (wy - map.PlyrY) ^ 2) ^ .5 * 4.575
@@ -3904,7 +3898,7 @@ function Nx.Map.OnUpdate (this, elapsed)	--V4 this
 			map.DebugWY = y
 		end
 
-		local over = winx and not Nx.Util_IsMouseOver (map.ToolBar.Frm)
+		local over = winx and not Nx.Util_IsMouseOver (map.ToolBar.Frm)		
 		map:SetLocationTip (over and not menuOpened and map.WorldHotspotTipStr and (map.WorldHotspotTipStr .. tip))
 	end
 
@@ -4202,11 +4196,7 @@ function Nx.Map:Update (elapsed)
 	end
 
 	local plZX, plZY = GetPlayerMapPosition ("player")
-	if plZX == 0 and plZY == 0 then
-		SetMapToCurrentZone()
-		plZX, plZY = GetPlayerMapPosition("player")
-		
-	end
+	
 	self.InstanceId = false
 	
 	if self:IsInstanceMap (rid) then
@@ -4452,10 +4442,10 @@ function Nx.Map:Update (elapsed)
 	if IsShiftKeyDown() then
 		plSize = 5
 	end
-
+	
 	self.PlyrFrm:Show()
 	self:ClipFrameW (self.PlyrFrm, self.PlyrX, self.PlyrY, plSize, plSize, self.PlyrDir)
-
+	
 	self.InCombat = UnitAffectingCombat ("player")
 
 	local g = 1
@@ -4469,9 +4459,7 @@ function Nx.Map:Update (elapsed)
 
 	self.PlyrFrm.texture:SetVertexColor (1, g, b, al)
 --	local str = format ("%s %d %d", UnitName ("player"), UnitHealth ("player"), UnitMana ("player"))
---	self.PlyrFrm.NxTip = str
-
-	--
+--	self.PlyrFrm.NxTip = str		
 
 	self.BackgndAlpha = Nx.Util_StepValue (self.BackgndAlpha, self.BackgndAlphaTarget, .05)
 	self.Frm.texture:SetVertexColor (1, 1, 1, self.BackgndAlpha)
@@ -4490,6 +4478,7 @@ function Nx.Map:Update (elapsed)
 	self:UpdateInstanceMap()
 
 	self:MinimapUpdate()
+--	self.MMFrm:GetParent():SetAlpha(0)
 	self:UpdateWorldMap()
 
 	self:DrawContinentsPOIs()
@@ -4559,7 +4548,6 @@ function Nx.Map:Update (elapsed)
 
 	for i = 1, poiNum do
 		name, desc, txIndex, pX, pY = GetMapLandmarkInfo (i)
-
 		if txIndex ~= 0 then		-- WotLK has 0 index POIs for named locations
 
 			local tip = name
@@ -4697,8 +4685,7 @@ function Nx.Map:Update (elapsed)
 
 			f.NxTip = tip
 
-			self:ClipFrameZ (f, pX, pY, 16, 16, 0)
-
+			self:ClipFrameZ (f, pX, pY, 16, 16, 0)			
 			f.texture:SetTexture ("Interface\\Minimap\\POIIcons")
 			txX1, txX2, txY1, txY2 = GetPOITextureCoords (txIndex)
 			f.texture:SetTexCoord (txX1 + .003, txX2 - .003, txY1 + .003, txY2 - .003)
@@ -4972,7 +4959,9 @@ function Nx.Map:SwitchRealMap (id)
 		else
 			self.Scale = self.RealScale			
 		end
-	end
+	end	
+	local map = Nx.Map:GetMap (1)
+	map.Guide:UpdateMapIcons()
 end
 --------
 -- Scan the continents for POI data
@@ -5851,8 +5840,8 @@ function Nx.Map:CheckWorldHotspotsType (wx, wy, quad)
 				self:SetCurrentMap (spot.MapId)
 			end
 
-			self.WorldHotspotTipStr = spot.NxTipBase .. "\n"
---[[
+			self.WorldHotspotTipStr = spot.NxTipBase .. "\n"			
+--[[		
 			if false then
 
 				local tt = GameTooltip
@@ -8682,6 +8671,9 @@ function Nx.Map:GetRealMapId()
 	if GetCurrentMapAreaID() == 874 then
 		return 12874
 	end
+	if GetCurrentMapAreaID() == 919 then
+		return 13919
+	end
 	local name, instanceType, difficultyIndex, difficultyName, maxPlayers, dynamicDifficulty, isDynamic, mapID = GetInstanceInfo()		
 	if (difficultyIndex == 11) or (difficultyIndex == 12) then  			    
 --			SetMapToCurrentZone()			
@@ -9328,7 +9320,7 @@ function Nx.Map:SetTarget (typ, x1, y1, x2, y2, tex, id, name, keep, mapId)
 	local typ = keep and "Target" or "TargetS"
 	local zx, zy = self:GetZonePos (mapId, tar.TargetMX, tar.TargetMY)
 
---	Nx.Fav:Record (typ, name, mapId, zx, zy)
+--	Nx.Notes:Record (typ, name, mapId, zx, zy)
 
 	return tar
 end
@@ -9446,10 +9438,13 @@ end
 
 function Nx.Map:SetTargetAtStr (str, keep)
 
-	local mId, zx, zy = self:ParseTargetStr (str)
+	local mId, zx, zy, desc = self:ParseTargetStr (str)
 	if mId then
 		local wx, wy = self:GetWorldPos (mId, zx, zy)
 		local str = format ("%.0f, %.0f", zx, zy)
+		if desc then
+			str = desc
+		end
 		self:SetTarget ("Goto", wx, wy, wx, wy, nil, nil, str, keep, mId)
 	end
 end
@@ -9462,11 +9457,12 @@ function Nx.Map:ParseTargetStr (str)
 
 --	Nx.prt (str)
 
-	local str = gsub (strlower (str), ",", " ")
+--	local str = gsub (strlower (str), ",", " ")
 
 	local zone
 	local zx, zy
-
+	local desc 
+	
 	for s in gmatch (str, "%S+") do
 		local i = tonumber (s)
 		if i then
@@ -9476,10 +9472,19 @@ function Nx.Map:ParseTargetStr (str)
 				zx = i
 			end
 		else
-			if zone then
-				zone = zone .. " " .. s
+			if zx and zy then
+				if desc then
+					desc = desc .. " " .. s
+				else
+					desc = s
+				end
 			else
-				zone = s
+				s = strlower(s)
+				if zone then
+					zone = zone .. " " .. s
+				else
+					zone = s
+				end
 			end
 		end
 	end
@@ -9509,7 +9514,7 @@ function Nx.Map:ParseTargetStr (str)
 		return
 	end
 
-	return mid, zx, zy
+	return mid, zx, zy, desc
 end
 
 ----------------

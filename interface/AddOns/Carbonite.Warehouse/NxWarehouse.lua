@@ -207,7 +207,10 @@ function CarboniteWarehouse:OnInitialize()
 	end
 	
 	Nx:AddToConfig("Warehouse Module",WarehouseOptions(),"Warehouse Module")
-	
+	tinsert(Nx.BrokerMenuTemplate,{ text = "Toggle Warehouse", func = function() Nx.Warehouse:ToggleShow() end })
+	if Nx.RequestTime then
+		RequestTimePlayed()
+	end
 end
 
 function CarboniteWarehouse:EventHandler(event, arg1, arg2, arg3)

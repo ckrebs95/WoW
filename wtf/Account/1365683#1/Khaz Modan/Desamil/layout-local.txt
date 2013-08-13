@@ -1,6 +1,6 @@
 Version: 1
 Frame: DBMMinimapButton
-FrameLevel: 9
+FrameLevel: 8
 Anchor: BOTTOMRIGHT
 X: -414
 Y: 241

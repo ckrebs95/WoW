@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Buru", "DBM-AQ20", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 477 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 487 $"):sub(12, -3))
 mod:SetCreatureID(15370)
 mod:SetModelID(15654)
 mod:RegisterCombat("combat")
@@ -44,7 +44,7 @@ end
 mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
 
 function mod:CHAT_MSG_MONSTER_EMOTE(msg, _, _, _, target)
-	if not msg.find(L.PursueEmote) then return end
+	if not msg:find(L.PursueEmote) then return end
 	local target = DBM:GetFullNameByShortName(target)
 	if not target then return end
 	if target then

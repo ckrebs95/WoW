@@ -1910,6 +1910,7 @@ function CarboniteQuest:OnInitialize()
 	Nx.Quest.List:LogUpdate()
 	Nx.Quest.RecordQuests()
 	Nx.Quest.Watch:Update()		
+	tinsert(Nx.BrokerMenuTemplate,{ text = "Toggle Quest Watch", func = function() Nx.Quest.Watch.Win:Show(not Nx.Quest.Watch.Win:IsShown()) end })
 end
 
 function Nx.Quest:OnChat_msg_addon(msg,dist,target)	

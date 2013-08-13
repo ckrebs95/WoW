@@ -3,6 +3,7 @@ DBM_SavedOptions = {
 	["SpecialWarningFontSize"] = 50,
 	["CountdownVoice2"] = "Kolt",
 	["ArrowPosX"] = 0,
+	["MovieFilter"] = "Never",
 	["HPFramePoint"] = "CENTER",
 	["RangeFrameRadarY"] = -100,
 	["StatusEnabled"] = true,
@@ -54,29 +55,29 @@ DBM_SavedOptions = {
 	["RangeFrameFrames"] = "radar",
 	["ShowCountdownText"] = false,
 	["ShowBigBrotherOnCombatStart"] = false,
-	["ChatFrame"] = "DEFAULT_CHAT_FRAME",
-	["LastRevision"] = 9810,
+	["ShowEngageMessage"] = true,
+	["ShowRecoveryMessage"] = true,
 	["ForumsMessageShown"] = 9810,
 	["WarningColors"] = {
 		{
-			["r"] = 0.41,
-			["g"] = 0.8,
 			["b"] = 0.94,
+			["g"] = 0.8,
+			["r"] = 0.41,
 		}, -- [1]
 		{
-			["r"] = 0.95,
-			["g"] = 0.95,
 			["b"] = 0,
+			["g"] = 0.95,
+			["r"] = 0.95,
 		}, -- [2]
 		{
-			["r"] = 1,
-			["g"] = 0.5,
 			["b"] = 0,
+			["g"] = 0.5,
+			["r"] = 1,
 		}, -- [3]
 		{
-			["r"] = 1,
-			["g"] = 0.1,
 			["b"] = 0.1,
+			["g"] = 0.1,
+			["r"] = 1,
 		}, -- [4]
 	},
 	["DontShowRangeFrame"] = false,
@@ -84,7 +85,7 @@ DBM_SavedOptions = {
 	["InfoFrameShowSelf"] = false,
 	["SpecialWarningFont"] = "Fonts\\FRIZQT__.TTF",
 	["HideBossEmoteFrame"] = true,
-	["UseMasterVolume"] = true,
+	["ShowSpecialWarnings"] = true,
 	["DontShowPT"] = true,
 	["ShowFakedRaidWarnings"] = false,
 	["LatencyThreshold"] = 250,
@@ -93,41 +94,47 @@ DBM_SavedOptions = {
 	["DontSendBossWhispers"] = false,
 	["HPFrameMaxEntries"] = 5,
 	["SetPlayerRole"] = true,
-	["DontShowBossAnnounces"] = false,
+	["BlockVersionUpdateNotice"] = false,
 	["RangeFramePoint"] = "CENTER",
 	["WarningIconChat"] = true,
 	["ArrowPosY"] = -150,
 	["HealthFrameLocked"] = false,
-	["SpecialWarningFontColor"] = {
-		0, -- [1]
-		0, -- [2]
-		1, -- [3]
-	},
-	["RangeFrameSound2"] = "none",
+	["RangeFrameLocked"] = false,
+	["RangeFrameRadarX"] = 100,
 	["ShowPizzaMessage"] = true,
 	["AdvancedAutologBosses"] = false,
 	["ShowLHFrame"] = true,
 	["AutoRespond"] = true,
 	["DontShowPTText"] = false,
 	["Enabled"] = true,
-	["RangeFrameRadarX"] = 100,
-	["RangeFrameLocked"] = false,
+	["RangeFrameSound2"] = "none",
+	["SpecialWarningFontColor"] = {
+		0, -- [1]
+		0, -- [2]
+		1, -- [3]
+	},
 	["DisableCinematics"] = false,
 	["MovieFilters"] = {
 	},
-	["BlockVersionUpdateNotice"] = false,
+	["DontShowBossAnnounces"] = false,
 	["ShowWipeMessage"] = true,
 	["LogOnlyRaidBosses"] = false,
 	["StripServerName"] = true,
-	["ShowSpecialWarnings"] = true,
+	["UseMasterVolume"] = true,
 	["AlwaysShowHealthFrame"] = false,
 	["HPFrameX"] = -50,
 	["ChallengeBest"] = "Realm",
 	["SpamBlockBossWhispers"] = false,
-	["ShowRecoveryMessage"] = true,
-	["ShowEngageMessage"] = true,
+	["LastRevision"] = 9810,
+	["ChatFrame"] = "DEFAULT_CHAT_FRAME",
 }
 DBT_SavedOptions = {
 	["DBM"] = {
+		["HugeTimerPoint"] = "CENTER",
+		["TimerPoint"] = "TOPRIGHT",
+		["TimerX"] = -223.0000152587891,
+		["HugeTimerX"] = 0,
+		["HugeTimerY"] = -120,
+		["TimerY"] = -260,
 	},
 }

@@ -42,13 +42,16 @@ local function mainConfig()
 					name = "Main Options",
 					args = {
 						title = {
-							type = "description",
+							type = "description", 
 							name = "\nCarbonite is a full featured, powerful map addon providing a versitile easy to use google style map which either can replace or work with the current blizzard maps.\n\nThrough modules it can also be expanded to do even more to help make your game easier." ..
 							       "\n\n\n|cff9999ffRelease Version: |cffd700ff" .. Nx.VERMAJOR .. "." .. (Nx.VERMINOR*10) .. "\n" ..
-								   "|cff9999ffMaintained by: |cffd700ffRythal of Moon Guard\n" ..
+								   "|cff9999ffMaintained by: |cffd700ffRythal of Moon Guard\n" ..								   
 								   "|cff9999ffWebsite: |cffd700ffhttp://www.wowinterface.com/downloads/info12965-Carbonite.html\n"..
 								   "\n"..
-								   "|cd700ffffFor support, please visit the forums for Carbonite on WoW Interface.",
+								   "|cd700ffffFor support, please visit the forums for Carbonite on WoW Interface.\n"..
+								   "|cd700ffffSpecial thanks to: \n\n"..
+								   "|cff9999ffCirax for Carbonite2 Logo\n" ..
+								   "|cff9999ffJimboBlue for guide location updates and checking\n",								   
 						},
 					},
 				},
@@ -69,10 +72,13 @@ local function mainConfig()
 								order = 1,
 								name = "\nCarbonite is a full featured, powerful map addon providing a versitile easy to use google style map which either can replace or work with the current blizzard maps.\n\nThrough modules it can also be expanded to do even more to help make your game easier." ..
 									   "\n\n\n|cff9999ffRelease Version: |cffd700ff" .. Nx.VERMAJOR .. "." .. (Nx.VERMINOR*10) .. "\n" ..
-									   "|cff9999ffMaintained by: |cffd700ffRythal of Moon Guard\n" ..
+									   "|cff9999ffMaintained by: |cffd700ffRythal of Moon Guard\n" ..									   
 									   "|cff9999ffWebsite: |cffd700ffhttp://www.wowinterface.com/downloads/info12965-Carbonite.html\n"..
 									   "\n"..
-									   "|cd700ffffFor support, please visit the forums for Carbonite on WoW Interface.",
+									   "|cd700ffffFor support, please visit the forums for Carbonite on WoW Interface.\n\n"..
+										"|cd700ffffSpecial thanks to: \n"..
+										"|cff9999ffCirax for Carbonite2 Logo\n" ..
+										"|cff9999ffJimboBlue for guide location updates and checking\n",								   									   
 							},
 							spacer1 = {
 								order = 2,
@@ -2656,7 +2662,7 @@ end
 --------
 
 function Nx.Opts:NXCmdFavCartImport()
-	Nx.Fav:CartImportNotes()
+	Nx.Notes:CartImportNotes()
 end
 
 function Nx.Opts:NXCmdFontChange()
