@@ -36,10 +36,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = -409.9998474121094,
-			["MainWindowHeight"] = 132.9999237060547,
+			["DetailWindowX"] = 619.0000610351563,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 294.0000915527344,
-			["DetailWindowX"] = 619.0000610351563,
+			["MainWindowHeight"] = 132.9999237060547,
 		},
 		["Doyjen - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -117,7 +117,7 @@ RecountDB = {
 					false, -- [8]
 				},
 			},
-			["GraphWindowX"] = 0,
+			["DetailWindowY"] = -227.9999542236328,
 			["CurDataSet"] = "LastFightData",
 			["Colors"] = {
 				["Bar"] = {
@@ -129,7 +129,7 @@ RecountDB = {
 					},
 				},
 			},
-			["DetailWindowY"] = -227.9999542236328,
+			["GraphWindowX"] = 0,
 			["MainWindowMode"] = 2,
 			["HideCollect"] = true,
 			["MainWindowWidth"] = 397.0000017136335,
@@ -159,10 +159,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["DetailWindowX"] = 0,
+			["MainWindowHeight"] = 113.9999372661123,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 268.0000646710386,
-			["MainWindowHeight"] = 113.9999372661123,
+			["DetailWindowX"] = 0,
 		},
 		["Depha - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -218,10 +218,10 @@ RecountDB = {
 			["GraphWindowY"] = 0,
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -495.9998779296875,
-					["x"] = -788.9997482299805,
-					["w"] = 278.0000305175781,
-					["h"] = 101.9999923706055,
+					["y"] = -478.499755859375,
+					["x"] = -784.9996948242188,
+					["w"] = 280.0000610351563,
+					["h"] = 115.0000076293945,
 				},
 			},
 			["MainWindowMode"] = 2,
@@ -238,10 +238,10 @@ RecountDB = {
 			["DetailWindowY"] = 0,
 			["DetailWindowX"] = 0,
 			["GraphWindowX"] = 0,
-			["LastInstanceName"] = "Maraudon",
+			["LastInstanceName"] = "Auchindoun: Auchenai Crypts",
 			["CurDataSet"] = "OverallData",
-			["MainWindowWidth"] = 278.0000305175781,
-			["MainWindowHeight"] = 101.9999923706055,
+			["MainWindowWidth"] = 280.0000610351563,
+			["MainWindowHeight"] = 115,
 		},
 		["Deyndis - Khaz Modan"] = {
 			["GraphWindowY"] = 0,

@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("BigBadWolf", "DBM-Karazhan")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 474 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 488 $"):sub(12, -3))
 mod:SetCreatureID(17521)
 mod:SetModelID(17053)
 mod:RegisterCombat("yell", L.DBM_BBW_YELL_1)
@@ -28,14 +28,16 @@ function mod:SPELL_AURA_APPLIED(args)
 	if args.spellId == 30753 then
 		warningRRH:Show(args.destName)
 		timerRRH:Start(args.destName)
-		timerRRHCD:Start()
 		warningRRHSoon:Cancel()
-		warningRRHSoon:Schedule(25)
-		if args:IsPlayer() then
-			specWarnRRH:Show()
-		end
-		if self.Options.RRHIcon then
-			self:SetIcon(args.destName, 8, 20)
+		if self:IsInCombat() then--Because sometimes debuff goes out half sec after combat end
+			timerRRHCD:Start()
+			warningRRHSoon:Schedule(25)
+			if args:IsPlayer() then
+				specWarnRRH:Show()
+			end
+			if self.Options.RRHIcon then
+				self:SetIcon(args.destName, 8, 20)
+			end
 		end
 	elseif args.spellId == 30752 and self:AntiSpam() then
 		warningFear:Show()

@@ -1,1 +1,5 @@
 _NPCScan: disabled
+CarboniteItems: disabled
+CarboniteNodes: disabled
+CarboniteTransfer: disabled
+CyborgMMO7: disabled

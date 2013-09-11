@@ -1,0 +1,209 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!-- IconTemplate-->
+	<Button name="SmallIconTemplate" virtual="true">
+		<Size>
+			<AbsDimension x="16.5" y="16.5"/>
+		</Size>
+		<Layers>
+			<Layer level="OVERLAY">
+				<Texture name="$parentIcon"/>
+				</Layer>
+				<Layer level="ARTWORK">
+				<FontString name="$parentHotKey" inherits="NumberFontNormalSmallGray" justifyH="RIGHT">
+				  <Size>
+					<AbsDimension x="32" y="10"/>
+				  </Size>
+				  <Anchors>
+					<Anchor point="TOPLEFT">
+					  <Offset>
+						<AbsDimension x="-2" y="-2"/>
+					  </Offset>
+					</Anchor>
+				  </Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<PushedTexture file="Interface\Buttons\UI-Quickslot-Depress"/>
+		<HighlightTexture alphaMode="ADD" file="Interface\Buttons\ButtonHilight-Square"/>
+	</Button>
+
+	<Button name="SmallSlotTemplate" inherits="SmallIconTemplate" virtual="true">
+		<Scripts>
+			<OnLoad>
+				self = SlotMiniView.new(self);
+			</OnLoad>
+			<OnClick>
+				self.Clicked();
+			</OnClick>
+		</Scripts>
+	</Button>
+
+	<!-- The Rat Page Frame -->
+	<Frame name="RatQuickPage" hidden="true">
+		<Size>
+			<AbsDimension x="256" y="256" />
+		</Size>
+		<Anchors>
+			<Anchor point="CENTER" relativeTo="UIParent">
+				<Offset>
+					<AbsDimension x="0" y="0" />
+				</Offset>
+			</Anchor>
+		</Anchors>
+		<Layers>
+			<Layer level="BACKGROUND">
+			<Texture name="BackgroundTexture" file="Interface\AddOns\CyborgMMO7\Graphics\ParchmentAndLeftSide.tga">
+				<Size>
+				  <AbsDimension x="256" y="256" />
+				</Size>
+				<Anchors>
+				  <Anchor point="CENTER">
+					<Offset>
+					  <AbsDimension x="0" y="0" />
+					</Offset>
+				  </Anchor>
+				</Anchors>
+			  </Texture>
+			</Layer>
+			<Layer level="ARTWORK">
+			<Texture name="RatCalloutsTexture" file="Interface\AddOns\CyborgMMO7\Graphics\Lines.tga">
+				<Size>
+					<AbsDimension x="256" y="256" />
+				</Size>
+				<Anchors>
+				  <Anchor point="TOPLEFT">
+					<Offset>
+					  <AbsDimension x="0" y="0" />
+					</Offset>
+				  </Anchor>
+				</Anchors>
+			  </Texture>
+			</Layer>
+		</Layers>
+		<!-- Our Slot Locations -->
+		<Frames>
+			<CheckButton name="$parentSlot1" inherits="SmallSlotTemplate" id="1">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="34" y="-58" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentSlot2" inherits="SmallSlotTemplate" id="2">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="34" y="-76"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentSlot3" inherits="SmallSlotTemplate" id="3">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="34" y="-94" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentSlot4" inherits="SmallSlotTemplate" id="4">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="34" y="-119" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentSlot5" inherits="SmallSlotTemplate" id="5">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="34" y="-136" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentSlot6" inherits="SmallSlotTemplate" id="6">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="34" y="-153" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentSlot7" inherits="SmallSlotTemplate" id="7">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="16.5" y="-136"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentSlot8" inherits="SmallSlotTemplate" id="8">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="52.5" y="-136"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentSlot9" inherits="SmallSlotTemplate" id="9">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="34" y="-180"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentSlot10" inherits="SmallSlotTemplate" id="10">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="34" y="-197"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentSlot11" inherits="SmallSlotTemplate" id="11">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="34" y="-214"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="Slot12" inherits="SmallSlotTemplate" id="12">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="24" y="-33"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentSlot13" inherits="SmallSlotTemplate" id="13">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="44" y="-33" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				RatQuickPageView.new(self);
+			</OnLoad>
+		</Scripts>
+	</Frame>
+</Ui>

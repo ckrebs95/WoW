@@ -56,33 +56,32 @@ L:SetGeneralLocalization{
 	name 		= "小怪模組"
 }
 L:SetWarningLocalization{
-	WarnWave	= "%s",
-	WarnWaveSoon= "下一波小怪即將到來"
+	WarnWave	= "%s"
 }
 L:SetTimerLocalization{
 	TimerWave	= "下一波"
 }
 L:SetOptionLocalization{
-	WarnWave		= "Warn when a new wave is incoming",--Translate
-	WarnWaveSoon	= "Warn when a new wave is incoming soon",--Translate
-	DetailedWave	= "Detailed warning when a new wave is incoming (which mobs)",--Translate
-	TimerWave		= "Show a timer for next wave"--Translate
+	WarnWave		= "當新一波進攻到來時顯示警告",
+	DetailedWave	= "當新一波進攻到來時顯示詳細警告(何種怪)",
+	TimerWave		= "為下一波進攻顯示計時器"
 }
 L:SetMiscLocalization{
 	HyjalZoneName	= "海加爾山",
 	Thrall			= "索爾",
 	Jaina			= "珍娜·普勞德摩爾女士",
-	RageWinterchill	= "瑞齊·凜冬",
-	Anetheron		= "安納塞隆",
-	Kazrogal		= "卡茲洛加",
-	Azgalor			= "亞茲加洛",
+	GeneralBoss		= "首領到來",
+	RageWinterchill	= "瑞齊·凜冬到來",
+	Anetheron		= "安納塞隆到來",
+	Kazrogal		= "卡茲洛加到來",
+	Azgalor			= "亞茲加洛到來",
 	WaveCheck		= "目前波數 = (%d+)/8",
-	WarnWave_0		= "第 %s/8 波",
-	WarnWave_1		= "第 %s/8 波 - %s %s",
-	WarnWave_2		= "第 %s/8 波 - %s %s 和 %s %s",
-	WarnWave_3		= "第 %s/8 波 - %s %s, %s %s 和 %s %s",
-	WarnWave_4		= "第 %s/8 波 - %s %s, %s %s, %s %s 和 %s %s",
-	WarnWave_5		= "第 %s/8 波 - %s %s, %s %s, %s %s, %s %s 和 %s %s",
+	WarnWave_0		= "第%s/8波",
+	WarnWave_1		= "第%s/8波 - %s %s",
+	WarnWave_2		= "第%s/8波 - %s %s 和 %s %s",
+	WarnWave_3		= "第%s/8波 - %s %s, %s %s 和 %s %s",
+	WarnWave_4		= "第%s/8波 - %s %s, %s %s, %s %s 和 %s %s",
+	WarnWave_5		= "第%s/8波 - %s %s, %s %s, %s %s, %s %s 和 %s %s",
 	RageGossip		= "我和我的同伴都與你同在，普勞德摩爾女士。",
 	AnetheronGossip	= "不管阿克蒙德要派誰來對付我們，我們都已經準備好了，普勞德摩爾女士。",
 	KazrogalGossip	= "我與你同在，索爾。",

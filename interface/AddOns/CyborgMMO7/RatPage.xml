@@ -1,0 +1,461 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<!-- IconTemplate-->
+	<Button name="IconTemplate" virtual="true" inherits="SecureActionButtonTemplate">
+		<Size>
+			<AbsDimension x="32" y="32"/>
+		</Size>
+		<Layers>
+			<Layer level="OVERLAY">
+				<Texture name="$parentIcon"/>
+				</Layer>
+				<Layer level="ARTWORK">
+				<FontString name="$parentHotKey" inherits="NumberFontNormalSmallGray" justifyH="RIGHT">
+				  <Size>
+					<AbsDimension x="32" y="10"/>
+				  </Size>
+				  <Anchors>
+					<Anchor point="TOPLEFT">
+					  <Offset>
+						<AbsDimension x="-2" y="-2"/>
+					  </Offset>
+					</Anchor>
+				  </Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<PushedTexture file="Interface\Buttons\UI-Quickslot-Depress"/>
+		<HighlightTexture alphaMode="ADD" file="Interface\Buttons\ButtonHilight-Square"/>
+	</Button>
+
+	<Button name="SlotTemplate" inherits="IconTemplate" virtual="true">
+		<Scripts>
+			<OnLoad>
+				self = SlotView.new(self);
+			</OnLoad>
+			<OnMouseDown>
+				if(button == "LeftButton") then
+					self.Clicked();
+				end
+			</OnMouseDown>
+
+		</Scripts>
+	</Button>
+
+
+
+	<Button name="ModeTemplate" virtual="true">
+		<Size>
+			<AbsDimension x="127" y="63" />
+		</Size>
+
+		<ButtonText name="$parentText">
+			<FontHeight>
+				<AbsValue val="10" />
+			</FontHeight>
+		</ButtonText>
+		<NormalFont style="GameFontNormal" />
+		<HighlightFont style="GameFontHighlight" />
+		<DisabledFont style="GameFontDisable" />
+		<Scripts>
+			<OnLoad>
+				self = ModeView.new(self);
+			</OnLoad>
+			<OnClick>
+				self.Clicked();
+			</OnClick>
+		</Scripts>
+	</Button>
+
+	<!-- The Rat Page Frame -->
+	<Frame name="RatPageTemplate" virtual="true">
+		<Size>
+			<AbsDimension x="512" y="512"/>
+		</Size>
+		<Anchors>
+			<Anchor point="TOPLEFT">
+				<Offset>
+					<AbsDimension x="0" y="-0"/>
+				</Offset>
+			</Anchor>
+		</Anchors>
+		<!-- Our Slot Locations -->
+		<Frames>
+			<CheckButton name="$parentSlot1" inherits="SlotTemplate" id="1">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="68" y="-116" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<Texture name="$parentText" file="Interface\AddOns\CyborgMMO7\Graphics\Slot.tga">
+							<Size>
+								<AbsDimension x="33" y="33"/>
+							</Size>
+							<Anchors>
+								<Anchor point="CENTER">
+									<Offset>
+										<AbsDimension x="0" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+			</CheckButton>
+			<CheckButton name="$parentSlot2" inherits="SlotTemplate" id="2">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="68" y="-153"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<Texture name="$parentText" file="Interface\AddOns\CyborgMMO7\Graphics\Slot.tga">
+							<Size>
+								<AbsDimension x="33" y="33"/>
+							</Size>
+							<Anchors>
+								<Anchor point="CENTER">
+									<Offset>
+										<AbsDimension x="0" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+			</CheckButton>
+			<CheckButton name="$parentSlot3" inherits="SlotTemplate" id="3">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="68" y="-189" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<Texture name="$parentText" file="Interface\AddOns\CyborgMMO7\Graphics\Slot.tga">
+							<Size>
+								<AbsDimension x="33" y="33"/>
+							</Size>
+							<Anchors>
+								<Anchor point="CENTER">
+									<Offset>
+										<AbsDimension x="0" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+			</CheckButton>
+			<CheckButton name="$parentSlot4" inherits="SlotTemplate" id="4">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="68" y="-238" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<Texture name="$parentText" file="Interface\AddOns\CyborgMMO7\Graphics\SlotUp.tga">
+							<Size>
+								<AbsDimension x="33" y="33"/>
+							</Size>
+							<Anchors>
+								<Anchor point="CENTER">
+									<Offset>
+										<AbsDimension x="0" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+			</CheckButton>
+			<CheckButton name="$parentSlot5" inherits="SlotTemplate" id="5">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="68" y="-273" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<Texture name="$parentText" file="Interface\AddOns\CyborgMMO7\Graphics\SlotMiddle.tga">
+							<Size>
+								<AbsDimension x="33" y="33"/>
+							</Size>
+							<Anchors>
+								<Anchor point="CENTER">
+									<Offset>
+										<AbsDimension x="0" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+			</CheckButton>
+			<CheckButton name="$parentSlot6" inherits="SlotTemplate" id="6">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="68" y="-308" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<Texture name="$parentText" file="Interface\AddOns\CyborgMMO7\Graphics\SlotDown.tga">
+							<Size>
+								<AbsDimension x="33" y="33"/>
+							</Size>
+							<Anchors>
+								<Anchor point="CENTER">
+									<Offset>
+										<AbsDimension x="0" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+			</CheckButton>
+			<CheckButton name="$parentSlot7" inherits="SlotTemplate" id="7">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="33" y="-273"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<Texture name="$parentText" file="Interface\AddOns\CyborgMMO7\Graphics\SlotLeft.tga">
+							<Size>
+								<AbsDimension x="33" y="33"/>
+							</Size>
+							<Anchors>
+								<Anchor point="CENTER">
+									<Offset>
+										<AbsDimension x="0" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+			</CheckButton>
+			<CheckButton name="$parentSlot8" inherits="SlotTemplate" id="8">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="103" y="-273"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<Texture name="$parentText" file="Interface\AddOns\CyborgMMO7\Graphics\SlotRight.tga">
+							<Size>
+								<AbsDimension x="33" y="33"/>
+							</Size>
+							<Anchors>
+								<Anchor point="CENTER">
+									<Offset>
+										<AbsDimension x="0" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+			</CheckButton>
+			<CheckButton name="$parentSlot9" inherits="SlotTemplate" id="9">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="68" y="-356"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<Texture name="$parentText" file="Interface\AddOns\CyborgMMO7\Graphics\Slot.tga">
+							<Size>
+								<AbsDimension x="33" y="33"/>
+							</Size>
+							<Anchors>
+								<Anchor point="CENTER">
+									<Offset>
+										<AbsDimension x="0" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+			</CheckButton>
+			<CheckButton name="$parentSlot10" inherits="SlotTemplate" id="10">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="68" y="-393"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<Texture name="$parentText" file="Interface\AddOns\CyborgMMO7\Graphics\Slot.tga">
+							<Size>
+								<AbsDimension x="33" y="33"/>
+							</Size>
+							<Anchors>
+								<Anchor point="CENTER">
+									<Offset>
+										<AbsDimension x="0" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+			</CheckButton>
+			<CheckButton name="$parentSlot11" inherits="SlotTemplate" id="11">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="68" y="-429"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<Texture name="$parentText" file="Interface\AddOns\CyborgMMO7\Graphics\Slot.tga">
+							<Size>
+								<AbsDimension x="33" y="33"/>
+							</Size>
+							<Anchors>
+								<Anchor point="CENTER">
+									<Offset>
+										<AbsDimension x="0" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+			</CheckButton>
+			<CheckButton name="$parentSlot12" inherits="SlotTemplate" id="12">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="50" y="-68"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<Texture name="$parentText" file="Interface\AddOns\CyborgMMO7\Graphics\SlotLeft.tga">
+							<Size>
+								<AbsDimension x="33" y="33"/>
+							</Size>
+							<Anchors>
+								<Anchor point="CENTER">
+									<Offset>
+										<AbsDimension x="0" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+			</CheckButton>
+			<CheckButton name="$parentSlot13" inherits="SlotTemplate" id="13">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="86" y="-68" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<Texture name="$parentText" file="Interface\AddOns\CyborgMMO7\Graphics\SlotRight.tga">
+							<Size>
+								<AbsDimension x="33" y="33"/>
+							</Size>
+							<Anchors>
+								<Anchor point="CENTER">
+									<Offset>
+										<AbsDimension x="0" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+			</CheckButton>
+			<Button name="Mode1" inherits="ModeTemplate" id="1">
+				<NormalTexture file="Interface\AddOns\CyborgMMO7\Graphics\Mode1Down.tga" >
+				</NormalTexture>
+				<PushedTexture file="Interface\AddOns\CyborgMMO7\Graphics\Mode1Selected.tga">
+				</PushedTexture>
+				<HighlightTexture file="Interface\AddOns\CyborgMMO7\Graphics\Mode1Over.tga">
+				</HighlightTexture>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="384" y="-33" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+			<Button name="Mode2" inherits="ModeTemplate" id="2">
+				<NormalTexture file="Interface\AddOns\CyborgMMO7\Graphics\Mode2Down.tga" >
+				</NormalTexture>
+				<PushedTexture file="Interface\AddOns\CyborgMMO7\Graphics\Mode2Selected.tga">
+				</PushedTexture>
+				<HighlightTexture file="Interface\AddOns\CyborgMMO7\Graphics\Mode2Over.tga">
+				</HighlightTexture>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="384" y="-33" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+			<Button name="Mode3" inherits="ModeTemplate" id="3">
+				<NormalTexture file="Interface\AddOns\CyborgMMO7\Graphics\Mode3Down.tga" >
+				</NormalTexture>
+				<PushedTexture file="Interface\AddOns\CyborgMMO7\Graphics\Mode3Selected.tga">
+				</PushedTexture>
+				<HighlightTexture file="Interface\AddOns\CyborgMMO7\Graphics\Mode3Over.tga">
+				</HighlightTexture>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="384" y="-33" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				self = RatPageView.new(self);
+			</OnLoad>
+		</Scripts>
+	</Frame>
+</Ui>

@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("GunshipBattle", "DBM-Icecrown", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 66 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 86 $"):sub(12, -3))
 local AddsIcon
 if UnitFactionGroup("player") == "Alliance" then
 	mod:RegisterCombat("yell", L.PullAlliance)
@@ -54,7 +54,6 @@ function mod:Adds()
 end
 
 function mod:OnCombatStart(delay)
-	DBM.BossHealth:Clear()
 	timerCombatStart:Show(-delay)
 	timerAdds:Start(60-delay)--First adds might come early or late so timer should be taken as a proximity only.
 	warnAddsSoon:Schedule(55)

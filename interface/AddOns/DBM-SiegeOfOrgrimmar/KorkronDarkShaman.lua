@@ -1,9 +1,8 @@
 local mod	= DBM:NewMod(856, "DBM-SiegeOfOrgrimmar", nil, 369)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9937 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10201 $"):sub(12, -3))
 mod:SetCreatureID(71859, 71858)--haromm, Kardris
---mod:SetQuestID(32744)
 mod:SetZone()
 mod:SetUsedIcons(5, 4, 3, 2, 1)
 
@@ -18,57 +17,73 @@ mod:RegisterEventsInCombat(
 )
 
 --Dogs
-local warnRend						= mod:NewStackAnnounce(144304, 2)--Dont have an idea of frequently yet so just a general anounce for now. tank warnings later
+local warnRend						= mod:NewStackAnnounce(144304, 2)
 
 --General
-local warnPoisonmistTotem			= mod:NewSpellAnnounce(144288, 3)--90%
-local warnFoulstreamTotem			= mod:NewSpellAnnounce(144289, 3)--80%
-local warnAshflareTotem				= mod:NewSpellAnnounce(144290, 3)--70%
---local warnRustedIronTotem			= mod:NewSpellAnnounce(144290, 3)--Heroic
+local warnPoisonmistTotem			= mod:NewSpellAnnounce(144288, 3)--85%
+local warnFoulstreamTotem			= mod:NewSpellAnnounce(144289, 3)--65%
+local warnAshflareTotem				= mod:NewSpellAnnounce(144290, 3)--45%
+local warnRustedIronTotem			= mod:NewSpellAnnounce(144291, 3)--Heroic (95%)
 
 --Earthbreaker Haromm
-local warnFroststormStrike			= mod:NewTargetAnnounce(144215, 2)--Not tank flagged, but probably tank debuff, leaving for everyone just in case though. this plus FrostStorm Bolt= one dead MF
+local warnFroststormStrike			= mod:NewStackAnnounce(144215, 2, nil, mod:IsTank())
 local warnToxicMists				= mod:NewTargetAnnounce(144089, 3)
-local warnFoulStream				= mod:NewTargetAnnounce(144090, 3)--Verify if targetscanning will work here (or if spell itself has a target emote or something)
+local warnFoulStream				= mod:NewTargetAnnounce(144090, 3)
 local warnAshenWall					= mod:NewSpellAnnounce(144070, 4)
+local warnIronTomb					= mod:NewSpellAnnounce(144328, 3)
 --Wavebinder Kardris
-local warnFrostStormBolt			= mod:NewSpellAnnounce(144214, 2)--Who is this cast on? random people or active tank?
-local warnToxicStorm				= mod:NewTargetAnnounce(144005, 3)
-local warnFoulGeyser				= mod:NewSpellAnnounce(143990, 4)--This may be cast on an actual target player instead of location, as such some changes will be needed
+local warnFrostStormBolt			= mod:NewSpellAnnounce(144214, 2, nil, mod:IsTank())
+local warnToxicStorm				= mod:NewSpellAnnounce(144005, 3)
+local warnFoulGeyser				= mod:NewTargetAnnounce(143990, 4)
 local warnFallingAsh				= mod:NewSpellAnnounce(143973, 3)
+local warnIronPrison				= mod:NewTargetAnnounce(144330, 3)
 
 --Earthbreaker Haromm
-local specWarnFroststormStrike		= mod:NewSpecialWarningSpell(144215, false)--spammy, but useful for a tank if they want to time active mitigation around it.
+local specWarnFroststormStrikeCast	= mod:NewSpecialWarningSpell(144215, false)--spammy, but useful for a tank if they want to time active mitigation around it.
+local specWarnFroststormStrike		= mod:NewSpecialWarningStack(144215, mod:IsTank(), 6)
+local specWarnFroststormStrikeOther	= mod:NewSpecialWarningTarget(144215, mod:IsTank())
 local specWarnFoulStreamYou			= mod:NewSpecialWarningYou(144090)
 local yellFoulStream				= mod:NewYell(144090)
 local specWarnFoulStream			= mod:NewSpecialWarningSpell(144090, nil, nil, nil, 2)
 local specWarnAshenWall				= mod:NewSpecialWarningSpell(144070, nil, nil, nil, 2)
+local specWarnIronTomb				= mod:NewSpecialWarningSpell(144328, nil, nil, nil, 2)
 --Wavebinder Kardris
 local specWarnFrostStormBolt		= mod:NewSpecialWarningSpell(144214, false)--spammy, but useful for a tank if they want to time active mitigation around it.
 local specWarnToxicStorm			= mod:NewSpecialWarningSpell(144005, mod:IsMelee())
 local specWarnFoulGeyser			= mod:NewSpecialWarningSpell(143990)
+local yellFoulGeyser				= mod:NewYell(143990)
 local specWarnFallingAsh			= mod:NewSpecialWarningSpell(143973, nil, nil, nil, 2)--Seems like an everyone waring.
+local specWarnIronPrison			= mod:NewSpecialWarningSoon(144330)--If this generic isn't too clear i'll localize it. this is warning that it's about to expire not that it's just been applied
+local yellIronPrisonFades			= mod:NewYell(144330, L.PrisonYell, false)--Off by default since it's an atypical yell (it's not used for avoiding person it's used to get healer attention to person)
 
 --Earthbreaker Haromm
-local timerFroststormStrikeCD		= mod:NewNextTimer(6, 144215, nil, mod:IsTank())
-local timerToxicMistsCD				= mod:NewNextTimer(30, 144089)
-local timerFoulStreamCD				= mod:NewNextTimer(32.5, 144090)
-local timerAshenWallCD				= mod:NewNextTimer(32.5, 144070)
+local timerFroststormStrike			= mod:NewTargetTimer(30, 144215, nil, mod:IsTank())
+local timerFroststormStrikeCD		= mod:NewCDTimer(6, 144215, nil, mod:IsTank())
+local timerToxicMistsCD				= mod:NewCDTimer(32, 144089)--Pretty much a next timers unless boss is casting something else
+local timerFoulStreamCD				= mod:NewCDTimer(32.5, 144090)--Pretty much a next timers unless boss is casting something else
+local timerAshenWallCD				= mod:NewCDTimer(32.5, 144070)--Pretty much a next timers unless boss is casting something else
+local timerIronTombCD				= mod:NewCDTimer(31.5, 144328)--Pretty much a next timers unless boss is casting something else
 --Wavebinder Kardris
-local timerFrostStormBoltCD			= mod:NewNextTimer(7.2, 144214)
-local timerToxicStormCD				= mod:NewNextTimer(30, 144005)
-local timerFoulGeyserCD				= mod:NewNextTimer(32.5, 143990)
-local timerFallingAshCD				= mod:NewNextTimer(32.5, 143973)
+local timerFrostStormBoltCD			= mod:NewCDTimer(6.8, 144214, nil, mod:IsTank())
+local timerToxicStormCD				= mod:NewCDTimer(32, 144005)--Pretty much a next timers unless boss is casting something else
+local timerFoulGeyserCD				= mod:NewCDTimer(32.5, 143990)--Pretty much a next timers unless boss is casting something else
+local timerFallingAshCD				= mod:NewCDTimer(32.5, 143973)--Pretty much a next timers unless boss is casting something else
+local timerIronPrisonCD				= mod:NewCDTimer(31.5, 144330)--Pretty much a next timers unless boss is casting something else
+local timerIronPrison				= mod:NewBuffFadesTimer(60, 144330)
 
 local countdownFoulGeyser			= mod:NewCountdown(32.5, 143990)
 local countdownAshenWall			= mod:NewCountdown(32.5, 144070, nil, nil, nil, nil, true)
+
+local berserkTimer					= mod:NewBerserkTimer(540)
 
 mod:AddBoolOption("RangeFrame")--This is more or less for foul geyser and foul stream splash damage
 mod:AddBoolOption("SetIconOnToxicMists", false)
 
 local toxicMistsTargets = {}
 local toxicMistsTargetsIcons = {}
-local scanFailed = false
+local ironPrisonTargets = {}
+local UnitExists, UnitGUID, UnitDetailedThreatSituation = UnitExists, UnitGUID, UnitDetailedThreatSituation
+local playerName = UnitName("player")
 
 local function warnToxicMistTargets()
 	warnToxicMists:Show(table.concat(toxicMistsTargets, "<, >"))
@@ -76,21 +91,9 @@ local function warnToxicMistTargets()
 	table.wipe(toxicMistsTargets)
 end
 
---Auto detection of "tank them apart" strategy. if you keep them > 40 yards apart like we did, abilities other casts do not concern you.
-local function checkTankDistance(cid)
-	local _, uId = mod:GetBossTarget(cid)
-	if uId then--Now we know who is tanking that boss
-		local x, y = GetPlayerMapPosition(uId)
-		if x == 0 and y == 0 then
-			SetMapToCurrentZone()
-			x, y = GetPlayerMapPosition(uId)
-		end
-		local inRange = DBM.RangeCheck:GetDistance("player", x, y)--We check how far we are from the tank who has that boss
-		if (inRange and inRange < 40) or (x == 0 and y == 0) then--You are near the person tanking boss
-			return true
-		end
-	end
-	return false
+local function warnIronPrisonTargets()
+	warnIronPrison:Show(table.concat(ironPrisonTargets, "<, >"))
+	table.wipe(ironPrisonTargets)
 end
 
 local function ClearToxicMistTargets()
@@ -113,12 +116,8 @@ do
 end
 
 function mod:FoulStreamTarget(targetname, uId)
-	if not targetname then
-		print("DBM DEBUG: FoulStreamTarget Scan failed")
-		return
-	end
+	if not targetname then return end
 	if self:IsTanking(uId) then--Never target tanks, so if target is tank, that means scanning failed.
-		scanFailed = true
 		specWarnFoulStream:Show()
 	else
 		warnFoulStream:Show(targetname)
@@ -127,16 +126,25 @@ function mod:FoulStreamTarget(targetname, uId)
 			specWarnFoulStreamYou:Show()
 			yellFoulStream:Yell()
 		else
-			if checkTankDistance(71859) then
+			if self:checkTankDistance(71859) then
 				specWarnFoulStream:Show()
 			end
 		end
 	end
 end
 
+function mod:ToxicStormTarget(targetname, uId)
+	if not targetname then 
+		print("DBM DEBUG: Target scanning Failed")
+		return
+	else
+		print("DBM DEBUG: ToxicStormTarget returned "..targetname)
+	end
+end
+
 function mod:OnCombatStart(delay)
 	table.wipe(toxicMistsTargets)
-	scanFailed = false
+	berserkTimer:Start(-delay)
 end
 
 function mod:OnCombatEnd()
@@ -146,37 +154,49 @@ function mod:OnCombatEnd()
 end
 
 function mod:SPELL_CAST_START(args)
-	if args.spellId == 144214 and args.sourceName == UnitName("target") then
-		warnFrostStormBolt:Show()
-		specWarnFrostStormBolt:Show()
-		timerFrostStormBoltCD:Start()
+	if args.spellId == 144214 then
+		for i = 1, 2 do
+			local bossUnitID = "boss"..i
+			if UnitExists(bossUnitID) and UnitGUID(bossUnitID) == args.sourceGUID and UnitDetailedThreatSituation("player", bossUnitID) then--We are highest threat target
+				warnFrostStormBolt:Show()
+				specWarnFrostStormBolt:Show()
+				timerFrostStormBoltCD:Start()
+			end
+		end
 	elseif args.spellId == 144005 then
+		self:BossTargetScanner(71858, "ToxicStormTarget", 0.025, 12)
 		warnToxicStorm:Show()
 		timerToxicStormCD:Start()
-		if checkTankDistance(args:GetSrcCreatureID()) then
+		if self:checkTankDistance(args:GetSrcCreatureID()) then
 			specWarnToxicStorm:Show()
 		end
 	elseif args.spellId == 144090 then
 		self:BossTargetScanner(71859, "FoulStreamTarget", 0.025, 12)
 	elseif args.spellId == 143990 then
-		warnFoulGeyser:Show()
 		timerFoulGeyserCD:Start()
-		if checkTankDistance(args:GetSrcCreatureID()) then
+		if self:checkTankDistance(args:GetSrcCreatureID()) then
 			specWarnFoulGeyser:Show()
 			countdownFoulGeyser:Start()
 		end
 	elseif args.spellId == 144070 then
 		warnAshenWall:Show()
 		timerAshenWallCD:Start()
-		if checkTankDistance(args:GetSrcCreatureID()) then--Now we know who is tanking that boss
+		if self:checkTankDistance(args:GetSrcCreatureID()) then--Now we know who is tanking that boss
 			specWarnAshenWall:Show()--Give special warning cause this ability concerns you
 		end
 	elseif args.spellId == 143973 then
 		warnFallingAsh:Show()
 		timerFallingAshCD:Start()
-		if checkTankDistance(args:GetSrcCreatureID()) then--Now we know who is tanking that boss
+		if self:checkTankDistance(args:GetSrcCreatureID()) then--Now we know who is tanking that boss
 			specWarnFallingAsh:Show()--Give special warning cause this ability concerns you
 		end
+	elseif args.spellId == 144330 then
+		warnIronPrison:Show()
+		timerIronPrisonCD:Start()
+	elseif args.spellId == 144328 then
+		warnIronTomb:Show()
+		timerIronTombCD:Start()
+		specWarnIronTomb:Show()
 	end
 end
 
@@ -190,10 +210,21 @@ function mod:SPELL_CAST_SUCCESS(args)
 		end
 	elseif args.spellId == 144290 and self:AntiSpam() then
 		warnAshflareTotem:Show()
+	elseif args.spellId == 144291 and self:AntiSpam() then
+		warnRustedIronTotem:Show()
 	elseif args.spellId == 144215 and args.sourceName == UnitName("target") then
-		warnFroststormStrike:Show()
-		specWarnFroststormStrike:Schedule(4)--Instant cast, but since it's a 6 second NEXT timer, we can fake a cast and make this special warning a cast warning for tanks to time active mitigation
-		timerFroststormStrikeCD:Start()
+		for i = 1, 2 do
+			local bossUnitID = "boss"..i
+			if UnitExists(bossUnitID) and UnitGUID(bossUnitID) == args.sourceGUID and UnitDetailedThreatSituation("player", bossUnitID) then--We are highest threat target
+				specWarnFroststormStrikeCast:Schedule(4)
+				timerFroststormStrikeCD:Start()
+			end
+		end
+	elseif args.spellId == 143990 then
+		warnFoulGeyser:Show(args.destName)
+		if args:IsPlayer() then
+			yellFoulGeyser:Yell()
+		end
 	end
 end
 
@@ -203,7 +234,7 @@ function mod:SPELL_AURA_APPLIED(args)
 		if amount % 3 == 0 then
 			warnRend:Show(args.destName, amount)
 		end
-	elseif args.spellId == 144089 and not args:IsDestTypeHostile() then
+	elseif args.spellId == 144089 then
 		toxicMistsTargets[#toxicMistsTargets + 1] = args.destName
 		self:Unschedule(warnToxicMistTargets)
 		self:Schedule(0.5, warnToxicMistTargets)
@@ -214,6 +245,31 @@ function mod:SPELL_AURA_APPLIED(args)
 				self:ScheduleMethod(0.5, "SetToxicIcons")
 			end
 		end
+	elseif args.spellId == 144330 then
+		ironPrisonTargets[#ironPrisonTargets + 1] = args.destName
+		self:Unschedule(warnIronPrisonTargets)
+		self:Schedule(0.5, warnIronPrisonTargets)
+	elseif args.spellId == 144215 then
+		local amount = args.amount or 1
+		timerFroststormStrike:Start(args.destName)
+		if amount % 2 == 0 then
+			warnFroststormStrike:Show(args.destName, amount)
+		end
+		if amount >= 6 then
+			if args:IsPlayer() then
+				specWarnFroststormStrike:Show(amount)
+			else
+				specWarnFroststormStrikeOther:Show(args.destName)
+			end
+		end
+	elseif args.spellId == 144330 and args:IsPlayer() then
+		specWarnIronPrison:Schedule(5)
+		timerIronPrison:Start()
+		yellIronPrisonFades:Schedule(59, playerName, 1)
+		yellIronPrisonFades:Schedule(58, playerName, 2)
+		yellIronPrisonFades:Schedule(57, playerName, 3)
+		yellIronPrisonFades:Schedule(56, playerName, 4)
+		yellIronPrisonFades:Schedule(55, playerName, 5)
 	end
 end
 mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
@@ -222,6 +278,10 @@ function mod:SPELL_AURA_REMOVED(args)
 	if args.spellId == 144089 and self.Options.SetIconOnToxicMists then
 		self:SetIcon(args.destName, 0)
 	elseif args.spellId == 144215 then
-		timerFroststormStrikeCD:Cancel(args.destName)
+		timerFroststormStrike:Cancel(args.destName)
+	elseif args.spellId == 144330 and args:IsPlayer() then
+		specWarnIronPrison:Cancel()
+		yellIronPrisonFades:Cancel()
+		timerIronPrison:Cancel()
 	end
 end

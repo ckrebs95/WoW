@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("LordMarrowgar", "DBM-Icecrown", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 58 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 69 $"):sub(12, -3))
 mod:SetCreatureID(36612)
 mod:SetModelID(31119)
 mod:SetUsedIcons(1, 2, 3, 4, 5, 6, 7, 8)
@@ -27,7 +27,7 @@ local specWarnWhirlwind		= mod:NewSpecialWarningRun(69076)
 local timerBoneSpike		= mod:NewCDTimer(18, 69057)
 local timerWhirlwindCD		= mod:NewCDTimer(90, 69076)
 local timerWhirlwind		= mod:NewBuffActiveTimer(20, 69076)
-local timerBoned			= mod:NewAchievementTimer(8, 4610, "AchievementBoned")
+local timerBoned			= mod:NewAchievementTimer(8, 4610)
 
 local berserkTimer			= mod:NewBerserkTimer(600)
 

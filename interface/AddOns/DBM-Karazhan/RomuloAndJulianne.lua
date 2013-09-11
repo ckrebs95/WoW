@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("RomuloAndJulianne", "DBM-Karazhan")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 474 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 492 $"):sub(12, -3))
 mod:SetCreatureID(17534, 17533, 99999)--99999 bogus screature id to keep mod from pre mature combat end.
 mod:SetModelID(17068)
 mod:RegisterCombat("yell", L.RJ_Pull)
@@ -43,15 +43,16 @@ end
 
 function mod:NextPhase()
 	phase = phase + 1
-	if phase == 1 then
-		DBM.BossHealth:Clear()
-		DBM.BossHealth:AddBoss(17534, L.Julianne)
-	elseif phase == 2 then
-		DBM.BossHealth:AddBoss(17533, L.Romulo)
-		warnPhase2:Show()
-	elseif phase == 3 then
-		DBM.BossHealth:AddBoss(17534, L.Julianne)
-		DBM.BossHealth:AddBoss(17533, L.Romulo)
+	if DBM.BossHealth:IsShown() then
+		if phase == 1 then
+			DBM.BossHealth:Clear()
+			DBM.BossHealth:AddBoss(17534, L.Julianne)
+		elseif phase == 2 then
+			DBM.BossHealth:AddBoss(17533, L.Romulo)
+		elseif phase == 3 then
+			DBM.BossHealth:AddBoss(17534, L.Julianne)
+			DBM.BossHealth:AddBoss(17533, L.Romulo)
+		end
 	end
 end
 
@@ -103,7 +104,10 @@ function mod:UNIT_DIED(args)
 				DBM:EndCombat(self)
 			end
 		else
-			DBM.BossHealth:RemoveBoss(cid)
+			if DBM.BossHealth:IsShown() then
+				DBM.BossHealth:RemoveBoss(cid)
+			end
+			warnPhase2:Show()
 			self:NextPhase()--Trigger phase 2
 		end
 	elseif cid == 17533 and self:IsInCombat() then
@@ -112,7 +116,7 @@ function mod:UNIT_DIED(args)
 			if (GetTime() - JulianneDied) < 10 then
 				DBM:EndCombat(self)
 			end
-		else
+		elseif DBM.BossHealth:IsShown() then 
 			DBM.BossHealth:RemoveBoss(cid)
 		end
 	end

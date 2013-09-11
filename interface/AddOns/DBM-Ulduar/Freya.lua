@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Freya", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 34 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 73 $"):sub(12, -3))
 
 mod:SetCreatureID(32906)
 mod:SetModelID(28777)
@@ -56,10 +56,6 @@ local iconId		= 6
 function mod:OnCombatStart(delay)
 	enrage:Start()
 	table.wipe(adds)
-end
-
-function mod:OnCombatEnd(wipe)
-	DBM.BossHealth:Hide()
 end
 
 local function showRootWarning()
@@ -121,7 +117,7 @@ end
 
 function mod:CHAT_MSG_MONSTER_YELL(msg)
 	if msg == L.SpawnYell then
-		if self.Options.HealthFrame then
+		if DBM.BossHealth:IsShown() then
 			if not adds[33202] then DBM.BossHealth:AddBoss(33202, L.WaterSpirit) end -- ancient water spirit
 			if not adds[32916] then DBM.BossHealth:AddBoss(32916, L.Snaplasher) end  -- snaplasher
 			if not adds[32919] then DBM.BossHealth:AddBoss(32919, L.StormLasher) end -- storm lasher
@@ -135,7 +131,7 @@ end
 function mod:UNIT_DIED(args)
 	local cid = self:GetCIDFromGUID(args.destGUID)
 	if cid == 33202 or cid == 32916 or cid == 32919 then
-		if self.Options.HealthFrame then
+		if DBM.BossHealth:IsShown() then
 			DBM.BossHealth:RemoveBoss(cid)
 		end
 		if self:AntiSpam(20) then

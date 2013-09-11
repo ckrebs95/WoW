@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Halion", "DBM-ChamberOfAspects", 2)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 57 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 73 $"):sub(12, -3))
 mod:SetCreatureID(39863)--40142 (twilight form)
 mod:SetModelID(31952)
 mod:SetUsedIcons(7, 8)
@@ -73,8 +73,10 @@ function mod:OnCombatStart(delay)--These may still need retuning too, log i had 
 	timerMeteorCD:Start(20-delay)
 	timerFieryConsumptionCD:Start(15-delay)
 	timerFieryBreathCD:Start(10-delay)
-	DBM.BossHealth:Clear()
-	DBM.BossHealth:AddBoss(39863,40142, L.Halion)
+	if DBM.BossHealth:IsShown() then
+		DBM.BossHealth:Clear()
+		DBM.BossHealth:AddBoss(39863,40142, L.Halion)
+	end
 end
 
 function mod:SPELL_CAST_START(args)

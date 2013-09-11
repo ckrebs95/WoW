@@ -10,7 +10,7 @@ NXNotes = {
 	["profiles"] = {
 		["Default"] = {
 			["Notes"] = {
-				["Version"] = 0.13,
+				["Version"] = 0.14,
 			},
 		},
 	},

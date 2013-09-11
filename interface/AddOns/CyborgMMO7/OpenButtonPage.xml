@@ -1,0 +1,164 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Frame name="OpenButtonPage" movable="true" clampedtoscreen="true" enableMouse="true" hidden="true">
+			<TitleRegion>
+				<Size x="75" y="75"/>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="0" y="0" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</TitleRegion>
+			<Size>
+				<AbsDimension x="50" y="50" />
+			</Size>
+			<Anchors>
+				<Anchor point="LEFT" relativeTo="UIParent">
+					<Offset>
+						<AbsDimension x="0" y="0" />
+					</Offset>
+				</Anchor>
+			</Anchors>
+			<Frames>
+			<Button name="$parentOpenMainForm" clampedtoscreen="true" enableMouse="true" movable="true">
+			<Size>
+				<AbsDimension x="75" y="75" />
+			</Size>
+			<Anchors>
+				<Anchor point="TOPLEFT">
+					<Offset>
+						<AbsDimension x="16" y="-14" />
+					</Offset>
+				</Anchor>
+			</Anchors>
+			<Scripts>
+				<OnLoad>
+					self:RegisterForDrag("LeftButton","RightButton")
+				</OnLoad>
+				<OnClick>
+					Toggle();
+
+				</OnClick>
+				<OnDragStart>
+					self:StartMoving();
+					self.isMoving = true;
+				</OnDragStart>
+				<OnDragStop>
+					self:StopMovingOrSizing();
+					self.isMoving = false;
+				</OnDragStop>
+			</Scripts>
+
+			<NormalTexture file="Interface\AddOns\CyborgMMO7\Graphics\Cyborg.tga">
+				<Color r="0.0" g="0.0" b="0.0" a="1" />
+			</NormalTexture>
+
+			<HighlightTexture file="Interface\AddOns\CyborgMMO7\Graphics\CyborgGlow.tga">
+				<Color r=".38" g=".85" b="1.0" a="0.90" />
+			</HighlightTexture>
+			<ButtonText name="$parentText">
+				<FontHeight>
+				<AbsValue val="10" />
+			</FontHeight>
+			</ButtonText>
+				<NormalFont style="GameFontNormal" />
+				<HighlightFont style="GameFontHighlight" />
+				<DisabledFont style="GameFontDisable" />
+				<PushedTextOffset x="0" y="0" />
+			</Button>
+		</Frames>
+	</Frame>
+
+	<Frame name="CyborgMiniMapFrame" parent="Minimap" enableMouse="true" hidden="false" frameStrata="LOW">
+		<Size>
+			<AbsDimension x="32" y="32"/>
+		</Size>
+		<Anchors>
+			<Anchor point="TOPLEFT" relativeTo="Minimap" relativePoint="RIGHT">
+				<Offset>
+					<AbsDimension x="2" y="0"/>
+				</Offset>
+			</Anchor>
+		</Anchors>
+		<Frames>
+			<Button name="CyborgMiniMapButton">
+				<Size>
+					<AbsDimension x="33" y="33"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="0" y="0"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<HighlightTexture alphaMode="ADD" file="Interface\Minimap\UI-Minimap-ZoomButton-Highlight"/>
+				<Layers>
+					<Layer level="BACKGROUND">
+						<Texture name="CyborgMiniMapButton_Icon" file="Interface\AddOns\CyborgMMO7\Graphics\Cyborg.tga">
+							<Size>
+								<AbsDimension x="22" y="22"/>
+							</Size>
+							<Anchors>
+								<Anchor point="TOPLEFT">
+									<AbsDimension x="6" y="-5"/>
+								</Anchor>
+							</Anchors>
+							<Color r="0.0" g="0.0" b="0.0" a="1" />
+						</Texture>
+					</Layer>
+					<Layer level="ARTWORK">
+						<Texture name="CyborgMiniMapButton_IconGlow" file="Interface\AddOns\CyborgMMO7\Graphics\CyborgGlow.tga">
+							<Size>
+								<AbsDimension x="22" y="22"/>
+							</Size>
+							<Anchors>
+								<Anchor point="TOPLEFT">
+									<AbsDimension x="6" y="-5"/>
+								</Anchor>
+							</Anchors>
+							<Color r=".38" g=".85" b="1.0" a="0.90" />
+						</Texture>
+					</Layer>
+					<Layer level="OVERLAY">
+						<Texture file="Interface\Minimap\MiniMap-TrackingBorder">
+							<Size>
+								<AbsDimension x="56" y="56"/>
+							</Size>
+							<Anchors>
+								<Anchor point="TOPLEFT"/>
+							</Anchors>
+						</Texture>
+					</Layer>
+				</Layers>
+				<Scripts>
+					<OnLoad>
+						self:RegisterForDrag("LeftButton","RightButton")
+					</OnLoad>
+					<OnMouseDown>
+					</OnMouseDown>
+					<OnMouseUp>
+						Toggle();
+						if(false == IsOpen()) then
+							RatQuickPage:Show();
+						end
+					 </OnMouseUp>
+					<OnEnter>
+						if(false == IsOpen()) then
+							RatQuickPage:Show();
+						end
+					</OnEnter>
+					<OnLeave>
+						RatQuickPage:Hide();
+					</OnLeave>
+					<OnUpdate>
+						if(self:IsDragging()) then
+							CyborgMiniMapButton_OnUpdate();
+						end
+					</OnUpdate>
+				</Scripts>
+			</Button>
+		</Frames>
+	</Frame>
+</Ui>

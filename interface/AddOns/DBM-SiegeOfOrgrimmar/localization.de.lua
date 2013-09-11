@@ -20,6 +20,10 @@ L:SetOptionLocalization({
 	InfoFrame			= "Zeige Infofenster für $journal:8252"
 })
 
+L:SetMiscLocalization({
+	wasteOfTime			= "Very well, I will create a field to keep your corruption quarantined."--translate (trigger)
+})
+
 ------------------
 -- Sha of Pride --
 ------------------
@@ -34,6 +38,24 @@ L:SetOptionLocalization({
 --------------
 L= DBM:GetModLocalization(868)
 
+L:SetTimerLocalization({
+	timerAddsCD		= "Nächste Adds",
+	timerTowerCD	= "Nächster Turm & Adds"
+})
+
+L:SetOptionLocalization({
+	timerAddsCD		= "Zeige Zeit bis nächste Gegnerwelle",
+	timerTowerCD	= "Zeige Zeit bis nächsten Turmangriff"
+})
+
+L:SetMiscLocalization({
+	newForces1	= "Da kommen sie!",--needs to be verified (PTR screenshot-captured translation)
+	newForces2	= "Drachenmalklan, ausrücken!",--needs to be verified (PTR screenshot-captured translation)
+	newForces3	= "Für Höllschrei!",--needs to be verified (PTR screenshot-captured translation)
+	newForces4	= "Nächster Trupp, vorwärts!"--needs to be verified (PTR screenshot-captured translation)
+--	tower		= "Das Tor zum"--needs to be verified (PTR screenshot-captured translation)
+})
+
 --------------------
 --Iron Juggernaut --
 --------------------
@@ -44,17 +66,30 @@ L= DBM:GetModLocalization(864)
 --------------------------
 L= DBM:GetModLocalization(856)
 
+L:SetMiscLocalization({
+	PrisonYell		= "Gefängnis auf %s schwindet (%d)"
+})
+
 ---------------------
 -- General Nazgrim --
 ---------------------
 L= DBM:GetModLocalization(850)
 
+L:SetWarningLocalization({
+	warnDefensiveStanceSoon		= "Verteidigungshaltung in %ds"
+})
+
+L:SetOptionLocalization({
+	warnDefensiveStanceSoon		= "Zeige Vorwarnungscountdown für $spell:143593 (5s zuvor)"
+})
+
 L:SetMiscLocalization({
-	newForces1				= "Warriors, on the double!",--translate (trigger)
-	newForces2				= "Defend the gate!",--translate (trigger)
-	newForces3				= "Rally the forces!",--translate (trigger)
-	newForces4				= "Kor'kron, at my side!",--translate (trigger)
-	newForces5				= "Next squad, to the front!"--translate (trigger)
+	newForces1					= "Krieger, im Laufschritt!",--needs to be verified (PTR screenshot-captured translation)
+	newForces2					= "Verteidigt das Tor!",--needs to be verified (PTR screenshot-captured translation)
+	newForces3					= "Truppen, sammelt Euch!",--needs to be verified (PTR video-captured translation)
+	newForces4					= "Kor'kron, zu mir!",--needs to be verified (PTR video-captured translation)
+	newForces5					= "Nächste Staffel, nach vorn!",--needs to be verified (PTR screenshot-captured translation)
+	allForces					= "Alle Kor'kron unter meinem Befehl, tötet sie! Jetzt!"--needs to be verified (PTR video-captured translation)
 })
 
 -----------------
@@ -67,10 +102,19 @@ L= DBM:GetModLocalization(846)
 ------------------------
 L= DBM:GetModLocalization(870)
 
+L:SetMiscLocalization({
+	Module1 = "Module 1's all prepared for system reset.",--translate (trigger)
+	Victory	= "Module 2's all prepared for system reset"--translate (trigger)
+})
+
 ---------------------------
 -- Thok the Bloodthirsty --
 ---------------------------
 L= DBM:GetModLocalization(851)
+
+L:SetOptionLocalization({
+	RangeFrame	= "Zeige dynamisches Abstandsfenster (10m)<br/>(mit Indikator für den \"Blutrausch\"-Schwellwert)"
+})
 
 ----------------------------
 -- Siegecrafter Blackfuse --
@@ -78,7 +122,7 @@ L= DBM:GetModLocalization(851)
 L= DBM:GetModLocalization(865)
 
 L:SetMiscLocalization({
-	newWeapons	= "Unfinished weapons begin to roll out on the assembly line.",--translate (trigger)
+	newWeapons	= "Unfertige Waffen werden auf das Fabrikationsband befördert.",--needs to be verified (PTR screenshot-captured translation)
 	newShredder	= "An Automated Shredder draws near!"--translate (trigger)
 })
 
@@ -88,33 +132,22 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(853)
 
 L:SetWarningLocalization({
-	specWarnActivatedVulnerable		= "You are vulnerable to %s - Avoid!",--translate later
-	specWarnCriteriaLinked			= "You are linked to %s!"--translate later
+	specWarnActivatedVulnerable		= "%s wird dir erhöhten Schaden zufügen - Meiden!",
+	specWarnCriteriaLinked			= "Du bist verbunden mit %s!"
 })
 
 L:SetOptionLocalization({
-	specWarnActivatedVulnerable		= "Show special warning when you are vulnerable to activating paragons",--translate later
-	specWarnCriteriaLinked			= "Show special warning when you are linked to $spell:144095",--translate later
+	specWarnActivatedVulnerable		= "Spezialwarnung, wenn dir ein neuer Getreuer erhöhten Schaden zufügen wird",
+	specWarnCriteriaLinked			= "Spezialwarnung, wenn du mit einem anderen Spieler verbunden bist ($spell:144095)"
 })
 
 L:SetMiscLocalization({
 	--translate later (triggers)
-	calculatedTarget	= "calculating eye!",
-	yellow				= "Yellow",
-	red					= "Red",
-	blue				= "Blue",
-	purple				= "Purple",
-	green				= "Green",
-	bomb				= "Bomb",
-	sword				= "Swords",
-	drums				= "Drums",
-	mantid				= "Mantid",--Assumed
-	staff 				= "Staff",--Assumed
 	one					= "One",
-	two					= "Pair",
+	two					= "Two",
 	three				= "Three",
-	four				= "Four",--Assumed
-	five				= "Five",--Assumed
+	four				= "Four",
+	five				= "Five",
 	hisekFlavor			= "Look who's quiet now",--http://ptr.wowhead.com/quest=31510
 	KilrukFlavor		= "Just another day, culling the swarm",--http://ptr.wowhead.com/quest=31109
 	XarilFlavor			= "I see only dark skies in your future",--http://ptr.wowhead.com/quest=31216
@@ -136,8 +169,8 @@ L= DBM:GetModLocalization(869)
 -------------
 --  Trash  --
 -------------
-L = DBM:GetModLocalization("FoOTrash")
+L = DBM:GetModLocalization("SoOTrash")
 
 L:SetGeneralLocalization({
-	name =	"Trash der Belagerung Orgrimmars"
+	name =	"Trash der Schlacht um Orgrimmar"
 })

@@ -1,9 +1,8 @@
-local mod	= DBM:NewMod("Tavarok", "DBM-Party-BC", 8)
+local mod	= DBM:NewMod(535, "DBM-Party-BC", 8, 250)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 436 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 494 $"):sub(12, -3))
 mod:SetCreatureID(18343)
-mod:SetModelID(19332)
 
 mod:RegisterCombat("combat")
 
@@ -13,6 +12,7 @@ mod:RegisterEvents(
 )
 
 local WarnPrison   = mod:NewTargetAnnounce(32361)
+
 local timerPrison   = mod:NewTargetTimer(5, 32361)
 
 function mod:SPELL_AURA_APPLIED(args)

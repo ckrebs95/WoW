@@ -22,3 +22,7 @@ SpartanUI_PartyFrames: disabled
 SpartanUI_FilmEffects: disabled
 SpartanUI: disabled
 _NPCScan: disabled
+CarboniteItems: disabled
+CarboniteNodes: disabled
+CarboniteTransfer: disabled
+CyborgMMO7: disabled

@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Deathbringer", "DBM-Icecrown", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 61 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 85 $"):sub(12, -3))
 mod:SetCreatureID(37813)
 mod:SetModelID(30790)
 mod:SetUsedIcons(1, 2, 3, 4, 5, 6, 7, 8)
@@ -45,7 +45,6 @@ mod:AddBoolOption("RangeFrame", mod:IsRanged())
 mod:AddBoolOption("RunePowerFrame", true, "misc")
 mod:AddBoolOption("BeastIcons", true)
 mod:AddBoolOption("BoilingBloodIcons", false)
-mod:RemoveOption("HealthFrame")
 
 local warned_preFrenzy = false
 local boilingBloodTargets = {}
@@ -59,10 +58,11 @@ local function warnBoilingBloodTargets()
 end
 
 function mod:OnCombatStart(delay)
-	if self.Options.RunePowerFrame then
+	if DBM.BossHealth:IsShown() and self.Options.RunePowerFrame then
+		DBM.BossHealth:Clear()
 		DBM.BossHealth:Show(L.name)
 		DBM.BossHealth:AddBoss(37813, L.name)
-		self:ScheduleMethod(0.5, "CreateBossRPFrame")
+		self:ScheduleMethod(1, "CreateBossRPFrame")
 	end
 	if self:IsDifficulty("heroic10", "heroic25") then
 		enrageTimer:Start(360-delay)
@@ -87,7 +87,6 @@ function mod:OnCombatEnd()
 	if self.Options.RangeFrame then
 		DBM.RangeCheck:Hide()
 	end
-	DBM.BossHealth:Clear()
 end
 
 do	-- add the additional Rune Power Bar
@@ -100,7 +99,10 @@ do	-- add the additional Rune Power Bar
 		end
 	end
 	function mod:CreateBossRPFrame()
-		DBM.BossHealth:AddBoss(getRunePowerPercent, L.RunePower)
+		local percent = getShieldPercent()
+		if percent then
+			DBM.BossHealth:AddBoss(getRunePowerPercent, L.RunePower)
+		end
 	end
 end
 

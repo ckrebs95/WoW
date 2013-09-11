@@ -12,12 +12,16 @@
 --    * enGB/enUS: Tandanu				http://www.deadlybossmods.com
 --    * deDE: Tandanu					http://www.deadlybossmods.com
 --    * zhCN: Diablohu					http://www.dreamgen.cn | diablohudream@gmail.com
---    * ruRU: BootWin					bootwin@gmail.com
---    * ruRU: Vampik					admin@vampik.ru
+--    * ruRU: Swix						stalker.kgv@gmail.com
+--    * ruRU: TOM_RUS
 --    * zhTW: Hman						herman_c1@hotmail.com
 --    * zhTW: Azael/kc10577				paul.poon.kw@gmail.com
 --    * koKR: nBlueWiz					everfinale@gmail.com
 --    * esES: Snamor/1nn7erpLaY      	romanscat@hotmail.com
+--
+-- The ex-translators:
+--    * ruRU: BootWin					bootwin@gmail.com
+--    * ruRU: Vampik					admin@vampik.ru
 --
 -- Special thanks to:
 --    * Arta
@@ -40,7 +44,7 @@
 
 
 
-local revision =("$Revision: 10041 $"):sub(12, -3)
+local revision =("$Revision: 10249 $"):sub(12, -3)
 local FrameTitle = "DBM_GUI_Option_"	-- all GUI frames get automatically a name FrameTitle..ID
 
 local PanelPrototype = {}
@@ -87,7 +91,7 @@ do
 	--  arg1 = Text for the UI Button
 	--  arg2 = nil or ("option" or 2)  ... nil will place as a Boss Mod, otherwise as a Option Tab
 	--
-	function DBM_GUI:CreateNewPanel(FrameName, FrameTyp, showsub, sortID)
+	function DBM_GUI:CreateNewPanel(FrameName, FrameTyp, showsub, sortID, DisplayName)
 		local panel = CreateFrame('Frame', FrameTitle..self:GetNewID(), DBM_GUI_OptionsFramePanelContainer)
 		panel.mytype = "panel"
 		panel.sortID = self:GetCurrentID()
@@ -96,6 +100,7 @@ do
 		panel:SetPoint("TOPLEFT", DBM_GUI_OptionsFramePanelContainer, "TOPLEFT")
 
 		panel.name = FrameName
+		panel.displayname = DisplayName or FrameName
 		panel.showsub = (showsub or showsub == nil)
 
 		if (sortID or 0) > 0 then
@@ -418,7 +423,7 @@ do
 			textbeside = dropdown
 			textpad = 35
 		end
-		if dropdown or (name and name:find("|H")) then -- ...and replace it with a SimpleHTML frame
+		if name then -- switch all checkbutton frame to SimpleHTML frame (auto wrap)
 			_G[buttonName.."Text"] = CreateFrame("SimpleHTML", buttonName.."Text", button)
 			html = _G[buttonName.."Text"]
 			html:SetFontObject("GameFontNormal")
@@ -967,7 +972,7 @@ do
 			button.toggle:Hide()
 		end
 
-		button.text:SetText(element.name)
+		button.text:SetText(element.displayname)
 		button.text:Show()
 	end
 
@@ -1055,7 +1060,7 @@ do
 		end
 		container.displayedFrame = frame
 
-		DBM_GUI_OptionsFramePanelContainerHeaderText:SetText( frame.name )
+		DBM_GUI_OptionsFramePanelContainerHeaderText:SetText( frame.displayname )
 
 		local mymax = (frame.actualHeight or frame:GetHeight()) - container:GetHeight()
 
@@ -1365,7 +1370,7 @@ local function CreateOptionsMenu()
 		----------------------------------------------
 		--             General Options              --
 		----------------------------------------------
-		local generaloptions = DBM_GUI_Frame:CreateArea(L.General, nil, 290, true)
+		local generaloptions = DBM_GUI_Frame:CreateArea(L.General, nil, 325, true)
 
 		local enabledbm = generaloptions:CreateCheckButton(L.EnableDBM, true)
 		enabledbm:SetScript("OnShow",  function() enabledbm:SetChecked(DBM:IsEnabled()) end)
@@ -1381,6 +1386,7 @@ local function CreateOptionsMenu()
 		end)
 		local SetPlayerRole				= generaloptions:CreateCheckButton(L.SetPlayerRole, true, nil, "SetPlayerRole")
 		local UseMasterVolume			= generaloptions:CreateCheckButton(L.UseMasterVolume, true, nil, "UseMasterVolume")
+		local LFDEnhance				= generaloptions:CreateCheckButton(L.LFDEnhance, true, nil, "LFDEnhance")
 		local AutologBosses				= generaloptions:CreateCheckButton(L.AutologBosses, true, nil, "AutologBosses")
 		local AdvancedAutologBosses
 		if Transcriptor then
@@ -1389,7 +1395,7 @@ local function CreateOptionsMenu()
 		local LogOnlyRaidBosses = generaloptions:CreateCheckButton(L.LogOnlyRaidBosses, true, nil, "LogOnlyRaidBosses")
 
 		local bmrange  = generaloptions:CreateButton(L.Button_RangeFrame)
-		bmrange:SetPoint('TOPLEFT', LogOnlyRaidBosses, "BOTTOMLEFT", 0, 0)
+		bmrange:SetPoint('TOPLEFT', LogOnlyRaidBosses, "BOTTOMLEFT", 0, -5)
 		bmrange:SetScript("OnClick", function(self)
 			if DBM.RangeCheck:IsShown() then
 				DBM.RangeCheck:Hide()
@@ -1737,7 +1743,7 @@ local function CreateOptionsMenu()
 		end
 
 		local iconleft = BarSetup:CreateCheckButton(L.BarIconLeft, nil, nil, nil, "IconLeft")
-		local iconright = BarSetup:CreateCheckButton(L.BarIconRight, nil, true, nil, "IconRight")
+		local iconright = BarSetup:CreateCheckButton(L.BarIconRight, nil, nil, nil, "IconRight")
 		iconleft:SetPoint('BOTTOMRIGHT', maindummybar.frame, "TOPLEFT", -5, 5)
 		iconright:SetPoint('BOTTOMLEFT', maindummybar.frame, "TOPRIGHT", 5, 5)
 
@@ -1936,7 +1942,7 @@ local function CreateOptionsMenu()
 		movemebutton:SetScript("OnClick", function() DBM:MoveSpecialWarning() end)
 
 		local color0 = specArea:CreateColorSelect(64)
-		color0:SetPoint('TOPLEFT', specArea.frame, "TOPLEFT", 20, -105)
+		color0:SetPoint('TOPLEFT', specArea.frame, "TOPLEFT", 20, -110)
 		local color0text = specArea:CreateText(L.SpecWarn_FontColor, 80)
 		color0text:SetPoint("BOTTOM", color0, "TOP", 5, 4)
 		local color0reset = specArea:CreateButton(L.Reset, 64, 10, nil, GameFontNormalSmall)
@@ -1980,7 +1986,7 @@ local function CreateOptionsMenu()
 				DBM:ShowTestSpecialWarning(nil, 1)
 			end
 		)
-		FontDropDown:SetPoint("TOPLEFT", specArea.frame, "TOPLEFT", 130, -100)
+		FontDropDown:SetPoint("TOPLEFT", specArea.frame, "TOPLEFT", 130, -105)
 
 		local fontSizeSlider = specArea:CreateSlider(L.SpecWarn_FontSize, 16, 60, 1, 200)
 		fontSizeSlider:SetPoint('TOPLEFT', FontDropDown, "TOPLEFT", 20, -45)
@@ -2096,9 +2102,9 @@ local function CreateOptionsMenu()
 			{	text	= L.NoSound,		value	= "" },
 			{	text	= "Default",		value 	= "Sound\\Spells\\PVPFlagTaken.ogg", 		sound=true },
 			{	text	= "Blizzard",		value 	= "Sound\\interface\\UI_RaidBossWhisperWarning.ogg", 		sound=true },
-			{	text	= "Beware!",		value 	= "Sound\\Creature\\AlgalonTheObserver\\UR_Algalon_BHole01.ogg", 		sound=true },--Great sound, short and to the point. Best pick for a secondary default!
+			{	text	= "Beware!",		value 	= "Sound\\Creature\\AlgalonTheObserver\\UR_Algalon_BHole01.ogg", 		sound=true },
 			{	text	= "Destruction",	value 	= "Sound\\Creature\\KilJaeden\\KILJAEDEN02.ogg", 		sound=true },
-			{	text	= "NotPrepared",	value 	= "Sound\\Creature\\Illidan\\BLACK_Illidan_04.ogg", 		sound=true },--Maybe a bit long? wouldn't recommend it as a default, but good for customizing.
+			{	text	= "NotPrepared",	value 	= "Sound\\Creature\\Illidan\\BLACK_Illidan_04.ogg", 		sound=true },
 			{	text	= "NightElfBell",	value 	= "Sound\\Doodad\\BellTollNightElf.ogg", 	sound=true }
 		})
 
@@ -2107,7 +2113,7 @@ local function CreateOptionsMenu()
 				DBM.Options.SpecialWarningSound = value
 			end
 		)
-		SpecialWarnSoundDropDown:SetPoint("TOPLEFT", specArea.frame, "TOPLEFT", 130, -205)
+		SpecialWarnSoundDropDown:SetPoint("TOPLEFT", specArea.frame, "TOPLEFT", 130, -210)
 
 		local flashdurSlider = specArea:CreateSlider(L.SpecWarn_FlashDur, 0.2, 2, 0.2, 120)   -- (text , min_value , max_value , step , width)
 		flashdurSlider:SetPoint('TOPLEFT', SpecialWarnSoundDropDown, "TOPLEFT", 20, -45)
@@ -2146,7 +2152,7 @@ local function CreateOptionsMenu()
 				DBM.Options.SpecialWarningSound2 = value
 			end
 		)
-		SpecialWarnSoundDropDown2:SetPoint("TOPLEFT", specArea.frame, "TOPLEFT", 130, -310)
+		SpecialWarnSoundDropDown2:SetPoint("TOPLEFT", specArea.frame, "TOPLEFT", 130, -315)
 
 		local flashdurSlider2 = specArea:CreateSlider(L.SpecWarn_FlashDur, 0.2, 2, 0.2, 120)   -- (text , min_value , max_value , step , width)
 		flashdurSlider2:SetPoint('TOPLEFT', SpecialWarnSoundDropDown2, "TOPLEFT", 20, -45)
@@ -2340,11 +2346,18 @@ local function CreateOptionsMenu()
 			spamArea:CreateCheckButton(L.ShowBigBrotherOnCombatStart, true, nil, "ShowBigBrotherOnCombatStart")
 			spamArea:CreateCheckButton(L.BigBrotherAnnounceToRaid, true, nil, "BigBrotherAnnounceToRaid")
 		end
-		local spamPTArea = spamPanel:CreateArea(L.Area_PullTimer, nil, 135, true)
+		local spamPTArea = spamPanel:CreateArea(L.Area_PullTimer, nil, 160, true)
+		spamPTArea:CreateCheckButton(L.DontShowPTNoID, true, nil, "DontShowPTNoID")
 		spamPTArea:CreateCheckButton(L.DontShowPT, true, nil, "DontShowPT")
-		spamPTArea:CreateCheckButton(L.DontShowPTCountdownText, true, nil, "DontShowPTCountdownText")
-		spamPTArea:CreateCheckButton(L.DontPlayPTCountdown, true, nil, "DontPlayPTCountdown")
 		spamPTArea:CreateCheckButton(L.DontShowPTText, true, nil, "DontShowPTText")
+		spamPTArea:CreateCheckButton(L.DontPlayPTCountdown, true, nil, "DontPlayPTCountdown")
+		local SPTCDT = spamPTArea:CreateCheckButton(L.DontShowPTCountdownText, true, nil, "DontShowPTCountdownText")
+		
+		local PTSlider = spamPTArea:CreateSlider(L.PT_Threshold, 3, 30, 1, 300)   -- (text , min_value , max_value , step , width)
+		PTSlider:SetPoint('TOPLEFT', SPTCDT, "TOPLEFT", 62, -40)--Position seems based on text size so on diff locals it'll actually be in different places :\
+		PTSlider:HookScript("OnShow", function(self) self:SetValue(DBM.Options.PTCountThreshold) end)
+		PTSlider:HookScript("OnValueChanged", function(self) DBM.Options.PTCountThreshold = self:GetValue() end)
+		
 		spamPTArea:AutoSetDimension()
 		spamArea:AutoSetDimension()
 		spamOutArea:AutoSetDimension()
@@ -2398,6 +2411,10 @@ do
 				top3value1:SetText( stats.challengeKills )
 				top3value2:SetText( stats.challengePulls-stats.challengeKills )
 				top3value3:SetText( stats.challengeBestTime and ("%d:%02d"):format(math.floor(stats.challengeBestTime / 60), stats.challengeBestTime % 60) or "-" )
+			elseif statsType == 2 and stats.normal25Pulls and stats.normal25Pulls > 0 and stats.normal25Pulls > stats.normalPulls then--Fix for BC instance
+				top1value1:SetText( stats.normal25Kills )
+				top1value2:SetText( stats.normal25Pulls - stats.normal25Kills )
+				top1value3:SetText( stats.normal25BestTime and ("%d:%02d"):format(math.floor(stats.normal25BestTime / 60), stats.normal25BestTime % 60) or "-" )
 			else
 				top2value1:SetText( stats.normal25Kills )
 				top2value2:SetText( stats.normal25Pulls - stats.normal25Kills )
@@ -2514,6 +2531,7 @@ do
 
 				--Set enable or disable per mods.
 				if mod.oneFormat then
+					statsType = 2--Fix for BC instance
 					Title:SetPoint("TOPLEFT", area.frame, "TOPLEFT", 10, -10-(L.FontHeight*5*(bossstats-1)))
 					--Do not use top1 header.
 					top1text1:SetPoint("TOPLEFT", Title, "BOTTOMLEFT", 20, -5)
@@ -2710,6 +2728,7 @@ do
 	end
 
 	local Categories = {}
+	local subTabId = 0
 	function DBM_GUI:UpdateModList()
 		for k,addon in ipairs(DBM.AddOns) do
 			if not Categories[addon.category] then
@@ -2732,7 +2751,7 @@ do
 
 			if not addon.panel then
 				-- Create a Panel for "Naxxramas" "Eye of Eternity" ...
-				addon.panel = Categories[addon.category]:CreateNewPanel(addon.name or "Error: X-DBM-Mod-Name", nil, false)
+				addon.panel = Categories[addon.category]:CreateNewPanel(addon.modId or "Error: No-modId", nil, false, nil, addon.name)
 
 				if not IsAddOnLoaded(addon.modId) then
 					local button = addon.panel:CreateButton(L.Button_LoadMod, 200, 30)
@@ -2754,7 +2773,8 @@ do
 
 				for k,v in pairs(addon.subTabs) do
 					if not addon.subPanels[k] then
-						addon.subPanels[k] = addon.panel:CreateNewPanel(v or "Error: X-DBM-Mod-Name", nil, false)
+						subTabId = subTabId + 1
+						addon.subPanels[k] = addon.panel:CreateNewPanel("SubTab"..subTabId, nil, false, nil, v)
 						CreateBossModTab(addon, addon.subPanels[k], k)
 					end
 				end
@@ -2765,9 +2785,9 @@ do
 				if mod.modId == addon.modId then
 					if not mod.panel and (not addon.subTabs or (addon.subPanels and addon.subPanels[mod.subTab])) then
 						if addon.subTabs and addon.subPanels[mod.subTab] then
-							mod.panel = addon.subPanels[mod.subTab]:CreateNewPanel(mod.localization.general.name or "Error: DBM.Mods")
+							mod.panel = addon.subPanels[mod.subTab]:CreateNewPanel(mod.id or "Error: DBM.Mods", nil, nil, nil, mod.localization.general.name)
 						else
-							mod.panel = addon.panel:CreateNewPanel(mod.localization.general.name or "Error: DBM.Mods")
+							mod.panel = addon.panel:CreateNewPanel(mod.id or "Error: DBM.Mods", nil, nil, nil, mod.localization.general.name)
 						end
 						DBM_GUI:CreateBossModPanel(mod)
 					end
@@ -2810,23 +2830,7 @@ do
 			elseif	i == 8 then		icon:SetTexCoord(0.75,	1,		0.25,	0.5)
 			end
 		end
-		
-		--[[IsQuestFlaggedCompleted() is throttled by the server and will only get a response every 2-3 minutes.
-		It's cached internally by the client during that time.
-		If you reload, the client probably loses its cache and is unable to refresh it for a few minutes
-		In other words, if you reloadui often or log in and out a bunch, the checks will be all wrong.
-		--]]
-		if mod.questId then
-			local icon = panel.frame:CreateTexture()
-			if IsQuestFlaggedCompleted(mod.questId) then
-				icon:SetTexture(READY_CHECK_READY_TEXTURE)--Already complete for week. (ie, recieved LFR loot, legendary quest chance, and rep off boss for week)
-			else
-				icon:SetTexture(READY_CHECK_NOT_READY_TEXTURE)--Not yet completed for week  (ie, has not yet recieved LFR loot, legendary quest chance, and rep off boss for week)
-			end
-			icon:SetPoint("TOPLEFT", panel.frame, "TOPRIGHT", -14, -20)--Meh, it's not ugly, but probably not right place or even coordinates for it, i plugged in random numbers and it looked ok!
-			icon:SetWidth(16)
-			icon:SetHeight(16)
-		end
+
 		local reset  = panel:CreateButton(L.Mod_Reset, 150, nil, nil, GameFontNormalSmall)
 		reset:SetPoint('TOPRIGHT', panel.frame, "TOPRIGHT", -14, -2)
 		reset:SetScript("OnClick", function(self)

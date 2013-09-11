@@ -1,0 +1,177 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!-- UIButtonsTemplate-->
+	<Button name="WowCallbackButtonsTemplate" virtual="true" inherits="IconTemplate">
+		<Scripts>
+			<OnLoad>
+				self = CallbackIcons.new(self);
+			</OnLoad>
+			<OnClick>
+				self.OnClick();
+			</OnClick>
+			<OnDragStart>
+				self.DragStart();
+			</OnDragStart>
+			<OnDragStop>
+				self.DragStop();
+			</OnDragStop>
+		</Scripts>
+	</Button>
+
+	<!-- The Main Form -->
+	<Frame name="MainPage" movable="true" enableMouse="true" clampedtoscreen="true" frameStrata="MEDIUM">
+		<TitleRegion>
+			<Size x="512" y="512"/>
+			<Anchors>
+				<Anchor point="LEFT">
+					<Offset>
+					  <AbsDimension x="0"
+									y="0" />
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</TitleRegion>
+		<Size>
+			<AbsDimension x="512" y="512" />
+		</Size>
+		<Anchors>
+			<Anchor point="LEFT" relativeTo="UIParent">
+				<Offset>
+					<AbsDimension x="0" y="0" />
+				</Offset>
+			</Anchor>
+		</Anchors>
+		<Layers>
+			<Layer level="BACKGROUND">
+			<Texture name="BackgroundTexture"
+					   file="Interface\AddOns\CyborgMMO7\Graphics\ParchmentAndAllIcons.tga" >
+				<Size>
+				  <AbsDimension x="512"
+								y="512" />
+				</Size>
+				<Anchors>
+				  <Anchor point="TOPLEFT">
+					<Offset>
+					  <AbsDimension x="0"
+									y="0" />
+					</Offset>
+				  </Anchor>
+				</Anchors>
+			  </Texture>
+			</Layer>
+			<Layer level="ARTWORK">
+			<Texture name="RatCalloutsTexture"
+					   file="Interface\AddOns\CyborgMMO7\Graphics\Lines.tga" >
+
+				<Size>
+				  <AbsDimension x="512"
+								y="512" />
+				</Size>
+				<Anchors>
+				  <Anchor point="TOPLEFT">
+					<Offset>
+					  <AbsDimension x="0"
+									y="0" />
+					</Offset>
+				  </Anchor>
+				</Anchors>
+			  </Texture>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Button name="CharacterPage" inherits="WowCallbackButtonsTemplate" resize="false">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="379" y="-411" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+			<Button name="Inventory" inherits="WowCallbackButtonsTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="379" y="-446" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+			<Button name="Spellbook" inherits="WowCallbackButtonsTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="414" y="-411" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+			<Button name="Macros" inherits="WowCallbackButtonsTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="449" y="-446" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+			<Button name="Achievement" inherits="WowCallbackButtonsTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="449" y="-411" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+			<Button name="QuestLog" inherits="WowCallbackButtonsTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="344" y="-446" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+			<Button name="Map" inherits="WowCallbackButtonsTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="414" y="-446" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+			<Button name="$parentCloseButton">
+				<Size>
+					<AbsDimension x="23" y="24" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="474" y="-8" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>Close()</OnClick>
+				</Scripts>
+				<NormalTexture file="Interface\AddOns\CyborgMMO7\Graphics\CloseButton.tga"/>
+				<PushedTexture file="Interface\AddOns\CyborgMMO7\Graphics\CloseButtonDown.tga"/>
+				<HighlightTexture file="Interface\AddOns\CyborgMMO7\Graphics\CloseButtonOver.tga" alpha=".5"/>
+			</Button>
+			<Frame name="defaultPage" inherits="RatPageTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="0" y="0"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Frame>
+		</Frames>
+		<Scripts>
+			<OnLoad>Loaded();</OnLoad>
+			<OnEvent>Event(this, event,...);</OnEvent>
+		</Scripts>
+	</Frame>
+</Ui>

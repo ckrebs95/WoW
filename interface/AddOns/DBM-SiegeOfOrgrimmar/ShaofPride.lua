@@ -1,9 +1,8 @@
 local mod	= DBM:NewMod(867, "DBM-SiegeOfOrgrimmar", nil, 369)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10049 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10250 $"):sub(12, -3))
 mod:SetCreatureID(71734)
---mod:SetQuestID(32744)
 mod:SetZone()
 mod:SetUsedIcons(8, 7, 6, 5, 4, 3, 2, 1)
 
@@ -26,6 +25,8 @@ local warnMark					= mod:NewTargetAnnounce(144351, 3, nil, mod:IsHealer())
 local warnWoundedPride			= mod:NewTargetAnnounce(144358, 4, nil, mod:IsTank() or mod:IsHealer())
 local warnSelfReflection		= mod:NewSpellAnnounce(144800, 3)
 local warnCorruptedPrison		= mod:NewTargetAnnounce(144574, 3)
+local warnBanishment			= mod:NewTargetAnnounce(145215, 3)--Heroic
+local warnWeakenedResolve		= mod:NewTargetAnnounce(147207, 2, nil, false)--Heroic
 local warnUnleashed				= mod:NewSpellAnnounce(144832, 3)--Phase 2
 --Pride
 local warnBurstingPride			= mod:NewTargetAnnounce(144911, 2)--25-49 Energy
@@ -33,20 +34,20 @@ local warnProjection			= mod:NewTargetAnnounce(146822, 3)--50-74 Energy
 local warnAuraOfPride			= mod:NewTargetAnnounce(146817, 3)--75-99 Energy
 local warnOvercome				= mod:NewTargetAnnounce(144843, 3)--100 Energy (pre mind control)
 local warnOvercomeMC			= mod:NewTargetAnnounce(144863, 4)--Mind control version (ie applied being hit by swelling pride while you have 144843)
-local warnBanishment			= mod:NewTargetAnnounce(145066, 3)--Heroic (may not be right spellid)
 --Manifestation of Pride
-local warnManifestation			= mod:NewSpellAnnounce("ej8262", 3)
-local warnMockingBlast			= mod:NewSpellAnnounce(144379, 3)
+local warnManifestation			= mod:NewSpellAnnounce("ej8262", 3, "Interface\\Icons\\achievement_raid_terraceofendlessspring04")
+local warnMockingBlast			= mod:NewSpellAnnounce(144379, 3, nil, false)
 
 --Sha of Pride
 local specWarnGiftOfTitans		= mod:NewSpecialWarningYou(144359)
+local yellGiftOfTitans			= mod:NewYell(144359)
 local specWarnSwellingPride		= mod:NewSpecialWarningSpell(144400, nil, nil, nil, 2)
 local specWarnWoundedPride		= mod:NewSpecialWarningSpell(144358, mod:IsTank())
 local specWarnSelfReflection	= mod:NewSpecialWarningSpell(144800, nil, nil, nil, 2)
-local specWarnCorruptedPrison	= mod:NewSpecialWarningYou(144574, false)--Since you can't do anything about it, might as well be off by default. but an option cause someone will want it
-local yellCorruptedPrison		= mod:NewYell(144574)--Yell useful though, they have to be freed quickly
+local specWarnCorruptedPrison	= mod:NewSpecialWarningSpell(144574)
+local specWarnCorruptedPrisonYou= mod:NewSpecialWarningYou(144574, false)--Since you can't do anything about it, might as well be off by default. but an option cause someone will want it
+local yellCorruptedPrison		= mod:NewYell(144574, nil, false)
 --Pride
-local specWarnAuraOfPride		= mod:NewSpecialWarningYou(146817)
 local specWarnBurstingPride		= mod:NewSpecialWarningMove(144911)--25-49 Energy
 local yellBurstingPride			= mod:NewYell(144911)
 local specWarnProjection		= mod:NewSpecialWarningYou(146822)--50-74 Energy
@@ -61,23 +62,25 @@ local specWarnMockingBlast		= mod:NewSpecialWarningInterrupt(144379)
 --Sha of Pride
 local timerGiftOfTitansCD		= mod:NewNextTimer(25.5, 144359)--NOT cast or tied or boss, on it's own
 --These abilitie timings are all based on boss1 UNIT_POWER. All timers have a 1 second variance (ie 20-21, 43-44, 48-49, etc)
-local timerMarkCD				= mod:NewNextTimer(20, 144351, nil, mod:IsHealer())
-local timerSelfReflectionCD		= mod:NewNextTimer(20, 144800)
+local timerMarkCD				= mod:NewNextTimer(20.5, 144351, nil, mod:IsHealer())
+local timerSelfReflectionCD		= mod:NewNextTimer(20.5, 144800)
 local timerWoundedPrideCD		= mod:NewNextTimer(26, 144358, nil, mod:IsTank())--A tricky on that is based off unit power but with variable timings, but easily workable with an 11, 26 rule
-local timerCorruptedPrisonCD	= mod:NewNextTimer(43, 144574)--Technically 41 for Imprison base cast, but this is timer til debuffs go out.
-local timerManifestationCD		= mod:NewNextTimer(48, "ej8262")
-local timerSwellingPrideCD		= mod:NewNextTimer(60, 144400)--Energy based, like sha of fear breath, is it also 33?
+local timerCorruptedPrisonCD	= mod:NewNextTimer(42, 144574)--Technically 40 for Imprison base cast, but this is timer til debuffs go out.
+local timerManifestationCD		= mod:NewNextTimer(48, "ej8262", nil, nil, nil, "Interface\\Icons\\achievement_raid_terraceofendlessspring04")
+local timerSwellingPrideCD		= mod:NewNextTimer(60.5, 144400)--Energy based, like sha of fear breath, is it also 33?
+local timerWeakenedResolve		= mod:NewBuffFadesTimer(60, 147207, nil, false)
 --Pride
 local timerBurstingPride		= mod:NewCastTimer(3, 144911)
 local timerProjection			= mod:NewCastTimer(6, 146822)
 
-local countdownSwellingPride	= mod:NewCountdown(60, 144400)
-local countdownReflection		= mod:NewCountdown(20, 144800, nil, nil, nil, nil, true)
+local countdownSwellingPride	= mod:NewCountdown(60.5, 144400)
+local countdownReflection		= mod:NewCountdown(20.5, 144800, false, nil, nil, nil, true)
 
 mod:AddBoolOption("InfoFrame")
 mod:AddBoolOption("SetIconOnMark", false)
 
 local tinsert, tconcat, twipe = table.insert, table.concat, table.wipe--Sha of tables....Might as well cache frequent table globals
+local UnitPower, UnitPowerMax, UnitIsDeadOrGhost, UnitGUID = UnitPower, UnitPowerMax, UnitIsDeadOrGhost, UnitGUID
 local giftOfTitansTargets = {}
 local burstingPrideTargets = {}
 local projectionTargets = {}
@@ -89,8 +92,8 @@ local markOfArroganceTargets = {}
 local markOfArroganceIcons = {}
 local corruptedPrisonTargets = {}
 local prideLevel = EJ_GetSectionInfo(8255)
-local playerName = UnitName("player")
 local firstWound = false
+local UnleashedCast = false
 
 local function warnGiftOfTitansTargets()
 	warnGiftOfTitans:Show(tconcat(giftOfTitansTargets, "<, >"))
@@ -108,7 +111,7 @@ local function warnProjectionTargets()
 	twipe(projectionTargets)
 end
 
-local function warnAuraOfPride()
+local function warnAuraOfPrideTargets()
 	warnAuraOfPride:Show(tconcat(auraOfPrideTargets, "<, >"))
 	twipe(auraOfPrideTargets)
 end
@@ -136,6 +139,7 @@ end
 
 local function warnCorruptedPrisonTargets()
 	warnCorruptedPrison:Show(tconcat(corruptedPrisonTargets, "<, >"))
+	specWarnCorruptedPrison:Show()
 	twipe(corruptedPrisonTargets)
 end
 
@@ -171,7 +175,7 @@ function mod:OnCombatStart(delay)
 	twipe(markOfArroganceIcons)
 	timerGiftOfTitansCD:Start(7.5-delay)
 	timerMarkCD:Start(-delay)
-	timerWoundedPrideCD(11-delay)
+	timerWoundedPrideCD:Start(10-delay)
 	timerSelfReflectionCD:Start(-delay)
 	countdownReflection:Start(-delay)
 	timerCorruptedPrisonCD:Start(-delay)
@@ -179,10 +183,12 @@ function mod:OnCombatStart(delay)
 	timerSwellingPrideCD:Start(-delay)
 	countdownSwellingPride:Start(-delay)
 	firstWound = false
+	UnleashedCast = false
 	if self.Options.InfoFrame then
 		DBM.InfoFrame:SetHeader(prideLevel)
 		DBM.InfoFrame:Show(5, "playerpower", 5, ALTERNATE_POWER_INDEX)
 	end
+	print("DBM NOTICED: Blizzard changed power gains after this mod was writen and it's likely most of timers will be wrong until fight is relogged and mod is patched")
 end
 
 function mod:OnCombatEnd()
@@ -196,14 +202,11 @@ function mod:SPELL_CAST_START(args)
 		warnSwellingPride:Show()
 		specWarnSwellingPride:Show()
 	elseif args.spellId == 144379 then
-		local source = args.sourceName
+		local sourceGUID = args.sourceGUID
 		warnMockingBlast:Show()
-		if source == UnitName("target") or source == UnitName("focus") then 
-			specWarnMockingBlast:Show(source)
+		if sourceGUID == UnitGUID("target") or sourceGUID == UnitGUID("focus") then 
+			specWarnMockingBlast:Show(args.sourceName)
 		end
-	elseif args.spellId == 144832 then
-		warnUnleashed:Show()
-		timerGiftOfTitansCD:Cancel()
 	end
 end
 
@@ -212,16 +215,22 @@ function mod:SPELL_CAST_SUCCESS(args)
 		firstWound = false
 		--Since we register this event anyways for bursting, might as well start cd bars here instead
 		timerWoundedPrideCD:Start(11)
-		timerSelfReflectionCD:Start()
-		countdownReflection:Start()
-		timerCorruptedPrisonCD:Start()
+		if UnleashedCast then--Account for the 2 abilities (or more unsure about manifestations) that change timing when unleashed is cast
+			timerSelfReflectionCD:Start(11.5)
+			countdownReflection:Start(11.5)
+			timerCorruptedPrisonCD:Start(34)
+		else
+			timerSelfReflectionCD:Start()
+			countdownReflection:Start()
+			timerCorruptedPrisonCD:Start()
+		end
 		timerManifestationCD:Start()
 		timerSwellingPrideCD:Start()
 		countdownSwellingPride:Start()
 		--This is done here because a lot can change during a cast, and we need to know players energy when cast ends, i.e. this event
 		for uId in DBM:GetGroupMembers() do
-			local maxPower = UnitPowerMax(uId, ALTERNATE_POWER_INDEX)--PTR work around mainly, div by 0 crap
-			if maxPower ~= 0 and not UnitIsDeadOrGhost(uId) then
+			local maxPower = UnitPowerMax(uId, ALTERNATE_POWER_INDEX)
+			if maxPower ~= 0 and not UnitIsDeadOrGhost(uId) then--PTR work around mainly, div by 0 crap
 				local unitsPower = UnitPower(uId, ALTERNATE_POWER_INDEX) / maxPower * 100
 				if unitsPower > 24 and unitsPower < 50 then--Valid Bursting target
 					local targetName = DBM:GetUnitFullName(uId)
@@ -236,6 +245,20 @@ function mod:SPELL_CAST_SUCCESS(args)
 				end
 			end
 		end
+	elseif args.spellId == 144832 then
+		warnUnleashed:Show()
+		timerGiftOfTitansCD:Cancel()
+		countdownSwellingPride:Cancel()
+		countdownReflection:Cancel()
+		firstWound = false
+		UnleashedCast = true
+		timerWoundedPrideCD:Start()--The Same
+		timerSelfReflectionCD:Start(11.5)--Altered (because this cd resets on cast start not cast finished, bug?)
+		countdownReflection:Start(11.5)--Altered (because this cd resets on cast start not cast finished, bug?)
+		timerCorruptedPrisonCD:Start(34)--Altered (because this cd resets on cast start not cast finished, bug?)
+		timerManifestationCD:Start()--Not yet verified if altered or not
+		timerSwellingPrideCD:Start(62)--Not yet verified if altered or not (it would be 62 instead of 60 though since we'd be starting at 0 energy instead of cast finish of last swelling)
+		countdownSwellingPride:Start(62)--Not yet verified if altered or not (it would be 62 instead of 60 though since we'd be starting at 0 energy instead of cast finish of last swelling)
 	elseif args.spellId == 144800 then
 		warnSelfReflection:Show()
 		specWarnSelfReflection:Show()
@@ -243,12 +266,13 @@ function mod:SPELL_CAST_SUCCESS(args)
 end
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args:IsSpellID(144359, 146594) then--Not sure why this has more than one iD, but it does. do I have them all?
+	if args:IsSpellID(144359, 146594) then
 		giftOfTitansTargets[#giftOfTitansTargets + 1] = args.destName
 		self:Unschedule(warnGiftOfTitansTargets)
 		self:Schedule(0.5, warnGiftOfTitansTargets)
 		if args:IsPlayer() then
 			specWarnGiftOfTitans:Show()
+			yellGiftOfTitans:Yell()
 		end
 	elseif args.spellId == 145215 then
 		banishmentTargets[#banishmentTargets + 1] = args.destName
@@ -267,8 +291,8 @@ function mod:SPELL_AURA_APPLIED(args)
 		end
 	elseif args.spellId == 146817 then
 		auraOfPrideTargets[#auraOfPrideTargets + 1] = args.destName
-		self:Unschedule(warnAuraOfPride)
-		self:Schedule(0.5, warnAuraOfPride)
+		self:Unschedule(warnAuraOfPrideTargets)
+		self:Schedule(0.5, warnAuraOfPrideTargets)
 		if args:IsPlayer() then
 			specWarnAuraOfPride:Show()
 			yellAuraOfPride:Yell()
@@ -313,8 +337,13 @@ function mod:SPELL_AURA_APPLIED(args)
 		self:Unschedule(warnCorruptedPrisonTargets)
 		self:Schedule(0.5, warnCorruptedPrisonTargets)
 		if args:IsPlayer() then
-			specWarnCorruptedPrison:Show()
+			specWarnCorruptedPrisonYou:Show()
 			yellCorruptedPrison:Yell()
+		end
+	elseif args.spellId == 147207 then
+		warnWeakenedResolve:Show(args.destName)
+		if args:IsPlayer() then
+			timerWeakenedResolve:Start()
 		end
 	end
 end
@@ -323,6 +352,8 @@ end
 function mod:SPELL_AURA_REMOVED(args)
 	if args.spellId == 144351 and self.Options.SetIconOnMark then
 		self:SetIcon(args.destName, 0)
+	elseif args.spellId == 147207 and args:IsPlayer() then
+		timerWeakenedResolve:Cancel()
 	end
 end
 

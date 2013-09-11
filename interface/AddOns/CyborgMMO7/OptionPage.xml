@@ -1,0 +1,304 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<FontString name="normalStringTemplate" font="Fonts\FRIZQT__.TTF" text="NoText" virtual="true">
+		<FontHeight>
+			<AbsValue val="10" />
+		</FontHeight>
+		<Color r="1" g="1" b="1" />
+		<Shadow>
+			<Color r="0" g="0" b="0" />
+			<Offset>
+				<AbsDimension x="1" y="-1" />
+			</Offset>
+		</Shadow>
+	</FontString>
+
+	<FontString name="SliderTitle" font="Fonts\FRIZQT__.TTF" text="NoText" virtual="true">
+		<FontHeight>
+			<AbsValue val="14" />
+		</FontHeight>
+		<Color r="1" g="0.8196079" b="0" />
+		<Shadow>
+			<Color r="0" g="0" b="0" />
+			<Offset>
+				<AbsDimension x="1" y="-1" />
+			</Offset>
+		</Shadow>
+	</FontString>
+
+
+
+	<Frame name="OptionPage">
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parentTitle" inherits="GameFontNormalLarge">
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="15" y="-15" />
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+
+		<Frames>
+			<CheckButton name="MiniMapButton" inherits="UICheckButtonTemplate" checked="true">
+				<Size>
+					<AbsDimension x="32" y="32"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentTitle">
+						<Offset>
+							<AbsDimension x="25" y="-60"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer>
+						<FontString name="$parentTitle" font="Fonts\FRIZQT__.TTF" inherits="SliderTitle">
+							<Anchors>
+								<Anchor point="LEFT" relativePoint="$parentMiniMapButton">
+									<Offset>
+										<AbsDimension x="45" y="0" />
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Scripts>
+					<OnLoad>
+						LoadStrings(getglobal(self:GetName().."Title"));
+					</OnLoad>
+					<OnClick>
+						if(self:GetChecked() == 1) then
+							SetMiniMapButton(true)
+						else
+							SetMiniMapButton(false)
+						end
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+
+
+			<CheckButton name="CyborgButton" inherits="UICheckButtonTemplate" checked="true">
+				<Size>
+					<AbsDimension x="32" y="32"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentTitle">
+						<Offset>
+							<AbsDimension x="25" y="-85"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer>
+						<FontString name="$parentTitle" font="Fonts\FRIZQT__.TTF" inherits="SliderTitle">
+							<Anchors>
+								<Anchor point="LEFT" relativePoint="$parentCyborgButton">
+									<Offset>
+										<AbsDimension x="45" y="0" />
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Scripts>
+					<OnLoad>
+						LoadStrings(getglobal(self:GetName().."Title"));
+					</OnLoad>
+					<OnClick>
+						if(self:GetChecked() == 1) then
+							SetCyborgHeadButton(true)
+						else
+							SetCyborgHeadButton(false)
+						end
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+
+			<Button name="$parentSetDefaults">
+				<Size>
+					<AbsDimension x="156" y="28" />
+				</Size>
+				<Anchors>
+				  <Anchor point="TOPLEFT" relativeTo="$parentTitle">>
+					<Offset>
+						<AbsDimension x="25" y="-220"/>
+					</Offset>
+				  </Anchor>
+				</Anchors>
+				<NormalTexture file="Interface\Buttons\UI-Panel-Button-Up">
+					<TexCoords left="0" right="0.625" top="0" bottom="0.6875" />
+				</NormalTexture>
+				<PushedTexture file="Interface\Buttons\UI-Panel-Button-Down">
+					<TexCoords left="0" right="0.625" top="0" bottom="0.6875" />
+				</PushedTexture>
+				<DisabledTexture file="Interface\Buttons\UI-Panel-Button-Disabled">
+					<TexCoords left="0" right="0.625" top="0" bottom="0.6875" />
+				</DisabledTexture>
+				<HighlightTexture file="Interface\Buttons\UI-Panel-Button-Highlight" alphaMode="ADD">
+					<TexCoords left="0" right="0.625" top="0" bottom="0.6875" />
+				</HighlightTexture>
+				<ButtonText name="$parentText">
+					<FontHeight>
+						<AbsValue val="10" />
+					</FontHeight>
+				</ButtonText>
+				<NormalFont style="GameFontNormal" />
+				<HighlightFont style="GameFontHighlight" />
+				<DisabledFont style="GameFontDisable" />
+				<Scripts>
+					<OnLoad>
+						LoadStrings(getglobal(self:GetName()));
+					</OnLoad>
+					<OnClick>
+						SetDefaultSettings();
+					</OnClick>
+				</Scripts>
+			</Button>
+
+			<Frame name="CyborgSize">
+				<Size>
+					<AbsDimension x="198" y="60" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentTitle">
+						<Offset>
+							<AbsDimension x="25" y="-120"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Frames>
+					<Slider name="$parentSlider" enableMouse="true" minValue=".5" maxValue="1" defaultValue=".75" valueStep=".01" orientation="HORIZONTAL">
+						<Size>
+							<AbsDimension x="128" y="17" />
+						</Size>
+						<Anchors>
+							<Anchor point="LEFT" />
+							<Anchor point="RIGHT" />
+						</Anchors>
+						<Backdrop bgFile="Interface\Buttons\UI-SliderBar-Background" edgeFile="Interface\Buttons\UI-SliderBar-Border" tile="true">
+							<BackgroundInsets>
+								<AbsInset left="3" right="3" top="6" bottom="6" />
+							</BackgroundInsets>
+							<TileSize>
+								<AbsValue val="8" />
+							</TileSize>
+							<EdgeSize>
+								<AbsValue val="8" />
+							</EdgeSize>
+						</Backdrop>
+						<Layers>
+							<Layer>
+								<FontString name="$parentTitle" font="Fonts\FRIZQT__.TTF" inherits="SliderTitle">
+									<Anchors>
+										<Anchor point="BOTTOM" relativePoint="TOP" />
+									</Anchors>
+								</FontString>
+								<FontString name="$parentLow" font="Fonts\FRIZQT__.TTF" inherits="normalStringTemplate" text="50%">
+									<Anchors>
+										<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" />
+									</Anchors>
+								</FontString>
+								<FontString name="$parentHigh" font="Fonts\FRIZQT__.TTF" inherits="normalStringTemplate" text="100%">
+									<Anchors>
+										<Anchor point="TOPRIGHT" relativePoint="BOTTOMRIGHT" />
+									</Anchors>
+								</FontString>
+							</Layer>
+						</Layers>
+						<ThumbTexture name="$parentThumb" file="Interface\Buttons\UI-SliderBar-Button-Horizontal">
+							<Size>
+								<AbsDimension x="32" y="32" />
+							</Size>
+						</ThumbTexture>
+						<Scripts>
+							<OnLoad>
+								LoadStrings(getglobal(self:GetName().."Title"))
+							</OnLoad>
+							<OnValueChanged>SetOpenButtonSize(self:GetValue())</OnValueChanged>
+						</Scripts>
+					</Slider>
+				</Frames>
+			</Frame>
+			<Frame name="PluginSize">
+				<Size>
+					<AbsDimension x="198" y="60" />
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentTitle">
+						<Offset>
+							<AbsDimension x="25" y="-165"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Frames>
+					<Slider name="$parentSlider" enableMouse="true" minValue=".5" maxValue="1" defaultValue=".75" valueStep=".01" orientation="HORIZONTAL">
+						<Size>
+							<AbsDimension x="128" y="17" />
+						</Size>
+						<Anchors>
+							<Anchor point="LEFT" />
+							<Anchor point="RIGHT" />
+						</Anchors>
+						<Backdrop bgFile="Interface\Buttons\UI-SliderBar-Background" edgeFile="Interface\Buttons\UI-SliderBar-Border" tile="true">
+							<BackgroundInsets>
+								<AbsInset left="3" right="3" top="6" bottom="6" />
+							</BackgroundInsets>
+							<TileSize>
+								<AbsValue val="8" />
+							</TileSize>
+							<EdgeSize>
+								<AbsValue val="8" />
+							</EdgeSize>
+						</Backdrop>
+						<Layers>
+							<Layer>
+								<FontString name="$parentTitle" font="Fonts\FRIZQT__.TTF" inherits="SliderTitle">
+									<Anchors>
+										<Anchor point="BOTTOM" relativePoint="TOP" />
+									</Anchors>
+								</FontString>
+								<FontString name="$parentLow" font="Fonts\FRIZQT__.TTF" inherits="normalStringTemplate" text="50%">
+									<Anchors>
+										<Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" />
+									</Anchors>
+								</FontString>
+								<FontString name="$parentHigh" font="Fonts\FRIZQT__.TTF" inherits="normalStringTemplate" text="100%">
+									<Anchors>
+										<Anchor point="TOPRIGHT" relativePoint="BOTTOMRIGHT" />
+									</Anchors>
+								</FontString>
+							</Layer>
+						</Layers>
+						<ThumbTexture name="$parentThumb" file="Interface\Buttons\UI-SliderBar-Button-Horizontal">
+							<Size>
+								<AbsDimension x="32" y="32" />
+							</Size>
+						</ThumbTexture>
+						<Scripts>
+							<OnLoad>
+								LoadStrings(getglobal(self:GetName().."Title"));
+							</OnLoad>
+							<OnValueChanged>
+								SetMainPageSize(self:GetValue())
+							</OnValueChanged>
+						</Scripts>
+					  </Slider>
+				</Frames>
+			</Frame>
+		</Frames>
+
+		<Scripts>
+			<OnLoad>
+				LoadStrings(getglobal(self:GetName().."Title"));
+				msg("Loaded Option Page");
+				self = OptionView.new(self);
+			</OnLoad>
+		</Scripts>
+	</Frame>
+</Ui>

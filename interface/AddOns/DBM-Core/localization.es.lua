@@ -76,6 +76,7 @@ DBM_CORE_VERSIONCHECK_ENTRY_TWO		= "%s: %s (r%d) y %s (r%d)"--Two Boss mods
 DBM_CORE_VERSIONCHECK_ENTRY_NO_DBM	= "%s: DBM no instalado"
 DBM_CORE_VERSIONCHECK_FOOTER		= "Encontrados %d jugadores con Deadly Boss Mods"
 DBM_CORE_YOUR_VERSION_OUTDATED      = "¡Tu versión de Deadly Boss Mods es antigua! Por favor, visita www.deadlybossmods.com para bajarte la última versión."
+DBM_CORE_OUTDATED_PVP_MODS			= "¡Tu versión de DBM-PvP mods es antigua y debe ser eliminada si no se usa, o actualizada al nuevo paquete por separado. Estos mods ya no se incluyen conjuntamente con DBM-Core. La última versión del PVP mods puede edscargarse de http://www.deadlybossmods.com"
 --DBM_BIG_WIGS						= "BigWigs"
 --DBM_BIG_WIGS_ALPHA					= "BigWigs Alpha"
 
@@ -126,7 +127,7 @@ DBM_CORE_SLASHCMD_HELP				= {
 	"/dbm pull <seg>: Empieza una cuenta atrás para pullear en <seg> segundos. Muestra a todos los miembros de banda con DBM un contador para pullear (requiere lider/ayudante).",
 	"/dbm arrow: Muestra la flecha DBM, escribe /dbm arrow help para más detalles.",
 	"/dbm lockout: pregunta a los miembros de la raid por sus bloqueos de estancia (alias: lockouts, ids) (requiere líder/ayudante).",
-	"/dbm help: muestra esta ayuda",
+	"/dbm help: muestra esta ayuda"
 }
 
 DBM_ERROR_NO_PERMISSION				= "No tienes permiso para hacer eso."
@@ -196,10 +197,11 @@ DBM_CORE_AUTO_SPEC_WARN_TEXTS = {
 	interrupt	= "%s - ¡interrumpe >%%s<!",
 	you			= "¡%s en ti!",
 	target		= "%s en >%%s<",
-	close		= "%s en >%%s< certa tuyo",
+	close		= "%s en >%%s< cerca tuyo",
 	move		= "%s - ¡muévete!",
 	run			= "%s - ¡corre!",
 	cast		= "%s - ¡para de castear!",
+	reflect		= "%s - ¡para de atacar!",
 	count		= "%s! (%%d)",
 	stack		= "%%d acumulaciones de %s en ti",
 	switch		= ">%s< - ¡cambio de objetivos!"
@@ -219,7 +221,8 @@ DBM_CORE_AUTO_SPEC_WARN_OPTIONS = {
 	close 		= "Mostrar aviso especial cuando a alguien cerca tuyo le afecte $spell:%s",
 	move 		= "Mostrar aviso especial para salir de $spell:%s",
 	run 		= "Mostrar aviso especial para huir de $spell:%s",
-	cast 		= "Mostrar aviso especial para el lanzamiento de $spell:%s",
+	cast 		= "Mostrar aviso especial para parar de castear por $spell:%s",
+	reflect 	= "Mostrar aviso especial para parar de atacar por $spell:%s",
 	count 		= "Mostrar aviso especial para $spell:%s",
 	stack 		= "Mostrar aviso especial cuando tienes >=%d acumulaciones de $spell:%s",--too long?
 	switch		= "Mostrar aviso especial para cambiar objetivos con $spell:%s"
@@ -280,7 +283,7 @@ DBM_ARROW_ERROR_USAGE	= {
 	"/dbm arrow <x> <y>: Crea una flecha que apunta a una dirección específica (0 < x/y < 100)",
 	"/dbm arrow <jugador>: Crea una flecha que apunta a un miembro específico de la banda",
 	"/dbm arrow hide: Oculta la flecha",
-	"/dbm arrow move: Hace la flecha movible",
+	"/dbm arrow move: Hace la flecha movible"
 }
 
 DBM_SPEED_KILL_TIMER_TEXT	= "Superar récord"

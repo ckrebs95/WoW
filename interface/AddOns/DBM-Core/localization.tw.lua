@@ -76,6 +76,7 @@ DBM_CORE_VERSIONCHECK_ENTRY_TWO		= "%s: %s (r%d) & %s (r%d)"
 DBM_CORE_VERSIONCHECK_ENTRY_NO_DBM	= "%s：尚未安裝任何團隊首領模組"
 DBM_CORE_VERSIONCHECK_FOOTER		= "找到有%d玩家正在使用DBM且有%d玩家正在使用Bigwigs"
 DBM_CORE_YOUR_VERSION_OUTDATED		= "你的 Deadly Boss Mod 已經過期。請到http://dev.deadlybossmods.com下載最新版本。"
+DBM_CORE_OUTDATED_PVP_MODS			= "你的DBM-PvP模組已經過期而且如果不使用請移除,或是更新最新的獨立包. 這些模組不在包含在DBM-Core下載. 尋找最新的PVP模組在http://www.deadlybossmods.com"
 --DBM_BIG_WIGS (Same as English locales)
 --DBM_BIG_WIGS_ALPHA (Same as English locales)
 
@@ -126,7 +127,7 @@ DBM_CORE_SLASHCMD_HELP				= {
 	"/dbm pull <秒數>: 開始備戰計時器<秒數>。向所有團隊成員發送一個DBM備戰計時器（需要團隊隊長或助理權限）。",
 	"/dbm arrow: 顯示DBM箭頭, 輸入 /dbm arrow help 獲得更多訊息。",
 	"/dbm lockout: 向團隊成員請求他們當前的團隊副本鎖定訊息(鎖定訊息、副本id) (需要團隊隊長或助理權限)。",
-	"/dbm help：顯示可用命令的說明。",
+	"/dbm help：顯示可用命令的說明。"
 }
 
 DBM_ERROR_NO_PERMISSION				= "無權進行此操作。"
@@ -150,7 +151,7 @@ DBM_CORE_TIMER_PULL					= "戰鬥準備"
 DBM_CORE_ANNOUNCE_PULL				= "%d秒後拉怪"
 DBM_CORE_ANNOUNCE_PULL_NOW			= "拉怪囉!"
 
-DBM_CORE_ACHIEVEMENT_TIMER_SPEED_KILL = "最速勝利"
+DBM_CORE_ACHIEVEMENT_TIMER_SPEED_KILL = "成就"
 
 -- Auto-generated Warning Localizations
 DBM_CORE_AUTO_ANNOUNCE_TEXTS = {
@@ -280,7 +281,7 @@ DBM_ARROW_ERROR_USAGE	= {
 	"/dbm arrow <x> <y>  建立一個箭頭在特定的位置(0 < x/y < 100)",
 	"/dbm arrow <玩家>  建立並箭頭指向你的隊伍或團隊中特定的玩家",
 	"/dbm arrow hide  隱藏箭頭",
-	"/dbm arrow move  可移動箭頭",
+	"/dbm arrow move  可移動箭頭"
 }
 
 DBM_SPEED_KILL_TIMER_TEXT	= "勝利紀錄"

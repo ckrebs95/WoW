@@ -1,9 +1,8 @@
 local mod	= DBM:NewMod(826, "DBM-Pandaria", nil, 322)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 9995 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10106 $"):sub(12, -3))
 mod:SetCreatureID(69161)
-mod:SetQuestID(32519)
 mod:SetZone()
 
 mod:RegisterCombat("combat")
@@ -103,7 +102,8 @@ function mod:CHAT_MSG_MONSTER_YELL(msg)
 		if self:GetCIDFromGUID(UnitGUID("target")) == 69161 or self:GetCIDFromGUID(UnitGUID("targettarget")) == 69161 then--Whole zone gets yell, so lets not engage combat off yell unless he is our target (or the target of our target for healers)
 			yellTriggered = true
 			DBM:StartCombat(self, 0)
-		elseif self.Options.ReadyCheck then
+		end
+		if self.Options.ReadyCheck and not IsQuestFlaggedCompleted(32519) then
 			PlaySoundFile("Sound\\interface\\levelup2.ogg", "Master")
 		end
 	end

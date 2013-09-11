@@ -1,9 +1,8 @@
 local mod	= DBM:NewMod(864, "DBM-SiegeOfOrgrimmar", nil, 369)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10049 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10206 $"):sub(12, -3))
 mod:SetCreatureID(71466)
---mod:SetQuestID(32744)
 mod:SetZone()
 
 mod:RegisterCombat("combat")
@@ -30,9 +29,10 @@ local warnIgniteArmor			= mod:NewStackAnnounce(144467, 2, nil, mod:IsTank())--Se
 --Siege Mode
 local warnSeismicActivity		= mod:NewSpellAnnounce(144483, 2)--A mere activation of phase
 local warnNapalmOil				= mod:NewSpellAnnounce(144492, 3)
-local warnShockPulse			= mod:NewSpellAnnounce(144485, 3)--The actual threatening quake mechanic
+local warnShockPulse			= mod:NewCountAnnounce(144485, 3)
 local warnDemolisherCanon		= mod:NewSpellAnnounce(144154, 3)
 local warnCutterLaser			= mod:NewTargetAnnounce(146325, 4)--Not holding my breath this shows in combat log.
+local warnMortarBarrage			= mod:NewSpellAnnounce(144555, 4)--Heroic
 
 --Assault Mode
 local specWarnIgniteArmor		= mod:NewSpecialWarningStack(144467, mod:IsTank(), 3)
@@ -40,10 +40,11 @@ local specWarnIgniteArmorOther	= mod:NewSpecialWarningTarget(144467, mod:IsTank(
 local specWarnBorerDrill		= mod:NewSpecialWarningSpell(144218, false, nil, nil, 2)
 local specWarnBorerDrillMove	= mod:NewSpecialWarningMove(144218)
 --Siege Mode
-local specWarnShockPulse		= mod:NewSpecialWarningSpell(144485, nil, nil, nil, 2)
+local specWarnShockPulse		= mod:NewSpecialWarningCount(144485, nil, nil, nil, 2)
 local specWarnCutterLaser		= mod:NewSpecialWarningRun(146325)
 local specWarnNapalmOil			= mod:NewSpecialWarningMove(144498)
 local yellCutterLaser			= mod:NewYell(146325)
+local specWarnMortarBarrage		= mod:NewSpecialWarningSpell(144555, nil, nil, nil, 2)
 
 --Assault Mode
 local timerAssaultModeCD		= mod:NewNextTimer(64, 141395, nil, "timerAssaultModeCD")--141395 is correct timer text but it's wrong spellid, custom option text for real timer description
@@ -58,23 +59,29 @@ local timerCrawlerMineCD		= mod:NewCDTimer(30, 144673)
 local timerSiegeModeCD			= mod:NewNextTimer(116, 84974, nil, nil, "timerSiegeModeCD")--Wish spell name was a litlte shorter but still better than localizing
 local timerCuttingLaser			= mod:NewTargetTimer(10, 146325)--Spell tooltip says 15 but combat log showed 10
 --local timerCuttingLaserCD		= mod:NewCDTimer(10, 146325)
---local timerShockPulseCD		= mod:NewCDTimer(10, 144485)
-local timerNapalmOilCD			= mod:NewCDTimer(21.5, 144492)
+local timerShockPulseCD			= mod:NewNextCountTimer(16.5, 144485)--Confirmed, blizzard did take solid argued feedback and changed this mechanic, yay.
+--local timerNapalmOilCD		= mod:NewCDTimer(21.5, 144492)
 local timerDemolisherCanonCD	= mod:NewCDTimer(10, 144154)
+local timerMortarBarrageCD		= mod:NewCDTimer(30, 144555)
 
 local soundCuttingLaser			= mod:NewSound(146325)
+
+local berserkTimer				= mod:NewBerserkTimer(600)
 
 mod:AddBoolOption("RangeFrame", mod:IsRanged())
 
 local siegeMode = false
+local shockCount = 0
 
 function mod:OnCombatStart(delay)
 	siegeMode = false
+	shockCount = 0
 	timerIgniteArmorCD:Start(9-delay)
 	timerLaserBurnCD:Start(-delay)
 	timerBorerDrillCD:Start(-delay)
 	timerCrawlerMineCD:Start(-delay)
-	timerSiegeModeCD:Start(121-delay)--First one longer than rest
+	timerSiegeModeCD:Start(120.5-delay)--First one longer than rest
+	berserkTimer:Start(-delay)
 	if self.Options.RangeFrame then
 		DBM.RangeCheck:Show(8)
 	end
@@ -87,20 +94,28 @@ function mod:OnCombatEnd()
 end
 
 function mod:SPELL_CAST_START(args)
-	if args.spellId == 144483 then
+	if args.spellId == 144483 then--Siege mode transition
 		siegeMode = true
+		shockCount = 0
 		timerLaserBurnCD:Cancel()
 		timerCrawlerMineCD:Cancel()
 		timerBorerDrillCD:Cancel()
 		warnSeismicActivity:Show()
+		timerShockPulseCD:Start(nil, 1)
+		if self:IsDifficulty("heroic10", "heroic25") then
+			timerMortarBarrageCD:Start(15)
+		end
 		timerAssaultModeCD:Start()
 		if self.Options.RangeFrame then
 			DBM.RangeCheck:Hide()
 		end
 	elseif args.spellId == 144485 then
-		warnShockPulse:Show()
-		specWarnShockPulse:Show()
---		timerShockPulseCD:Start()
+		shockCount = shockCount + 1
+		warnShockPulse:Show(shockCount)
+		specWarnShockPulse:Show(shockCount)
+		if shockCount < 3 then
+			timerShockPulseCD:Start(nil, shockCount+1)
+		end
 	end
 end
 
@@ -118,7 +133,7 @@ function mod:SPELL_AURA_APPLIED(args)
 		timerIgniteArmorCD:Start()
 		if amount >= 3 then
 			if args:IsPlayer() then
-				specWarnIgniteArmor:Show(args.amount)
+				specWarnIgniteArmor:Show(amount)
 			else
 				specWarnIgniteArmorOther:Show(args.destName)
 			end
@@ -174,13 +189,13 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 		timerDemolisherCanonCD:Start()
 	elseif spellId == 144492 then
 		warnNapalmOil:Show()
-		timerNapalmOilCD:Start()
+--		timerNapalmOilCD:Start()
 	elseif spellId == 146359 then--Regeneration (Assault Mode power regen activation)
 		--2 seconds slower than emote, but it's not pressing enough to matter so it's better localisation wise to do it this way
-		timerNapalmOilCD:Cancel()
+--		timerNapalmOilCD:Cancel()
 		timerDemolisherCanonCD:Cancel()
+		timerMortarBarrageCD:Cancel()
 --		timerCuttingLaserCD:Cancel()
---		timerShockPulseCD:Cancel()
 		if siegeMode == true then--don't start timer on pull regenerate, pull regenerate is 5 seconds longer than rest of them
 			timerSiegeModeCD:Start()
 			siegeMode = false
@@ -188,6 +203,10 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 		if self.Options.RangeFrame then
 			DBM.RangeCheck:Show(8)
 		end
+	elseif spellId == 144555 then
+		warnMortarBarrage:Show()
+		specWarnMortarBarrage:Show()
+		timerMortarBarrageCD:Start()
 	end
 end
 

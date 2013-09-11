@@ -72,7 +72,7 @@ L:SetWarningLocalization({
 })
 
 L:SetOptionLocalization({
-	specWarnCrystalShell	= "Mostrar aviso especial cuando te falta $spell:137633 y estás por encima del 90% de salud",
+	specWarnCrystalShell	= "Mostrar aviso especial cuando te falta<br/> $spell:137633 y estás por encima del 90% de salud",
 	InfoFrame				= "Mostrar cuadro de información para los jugadores sin $spell:137633",
 	SetIconOnTurtles		= "Poner iconos en $journal:7129",
 	ClearIconOnTurtles		= "Quitar iconos en $journal:7129 cuando les afecte $spell:133971",
@@ -135,8 +135,7 @@ L:SetOptionLocalization({
 })
 
 L:SetMiscLocalization({
-	eggsHatchL		= "huevos de uno de los nidos inferiores empiezan",
-	eggsHatchU		= "huevos de uno de los nidos superiores empiezan",
+	eggsHatch		= "empiezan a abrirse",
 	Upper			= "Arriba",
 	Lower			= "Abajo",
 	UpperAndLower	= "Arriba y Abajo",
@@ -171,7 +170,7 @@ L:SetOptionLocalization({
 	specWarnFogRevealed			= "Mostrar aviso especial cuando se descubre una bestia de niebla",
 	ArrowOnBeam					= "Mostrar flecha indicando la dirección en la que moverse durante $journal:6882",
 	InfoFrame					= "Mostrar cuadro de información para acumulaciones de $spell:133795",
-	SetParticle					= "Bajar densidad de partículas al comenzar el encuentro\n(Restaurar la configuración original al terminar)"
+	SetParticle					= "Bajar densidad de partículas al comenzar el encuentro<br/>(Restaurar la configuración original al terminar)"
 })
 
 L:SetMiscLocalization({
@@ -184,7 +183,7 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(820)
 
 L:SetWarningLocalization({
-	warnDebuffCount				= "Mutaciones: %d/5 buenas, %d malas",
+	warnDebuffCount				= "Mutaciones: %d/5 buenas, %d malas"
 })
 
 L:SetOptionLocalization({
@@ -221,7 +220,7 @@ L:SetWarningLocalization({
 })
 
 L:SetOptionLocalization({
-	RangeFrame				= "Mostrar radar de rango dinámico (10)\n(Radar inteligente que muestra cuando hay demasiados jugadores cerca)",
+	RangeFrame				= "Mostrar radar de rango dinámico (10)<br/>(Radar inteligente que muestra cuando hay demasiados jugadores cerca)",
 	InfoFrame				= "Mostrar cuadro de información para jugadores con $spell:136193"
 })
 
@@ -278,24 +277,17 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(831)
 
 L:SetWarningLocalization({
-	specWarnVitaSoaker			= "¡Eres el siguiente en absorber Vita!",
-	warnVitaSoakerSoon			= "Eres el segundo en absorber Vita"
+	specWarnUnstablVitaJump		= "¡Vita inestable en ti!"
 })
 
-
 L:SetOptionLocalization({
-	warnVitaSoakerSoon	= "Anunciar cuando eres el segundo en absorber Vita (Requiere activar cuadro de información)",
-	specWarnVitaSoaker	= "Mostrar aviso especial cuando eres el siguiente en absorber $spell:138297 basado en tu posición en el cuadro de información (Requiere activar cuadro de información)",
-	SetIconsOnVita		= "Poner iconos en los jugadores afectados por $spell:138297 y en el jugador más alejado de ellos",
-	InfoFrame			= "Mostrar cuadro de información para el orden de absorción de jugadores sin $spell:138372 (excluyendo tanques)",
-	AnnounceVitaSoaker	= "Anunciar el siguiente absorbedor de $spell:138297 al chat de avisos de BANDA (Requiere ser líder de banda)"
+	specWarnUnstablVitaJump	= "Mostrar aviso especial cunado tengas $spell:138297",
+	SetIconsOnVita			= "Poner iconos en el personaje con $spell:138297 y en el más alejado de él"
 })
 
 L:SetMiscLocalization({
-	Defeat						= "¡Esperad!",--needs to be verified (voice captured from path files)
-	NoSensitivity				= "Orden de absorción de Vita",
-	VitaSoakerOptionConflict	= "Peligro: Has activado los avisos de absorción de Vita, pero has desabilitado en cuadro de información. Los avisos no funcionarán sin el cuadro.",
-	VitaChatMessage				= "Siguiente absorbedor de Vita: %s"
+	Defeat						= "¡Esperad!",
+	BigWigsRecommendation		= "Si necesitas una lista de disipadores de vita, recomendamos utilizar Bigwigs y Bigwigs Ra-den assist para este encuentro"
 })
 
 -------------

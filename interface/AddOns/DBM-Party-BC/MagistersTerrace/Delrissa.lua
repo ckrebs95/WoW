@@ -1,12 +1,11 @@
-local mod = DBM:NewMod("Delrissa", "DBM-Party-BC", 16)
+local mod = DBM:NewMod(532, "DBM-Party-BC", 16, 249)
 local L = mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 436 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 494 $"):sub(12, -3))
 
 mod:SetCreatureID(24560, 24557, 24558, 24554, 24561, 24559, 24555, 24553, 24556)--24560 is main boss.
-mod:SetModelID(22596)
 --"combat" only fails if you were already in combat before pulling her (ie, you out level the zone and just chain pulled her with trash).
-mod:RegisterCombat("yell", L.DelrissaPull)
+mod:RegisterCombat("combat")--UNIT_HEALTH combat should work now
 mod:RegisterKill("yell", L.DelrissaEnd)
 --Pretty sure she dies, so probably can just register kill using UNIT_DIED 24560
 
@@ -25,11 +24,17 @@ local warnSoC           = mod:NewTargetAnnounce(44141, 2)
 local warnPolymorph     = mod:NewTargetAnnounce(13323, 4)
 local warnPWShield      = mod:NewTargetAnnounce(44175, 2, nil, false)
 
+local specWarnFlashHeal	= mod:NewSpecialWarningInterrupt(17843, false)
+local specWarnLHW		= mod:NewSpecialWarningInterrupt(46181, false)
+local specWarnPWS		= mod:NewSpecialWarningDispel(44175, false)
+
 function mod:SPELL_CAST_START(args)
 	if args.spellId == 17843 and self:IsInCombat() then                                -- Delrissa's Flash Heal
 		warnFlashHeal:Show()
+		specWarnFlashHeal:Show(args.sourceName)
 	elseif args:IsSpellID(44256, 46181) then                                           -- Apoko's LHW
 		warnLHW:Show()
+		specWarnLHW:Show(args.sourceName)
 	end
 end
 
@@ -50,5 +55,6 @@ function mod:SPELL_AURA_APPLIED(args)
 		warnSoC:Show(args.destName)
 	elseif args:IsSpellID(44175, 44291, 46193) and not args:IsDestTypePlayer() then    -- Delrissa's PWShield
 		warnPWShield:Show(args.destName)
+		specWarnPWS:Show(args.destName)
 	end
 end

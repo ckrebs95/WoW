@@ -20,6 +20,10 @@ L:SetOptionLocalization({
 	InfoFrame			= "Информационное окно для $journal:8252"
 })
 
+L:SetMiscLocalization({
+	wasteOfTime			= "Very well, I will create a field to keep your corruption quarantined."
+})
+
 ------------------
 -- Sha of Pride --
 ------------------
@@ -35,12 +39,21 @@ L:SetOptionLocalization({
 L= DBM:GetModLocalization(868)
 
 L:SetTimerLocalization({
+	timerAddsCD		= "След. волна аддов",
+	timerTowerCD	= "След. башня и адды"
 })
 
 L:SetOptionLocalization({
+	timerAddsCD		= "Отсчет времени до следующей волны аддов",
+	timerTowerCD	= "Отсчет времени до следующего нападения на башню"
 })
 
 L:SetMiscLocalization({
+	newForces1	= "Вот и они!",--Jaina's line, horde may not be same
+	newForces2	= "Драконья Пасть, вперед!",
+	newForces3	= "За Гарроша!",
+	newForces4	= "Следующий отряд!",
+	tower		= "Дверь "--Дверь южной/северной башни разбита!
 })
 
 --------------------
@@ -53,17 +66,30 @@ L= DBM:GetModLocalization(864)
 --------------------------
 L= DBM:GetModLocalization(856)
 
+L:SetMiscLocalization({
+	PrisonYell		= "Тюрьма на %s спадает (%d)"
+})
+
 ---------------------
 -- General Nazgrim --
 ---------------------
 L= DBM:GetModLocalization(850)
 
+L:SetWarningLocalization({
+	warnDefensiveStanceSoon		= "Оборонительная стойка через %d сек."
+})
+
+L:SetOptionLocalization({
+	warnDefensiveStanceSoon		= "Обратный отсчет за 5 секунд до $spell:143593"
+})
+
 L:SetMiscLocalization({
-	newForces1				= "Warriors, on the double!",
-	newForces2				= "Defend the gate!",
-	newForces3				= "Rally the forces!",
-	newForces4				= "Kor'kron, at my side!",
-	newForces5				= "Next squad, to the front!"
+	newForces1					= "Воины, бегом!",
+	newForces2					= "Удерживайте врата!",
+	newForces3					= "Сомкнуть ряды!",
+	newForces4					= "Кор'крон, ко мне!",
+	newForces5					= "Следующий отряд, вперед!",
+	allForces					= "Кор'кронцы... все, кто со мной! Убейте их!"
 })
 
 -----------------
@@ -76,10 +102,9 @@ L= DBM:GetModLocalization(846)
 ------------------------
 L= DBM:GetModLocalization(870)
 
-L:SetWarningLocalization({
-})
-
-L:SetOptionLocalization({
+L:SetMiscLocalization({
+	Module1 = "Первый модуль готов к перезагрузке системы.",
+	Victory	= "Второй модуль готов к перезагрузке системы."
 })
 
 ---------------------------
@@ -87,16 +112,8 @@ L:SetOptionLocalization({
 ---------------------------
 L= DBM:GetModLocalization(851)
 
-L:SetWarningLocalization({
-})
-
-L:SetTimerLocalization({
-})
-
 L:SetOptionLocalization({
-})
-
-L:SetMiscLocalization({
+	RangeFrame	= "Показывать динамическое окно проверки дистанции (10)<br/>(Это умное окно проверки дистанции, которое появляется когда вы достигаете порога Бешенства)"
 })
 
 ----------------------------
@@ -105,8 +122,8 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(865)
 
 L:SetMiscLocalization({
-	newWeapons	= "Unfinished weapons begin to roll out on the assembly line.",
-	newShredder	= "An Automated Shredder draws near!"
+	newWeapons	= "На сборочную линию начинает поступать незаконченное оружие.",
+	newShredder	= "Приближается автоматический крошшер!"
 })
 
 ----------------------------
@@ -125,34 +142,23 @@ L:SetOptionLocalization({
 })
 
 L:SetMiscLocalization({
-	calculatedTarget	= "calculating eye!",
-	--thanks to blizz, the only accurate way for this to work, is to translate 15 emotes in all languages
-	yellow				= "Yellow",
-	red					= "Red",
-	blue				= "Blue",
-	purple				= "Purple",
-	green				= "Green",
-	bomb				= "Bomb",
-	sword				= "Swords",
-	drums				= "Drums",
-	mantid				= "Mantid",--Assumed
-	staff 				= "Staff",--Assumed
-	one					= "One",
-	two					= "Pair",
-	three				= "Three",
-	four				= "Four",--Assumed
-	five				= "Five",--Assumed
-	hisekFlavor			= "Look who's quiet now",--http://ptr.wowhead.com/quest=31510
-	KilrukFlavor		= "Just another day, culling the swarm",--http://ptr.wowhead.com/quest=31109
-	XarilFlavor			= "I see only dark skies in your future",--http://ptr.wowhead.com/quest=31216
-	KaztikFlavor		= "Reduced to mere kunchong treats",--http://ptr.wowhead.com/quest=31024
-	KaztikFlavor2		= "1 Mantid down, only 199 to go",--http://ptr.wowhead.com/quest=31808
-	KorvenFlavor		= "The end of an ancient empire",--http://ptr.wowhead.com/quest=31232
-	KorvenFlavor2		= "Take your Gurthani Tablets and choke on them",--http://ptr.wowhead.com/quest=31232
-	IyyokukFlavor		= "See opportunities. Exploit them!",--Does not have quests, http://ptr.wowhead.com/npc=65305
-	KarozFlavor			= "You won't be leaping anymore!",---Does not have questst, http://ptr.wowhead.com/npc=65303
-	SkeerFlavor			= "A bloody delight!",--http://ptr.wowhead.com/quest=31178
-	RikkalFlavor		= "Specimen request fulfilled"--http://ptr.wowhead.com/quest=31508
+	--thanks to blizz, the only accurate way for this to work, is to translate 5 emotes in all languages
+	one					= "один",
+	two					= "два",
+	three				= "три",
+	four				= "четыре",
+	five				= "пять",
+	hisekFlavor			= "Смотрите, кто теперь тихий",--http://ptr.wowhead.com/quest=31510
+	KilrukFlavor		= "Обычный рабочий день, уничтожаем рой",--http://ptr.wowhead.com/quest=31109
+	XarilFlavor			= "Я вижу только темные небеса в твоем будущем",--http://ptr.wowhead.com/quest=31216
+	KaztikFlavor		= "Сойдёт на угощение куньчуну",--http://ptr.wowhead.com/quest=31024
+	KaztikFlavor2		= "1 богомол убит, осталось 199",--http://ptr.wowhead.com/quest=31808
+	KorvenFlavor		= "Конец древней империи",--http://ptr.wowhead.com/quest=31232
+	KorvenFlavor2		= "Забери свои гуртанские таблички и подавись ими",--http://ptr.wowhead.com/quest=31232
+	IyyokukFlavor		= "Видишь возможности. Используй их!",--Does not have quests, http://ptr.wowhead.com/npc=65305
+	KarozFlavor			= "Ты больше не будешь прыгать!",---Does not have questst, http://ptr.wowhead.com/npc=65303
+	SkeerFlavor			= "Кровавое удовольствие!",--http://ptr.wowhead.com/quest=31178
+	RikkalFlavor		= "Запрос образцов выполнен"--http://ptr.wowhead.com/quest=31508
 })
 
 ------------------------
@@ -160,20 +166,11 @@ L:SetMiscLocalization({
 ------------------------
 L= DBM:GetModLocalization(869)
 
-L:SetOptionLocalization({
-})
-
-L:SetMiscLocalization({
-})
-
 -------------
 --  Trash  --
 -------------
-L = DBM:GetModLocalization("FoOTrash")
+L = DBM:GetModLocalization("SoOTrash")
 
 L:SetGeneralLocalization({
 	name =	"Трэш мобы Осады Оргриммара"
-})
-
-L:SetOptionLocalization({
 })

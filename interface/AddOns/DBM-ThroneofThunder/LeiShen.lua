@@ -1,9 +1,8 @@
 local mod	= DBM:NewMod(832, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10028 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10248 $"):sub(12, -3))
 mod:SetCreatureID(68397)--Diffusion Chain Conduit 68696, Static Shock Conduit 68398, Bouncing Bolt conduit 68698, Overcharge conduit 68697
-mod:SetQuestID(32756)
 mod:SetZone()
 mod:SetUsedIcons(8, 7, 6, 5, 4, 3, 2, 1)--All icons can be used, because if a pillar is level 3, it puts out 4 debuffs on 25 man (if both are level 3, then you will have 8)
 
@@ -15,6 +14,8 @@ mod:RegisterEventsInCombat(
 	"SPELL_AURA_APPLIED_DOSE",
 	"SPELL_AURA_REMOVED",
 	"SPELL_CAST_SUCCESS",
+	"SPELL_PERIODIC_DAMAGE",
+	"SPELL_PERIODIC_MISSED",
 	"CHAT_MSG_RAID_BOSS_EMOTE",
 	"UNIT_SPELLCAST_SUCCEEDED"
 )
@@ -178,9 +179,7 @@ function mod:OnCombatStart(delay)
 	self:RegisterShortTermEvents(
 		"UNIT_HEALTH_FREQUENT boss1",
 		"SPELL_DAMAGE",
-		"SPELL_MISSED",
-		"SPELL_PERIODIC_DAMAGE",
-		"SPELL_PERIODIC_MISSED"
+		"SPELL_MISSED"
 	)-- Do not use on phase 3.
 end
 
@@ -317,8 +316,6 @@ function mod:SPELL_AURA_APPLIED(args)
 		if self.Options.RangeFrame and self:IsRanged() then--Shouldn't target melee during a normal pillar, only during intermission when all melee are with ranged and out of melee range of boss
 			DBM.RangeCheck:Show(8)--Assume 8 since spell tooltip has no info
 		end
-	elseif args.spellId == 137176 and self:AntiSpam(3, 5) and args:IsPlayer() then
-		specWarnOverloadedCircuits:Show()
 	elseif args.spellId == 139011 then
 		helmOfCommandTarget[#helmOfCommandTarget + 1] = args.destName
 		if args:IsPlayer() then
@@ -418,6 +415,8 @@ mod.SPELL_MISSED = mod.SPELL_DAMAGE
 function mod:SPELL_PERIODIC_DAMAGE(_, _, _, _, destGUID, _, _, _, spellId)
 	if spellId == 135153 and destGUID == UnitGUID("player") and self:AntiSpam(1.5, 4) then
 		specWarnCrashingThunder:Show()
+	elseif spellId == 137176 and destGUID == UnitGUID("player") and self:AntiSpam(3, 5) then
+		specWarnOverloadedCircuits:Show()
 	end
 end
 mod.SPELL_PERIODIC_MISSED = mod.SPELL_PERIODIC_DAMAGE
@@ -525,9 +524,9 @@ local function LoopIntermission()
 	end
 	if not westDestroyed or mod:IsDifficulty("heroic10", "heroic25") then
 		if mod:IsDifficulty("lfr25") then
-			warnBouncingBolt:Schedule(9)
-			specWarnBouncingBolt:Schedule(9)
-			timerBouncingBoltCD:Start(9)
+			warnBouncingBolt:Schedule(8.5)
+			specWarnBouncingBolt:Schedule(8.5)
+			timerBouncingBoltCD:Start(8.5)
 		elseif mod:IsDifficulty("heroic10", "heroic25") then
 			warnBouncingBolt:Schedule(15.5)--Delayed by second helm of command i believe
 			specWarnBouncingBolt:Schedule(15.5)

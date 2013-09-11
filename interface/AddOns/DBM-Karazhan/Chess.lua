@@ -2,13 +2,14 @@ local mod	= DBM:NewMod("Chess", "DBM-Karazhan")
 local L		= mod:GetLocalizedStrings()
 
 local playerFactoin = UnitFactionGroup("player")
-mod:SetRevision(("$Revision: 476 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 496 $"):sub(12, -3))
 --UNIT_DIED firing for king assumed
 if playerFactoin == "Alliance" then
 	mod:SetCreatureID(21752)--Warchief Blackhand
 else
 	mod:SetCreatureID(21684)--King Llane
 end
+mod:SetModelID(18720)
 mod:RegisterCombat("combat")--Actually not how we register combat, bogus because SetWipeTime needs it
 mod:SetWipeTime(600)
 

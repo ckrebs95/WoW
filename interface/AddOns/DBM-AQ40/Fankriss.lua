@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Fankriss", "DBM-AQ40", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 477 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 503 $"):sub(12, -3))
 mod:SetCreatureID(15510)
 mod:SetModelID(15743)
 mod:RegisterCombat("combat")
@@ -10,10 +10,10 @@ mod:RegisterEvents(
 	"SPELL_SUMMON"
 )
 
-local warnWound		= mod:NewStackAnnounce(25646, 3)
-local warnWorm		= mod:NewSpellAnnounce(25831, 3)
+local warnWound			= mod:NewStackAnnounce(25646, 3)
+local warnWorm			= mod:NewSpellAnnounce(25831, 3)
 
-local timerWound	= mod:NewTargetTimer(20, 25646)
+local timerWound		= mod:NewTargetTimer(20, 25646)
 
 local specWarnWound		= mod:NewSpecialWarningStack(25646, nil, 5)
 
@@ -34,7 +34,7 @@ end
 function mod:SPELL_AURA_APPLIED(args)
 	if args.spellId == 25646 then
 		local amount = args.amount or 1
-		warnWound:Show(args.spellName, args.destName, amount)
+		warnWound:Show(args.destName, amount)
 		timerWound:Show(args.destName)
 		if amount >= 5 then
 			specWarnWound:Show(amount)

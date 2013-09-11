@@ -10,7 +10,7 @@ L:SetWarningLocalization({
 })
 
 L:SetOptionLocalization({
-	specWarnWaterMove	= "Show special warning if you standing in $spell:138470\n(Warns at $spell:137313 pre-cast or $spell:138732 debuff fades shortly)",
+	specWarnWaterMove	= "Show special warning if you standing in $spell:138470<br/>(Warns at $spell:137313 pre-cast or $spell:138732 debuff fades shortly)",
 	RangeFrame			= DBM_CORE_AUTO_RANGE_OPTION_TEXT_SHORT:format("8/4")
 })
 
@@ -58,7 +58,7 @@ L:SetWarningLocalization({
 L:SetOptionLocalization({
 	warnPossessed		= DBM_CORE_AUTO_ANNOUNCE_OPTIONS.target:format(136442),
 	specWarnPossessed	= DBM_CORE_AUTO_SPEC_WARN_OPTIONS.switch:format(136442),
-	PHealthFrame		= "Show remaining health frame for $spell:136442 fades\n(Requires boss health frame enabled)",
+	PHealthFrame		= "Show remaining health frame for $spell:136442 fades<br/>(Requires boss health frame enabled)",
 	RangeFrame			= DBM_CORE_AUTO_RANGE_OPTION_TEXT_SHORT:format(5),
 	AnnounceCooldowns	= "Count out (up to 3) which $spell:137166 cast it is for raid cooldowns",
 	SetIconOnBitingCold	= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(136992),
@@ -77,7 +77,7 @@ L:SetWarningLocalization({
 
 L:SetOptionLocalization({
 	warnKickShell			= DBM_CORE_AUTO_ANNOUNCE_OPTIONS.spell:format(134031),
-	specWarnCrystalShell	= "Show special warning when you are missing\n $spell:137633 debuff and are above 90% health",
+	specWarnCrystalShell	= "Show special warning when you are missing<br/> $spell:137633 debuff and are above 90% health",
 	InfoFrame				= "Show info frame for players without $spell:137633",
 	SetIconOnTurtles		= "Set icons on $journal:7129",
 	ClearIconOnTurtles		= "Clear icons on $journal:7129 when affected by $spell:133971",
@@ -148,8 +148,7 @@ L:SetOptionLocalization({
 })
 
 L:SetMiscLocalization({
-	eggsHatchL		= "The eggs in one of the lower nests begin to hatch!",
-	eggsHatchU		= "The eggs in one of the upper nests begin to hatch!",
+	eggsHatch		= "nests begin to hatch!",
 	Upper			= "Upper",
 	Lower			= "Lower",
 	UpperAndLower	= "Upper & Lower",
@@ -191,7 +190,7 @@ L:SetOptionLocalization({
 	SetIconLifeDrain			= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(133795),
 	SetIconOnParasite			= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(133597),
 	InfoFrame					= "Show info frame for $spell:133795 stacks",
-	SetParticle					= "Automatically set particle density to low on pull\n(Restores previous setting on combat end)"
+	SetParticle					= "Automatically set particle density to low on pull<br/>(Restores previous setting on combat end)"
 })
 
 L:SetMiscLocalization({
@@ -224,7 +223,7 @@ L:SetWarningLocalization({
 
 L:SetOptionLocalization({
 	warnMatterSwapped	= "Announce targets swapped by $spell:138618",
-	SetIconOnFont           = DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(138707),
+	SetIconOnFont           = DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(138707)
 })
 
 L:SetMiscLocalization({
@@ -243,7 +242,7 @@ L:SetWarningLocalization({
 L:SetOptionLocalization({
 	warnDeadZone			= DBM_CORE_AUTO_ANNOUNCE_OPTIONS.spell:format(137229),
 	SetIconOnLightningStorm	= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(136192),
-	RangeFrame				= "Show dynamic range frame (10)\n(This is a smart range frame that shows when too many are too close)",
+	RangeFrame				= "Show dynamic range frame (10)<br/>(This is a smart range frame that shows when too many are too close)",
 	InfoFrame				= "Show info frame for players with $spell:136193"
 })
 
@@ -311,25 +310,17 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(831)
 
 L:SetWarningLocalization({
-	specWarnVitaSoaker			= "You're next Vita Soaker!",
-	warnVitaSoakerSoon			= "You're second up Vita Soaker",
 	specWarnUnstablVitaJump		= "Unstable Vita jumped to you!"
 })
 
 L:SetOptionLocalization({
-	warnVitaSoakerSoon		= "Announce when you are second up Vita Soaker (Requires InfoFrame enabled)",
 	specWarnUnstablVitaJump	= "Show special warning when $spell:138297 jumps to you",
-	specWarnVitaSoaker		= "Show special warning when you are next $spell:138297 soaker based on infoframe position (Requires InfoFrame enabled)",
-	SetIconsOnVita			= "Set icons on $spell:138297 debuffed player and furthest player from them",
-	InfoFrame				= "Show info frame for soak order of players without $spell:138372 (excluding tanks)",
-	AnnounceVitaSoaker		= "Announce next $spell:138297 soaker to chat in RAID warnings (Requires Raid leader)"
+	SetIconsOnVita			= "Set icons on $spell:138297 debuffed player and furthest player from them"
 })
 
 L:SetMiscLocalization({
 	Defeat						= "Wait!",
-	NoSensitivity				= "Vita Soak Order",
-	VitaSoakerOptionConflict	= "Warning: You enabled the Vita Soaker warnings but disabled the Vita Soaker InfoFrame. The warnings will not work without the InfoFrame!",
-	VitaChatMessage				= "Next vita soaker: %s"
+	BigWigsRecommendation		= "If you need a vita soaker list, it's recommended you use BigWigs and BigWigs Ra-den assist for this boss"
 })
 
 -------------

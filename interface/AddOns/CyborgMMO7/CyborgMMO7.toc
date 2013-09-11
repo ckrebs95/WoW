@@ -1,0 +1,18 @@
+## Interface: 50001
+## Title: Cyborg MMO7 Addon
+## Version: 2.0.50001
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariablesPerCharacter: CyborgMMO7SaveData
+OptionView.lua
+CallbackFactory.lua
+WowObjects.lua
+RatPageModel.lua
+RatPageController.lua
+RatPageView.lua
+CyborgMMO7.lua
+RatPage.xml
+RatQuickPage.xml
+MainPage.xml
+OpenButtonPage.xml
+OptionPage.xml

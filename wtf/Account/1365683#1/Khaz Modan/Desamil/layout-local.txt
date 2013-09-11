@@ -7,9 +7,9 @@ Y: 241
 W: 32
 H: 32
 Frame: Recount_MainWindow
-FrameLevel: 40
+FrameLevel: 38
 Anchor: BOTTOMLEFT
-X: 32
-Y: -7
-W: 278
-H: 102
+X: 35
+Y: 4
+W: 280
+H: 115

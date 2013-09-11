@@ -1,7 +1,7 @@
-local mod	= DBM:NewMod("Bronjahm", "DBM-Party-WotLK", 14)
+local mod	= DBM:NewMod(615, "DBM-Party-WotLK", 14, 280)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 47 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 79 $"):sub(12, -3))
 mod:SetCreatureID(36497)
 mod:SetModelID(30226)
 
@@ -15,7 +15,7 @@ mod:RegisterEvents(
 
 local warnSoulstormSoon		= mod:NewSoonAnnounce(68872, 2)
 local warnCorruptSoul		= mod:NewTargetAnnounce(68839, 3)
-local specwarnSoulstorm		= mod:NewSpecialWarning("specwarnSoulstorm")
+local specwarnSoulstorm		= mod:NewSpecialWarningSpell(68872, nil, nil, nil, 2)
 local timerSoulstormCast	= mod:NewCastTimer(4, 68872)
 
 local warned_preStorm = false

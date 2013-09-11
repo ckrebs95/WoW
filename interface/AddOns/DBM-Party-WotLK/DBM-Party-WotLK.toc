@@ -1,9 +1,9 @@
-﻿## Interface: 50300
+﻿## Interface: 50400
 ## X-Min-Interface: 50001
 ## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Party-WotLK|r
 ## Title-frFR:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Groupe-WotLK|r
 ## Title-deDE:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Gruppe-WotLK|r
-## Title-zhTW:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0隊伍-巫妖王之怒|r
+## Title-zhTW:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0隊伍首領-巫妖王之怒|r
 ## Title-zhCN:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0队伍-WotLK|r
 ## Title-ruRU:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Групповые подземелья-WotLK|r
 ## Title-koKR:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf05인던전-리치왕의 분노|r
@@ -28,10 +28,10 @@
 ## X-DBM-Mod-Name-frFR: Groupe-WotLK
 ## X-DBM-Mod-Name-deDE: Gruppe (WotLK)
 ## X-DBM-Mod-Name-ruRU: Групповые подземелья-WotLK
-## X-DBM-Mod-Name-zhTW: 隊伍首領-巫妖王之怒
+## X-DBM-Mod-Name-zhTW: 隊伍首領 (巫妖王之怒)
 ## X-DBM-Mod-Name-zhCN: 队伍首领-WotLK
 ## X-DBM-Mod-Name-esES: Mazmorras-WotLK
-## X-DBM-Mod-Name-koKR: 5인 던전 (리치왕의 분노)
+## X-DBM-Mod-Name-koKR: 5인 던전(리치왕의 분노)
 ## X-DBM-Mod-Name-esMX: Mazmorras-WotLK
 ## X-DBM-Mod-Sort: 225
 ## X-DBM-Mod-MapID: 619,601,595,600,604,602,599,576,578,574,575,608,658,632,668,650
