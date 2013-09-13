@@ -3511,6 +3511,9 @@ function Nx.Quest:ScanBlizzQuestDataTimer()
 	local scanCnt = 0
 
 	while scanCnt < 1000 do
+		if InCombatLockdown() then
+			return
+		end
 		if mapId ~= curMapId then
 			Map:SetCurrentMap (mapId)			-- Triggers WORLD_MAP_UPDATE, which calls MapChanged						
 			scanCnt = scanCnt + 1
@@ -3555,6 +3558,7 @@ function Nx.Quest:ScanBlizzQuestDataTimer()
 --	Nx.prt ("%f secs", GetTime() - tm)
 	Nx.Quest.WorldUpdate = false
 	return 0
+
 end
 
 --------

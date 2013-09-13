@@ -59,6 +59,7 @@ NxMapOptsDefaults = {
 	NXMiniAlpha = nil,
 	NXMiniShow = nil,			
 }
+
 NXMapOptsMapsDefault = 	{
 	[0] = {	-- Default map id
 		NXPlyrFollow = true,
@@ -195,9 +196,7 @@ function Nx.Map:Init()
 	NXMapAddonMinimapNames = nil
 
 	-- Emulate TomTom
-	if not Nx.db.profile.Track.EmuTomTom then
---		TomTom = {}
-	else
+	if Nx.db.profile.Track.EmuTomTom and not Nx.RealTom then
 		TomTom = {}
 		Nx.EmulateTomTom() 
 	end	
@@ -426,6 +425,23 @@ end
 
 --------
 -- Create a map
+
+function Nx.Map:Test()	
+	local arr = {}
+	for i=1,1000 do
+		local znm = GetMapNameByID(i)
+		
+		if not arr[znm] and znm then
+			arr[znm] = i
+		else
+			if znm then
+				Nx.prt("dupe " .. znm)
+			else
+				Nx.prt("no zone " .. i)
+			end
+		end
+	end
+end
 
 function Nx.Map:Create (index)
 
@@ -8503,7 +8519,7 @@ function Nx.Map:InitTables()
 			self.NxzoneToMapId[id] = mapId
 		else
 			if id ~= 0 then
-				Nx.prt ("Inst %s %d", name, id)
+--				Nx.prt ("Inst %s %d", name, id)
 			end
 		end
 	end
@@ -8666,11 +8682,12 @@ function Nx.Map:GetRealMapId()
 	local zName = GetRealZoneText()	
 	if zName == "Shrine of Seven Stars" then zName = "Vale of Eternal Blossoms" end
 	if zName == "Shrine of Two Moons" then zName = "Vale of Eternal Blossoms" end	
-	if zName == "Hall of Blackhand" then zName = "Blackrock Spire" end
+	if zName == "Hall of Blackhand" then zName = "Blackrock Spire" end	
+	if zName == "Proving Grounds" then zName = "Arena of Annihilation" end
 	local mapId = Nx.MapNameToId[zName] or 9000		
 	if GetCurrentMapAreaID() == 874 then
 		return 12874
-	end
+	end	
 	if GetCurrentMapAreaID() == 919 then
 		return 13919
 	end
@@ -9319,8 +9336,9 @@ function Nx.Map:SetTarget (typ, x1, y1, x2, y2, tex, id, name, keep, mapId)
 
 	local typ = keep and "Target" or "TargetS"
 	local zx, zy = self:GetZonePos (mapId, tar.TargetMX, tar.TargetMY)
-
---	Nx.Notes:Record (typ, name, mapId, zx, zy)
+	if Nx.Notes then
+		Nx.Notes:Record (typ, name, mapId, zx, zy)
+	end
 
 	return tar
 end
@@ -9426,7 +9444,7 @@ end
 -- Set map target at mouse click
 
 function Nx.Map:SetTargetAtClick()
-if Nx.Quest.Watch then
+if Nx.Quest and Nx.Quest.Watch then
 	Nx.Quest.Watch:ClearAutoTarget()
 end
 	local wx, wy = self:FramePosToWorldPos (self.ClickFrmX, self.ClickFrmY)

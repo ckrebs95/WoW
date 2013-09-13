@@ -114,13 +114,13 @@ Nx.ModQAction = ""
 Nx.ModPAction = ""
 
 if _G.TomTom then 
-  Nx.RealTom = false
+  Nx.RealTom = true
 end
 
 function Nx.EmulateTomTom() 
-	if _G.TomTom and Nx.RealTom then
+	if _G.TomTom and Nx.RealTom then		
 		return
-	end
+	end	
 	local tom = {}	
 	_G.TomTom = tom
 	tom["version"] = "v40200"	

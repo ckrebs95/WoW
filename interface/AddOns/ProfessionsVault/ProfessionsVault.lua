@@ -10,7 +10,7 @@ local PVLDB
 local minimapIcon = LibStub("LibDBIcon-1.0")
 vars.svnrev = vars.svnrev or {}
 local svnrev = vars.svnrev
-svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 493 $"):match("%d+"))
+svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 498 $"):match("%d+"))
 local DB_VERSION_MAJOR = 1
 local DB_VERSION_MINOR = 4
 local _G = _G
@@ -18,6 +18,44 @@ local bit, date, math, format, string, table, type, tonumber, pairs, ipairs, unp
       bit, date, math, format, string, table, type, tonumber, pairs, ipairs, unpack, strtrim, strsplit, time, wipe, select, getglobal, mod, ceil
 local GetItemInfo, GetSpellInfo, GetTime, UnitIsInMyGuild, InCombatLockdown, GetActionInfo = 
       GetItemInfo, GetSpellInfo, GetTime, UnitIsInMyGuild, InCombatLockdown, GetActionInfo
+
+vars.stub = true
+if vars.stub then
+
+  local msg = "Blizzard Patch 5.4 has seriously broken the operation of TradeSkill hyperlinks, breaking addons such as ProfessionsVault. Please add your voice and help complain on this Blizzard Bug Report Forum thread:"
+  local url = "http://us.battle.net/wow/en/forum/topic/9948634812"
+
+  DEFAULT_CHAT_FRAME:AddMessage("\124cFF00FF00"..addonName.."\124r: "..msg.."\n  "..url)
+
+  StaticPopupDialogs["PROFESSIONSVAULT_STUB"] = {
+    preferredIndex = 3, -- reduce the chance of UI taint
+    text = msg.."\n(Press Control+C to copy URL)",
+    button1 = OKAY,
+    timeout = 0,
+    whileDead = true,
+    hideOnEscape = true,
+    enterClicksFirstButton = true,
+    --showAlert = true,
+    hasEditBox = true,
+    editBoxWidth = 350,
+    OnShow = function (self, data)
+      self.editBox:SetText(url)
+      self.editBox:HighlightText()
+      self.editBox:SetScript("OnEnterPressed",function() StaticPopup_Hide("PROFESSIONSVAULT_STUB") end)
+      self.editBox:SetScript("OnEscapePressed",function() StaticPopup_Hide("PROFESSIONSVAULT_STUB") end)
+    end,
+    OnHide = function (self, data)
+      self.editBox:SetScript("OnEnterPressed", nil)
+      self.editBox:SetScript("OnEscapePressed", nil)
+    end,
+    EditBoxOnTextChanged = function (self, data)
+      self:SetText(url)
+      self:HighlightText()
+    end,
+  }
+  StaticPopup_Show("PROFESSIONSVAULT_STUB")
+  return
+end
 
 local defaults = {
   profile = {

@@ -117,7 +117,7 @@ RecountDB = {
 					false, -- [8]
 				},
 			},
-			["DetailWindowY"] = -227.9999542236328,
+			["GraphWindowX"] = 0,
 			["CurDataSet"] = "LastFightData",
 			["Colors"] = {
 				["Bar"] = {
@@ -129,7 +129,7 @@ RecountDB = {
 					},
 				},
 			},
-			["GraphWindowX"] = 0,
+			["DetailWindowY"] = -227.9999542236328,
 			["MainWindowMode"] = 2,
 			["HideCollect"] = true,
 			["MainWindowWidth"] = 397.0000017136335,
@@ -196,8 +196,6 @@ RecountDB = {
 				},
 			},
 			["MainWindowMode"] = 2,
-			["LastInstanceName"] = "Throne of Thunder",
-			["CurDataSet"] = "LastFightData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -209,10 +207,12 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["MainWindowHeight"] = 102.000015646219,
-			["GraphWindowX"] = 0,
-			["MainWindowWidth"] = 283.0000263005491,
 			["DetailWindowX"] = 0,
+			["GraphWindowX"] = 0,
+			["LastInstanceName"] = "Throne of Thunder",
+			["CurDataSet"] = "LastFightData",
+			["MainWindowWidth"] = 283.0000263005491,
+			["MainWindowHeight"] = 102.000015646219,
 		},
 		["Desamil - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -225,6 +225,8 @@ RecountDB = {
 				},
 			},
 			["MainWindowMode"] = 2,
+			["LastInstanceName"] = "Auchindoun: Auchenai Crypts",
+			["CurDataSet"] = "OverallData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -238,8 +240,6 @@ RecountDB = {
 			["DetailWindowY"] = 0,
 			["DetailWindowX"] = 0,
 			["GraphWindowX"] = 0,
-			["LastInstanceName"] = "Auchindoun: Auchenai Crypts",
-			["CurDataSet"] = "OverallData",
 			["MainWindowWidth"] = 280.0000610351563,
 			["MainWindowHeight"] = 115,
 		},

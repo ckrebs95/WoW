@@ -305,6 +305,7 @@ if GetLocale() == "deDE" then		-- German
 		["Throne of the Four Winds"] = "Thron der Vier Winde",
 		["Throne of the Tides"] = "Thron der Gezeiten",
 		["Thunder Bluff"] = "Donnerfels",
+		["Timeless Isle"] = "Zeitlose Insel",
 		["Tirisfal Glades"] = "Tirisfal",
 		["Tol Barad Peninsula"] = "Halbinsel von Tol Barad",
 		["Townlong Steppes"] = "Tonlongsteppe",

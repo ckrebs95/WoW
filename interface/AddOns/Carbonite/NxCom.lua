@@ -1225,7 +1225,7 @@ function Nx.Com:SendChatMessageFixed (msg, typ, num)
 
 	local ok = pcall (SendChatMessage, msg, typ, nil, num)
 	if not ok then
-		Nx.prtStrHex (typ .. " SendChat failed", msg)
+--		Nx.prtStrHex (typ .. " SendChat failed", msg)
 	end
 end
 

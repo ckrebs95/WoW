@@ -42,7 +42,7 @@ local defaults = {
 local notesoptions
 local function notesConfig()
 	if not notesoptions then
-		noteopts = {
+		notesoptions = {
 			type = "group",
 			name = "Note Options",
 			args = {	
@@ -258,16 +258,17 @@ function Nx.Notes:SetRecord (on)
 		if self.CurFav then
 			self.Recording = self.CurFav
 			self.RecAlphaAnim = 1000
-			FavRec = Nx:ScheduleTimer(self.RecordAnimTimer,0,self)
+			self.FavRec = Nx:ScheduleRepeatingTimer(self.RecordAnimTimer,0.1,self)
 			but:SetPressed (true)
 		else
 			Nx.prt ("Select a favorite before recording")
 			but:SetPressed (false)
 		end
 	else
+		Nx:CancelTimer(self.FavRec)
 		self.Recording = nil
 		but:SetAlpha (1)
-		but:SetPressed (false)
+		but:SetPressed (false)		
 	end
 end
 
@@ -276,8 +277,7 @@ function Nx.Notes:RecordAnimTimer()
 	if self.Recording then
 		local a = (self.RecAlphaAnim - 35) % 1000
 		self.RecAlphaAnim = a
-		self.RecBut:SetAlpha (abs (a - 500) / 1000 + .5)
-		return .05
+		self.RecBut:SetAlpha (abs (a - 500) / 1000 + .5)		
 	end
 end
 
@@ -798,7 +798,7 @@ function Nx.Notes:UpdateItems (selectI)
 							local name, data = a,b
 							list:ItemAdd(item)
 							local icon, id, x, y = self:ParseItemNote (data)				
-							icon = self:GetIconInline (icon)
+							icon = self:GetIconInline (icon)							
 							id = Nx.MapIdToName[Nx.AIdToId[id]] or "?"
 							list:ItemSet (2, "Note:")
 							list:ItemSet (3, format ("%s %s", icon, name))
@@ -821,20 +821,23 @@ function Nx.Notes:UpdateItems (selectI)
 				elseif typ == "N" then			-- Note
 
 					local icon, id, x, y = self:ParseItemNote (data)				
-					icon = self:GetIconInline (icon)
-					id = Nx.MapIdToName[Nx.AIdToId[id]] or "?"
-
+					icon = self:GetIconInline (icon)					
+					local newid = Nx.MapIdToName[Nx.AIdToId[id]] or "?"					
+					if newid == "?" then
+						newid = Nx.MapIdToName[id] or "?"
+					end
 					list:ItemSet (2, "Note:")
 					list:ItemSet (3, format ("%s %s", icon, name))
-					list:ItemSet (4, format ("|cff80ef80(%s %.1f %.1f)", id, x, y))
+					list:ItemSet (4, format ("|cff80ef80(%s %.1f %.1f)", newid, x, y))
 
 				elseif typ == "T" or typ == "t" then			-- Target
 
-					local typName = typ == "T" and "Target 1st" or "Target"
-
+					local typName = typ == "T" and "Target 1st" or "Target"					
 					local mapId, x, y = self:ParseItemTarget (data)
 					local mapName = Nx.MapIdToName[Nx.AIdToId[mapId]] or "?"
-
+					if mapName == "?" then
+						mapName = Nx.MapIdToName[mapId] or "?"
+					end
 					list:ItemSet (2, format ("%s:", typName))
 					list:ItemSet (3, format ("%s", name))
 					list:ItemSet (4, format ("|cff80ef80(%s %.1f %.1f)", mapName, x, y))
@@ -1033,7 +1036,8 @@ function Nx.Notes:CreateItem (typ, flags, name, p1, p2, p3, p4)
 	elseif typ == "N" then	-- Note		
 		return format ("N~%c~%s~%s|%s|%s|%s", flags, name, p1, p2, p3,p4)
 	elseif typ == "T" or typ == "t" then	-- Target
-		return format ("%s~%c~%s~%s|%s|%s", typ, flags, name, p2, p3, p4)
+		Nx.prt(p1)
+		return format ("%s~%c~%s~%s|%s|%s", typ, flags, name, p1, p2, p3)
 	end
 end
 
@@ -1049,18 +1053,19 @@ function Nx.Notes:ParseItem (item)
 end
 
 function Nx.Notes:ParseItemNote (data)
-	local iconI,zone,x,y = Nx.Split("|",data)
-	return tonumber(iconI), tonumber(zone), tonumber(x), tonumber(y)
+	local iconI,zone,x,y, dLvl = Nx.Split("|",data)
+	if not dLvl then
+		dLvl = 0
+	end
+	return tonumber(iconI), tonumber(zone), tonumber(x), tonumber(y), tonumber(dLvl)
 end
 
 function Nx.Notes:ParseItemTarget (data)
-
-	local zone = tonumber (strsub (data, 1, 2), 16)
-	local id = Nx.NxzoneToMapId[zone]
-	local x = tonumber (strsub (data, 3, 5), 16) / 4090 * 100
-	local y = tonumber (strsub (data, 6, 8), 16) / 4090 * 100
-	local dLvl = (strbyte (data, 9) or 35) - 35
-	return id, x, y + dLvl * 100
+	local zone, x, y, dLvl = Nx.Split("|",data)
+	if not dLvl then 
+		dLvl = 0
+	end
+	return tonumber(zone), tonumber(x), tonumber(y), tonumber(dLvl)
 end
 
 function Nx.Notes:GetItemTypeName (index)
@@ -1126,7 +1131,6 @@ end
 -------------------------------------------------------------------------------
 
 function Nx.Notes:Record (typ, name, id, x, y)
-
 	if self.InUpdateTarget then
 		return
 	end
@@ -1160,7 +1164,7 @@ function Nx.Notes:Record (typ, name, id, x, y)
 	elseif typ == "Target" then
 
 		local fav = self.Recording
-		if fav then
+		if fav then			
 			local s = self:CreateItem ("t", 0, name, self.RecId, self.RecX, self.RecY)
 			self:AddItem (fav, self.CurItemI, s)
 			self:Update()
@@ -1289,8 +1293,7 @@ function Nx.Notes:UpdateTargets()
 		for n = self.CurItemI, #self.CurFav do
 
 			local str = self.CurFav[n]
-			local typ, flags, name, data = self:ParseItem (str)
-
+			local typ, flags, name, data = self:ParseItem (str)			
 			if typ == "T" then
 
 				if n ~= self.CurItemI then		-- Another 1st target?
