@@ -52,8 +52,6 @@ RecountDB = {
 				},
 			},
 			["MainWindowMode"] = 2,
-			["MainWindowHeight"] = 140.9999389648438,
-			["CurDataSet"] = "OverallData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -66,8 +64,10 @@ RecountDB = {
 			},
 			["DetailWindowY"] = 0,
 			["DetailWindowX"] = 0,
-			["MainWindowWidth"] = 329,
+			["CurDataSet"] = "OverallData",
 			["GraphWindowX"] = 0,
+			["MainWindowWidth"] = 329,
+			["MainWindowHeight"] = 140.9999389648438,
 		},
 		["Datinnite - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -117,8 +117,8 @@ RecountDB = {
 					false, -- [8]
 				},
 			},
-			["MainWindowHeight"] = 137.9999235570442,
-			["CurDataSet"] = "LastFightData",
+			["DetailWindowY"] = -227.9999542236328,
+			["CurDataSet"] = "CurrentFightData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -129,11 +129,11 @@ RecountDB = {
 					},
 				},
 			},
-			["GraphWindowX"] = 0,
-			["MainWindowMode"] = 2,
 			["HideCollect"] = true,
+			["MainWindowMode"] = 2,
+			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 397.0000017136335,
-			["DetailWindowY"] = -227.9999542236328,
+			["MainWindowHeight"] = 137.9999235570442,
 		},
 		["Dethamett - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -196,6 +196,8 @@ RecountDB = {
 				},
 			},
 			["MainWindowMode"] = 2,
+			["LastInstanceName"] = "Throne of Thunder",
+			["CurDataSet"] = "CurrentFightData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -207,12 +209,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["DetailWindowX"] = 0,
-			["GraphWindowX"] = 0,
-			["LastInstanceName"] = "Throne of Thunder",
-			["CurDataSet"] = "LastFightData",
-			["MainWindowWidth"] = 283.0000263005491,
 			["MainWindowHeight"] = 102.000015646219,
+			["GraphWindowX"] = 0,
+			["MainWindowWidth"] = 283.0000263005491,
+			["DetailWindowX"] = 0,
 		},
 		["Desamil - Khaz Modan"] = {
 			["GraphWindowY"] = 0,

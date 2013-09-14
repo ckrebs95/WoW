@@ -325,6 +325,11 @@ Bartender4DB = {
 							},
 						}, -- [1]
 						{
+							["skin"] = {
+								["Zoom"] = true,
+							},
+							["padding"] = 3,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 105.056391189945,
 								["x"] = -387.1776502690467,
@@ -332,13 +337,13 @@ Bartender4DB = {
 								["scale"] = 0.8500000238418579,
 								["parent"] = "SUI_ActionBarPlate",
 							},
-							["padding"] = 3,
-							["version"] = 3,
+						}, -- [2]
+						{
 							["skin"] = {
 								["Zoom"] = true,
 							},
-						}, -- [2]
-						{
+							["padding"] = 3,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 139.6618623022892,
 								["x"] = 12.32238740853973,
@@ -346,24 +351,19 @@ Bartender4DB = {
 								["scale"] = 0.8500000238418579,
 								["parent"] = "SUI_ActionBarPlate",
 							},
-							["padding"] = 3,
-							["version"] = 3,
+						}, -- [3]
+						{
 							["skin"] = {
 								["Zoom"] = true,
 							},
-						}, -- [3]
-						{
+							["padding"] = 3,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 105.0563830837131,
 								["x"] = 13.79409000357339,
 								["point"] = "BOTTOM",
 								["scale"] = 0.8500000238418579,
 								["parent"] = "SUI_ActionBarPlate",
-							},
-							["padding"] = 3,
-							["version"] = 3,
-							["skin"] = {
-								["Zoom"] = true,
 							},
 						}, -- [4]
 						{
@@ -372,6 +372,7 @@ Bartender4DB = {
 								["Zoom"] = true,
 							},
 							["padding"] = 4,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 69.20638275146484,
 								["x"] = 13.34736299514748,
@@ -379,7 +380,6 @@ Bartender4DB = {
 								["scale"] = 0.8500000238418579,
 								["parent"] = "SUI_ActionBarPlate",
 							},
-							["version"] = 3,
 						}, -- [5]
 						{
 							["fadeout"] = true,
@@ -387,6 +387,7 @@ Bartender4DB = {
 								["Zoom"] = true,
 							},
 							["padding"] = 4,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 69.35638202657083,
 								["x"] = -396.5277521393655,
@@ -394,7 +395,6 @@ Bartender4DB = {
 								["scale"] = 0.8500000238418579,
 								["parent"] = "SUI_ActionBarPlate",
 							},
-							["version"] = 3,
 						}, -- [6]
 						{
 						}, -- [7]
@@ -481,10 +481,11 @@ Bartender4DB = {
 					},
 					["actionbars"] = {
 						{
+							["version"] = 3,
 							["skin"] = {
 								["Zoom"] = true,
 							},
-							["version"] = 3,
+							["padding"] = 3,
 							["position"] = {
 								["y"] = 142.6084505027447,
 								["x"] = -386.4975134259803,
@@ -492,7 +493,6 @@ Bartender4DB = {
 								["scale"] = 0.8500000238418579,
 								["parent"] = "SUI_ActionBarPlate",
 							},
-							["padding"] = 3,
 							["states"] = {
 								["stance"] = {
 									["DRUID"] = {
@@ -505,6 +505,7 @@ Bartender4DB = {
 							["skin"] = {
 								["Zoom"] = true,
 							},
+							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 107.7584624951996,
@@ -513,12 +514,12 @@ Bartender4DB = {
 								["scale"] = 0.8500000238418579,
 								["parent"] = "SUI_ActionBarPlate",
 							},
-							["padding"] = 3,
 						}, -- [2]
 						{
 							["skin"] = {
 								["Zoom"] = true,
 							},
+							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 142.6084375327737,
@@ -527,12 +528,12 @@ Bartender4DB = {
 								["scale"] = 0.8500000238418579,
 								["parent"] = "SUI_ActionBarPlate",
 							},
-							["padding"] = 3,
 						}, -- [3]
 						{
 							["skin"] = {
 								["Zoom"] = true,
 							},
+							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 107.758443040243,
@@ -541,13 +542,13 @@ Bartender4DB = {
 								["scale"] = 0.8500000238418579,
 								["parent"] = "SUI_ActionBarPlate",
 							},
-							["padding"] = 3,
 						}, -- [4]
 						{
 							["fadeout"] = true,
 							["skin"] = {
 								["Zoom"] = true,
 							},
+							["padding"] = 4,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 72.05847446381267,
@@ -556,13 +557,13 @@ Bartender4DB = {
 								["scale"] = 0.8500000238418579,
 								["parent"] = "SUI_ActionBarPlate",
 							},
-							["padding"] = 4,
 						}, -- [5]
 						{
 							["fadeout"] = true,
 							["skin"] = {
 								["Zoom"] = true,
 							},
+							["padding"] = 4,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 72.05847446381267,
@@ -571,9 +572,9 @@ Bartender4DB = {
 								["scale"] = 0.8500000238418579,
 								["parent"] = "SUI_ActionBarPlate",
 							},
-							["padding"] = 4,
 						}, -- [6]
 						{
+							["padding"] = 3,
 							["skin"] = {
 								["Zoom"] = true,
 							},
@@ -581,9 +582,9 @@ Bartender4DB = {
 								["parent"] = "SUI_ActionBarPlate",
 								["scale"] = 0.85,
 							},
-							["padding"] = 3,
 						}, -- [7]
 						{
+							["padding"] = 3,
 							["skin"] = {
 								["Zoom"] = true,
 							},
@@ -591,9 +592,9 @@ Bartender4DB = {
 								["parent"] = "SUI_ActionBarPlate",
 								["scale"] = 0.85,
 							},
-							["padding"] = 3,
 						}, -- [8]
 						{
+							["padding"] = 3,
 							["skin"] = {
 								["Zoom"] = true,
 							},
@@ -601,9 +602,9 @@ Bartender4DB = {
 								["parent"] = "SUI_ActionBarPlate",
 								["scale"] = 0.85,
 							},
-							["padding"] = 3,
 						}, -- [9]
 						{
+							["padding"] = 3,
 							["skin"] = {
 								["Zoom"] = true,
 							},
@@ -611,7 +612,6 @@ Bartender4DB = {
 								["parent"] = "SUI_ActionBarPlate",
 								["scale"] = 0.85,
 							},
-							["padding"] = 3,
 						}, -- [10]
 					},
 				},
@@ -920,11 +920,10 @@ Bartender4DB = {
 				["Doyjen - Khaz Modan"] = {
 					["actionbars"] = {
 						{
-							["version"] = 3,
 							["skin"] = {
 								["Zoom"] = true,
 							},
-							["padding"] = 3,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 139.9063786781848,
 								["x"] = -387.1776502690467,
@@ -932,6 +931,7 @@ Bartender4DB = {
 								["scale"] = 0.8500000238418579,
 								["parent"] = "SUI_ActionBarPlate",
 							},
+							["padding"] = 3,
 							["states"] = {
 								["stance"] = {
 									["DRUID"] = {
@@ -944,7 +944,6 @@ Bartender4DB = {
 							["skin"] = {
 								["Zoom"] = true,
 							},
-							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 105.056391189945,
@@ -953,12 +952,12 @@ Bartender4DB = {
 								["scale"] = 0.8500000238418579,
 								["parent"] = "SUI_ActionBarPlate",
 							},
+							["padding"] = 3,
 						}, -- [2]
 						{
 							["skin"] = {
 								["Zoom"] = true,
 							},
-							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 139.6618623022892,
@@ -967,12 +966,12 @@ Bartender4DB = {
 								["scale"] = 0.8500000238418579,
 								["parent"] = "SUI_ActionBarPlate",
 							},
+							["padding"] = 3,
 						}, -- [3]
 						{
 							["skin"] = {
 								["Zoom"] = true,
 							},
-							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 105.0563830837131,
@@ -981,13 +980,13 @@ Bartender4DB = {
 								["scale"] = 0.8500000238418579,
 								["parent"] = "SUI_ActionBarPlate",
 							},
+							["padding"] = 3,
 						}, -- [4]
 						{
 							["fadeout"] = true,
 							["skin"] = {
 								["Zoom"] = true,
 							},
-							["padding"] = 4,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 69.20638275146484,
@@ -996,13 +995,13 @@ Bartender4DB = {
 								["scale"] = 0.800000011920929,
 								["parent"] = "SUI_ActionBarPlate",
 							},
+							["padding"] = 4,
 						}, -- [5]
 						{
 							["fadeout"] = true,
 							["skin"] = {
 								["Zoom"] = true,
 							},
-							["padding"] = 4,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 69.20638275146484,
@@ -1011,6 +1010,7 @@ Bartender4DB = {
 								["scale"] = 0.800000011920929,
 								["parent"] = "SUI_ActionBarPlate",
 							},
+							["padding"] = 4,
 						}, -- [6]
 						{
 						}, -- [7]
@@ -1097,13 +1097,6 @@ Bartender4DB = {
 					["BlizzardArt"] = {
 						["enabled"] = false,
 					},
-					["version"] = 3,
-					["position"] = {
-						["y"] = 198.45849609375,
-						["x"] = 16.77996826171875,
-						["point"] = "BOTTOM",
-						["parent"] = "SUI_ActionBarPlate",
-					},
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -1114,6 +1107,13 @@ Bartender4DB = {
 							["parent"] = "SUI_ActionBarPlate",
 							["scale"] = 0.85,
 						},
+					},
+					["version"] = 3,
+					["position"] = {
+						["y"] = 198.45849609375,
+						["x"] = 16.77996826171875,
+						["point"] = "BOTTOM",
+						["parent"] = "SUI_ActionBarPlate",
 					},
 				},
 				["Darvina - Khaz Modan"] = {
@@ -1133,12 +1133,12 @@ Bartender4DB = {
 					},
 				},
 				["Doyjen - Khaz Modan"] = {
-					["version"] = 3,
 					["position"] = {
 						["y"] = 223.0000081211327,
 						["x"] = -31.49990034848599,
 						["point"] = "BOTTOM",
 					},
+					["version"] = 3,
 				},
 				["Dreyan - Khaz Modan"] = {
 					["version"] = 3,
@@ -1163,9 +1163,7 @@ Bartender4DB = {
 					},
 				},
 				["Desamil - Khaz Modan"] = {
-					["BlizzardArt"] = {
-						["enabled"] = false,
-					},
+					["version"] = 3,
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -1177,7 +1175,9 @@ Bartender4DB = {
 							["scale"] = 0.85,
 						},
 					},
-					["version"] = 3,
+					["BlizzardArt"] = {
+						["enabled"] = false,
+					},
 					["position"] = {
 						["y"] = 223.0000081211327,
 						["x"] = -31.49990034848599,
@@ -1259,6 +1259,7 @@ Bartender4DB = {
 					},
 				},
 				["SpartanUI Standard"] = {
+					["version"] = 3,
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -1270,16 +1271,15 @@ Bartender4DB = {
 							["scale"] = 0.85,
 						},
 					},
-					["version"] = 3,
+					["BlizzardArt"] = {
+						["enabled"] = false,
+					},
 					["position"] = {
 						["y"] = 4.399822634455632,
 						["x"] = -125.1999774515625,
 						["point"] = "TOP",
 						["parent"] = "SUI_ActionBarPlate",
 						["scale"] = 0.800000011920929,
-					},
-					["BlizzardArt"] = {
-						["enabled"] = false,
 					},
 				},
 				["Default"] = {
@@ -1338,13 +1338,13 @@ Bartender4DB = {
 					},
 				},
 				["Doyjen - Khaz Modan"] = {
-					["version"] = 3,
 					["position"] = {
 						["y"] = 0,
 						["x"] = -125.1999950826169,
 						["point"] = "TOP",
 						["parent"] = "SUI_ActionBarPlate",
 					},
+					["version"] = 3,
 				},
 				["Khaz Modan"] = {
 					["version"] = 3,
@@ -1402,7 +1402,6 @@ Bartender4DB = {
 					["BlizzardArt"] = {
 						["enabled"] = false,
 					},
-					["version"] = 3,
 					["position"] = {
 						["y"] = 16.00002741813619,
 						["x"] = -464.4000321328643,
@@ -1420,6 +1419,7 @@ Bartender4DB = {
 							["scale"] = 0.85,
 						},
 					},
+					["version"] = 3,
 				},
 				["Default"] = {
 					["enabled"] = true,
@@ -1480,13 +1480,13 @@ Bartender4DB = {
 				},
 				["Doyjen - Khaz Modan"] = {
 					["enabled"] = true,
-					["version"] = 3,
 					["position"] = {
 						["y"] = 16.00002741813619,
 						["x"] = -464.4000321328643,
 						["point"] = "BOTTOM",
 						["scale"] = 0.9000000357627869,
 					},
+					["version"] = 3,
 				},
 				["Darvina - Khaz Modan"] = {
 					["enabled"] = true,
@@ -1521,12 +1521,12 @@ Bartender4DB = {
 					},
 				},
 				["Doyjen - Khaz Modan"] = {
-					["version"] = 3,
 					["position"] = {
 						["y"] = 99.99998897314089,
 						["x"] = -224.0000309944148,
 						["point"] = "BOTTOMLEFT",
 					},
+					["version"] = 3,
 				},
 				["Datinnite - Khaz Modan"] = {
 					["enabled"] = true,
@@ -1549,11 +1549,6 @@ Bartender4DB = {
 					["BlizzardArt"] = {
 						["enabled"] = false,
 					},
-					["position"] = {
-						["y"] = 99.99998897314089,
-						["x"] = -224.0000309944148,
-						["point"] = "BOTTOMLEFT",
-					},
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -1566,6 +1561,11 @@ Bartender4DB = {
 						},
 					},
 					["version"] = 3,
+					["position"] = {
+						["y"] = 99.99998897314089,
+						["x"] = -224.0000309944148,
+						["point"] = "BOTTOMLEFT",
+					},
 				},
 				["Default"] = {
 					["enabled"] = true,
@@ -1673,6 +1673,9 @@ Bartender4DB = {
 					},
 				},
 				["Dathsar - Khaz Modan"] = {
+					["keyring"] = true,
+					["padding"] = 0,
+					["version"] = 3,
 					["position"] = {
 						["growHorizontal"] = "LEFT",
 						["x"] = -6,
@@ -1681,9 +1684,6 @@ Bartender4DB = {
 						["parent"] = "SUI_ActionBarPlate",
 						["y"] = -2,
 					},
-					["padding"] = 0,
-					["version"] = 3,
-					["keyring"] = true,
 				},
 				["Dethamett - Khaz Modan"] = {
 					["version"] = 3,
@@ -1697,6 +1697,14 @@ Bartender4DB = {
 					["BlizzardArt"] = {
 						["enabled"] = false,
 					},
+					["position"] = {
+						["growHorizontal"] = "LEFT",
+						["x"] = -6,
+						["point"] = "TOPRIGHT",
+						["scale"] = 0.7,
+						["y"] = -2,
+						["parent"] = "SUI_ActionBarPlate",
+					},
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -1708,17 +1716,9 @@ Bartender4DB = {
 							["scale"] = 0.85,
 						},
 					},
-					["keyring"] = true,
-					["version"] = 3,
-					["position"] = {
-						["growHorizontal"] = "LEFT",
-						["x"] = -6,
-						["point"] = "TOPRIGHT",
-						["scale"] = 0.7,
-						["y"] = -2,
-						["parent"] = "SUI_ActionBarPlate",
-					},
 					["padding"] = 0,
+					["version"] = 3,
+					["keyring"] = true,
 				},
 				["Default"] = {
 					["onebag"] = true,
@@ -1873,6 +1873,14 @@ Bartender4DB = {
 					["BlizzardArt"] = {
 						["enabled"] = false,
 					},
+					["position"] = {
+						["growHorizontal"] = "LEFT",
+						["x"] = -353.3475124961478,
+						["point"] = "BOTTOM",
+						["scale"] = 0.8500000238418579,
+						["y"] = 170.6584901994393,
+						["parent"] = "SUI_ActionBarPlate",
+					},
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -1885,14 +1893,6 @@ Bartender4DB = {
 						},
 					},
 					["version"] = 3,
-					["position"] = {
-						["growHorizontal"] = "LEFT",
-						["x"] = -353.3475124961478,
-						["point"] = "BOTTOM",
-						["scale"] = 0.8500000238418579,
-						["y"] = 170.6584901994393,
-						["parent"] = "SUI_ActionBarPlate",
-					},
 					["padding"] = 1,
 				},
 				["Default"] = {
@@ -1944,6 +1944,8 @@ Bartender4DB = {
 					["BlizzardArt"] = {
 						["enabled"] = false,
 					},
+					["rows"] = 2,
+					["padding"] = 1,
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -1955,13 +1957,9 @@ Bartender4DB = {
 							["scale"] = 0.85,
 						},
 					},
-					["padding"] = 1,
-					["rows"] = 2,
 				},
 				["Doyjen - Khaz Modan"] = {
 					["rows"] = 2,
-					["padding"] = 1,
-					["version"] = 3,
 					["position"] = {
 						["growHorizontal"] = "LEFT",
 						["x"] = -382.0777104455628,
@@ -1970,6 +1968,8 @@ Bartender4DB = {
 						["parent"] = "SUI_ActionBarPlate",
 						["y"] = 66.78070141233275,
 					},
+					["padding"] = 1,
+					["version"] = 3,
 				},
 				["Khaz Modan"] = {
 					["version"] = 3,
@@ -2038,6 +2038,13 @@ Bartender4DB = {
 					["BlizzardArt"] = {
 						["enabled"] = false,
 					},
+					["position"] = {
+						["y"] = 174.0888659670454,
+						["x"] = -17.42508028325028,
+						["point"] = "BOTTOM",
+						["scale"] = 0.8500000238418579,
+						["parent"] = "SUI_ActionBarPlate",
+					},
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -2050,13 +2057,6 @@ Bartender4DB = {
 						},
 					},
 					["version"] = 3,
-					["position"] = {
-						["y"] = 174.0888659670454,
-						["x"] = -17.42508028325028,
-						["point"] = "BOTTOM",
-						["scale"] = 0.8500000238418579,
-						["parent"] = "SUI_ActionBarPlate",
-					},
 					["padding"] = 3,
 				},
 				["Default"] = {
@@ -2143,17 +2143,17 @@ Bartender4DB = {
 					},
 				},
 				["Darvina - Khaz Modan"] = {
-					["skin"] = {
-						["Zoom"] = true,
-					},
-					["padding"] = 1,
-					["version"] = 3,
 					["position"] = {
 						["y"] = 167.7500022729591,
 						["x"] = -352.588480453774,
 						["point"] = "BOTTOM",
 						["scale"] = 0.699999988079071,
 						["parent"] = "SUI_ActionBarPlate",
+					},
+					["padding"] = 1,
+					["version"] = 3,
+					["skin"] = {
+						["Zoom"] = true,
 					},
 				},
 				["Deyndis - Khaz Modan"] = {
@@ -2173,17 +2173,17 @@ Bartender4DB = {
 					},
 				},
 				["Dathsar - Khaz Modan"] = {
+					["skin"] = {
+						["Zoom"] = true,
+					},
+					["padding"] = 1,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 2.450006951711885,
 						["x"] = 83.06155797855473,
 						["point"] = "TOPLEFT",
 						["scale"] = 0.699999988079071,
 						["parent"] = "SUI_ActionBarPlate",
-					},
-					["padding"] = 1,
-					["version"] = 3,
-					["skin"] = {
-						["Zoom"] = true,
 					},
 				},
 				["Dethamett - Khaz Modan"] = {
@@ -2201,6 +2201,15 @@ Bartender4DB = {
 					["skin"] = {
 						["Zoom"] = true,
 					},
+					["version"] = 3,
+					["padding"] = 1,
+					["position"] = {
+						["y"] = 165.8584581739824,
+						["x"] = -353.4855819449167,
+						["point"] = "BOTTOM",
+						["scale"] = 0.699999988079071,
+						["parent"] = "SUI_ActionBarPlate",
+					},
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -2212,15 +2221,6 @@ Bartender4DB = {
 							["scale"] = 0.85,
 						},
 					},
-					["version"] = 3,
-					["position"] = {
-						["y"] = 165.8584581739824,
-						["x"] = -353.4855819449167,
-						["point"] = "BOTTOM",
-						["scale"] = 0.699999988079071,
-						["parent"] = "SUI_ActionBarPlate",
-					},
-					["padding"] = 1,
 				},
 				["Default"] = {
 					["version"] = 3,
@@ -2237,6 +2237,7 @@ Bartender4DB = {
 					["skin"] = {
 						["Zoom"] = true,
 					},
+					["padding"] = 1,
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -2248,7 +2249,6 @@ Bartender4DB = {
 							["scale"] = 0.85,
 						},
 					},
-					["padding"] = 1,
 					["position"] = {
 						["y"] = 167.7500022729591,
 						["x"] = -352.588480453774,
@@ -2265,6 +2265,7 @@ Bartender4DB = {
 					["skin"] = {
 						["Zoom"] = true,
 					},
+					["padding"] = 1,
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -2276,7 +2277,6 @@ Bartender4DB = {
 							["scale"] = 0.85,
 						},
 					},
-					["padding"] = 1,
 					["position"] = {
 						["y"] = 167.7500022729591,
 						["x"] = -352.588480453774,
@@ -2287,11 +2287,6 @@ Bartender4DB = {
 					["version"] = 3,
 				},
 				["Doyjen - Khaz Modan"] = {
-					["skin"] = {
-						["Zoom"] = true,
-					},
-					["padding"] = 1,
-					["version"] = 3,
 					["position"] = {
 						["y"] = 167.7500022729591,
 						["x"] = -352.588480453774,
@@ -2299,6 +2294,11 @@ Bartender4DB = {
 						["scale"] = 0.699999988079071,
 						["parent"] = "SUI_ActionBarPlate",
 					},
+					["version"] = 3,
+					["skin"] = {
+						["Zoom"] = true,
+					},
+					["padding"] = 1,
 				},
 				["Khaz Modan"] = {
 					["version"] = 3,
@@ -2355,7 +2355,6 @@ Bartender4DB = {
 					["BlizzardArt"] = {
 						["enabled"] = false,
 					},
-					["version"] = 3,
 					["position"] = {
 						["y"] = 34.75906472043448,
 						["x"] = -464.4000718593634,
@@ -2373,6 +2372,7 @@ Bartender4DB = {
 							["scale"] = 0.85,
 						},
 					},
+					["version"] = 3,
 				},
 				["Default"] = {
 					["enabled"] = true,
@@ -2433,13 +2433,13 @@ Bartender4DB = {
 				},
 				["Doyjen - Khaz Modan"] = {
 					["enabled"] = true,
-					["version"] = 3,
 					["position"] = {
 						["y"] = 32.20166882380018,
 						["x"] = 335.5999572177714,
 						["point"] = "BOTTOMLEFT",
 						["scale"] = 0.9000000357627869,
 					},
+					["version"] = 3,
 				},
 				["Darvina - Khaz Modan"] = {
 					["enabled"] = true,
@@ -2504,8 +2504,8 @@ Bartender4DB = {
 			["buttonlock"] = true,
 		},
 		["Doyjen - Khaz Modan"] = {
-			["snapping"] = 1,
 			["buttonlock"] = true,
+			["snapping"] = 1,
 		},
 		["Khaz Modan"] = {
 			["focuscastmodifier"] = false,
