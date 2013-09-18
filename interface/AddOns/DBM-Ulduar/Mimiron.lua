@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Mimiron", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 73 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 99 $"):sub(12, -3))
 mod:SetCreatureID(33432)
 mod:SetModelID(28578)
 mod:SetUsedIcons(1, 2, 3, 4, 5, 6, 7, 8)
@@ -132,8 +132,9 @@ end
 function mod:CHAT_MSG_LOOT(msg)
 	-- DBM:AddMsg(msg) --> Meridium receives loot: [Magnetic Core]
 	local player, itemID = msg:match(L.LootMsg)
+	player = DBM:GetUnitFullName(player)
 	if player and itemID and tonumber(itemID) == 46029 and self:IsInCombat() then
-		lootannounce:Show(player)
+		self:SendSync("LootMsg", player)
 	end
 end
 
@@ -323,5 +324,7 @@ function mod:OnSync(event, args)
 		self:NextPhase()
 	elseif event == "Phase4" and phase == 3 then
 		self:NextPhase()
+	elseif event == "LootMsg" and args then
+		lootannounce:Show(args)
 	end
 end

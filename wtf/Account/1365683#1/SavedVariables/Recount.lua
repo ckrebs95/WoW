@@ -36,10 +36,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = -409.9998474121094,
-			["MainWindowHeight"] = 132.9999237060547,
+			["DetailWindowX"] = 619.0000610351563,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 294.0000915527344,
-			["DetailWindowX"] = 619.0000610351563,
+			["MainWindowHeight"] = 132.9999237060547,
 		},
 		["Doyjen - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -52,6 +52,8 @@ RecountDB = {
 				},
 			},
 			["MainWindowMode"] = 2,
+			["MainWindowHeight"] = 140.9999389648438,
+			["CurDataSet"] = "OverallData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -63,11 +65,9 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["DetailWindowX"] = 0,
-			["CurDataSet"] = "OverallData",
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 329,
-			["MainWindowHeight"] = 140.9999389648438,
+			["DetailWindowX"] = 0,
 		},
 		["Datinnite - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -103,7 +103,19 @@ RecountDB = {
 					["h"] = 137.9999084472656,
 				},
 			},
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+					["Total Bar"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["DetailWindowY"] = -227.9999542236328,
 			["DetailWindowX"] = 563,
+			["GraphWindowX"] = 0,
 			["LastInstanceName"] = "Shadowfang Keep",
 			["RealtimeWindows"] = {
 				["Realtime_!RAID_DAMAGE"] = {
@@ -117,21 +129,9 @@ RecountDB = {
 					false, -- [8]
 				},
 			},
-			["DetailWindowY"] = -227.9999542236328,
-			["CurDataSet"] = "CurrentFightData",
-			["Colors"] = {
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
-					["Total Bar"] = {
-						["a"] = 1,
-					},
-				},
-			},
-			["HideCollect"] = true,
+			["CurDataSet"] = "LastFightData",
 			["MainWindowMode"] = 2,
-			["GraphWindowX"] = 0,
+			["HideCollect"] = true,
 			["MainWindowWidth"] = 397.0000017136335,
 			["MainWindowHeight"] = 137.9999235570442,
 		},
@@ -180,10 +180,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["DetailWindowX"] = 0,
-			["MainWindowVis"] = false,
-			["CurDataSet"] = "OverallData",
 			["GraphWindowX"] = 0,
+			["CurDataSet"] = "OverallData",
+			["MainWindowVis"] = false,
+			["DetailWindowX"] = 0,
 		},
 		["Dreyan - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -197,7 +197,7 @@ RecountDB = {
 			},
 			["MainWindowMode"] = 2,
 			["LastInstanceName"] = "Throne of Thunder",
-			["CurDataSet"] = "CurrentFightData",
+			["CurDataSet"] = "LastFightData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -238,10 +238,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["MainWindowHeight"] = 115,
+			["DetailWindowX"] = 0,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 280.0000610351563,
-			["DetailWindowX"] = 0,
+			["MainWindowHeight"] = 115,
 		},
 		["Deyndis - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -267,10 +267,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["DetailWindowX"] = 0,
+			["MainWindowHeight"] = 122.9999810010198,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 312.0000029802322,
-			["MainWindowHeight"] = 122.9999810010198,
+			["DetailWindowX"] = 0,
 		},
 	},
 }

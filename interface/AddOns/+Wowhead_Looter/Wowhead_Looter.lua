@@ -4,7 +4,7 @@
 --                                     --
 --                                     --
 --    Patch: 5.4.0                     --
---    Updated: September 10, 2013      --
+--    Updated: September 17, 2013      --
 --    E-mail: feedback@wowhead.com     --
 --                                     --
 -----------------------------------------
@@ -12,7 +12,7 @@
 
 local WL_NAME = "|cffffff7fWowhead Looter|r";
 local WL_VERSION = 50013;
-local WL_VERSION_PATCH = 1;
+local WL_VERSION_PATCH = 2;
 
 
 -- SavedVariables
@@ -801,11 +801,25 @@ function wlEvent_MERCHANT_UPDATE(self)
 	local standing = select(2, wlUnitFaction("npc"));
 
 	local merchantItemList = {};
+	
+	local currencies = { GetMerchantCurrencies() };
+	local numCurrencies = #currencies;
+	local currencyInfos = {};
+	for index = 1, numCurrencies do
+		local cName, cCount, cIcon = GetCurrencyInfo(currencies[index]);
+		currencyInfos[cName] = { currencies[index], cIcon };
+	end
 
 	for slot=1, GetMerchantNumItems() do
-		local _, _, price, stack, numAvailable, _, extendedCost = GetMerchantItemInfo(slot);
+		local name, icon, price, stack, numAvailable, _, extendedCost = GetMerchantItemInfo(slot);
 		local id, subId = wlParseItemLink(GetMerchantItemLink(slot));
-		if id ~= 0 then
+		if (id ~= 0 or ((currencyInfos[name] ~= nil) and (currencyInfos[name][2] == icon))) then
+			
+			if (id == 0) then
+				id = currencyInfos[name][1];
+				subId = -2; -- this is a currency
+			end
+			
 			price = wlGetFullCost(price, standing);
 
 			if extendedCost then

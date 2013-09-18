@@ -9,8 +9,8 @@ H: 100
 Frame: LootFrame
 FrameLevel: 13
 Anchor: CENTER
-X: 180
-Y: -9
+X: 110
+Y: -178
 W: 170
 H: 240
 Frame: DBMMinimapButton
@@ -20,10 +20,3 @@ X: -12
 Y: 226
 W: 32
 H: 32
-Frame: NxQuestWatch
-FrameLevel: 1
-Anchor: TOPRIGHT
-X: -49
-Y: -60
-W: 323
-H: 19

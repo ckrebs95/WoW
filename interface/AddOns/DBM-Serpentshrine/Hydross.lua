@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Hydross", "DBM-Serpentshrine")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 436 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 511 $"):sub(12, -3))
 mod:SetCreatureID(21216)
 mod:SetModelID(20162)
 mod:SetZone()
@@ -21,7 +21,6 @@ local warnSludge	= mod:NewTargetAnnounce(38246)
 local specWarnMark	= mod:NewSpecialWarning("SpecWarnMark")
 
 local timerMark		= mod:NewTimer(15, "TimerMark", 28730)
-local timerTomb		= mod:NewBuffActiveTimer(5, 38235)
 local timerSludge	= mod:NewTargetTimer(24, 38246)
 
 local berserkTimer	= mod:NewBerserkTimer(600)
@@ -44,7 +43,6 @@ local damageNext = {
 local function showTombTargets()
 	warnTomb:Show(table.concat(warnTombTargets, "<, >"))
 	table.wipe(warnTombTargets)
-	timerTomb:Show()
 end
 
 function mod:OnCombatStart(delay)
