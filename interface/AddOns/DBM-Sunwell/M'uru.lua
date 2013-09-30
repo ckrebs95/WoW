@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Muru", "DBM-Sunwell")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 503 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 517 $"):sub(12, -3))
 mod:SetCreatureID(25741)--25741 Muru, 25840 Entropius
 mod:SetModelID(23404)
 mod:SetZone()
@@ -35,8 +35,8 @@ local voidCount = 1
 
 local function phase2()
 	warnPhase2:Show()
-	self:UnscheduleMethod("HumanSpawn")
-	self:UnscheduleMethod("VoidSpawn")
+	mod:UnscheduleMethod("HumanSpawn")
+	mod:UnscheduleMethod("VoidSpawn")
 	timerBlackHoleCD:Start(17)
 	if DBM.BossHealth:IsShown() then
 		DBM.BossHealth:Clear()

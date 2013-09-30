@@ -10,7 +10,7 @@ local PVLDB
 local minimapIcon = LibStub("LibDBIcon-1.0")
 vars.svnrev = vars.svnrev or {}
 local svnrev = vars.svnrev
-svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 498 $"):match("%d+"))
+svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 516 $"):match("%d+"))
 local DB_VERSION_MAJOR = 1
 local DB_VERSION_MINOR = 4
 local _G = _G
@@ -19,11 +19,12 @@ local bit, date, math, format, string, table, type, tonumber, pairs, ipairs, unp
 local GetItemInfo, GetSpellInfo, GetTime, UnitIsInMyGuild, InCombatLockdown, GetActionInfo = 
       GetItemInfo, GetSpellInfo, GetTime, UnitIsInMyGuild, InCombatLockdown, GetActionInfo
 
-vars.stub = true
-if vars.stub then
-
-  local msg = "Blizzard Patch 5.4 has seriously broken the operation of TradeSkill hyperlinks, breaking addons such as ProfessionsVault. Please add your voice and help complain on this Blizzard Bug Report Forum thread:"
-  local url = "http://us.battle.net/wow/en/forum/topic/9948634812"
+vars.stub = false
+local function ShowStub() 
+  if addon.stubshown then return end
+  addon.stubshown = true
+  local msg = "Blizzard Patch 5.4 has seriously broken the operation of TradeSkill hyperlinks, breaking addons such as ProfessionsVault. Please help complain on the Blizzard Bug Report Forums:"
+  local url = "http://us.battle.net/wow/en/forum/1012660/"
 
   DEFAULT_CHAT_FRAME:AddMessage("\124cFF00FF00"..addonName.."\124r: "..msg.."\n  "..url)
 
@@ -56,6 +57,15 @@ if vars.stub then
   StaticPopup_Show("PROFESSIONSVAULT_STUB")
   return
 end
+local function StubCheck()
+  if not addon.trade_skill_show then -- link activation failure
+    ShowStub()
+  end
+end
+if vars.stub then
+  ShowStub()
+  return
+end
 
 local defaults = {
   profile = {
@@ -65,9 +75,7 @@ local defaults = {
     autoscan = true, -- scan on pattern learn
     locked = false, -- frame lock
     updatemsg = true,
-    chattooltips = true,
     recipetooltips = true,
-    craftedtooltips = true, 
     ahcolor = true,
     ahscan = true,
     merchantcolor = true,
@@ -80,6 +88,7 @@ local defaults = {
     altdata = true,
     otherdata = false,
     factiondata = false,
+    realmdata = false,
     grpbyprof = false,
     trainreminder = true,
     ldbself = true,
@@ -87,7 +96,7 @@ local defaults = {
     ldbfavorite = true,
     pos = {
       height = 432,
-      width  = 510,
+      width  = 600,
       left   = GetScreenWidth()/2-250,
       top    = GetScreenHeight()/2+200,
     },
@@ -137,11 +146,9 @@ local enhanceColorPicker = true
 local ttwrapwidth = 50 -- tooltip wrap width, 0 for auto
 local gamerankmax = 600
 local maxcachesz = 200
-local usehashes = true
-if Is64BitClient() and IsMacClient() then
-  usehashes = false -- ticket 77: Mac64 messes up bit arithmetic
-end
-local link2build = 16896
+local useeinstein = false
+local useguildhack = true
+local link3build = 17191
 local einstein = L["All Recipes"]
 local allexpand = "All Expand"
 local allexpandplus = "Interface\\Buttons\\UI-PlusButton-UP"
@@ -160,46 +167,6 @@ local allianceRace = { -- Pandaren handed specially
 BINDING_NAME_PROFESSIONSVAULT = L["Show/Hide the ProfessionsVault window"]
 BINDING_HEADER_PROFESSIONSVAULT = "ProfessionsVault"
 
-local _ve = GetExpansionLevel()
-local _vv,_vb,_,_vtoc = GetBuildInfo()
-local _vwarned = false
-_vb = tonumber(_vb)
-local function vs(wotlkv40,catav40,catav406,catav420,catav430,mop50,mop52)
-  local warn = false
-  if wotlkv40 == 0 or wotlkv40 == 1 then return wotlkv40 end
-  local res
-  if (_vtoc >= 50200) then
-    res = mop52
-  elseif (_vtoc >= 50001) then
-    res = mop50
-  elseif (_vtoc >= 40300) or _vv == "4.3.0" then -- second clause for PTR
-    res = catav430 
-  elseif (_vtoc >= 40200) then
-    res = catav420 
-  elseif (_vb < 13205) then 
-    res = wotlkv40
-    warn = true 
-  elseif (_vb >= 13205 and _vb < 13287) then 
-    res = wotlkv40
-  elseif (_vb >= 13287 and _vb <= 13329) then
-    res = catav40
-  elseif (_vb > 13329) then
-    res = catav406
-  else
-    res = mop52
-    warn = true 
-  end
-  if warn and not _vwarned then
-      print(format(L["ERROR: unrecognized client version %s, Please download an update from %s."],
-                    format("%s-%d",_vv, _vb), addon_website))
-      _vwarned = true
-      addon.badversion = true
-  elseif not res then
-      print("INTERNAL ERROR: bad res in vs()")
-  end
-  return res
-end
-
 local PID_ALCH = 2259
 local PID_BS   = 2018
 local PID_ENCH = 7411
@@ -217,49 +184,90 @@ local PID_COOK = 2550
 local PID_FA   = 3273
 local PID_FISH = 131474
 
--- ticket 88: the trade spell is "Herb Gathering" but GetProfessionInfo is "Herbalism"
--- use a different spellid to extract the correct spelling
-local NAME_HERB = GetSpellInfo(9134)
-NAME_HERB = NAME_HERB:match("%s*([^%s]+)$")
-NAME_HERB = NAME_HERB:gsub("^(%l)",string.upper)
+-- ticket 88 / 110: the trade spell is "Herb Gathering" but GetProfessionInfo is "Herbalism"
+local NAME_HERB
+if locale == "deDE" then
+  NAME_HERB = "Kr\195\164uterkunde"
+elseif locale == "ruRU" then
+  NAME_HERB = "\208\162\209\128\208\176\208\178\208\189\208\184\209\135\208\181\209\129\209\130\208\178\208\190"
+elseif locale == "zhTW" then
+  NAME_HERB = "\232\141\137\232\151\165\229\173\184"
+elseif locale == "koKR" then
+  NAME_HERB = GetSpellInfo(9134):match("^([^%s]+)")
+elseif locale == "zhCN" then
+  NAME_HERB = GetSpellInfo(13839):match("^([^%s]+)")
+else -- use a different spellid to extract the correct spelling for most locales
+  NAME_HERB = GetSpellInfo(9134):match("%s*([^%s]+)$"):gsub("^(%l)",string.upper)
+end
+--[[
+print(locale,NAME_HERB)
+for _,i in pairs({ GetProfessions() }) do print(GetProfessionInfo(i)); if NAME_HERB == GetProfessionInfo(i) then print("MATCH") end end 
+for _,id in pairs({124353, 13614, 13839, 9134, 88717}) do print(id,(GetSpellInfo(id))) end
+]]
 
 local primaryProf = {  -- 0 == no tradeskill, 1 == broken
-        [PID_ALCH] = {vs(44,52,52,52,53,57,57), -- Alchemy
+        [PID_ALCH] = { -- Alchemy
 	            28677, -- Elixer Master 
 		    28675, -- Potion Master
 		    28672, -- Transmutation Master
 		 },
-	[PID_BS] = {vs(87,99,99,101,102,116,130), -- Blacksmithing
+	[PID_BS] = { -- Blacksmithing
 	            9787, -- Weaponsmith
 		    9788, -- Armorsmith
 	         },
-	[PID_ENCH] =  vs(51,60,61,61,61,63,63), -- Enchanting
-	[PID_ENG] = {vs(51,57,57,58,57,65,65), -- Engineering
+	[PID_ENCH] = true, -- Enchanting
+	[PID_ENG] = { -- Engineering
 	            20219, -- Gnomish Engineer
 		    20222, -- Goblin Engineer
 	         },
-	[PID_INSC] = vs(73,79,80,80,80,96,96), -- Inscription 
-	[PID_JC] = vs(84,100,101,102,113,145,147), -- Jewelcrafting 
-	[PID_LW] = {vs(89,102,102,105,106,119,133), -- Leatherworking
+	[PID_INSC] = true, -- Inscription 
+	[PID_JC] = true, -- Jewelcrafting 
+	[PID_LW] = { -- Leatherworking
                     10656, -- Dragonscale Leatherworking
                     10660, -- Tribal Leatherworking
                     10658, -- Elemental Leatherworking
 	         },
-	[PID_TAIL] = {vs(73,83,83,84,85,93,99), -- Tailoring
+	[PID_TAIL] = { -- Tailoring
 	            26797, -- Spellfire Tailoring
 		    26798, -- Mooncloth Tailoring
 		    26801, -- Shadoweave Tailoring
 		 },
-	[PID_SKIN] =  vs(0), -- Skinning
-	[PID_HERB] =  { vs(0), PID_HERB, NAME_HERB }, -- Herbalism
-	[PID_MINE] =  vs(0), -- Mining
-	[PID_SMELT] =  vs(1), -- Smelting
+	[PID_SKIN] =  true, -- Skinning
+	[PID_HERB] =  { PID_HERB, NAME_HERB }, -- Herbalism
+	[PID_MINE] =  true, -- Mining
+	[PID_SMELT] = true, -- Smelting
 }
 local secondaryProf = { 
-	[PID_ARCH] = vs(0), -- Archaeology
-	[PID_COOK] =  vs(31,36,36,36,36,41,41), -- Cooking
-	[PID_FA] =  vs(6, 7, 7,7,7, 8,8), -- First Aid 
-	[PID_FISH] =  vs(0), -- Fishing
+	[PID_ARCH] = true, -- Archaeology
+	[PID_COOK] = { -- Cooking
+	  125584, -- Way of the Wok
+	  125586, -- Way of the Pot
+	  125589, -- Way of the Brew
+	  124694, -- Way of the Grill
+	  125588, -- Way of the Oven
+	  125587, -- Way of the Steamer
+	},
+	[PID_FA] =   true, -- First Aid 
+	[PID_FISH] = true, -- Fishing
+}
+
+local magicIDs = {
+	[PID_ALCH] = 171,
+	[PID_ARCH] = 794,
+	[PID_BS]   = 164,
+	[PID_COOK] = 185,
+	[PID_ENCH] = 333,
+	[PID_ENG]  = 202,
+	[PID_FA]   = 129,
+	[PID_FISH] = 356,
+	[PID_HERB] = 182,
+	[PID_INSC] = 773,
+	[PID_JC]   = 755,
+	[PID_LW]   = 165,
+	[PID_MINE] = 186,
+	[PID_SMELT] = 186,
+	[PID_SKIN] = 393,
+	[PID_TAIL] = 197,
 }
 
 local nolinkProf = {  -- professions that dont have a trade: link
@@ -290,16 +298,19 @@ local function translateIDs(t)
       r[name] = {}
       r[name].icon = icon
       r[name].spellid = k
+      r[name].magic = magicIDs[k]
+      if nolinkProf[name] then
+        r[name].nolink = true
+      end
+      if nocastProf[name] then
+        r[name].nocast = true
+      end
       local aliases = {}
       if type(v) == "table" then
-        r[name].patlen = v[1]
-	table.remove(v,1)
 	for _,a in ipairs(v) do
 	  local an = (tonumber(a) and GetSpellInfo(a)) or a
 	  table.insert(aliases, an)
 	end
-      else
-        r[name].patlen = v
       end
       r[name].aliases = aliases
     end
@@ -388,20 +399,6 @@ local LFaction = {
 }
 local recipeMatchClass = "^"..ITEM_CLASSES_ALLOWED:gsub("%%s","(.+)")
 local recipeMatchRace = "^"..ITEM_RACES_ALLOWED:gsub("%%s","(.+)")
-local recipeSpec = {
-  [18661] = "Gnomish Engineer", -- Schematic: World Enlarger
-  [18654] = "Gnomish Engineer", -- Schematic: Gnomish Alarm-o-Bot
-  [18653] = "Goblin Engineer",  -- Schematic: Goblin Jumper Cables XL
-}
-local function profSpec(olink) 
-  local link, pname, spell = addon:normalize_link(olink)
-  if spell == PID_ENG then
-    if addon:link_bit(link, 123) then return "Goblin Engineer"
-    elseif addon:link_bit(link, 124) then return "Gnomish Engineer"
-    end
-  end
-  return nil
-end
 
 local function chatMsg(msg)
      DEFAULT_CHAT_FRAME:AddMessage("\124cFF00FF00"..addonName.."\124r: "..msg)
@@ -414,7 +411,7 @@ local function debug(msg)
 end
 addon.debug = debug
 function addon:usingColor() 
-  return settings.recipetooltips or settings.craftedtooltips or
+  return settings.recipetooltips or
          settings.ahcolor or settings.merchantcolor or settings.bagcolor or
          settings.bankcolor or settings.mailcolor
 end
@@ -561,12 +558,6 @@ return {
       type = "toggle",
       order = 30,
     },
-    chattooltips = {
-      name = L["Chat Tooltips"],
-      desc = L["Show tooltips for trade links in the chat window"],
-      type = "toggle",
-      order = 40,
-    },
     updatemsg = {
       name = L["Update Messages"],
       desc = L["Print messages to the chat window to show database updates"],
@@ -585,26 +576,17 @@ return {
       type = "toggle",
       order = 43,
     },
-    --[[
     autoscan = {
       name = L["Scan on recipe learn"],
       desc = L["Prompt to perform an update scan when a new recipe is learned"],
       type = "toggle",
       order = 35,
-      set = function(info,val) settings.autoscan = val end,
-      get = function(info) return settings.autoscan end
-    },--]]
+    },
     recipetooltips = {
       name = L["Recipe Tooltips"],
       desc = L["Enhance recipe tooltips with ProfessionsVault character data"],
       type = "toggle",
       order = 45,
-    },
-    craftedtooltips = {
-      name = L["Crafted Item Tooltips"],
-      desc = L["Enhance crafted item tooltips with ProfessionsVault character data"],
-      type = "toggle",
-      order = 46,
     },
     ahcolor = {
       name = L["AH coloring"],
@@ -675,6 +657,13 @@ return {
       order = 54,
       disabled = function() return not addon:usingColor() end,
     },
+    realmdata = {
+      name = L["Include cross realm"],
+      desc = L["Include profession data from characters on other realms"],
+      type = "toggle",
+      order = 55,
+      disabled = function() return not addon:usingColor() end,
+    },
     ldbheader = {
       name = L["LDB/Minimap Tooltip Options"],
       type = "header",
@@ -734,7 +723,7 @@ return {
          --myprint(PV_unhide)
 	 for k,v in pairs(PV_unhide) do
 	   if v then
-	     addon.db.realm.hide[k] = nil
+	     settings.hide[k] = nil
 	   end
 	   PV_unhide[k] = nil
 	 end
@@ -745,7 +734,7 @@ return {
        order = 30,
        name = L["Unhide All"],
        type = "execute",
-       func = function () addon.db.realm.hide = {}; addon:RefreshTooltips(); addon:RefreshWindow(); end
+       func = function () settings.hide = {}; addon:RefreshTooltips(); addon:RefreshWindow(); end
      },
      hidelist = {
        order = 40,
@@ -753,7 +742,20 @@ return {
        type = "multiselect",
        cmdHidden = true, 
        dropdownHidden = true,
-       values = function() local t = {}; PV_unhide = PV_unhide or {} ; for k,_ in pairs(addon.db.realm.hide) do t[k] = k end return t end,
+       values = function() 
+          local t = {}; 
+	  PV_unhide = PV_unhide or {} ; 
+	  for k,_ in pairs(settings.hide) do 
+	    local disp = k
+	    local cname, pname = k:match("^(.+)/(.+)$")
+	    if cname and pname then
+	      cname = addon:coloredcname(cname,nil,true)
+	      disp = cname.."/"..pname
+	    end
+	    t[k] = disp
+	  end 
+	  return t
+       end,
        get = function(info,key) return PV_unhide[key] end,
        set = function(info,key,val) PV_unhide[key] = val end,
      },
@@ -872,7 +874,7 @@ local function charcolor(chartype)
   return str
 end
 
-local function coloredcname(cname,usecolor)
+local function coloredcname(cname,typecolor,classcolor)
   local color, ctype
   local dbc = DB.chars[cname]
   if cname == einstein then
@@ -894,12 +896,23 @@ local function coloredcname(cname,usecolor)
     color = charcolor("other")
     ctype = "other"
   end
-  if usecolor then
+  cname = select(4, addon:name_normalize(cname)) -- abbreviate server
+  if not addon.classlist then
+    addon.classlist = {}
+    FillLocalizedClassList(addon.classlist)
+    addon.classlist = addon:table_invert(addon.classlist)
+  end
+  local class = dbc.data and dbc.data.class
+  class = class and addon.classlist[class]
+  if classcolor and class and RAID_CLASS_COLORS[class] then
+    return "\124c"..RAID_CLASS_COLORS[class].colorStr..cname.."\124r", ctype
+  elseif typecolor then
     return "\124cff"..color..cname.."\124r", ctype
   else
     return cname, ctype
   end
 end
+function addon:coloredcname(...) return coloredcname(...) end
 
 local function charicon(cname)
     local dbc = DB.chars[cname]
@@ -924,7 +937,7 @@ local function chardatastr(cname)
   local text = ""
   for _,stat in ipairs({"level","faction","class"}) do
     local val = data[stat]
-    if stat == faction and val then val = LFaction[val] end
+    if stat == "faction" and val then val = LFaction[val] end
     if val then
        text = text..val.." "
     end
@@ -938,9 +951,9 @@ end
 function addon:isHidden(cname,pname)
   cname = cname or "*"
   pname = pname or "*"
-  return DB.hide[cname.."/"..pname] or 
-         DB.hide["*/"..pname] or 
-         DB.hide[cname.."/*"] 
+  return settings.hide[cname.."/"..pname] or 
+         settings.hide["*/"..pname] or 
+         settings.hide[cname.."/*"] 
 end
 
 function addon:RefreshChar()
@@ -960,14 +973,15 @@ end
 
 function addon:RefreshConfig()
   debug("RefreshConfig")
-  charName = UnitName("player")
-  DB = self.db.realm
+  charName = addon:name_normalize(UnitName("player"))
+  DB = self.db.global
+  wipe(self.db.realm) -- remove old per-realm database
   DB.chars = DB.chars or {}
-  DB.hide = DB.hide or {}
   DB.guid_cache = DB.guid_cache or {}
 
   settings = addon.db.profile
   addon.settings = settings
+  settings.hide = settings.hide or {}
   settings.vermaj = settings.vermaj or DB_VERSION_MAJOR
   settings.vermin = settings.vermin or DB_VERSION_MINOR
 
@@ -1042,7 +1056,6 @@ function addon:OnInitialize()
 
   addon:recipeClass() -- init caches
   addon:isRecipe(43017)
-  addon:isCraftedItem(43017)
 
   self.db.RegisterCallback(self, "OnProfileChanged", "RefreshConfig")
   self.db.RegisterCallback(self, "OnProfileCopied", "RefreshConfig")
@@ -1070,7 +1083,7 @@ function addon:SetupVersion()
    end
 end
 local function PV_ShowTooltip(self,...)
-        if addon.settings.recipetooltips or addon.settings.craftedtooltips or 
+        if addon.settings.recipetooltips or
 	   ((addon.settings.ahcolor or addon.settings.merchantcolor) and self == addon.scantt) then
                 addon:ShowTooltip(self)
         end
@@ -1083,7 +1096,7 @@ local function PV_ShowItemRefTooltip(cleanlink, link, button, frame)
 	if not link then
 	  return
 	end
-        if (addon.settings.recipetooltips or addon.settings.craftedtooltips) and
+        if addon.settings.recipetooltips and
 	   (string.find(link,"\124Hitem:",1,true) or string.find(link,"\124Henchant:",1,true)) then
                 addon:ShowTooltip(ItemRefTooltip)
         end
@@ -1091,7 +1104,7 @@ local function PV_ShowItemRefTooltip(cleanlink, link, button, frame)
 	   addon.lastTSL = link
 	   addon:update_guid_cache_fromlink(link)
 	   debug("Set addon.lastTSL = "..(addon.lastTSL or "nil").." ("..addon:hash(addon.lastTSL)..")")
-	   addon:UpdateTrade(false) 
+	   addon:TSLupdate()
 	end
 end
 local function PV_AuctionScroll(...)
@@ -1140,38 +1153,6 @@ local function SetLDBProf(pname)
     settings.ldbprof = nil
     PVLDB.text = addonName
   end
-end
-
-local function PV_CastSpellHook(arg1, arg2)
-        if InCombatLockdown() then return end
-	--debug("PV_CastSpellHook :"..tostring(arg1).." "..tostring(arg2))
-	local pname = arg1
-	if type(arg1) == "number" then
-	  if arg2 == "professions" then
-	    pname = GetSpellInfo(arg1, arg2)
-	  else
-	    return 
-	  end
-	end
-	if pname and allProf[pname] then
-	  debug("CastSpell("..pname..")")
-	  addon.lastTSL = nil
-	  SetLDBProf(pname)
-	end
-end
-
-local function PV_UseActionHook(actionslot, target, button)
-        if InCombatLockdown() then return end
-	--debug("PV_UseActionHook :"..tostring(actionslot).." "..tostring(target).." "..tostring(button))
-	local atype, id, subType = GetActionInfo(actionslot)
-	if (atype == "spell" and subType == "spell") then
-	  local pname = GetSpellInfo(id)
-	  if (allProf[pname]) then
-	    debug("UseAction("..pname..")")
-	    addon.lastTSL = nil
-	    SetLDBProf(pname)
-	  end
-	end
 end
 
 -- ticket 64: workaround the fact that some combinations of addons break AceEvent ADDON_LOADED
@@ -1242,6 +1223,7 @@ function addon:OnEnable()
   addon:CleanDatabase()
 
   self:RegisterEvent("TRADE_SKILL_SHOW")
+  self:RegisterEvent("TRADE_SKILL_UPDATE")
   self:RegisterEvent("TRADE_SKILL_NAME_UPDATE")
   self:RegisterEvent("ADDON_LOADED")
   self:RegisterEvent("MERCHANT_UPDATE")
@@ -1296,11 +1278,6 @@ function addon:OnEnable()
     end
     hooksecurefunc("SetItemRef", PV_ShowItemRefTooltip)
     hooksecurefunc("GetGuildMemberRecipes", function () addon.lastTSL = nil end)
-    --[[
-    hooksecurefunc("CastSpell", PV_CastSpellHook)
-    hooksecurefunc("CastSpellByID", PV_CastSpellHook)
-    hooksecurefunc("CastSpellByName", PV_CastSpellHook)
-    hooksecurefunc("UseAction", PV_UseActionHook)
     --]]
   else
     GameTooltip:HookScript("OnTooltipSetItem", PV_ShowTooltip)
@@ -1323,43 +1300,6 @@ function addon:OnEnable()
     addon:Scan()
   else
     addon:ScanSecondary() -- does not capture primary profs during static load because GetSpellLink is not yet functional
-  end
-
-  local chatframes = { [DEFAULT_CHAT_FRAME] = true }
-  for i=1,50 do 
-    local f = _G["ChatFrame"..i]
-    local g = _G["ChatFrame"..i.."EditBox"]
-    if not f then break end
-    chatframes[f] = true
-    --debug("Hooking ChatFrame"..i)
-    --if g then chatframes[g] = true end
-  end
-  for f,_ in pairs(chatframes) do
-    f:HookScript("OnHyperlinkEnter", function(self, linkData, olink) 
-        if settings.chattooltips and string.match(linkData,"^trade:") then 
-	  --printlink(olink)
-          local link, pname, spell = addon:normalize_link(olink)
-	  local rank, rankmax = addon:link_rank(link)
-	  local texstr = "|T"..allProf[pname].icon..":0|t  "
-	  GameTooltip:SetOwner(self, "ANCHOR_CURSOR");
-	  if rank == 0 then
-	    GameTooltip:SetText(texstr..pname)
-	    GameTooltip:AddLine("    "..einstein)
-	  else
-	    GameTooltip:SetText(texstr..pname.." ("..rank.."/"..rankmax..")")
-	    local guid, cname = addon:link_cnameguid(link)
-	    if cname then GameTooltip:AddLine("    "..cname) end
-	    local rcnt = addon:link_bit_count(link)
-	    if rcnt > 0 then GameTooltip:AddLine("    "..rcnt.." "..L["recipes"]) end
-	  end
-	  GameTooltip:Show()
-	end 
-    end)
-    f:HookScript("OnHyperlinkLeave", function(self, linkData, link) 
-        if settings.chattooltips and string.match(linkData,"^trade:") then 
-	  GameTooltip:Hide()
-	end 
-    end)
   end
 
   PVLDB = LDB:NewDataObject(addonName, {
@@ -1476,13 +1416,13 @@ function addon:fillLDB(tooltip)
         local pinfo = cinfo[pname]
         if pinfo and pinfo.link and pinfo.favorite then
           local texstr = "|T"..allProf[pname].icon..":0|t"
-          tooltip:AddDoubleLine(texstr.." ["..pname.."]",cname)
+          tooltip:AddDoubleLine(texstr.." ["..pname.."]",coloredcname(cname,nil,true))
 	  addon.ldblines[tooltip:NumLines()] = cname.."\t"..pname.."\t"..pinfo.link
 	end
       end
     end
   end
-  if settings.ldbeinstein then
+  if settings.ldbeinstein and false then
     tooltip:AddLine(" ")
     tooltip:AddLine("|cffff8040"..einstein..":|r")
     for _,pname in ipairs(allProfSorted) do
@@ -1564,34 +1504,31 @@ local function processSystemMessage(msg)
     end
   end
   if rescan then
-    --[[
-    if GetTradeSkillLine() ~= "UNKNOWN" and not IsTradeSkillLinked() then
-        local rchange, schange = addon:UpdateTrade()
-	if rchange == 1 then -- correct window was open and we autoscanned it
-	  return
-	end
-    end --]]
-	--local spellid, orank, rankmax, guid, databits, specdata, text = addon:link_parse(DBc[profname].link) 
-        --DBc[profname].link = addon:link_build(spellid, nrank, rankmax, guid, databits, specdata, text)
-	--chatMsg(format(L["Updated %s's %s"].." (%s "..L["skill points"]..")", charName, profname, (nrank-orank)))
-    local rchange, schange, profchange = addon:ScanSecondary()
-    --print(rchange.." : "..schange)
-    if (rchange == 0) and (schange == 0) and not profchange then -- can fail on profupgrade due to lag
+    local gotone, _, _, _, pname = addon:ReScan()
+    if gotone then
+      if not allProf[rescan] then
+        rescan = pname
+      end
+    else
       debug("Failed to detect profession change for: "..msg) -- ticket 86
-      --DBc.data.scanned = false
       addon:ScheduleTimer(function() 
-          local rchange, schange, profchange = addon:ScanSecondary()
-          debug("Delayed rescan got: "..(profchange or "nil"))
-          if profchange and allProf[profchange] then
-	    SetLDBProf(profchange)
+          local gotone, _, _, _, pname = addon:ReScan()
+          if gotone then
+	    SetLDBProf(pname)
+	  else
+	    debug("Delayed rescan failed for: "..msg)
+	    if settings.autoscan then
+              DBc.data.scanned = false
+	      addon.scannote = L["If you have more patterns to learn, just ignore this window until you are done."].."\n"..
+                L["You can avoid this prompt in the future by having your tradeskill window open while learning patterns."]
+              addon:Scan()
+	    end
 	  end
-	end, 5)
+      end, 1.5)
       return
     end
     if allProf[rescan] then 
        SetLDBProf(rescan) 
-    elseif profchange and allProf[profchange] then
-       SetLDBProf(profchange) 
     end
   end
 end
@@ -1605,60 +1542,58 @@ function addon:CHAT_MSG_SYSTEM(event, msg, ...)
   processSystemMessage(msg)
 end
 -- ----------------------------------------------------------------------------------
-
-local function guid_compress(guid)
+-- convert any form of character name and realm into fully-qualified and separated versions
+local function name_normalize(cname, realm)
+  if not cname then return nil end
+  local thisRealm = GetRealmName():gsub("%s","")
+  local ccname, crname = cname:match("^([^-]+)-([^-]+)$")
+  if ccname and crname then -- fully-qualified cname
+    crname = crname:gsub("%s","")
+    return cname, ccname, crname, ((crname == thisRealm) and ccname or cname)
+  end
+  if not realm or #realm == 0 then realm = thisRealm end
+  realm = realm:gsub("%s","")
+  local fullname = cname.."-"..realm
+  local shortname = fullname
+  if realm == thisRealm then shortname = cname end
+  return fullname, cname, realm, shortname
+end
+function addon:name_normalize(...) return name_normalize(...) end
+local function guid_normalize(guid, hexprefix)
   if not guid then return nil end
   local res = string.gsub(guid, "^0x","")
   res = string.rep("0",16-#res)..res -- leading zeros get lost in some contexts
-  local guid_prefix
-  guid_prefix, res = string.match(res, "^(%x%x%x)0+(%x+)$")
-  if not res then return nil end
-  if guid_prefix ~= DB.guid_prefix then
-    debug("Updating guid_prefix "..(DB.guid_prefix or "nil").." => "..guid_prefix)
-    DB.guid_prefix = guid_prefix
-  end
-  --print(DB.guid_prefix.."   "..guid)
-  res = tonumber(res, 16)
+  if hexprefix then res = "0x"..res end
   return res
-end
-local function guid_expand(guid)
-  if not guid then return nil end
-  local bits = format("%X",guid)
-  guid = DB.guid_prefix .. string.rep("0",13-#bits) .. bits
-  return guid
-end
-local function guid_normalize(guid)
-  return guid_expand(guid_compress(guid))
 end
 function addon:update_guid_cache(name, guid)
   if name and guid and UnitIsInMyGuild(name) then
-    guid = guid_compress(guid)
+    name = name_normalize(name)
+    guid = guid_normalize(guid)
     local oldval = DB.guid_cache[name]
     local changed
     if not oldval then
-      if debug then debug("Saving new guid "..name.." "..guid_expand(guid)) end
+      if debug then debug("Saving new guid "..name.." "..guid) end
       changed = true
     elseif oldval ~= guid then
-      if debug then debug("Updating guid "..name.." "..guid_expand(oldval).." => "..guid_expand(guid)) end
+      if debug then debug("Updating guid "..name.." "..oldval.." => "..guid) end
       changed = true
     end
     if changed then
       DB.guid_cache[name] = guid
       local isLinked, cname = IsTradeSkillLinked()
-      if cname and cname == name and GetTradeSkillLine() ~= "UNKNOWN" then -- just got the GUID for a guild trade
-        addon:UpdateTrade()
-	addon:TSLupdate()
+      if cname and name_normalize(cname) == name and GetTradeSkillLine() ~= "UNKNOWN" then -- just got the GUID for a guild trade
+        addon:UpdateTrade(false)
       end
     end
   end
 end
 function addon:link_cnameguid(link)
    if not link then return end
-   local guid = select(4,addon:link_parse(link))
-   if not guid or #guid < 10 then return end
-   guid = string.rep("0",16-#guid)..guid -- restore leading zeros
-   local cname = select(7,pcall(GetPlayerInfoByGUID,guid)) -- sometimes failed if not encountered by client
-   return guid, cname
+   local guid = select(2,addon:link_parse(link))
+   if not guid then return end
+   local cname, realm = select(7,pcall(GetPlayerInfoByGUID,guid)) -- sometimes failed if not encountered by client
+   return guid, name_normalize(cname, realm)
 end
 function addon:update_guid_cache_fromlink(link)
    local guid, cname = addon:link_cnameguid(link)
@@ -1669,65 +1604,26 @@ function addon:CHAT_MSG_X(event, msg, sender, _,_,_,_,_,_,_,_, counter, guid)
   addon:update_guid_cache(sender, guid)
 end
 
-local function guid_survey_helper(guid, faction, class)
-  addon.guid_survey_list = addon.guid_survey_list or {}
-  if not guid or guid == "0" or guid_compress(guid) == 0 then return end
-  if not faction or not class then
-    local status, race
-    status, _, class, _, race = pcall(GetPlayerInfoByGUID,guid)
-    if not status or not race or not class then -- try to force a guid load
-      local link = addon:fakeLink((GetSpellInfo(PID_FA)), guid, nil, nil, nil, 0) -- force a bogus patlen to prevent open
-      --print(link)
-      SetItemRef(addon:cleanlink(link),link,"LeftButton",ChatFrame1)
-    end
-    status, _, class, _, race = pcall(GetPlayerInfoByGUID,guid)
-    if not status or not race or not class then return end
-    if race == "Pandaren" then return end
-    faction = allianceRace[race] and "Alliance" or "Horde"
-  end
-  local key = class.."#"..faction
-  addon.guid_survey_list[key] = guid
-end
-
-function addon:guid_survey()
-  addon.classlist = wipe(addon.classlist or {})
-  FillLocalizedClassList(addon.classlist)
-  if table_size(addon.guid_survey_list) == 2*table_size(addon.classlist) then
-    print("skipping guid_survey(), table complete")
-    return addon.guid_survey_list
-  end
-  for _,cguid in pairs(DB.guid_cache) do
-    guid_survey_helper(guid_expand(cguid))
-  end
-  for _,tinfo in pairs(DB.chars) do
-     local faction, class
-     if tinfo.data then
-       faction = tinfo.data.faction
-       class = tinfo.data.class
-       for uclass, lclass in pairs(addon.classlist) do -- delocalize class
-         if class == lclass then
-	   class = uclass
-	   break
-	 end
-       end
-     end
-     for _, pinfo in pairs(tinfo) do
-        if pinfo.link then
-	   local guid = select(4,addon:link_parse(pinfo.link))
-           guid_survey_helper(guid, faction, class)
-	end
-     end
-  end
-  print("guid_survey found "..table_size(addon.guid_survey_list).." exemplars.")
-  return addon.guid_survey_list
-end
-
 -- show the TradeSkillLinkButton when we can
 function addon:TSLupdate() 
-  if addon.lastTSL and not IsTradeSkillGuild() and 
-     not TradeSkillLinkButton:IsVisible() and
-     not nolinkProf[GetTradeSkillLine()] then
+  if not TradeSkillLinkButton then return end
+  if IsTradeSkillGuild() or nolinkProf[GetTradeSkillLine()] then 
+    addon:SaveButton():Hide()
+    TradeSkillLinkButton:Hide()
+    return 
+  end
+
+  if addon.lastTSL then
     TradeSkillLinkButton:Show()
+  end
+
+  local linked, cname = IsTradeSkillLinked()
+  cname = addon:name_normalize(cname)
+  local spellid, guid = addon:link_parse(addon.lastTSL)
+
+  if cname and cname ~= charName and addon.lastTSL and
+     guid_normalize(guid) ~= guid_normalize(UnitGUID("player")) then
+    addon:SaveButtonShow()
   end
 end
 
@@ -1755,11 +1651,7 @@ end
 local function TSLNhide() 
   local pname, rank, rankmax = GetTradeSkillLine()
   local isLinked, name = IsTradeSkillLinked()
-  if rankmax > 0 and (isLinked and name == charName) 
-     and addon.lastTSL then -- einstein ranks get corrupted for profs we have
-     rank, rankmax = addon:link_rank(addon.lastTSL) 
-  end
-  if rankmax == 0 and not IsTradeSkillGuild() then
+  if false and not IsTradeSkillGuild() then -- hide link name
      if TradeSkillLinkNameButton then
        TradeSkillLinkNameButton:Show()
        TradeSkillLinkNameButton:EnableMouse(false)
@@ -1787,18 +1679,35 @@ end
 -- fires when the name is updated late on a guild-opened trade skill ui
 function addon:TRADE_SKILL_NAME_UPDATE()
   debug("TRADE_SKILL_NAME_UPDATE")
-  addon:TRADE_SKILL_SHOW()
+  addon:trade_skill_event()
+end
+
+function addon:TRADE_SKILL_UPDATE()
+  -- this event fires very frequently, only update if save button status might have changed
+  addon:TSLupdate()
+end
+
+local function rescan()
+  addon:ReScan()
 end
 
 function addon:TRADE_SKILL_SHOW()
   debug("TRADE_SKILL_SHOW")
+  addon:trade_skill_event()
+  if not IsTradeSkillGuild() and not IsTradeSkillLinked() then -- self profession
+    addon:ScheduleTimer(rescan, 1.5) -- make sure we see any patterns that were delayed loading
+  end
+end
+
+function addon:trade_skill_event()
+  addon.trade_skill_show = true
   addon:UpdateTrade()
   if TradeSkillLinkNameButton and not addon.tslnhook then
-    TradeSkillLinkNameButton:HookScript("OnUpdate", TSLNhide)
+    --TradeSkillLinkNameButton:HookScript("OnUpdate", TSLNhide)
     addon.tslnhook = true
   end
   if TradeSkillRankFrame and not addon.tsrfhook then
-    TradeSkillRankFrame:HookScript("OnUpdate", TSLNhide)
+    --TradeSkillRankFrame:HookScript("OnUpdate", TSLNhide)
     addon.tsrfhook = true
   end
   if TradeSkillFrame_SetSelection and TradeSkillLinkButton and not addon.tssshook then
@@ -1847,24 +1756,6 @@ function addon:SaveButton()
         GameTooltip:Show()
      end)
      button:SetScript("OnLeave", function (self) GameTooltip:Hide() end)
-     --[[
-     button.Disable = function() 
-       button.enabled = false
-       button.oldtex = button:GetNormalTexture()
-       button.oldfont = button:GetNormalFontObject()
-       if button:GetDisabledTexture() then
-         button:SetNormalTexture(button:GetDisabledTexture()) 
-       end
-       if button:GetDisabledFontObject() then
-         button:SetNormalFontObject(button:GetDisabledFontObject()) 
-       end
-     end
-     button.Enable = function() 
-       button.enabled = true;
-       if (button.oldtex) then button:SetNormalTexture(button.oldtex) end
-       if (button.oldfont) then button:SetNormalFontObject(button.oldfont) end
-     end
-     ]]
   end
   return button
 end
@@ -1902,26 +1793,35 @@ function addon:UpdateTrade(force)
   if IsTradeSkillGuild() then return end -- guild "view all" trade
   local pname, rank, rankmax = GetTradeSkillLine()
   local link = addon:normalize_link(GetTradeSkillListLink())
+  local smelting
   if not link and nolinkProf[pname] then
-    if not addon.smeltwarning and (pname == GetSpellInfo(PID_MINE) or pname == GetSpellInfo(PID_SMELT)) then
+    if (pname == GetSpellInfo(PID_MINE) or pname == GetSpellInfo(PID_SMELT)) then
+      smelting = true
+      if not addon.smeltwarning then
         chatMsg(format(L["Warning: Tradeskill %s has no link available to be used."]..
 	               " "..L["This is a known Blizzard bug."],pname));
 	addon.smeltwarning = true
+      end
+    else
+      debug("UpdateTrade on non-mining nolinkProf")
+      return
     end
-    return
   end
   local linked, cname = IsTradeSkillLinked()
+  cname = addon:name_normalize(cname)
   local class, race  -- for linked only
   addon:update_guid_cache_fromlink(link)
   if not linked then
     cname = charName
     addon.lastTSL = nil
+    debug("Clearing addon.lastTSL = nil")
+    addon:TSLupdate()
     SetLDBProf(pname)
-  elseif not link then -- guild trade window
+  elseif linked and not link then -- guild trade window
     debug("Guild Tradeskill: "..(cname or "NIL").." "..(pname or "NIL"))
     -- cname will occasionally arrive after the SHOW event
     if not pname or 
-      nolinkProf[pname] then -- mining
+      (nolinkProf[pname] and not smelting) then
       force = false
     else
       if cname and cname == charName then -- disallow self-save
@@ -1936,6 +1836,7 @@ function addon:UpdateTrade(force)
       elseif not addon.lastTSL then
         addon.lastTSL = addon:normalize_link(addon:BuildGuildTradeLink())
 	debug("Set addon.lastTSL = "..(addon.lastTSL or "nil").." ("..addon:hash(addon.lastTSL)..")")
+	addon:TSLupdate()
       end
     end
     if force then
@@ -1944,7 +1845,7 @@ function addon:UpdateTrade(force)
         force = false
       else
         linked = true
-        local guid = guid_expand(DB.guid_cache[cname])
+        local guid = guid_normalize(DB.guid_cache[cname])
         if guid then
 	  local _
           class,_,_,race,_,_ = GetPlayerInfoByGUID(guid)
@@ -1959,13 +1860,15 @@ function addon:UpdateTrade(force)
     end
   else -- linked trade window
     local spellid, guid, guidname, _
+    -- GetTradeSkillListLink returns a bogus value for this case
     link = addon:normalize_link(addon.lastTSL, true)
     if link then
-      spellid, _, _, guid = addon:link_parse(link)
+      spellid, guid = addon:link_parse(link)
     end
     if spellid and guid then 
       guid = guid_normalize(guid)
       class,_,_,race,_,guidname = GetPlayerInfoByGUID(guid)
+      guidname = addon:name_normalize(guidname)
       local guidspell = GetSpellInfo(spellid)
       if guidname == charName or guidname ~= cname or guidspell ~= pname then force = false end
     else
@@ -1986,9 +1889,7 @@ function addon:UpdateTrade(force)
       chatMsg("ERROR: unrecognized profession: "..pname)
     end
 
-    if not DB.chars[cname] then
-      DB.chars[cname] = {}
-    end
+    DB.chars[cname] = DB.chars[cname] or {}
     local dbc = DB.chars[cname]
     if linked then
       dbc.data = dbc.data or {}
@@ -2007,65 +1908,139 @@ function addon:UpdateTrade(force)
         dbc.data.level = level
       end
     end
-  return addon:SaveLink(cname, pname, link)
+  return addon:SaveLink(cname, pname, link, rank, rankmax, true)
 end
-function addon:SaveLink(cname, pname, link)
+function addon:SaveLink(cname, pname, link, rank, rankmax, doscan)
     local dbc = DB.chars[cname]
+
     local changestr = nil
+    local diffstr = ""
     local rchange, schange, mchange = 0, 0, 0
-    local newr, newrmax = addon:link_rank(link)
     if not dbc[pname] then
+      dbc[pname] = {}
       changestr = L["Saved %s's %s"]
-      if link and allProf[pname].patlen > 1 then 
-        local cnt = addon:link_bit_count(link)
-        changestr = changestr.." ("..cnt.." "..L["recipes"]..")"
-	rchange = cnt
-      end
-      schange = newr
-      mchange = newrmax
-    elseif dbc[pname].link ~= link then
+      schange = rank
+      mchange = rankmax
+    else
       changestr = L["Updated %s's %s"]
-      if link and dbc[pname].link then 
-        local oldcnt = addon:link_bit_count(dbc[pname].link)
-        local newcnt = addon:link_bit_count(link)
-	local oldr, oldrmax = addon:link_rank(dbc[pname].link)
-	local diffstr = ""
-	if (newcnt ~= oldcnt) then
-	  rchange = (newcnt-oldcnt)
-	  diffstr = rchange.." "..L["recipes"]
-	end
-	if (oldr ~= newr) then
-	  schange = (newr - oldr)
-	  diffstr = diffstr..((#diffstr > 0 and ", ") or "")..schange.." "..L["skill points"]
-	end
-	mchange = newrmax - oldrmax
-	if #diffstr > 0 then
-          changestr = changestr.." ("..diffstr..")"
-	else
-	  changestr = nil
-	end
-      else
-        schange = newr
-        mchange = newrmax
-      end
+      schange = rank - (dbc[pname].rank or 0)
+      mchange = rankmax - (dbc[pname].rankmax or 0)
     end
-    dbc[pname] = dbc[pname] or {}
+    if doscan and not allProf[pname].nolink then 
+      local cnt = addon:pinfo_skill_populate(dbc[pname])
+      if cnt ~= 0 then
+        diffstr = cnt.." "..L["recipes"]
+      end
+      rchange = cnt
+    end
+    if schange ~= 0 then
+      diffstr = diffstr..((#diffstr > 0 and ", ") or "")..schange.." "..L["skill points"]
+    end
     dbc[pname].link = link
-    dbc[pname].rank = newr
-    dbc[pname].rankmax = newrmax
-    dbc[pname].lastupdate = time()
+    dbc[pname].rank = rank
+    dbc[pname].rankmax = rankmax
+    if doscan or allProf[pname].nolink then
+      dbc[pname].lastupdate = time()
+    end
     local _, clientbuild,_,uiversion = GetBuildInfo()
     dbc[pname].clientbuild = (tonumber(clientbuild) or 0)
     dbc[pname].uiversion = (tonumber(uiversion) or 0)
     debug("Processed "..cname.."'s "..pname);
-    if changestr then
+    if #diffstr > 0 then
+      changestr = changestr.." ("..diffstr..")"
       if settings.updatemsg then
         chatMsg(format(changestr,cname,pname));
       end
       addon:RefreshWindow()
     end
     addon:RefreshTooltips()
-    return rchange, schange, mchange
+    return rchange, schange, mchange, pname
+end
+
+function addon:pinfo_skill_count(pinfo)
+  local list = pinfo.spellids
+  if not list then return 0 end
+  local count = 0
+  for _ in pairs(list) do count = count + 1 end
+  return count
+end
+
+-- accepts a spellid or list of spellids and returns true if pinfo contains any
+function addon:pinfo_skill_known(pinfo, spellid)
+  local list = pinfo.spellids
+  if not list then return false end
+  if type(spellid) == "table" then
+    for _,id in ipairs(spellid) do
+      if list[id] then return true end
+    end
+    return false
+  else
+    return list[spellid] and true
+  end
+end
+
+-- returns true if pinfo is missing the specialization required to learn spellid
+function addon:pinfo_missing_spec(pinfo, spellid)
+  local list = pinfo.spellids
+  if not list then return false end
+  local spec
+  if type(spellid) == "table" then
+    for _,id in ipairs(spellid) do
+      spec = vars.spec_spells[id]
+      if spec then break end
+    end
+  else
+    spec = vars.spec_spells[spellid]
+  end
+  if not spec then return false end -- no spec required for spellid
+  for id, ss in pairs(vars.spec_spells) do
+    if list[id] and ss == spec then
+      return false -- have the required spec
+    end
+  end
+  return true -- missing the required spec
+end
+
+function addon:pinfo_skill_populate(pinfo)
+  local rchange = 0
+  addon:expandAllTradeSkills()
+  if GetNumTradeSkills() < 3 then
+    debug("pinfo_skill_populate failed: "..table.concat({tostringall(GetTradeSkillInfo(1))},","))
+    return 0
+  end
+  local list = pinfo.spellids or {}
+  pinfo.spellids = list
+  for id,_ in pairs(list) do
+    list[id] = false
+  end
+  for i = 1,GetNumTradeSkills() do
+    local sname, stype = GetTradeSkillInfo(i)
+    if stype ~= "header" and stype ~= "subheader" then
+      local link = GetTradeSkillRecipeLink(i)
+      local id = link and link:match("\124Henchant:(%d+)\124")
+      if not id then
+        debug("Unrecognized trade skill: "..i.." "..tostring(sname)..tostring(stype)..tostring(link))
+      else
+        id = tonumber(id)
+        if list[id] == nil then 
+	  rchange = rchange + 1
+	end
+	list[id] = true
+      end
+    end
+  end
+  for id,_ in pairs(list) do
+    if not list[id] then -- lost one
+      debug("Suppressed Deletion of "..tostring(GetSpellLink(id)))
+      if true then -- probably just missing due to update lag, don't actually delete it
+        list[id] = true
+      else
+        rchange = rchange - 1
+        list[id] = nil
+      end
+    end
+  end
+  return rchange
 end
 
 -- traversal function for character table
@@ -2148,7 +2123,7 @@ function addon:ActivateLink(cname,pname,link,nodropdown)
   if pname == GetSpellInfo(PID_MINE) then
      pname = GetSpellInfo(PID_SMELT) 
   end
-  if IsShiftKeyDown() then
+  if IsShiftKeyDown() then -- link to chat
     local activeEditBox = ChatEdit_GetActiveWindow();
 
     if cname and not pname then -- all we have is a toon name
@@ -2173,7 +2148,7 @@ function addon:ActivateLink(cname,pname,link,nodropdown)
           ChatFrame_OpenChat(link, DEFAULT_CHAT_FRAME)
        end
     end
-  else
+  else -- open tradeskill UI
     if not pname then
       return
     elseif cname == charName then
@@ -2185,16 +2160,31 @@ function addon:ActivateLink(cname,pname,link,nodropdown)
     else
       local name, rank, rankmax = GetTradeSkillLine()
       local linked, linkedName = IsTradeSkillLinked()
+      linkedName = addon:name_normalize(linkedName)
       if linked and (linkedName == cname or (linkedName == charName and cname == einstein))
          and name and name == pname then -- already open so close it
         CloseTradeSkill()
-      elseif nolinkProf[pname] then
+      else
+       if useguildhack and cname and pname and IsInGuild() then
+         local barename, realm = select(2,addon:name_normalize(cname))
+         local data = DB.chars[cname] and DB.chars[cname].data
+	 local magic = allProf[pname].magic
+	 if magic and data and 
+	    data.faction == UnitFactionGroup("player") and
+	    realm == GetRealmName():gsub("%s","") then
+	    GetGuildMemberRecipes(barename, magic)
+	 end
+       end
+       if nolinkProf[pname] then
         if not nocastProf[pname] then
           chatMsg(format(L["Warning: Tradeskill %s has no link available to be used."]..L["This is a known Blizzard bug."],pname));
         end
-      else -- open it (undocumented API - sshhh)
+       else -- open it (undocumented API - sshhh)
 	addon.lastTSL = link
+	addon.trade_skill_show = false
         SetItemRef(cleanlink(link),link,"LeftButton",ChatFrame1)
+	addon:ScheduleTimer(StubCheck, 3)
+       end
       end
     end
   end
@@ -2210,16 +2200,18 @@ function addon:ScanProfessions()
   CloseTradeSkill()
   addon:RefreshChar()
   local gotone = false
-  for p in pairs(allProf) do
-    if (allProf[p].patlen > 0) then
+  for i=1,2 do -- two-pass to improve the chances of catching delayed-load patterns
+   for p in pairs(allProf) do
+    if (not allProf[p].nolink) or (p == GetSpellInfo(PID_SMELT)) then
       CastSpellByName(p) 
       CloseTradeSkill()
       if DBc[p] and DBc[p].lastupdate >= scantime then
         gotone = true
       end
     end
+   end
+   addon:ScanSecondary()
   end
-  addon:ScanSecondary()
   if gotone then
     chatMsg(L["Profession Scan complete!"])
   else
@@ -2231,7 +2223,7 @@ end
 
 function addon:ScanSecondary()
   debug("addon:ScanSecondary()")
-  local gotr,gots,gotprof = 0,0,nil
+  local gotr,gots,gotm,gotprof = 0,0,0,nil
   --local prof1, prof2, archaeology, fishing, cooking, firstAid = GetProfessions()
   local myprofids = { GetProfessions() }
   for _,profid in pairs(myprofids) do
@@ -2239,27 +2231,40 @@ function addon:ScanSecondary()
     debug(pname.." "..rank.."/"..rankmax.." "..rankModifier) 
     local pinfo = allProf[pname]
     local link
-    if pinfo and pinfo.patlen > 1 then
+    if pinfo and not pinfo.nolink then -- tradeskill profession
       local _,rawlink = GetSpellLink(pname)
       link = addon:normalize_link(rawlink)
-      local oldlink = DBc and DBc[pname] and DBc[pname].link
-      if not link or link == oldlink then
-        link = nil
-      end
     elseif pinfo then -- non-tradeskill profession
-      link = addon:fakeLink(pname, 0, allProf[pname].spellid, rank, rankmax, 0)
+      link = nil
     end
-    if link then
-      local rchange, schange, mchange = addon:SaveLink(charName, pname, link)
+    if pinfo then
+      local rchange, schange, mchange = addon:SaveLink(charName, pname, link, rank, rankmax, false)
       gotr = gotr + rchange 
       gots = gots + schange 
-      if rchange > 0 or mchange > 0 then
+      gotm = gotm + mchange 
+      if rchange > 0 or schange > 0 or mchange > 0 then
         gotprof = pname
       end
     end
   end
   addon:checkLearn()
-  return gotr, gots, gotprof
+  return gotr, gots, gotm, gotprof
+end
+
+function addon:ReScan()
+  debug("addon:ReScan()")
+  local rchange, schange, mchange, pname = addon:ScanSecondary()
+  local rc, sc, mc, pn
+  if GetTradeSkillLine() ~= "UNKNOWN" and 
+     not IsTradeSkillGuild() and not IsTradeSkillLinked() then -- our skill window is open, try that
+    rc, sc, mc, pn = addon:UpdateTrade()
+  end
+  rchange = (rchange or 0) + (rc or 0)
+  schange = (schange or 0) + (sc or 0)
+  mchange = (mchange or 0) + (mc or 0)
+  pname = pname or pn
+  local gotone = (rchange > 0) or (schange > 0) or (mchange > 0)
+  return gotone, rchange, schange, mchange, pname
 end
 
 local function ProfTooltip(frame, cname, pname, pinfo)
@@ -2267,7 +2272,8 @@ local function ProfTooltip(frame, cname, pname, pinfo)
      debug("Missing frame on ProfTooltip")
      return
    end
-   addon.gui:SetStatusText(cname.." / "..pname)
+   local ccname = coloredcname(cname,nil,true)
+   addon.gui:SetStatusText(ccname.." / "..pname)
    if not settings.tooltips then 
      return
    end
@@ -2283,11 +2289,13 @@ local function ProfTooltip(frame, cname, pname, pinfo)
      GameTooltip:SetText(txt); 
      caveat = "<= "
    else
-     GameTooltip:SetText(cname .." ".. pname.." ("..pinfo.rank.." / "..pinfo.rankmax..")"); 
+     GameTooltip:SetText(ccname .." ".. pname.." ("..pinfo.rank.." / "..pinfo.rankmax..")"); 
    end
-   if (linkprof and pinfo and pinfo.link and allProf[pname].patlen > 1) then
-       local cnt = addon:link_bit_count(pinfo.link)
-       GameTooltip:AddLine(caveat..cnt.." "..L["recipes"])
+   if (linkprof and pinfo and pinfo.link) then
+       local cnt = addon:pinfo_skill_count(pinfo)
+       if cnt and cnt > 0 then
+         GameTooltip:AddLine(caveat..cnt.." "..L["recipes"])
+       end
    end
    local text =  chardatastr(cname)
    if #text then
@@ -2356,7 +2364,9 @@ end
 local function MakeButton(text, fn) 
   local button = AceGUI:Create("Button")
   button:SetText(text)
-  button:SetWidth(7.5*string.len(text)+50)
+  --local len = 7.5*addon:displaylen(text)+40
+  local len = button.frame:GetTextWidth() + 50
+  button:SetWidth(len)
   button:SetCallback("OnClick",fn)
   return button
 end
@@ -2421,10 +2431,12 @@ local function OnSelect(widget, event, value)
     label:SetImageSize(32,32)
     label:SetFontObject(headerfont)
     label:SetText(pname.."\n")
-    local einfo = DB.chars[einstein][pname]
-    label:SetCallback("OnClick", function() addon:ActivateLink(einstein,pname,einfo and einfo.link) end)
-    label:SetCallback("OnEnter", function(button) ProfTooltip(button.frame, einstein, pname, einfo) end)
-    label:SetCallback("OnLeave", function(button) addon.gui:SetStatusText(""); GameTooltip:Hide() end)
+    if useeinstein then
+      local einfo = DB.chars[einstein][pname]
+      label:SetCallback("OnClick", function() addon:ActivateLink(einstein,pname,einfo and einfo.link) end)
+      label:SetCallback("OnEnter", function(button) ProfTooltip(button.frame, einstein, pname, einfo) end)
+      label:SetCallback("OnLeave", function(button) addon.gui:SetStatusText(""); GameTooltip:Hide() end)
+    end
     label:SetHighlight(1,1,1,0.3)
     --grp:AddChild(label)
     --widget:AddChild(grp)
@@ -2446,13 +2458,17 @@ local function OnSelect(widget, event, value)
     scroller:AddChild(body)
   else -- grouped by character
     local dbc = DB.chars[cname]
+    if not dbc then -- might have stale character data with a saved treepath
+      debug("CreateWindow missing char, bailing out")
+      return 
+    end
     local label = AceGUI:Create("Label")
     label:SetFullWidth(true)
     label:SetFontObject(headerfont)
     if cname == einstein then
       label:SetText(einstein.."\n")
     else
-      label:SetText(format(L["%s's Professions"],cname).."\n")
+      label:SetText(format(L["%s's Professions"],coloredcname(cname,nil,true)).."\n")
     end
     widget:AddChild(label)
     if cname == charName and (not dbc.data or not dbc.data.scanned) then
@@ -2754,8 +2770,12 @@ function addon:CreateWindow()
   tree:SetCallback("OnClick", function (widget, event, path,...)
         local cname, pname = parsePath(path)
   	if activateontree then
-	  if not cname then 
-	    cname = einstein
+	  if not cname then
+	    if useeinstein then 
+	      cname = einstein
+	    else
+	      return
+	    end
 	  end
 	  if cname == allexpand or pname == allexpand then
 	    pname = nil
@@ -2769,11 +2789,11 @@ function addon:CreateWindow()
 		   addon.gui:SetStatusText(cname)
 		   if pname and cname then
                      ProfTooltip(frame, cname, pname, DB.chars[cname][pname]) 
-		   elseif pname and settings.tooltips then -- group by prof header
+		   elseif pname and settings.tooltips and useeinstein then -- group by prof header
                      ProfTooltip(frame, einstein, pname, DB.chars[einstein][pname]) 
 		   elseif cname and settings.tooltips then -- group by char header
                      GameTooltip:SetOwner(frame, "ANCHOR_BOTTOMRIGHT");
-                     GameTooltip:SetText(cname);
+                     GameTooltip:SetText(coloredcname(cname,nil,true));
                      local text =  chardatastr(cname)
                      if #text then
                        GameTooltip:AddLine(text)
@@ -2849,12 +2869,18 @@ StaticPopupDialogs["PROFESSIONSVAULT_RESET"] = {
 }
 
 function addon:Scan() 
+  local text = L["Would you like to scan your professions into ProfessionsVault?"]
+  if addon.scannote then
+    text = text.."\n\n"..addon.scannote
+    addon.scannote = nil
+  end
+  StaticPopupDialogs["PROFESSIONSVAULT_SCAN"].text = text
   StaticPopup_Show("PROFESSIONSVAULT_SCAN")
 end
 
 StaticPopupDialogs["PROFESSIONSVAULT_SCAN"] = {
   preferredIndex = 3, -- reduce the chance of UI taint
-  text = L["Would you like to scan your professions into ProfessionsVault?"],
+  text = "",
   button1 = OKAY,
   button2 = CANCEL,
   OnAccept = function () addon:ScanProfessions() end,
@@ -2892,117 +2918,25 @@ function addon:spellLink(pname)
     return "\124cff71d5ff\124Hspell:"..spellid.."\124h["..pname.."]\124h\124r"
   end
 end
-function addon:fakeLink(profName, guid, spellid, rank, rankmax, patlen, specdata) 
-  spellid = spellid or allProf[profName].spellid
-  patlen = patlen or allProf[profName].patlen
-  local deadbits = spellid and vars.PatDBL and vars.PatDBL[spellid] and vars.PatDBL[spellid][0].deadbitmask
- if deadbits and allProf[profName] and #deadbits == patlen and patlen == allProf[profName].patlen then -- exclude dead bits
-  local bitlist = {}
-  local deadlink = addon:link_build(spellid, rank, rankmax, guid, deadbits, nil, nil, true)
-  for bit = 0,(patlen*6)-1 do
-    if not addon:link_bit(deadlink, bit) then
-      table.insert(bitlist, bit)
-    end
-  end
-  return addon:bitlist_to_link(profName, bitlist, rank, rankmax, guid, specdata)
- else
-  local known = string.rep("/",patlen)
-  local link = addon:link_build(spellid, rank, rankmax, guid, known, specdata, nil, true)
-  --print(patlen..": "..link)
-  return link
- end
-end
-function addon:fakeLinkScan(profName, guid, spellid, rank, rankmax) 
-  spellid = spellid or allProf[profName].spellid
-  CastSpellByName("Cooking")
-  CloseTradeSkill()
-  for i=0,200 do
-    local link = addon:fakeLink(profName, guid, spellid, rank, rankmax, i)
-    SetItemRef(cleanlink(link),link,"LeftButton",ChatFrame1)
-    if TradeSkillFrame:IsVisible() and GetTradeSkillLine() and IsTradeSkillLinked() then
-      print("Success at "..spellid.." "..i.." "..GetSpellInfo(spellid).." "..link)
-      --printlink(link)
-      break
-    end
-  end
-end
-
-function addon:linkscan(min,max) 
-  local known = {}
-  for k,v in pairs(allProf) do
-      known[v.spellid] = k
-  end
-  for i=min,max do
-    if known[i] and false then
-      print("Skipping "..i.." "..known[i])
-    else
-      if i%100 == 0 then
-        print("testing "..i)
-      end
-      addon:fakeLinkScan("linkscan",i)
-    end
-  end
-  print("Scan complete: "..min..".."..max)
-end
 
 function addon:CleanDatabase() -- remove links that are dead due to a patch
   local clientversion, clientbuild = GetBuildInfo()
   clientbuild = tonumber(clientbuild) or 0
-  local DB = self.db.realm
+  local DB = self.db.global
   local oldclientbuild = DB.clientbuild or 13329 -- for old versions
   DB.clientversion = clientversion
   DB.clientbuild = clientbuild
   --print(oldclientbuild.." "..clientbuild)
   local removed = 0
   for pname,profinfo in pairs(allProf) do
-    local patlen = profinfo.patlen
     for cname,dbc in pairs(DB.chars) do
       local pinfo = dbc[pname]
       if (pinfo and cname ~= einstein) then
         local link = pinfo.link
-	local ocb = pinfo.clientbuild or -- assume 4.1 (when per-link vers were added) if we don't know better
-	    (oldclientbuild < 14007 and oldclientbuild or 14007)
-	local oldclientbuild = ocb
-        local databits = link and addon:extract_bits(link)
-        --print(cname.." "..pname.." "..#databits.." "..patlen)
-        if (databits and #databits ~= patlen) or -- patlen increase
-
-	  -- 4.0.6 bits rearranged without patlen change
-	  (oldclientbuild <= 13329 and clientbuild > 13329 and 
-            ((pname == GetSpellInfo(PID_COOK)) or 
-             (pname == GetSpellInfo(PID_ALCH))) ) or
-
-	  -- 4.1 bits rearranged without patlen change
-	  (oldclientbuild <= 13623 and clientbuild > 13623 and 
-             ( (pname == GetSpellInfo(PID_ALCH)) or
-               (pname == GetSpellInfo(PID_ENG))) ) or 
-
-	  -- 4.2: bits rearranged without patlen change
-	  (oldclientbuild <= 14007 and clientbuild > 14007 and 
-              (pname == GetSpellInfo(PID_COOK)) ) or
-
-	  -- 4.3: bits rearranged without patlen change
-	  (oldclientbuild <= 14545 and clientbuild >= 15005 and 
-              (pname == GetSpellInfo(PID_INSC)) ) or
-
-	  -- 5.0: all skills patlen changed
-
-	  -- 5.0.5: 11 cooking bits moved
-	  (oldclientbuild <= 16030 and clientbuild >= 16048 and 
-              (pname == GetSpellInfo(PID_COOK)) ) or
-
-	  -- 5.1.0: 10 tailoring bit moves
-	  (oldclientbuild < 16309 and clientbuild >= 16309 and 
-              (pname == GetSpellInfo(PID_TAIL)) ) or
-
-	  -- 5.2.0: 5 alchemy bit moves
-	  (oldclientbuild < 16656 and clientbuild >= 16656 and 
-              (pname == GetSpellInfo(PID_ALCH)) ) or
-
-	  -- 5.3.0: all trade links reformatted
-	  (oldclientbuild < link2build and clientbuild >= link2build) or
-
-	  (pname == GetSpellInfo(PID_SMELT)) -- smelting db permanently deprecated
+	local oldclientbuild = pinfo.clientbuild or oldclientbuild
+        if 
+	  -- 5.4.0: all trade links reformatted
+	  (oldclientbuild < link3build and clientbuild >= link3build)
 
 	  then
           dbc[pname] = nil
@@ -3018,6 +2952,10 @@ function addon:CleanDatabase() -- remove links that are dead due to a patch
 end
 
 function addon:AddEinstein() -- a toon that knows all the patterns
+  if not useeinstein then 
+    DB.chars[einstein] = nil
+    return 
+  end
   DB.chars[einstein] = {}
   local DBe = DB.chars[einstein]
   DBe.data = {}
@@ -3035,7 +2973,7 @@ function addon:AddEinstein() -- a toon that knows all the patterns
 	rankmax = gamerankmax,
 	-- not linkable with fake text, server bans it
 	--link = addon:fakeLink(pname.." ("..einstein..")", nil, allProf[pname].spellid, 0, 0, allProf[pname].patlen)
-	link = addon:fakeLink(pname, nil, nil, 0, 0, nil, vars.EinsteinSpec[allProf[pname].spellid])
+	link = addon:fakeLink(pname, nil, nil, 0, 0, nil)
       }
     end
   end
@@ -3054,6 +2992,7 @@ local function table_invert(t)
   end
   return ret
 end
+function addon:table_invert(...) return table_invert(...) end
 
 -- conjunctions used in transmute names that need to be normalized away
 local xmute_conjunctions = {}
@@ -3168,10 +3107,14 @@ end
 function addon:normalize(s) return normalize(s) end
 
 local english_prefix = {
-  ["Pattern"] = true,
-  ["Design"] = true,
-  ["Recipe"] = true,
-  ["Plans"] = true,
+  ["Pattern"] = true,   -- tail, LW
+  ["Design"] = true, 	-- JC
+  ["Recipe"] = true,	-- cooking, alc
+  ["Plans"] = true,	-- BS
+  ["Schematic"] = true,	-- eng
+  ["Formula"] = true,	-- ench
+  ["Technique"] = true,	-- insc
+  ["Manual"] = true,	-- first aid
 }
 function addon:fixup_badtrans(itemtext,spellname,tt) 
   -- some poor database translations only translate the item name and leave the recipe name in english
@@ -3203,111 +3146,30 @@ end
 
 function addon:build_tables() 
   local start = GetTime()
-  vars.code_to_bits = {}
-  vars.bits_to_code = {}
-  local bits = 0
-  for charid=string.byte("A"),string.byte("Z") do
-    vars.code_to_bits[string.char(charid)] = bits
-    bits = bits + 1
-  end
-  for charid=string.byte("a"),string.byte("z") do
-    vars.code_to_bits[string.char(charid)] = bits
-    bits = bits + 1
-  end
-  for charid=string.byte("0"),string.byte("9") do
-    vars.code_to_bits[string.char(charid)] = bits
-    bits = bits + 1
-  end
-  vars.code_to_bits["+"] = bits
-  bits = bits + 1
-  vars.code_to_bits["/"] = bits
-  bits = bits + 1
-  assert(bits == 64)
-  vars.bits_to_code = table_invert(vars.code_to_bits)
 
   addon.ttcache = addon.ttcache or {}
   addon.ttcachecnt = addon.ttcachecnt or 0
 
-  --vars.Exceptions_StoI = table_invert(vars.Exceptions_ItoS)
-  vars.Exceptions_StoI = {}
-  local new_ItoS = {}
-  for itemid, spellid in pairs(vars.Exceptions_ItoS) do
-    vars.Exceptions_StoI[spellid] = itemid
-    if type(itemid) == "table" then
-      for _,i in ipairs(itemid) do
-        new_ItoS[i] = spellid
-      end
-    else
-      new_ItoS[itemid] = spellid
-    end
-  end
-  vars.Exceptions_ItoS = new_ItoS
-
-  -- localize the pattern database
-  do
-  if vars.PatDB and not vars.PatDBL then
+  if not addon.vercheck then
+    addon.vercheck = true
     local md = vars.VersionInfo
     assert(md)
     local exp = { [0] = "Classic", [1] = "TBC", [2] = "WotLK", [3] = "Cata", [4] = "Mists" }
     debug("Loading PV_PatDB v"..md.DBversion.."-"..md.DBrevision.." for client "..
-            exp[md.clientexpansion].." "..
-            md.clientversion.."-"..md.clientbuildmax)
+            exp[md.clientexpansion].." "..  md.clientversion)
     local clientexpansion = GetExpansionLevel()
     local clientversion, clientbuild = GetBuildInfo()
     clientbuild = tonumber(clientbuild) or 0
-    if clientexpansion > md.clientexpansion or
-       --clientversion ~= md.clientversion or  -- build number is primary
-       clientbuild < tonumber(md.clientbuildmin) or clientbuild > tonumber(md.clientbuildmax) then
+    if clientexpansion > md.clientexpansion
+     --or clientbuild < tonumber(md.clientbuildmin) or clientbuild > tonumber(md.clientbuildmax)
+     or clientversion ~= md.clientversion 
+     then
       local msg = L["WARNING: This version of ProfessionsVault was compiled for a different version of WoW (%s) than you are running (%s). Some features may be broken. Please download an update from %s"]
-      msg = format(msg, format("%s %s-%d", exp[md.clientexpansion], md.clientversion, md.clientbuildmax),
+      msg = format(msg, format("%s %s", exp[md.clientexpansion], md.clientversion),
                         format("%s %s-%d", exp[clientexpansion], clientversion, clientbuild),
                         addon_website)
       addon.badversion = true
       chatMsg(msg)
-    end
-    vars.PatDBL = {}
-    for profname, pinfo in pairs(allProf) do
-      local pid = pinfo.spellid
-      if vars.PatDB[pid] then
-        local parr = {}
-	for spellid, bitidx in pairs(vars.PatDB[pid]) do
-	  local spellname = GetSpellInfo(spellid)
-	  spellname = normalize(spellname)
-          if spellid == 0 then	  
-	    parr[0] = bitidx -- metadata
-	  elseif not spellname then
-	    debug("ERROR: spellid not found: "..spellid)
-	  else
-	    local parridx
-	    if vars.Exceptions_StoI[spellid] then
-	      parridx = vars.Exceptions_StoI[spellid] 
-	      if parr[parridx] then
-	          chatMsg("ERROR: Duplicate exception: "..spellname.."  ("..spellid.."-"..GetLocale()..") Please report this bug!")
-	      end
-	    elseif usehashes then
-	      parridx = addon:hash(spellname) 
-	      if parr[parridx] then
-	          chatMsg("ERROR: Duplicate spell or hash coll: "..spellid.." "..spellname.."-"..GetLocale().."  ("..parridx..") bit="..parr[parridx].." Please report this bug!")
-	      end
-	    else
-	       parridx = spellname 
-	       if parr[spellname] then
-	          chatMsg("ERROR: Duplicate spellname: "..spellid.." "..spellname.."-"..GetLocale().."  bit="..parr[spellname].." Please report this bug!")
-	       end
-	    end
-	    if type(parridx) == "table" then
-	      for _,i in pairs(parridx) do -- crafted and recipe
-	         parr[i] = bitidx
-	      end
-	    else
-	      parr[parridx] = bitidx
-	    end
-	  end
-	end -- for spellid
-	vars.PatDBL[pid] = parr
-      end
-    end -- for prof
-    vars.PatDB = nil
     end
   end
 
@@ -3316,24 +3178,15 @@ function addon:build_tables()
 end 
 
 function addon:link_parse(link)
-  addon.clientbuild = addon.clientbuild or tonumber((select(2,GetBuildInfo())))
   if not link then return nil end
-  local spellid, rank, rankmax, guid, databits, specdata 
-  local f1, f2, f3, f4, rem = 
-     link:match("\124Htrade:([^:]*):([^:]*):([^:]*):([^:]*):([^\124]*)\124h")
+  local guid, spellid, magic =
+     link:match("\124Htrade:([^:]*):([^:]*):([^\124]*)\124h")
+  guid = guid_normalize(guid)
   local text = link:match("\124h%[([^\124]+)%]\124h")
-  if addon.clientbuild < link2build then
-    spellid, rank, rankmax, guid = f1, f2, f3, f4
-    databits = rem
-  else
-    guid, spellid, rank, rankmax = f1, f2, f3, f4
-    databits, specdata = rem:match("^([^:]*):?(.*)$")
-  end
-  return tonumber(spellid), tonumber(rank), tonumber(rankmax), guid, databits, specdata, text
+  return tonumber(spellid), guid, magic, text
 end
 
-function addon:link_build(spellorprof, rank, rankmax, guid, databits, specdata, text, color)
-  addon.clientbuild = addon.clientbuild or tonumber((select(2,GetBuildInfo())))
+function addon:link_build(spellorprof, guid, text, color)
   local profid, profname
   if tonumber(spellorprof) then -- accept prof via either spellid or spellname
     profid = tonumber(spellorprof)
@@ -3362,24 +3215,13 @@ function addon:link_build(spellorprof, rank, rankmax, guid, databits, specdata, 
      return 
   end
   profid = allProf[profname].spellid
+  local magic = allProf[profname].magic or 0
   -- normalize other arguments
-  rankmax = tonumber(rankmax) or gamerankmax
-  rank = tonumber(rank) or rankmax
   text = text or profname
   text = strtrim(strtrim(text):gsub("^%[(.*)%]$","%1")) -- strip brackets and ws
   guid = guid or UnitGUID("player")
   guid = guid_normalize(guid)
-  local pre,link
-  if addon.clientbuild < link2build then
-    pre = profid..":"..rank..":"..rankmax..":"..guid
-    specdata = nil
-  else
-    pre = guid..":"..profid..":"..rank..":"..rankmax
-  end
-  link = "\124Htrade:"..pre..":"..databits
-  if specdata and #specdata > 0 then
-    link = link..":"..specdata
-  end
+  link = "\124Htrade:"..guid..":"..profid..":"..magic
   link = link.."\124h["..text.."]\124h"
   if color then -- colored link
      link = "\124cffffd000"..link.."\124r"
@@ -3387,161 +3229,20 @@ function addon:link_build(spellorprof, rank, rankmax, guid, databits, specdata, 
   return link
 end
 
-function addon:extract_bits(link)
-  if not link then return nil end
-  return (select(5,addon:link_parse(link)))
-end
-
-function addon:link_rank(link)
-  if not link then return nil end
-  local rank, rankmax = select(2,addon:link_parse(link))
-  return rank, rankmax
-end
-
--- query a single bit in a trade link
-function addon:link_bit(link, bitidx)
-  local chunkid = math.floor(bitidx / 6)
-  local chunkbit = bitidx % 6
-  local databits = addon:extract_bits(link)
-  if chunkid > #databits then -- may happen after a patch
-    return false
-  end
-  local chunk = string.sub(databits, chunkid+1, chunkid+1)
-  --print("chunk="..chunk)
-  local bits = vars.code_to_bits[chunk]
-  --print("bits="..bits)
-  return bit.band(2^chunkbit, bits) > 0
-end
-
--- count the number of bits set in a trade link (excludes dead bits)
-function addon:link_bit_count(link)
-  local profid, _, _, _, databits, specdata = addon:link_parse(link)
-  if not databits then return 0 end
-  local deadbits = profid and vars.PatDBL and vars.PatDBL[profid] and vars.PatDBL[profid][0].deadbitmask
-  if deadbits and #deadbits ~= #databits then deadbits = nil end
-  --print(databits) ; print(deadbits)
-  local chunkcnt = #databits
-  local result = 0
-  for chunkid=0,chunkcnt-1 do
-    local chunk = string.sub(databits, chunkid+1, chunkid+1)
-    local bits = vars.code_to_bits[chunk]
-    if deadbits then
-      local deadmask = string.sub(deadbits, chunkid+1, chunkid+1)
-      local deadchunk = vars.code_to_bits[deadmask]
-      bits = bit.band(bits, bit.bnot(deadchunk))
-    end
-    --if bits > 0 then print(format("bits=%x",bits)) end
-    while bits > 0 do
-      result = result + bit.band(bits,1)
-      bits = bit.rshift(bits,1)
-    end
-  end
-  while specdata and #specdata > 0 do
-    local sid, srank, srankmax, sdata, rest = specdata:match("^(%d*):(%d*):(%d*):([^:]*):?(.*)$")
-    local speccnt = 0
-    specdata = rest
-    if srank and tonumber(srank) ~= 0 and sdata then
-      for chunkid=0,#sdata-1 do
-        local chunk = string.sub(sdata, chunkid+1, chunkid+1)
-        local bits = vars.code_to_bits[chunk]
-        while bits and bits > 0 do
-          speccnt = speccnt + bit.band(bits,1)
-          bits = bit.rshift(bits,1)
-        end
-      end
-    end
-    if speccnt > 1 then
-      result = result + speccnt - 1 -- one dead bit per spec
-    end
-  end
-  return result
-end
-
--- create a trade link with one bit set
-function addon:singlebit_link(profName, bitidx, rank, rankmax, guid)
-  local spellid = allProf[profName].spellid
-  local patlen = allProf[profName].patlen
-  local chunkid = math.floor(bitidx / 6)
-  local chunkbit = bitidx % 6
-
-  local bits = string.rep(vars.bits_to_code[0],chunkid) ..
-               vars.bits_to_code[2^chunkbit] ..
-               string.rep(vars.bits_to_code[0],patlen-chunkid-1)
-
-  return addon:link_build(spellid, rank, rankmax, guid, bits)
-end
-
-function addon:singlebit_link_info(link)
-  if not link then return nil end
-  --printlink(link)
-  SetItemRef(cleanlink(link),link,"LeftButton",ChatFrame1)
-  if not GetTradeSkillLine() or 
-     not IsTradeSkillLinked() or 
-     GetNumTradeSkills() == 0 then 
-     return nil 
-  end
-
-  local idx = GetFirstTradeSkill()
-  local skillName, skillType = GetTradeSkillInfo(idx)
-  if not skillName or not skillType or skillType == "header" then return nil end
-
-  return skillName, GetTradeSkillItemLink(idx), GetTradeSkillRecipeLink(idx)
-end
-
--- create a single-bit link that passes server filtering from provided guids
--- returns best-try link, (skillname or nil), itemlink, recipelink
-function addon:best_singlebit_link(profName, bitidx, guids)
-  local selflink = addon:singlebit_link(profName, bitidx)
-  local skillName, itemlink, recipelink = addon:singlebit_link_info(selflink)
-  if skillName then -- simple, common case - server accepted self
-    return selflink, skillName, itemlink, recipelink
-  end
-  for _,guid in pairs(guids) do -- try guids
-    local link = addon:singlebit_link(profName, bitidx, nil, nil, guid)
-    skillName, itemlink, recipelink = addon:singlebit_link_info(link)
-    if skillName then
-      return link, skillName, itemlink, recipelink
-    end
-  end
-  
-  return selflink, nil -- failed, probable dead bit
-end
-
--- converts an array of { bitidx1, bitidx2 } into a link
-function addon:bitlist_to_link(profName, bitlist, rank, rankmax, guid, specdata)
-  local patlen = allProf[profName].patlen
-  local ibitlist = table_invert(bitlist)
-
-  local bits = ""
-  for chunkid = 0, patlen-1 do
-    local chunk = 0
-    for chunkbit = 5,0,-1 do
-      local bitidx = chunkid*6 + chunkbit
-      chunk = bit.lshift(chunk, 1)
-      if ibitlist[bitidx] then
-        chunk = chunk + 1
-      end
-    end
-    bits = bits..vars.bits_to_code[chunk]
-  end
-
-  return addon:link_build(profName, rank, rankmax, guid, bits, specdata, nil, true)
-end
-
 -- normalize the profession clauses of a trade link, color output true/false/nil=same
 function addon:normalize_link(link, color)
    if not link then return nil end
 
-   local profid, rank, rankmax, guid, databits, specdata, text = addon:link_parse(link)
+   local profid, guid, magic, text = addon:link_parse(link)
    if not profid then -- ticket 72, handle non-prof links
       return link
    end
-   local newlink = addon:link_build(profid, rank, rankmax, guid, databits, specdata, 
-                                    nil, color or (color == nil and link:find("\124c")))
+   local newlink = addon:link_build(profid, guid, text,
+                                    color or (color == nil and link:find("\124c")))
 
    if link ~= newlink then
      debug("normalize_link("..link..") => "..newlink)
-     profid, rank, rankmax, guid, databits, specdata, text = addon:link_parse(newlink)
+     profid, guid, magic, text = addon:link_parse(newlink)
    end
    return newlink, text, profid
 end
@@ -3551,146 +3252,43 @@ function addon:BuildGuildTradeLink()
   local pname, rank, rankmax = GetTradeSkillLine()
   local linked, cname = IsTradeSkillLinked()
   if not linked or not pname or not cname then return nil end
+  cname = addon:name_normalize(cname)
   local profid = allProf[pname].spellid
-  local guid = guid_expand(DB.guid_cache[cname])
+  local guid = DB.guid_cache[cname]
   if not guid or not profid then return nil end
-  
-  -- expand all window settings
-  addon:expandAllTradeSkills()
 
-  local bitlist = {}
-  for idx = 1,GetNumTradeSkills() do
-    local skillname, skilltype = GetTradeSkillInfo(idx)
-    if skillname and skilltype ~= header then
-      local link = GetTradeSkillRecipeLink(idx)
-      local spellid = link and string.match(link,"\124Henchant:(%d+)\124")
-      spellid = tonumber(spellid)
-      if spellid then
-          local spellname = normalize(skillname)
-          local arridx
-          if vars.Exceptions_StoI[spellid] then
-            arridx = vars.Exceptions_StoI[spellid]
-            if type(arridx) == "table" then arridx = arridx[1] end
-          else
-            arridx = (usehashes and addon:hash(spellname)) or spellname
-          end
-          local bit = spellname and vars.PatDBL[profid] and vars.PatDBL[profid][arridx]
-          if not bit then
-            chatMsg(format(L["ERROR: Missing entry in pattern database: %s Please report this bug!"],
-              format("%d %s: %s",spellid,pname,skillname.."-"..GetLocale())))
-          else
-            debug(spellid .. " " .. link .. ": ".. bit)
-            table.insert(bitlist, bit)
-          end
-      end
-    end
-  end
-  
-  return addon:bitlist_to_link(pname, bitlist, rank, rankmax, guid) 
+  return addon:link_build(profid, guid, pname, true)
 end
 
-function addon:populate_database(profName,showall)
-  if not profName then
-    addon.db.global.patDB = nil
-    print("patDB wiped")
-    return
-  end
-  CastSpellByName((GetSpellInfo(PID_COOK)))
-  addon:expandAllTradeSkills()
-  CloseTradeSkill()
-
-  local bitlen = allProf[profName].patlen*6
-  local profid = allProf[profName].spellid
-  local patcnt = 0
-  local errcnt = 0
-  local movecnt = 0
-  local addcnt = 0
-  local delcnt = 0
-  local patDB = {}
-  patDB[0] = {}
-  local deadbits = {}
-  local header = patDB[0]
-  local checkstr = profid..","..bitlen
-  header.name = profName
-  header.bitlen = bitlen
-  header.scandate = date()
-  header.version, header.build = GetBuildInfo()
-  local oldbit_to_idx = {}
-  local delpats = {}
-  for idx,bit in pairs(vars.PatDBL[profid]) do
-    oldbit_to_idx[bit] = idx
-  end
-  local guids = addon:guid_survey()
-  print("Scanning "..bitlen.." "..profName.." bits")
-  for bitidx = 0,bitlen-1 do
-    local link, skillName, itemlink, recipelink = addon:best_singlebit_link(profName, bitidx, guids)
-    if not skillName then
-	checkstr = checkstr..",empty"
-	table.insert(deadbits, bitidx)
-	local delpat = oldbit_to_idx[bitidx]
-	if delpat and (delpats[delpat] == nil) then
-	  delpats[delpat] = true
-	end
-        print(link.." bit "..bitidx..": empty bit"..((delpat and ", was:"..delpat) or ""))
-    else
-        local spellid = string.match(recipelink, "\124Henchant:(%d+)\124h")
-	local show = showall
-        patcnt = patcnt + 1
-        spellid = tonumber(spellid)
-	checkstr = checkstr..","..spellid
-        if patDB[spellid] and patDB[spellid] ~= bitidx then
-          print("ERROR: duplicate bit found at bit "..bitidx)
-          errcnt = errcnt + 1 
-	  show = true
-        else
-          patDB[spellid] = bitidx
-	  local spellname = normalize(skillName)
-	  local arridx 
-	  if vars.Exceptions_StoI[spellid] then
-	    arridx = vars.Exceptions_StoI[spellid]
-	    if type(arridx) == "table" then arridx = arridx[1] end
-	  else
-	    arridx = (usehashes and addon:hash(spellname)) or spellname
-	  end
-	  local oldbit = spellname and vars.PatDBL[profid] and vars.PatDBL[profid][arridx]
-	  if oldbit ~= bitidx then
-	    print("oldbit = "..(oldbit or "nil"))
-	    show = true
-	    if oldbit == nil then
-	      addcnt = addcnt + 1
-	    else
-	      movecnt = movecnt + 1
-	      delpats[arridx] = false
-	    end
-	  end
-        end
-	if show then
-          print(link.." bit "..bitidx..": "..skillName.." "..spellid.." "..itemlink.." "..recipelink)
-	end
-    end
-  end
-  for _,del in pairs(delpats) do
-    if del then
-      delcnt = delcnt + 1
-    end
-  end
-  local deadlink = addon:bitlist_to_link(profName,deadbits)
-  local deadbitmask = addon:extract_bits(deadlink)
-  print("Dead bit link: "..deadlink)
-  header["deadbitmask"] = deadbitmask
-  header["patcnt"] = patcnt
-  header["checksum"] = addon:hash(checkstr)
-  local oldchecksum = vars.PatDBL[profid][0].checksum
-  print("Scanned "..bitlen.." "..profName.." bits, saved "..patcnt.." patterns, "..errcnt.." errors.")
-  print("Detected "..(addcnt+delcnt+movecnt).." changes ("..addcnt.." adds, "..delcnt.." dels, "..movecnt.." moves)."..
-        (oldchecksum and "Old Checksum = "..oldchecksum or "")..
-        " New Checksum = "..header["checksum"]..(oldchecksum == header["checksum"] and " (match)" or "(mismatch)"))
-  addon.db.global.patDB = addon.db.global.patDB or {}  
-  addon.db.global.patDB[profid] = patDB
-end
+-- tooltip scanning code
 
 addon.scantt = CreateFrame("GameTooltip", "ProfessionsVault_Tooltip", UIParent, "GameTooltipTemplate")
 addon.scantt:SetOwner(UIParent, "ANCHOR_NONE");
+
+function addon:scanBegin(itemidorlink)
+  addon.scantt:ClearLines()
+  addon.scantt:SetOwner(UIParent, "ANCHOR_NONE");
+  local itemid = tonumber(itemidorlink)
+  if itemid then
+    addon.scantt:SetItemByID(itemid)
+  else
+    addon.scantt:SetHyperlink(itemidorlink)
+  end
+  return addon.scantt:NumLines()
+end
+function addon:scanLink()
+  local itemname, itemlink = addon.scantt:GetItem()
+  return itemlink
+end
+function addon:scanLine(i)
+  return getglobal(addon.scantt:GetName() .. "TextLeft"..i)
+end
+function addon:scanText(i)
+  local line = addon:scanLine(i)
+  local text = line and line:GetText()
+  text = text or ""
+  return text
+end
 
 function addon:recipeClass()
   if not addon._recipeClass then
@@ -3720,69 +3318,6 @@ function addon:isEnchantScroll(itemid)
   end
 end
 
-function addon:isCraftedItem(itemid)
-  if not addon._glyphClass then
-    addon._glyphClass = select(6,GetItemInfo(45772))
-  end
-  if not addon._gemClass then
-    addon._gemClass = select(6,GetItemInfo(23077))
-  end
-  local name,link,quality,ilvl,_, class, subclass = GetItemInfo(itemid)
-  if class == addon._glyphClass then
-     return "glyph"
-  elseif addon:isEnchantScroll(itemid) then
-     return "scroll"
-  elseif class == addon._gemClass then
-     local ignorewords 
-     if locale == "enUS" then     ignorewords = { "Perfect", "Ornate" }
-     elseif locale == "deDE" then ignorewords = { "Perfekter", "Schmuck" }
-     elseif locale == "esES" then ignorewords = { "perfect", "ornamentad" } -- ending intentionally omitted
-     elseif locale == "frFR" then ignorewords = { "parfait", "orné" }
-     elseif locale == "ptBR" then ignorewords = { "Perfeita", "Perfeito", "Ornado", "Adornada" }
-     elseif locale == "itIT" then ignorewords = { "Perfetta", "Perfetto", "Pregiato", "Pregiata", "Crisopazio" }
-     elseif locale == "ruRU" then ignorewords = { 
-       "\208\161\208\190\208\178\208\181\209\128\209\136\208\181\208\189\208\189\209\139\208\185", -- perfect
-       "\208\161\208\190\208\178\208\181\209\128\209\136\208\181\208\189\208\189\208\176\209\143", -- perfect (alt spelling)
-       "\208\184\208\183\209\139\209\129\208\186\208\176\208\189\208\189\209\139\208\185" -- ornate
-     } elseif locale == "zhCN" then ignorewords = { 
-       "\229\174\140\231\190\142", -- perfect
-       -- XXX: no reliable "ornate"
-     } elseif locale == "zhTW" then ignorewords = { 
-       "\229\174\140\231\190\142", -- perfect
-       "\231\154\132\231\182\160\231\142\137\233\171\147", -- Chrysoprase, which has a substring of Chalcedony
-     } elseif locale == "koKR" then ignorewords = {
-       "\236\153\132\235\178\189\237\149\156", -- perfect
-       "\235\133\185\236\152\165\236\136\152", -- Chrysoprase
-     }
-     end
-     local jcdb = addon.db.global.JCDB
-     name = string.lower(name)
-     if jcdb[name] then -- its a raw gem
-       if (ilvl == 80 and quality == 4) or     -- WoLK epic raws created by alc
-	  (ilvl == 85 and quality == 3) then   -- Cata rare raws created by alc
-	  return "gem"
-       else
-          return nil -- non-craftable raw
-       end
-     end
-     -- it's a cut gem
-     local guessuncut = string.match(name, "^[^%s]+%s(.+)$")
-     guessuncut = guessuncut and string.lower(guessuncut)
-     if guessuncut and jcdb[guessuncut] then return "gem" end
-     for uncut,_ in pairs(jcdb) do
-       if string.find(name, uncut) and #name > #uncut then
-	 if ignorewords then
-	   for _,iw in pairs(ignorewords) do
-	     if string.find(name, string.lower(iw)) then return nil end
-	   end
-	 end
-         return "gem"
-       end
-     end
-  end
-  return nil
-end
-
 function addon:expandAllTradeSkills()
   -- expand all window settings
   if TradeSkillFilterBarExitButton then
@@ -3804,6 +3339,8 @@ end
 
 function addon:ScanJC()
   local jcdb = {}
+  addon.db.global.JCDB = {} -- XXX
+  if true then return end
 
   local pname = GetSpellInfo(PID_JC)
   local link = DB.chars[einstein][pname].link
@@ -4300,6 +3837,312 @@ function addon:SetAuctionColors()
 
 end
 
+-- -----------------------------------------------------------------------------
+local minedata
+
+function addon:MineSpells(min,max)
+  local status = minedata.status
+  for id = min, max do
+    local spellname, rank, icon, powerCost, isFunnel, powerType, castingTime, minRange, maxRange = GetSpellInfo(id)
+    if spellname and  -- valid spell id
+       powerCost == 0 and not isFunnel and minRange == 0 and maxRange == 0 then -- possible tradeskill
+       local link = "\124Henchant:"..id.."\124h[Spell:"..id.."]\124h"
+       addon:scanBegin(link)
+       local fullname = addon:scanText(1)
+       if fullname then
+         local pname, sname = fullname:match("^%s*([^:]+)%s*:%s*(.+)%s*$")
+	 if pname and addon.profspecs[pname] then -- translate aliases, ignore spec restrictions
+	    pname = addon.profspecs[pname]
+	 end
+	 if pname and sname and allProf[pname] and -- looks like a tradeskill spell
+	    allProf[pname].spellid ~= PID_ARCH then -- ignore archaeology spells
+	   local idx = pname..":"..normalize(sname)
+	   local old = minedata.spelldb[idx]
+	   if not old then
+	     minedata.spelldb[idx] = id
+	     minedata.spellcnt = minedata.spellcnt + 1
+           elseif old == id then
+	     -- perfect duplicate
+	   else -- may be several spellids for one skill
+	     local t = old
+	     if type(t) ~= "table" then
+	       t = { old }
+	     end
+	     local found 
+	     for _,e in ipairs(t) do if e == id then found = true; break end end
+	     if not found then
+	       table.insert(t, id)
+	       minedata.spellcnt = minedata.spellcnt + 1
+	     end
+	     minedata.spelldb[idx] = t
+	   end
+	 end
+       end
+    end
+  end
+end
+
+local badItemPrefix = { 
+  -- items with this first word in their name never teach a trade spell
+  -- these are mostly deprecated class spell books
+  ["Grimoire"] = true,
+  ["Libram"] = true,
+  ["Tome"] = true,
+  ["Guide"] = true,
+  ["Codex"] = true,
+  ["Book"] = true,
+  ["Handbook"] = true,
+  ["Ancient"] = true, -- Ancient Tome
+  ["Tablet"] = true, -- also ignores Tablet of Ren Yun, which doesnt scan properly anyhow
+  ["Expert"] = true, -- FA/Cook skill books
+  ["Master"] = true, -- FA/Cook skill books
+}
+local function recipeItemBlacklisted(id)
+  if vars.DeadRecipes[id] then return true end
+  local name = GetItemInfo(id)
+  local prefix = name and name:match("^%s*([^%s%p]+)[%s%p]")
+  if prefix and badItemPrefix[prefix] then 
+     return true
+  end
+  if name:match("^Manual ") or -- Manual class spell, not to be confused with First Aid "Manual:"
+     name:match(" Cookbook$")  -- Several bogus items
+     then
+     return true
+  end
+  return false
+end
+
+function addon:MineItems(min,max,cachemax)
+  local status = minedata.status
+  for id = min, cachemax do -- prefetch
+      GetItemInfo(id)
+      addon:scanBegin(id)
+  end
+  for id = min, max do
+    if addon:isRecipe(id) and not recipeItemBlacklisted(id) then
+      local link = (select(2,GetItemInfo(id)) or "item:"..id)
+      local pname, plvl
+      for i=2,addon:scanBegin(id) do
+        local text = addon:scanText(i)
+	pname, plvl = text:match("^%s*Requires%s*:?%s*(.+)%s*%((%d+)%)%s*$")
+	if pname and plvl then 
+          pname = strtrim(pname)
+	  if allProf[pname] then
+	    break
+	  elseif addon.profspecs[pname] then -- translate aliases, ignore spec restrictions
+	    pname = addon.profspecs[pname]
+	    break
+	  else -- false positive from reagent lists
+	    pname = nil
+	  end
+	end
+      end
+      local fullname = addon:scanText(1)
+      local prefix, sname = fullname:match("^%s*([^:]+)%s*:%s*(.+)%s*$")
+      if pname == "Fishing" then
+        -- ignore these 
+      elseif not sname then
+        if not vars.mine_exceptions_ItoS[id] then -- ignore errors for exceptions
+          chatMsg("Failed to detect sname for item "..id.." "..link)
+	  table.insert(status.errors,"sname: "..id.." "..link)
+	end
+      elseif not pname then
+        if not vars.mine_exceptions_ItoS[id] then -- ignore errors for exceptions
+          chatMsg("Failed to detect pname for item "..id.." "..link)
+	  table.insert(status.errors,"pname: "..id.." "..link)
+	end
+      else
+        local idx = pname..":"..normalize(sname)
+	local match = minedata.spelldb[idx]
+	if not match then
+          if not vars.mine_exceptions_ItoS[id] then -- ignore errors for exceptions
+            chatMsg("Failed to find matching spell for item "..id.." "..link..","..pname..","..sname)
+	    table.insert(status.errors,"match: "..id.." "..link)
+	  end
+	else
+	  local old = minedata.itemdb[id]
+	  if type(match) == "table" then
+	    table.sort(match)
+	  end
+	  if not old then
+	    minedata.itemdb[id] = match
+	    minedata.itemcnt = minedata.itemcnt + 1
+	  else
+	    local matchcnt = type(match) == "table" and #match or 1
+	    local oldcnt = type(old) == "table" and #old or 1
+	    if matchcnt > oldcnt then
+	      minedata.itemdb[id] = match
+	    end
+	  end
+	end
+      end
+    end
+  end
+end
+
+local function MineSchedule()
+  addon:DataMine(false, nil, nil, minedata.status)
+end
+
+function addon:DataMineClear()
+  wipe(self.db.global.minedata or {})
+  minedata = nil
+  chatMsg("DataMine cleared.")
+end
+
+function addon:DataMine(reset, maxspell, maxitem, status)
+  local pausetime = 0.25
+  local spellstep = 500
+  local itemstep = 100
+  minedata = self.db.global.minedata or {}
+  self.db.global.minedata = minedata
+  if not addon.profspecs then
+    addon.profspecs = {}
+    for pname, pinfo in pairs(allProf) do
+      if pinfo.aliases then
+        for _, alias in ipairs(pinfo.aliases) do
+	  addon.profspecs[alias] = pname
+	end
+      end
+    end
+  end
+  if reset or not minedata.spelldb then
+    chatMsg("Reset minedata")
+    wipe(minedata)
+    minedata.spelldb = {}
+    minedata.itemdb = {}
+    minedata.spellcnt = 0
+    minedata.itemcnt = 0
+  end
+  local firstiter = false
+  if not status then -- user initiated run
+    firstiter = true
+    status = minedata.status or {}
+    if maxspell or maxitem then -- user reset
+      wipe(status)
+    end
+  end
+  minedata.status = status
+  if not maxspell or maxspell < 1 then maxspell = 200000 end
+  if not maxitem or  maxitem < 1 then  maxitem = 107000 end
+  status.maxspell = status.maxspell or maxspell
+  status.maxitem = status.maxitem or maxitem
+  status.curspell = status.curspell or 0
+  status.curitem = status.curitem or 0
+  status.old_spellcnt = status.old_spellcnt or minedata.spellcnt
+  status.old_itemcnt = status.old_itemcnt or minedata.itemcnt
+  status.errors = status.errors or {}
+  if firstiter and #status.errors > 0 then
+    chatMsg("Errors detected so far:")
+    for _,err in ipairs(status.errors) do
+      chatMsg(err)
+    end
+  end
+  if status.curspell < status.maxspell then
+    if status.curspell == 0 then
+       chatMsg("Starting spellid test 0 to "..status.maxspell.."...")
+    elseif firstiter then
+       chatMsg("Resuming spellid test "..status.curspell.." to "..status.maxspell.."...")
+    end
+    local min = status.curspell
+    local max = math.min(min+spellstep-1, status.maxspell)
+    chatMsg("Scanning spellid "..min)
+    addon:MineSpells(min,max)
+    status.curspell = max + 1
+    addon:ScheduleTimer(MineSchedule, pausetime)
+  elseif status.curitem < status.maxitem then
+    if status.curitem == 0 then
+       chatMsg("Starting itemid test 0 to "..status.maxitem.."...")
+    elseif firstiter then
+       chatMsg("Resuming itemid test "..status.curitem.." to "..status.maxitem.."...")
+    end
+    local min = status.curitem
+    local max = math.min(min+itemstep-1, status.maxitem)
+    local cachemax = math.min(min+2*itemstep, status.maxitem)
+    chatMsg("Scanning itemid "..min)
+    addon:MineItems(min,max,cachemax)
+    status.curitem = max + 1
+    addon:ScheduleTimer(MineSchedule, pausetime)
+  else
+    for _,err in ipairs(status.errors) do
+      chatMsg(err) 
+    end
+    chatMsg(#status.errors.." errors.")
+    chatMsg("Found "..minedata.spellcnt.." trade spells ("..(minedata.spellcnt-status.old_spellcnt).." new)")
+    chatMsg("Found "..minedata.itemcnt.." trade items ("..(minedata.itemcnt-status.old_itemcnt).." new)")
+    chatMsg("Generating ItoS")
+    addon:MineOutput()
+  end
+end
+
+function addon:MineOutput()
+  local olddb = vars.ItoS
+  local newdb = minedata.itemdb
+  -- merge exceptions
+  for k,v in pairs(vars.mine_exceptions_ItoS) do
+    newdb[k] = v
+  end
+  -- compute id list and change stats
+  local ids = {}
+  local add,miss,same,change = 0,0,0,0
+  for k, v in pairs(newdb) do
+    table.insert(ids, k)
+    local ov = olddb[k]
+    if not ov then
+      add = add + 1
+    else
+      local vs =  (type(v) == "table" and table.concat(v,",") or v)
+      local ovs = (type(ov) == "table" and table.concat(ov,",") or ov)
+      if vs == ovs then
+        same = same + 1
+      else
+        change = change + 1
+      end
+    end
+  end
+  for k, v in pairs(olddb) do
+    local nv = newdb[k]
+    if not nv then
+      miss = miss + 1
+      newdb[k] = v
+      table.insert(ids, k)
+    end
+  end
+  table.sort(ids)
+  local total = #ids
+  chatMsg("Found "..total.." entries. "
+          ..same.." same, "..add.." new, "..change.." changed, "..miss.." missing.")
+  -- build output
+  local output = ""
+  for _,id in ipairs(ids) do
+    local name = GetItemInfo(id) or "<unknown>"
+    local v = newdb[id]
+    local line = "["..id.."]="
+    if type(v) == "table" then
+      local tmp = ""
+      for _,vv in ipairs(v) do
+        tmp = tmp..(#tmp > 0 and "," or "")..vv
+      end
+      v = "{"..tmp.."}"
+    end
+    line = line..v..","
+    line = line..string.rep(" ",16-#line).." -- "..name.."\n"
+    output = output..line
+  end
+  local sz = #output/1024
+  local checksum = addon:hash(output)
+  chatMsg("Wrote "..math.floor(sz).." KB output. checksum="..checksum)
+  local comment =   "\n-- entries  = "..total
+                  .."\n-- checksum = "..checksum
+                  .."\n-- version  = "..(GetBuildInfo())
+                  .."\n-- build    = "..select(2,GetBuildInfo())
+                  .."\n-- rev      = "..addon.revision
+                  .."\n-- date     = "..date()
+		  .."\n"
+  minedata.output = comment..output
+end
+-- -----------------------------------------------------------------------------
+
 -- test code to find recipe mismatches, must be run per-language
 -- run with no arguments to start a new default run or resume an interrupted run
 -- run with minval and maxval to start a run on a specified range
@@ -4310,9 +4153,9 @@ function addon:TestRecipes(minval, maxval, status)
   if not status then -- user initiated run
     firstiter = true
     if not minval and not maxval then -- default
-      if settings.testrecipes_status and 
-         settings.testrecipes_status.curval < settings.testrecipes_status.maxval then -- resume
-	 status = settings.testrecipes_status
+      local gstatus = self.db.global.testrecipes_status
+      if gstatus and gstatus.curval < gstatus.maxval then -- resume
+	 status = gstatus
          chatMsg("Resuming itemid scan "..status.minval.." to "..status.maxval.." at "..status.curval.."...")
 	 if #status.errors > 0 then
 	   chatMsg("Errors detected so far:")
@@ -4322,7 +4165,7 @@ function addon:TestRecipes(minval, maxval, status)
 	 end
       else -- new run
          minval = minval or 0
-         maxval = maxval or 100000
+         maxval = maxval or 110000
       end
     end
   end
@@ -4344,7 +4187,7 @@ function addon:TestRecipes(minval, maxval, status)
 	elapsed = 0,
         errors = {},
       }
-      settings.testrecipes_status = status
+      self.db.global.testrecipes_status = status
       chatMsg("Starting itemid test "..minval.." to "..maxval.."...")
   end
   addon:RefreshTooltips()
@@ -4371,19 +4214,6 @@ function addon:TestRecipes(minval, maxval, status)
                and not vars.DeadRecipes[itemid] then
                table.insert(status.errors, itemid.." "..itemlink)
             end
-       else
-         local crafttype = addon:isCraftedItem(itemid) 
-	 if crafttype then
-            addon.ttcrafted = false
-            count[crafttype] = (count[crafttype] or 0) + 1
-            if not addon.ttcache[itemid] then
-              addon.scantt:SetHyperlink(itemlink)
-            end
-            if (not addon.ttcrafted or not addon.ttcache[itemid] or addon.ttcache[itemid].biterr) 
-	       and not vars.DeadCrafted[itemid] then
-               table.insert(status.errors, itemid.." "..itemlink)
-            end
-	 end
        end
     end
   end
@@ -4414,11 +4244,12 @@ end
 local function displaylen(s)
   s = string.gsub(s,"\124c........","")
   s = string.gsub(s,"\124r","")
-  return #s
+  return strlenutf8(s)
 end
+function addon:displaylen(...) return displaylen(...) end
 
 function addon:ShowTooltip(tt)
-  local itemid, spellid, spellname, crafted
+  local itemid, spellid, spellname
   local ttname = tt:GetName()
   --debug("ShowTooltip")
   if not ttname then return end
@@ -4438,6 +4269,7 @@ function addon:ShowTooltip(tt)
   --debug("ShowTooltip cacheid="..cacheid)
 
   if addon.ttcache[cacheid] then -- read from cache
+    --print("HIT:"..cacheid..":"..#addon.ttcache[cacheid])
     if #addon.ttcache[cacheid] > 0 then
       tt:AddLine(" ")
     end
@@ -4466,6 +4298,7 @@ function addon:ShowTooltip(tt)
     tt:Show()
     tt:Show()
   else -- build cache
+    --print("MISS:"..cacheid)
     local profName, profLvl, profID
     local recipeClasses, recipeFaction
     if spellid then -- spell link
@@ -4497,9 +4330,7 @@ function addon:ShowTooltip(tt)
 
       for i=2,tt:NumLines() do
         local line = getglobal(ttname .. "TextLeft"..i)
-        if not line then return end
-        local text = line:GetText()
-        if not text then return end
+	local text = (line and line:GetText()) or ""
 	text = puncnormalize(text)
         local pn, pl = string.match(text, strtrim(L["Requires"]).."%s*:?%s*(.+)%s*%((%d+)%)%s*$")
 	if not pn then
@@ -4533,77 +4364,28 @@ function addon:ShowTooltip(tt)
 	end
       end
       if profID == PID_FISH or profID == PID_FA then addon.ttrecipe = false ; return end -- ignore fishing/first aid books
-     elseif addon.settings.craftedtooltips then -- possible crafted item, determine spellname and profinfo
-        local spns = {}
-        if vars.Exceptions_ItoS[itemid] then 
-	  table.insert(spns, itemid)
-	else
-	  table.insert(spns, itemtext) -- try base item first
-
-	  if addon:isEnchantScroll(itemid) then  -- handle scroll of enchant
-	    local tmp = itemtext
-	    if locale == "deDE" then -- remove extra verbiage not present in spell
-	      tmp = string.gsub(tmp, "hverzauberung", "he")
-	      tmp = string.gsub(tmp, "n?verzauberung", "")
-	    elseif locale == "ruRU" then -- convert "yap" used in scroll to plural "yapbl" used in spell
-	      tmp = string.lower(tmp)
-	      tmp = string.gsub(tmp, "\209\129\208\178\208\184\209\130\208\190\208\186", "") -- strip cbntok
-	      tmp = string.gsub(tmp, "(\209\135\208\176\209\128)", "%1\209\139") 
-	    end
-            table.insert(spns, tmp)
-	  end
-
-	  table.insert(spns, xmute_token.." "..itemtext) -- try transmute
-	end
-        for _, spn in ipairs(spns) do
-	  local idx
-	  if type(spn) == "number" then -- exception itemid
-	    idx = spn
-	  else
-	    idx = normalize(spn)
-	    idx = (usehashes and addon:hash(idx)) or idx
-	  end
-          for pid,_ in pairs(vars.PatDBL) do
-	    if vars.PatDBL[pid][idx] then
-	      spellname = spn
-	      profID = pid
-	      profName = GetSpellInfo(pid)
-	      profLvl = 0
-	      crafted = true
-	      addon.ttcrafted = true
-	      break
-	    end
-	  end
-	  if profName then break end
-        end
-     end -- crafted
+      if profID == PID_INSC then recipeClasses = nil end -- ignore false positive classes on glyph techniques
+     end -- recipe
     end -- item
     if not profName or not profID or not profLvl then return end
     debug(ttname..": "..profName.." ("..profLvl.."): "..spellname.." "..(recipeClasses or "")..(recipeFaction or ""))
     local knownstr, learnstr, unknownstr, skillstr, dunnostr = "","","","",""
 
-    if not vars.PatDBL or not vars.PatDBL[profID] then return end
+    if not vars.ItoS and not spellid then return end
     spellname = normalize(spellname)
-    local bitidx = vars.PatDBL[profID][(usehashes and addon:hash(spellname)) or spellname]
-    -- some recipe names dont match their spell names, check for special cases
-    if (not bitidx and itemid and vars.Exceptions_ItoS[itemid]) then
-        --spellname = normalize(GetSpellInfo(vars.Exceptions_ItoS[itemid]))
-        bitidx = vars.PatDBL[profID][itemid]
+    if itemid and not spellid then
+      spellid = vars.ItoS[itemid]
     end
-    if (not bitidx and spellid and vars.Exceptions_StoI[spellid]) then
-        local item = vars.Exceptions_StoI[spellid]
-	if type(item) == "table" then item = item[1] end
-        --spellname = normalize(GetSpellInfo(spellid))
-        bitidx = vars.PatDBL[profID][item]
-    end
-    if (not bitidx and not (itemid and vars.DeadRecipes[itemid])) then -- some recipe names dont match their spell names, grr
+    if (not spellid and not (itemid and vars.DeadRecipes[itemid])) then 
       chatMsg(format(L["ERROR: Missing entry in pattern database: %s Please report this bug!"],
-            format("%d %s: %s",(itemid or spellid),profName,spellname.."-"..GetLocale())))
+            format("%d %s: %s",tostring(itemid or spellid),profName,spellname.."-"..GetLocale())))
 	    --print(string.byte(spellname,1,#spellname))
     end
+    --myprint("SPELLID LOOKUP:",itemid, spellid)
 
     local rtype = "unknown"
     local rval = rcolortable[rtype].order
+    local thisRealm = GetRealmName():gsub("%s","")
 
     for cname,dbc in cpairs(DB.chars) do
       --print(cname)
@@ -4611,9 +4393,11 @@ function addon:ShowTooltip(tt)
       local isalt = not isself and dbc.data and dbc.data.alt
       local isother = not isself and not isalt
       local difffaction = dbc.data and dbc.data.faction and dbc.data.faction ~= DBc.data.faction
+      local diffrealm = not isself and select(3,name_normalize(cname)) ~= thisRealm
       local coloredname,ctype = coloredcname(cname, settings.colorttnames)
       if (dbc[profName] and cname ~= einstein and not addon:isHidden(cname,profName) and 
 	  (not difffaction or settings.factiondata) and
+	  (not diffrealm or settings.realmdata) and
 	  ((isself and settings.selfdata) or
 	   (isalt and settings.altdata) or
 	   (isother and settings.otherdata))
@@ -4623,16 +4407,16 @@ function addon:ShowTooltip(tt)
            skillstr = skillstr..((#skillstr > 0 and ",") or "") .. coloredname .. " (" .. pinfo.rank .. ")"
            ctype = "skill_"..ctype
         else 
-	   if (not bitidx) then
+	   if (not spellid) then
              dunnostr = dunnostr..((#dunnostr > 0 and ",") or "") .. coloredname 
 	     ctype = "dunno"
-           elseif (addon:link_bit(pinfo.link, bitidx)) then
+           elseif addon:pinfo_skill_known(pinfo, spellid) then
              knownstr = knownstr..((#knownstr > 0 and ",") or "") .. coloredname 
              ctype = "known_"..ctype
            elseif profLvl == 0 or
 	     (recipeClasses and dbc.data.class and not recipeClasses:find(dbc.data.class)) or 
 	     (recipeFaction and dbc.data.faction ~= recipeFaction) or
-	     (itemid and recipeSpec[itemid] and recipeSpec[itemid] ~= profSpec(pinfo.link))
+	     (addon:pinfo_missing_spec(pinfo, spellid))
 	     then
              unknownstr = unknownstr..((#unknownstr > 0 and ",") or "") .. coloredname 
              ctype = "unknown"
@@ -4656,20 +4440,9 @@ function addon:ShowTooltip(tt)
       addon.ttcachecnt = addon.ttcachecnt + 1
     end
     addon.ttcache[cacheid] = {}
-    if not bitidx then
+    if not spellid then
       addon.ttcache[cacheid].biterr = true
     end
-   if crafted then
-     local crafters = "("..profName..")"
-     local craftcolor
-     if #knownstr > 0 then
-       crafters = knownstr
-       craftcolor = settings.recipecolor["known_other"]
-     else
-       craftcolor = settings.recipecolor["unknown"]
-     end
-     table.insert(addon.ttcache[cacheid], { text = L["Craftable by"]..": "..crafters, color = craftcolor })
-   else
     if #unknownstr > 0 then
       table.insert(addon.ttcache[cacheid], { text = L["Not Known"]..": "..unknownstr, color = settings.recipecolor["unknown"] })
     end
@@ -4686,8 +4459,7 @@ function addon:ShowTooltip(tt)
       table.insert(addon.ttcache[cacheid], { text = L["Not sure"]..": "..dunnostr, color = settings.recipecolor["dunno"] })
     end
     addon.ttcache[cacheid].rtype = rtype
-   end
-   addon:ShowTooltip(tt)
+    addon:ShowTooltip(tt)
   end
 end
 
@@ -4714,7 +4486,7 @@ addon.DropDownMenu.initialize = function(self, level)
         if level == 1 then
                 -- Create the title of the menu
                 menuinfo.isTitle = 1
-                menuinfo.text = cname..((pname and (" / "..pname)) or "")
+                menuinfo.text = coloredcname(cname,nil,true)..((pname and (" / "..pname)) or "")
                 menuinfo.notCheckable = 1
                 UIDropDownMenu_AddButton(menuinfo, level)
 
@@ -4764,7 +4536,7 @@ addon.DropDownMenu.initialize = function(self, level)
 			else
 			   pat = cname..pat
 			end
-		        DB.hide[pat] = true
+		        settings.hide[pat] = true
 			debug("Hiding "..pat)
 			addon:RefreshWindow(function() settings.treepath = { settings.treepath[1] } end)
 			addon:RefreshTooltips()

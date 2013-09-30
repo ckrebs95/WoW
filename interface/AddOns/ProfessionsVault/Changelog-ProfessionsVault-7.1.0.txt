@@ -1,0 +1,107 @@
+------------------------------------------------------------------------
+r518 | oscarucb | 2013-09-26 02:12:22 +0000 (Thu, 26 Sep 2013) | 1 line
+Changed paths:
+   A /tags/7.1.0 (from /trunk:517)
+
+Tagging as 7.1.0
+------------------------------------------------------------------------
+r516 | oscarucb | 2013-09-25 10:14:08 +0000 (Wed, 25 Sep 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+tweak button width calculation
+
+------------------------------------------------------------------------
+r515 | oscarucb | 2013-09-25 03:57:13 +0000 (Wed, 25 Sep 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+work harder to scan self skills, to catch occasionally delayed load
+
+------------------------------------------------------------------------
+r514 | oscarucb | 2013-09-24 22:18:23 +0000 (Tue, 24 Sep 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+link update
+
+------------------------------------------------------------------------
+r512 | oscarucb | 2013-09-24 07:15:04 +0000 (Tue, 24 Sep 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+add more information to the patlearn autoscan
+
+------------------------------------------------------------------------
+r510 | oscarucb | 2013-09-24 02:23:21 +0000 (Tue, 24 Sep 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+ticket 100: lua error from herbalism on non-english clients
+
+------------------------------------------------------------------------
+r509 | oscarucb | 2013-09-23 22:59:28 +0000 (Mon, 23 Sep 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+expand a comment
+
+------------------------------------------------------------------------
+r507 | oscarucb | 2013-09-21 22:17:56 +0000 (Sat, 21 Sep 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+ticket 110: drycoded fix
+
+------------------------------------------------------------------------
+r506 | oscarucb | 2013-09-21 08:08:27 +0000 (Sat, 21 Sep 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+drycode a fix for stale einstein data
+
+------------------------------------------------------------------------
+r505 | oscarucb | 2013-09-20 23:11:23 +0000 (Fri, 20 Sep 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+add data-filtering option for cross-realm
+
+------------------------------------------------------------------------
+r504 | oscarucb | 2013-09-20 22:57:09 +0000 (Fri, 20 Sep 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+add a hack to open primary profession links for guild toons
+
+------------------------------------------------------------------------
+r502 | oscarucb | 2013-09-20 07:16:06 +0000 (Fri, 20 Sep 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+tweak default width
+
+------------------------------------------------------------------------
+r501 | oscarucb | 2013-09-20 05:49:04 +0000 (Fri, 20 Sep 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.toc
+
+.toc bump
+
+------------------------------------------------------------------------
+r500 | oscarucb | 2013-09-20 05:47:15 +0000 (Fri, 20 Sep 2013) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+   M /trunk/ProfessionsVault.lua
+
+merge dev54 branch
+
+------------------------------------------------------------------------
+r498 | oscarucb | 2013-09-12 00:20:34 +0000 (Thu, 12 Sep 2013) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+   M /trunk/ProfessionsVault.lua
+
+stub out functionality, post a url for 5.4 tradeskill bug
+
+------------------------------------------------------------------------

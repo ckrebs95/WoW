@@ -36,7 +36,7 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = -409.9998474121094,
-			["DetailWindowX"] = 619.0000610351563,
+			["DetailWindowX"] = 619.0000610351562,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 294.0000915527344,
 			["MainWindowHeight"] = 132.9999237060547,
@@ -97,25 +97,13 @@ RecountDB = {
 			["GraphWindowY"] = 0,
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -456.9995422363281,
-					["x"] = -751.5000228881836,
-					["w"] = 397.0000305175781,
+					["y"] = -456.999626159668,
+					["x"] = -751.5000457763672,
+					["w"] = 396.9999694824219,
 					["h"] = 137.9999084472656,
 				},
 			},
-			["Colors"] = {
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
-					["Total Bar"] = {
-						["a"] = 1,
-					},
-				},
-			},
-			["DetailWindowY"] = -227.9999542236328,
 			["DetailWindowX"] = 563,
-			["GraphWindowX"] = 0,
 			["LastInstanceName"] = "Shadowfang Keep",
 			["RealtimeWindows"] = {
 				["Realtime_!RAID_DAMAGE"] = {
@@ -129,11 +117,23 @@ RecountDB = {
 					false, -- [8]
 				},
 			},
-			["CurDataSet"] = "LastFightData",
+			["MainWindowHeight"] = 137.9999235570442,
+			["CurDataSet"] = "CurrentFightData",
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+					["Total Bar"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["DetailWindowY"] = -227.9999542236328,
 			["MainWindowMode"] = 2,
 			["HideCollect"] = true,
 			["MainWindowWidth"] = 397.0000017136335,
-			["MainWindowHeight"] = 137.9999235570442,
+			["GraphWindowX"] = 0,
 		},
 		["Dethamett - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -189,15 +189,13 @@ RecountDB = {
 			["GraphWindowY"] = 0,
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -489.0003433227539,
-					["x"] = -784.4998931884766,
+					["y"] = -540.3336944580078,
+					["x"] = -769.8332672119141,
 					["w"] = 283,
 					["h"] = 102.0000457763672,
 				},
 			},
 			["MainWindowMode"] = 2,
-			["LastInstanceName"] = "Throne of Thunder",
-			["CurDataSet"] = "LastFightData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -209,10 +207,12 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["MainWindowHeight"] = 102.000015646219,
-			["GraphWindowX"] = 0,
-			["MainWindowWidth"] = 283.0000263005491,
 			["DetailWindowX"] = 0,
+			["GraphWindowX"] = 0,
+			["LastInstanceName"] = "Blackrock Depths",
+			["CurDataSet"] = "CurrentFightData",
+			["MainWindowWidth"] = 283.0000263005491,
+			["MainWindowHeight"] = 102.000015646219,
 		},
 		["Desamil - Khaz Modan"] = {
 			["GraphWindowY"] = 0,

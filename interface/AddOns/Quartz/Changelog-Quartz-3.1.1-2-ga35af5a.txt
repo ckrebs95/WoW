@@ -1,7 +1,0 @@
-Hendrik Leppkes:
-	- Bump toc
-	- Fix latency showing wrong information when using world objects or crafting.
-	The latency display requires a fixed order of events,
-	if some of these events don't happen, the information is bogus,
-	so instead of trying to use it anyway, clear it, and ensure its
-	only displayed when its meaningful.

@@ -20,7 +20,7 @@ DBM_SavedOptions = {
 	},
 	["WarningColors"] = {
 		{
-			["b"] = 0.94,
+			["b"] = 0.9399999999999999,
 			["g"] = 0.8,
 			["r"] = 0.41,
 		}, -- [1]
@@ -67,7 +67,7 @@ DBM_SavedOptions = {
 		["X"] = 0,
 		["Point"] = "TOP",
 	},
-	["WarningIconLeft"] = true,
+	["ShowEngageMessage"] = true,
 	["DontPlayPTCountdown"] = false,
 	["SpecialWarningFontColor"] = {
 		0, -- [1]
@@ -77,7 +77,7 @@ DBM_SavedOptions = {
 	["ShowKillMessage"] = true,
 	["HealthFrameWidth"] = 200,
 	["SpecialWarningFlashDura2"] = 0.4,
-	["DontSendBossWhispers"] = false,
+	["WarningIconLeft"] = true,
 	["RangeFrameSound1"] = "none",
 	["HPFrameY"] = -150.9996948242188,
 	["HideWatchFrame"] = false,
@@ -93,22 +93,22 @@ DBM_SavedOptions = {
 	["ShowWarningsInChat"] = true,
 	["DontSetIcons"] = false,
 	["BigBrotherAnnounceToRaid"] = false,
-	["ChatFrame"] = "DEFAULT_CHAT_FRAME",
-	["CountdownVoice"] = "Corsica",
 	["ShowSpecialWarnings"] = true,
-	["HealthFrameLocked"] = false,
+	["CountdownVoice"] = "Corsica",
+	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
+	["WarningIconRight"] = true,
 	["HideBossEmoteFrame"] = false,
 	["InfoFrameY"] = -96.00009155273438,
-	["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.wav",
-	["AutoRespond"] = true,
+	["ChatFrame"] = "DEFAULT_CHAT_FRAME",
+	["HealthFrameLocked"] = false,
 	["HealthFrameGrowUp"] = false,
 	["ShowCountdownText"] = false,
 	["RangeFrameFrames"] = "radar",
 	["RangeFrameRadarX"] = 429.9999389648438,
 	["ShowBigBrotherOnCombatStart"] = false,
+	["PTCountThreshold"] = 5,
 	["SpecialWarningFlashAlph1"] = 0.3,
 	["BlockVersionUpdatePopup"] = true,
-	["PTCountThreshold"] = 5,
 	["ShowRecoveryMessage"] = true,
 	["DisableCinematicsOutside"] = false,
 	["DontShowRangeFrame"] = false,
@@ -147,7 +147,7 @@ DBM_SavedOptions = {
 	["DisableCinematics"] = false,
 	["MovieFilters"] = {
 	},
-	["WarningIconRight"] = true,
+	["AutoRespond"] = true,
 	["ShowWipeMessage"] = true,
 	["LogOnlyRaidBosses"] = false,
 	["StripServerName"] = true,
@@ -156,7 +156,7 @@ DBM_SavedOptions = {
 	["HPFrameX"] = -180.9999084472656,
 	["ChallengeBest"] = "Realm",
 	["SpamBlockBossWhispers"] = false,
-	["ShowEngageMessage"] = true,
+	["DontSendBossWhispers"] = false,
 	["ShowFlashFrame"] = true,
 }
 DBT_SavedOptions = {
