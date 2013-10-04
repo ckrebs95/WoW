@@ -97,8 +97,8 @@ RecountDB = {
 			["GraphWindowY"] = 0,
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -456.999626159668,
-					["x"] = -751.5000457763672,
+					["y"] = -456.9996337890625,
+					["x"] = -751.5000228881836,
 					["w"] = 396.9999694824219,
 					["h"] = 137.9999084472656,
 				},
@@ -118,7 +118,7 @@ RecountDB = {
 				},
 			},
 			["MainWindowHeight"] = 137.9999235570442,
-			["CurDataSet"] = "CurrentFightData",
+			["CurDataSet"] = "LastFightData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -190,7 +190,7 @@ RecountDB = {
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = -540.3336944580078,
-					["x"] = -769.8332672119141,
+					["x"] = -769.8332595825195,
 					["w"] = 283,
 					["h"] = 102.0000457763672,
 				},
@@ -210,7 +210,7 @@ RecountDB = {
 			["DetailWindowX"] = 0,
 			["GraphWindowX"] = 0,
 			["LastInstanceName"] = "Blackrock Depths",
-			["CurDataSet"] = "CurrentFightData",
+			["CurDataSet"] = "LastFightData",
 			["MainWindowWidth"] = 283.0000263005491,
 			["MainWindowHeight"] = 102.000015646219,
 		},

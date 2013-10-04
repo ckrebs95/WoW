@@ -1,9 +1,40 @@
 ------------------------------------------------------------------------
-r518 | oscarucb | 2013-09-26 02:12:22 +0000 (Thu, 26 Sep 2013) | 1 line
+r524 | oscarucb | 2013-10-04 07:31:56 +0000 (Fri, 04 Oct 2013) | 1 line
 Changed paths:
-   A /tags/7.1.0 (from /trunk:517)
+   A /tags/7.1.2 (from /trunk:523)
 
-Tagging as 7.1.0
+Tagging as 7.1.2
+------------------------------------------------------------------------
+r523 | oscarucb | 2013-10-04 00:02:20 +0000 (Fri, 04 Oct 2013) | 2 lines
+Changed paths:
+   M /trunk/PV_Data.lua
+   M /trunk/ProfessionsVault.lua
+
+ticket 113: fix warnings on non-english clients for cookbooks and glyph books
+
+------------------------------------------------------------------------
+r521 | oscarucb | 2013-09-28 08:27:18 +0000 (Sat, 28 Sep 2013) | 2 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+fix skillet window left open after scan
+
+------------------------------------------------------------------------
+r520 | oscarucb | 2013-09-28 06:21:00 +0000 (Sat, 28 Sep 2013) | 3 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+add support for mining books
+remove some dead code
+
+------------------------------------------------------------------------
+r519 | oscarucb | 2013-09-27 12:03:53 +0000 (Fri, 27 Sep 2013) | 3 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+fix LDB click for mining
+make LDBprof always character-specific
+
 ------------------------------------------------------------------------
 r516 | oscarucb | 2013-09-25 10:14:08 +0000 (Wed, 25 Sep 2013) | 2 lines
 Changed paths:

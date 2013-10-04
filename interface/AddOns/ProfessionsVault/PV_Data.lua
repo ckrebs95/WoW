@@ -1,11 +1,11 @@
 -- All data in this file is copyrighted to the author (oscarucb), all rights reserved
 local addonName, vars = ...
 vars.svnrev = vars.svnrev or {}
-vars.svnrev["PV_data.lua"] = tonumber(("$Revision: 500 $"):match("%d+"))
+vars.svnrev["PV_data.lua"] = tonumber(("$Revision: 523 $"):match("%d+"))
 
 vars.VersionInfo = {
 	   ["DBversion"] = 8,
-	   ["DBrevision"] = tonumber(("$Revision: 500 $"):match("%d+")),
+	   ["DBrevision"] = tonumber(("$Revision: 523 $"):match("%d+")),
            ["clientexpansion"] = 4,
            ["clientversion"] = "5.4.0",
 }
@@ -97,6 +97,14 @@ vars.DeadRecipes = {
  -- Cooking pats never released in MoP
  [90501] = true, -- [Recipe: Red War Fuel]
  [90502] = true, -- [Recipe: Blue War Fuel]
+ -- misc profession-related items that don't actually teach a specific trade recipe
+ [16072] = true, -- [Expert Cookbook]
+ [27736] = true, -- [Master Cookbook]
+ [44851] = true, -- [Thanksgiving Cookbook]
+ [46809] = true, -- [Bountiful Cookbook]
+ [46810] = true, -- [Bountiful Cookbook]
+ [45912] = true, -- [Book of Glyph Mastery]
+ [71949] = true, -- [Tome of Burning Jewels]
 }
 for id=41403,41423 do -- ZZOLD retired meta designs
   vars.DeadRecipes[id] = true

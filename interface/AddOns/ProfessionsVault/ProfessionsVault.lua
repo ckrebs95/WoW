@@ -10,7 +10,7 @@ local PVLDB
 local minimapIcon = LibStub("LibDBIcon-1.0")
 vars.svnrev = vars.svnrev or {}
 local svnrev = vars.svnrev
-svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 516 $"):match("%d+"))
+svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 523 $"):match("%d+"))
 local DB_VERSION_MAJOR = 1
 local DB_VERSION_MINOR = 4
 local _G = _G
@@ -1137,8 +1137,7 @@ local function PV_AuctionScroll(...)
 end
 
 local function SetLDBProf(pname)
-  if not pname then pname = settings.ldbprof end
-  local pnamecast = pname
+  if not pname then pname = addon.db.char.ldbprof end
   if pname == GetSpellInfo(PID_SMELT) then
      pname = GetSpellInfo(PID_MINE)
   end
@@ -1148,10 +1147,18 @@ local function SetLDBProf(pname)
     local rankmax = pinfo.rankmax or "??"
     local tex = "|T"..allProf[pname].icon..":0|t"
     PVLDB.text = " "..tex.." ("..rank.."/"..rankmax..")"
-    settings.ldbprof = pnamecast
+    addon.db.char.ldbprof = pname
   else
-    settings.ldbprof = nil
+    addon.db.char.ldbprof = nil
     PVLDB.text = addonName
+  end
+end
+
+local function GetLDBProf()
+  local pname = addon.db.char.ldbprof
+  if allProf[pname] and DBc[pname] and 
+     (not allProf[pname].nocast or allProf[pname].spellid == PID_MINE) then
+    return pname, DBc[pname].link
   end
 end
 
@@ -1311,8 +1318,11 @@ function addon:OnEnable()
         OnClick = function(self, button)
                 if button == "MiddleButton" then
 			addon:Config()
-                elseif button == "RightButton" and settings.ldbprof and not nocastProf[settings.ldbprof] then
-		  	addon:ActivateLink(charName, settings.ldbprof, DBc[settings.ldbprof] and DBc[settings.ldbprof].link, true)
+                elseif button == "RightButton" then
+			local pname, link = GetLDBProf()
+			if pname then
+		  	  addon:ActivateLink(charName, pname, link, true)
+			end
                 else
                         addon:ToggleWindow()
                 end
@@ -1384,8 +1394,9 @@ function addon:fillLDB(tooltip)
   tooltip:SetText(addonName.." "..ProfessionsVault.version)
   tooltip:AddLine("|cffff8040"..L["Left Click"].."|r "..L["to toggle the window"])
   tooltip:AddLine("|cffff8040"..L["Middle Click"].."|r "..L["for config"])
-  if settings.ldbprof and not nocastProf[settings.ldbprof]  then
-    tooltip:AddLine("|cffff8040"..L["Right Click"].."|r "..L["to open"].." "..settings.ldbprof)
+  local pname = GetLDBProf()
+  if pname then
+    tooltip:AddLine("|cffff8040"..L["Right Click"].."|r "..L["to open"].." "..pname)
   end
   addon.ldblines = addon.ldblines or {}
   wipe(addon.ldblines)
@@ -1926,7 +1937,8 @@ function addon:SaveLink(cname, pname, link, rank, rankmax, doscan)
       schange = rank - (dbc[pname].rank or 0)
       mchange = rankmax - (dbc[pname].rankmax or 0)
     end
-    if doscan and not allProf[pname].nolink then 
+    local scanpermitted = (not allProf[pname].nolink) or (allProf[pname].spellid == PID_MINE)
+    if doscan and scanpermitted then 
       local cnt = addon:pinfo_skill_populate(dbc[pname])
       if cnt ~= 0 then
         diffstr = cnt.." "..L["recipes"]
@@ -1939,7 +1951,7 @@ function addon:SaveLink(cname, pname, link, rank, rankmax, doscan)
     dbc[pname].link = link
     dbc[pname].rank = rank
     dbc[pname].rankmax = rankmax
-    if doscan or allProf[pname].nolink then
+    if doscan or not scanpermitted then
       dbc[pname].lastupdate = time()
     end
     local _, clientbuild,_,uiversion = GetBuildInfo()
@@ -2205,6 +2217,9 @@ function addon:ScanProfessions()
     if (not allProf[p].nolink) or (p == GetSpellInfo(PID_SMELT)) then
       CastSpellByName(p) 
       CloseTradeSkill()
+      if Skillet and Skillet.CancelAllTimers then -- Skillet window is opened on a delay
+         Skillet:CancelAllTimers()
+      end
       if DBc[p] and DBc[p].lastupdate >= scantime then
         gotone = true
       end
@@ -2212,6 +2227,7 @@ function addon:ScanProfessions()
    end
    addon:ScanSecondary()
   end
+  CloseTradeSkill()
   if gotone then
     chatMsg(L["Profession Scan complete!"])
   else
@@ -3106,33 +3122,6 @@ local function normalize(spellname) -- normalize minor differences in spellnames
 end
 function addon:normalize(s) return normalize(s) end
 
-local english_prefix = {
-  ["Pattern"] = true,   -- tail, LW
-  ["Design"] = true, 	-- JC
-  ["Recipe"] = true,	-- cooking, alc
-  ["Plans"] = true,	-- BS
-  ["Schematic"] = true,	-- eng
-  ["Formula"] = true,	-- ench
-  ["Technique"] = true,	-- insc
-  ["Manual"] = true,	-- first aid
-}
-function addon:fixup_badtrans(itemtext,spellname,tt) 
-  -- some poor database translations only translate the item name and leave the recipe name in english
-  local prefix = itemtext:match("^(.+):")
-  local ttname = tt:GetName()
-  if not prefix or not ttname or not english_prefix[prefix] then return spellname end
-  for i=2,tt:NumLines() do
-    local line = getglobal(ttname .. "TextLeft"..i)
-    if not line then return spellname end
-    local text = line:GetText()
-    if not text then return spellname end
-    if text:match("^\10") then -- leading newline indicates item name
-      return puncnormalize(strtrim(text))
-    end
-  end
-  return spellname
-end
-
 function addon:hash(str) -- a dumbed-down crc32
   str = tostring(str)
   local count = string.len(str)
@@ -3299,7 +3288,7 @@ end
 
 function addon:isRecipe(itemid)
   local class = select(6,GetItemInfo(itemid))
-  return class == addon:recipeClass()
+  return class and class == addon:recipeClass()
 end
 
 function addon:isEnchantScroll(itemid)
@@ -4147,8 +4136,8 @@ end
 -- run with no arguments to start a new default run or resume an interrupted run
 -- run with minval and maxval to start a run on a specified range
 function addon:TestRecipes(minval, maxval, status)
-  local step = 25
-  local pausetime = 1.0 
+  local step = 100 
+  local pausetime = 0.25
   local firstiter = false
   if not status then -- user initiated run
     firstiter = true
@@ -4303,16 +4292,16 @@ function addon:ShowTooltip(tt)
     local recipeClasses, recipeFaction
     if spellid then -- spell link
       local line = getglobal(ttname .. "TextLeft1")
-      if not line then return end
-      local text = line:GetText()
-      if not text then return end
+      local text = (line and line:GetText()) or ""
+      text = puncnormalize(text)
       profName = string.match(text, "^([^:]+): ")
       profID = allProf[profName] and allProf[profName].spellid
       profLvl = 0 -- TODO
     else -- item link
-     local itemclass = select(6,GetItemInfo(itemid))
-     if not itemclass then return end
-     if (itemclass == addon.recipeClass()) then -- recipe item
+      if not addon:isRecipe(itemid) 
+         or vars.DeadRecipes[itemid]
+         --or recipeItemBlacklisted(itemid) -- only works in english
+	 then return end -- screen out non-recipes
       if settings.debug then
         local line = getglobal(ttname .. "TextLeft1")
 	local text = line:GetText()
@@ -4320,12 +4309,6 @@ function addon:ShowTooltip(tt)
 	  debug(text.." for "..itemlink)
 	  return
 	end
-      end
-      spellname = string.match(puncnormalize(itemtext), ":%s*(.+)$")
-      if not spellname then return end
-
-      if locale == "ptBR" then
-        spellname = addon:fixup_badtrans(itemtext,spellname,tt)
       end
 
       for i=2,tt:NumLines() do
@@ -4365,21 +4348,18 @@ function addon:ShowTooltip(tt)
       end
       if profID == PID_FISH or profID == PID_FA then addon.ttrecipe = false ; return end -- ignore fishing/first aid books
       if profID == PID_INSC then recipeClasses = nil end -- ignore false positive classes on glyph techniques
-     end -- recipe
     end -- item
     if not profName or not profID or not profLvl then return end
-    debug(ttname..": "..profName.." ("..profLvl.."): "..spellname.." "..(recipeClasses or "")..(recipeFaction or ""))
+    debug(ttname..": "..profName.." ("..profLvl.."): "..(recipeClasses or "")..(recipeFaction or ""))
     local knownstr, learnstr, unknownstr, skillstr, dunnostr = "","","","",""
 
     if not vars.ItoS and not spellid then return end
-    spellname = normalize(spellname)
     if itemid and not spellid then
       spellid = vars.ItoS[itemid]
     end
     if (not spellid and not (itemid and vars.DeadRecipes[itemid])) then 
       chatMsg(format(L["ERROR: Missing entry in pattern database: %s Please report this bug!"],
-            format("%d %s: %s",tostring(itemid or spellid),profName,spellname.."-"..GetLocale())))
-	    --print(string.byte(spellname,1,#spellname))
+            format("%d %s: %s %s",tostring(itemid or spellid),profName,itemlink or itemtext or spellname or "?",GetLocale())))
     end
     --myprint("SPELLID LOOKUP:",itemid, spellid)
 

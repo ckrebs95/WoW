@@ -578,8 +578,8 @@ Bartender4DB = {
 								["Zoom"] = true,
 							},
 							["position"] = {
-								["scale"] = 0.85,
 								["parent"] = "SUI_ActionBarPlate",
+								["scale"] = 0.85,
 							},
 							["padding"] = 3,
 						}, -- [7]
@@ -588,8 +588,8 @@ Bartender4DB = {
 								["Zoom"] = true,
 							},
 							["position"] = {
-								["scale"] = 0.85,
 								["parent"] = "SUI_ActionBarPlate",
+								["scale"] = 0.85,
 							},
 							["padding"] = 3,
 						}, -- [8]
@@ -598,8 +598,8 @@ Bartender4DB = {
 								["Zoom"] = true,
 							},
 							["position"] = {
-								["scale"] = 0.85,
 								["parent"] = "SUI_ActionBarPlate",
+								["scale"] = 0.85,
 							},
 							["padding"] = 3,
 						}, -- [9]
@@ -608,8 +608,8 @@ Bartender4DB = {
 								["Zoom"] = true,
 							},
 							["position"] = {
-								["scale"] = 0.85,
 								["parent"] = "SUI_ActionBarPlate",
+								["scale"] = 0.85,
 							},
 							["padding"] = 3,
 						}, -- [10]
@@ -1102,10 +1102,10 @@ Bartender4DB = {
 					},
 				},
 				["SpartanUI Standard"] = {
+					["version"] = 3,
 					["BlizzardArt"] = {
 						["enabled"] = false,
 					},
-					["version"] = 3,
 					["position"] = {
 						["y"] = 198.45849609375,
 						["x"] = 16.77996826171875,
@@ -2066,7 +2066,9 @@ Bartender4DB = {
 						["y"] = 167.9564049869303,
 						["parent"] = "SUI_ActionBarPlate",
 					},
+					["padding"] = 1,
 					["rows"] = 2,
+					["version"] = 3,
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -2078,8 +2080,6 @@ Bartender4DB = {
 							["scale"] = 0.85,
 						},
 					},
-					["version"] = 3,
-					["padding"] = 1,
 				},
 				["Desamil - Khaz Modan"] = {
 					["version"] = 3,
@@ -2091,7 +2091,6 @@ Bartender4DB = {
 						["parent"] = "SUI_ActionBarPlate",
 						["y"] = 201.1064181469865,
 					},
-					["rows"] = 2,
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -2103,6 +2102,7 @@ Bartender4DB = {
 							["scale"] = 0.85,
 						},
 					},
+					["rows"] = 2,
 					["padding"] = 1,
 					["BlizzardArt"] = {
 						["enabled"] = false,
@@ -2173,17 +2173,17 @@ Bartender4DB = {
 					},
 				},
 				["Dathsar - Khaz Modan"] = {
+					["skin"] = {
+						["Zoom"] = true,
+					},
+					["padding"] = 1,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 2.450006951711885,
 						["x"] = 83.06155797855473,
 						["point"] = "TOPLEFT",
 						["scale"] = 0.699999988079071,
 						["parent"] = "SUI_ActionBarPlate",
-					},
-					["padding"] = 1,
-					["version"] = 3,
-					["skin"] = {
-						["Zoom"] = true,
 					},
 				},
 				["Dethamett - Khaz Modan"] = {
@@ -2238,6 +2238,14 @@ Bartender4DB = {
 						["Zoom"] = true,
 					},
 					["version"] = 3,
+					["padding"] = 1,
+					["position"] = {
+						["y"] = 167.7500022729591,
+						["x"] = -352.588480453774,
+						["point"] = "BOTTOM",
+						["scale"] = 0.699999988079071,
+						["parent"] = "SUI_ActionBarPlate",
+					},
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -2249,14 +2257,6 @@ Bartender4DB = {
 							["scale"] = 0.85,
 						},
 					},
-					["position"] = {
-						["y"] = 167.7500022729591,
-						["x"] = -352.588480453774,
-						["point"] = "BOTTOM",
-						["scale"] = 0.699999988079071,
-						["parent"] = "SUI_ActionBarPlate",
-					},
-					["padding"] = 1,
 				},
 				["Desamil - Khaz Modan"] = {
 					["BlizzardArt"] = {
@@ -2266,6 +2266,14 @@ Bartender4DB = {
 						["Zoom"] = true,
 					},
 					["version"] = 3,
+					["padding"] = 1,
+					["position"] = {
+						["y"] = 167.7500022729591,
+						["x"] = -352.588480453774,
+						["point"] = "BOTTOM",
+						["scale"] = 0.699999988079071,
+						["parent"] = "SUI_ActionBarPlate",
+					},
 					["Vehicle"] = {
 						["enabled"] = true,
 						["padding"] = 3,
@@ -2277,14 +2285,6 @@ Bartender4DB = {
 							["scale"] = 0.85,
 						},
 					},
-					["position"] = {
-						["y"] = 167.7500022729591,
-						["x"] = -352.588480453774,
-						["point"] = "BOTTOM",
-						["scale"] = 0.699999988079071,
-						["parent"] = "SUI_ActionBarPlate",
-					},
-					["padding"] = 1,
 				},
 				["Khaz Modan"] = {
 					["version"] = 3,
