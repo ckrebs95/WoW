@@ -28,6 +28,133 @@ local AceConfigReg 	= LibStub("AceConfigRegistry-3.0")
 local AceConfigDialog 	= LibStub("AceConfigDialog-3.0")
 
 local modular_config = {}
+
+local profiles
+
+local function profilesConfig()
+	if not profiles then
+		profiles = {
+			type = "group",
+			name = "Profiles",
+			args = {			
+				line1 = {			
+					type = "description",
+					name = "You can change the active database profile, so you can have different settings for every character.",
+					order = 1,
+				},
+				line2 = {
+					type = "description",
+					name = "Reset the current profile back to it's default values, in case your configuration is broken, or you simply want to start over.",
+					order = 2,
+				},
+				bigbutton = {
+					type = "execute",
+					name = "Reset Profile",
+					width = "normal",
+					func = function () 
+							for a,b in pairs (Nx.dbs) do
+								b:ResetProfile(true,true)
+							end	
+					end,
+					desc = "Reset the current profile to the defaults",
+					order = 3,
+				},
+				current = {
+					type = "description",
+					name = "Current Profile: |c00ffff00" .. Nx.db:GetCurrentProfile(),
+					width = "double",
+					order = 4,
+				},
+				line3 = {
+					type = "description",
+					name = "You can either create a new profile by entering a name in the editbox, or choose one of the already existing profiles.",
+					order = 5,
+				},
+				newprof = {
+					type = "input",
+					name = "New",
+					desc = "Create a new empty profile",
+					get = false,
+					set = function (info, name)
+						for a,b in pairs(Nx.dbs) do
+							Nx.prt(name)
+							b:SetProfile(name)
+						end
+					end,
+					order = 6,
+				},
+				existing = {
+					type = "select",
+					style = "dropdown",
+					name = "Existing Profiles",
+					values = Nx.db:GetProfiles(),
+					get = function ()
+						return Nx.db:GetCurrentProfile()
+					end,
+					set = function (info, name)
+						for a,b in pairs (Nx.dbs) do
+							b:SetProfile(name)
+						end
+					end,
+					desc = "Select one of your currently available profiles",
+					order = 7,
+				},
+				linebrk = {
+					type = "description",
+					name = "",
+					width = "full",
+					order = 8,
+				},
+				line4 = {
+					type = "description",
+					name = "Copy the settings from one existing profile into the currently active profile.",
+					order = 9,
+				},
+				copyfrom = {				
+					type = "select",
+					style = "dropdown",
+					name = "Existing Profiles",
+					values = Nx.db:GetProfiles(),
+					get = false,
+					set = function (info, name)
+						for a,b in pairs(Nx.dbs) do
+							b:CopyProfile(name)
+						end
+					end,
+					desc = "Copy the settings from one existing profile into the currently active profile.",
+					order = 10,			
+				},
+				linebrk2 = {
+					type = "description",
+					name = "",
+					width = "full",
+					order = 11,
+				},
+				line5 = {
+					type = "description",
+					name = "Delete existing and unused profiles from the database to save space, and cleanup the SavedVariables file.",
+					order = 12,
+				},
+				delete = {				
+					type = "select",
+					style = "dropdown",
+					name = "Delete a Profile",
+					get = false,
+					set = function (info, name)
+						for a,b in pairs(Nx.dbs) do
+							b:DeleteProfile(name)
+						end
+					end,					
+					values = Nx.db:GetProfiles(),
+					desc = "Deletes a profile from the database.",
+					order = 13,			
+				},				
+			},
+		}
+	end
+	return profiles
+end
+
 local config
 
 local function mainConfig()
@@ -2467,6 +2594,7 @@ function Nx:SetupConfig()
 	Nx:AddToConfig("Maps",mapConfig(),"Maps")
 	Nx:AddToConfig("Menus",menuConfig(),"Menus")
 	Nx:AddToConfig("Privacy",commConfig(),"Privacy")
+--	Nx:AddToConfig("Profiles",profilesConfig(),"Profiles")
 	Nx:AddToConfig("Skin",skinConfig(),"Skin")
 	Nx:AddToConfig("Tracking HUD",trackConfig(),"Tracking HUD")
 end

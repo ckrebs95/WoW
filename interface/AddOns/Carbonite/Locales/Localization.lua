@@ -894,6 +894,7 @@ elseif GetLocale() == "frFR" then	-- French
 		["Throne of the Four Winds"] = "Tr\195\180ne des quatre vents",
 		["Throne of the Tides"] = "Tr\195\180ne des mar\195\169es",
 		["Thunder Bluff"] = "Les Pitons-du-Tonnerre",
+		["Timeless Isle"] = "\195\142le du Temps fig\195\169",
 		["Tirisfal Glades"] = "Clairi\195\168res de Tirisfal",
 		["Tol Barad Peninsula"] = "P\195\169ninsule de Tol Barad",
 		["Townlong Steppes"] = "Steppes de Tanglong",
@@ -1486,6 +1487,7 @@ elseif GetLocale() == "esES" or GetLocale() == "esMX" then	-- Spanish
 		["Throne of the Four Winds"] = "Trono de los Cuatro Vientos",
 		["Throne of the Tides"] = "Trono de las Mareas",
 		["Thunder Bluff"] = "Cima del Trueno",
+		["Timeless Isle"] = "Isla Intemporal",
 		["Tirisfal Glades"] = "Claros de Tirisfal",
 		["Tol Barad Peninsula"] = "Pen\195\173nsula de Tol Barad",
 		["Townlong Steppes"] = "Estepas de Tong Long",
@@ -1925,7 +1927,7 @@ elseif GetLocale() == "itIT" then	-- Italian
 		["Howling Fjord"] = "Fiordo Echeggiante",
 		["Crystalsong Forest"] = "Foresta di Cristallo",
 		["Dustwallow Marsh"] = "Acquemorte",
-		["Ahn'Qiraj: The Fallen Kingdom"] = "Ahn'Qiraj: il Regno Perduto",
+		["Ahn'Qiraj: The Fallen Kingdom"] = "Ahn'qiraj: il Regno Perduto",
 		["Camp Narache"] = "Campo Narache",
 		["Bloodmyst Isle"] = "Isola Brumacremisi",
 		["Azuremyst Isle"] = "Isola Brumazzurra",
@@ -1981,6 +1983,7 @@ elseif GetLocale() == "itIT" then	-- Italian
 		["Valley of the Four Winds"] = "Valle dei Quattro Venti",
 		["Isle of Giants"] = "Isola dei Giganti",
 		["Isle of Thunder"] = "Isola del Tuono",		
+		["Timeless Isle"] = "Isola Senza Tempo",
 	}
 	
 	NXlMapSubNames = {	-- Translate!
@@ -5293,6 +5296,15 @@ elseif GetLocale() == "ruRU" then		-- Russian
 		["Vale of Eternal Blossoms"] = "Вечноцветущий дол",
 		["Valley of the Four Winds"] = "Долина Четырех Ветров",
 		["Townlong Steppes"] = "Танлунские степи",
+		["Timeless Isle"] = "Вневременный остров",
+		["Huojin Landing"] = "Лагерь Хоцзинь",
+		["Tushui Landing"] = "Лагерь Тушуй",
+		["The Celestial Court"] = "Турнирная площадка Небожителей",
+		["Mossgreen Lake"] = "Озеро Зелёного Мха",
+		["Old Pi'jiu"] = "Древний Пиджоу",
+		["Firewalker Ruins"] = "Руины Огнеходов",
+		["The Blasing Way"] = "Пылающий путь",
+		["Ordon Sanctuary"] = "Святилище Ордоса",		
 	}
 	NXlMapSubNames = {
 		["Даларан"] = {
@@ -5561,6 +5573,7 @@ elseif GetLocale() == "ruRU" then		-- Russian
 		["Thunderlord Stronghold, Blade's Edge Mountains"] = "\208\158\208\191\208\187\208\190\209\130 \208\147\209\128\208\190\208\188\208\190\208\177\208\190\209\128\209\134\208\181\208\178, \208\158\209\129\209\130\209\128\208\190\208\179\208\190\209\128\209\140\208\181",
 		["Thundermar, Twilight Highlands"] = "\208\147\209\128\208\190\208\188\209\130\208\176\209\128, \208\161\209\131\208\188\208\181\209\128\208\181\209\135\208\189\208\190\208\181 \208\189\208\176\208\179\208\190\209\128\209\140\208\181",
 		["Thunk's Abode, Desolace"] = "\208\158\208\177\208\184\209\130\208\181\208\187\209\140 \208\162\209\131\208\189\208\186\208\176, \208\159\209\131\209\129\209\130\208\190\209\136\208\184",
+		["Timeless Isle"] = "Вневременный остров",
 		["Toshley's Station, Blade's Edge Mountains"] = "\208\161\209\130\208\176\208\189\209\134\208\184\209\143 \208\162\208\190\209\136\208\187\208\184, \208\158\209\129\209\130\209\128\208\190\208\179\208\190\209\128\209\140\208\181",
 		["Tower of Estulan, Feralas"] = "\208\145\208\176\209\136\208\189\209\143 \208\173\209\129\209\130\209\131\208\187\208\176\208\189\208\176, \208\164\208\181\209\128\208\176\208\187\208\176\209\129",
 		["Tranquil Wash, Vashj'ir"] = "\208\162\208\184\209\133\208\184\208\185 \208\183\208\176\208\187\208\184\208\178, \208\146\208\176\208\185\209\136'\208\184\209\128",

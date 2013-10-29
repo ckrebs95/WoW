@@ -674,10 +674,10 @@ function Nx.Map.Guide:OnListEventDo (list, eventName, sel, val2, click)
 			
 			if folder.Persist and not pressed then
 				local v = Nx.db.char.Map[folder.Persist]
-				if v then 
-					self:AddShowFolders (folder, not pressed)
+				if v then 					
+					self:AddShowFolders (folder, not pressed)				
 				end
-			else
+			else				
 				self:AddShowFolders (folder, not pressed)
 			end
 			self:Update()
@@ -974,6 +974,7 @@ function Nx.Map.Guide:ClearAll()
 	self:ClearShowFolders()
 	self:Update()
 end
+
 function Nx.Map.Guide:ClearShowFolders()	
 	self.ShowFolders = {}
 	local gFolder = self:FindFolder ("Gather")
@@ -1005,7 +1006,7 @@ function Nx.Map.Guide:AddShowFolders (folder, remove, filter)
 		if filter and typ ~= filter and not remove then
 			typ = nil
 		end
-		if typ then
+		if typ then			
 			self.ShowFolders[typ] = not remove and folder or nil
 		end
 		if remove or not folder.NoShowChild then
@@ -1013,6 +1014,8 @@ function Nx.Map.Guide:AddShowFolders (folder, remove, filter)
 				self:AddShowFolders (childFolder, remove, filter)
 			end
 		end
+	else 
+	Nx.prt("error")
 	end
 end
 function Nx.Map.Guide:IsShowFolders (folder)
@@ -1040,19 +1043,19 @@ function Nx.Map.Guide:FindFolder (name, folder)
 	end
 end
 function Nx.Map.Guide:Update()    
-	local path = ""
-	for n = 2, #self.PathHistory do
-		local folder = self.PathHistory[n]
-		local name = folder.Name
-		if strbyte (name) == 64 then		
-			name = Nx.GuideAbr[strsub (name, 2)]
-		end
-		if n == 2 then
-			path = name
-		else
-			path = path .. "." .. name
-		end
-	end
+	local path = ""	
+		for n = 2, #self.PathHistory do
+			local folder = self.PathHistory[n]
+			local name = folder.Name
+			if strbyte (name) == 64 then		
+				name = Nx.GuideAbr[strsub (name, 2)]
+			end
+			if n == 2 then
+				path = name
+			else
+				path = path .. "." .. name
+			end
+		end	
 	self.Win:SetTitle (path)
 	local i = max (#self.PathHistory - 1, 1)
 	self:UpdateList (self.List, i, 1)
@@ -1196,7 +1199,7 @@ function Nx.Map.Guide:UpdateMapIcons()
 		cont2 = cont1
 	end	
 	for showType, folder in pairs (self.ShowFolders) do		
-		local mode = strbyte (showType)		
+		local mode = strbyte (showType)				
 		local tx = "Interface\\Icons\\" .. (folder.Tx or "")
 		if mode == 36 then					
 			local type = strsub (showType, 2, 2)
@@ -1382,7 +1385,7 @@ function Nx.Map.Guide:UpdateMapGeneralIcons (cont, showType, hideFac, tx, name, 
 	end    		
 
 	if Nx.GuideData[showType] and Nx.GuideData[showType].Mode then
-		local mode = Nx.GuideData[showType].Mode		
+		local mode = Nx.GuideData[showType].Mode				
 		if mode == 30 then			
 			for a,b in pairs(Nx.NPCData) do															
 				local npcStr = b
@@ -1419,8 +1422,8 @@ function Nx.Map.Guide:UpdateMapGeneralIcons (cont, showType, hideFac, tx, name, 
 								local fac,x,y = Nx.Split(",",d)							
 								fac,x,y = tonumber(fac), tonumber(x), tonumber(y)
 								if fac ~= hideFac then
-									local wx, wy = map:GetWorldPos(mapId, x, y)
-									local icon = map:AddIconPt (iconType, wx, wy, nil, tx)
+									local wx, wy = map:GetWorldPos(mapId, x, y)									
+									local icon = map:AddIconPt (iconType, wx, wy, nil, tx)									
 									local str = format ("%s\n%s %.1f %.1f", name, Nx.MapIdToName[mapId], x, y)
 									map:SetIconTip (icon, str)								
 								end
@@ -1455,7 +1458,7 @@ function Nx.Map.Guide:UpdateZonePOIIcons()
 	local alpha = min ((map.ScaleDraw - s) / alphaRange, 1) * Nx.db.profile.Map.IconPOIAlpha
 	map:SetIconTypeAlpha ("!POI", alpha)
 	map:SetIconTypeAlpha ("!POIIn", alpha)
-	if mapId == self.POIMapId and draw == self.POIDraw then
+	if mapId == self.POIMapId and draw == self.POIDraw then		
 		return
 	end
 	self.POIMapId = mapId
@@ -1474,10 +1477,7 @@ function Nx.Map.Guide:UpdateZonePOIIcons()
 	if cont > 0 and cont < 9 then
 		for k, name in ipairs (Nx.GuidePOI) do
 			local showType, tx = Nx.Split ("~", name)
-			if showType == "Mailbox" then
-				showType = Nx.db.char.Map.ShowMailboxes and showType
-			end
-			if showType then				
+			if showType and Nx.db.char.Map.ShowMailboxes then						
 				tx = "Interface\\Icons\\" .. tx
 				self:UpdateMapGeneralIcons (cont, showType, hideFac, tx, showType, "!POI", mapId)
 			end

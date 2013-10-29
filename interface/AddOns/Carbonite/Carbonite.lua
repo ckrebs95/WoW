@@ -102,6 +102,7 @@ Nx.Item = {}
 Nx.NXMiniMapBut = {}
 
 Nx.db = {}
+Nx.dbs = {}
 
 Nx.ModuleUpdateIcon = {"test"}
 Nx.RequestTime = false
@@ -396,9 +397,23 @@ function Nx:OnInitialize()
 		Nx.NXVerOld = true
 	end
 	Nx.TooltipLastDiffNumLines = 0	
-	Nx.db = LibStub("AceDB-3.0"):New("CarbData",defaults, true)
+	Nx.db = LibStub("AceDB-3.0"):New("CarbData",defaults,true)		
+	tinsert(Nx.dbs,Nx.db)
+    Nx.db.RegisterCallback(self, "OnProfileChanged", "OnProfileChanged")
+    Nx.db.RegisterCallback(self, "OnProfileCopied", "OnProfileChanged")
+    Nx.db.RegisterCallback(self, "OnProfileReset", "OnProfileChanged")	
 	Nx.SetupConfig()	
 	Nx:RegisterComm("carbmodule",Nx.ModChatReceive)	
+end
+
+function Nx:OnProfileChanged(event, database, newProfileKey)
+	if not Nx.db.profile.MapSettings then
+		Nx.db:RegisterDefaults(defaults)
+		Nx.db.profile.MapSettings = NxMapOptsDefaults
+		Nx.db.profile.MapSettings.Maps = NXMapOptsMapsDefault
+	end
+	Nx.Map:VerifySettings()
+	Nx.Opts.NXCmdReload()
 end
 
 function Nx:OnEnable()

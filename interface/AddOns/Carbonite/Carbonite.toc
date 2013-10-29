@@ -1,6 +1,6 @@
 ## Interface: 50400
-## Title: Carbonite 5.4.0 alpha 1
-## Version: 5.4.0 alpha 1
+## Title: Carbonite 5.4.0 alpha 2
+## Version: 5.4.0 alpha 2
 ## Author: Rythal
 ## Notes: Released Under GPL
 ## DefaultState: Enabled

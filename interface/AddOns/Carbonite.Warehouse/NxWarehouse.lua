@@ -136,7 +136,9 @@ function CarboniteWarehouse:OnInitialize()
 		CarbWHInit = Nx:ScheduleTimer(CarboniteWarehouse.OnInitialize,1)
 		return
 	end
-	Nx.wdb = LibStub("AceDB-3.0"):New("NXWhouse",defaults, true)				
+	Nx.wdb = LibStub("AceDB-3.0"):New("NXWhouse",defaults, true)	
+	Nx.wdb:SetProfile(Nx.db:GetCurrentProfile())
+	tinsert(Nx.dbs,Nx.wdb)	
 	Nx.Font:ModuleAdd("Warehouse.WarehouseFont",{ "NxFontWHI", "GameFontNormal","wdb" })	
 	Nx.Warehouse:Init()
 	Nx.Warehouse:Login()

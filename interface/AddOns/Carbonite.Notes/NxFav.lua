@@ -71,6 +71,8 @@ function CarboniteNotes:OnInitialize()
 		return
 	end
 	Nx.fdb = LibStub("AceDB-3.0"):New("NXNotes",defaults, true)
+	Nx.fdb:SetProfile(Nx.db:GetCurrentProfile())
+	tinsert(Nx.dbs,Nx.fdb)
 	Nx.Notes:Init()
 	CarboniteNotes:RegisterComm("carbmodule",Nx.Notes.OnChat_msg_addon)		
 	local function func()

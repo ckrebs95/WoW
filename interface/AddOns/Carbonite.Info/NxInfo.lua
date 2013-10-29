@@ -150,7 +150,9 @@ function CarboniteInfo:OnInitialize()
 		CarbInfoInit = Nx:ScheduleTimer(CarboniteInfo.OnInitialize,1)
 		return
 	end
-	Nx.idb = LibStub("AceDB-3.0"):New("NXInfo",defaults, true)	
+	Nx.idb = LibStub("AceDB-3.0"):New("NXInfo",defaults, true)
+	Nx.idb:SetProfile(Nx.db:GetCurrentProfile())
+	tinsert(Nx.dbs,Nx.idb)
 	Nx.Font:ModuleAdd("Info.InfoFont",{ "NxFontI", "GameFontNormal","idb" })	
 	Nx.Info:Init()	
 	CarboniteInfo:PLAYER_LOGIN()

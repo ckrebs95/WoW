@@ -734,9 +734,11 @@ function Nx.Map:Create (index)
 
 	local function func (self)
 		self.Guide.POIDraw = nil
+		Nx.Map.Guide:ClearShowFolders()
+		Nx.Map.Guide:UpdateMapIcons()
 	end
 
-	local item = showMenu:AddItem (0, "Show Mailboxes", func, m)
+	local item = showMenu:AddItem (0, "Show Guide POIs", func, m)
 	item:SetChecked (Nx.db.char.Map, "ShowMailboxes")
 
 	local item = showMenu:AddItem(0, "Show Archaeology Blobs", func, m)
