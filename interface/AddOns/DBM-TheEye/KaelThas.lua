@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("KaelThas", "DBM-TheEye")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 514 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 527 $"):sub(12, -3))
 mod:SetCreatureID(19622)
 mod:SetModelID(20023)
 mod:SetZone()
@@ -9,7 +9,7 @@ mod:SetZone()
 mod:RegisterCombat("yell", L.YellPull1, L.YellPull2)
 mod:SetUsedIcons(1, 6, 7, 8)
 
-mod:RegisterEvents(
+mod:RegisterEventsInCombat(
 	"SPELL_CAST_START",
 	"SPELL_AURA_APPLIED",
 	"SPELL_AURA_APPLIED_DOSE",
@@ -210,7 +210,7 @@ function mod:SPELL_CAST_SUCCESS(args)
 		end
 	elseif args.spellId == 36834 then
 		warnDisruption:Show()
-	elseif args.spellId == 34341 then
+	elseif args.spellId == 34341 and self:IsInCombat() then
 		warnEgg:Show()
 		specWarnEgg:Show()
 		timerRebirth:Show()

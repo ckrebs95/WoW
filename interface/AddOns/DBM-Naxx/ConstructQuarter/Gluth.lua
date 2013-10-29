@@ -1,14 +1,12 @@
 local mod	= DBM:NewMod("Gluth", "DBM-Naxx", 2)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 7 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 104 $"):sub(12, -3))
 mod:SetCreatureID(15932)
 mod:SetModelID(16064)
 mod:RegisterCombat("combat")
 
-mod:EnableModel()
-
-mod:RegisterEvents(
+mod:RegisterEventsInCombat(
 	"SPELL_DAMAGE"
 )
 

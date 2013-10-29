@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("GunshipBattle", "DBM-Icecrown", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 86 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 102 $"):sub(12, -3))
 local AddsIcon
 if UnitFactionGroup("player") == "Alliance" then
 	mod:RegisterCombat("yell", L.PullAlliance)
@@ -36,7 +36,7 @@ local warnBladestorm		= mod:NewSpellAnnounce(69652, 3, nil, mod:IsMelee())
 local warnWoundingStrike	= mod:NewTargetAnnounce(69651, 2)
 local warnAddsSoon			= mod:NewAnnounce("WarnAddsSoon", 2, AddsIcon)
 
-local timerCombatStart		= mod:NewTimer(45, "TimerCombatStart", 2457)
+local timerCombatStart		= mod:NewCombatTimer(45)
 local timerBelowZeroCD		= mod:NewNextTimer(37.5, 69705)
 local timerBattleFuryActive	= mod:NewBuffActiveTimer(17, 69638, nil, mod:IsTank() or mod:IsHealer())
 local timerAdds				= mod:NewTimer(60, "TimerAdds", AddsIcon)

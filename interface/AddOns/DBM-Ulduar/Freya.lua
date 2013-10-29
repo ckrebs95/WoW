@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Freya", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 73 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 104 $"):sub(12, -3))
 
 mod:SetCreatureID(32906)
 mod:SetModelID(28777)
@@ -9,7 +9,7 @@ mod:RegisterCombat("combat")
 mod:RegisterKill("yell", L.YellKill)
 mod:SetUsedIcons(6, 7, 8)
 
-mod:RegisterEvents(
+mod:RegisterEventsInCombat(
 	"SPELL_CAST_START",
 	"SPELL_CAST_SUCCESS",
 	"SPELL_AURA_APPLIED",

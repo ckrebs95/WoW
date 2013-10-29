@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Shahraz", "DBM-BlackTemple")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 507 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 527 $"):sub(12, -3))
 mod:SetCreatureID(22947)
 mod:SetModelID(21252)
 mod:SetZone()
@@ -10,10 +10,7 @@ mod:SetUsedIcons(6, 7, 8)
 mod:RegisterCombat("combat")
 
 mod:RegisterEventsInCombat(
-	"RAID_BOSS_EMOTE"
-)
-
-mod:RegisterEvents(
+	"RAID_BOSS_EMOTE",
 	"SPELL_AURA_APPLIED",
 	"SPELL_AURA_APPLIED_DOSE",
 	"SPELL_AURA_REMOVED",

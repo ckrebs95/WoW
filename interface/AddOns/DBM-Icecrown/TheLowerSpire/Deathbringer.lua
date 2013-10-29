@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Deathbringer", "DBM-Icecrown", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 85 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 102 $"):sub(12, -3))
 mod:SetCreatureID(37813)
 mod:SetModelID(30790)
 mod:SetUsedIcons(1, 2, 3, 4, 5, 6, 7, 8)
@@ -33,7 +33,7 @@ local warnRuneofBlood		= mod:NewTargetAnnounce(72410, 3, nil, mod:IsTank() or mo
 local specwarnMark			= mod:NewSpecialWarningTarget(72293, false)
 local specwarnRuneofBlood	= mod:NewSpecialWarningTarget(72410, mod:IsTank())
 
-local timerCombatStart		= mod:NewTimer(48, "TimerCombatStart", 2457)
+local timerCombatStart		= mod:NewCombatTimer(48)
 local timerRuneofBlood		= mod:NewNextTimer(20, 72410, nil, mod:IsTank() or mod:IsHealer())
 local timerBoilingBlood		= mod:NewNextTimer(15.5, 72385)
 local timerBloodNova		= mod:NewNextTimer(20, 72378)

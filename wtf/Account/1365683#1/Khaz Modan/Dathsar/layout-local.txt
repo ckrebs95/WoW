@@ -8,9 +8,9 @@ W: 232
 H: 100
 Frame: LootFrame
 FrameLevel: 15
-Anchor: BOTTOM
-X: -87
-Y: 110
+Anchor: RIGHT
+X: -141
+Y: -47
 W: 170
 H: 240
 Frame: ChannelPulloutTab
@@ -28,7 +28,7 @@ Y: 226
 W: 32
 H: 32
 Frame: Recount_MainWindow
-FrameLevel: 25
+FrameLevel: 20
 Anchor: BOTTOMLEFT
 X: 10
 Y: 14

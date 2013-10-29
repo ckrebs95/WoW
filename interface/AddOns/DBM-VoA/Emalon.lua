@@ -1,14 +1,14 @@
 local mod	= DBM:NewMod("Emalon", "DBM-VoA")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 51 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 104 $"):sub(12, -3))
 mod:SetCreatureID(33993)
 mod:SetModelID(27108)
 mod:SetUsedIcons(8)
 
 mod:RegisterCombat("combat")
 
-mod:RegisterEvents(
+mod:RegisterEventsInCombat(
 	"SPELL_CAST_START",
 	"SPELL_HEAL",
 	"UNIT_TARGET_UNFILTERED",

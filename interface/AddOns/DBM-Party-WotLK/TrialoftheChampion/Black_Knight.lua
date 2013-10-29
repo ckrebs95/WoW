@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(637, "DBM-Party-WotLK", 13, 284)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 79 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 105 $"):sub(12, -3))
 mod:SetCreatureID(35451, 10000)		-- work around, DBM API failes to handle a Boss to die, rebirth, die again, rebirth again and die to loot...
 mod:SetUsedIcons(8)
 
@@ -9,11 +9,14 @@ mod:RegisterCombat("combat")
 mod:RegisterKill("yell", L.YellCombatEnd)
 
 mod:RegisterEvents(
+	"CHAT_MSG_MONSTER_YELL"
+)
+
+mod:RegisterEventsInCombat(
 	"SPELL_CAST_START",
 	"SPELL_AURA_APPLIED",
 	"SPELL_DAMAGE",
-	"SPELL_MISSED",
-	"CHAT_MSG_MONSTER_YELL"
+	"SPELL_MISSED"
 )
 
 local warnExplode			= mod:NewSpellAnnounce(67729)

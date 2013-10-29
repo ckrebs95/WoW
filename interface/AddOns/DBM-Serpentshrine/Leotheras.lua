@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Leotheras", "DBM-Serpentshrine")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 516 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 527 $"):sub(12, -3))
 mod:SetCreatureID(21215, 21806)
 mod:SetModelID(20514)
 mod:SetZone()
@@ -9,6 +9,7 @@ mod:SetUsedIcons(5, 6, 7, 8)
 
 mod:RegisterCombat("combat")
 
+--Not using RegisterEventsInCombat on purpose because it uses weird combat rules
 mod:RegisterEvents(
 	"SPELL_AURA_APPLIED",
 	"CHAT_MSG_MONSTER_YELL",

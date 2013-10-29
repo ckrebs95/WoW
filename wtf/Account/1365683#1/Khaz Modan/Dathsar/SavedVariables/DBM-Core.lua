@@ -69,16 +69,16 @@ DBM_SavedOptions = {
 	},
 	["RangeFrameRadarY"] = -179.0001678466797,
 	["DontPlayPTCountdown"] = false,
+	["RangeFrameSound1"] = "none",
+	["ShowKillMessage"] = true,
+	["HealthFrameWidth"] = 200,
 	["SpecialWarningFontColor"] = {
 		0, -- [1]
 		0, -- [2]
 		1, -- [3]
 	},
-	["ShowKillMessage"] = true,
-	["HealthFrameWidth"] = 200,
-	["RangeFrameLocked"] = false,
 	["WarningIconLeft"] = true,
-	["RangeFrameSound1"] = "none",
+	["RangeFrameLocked"] = false,
 	["HPFrameY"] = -62.99990844726563,
 	["HideWatchFrame"] = false,
 	["LastRevision"] = 8086,
@@ -108,11 +108,11 @@ DBM_SavedOptions = {
 	["ShowBigBrotherOnCombatStart"] = false,
 	["ShowAdvSWSounds"] = false,
 	["DontShowInfoFrame"] = false,
-	["SpecialWarningFlashAlph1"] = 0.3,
+	["BlockVersionUpdatePopup"] = true,
 	["DontSendBossWhispers"] = false,
 	["DontShowPT"] = true,
 	["DontShowRangeFrame"] = false,
-	["SpecialWarningFlashDura1"] = 0.4,
+	["DontShowBossAnnounces"] = false,
 	["InfoFrameShowSelf"] = false,
 	["SpecialWarningFont"] = "Fonts\\FRIZQT__.TTF",
 	["ShowLHFrame"] = true,
@@ -123,7 +123,7 @@ DBM_SavedOptions = {
 	["BlockVersionUpdateNotice"] = false,
 	["SetPlayerRole"] = true,
 	["LFDEnhance"] = true,
-	["DontShowBossAnnounces"] = false,
+	["HPFrameMaxEntries"] = 5,
 	["DontShowPTNoID"] = false,
 	["ArrowPosY"] = -150,
 	["RangeFramePoint"] = "CENTER",
@@ -139,11 +139,11 @@ DBM_SavedOptions = {
 		1, -- [2]
 		0, -- [3]
 	},
-	["HPFrameMaxEntries"] = 5,
+	["SpecialWarningFlashDura1"] = 0.4,
 	["DontShowPTText"] = false,
 	["Enabled"] = true,
+	["SpecialWarningFlashAlph1"] = 0.3,
 	["PTCountThreshold"] = 5,
-	["BlockVersionUpdatePopup"] = true,
 	["DisableCinematics"] = false,
 	["MovieFilters"] = {
 	},

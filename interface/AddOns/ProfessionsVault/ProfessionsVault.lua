@@ -10,7 +10,7 @@ local PVLDB
 local minimapIcon = LibStub("LibDBIcon-1.0")
 vars.svnrev = vars.svnrev or {}
 local svnrev = vars.svnrev
-svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 523 $"):match("%d+"))
+svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 525 $"):match("%d+"))
 local DB_VERSION_MAJOR = 1
 local DB_VERSION_MINOR = 4
 local _G = _G
@@ -1488,6 +1488,7 @@ local function processSystemMessage(msg)
   local proflearn   = string.match(msg, m_proflearn)
   local profunlearn = string.match(msg, m_profunlearn)
   local profupgrade = string.match(msg, m_profupgrade)
+  local force
   if skillrank and allProf[skillprof] then
     skillrank = tonumber(skillrank)
     debug("Detected skill up: "..skillprof.." "..skillrank)
@@ -1495,6 +1496,7 @@ local function processSystemMessage(msg)
   elseif patlearn then
     debug("Detected pattern learn: "..patlearn)
     rescan = true
+    force = true
   elseif proflearn and allProf[proflearn] then
     debug("Detected profession learn: "..proflearn)
     rescan = proflearn
@@ -1515,18 +1517,25 @@ local function processSystemMessage(msg)
     end
   end
   if rescan then
-    local gotone, _, _, _, pname = addon:ReScan()
+    local gotone, _, _, _, pname = addon:ReScan(force)
     if gotone then
       if not allProf[rescan] then
         rescan = pname
       end
     else
       debug("Failed to detect profession change for: "..msg) -- ticket 86
-      addon:ScheduleTimer(function() 
-          local gotone, _, _, _, pname = addon:ReScan()
-          if gotone then
+      addon.rescancount = 0
+      if addon.rescantimer then
+         addon:CancelTimer(addon.rescantimer)
+      end
+      addon.rescantimer = addon:ScheduleRepeatingTimer(function() 
+          local gotone, _, _, _, pname = addon:ReScan(force)
+          if gotone then -- success
 	    SetLDBProf(pname)
-	  else
+	  elseif addon.rescancount < 12 then -- keep trying
+	    addon.rescancount = addon.rescancount + 1
+	    return
+	  else -- fail
 	    debug("Delayed rescan failed for: "..msg)
 	    if settings.autoscan then
               DBc.data.scanned = false
@@ -1535,7 +1544,11 @@ local function processSystemMessage(msg)
               addon:Scan()
 	    end
 	  end
-      end, 1.5)
+          if addon.rescantimer then
+             addon:CancelTimer(addon.rescantimer)
+	     addon.rescantimer = nil
+          end
+      end, 0.25)
       return
     end
     if allProf[rescan] then 
@@ -1699,7 +1712,7 @@ function addon:TRADE_SKILL_UPDATE()
 end
 
 local function rescan()
-  addon:ReScan()
+  addon:ReScan(true)
 end
 
 function addon:TRADE_SKILL_SHOW()
@@ -2267,11 +2280,12 @@ function addon:ScanSecondary()
   return gotr, gots, gotm, gotprof
 end
 
-function addon:ReScan()
+function addon:ReScan(force)
   debug("addon:ReScan()")
   local rchange, schange, mchange, pname = addon:ScanSecondary()
   local rc, sc, mc, pn
-  if GetTradeSkillLine() ~= "UNKNOWN" and 
+  if (force or (not schange and not mchange)) and
+     GetTradeSkillLine() ~= "UNKNOWN" and 
      not IsTradeSkillGuild() and not IsTradeSkillLinked() then -- our skill window is open, try that
     rc, sc, mc, pn = addon:UpdateTrade()
   end

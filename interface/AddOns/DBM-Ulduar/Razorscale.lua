@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Razorscale", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 7 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 104 $"):sub(12, -3))
 mod:SetCreatureID(33186)
 mod:SetModelID(28787)
 mod:SetUsedIcons(8)
@@ -9,10 +9,13 @@ mod:SetUsedIcons(8)
 mod:RegisterCombat("yell", L.YellAir)
 
 mod:RegisterEvents(
+	"CHAT_MSG_MONSTER_YELL"
+)
+
+mod:RegisterEventsInCombat(
 	"SPELL_CAST_START",
 	"SPELL_DAMAGE",
 	"SPELL_MISSED",
-	"CHAT_MSG_MONSTER_YELL",
 	"RAID_BOSS_EMOTE"
 )
 

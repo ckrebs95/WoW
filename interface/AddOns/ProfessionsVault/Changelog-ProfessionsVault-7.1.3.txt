@@ -1,9 +1,17 @@
 ------------------------------------------------------------------------
-r524 | oscarucb | 2013-10-04 07:31:56 +0000 (Fri, 04 Oct 2013) | 1 line
+r526 | oscarucb | 2013-10-05 19:02:39 +0000 (Sat, 05 Oct 2013) | 1 line
 Changed paths:
-   A /tags/7.1.2 (from /trunk:523)
+   A /tags/7.1.3 (from /trunk:525)
 
-Tagging as 7.1.2
+Tagging as 7.1.3
+------------------------------------------------------------------------
+r525 | oscarucb | 2013-10-04 17:18:24 +0000 (Fri, 04 Oct 2013) | 3 lines
+Changed paths:
+   M /trunk/ProfessionsVault.lua
+
+make pattern learn rescanning more responsive
+avoid filter reset on skill up
+
 ------------------------------------------------------------------------
 r523 | oscarucb | 2013-10-04 00:02:20 +0000 (Fri, 04 Oct 2013) | 2 lines
 Changed paths:
