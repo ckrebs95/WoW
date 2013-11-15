@@ -23,8 +23,6 @@ RecountDB = {
 				},
 			},
 			["MainWindowMode"] = 2,
-			["LastInstanceName"] = "Theramore's Fall",
-			["CurDataSet"] = "LastFightData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -36,10 +34,12 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = -409.9998474121094,
-			["MainWindowHeight"] = 132.9999237060547,
-			["GraphWindowX"] = 0,
-			["MainWindowWidth"] = 294.0000915527344,
 			["DetailWindowX"] = 619.0000610351562,
+			["GraphWindowX"] = 0,
+			["LastInstanceName"] = "Mogu'shan Palace",
+			["CurDataSet"] = "LastFightData",
+			["MainWindowWidth"] = 294.0000915527344,
+			["MainWindowHeight"] = 132.9999237060547,
 		},
 		["Doyjen - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -129,11 +129,11 @@ RecountDB = {
 					},
 				},
 			},
-			["GraphWindowX"] = 0,
+			["DetailWindowY"] = -227.9999542236328,
 			["MainWindowMode"] = 2,
 			["HideCollect"] = true,
 			["MainWindowWidth"] = 397.0000017136335,
-			["DetailWindowY"] = -227.9999542236328,
+			["GraphWindowX"] = 0,
 		},
 		["Dethamett - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -159,10 +159,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = 0,
-			["DetailWindowX"] = 0,
+			["MainWindowHeight"] = 113.9999372661123,
 			["GraphWindowX"] = 0,
 			["MainWindowWidth"] = 268.0000646710386,
-			["MainWindowHeight"] = 113.9999372661123,
+			["DetailWindowX"] = 0,
 		},
 		["Depha - Khaz Modan"] = {
 			["GraphWindowY"] = 0,
@@ -197,7 +197,7 @@ RecountDB = {
 			},
 			["MainWindowMode"] = 2,
 			["LastInstanceName"] = "Siege of Orgrimmar",
-			["CurDataSet"] = "OverallData",
+			["CurDataSet"] = "LastFightData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -225,6 +225,8 @@ RecountDB = {
 				},
 			},
 			["MainWindowMode"] = 2,
+			["LastInstanceName"] = "Auchindoun: Auchenai Crypts",
+			["CurDataSet"] = "OverallData",
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -238,8 +240,6 @@ RecountDB = {
 			["DetailWindowY"] = 0,
 			["DetailWindowX"] = 0,
 			["GraphWindowX"] = 0,
-			["LastInstanceName"] = "Auchindoun: Auchenai Crypts",
-			["CurDataSet"] = "OverallData",
 			["MainWindowWidth"] = 280.0000610351563,
 			["MainWindowHeight"] = 115,
 		},
