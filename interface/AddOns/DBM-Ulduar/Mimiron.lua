@@ -1,8 +1,9 @@
 local mod	= DBM:NewMod("Mimiron", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 104 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 112 $"):sub(12, -3))
 mod:SetCreatureID(33432)
+mod:SetEncounterID(1138)
 mod:SetModelID(28578)
 mod:SetUsedIcons(1, 2, 3, 4, 5, 6, 7, 8)
 
@@ -53,7 +54,7 @@ local timerNextFlames			= mod:NewNextTimer(27.5, 64566)
 local timerNextFrostBomb        = mod:NewNextTimer(30, 64623)
 local timerBombExplosion		= mod:NewCastTimer(15, 65333)
 
-local soundShockBlast			= mod:NewSound(63631, nil, mod:IsMelee())
+local soundShockBlast			= mod:NewSound(63631, mod:IsMelee())
 local soundDarkGlare			= mod:NewSound(63414)
 
 mod:AddBoolOption("HealthFramePhase4", true)

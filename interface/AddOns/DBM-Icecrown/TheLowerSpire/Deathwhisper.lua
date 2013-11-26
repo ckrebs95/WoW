@@ -1,8 +1,9 @@
 local mod	= DBM:NewMod("Deathwhisper", "DBM-Icecrown", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 85 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 112 $"):sub(12, -3))
 mod:SetCreatureID(36855)
+mod:SetEncounterID(1100)
 mod:SetModelID(30893)
 mod:SetUsedIcons(4, 5, 6, 7, 8)
 mod:RegisterCombat("combat")

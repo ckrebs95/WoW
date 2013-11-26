@@ -1,8 +1,9 @@
 local mod	= DBM:NewMod("Halion", "DBM-ChamberOfAspects", 2)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 104 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 112 $"):sub(12, -3))
 mod:SetCreatureID(39863)--40142 (twilight form)
+mod:SetEncounterID(1150)
 mod:SetModelID(31952)
 mod:SetUsedIcons(7, 8)
 --mod:SetMinSyncRevision(4358)
@@ -53,7 +54,7 @@ local timerFieryBreathCD			= mod:NewCDTimer(19, 74525, nil, mod:IsTank() or mod:
 
 local berserkTimer					= mod:NewBerserkTimer(480)
 
-local soundConsumption 				= mod:NewSound(74562, "SoundOnConsumption")
+local soundConsumption 				= mod:NewSound(74562, nil, "SoundOnConsumption")
 
 mod:AddBoolOption("AnnounceAlternatePhase", true, "announce")
 mod:AddBoolOption("WhisperOnConsumption", false, "announce")

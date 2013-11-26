@@ -1,8 +1,9 @@
 local mod	= DBM:NewMod("GeneralVezax", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 104 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 112 $"):sub(12, -3))
 mod:SetCreatureID(33271)
+mod:SetEncounterID(1134)
 mod:SetModelID(28548)
 mod:SetUsedIcons(7, 8)
 

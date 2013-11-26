@@ -1,8 +1,9 @@
 local mod	= DBM:NewMod("Algalon", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 109 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 112 $"):sub(12, -3))
 mod:SetCreatureID(32871)
+mod:SetEncounterID(1130)
 mod:SetMinSyncRevision(104)
 mod:SetModelID(28641)
 mod:SetModelSound("Sound\\Creature\\AlgalonTheObserver\\UR_Algalon_Aggro01.wav", "Sound\\Creature\\AlgalonTheObserver\\UR_Algalon_Slay02.wav")

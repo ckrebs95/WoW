@@ -1,8 +1,9 @@
 local mod	= DBM:NewMod("Champions", "DBM-Coliseum")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 108 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 112 $"):sub(12, -3))
 mod:SetCreatureID(34458, 34451, 34459, 34448, 34449, 34445, 34456, 34447, 34441, 34454, 34444, 34455, 34450, 34453, 34461, 34460, 34469, 34467, 34468, 34471, 34465, 34466, 34473, 34472, 34470, 34463, 34474, 34475)
+mod:SetEncounterID(1086)
 
 mod:RegisterCombat("combat")
 --mod:RegisterKill("yell", L.YellKill)
@@ -81,7 +82,7 @@ local specWarnHandofProt	= mod:NewSpecialWarningDispel(66009, mod:IsMagicDispell
 local specWarnDivineShield	= mod:NewSpecialWarningDispel(66010, mod:IsMagicDispeller()) 
 local specWarnIceBlock		= mod:NewSpecialWarningDispel(65802, mod:IsMagicDispeller())
 
-local soundBladestorm		= mod:NewSound(65947, nil, mod:IsMelee())
+local soundBladestorm		= mod:NewSound(65947, mod:IsMelee())
 
 function mod:SPELL_CAST_SUCCESS(args)
 	if args:IsSpellID(65816, 68145, 68146, 68147) then		-- Warlock Hellfire

@@ -1,8 +1,9 @@
 local mod	= DBM:NewMod("LichKing", "DBM-Icecrown", 5)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 102 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 112 $"):sub(12, -3))
 mod:SetCreatureID(36597)
+mod:SetEncounterID(1106)
 mod:SetModelID(30721)
 mod:SetZone()
 mod:SetUsedIcons(2, 3, 4, 5, 6, 7, 8)

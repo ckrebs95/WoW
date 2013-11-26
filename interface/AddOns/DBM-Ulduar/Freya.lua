@@ -1,9 +1,10 @@
 local mod	= DBM:NewMod("Freya", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 104 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 112 $"):sub(12, -3))
 
 mod:SetCreatureID(32906)
+mod:SetEncounterID(1133)
 mod:SetModelID(28777)
 mod:RegisterCombat("combat")
 mod:RegisterKill("yell", L.YellKill)

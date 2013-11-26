@@ -1,8 +1,9 @@
 local mod	= DBM:NewMod(609, "DBM-Party-WotLK", 15, 278)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 105 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 112 $"):sub(12, -3))
 mod:SetCreatureID(36476)
+mod:SetEncounterID(835, 836)
 mod:SetUsedIcons(8)
 mod:SetMinSyncRevision(7)--Could break if someone is running out of date version with higher revision
 
@@ -30,7 +31,7 @@ local timerPursuitCast			= mod:NewCastTimer(5, 68987)
 local timerPursuitConfusion		= mod:NewBuffActiveTimer(12, 69029)
 local timerPoisonNova			= mod:NewCastTimer(5, 68989)
 
-local soundPoisonNova			= mod:NewSound(68989, nil, mod:IsMelee())
+local soundPoisonNova			= mod:NewSound(68989, mod:IsMelee())
 local soundPursuit				= mod:NewSound(68987)
 
 mod:AddBoolOption("SetIconOnPursuitTarget", true)

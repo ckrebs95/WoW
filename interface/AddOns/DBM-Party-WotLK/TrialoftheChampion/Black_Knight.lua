@@ -1,8 +1,9 @@
 local mod	= DBM:NewMod(637, "DBM-Party-WotLK", 13, 284)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 105 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 112 $"):sub(12, -3))
 mod:SetCreatureID(35451, 10000)		-- work around, DBM API failes to handle a Boss to die, rebirth, die again, rebirth again and die to loot...
+mod:SetEncounterID(340, 341)
 mod:SetUsedIcons(8)
 
 mod:RegisterCombat("combat")
@@ -30,7 +31,7 @@ local timerCombatStart		= mod:NewCombatTimer(55.5)
 local timerMarked			= mod:NewTargetTimer(10, 67823)
 local timerExplode			= mod:NewCastTimer(4, 67729)
 
-local soundExplode	 		= mod:NewSound(67751, nil, mod:IsMelee())
+local soundExplode	 		= mod:NewSound(67751, mod:IsMelee())
 mod:AddBoolOption("SetIconOnMarkedTarget", true)
 mod:AddBoolOption("AchievementCheck", false, "announce")
 

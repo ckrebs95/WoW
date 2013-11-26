@@ -1,8 +1,9 @@
 local mod	= DBM:NewMod("Ignis", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 104 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 112 $"):sub(12, -3))
 mod:SetCreatureID(33118)
+mod:SetEncounterID(1136)
 mod:SetModelID(29185)
 mod:SetUsedIcons(8)
 
