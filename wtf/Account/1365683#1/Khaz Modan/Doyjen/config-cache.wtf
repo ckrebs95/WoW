@@ -1,6 +1,6 @@
 SET autoLootDefault "1"
 SET minimapZoom "3"
-SET minimapInsideZoom "3"
+SET minimapInsideZoom "5"
 SET autoQuestPopUps "v##$"
 SET trackedQuests "v&?.&H;"
 SET trackedAchievements "v"

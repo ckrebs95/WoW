@@ -1,9 +1,8 @@
 local mod	= DBM:NewMod(821, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10733 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10477 $"):sub(12, -3))
 mod:SetCreatureID(68065, 70235, 70247)--Frozen 70235, Venomous 70247 (only 2 heads that ever start in front, so no need to look for combat with arcane or fire for combat detection)
-mod:SetEncounterID(1578)
 mod:SetMainBossID(68065)
 mod:SetZone()
 mod:SetUsedIcons(7, 6, 4, 2)
@@ -174,6 +173,10 @@ local function CheckHeads(GUID)
 				end
 			end
 		end
+	end
+	if DBM.Options.DebugMode then
+		print("DBM Boss Debug: ", "Active Heads: ".."Fire: "..fireInFront.." Ice: "..iceInFront.." Venom: "..venomInFront.." Arcane: "..arcaneInFront)
+		print("DBM Boss Debug: ", "Inactive Heads: ".."Fire: "..fireBehind.." Ice: "..iceBehind.." Venom: "..venomBehind.." Arcane: "..arcaneBehind)
 	end
 end
 
@@ -398,6 +401,8 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 			arcaneBehind = arcaneBehind + 2
 			arcaneRecent = true
 		end
+--		print("DBM Boss Debug: ", "Active Heads: ".."Fire: "..fireInFront.." Ice: "..iceInFront.." Venom: "..venomInFront.." Arcane: "..arcaneInFront)
+--		print("DBM Boss Debug: ", "Inactive Heads: ".."Fire: "..fireBehind.." Ice: "..iceBehind.." Venom: "..venomBehind.." Arcane: "..arcaneBehind)
 	end
 end
 

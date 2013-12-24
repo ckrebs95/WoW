@@ -10,7 +10,7 @@ local PVLDB
 local minimapIcon = LibStub("LibDBIcon-1.0")
 vars.svnrev = vars.svnrev or {}
 local svnrev = vars.svnrev
-svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 525 $"):match("%d+"))
+svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 531 $"):match("%d+"))
 local DB_VERSION_MAJOR = 1
 local DB_VERSION_MINOR = 4
 local _G = _G
@@ -696,7 +696,7 @@ return {
       get = function(info) return not settings.minimap.hide end,
       set = function(info,val) 
                   settings.minimap.hide = not val
-		  minimapIcon:Update()
+		  minimapIcon:Refresh(addonName)
             end
     },
    }}, -- general
@@ -996,7 +996,7 @@ function addon:RefreshConfig()
 
   addon:RefreshChar()
   addon:RefreshWindow()
-  if minimapIcon.Update then minimapIcon:Update() end
+  if addon.minimapinit then minimapIcon:Refresh(addonName) end
 end
 
 local function resetSettings() 
@@ -1377,14 +1377,8 @@ function addon:OnEnable()
 
   settings.minimap = settings.minimap or {}
   minimapIcon:Register(addonName, PVLDB, settings.minimap)
-  minimapIcon.Update = function()
-    if settings.minimap.hide then
-      minimapIcon:Hide(addonName)
-    else
-      minimapIcon:Show(addonName)
-    end
-  end
-  minimapIcon:Update()
+  minimapIcon:Refresh(addonName)
+  addon.minimapinit = true
   SetLDBProf()
 
 end

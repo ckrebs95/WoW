@@ -7,7 +7,7 @@ local L
 L= DBM:GetModLocalization(852)
 
 L:SetMiscLocalization({
-	Victory			= "¡Ah, lo habéis logrado! Las aguas vuelven a ser puras."
+	Victory			= "Ah, you have done it!  The waters are pure once more." --TODO need translation
 })
 
 ---------------------------
@@ -91,12 +91,12 @@ L:SetOptionLocalization({
 })
 
 L:SetMiscLocalization({
-	newForces1					= "¡Guerreros, paso ligero!",
-	newForces2					= "uerta", --TODO, need the whole message
-	newForces3					= "¡Reunid a las tropas!",
-	newForces4					= "¡Kor'kron, conmigo!",
-	newForces5					= "¡Siguiente escuadrón, al frente!",
-	allForces					= "Atención, Korkron: ¡matadlos!",
+	newForces1					= "Warriors, on the double!", --TODO need translation
+	newForces2					= "Defend the gate!", --TODO need translation
+	newForces3					= "Rally the forces!", --TODO need translation
+	newForces4					= "Kor'kron, at my side!", --TODO need translation
+	newForces5					= "Next squad, to the front!", --TODO need translation
+	allForces					= "All Kor'kron... under my command... kill them... NOW!", --TODO need translation
 	nextAdds					= "Siguientes Adds: "
 })
 
@@ -141,11 +141,13 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(853)
 
 L:SetWarningLocalization({
-	specWarnActivatedVulnerable		= "Eres vulnerable a %s - ¡Esquiva!"
+	specWarnActivatedVulnerable		= "Eres vulnerable a %s - ¡Esquiva!",
+	specWarnCriteriaLinked			= "!Estás enlazado a %s!"
 })
 
 L:SetOptionLocalization({
-	specWarnActivatedVulnerable		= "Mostrar aviso especial cunado eres vulnerable a activar paragons"
+	specWarnActivatedVulnerable		= "Mostrar aviso especial cunado eres vulnerable a activar paragons",
+	specWarnCriteriaLinked			= "Mostrar aviso especial cuando estés enlazado con $spell:144095"
 })
 
 L:SetMiscLocalization({

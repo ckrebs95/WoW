@@ -110,7 +110,7 @@ RecountPerCharDB = {
 				"DAMAGE", -- [50]
 			},
 			["TimeWindows"] = {
-				["ActiveTime"] = {
+				["TimeDamage"] = {
 					171.5800000000001, -- [1]
 				},
 				["Damage"] = {
@@ -119,7 +119,7 @@ RecountPerCharDB = {
 				["DamageTaken"] = {
 					700, -- [1]
 				},
-				["TimeDamage"] = {
+				["ActiveTime"] = {
 					171.5800000000001, -- [1]
 				},
 			},
@@ -132,9 +132,60 @@ RecountPerCharDB = {
 			},
 			["type"] = "Pet",
 			["FightsSaved"] = 5,
-			["LastActive"] = 1353554646,
+			["LastAbility"] = 1088330.758,
 			["Owner"] = "Doyjen",
-			["UnitLockout"] = 1353554646,
+			["LastEventTimes"] = {
+				490267.498, -- [1]
+				490267.875, -- [2]
+				490269.886, -- [3]
+				490270.713, -- [4]
+				490271.484, -- [5]
+				490271.903, -- [6]
+				490273.896, -- [7]
+				490273.896, -- [8]
+				490277.157, -- [9]
+				490277.94, -- [10]
+				490278.248, -- [11]
+				490280.239, -- [12]
+				490281.185, -- [13]
+				490282.251, -- [14]
+				490199.149, -- [15]
+				490199.75, -- [16]
+				490199.876, -- [17]
+				490199.876, -- [18]
+				490200.316, -- [19]
+				490200.781, -- [20]
+				490200.781, -- [21]
+				490200.781, -- [22]
+				490200.781, -- [23]
+				490201.096, -- [24]
+				490201.547, -- [25]
+				490201.547, -- [26]
+				490201.547, -- [27]
+				490201.678, -- [28]
+				490201.804, -- [29]
+				490202.324, -- [30]
+				490202.324, -- [31]
+				490202.771, -- [32]
+				490203.036, -- [33]
+				490203.538, -- [34]
+				490203.538, -- [35]
+				490203.859, -- [36]
+				490204.353, -- [37]
+				490204.477, -- [38]
+				490206.163, -- [39]
+				490206.869, -- [40]
+				490207.033, -- [41]
+				490235.335, -- [42]
+				490236.133, -- [43]
+				490237.33, -- [44]
+				490239.353, -- [45]
+				490239.353, -- [46]
+				490263.876, -- [47]
+				490264.284, -- [48]
+				490265.877, -- [49]
+				490265.877, -- [50]
+			},
 			["NextEventNum"] = 15,
 			["LastEventHealthNum"] = {
 				0, -- [1]
@@ -241,6 +292,65 @@ RecountPerCharDB = {
 				"Ji Firepaw <Doyjen> Blackout Kick Ruk-Ruk Hit -13 (Physical)", -- [50]
 			},
 			["Name"] = "Ji Firepaw",
+			["LastEventIncoming"] = {
+				false, -- [1]
+				false, -- [2]
+				false, -- [3]
+				false, -- [4]
+				false, -- [5]
+				false, -- [6]
+				false, -- [7]
+				false, -- [8]
+				false, -- [9]
+				false, -- [10]
+				false, -- [11]
+				false, -- [12]
+				false, -- [13]
+				false, -- [14]
+				true, -- [15]
+				true, -- [16]
+				true, -- [17]
+				false, -- [18]
+				false, -- [19]
+				true, -- [20]
+				false, -- [21]
+				false, -- [22]
+				false, -- [23]
+				true, -- [24]
+				false, -- [25]
+				false, -- [26]
+				false, -- [27]
+				true, -- [28]
+				false, -- [29]
+				false, -- [30]
+				false, -- [31]
+				true, -- [32]
+				false, -- [33]
+				false, -- [34]
+				false, -- [35]
+				false, -- [36]
+				false, -- [37]
+				true, -- [38]
+				true, -- [39]
+				false, -- [40]
+				false, -- [41]
+				false, -- [42]
+				false, -- [43]
+				false, -- [44]
+				false, -- [45]
+				false, -- [46]
+				false, -- [47]
+				false, -- [48]
+				false, -- [49]
+				false, -- [50]
+			},
+			["TimeLast"] = {
+				["ActiveTime"] = 1353554646,
+				["TimeDamage"] = 1353554646,
+				["OVERALL"] = 1353554646,
+				["DamageTaken"] = 1353554570,
+				["Damage"] = 1353554646,
+			},
 			["Fights"] = {
 				["LastFightData"] = {
 					["DOTs"] = {
@@ -255,12 +365,11 @@ RecountPerCharDB = {
 					},
 					["DeathCount"] = 0,
 					["HOT_Time"] = 0,
-					["DOT_Time"] = 0,
-					["ManaGain"] = 0,
+					["Damage"] = 0,
+					["RunicPowerGain"] = 0,
 					["ElementTaken"] = {
 					},
-					["HOTs"] = {
-					},
+					["DOT_Time"] = 0,
 					["ElementTakenBlock"] = {
 					},
 					["ElementDoneAbsorb"] = {
@@ -271,24 +380,24 @@ RecountPerCharDB = {
 					["Dispels"] = 0,
 					["PartialBlock"] = {
 					},
-					["FDamagedWho"] = {
+					["ElementHitsDone"] = {
 					},
 					["FAttacks"] = {
 					},
-					["RageGain"] = 0,
+					["HealingTaken"] = 0,
 					["ElementDone"] = {
-					},
-					["ManaGainedFrom"] = {
 					},
 					["DamagedWho"] = {
 					},
-					["RageGained"] = {
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGainedFrom"] = {
 					},
 					["WhoDamaged"] = {
 					},
 					["EnergyGainedFrom"] = {
 					},
-					["OverHeals"] = {
+					["RunicPowerGained"] = {
 					},
 					["CCBroken"] = {
 					},
@@ -296,52 +405,53 @@ RecountPerCharDB = {
 					},
 					["TimeHealing"] = {
 					},
-					["Dispelled"] = 0,
+					["OverHeals"] = {
+					},
 					["WhoHealed"] = {
-					},
-					["PartialResist"] = {
-					},
-					["CCBreak"] = 0,
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
-					["ElementTakenAbsorb"] = {
-					},
-					["ActiveTime"] = 0,
-					["Overhealing"] = 0,
-					["ElementTakenResist"] = {
-					},
-					["InterruptData"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["TimeSpent"] = {
-					},
-					["Heals"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["EnergyGained"] = {
 					},
 					["HealedWho"] = {
 					},
-					["Healing"] = 0,
-					["RunicPowerGained"] = {
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
 					},
-					["RunicPowerGainedFrom"] = {
+					["PartialAbsorb"] = {
+					},
+					["PartialResist"] = {
+					},
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["ActiveTime"] = 0,
+					["EnergyGained"] = {
+					},
+					["EnergyGain"] = 0,
+					["Healing"] = 0,
+					["Dispelled"] = 0,
+					["RageGained"] = {
 					},
 					["Attacks"] = {
 					},
-					["HealingTaken"] = 0,
-					["ElementHitsDone"] = {
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
 					},
 					["TimeDamage"] = 0,
 					["TimeDamaging"] = {
 					},
-					["RunicPowerGain"] = 0,
-					["Damage"] = 0,
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
 					["DispelledWho"] = {
 					},
 				},
@@ -358,12 +468,11 @@ RecountPerCharDB = {
 					},
 					["DeathCount"] = 0,
 					["HOT_Time"] = 0,
-					["DOT_Time"] = 0,
-					["ManaGain"] = 0,
+					["Damage"] = 0,
+					["RunicPowerGain"] = 0,
 					["ElementTaken"] = {
 					},
-					["HOTs"] = {
-					},
+					["DOT_Time"] = 0,
 					["ElementTakenBlock"] = {
 					},
 					["ElementDoneAbsorb"] = {
@@ -374,24 +483,24 @@ RecountPerCharDB = {
 					["Dispels"] = 0,
 					["PartialBlock"] = {
 					},
-					["FDamagedWho"] = {
+					["ElementHitsDone"] = {
 					},
 					["FAttacks"] = {
 					},
-					["RageGain"] = 0,
+					["HealingTaken"] = 0,
 					["ElementDone"] = {
-					},
-					["ManaGainedFrom"] = {
 					},
 					["DamagedWho"] = {
 					},
-					["RageGained"] = {
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGainedFrom"] = {
 					},
 					["WhoDamaged"] = {
 					},
 					["EnergyGainedFrom"] = {
 					},
-					["OverHeals"] = {
+					["RunicPowerGained"] = {
 					},
 					["CCBroken"] = {
 					},
@@ -399,52 +508,53 @@ RecountPerCharDB = {
 					},
 					["TimeHealing"] = {
 					},
-					["Dispelled"] = 0,
+					["OverHeals"] = {
+					},
 					["WhoHealed"] = {
-					},
-					["PartialResist"] = {
-					},
-					["CCBreak"] = 0,
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
-					["ElementTakenAbsorb"] = {
-					},
-					["ActiveTime"] = 0,
-					["Overhealing"] = 0,
-					["ElementTakenResist"] = {
-					},
-					["InterruptData"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["TimeSpent"] = {
-					},
-					["Heals"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["EnergyGained"] = {
 					},
 					["HealedWho"] = {
 					},
-					["Healing"] = 0,
-					["RunicPowerGained"] = {
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
 					},
-					["RunicPowerGainedFrom"] = {
+					["PartialAbsorb"] = {
+					},
+					["PartialResist"] = {
+					},
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["ActiveTime"] = 0,
+					["EnergyGained"] = {
+					},
+					["EnergyGain"] = 0,
+					["Healing"] = 0,
+					["Dispelled"] = 0,
+					["RageGained"] = {
 					},
 					["Attacks"] = {
 					},
-					["HealingTaken"] = 0,
-					["ElementHitsDone"] = {
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
 					},
 					["TimeDamage"] = 0,
 					["TimeDamaging"] = {
 					},
-					["RunicPowerGain"] = 0,
-					["Damage"] = 0,
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
 					["DispelledWho"] = {
 					},
 				},
@@ -472,17 +582,31 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 45.63999999999999,
 								},
-								["Spinning Crane Kick"] = {
-									["count"] = 7.469999999999999,
+								["Blackout Kick"] = {
+									["count"] = 5.980000000000001,
 								},
 								["Jab"] = {
 									["count"] = 16.87,
 								},
-								["Blackout Kick"] = {
-									["count"] = 5.980000000000001,
+								["Spinning Crane Kick"] = {
+									["count"] = 7.469999999999999,
 								},
 							},
 							["amount"] = 80.00000000000001,
+						},
+						["Ruk-Ruk"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 4.029999999999999,
+								},
+								["Jab"] = {
+									["count"] = 4.590000000000001,
+								},
+								["Melee"] = {
+									["count"] = 13.26,
+								},
+							},
+							["amount"] = 21.88,
 						},
 						["Fe-Feng Firethief"] = {
 							["Details"] = {
@@ -492,31 +616,17 @@ RecountPerCharDB = {
 								["Spinning Crane Kick"] = {
 									["count"] = 11.09,
 								},
-								["Melee"] = {
-									["count"] = 46.51000000000001,
+								["Blackout Kick"] = {
+									["count"] = 3.12,
 								},
 								["Jab"] = {
 									["count"] = 8.98,
 								},
-								["Blackout Kick"] = {
-									["count"] = 3.12,
+								["Melee"] = {
+									["count"] = 46.51000000000001,
 								},
 							},
 							["amount"] = 69.69999999999999,
-						},
-						["Ruk-Ruk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 4.590000000000001,
-								},
-								["Melee"] = {
-									["count"] = 13.26,
-								},
-								["Blackout Kick"] = {
-									["count"] = 4.029999999999999,
-								},
-							},
-							["amount"] = 21.88,
 						},
 					},
 					["DamageTaken"] = 700,
@@ -627,6 +737,45 @@ RecountPerCharDB = {
 						["Physical"] = 501,
 					},
 					["Damage"] = 6105,
+					["ElementTakenBlock"] = {
+						["Melee"] = 2,
+					},
+					["ElementDone"] = {
+						["Melee"] = 2200,
+						["Physical"] = 3905,
+					},
+					["ElementHitsTaken"] = {
+						["Fire"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 12,
+								},
+							},
+							["amount"] = 12,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 4,
+								},
+								["Dodge"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 24,
+								},
+							},
+							["amount"] = 29,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 15,
+								},
+							},
+							["amount"] = 15,
+						},
+					},
 					["DamagedWho"] = {
 						["Fe-Feng Ruffian"] = {
 							["Details"] = {
@@ -636,17 +785,31 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 1098,
 								},
-								["Spinning Crane Kick"] = {
-									["count"] = 1331,
+								["Blackout Kick"] = {
+									["count"] = 158,
 								},
 								["Jab"] = {
 									["count"] = 732,
 								},
-								["Blackout Kick"] = {
-									["count"] = 158,
+								["Spinning Crane Kick"] = {
+									["count"] = 1331,
 								},
 							},
 							["amount"] = 3413,
+						},
+						["Ruk-Ruk"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 40,
+								},
+								["Jab"] = {
+									["count"] = 208,
+								},
+								["Melee"] = {
+									["count"] = 321,
+								},
+							},
+							["amount"] = 569,
 						},
 						["Fe-Feng Firethief"] = {
 							["Details"] = {
@@ -656,37 +819,20 @@ RecountPerCharDB = {
 								["Spinning Crane Kick"] = {
 									["count"] = 652,
 								},
-								["Melee"] = {
-									["count"] = 781,
+								["Blackout Kick"] = {
+									["count"] = 54,
 								},
 								["Jab"] = {
 									["count"] = 593,
 								},
-								["Blackout Kick"] = {
-									["count"] = 54,
+								["Melee"] = {
+									["count"] = 781,
 								},
 							},
 							["amount"] = 2123,
 						},
-						["Ruk-Ruk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 208,
-								},
-								["Melee"] = {
-									["count"] = 321,
-								},
-								["Blackout Kick"] = {
-									["count"] = 40,
-								},
-							},
-							["amount"] = 569,
-						},
 					},
-					["ElementDone"] = {
-						["Melee"] = 2200,
-						["Physical"] = 3905,
-					},
+					["TimeDamage"] = 171.5800000000001,
 					["TimeDamaging"] = {
 						["Fe-Feng Ruffian"] = {
 							["Details"] = {
@@ -696,17 +842,31 @@ RecountPerCharDB = {
 								["Melee"] = {
 									["count"] = 45.63999999999999,
 								},
-								["Spinning Crane Kick"] = {
-									["count"] = 7.469999999999999,
+								["Blackout Kick"] = {
+									["count"] = 5.980000000000001,
 								},
 								["Jab"] = {
 									["count"] = 16.87,
 								},
-								["Blackout Kick"] = {
-									["count"] = 5.980000000000001,
+								["Spinning Crane Kick"] = {
+									["count"] = 7.469999999999999,
 								},
 							},
 							["amount"] = 80.00000000000001,
+						},
+						["Ruk-Ruk"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 4.029999999999999,
+								},
+								["Jab"] = {
+									["count"] = 4.590000000000001,
+								},
+								["Melee"] = {
+									["count"] = 13.26,
+								},
+							},
+							["amount"] = 21.88,
 						},
 						["Fe-Feng Firethief"] = {
 							["Details"] = {
@@ -716,86 +876,17 @@ RecountPerCharDB = {
 								["Spinning Crane Kick"] = {
 									["count"] = 11.09,
 								},
-								["Melee"] = {
-									["count"] = 46.51000000000001,
+								["Blackout Kick"] = {
+									["count"] = 3.12,
 								},
 								["Jab"] = {
 									["count"] = 8.98,
 								},
-								["Blackout Kick"] = {
-									["count"] = 3.12,
+								["Melee"] = {
+									["count"] = 46.51000000000001,
 								},
 							},
 							["amount"] = 69.69999999999999,
-						},
-						["Ruk-Ruk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 4.590000000000001,
-								},
-								["Melee"] = {
-									["count"] = 13.26,
-								},
-								["Blackout Kick"] = {
-									["count"] = 4.029999999999999,
-								},
-							},
-							["amount"] = 21.88,
-						},
-					},
-					["ElementHitsDone"] = {
-						["Melee"] = {
-							["Details"] = {
-								["Crit"] = {
-									["count"] = 4,
-								},
-								["Hit"] = {
-									["count"] = 60,
-								},
-							},
-							["amount"] = 64,
-						},
-						["Physical"] = {
-							["Details"] = {
-								["Immune"] = {
-									["count"] = 2,
-								},
-								["Crit"] = {
-									["count"] = 5,
-								},
-								["Hit"] = {
-									["count"] = 135,
-								},
-							},
-							["amount"] = 142,
-						},
-					},
-					["TimeDamage"] = 171.5800000000001,
-					["WhoDamaged"] = {
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 137,
-								},
-								["Display of Fury"] = {
-									["count"] = 501,
-								},
-							},
-							["amount"] = 638,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Shoot"] = {
-									["count"] = 8,
-								},
-								["Shoot ALL the fireworks!"] = {
-									["count"] = 20,
-								},
-								["Melee"] = {
-									["count"] = 34,
-								},
-							},
-							["amount"] = 62,
 						},
 					},
 					["Attacks"] = {
@@ -829,6 +920,36 @@ RecountPerCharDB = {
 							["count"] = 64,
 							["amount"] = 2200,
 						},
+						["Blackout Kick"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 14,
+									["min"] = 13,
+									["count"] = 19,
+									["amount"] = 252,
+								},
+							},
+							["count"] = 19,
+							["amount"] = 252,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 71,
+									["min"] = 71,
+									["count"] = 1,
+									["amount"] = 71,
+								},
+								["Hit"] = {
+									["max"] = 42,
+									["min"] = 31,
+									["count"] = 41,
+									["amount"] = 1462,
+								},
+							},
+							["count"] = 42,
+							["amount"] = 1533,
+						},
 						["Spinning Crane Kick"] = {
 							["Details"] = {
 								["Immune"] = {
@@ -851,186 +972,65 @@ RecountPerCharDB = {
 							["count"] = 74,
 							["amount"] = 1983,
 						},
-						["Jab"] = {
+					},
+					["WhoDamaged"] = {
+						["Fe-Feng Firethief"] = {
 							["Details"] = {
-								["Crit"] = {
-									["max"] = 71,
-									["min"] = 71,
-									["count"] = 1,
-									["amount"] = 71,
+								["Shoot"] = {
+									["count"] = 8,
 								},
-								["Hit"] = {
-									["max"] = 42,
-									["min"] = 31,
-									["count"] = 41,
-									["amount"] = 1462,
+								["Shoot ALL the fireworks!"] = {
+									["count"] = 20,
+								},
+								["Melee"] = {
+									["count"] = 34,
 								},
 							},
-							["count"] = 42,
-							["amount"] = 1533,
+							["amount"] = 62,
 						},
-						["Blackout Kick"] = {
+						["Fe-Feng Ruffian"] = {
 							["Details"] = {
-								["Hit"] = {
-									["max"] = 14,
-									["min"] = 13,
-									["count"] = 19,
-									["amount"] = 252,
+								["Melee"] = {
+									["count"] = 137,
+								},
+								["Display of Fury"] = {
+									["count"] = 501,
 								},
 							},
-							["count"] = 19,
-							["amount"] = 252,
+							["amount"] = 638,
 						},
 					},
-					["ElementHitsTaken"] = {
-						["Fire"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 12,
-								},
-							},
-							["amount"] = 12,
-						},
+					["ElementHitsDone"] = {
 						["Melee"] = {
 							["Details"] = {
-								["Hit"] = {
-									["count"] = 24,
-								},
-								["Dodge"] = {
-									["count"] = 1,
-								},
-								["Miss"] = {
+								["Crit"] = {
 									["count"] = 4,
 								},
+								["Hit"] = {
+									["count"] = 60,
+								},
 							},
-							["amount"] = 29,
+							["amount"] = 64,
 						},
 						["Physical"] = {
 							["Details"] = {
+								["Immune"] = {
+									["count"] = 2,
+								},
+								["Crit"] = {
+									["count"] = 5,
+								},
 								["Hit"] = {
-									["count"] = 15,
+									["count"] = 135,
 								},
 							},
-							["amount"] = 15,
+							["amount"] = 142,
 						},
-					},
-					["ElementTakenBlock"] = {
-						["Melee"] = 2,
 					},
 				},
 			},
-			["TimeLast"] = {
-				["ActiveTime"] = 1353554646,
-				["TimeDamage"] = 1353554646,
-				["OVERALL"] = 1353554646,
-				["DamageTaken"] = 1353554570,
-				["Damage"] = 1353554646,
-			},
-			["LastEventIncoming"] = {
-				false, -- [1]
-				false, -- [2]
-				false, -- [3]
-				false, -- [4]
-				false, -- [5]
-				false, -- [6]
-				false, -- [7]
-				false, -- [8]
-				false, -- [9]
-				false, -- [10]
-				false, -- [11]
-				false, -- [12]
-				false, -- [13]
-				false, -- [14]
-				true, -- [15]
-				true, -- [16]
-				true, -- [17]
-				false, -- [18]
-				false, -- [19]
-				true, -- [20]
-				false, -- [21]
-				false, -- [22]
-				false, -- [23]
-				true, -- [24]
-				false, -- [25]
-				false, -- [26]
-				false, -- [27]
-				true, -- [28]
-				false, -- [29]
-				false, -- [30]
-				false, -- [31]
-				true, -- [32]
-				false, -- [33]
-				false, -- [34]
-				false, -- [35]
-				false, -- [36]
-				false, -- [37]
-				true, -- [38]
-				true, -- [39]
-				false, -- [40]
-				false, -- [41]
-				false, -- [42]
-				false, -- [43]
-				false, -- [44]
-				false, -- [45]
-				false, -- [46]
-				false, -- [47]
-				false, -- [48]
-				false, -- [49]
-				false, -- [50]
-			},
-			["LastEventTimes"] = {
-				490267.498, -- [1]
-				490267.875, -- [2]
-				490269.886, -- [3]
-				490270.713, -- [4]
-				490271.484, -- [5]
-				490271.903, -- [6]
-				490273.896, -- [7]
-				490273.896, -- [8]
-				490277.157, -- [9]
-				490277.94, -- [10]
-				490278.248, -- [11]
-				490280.239, -- [12]
-				490281.185, -- [13]
-				490282.251, -- [14]
-				490199.149, -- [15]
-				490199.75, -- [16]
-				490199.876, -- [17]
-				490199.876, -- [18]
-				490200.316, -- [19]
-				490200.781, -- [20]
-				490200.781, -- [21]
-				490200.781, -- [22]
-				490200.781, -- [23]
-				490201.096, -- [24]
-				490201.547, -- [25]
-				490201.547, -- [26]
-				490201.547, -- [27]
-				490201.678, -- [28]
-				490201.804, -- [29]
-				490202.324, -- [30]
-				490202.324, -- [31]
-				490202.771, -- [32]
-				490203.036, -- [33]
-				490203.538, -- [34]
-				490203.538, -- [35]
-				490203.859, -- [36]
-				490204.353, -- [37]
-				490204.477, -- [38]
-				490206.163, -- [39]
-				490206.869, -- [40]
-				490207.033, -- [41]
-				490235.335, -- [42]
-				490236.133, -- [43]
-				490237.33, -- [44]
-				490239.353, -- [45]
-				490239.353, -- [46]
-				490263.876, -- [47]
-				490264.284, -- [48]
-				490265.877, -- [49]
-				490265.877, -- [50]
-			},
-			["LastAbility"] = 71340.13800000001,
+			["UnitLockout"] = 1353554646,
+			["LastActive"] = 1353554646,
 		},
 		["Stack of Planks <Doyjen>"] = {
 			["GUID"] = "0xF130E143000114BE",
@@ -1061,11 +1061,11 @@ RecountPerCharDB = {
 					["Messages"] = {
 						"Stack of Planks <Doyjen> dies.", -- [1]
 					},
-					["HealthNum"] = {
+					["EventNum"] = {
 						0, -- [1]
 					},
 					["DeathAt"] = 1353553438,
-					["EventNum"] = {
+					["HealthNum"] = {
 						0, -- [1]
 					},
 					["Health"] = {
@@ -1077,6 +1077,25 @@ RecountPerCharDB = {
 				}, -- [1]
 			},
 			["Owner"] = "Doyjen",
+			["LastEventTimes"] = {
+				489072.544, -- [1]
+			},
+			["NextEventNum"] = 2,
+			["LastEventHealthNum"] = {
+				0, -- [1]
+			},
+			["LastEvents"] = {
+				"Stack of Planks <Doyjen> dies.", -- [1]
+			},
+			["Name"] = "Stack of Planks",
+			["LastEventIncoming"] = {
+				true, -- [1]
+			},
+			["TimeLast"] = {
+				["OVERALL"] = 1353553436,
+				["DeathCount"] = 1353553436,
+			},
+			["UnitLockout"] = 1353553436,
 			["Fights"] = {
 				["LastFightData"] = {
 					["DOTs"] = {
@@ -1091,12 +1110,11 @@ RecountPerCharDB = {
 					},
 					["DeathCount"] = 0,
 					["HOT_Time"] = 0,
-					["DOT_Time"] = 0,
-					["ManaGain"] = 0,
+					["Damage"] = 0,
+					["RunicPowerGain"] = 0,
 					["ElementTaken"] = {
 					},
-					["HOTs"] = {
-					},
+					["DOT_Time"] = 0,
 					["ElementTakenBlock"] = {
 					},
 					["ElementDoneAbsorb"] = {
@@ -1107,24 +1125,24 @@ RecountPerCharDB = {
 					["Dispels"] = 0,
 					["PartialBlock"] = {
 					},
-					["FDamagedWho"] = {
+					["ElementHitsDone"] = {
 					},
 					["FAttacks"] = {
 					},
-					["RageGain"] = 0,
+					["HealingTaken"] = 0,
 					["ElementDone"] = {
-					},
-					["ManaGainedFrom"] = {
 					},
 					["DamagedWho"] = {
 					},
-					["RageGained"] = {
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGainedFrom"] = {
 					},
 					["WhoDamaged"] = {
 					},
 					["EnergyGainedFrom"] = {
 					},
-					["OverHeals"] = {
+					["RunicPowerGained"] = {
 					},
 					["CCBroken"] = {
 					},
@@ -1132,52 +1150,53 @@ RecountPerCharDB = {
 					},
 					["TimeHealing"] = {
 					},
-					["Dispelled"] = 0,
+					["OverHeals"] = {
+					},
 					["WhoHealed"] = {
-					},
-					["PartialResist"] = {
-					},
-					["CCBreak"] = 0,
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
-					["ElementTakenAbsorb"] = {
-					},
-					["ActiveTime"] = 0,
-					["Overhealing"] = 0,
-					["ElementTakenResist"] = {
-					},
-					["InterruptData"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["TimeSpent"] = {
-					},
-					["Heals"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["EnergyGained"] = {
 					},
 					["HealedWho"] = {
 					},
-					["Healing"] = 0,
-					["RunicPowerGained"] = {
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
 					},
-					["RunicPowerGainedFrom"] = {
+					["PartialAbsorb"] = {
+					},
+					["PartialResist"] = {
+					},
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["ActiveTime"] = 0,
+					["EnergyGained"] = {
+					},
+					["EnergyGain"] = 0,
+					["Healing"] = 0,
+					["Dispelled"] = 0,
+					["RageGained"] = {
 					},
 					["Attacks"] = {
 					},
-					["HealingTaken"] = 0,
-					["ElementHitsDone"] = {
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
 					},
 					["TimeDamage"] = 0,
 					["TimeDamaging"] = {
 					},
-					["RunicPowerGain"] = 0,
-					["Damage"] = 0,
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
 					["DispelledWho"] = {
 					},
 				},
@@ -1194,12 +1213,11 @@ RecountPerCharDB = {
 					},
 					["DeathCount"] = 0,
 					["HOT_Time"] = 0,
-					["DOT_Time"] = 0,
-					["ManaGain"] = 0,
+					["Damage"] = 0,
+					["RunicPowerGain"] = 0,
 					["ElementTaken"] = {
 					},
-					["HOTs"] = {
-					},
+					["DOT_Time"] = 0,
 					["ElementTakenBlock"] = {
 					},
 					["ElementDoneAbsorb"] = {
@@ -1210,24 +1228,24 @@ RecountPerCharDB = {
 					["Dispels"] = 0,
 					["PartialBlock"] = {
 					},
-					["FDamagedWho"] = {
+					["ElementHitsDone"] = {
 					},
 					["FAttacks"] = {
 					},
-					["RageGain"] = 0,
+					["HealingTaken"] = 0,
 					["ElementDone"] = {
-					},
-					["ManaGainedFrom"] = {
 					},
 					["DamagedWho"] = {
 					},
-					["RageGained"] = {
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGainedFrom"] = {
 					},
 					["WhoDamaged"] = {
 					},
 					["EnergyGainedFrom"] = {
 					},
-					["OverHeals"] = {
+					["RunicPowerGained"] = {
 					},
 					["CCBroken"] = {
 					},
@@ -1235,52 +1253,53 @@ RecountPerCharDB = {
 					},
 					["TimeHealing"] = {
 					},
-					["Dispelled"] = 0,
+					["OverHeals"] = {
+					},
 					["WhoHealed"] = {
-					},
-					["PartialResist"] = {
-					},
-					["CCBreak"] = 0,
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
-					["ElementTakenAbsorb"] = {
-					},
-					["ActiveTime"] = 0,
-					["Overhealing"] = 0,
-					["ElementTakenResist"] = {
-					},
-					["InterruptData"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["TimeSpent"] = {
-					},
-					["Heals"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["EnergyGained"] = {
 					},
 					["HealedWho"] = {
 					},
-					["Healing"] = 0,
-					["RunicPowerGained"] = {
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
 					},
-					["RunicPowerGainedFrom"] = {
+					["PartialAbsorb"] = {
+					},
+					["PartialResist"] = {
+					},
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["ActiveTime"] = 0,
+					["EnergyGained"] = {
+					},
+					["EnergyGain"] = 0,
+					["Healing"] = 0,
+					["Dispelled"] = 0,
+					["RageGained"] = {
 					},
 					["Attacks"] = {
 					},
-					["HealingTaken"] = 0,
-					["ElementHitsDone"] = {
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
 					},
 					["TimeDamage"] = 0,
 					["TimeDamaging"] = {
 					},
-					["RunicPowerGain"] = 0,
-					["Damage"] = 0,
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
 					["DispelledWho"] = {
 					},
 				},
@@ -1288,26 +1307,7 @@ RecountPerCharDB = {
 					["DeathCount"] = 1,
 				},
 			},
-			["NextEventNum"] = 2,
-			["LastEventHealthNum"] = {
-				0, -- [1]
-			},
-			["LastEvents"] = {
-				"Stack of Planks <Doyjen> dies.", -- [1]
-			},
-			["Name"] = "Stack of Planks",
-			["UnitLockout"] = 1353553436,
-			["TimeLast"] = {
-				["DeathCount"] = 1353553436,
-				["OVERALL"] = 1353553436,
-			},
-			["LastEventIncoming"] = {
-				true, -- [1]
-			},
-			["LastEventTimes"] = {
-				489072.544, -- [1]
-			},
-			["LastAbility"] = 71340.13800000001,
+			["LastAbility"] = 1088330.758,
 		},
 		["King Varian Wrynn <Doyjen>"] = {
 			["GUID"] = "0xF130F164001B84CC",
@@ -1387,7 +1387,7 @@ RecountPerCharDB = {
 			},
 			["type"] = "Pet",
 			["Owner"] = "Doyjen",
-			["LastActive"] = 1356086868,
+			["LastAbility"] = 1088330.758,
 			["NextEventNum"] = 32,
 			["LastEventHealthNum"] = {
 				100, -- [1]
@@ -1456,239 +1456,7 @@ RecountPerCharDB = {
 				"Doyjen Jab King Varian Wrynn <Doyjen> Hit -9 (Physical)", -- [31]
 			},
 			["Name"] = "King Varian Wrynn",
-			["LastEventTimes"] = {
-				613645.817, -- [1]
-				613645.817, -- [2]
-				613647.634, -- [3]
-				613648.35, -- [4]
-				613649.456, -- [5]
-				613651.227, -- [6]
-				613653.034, -- [7]
-				613653.893, -- [8]
-				613654.806, -- [9]
-				613655.0010000001, -- [10]
-				613656.1730000001, -- [11]
-				613656.564, -- [12]
-				613657.28, -- [13]
-				613658.322, -- [14]
-				613658.322, -- [15]
-				613659.691, -- [16]
-				613660.16, -- [17]
-				613660.963, -- [18]
-				613661.946, -- [19]
-				613662.953, -- [20]
-				613663.7660000001, -- [21]
-				613664.241, -- [22]
-				613665.322, -- [23]
-				613665.522, -- [24]
-				613666.66, -- [25]
-				613667.335, -- [26]
-				613668.412, -- [27]
-				613669.116, -- [28]
-				613669.664, -- [29]
-				613670.884, -- [30]
-				613671.086, -- [31]
-			},
-			["Fights"] = {
-				["CurrentFightData"] = {
-					["PartialResist"] = {
-						["Jab"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Keg Smash"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["ElementHitsTaken"] = {
-						["Melee"] = {
-							["Details"] = {
-								["Miss"] = {
-									["count"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Physical"] = {
-							["Details"] = {
-								["Dodge"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["PartialAbsorb"] = {
-						["Jab"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Keg Smash"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-				},
-				["OverallData"] = {
-					["PartialResist"] = {
-						["Jab"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 13,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 13,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 14,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 14,
-							["amount"] = 0,
-						},
-						["Keg Smash"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 0,
-						},
-					},
-					["ElementHitsTaken"] = {
-						["Melee"] = {
-							["Details"] = {
-								["Miss"] = {
-									["count"] = 2,
-								},
-								["Dodge"] = {
-									["count"] = 12,
-								},
-							},
-							["amount"] = 14,
-						},
-						["Physical"] = {
-							["Details"] = {
-								["Dodge"] = {
-									["count"] = 15,
-								},
-							},
-							["amount"] = 15,
-						},
-					},
-					["PartialAbsorb"] = {
-						["Jab"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 13,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 13,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 14,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 14,
-							["amount"] = 0,
-						},
-						["Keg Smash"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 0,
-						},
-					},
-				},
-			},
+			["UnitLockout"] = 1356086844,
 			["LastEventIncoming"] = {
 				true, -- [1]
 				true, -- [2]
@@ -1722,8 +1490,240 @@ RecountPerCharDB = {
 				true, -- [30]
 				true, -- [31]
 			},
-			["UnitLockout"] = 1356086844,
-			["LastAbility"] = 71340.13800000001,
+			["Fights"] = {
+				["CurrentFightData"] = {
+					["PartialResist"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Keg Smash"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialAbsorb"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Keg Smash"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+				},
+				["OverallData"] = {
+					["PartialResist"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 14,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 14,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 13,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 13,
+							["amount"] = 0,
+						},
+						["Keg Smash"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 12,
+								},
+								["Miss"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 14,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 15,
+								},
+							},
+							["amount"] = 15,
+						},
+					},
+					["PartialAbsorb"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 14,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 14,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 13,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 13,
+							["amount"] = 0,
+						},
+						["Keg Smash"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+					},
+				},
+			},
+			["LastEventTimes"] = {
+				613645.817, -- [1]
+				613645.817, -- [2]
+				613647.634, -- [3]
+				613648.35, -- [4]
+				613649.456, -- [5]
+				613651.227, -- [6]
+				613653.034, -- [7]
+				613653.893, -- [8]
+				613654.806, -- [9]
+				613655.001, -- [10]
+				613656.1730000001, -- [11]
+				613656.564, -- [12]
+				613657.28, -- [13]
+				613658.322, -- [14]
+				613658.322, -- [15]
+				613659.691, -- [16]
+				613660.16, -- [17]
+				613660.963, -- [18]
+				613661.946, -- [19]
+				613662.953, -- [20]
+				613663.7660000001, -- [21]
+				613664.241, -- [22]
+				613665.322, -- [23]
+				613665.522, -- [24]
+				613666.66, -- [25]
+				613667.335, -- [26]
+				613668.412, -- [27]
+				613669.116, -- [28]
+				613669.664, -- [29]
+				613670.884, -- [30]
+				613671.086, -- [31]
+			},
+			["LastActive"] = 1356086868,
 		},
 		["Doyjen"] = {
 			["GUID"] = "0x03800000057C779D",
@@ -1833,11 +1833,11 @@ RecountPerCharDB = {
 				"DAMAGE", -- [50]
 			},
 			["TimeWindows"] = {
-				["DeathCount"] = {
-					6, -- [1]
-				},
 				["HealingTaken"] = {
 					115, -- [1]
+				},
+				["DeathCount"] = {
+					6, -- [1]
 				},
 				["FDamage"] = {
 					1276, -- [1]
@@ -1845,14 +1845,14 @@ RecountPerCharDB = {
 				["TimeDamage"] = {
 					2996.290000000003, -- [1]
 				},
-				["DamageTaken"] = {
-					14451, -- [1]
+				["DOT_Time"] = {
+					2631, -- [1]
 				},
 				["ActiveTime"] = {
 					2996.290000000003, -- [1]
 				},
-				["DOT_Time"] = {
-					2631, -- [1]
+				["DamageTaken"] = {
+					14451, -- [1]
 				},
 				["Damage"] = {
 					62945, -- [1]
@@ -1860,8 +1860,59 @@ RecountPerCharDB = {
 			},
 			["enClass"] = "MONK",
 			["unit"] = "Doyjen",
-			["LastActive"] = 1357728715,
-			["UnitLockout"] = 1348653710,
+			["LastAbility"] = 1088330.758,
+			["LastEventTimes"] = {
+				442205.122, -- [1]
+				442205.122, -- [2]
+				442206.059, -- [3]
+				442206.059, -- [4]
+				442207.09, -- [5]
+				442207.09, -- [6]
+				442208.046, -- [7]
+				442208.046, -- [8]
+				442209.027, -- [9]
+				442209.027, -- [10]
+				442210.014, -- [11]
+				442210.014, -- [12]
+				442211.163, -- [13]
+				442211.163, -- [14]
+				442212.076, -- [15]
+				442212.076, -- [16]
+				613645.817, -- [17]
+				613645.817, -- [18]
+				613647.634, -- [19]
+				613648.35, -- [20]
+				613649.456, -- [21]
+				613651.227, -- [22]
+				613653.034, -- [23]
+				613653.893, -- [24]
+				613654.806, -- [25]
+				613655.001, -- [26]
+				613656.1730000001, -- [27]
+				613656.564, -- [28]
+				613657.28, -- [29]
+				613658.322, -- [30]
+				613658.322, -- [31]
+				613659.691, -- [32]
+				613660.16, -- [33]
+				613660.963, -- [34]
+				613661.946, -- [35]
+				613662.953, -- [36]
+				613663.7660000001, -- [37]
+				613664.241, -- [38]
+				613665.322, -- [39]
+				613665.522, -- [40]
+				613666.66, -- [41]
+				613667.335, -- [42]
+				613668.412, -- [43]
+				613669.116, -- [44]
+				613669.664, -- [45]
+				613670.884, -- [46]
+				613671.086, -- [47]
+				1751.827, -- [48]
+				442204.067, -- [49]
+				442204.067, -- [50]
+			},
 			["level"] = 1,
 			["LastDamageAbility"] = "Falling",
 			["LastFightIn"] = 134,
@@ -1879,16355 +1930,8 @@ RecountPerCharDB = {
 			},
 			["type"] = "Self",
 			["FightsSaved"] = 5,
-			["Fights"] = {
-				["OverallData"] = {
-					["ElementDoneBlock"] = {
-						["Melee"] = 276,
-						["Physical"] = 100,
-					},
-					["DOTs"] = {
-						["Stagger (DoT)"] = {
-							["Details"] = {
-								["Doyjen"] = {
-									["count"] = 2631,
-								},
-							},
-							["amount"] = 2631,
-						},
-					},
-					["ElementHitsTaken"] = {
-						["Physical"] = {
-							["Details"] = {
-								["Tick"] = {
-									["count"] = 58,
-								},
-								["Dodge"] = {
-									["count"] = 6,
-								},
-								["Miss"] = {
-									["count"] = 3,
-								},
-								["Hit"] = {
-									["count"] = 156,
-								},
-								["Parry"] = {
-									["count"] = 1,
-								},
-							},
-							["amount"] = 224,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Miss"] = {
-									["count"] = 89,
-								},
-								["Dodge"] = {
-									["count"] = 84,
-								},
-								["Hit"] = {
-									["count"] = 1046,
-								},
-								["Misfire"] = {
-									["count"] = 7,
-								},
-								["Parry"] = {
-									["count"] = 49,
-								},
-							},
-							["amount"] = 1275,
-						},
-						["Fire"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 25,
-								},
-							},
-							["amount"] = 25,
-						},
-						["Shadow"] = {
-							["Details"] = {
-								["Tick"] = {
-									["count"] = 13,
-								},
-							},
-							["amount"] = 13,
-						},
-						["Nature"] = {
-							["Details"] = {
-								["Tick"] = {
-									["count"] = 13,
-								},
-								["Hit"] = {
-									["count"] = 22,
-								},
-							},
-							["amount"] = 35,
-						},
-					},
-					["DamageTaken"] = 14451,
-					["PartialResist"] = {
-						["Baby Elephant Takes a Bath"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 0,
-						},
-						["Lightning Cloud (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 0,
-						},
-						["Paint it Red!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 8,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 8,
-							["amount"] = 0,
-						},
-						["Hozen Shock"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 4,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 4,
-							["amount"] = 0,
-						},
-						["Razor Beak"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 3,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 3,
-							["amount"] = 0,
-						},
-						["Take this!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 6,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 6,
-							["amount"] = 0,
-						},
-						["Razor Beak (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 15,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 15,
-							["amount"] = 0,
-						},
-						["Lightning Cloud"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 0,
-						},
-						["Backhanded Swipes"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 4,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 4,
-							["amount"] = 0,
-						},
-						["Shadow Geyser (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 13,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 13,
-							["amount"] = 0,
-						},
-						["Shoot ALL the fireworks!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 19,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 19,
-							["amount"] = 0,
-						},
-						["Pounce"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 0,
-						},
-						["Burrow"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 4,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 4,
-							["amount"] = 0,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 11,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 11,
-							["amount"] = 0,
-						},
-						["Flame Spout"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 0,
-						},
-						["Falling"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 4,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 4,
-							["amount"] = 0,
-						},
-						["Tiger Pounce"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 19,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 19,
-							["amount"] = 0,
-						},
-						["Set Ablaze (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 16,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 16,
-							["amount"] = 0,
-						},
-						["Feet of Fury"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 72,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 72,
-							["amount"] = 0,
-						},
-						["Rip Flesh"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 0,
-						},
-						["Back Kick"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 4,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 4,
-							["amount"] = 0,
-						},
-						["Shoot"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 3,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 3,
-							["amount"] = 0,
-						},
-						["Impale"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 3,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 3,
-							["amount"] = 0,
-						},
-						["Carrot Breath"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 9,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 9,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 1275,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1275,
-							["amount"] = 0,
-						},
-						["Lightning Bolt"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 0,
-						},
-						["Smash"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 7,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 7,
-							["amount"] = 0,
-						},
-						["Display of Fury"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 12,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 12,
-							["amount"] = 0,
-						},
-						["Ruk-Ruk Rocket"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 0,
-						},
-						["Serpent Sweep"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 0,
-						},
-						["Hawk Diving to Earth"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 0,
-						},
-						["Cub Pounce"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 4,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 4,
-							["amount"] = 0,
-						},
-						["Impale (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 27,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 27,
-							["amount"] = 0,
-						},
-						["Lightning Pool (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 11,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 11,
-							["amount"] = 0,
-						},
-						["Tail Thrash"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 3,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 3,
-							["amount"] = 0,
-						},
-					},
-					["DeathCount"] = 6,
-					["PartialAbsorb"] = {
-						["Baby Elephant Takes a Bath"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 0,
-						},
-						["Lightning Cloud (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 0,
-						},
-						["Paint it Red!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 8,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 8,
-							["amount"] = 0,
-						},
-						["Hozen Shock"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 4,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 4,
-							["amount"] = 0,
-						},
-						["Razor Beak"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 3,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 3,
-							["amount"] = 0,
-						},
-						["Take this!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 6,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 6,
-							["amount"] = 0,
-						},
-						["Razor Beak (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 15,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 15,
-							["amount"] = 0,
-						},
-						["Lightning Cloud"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 0,
-						},
-						["Backhanded Swipes"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 8,
-									["min"] = 7,
-									["count"] = 4,
-									["amount"] = 29,
-								},
-							},
-							["count"] = 4,
-							["amount"] = 29,
-						},
-						["Shadow Geyser (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 13,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 13,
-							["amount"] = 0,
-						},
-						["Shoot ALL the fireworks!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 19,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 19,
-							["amount"] = 0,
-						},
-						["Pounce"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 0,
-						},
-						["Burrow"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 4,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 4,
-							["amount"] = 0,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 11,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 11,
-							["amount"] = 0,
-						},
-						["Flame Spout"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 0,
-						},
-						["Falling"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 4,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 4,
-							["amount"] = 0,
-						},
-						["Tiger Pounce"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 6,
-									["min"] = 3,
-									["count"] = 19,
-									["amount"] = 88,
-								},
-							},
-							["count"] = 19,
-							["amount"] = 88,
-						},
-						["Set Ablaze (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 16,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 16,
-							["amount"] = 0,
-						},
-						["Feet of Fury"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 72,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 72,
-							["amount"] = 0,
-						},
-						["Rip Flesh"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 5,
-									["min"] = 5,
-									["count"] = 2,
-									["amount"] = 10,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 10,
-						},
-						["Back Kick"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 4,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 4,
-							["amount"] = 0,
-						},
-						["Shoot"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 3,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 3,
-							["amount"] = 0,
-						},
-						["Impale"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 3,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 3,
-							["amount"] = 0,
-						},
-						["Carrot Breath"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 9,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 9,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 856,
-									["amount"] = 0,
-								},
-								["Absorbed"] = {
-									["max"] = 8,
-									["min"] = 1,
-									["count"] = 419,
-									["amount"] = 926,
-								},
-							},
-							["count"] = 1275,
-							["amount"] = 926,
-						},
-						["Lightning Bolt"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 0,
-						},
-						["Smash"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 4,
-									["min"] = 3,
-									["count"] = 7,
-									["amount"] = 25,
-								},
-							},
-							["count"] = 7,
-							["amount"] = 25,
-						},
-						["Display of Fury"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 12,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 12,
-							["amount"] = 0,
-						},
-						["Ruk-Ruk Rocket"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 0,
-						},
-						["Serpent Sweep"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 0,
-						},
-						["Hawk Diving to Earth"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 0,
-						},
-						["Cub Pounce"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 0,
-								},
-								["Absorbed"] = {
-									["max"] = 1,
-									["min"] = 1,
-									["count"] = 2,
-									["amount"] = 2,
-								},
-							},
-							["count"] = 4,
-							["amount"] = 2,
-						},
-						["Impale (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 27,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 27,
-							["amount"] = 0,
-						},
-						["Lightning Pool (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 11,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 11,
-							["amount"] = 0,
-						},
-						["Tail Thrash"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 3,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 3,
-							["amount"] = 0,
-						},
-					},
-					["ActiveTime"] = 2996.290000000003,
-					["ElementTaken"] = {
-						["Physical"] = 2955,
-						["Melee"] = 10548,
-						["Fire"] = 100,
-						["Shadow"] = 293,
-						["Nature"] = 555,
-					},
-					["DOT_Time"] = 2631,
-					["Damage"] = 62945,
-					["TimeSpent"] = {
-						["Pei-Wu Tiger Cub"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 2.97,
-								},
-								["Jab"] = {
-									["count"] = 6.469999999999999,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0.48,
-								},
-							},
-							["amount"] = 9.92,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Quaking Palm"] = {
-									["count"] = 1.24,
-								},
-								["Jab"] = {
-									["count"] = 17.78,
-								},
-								["Melee"] = {
-									["count"] = 47.77,
-								},
-							},
-							["amount"] = 66.78999999999999,
-						},
-						["Master Li Fei"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 43.23999999999999,
-								},
-								["Melee"] = {
-									["count"] = 60.92000000000001,
-								},
-								["Tiger Palm"] = {
-									["count"] = 33.67,
-								},
-							},
-							["amount"] = 137.83,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 35.25,
-								},
-								["Jab"] = {
-									["count"] = 13.93,
-								},
-								["Tiger Palm"] = {
-									["count"] = 7.18,
-								},
-							},
-							["amount"] = 56.36,
-						},
-						["Amberleaf Troublemaker"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 41.34999999999999,
-								},
-								["Jab"] = {
-									["count"] = 17.20000000000001,
-								},
-								["Tiger Palm"] = {
-									["count"] = 12.11,
-								},
-							},
-							["amount"] = 70.65999999999998,
-						},
-						["Vordraka, the Deep Sea Nightmare"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 128.8800000000001,
-								},
-								["Tiger Palm"] = {
-									["count"] = 11.56,
-								},
-								["Keg Smash"] = {
-									["count"] = 8.390000000000001,
-								},
-								["Jab"] = {
-									["count"] = 17.91,
-								},
-								["Blackout Kick"] = {
-									["count"] = 8.77,
-								},
-							},
-							["amount"] = 175.51,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 54.20000000000002,
-								},
-								["Tiger Palm"] = {
-									["count"] = 8.629999999999997,
-								},
-								["Keg Smash"] = {
-									["count"] = 3.33,
-								},
-								["Dizzying Haze"] = {
-									["count"] = 1.78,
-								},
-								["Jab"] = {
-									["count"] = 27.33,
-								},
-								["Blackout Kick"] = {
-									["count"] = 5.12,
-								},
-							},
-							["amount"] = 100.3900000000001,
-						},
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 701.6399999999985,
-								},
-							},
-							["amount"] = 701.6399999999985,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 3.63,
-								},
-								["Tiger Palm"] = {
-									["count"] = 8.67,
-								},
-								["Keg Smash"] = {
-									["count"] = 5.060000000000001,
-								},
-								["Jab"] = {
-									["count"] = 15.47,
-								},
-								["Melee"] = {
-									["count"] = 42.8,
-								},
-							},
-							["amount"] = 75.62999999999998,
-						},
-						["Ruk-Ruk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 4.01,
-								},
-								["Blackout Kick"] = {
-									["count"] = 2.05,
-								},
-								["Melee"] = {
-									["count"] = 13.56,
-								},
-								["Tiger Palm"] = {
-									["count"] = 3.01,
-								},
-							},
-							["amount"] = 22.63,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 8.6,
-								},
-								["Melee"] = {
-									["count"] = 89.87999999999998,
-								},
-								["Jab"] = {
-									["count"] = 36.00999999999999,
-								},
-								["Tiger Palm"] = {
-									["count"] = 15.87,
-								},
-							},
-							["amount"] = 150.3600000000001,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 67.29000000000001,
-								},
-								["Keg Smash"] = {
-									["count"] = 8.369999999999999,
-								},
-								["Tiger Palm"] = {
-									["count"] = 12.5,
-								},
-								["Jab"] = {
-									["count"] = 18.04,
-								},
-								["Dizzying Haze"] = {
-									["count"] = 4.17,
-								},
-								["Blackout Kick"] = {
-									["count"] = 5.87,
-								},
-							},
-							["amount"] = 116.24,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 33.51,
-								},
-								["Melee"] = {
-									["count"] = 48.86,
-								},
-							},
-							["amount"] = 82.37000000000002,
-						},
-						["Raggis"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 13.53,
-								},
-								["Blackout Kick"] = {
-									["count"] = 7.46,
-								},
-								["Melee"] = {
-									["count"] = 41.52999999999999,
-								},
-								["Tiger Palm"] = {
-									["count"] = 12.3,
-								},
-							},
-							["amount"] = 74.82000000000004,
-						},
-						["Guardian of the Elders"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 6.08,
-								},
-								["Blackout Kick"] = {
-									["count"] = 3.46,
-								},
-								["Melee"] = {
-									["count"] = 10.73,
-								},
-								["Tiger Palm"] = {
-									["count"] = 4.75,
-								},
-							},
-							["amount"] = 25.02,
-						},
-						["Darkened Terror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 29.09,
-								},
-								["Tiger Palm"] = {
-									["count"] = 3.14,
-								},
-								["Keg Smash"] = {
-									["count"] = 2.52,
-								},
-								["Jab"] = {
-									["count"] = 8.510000000000002,
-								},
-								["Blackout Kick"] = {
-									["count"] = 2.53,
-								},
-							},
-							["amount"] = 45.79000000000001,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 92.85000000000002,
-								},
-								["Jab"] = {
-									["count"] = 29.23,
-								},
-								["Tiger Palm"] = {
-									["count"] = 24.4,
-								},
-							},
-							["amount"] = 146.48,
-						},
-						["Living Air"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 9.329999999999998,
-								},
-								["Jab"] = {
-									["count"] = 4.02,
-								},
-								["Tiger Palm"] = {
-									["count"] = 2.81,
-								},
-							},
-							["amount"] = 16.16,
-						},
-						["Deepscale Fleshripper"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 18.69,
-								},
-								["Tiger Palm"] = {
-									["count"] = 2.88,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0.77,
-								},
-								["Jab"] = {
-									["count"] = 4.05,
-								},
-								["Keg Smash"] = {
-									["count"] = 1.35,
-								},
-							},
-							["amount"] = 27.74000000000001,
-						},
-						["Pangolin"] = {
-							["Details"] = {
-								["Dizzying Haze"] = {
-									["count"] = 0.26,
-								},
-								["Jab"] = {
-									["count"] = 1.85,
-								},
-								["Melee"] = {
-									["count"] = 3.25,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0.18,
-								},
-							},
-							["amount"] = 5.54,
-						},
-						["Deepscale Aggressor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 2.42,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0.63,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0.73,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0.78,
-								},
-							},
-							["amount"] = 4.560000000000001,
-						},
-						["Plump Carrotcruncher"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 10.97,
-								},
-								["Melee"] = {
-									["count"] = 34.35999999999999,
-								},
-								["Tiger Palm"] = {
-									["count"] = 15.79,
-								},
-							},
-							["amount"] = 61.12000000000001,
-						},
-						["King Varian Wrynn <Doyjen>"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 13.46,
-								},
-								["Melee"] = {
-									["count"] = 12.86,
-								},
-								["Keg Smash"] = {
-									["count"] = 2.45,
-								},
-							},
-							["amount"] = 28.77,
-						},
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 19.63,
-								},
-								["Blackout Kick"] = {
-									["count"] = 11.24,
-								},
-								["Melee"] = {
-									["count"] = 46.67999999999999,
-								},
-								["Tiger Palm"] = {
-									["count"] = 16.97,
-								},
-							},
-							["amount"] = 94.51999999999998,
-						},
-						["Fang-she"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 2.03,
-								},
-								["Melee"] = {
-									["count"] = 5.61,
-								},
-								["Tiger Palm"] = {
-									["count"] = 3.32,
-								},
-							},
-							["amount"] = 10.96,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 25.35,
-								},
-								["Blackout Kick"] = {
-									["count"] = 6.23,
-								},
-								["Melee"] = {
-									["count"] = 66.03,
-								},
-								["Tiger Palm"] = {
-									["count"] = 32.37000000000001,
-								},
-							},
-							["amount"] = 129.98,
-						},
-						["Whitefeather Crane"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 11.5,
-								},
-								["Melee"] = {
-									["count"] = 18.67,
-								},
-								["Tiger Palm"] = {
-									["count"] = 10.78,
-								},
-							},
-							["amount"] = 40.95,
-						},
-						["Fe-Feng Brewthief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 29.27,
-								},
-								["Jab"] = {
-									["count"] = 13.42,
-								},
-								["Tiger Palm"] = {
-									["count"] = 13.11,
-								},
-							},
-							["amount"] = 55.79999999999999,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 9.65,
-								},
-								["Blackout Kick"] = {
-									["count"] = 4.09,
-								},
-								["Melee"] = {
-									["count"] = 41.49,
-								},
-								["Tiger Palm"] = {
-									["count"] = 13.61,
-								},
-							},
-							["amount"] = 68.84,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 23.55,
-								},
-								["Melee"] = {
-									["count"] = 31.21,
-								},
-								["Tiger Palm"] = {
-									["count"] = 15.34,
-								},
-							},
-							["amount"] = 70.09999999999999,
-						},
-						["Fe-Feng Leaper"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 6.96,
-								},
-								["Jab"] = {
-									["count"] = 1.39,
-								},
-								["Tiger Palm"] = {
-									["count"] = 2.42,
-								},
-							},
-							["amount"] = 10.77,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 26.83,
-								},
-								["Blackout Kick"] = {
-									["count"] = 10.28,
-								},
-								["Melee"] = {
-									["count"] = 61.44000000000002,
-								},
-								["Tiger Palm"] = {
-									["count"] = 21.31,
-								},
-							},
-							["amount"] = 119.86,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 15.9,
-								},
-								["Blackout Kick"] = {
-									["count"] = 5.16,
-								},
-								["Melee"] = {
-									["count"] = 44.03000000000001,
-								},
-								["Tiger Palm"] = {
-									["count"] = 14.14,
-								},
-							},
-							["amount"] = 79.22999999999999,
-						},
-						["Zhao-Ren"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 13.14,
-								},
-								["Tiger Palm"] = {
-									["count"] = 4.85,
-								},
-								["Blackout Kick"] = {
-									["count"] = 4.23,
-								},
-								["Jab"] = {
-									["count"] = 7.24,
-								},
-								["Overpacked Firework"] = {
-									["count"] = 35,
-								},
-							},
-							["amount"] = 64.46000000000001,
-						},
-						["Jaomin Ro"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 39.44000000000001,
-								},
-								["Jab"] = {
-									["count"] = 9.050000000000001,
-								},
-							},
-							["amount"] = 48.49,
-						},
-					},
-					["FDamage"] = 1276,
-					["ElementDone"] = {
-						["Physical"] = 31023,
-						["Melee"] = 29071,
-						["Fire"] = 2851,
-					},
-					["TimeDamaging"] = {
-						["Pei-Wu Tiger Cub"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 2.97,
-								},
-								["Jab"] = {
-									["count"] = 6.469999999999999,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0.48,
-								},
-							},
-							["amount"] = 9.92,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Quaking Palm"] = {
-									["count"] = 1.24,
-								},
-								["Jab"] = {
-									["count"] = 17.78,
-								},
-								["Melee"] = {
-									["count"] = 47.77,
-								},
-							},
-							["amount"] = 66.78999999999999,
-						},
-						["Master Li Fei"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 43.23999999999999,
-								},
-								["Melee"] = {
-									["count"] = 60.92000000000001,
-								},
-								["Tiger Palm"] = {
-									["count"] = 33.67,
-								},
-							},
-							["amount"] = 137.83,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 35.25,
-								},
-								["Jab"] = {
-									["count"] = 13.93,
-								},
-								["Tiger Palm"] = {
-									["count"] = 7.18,
-								},
-							},
-							["amount"] = 56.36,
-						},
-						["Amberleaf Troublemaker"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 41.34999999999999,
-								},
-								["Jab"] = {
-									["count"] = 17.20000000000001,
-								},
-								["Tiger Palm"] = {
-									["count"] = 12.11,
-								},
-							},
-							["amount"] = 70.65999999999998,
-						},
-						["Vordraka, the Deep Sea Nightmare"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 128.8800000000001,
-								},
-								["Tiger Palm"] = {
-									["count"] = 11.56,
-								},
-								["Keg Smash"] = {
-									["count"] = 8.390000000000001,
-								},
-								["Jab"] = {
-									["count"] = 17.91,
-								},
-								["Blackout Kick"] = {
-									["count"] = 8.77,
-								},
-							},
-							["amount"] = 175.51,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 54.20000000000002,
-								},
-								["Tiger Palm"] = {
-									["count"] = 8.629999999999997,
-								},
-								["Keg Smash"] = {
-									["count"] = 3.33,
-								},
-								["Dizzying Haze"] = {
-									["count"] = 1.78,
-								},
-								["Jab"] = {
-									["count"] = 27.33,
-								},
-								["Blackout Kick"] = {
-									["count"] = 5.12,
-								},
-							},
-							["amount"] = 100.3900000000001,
-						},
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 701.6399999999985,
-								},
-							},
-							["amount"] = 701.6399999999985,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 3.63,
-								},
-								["Tiger Palm"] = {
-									["count"] = 8.67,
-								},
-								["Keg Smash"] = {
-									["count"] = 5.060000000000001,
-								},
-								["Jab"] = {
-									["count"] = 15.47,
-								},
-								["Melee"] = {
-									["count"] = 42.8,
-								},
-							},
-							["amount"] = 75.62999999999998,
-						},
-						["Ruk-Ruk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 4.01,
-								},
-								["Blackout Kick"] = {
-									["count"] = 2.05,
-								},
-								["Melee"] = {
-									["count"] = 13.56,
-								},
-								["Tiger Palm"] = {
-									["count"] = 3.01,
-								},
-							},
-							["amount"] = 22.63,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 8.6,
-								},
-								["Melee"] = {
-									["count"] = 89.87999999999998,
-								},
-								["Jab"] = {
-									["count"] = 36.00999999999999,
-								},
-								["Tiger Palm"] = {
-									["count"] = 15.87,
-								},
-							},
-							["amount"] = 150.3600000000001,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 67.29000000000001,
-								},
-								["Keg Smash"] = {
-									["count"] = 8.369999999999999,
-								},
-								["Tiger Palm"] = {
-									["count"] = 12.5,
-								},
-								["Jab"] = {
-									["count"] = 18.04,
-								},
-								["Dizzying Haze"] = {
-									["count"] = 4.17,
-								},
-								["Blackout Kick"] = {
-									["count"] = 5.87,
-								},
-							},
-							["amount"] = 116.24,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 33.51,
-								},
-								["Melee"] = {
-									["count"] = 48.86,
-								},
-							},
-							["amount"] = 82.37000000000002,
-						},
-						["Raggis"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 13.53,
-								},
-								["Blackout Kick"] = {
-									["count"] = 7.46,
-								},
-								["Melee"] = {
-									["count"] = 41.52999999999999,
-								},
-								["Tiger Palm"] = {
-									["count"] = 12.3,
-								},
-							},
-							["amount"] = 74.82000000000004,
-						},
-						["Guardian of the Elders"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 6.08,
-								},
-								["Blackout Kick"] = {
-									["count"] = 3.46,
-								},
-								["Melee"] = {
-									["count"] = 10.73,
-								},
-								["Tiger Palm"] = {
-									["count"] = 4.75,
-								},
-							},
-							["amount"] = 25.02,
-						},
-						["Darkened Terror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 29.09,
-								},
-								["Tiger Palm"] = {
-									["count"] = 3.14,
-								},
-								["Keg Smash"] = {
-									["count"] = 2.52,
-								},
-								["Jab"] = {
-									["count"] = 8.510000000000002,
-								},
-								["Blackout Kick"] = {
-									["count"] = 2.53,
-								},
-							},
-							["amount"] = 45.79000000000001,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 92.85000000000002,
-								},
-								["Jab"] = {
-									["count"] = 29.23,
-								},
-								["Tiger Palm"] = {
-									["count"] = 24.4,
-								},
-							},
-							["amount"] = 146.48,
-						},
-						["Living Air"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 9.329999999999998,
-								},
-								["Jab"] = {
-									["count"] = 4.02,
-								},
-								["Tiger Palm"] = {
-									["count"] = 2.81,
-								},
-							},
-							["amount"] = 16.16,
-						},
-						["Deepscale Fleshripper"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 18.69,
-								},
-								["Tiger Palm"] = {
-									["count"] = 2.88,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0.77,
-								},
-								["Jab"] = {
-									["count"] = 4.05,
-								},
-								["Keg Smash"] = {
-									["count"] = 1.35,
-								},
-							},
-							["amount"] = 27.74000000000001,
-						},
-						["Pangolin"] = {
-							["Details"] = {
-								["Dizzying Haze"] = {
-									["count"] = 0.26,
-								},
-								["Jab"] = {
-									["count"] = 1.85,
-								},
-								["Melee"] = {
-									["count"] = 3.25,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0.18,
-								},
-							},
-							["amount"] = 5.54,
-						},
-						["Deepscale Aggressor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 2.42,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0.63,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0.73,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0.78,
-								},
-							},
-							["amount"] = 4.560000000000001,
-						},
-						["Plump Carrotcruncher"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 10.97,
-								},
-								["Melee"] = {
-									["count"] = 34.35999999999999,
-								},
-								["Tiger Palm"] = {
-									["count"] = 15.79,
-								},
-							},
-							["amount"] = 61.12000000000001,
-						},
-						["King Varian Wrynn <Doyjen>"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 13.46,
-								},
-								["Melee"] = {
-									["count"] = 12.86,
-								},
-								["Keg Smash"] = {
-									["count"] = 2.45,
-								},
-							},
-							["amount"] = 28.77,
-						},
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 19.63,
-								},
-								["Blackout Kick"] = {
-									["count"] = 11.24,
-								},
-								["Melee"] = {
-									["count"] = 46.67999999999999,
-								},
-								["Tiger Palm"] = {
-									["count"] = 16.97,
-								},
-							},
-							["amount"] = 94.51999999999998,
-						},
-						["Fang-she"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 2.03,
-								},
-								["Melee"] = {
-									["count"] = 5.61,
-								},
-								["Tiger Palm"] = {
-									["count"] = 3.32,
-								},
-							},
-							["amount"] = 10.96,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 25.35,
-								},
-								["Blackout Kick"] = {
-									["count"] = 6.23,
-								},
-								["Melee"] = {
-									["count"] = 66.03,
-								},
-								["Tiger Palm"] = {
-									["count"] = 32.37000000000001,
-								},
-							},
-							["amount"] = 129.98,
-						},
-						["Whitefeather Crane"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 11.5,
-								},
-								["Melee"] = {
-									["count"] = 18.67,
-								},
-								["Tiger Palm"] = {
-									["count"] = 10.78,
-								},
-							},
-							["amount"] = 40.95,
-						},
-						["Fe-Feng Brewthief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 29.27,
-								},
-								["Jab"] = {
-									["count"] = 13.42,
-								},
-								["Tiger Palm"] = {
-									["count"] = 13.11,
-								},
-							},
-							["amount"] = 55.79999999999999,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 9.65,
-								},
-								["Blackout Kick"] = {
-									["count"] = 4.09,
-								},
-								["Melee"] = {
-									["count"] = 41.49,
-								},
-								["Tiger Palm"] = {
-									["count"] = 13.61,
-								},
-							},
-							["amount"] = 68.84,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 23.55,
-								},
-								["Melee"] = {
-									["count"] = 31.21,
-								},
-								["Tiger Palm"] = {
-									["count"] = 15.34,
-								},
-							},
-							["amount"] = 70.09999999999999,
-						},
-						["Fe-Feng Leaper"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 6.96,
-								},
-								["Jab"] = {
-									["count"] = 1.39,
-								},
-								["Tiger Palm"] = {
-									["count"] = 2.42,
-								},
-							},
-							["amount"] = 10.77,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 26.83,
-								},
-								["Blackout Kick"] = {
-									["count"] = 10.28,
-								},
-								["Melee"] = {
-									["count"] = 61.44000000000002,
-								},
-								["Tiger Palm"] = {
-									["count"] = 21.31,
-								},
-							},
-							["amount"] = 119.86,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 15.9,
-								},
-								["Blackout Kick"] = {
-									["count"] = 5.16,
-								},
-								["Melee"] = {
-									["count"] = 44.03000000000001,
-								},
-								["Tiger Palm"] = {
-									["count"] = 14.14,
-								},
-							},
-							["amount"] = 79.22999999999999,
-						},
-						["Zhao-Ren"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 13.14,
-								},
-								["Tiger Palm"] = {
-									["count"] = 4.85,
-								},
-								["Blackout Kick"] = {
-									["count"] = 4.23,
-								},
-								["Jab"] = {
-									["count"] = 7.24,
-								},
-								["Overpacked Firework"] = {
-									["count"] = 35,
-								},
-							},
-							["amount"] = 64.46000000000001,
-						},
-						["Jaomin Ro"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 39.44000000000001,
-								},
-								["Jab"] = {
-									["count"] = 9.050000000000001,
-								},
-							},
-							["amount"] = 48.49,
-						},
-					},
-					["FAttacks"] = {
-						["Stagger (DoT)"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 4,
-									["min"] = 1,
-									["count"] = 877,
-									["amount"] = 1236,
-								},
-							},
-							["count"] = 877,
-							["amount"] = 1236,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 11,
-									["min"] = 9,
-									["count"] = 2,
-									["amount"] = 20,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 20,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 20,
-									["min"] = 20,
-									["count"] = 1,
-									["amount"] = 20,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 20,
-						},
-					},
-					["DamagedWho"] = {
-						["Pei-Wu Tiger Cub"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 215,
-								},
-								["Jab"] = {
-									["count"] = 59,
-								},
-								["Tiger Palm"] = {
-									["count"] = 82,
-								},
-							},
-							["amount"] = 356,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 181,
-								},
-								["Melee"] = {
-									["count"] = 478,
-								},
-							},
-							["amount"] = 659,
-						},
-						["Fe-Feng Brewthief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 412,
-								},
-								["Jab"] = {
-									["count"] = 155,
-								},
-								["Tiger Palm"] = {
-									["count"] = 162,
-								},
-							},
-							["amount"] = 729,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 428,
-								},
-								["Jab"] = {
-									["count"] = 195,
-								},
-								["Tiger Palm"] = {
-									["count"] = 86,
-								},
-							},
-							["amount"] = 709,
-						},
-						["Amberleaf Troublemaker"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 474,
-								},
-								["Jab"] = {
-									["count"] = 157,
-								},
-								["Tiger Palm"] = {
-									["count"] = 302,
-								},
-							},
-							["amount"] = 933,
-						},
-						["Vordraka, the Deep Sea Nightmare"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 2166,
-								},
-								["Tiger Palm"] = {
-									["count"] = 276,
-								},
-								["Keg Smash"] = {
-									["count"] = 810,
-								},
-								["Jab"] = {
-									["count"] = 297,
-								},
-								["Blackout Kick"] = {
-									["count"] = 694,
-								},
-							},
-							["amount"] = 4243,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 1300,
-								},
-								["Tiger Palm"] = {
-									["count"] = 255,
-								},
-								["Keg Smash"] = {
-									["count"] = 746,
-								},
-								["Dizzying Haze"] = {
-									["count"] = 83,
-								},
-								["Jab"] = {
-									["count"] = 330,
-								},
-								["Blackout Kick"] = {
-									["count"] = 444,
-								},
-							},
-							["amount"] = 3158,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 295,
-								},
-								["Tiger Palm"] = {
-									["count"] = 267,
-								},
-								["Keg Smash"] = {
-									["count"] = 991,
-								},
-								["Jab"] = {
-									["count"] = 248,
-								},
-								["Melee"] = {
-									["count"] = 1384,
-								},
-							},
-							["amount"] = 3185,
-						},
-						["Ruk-Ruk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 72,
-								},
-								["Blackout Kick"] = {
-									["count"] = 175,
-								},
-								["Melee"] = {
-									["count"] = 330,
-								},
-								["Tiger Palm"] = {
-									["count"] = 93,
-								},
-							},
-							["amount"] = 670,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 1074,
-								},
-								["Melee"] = {
-									["count"] = 2884,
-								},
-								["Jab"] = {
-									["count"] = 850,
-								},
-								["Tiger Palm"] = {
-									["count"] = 568,
-								},
-							},
-							["amount"] = 5376,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 2460,
-								},
-								["Keg Smash"] = {
-									["count"] = 1710,
-								},
-								["Tiger Palm"] = {
-									["count"] = 612,
-								},
-								["Jab"] = {
-									["count"] = 445,
-								},
-								["Dizzying Haze"] = {
-									["count"] = 193,
-								},
-								["Blackout Kick"] = {
-									["count"] = 643,
-								},
-							},
-							["amount"] = 6063,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 663,
-								},
-								["Jab"] = {
-									["count"] = 235,
-								},
-							},
-							["amount"] = 898,
-						},
-						["Raggis"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 172,
-								},
-								["Blackout Kick"] = {
-									["count"] = 436,
-								},
-								["Melee"] = {
-									["count"] = 662,
-								},
-								["Tiger Palm"] = {
-									["count"] = 267,
-								},
-							},
-							["amount"] = 1537,
-						},
-						["Guardian of the Elders"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 109,
-								},
-								["Blackout Kick"] = {
-									["count"] = 273,
-								},
-								["Melee"] = {
-									["count"] = 369,
-								},
-								["Tiger Palm"] = {
-									["count"] = 110,
-								},
-							},
-							["amount"] = 861,
-						},
-						["Darkened Terror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 789,
-								},
-								["Tiger Palm"] = {
-									["count"] = 106,
-								},
-								["Keg Smash"] = {
-									["count"] = 599,
-								},
-								["Jab"] = {
-									["count"] = 180,
-								},
-								["Blackout Kick"] = {
-									["count"] = 294,
-								},
-							},
-							["amount"] = 1968,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 1071,
-								},
-								["Jab"] = {
-									["count"] = 378,
-								},
-								["Tiger Palm"] = {
-									["count"] = 570,
-								},
-							},
-							["amount"] = 2019,
-						},
-						["Living Air"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 124,
-								},
-								["Jab"] = {
-									["count"] = 65,
-								},
-								["Tiger Palm"] = {
-									["count"] = 39,
-								},
-							},
-							["amount"] = 228,
-						},
-						["Deepscale Fleshripper"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 267,
-								},
-								["Tiger Palm"] = {
-									["count"] = 65,
-								},
-								["Blackout Kick"] = {
-									["count"] = 107,
-								},
-								["Jab"] = {
-									["count"] = 64,
-								},
-								["Keg Smash"] = {
-									["count"] = 88,
-								},
-							},
-							["amount"] = 591,
-						},
-						["Pangolin"] = {
-							["Details"] = {
-								["Dizzying Haze"] = {
-									["count"] = 84,
-								},
-								["Jab"] = {
-									["count"] = 60,
-								},
-								["Melee"] = {
-									["count"] = 154,
-								},
-								["Tiger Palm"] = {
-									["count"] = 19,
-								},
-							},
-							["amount"] = 317,
-						},
-						["Deepscale Aggressor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 111,
-								},
-								["Tiger Palm"] = {
-									["count"] = 46,
-								},
-								["Keg Smash"] = {
-									["count"] = 188,
-								},
-								["Jab"] = {
-									["count"] = 22,
-								},
-								["Blackout Kick"] = {
-									["count"] = 53,
-								},
-							},
-							["amount"] = 420,
-						},
-						["Plump Carrotcruncher"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 151,
-								},
-								["Melee"] = {
-									["count"] = 546,
-								},
-								["Tiger Palm"] = {
-									["count"] = 324,
-								},
-							},
-							["amount"] = 1021,
-						},
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 294,
-								},
-								["Blackout Kick"] = {
-									["count"] = 532,
-								},
-								["Melee"] = {
-									["count"] = 1001,
-								},
-								["Tiger Palm"] = {
-									["count"] = 402,
-								},
-							},
-							["amount"] = 2229,
-						},
-						["Fang-she"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 35,
-								},
-								["Melee"] = {
-									["count"] = 104,
-								},
-								["Tiger Palm"] = {
-									["count"] = 111,
-								},
-							},
-							["amount"] = 250,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 379,
-								},
-								["Blackout Kick"] = {
-									["count"] = 250,
-								},
-								["Melee"] = {
-									["count"] = 1244,
-								},
-								["Tiger Palm"] = {
-									["count"] = 594,
-								},
-							},
-							["amount"] = 2467,
-						},
-						["Master Li Fei"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 1742,
-								},
-								["Melee"] = {
-									["count"] = 5124,
-								},
-								["Tiger Palm"] = {
-									["count"] = 2957,
-								},
-							},
-							["amount"] = 9823,
-						},
-						["Whitefeather Crane"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 133,
-								},
-								["Melee"] = {
-									["count"] = 346,
-								},
-								["Tiger Palm"] = {
-									["count"] = 178,
-								},
-							},
-							["amount"] = 657,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 168,
-								},
-								["Blackout Kick"] = {
-									["count"] = 260,
-								},
-								["Melee"] = {
-									["count"] = 624,
-								},
-								["Tiger Palm"] = {
-									["count"] = 230,
-								},
-							},
-							["amount"] = 1282,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 208,
-								},
-								["Melee"] = {
-									["count"] = 507,
-								},
-								["Tiger Palm"] = {
-									["count"] = 357,
-								},
-							},
-							["amount"] = 1072,
-						},
-						["Fe-Feng Leaper"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 76,
-								},
-								["Jab"] = {
-									["count"] = 35,
-								},
-								["Tiger Palm"] = {
-									["count"] = 55,
-								},
-							},
-							["amount"] = 166,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 399,
-								},
-								["Blackout Kick"] = {
-									["count"] = 840,
-								},
-								["Melee"] = {
-									["count"] = 1433,
-								},
-								["Tiger Palm"] = {
-									["count"] = 548,
-								},
-							},
-							["amount"] = 3220,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 260,
-								},
-								["Blackout Kick"] = {
-									["count"] = 386,
-								},
-								["Melee"] = {
-									["count"] = 714,
-								},
-								["Tiger Palm"] = {
-									["count"] = 299,
-								},
-							},
-							["amount"] = 1659,
-						},
-						["Zhao-Ren"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 269,
-								},
-								["Tiger Palm"] = {
-									["count"] = 114,
-								},
-								["Blackout Kick"] = {
-									["count"] = 380,
-								},
-								["Jab"] = {
-									["count"] = 102,
-								},
-								["Overpacked Firework"] = {
-									["count"] = 2851,
-								},
-							},
-							["amount"] = 3716,
-						},
-						["Jaomin Ro"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 342,
-								},
-								["Jab"] = {
-									["count"] = 121,
-								},
-							},
-							["amount"] = 463,
-						},
-					},
-					["Attacks"] = {
-						["Blackout Kick"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 72,
-									["min"] = 41,
-									["count"] = 106,
-									["amount"] = 5530,
-								},
-								["Dodge"] = {
-									["count"] = 1,
-									["amount"] = 0,
-								},
-								["Hit (Blocked)"] = {
-									["max"] = 37,
-									["min"] = 37,
-									["count"] = 1,
-									["amount"] = 37,
-								},
-								["Miss"] = {
-									["count"] = 1,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 133,
-									["min"] = 91,
-									["count"] = 15,
-									["amount"] = 1569,
-								},
-								["Parry"] = {
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 125,
-							["amount"] = 7136,
-						},
-						["Quaking Palm"] = {
-							["Details"] = {
-								["Block"] = {
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Glancing (Blocked)"] = {
-									["max"] = 65,
-									["min"] = 13,
-									["count"] = 3,
-									["amount"] = 138,
-								},
-								["Miss"] = {
-									["count"] = 12,
-									["amount"] = 0,
-								},
-								["Hit (Blocked)"] = {
-									["max"] = 84,
-									["min"] = 12,
-									["count"] = 12,
-									["amount"] = 315,
-								},
-								["Parry"] = {
-									["count"] = 9,
-									["amount"] = 0,
-								},
-								["Glancing"] = {
-									["max"] = 106,
-									["min"] = 17,
-									["count"] = 27,
-									["amount"] = 1191,
-								},
-								["Dodge"] = {
-									["count"] = 29,
-									["amount"] = 0,
-								},
-								["Crit (Blocked)"] = {
-									["max"] = 161,
-									["min"] = 25,
-									["count"] = 2,
-									["amount"] = 186,
-								},
-								["Hit"] = {
-									["max"] = 130,
-									["min"] = 17,
-									["count"] = 855,
-									["amount"] = 21744,
-								},
-								["Crit"] = {
-									["max"] = 247,
-									["min"] = 34,
-									["count"] = 98,
-									["amount"] = 5497,
-								},
-								["Evade"] = {
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1048,
-							["amount"] = 29071,
-						},
-						["Keg Smash"] = {
-							["Details"] = {
-								["Dodge"] = {
-									["count"] = 2,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 181,
-									["min"] = 154,
-									["count"] = 6,
-									["amount"] = 1017,
-								},
-								["Hit"] = {
-									["max"] = 99,
-									["min"] = 75,
-									["count"] = 47,
-									["amount"] = 4115,
-								},
-							},
-							["count"] = 55,
-							["amount"] = 5132,
-						},
-						["Tiger Palm"] = {
-							["Details"] = {
-								["Dodge"] = {
-									["count"] = 3,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 119,
-									["min"] = 16,
-									["count"] = 307,
-									["amount"] = 8503,
-								},
-								["Hit (Blocked)"] = {
-									["max"] = 16,
-									["min"] = 13,
-									["count"] = 3,
-									["amount"] = 43,
-								},
-								["Miss"] = {
-									["count"] = 10,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 213,
-									["min"] = 33,
-									["count"] = 29,
-									["amount"] = 1548,
-								},
-								["Parry"] = {
-									["count"] = 6,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 358,
-							["amount"] = 10094,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["Evade"] = {
-									["count"] = 2,
-									["amount"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 3,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 60,
-									["min"] = 7,
-									["count"] = 555,
-									["amount"] = 6961,
-								},
-								["Hit (Blocked)"] = {
-									["max"] = 40,
-									["min"] = 5,
-									["count"] = 8,
-									["amount"] = 151,
-								},
-								["Dodge"] = {
-									["count"] = 22,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 105,
-									["min"] = 16,
-									["count"] = 54,
-									["amount"] = 1189,
-								},
-								["Parry"] = {
-									["count"] = 7,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 651,
-							["amount"] = 8301,
-						},
-						["Dizzying Haze"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 98,
-									["min"] = 83,
-									["count"] = 4,
-									["amount"] = 360,
-								},
-								["Evade"] = {
-									["count"] = 3,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 7,
-							["amount"] = 360,
-						},
-						["Overpacked Firework"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 286,
-									["min"] = 285,
-									["count"] = 10,
-									["amount"] = 2851,
-								},
-							},
-							["count"] = 10,
-							["amount"] = 2851,
-						},
-					},
-					["HealingTaken"] = 115,
-					["ElementHitsDone"] = {
-						["Physical"] = {
-							["Details"] = {
-								["Evade"] = {
-									["count"] = 5,
-								},
-								["Miss"] = {
-									["count"] = 14,
-								},
-								["Hit"] = {
-									["count"] = 1031,
-								},
-								["Dodge"] = {
-									["count"] = 28,
-								},
-								["Block"] = {
-									["count"] = 1,
-								},
-								["Crit"] = {
-									["count"] = 104,
-								},
-								["Parry"] = {
-									["count"] = 14,
-								},
-							},
-							["amount"] = 1197,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Glancing"] = {
-									["count"] = 30,
-								},
-								["Evade"] = {
-									["count"] = 1,
-								},
-								["Miss"] = {
-									["count"] = 12,
-								},
-								["Hit"] = {
-									["count"] = 867,
-								},
-								["Dodge"] = {
-									["count"] = 29,
-								},
-								["Crit"] = {
-									["count"] = 100,
-								},
-								["Parry"] = {
-									["count"] = 9,
-								},
-							},
-							["amount"] = 1048,
-						},
-						["Fire"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 10,
-								},
-							},
-							["amount"] = 10,
-						},
-					},
-					["TimeDamage"] = 2996.290000000003,
-					["WhoDamaged"] = {
-						["Pei-Wu Tiger Cub"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 100,
-								},
-								["Cub Pounce"] = {
-									["count"] = 16,
-								},
-							},
-							["amount"] = 116,
-						},
-						["Master Li Fei"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 1210,
-								},
-								["Feet of Fury"] = {
-									["count"] = 1211,
-								},
-							},
-							["amount"] = 2421,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 111,
-								},
-								["Take this!"] = {
-									["count"] = 60,
-								},
-							},
-							["amount"] = 171,
-						},
-						["Amberleaf Troublemaker"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 106,
-								},
-							},
-							["amount"] = 106,
-						},
-						["Vordraka, the Deep Sea Nightmare"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 365,
-								},
-							},
-							["amount"] = 365,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 285,
-								},
-								["Smash"] = {
-									["count"] = 120,
-								},
-							},
-							["amount"] = 405,
-						},
-						["Barbed Ray"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 26,
-								},
-							},
-							["amount"] = 26,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 336,
-								},
-							},
-							["amount"] = 336,
-						},
-						["Ruk-Ruk"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 73,
-								},
-							},
-							["amount"] = 73,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 1553,
-								},
-								["Tiger Pounce"] = {
-									["count"] = 392,
-								},
-							},
-							["amount"] = 1945,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 1263,
-								},
-							},
-							["amount"] = 1263,
-						},
-						["Fe-Feng Leaper"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 33,
-								},
-							},
-							["amount"] = 33,
-						},
-						["Raggis"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 527,
-								},
-								["Burrow"] = {
-									["count"] = 51,
-								},
-							},
-							["amount"] = 578,
-						},
-						["Guardian of the Elders"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 142,
-								},
-								["Pounce"] = {
-									["count"] = 44,
-								},
-							},
-							["amount"] = 186,
-						},
-						["Ruk-Ruk's Rocket <Ruk-Ruk>"] = {
-							["Details"] = {
-								["Ruk-Ruk Rocket"] = {
-									["count"] = 20,
-								},
-							},
-							["amount"] = 20,
-						},
-						["Whitefeather Crane"] = {
-							["Details"] = {
-								["Razor Beak (DoT)"] = {
-									["count"] = 26,
-								},
-								["Razor Beak"] = {
-									["count"] = 20,
-								},
-								["Melee"] = {
-									["count"] = 161,
-								},
-							},
-							["amount"] = 207,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 480,
-								},
-								["Impale (DoT)"] = {
-									["count"] = 39,
-								},
-							},
-							["amount"] = 519,
-						},
-						["Living Air"] = {
-							["Details"] = {
-								["Lightning Bolt"] = {
-									["count"] = 22,
-								},
-								["Melee"] = {
-									["count"] = 17,
-								},
-								["Lightning Cloud"] = {
-									["count"] = 3,
-								},
-								["Lightning Cloud (DoT)"] = {
-									["count"] = 3,
-								},
-							},
-							["amount"] = 45,
-						},
-						["Deepscale Fleshripper"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 47,
-								},
-								["Rip Flesh"] = {
-									["count"] = 44,
-								},
-							},
-							["amount"] = 91,
-						},
-						["Pangolin"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 194,
-								},
-							},
-							["amount"] = 194,
-						},
-						["Deepscale Aggressor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 108,
-								},
-							},
-							["amount"] = 108,
-						},
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Paint it Red!"] = {
-									["count"] = 176,
-								},
-								["Hozen Shock"] = {
-									["count"] = 200,
-								},
-								["Melee"] = {
-									["count"] = 310,
-								},
-							},
-							["amount"] = 686,
-						},
-						["Darkened Terror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 253,
-								},
-								["Backhanded Swipes"] = {
-									["count"] = 125,
-								},
-							},
-							["amount"] = 378,
-						},
-						["Plump Carrotcruncher"] = {
-							["Details"] = {
-								["Carrot Breath"] = {
-									["count"] = 51,
-								},
-								["Back Kick"] = {
-									["count"] = 13,
-								},
-								["Melee"] = {
-									["count"] = 169,
-								},
-								["Tail Thrash"] = {
-									["count"] = 23,
-								},
-							},
-							["amount"] = 256,
-						},
-						["Jaomin Ro <Jaomin Ro>"] = {
-							["Details"] = {
-								["Hawk Diving to Earth"] = {
-									["count"] = 18,
-								},
-							},
-							["amount"] = 18,
-						},
-						["Fe-Feng Brewthief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 197,
-								},
-							},
-							["amount"] = 197,
-						},
-						["Fang-she"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 50,
-								},
-							},
-							["amount"] = 50,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Back Kick"] = {
-									["count"] = 43,
-								},
-								["Carrot Breath"] = {
-									["count"] = 13,
-								},
-								["Melee"] = {
-									["count"] = 449,
-								},
-								["Tail Thrash"] = {
-									["count"] = 46,
-								},
-							},
-							["amount"] = 551,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 212,
-								},
-							},
-							["amount"] = 212,
-						},
-						["No One"] = {
-							["Details"] = {
-								["Shadow Geyser (DoT)"] = {
-									["count"] = 293,
-								},
-								["Flame Spout"] = {
-									["count"] = 57,
-								},
-							},
-							["amount"] = 350,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 115,
-								},
-								["Display of Fury"] = {
-									["count"] = 258,
-								},
-							},
-							["amount"] = 373,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 84,
-								},
-								["Jab"] = {
-									["count"] = 39,
-								},
-							},
-							["amount"] = 123,
-						},
-						["Environment"] = {
-							["Details"] = {
-								["Falling"] = {
-									["count"] = 64,
-								},
-							},
-							["amount"] = 64,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 1410,
-								},
-							},
-							["amount"] = 1410,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Set Ablaze (DoT)"] = {
-									["count"] = 33,
-								},
-								["Shoot ALL the fireworks!"] = {
-									["count"] = 20,
-								},
-								["Melee"] = {
-									["count"] = 113,
-								},
-								["Shoot"] = {
-									["count"] = 3,
-								},
-							},
-							["amount"] = 169,
-						},
-						["Zhao-Ren"] = {
-							["Details"] = {
-								["Lightning Pool (DoT)"] = {
-									["count"] = 203,
-								},
-								["Serpent Sweep"] = {
-									["count"] = 149,
-								},
-							},
-							["amount"] = 352,
-						},
-						["Jaomin Ro"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 49,
-								},
-								["Baby Elephant Takes a Bath"] = {
-									["count"] = 5,
-								},
-							},
-							["amount"] = 54,
-						},
-					},
-					["FDamagedWho"] = {
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 11,
-								},
-							},
-							["amount"] = 11,
-						},
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 1236,
-								},
-							},
-							["amount"] = 1236,
-						},
-						["King Varian Wrynn <Doyjen>"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 20,
-								},
-								["Jab"] = {
-									["count"] = 9,
-								},
-							},
-							["amount"] = 29,
-						},
-					},
-					["ElementTakenAbsorb"] = {
-						["Melee"] = 926,
-						["Physical"] = 154,
-					},
-					["WhoHealed"] = {
-						["Ji Firepaw"] = {
-							["Details"] = {
-								["Healing Sphere"] = {
-									["count"] = 115,
-								},
-							},
-							["amount"] = 115,
-						},
-					},
-				},
-				["Fight5"] = {
-					["DOTs"] = {
-						["Stagger (DoT)"] = {
-							["Details"] = {
-								["Doyjen"] = {
-									["count"] = 27,
-								},
-							},
-							["amount"] = 27,
-						},
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 9,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-						["Physical"] = {
-							["Details"] = {
-								["Tick"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fire"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Parry"] = {
-									["count"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 1,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 1,
-						},
-						["Nature"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["DOT_Time"] = 27,
-					["ManaGain"] = 0,
-					["ElementTaken"] = {
-						["Physical"] = 0,
-						["Fire"] = 0,
-						["Melee"] = 9,
-						["Nature"] = 0,
-					},
-					["HOTs"] = {
-					},
-					["ElementTakenBlock"] = {
-					},
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["FDamagedWho"] = {
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 9,
-								},
-							},
-							["amount"] = 9,
-						},
-					},
-					["FAttacks"] = {
-						["Stagger (DoT)"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 1,
-									["min"] = 0,
-									["count"] = 9,
-									["amount"] = 9,
-								},
-							},
-							["count"] = 9,
-							["amount"] = 9,
-						},
-					},
-					["RageGain"] = 0,
-					["ElementDone"] = {
-						["Melee"] = 86,
-						["Physical"] = 29,
-					},
-					["ManaGainedFrom"] = {
-					},
-					["DamagedWho"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Vordraka, the Deep Sea Nightmare"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Aggressor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Carrotcruncher"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Ruk-Ruk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 10,
-								},
-								["Melee"] = {
-									["count"] = 86,
-								},
-								["Tiger Palm"] = {
-									["count"] = 19,
-								},
-							},
-							["amount"] = 115,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Brewthief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Jaomin Ro"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["RageGained"] = {
-					},
-					["WhoDamaged"] = {
-						["Ruk-Ruk's Rocket <Ruk-Ruk>"] = {
-							["Details"] = {
-								["Ruk-Ruk Rocket"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Jaomin Ro <Jaomin Ro>"] = {
-							["Details"] = {
-								["Hawk Diving to Earth"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Impale (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Take this!"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Vordraka, the Deep Sea Nightmare"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Aggressor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Carrotcruncher"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Carrot Breath"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Ruk-Ruk"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Back Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Pounce"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Display of Fury"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 9,
-								},
-							},
-							["amount"] = 9,
-						},
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Paint it Red!"] = {
-									["count"] = 0,
-								},
-								["Hozen Shock"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Set Ablaze (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Brewthief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Jaomin Ro"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Baby Elephant Takes a Bath"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["OverHeals"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["ElementDoneBlock"] = {
-						["Melee"] = 0,
-						["Physical"] = 0,
-					},
-					["TimeHealing"] = {
-					},
-					["Dispelled"] = 0,
-					["WhoHealed"] = {
-					},
-					["PartialResist"] = {
-						["Melee"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 0,
-						},
-						["Baby Elephant Takes a Bath"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Paint it Red!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Back Kick"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tiger Pounce"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Smash"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Impale (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Hozen Shock"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Hawk Diving to Earth"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Take this!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Set Ablaze (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Carrot Breath"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Ruk-Ruk Rocket"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Display of Fury"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["CCBreak"] = 0,
-					["FDamage"] = 9,
-					["Interrupts"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
-					["ElementTakenAbsorb"] = {
-						["Melee"] = 2,
-						["Physical"] = 0,
-					},
-					["ActiveTime"] = 17.86,
-					["Overhealing"] = 0,
-					["ElementTakenResist"] = {
-					},
-					["InterruptData"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["TimeSpent"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Vordraka, the Deep Sea Nightmare"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 9.029999999999999,
-								},
-							},
-							["amount"] = 9.029999999999999,
-						},
-						["Plump Carrotcruncher"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Ruk-Ruk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 1.23,
-								},
-								["Melee"] = {
-									["count"] = 6.17,
-								},
-								["Tiger Palm"] = {
-									["count"] = 1.43,
-								},
-							},
-							["amount"] = 8.83,
-						},
-						["Deepscale Aggressor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Brewthief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Jaomin Ro"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["Heals"] = {
-					},
-					["PartialAbsorb"] = {
-						["Melee"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Absorbed"] = {
-									["max"] = 2,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 2,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 2,
-						},
-						["Baby Elephant Takes a Bath"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Paint it Red!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Back Kick"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tiger Pounce"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Smash"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Impale (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Hozen Shock"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Hawk Diving to Earth"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Take this!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Set Ablaze (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Carrot Breath"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Ruk-Ruk Rocket"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Display of Fury"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["EnergyGained"] = {
-					},
-					["HealedWho"] = {
-					},
-					["Healing"] = 0,
-					["CCBroken"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["Attacks"] = {
-						["Melee"] = {
-							["Details"] = {
-								["Glancing"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 23,
-									["min"] = 0,
-									["count"] = 4,
-									["amount"] = 86,
-								},
-								["Hit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 4,
-							["amount"] = 86,
-						},
-						["Tiger Palm"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 19,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 19,
-								},
-								["Hit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 19,
-						},
-						["Keg Smash"] = {
-							["Details"] = {
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["Parry"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 10,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 10,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 10,
-						},
-						["Blackout Kick"] = {
-							["Details"] = {
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["HealingTaken"] = 0,
-					["ElementHitsDone"] = {
-						["Melee"] = {
-							["Details"] = {
-								["Glancing"] = {
-									["count"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 4,
-								},
-							},
-							["amount"] = 4,
-						},
-						["Physical"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 2,
-								},
-								["Miss"] = {
-									["count"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 2,
-						},
-					},
-					["TimeDamage"] = 17.86,
-					["TimeDamaging"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Vordraka, the Deep Sea Nightmare"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 9.029999999999999,
-								},
-							},
-							["amount"] = 9.029999999999999,
-						},
-						["Plump Carrotcruncher"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Ruk-Ruk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 1.23,
-								},
-								["Melee"] = {
-									["count"] = 6.17,
-								},
-								["Tiger Palm"] = {
-									["count"] = 1.43,
-								},
-							},
-							["amount"] = 8.83,
-						},
-						["Deepscale Aggressor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Brewthief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Jaomin Ro"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["RunicPowerGain"] = 0,
-					["Damage"] = 115,
-					["DispelledWho"] = {
-					},
-				},
-				["CurrentFightData"] = {
-					["DOTs"] = {
-						["Stagger (DoT)"] = {
-							["Details"] = {
-								["Doyjen"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 0,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-						["Physical"] = {
-							["Details"] = {
-								["Tick"] = {
-									["count"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fire"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Misfire"] = {
-									["count"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Nature"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["DOT_Time"] = 0,
-					["ManaGain"] = 0,
-					["ElementTaken"] = {
-						["Physical"] = 0,
-						["Fire"] = 0,
-						["Melee"] = 0,
-						["Nature"] = 0,
-					},
-					["HOTs"] = {
-					},
-					["ElementTakenBlock"] = {
-					},
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["FDamagedWho"] = {
-						["King Varian Wrynn <Doyjen>"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["FAttacks"] = {
-						["Stagger (DoT)"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["RageGain"] = 0,
-					["ElementDone"] = {
-						["Melee"] = 0,
-						["Physical"] = 0,
-					},
-					["ManaGainedFrom"] = {
-					},
-					["DamagedWho"] = {
-						["Pei-Wu Tiger Cub"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Dizzying Haze"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Carrotcruncher"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Brewthief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Fleshripper"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["RageGained"] = {
-					},
-					["WhoDamaged"] = {
-						["Pei-Wu Tiger Cub"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Cub Pounce"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Brewthief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Take this!"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Barbed Ray"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Carrotcruncher"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Carrot Breath"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Impale (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Pounce"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Environment"] = {
-							["Details"] = {
-								["Falling"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Shoot ALL the fireworks!"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Fleshripper"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Paint it Red!"] = {
-									["count"] = 0,
-								},
-								["Hozen Shock"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["OverHeals"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["ElementDoneBlock"] = {
-						["Melee"] = 0,
-						["Physical"] = 0,
-					},
-					["TimeHealing"] = {
-					},
-					["Dispelled"] = 0,
-					["WhoHealed"] = {
-					},
-					["PartialResist"] = {
-						["Shoot ALL the fireworks!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Paint it Red!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Cub Pounce"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Falling"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Hozen Shock"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Impale (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Take this!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Impale"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Carrot Breath"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Smash"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tiger Pounce"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["CCBreak"] = 0,
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
-					["ElementTakenAbsorb"] = {
-						["Melee"] = 0,
-						["Physical"] = 0,
-					},
-					["ActiveTime"] = 0,
-					["Overhealing"] = 0,
-					["ElementTakenResist"] = {
-					},
-					["InterruptData"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["TimeSpent"] = {
-						["Pei-Wu Tiger Cub"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Dizzying Haze"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Carrotcruncher"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["King Varian Wrynn <Doyjen>"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Brewthief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Fleshripper"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["Heals"] = {
-					},
-					["PartialAbsorb"] = {
-						["Shoot ALL the fireworks!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Paint it Red!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Cub Pounce"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Falling"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Hozen Shock"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Impale (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Take this!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Impale"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Carrot Breath"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Smash"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tiger Pounce"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["EnergyGained"] = {
-					},
-					["HealedWho"] = {
-					},
-					["Healing"] = 0,
-					["CCBroken"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["Attacks"] = {
-						["Melee"] = {
-							["Details"] = {
-								["Glancing"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tiger Palm"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Keg Smash"] = {
-							["Details"] = {
-								["Dodge"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Dizzying Haze"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["Hit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Blackout Kick"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["HealingTaken"] = 0,
-					["ElementHitsDone"] = {
-						["Melee"] = {
-							["Details"] = {
-								["Glancing"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Physical"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["TimeDamage"] = 0,
-					["TimeDamaging"] = {
-						["Pei-Wu Tiger Cub"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Dizzying Haze"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Carrotcruncher"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["King Varian Wrynn <Doyjen>"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Brewthief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Fleshripper"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["RunicPowerGain"] = 0,
-					["Damage"] = 0,
-					["DispelledWho"] = {
-					},
-				},
-				["Fight1"] = {
-					["DOTs"] = {
-						["Stagger (DoT)"] = {
-							["Details"] = {
-								["Doyjen"] = {
-									["count"] = 135,
-								},
-							},
-							["amount"] = 135,
-						},
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 446,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-						["Fire"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Physical"] = {
-							["Details"] = {
-								["Miss"] = {
-									["count"] = 0,
-								},
-								["Tick"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 49,
-								},
-								["Dodge"] = {
-									["count"] = 9,
-								},
-								["Miss"] = {
-									["count"] = 2,
-								},
-								["Misfire"] = {
-									["count"] = 1,
-								},
-								["Parry"] = {
-									["count"] = 2,
-								},
-							},
-							["amount"] = 63,
-						},
-						["Nature"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["DOT_Time"] = 135,
-					["ManaGain"] = 0,
-					["ElementTaken"] = {
-						["Fire"] = 0,
-						["Physical"] = 0,
-						["Melee"] = 446,
-						["Nature"] = 0,
-					},
-					["HOTs"] = {
-					},
-					["ElementTakenBlock"] = {
-					},
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["FDamagedWho"] = {
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 101,
-								},
-							},
-							["amount"] = 101,
-						},
-					},
-					["FAttacks"] = {
-						["Stagger (DoT)"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 3,
-									["min"] = 0,
-									["count"] = 45,
-									["amount"] = 101,
-								},
-							},
-							["count"] = 45,
-							["amount"] = 101,
-						},
-					},
-					["RageGain"] = 0,
-					["ElementDone"] = {
-						["Melee"] = 552,
-						["Physical"] = 727,
-					},
-					["ManaGainedFrom"] = {
-					},
-					["DamagedWho"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Master Li Fei"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fang-she"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Leaper"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 552,
-								},
-								["Tiger Palm"] = {
-									["count"] = 86,
-								},
-								["Blackout Kick"] = {
-									["count"] = 158,
-								},
-								["Dizzying Haze"] = {
-									["count"] = 95,
-								},
-								["Jab"] = {
-									["count"] = 99,
-								},
-								["Keg Smash"] = {
-									["count"] = 289,
-								},
-							},
-							["amount"] = 1279,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Raggis"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Fleshripper"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["RageGained"] = {
-					},
-					["WhoDamaged"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Impale (DoT)"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Take this!"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Master Li Fei"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Feet of Fury"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Leaper"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fang-she"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Raggis"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Burrow"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["No One"] = {
-							["Details"] = {
-								["Flame Spout"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Display of Fury"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 446,
-								},
-							},
-							["amount"] = 446,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Shoot ALL the fireworks!"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Pounce"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Fleshripper"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Rip Flesh"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["OverHeals"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["ElementDoneBlock"] = {
-						["Melee"] = 0,
-						["Physical"] = 0,
-					},
-					["TimeHealing"] = {
-					},
-					["Dispelled"] = 0,
-					["WhoHealed"] = {
-						["Ji Firepaw"] = {
-							["Details"] = {
-								["Healing Sphere"] = {
-									["count"] = 115,
-								},
-							},
-							["amount"] = 115,
-						},
-					},
-					["PartialResist"] = {
-						["Feet of Fury"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 63,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 63,
-							["amount"] = 0,
-						},
-						["Paint it Red!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Burrow"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Flame Spout"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Smash"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tiger Pounce"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Impale (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Take this!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Impale"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Display of Fury"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Shoot ALL the fireworks!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Rip Flesh"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["CCBreak"] = 0,
-					["FDamage"] = 101,
-					["Interrupts"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
-					["ElementTakenAbsorb"] = {
-						["Melee"] = 94,
-						["Physical"] = 0,
-					},
-					["ActiveTime"] = 52.02,
-					["Overhealing"] = 0,
-					["ElementTakenResist"] = {
-					},
-					["InterruptData"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["TimeSpent"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 32.72,
-								},
-							},
-							["amount"] = 32.72,
-						},
-						["Master Li Fei"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fang-she"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Leaper"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 7.969999999999999,
-								},
-								["Tiger Palm"] = {
-									["count"] = 1.44,
-								},
-								["Blackout Kick"] = {
-									["count"] = 1.46,
-								},
-								["Jab"] = {
-									["count"] = 3.99,
-								},
-								["Dizzying Haze"] = {
-									["count"] = 3.74,
-								},
-								["Keg Smash"] = {
-									["count"] = 0.7,
-								},
-							},
-							["amount"] = 19.3,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Raggis"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Fleshripper"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["Heals"] = {
-					},
-					["PartialAbsorb"] = {
-						["Feet of Fury"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 14,
-									["amount"] = 0,
-								},
-								["Absorbed"] = {
-									["max"] = 2,
-									["min"] = 0,
-									["count"] = 49,
-									["amount"] = 94,
-								},
-							},
-							["count"] = 63,
-							["amount"] = 94,
-						},
-						["Paint it Red!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Burrow"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Flame Spout"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Smash"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tiger Pounce"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Impale (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Take this!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Impale"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Display of Fury"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Shoot ALL the fireworks!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Rip Flesh"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["EnergyGained"] = {
-					},
-					["HealedWho"] = {
-					},
-					["Healing"] = 0,
-					["CCBroken"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["Attacks"] = {
-						["Melee"] = {
-							["Details"] = {
-								["Glancing (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Glancing"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 25,
-									["min"] = 0,
-									["count"] = 19,
-									["amount"] = 412,
-								},
-								["Crit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 49,
-									["min"] = 0,
-									["count"] = 3,
-									["amount"] = 140,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 22,
-							["amount"] = 552,
-						},
-						["Tiger Palm"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 23,
-									["min"] = 0,
-									["count"] = 4,
-									["amount"] = 86,
-								},
-								["Hit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 4,
-							["amount"] = 86,
-						},
-						["Keg Smash"] = {
-							["Details"] = {
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 97,
-									["min"] = 0,
-									["count"] = 3,
-									["amount"] = 289,
-								},
-							},
-							["count"] = 3,
-							["amount"] = 289,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 12,
-									["min"] = 0,
-									["count"] = 7,
-									["amount"] = 77,
-								},
-								["Miss"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 22,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 22,
-								},
-								["Parry"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 8,
-							["amount"] = 99,
-						},
-						["Dizzying Haze"] = {
-							["Details"] = {
-								["Evade"] = {
-									["count"] = 3,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 95,
-									["min"] = 95,
-									["count"] = 1,
-									["amount"] = 95,
-								},
-							},
-							["count"] = 4,
-							["amount"] = 95,
-						},
-						["Blackout Kick"] = {
-							["Details"] = {
-								["Hit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 54,
-									["min"] = 0,
-									["count"] = 3,
-									["amount"] = 158,
-								},
-							},
-							["count"] = 3,
-							["amount"] = 158,
-						},
-					},
-					["HealingTaken"] = 115,
-					["ElementHitsDone"] = {
-						["Melee"] = {
-							["Details"] = {
-								["Glancing"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 19,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 3,
-								},
-								["Parry"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 22,
-						},
-						["Physical"] = {
-							["Details"] = {
-								["Parry"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 18,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 1,
-								},
-								["Evade"] = {
-									["count"] = 3,
-								},
-							},
-							["amount"] = 22,
-						},
-					},
-					["TimeDamage"] = 52.02,
-					["TimeDamaging"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 32.72,
-								},
-							},
-							["amount"] = 32.72,
-						},
-						["Master Li Fei"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fang-she"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Leaper"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 7.969999999999999,
-								},
-								["Tiger Palm"] = {
-									["count"] = 1.44,
-								},
-								["Blackout Kick"] = {
-									["count"] = 1.46,
-								},
-								["Jab"] = {
-									["count"] = 3.99,
-								},
-								["Dizzying Haze"] = {
-									["count"] = 3.74,
-								},
-								["Keg Smash"] = {
-									["count"] = 0.7,
-								},
-							},
-							["amount"] = 19.3,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Raggis"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Fleshripper"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["RunicPowerGain"] = 0,
-					["Damage"] = 1279,
-					["DispelledWho"] = {
-					},
-				},
-				["Fight4"] = {
-					["DOTs"] = {
-						["Stagger (DoT)"] = {
-							["Details"] = {
-								["Doyjen"] = {
-									["count"] = 3,
-								},
-							},
-							["amount"] = 3,
-						},
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 20,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-						["Physical"] = {
-							["Details"] = {
-								["Tick"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 2,
-								},
-								["Misfire"] = {
-									["count"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 2,
-						},
-						["Nature"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["DOT_Time"] = 3,
-					["ManaGain"] = 0,
-					["ElementTaken"] = {
-						["Physical"] = 0,
-						["Melee"] = 20,
-						["Nature"] = 0,
-					},
-					["HOTs"] = {
-					},
-					["ElementTakenBlock"] = {
-					},
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["FDamagedWho"] = {
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 1,
-								},
-							},
-							["amount"] = 1,
-						},
-					},
-					["FAttacks"] = {
-						["Jab"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Stagger (DoT)"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 1,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 1,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 1,
-						},
-					},
-					["RageGain"] = 0,
-					["ElementDone"] = {
-						["Melee"] = 63,
-						["Physical"] = 131,
-					},
-					["ManaGainedFrom"] = {
-					},
-					["DamagedWho"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Whitefeather Crane"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Living Air"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Troublemaker"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Vordraka, the Deep Sea Nightmare"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pangolin"] = {
-							["Details"] = {
-								["Dizzying Haze"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Carrotcruncher"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Terror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Fleshripper"] = {
-							["Details"] = {
-								["Tiger Palm"] = {
-									["count"] = 22,
-								},
-								["Jab"] = {
-									["count"] = 21,
-								},
-								["Melee"] = {
-									["count"] = 63,
-								},
-								["Keg Smash"] = {
-									["count"] = 88,
-								},
-							},
-							["amount"] = 194,
-						},
-					},
-					["RageGained"] = {
-					},
-					["WhoDamaged"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Paint it Red!"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Terror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Impale (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Living Air"] = {
-							["Details"] = {
-								["Lightning Bolt"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Lightning Cloud"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Take this!"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Troublemaker"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pangolin"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Carrotcruncher"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Back Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Carrot Breath"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Pounce"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Display of Fury"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Set Ablaze (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Whitefeather Crane"] = {
-							["Details"] = {
-								["Razor Beak (DoT)"] = {
-									["count"] = 0,
-								},
-								["Razor Beak"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Fleshripper"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 20,
-								},
-							},
-							["amount"] = 20,
-						},
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["OverHeals"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["ElementDoneBlock"] = {
-						["Melee"] = 0,
-						["Physical"] = 0,
-					},
-					["TimeHealing"] = {
-					},
-					["Dispelled"] = 0,
-					["WhoHealed"] = {
-					},
-					["PartialResist"] = {
-						["Melee"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 0,
-						},
-						["Impale (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Paint it Red!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Back Kick"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Lightning Bolt"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Smash"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Razor Beak (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tiger Pounce"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Razor Beak"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Take this!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Set Ablaze (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Carrot Breath"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Lightning Cloud"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Display of Fury"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["CCBreak"] = 0,
-					["FDamage"] = 1,
-					["Interrupts"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
-					["ElementTakenAbsorb"] = {
-						["Melee"] = 4,
-						["Physical"] = 0,
-					},
-					["ActiveTime"] = 8.75,
-					["Overhealing"] = 0,
-					["ElementTakenResist"] = {
-					},
-					["InterruptData"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["TimeSpent"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Whitefeather Crane"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Living Air"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Vordraka, the Deep Sea Nightmare"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pangolin"] = {
-							["Details"] = {
-								["Dizzying Haze"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 0.28,
-								},
-							},
-							["amount"] = 0.28,
-						},
-						["Plump Carrotcruncher"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Terror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Troublemaker"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Fleshripper"] = {
-							["Details"] = {
-								["Tiger Palm"] = {
-									["count"] = 0.44,
-								},
-								["Jab"] = {
-									["count"] = 1.08,
-								},
-								["Melee"] = {
-									["count"] = 5.6,
-								},
-								["Keg Smash"] = {
-									["count"] = 1.35,
-								},
-							},
-							["amount"] = 8.470000000000001,
-						},
-					},
-					["Heals"] = {
-					},
-					["PartialAbsorb"] = {
-						["Melee"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Absorbed"] = {
-									["max"] = 2,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 4,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 4,
-						},
-						["Impale (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Paint it Red!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Back Kick"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Lightning Bolt"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Smash"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Razor Beak (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tiger Pounce"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Razor Beak"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Take this!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Set Ablaze (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Carrot Breath"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Lightning Cloud"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Display of Fury"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["EnergyGained"] = {
-					},
-					["HealedWho"] = {
-					},
-					["Healing"] = 0,
-					["CCBroken"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["Attacks"] = {
-						["Blackout Kick"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tiger Palm"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 22,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 22,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 22,
-						},
-						["Keg Smash"] = {
-							["Details"] = {
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 88,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 88,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 88,
-						},
-						["Dizzying Haze"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["Hit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Evade"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 21,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 21,
-								},
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 21,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Glancing"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Evade"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 22,
-									["min"] = 0,
-									["count"] = 3,
-									["amount"] = 63,
-								},
-								["Hit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 3,
-							["amount"] = 63,
-						},
-					},
-					["HealingTaken"] = 0,
-					["ElementHitsDone"] = {
-						["Melee"] = {
-							["Details"] = {
-								["Glancing"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 3,
-								},
-								["Evade"] = {
-									["count"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 3,
-						},
-						["Physical"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 2,
-								},
-								["Evade"] = {
-									["count"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 1,
-								},
-								["Parry"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 3,
-						},
-					},
-					["TimeDamage"] = 8.75,
-					["TimeDamaging"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Whitefeather Crane"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Living Air"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Vordraka, the Deep Sea Nightmare"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pangolin"] = {
-							["Details"] = {
-								["Dizzying Haze"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 0.28,
-								},
-							},
-							["amount"] = 0.28,
-						},
-						["Plump Carrotcruncher"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Terror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Troublemaker"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Fleshripper"] = {
-							["Details"] = {
-								["Tiger Palm"] = {
-									["count"] = 0.44,
-								},
-								["Jab"] = {
-									["count"] = 1.08,
-								},
-								["Melee"] = {
-									["count"] = 5.6,
-								},
-								["Keg Smash"] = {
-									["count"] = 1.35,
-								},
-							},
-							["amount"] = 8.470000000000001,
-						},
-					},
-					["RunicPowerGain"] = 0,
-					["Damage"] = 194,
-					["DispelledWho"] = {
-					},
-				},
-				["LastFightData"] = {
-					["DOTs"] = {
-						["Stagger (DoT)"] = {
-							["Details"] = {
-								["Doyjen"] = {
-									["count"] = 135,
-								},
-							},
-							["amount"] = 135,
-						},
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 446,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-						["Fire"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Physical"] = {
-							["Details"] = {
-								["Miss"] = {
-									["count"] = 0,
-								},
-								["Tick"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 49,
-								},
-								["Dodge"] = {
-									["count"] = 9,
-								},
-								["Miss"] = {
-									["count"] = 2,
-								},
-								["Misfire"] = {
-									["count"] = 1,
-								},
-								["Parry"] = {
-									["count"] = 2,
-								},
-							},
-							["amount"] = 63,
-						},
-						["Nature"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["DOT_Time"] = 135,
-					["ManaGain"] = 0,
-					["ElementTaken"] = {
-						["Fire"] = 0,
-						["Physical"] = 0,
-						["Melee"] = 446,
-						["Nature"] = 0,
-					},
-					["HOTs"] = {
-					},
-					["ElementTakenBlock"] = {
-					},
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["FDamagedWho"] = {
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 101,
-								},
-							},
-							["amount"] = 101,
-						},
-					},
-					["FAttacks"] = {
-						["Stagger (DoT)"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 3,
-									["min"] = 0,
-									["count"] = 45,
-									["amount"] = 101,
-								},
-							},
-							["count"] = 45,
-							["amount"] = 101,
-						},
-					},
-					["RageGain"] = 0,
-					["ElementDone"] = {
-						["Melee"] = 552,
-						["Physical"] = 727,
-					},
-					["ManaGainedFrom"] = {
-					},
-					["DamagedWho"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Master Li Fei"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fang-she"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Leaper"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 552,
-								},
-								["Tiger Palm"] = {
-									["count"] = 86,
-								},
-								["Blackout Kick"] = {
-									["count"] = 158,
-								},
-								["Dizzying Haze"] = {
-									["count"] = 95,
-								},
-								["Jab"] = {
-									["count"] = 99,
-								},
-								["Keg Smash"] = {
-									["count"] = 289,
-								},
-							},
-							["amount"] = 1279,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Raggis"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Fleshripper"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["RageGained"] = {
-					},
-					["WhoDamaged"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Impale (DoT)"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Take this!"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Master Li Fei"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Feet of Fury"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Leaper"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fang-she"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Raggis"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Burrow"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["No One"] = {
-							["Details"] = {
-								["Flame Spout"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Display of Fury"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 446,
-								},
-							},
-							["amount"] = 446,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Shoot ALL the fireworks!"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Pounce"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Fleshripper"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Rip Flesh"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["OverHeals"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["ElementDoneBlock"] = {
-						["Melee"] = 0,
-						["Physical"] = 0,
-					},
-					["TimeHealing"] = {
-					},
-					["Dispelled"] = 0,
-					["WhoHealed"] = {
-						["Ji Firepaw"] = {
-							["Details"] = {
-								["Healing Sphere"] = {
-									["count"] = 115,
-								},
-							},
-							["amount"] = 115,
-						},
-					},
-					["PartialResist"] = {
-						["Feet of Fury"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 63,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 63,
-							["amount"] = 0,
-						},
-						["Paint it Red!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Burrow"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Flame Spout"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Smash"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tiger Pounce"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Impale (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Take this!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Impale"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Display of Fury"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Shoot ALL the fireworks!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Rip Flesh"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["CCBreak"] = 0,
-					["FDamage"] = 101,
-					["Interrupts"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
-					["ElementTakenAbsorb"] = {
-						["Melee"] = 94,
-						["Physical"] = 0,
-					},
-					["ActiveTime"] = 52.02,
-					["Overhealing"] = 0,
-					["ElementTakenResist"] = {
-					},
-					["InterruptData"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["TimeSpent"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 32.72,
-								},
-							},
-							["amount"] = 32.72,
-						},
-						["Master Li Fei"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fang-she"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Leaper"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 7.969999999999999,
-								},
-								["Tiger Palm"] = {
-									["count"] = 1.44,
-								},
-								["Blackout Kick"] = {
-									["count"] = 1.46,
-								},
-								["Jab"] = {
-									["count"] = 3.99,
-								},
-								["Dizzying Haze"] = {
-									["count"] = 3.74,
-								},
-								["Keg Smash"] = {
-									["count"] = 0.7,
-								},
-							},
-							["amount"] = 19.3,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Raggis"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Fleshripper"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["Heals"] = {
-					},
-					["PartialAbsorb"] = {
-						["Feet of Fury"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 14,
-									["amount"] = 0,
-								},
-								["Absorbed"] = {
-									["max"] = 2,
-									["min"] = 0,
-									["count"] = 49,
-									["amount"] = 94,
-								},
-							},
-							["count"] = 63,
-							["amount"] = 94,
-						},
-						["Paint it Red!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Burrow"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Flame Spout"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Smash"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tiger Pounce"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Impale (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Take this!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Impale"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Display of Fury"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Shoot ALL the fireworks!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Rip Flesh"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["EnergyGained"] = {
-					},
-					["HealedWho"] = {
-					},
-					["Healing"] = 0,
-					["CCBroken"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["Attacks"] = {
-						["Melee"] = {
-							["Details"] = {
-								["Glancing (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Glancing"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 25,
-									["min"] = 0,
-									["count"] = 19,
-									["amount"] = 412,
-								},
-								["Crit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 49,
-									["min"] = 0,
-									["count"] = 3,
-									["amount"] = 140,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 22,
-							["amount"] = 552,
-						},
-						["Tiger Palm"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 23,
-									["min"] = 0,
-									["count"] = 4,
-									["amount"] = 86,
-								},
-								["Hit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 4,
-							["amount"] = 86,
-						},
-						["Keg Smash"] = {
-							["Details"] = {
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 97,
-									["min"] = 0,
-									["count"] = 3,
-									["amount"] = 289,
-								},
-							},
-							["count"] = 3,
-							["amount"] = 289,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 12,
-									["min"] = 0,
-									["count"] = 7,
-									["amount"] = 77,
-								},
-								["Miss"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 22,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 22,
-								},
-								["Parry"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 8,
-							["amount"] = 99,
-						},
-						["Dizzying Haze"] = {
-							["Details"] = {
-								["Evade"] = {
-									["count"] = 3,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 95,
-									["min"] = 95,
-									["count"] = 1,
-									["amount"] = 95,
-								},
-							},
-							["count"] = 4,
-							["amount"] = 95,
-						},
-						["Blackout Kick"] = {
-							["Details"] = {
-								["Hit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 54,
-									["min"] = 0,
-									["count"] = 3,
-									["amount"] = 158,
-								},
-							},
-							["count"] = 3,
-							["amount"] = 158,
-						},
-					},
-					["HealingTaken"] = 115,
-					["ElementHitsDone"] = {
-						["Melee"] = {
-							["Details"] = {
-								["Glancing"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 19,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 3,
-								},
-								["Parry"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 22,
-						},
-						["Physical"] = {
-							["Details"] = {
-								["Parry"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 18,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 1,
-								},
-								["Evade"] = {
-									["count"] = 3,
-								},
-							},
-							["amount"] = 22,
-						},
-					},
-					["TimeDamage"] = 52.02,
-					["TimeDamaging"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 32.72,
-								},
-							},
-							["amount"] = 32.72,
-						},
-						["Master Li Fei"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fang-she"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Leaper"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 7.969999999999999,
-								},
-								["Tiger Palm"] = {
-									["count"] = 1.44,
-								},
-								["Blackout Kick"] = {
-									["count"] = 1.46,
-								},
-								["Jab"] = {
-									["count"] = 3.99,
-								},
-								["Dizzying Haze"] = {
-									["count"] = 3.74,
-								},
-								["Keg Smash"] = {
-									["count"] = 0.7,
-								},
-							},
-							["amount"] = 19.3,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Raggis"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Fleshripper"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["RunicPowerGain"] = 0,
-					["Damage"] = 1279,
-					["DispelledWho"] = {
-					},
-				},
-				["Fight2"] = {
-					["ElementDoneBlock"] = {
-						["Melee"] = 0,
-						["Physical"] = 0,
-					},
-					["DOTs"] = {
-						["Stagger (DoT)"] = {
-							["Details"] = {
-								["Doyjen"] = {
-									["count"] = 27,
-								},
-							},
-							["amount"] = 27,
-						},
-					},
-					["ElementHitsTaken"] = {
-						["Physical"] = {
-							["Details"] = {
-								["Tick"] = {
-									["count"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Parry"] = {
-									["count"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 5,
-								},
-							},
-							["amount"] = 5,
-						},
-						["Fire"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Shadow"] = {
-							["Details"] = {
-								["Tick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Nature"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["DamageTaken"] = 42,
-					["PartialResist"] = {
-						["Shadow Geyser (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Shoot ALL the fireworks!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 5,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 5,
-							["amount"] = 0,
-						},
-						["Paint it Red!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Backhanded Swipes"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Smash"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Shoot"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tiger Pounce"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Razor Beak"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Take this!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Razor Beak (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Pounce"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Impale (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tail Thrash"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["DeathCount"] = 0,
-					["PartialAbsorb"] = {
-						["Shadow Geyser (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Shoot ALL the fireworks!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Absorbed"] = {
-									["max"] = 2,
-									["min"] = 0,
-									["count"] = 5,
-									["amount"] = 10,
-								},
-							},
-							["count"] = 5,
-							["amount"] = 10,
-						},
-						["Paint it Red!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Backhanded Swipes"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Smash"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Shoot"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tiger Pounce"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Razor Beak"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Take this!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Razor Beak (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Pounce"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Impale (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tail Thrash"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["ActiveTime"] = 17.43,
-					["ElementTaken"] = {
-						["Physical"] = 0,
-						["Melee"] = 42,
-						["Fire"] = 0,
-						["Shadow"] = 0,
-						["Nature"] = 0,
-					},
-					["DOT_Time"] = 27,
-					["Damage"] = 373,
-					["TimeSpent"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Quaking Palm"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Whitefeather Crane"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 8.08,
-								},
-							},
-							["amount"] = 8.08,
-						},
-						["Plump Carrotcruncher"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Terror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 3.540000000000001,
-								},
-								["Tiger Palm"] = {
-									["count"] = 1.4,
-								},
-								["Blackout Kick"] = {
-									["count"] = 1.2,
-								},
-								["Jab"] = {
-									["count"] = 1.42,
-								},
-								["Keg Smash"] = {
-									["count"] = 1.79,
-								},
-							},
-							["amount"] = 9.35,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Guardian of the Elders"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Brewthief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["ElementDone"] = {
-						["Melee"] = 153,
-						["Physical"] = 220,
-					},
-					["FAttacks"] = {
-						["Stagger (DoT)"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 2,
-									["min"] = 0,
-									["count"] = 9,
-									["amount"] = 15,
-								},
-							},
-							["count"] = 9,
-							["amount"] = 15,
-						},
-					},
-					["DamagedWho"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Whitefeather Crane"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Carrotcruncher"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Terror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 153,
-								},
-								["Tiger Palm"] = {
-									["count"] = 45,
-								},
-								["Blackout Kick"] = {
-									["count"] = 55,
-								},
-								["Jab"] = {
-									["count"] = 34,
-								},
-								["Keg Smash"] = {
-									["count"] = 86,
-								},
-							},
-							["amount"] = 373,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Guardian of the Elders"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Brewthief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["Attacks"] = {
-						["Melee"] = {
-							["Details"] = {
-								["Glancing"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 23,
-									["min"] = 0,
-									["count"] = 7,
-									["amount"] = 153,
-								},
-								["Miss"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Glancing (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 7,
-							["amount"] = 153,
-						},
-						["Tiger Palm"] = {
-							["Details"] = {
-								["Hit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 23,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 45,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 45,
-						},
-						["Keg Smash"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 86,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 86,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 86,
-						},
-						["Quaking Palm"] = {
-							["Details"] = {
-								["Block"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["Hit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 12,
-									["min"] = 0,
-									["count"] = 3,
-									["amount"] = 34,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 3,
-							["amount"] = 34,
-						},
-						["Blackout Kick"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 55,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 55,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 55,
-						},
-					},
-					["TimeDamaging"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Training Target"] = {
-							["Details"] = {
-								["Quaking Palm"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Whitefeather Crane"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 8.08,
-								},
-							},
-							["amount"] = 8.08,
-						},
-						["Plump Carrotcruncher"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Terror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 3.540000000000001,
-								},
-								["Tiger Palm"] = {
-									["count"] = 1.4,
-								},
-								["Blackout Kick"] = {
-									["count"] = 1.2,
-								},
-								["Jab"] = {
-									["count"] = 1.42,
-								},
-								["Keg Smash"] = {
-									["count"] = 1.79,
-								},
-							},
-							["amount"] = 9.35,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Guardian of the Elders"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Brewthief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["ElementHitsDone"] = {
-						["Melee"] = {
-							["Details"] = {
-								["Glancing"] = {
-									["count"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 7,
-								},
-								["Crit"] = {
-									["count"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 7,
-						},
-						["Physical"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 7,
-								},
-								["Block"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 7,
-						},
-					},
-					["TimeDamage"] = 17.43,
-					["WhoDamaged"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Paint it Red!"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Whitefeather Crane"] = {
-							["Details"] = {
-								["Razor Beak (DoT)"] = {
-									["count"] = 0,
-								},
-								["Razor Beak"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Impale (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Take this!"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pangolin"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Carrotcruncher"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tail Thrash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Terror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Backhanded Swipes"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Pounce"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Brewthief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 42,
-								},
-							},
-							["amount"] = 42,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Shoot"] = {
-									["count"] = 0,
-								},
-								["Shoot ALL the fireworks!"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Guardian of the Elders"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Pounce"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["No One"] = {
-							["Details"] = {
-								["Shadow Geyser (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["FDamage"] = 15,
-					["FDamagedWho"] = {
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 15,
-								},
-							},
-							["amount"] = 15,
-						},
-					},
-					["ElementTakenAbsorb"] = {
-						["Melee"] = 10,
-						["Physical"] = 0,
-					},
-				},
-				["Fight3"] = {
-					["DOTs"] = {
-						["Stagger (DoT)"] = {
-							["Details"] = {
-								["Doyjen"] = {
-									["count"] = 123,
-								},
-							},
-							["amount"] = 123,
-						},
-					},
-					["ElementDoneResist"] = {
-					},
-					["Ressed"] = 0,
-					["DamageTaken"] = 305,
-					["RageGainedFrom"] = {
-					},
-					["ElementHitsTaken"] = {
-						["Shadow"] = {
-							["Details"] = {
-								["Tick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Physical"] = {
-							["Details"] = {
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Tick"] = {
-									["count"] = 0,
-								},
-								["Miss"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 36,
-								},
-								["Miss"] = {
-									["count"] = 4,
-								},
-								["Dodge"] = {
-									["count"] = 2,
-								},
-								["Misfire"] = {
-									["count"] = 1,
-								},
-								["Parry"] = {
-									["count"] = 5,
-								},
-							},
-							["amount"] = 48,
-						},
-						["Nature"] = {
-							["Details"] = {
-								["Tick"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["DeathCount"] = 0,
-					["HOT_Time"] = 0,
-					["DOT_Time"] = 123,
-					["ManaGain"] = 0,
-					["ElementTaken"] = {
-						["Shadow"] = 0,
-						["Physical"] = 0,
-						["Melee"] = 305,
-						["Nature"] = 0,
-					},
-					["HOTs"] = {
-					},
-					["ElementTakenBlock"] = {
-					},
-					["ElementDoneAbsorb"] = {
-					},
-					["TimeHeal"] = 0,
-					["RessedWho"] = {
-					},
-					["Dispels"] = 0,
-					["PartialBlock"] = {
-					},
-					["FDamagedWho"] = {
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 65,
-								},
-							},
-							["amount"] = 65,
-						},
-					},
-					["FAttacks"] = {
-						["Stagger (DoT)"] = {
-							["Details"] = {
-								["Tick"] = {
-									["max"] = 3,
-									["min"] = 0,
-									["count"] = 41,
-									["amount"] = 65,
-								},
-							},
-							["count"] = 41,
-							["amount"] = 65,
-						},
-					},
-					["RageGain"] = 0,
-					["ElementDone"] = {
-						["Physical"] = 915,
-						["Melee"] = 548,
-						["Fire"] = 0,
-					},
-					["ManaGainedFrom"] = {
-					},
-					["DamagedWho"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Whitefeather Crane"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Brewthief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Terror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Raggis"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 548,
-								},
-								["Keg Smash"] = {
-									["count"] = 443,
-								},
-								["Tiger Palm"] = {
-									["count"] = 153,
-								},
-								["Jab"] = {
-									["count"] = 108,
-								},
-								["Dizzying Haze"] = {
-									["count"] = 98,
-								},
-								["Blackout Kick"] = {
-									["count"] = 113,
-								},
-							},
-							["amount"] = 1463,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Zhao-Ren"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Overpacked Firework"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["RageGained"] = {
-					},
-					["WhoDamaged"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Paint it Red!"] = {
-									["count"] = 0,
-								},
-								["Hozen Shock"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Whitefeather Crane"] = {
-							["Details"] = {
-								["Razor Beak (DoT)"] = {
-									["count"] = 0,
-								},
-								["Razor Beak"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Brewthief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Living Air"] = {
-							["Details"] = {
-								["Lightning Cloud (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Take this!"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Terror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Backhanded Swipes"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["No One"] = {
-							["Details"] = {
-								["Shadow Geyser (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Set Ablaze (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Back Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tail Thrash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Environment"] = {
-							["Details"] = {
-								["Falling"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Pounce"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Display of Fury"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 305,
-								},
-							},
-							["amount"] = 305,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Raggis"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Burrow"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Zhao-Ren"] = {
-							["Details"] = {
-								["Lightning Pool (DoT)"] = {
-									["count"] = 0,
-								},
-								["Serpent Sweep"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Impale (DoT)"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["EnergyGainedFrom"] = {
-					},
-					["OverHeals"] = {
-					},
-					["RunicPowerGainedFrom"] = {
-					},
-					["ElementDoneBlock"] = {
-						["Melee"] = 0,
-					},
-					["TimeHealing"] = {
-					},
-					["Dispelled"] = 0,
-					["WhoHealed"] = {
-					},
-					["PartialResist"] = {
-						["Lightning Cloud (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Paint it Red!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Back Kick"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Hozen Shock"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Razor Beak"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Take this!"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Impale"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Backhanded Swipes"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Shadow Geyser (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 48,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 48,
-							["amount"] = 0,
-						},
-						["Display of Fury"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Burrow"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Smash"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Falling"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tiger Pounce"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Impale (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Serpent Sweep"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Set Ablaze (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Razor Beak (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Lightning Pool (DoT)"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tail Thrash"] = {
-							["Details"] = {
-								["No Resist"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["CCBreak"] = 0,
-					["FDamage"] = 65,
-					["Interrupts"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
-					["ElementTakenAbsorb"] = {
-						["Melee"] = 59,
-						["Physical"] = 0,
-					},
-					["ActiveTime"] = 50.05,
-					["Overhealing"] = 0,
-					["ElementTakenResist"] = {
-					},
-					["InterruptData"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["TimeSpent"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Whitefeather Crane"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 26.4,
-								},
-							},
-							["amount"] = 26.4,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Terror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 16.02,
-								},
-								["Keg Smash"] = {
-									["count"] = 1.17,
-								},
-								["Tiger Palm"] = {
-									["count"] = 1.52,
-								},
-								["Jab"] = {
-									["count"] = 3.78,
-								},
-								["Dizzying Haze"] = {
-									["count"] = 0.43,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0.73,
-								},
-							},
-							["amount"] = 23.65,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Raggis"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Zhao-Ren"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Overpacked Firework"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Brewthief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["Heals"] = {
-					},
-					["PartialAbsorb"] = {
-						["Lightning Cloud (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Paint it Red!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Back Kick"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Hozen Shock"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Razor Beak"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Take this!"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Impale"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Backhanded Swipes"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Shadow Geyser (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 12,
-									["amount"] = 0,
-								},
-								["Absorbed"] = {
-									["max"] = 2,
-									["min"] = 0,
-									["count"] = 36,
-									["amount"] = 59,
-								},
-							},
-							["count"] = 48,
-							["amount"] = 59,
-						},
-						["Display of Fury"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Burrow"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Smash"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Falling"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tiger Pounce"] = {
-							["Details"] = {
-								["Absorbed"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Impale (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Serpent Sweep"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Set Ablaze (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Razor Beak (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Lightning Pool (DoT)"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-						["Tail Thrash"] = {
-							["Details"] = {
-								["No Absorb"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["EnergyGained"] = {
-					},
-					["HealedWho"] = {
-					},
-					["Healing"] = 0,
-					["CCBroken"] = {
-					},
-					["RunicPowerGained"] = {
-					},
-					["Attacks"] = {
-						["Keg Smash"] = {
-							["Details"] = {
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 99,
-									["min"] = 0,
-									["count"] = 5,
-									["amount"] = 443,
-								},
-							},
-							["count"] = 5,
-							["amount"] = 443,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Glancing"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit"] = {
-									["max"] = 24,
-									["min"] = 0,
-									["count"] = 21,
-									["amount"] = 457,
-								},
-								["Miss"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Hit (Blocked)"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 48,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 91,
-								},
-								["Parry"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 23,
-							["amount"] = 548,
-						},
-						["Tiger Palm"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 24,
-									["min"] = 0,
-									["count"] = 5,
-									["amount"] = 109,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 44,
-									["min"] = 0,
-									["count"] = 1,
-									["amount"] = 44,
-								},
-								["Parry"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 6,
-							["amount"] = 153,
-						},
-						["Jab"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 12,
-									["min"] = 0,
-									["count"] = 6,
-									["amount"] = 67,
-								},
-								["Miss"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Crit"] = {
-									["max"] = 22,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 41,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 8,
-							["amount"] = 108,
-						},
-						["Blackout Kick"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 57,
-									["min"] = 0,
-									["count"] = 2,
-									["amount"] = 113,
-								},
-								["Crit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-								["Parry"] = {
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 2,
-							["amount"] = 113,
-						},
-						["Dizzying Haze"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 98,
-									["min"] = 98,
-									["count"] = 1,
-									["amount"] = 98,
-								},
-							},
-							["count"] = 1,
-							["amount"] = 98,
-						},
-						["Overpacked Firework"] = {
-							["Details"] = {
-								["Hit"] = {
-									["max"] = 0,
-									["min"] = 0,
-									["count"] = 0,
-									["amount"] = 0,
-								},
-							},
-							["count"] = 0,
-							["amount"] = 0,
-						},
-					},
-					["HealingTaken"] = 0,
-					["ElementHitsDone"] = {
-						["Physical"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 19,
-								},
-								["Miss"] = {
-									["count"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 3,
-								},
-								["Parry"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 22,
-						},
-						["Melee"] = {
-							["Details"] = {
-								["Glancing"] = {
-									["count"] = 0,
-								},
-								["Hit"] = {
-									["count"] = 21,
-								},
-								["Miss"] = {
-									["count"] = 0,
-								},
-								["Dodge"] = {
-									["count"] = 0,
-								},
-								["Crit"] = {
-									["count"] = 2,
-								},
-								["Parry"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 23,
-						},
-						["Fire"] = {
-							["Details"] = {
-								["Hit"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["TimeDamage"] = 50.05,
-					["TimeDamaging"] = {
-						["Fe-Feng Wiseman"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Whitefeather Crane"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Hozen"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Amberleaf Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Tushui Monk"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Tormentor"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Doyjen"] = {
-							["Details"] = {
-								["Stagger (DoT)"] = {
-									["count"] = 26.4,
-								},
-							},
-							["amount"] = 26.4,
-						},
-						["Darkened Horror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Darkened Terror"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Keg Smash"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Plump Virmen"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Firethief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Pei-Wu Tiger"] = {
-							["Details"] = {
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Ruffian"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Deepscale Ravager"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 16.02,
-								},
-								["Keg Smash"] = {
-									["count"] = 1.17,
-								},
-								["Tiger Palm"] = {
-									["count"] = 1.52,
-								},
-								["Jab"] = {
-									["count"] = 3.78,
-								},
-								["Dizzying Haze"] = {
-									["count"] = 0.43,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0.73,
-								},
-							},
-							["amount"] = 23.65,
-						},
-						["Huojin Trainee"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Thornbranch Scamp"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Raggis"] = {
-							["Details"] = {
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Zhao-Ren"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-								["Blackout Kick"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Overpacked Firework"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-						["Fe-Feng Brewthief"] = {
-							["Details"] = {
-								["Melee"] = {
-									["count"] = 0,
-								},
-								["Jab"] = {
-									["count"] = 0,
-								},
-								["Tiger Palm"] = {
-									["count"] = 0,
-								},
-							},
-							["amount"] = 0,
-						},
-					},
-					["RunicPowerGain"] = 0,
-					["Damage"] = 1463,
-					["DispelledWho"] = {
-					},
-				},
-			},
-			["TimeLast"] = {
-				["OVERALL"] = 1357728715,
-				["DamageTaken"] = 1357728715,
-				["DeathCount"] = 1355914690,
-				["FDamage"] = 1356086869,
-				["ActiveTime"] = 1356086869,
-				["HealingTaken"] = 1355915400,
-				["TimeDamage"] = 1356086869,
-				["DOT_Time"] = 1355915411,
-				["Damage"] = 1355915403,
-			},
+			["LastDamageTaken"] = 34,
+			["Name"] = "Doyjen",
 			["Owner"] = false,
 			["Pet"] = {
 				"Stack of Planks <Doyjen>", -- [1]
@@ -19072,11 +2776,11 @@ RecountPerCharDB = {
 					["Messages"] = {
 						"Doyjen dies.", -- [1]
 					},
-					["HealthNum"] = {
+					["EventNum"] = {
 						0, -- [1]
 					},
 					["DeathAt"] = 1353555057,
-					["EventNum"] = {
+					["HealthNum"] = {
 						0, -- [1]
 					},
 					["Health"] = {
@@ -19298,61 +3002,16357 @@ RecountPerCharDB = {
 					},
 				}, -- [6]
 			},
-			["Name"] = "Doyjen",
-			["LastDamageTaken"] = 34,
-			["LastEventTimes"] = {
-				442205.122, -- [1]
-				442205.122, -- [2]
-				442206.059, -- [3]
-				442206.059, -- [4]
-				442207.09, -- [5]
-				442207.09, -- [6]
-				442208.046, -- [7]
-				442208.046, -- [8]
-				442209.027, -- [9]
-				442209.027, -- [10]
-				442210.014, -- [11]
-				442210.014, -- [12]
-				442211.163, -- [13]
-				442211.163, -- [14]
-				442212.076, -- [15]
-				442212.076, -- [16]
-				613645.817, -- [17]
-				613645.817, -- [18]
-				613647.634, -- [19]
-				613648.35, -- [20]
-				613649.456, -- [21]
-				613651.227, -- [22]
-				613653.034, -- [23]
-				613653.893, -- [24]
-				613654.806, -- [25]
-				613655.0010000001, -- [26]
-				613656.1730000001, -- [27]
-				613656.564, -- [28]
-				613657.28, -- [29]
-				613658.322, -- [30]
-				613658.322, -- [31]
-				613659.691, -- [32]
-				613660.16, -- [33]
-				613660.963, -- [34]
-				613661.946, -- [35]
-				613662.953, -- [36]
-				613663.7660000001, -- [37]
-				613664.241, -- [38]
-				613665.322, -- [39]
-				613665.522, -- [40]
-				613666.66, -- [41]
-				613667.335, -- [42]
-				613668.412, -- [43]
-				613669.116, -- [44]
-				613669.664, -- [45]
-				613670.884, -- [46]
-				613671.086, -- [47]
-				1751.827, -- [48]
-				442204.067, -- [49]
-				442204.067, -- [50]
+			["TimeLast"] = {
+				["OVERALL"] = 1357728715,
+				["DamageTaken"] = 1357728715,
+				["DeathCount"] = 1355914690,
+				["FDamage"] = 1356086869,
+				["ActiveTime"] = 1356086869,
+				["HealingTaken"] = 1355915400,
+				["TimeDamage"] = 1356086869,
+				["DOT_Time"] = 1355915411,
+				["Damage"] = 1355915403,
 			},
-			["LastAbility"] = 71340.13800000001,
+			["Fights"] = {
+				["Fight3"] = {
+					["DOTs"] = {
+						["Stagger (DoT)"] = {
+							["Details"] = {
+								["Doyjen"] = {
+									["count"] = 123,
+								},
+							},
+							["amount"] = 123,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 305,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Tick"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Shadow"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 36,
+								},
+								["Miss"] = {
+									["count"] = 4,
+								},
+								["Dodge"] = {
+									["count"] = 2,
+								},
+								["Misfire"] = {
+									["count"] = 1,
+								},
+								["Parry"] = {
+									["count"] = 5,
+								},
+							},
+							["amount"] = 48,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Tick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["Damage"] = 1463,
+					["RunicPowerGain"] = 0,
+					["ElementTaken"] = {
+						["Physical"] = 0,
+						["Shadow"] = 0,
+						["Melee"] = 305,
+						["Nature"] = 0,
+					},
+					["DOT_Time"] = 123,
+					["ElementTakenBlock"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["ElementHitsDone"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 19,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 3,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 22,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 21,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 2,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 23,
+						},
+						["Fire"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["FAttacks"] = {
+						["Stagger (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 3,
+									["min"] = 0,
+									["count"] = 41,
+									["amount"] = 65,
+								},
+							},
+							["count"] = 41,
+							["amount"] = 65,
+						},
+					},
+					["HealingTaken"] = 0,
+					["ElementDone"] = {
+						["Physical"] = 915,
+						["Melee"] = 548,
+						["Fire"] = 0,
+					},
+					["DamagedWho"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Whitefeather Crane"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Brewthief"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 548,
+								},
+								["Keg Smash"] = {
+									["count"] = 443,
+								},
+								["Blackout Kick"] = {
+									["count"] = 113,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 98,
+								},
+								["Jab"] = {
+									["count"] = 108,
+								},
+								["Tiger Palm"] = {
+									["count"] = 153,
+								},
+							},
+							["amount"] = 1463,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Raggis"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Zhao-Ren"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Overpacked Firework"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Terror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["WhoDamaged"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Paint it Red!"] = {
+									["count"] = 0,
+								},
+								["Hozen Shock"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Whitefeather Crane"] = {
+							["Details"] = {
+								["Razor Beak (DoT)"] = {
+									["count"] = 0,
+								},
+								["Razor Beak"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Brewthief"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Living Air"] = {
+							["Details"] = {
+								["Lightning Cloud (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Take this!"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Impale (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Pounce"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Raggis"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Burrow"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Back Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tail Thrash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["No One"] = {
+							["Details"] = {
+								["Shadow Geyser (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Display of Fury"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 305,
+								},
+							},
+							["amount"] = 305,
+						},
+						["Environment"] = {
+							["Details"] = {
+								["Falling"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Set Ablaze (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Zhao-Ren"] = {
+							["Details"] = {
+								["Lightning Pool (DoT)"] = {
+									["count"] = 0,
+								},
+								["Serpent Sweep"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Terror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Backhanded Swipes"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+						["Melee"] = 0,
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["HealedWho"] = {
+					},
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
+						["Melee"] = 59,
+						["Physical"] = 0,
+					},
+					["PartialAbsorb"] = {
+						["Lightning Cloud (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Paint it Red!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Back Kick"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Hozen Shock"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Razor Beak"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Take this!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Backhanded Swipes"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Shadow Geyser (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 12,
+									["amount"] = 0,
+								},
+								["Absorbed"] = {
+									["max"] = 2,
+									["min"] = 0,
+									["count"] = 36,
+									["amount"] = 59,
+								},
+							},
+							["count"] = 48,
+							["amount"] = 59,
+						},
+						["Display of Fury"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Burrow"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Smash"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Falling"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tiger Pounce"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Serpent Sweep"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Set Ablaze (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Razor Beak (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Lightning Pool (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tail Thrash"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["PartialResist"] = {
+						["Lightning Cloud (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Paint it Red!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Back Kick"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Hozen Shock"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Razor Beak"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Take this!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Backhanded Swipes"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Shadow Geyser (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 48,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 48,
+							["amount"] = 0,
+						},
+						["Display of Fury"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Burrow"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Smash"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Falling"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tiger Pounce"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Serpent Sweep"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Set Ablaze (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Razor Beak (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Lightning Pool (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tail Thrash"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["ManaGained"] = {
+					},
+					["FDamage"] = 65,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Whitefeather Crane"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 26.4,
+								},
+							},
+							["amount"] = 26.4,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Brewthief"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Raggis"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 16.02,
+								},
+								["Keg Smash"] = {
+									["count"] = 1.17,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0.73,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 0.43,
+								},
+								["Jab"] = {
+									["count"] = 3.78,
+								},
+								["Tiger Palm"] = {
+									["count"] = 1.52,
+								},
+							},
+							["amount"] = 23.65,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Zhao-Ren"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Overpacked Firework"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Terror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["ActiveTime"] = 50.05,
+					["EnergyGained"] = {
+					},
+					["EnergyGain"] = 0,
+					["Healing"] = 0,
+					["Dispelled"] = 0,
+					["RageGained"] = {
+					},
+					["Attacks"] = {
+						["Tiger Palm"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 44,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 44,
+								},
+								["Hit"] = {
+									["max"] = 24,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 109,
+								},
+							},
+							["count"] = 6,
+							["amount"] = 153,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 24,
+									["min"] = 0,
+									["count"] = 21,
+									["amount"] = 457,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 48,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 91,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 23,
+							["amount"] = 548,
+						},
+						["Keg Smash"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 99,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 443,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 443,
+						},
+						["Dizzying Haze"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 98,
+									["min"] = 98,
+									["count"] = 1,
+									["amount"] = 98,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 98,
+						},
+						["Blackout Kick"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 57,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 113,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 113,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 22,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 41,
+								},
+								["Hit"] = {
+									["max"] = 12,
+									["min"] = 0,
+									["count"] = 6,
+									["amount"] = 67,
+								},
+							},
+							["count"] = 8,
+							["amount"] = 108,
+						},
+						["Overpacked Firework"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 65,
+								},
+							},
+							["amount"] = 65,
+						},
+					},
+					["TimeDamage"] = 50.05,
+					["TimeDamaging"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Whitefeather Crane"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 26.4,
+								},
+							},
+							["amount"] = 26.4,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Brewthief"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Raggis"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 16.02,
+								},
+								["Keg Smash"] = {
+									["count"] = 1.17,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0.73,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 0.43,
+								},
+								["Jab"] = {
+									["count"] = 3.78,
+								},
+								["Tiger Palm"] = {
+									["count"] = 1.52,
+								},
+							},
+							["amount"] = 23.65,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Zhao-Ren"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Overpacked Firework"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Terror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight5"] = {
+					["DOTs"] = {
+						["Stagger (DoT)"] = {
+							["Details"] = {
+								["Doyjen"] = {
+									["count"] = 27,
+								},
+							},
+							["amount"] = 27,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 9,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Fire"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Tick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 1,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 1,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["Damage"] = 115,
+					["RunicPowerGain"] = 0,
+					["ElementTaken"] = {
+						["Fire"] = 0,
+						["Physical"] = 0,
+						["Melee"] = 9,
+						["Nature"] = 0,
+					},
+					["DOT_Time"] = 27,
+					["ElementTakenBlock"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 4,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 4,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 2,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 2,
+						},
+					},
+					["FAttacks"] = {
+						["Stagger (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 1,
+									["min"] = 0,
+									["count"] = 9,
+									["amount"] = 9,
+								},
+							},
+							["count"] = 9,
+							["amount"] = 9,
+						},
+					},
+					["HealingTaken"] = 0,
+					["ElementDone"] = {
+						["Melee"] = 86,
+						["Physical"] = 29,
+					},
+					["DamagedWho"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Vordraka, the Deep Sea Nightmare"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Aggressor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Carrotcruncher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ruk-Ruk"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 86,
+								},
+								["Jab"] = {
+									["count"] = 10,
+								},
+								["Tiger Palm"] = {
+									["count"] = 19,
+								},
+							},
+							["amount"] = 115,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Brewthief"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Jaomin Ro"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["WhoDamaged"] = {
+						["Ruk-Ruk's Rocket <Ruk-Ruk>"] = {
+							["Details"] = {
+								["Ruk-Ruk Rocket"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Jaomin Ro <Jaomin Ro>"] = {
+							["Details"] = {
+								["Hawk Diving to Earth"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Impale (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Take this!"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Vordraka, the Deep Sea Nightmare"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Aggressor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Carrotcruncher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Carrot Breath"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ruk-Ruk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Back Kick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Pounce"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Display of Fury"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 9,
+						},
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Paint it Red!"] = {
+									["count"] = 0,
+								},
+								["Hozen Shock"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Set Ablaze (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Brewthief"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Jaomin Ro"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Baby Elephant Takes a Bath"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+						["Melee"] = 0,
+						["Physical"] = 0,
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["HealedWho"] = {
+					},
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
+						["Melee"] = 2,
+						["Physical"] = 0,
+					},
+					["PartialAbsorb"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Absorbed"] = {
+									["max"] = 2,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 2,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 2,
+						},
+						["Display of Fury"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Paint it Red!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Back Kick"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Ruk-Ruk Rocket"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Smash"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Hawk Diving to Earth"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tiger Pounce"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Take this!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Set Ablaze (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Carrot Breath"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Hozen Shock"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Baby Elephant Takes a Bath"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["PartialResist"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Display of Fury"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Paint it Red!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Back Kick"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Ruk-Ruk Rocket"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Smash"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Hawk Diving to Earth"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tiger Pounce"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Take this!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Set Ablaze (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Carrot Breath"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Hozen Shock"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Baby Elephant Takes a Bath"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["ManaGained"] = {
+					},
+					["FDamage"] = 9,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Vordraka, the Deep Sea Nightmare"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 9.029999999999999,
+								},
+							},
+							["amount"] = 9.029999999999999,
+						},
+						["Plump Carrotcruncher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ruk-Ruk"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 6.17,
+								},
+								["Jab"] = {
+									["count"] = 1.23,
+								},
+								["Tiger Palm"] = {
+									["count"] = 1.43,
+								},
+							},
+							["amount"] = 8.83,
+						},
+						["Deepscale Aggressor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Brewthief"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Jaomin Ro"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["ActiveTime"] = 17.86,
+					["EnergyGained"] = {
+					},
+					["EnergyGain"] = 0,
+					["Healing"] = 0,
+					["Dispelled"] = 0,
+					["RageGained"] = {
+					},
+					["Attacks"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 23,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 86,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 86,
+						},
+						["Tiger Palm"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 19,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 19,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 19,
+						},
+						["Blackout Kick"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 10,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 10,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 10,
+						},
+						["Keg Smash"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 9,
+						},
+					},
+					["TimeDamage"] = 17.86,
+					["TimeDamaging"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Vordraka, the Deep Sea Nightmare"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 9.029999999999999,
+								},
+							},
+							["amount"] = 9.029999999999999,
+						},
+						["Plump Carrotcruncher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Ruk-Ruk"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 6.17,
+								},
+								["Jab"] = {
+									["count"] = 1.23,
+								},
+								["Tiger Palm"] = {
+									["count"] = 1.43,
+								},
+							},
+							["amount"] = 8.83,
+						},
+						["Deepscale Aggressor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Brewthief"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Jaomin Ro"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["CurrentFightData"] = {
+					["DOTs"] = {
+						["Stagger (DoT)"] = {
+							["Details"] = {
+								["Doyjen"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Fire"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Tick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Misfire"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["Damage"] = 0,
+					["RunicPowerGain"] = 0,
+					["ElementTaken"] = {
+						["Fire"] = 0,
+						["Physical"] = 0,
+						["Melee"] = 0,
+						["Nature"] = 0,
+					},
+					["DOT_Time"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["FAttacks"] = {
+						["Stagger (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["HealingTaken"] = 0,
+					["ElementDone"] = {
+						["Melee"] = 0,
+						["Physical"] = 0,
+					},
+					["DamagedWho"] = {
+						["Pei-Wu Tiger Cub"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Carrotcruncher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Fleshripper"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Brewthief"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["WhoDamaged"] = {
+						["Pei-Wu Tiger Cub"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Cub Pounce"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Brewthief"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Take this!"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Barbed Ray"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Carrotcruncher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Carrot Breath"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Paint it Red!"] = {
+									["count"] = 0,
+								},
+								["Hozen Shock"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Pounce"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Fleshripper"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Shoot ALL the fireworks!"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Environment"] = {
+							["Details"] = {
+								["Falling"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Impale (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+						["Melee"] = 0,
+						["Physical"] = 0,
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["HealedWho"] = {
+					},
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
+						["Melee"] = 0,
+						["Physical"] = 0,
+					},
+					["PartialAbsorb"] = {
+						["Shoot ALL the fireworks!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Paint it Red!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Cub Pounce"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Falling"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Hozen Shock"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Take this!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Carrot Breath"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tiger Pounce"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Smash"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["PartialResist"] = {
+						["Shoot ALL the fireworks!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Paint it Red!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Cub Pounce"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Falling"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Hozen Shock"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Take this!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Carrot Breath"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tiger Pounce"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Smash"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Pei-Wu Tiger Cub"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Carrotcruncher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Fleshripper"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Brewthief"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["King Varian Wrynn <Doyjen>"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["ActiveTime"] = 0,
+					["EnergyGained"] = {
+					},
+					["EnergyGain"] = 0,
+					["Healing"] = 0,
+					["Dispelled"] = 0,
+					["RageGained"] = {
+					},
+					["Attacks"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tiger Palm"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Blackout Kick"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Dizzying Haze"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Keg Smash"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
+						["King Varian Wrynn <Doyjen>"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+						["Pei-Wu Tiger Cub"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Carrotcruncher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Fleshripper"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Brewthief"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["King Varian Wrynn <Doyjen>"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight2"] = {
+					["ElementDoneBlock"] = {
+						["Melee"] = 0,
+						["Physical"] = 0,
+					},
+					["DOTs"] = {
+						["Stagger (DoT)"] = {
+							["Details"] = {
+								["Doyjen"] = {
+									["count"] = 27,
+								},
+							},
+							["amount"] = 27,
+						},
+					},
+					["ElementHitsTaken"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Tick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 5,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 5,
+						},
+						["Fire"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Shadow"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DamageTaken"] = 42,
+					["PartialResist"] = {
+						["Shadow Geyser (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Shoot ALL the fireworks!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 0,
+						},
+						["Paint it Red!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tail Thrash"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Smash"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Shoot"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tiger Pounce"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Razor Beak"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Take this!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Razor Beak (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Pounce"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Backhanded Swipes"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["PartialAbsorb"] = {
+						["Shadow Geyser (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Shoot ALL the fireworks!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Absorbed"] = {
+									["max"] = 2,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 10,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 10,
+						},
+						["Paint it Red!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tail Thrash"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Smash"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Shoot"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tiger Pounce"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Razor Beak"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Take this!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Razor Beak (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Pounce"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Backhanded Swipes"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["ActiveTime"] = 17.43,
+					["ElementTaken"] = {
+						["Physical"] = 0,
+						["Melee"] = 42,
+						["Fire"] = 0,
+						["Shadow"] = 0,
+						["Nature"] = 0,
+					},
+					["DOT_Time"] = 27,
+					["Damage"] = 373,
+					["ElementTakenAbsorb"] = {
+						["Melee"] = 10,
+						["Physical"] = 0,
+					},
+					["FDamagedWho"] = {
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 15,
+								},
+							},
+							["amount"] = 15,
+						},
+					},
+					["FAttacks"] = {
+						["Stagger (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 2,
+									["min"] = 0,
+									["count"] = 9,
+									["amount"] = 15,
+								},
+							},
+							["count"] = 9,
+							["amount"] = 15,
+						},
+					},
+					["FDamage"] = 15,
+					["ElementDone"] = {
+						["Melee"] = 153,
+						["Physical"] = 220,
+					},
+					["WhoDamaged"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Paint it Red!"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Whitefeather Crane"] = {
+							["Details"] = {
+								["Razor Beak (DoT)"] = {
+									["count"] = 0,
+								},
+								["Razor Beak"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Impale (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Take this!"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pangolin"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Carrotcruncher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tail Thrash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["No One"] = {
+							["Details"] = {
+								["Shadow Geyser (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Pounce"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Brewthief"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 42,
+								},
+							},
+							["amount"] = 42,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Shoot"] = {
+									["count"] = 0,
+								},
+								["Shoot ALL the fireworks!"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Guardian of the Elders"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Pounce"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Terror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Backhanded Swipes"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Whitefeather Crane"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Carrotcruncher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Brewthief"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 153,
+								},
+								["Tiger Palm"] = {
+									["count"] = 45,
+								},
+								["Keg Smash"] = {
+									["count"] = 86,
+								},
+								["Jab"] = {
+									["count"] = 34,
+								},
+								["Blackout Kick"] = {
+									["count"] = 55,
+								},
+							},
+							["amount"] = 373,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Guardian of the Elders"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Terror"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["TimeDamage"] = 17.43,
+					["TimeDamaging"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Quaking Palm"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Whitefeather Crane"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 8.08,
+								},
+							},
+							["amount"] = 8.08,
+						},
+						["Plump Carrotcruncher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Brewthief"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 3.540000000000001,
+								},
+								["Tiger Palm"] = {
+									["count"] = 1.4,
+								},
+								["Keg Smash"] = {
+									["count"] = 1.79,
+								},
+								["Jab"] = {
+									["count"] = 1.42,
+								},
+								["Blackout Kick"] = {
+									["count"] = 1.2,
+								},
+							},
+							["amount"] = 9.35,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Guardian of the Elders"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Terror"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 7,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 7,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 0,
+								},
+								["Block"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 7,
+								},
+							},
+							["amount"] = 7,
+						},
+					},
+					["Attacks"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 23,
+									["min"] = 0,
+									["count"] = 7,
+									["amount"] = 153,
+								},
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Glancing (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 7,
+							["amount"] = 153,
+						},
+						["Tiger Palm"] = {
+							["Details"] = {
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 23,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 45,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 45,
+						},
+						["Blackout Kick"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 55,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 55,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 55,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 12,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 34,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 34,
+						},
+						["Quaking Palm"] = {
+							["Details"] = {
+								["Block"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Keg Smash"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 86,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 86,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 86,
+						},
+					},
+					["TimeSpent"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Quaking Palm"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Whitefeather Crane"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 8.08,
+								},
+							},
+							["amount"] = 8.08,
+						},
+						["Plump Carrotcruncher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Brewthief"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 3.540000000000001,
+								},
+								["Tiger Palm"] = {
+									["count"] = 1.4,
+								},
+								["Keg Smash"] = {
+									["count"] = 1.79,
+								},
+								["Jab"] = {
+									["count"] = 1.42,
+								},
+								["Blackout Kick"] = {
+									["count"] = 1.2,
+								},
+							},
+							["amount"] = 9.35,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Guardian of the Elders"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Terror"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+				},
+				["Fight4"] = {
+					["DOTs"] = {
+						["Stagger (DoT)"] = {
+							["Details"] = {
+								["Doyjen"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 20,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Tick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+								["Misfire"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 2,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["Damage"] = 194,
+					["RunicPowerGain"] = 0,
+					["ElementTaken"] = {
+						["Physical"] = 0,
+						["Melee"] = 20,
+						["Nature"] = 0,
+					},
+					["DOT_Time"] = 3,
+					["ElementTakenBlock"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 3,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Evade"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 3,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 2,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Evade"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["FAttacks"] = {
+						["Jab"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Stagger (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 1,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 1,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 1,
+						},
+					},
+					["HealingTaken"] = 0,
+					["ElementDone"] = {
+						["Melee"] = 63,
+						["Physical"] = 131,
+					},
+					["DamagedWho"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Whitefeather Crane"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Living Air"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Troublemaker"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Vordraka, the Deep Sea Nightmare"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pangolin"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Carrotcruncher"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Fleshripper"] = {
+							["Details"] = {
+								["Keg Smash"] = {
+									["count"] = 88,
+								},
+								["Melee"] = {
+									["count"] = 63,
+								},
+								["Jab"] = {
+									["count"] = 21,
+								},
+								["Tiger Palm"] = {
+									["count"] = 22,
+								},
+							},
+							["amount"] = 194,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Terror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["WhoDamaged"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Paint it Red!"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Terror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Impale (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Living Air"] = {
+							["Details"] = {
+								["Lightning Cloud"] = {
+									["count"] = 0,
+								},
+								["Lightning Bolt"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Take this!"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Troublemaker"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pangolin"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Carrotcruncher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Back Kick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Carrot Breath"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Pounce"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Display of Fury"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Fleshripper"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 20,
+								},
+							},
+							["amount"] = 20,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Set Ablaze (DoT)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Whitefeather Crane"] = {
+							["Details"] = {
+								["Razor Beak (DoT)"] = {
+									["count"] = 0,
+								},
+								["Razor Beak"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+						["Melee"] = 0,
+						["Physical"] = 0,
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["HealedWho"] = {
+					},
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
+						["Melee"] = 4,
+						["Physical"] = 0,
+					},
+					["PartialAbsorb"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Absorbed"] = {
+									["max"] = 2,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 4,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 4,
+						},
+						["Display of Fury"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Paint it Red!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Back Kick"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Lightning Bolt"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Smash"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Set Ablaze (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tiger Pounce"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Take this!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Razor Beak (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Carrot Breath"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Lightning Cloud"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Razor Beak"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["PartialResist"] = {
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Display of Fury"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Paint it Red!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Back Kick"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Lightning Bolt"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Smash"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Set Ablaze (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tiger Pounce"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Take this!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Razor Beak (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Carrot Breath"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Lightning Cloud"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Razor Beak"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["ManaGained"] = {
+					},
+					["FDamage"] = 1,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Whitefeather Crane"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Living Air"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Vordraka, the Deep Sea Nightmare"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pangolin"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 0.28,
+								},
+							},
+							["amount"] = 0.28,
+						},
+						["Plump Carrotcruncher"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Fleshripper"] = {
+							["Details"] = {
+								["Keg Smash"] = {
+									["count"] = 1.35,
+								},
+								["Melee"] = {
+									["count"] = 5.6,
+								},
+								["Jab"] = {
+									["count"] = 1.08,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0.44,
+								},
+							},
+							["amount"] = 8.470000000000001,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Troublemaker"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Terror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["ActiveTime"] = 8.75,
+					["EnergyGained"] = {
+					},
+					["EnergyGain"] = 0,
+					["Healing"] = 0,
+					["Dispelled"] = 0,
+					["RageGained"] = {
+					},
+					["Attacks"] = {
+						["Blackout Kick"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tiger Palm"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 22,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 22,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 22,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 22,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 63,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Evade"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 63,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 21,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 21,
+								},
+								["Evade"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 21,
+						},
+						["Dizzying Haze"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Keg Smash"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 88,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 88,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 88,
+						},
+					},
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+					},
+					["TimeDamage"] = 8.75,
+					["TimeDamaging"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Whitefeather Crane"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Living Air"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Vordraka, the Deep Sea Nightmare"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pangolin"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 0.28,
+								},
+							},
+							["amount"] = 0.28,
+						},
+						["Plump Carrotcruncher"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Fleshripper"] = {
+							["Details"] = {
+								["Keg Smash"] = {
+									["count"] = 1.35,
+								},
+								["Melee"] = {
+									["count"] = 5.6,
+								},
+								["Jab"] = {
+									["count"] = 1.08,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0.44,
+								},
+							},
+							["amount"] = 8.470000000000001,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Troublemaker"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Terror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["LastFightData"] = {
+					["DOTs"] = {
+						["Stagger (DoT)"] = {
+							["Details"] = {
+								["Doyjen"] = {
+									["count"] = 135,
+								},
+							},
+							["amount"] = 135,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 446,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Tick"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fire"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 49,
+								},
+								["Dodge"] = {
+									["count"] = 9,
+								},
+								["Miss"] = {
+									["count"] = 2,
+								},
+								["Misfire"] = {
+									["count"] = 1,
+								},
+								["Parry"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 63,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["Damage"] = 1279,
+					["RunicPowerGain"] = 0,
+					["ElementTaken"] = {
+						["Physical"] = 0,
+						["Fire"] = 0,
+						["Melee"] = 446,
+						["Nature"] = 0,
+					},
+					["DOT_Time"] = 135,
+					["ElementTakenBlock"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 19,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 3,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 22,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Evade"] = {
+									["count"] = 3,
+								},
+								["Hit"] = {
+									["count"] = 18,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 22,
+						},
+					},
+					["FAttacks"] = {
+						["Stagger (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 3,
+									["min"] = 0,
+									["count"] = 45,
+									["amount"] = 101,
+								},
+							},
+							["count"] = 45,
+							["amount"] = 101,
+						},
+					},
+					["HealingTaken"] = 115,
+					["ElementDone"] = {
+						["Melee"] = 552,
+						["Physical"] = 727,
+					},
+					["DamagedWho"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Master Li Fei"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Fleshripper"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fang-she"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Raggis"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 552,
+								},
+								["Tiger Palm"] = {
+									["count"] = 86,
+								},
+								["Keg Smash"] = {
+									["count"] = 289,
+								},
+								["Jab"] = {
+									["count"] = 99,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 95,
+								},
+								["Blackout Kick"] = {
+									["count"] = 158,
+								},
+							},
+							["amount"] = 1279,
+						},
+						["Fe-Feng Leaper"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["WhoDamaged"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Impale (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Take this!"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Fleshripper"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Rip Flesh"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Pounce"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fang-she"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Shoot ALL the fireworks!"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["No One"] = {
+							["Details"] = {
+								["Flame Spout"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Display of Fury"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 446,
+								},
+							},
+							["amount"] = 446,
+						},
+						["Fe-Feng Leaper"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Raggis"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Burrow"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Master Li Fei"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Feet of Fury"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+						["Melee"] = 0,
+						["Physical"] = 0,
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["WhoHealed"] = {
+						["Ji Firepaw"] = {
+							["Details"] = {
+								["Healing Sphere"] = {
+									["count"] = 115,
+								},
+							},
+							["amount"] = 115,
+						},
+					},
+					["HealedWho"] = {
+					},
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
+						["Melee"] = 94,
+						["Physical"] = 0,
+					},
+					["PartialAbsorb"] = {
+						["Feet of Fury"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 14,
+									["amount"] = 0,
+								},
+								["Absorbed"] = {
+									["max"] = 2,
+									["min"] = 0,
+									["count"] = 49,
+									["amount"] = 94,
+								},
+							},
+							["count"] = 63,
+							["amount"] = 94,
+						},
+						["Paint it Red!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Burrow"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Flame Spout"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Rip Flesh"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tiger Pounce"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Take this!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Shoot ALL the fireworks!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Display of Fury"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Smash"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["PartialResist"] = {
+						["Feet of Fury"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 63,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 63,
+							["amount"] = 0,
+						},
+						["Paint it Red!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Burrow"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Flame Spout"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Rip Flesh"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tiger Pounce"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Take this!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Shoot ALL the fireworks!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Display of Fury"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Smash"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["ManaGained"] = {
+					},
+					["FDamage"] = 101,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 32.72,
+								},
+							},
+							["amount"] = 32.72,
+						},
+						["Deepscale Fleshripper"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fang-she"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 7.969999999999999,
+								},
+								["Tiger Palm"] = {
+									["count"] = 1.44,
+								},
+								["Keg Smash"] = {
+									["count"] = 0.7,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 3.74,
+								},
+								["Jab"] = {
+									["count"] = 3.99,
+								},
+								["Blackout Kick"] = {
+									["count"] = 1.46,
+								},
+							},
+							["amount"] = 19.3,
+						},
+						["Fe-Feng Leaper"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Raggis"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Master Li Fei"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["ActiveTime"] = 52.02,
+					["EnergyGained"] = {
+					},
+					["EnergyGain"] = 0,
+					["Healing"] = 0,
+					["Dispelled"] = 0,
+					["RageGained"] = {
+					},
+					["Attacks"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Glancing"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 25,
+									["min"] = 0,
+									["count"] = 19,
+									["amount"] = 412,
+								},
+								["Crit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 49,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 140,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 22,
+							["amount"] = 552,
+						},
+						["Tiger Palm"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 23,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 86,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 86,
+						},
+						["Blackout Kick"] = {
+							["Details"] = {
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 54,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 158,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 158,
+						},
+						["Dizzying Haze"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 95,
+									["min"] = 95,
+									["count"] = 1,
+									["amount"] = 95,
+								},
+								["Evade"] = {
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 95,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 12,
+									["min"] = 0,
+									["count"] = 7,
+									["amount"] = 77,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 22,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 22,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 8,
+							["amount"] = 99,
+						},
+						["Keg Smash"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 97,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 289,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 289,
+						},
+					},
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 101,
+								},
+							},
+							["amount"] = 101,
+						},
+					},
+					["TimeDamage"] = 52.02,
+					["TimeDamaging"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 32.72,
+								},
+							},
+							["amount"] = 32.72,
+						},
+						["Deepscale Fleshripper"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fang-she"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 7.969999999999999,
+								},
+								["Tiger Palm"] = {
+									["count"] = 1.44,
+								},
+								["Keg Smash"] = {
+									["count"] = 0.7,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 3.74,
+								},
+								["Jab"] = {
+									["count"] = 3.99,
+								},
+								["Blackout Kick"] = {
+									["count"] = 1.46,
+								},
+							},
+							["amount"] = 19.3,
+						},
+						["Fe-Feng Leaper"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Raggis"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Master Li Fei"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight1"] = {
+					["DOTs"] = {
+						["Stagger (DoT)"] = {
+							["Details"] = {
+								["Doyjen"] = {
+									["count"] = 135,
+								},
+							},
+							["amount"] = 135,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 446,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Tick"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fire"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 49,
+								},
+								["Dodge"] = {
+									["count"] = 9,
+								},
+								["Miss"] = {
+									["count"] = 2,
+								},
+								["Misfire"] = {
+									["count"] = 1,
+								},
+								["Parry"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 63,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["Damage"] = 1279,
+					["RunicPowerGain"] = 0,
+					["ElementTaken"] = {
+						["Physical"] = 0,
+						["Fire"] = 0,
+						["Melee"] = 446,
+						["Nature"] = 0,
+					},
+					["DOT_Time"] = 135,
+					["ElementTakenBlock"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 19,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 3,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 22,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Evade"] = {
+									["count"] = 3,
+								},
+								["Hit"] = {
+									["count"] = 18,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 22,
+						},
+					},
+					["FAttacks"] = {
+						["Stagger (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 3,
+									["min"] = 0,
+									["count"] = 45,
+									["amount"] = 101,
+								},
+							},
+							["count"] = 45,
+							["amount"] = 101,
+						},
+					},
+					["HealingTaken"] = 115,
+					["ElementDone"] = {
+						["Melee"] = 552,
+						["Physical"] = 727,
+					},
+					["DamagedWho"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Master Li Fei"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Fleshripper"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fang-she"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Raggis"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 552,
+								},
+								["Tiger Palm"] = {
+									["count"] = 86,
+								},
+								["Keg Smash"] = {
+									["count"] = 289,
+								},
+								["Jab"] = {
+									["count"] = 99,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 95,
+								},
+								["Blackout Kick"] = {
+									["count"] = 158,
+								},
+							},
+							["amount"] = 1279,
+						},
+						["Fe-Feng Leaper"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["WhoDamaged"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Impale (DoT)"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Take this!"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Fleshripper"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Rip Flesh"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Pounce"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fang-she"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Shoot ALL the fireworks!"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["No One"] = {
+							["Details"] = {
+								["Flame Spout"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Display of Fury"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 446,
+								},
+							},
+							["amount"] = 446,
+						},
+						["Fe-Feng Leaper"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Raggis"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Burrow"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Master Li Fei"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Feet of Fury"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["CCBroken"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+						["Melee"] = 0,
+						["Physical"] = 0,
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["WhoHealed"] = {
+						["Ji Firepaw"] = {
+							["Details"] = {
+								["Healing Sphere"] = {
+									["count"] = 115,
+								},
+							},
+							["amount"] = 115,
+						},
+					},
+					["HealedWho"] = {
+					},
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
+						["Melee"] = 94,
+						["Physical"] = 0,
+					},
+					["PartialAbsorb"] = {
+						["Feet of Fury"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 14,
+									["amount"] = 0,
+								},
+								["Absorbed"] = {
+									["max"] = 2,
+									["min"] = 0,
+									["count"] = 49,
+									["amount"] = 94,
+								},
+							},
+							["count"] = 63,
+							["amount"] = 94,
+						},
+						["Paint it Red!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Burrow"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Flame Spout"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Rip Flesh"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tiger Pounce"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Take this!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Shoot ALL the fireworks!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Display of Fury"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Smash"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["PartialResist"] = {
+						["Feet of Fury"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 63,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 63,
+							["amount"] = 0,
+						},
+						["Paint it Red!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Burrow"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Flame Spout"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Rip Flesh"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Tiger Pounce"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Take this!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Impale"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Shoot ALL the fireworks!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Display of Fury"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["Smash"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["ManaGained"] = {
+					},
+					["FDamage"] = 101,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 32.72,
+								},
+							},
+							["amount"] = 32.72,
+						},
+						["Deepscale Fleshripper"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fang-she"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 7.969999999999999,
+								},
+								["Tiger Palm"] = {
+									["count"] = 1.44,
+								},
+								["Keg Smash"] = {
+									["count"] = 0.7,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 3.74,
+								},
+								["Jab"] = {
+									["count"] = 3.99,
+								},
+								["Blackout Kick"] = {
+									["count"] = 1.46,
+								},
+							},
+							["amount"] = 19.3,
+						},
+						["Fe-Feng Leaper"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Raggis"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Master Li Fei"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["ActiveTime"] = 52.02,
+					["EnergyGained"] = {
+					},
+					["EnergyGain"] = 0,
+					["Healing"] = 0,
+					["Dispelled"] = 0,
+					["RageGained"] = {
+					},
+					["Attacks"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Glancing"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 25,
+									["min"] = 0,
+									["count"] = 19,
+									["amount"] = 412,
+								},
+								["Crit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 49,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 140,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 22,
+							["amount"] = 552,
+						},
+						["Tiger Palm"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 23,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 86,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 86,
+						},
+						["Blackout Kick"] = {
+							["Details"] = {
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 54,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 158,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 158,
+						},
+						["Dizzying Haze"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 95,
+									["min"] = 95,
+									["count"] = 1,
+									["amount"] = 95,
+								},
+								["Evade"] = {
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 95,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 12,
+									["min"] = 0,
+									["count"] = 7,
+									["amount"] = 77,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 22,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 22,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 8,
+							["amount"] = 99,
+						},
+						["Keg Smash"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 97,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 289,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 289,
+						},
+					},
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 101,
+								},
+							},
+							["amount"] = 101,
+						},
+					},
+					["TimeDamage"] = 52.02,
+					["TimeDamaging"] = {
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 32.72,
+								},
+							},
+							["amount"] = 32.72,
+						},
+						["Deepscale Fleshripper"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fang-she"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 7.969999999999999,
+								},
+								["Tiger Palm"] = {
+									["count"] = 1.44,
+								},
+								["Keg Smash"] = {
+									["count"] = 0.7,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 3.74,
+								},
+								["Jab"] = {
+									["count"] = 3.99,
+								},
+								["Blackout Kick"] = {
+									["count"] = 1.46,
+								},
+							},
+							["amount"] = 19.3,
+						},
+						["Fe-Feng Leaper"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Raggis"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 0,
+								},
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Master Li Fei"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 0,
+								},
+								["Jab"] = {
+									["count"] = 0,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["OverallData"] = {
+					["ElementDoneBlock"] = {
+						["Melee"] = 276,
+						["Physical"] = 100,
+					},
+					["DOTs"] = {
+						["Stagger (DoT)"] = {
+							["Details"] = {
+								["Doyjen"] = {
+									["count"] = 2631,
+								},
+							},
+							["amount"] = 2631,
+						},
+					},
+					["ElementHitsTaken"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 58,
+								},
+								["Dodge"] = {
+									["count"] = 6,
+								},
+								["Hit"] = {
+									["count"] = 156,
+								},
+								["Miss"] = {
+									["count"] = 3,
+								},
+								["Parry"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 224,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 89,
+								},
+								["Dodge"] = {
+									["count"] = 84,
+								},
+								["Hit"] = {
+									["count"] = 1046,
+								},
+								["Misfire"] = {
+									["count"] = 7,
+								},
+								["Parry"] = {
+									["count"] = 49,
+								},
+							},
+							["amount"] = 1275,
+						},
+						["Fire"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 25,
+								},
+							},
+							["amount"] = 25,
+						},
+						["Shadow"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 13,
+								},
+							},
+							["amount"] = 13,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 22,
+								},
+								["Tick"] = {
+									["count"] = 13,
+								},
+							},
+							["amount"] = 35,
+						},
+					},
+					["DamageTaken"] = 14451,
+					["PartialResist"] = {
+						["Baby Elephant Takes a Bath"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Lightning Cloud (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Paint it Red!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 8,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 8,
+							["amount"] = 0,
+						},
+						["Hozen Shock"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+						["Razor Beak"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+						["Take this!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 6,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 6,
+							["amount"] = 0,
+						},
+						["Razor Beak (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 15,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 15,
+							["amount"] = 0,
+						},
+						["Lightning Cloud"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Backhanded Swipes"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+						["Shadow Geyser (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 13,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 13,
+							["amount"] = 0,
+						},
+						["Shoot ALL the fireworks!"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 19,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 19,
+							["amount"] = 0,
+						},
+						["Pounce"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Burrow"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 11,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 11,
+							["amount"] = 0,
+						},
+						["Flame Spout"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Falling"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+						["Tiger Pounce"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 19,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 19,
+							["amount"] = 0,
+						},
+						["Set Ablaze (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 16,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 16,
+							["amount"] = 0,
+						},
+						["Feet of Fury"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 72,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 72,
+							["amount"] = 0,
+						},
+						["Rip Flesh"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Back Kick"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+						["Shoot"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+						["Impale"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+						["Carrot Breath"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 9,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 9,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1275,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1275,
+							["amount"] = 0,
+						},
+						["Lightning Bolt"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Smash"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 7,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 7,
+							["amount"] = 0,
+						},
+						["Display of Fury"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 12,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 12,
+							["amount"] = 0,
+						},
+						["Impale (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 27,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 27,
+							["amount"] = 0,
+						},
+						["Serpent Sweep"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Cub Pounce"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+						["Hawk Diving to Earth"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Ruk-Ruk Rocket"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Lightning Pool (DoT)"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 11,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 11,
+							["amount"] = 0,
+						},
+						["Tail Thrash"] = {
+							["Details"] = {
+								["No Resist"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 6,
+					["PartialAbsorb"] = {
+						["Baby Elephant Takes a Bath"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Lightning Cloud (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Paint it Red!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 8,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 8,
+							["amount"] = 0,
+						},
+						["Hozen Shock"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+						["Razor Beak"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+						["Take this!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 6,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 6,
+							["amount"] = 0,
+						},
+						["Razor Beak (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 15,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 15,
+							["amount"] = 0,
+						},
+						["Lightning Cloud"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Backhanded Swipes"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 8,
+									["min"] = 7,
+									["count"] = 4,
+									["amount"] = 29,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 29,
+						},
+						["Shadow Geyser (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 13,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 13,
+							["amount"] = 0,
+						},
+						["Shoot ALL the fireworks!"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 19,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 19,
+							["amount"] = 0,
+						},
+						["Pounce"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Burrow"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 11,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 11,
+							["amount"] = 0,
+						},
+						["Flame Spout"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Falling"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+						["Tiger Pounce"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 6,
+									["min"] = 3,
+									["count"] = 19,
+									["amount"] = 88,
+								},
+							},
+							["count"] = 19,
+							["amount"] = 88,
+						},
+						["Set Ablaze (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 16,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 16,
+							["amount"] = 0,
+						},
+						["Feet of Fury"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 72,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 72,
+							["amount"] = 0,
+						},
+						["Rip Flesh"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 5,
+									["min"] = 5,
+									["count"] = 2,
+									["amount"] = 10,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 10,
+						},
+						["Back Kick"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+						["Shoot"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+						["Impale"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+						["Carrot Breath"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 9,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 9,
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 856,
+									["amount"] = 0,
+								},
+								["Absorbed"] = {
+									["max"] = 8,
+									["min"] = 1,
+									["count"] = 419,
+									["amount"] = 926,
+								},
+							},
+							["count"] = 1275,
+							["amount"] = 926,
+						},
+						["Lightning Bolt"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Smash"] = {
+							["Details"] = {
+								["Absorbed"] = {
+									["max"] = 4,
+									["min"] = 3,
+									["count"] = 7,
+									["amount"] = 25,
+								},
+							},
+							["count"] = 7,
+							["amount"] = 25,
+						},
+						["Display of Fury"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 12,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 12,
+							["amount"] = 0,
+						},
+						["Impale (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 27,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 27,
+							["amount"] = 0,
+						},
+						["Serpent Sweep"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Cub Pounce"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+								["Absorbed"] = {
+									["max"] = 1,
+									["min"] = 1,
+									["count"] = 2,
+									["amount"] = 2,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 2,
+						},
+						["Hawk Diving to Earth"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["Ruk-Ruk Rocket"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Lightning Pool (DoT)"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 11,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 11,
+							["amount"] = 0,
+						},
+						["Tail Thrash"] = {
+							["Details"] = {
+								["No Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+					},
+					["ActiveTime"] = 2996.290000000003,
+					["ElementTaken"] = {
+						["Physical"] = 2955,
+						["Melee"] = 10548,
+						["Fire"] = 100,
+						["Shadow"] = 293,
+						["Nature"] = 555,
+					},
+					["DOT_Time"] = 2631,
+					["Damage"] = 62945,
+					["WhoHealed"] = {
+						["Ji Firepaw"] = {
+							["Details"] = {
+								["Healing Sphere"] = {
+									["count"] = 115,
+								},
+							},
+							["amount"] = 115,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+						["Melee"] = 926,
+						["Physical"] = 154,
+					},
+					["FDamagedWho"] = {
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 11,
+								},
+							},
+							["amount"] = 11,
+						},
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 1236,
+								},
+							},
+							["amount"] = 1236,
+						},
+						["King Varian Wrynn <Doyjen>"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 20,
+								},
+								["Jab"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 29,
+						},
+					},
+					["WhoDamaged"] = {
+						["Pei-Wu Tiger Cub"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 100,
+								},
+								["Cub Pounce"] = {
+									["count"] = 16,
+								},
+							},
+							["amount"] = 116,
+						},
+						["Master Li Fei"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 1210,
+								},
+								["Feet of Fury"] = {
+									["count"] = 1211,
+								},
+							},
+							["amount"] = 2421,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 111,
+								},
+								["Take this!"] = {
+									["count"] = 60,
+								},
+							},
+							["amount"] = 171,
+						},
+						["Amberleaf Troublemaker"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 106,
+								},
+							},
+							["amount"] = 106,
+						},
+						["Vordraka, the Deep Sea Nightmare"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 365,
+								},
+							},
+							["amount"] = 365,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 285,
+								},
+								["Smash"] = {
+									["count"] = 120,
+								},
+							},
+							["amount"] = 405,
+						},
+						["Barbed Ray"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 26,
+								},
+							},
+							["amount"] = 26,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 336,
+								},
+							},
+							["amount"] = 336,
+						},
+						["Ruk-Ruk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 73,
+								},
+							},
+							["amount"] = 73,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 1553,
+								},
+								["Tiger Pounce"] = {
+									["count"] = 392,
+								},
+							},
+							["amount"] = 1945,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 1263,
+								},
+							},
+							["amount"] = 1263,
+						},
+						["Fe-Feng Leaper"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 33,
+								},
+							},
+							["amount"] = 33,
+						},
+						["Raggis"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 527,
+								},
+								["Burrow"] = {
+									["count"] = 51,
+								},
+							},
+							["amount"] = 578,
+						},
+						["Guardian of the Elders"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 142,
+								},
+								["Pounce"] = {
+									["count"] = 44,
+								},
+							},
+							["amount"] = 186,
+						},
+						["Ruk-Ruk's Rocket <Ruk-Ruk>"] = {
+							["Details"] = {
+								["Ruk-Ruk Rocket"] = {
+									["count"] = 20,
+								},
+							},
+							["amount"] = 20,
+						},
+						["Whitefeather Crane"] = {
+							["Details"] = {
+								["Razor Beak (DoT)"] = {
+									["count"] = 26,
+								},
+								["Razor Beak"] = {
+									["count"] = 20,
+								},
+								["Melee"] = {
+									["count"] = 161,
+								},
+							},
+							["amount"] = 207,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 480,
+								},
+								["Impale (DoT)"] = {
+									["count"] = 39,
+								},
+							},
+							["amount"] = 519,
+						},
+						["Living Air"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 17,
+								},
+								["Lightning Cloud"] = {
+									["count"] = 3,
+								},
+								["Lightning Bolt"] = {
+									["count"] = 22,
+								},
+								["Lightning Cloud (DoT)"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 45,
+						},
+						["Deepscale Fleshripper"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 47,
+								},
+								["Rip Flesh"] = {
+									["count"] = 44,
+								},
+							},
+							["amount"] = 91,
+						},
+						["Pangolin"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 194,
+								},
+							},
+							["amount"] = 194,
+						},
+						["Deepscale Aggressor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 108,
+								},
+							},
+							["amount"] = 108,
+						},
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Paint it Red!"] = {
+									["count"] = 176,
+								},
+								["Hozen Shock"] = {
+									["count"] = 200,
+								},
+								["Melee"] = {
+									["count"] = 310,
+								},
+							},
+							["amount"] = 686,
+						},
+						["Darkened Terror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 253,
+								},
+								["Backhanded Swipes"] = {
+									["count"] = 125,
+								},
+							},
+							["amount"] = 378,
+						},
+						["Plump Carrotcruncher"] = {
+							["Details"] = {
+								["Back Kick"] = {
+									["count"] = 13,
+								},
+								["Carrot Breath"] = {
+									["count"] = 51,
+								},
+								["Melee"] = {
+									["count"] = 169,
+								},
+								["Tail Thrash"] = {
+									["count"] = 23,
+								},
+							},
+							["amount"] = 256,
+						},
+						["Jaomin Ro <Jaomin Ro>"] = {
+							["Details"] = {
+								["Hawk Diving to Earth"] = {
+									["count"] = 18,
+								},
+							},
+							["amount"] = 18,
+						},
+						["Fe-Feng Brewthief"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 197,
+								},
+							},
+							["amount"] = 197,
+						},
+						["Fang-she"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 50,
+								},
+							},
+							["amount"] = 50,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Carrot Breath"] = {
+									["count"] = 13,
+								},
+								["Back Kick"] = {
+									["count"] = 43,
+								},
+								["Melee"] = {
+									["count"] = 449,
+								},
+								["Tail Thrash"] = {
+									["count"] = 46,
+								},
+							},
+							["amount"] = 551,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 212,
+								},
+							},
+							["amount"] = 212,
+						},
+						["No One"] = {
+							["Details"] = {
+								["Shadow Geyser (DoT)"] = {
+									["count"] = 293,
+								},
+								["Flame Spout"] = {
+									["count"] = 57,
+								},
+							},
+							["amount"] = 350,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 115,
+								},
+								["Display of Fury"] = {
+									["count"] = 258,
+								},
+							},
+							["amount"] = 373,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 84,
+								},
+								["Jab"] = {
+									["count"] = 39,
+								},
+							},
+							["amount"] = 123,
+						},
+						["Environment"] = {
+							["Details"] = {
+								["Falling"] = {
+									["count"] = 64,
+								},
+							},
+							["amount"] = 64,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 1410,
+								},
+							},
+							["amount"] = 1410,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Set Ablaze (DoT)"] = {
+									["count"] = 33,
+								},
+								["Shoot ALL the fireworks!"] = {
+									["count"] = 20,
+								},
+								["Melee"] = {
+									["count"] = 113,
+								},
+								["Shoot"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 169,
+						},
+						["Zhao-Ren"] = {
+							["Details"] = {
+								["Lightning Pool (DoT)"] = {
+									["count"] = 203,
+								},
+								["Serpent Sweep"] = {
+									["count"] = 149,
+								},
+							},
+							["amount"] = 352,
+						},
+						["Jaomin Ro"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 49,
+								},
+								["Baby Elephant Takes a Bath"] = {
+									["count"] = 5,
+								},
+							},
+							["amount"] = 54,
+						},
+					},
+					["FAttacks"] = {
+						["Stagger (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 4,
+									["min"] = 1,
+									["count"] = 877,
+									["amount"] = 1236,
+								},
+							},
+							["count"] = 877,
+							["amount"] = 1236,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 11,
+									["min"] = 9,
+									["count"] = 2,
+									["amount"] = 20,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 20,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 20,
+									["min"] = 20,
+									["count"] = 1,
+									["amount"] = 20,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 20,
+						},
+					},
+					["ElementHitsDone"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 14,
+								},
+								["Hit"] = {
+									["count"] = 1031,
+								},
+								["Miss"] = {
+									["count"] = 14,
+								},
+								["Dodge"] = {
+									["count"] = 28,
+								},
+								["Block"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 104,
+								},
+								["Evade"] = {
+									["count"] = 5,
+								},
+							},
+							["amount"] = 1197,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 30,
+								},
+								["Parry"] = {
+									["count"] = 9,
+								},
+								["Miss"] = {
+									["count"] = 12,
+								},
+								["Hit"] = {
+									["count"] = 867,
+								},
+								["Dodge"] = {
+									["count"] = 29,
+								},
+								["Crit"] = {
+									["count"] = 100,
+								},
+								["Evade"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1048,
+						},
+						["Fire"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 10,
+								},
+							},
+							["amount"] = 10,
+						},
+					},
+					["ElementDone"] = {
+						["Physical"] = 31023,
+						["Melee"] = 29071,
+						["Fire"] = 2851,
+					},
+					["HealingTaken"] = 115,
+					["DamagedWho"] = {
+						["Pei-Wu Tiger Cub"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 59,
+								},
+								["Melee"] = {
+									["count"] = 215,
+								},
+								["Tiger Palm"] = {
+									["count"] = 82,
+								},
+							},
+							["amount"] = 356,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 181,
+								},
+								["Melee"] = {
+									["count"] = 478,
+								},
+							},
+							["amount"] = 659,
+						},
+						["Fe-Feng Brewthief"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 155,
+								},
+								["Melee"] = {
+									["count"] = 412,
+								},
+								["Tiger Palm"] = {
+									["count"] = 162,
+								},
+							},
+							["amount"] = 729,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 195,
+								},
+								["Melee"] = {
+									["count"] = 428,
+								},
+								["Tiger Palm"] = {
+									["count"] = 86,
+								},
+							},
+							["amount"] = 709,
+						},
+						["Amberleaf Troublemaker"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 157,
+								},
+								["Melee"] = {
+									["count"] = 474,
+								},
+								["Tiger Palm"] = {
+									["count"] = 302,
+								},
+							},
+							["amount"] = 933,
+						},
+						["Vordraka, the Deep Sea Nightmare"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 2166,
+								},
+								["Tiger Palm"] = {
+									["count"] = 276,
+								},
+								["Blackout Kick"] = {
+									["count"] = 694,
+								},
+								["Jab"] = {
+									["count"] = 297,
+								},
+								["Keg Smash"] = {
+									["count"] = 810,
+								},
+							},
+							["amount"] = 4243,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 1300,
+								},
+								["Tiger Palm"] = {
+									["count"] = 255,
+								},
+								["Blackout Kick"] = {
+									["count"] = 444,
+								},
+								["Jab"] = {
+									["count"] = 330,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 83,
+								},
+								["Keg Smash"] = {
+									["count"] = 746,
+								},
+							},
+							["amount"] = 3158,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 295,
+								},
+								["Tiger Palm"] = {
+									["count"] = 267,
+								},
+								["Melee"] = {
+									["count"] = 1384,
+								},
+								["Jab"] = {
+									["count"] = 248,
+								},
+								["Keg Smash"] = {
+									["count"] = 991,
+								},
+							},
+							["amount"] = 3185,
+						},
+						["Ruk-Ruk"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 175,
+								},
+								["Melee"] = {
+									["count"] = 330,
+								},
+								["Jab"] = {
+									["count"] = 72,
+								},
+								["Tiger Palm"] = {
+									["count"] = 93,
+								},
+							},
+							["amount"] = 670,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 2884,
+								},
+								["Jab"] = {
+									["count"] = 850,
+								},
+								["Blackout Kick"] = {
+									["count"] = 1074,
+								},
+								["Tiger Palm"] = {
+									["count"] = 568,
+								},
+							},
+							["amount"] = 5376,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 2460,
+								},
+								["Keg Smash"] = {
+									["count"] = 1710,
+								},
+								["Blackout Kick"] = {
+									["count"] = 643,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 193,
+								},
+								["Jab"] = {
+									["count"] = 445,
+								},
+								["Tiger Palm"] = {
+									["count"] = 612,
+								},
+							},
+							["amount"] = 6063,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 663,
+								},
+								["Jab"] = {
+									["count"] = 235,
+								},
+							},
+							["amount"] = 898,
+						},
+						["Raggis"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 436,
+								},
+								["Melee"] = {
+									["count"] = 662,
+								},
+								["Jab"] = {
+									["count"] = 172,
+								},
+								["Tiger Palm"] = {
+									["count"] = 267,
+								},
+							},
+							["amount"] = 1537,
+						},
+						["Guardian of the Elders"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 273,
+								},
+								["Melee"] = {
+									["count"] = 369,
+								},
+								["Jab"] = {
+									["count"] = 109,
+								},
+								["Tiger Palm"] = {
+									["count"] = 110,
+								},
+							},
+							["amount"] = 861,
+						},
+						["Darkened Terror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 789,
+								},
+								["Tiger Palm"] = {
+									["count"] = 106,
+								},
+								["Blackout Kick"] = {
+									["count"] = 294,
+								},
+								["Jab"] = {
+									["count"] = 180,
+								},
+								["Keg Smash"] = {
+									["count"] = 599,
+								},
+							},
+							["amount"] = 1968,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 378,
+								},
+								["Melee"] = {
+									["count"] = 1071,
+								},
+								["Tiger Palm"] = {
+									["count"] = 570,
+								},
+							},
+							["amount"] = 2019,
+						},
+						["Living Air"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 65,
+								},
+								["Melee"] = {
+									["count"] = 124,
+								},
+								["Tiger Palm"] = {
+									["count"] = 39,
+								},
+							},
+							["amount"] = 228,
+						},
+						["Deepscale Fleshripper"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 267,
+								},
+								["Tiger Palm"] = {
+									["count"] = 65,
+								},
+								["Keg Smash"] = {
+									["count"] = 88,
+								},
+								["Jab"] = {
+									["count"] = 64,
+								},
+								["Blackout Kick"] = {
+									["count"] = 107,
+								},
+							},
+							["amount"] = 591,
+						},
+						["Pangolin"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 60,
+								},
+								["Melee"] = {
+									["count"] = 154,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 84,
+								},
+								["Tiger Palm"] = {
+									["count"] = 19,
+								},
+							},
+							["amount"] = 317,
+						},
+						["Deepscale Aggressor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 111,
+								},
+								["Tiger Palm"] = {
+									["count"] = 46,
+								},
+								["Blackout Kick"] = {
+									["count"] = 53,
+								},
+								["Jab"] = {
+									["count"] = 22,
+								},
+								["Keg Smash"] = {
+									["count"] = 188,
+								},
+							},
+							["amount"] = 420,
+						},
+						["Plump Carrotcruncher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 546,
+								},
+								["Jab"] = {
+									["count"] = 151,
+								},
+								["Tiger Palm"] = {
+									["count"] = 324,
+								},
+							},
+							["amount"] = 1021,
+						},
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 532,
+								},
+								["Melee"] = {
+									["count"] = 1001,
+								},
+								["Jab"] = {
+									["count"] = 294,
+								},
+								["Tiger Palm"] = {
+									["count"] = 402,
+								},
+							},
+							["amount"] = 2229,
+						},
+						["Fang-she"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 104,
+								},
+								["Jab"] = {
+									["count"] = 35,
+								},
+								["Tiger Palm"] = {
+									["count"] = 111,
+								},
+							},
+							["amount"] = 250,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 250,
+								},
+								["Melee"] = {
+									["count"] = 1244,
+								},
+								["Jab"] = {
+									["count"] = 379,
+								},
+								["Tiger Palm"] = {
+									["count"] = 594,
+								},
+							},
+							["amount"] = 2467,
+						},
+						["Master Li Fei"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 5124,
+								},
+								["Jab"] = {
+									["count"] = 1742,
+								},
+								["Tiger Palm"] = {
+									["count"] = 2957,
+								},
+							},
+							["amount"] = 9823,
+						},
+						["Whitefeather Crane"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 346,
+								},
+								["Jab"] = {
+									["count"] = 133,
+								},
+								["Tiger Palm"] = {
+									["count"] = 178,
+								},
+							},
+							["amount"] = 657,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 260,
+								},
+								["Melee"] = {
+									["count"] = 624,
+								},
+								["Jab"] = {
+									["count"] = 168,
+								},
+								["Tiger Palm"] = {
+									["count"] = 230,
+								},
+							},
+							["amount"] = 1282,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 507,
+								},
+								["Jab"] = {
+									["count"] = 208,
+								},
+								["Tiger Palm"] = {
+									["count"] = 357,
+								},
+							},
+							["amount"] = 1072,
+						},
+						["Fe-Feng Leaper"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 35,
+								},
+								["Melee"] = {
+									["count"] = 76,
+								},
+								["Tiger Palm"] = {
+									["count"] = 55,
+								},
+							},
+							["amount"] = 166,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 840,
+								},
+								["Melee"] = {
+									["count"] = 1433,
+								},
+								["Jab"] = {
+									["count"] = 399,
+								},
+								["Tiger Palm"] = {
+									["count"] = 548,
+								},
+							},
+							["amount"] = 3220,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 386,
+								},
+								["Melee"] = {
+									["count"] = 714,
+								},
+								["Jab"] = {
+									["count"] = 260,
+								},
+								["Tiger Palm"] = {
+									["count"] = 299,
+								},
+							},
+							["amount"] = 1659,
+						},
+						["Zhao-Ren"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 269,
+								},
+								["Tiger Palm"] = {
+									["count"] = 114,
+								},
+								["Blackout Kick"] = {
+									["count"] = 380,
+								},
+								["Jab"] = {
+									["count"] = 102,
+								},
+								["Overpacked Firework"] = {
+									["count"] = 2851,
+								},
+							},
+							["amount"] = 3716,
+						},
+						["Jaomin Ro"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 342,
+								},
+								["Jab"] = {
+									["count"] = 121,
+								},
+							},
+							["amount"] = 463,
+						},
+					},
+					["TimeDamage"] = 2996.290000000003,
+					["TimeDamaging"] = {
+						["Pei-Wu Tiger Cub"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 6.469999999999999,
+								},
+								["Melee"] = {
+									["count"] = 2.97,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0.48,
+								},
+							},
+							["amount"] = 9.92,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 47.77,
+								},
+								["Quaking Palm"] = {
+									["count"] = 1.24,
+								},
+								["Jab"] = {
+									["count"] = 17.78,
+								},
+							},
+							["amount"] = 66.78999999999999,
+						},
+						["Master Li Fei"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 60.92000000000001,
+								},
+								["Jab"] = {
+									["count"] = 43.23999999999999,
+								},
+								["Tiger Palm"] = {
+									["count"] = 33.67,
+								},
+							},
+							["amount"] = 137.83,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 13.93,
+								},
+								["Melee"] = {
+									["count"] = 35.25,
+								},
+								["Tiger Palm"] = {
+									["count"] = 7.18,
+								},
+							},
+							["amount"] = 56.36,
+						},
+						["Amberleaf Troublemaker"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 17.20000000000001,
+								},
+								["Melee"] = {
+									["count"] = 41.34999999999999,
+								},
+								["Tiger Palm"] = {
+									["count"] = 12.11,
+								},
+							},
+							["amount"] = 70.65999999999998,
+						},
+						["Vordraka, the Deep Sea Nightmare"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 128.8800000000001,
+								},
+								["Tiger Palm"] = {
+									["count"] = 11.56,
+								},
+								["Blackout Kick"] = {
+									["count"] = 8.77,
+								},
+								["Jab"] = {
+									["count"] = 17.91,
+								},
+								["Keg Smash"] = {
+									["count"] = 8.390000000000001,
+								},
+							},
+							["amount"] = 175.51,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 54.20000000000002,
+								},
+								["Tiger Palm"] = {
+									["count"] = 8.629999999999997,
+								},
+								["Blackout Kick"] = {
+									["count"] = 5.12,
+								},
+								["Jab"] = {
+									["count"] = 27.33,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 1.78,
+								},
+								["Keg Smash"] = {
+									["count"] = 3.33,
+								},
+							},
+							["amount"] = 100.3900000000001,
+						},
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 701.6399999999985,
+								},
+							},
+							["amount"] = 701.6399999999985,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 3.63,
+								},
+								["Tiger Palm"] = {
+									["count"] = 8.67,
+								},
+								["Melee"] = {
+									["count"] = 42.8,
+								},
+								["Jab"] = {
+									["count"] = 15.47,
+								},
+								["Keg Smash"] = {
+									["count"] = 5.060000000000001,
+								},
+							},
+							["amount"] = 75.62999999999998,
+						},
+						["Ruk-Ruk"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 2.05,
+								},
+								["Melee"] = {
+									["count"] = 13.56,
+								},
+								["Jab"] = {
+									["count"] = 4.01,
+								},
+								["Tiger Palm"] = {
+									["count"] = 3.01,
+								},
+							},
+							["amount"] = 22.63,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 89.87999999999998,
+								},
+								["Jab"] = {
+									["count"] = 36.00999999999999,
+								},
+								["Blackout Kick"] = {
+									["count"] = 8.6,
+								},
+								["Tiger Palm"] = {
+									["count"] = 15.87,
+								},
+							},
+							["amount"] = 150.3600000000001,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 67.29000000000001,
+								},
+								["Keg Smash"] = {
+									["count"] = 8.369999999999999,
+								},
+								["Blackout Kick"] = {
+									["count"] = 5.87,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 4.17,
+								},
+								["Jab"] = {
+									["count"] = 18.04,
+								},
+								["Tiger Palm"] = {
+									["count"] = 12.5,
+								},
+							},
+							["amount"] = 116.24,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 33.51,
+								},
+								["Melee"] = {
+									["count"] = 48.86,
+								},
+							},
+							["amount"] = 82.37000000000002,
+						},
+						["Raggis"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 7.46,
+								},
+								["Melee"] = {
+									["count"] = 41.52999999999999,
+								},
+								["Jab"] = {
+									["count"] = 13.53,
+								},
+								["Tiger Palm"] = {
+									["count"] = 12.3,
+								},
+							},
+							["amount"] = 74.82000000000004,
+						},
+						["Guardian of the Elders"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 3.46,
+								},
+								["Melee"] = {
+									["count"] = 10.73,
+								},
+								["Jab"] = {
+									["count"] = 6.08,
+								},
+								["Tiger Palm"] = {
+									["count"] = 4.75,
+								},
+							},
+							["amount"] = 25.02,
+						},
+						["Darkened Terror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 29.09,
+								},
+								["Tiger Palm"] = {
+									["count"] = 3.14,
+								},
+								["Blackout Kick"] = {
+									["count"] = 2.53,
+								},
+								["Jab"] = {
+									["count"] = 8.510000000000002,
+								},
+								["Keg Smash"] = {
+									["count"] = 2.52,
+								},
+							},
+							["amount"] = 45.79000000000001,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 29.23,
+								},
+								["Melee"] = {
+									["count"] = 92.85000000000002,
+								},
+								["Tiger Palm"] = {
+									["count"] = 24.4,
+								},
+							},
+							["amount"] = 146.48,
+						},
+						["Living Air"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 4.02,
+								},
+								["Melee"] = {
+									["count"] = 9.329999999999998,
+								},
+								["Tiger Palm"] = {
+									["count"] = 2.81,
+								},
+							},
+							["amount"] = 16.16,
+						},
+						["Deepscale Fleshripper"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 18.69,
+								},
+								["Tiger Palm"] = {
+									["count"] = 2.88,
+								},
+								["Keg Smash"] = {
+									["count"] = 1.35,
+								},
+								["Jab"] = {
+									["count"] = 4.05,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0.77,
+								},
+							},
+							["amount"] = 27.74000000000001,
+						},
+						["Pangolin"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 1.85,
+								},
+								["Melee"] = {
+									["count"] = 3.25,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 0.26,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0.18,
+								},
+							},
+							["amount"] = 5.54,
+						},
+						["Deepscale Aggressor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 2.42,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0.63,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0.78,
+								},
+								["Jab"] = {
+									["count"] = 0.73,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 4.560000000000001,
+						},
+						["Plump Carrotcruncher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 34.35999999999999,
+								},
+								["Jab"] = {
+									["count"] = 10.97,
+								},
+								["Tiger Palm"] = {
+									["count"] = 15.79,
+								},
+							},
+							["amount"] = 61.12000000000001,
+						},
+						["King Varian Wrynn <Doyjen>"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 12.86,
+								},
+								["Jab"] = {
+									["count"] = 13.46,
+								},
+								["Keg Smash"] = {
+									["count"] = 2.45,
+								},
+							},
+							["amount"] = 28.77,
+						},
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 11.24,
+								},
+								["Melee"] = {
+									["count"] = 46.67999999999999,
+								},
+								["Jab"] = {
+									["count"] = 19.63,
+								},
+								["Tiger Palm"] = {
+									["count"] = 16.97,
+								},
+							},
+							["amount"] = 94.51999999999998,
+						},
+						["Fang-she"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 5.61,
+								},
+								["Jab"] = {
+									["count"] = 2.03,
+								},
+								["Tiger Palm"] = {
+									["count"] = 3.32,
+								},
+							},
+							["amount"] = 10.96,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 6.23,
+								},
+								["Melee"] = {
+									["count"] = 66.03,
+								},
+								["Jab"] = {
+									["count"] = 25.35,
+								},
+								["Tiger Palm"] = {
+									["count"] = 32.37000000000001,
+								},
+							},
+							["amount"] = 129.98,
+						},
+						["Whitefeather Crane"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 18.67,
+								},
+								["Jab"] = {
+									["count"] = 11.5,
+								},
+								["Tiger Palm"] = {
+									["count"] = 10.78,
+								},
+							},
+							["amount"] = 40.95,
+						},
+						["Fe-Feng Brewthief"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 13.42,
+								},
+								["Melee"] = {
+									["count"] = 29.27,
+								},
+								["Tiger Palm"] = {
+									["count"] = 13.11,
+								},
+							},
+							["amount"] = 55.79999999999999,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 4.09,
+								},
+								["Melee"] = {
+									["count"] = 41.49,
+								},
+								["Jab"] = {
+									["count"] = 9.65,
+								},
+								["Tiger Palm"] = {
+									["count"] = 13.61,
+								},
+							},
+							["amount"] = 68.84,
+						},
+						["Fe-Feng Leaper"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 1.39,
+								},
+								["Melee"] = {
+									["count"] = 6.96,
+								},
+								["Tiger Palm"] = {
+									["count"] = 2.42,
+								},
+							},
+							["amount"] = 10.77,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 31.21,
+								},
+								["Jab"] = {
+									["count"] = 23.55,
+								},
+								["Tiger Palm"] = {
+									["count"] = 15.34,
+								},
+							},
+							["amount"] = 70.09999999999999,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 10.28,
+								},
+								["Melee"] = {
+									["count"] = 61.44000000000002,
+								},
+								["Jab"] = {
+									["count"] = 26.83,
+								},
+								["Tiger Palm"] = {
+									["count"] = 21.31,
+								},
+							},
+							["amount"] = 119.86,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 5.16,
+								},
+								["Melee"] = {
+									["count"] = 44.03000000000001,
+								},
+								["Jab"] = {
+									["count"] = 15.9,
+								},
+								["Tiger Palm"] = {
+									["count"] = 14.14,
+								},
+							},
+							["amount"] = 79.22999999999999,
+						},
+						["Zhao-Ren"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 13.14,
+								},
+								["Tiger Palm"] = {
+									["count"] = 4.85,
+								},
+								["Blackout Kick"] = {
+									["count"] = 4.23,
+								},
+								["Jab"] = {
+									["count"] = 7.24,
+								},
+								["Overpacked Firework"] = {
+									["count"] = 35,
+								},
+							},
+							["amount"] = 64.46000000000001,
+						},
+						["Jaomin Ro"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 39.44000000000001,
+								},
+								["Jab"] = {
+									["count"] = 9.050000000000001,
+								},
+							},
+							["amount"] = 48.49,
+						},
+					},
+					["Attacks"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing (Blocked)"] = {
+									["max"] = 65,
+									["min"] = 13,
+									["count"] = 3,
+									["amount"] = 138,
+								},
+								["Miss"] = {
+									["count"] = 12,
+									["amount"] = 0,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 84,
+									["min"] = 12,
+									["count"] = 12,
+									["amount"] = 315,
+								},
+								["Parry"] = {
+									["count"] = 9,
+									["amount"] = 0,
+								},
+								["Glancing"] = {
+									["max"] = 106,
+									["min"] = 17,
+									["count"] = 27,
+									["amount"] = 1191,
+								},
+								["Dodge"] = {
+									["count"] = 29,
+									["amount"] = 0,
+								},
+								["Crit (Blocked)"] = {
+									["max"] = 161,
+									["min"] = 25,
+									["count"] = 2,
+									["amount"] = 186,
+								},
+								["Hit"] = {
+									["max"] = 130,
+									["min"] = 17,
+									["count"] = 855,
+									["amount"] = 21744,
+								},
+								["Crit"] = {
+									["max"] = 247,
+									["min"] = 34,
+									["count"] = 98,
+									["amount"] = 5497,
+								},
+								["Evade"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1048,
+							["amount"] = 29071,
+						},
+						["Dizzying Haze"] = {
+							["Details"] = {
+								["Evade"] = {
+									["count"] = 3,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 98,
+									["min"] = 83,
+									["count"] = 4,
+									["amount"] = 360,
+								},
+							},
+							["count"] = 7,
+							["amount"] = 360,
+						},
+						["Blackout Kick"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 72,
+									["min"] = 41,
+									["count"] = 106,
+									["amount"] = 5530,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 37,
+									["min"] = 37,
+									["count"] = 1,
+									["amount"] = 37,
+								},
+								["Miss"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 133,
+									["min"] = 91,
+									["count"] = 15,
+									["amount"] = 1569,
+								},
+								["Parry"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 125,
+							["amount"] = 7136,
+						},
+						["Keg Smash"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 99,
+									["min"] = 75,
+									["count"] = 47,
+									["amount"] = 4115,
+								},
+								["Crit"] = {
+									["max"] = 181,
+									["min"] = 154,
+									["count"] = 6,
+									["amount"] = 1017,
+								},
+								["Dodge"] = {
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 55,
+							["amount"] = 5132,
+						},
+						["Jab"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 7,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 60,
+									["min"] = 7,
+									["count"] = 555,
+									["amount"] = 6961,
+								},
+								["Miss"] = {
+									["count"] = 3,
+									["amount"] = 0,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 40,
+									["min"] = 5,
+									["count"] = 8,
+									["amount"] = 151,
+								},
+								["Dodge"] = {
+									["count"] = 22,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 105,
+									["min"] = 16,
+									["count"] = 54,
+									["amount"] = 1189,
+								},
+								["Evade"] = {
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 651,
+							["amount"] = 8301,
+						},
+						["Tiger Palm"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 119,
+									["min"] = 16,
+									["count"] = 307,
+									["amount"] = 8503,
+								},
+								["Dodge"] = {
+									["count"] = 3,
+									["amount"] = 0,
+								},
+								["Hit (Blocked)"] = {
+									["max"] = 16,
+									["min"] = 13,
+									["count"] = 3,
+									["amount"] = 43,
+								},
+								["Miss"] = {
+									["count"] = 10,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 213,
+									["min"] = 33,
+									["count"] = 29,
+									["amount"] = 1548,
+								},
+								["Parry"] = {
+									["count"] = 6,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 358,
+							["amount"] = 10094,
+						},
+						["Quaking Palm"] = {
+							["Details"] = {
+								["Block"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["Overpacked Firework"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 286,
+									["min"] = 285,
+									["count"] = 10,
+									["amount"] = 2851,
+								},
+							},
+							["count"] = 10,
+							["amount"] = 2851,
+						},
+					},
+					["FDamage"] = 1276,
+					["TimeSpent"] = {
+						["Pei-Wu Tiger Cub"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 6.469999999999999,
+								},
+								["Melee"] = {
+									["count"] = 2.97,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0.48,
+								},
+							},
+							["amount"] = 9.92,
+						},
+						["Training Target"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 47.77,
+								},
+								["Quaking Palm"] = {
+									["count"] = 1.24,
+								},
+								["Jab"] = {
+									["count"] = 17.78,
+								},
+							},
+							["amount"] = 66.78999999999999,
+						},
+						["Master Li Fei"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 60.92000000000001,
+								},
+								["Jab"] = {
+									["count"] = 43.23999999999999,
+								},
+								["Tiger Palm"] = {
+									["count"] = 33.67,
+								},
+							},
+							["amount"] = 137.83,
+						},
+						["Amberleaf Scamp"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 13.93,
+								},
+								["Melee"] = {
+									["count"] = 35.25,
+								},
+								["Tiger Palm"] = {
+									["count"] = 7.18,
+								},
+							},
+							["amount"] = 56.36,
+						},
+						["Amberleaf Troublemaker"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 17.20000000000001,
+								},
+								["Melee"] = {
+									["count"] = 41.34999999999999,
+								},
+								["Tiger Palm"] = {
+									["count"] = 12.11,
+								},
+							},
+							["amount"] = 70.65999999999998,
+						},
+						["Vordraka, the Deep Sea Nightmare"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 128.8800000000001,
+								},
+								["Tiger Palm"] = {
+									["count"] = 11.56,
+								},
+								["Blackout Kick"] = {
+									["count"] = 8.77,
+								},
+								["Jab"] = {
+									["count"] = 17.91,
+								},
+								["Keg Smash"] = {
+									["count"] = 8.390000000000001,
+								},
+							},
+							["amount"] = 175.51,
+						},
+						["Deepscale Tormentor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 54.20000000000002,
+								},
+								["Tiger Palm"] = {
+									["count"] = 8.629999999999997,
+								},
+								["Blackout Kick"] = {
+									["count"] = 5.12,
+								},
+								["Jab"] = {
+									["count"] = 27.33,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 1.78,
+								},
+								["Keg Smash"] = {
+									["count"] = 3.33,
+								},
+							},
+							["amount"] = 100.3900000000001,
+						},
+						["Doyjen"] = {
+							["Details"] = {
+								["Stagger (DoT)"] = {
+									["count"] = 701.6399999999985,
+								},
+							},
+							["amount"] = 701.6399999999985,
+						},
+						["Darkened Horror"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 3.63,
+								},
+								["Tiger Palm"] = {
+									["count"] = 8.67,
+								},
+								["Melee"] = {
+									["count"] = 42.8,
+								},
+								["Jab"] = {
+									["count"] = 15.47,
+								},
+								["Keg Smash"] = {
+									["count"] = 5.060000000000001,
+								},
+							},
+							["amount"] = 75.62999999999998,
+						},
+						["Ruk-Ruk"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 2.05,
+								},
+								["Melee"] = {
+									["count"] = 13.56,
+								},
+								["Jab"] = {
+									["count"] = 4.01,
+								},
+								["Tiger Palm"] = {
+									["count"] = 3.01,
+								},
+							},
+							["amount"] = 22.63,
+						},
+						["Pei-Wu Tiger"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 89.87999999999998,
+								},
+								["Jab"] = {
+									["count"] = 36.00999999999999,
+								},
+								["Blackout Kick"] = {
+									["count"] = 8.6,
+								},
+								["Tiger Palm"] = {
+									["count"] = 15.87,
+								},
+							},
+							["amount"] = 150.3600000000001,
+						},
+						["Deepscale Ravager"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 67.29000000000001,
+								},
+								["Keg Smash"] = {
+									["count"] = 8.369999999999999,
+								},
+								["Blackout Kick"] = {
+									["count"] = 5.87,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 4.17,
+								},
+								["Jab"] = {
+									["count"] = 18.04,
+								},
+								["Tiger Palm"] = {
+									["count"] = 12.5,
+								},
+							},
+							["amount"] = 116.24,
+						},
+						["Huojin Trainee"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 33.51,
+								},
+								["Melee"] = {
+									["count"] = 48.86,
+								},
+							},
+							["amount"] = 82.37000000000002,
+						},
+						["Raggis"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 7.46,
+								},
+								["Melee"] = {
+									["count"] = 41.52999999999999,
+								},
+								["Jab"] = {
+									["count"] = 13.53,
+								},
+								["Tiger Palm"] = {
+									["count"] = 12.3,
+								},
+							},
+							["amount"] = 74.82000000000004,
+						},
+						["Guardian of the Elders"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 3.46,
+								},
+								["Melee"] = {
+									["count"] = 10.73,
+								},
+								["Jab"] = {
+									["count"] = 6.08,
+								},
+								["Tiger Palm"] = {
+									["count"] = 4.75,
+								},
+							},
+							["amount"] = 25.02,
+						},
+						["Darkened Terror"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 29.09,
+								},
+								["Tiger Palm"] = {
+									["count"] = 3.14,
+								},
+								["Blackout Kick"] = {
+									["count"] = 2.53,
+								},
+								["Jab"] = {
+									["count"] = 8.510000000000002,
+								},
+								["Keg Smash"] = {
+									["count"] = 2.52,
+								},
+							},
+							["amount"] = 45.79000000000001,
+						},
+						["Fe-Feng Hozen"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 29.23,
+								},
+								["Melee"] = {
+									["count"] = 92.85000000000002,
+								},
+								["Tiger Palm"] = {
+									["count"] = 24.4,
+								},
+							},
+							["amount"] = 146.48,
+						},
+						["Living Air"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 4.02,
+								},
+								["Melee"] = {
+									["count"] = 9.329999999999998,
+								},
+								["Tiger Palm"] = {
+									["count"] = 2.81,
+								},
+							},
+							["amount"] = 16.16,
+						},
+						["Deepscale Fleshripper"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 18.69,
+								},
+								["Tiger Palm"] = {
+									["count"] = 2.88,
+								},
+								["Keg Smash"] = {
+									["count"] = 1.35,
+								},
+								["Jab"] = {
+									["count"] = 4.05,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0.77,
+								},
+							},
+							["amount"] = 27.74000000000001,
+						},
+						["Pangolin"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 1.85,
+								},
+								["Melee"] = {
+									["count"] = 3.25,
+								},
+								["Dizzying Haze"] = {
+									["count"] = 0.26,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0.18,
+								},
+							},
+							["amount"] = 5.54,
+						},
+						["Deepscale Aggressor"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 2.42,
+								},
+								["Tiger Palm"] = {
+									["count"] = 0.63,
+								},
+								["Blackout Kick"] = {
+									["count"] = 0.78,
+								},
+								["Jab"] = {
+									["count"] = 0.73,
+								},
+								["Keg Smash"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 4.560000000000001,
+						},
+						["Plump Carrotcruncher"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 34.35999999999999,
+								},
+								["Jab"] = {
+									["count"] = 10.97,
+								},
+								["Tiger Palm"] = {
+									["count"] = 15.79,
+								},
+							},
+							["amount"] = 61.12000000000001,
+						},
+						["King Varian Wrynn <Doyjen>"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 12.86,
+								},
+								["Jab"] = {
+									["count"] = 13.46,
+								},
+								["Keg Smash"] = {
+									["count"] = 2.45,
+								},
+							},
+							["amount"] = 28.77,
+						},
+						["Fe-Feng Wiseman"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 11.24,
+								},
+								["Melee"] = {
+									["count"] = 46.67999999999999,
+								},
+								["Jab"] = {
+									["count"] = 19.63,
+								},
+								["Tiger Palm"] = {
+									["count"] = 16.97,
+								},
+							},
+							["amount"] = 94.51999999999998,
+						},
+						["Fang-she"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 5.61,
+								},
+								["Jab"] = {
+									["count"] = 2.03,
+								},
+								["Tiger Palm"] = {
+									["count"] = 3.32,
+								},
+							},
+							["amount"] = 10.96,
+						},
+						["Plump Virmen"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 6.23,
+								},
+								["Melee"] = {
+									["count"] = 66.03,
+								},
+								["Jab"] = {
+									["count"] = 25.35,
+								},
+								["Tiger Palm"] = {
+									["count"] = 32.37000000000001,
+								},
+							},
+							["amount"] = 129.98,
+						},
+						["Whitefeather Crane"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 18.67,
+								},
+								["Jab"] = {
+									["count"] = 11.5,
+								},
+								["Tiger Palm"] = {
+									["count"] = 10.78,
+								},
+							},
+							["amount"] = 40.95,
+						},
+						["Fe-Feng Brewthief"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 13.42,
+								},
+								["Melee"] = {
+									["count"] = 29.27,
+								},
+								["Tiger Palm"] = {
+									["count"] = 13.11,
+								},
+							},
+							["amount"] = 55.79999999999999,
+						},
+						["Fe-Feng Ruffian"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 4.09,
+								},
+								["Melee"] = {
+									["count"] = 41.49,
+								},
+								["Jab"] = {
+									["count"] = 9.65,
+								},
+								["Tiger Palm"] = {
+									["count"] = 13.61,
+								},
+							},
+							["amount"] = 68.84,
+						},
+						["Fe-Feng Leaper"] = {
+							["Details"] = {
+								["Jab"] = {
+									["count"] = 1.39,
+								},
+								["Melee"] = {
+									["count"] = 6.96,
+								},
+								["Tiger Palm"] = {
+									["count"] = 2.42,
+								},
+							},
+							["amount"] = 10.77,
+						},
+						["Tushui Monk"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 31.21,
+								},
+								["Jab"] = {
+									["count"] = 23.55,
+								},
+								["Tiger Palm"] = {
+									["count"] = 15.34,
+								},
+							},
+							["amount"] = 70.09999999999999,
+						},
+						["Thornbranch Scamp"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 10.28,
+								},
+								["Melee"] = {
+									["count"] = 61.44000000000002,
+								},
+								["Jab"] = {
+									["count"] = 26.83,
+								},
+								["Tiger Palm"] = {
+									["count"] = 21.31,
+								},
+							},
+							["amount"] = 119.86,
+						},
+						["Fe-Feng Firethief"] = {
+							["Details"] = {
+								["Blackout Kick"] = {
+									["count"] = 5.16,
+								},
+								["Melee"] = {
+									["count"] = 44.03000000000001,
+								},
+								["Jab"] = {
+									["count"] = 15.9,
+								},
+								["Tiger Palm"] = {
+									["count"] = 14.14,
+								},
+							},
+							["amount"] = 79.22999999999999,
+						},
+						["Zhao-Ren"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 13.14,
+								},
+								["Tiger Palm"] = {
+									["count"] = 4.85,
+								},
+								["Blackout Kick"] = {
+									["count"] = 4.23,
+								},
+								["Jab"] = {
+									["count"] = 7.24,
+								},
+								["Overpacked Firework"] = {
+									["count"] = 35,
+								},
+							},
+							["amount"] = 64.46000000000001,
+						},
+						["Jaomin Ro"] = {
+							["Details"] = {
+								["Melee"] = {
+									["count"] = 39.44000000000001,
+								},
+								["Jab"] = {
+									["count"] = 9.050000000000001,
+								},
+							},
+							["amount"] = 48.49,
+						},
+					},
+				},
+			},
+			["UnitLockout"] = 1348653710,
+			["LastActive"] = 1357728715,
 		},
 		["Ruk-Ruk"] = {
 			["GUID"] = "0xF130D952000116B3",
@@ -19368,13 +19368,8 @@ RecountPerCharDB = {
 			},
 			["Owner"] = false,
 			["enClass"] = "MOB",
-			["LastAbility"] = 71340.13800000001,
+			["LastFightIn"] = 81,
 			["Name"] = "Ruk-Ruk",
-			["UnitLockout"] = 1353554640,
-			["Pet"] = {
-				"Ruk-Ruk's Rocket <Ruk-Ruk>", -- [1]
-			},
-			["level"] = 7,
 			["Fights"] = {
 				["CurrentFightData"] = {
 					["DOTs"] = {
@@ -19389,12 +19384,11 @@ RecountPerCharDB = {
 					},
 					["DeathCount"] = 0,
 					["HOT_Time"] = 0,
-					["DOT_Time"] = 0,
-					["ManaGain"] = 0,
+					["Damage"] = 0,
+					["RunicPowerGain"] = 0,
 					["ElementTaken"] = {
 					},
-					["HOTs"] = {
-					},
+					["DOT_Time"] = 0,
 					["ElementTakenBlock"] = {
 					},
 					["ElementDoneAbsorb"] = {
@@ -19405,24 +19399,24 @@ RecountPerCharDB = {
 					["Dispels"] = 0,
 					["PartialBlock"] = {
 					},
-					["FDamagedWho"] = {
+					["ElementHitsDone"] = {
 					},
 					["FAttacks"] = {
 					},
-					["RageGain"] = 0,
+					["HealingTaken"] = 0,
 					["ElementDone"] = {
-					},
-					["ManaGainedFrom"] = {
 					},
 					["DamagedWho"] = {
 					},
-					["RageGained"] = {
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGainedFrom"] = {
 					},
 					["WhoDamaged"] = {
 					},
 					["EnergyGainedFrom"] = {
 					},
-					["OverHeals"] = {
+					["RunicPowerGained"] = {
 					},
 					["CCBroken"] = {
 					},
@@ -19430,52 +19424,53 @@ RecountPerCharDB = {
 					},
 					["TimeHealing"] = {
 					},
-					["Dispelled"] = 0,
+					["OverHeals"] = {
+					},
 					["WhoHealed"] = {
-					},
-					["PartialResist"] = {
-					},
-					["CCBreak"] = 0,
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
-					["ElementTakenAbsorb"] = {
-					},
-					["ActiveTime"] = 0,
-					["Overhealing"] = 0,
-					["ElementTakenResist"] = {
-					},
-					["InterruptData"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["TimeSpent"] = {
-					},
-					["Heals"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["EnergyGained"] = {
 					},
 					["HealedWho"] = {
 					},
-					["Healing"] = 0,
-					["RunicPowerGained"] = {
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
 					},
-					["RunicPowerGainedFrom"] = {
+					["PartialAbsorb"] = {
+					},
+					["PartialResist"] = {
+					},
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["ActiveTime"] = 0,
+					["EnergyGained"] = {
+					},
+					["EnergyGain"] = 0,
+					["Healing"] = 0,
+					["Dispelled"] = 0,
+					["RageGained"] = {
 					},
 					["Attacks"] = {
 					},
-					["HealingTaken"] = 0,
-					["ElementHitsDone"] = {
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
 					},
 					["TimeDamage"] = 0,
 					["TimeDamaging"] = {
 					},
-					["RunicPowerGain"] = 0,
-					["Damage"] = 0,
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
 					["DispelledWho"] = {
 					},
 				},
@@ -19492,12 +19487,11 @@ RecountPerCharDB = {
 					},
 					["DeathCount"] = 0,
 					["HOT_Time"] = 0,
-					["DOT_Time"] = 0,
-					["ManaGain"] = 0,
+					["Damage"] = 0,
+					["RunicPowerGain"] = 0,
 					["ElementTaken"] = {
 					},
-					["HOTs"] = {
-					},
+					["DOT_Time"] = 0,
 					["ElementTakenBlock"] = {
 					},
 					["ElementDoneAbsorb"] = {
@@ -19508,24 +19502,24 @@ RecountPerCharDB = {
 					["Dispels"] = 0,
 					["PartialBlock"] = {
 					},
-					["FDamagedWho"] = {
+					["ElementHitsDone"] = {
 					},
 					["FAttacks"] = {
 					},
-					["RageGain"] = 0,
+					["HealingTaken"] = 0,
 					["ElementDone"] = {
-					},
-					["ManaGainedFrom"] = {
 					},
 					["DamagedWho"] = {
 					},
-					["RageGained"] = {
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGainedFrom"] = {
 					},
 					["WhoDamaged"] = {
 					},
 					["EnergyGainedFrom"] = {
 					},
-					["OverHeals"] = {
+					["RunicPowerGained"] = {
 					},
 					["CCBroken"] = {
 					},
@@ -19533,57 +19527,63 @@ RecountPerCharDB = {
 					},
 					["TimeHealing"] = {
 					},
-					["Dispelled"] = 0,
+					["OverHeals"] = {
+					},
 					["WhoHealed"] = {
-					},
-					["PartialResist"] = {
-					},
-					["CCBreak"] = 0,
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
-					["ElementTakenAbsorb"] = {
-					},
-					["ActiveTime"] = 0,
-					["Overhealing"] = 0,
-					["ElementTakenResist"] = {
-					},
-					["InterruptData"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["TimeSpent"] = {
-					},
-					["Heals"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["EnergyGained"] = {
 					},
 					["HealedWho"] = {
 					},
-					["Healing"] = 0,
-					["RunicPowerGained"] = {
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
 					},
-					["RunicPowerGainedFrom"] = {
+					["PartialAbsorb"] = {
+					},
+					["PartialResist"] = {
+					},
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["ActiveTime"] = 0,
+					["EnergyGained"] = {
+					},
+					["EnergyGain"] = 0,
+					["Healing"] = 0,
+					["Dispelled"] = 0,
+					["RageGained"] = {
 					},
 					["Attacks"] = {
 					},
-					["HealingTaken"] = 0,
-					["ElementHitsDone"] = {
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
 					},
 					["TimeDamage"] = 0,
 					["TimeDamaging"] = {
 					},
-					["RunicPowerGain"] = 0,
-					["Damage"] = 0,
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
 					["DispelledWho"] = {
 					},
 				},
 			},
-			["LastFightIn"] = 81,
+			["Pet"] = {
+				"Ruk-Ruk's Rocket <Ruk-Ruk>", -- [1]
+			},
+			["level"] = 7,
+			["UnitLockout"] = 1353554640,
+			["LastAbility"] = 1088330.758,
 		},
 		["Jaomin Ro"] = {
 			["GUID"] = "0xF130D55300000229",
@@ -19600,8 +19600,13 @@ RecountPerCharDB = {
 			},
 			["Owner"] = false,
 			["enClass"] = "MOB",
-			["LastFightIn"] = 9,
+			["LastAbility"] = 1088330.758,
 			["Name"] = "Jaomin Ro",
+			["UnitLockout"] = 1348825426,
+			["Pet"] = {
+				"Jaomin Ro <Jaomin Ro>", -- [1]
+			},
+			["level"] = 3,
 			["Fights"] = {
 				["CurrentFightData"] = {
 					["DOTs"] = {
@@ -19616,12 +19621,11 @@ RecountPerCharDB = {
 					},
 					["DeathCount"] = 0,
 					["HOT_Time"] = 0,
-					["DOT_Time"] = 0,
-					["ManaGain"] = 0,
+					["Damage"] = 0,
+					["RunicPowerGain"] = 0,
 					["ElementTaken"] = {
 					},
-					["HOTs"] = {
-					},
+					["DOT_Time"] = 0,
 					["ElementTakenBlock"] = {
 					},
 					["ElementDoneAbsorb"] = {
@@ -19632,24 +19636,24 @@ RecountPerCharDB = {
 					["Dispels"] = 0,
 					["PartialBlock"] = {
 					},
-					["FDamagedWho"] = {
+					["ElementHitsDone"] = {
 					},
 					["FAttacks"] = {
 					},
-					["RageGain"] = 0,
+					["HealingTaken"] = 0,
 					["ElementDone"] = {
-					},
-					["ManaGainedFrom"] = {
 					},
 					["DamagedWho"] = {
 					},
-					["RageGained"] = {
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGainedFrom"] = {
 					},
 					["WhoDamaged"] = {
 					},
 					["EnergyGainedFrom"] = {
 					},
-					["OverHeals"] = {
+					["RunicPowerGained"] = {
 					},
 					["CCBroken"] = {
 					},
@@ -19657,52 +19661,53 @@ RecountPerCharDB = {
 					},
 					["TimeHealing"] = {
 					},
-					["Dispelled"] = 0,
+					["OverHeals"] = {
+					},
 					["WhoHealed"] = {
-					},
-					["PartialResist"] = {
-					},
-					["CCBreak"] = 0,
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
-					["ElementTakenAbsorb"] = {
-					},
-					["ActiveTime"] = 0,
-					["Overhealing"] = 0,
-					["ElementTakenResist"] = {
-					},
-					["InterruptData"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["TimeSpent"] = {
-					},
-					["Heals"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["EnergyGained"] = {
 					},
 					["HealedWho"] = {
 					},
-					["Healing"] = 0,
-					["RunicPowerGained"] = {
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
 					},
-					["RunicPowerGainedFrom"] = {
+					["PartialAbsorb"] = {
+					},
+					["PartialResist"] = {
+					},
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["ActiveTime"] = 0,
+					["EnergyGained"] = {
+					},
+					["EnergyGain"] = 0,
+					["Healing"] = 0,
+					["Dispelled"] = 0,
+					["RageGained"] = {
 					},
 					["Attacks"] = {
 					},
-					["HealingTaken"] = 0,
-					["ElementHitsDone"] = {
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
 					},
 					["TimeDamage"] = 0,
 					["TimeDamaging"] = {
 					},
-					["RunicPowerGain"] = 0,
-					["Damage"] = 0,
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
 					["DispelledWho"] = {
 					},
 				},
@@ -19719,12 +19724,11 @@ RecountPerCharDB = {
 					},
 					["DeathCount"] = 0,
 					["HOT_Time"] = 0,
-					["DOT_Time"] = 0,
-					["ManaGain"] = 0,
+					["Damage"] = 0,
+					["RunicPowerGain"] = 0,
 					["ElementTaken"] = {
 					},
-					["HOTs"] = {
-					},
+					["DOT_Time"] = 0,
 					["ElementTakenBlock"] = {
 					},
 					["ElementDoneAbsorb"] = {
@@ -19735,24 +19739,24 @@ RecountPerCharDB = {
 					["Dispels"] = 0,
 					["PartialBlock"] = {
 					},
-					["FDamagedWho"] = {
+					["ElementHitsDone"] = {
 					},
 					["FAttacks"] = {
 					},
-					["RageGain"] = 0,
+					["HealingTaken"] = 0,
 					["ElementDone"] = {
-					},
-					["ManaGainedFrom"] = {
 					},
 					["DamagedWho"] = {
 					},
-					["RageGained"] = {
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGainedFrom"] = {
 					},
 					["WhoDamaged"] = {
 					},
 					["EnergyGainedFrom"] = {
 					},
-					["OverHeals"] = {
+					["RunicPowerGained"] = {
 					},
 					["CCBroken"] = {
 					},
@@ -19760,62 +19764,58 @@ RecountPerCharDB = {
 					},
 					["TimeHealing"] = {
 					},
-					["Dispelled"] = 0,
+					["OverHeals"] = {
+					},
 					["WhoHealed"] = {
-					},
-					["PartialResist"] = {
-					},
-					["CCBreak"] = 0,
-					["FDamage"] = 0,
-					["Interrupts"] = 0,
-					["EnergyGain"] = 0,
-					["ManaGained"] = {
-					},
-					["ElementTakenAbsorb"] = {
-					},
-					["ActiveTime"] = 0,
-					["Overhealing"] = 0,
-					["ElementTakenResist"] = {
-					},
-					["InterruptData"] = {
-					},
-					["WhoDispelled"] = {
-					},
-					["TimeSpent"] = {
-					},
-					["Heals"] = {
-					},
-					["PartialAbsorb"] = {
-					},
-					["EnergyGained"] = {
 					},
 					["HealedWho"] = {
 					},
-					["Healing"] = 0,
-					["RunicPowerGained"] = {
+					["CCBreak"] = 0,
+					["ElementTakenAbsorb"] = {
 					},
-					["RunicPowerGainedFrom"] = {
+					["PartialAbsorb"] = {
+					},
+					["PartialResist"] = {
+					},
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["ElementTakenResist"] = {
+					},
+					["Heals"] = {
+					},
+					["ActiveTime"] = 0,
+					["EnergyGained"] = {
+					},
+					["EnergyGain"] = 0,
+					["Healing"] = 0,
+					["Dispelled"] = 0,
+					["RageGained"] = {
 					},
 					["Attacks"] = {
 					},
-					["HealingTaken"] = 0,
-					["ElementHitsDone"] = {
+					["RageGain"] = 0,
+					["FDamagedWho"] = {
 					},
 					["TimeDamage"] = 0,
 					["TimeDamaging"] = {
 					},
-					["RunicPowerGain"] = 0,
-					["Damage"] = 0,
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
 					["DispelledWho"] = {
 					},
 				},
 			},
-			["Pet"] = {
-				"Jaomin Ro <Jaomin Ro>", -- [1]
-			},
-			["level"] = 3,
-			["UnitLockout"] = 1348825426,
-			["LastAbility"] = 71340.13800000001,
+			["LastFightIn"] = 9,
 		},
 	},
 	["FightNum"] = 134,

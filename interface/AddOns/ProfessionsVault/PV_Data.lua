@@ -1,13 +1,13 @@
 -- All data in this file is copyrighted to the author (oscarucb), all rights reserved
 local addonName, vars = ...
 vars.svnrev = vars.svnrev or {}
-vars.svnrev["PV_data.lua"] = tonumber(("$Revision: 523 $"):match("%d+"))
+vars.svnrev["PV_data.lua"] = tonumber(("$Revision: 529 $"):match("%d+"))
 
 vars.VersionInfo = {
 	   ["DBversion"] = 8,
-	   ["DBrevision"] = tonumber(("$Revision: 523 $"):match("%d+")),
+	   ["DBrevision"] = tonumber(("$Revision: 529 $"):match("%d+")),
            ["clientexpansion"] = 4,
-           ["clientversion"] = "5.4.0",
+           ["clientversion"] = "5.4.2",
 }
 
 if vars.stub then return end

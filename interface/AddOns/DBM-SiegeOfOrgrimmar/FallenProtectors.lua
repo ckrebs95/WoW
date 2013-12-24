@@ -1,9 +1,8 @@
 local mod	= DBM:NewMod(849, "DBM-SiegeOfOrgrimmar", nil, 369)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10737 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10658 $"):sub(12, -3))
 mod:SetCreatureID(71479, 71475, 71480)--He-Softfoot, Rook Stonetoe, Sun Tenderheart
-mod:SetEncounterID(1598)
 mod:SetZone()
 mod:SetUsedIcons(7)
 
@@ -129,7 +128,6 @@ function mod:BrewTarget(targetname, uId)
 	end
 end
 
---[[
 function mod:InfernoStrikeTarget(targetname, uId)
 	if not targetname then return end
 	warnInfernoStrike:Show(targetname)
@@ -140,7 +138,7 @@ function mod:InfernoStrikeTarget(targetname, uId)
 		specWarnInfernoStrike:Show()
 		yellInfernoStrike:Yell()
 	end
-end--]]
+end
 
 function mod:OnCombatStart(delay)
 	timerVengefulStrikesCD:Start(7-delay)
@@ -150,10 +148,10 @@ function mod:OnCombatStart(delay)
 	timerGougeCD:Start(23-delay)
 	timerCalamityCD:Start(31-delay)
 	timerClashCD:Start(45-delay)
-	if self:IsDifficulty("heroic10", "heroic25") then
-		berserkTimer:Start(-delay)
+	if self:IsDifficulty("lfr25") then--Might also be flex as well
+		berserkTimer:Start(900-delay)--15min confirmed
 	else
-		berserkTimer:Start(900-delay)--15min confirmed in LFR, flex, normal
+		berserkTimer:Start(-delay)
 	end
 	if self.Options.RangeFrame then
 		DBM.RangeCheck:Show(5)
