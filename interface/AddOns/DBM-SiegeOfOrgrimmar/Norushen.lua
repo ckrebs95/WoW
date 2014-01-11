@@ -1,8 +1,12 @@
 local mod	= DBM:NewMod(866, "DBM-SiegeOfOrgrimmar", nil, 369)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10669 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10809 $"):sub(12, -3))
 mod:SetCreatureID(72276)
+mod:SetEncounterID(1624)
+mod:DisableESCombatDetection()
+mod:SetMinSyncRevision(10768)
+mod:SetHotfixNoticeRev(10768)
 mod:SetZone()
 
 mod:RegisterCombat("combat")
@@ -13,11 +17,12 @@ mod:RegisterEventsInCombat(
 	"SPELL_AURA_REMOVED",
 	"UNIT_DIED",
 	"UNIT_SPELLCAST_SUCCEEDED boss1 boss2 boss3 boss4 boss5",--This boss can change boss ID any time you jump into one of tests, because he gets unregistered as boss1 then registered as boss2 when you leave, etc
-	"CHAT_MSG_ADDON"
+	"CHAT_MSG_ADDON",
+	"GROUP_ROSTER_UPDATE"
 )
 
 mod:RegisterEvents(
-	"CHAT_MSG_MONSTER_YELL"
+	"ENCOUNTER_START"
 )
 
 local boss = EJ_GetSectionInfo(8216)
@@ -60,7 +65,7 @@ local specWarnPiercingCorruption		= mod:NewSpecialWarningSpell(144657)
 --Amalgam of Corruption
 local timerCombatStarts					= mod:NewCombatTimer(25)
 local timerUnleashedAngerCD				= mod:NewCDTimer(11, 145216, nil, mod:IsTank())
-local timerBlindHatred					= mod:NewBuffActiveTimer(30, 145226)
+local timerBlindHatred					= mod:NewBuffActiveTimer(30, 145226, nil, false, nil, nil, nil, nil, nil, 2)
 local timerBlindHatredCD				= mod:NewNextTimer(30, 145226)
 --All Tests
 local timerLookWithin					= mod:NewBuffFadesTimer(60, "ej8220")
@@ -77,14 +82,15 @@ local timerHurlCorruptionCD				= mod:NewNextTimer(20, 144649)
 local berserkTimer						= mod:NewBerserkTimer(418)
 
 local countdownLookWithin				= mod:NewCountdownFades(59, "ej8220")
-local countdownLingeringCorruption		= mod:NewCountdown(15.5, 144514, nil, nil, nil, nil, true)
-local countdownHurlCorruption			= mod:NewCountdown(20, 144649, nil, nil, nil, nil, true)
+local countdownLingeringCorruption		= mod:NewCountdown("Alt15.5", 144514)
+local countdownHurlCorruption			= mod:NewCountdown("Alt20", 144649)
 
 mod:AddInfoFrameOption("ej8252", false)--May still be buggy but it's needed for heroic.
 
 local corruptionLevel = EJ_GetSectionInfo(8252)
 local unleashedAngerCast = 0
 local playerInside = false
+local previousPower = nil
 
 --May be buggy with two adds spawning at exact same time
 --Two different icon functions end up both marking same mob with 8 and 7 and other mob getting no mark.
@@ -93,11 +99,18 @@ local function addsDelay()
 	specWarnManifestation:Show()
 end
 
+local function delayPowerSync()
+	mod:RegisterShortTermEvents(
+		"UNIT_POWER player"
+	)
+end
+
 function mod:OnCombatStart(delay)
 	playerInside = false
+	previousPower = nil
 	timerBlindHatredCD:Start(25-delay)
-	if self:IsDifficulty("lfr25") then--Might also be flex as well
-		berserkTimer:Start(600-delay)--No log to confirm 8 min, only one report, so changing back to 10 min for now.
+	if self:IsDifficulty("lfr25") then
+		berserkTimer:Start(600-delay)
 	else
 		berserkTimer:Start(-delay)
 	end
@@ -108,6 +121,7 @@ function mod:OnCombatStart(delay)
 end
 
 function mod:OnCombatEnd()
+	self:UnregisterShortTermEvents()
 	if self.Options.InfoFrame then
 		DBM.InfoFrame:Hide()
 	end
@@ -201,13 +215,13 @@ function mod:UNIT_DIED(args)
 end
 
 function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
-	if spellId == 145769 then--Unleash Corruption
-		self:Schedule(5, addsDelay)
+	if spellId == 145769 and self:AntiSpam(1) then--Unleash Corruption
+		self:Schedule(5, addsDelay, GetTime())
 	end
 end
 
-function mod:CHAT_MSG_MONSTER_YELL(msg)
-	if msg == L.wasteOfTime then
+function mod:ENCOUNTER_START(id)
+	if id == 1624 then
 		self:SendSync("prepull")
 	end
 end
@@ -227,7 +241,7 @@ function mod:OnSync(msg, guid)
 	elseif msg == "ManifestationDied" and not playerInside and self:AntiSpam(1) then
 		specWarnManifestationSoon:Show()
 		if not self:IsDifficulty("lfr25") then
-			self:Schedule(5, addsDelay)
+			self:Schedule(5, addsDelay, GetTime())
 		end
 	end
 end
@@ -238,6 +252,23 @@ function mod:CHAT_MSG_ADDON(prefix, message, channel, sender)
 		local bwPrefix, bwMsg = message:match("^(%u-):(.+)")
 		if bwMsg == "InsideBigAddDeath" and not playerInside and self:AntiSpam(1) then
 			specWarnManifestationSoon:Show()
+			if not self:IsDifficulty("lfr25") then
+				self:Schedule(5, addsDelay, GetTime())
+			end
 		end
 	end
+end
+
+--Make sure we send Bigwigs altPower syncs so DBM users aren't yelled at by raid leaders for not installing BW
+function mod:UNIT_POWER(uId)
+	local currentPower = UnitPower("player", 10)
+	if not previousPower or (previousPower ~= currentPower) then
+		previousPower = currentPower
+		SendAddonMessage("BigWigs", "T:".."BWPower "..currentPower, IsInGroup(2) and "INSTANCE_CHAT" or "RAID")
+	end
+end
+
+function mod:GROUP_ROSTER_UPDATE(uId)
+	local currentPower = UnitPower("player", 10)
+	SendAddonMessage("BigWigs", "T:".."BWPower "..currentPower, IsInGroup(2) and "INSTANCE_CHAT" or "RAID")
 end

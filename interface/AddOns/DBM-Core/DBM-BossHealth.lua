@@ -340,10 +340,16 @@ end
 --  General Methods  --
 -----------------------
 function bossHealth:Show(name)
+	if DBM.Options.DontShowHealthFrame then return end
 	if not anchor then createFrame(bossHealth) end
 	header:SetText(name)
 	anchor:Show()
 	bossHealth:Clear()
+end
+
+function bossHealth:SetHeaderText(name)
+	if not anchor then return end
+	header:SetText(name)
 end
 
 function bossHealth:Clear()
@@ -432,6 +438,7 @@ function bossHealth:RenameBoss(cId, newName)
 end
 
 function bossHealth:UpdateSettings()
+	if DBM.Options.DontShowHealthFrame then return end
 	if not anchor then createFrame(bossHealth) end
 	anchor:SetPoint(DBM.Options.HPFramePoint, UIParent, DBM.Options.HPFramePoint, DBM.Options.HPFrameX, DBM.Options.HPFrameY)
 	for i, v in ipairs(bars) do

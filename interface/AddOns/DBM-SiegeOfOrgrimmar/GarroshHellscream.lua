@@ -1,10 +1,11 @@
 local mod	= DBM:NewMod(869, "DBM-SiegeOfOrgrimmar", nil, 369)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10673 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10828 $"):sub(12, -3))
 mod:SetCreatureID(71865)
+mod:SetEncounterID(1623)
 mod:SetZone()
-mod:SetUsedIcons(8, 7, 6, 5, 4, 3, 2, 1)--I think garrosh will cap at 7 in most cases for minions on 25 man but show all 8 in case some real crap group has 8 shaman up? lol
+mod:SetUsedIcons(8, 7, 6, 5, 4, 3, 2, 1)
 
 mod:RegisterCombat("combat")
 
@@ -22,7 +23,7 @@ mod:RegisterEventsInCombat(
 --Stage 1: The True Horde
 local warnDesecrate					= mod:NewTargetAnnounce(144748, 3)
 local warnHellscreamsWarsong		= mod:NewSpellAnnounce(144821, 3)
-local warnFireUnstableIronStar		= mod:NewSpellAnnounce(147047, 3)
+local warnExplodingIronStar			= mod:NewSpellAnnounce(144798, 3)
 local warnFarseerWolfRider			= mod:NewSpellAnnounce("ej8294", 3, 144585)
 local warnSiegeEngineer				= mod:NewSpellAnnounce("ej8298", 4, 144616)
 local warnChainHeal					= mod:NewSpellAnnounce(144583, 4)
@@ -43,60 +44,72 @@ local warnEmpGrippingDespair		= mod:NewStackAnnounce(145195, 3, nil, mod:IsTank(
 --Starge Four: Heroic Hidden Phase
 local warnPhase4					= mod:NewPhaseAnnounce(4)
 local warnMalice					= mod:NewTargetAnnounce(147209, 2)
-local warnBombardment				= mod:NewSpellAnnounce(147120, 3)
+local warnBombardment				= mod:NewCountAnnounce(147120, 3)
 local warnManifestRage				= mod:NewSpellAnnounce(147011, 4)
+local warnIronStarFixate			= mod:NewTargetAnnounce(147665, 2)
+local warnIronStarSpawn				= mod:NewSpellAnnounce(147047, 2)
 
 --Stage 1: The True Horde
 local specWarnDesecrate				= mod:NewSpecialWarningCount(144748, nil, nil, nil, 2)
 local specWarnDesecrateYou			= mod:NewSpecialWarningYou(144748)
 local yellDesecrate					= mod:NewYell(144748)
 local specWarnHellscreamsWarsong	= mod:NewSpecialWarningSpell(144821, mod:IsTank() or mod:IsHealer())
-local specWarnFireUnstableIronStar	= mod:NewSpecialWarningSpell(147047, nil, nil, nil, 3)
+local specWarnExplodingIronStar		= mod:NewSpecialWarningSpell(144798, nil, nil, nil, 3)
 local specWarnFarseerWolfRider		= mod:NewSpecialWarningSwitch("ej8294", not mod:IsHealer())
-local specWarnSiegeEngineer			= mod:NewSpecialWarningSwitch("ej8298", false)--Only 1 person on 10 man and 2 on 25 needed, so should be off for most of raid
+local specWarnSiegeEngineer			= mod:NewSpecialWarningPreWarn("ej8298", false, 4)
 local specWarnChainHeal				= mod:NewSpecialWarningInterrupt(144583)
 local specWarnChainLightning		= mod:NewSpecialWarningInterrupt(144584, false)
 --Intermission: Realm of Y'Shaarj
-local specWarnAnnihilate			= mod:NewSpecialWarningSpell(144969, false, nil, nil, 3, 2)
+local specWarnAnnihilate			= mod:NewSpecialWarningSpell("OptionVersion3", 144969, false, nil, nil, 3)
 --Stage Two: Power of Y'Shaarj
 local specWarnWhirlingCorruption	= mod:NewSpecialWarningCount(144985)--Two options important, for distinction and setting custom sounds for empowered one vs non empowered one, don't merge
 local specWarnGrippingDespair		= mod:NewSpecialWarningStack(145183, mod:IsTank(), 3)--Unlike whirling and desecrate, doesn't need two options, distinction isn't important for tank swaps.
 local specWarnGrippingDespairOther	= mod:NewSpecialWarningTarget(145183, mod:IsTank())
-local specWarnTouchOfYShaarj		= mod:NewSpecialWarningSwitch(145071, not mod:IsHealer(), nil, nil, nil, 2)
+local specWarnTouchOfYShaarj		= mod:NewSpecialWarningSwitch("OptionVersion3", 145071, not mod:IsHealer())
+local specWarnTouchInterrupt		= mod:NewSpecialWarningInterrupt(145599, false)
 --Starge Three: MY WORLD
 local specWarnEmpWhirlingCorruption	= mod:NewSpecialWarningCount(145037)--Two options important, for distinction and setting custom sounds for empowered one vs non empowered one, don't merge
 local specWarnEmpDesecrate			= mod:NewSpecialWarningCount(144749, nil, nil, nil, 2)--^^
 --Starge Four: Heroic Hidden Phase
 local specWarnMaliceYou				= mod:NewSpecialWarningYou(147209)
 local yellMalice					= mod:NewYell(147209)
+local specWarnBombardment			= mod:NewSpecialWarningCount(147120, nil, nil, nil, 2)
+local specWarnISFixate				= mod:NewSpecialWarningYou(147665)
+local specWarnIronStarSpawn			= mod:NewSpecialWarningSpell(147047, false)
+local specWarnManifestRage			= mod:NewSpecialWarningInterrupt(147011, nil, nil, nil, 3)
+local specWarnMaliciousBlast		= mod:NewSpecialWarningStack(147235, nil, 2)
 
 --Stage 1: A Cry in the Darkness
 local timerDesecrateCD				= mod:NewCDCountTimer(35, 144748)
 local timerHellscreamsWarsongCD		= mod:NewNextTimer(42.2, 144821, nil, mod:IsTank() or mod:IsHealer())
 local timerFarseerWolfRiderCD		= mod:NewNextTimer(50, "ej8294", nil, nil, nil, 144585)--EJ says they come faster as phase progresses but all i saw was 3 spawn on any given pull and it was 30 50 50
 local timerSiegeEngineerCD			= mod:NewNextTimer(40, "ej8298", nil, nil, nil, 144616)
-local timerPowerIronStar			= mod:NewCastTimer(15, 144616)
+local timerPowerIronStar			= mod:NewCastTimer(16.5, 144616)
 --Intermission: Realm of Y'Shaarj
 local timerEnterRealm				= mod:NewNextTimer(145.5, 144866, nil, nil, nil, 144945)
 local timerYShaarjsProtection		= mod:NewBuffActiveTimer(61, "ej8305", nil, nil, nil, 144945)--May be too long, but intermission makes more sense than protection buff which actually fades before intermission ends if you do it right.
 --Stage Two: Power of Y'Shaarj
 local timerWhirlingCorruptionCD		= mod:NewCDCountTimer(49.5, 144985)--One bar for both, "empowered" makes timer too long
-local timerWhirlingCorruption		= mod:NewBuffActiveTimer(9, 144985)
+local timerWhirlingCorruption		= mod:NewBuffActiveTimer("OptionVersion2", 9, 144985, nil, false)
 local timerTouchOfYShaarjCD			= mod:NewCDCountTimer(45, 145071)
 local timerGrippingDespair			= mod:NewTargetTimer(15, 145183, nil, mod:IsTank())
 --Starge Three: MY WORLD
 --Starge Four: Heroic Hidden Phase
-local timerMaliceCD					= mod:NewNextTimer(29.5, 147209)
+local timerMaliceCD					= mod:NewNextTimer(29.5, 147209)--29.5-33sec variation
 local timerBombardmentCD			= mod:NewNextTimer(55, 147120)
 local timerBombardment				= mod:NewBuffActiveTimer(13, 147120)
+local timerClumpCheck				= mod:NewNextTimer(3, 147126)
+local timerMaliciousBlast			= mod:NewBuffFadesTimer(3, 147235, nil, false)
 
-local soundWhirlingCorrpution		= mod:NewSound(144985, nil, false)--Depends on strat. common one on 25 man is to never run away from it
-local countdownPowerIronStar		= mod:NewCountdown(15, 144616)
+local soundWhirlingCorrpution		= mod:NewSound("OptionVersion2", 144985, false)--Depends on strat. common one on 25 man is to never run away from it
+local countdownPowerIronStar		= mod:NewCountdown(16.5, 144616)
 local countdownWhirlingCorruption	= mod:NewCountdown(49.5, 144985)
-local countdownTouchOfYShaarj		= mod:NewCountdown(45, 145071, false, nil, nil, nil, true)--Off by default only because it's a cooldown and it does have a 45-48sec variation
+local countdownTouchOfYShaarj		= mod:NewCountdown("Alt45", 145071, false)--Off by default only because it's a cooldown and it does have a 45-48sec variation
 
 mod:AddSetIconOption("SetIconOnShaman", "ej8294", false, true)
-mod:AddSetIconOption("SetIconOnMinions", "ej8310", false, true)
+mod:AddSetIconOption("SetIconOnMC", 145071, false)
+mod:AddSetIconOption("SetIconOnMalice", 147209, false)
+mod:AddBoolOption("RangeFrame")
 
 local firstIronStar = false
 local engineerDied = 0
@@ -106,6 +119,8 @@ local whirlCount = 0
 local desecrateCount = 0
 local mindControlCount = 0
 local shamanAlive = 0
+local bombardCount = 0
+local bombardCD = {55, 40, 40, 25, 25}
 
 function mod:DesecrateTarget(targetname, uId)
 	if not targetname then return end
@@ -125,10 +140,24 @@ function mod:OnCombatStart(delay)
 	desecrateCount = 0
 	mindControlCount = 0
 	shamanAlive = 0
+	bombardCount = 0
 	timerDesecrateCD:Start(10.5-delay, 1)
+	specWarnSiegeEngineer:Schedule(16-delay)
 	timerSiegeEngineerCD:Start(20-delay)
 	timerHellscreamsWarsongCD:Start(22-delay)
 	timerFarseerWolfRiderCD:Start(30-delay)
+end
+
+function mod:OnCombatEnd()
+	if self.Options.RangeFrame then
+		DBM.RangeCheck:Hide()
+	end
+end
+
+local function hideRangeDelay()
+	if mod.Options.RangeFrame then
+		DBM.RangeCheck:Hide()
+	end
 end
 
 function mod:SPELL_CAST_START(args)
@@ -155,18 +184,33 @@ function mod:SPELL_CAST_START(args)
 		else
 			warnEmpWhirlingCorruption:Show(whirlCount)
 			specWarnEmpWhirlingCorruption:Show(whirlCount)
-			if self.Options.SetIconOnMinions then
-				self:ScanForMobs(72272, 0, 8, nil, 0.2, 12, "SetIconOnMinions")--I think max adds is 7 on 25 man, TODO is confirm this and set max icon to 7 instead of nil/8. Long scan time because of slow spawn
-			end
 		end
 		timerWhirlingCorruption:Start()
 		timerWhirlingCorruptionCD:Start(nil, whirlCount+1)
 		countdownWhirlingCorruption:Start()
 		soundWhirlingCorrpution:Play()
 	elseif args.spellId == 147120 then
-		warnBombardment:Show()
+		bombardCount = bombardCount + 1
+		warnBombardment:Show(bombardCount)
+		specWarnBombardment:Show(bombardCount)
 		timerBombardment:Start()
-		timerBombardmentCD:Start()
+		timerBombardmentCD:Start(bombardCD[bombardCount] or 15, bombardCount+1)
+		timerClumpCheck:Start()
+		if self.Options.RangeFrame then
+			if self:IsDifficulty("heroic10") then
+				DBM.RangeCheck:Show(8, nil, nil, 2)--Number is a guess
+			else
+				DBM.RangeCheck:Show(8, nil, nil, 6)--Number is a guess
+			end
+			self:Schedule(13, hideRangeDelay)
+		end
+	elseif args.spellId == 147011 then
+		warnManifestRage:Show()
+		if UnitDebuff("player", GetSpellInfo(147665)) then--Kiting an Unstable Iron Star
+			specWarnManifestRage:Show()
+		end
+	elseif args.spellId == 145599 then
+		specWarnTouchInterrupt:Show(args.sourceName)
 	end
 end
 
@@ -208,12 +252,19 @@ function mod:SPELL_AURA_APPLIED(args)
 	if args.spellId == 144945 then
 		warnYShaarjsProtection:Show(args.destName)
 		timerYShaarjsProtection:Start()
-	elseif args.spellId == 145065 then
+	elseif args:IsSpellID(145065, 145171) then
 		warnTouchOfYShaarj:CombinedShow(0.5, args.destName)
+		if self.Options.SetIconOnMC then
+			if self:IsDifficulty("normal25", "heroic25", "lfr25") then
+				self:SetSortedIcon(1, args.destName, 1, 4)
+			elseif self:IsDifficulty("normal10", "heroic10") then
+				self:SetSortedIcon(1, args.destName, 1, 2)
+			else
+				self:SetSortedIcon(1, args.destName, 1)
+			end
+		end
 	elseif args.spellId == 145171 then
 		warnEmpTouchOfYShaarj:CombinedShow(0.5, args.destName)
-	elseif args:IsSpellID(145071, 145175) then--Touch of Yshaarj Spread IDs?
-
 	elseif args:IsSpellID(145183, 145195) then
 		local amount = args.amount or 1
 		if args.spellId == 145183 then
@@ -244,6 +295,21 @@ function mod:SPELL_AURA_APPLIED(args)
 			specWarnMaliceYou:Show()
 			yellMalice:Yell()
 		end
+		if self.Options.SetIconOnMalice then
+			self:SetIcon(args.destName, 7)
+		end
+	elseif args.spellId == 147665 then
+		warnIronStarFixate:Show(args.destName)
+		if args:IsPlayer() then
+			specWarnISFixate:Show()
+		end
+	elseif args.spellId == 147235 and args:IsPlayer() then
+		local amount = args.amount or 1
+		timerGrippingDespair:Start(args.destName)
+		if amount >= 2 then
+			specWarnMaliciousBlast:Show(amount)
+			timerMaliciousBlast:Start()
+		end
 	end
 end
 mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
@@ -251,6 +317,10 @@ mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
 function mod:SPELL_AURA_REMOVED(args)
 	if args:IsSpellID(145183, 145195) then
 		timerGrippingDespair:Cancel(args.destName)
+	elseif args:IsSpellID(145065, 145171) and self.Options.SetIconOnMC then
+		self:SetIcon(args.destName, 0)
+	elseif args.spellId == 147209 and self.Options.SetIconOnMalice then
+		self:SetIcon(args.destName, 0)
 	end
 end
 
@@ -259,8 +329,8 @@ function mod:UNIT_DIED(args)
 	if cid == 71984 then--Siege Engineer
 		engineerDied = engineerDied + 1
 		if engineerDied == 2 then
-			warnFireUnstableIronStar:Cancel()
-			specWarnFireUnstableIronStar:Cancel()
+			warnExplodingIronStar:Cancel()
+			specWarnExplodingIronStar:Cancel()
 			timerPowerIronStar:Cancel()
 			countdownPowerIronStar:Cancel()
 		end
@@ -279,6 +349,7 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 		timerFarseerWolfRiderCD:Cancel()
 		timerDesecrateCD:Cancel()
 		timerHellscreamsWarsongCD:Cancel()
+		specWarnSiegeEngineer:Cancel()
 		timerEnterRealm:Start(25)
 	elseif spellId == 144866 then--Enter Realm of Y'Shaarj
 		timerPowerIronStar:Cancel()
@@ -330,8 +401,10 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 		timerWhirlingCorruptionCD:Cancel()
 		countdownWhirlingCorruption:Cancel()
 		warnPhase4:Show()
-		timerMaliceCD:Start(30)
-		timerBombardmentCD:Start(69)
+		timerMaliceCD:Start()
+		timerBombardmentCD:Start(70)
+	elseif spellId == 147126 then--Clump Check
+		timerClumpCheck:Start()
 	end
 end
 
@@ -339,18 +412,27 @@ function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg, _, _, _, target)
 	if msg:find("spell:144616") then
 		engineerDied = 0
 		warnSiegeEngineer:Show()
-		specWarnSiegeEngineer:Show()
+		specWarnSiegeEngineer:Cancel()
+		specWarnSiegeEngineer:Schedule(41)
 		if not firstIronStar then
 			firstIronStar = true
 			timerSiegeEngineerCD:Start(45)
 		else
 			timerSiegeEngineerCD:Start()
 		end
-		timerPowerIronStar:Start()
-		countdownPowerIronStar:Start()
-		warnFireUnstableIronStar:Schedule(15)
-		specWarnFireUnstableIronStar:Schedule(15)
-	elseif msg:find("spell:147011") then--may be need to change if we get combatlog.
-		warnManifestRage:Show()
+		if self:IsDifficulty("heroic10", "heroic25") then
+			timerPowerIronStar:Start(11.5)
+			countdownPowerIronStar:Start(11.5)
+			warnExplodingIronStar:Schedule(11.5)
+			specWarnExplodingIronStar:Schedule(11.5)
+		else
+			timerPowerIronStar:Start()
+			countdownPowerIronStar:Start()
+			warnExplodingIronStar:Schedule(16.5)
+			specWarnExplodingIronStar:Schedule(16.5	)
+        end
+	elseif msg:find("spell:147047") then
+		warnIronStarSpawn:Show()
+		specWarnIronStarSpawn:Show()
 	end
 end

@@ -1,8 +1,9 @@
 local mod	= DBM:NewMod(817, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10231 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10793 $"):sub(12, -3))
 mod:SetCreatureID(68078, 68079, 68080, 68081)--Ro'shak 68079, Quet'zal 68080, Dam'ren 68081, Iron Qon 68078
+mod:SetEncounterID(1559)
 mod:SetMainBossID(68078)
 mod:SetZone()
 mod:SetUsedIcons(8)
@@ -69,7 +70,7 @@ local timerFreezeCD						= mod:NewCDTimer(7, 135145, nil, false)
 local timerDeadZoneCD					= mod:NewCDTimer(15, 137229)
 local timerRisingAngerCD				= mod:NewNextTimer(15, 136323, nil, false)
 local timerFistSmash					= mod:NewBuffActiveTimer(8, 136146)
-local timerFistSmashCD					= mod:NewNextCountTimer(20, 136146)
+local timerFistSmashCD					= mod:NewCDCountTimer(20, 136146)
 local timerWhirlingWindsCD				= mod:NewCDTimer(30, 139167)--Heroic Phase 1
 local timerFrostSpikeCD					= mod:NewCDTimer(11, 139180)--Heroic Phase 2
 
@@ -236,7 +237,11 @@ function mod:SPELL_AURA_APPLIED(args)
 		end
 	elseif args.spellId == 134647 and args:IsPlayer() then
 		local amount = args.amount or 1
-		timerScorched:Start()
+		if self:IsDifficulty("lfr25") then
+			timerScorched:Start(15)
+		else
+			timerScorched:Start()
+		end
 		if amount > 2 then
 			specWarnScorched:Show(amount)
 		end
@@ -332,7 +337,7 @@ function mod:SPELL_DAMAGE(_, _, _, _, destGUID, _, _, _, spellId)
 		specWarnBurningCinders:Show()
 	elseif spellId == 137669 and destGUID == UnitGUID("player") and self:AntiSpam(3, 3) then
 		specWarnStormCloud:Show()
-	elseif spellId == 136520 and destGUID == UnitGUID("player") and self:AntiSpam(2, 4) then
+	elseif (spellId == 136520 or spellId == 137764) and destGUID == UnitGUID("player") and self:AntiSpam(2, 4) then
 		specWarnFrozenBlood:Show()
 	end
 end
@@ -359,6 +364,7 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 			timerUnleashedFlameCD:Cancel()
 			timerMoltenOverload:Cancel()
 			timerWhirlingWindsCD:Cancel()
+			timerImpaleCD:Cancel()
 			warnPhase2:Show()
 			self:Schedule(25, checkSpear)
 			if self:IsDifficulty("heroic10", "heroic25") then
@@ -379,6 +385,7 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 			warnWindStorm:Cancel()
 			specWarnWindStorm:Cancel()
 			timerFrostSpikeCD:Cancel()
+			timerImpaleCD:Cancel()
 			warnPhase3:Show()
 			self:Schedule(25, checkSpear)
 			timerDeadZoneCD:Start(8.5)
@@ -387,6 +394,7 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 			--confirmed, dam'ren's abilities do NOT reset in phase 4, cds from phase 3 carry over.
 			phase = 4
 			updateHealthFrame()
+			timerImpaleCD:Cancel()
 			warnPhase4:Show()
 			timerRisingAngerCD:Start(15)
 			timerFistSmashCD:Start(62, 1)
@@ -424,7 +432,7 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 		specWarnFistSmash:Show()
 		timerFistSmash:Start()
 		if self:IsDifficulty("heroic10", "heroic25") then
-			timerFistSmashCD:Start(30, fistSmashCount+1) -- heroic cd longer.
+			timerFistSmashCD:Start(28, fistSmashCount+1) -- heroic cd longer.
 		else
 			timerFistSmashCD:Start(nil, fistSmashCount+1)
 		end
@@ -448,6 +456,7 @@ function mod:UNIT_DIED(args)
 			end
 			phase = 2
 			updateHealthFrame()
+			timerImpaleCD:Cancel()
 			timerLightningStormCD:Start(17)
 			self:Unschedule(checkSpear)
 			self:Schedule(25, checkSpear)
@@ -476,6 +485,7 @@ function mod:UNIT_DIED(args)
 		else
 			phase = 3
 			updateHealthFrame()
+			timerImpaleCD:Cancel()
 			warnPhase3:Show()
 			timerDeadZoneCD:Start(6)
 			self:Unschedule(checkSpear)
@@ -490,8 +500,9 @@ function mod:UNIT_DIED(args)
 		else
 			phase = 4
 			updateHealthFrame()
-			self:Unschedule(checkSpear)
+			timerImpaleCD:Cancel()
 			timerThrowSpearCD:Cancel()
+			self:Unschedule(checkSpear)
 			self:UnregisterShortTermEvents()
 			warnPhase4:Show()
 			timerRisingAngerCD:Start()

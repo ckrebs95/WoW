@@ -1,13 +1,14 @@
 local mod	= DBM:NewMod(852, "DBM-SiegeOfOrgrimmar", nil, 369)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10548 $"):sub(12, -3))
-mod:SetCreatureID(71543)--Doesn't die, will need kill detection
+mod:SetRevision(("$Revision: 10767 $"):sub(12, -3))
+mod:SetCreatureID(71543)
+mod:SetEncounterID(1602)
 mod:SetReCombatTime(45)--Lets just assume he has same bug as tsulong in advance and avoid problems
 mod:SetZone()
 
 mod:RegisterCombat("combat")
-mod:SetWipeTime(20)--Kill yell fires litte lately, prevent wipe.
+mod:RegisterKill("yell", L.Victory)
 
 mod:RegisterEventsInCombat(
 	"SPELL_CAST_START",
@@ -17,8 +18,7 @@ mod:RegisterEventsInCombat(
 	"SPELL_PERIODIC_DAMAGE",
 	"SPELL_PERIODIC_MISSED",
 	"UNIT_SPELLCAST_SUCCEEDED boss1",
-	"CHAT_MSG_RAID_BOSS_EMOTE",
-	"CHAT_MSG_MONSTER_YELL"
+	"CHAT_MSG_RAID_BOSS_EMOTE"
 )
 
 local warnBreath						= mod:NewSpellAnnounce(143436, 3, nil, mod:IsTank() or mod:IsHealer())
@@ -38,8 +38,8 @@ local timerBreathCD						= mod:NewCDTimer(35, 143436, nil, mod:IsTank() or mod:I
 local timerSwirl						= mod:NewBuffActiveTimer(13, 143309)
 local timerShaBoltCD					= mod:NewCDTimer(6, 143295, nil, false)--every 6-20 seconds (yeah it variates that much)
 local timerSwirlCD						= mod:NewCDTimer(48.5, 143309)
-local timerShaResidue					= mod:NewBuffFadesTimer(10, 143459)
-local timerPurifiedResidue				= mod:NewBuffFadesTimer(15, 143524)
+local timerShaResidue					= mod:NewBuffFadesTimer("OptionVersion2", 10, 143459, nil, false)
+local timerPurifiedResidue				= mod:NewBuffFadesTimer("OptionVersion2", 15, 143524, nil, false)
 local timerSwellingCorruptionCD			= mod:NewCDTimer(75, 143578, nil, nil, nil, 143574)
 
 local berserkTimer						= mod:NewBerserkTimer(605)
@@ -51,9 +51,6 @@ function mod:OnCombatStart(delay)
 	timerBreathCD:Start(10-delay)
 	timerSwirlCD:Start(20-delay)
 	berserkTimer:Start(-delay)
-	self:RegisterShortTermEvents(
-		"UNIT_POWER_FREQUENT boss1"--Do not want this one persisting out of combat even after a wipe, in case you go somewhere else.
-	)
 	if self:IsDifficulty("heroic10", "heroic25") then
 		timerSwellingCorruptionCD:Start(10-delay)--10-14sec variation
 	end
@@ -116,16 +113,6 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 	end
 end
 
-function mod:UNIT_POWER_FREQUENT(uId)
-	local power = UnitPower(uId)
-	if power == 0 and self:AntiSpam(3, 1) then
-	end
-	if power > lastPower then--Only time his power ever goes UP is when he is defeated. he reaches 0 power, then goes back to 1 power
-		DBM:EndCombat(self)
-	end
-	lastPower = power
-end
-
 function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg, _, _, _, target)
 	if msg:find("spell:143469") then--Reforms
 		warnReform:Show()
@@ -140,17 +127,5 @@ function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg, _, _, _, target)
 		timerSwirlCD:Cancel()
 		timerShaBoltCD:Cancel()
 		timerSwellingCorruptionCD:Cancel()
-	end
-end
-
-function mod:CHAT_MSG_MONSTER_YELL(msg)
-	if msg == L.Victory then
-		self:SendSync("Victory")
-	end
-end
-
-function mod:OnSync(msg)
-	if msg == "Victory" and self:IsInCombat() then
-		DBM:EndCombat(self)
 	end
 end

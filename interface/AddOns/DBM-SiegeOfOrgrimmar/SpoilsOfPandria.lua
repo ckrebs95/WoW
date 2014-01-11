@@ -1,8 +1,12 @@
 local mod	= DBM:NewMod(870, "DBM-SiegeOfOrgrimmar", nil, 369)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10657 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10809 $"):sub(12, -3))
 mod:SetCreatureID(73720, 71512)
+mod:SetEncounterID(1594)
+mod:DisableESCombatDetection()
+mod:SetMinSyncRevision(10768)
+mod:SetHotfixNoticeRev(10768)
 mod:SetZone()
 
 --Can use IEEU to engage now, it's about 4 seconds slower but better than registering an out of combat CLEU event in entire zone.
@@ -26,7 +30,7 @@ mod:RegisterEvents(
 	"CHAT_MSG_MONSTER_YELL"
 )
 
-local warnSuperNova				= mod:NewCastAnnounce(146815, 4, nil, false, nil, nil, nil, nil, 2)--Heroic
+local warnSuperNova				= mod:NewCastAnnounce("OptionVersion3", 146815, 4, nil, nil, false)--Heroic
 --Massive Crate of Goods
 ----Mogu
 local warnReturnToStone			= mod:NewSpellAnnounce(145489, 2)
@@ -36,7 +40,7 @@ local warnSetToBlow				= mod:NewTargetAnnounce(145987, 4)--145996 is cast ID
 ----Mogu
 local warnForbiddenMagic		= mod:NewTargetAnnounce(145230, 2)
 local warnMatterScramble		= mod:NewSpellAnnounce(145288, 3)
-local warnCrimsonRecon			= mod:NewSpellAnnounce(142947, 4, nil, mod:IsTank(), nil, nil, nil, nil, 2)
+local warnCrimsonRecon			= mod:NewSpellAnnounce("OptionVersion2", 142947, 4, nil, mod:IsTank())
 local warnEnergize				= mod:NewSpellAnnounce(145461, 3)--May be script spellid that doesn't show in combat log
 local warnTorment				= mod:NewSpellAnnounce(142934, 3, nil, mod:IsHealer())
 ----Mantid
@@ -54,7 +58,7 @@ local warnSparkofLife			= mod:NewSpellAnnounce(142694, 3, nil, false)
 local warnBreathofFire			= mod:NewSpellAnnounce(146222, 3)--Do not have timer for this yet, add not alive long enough.
 local warnGustingCraneKick		= mod:NewSpellAnnounce(146180, 3)
 
-local specWarnSuperNova			= mod:NewSpecialWarningSpell(146815, false, nil, nil, 2, 2)
+local specWarnSuperNova			= mod:NewSpecialWarningSpell("OptionVersion3", 146815, false, nil, nil, 2)
 --Massive Crate of Goods
 local specWarnSetToBlowYou		= mod:NewSpecialWarningYou(145987)
 local specWarnSetToBlow			= mod:NewSpecialWarningPreWarn(145996, nil, 4, nil, 3)
@@ -63,7 +67,7 @@ local specWarnSetToBlow			= mod:NewSpecialWarningPreWarn(145996, nil, 4, nil, 3)
 local specWarnForbiddenMagic	= mod:NewSpecialWarningInterrupt(145230, mod:IsMelee())
 local specWarnMatterScramble	= mod:NewSpecialWarningSpell(145288, nil, nil, nil, 2)
 local specWarnCrimsonRecon		= mod:NewSpecialWarningMove(142947, mod:IsTank(), nil, nil, 3)
-local specWarnTorment			= mod:NewSpecialWarningSpell(142934, mod:IsHealer())
+local specWarnTorment			= mod:NewSpecialWarningSpell("OptionVersion2", 142934, false)
 ----Mantid
 local specWarnMantidSwarm		= mod:NewSpecialWarningSpell(142539, mod:IsTank())
 local specWarnResidue			= mod:NewSpecialWarningSpell(145786, mod:IsMagicDispeller())
@@ -352,44 +356,6 @@ function mod:UPDATE_WORLD_STATES()
 	end
 	worldTimer = time
 end
-
---[[
-function mod:Test(time)
-	if time > worldTimer then
-		maxTimer = time
-		berserkTimer:Cancel()
-		countdownBerserk:Cancel()
-		berserkTimer:Start(time+1)
-	end
-	if time % 10 == 0 then
-		berserkTimer:Update(maxTimer-time-1, maxTimer)
-		if time == 300 and self.Options["timer_berserk"] then
-			berserkWarning1:Show(5, DBM_CORE_MIN)
-		elseif time == 180 and self.Options["timer_berserk"] then
-			berserkWarning1:Show(3, DBM_CORE_MIN)
-		elseif time == 60 and self.Options["timer_berserk"] then
-			berserkWarning2:Show(1, DBM_CORE_MIN)
-		elseif time == 30 and self.Options["timer_berserk"] then
-			berserkWarning2:Show(30, DBM_CORE_SEC)
-		elseif time == 20 then
-			countdownBerserk:Start()
-		elseif time == 10 and self.Options["timer_berserk"] then
-			berserkWarning2:Show(10, DBM_CORE_SEC)
-		end
-	end
-	worldTimer = time
-end
---/script DBM:GetModByName("870"):Test2()
-local test = 0
-function mod:Test2()
-	test = test + 1
-	local time = 272 - test
-	if time < 2 then test = 0 end
-	print(time)
-	self:Test(time)
-	self:ScheduleMethod(0.9, "Test2")
-end
-]]
 
 function mod:OnSync(msg)
 	if msg == "prepull" then

@@ -44,7 +44,7 @@
 
 
 
-local revision =("$Revision: 10490 $"):sub(12, -3)
+local revision =("$Revision: 10818 $"):sub(12, -3)
 local FrameTitle = "DBM_GUI_Option_"	-- all GUI frames get automatically a name FrameTitle..ID
 
 local PanelPrototype = {}
@@ -369,11 +369,23 @@ do
 
 	local function replaceSpellLinks(id)
 		local spellId = tonumber(id)
-		local spellName = GetSpellInfo(spellId) or DBM_CORE_UNKNOWN
+		local spellName = GetSpellInfo(spellId)
+		if not spellName then
+			spellName = DBM_CORE_UNKNOWN
+			if DBM.Options.DebugMode then
+				print("Spell ID not exists: "..spellId)
+			end
+		end
 		return ("|cff71d5ff|Hspell:%d|h%s|h|r"):format(spellId, spellName)
 	end
 
 	local function replaceJournalLinks(id)
+		if DBM.Options.DebugMode then
+			local check = EJ_GetSectionInfo(tonumber(id))
+			if not check then 
+				print("Journal ID not exists: "..id)
+			end
+		end
 		local link = select(9, EJ_GetSectionInfo(tonumber(id))) or DBM_CORE_UNKNOWN
 		return link:gsub("|h%[(.*)%]|h", "|h%1|h")
 	end
@@ -406,7 +418,7 @@ do
 			name = name:gsub("%$journal:(%d+)", replaceJournalLinks)
 		end
 		local dropdown
-		if soundVal and DBM.Options.ShowAdvSWSounds then
+		if soundVal and DBM.Options.ShowAdvSWSound then
 			dropdown = self:CreateDropdown(nil,sounds,mod.Options[soundVal], function(value)
 				mod.Options[soundVal] = value
 				DBM:PlaySpecialWarningSound(value)
@@ -1545,9 +1557,10 @@ local function CreateOptionsMenu()
 		--            Raid Warning Colors            --
 		-----------------------------------------------
 		local RaidWarningPanel = DBM_GUI_Frame:CreateNewPanel(L.Tab_RaidWarning, "option")
-		local raidwarnoptions = RaidWarningPanel:CreateArea(L.RaidWarning_Header, nil, 250, true)
+		local raidwarnoptions = RaidWarningPanel:CreateArea(L.RaidWarning_Header, nil, 280, true)
 
 		local ShowWarningsInChat 	= raidwarnoptions:CreateCheckButton(L.ShowWarningsInChat, true, nil, "ShowWarningsInChat")
+		local ShowSWarningsInChat 	= raidwarnoptions:CreateCheckButton(L.ShowSWarningsInChat, true, nil, "ShowSWarningsInChat")
 		local ShowFakedRaidWarnings = raidwarnoptions:CreateCheckButton(L.ShowFakedRaidWarnings,  true, nil, "ShowFakedRaidWarnings")
 		local WarningIconLeft		= raidwarnoptions:CreateCheckButton(L.WarningIconLeft,  true, nil, "WarningIconLeft")
 		local WarningIconRight 		= raidwarnoptions:CreateCheckButton(L.WarningIconRight,  true, nil, "WarningIconRight")
@@ -1719,7 +1732,7 @@ local function CreateOptionsMenu()
 		--------------------------------------
 		local BarSetupPanel = DBM_GUI_Frame:CreateNewPanel(L.BarSetup, "option")
 
-		local BarSetup = BarSetupPanel:CreateArea(L.AreaTitle_BarSetup, nil, 240, true)
+		local BarSetup = BarSetupPanel:CreateArea(L.AreaTitle_BarSetup, nil, 360, true)
 
 		local movemebutton = BarSetup:CreateButton(L.MoveMe, 100, 16)
 		movemebutton:SetPoint('BOTTOMRIGHT', BarSetup.frame, "TOPRIGHT", 0, -1)
@@ -1729,7 +1742,7 @@ local function CreateOptionsMenu()
 
 		local maindummybar = DBM.Bars:CreateDummyBar()
 		maindummybar.frame:SetParent(BarSetup.frame)
-		maindummybar.frame:SetPoint('BOTTOM', BarSetup.frame, "TOP", 0, -65)
+		maindummybar.frame:SetPoint("BOTTOM", BarSetup.frame, "TOP", 0, -35)
 		maindummybar.frame:SetScript("OnUpdate", function(self, elapsed) maindummybar:Update(elapsed) end)
 		do
 			-- little hook to prevent this bar from changing size/scale
@@ -1742,14 +1755,9 @@ local function CreateOptionsMenu()
 			end
 		end
 
-		local iconleft = BarSetup:CreateCheckButton(L.BarIconLeft, nil, nil, nil, "IconLeft")
-		local iconright = BarSetup:CreateCheckButton(L.BarIconRight, nil, nil, nil, "IconRight")
-		iconleft:SetPoint('BOTTOMRIGHT', maindummybar.frame, "TOPLEFT", -5, 5)
-		iconright:SetPoint('BOTTOMLEFT', maindummybar.frame, "TOPRIGHT", 5, 5)
-
 		local color1 = BarSetup:CreateColorSelect(64)
 		local color2 = BarSetup:CreateColorSelect(64)
-		color1:SetPoint('TOPLEFT', BarSetup.frame, "TOPLEFT", 20, -80)
+		color1:SetPoint('TOPLEFT', BarSetup.frame, "TOPLEFT", 20, -60)
 		color2:SetPoint('TOPLEFT', color1, "TOPRIGHT", 20, 0)
 
 		local color1reset = BarSetup:CreateButton(L.Reset, 64, 10, nil, GameFontNormalSmall)
@@ -1813,28 +1821,19 @@ local function CreateOptionsMenu()
 				DBM.Bars:SetOption("Texture", value)
 			end
 		)
-		TextureDropDown:SetPoint("TOPLEFT", BarSetup.frame, "TOPLEFT", 210, -80)
+		TextureDropDown:SetPoint("TOPLEFT", BarSetup.frame, "TOPLEFT", 210, -55)
 
-		local ExpandUpwards = BarSetup:CreateCheckButton(L.ExpandUpwards, false, nil, nil, "ExpandUpwards")
-		ExpandUpwards:SetPoint("TOPLEFT", TextureDropDown, "BOTTOMLEFT", 0, -10)
+		local Styles = {
+			{	text	= L.BarDBM,				value	= "DBM" },
+			{	text	= L.BarBigWigs,			value 	= "BigWigs" }
+		}
 
-		local FillUpBars = BarSetup:CreateCheckButton(L.FillUpBars, false, nil, nil, "FillUpBars")
-		FillUpBars:SetPoint("TOP", ExpandUpwards, "BOTTOM", 0, 5)
-
-		local ClickThrough = BarSetup:CreateCheckButton(L.ClickThrough, false, nil, nil, "ClickThrough")
-		ClickThrough:SetPoint("TOPLEFT", color1reset, "BOTTOMLEFT", -7, -5)
-
-		-- Functions for the next 2 Areas
-		local function createDBTOnShowHandler(option)
-			return function(self)
-				self:SetValue(DBM.Bars:GetOption(option))
+		local StyleDropDown = BarSetup:CreateDropdown(L.BarStyle, Styles,
+			DBM.Bars:GetOption("Style"), function(value)
+				DBM.Bars:SetOption("Style", value)
 			end
-		end
-		local function createDBTOnValueChangedHandler(option)
-			return function(self)
-				DBM.Bars:SetOption(option, self:GetValue())
-			end
-		end
+		)
+		StyleDropDown:SetPoint("TOPLEFT", TextureDropDown, "BOTTOMLEFT", 0, -10)
 
 		local Fonts = MixinSharedMedia3("font", {
 			{	text	= "Default",		value 	= STANDARD_TEXT_FONT,			font = STANDARD_TEXT_FONT		},
@@ -1847,12 +1846,74 @@ local function CreateOptionsMenu()
 			function(value)
 				DBM.Bars:SetOption("Font", value)
 			end)
-		FontDropDown:SetPoint("TOPLEFT", BarSetup.frame, "TOPLEFT", 210, -200)
+		FontDropDown:SetPoint("TOPLEFT", StyleDropDown, "BOTTOMLEFT", 0, -10)
+
+		local iconleft = BarSetup:CreateCheckButton(L.BarIconLeft, nil, nil, nil, "IconLeft")
+		iconleft:SetPoint("TOPLEFT", FontDropDown, "BOTTOMLEFT", 10, 0)
+
+		local iconright = BarSetup:CreateCheckButton(L.BarIconRight, nil, nil, nil, "IconRight")
+		iconright:SetPoint("LEFT", iconleft, "LEFT", 130, 0)
+
+		local ExpandUpwards = BarSetup:CreateCheckButton(L.ExpandUpwards, false, nil, nil, "ExpandUpwards")
+		ExpandUpwards:SetPoint("TOPLEFT", iconleft, "BOTTOMLEFT", 0, 0)
+
+		local FillUpBars = BarSetup:CreateCheckButton(L.FillUpBars, false, nil, nil, "FillUpBars")
+		FillUpBars:SetPoint("TOPLEFT", iconright, "BOTTOMLEFT", 0, 0)
+
+		local ClickThrough = BarSetup:CreateCheckButton(L.ClickThrough, false, nil, nil, "ClickThrough")
+		ClickThrough:SetPoint("TOPLEFT", ExpandUpwards, "BOTTOMLEFT", 0, 0)
+
+		-- Functions for bar setup
+		local function createDBTOnShowHandler(option)
+			return function(self)
+				if option == "EnlargeBarsPercent" then
+					self:SetValue(DBM.Bars:GetOption(option) * 100)
+				else
+					self:SetValue(DBM.Bars:GetOption(option))
+				end
+			end
+		end
+		local function createDBTOnValueChangedHandler(option)
+			return function(self)
+				if option == "EnlargeBarsPercent" then
+					DBM.Bars:SetOption(option, self:GetValue() / 100)
+					self:SetValue(DBM.Bars:GetOption(option) * 100)
+				else
+					DBM.Bars:SetOption(option, self:GetValue())
+					self:SetValue(DBM.Bars:GetOption(option))
+				end
+				
+			end
+		end
 
 		local FontSizeSlider = BarSetup:CreateSlider(L.Bar_FontSize, 7, 18, 1)
-		FontSizeSlider:SetPoint("TOPLEFT", BarSetup.frame, "TOPLEFT", 20, -202)
+		FontSizeSlider:SetPoint("TOPLEFT", BarSetup.frame, "TOPLEFT", 20, -175)
 		FontSizeSlider:SetScript("OnShow", createDBTOnShowHandler("FontSize"))
 		FontSizeSlider:HookScript("OnValueChanged", createDBTOnValueChangedHandler("FontSize"))
+
+		local BarHeightSlider = BarSetup:CreateSlider(L.Bar_Height, 10, 35, 1)
+		BarHeightSlider:SetPoint("TOPLEFT", BarSetup.frame, "TOPLEFT", 20, -215)
+		BarHeightSlider:SetScript("OnShow", createDBTOnShowHandler("Height"))
+		BarHeightSlider:HookScript("OnValueChanged", createDBTOnValueChangedHandler("Height"))
+
+		local descriptionText = BarSetup:CreateText(L.Bar_DBMOnly, 400, nil, nil, "LEFT")
+		descriptionText:SetPoint("TOPLEFT", BarSetup.frame, "TOPLEFT", 20, -252)
+
+		local EnlargeTimeSlider = BarSetup:CreateSlider(L.Bar_EnlargeTime, 6, 30, 1)
+		EnlargeTimeSlider:SetPoint("TOPLEFT", BarSetup.frame, "TOPLEFT", 20, -285)
+		EnlargeTimeSlider:SetScript("OnShow", createDBTOnShowHandler("EnlargeBarsTime"))
+		EnlargeTimeSlider:HookScript("OnValueChanged", createDBTOnValueChangedHandler("EnlargeBarsTime"))
+
+		local EnlargePerecntSlider = BarSetup:CreateSlider(L.Bar_EnlargePercent, 0, 50, 0.5)
+		EnlargePerecntSlider:SetPoint("TOPLEFT", BarSetup.frame, "TOPLEFT", 20, -325)
+		EnlargePerecntSlider:SetScript("OnShow", createDBTOnShowHandler("EnlargeBarsPercent"))
+		EnlargePerecntSlider:HookScript("OnValueChanged", createDBTOnValueChangedHandler("EnlargeBarsPercent"))
+
+		local SparkBars = BarSetup:CreateCheckButton(L.BarSpark, false, nil, nil, "Spark")
+		SparkBars:SetPoint("TOPLEFT", ClickThrough, "BOTTOMLEFT", 0, -40)
+
+		local FlashBars = BarSetup:CreateCheckButton(L.BarFlash, false, nil, nil, "Flash")
+		FlashBars:SetPoint("TOPLEFT", SparkBars, "BOTTOMLEFT", 0, 0)
 
 		-----------------------
 		-- Small Bar Options --
@@ -1927,7 +1988,7 @@ local function CreateOptionsMenu()
 		local specArea = specPanel:CreateArea(L.Area_SpecWarn, nil, 515, true)
 		local check1 = specArea:CreateCheckButton(L.SpecWarn_Enabled, true, nil, "ShowSpecialWarnings")
 		local check2 = specArea:CreateCheckButton(L.SpecWarn_FlashFrame, true, nil, "ShowFlashFrame")
-		local check3 = specArea:CreateCheckButton(L.SpecWarn_AdSound, true, nil, "ShowAdvSWSounds")
+		local check3 = specArea:CreateCheckButton(L.SpecWarn_AdSound, true, nil, "ShowAdvSWSound")
 
 		local showbutton = specArea:CreateButton(L.SpecWarn_DemoButton, 120, 16)
 		showbutton:SetPoint('TOPRIGHT', specArea.frame, "TOPRIGHT", -5, -5)
@@ -2232,7 +2293,7 @@ local function CreateOptionsMenu()
 		resetbutton:SetScript("OnClick", function()
 				DBM.Options.ShowSpecialWarnings = DBM.DefaultOptions.ShowSpecialWarnings
 				DBM.Options.ShowFlashFrame = DBM.DefaultOptions.ShowFlashFrame
-				DBM.Options.ShowAdvSWSounds = DBM.DefaultOptions.ShowAdvSWSounds
+				DBM.Options.ShowAdvSWSound = DBM.DefaultOptions.ShowAdvSWSound
 				DBM.Options.SpecialWarningFont = DBM.DefaultOptions.SpecialWarningFont
 				DBM.Options.SpecialWarningSound = DBM.DefaultOptions.SpecialWarningSound
 				DBM.Options.SpecialWarningSound2 = DBM.DefaultOptions.SpecialWarningSound2
@@ -2258,7 +2319,7 @@ local function CreateOptionsMenu()
 				DBM.Options.SpecialWarningY = DBM.DefaultOptions.SpecialWarningY
 				check1:SetChecked(DBM.Options.ShowSpecialWarnings)
 				check2:SetChecked(DBM.Options.ShowFlashFrame)
-				check3:SetChecked(DBM.Options.ShowAdvSWSounds)
+				check3:SetChecked(DBM.Options.ShowAdvSWSound)
 				FontDropDown:SetSelectedValue(DBM.Options.SpecialWarningFont)
 				SpecialWarnSoundDropDown:SetSelectedValue(DBM.Options.SpecialWarningSound)
 				SpecialWarnSoundDropDown2:SetSelectedValue(DBM.Options.SpecialWarningSound2)
@@ -2337,6 +2398,7 @@ local function CreateOptionsMenu()
 		spamOutArea:CreateCheckButton(L.SpamBlockNoSetIcon, true, nil, "DontSetIcons")
 		spamOutArea:CreateCheckButton(L.SpamBlockNoRangeFrame, true, nil, "DontShowRangeFrame")
 		spamOutArea:CreateCheckButton(L.SpamBlockNoInfoFrame, true, nil, "DontShowInfoFrame")
+		spamOutArea:CreateCheckButton(L.SpamBlockNoHealthFrame, true, nil, "DontShowHealthFrame")
 
 		local spamArea = spamPanel:CreateArea(L.Area_SpamFilter, nil, 150, true)
 		spamArea:CreateCheckButton(L.StripServerName, true, nil, "StripServerName")
@@ -2366,9 +2428,10 @@ local function CreateOptionsMenu()
 	
 	do
 		local hideBlizzPanel = DBM_GUI_Frame:CreateNewPanel(L.Panel_HideBlizzard, "option")
-		local hideBlizzArea = hideBlizzPanel:CreateArea(L.Area_HideBlizzard, nil, 140, true)
+		local hideBlizzArea = hideBlizzPanel:CreateArea(L.Area_HideBlizzard, nil, 160, true)
 		hideBlizzArea:CreateCheckButton(L.HideBossEmoteFrame, true, nil, "HideBossEmoteFrame")
 		hideBlizzArea:CreateCheckButton(L.HideWatchFrame, true, nil, "HideWatchFrame")
+		hideBlizzArea:CreateCheckButton(L.HideTooltips, true, nil, "HideTooltips")
 		local filterYell	= hideBlizzArea:CreateCheckButton(L.SpamBlockSayYell, true, nil, "FilterSayAndYell")
 		
 		local movieOptions = {

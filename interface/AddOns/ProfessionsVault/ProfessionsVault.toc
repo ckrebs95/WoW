@@ -6,9 +6,9 @@
 ## URL: http://www.wowace.com/addons/professionsvault
 ## X-Category: Profession
 ## Credits: translators: next96, freydis88, Farook, Shorty, alpha2009, zhTW, D_Angel, Valdesca, ChtiClem
-## Version: 7.1.6
-## X-Build: 531
-## X-ReleaseDate: 2013-12-11T17:02:55Z
+## Version: 7.1.7
+## X-Build: 533
+## X-ReleaseDate: 2014-01-03T10:24:18Z
 ## X-Revision: $Revision: 501 $
 ## SavedVariables: ProfessionsVaultDB 
 ## SavedVariablesPerCharacter: 
@@ -16,7 +16,7 @@
 ## OptionalDeps: Ace3, LibDataBroker-1.1, LibDBIcon-1.0, AtlasLoot
 ## LoadManagers: AddonLoader
 ## X-LoadOn-Always: delayed
-## X-Curse-Packaged-Version: 7.1.6
+## X-Curse-Packaged-Version: 7.1.7
 ## X-Curse-Project-Name: ProfessionsVault
 ## X-Curse-Project-ID: professionsvault
 ## X-Curse-Repository-ID: wow/professionsvault/mainline

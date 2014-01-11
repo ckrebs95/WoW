@@ -1,8 +1,12 @@
 local mod	= DBM:NewMod(868, "DBM-SiegeOfOrgrimmar", nil, 369)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10671 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10809 $"):sub(12, -3))
 mod:SetCreatureID(72311, 72560, 72249, 73910, 72302, 72561, 73909)--Boss needs to engage off friendly NCPS, not the boss. I include the boss too so we don't detect a win off losing varian. :)
+mod:SetEncounterID(1622)
+mod:DisableESCombatDetection()
+mod:SetMinSyncRevision(10768)
+mod:SetHotfixNoticeRev(10768)
 mod:SetReCombatTime(180, 15)--fix combat re-starts after killed. Same issue as tsulong. Fires TONS of IEEU for like 1-2 minutes after fight ends.
 mod:SetMainBossID(72249)
 mod:SetZone()
@@ -11,7 +15,7 @@ mod:SetUsedIcons(8, 7, 2)
 mod:RegisterCombat("combat")
 
 mod:RegisterEvents(
-	"CHAT_MSG_MONSTER_YELL"
+	"CHAT_MSG_MONSTER_SAY"
 )
 
 mod:RegisterEventsInCombat(
@@ -22,12 +26,11 @@ mod:RegisterEventsInCombat(
 	"SPELL_AURA_REMOVED",
 	"SPELL_PERIODIC_DAMAGE",
 	"SPELL_PERIODIC_MISSED",
-	"SPELL_DAMAGE",
-	"SPELL_MISSED",
 	"UNIT_DIED",
 	"UNIT_SPELLCAST_SUCCEEDED",
 	"UPDATE_WORLD_STATES",
-	"CHAT_MSG_RAID_BOSS_EMOTE"
+	"CHAT_MSG_RAID_BOSS_EMOTE",
+	"CHAT_MSG_MONSTER_YELL"
 )
 
 --Stage 2: Bring Her Down!
@@ -53,7 +56,7 @@ local warnFlamesofGalakrond			= mod:NewStackAnnounce(147029, 2, nil, mod:IsTank(
 local specWarnWarBanner				= mod:NewSpecialWarningSwitch(147328, not mod:IsHealer())
 local specWarnFracture				= mod:NewSpecialWarningTarget(146899, mod:IsHealer())
 local specWarnChainheal				= mod:NewSpecialWarningInterrupt(146757)
-local specWarnFlameArrow			= mod:NewSpecialWarningMove(146764)
+local specWarnFlameArrow			= mod:NewSpecialWarningMove("OptionVersion2", 146764, false)
 ----Master Cannoneer Dragryn (Tower)
 local specWarnMuzzleSpray			= mod:NewSpecialWarningSpell(147824, nil, nil, nil, 2)
 ----Lieutenant General Krugruk (Tower)
@@ -66,10 +69,11 @@ local specWarnPoisonCloud			= mod:NewSpecialWarningMove(147705)
 local specWarnFlamesofGalakrond		= mod:NewSpecialWarningCount(147029, false, nil, nil, 2)--Cast often, so lets make this optional since it's spammy
 local specWarnFlamesofGalakrondYou	= mod:NewSpecialWarningYou(147068)
 local yellFlamesofGalakrond			= mod:NewYell(147068)
-local specWarnFlamesofGalakrondTank	= mod:NewSpecialWarningStack(147029, mod:IsTank(), 3)
+local specWarnFlamesofGalakrondStack= mod:NewSpecialWarningStack("OptionVersion4", 147029, nil, 6)
 local specWarnFlamesofGalakrondOther= mod:NewSpecialWarningTarget(147029, mod:IsTank())
 
 --Stage 2: Bring Her Down!
+local timerCombatStarts				= mod:NewCombatTimer(35.5)
 local timerAddsCD					= mod:NewNextTimer(55, "ej8553", nil, nil, nil, 2457)
 local timerTowerCD					= mod:NewTimer(99, "timerTowerCD", 88852)
 local timerTowerGruntCD				= mod:NewTimer(60, "timerTowerGruntCD", 89253)
@@ -106,8 +110,18 @@ function mod:OnCombatStart(delay)
 		timerTowerCD:Start(116.5-delay)
 	else
 		timerTowerGruntCD:Start(6)
-		mod:Schedule(6, TowerGrunt)
+		self:Schedule(6, TowerGrunt)
 	end
+	if self.Options.SpecWarn146764move then--specWarnFlameArrow is turned on, since it's off by default, no reasont to register high CPU events unless user turns it on
+		self:RegisterShortTermEvents(
+			"SPELL_DAMAGE",
+			"SPELL_MISSED"
+		)
+	end
+end
+
+function mod:OnCombatEnd()
+	self:UnregisterShortTermEvents()
 end
 
 function mod:SPELL_CAST_START(args)
@@ -162,21 +176,20 @@ function mod:SPELL_AURA_APPLIED(args)
 end
 
 function mod:SPELL_AURA_APPLIED_DOSE(args)
-	if args.spellId == 147029 then--Tank debuff version
+	if args.spellId == 147029 then
+		local amount = args.amount or 1
+		if amount >= 6 and args:IsPlayer() then
+			specWarnFlamesofGalakrondStack:Show(amount)
+		end
 		local uId = DBM:GetRaidUnitId(args.destName)
 		for i = 1, 5 do
 			local bossUnitID = "boss"..i
 			if UnitExists(bossUnitID) and UnitGUID(bossUnitID) == args.sourceGUID then
 				if self:IsTanking(uId, bossUnitID) then
-					local amount = args.amount or 1
 					warnFlamesofGalakrond:Show(args.destName, amount)
 					timerFlamesofGalakrond:Start(args.destName)
-					if amount >= 3 then
-						if args:IsPlayer() then
-							specWarnFlamesofGalakrondTank:Show(amount)
-						else
-							specWarnFlamesofGalakrondOther:Show(args.destName)
-						end
+					if amount >= 6 then
+						specWarnFlamesofGalakrondOther:Show(args.destName)
 					end
 				end
 				break--break loop if find right boss
@@ -228,11 +241,25 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 	end
 end
 
+--[[
+TODO, see if one of these earlier says are a pull say (not sure if they are part of pull, or RP from ships landing)
+"<12.2 21:55:36> [CHAT_MSG_MONSTER_SAY] CHAT_MSG_MONSTER_SAY#Well done! Landing parties, form up! Footmen to the front!#King Varian Wrynn#
+"<18.0 21:55:42> [CHAT_MSG_MONSTER_SAY] CHAT_MSG_MONSTER_SAY#The Dragonmaw are supporting the Warchief.#Lady Jaina Proudmoore#
+"<32.4 21:55:56> [CHAT_MSG_MONSTER_SAY] CHAT_MSG_MONSTER_SAY#We're going to need some serious firepower.#Lady Jaina Proudmoore
+"<47.1 21:56:11> [INSTANCE_ENCOUNTER_ENGAGE_UNIT] Fake Args:
+"<47.9 21:56:12> [PLAYER_REGEN_DISABLED]  ++ > Regen Disabled : Entering combat! ++ > ", -- [1167]
+--]]
+function mod:CHAT_MSG_MONSTER_SAY(msg)
+	if msg == L.wasteOfTime then
+		self:SendSync("prepull")
+	elseif msg == L.wasteOfTime2 then
+		self:SendSync("prepull2")
+	end
+end
+
 function mod:CHAT_MSG_MONSTER_YELL(msg)
 	if msg == L.newForces1 or msg == L.newForces1H or msg == L.newForces2 or msg == L.newForces3 or msg == L.newForces4 then
 		self:SendSync("Adds")
-	elseif msg == L.Pull and not self:IsInCombat() then
-		DBM:StartCombat(self, 0)
 	end
 end
 
@@ -249,7 +276,7 @@ end
 function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg)
 	if msg:find("cFFFF0404") then--They fixed epiccenter bug (figured they would). Color code should be usuable though. It's only emote on encounter that uses it.
 		warnDemolisher:Show()
-		if self:IsDifficulty("heroic10", "heroic25") and firstTower == 1 then
+		if self:IsDifficulty("heroic10", "heroic25") and firstTower == 0 then
 			timerTowerGruntCD:Start(15)
 			self:Schedule(15, TowerGrunt)
 			firstTower = 2
@@ -277,5 +304,9 @@ function mod:OnSync(msg)
 		if self.Options.SetIconOnAdds then
 			self:ScanForMobs(72958, 0, 8, 2, 0.2, 8)
 		end
+	elseif msg == "prepull" then--Alliance
+		timerCombatStarts:Start()
+	elseif msg == "prepull2" then--Horde
+		timerCombatStarts:Start(31.5)
 	end
 end

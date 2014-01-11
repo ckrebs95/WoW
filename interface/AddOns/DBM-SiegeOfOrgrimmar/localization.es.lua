@@ -7,7 +7,7 @@ local L
 L= DBM:GetModLocalization(852)
 
 L:SetMiscLocalization({
-	Victory			= "Ah, you have done it!  The waters are pure once more." --TODO need translation
+	Victory			= "¡Ah, lo habéis logrado! Las aguas vuelven a ser puras."
 })
 
 ---------------------------
@@ -19,10 +19,6 @@ L= DBM:GetModLocalization(849)
 -- Norushen --
 ---------------------------
 L= DBM:GetModLocalization(866)
-
-L:SetMiscLocalization({
-	wasteOfTime			= "Muy bien, crearé un campo para mantener aislada vuestra corrupción."
-})
 
 ------------------
 -- Sha of Pride --
@@ -54,6 +50,8 @@ L:SetOptionLocalization({
 })
 
 L:SetMiscLocalization({
+	wasteOfTime		= "¡Bien hecho! ¡Grupos de desembarco, formad! ¡Infantería, al frente!",--Alliance Version
+	wasteOfTime2	= "Well done. The first brigade has made landfall.",--Horde Version, TODO needs translation
 	Pull		= "Clan Faucedraco, ¡recuperad los muelles y empujadlos al mar! ¡Por Grito Infernal! ¡Por la Horda auténtica!",
 	newForces1	= "¡Ya vienen!",--Jaina's line, alliance
 	newForces1H	= "Bring her down quick so i can wrap my fingers around her neck.",--Sylva's line, horde, TODO needs translation
@@ -91,12 +89,12 @@ L:SetOptionLocalization({
 })
 
 L:SetMiscLocalization({
-	newForces1					= "Warriors, on the double!", --TODO need translation
-	newForces2					= "Defend the gate!", --TODO need translation
-	newForces3					= "Rally the forces!", --TODO need translation
-	newForces4					= "Kor'kron, at my side!", --TODO need translation
-	newForces5					= "Next squad, to the front!", --TODO need translation
-	allForces					= "All Kor'kron... under my command... kill them... NOW!", --TODO need translation
+	newForces1					= "¡Guerreros, paso ligero!",
+	newForces2					= "¡Defended la puerta",
+	newForces3					= "¡Reunid a las tropas!",
+	newForces4					= "¡Kor'kron, conmigo!",
+	newForces5					= "¡Siguiente escuadrón, al frente!",
+	allForces					= "Atención, Korkron: ¡matadlos!",
 	nextAdds					= "Siguientes Adds: "
 })
 
@@ -141,13 +139,14 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(853)
 
 L:SetWarningLocalization({
-	specWarnActivatedVulnerable		= "Eres vulnerable a %s - ¡Esquiva!",
-	specWarnCriteriaLinked			= "!Estás enlazado a %s!"
+	specWarnActivatedVulnerable		= "Eres vulnerable a %s - ¡Evítalo!",
+	specWarnMoreParasites			= "Hacen falta más parásitos - ¡NO mitigues actívamente!"
 })
 
 L:SetOptionLocalization({
-	specWarnActivatedVulnerable		= "Mostrar aviso especial cunado eres vulnerable a activar paragons",
-	specWarnCriteriaLinked			= "Mostrar aviso especial cuando estés enlazado con $spell:144095"
+	specWarnActivatedVulnerable		= "Mostrar aviso especial cuando eres vulnerable a un Dechado",
+	specWarnMoreParasites			= "Mostrar aviso especial cuando se necesiten más parásitos",
+	AimArrow						= "Mostrar flecha del DBM cuando a alguien le afecte $spell:142948"
 })
 
 L:SetMiscLocalization({

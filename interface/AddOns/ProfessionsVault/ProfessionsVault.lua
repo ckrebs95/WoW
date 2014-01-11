@@ -10,7 +10,7 @@ local PVLDB
 local minimapIcon = LibStub("LibDBIcon-1.0")
 vars.svnrev = vars.svnrev or {}
 local svnrev = vars.svnrev
-svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 531 $"):match("%d+"))
+svnrev["ProfessionsVault.lua"] = tonumber(("$Revision: 533 $"):match("%d+"))
 local DB_VERSION_MAJOR = 1
 local DB_VERSION_MINOR = 4
 local _G = _G
@@ -682,12 +682,14 @@ return {
       type = "toggle",
       order = 62,
     },
+    --[[
     ldbeinstein = {
       name = L["Show All Recipes"],
       desc = L["Show All Recipes"],
       type = "toggle",
       order = 63,
     },
+    ]]--
     minimap = {
       name = L["Minimap icon"],
       desc = L["Show minimap icon"],
@@ -2185,13 +2187,15 @@ function addon:ActivateLink(cname,pname,link,nodropdown)
         CloseTradeSkill()
       else
        if useguildhack and cname and pname and IsInGuild() then
-         local barename, realm = select(2,addon:name_normalize(cname))
+         local fullname, barename, realm = addon:name_normalize(cname)
          local data = DB.chars[cname] and DB.chars[cname].data
 	 local magic = allProf[pname].magic
-	 if magic and data and 
-	    data.faction == UnitFactionGroup("player") and
-	    realm == GetRealmName():gsub("%s","") then
-	    GetGuildMemberRecipes(barename, magic)
+	 if magic and data
+	    and data.faction == UnitFactionGroup("player") 
+	    -- and realm == GetRealmName():gsub("%s","") 
+	    then
+	    debug("GetGuildMemberRecipes("..fullname..","..magic..")")
+	    GetGuildMemberRecipes(fullname, magic)
 	 end
        end
        if nolinkProf[pname] then

@@ -19,10 +19,6 @@ L= DBM:GetModLocalization(849)
 ---------------------------
 L= DBM:GetModLocalization(866)
 
-L:SetMiscLocalization({
-	wasteOfTime			= "Very well, I will create a field to keep your corruption quarantined."
-})
-
 ------------------
 -- Sha of Pride --
 ------------------
@@ -53,13 +49,15 @@ L:SetOptionLocalization({
 })
 
 L:SetMiscLocalization({
-	Pull		= "Dragonmaw clan, retake the docks and push them into the sea!  In the name of Hellscream and the True Horde!",
-	newForces1	= "Here they come!",--Jaina's line, alliance
-	newForces1H	= "Bring her down quick so i can wrap my fingers around her neck.",--Sylva's line, horde
-	newForces2	= "Dragonmaw, advance!",
-	newForces3	= "For Hellscream!",
-	newForces4	= "Next squad, push forward!",
-	tower		= "The door barring the"--The door barring the South/North Tower has been breached!
+	wasteOfTime		= "Well done! Landing parties, form up! Footmen to the front!",--Alliance Version
+	wasteOfTime2	= "Well done. The first brigade has made landfall.",--Horde Version
+	Pull			= "Dragonmaw clan, retake the docks and push them into the sea!  In the name of Hellscream and the True Horde!",
+	newForces1		= "Here they come!",--Jaina's line, alliance
+	newForces1H		= "Bring her down quick so i can wrap my fingers around her neck.",--Sylva's line, horde
+	newForces2		= "Dragonmaw, advance!",
+	newForces3		= "For Hellscream!",
+	newForces4		= "Next squad, push forward!",
+	tower			= "The door barring the"--The door barring the South/North Tower has been breached!
 })
 
 --------------------
@@ -151,13 +149,14 @@ L= DBM:GetModLocalization(853)
 
 L:SetWarningLocalization({
 	specWarnActivatedVulnerable		= "You are vulnerable to %s - Avoid!",
-	specWarnCriteriaLinked			= "You are linked to %s!"
+	specWarnMoreParasites			= "You need more parasites - Do NOT block!"
 })
 
 L:SetOptionLocalization({
 	warnToxicCatalyst				= DBM_CORE_AUTO_ANNOUNCE_OPTIONS.spell:format("ej8036"),
 	specWarnActivatedVulnerable		= "Show special warning when you are vulnerable to activating paragons",
-	specWarnCriteriaLinked			= "Show special warning when you are linked to $spell:144095",
+	specWarnMoreParasites			= "Show special warning when you need more parasites",
+	AimArrow						= "Show DBM Arrow when someone is affected by $spell:142948",
 	yellToxicCatalyst				= DBM_CORE_AUTO_YELL_OPTION_TEXT:format("ej8036")
 })
 
@@ -176,7 +175,7 @@ L:SetMiscLocalization({
 	KorvenFlavor		= "The end of an ancient empire",--http://ptr.wowhead.com/quest=31232
 	KorvenFlavor2		= "Take your Gurthani Tablets and choke on them",--http://ptr.wowhead.com/quest=31232
 	IyyokukFlavor		= "See opportunities. Exploit them!",--Does not have quests, http://ptr.wowhead.com/npc=65305
-	KarozFlavor			= "You won't be leaping anymore!",---Does not have questst, http://ptr.wowhead.com/npc=65303
+	KarozFlavor			= "You won't be leaping anymore!",---Does not have quests, http://ptr.wowhead.com/npc=65303
 	SkeerFlavor			= "A bloody delight!",--http://ptr.wowhead.com/quest=31178
 	RikkalFlavor		= "Specimen request fulfilled"--http://ptr.wowhead.com/quest=31508
 })
@@ -185,6 +184,10 @@ L:SetMiscLocalization({
 -- Garrosh Hellscream --
 ------------------------
 L= DBM:GetModLocalization(869)
+
+L:SetOptionLocalization({
+	RangeFrame	= "Show dynamic range frame (8)<br/>(This is a smart range frame that shows when you reach $spell:147126 threshold)"
+})
 
 -------------
 --  Trash  --

@@ -20,10 +20,6 @@ L= DBM:GetModLocalization(849)
 ---------------------------
 L= DBM:GetModLocalization(866)
 
-L:SetMiscLocalization({
-	wasteOfTime			= "그래, 좋다. 너희 타락을 가두어 둘 공간을 만들겠다."
-})
-
 ------------------
 -- Sha of Pride --
 ------------------
@@ -54,6 +50,8 @@ L:SetOptionLocalization({
 })
 
 L:SetMiscLocalization({
+	wasteOfTime		= "잘했다! 상륙 부대, 정렬! 보병대, 앞으로!",--Alliance Version
+	wasteOfTime2	= "잘 했소. 선봉대가 성공적으로 상륙했군.",--Horde Version
 	Pull			= "용아귀 부족 용사들이여! 항구를 탈환하고 적을 바다로 몰아내라! 헬스크림 님과 진정한 호드를 위하여!",
 	newForces1		= "놈들이 와요!",--제이나 대사
 	newForces1H		= "저 계집을 당장 끌어내려라. 내가 친히 그녀의 목을 죌 것이다.",--실바나스 대사 (확인 필요)
@@ -146,12 +144,13 @@ L= DBM:GetModLocalization(853)
 
 L:SetWarningLocalization({
 	specWarnActivatedVulnerable		= "%s에게 취약함 - 주의!",
-	specWarnCriteriaLinked			= "계산 완료 대상과 연결됨 : %s!"
+	specWarnMoreParasites			= "기생충이 더 필요합니다 - 막지마세요!"
 })
 
 L:SetOptionLocalization({
 	specWarnActivatedVulnerable		= "활성화된 용장중 주의해야 할 용장이 있을 경우 특수 경고 보기",
-	specWarnCriteriaLinked			= "$spell:144095 대상과 연결된 경우 특수 경고 보기"
+	specWarnMoreParasites			= "기생충이 더 필요할 때 특수 경고 보기",
+	AimArrow						= "$spell:142948 대상이 정해진 경우 DBM 화살표 보기"
 })
 
 L:SetMiscLocalization({
@@ -178,6 +177,10 @@ L:SetMiscLocalization({
 -- Garrosh Hellscream --
 ------------------------
 L= DBM:GetModLocalization(869)
+
+L:SetOptionLocalization({
+	RangeFrame	= "거리 창 보기(8m)($spell:147126 주문의 경고 수치에 도달한 경우에만 보임)"
+})
 
 -------------
 --  Trash  --

@@ -20,10 +20,6 @@ L= DBM:GetModLocalization(849)
 ---------------------------
 L= DBM:GetModLocalization(866)
 
-L:SetMiscLocalization({
-	wasteOfTime			= "Хорошо, я создам поле для удерживания порчи."
-})
-
 ------------------
 -- Sha of Pride --
 ------------------
@@ -142,12 +138,13 @@ L= DBM:GetModLocalization(853)
 
 L:SetWarningLocalization({
 	specWarnActivatedVulnerable		= "Вы уязвимы к %s - Избегайте!",
-	specWarnCriteriaLinked			= "Вы слинкованы с %s!"
+	specWarnMoreParasites			= "Вам нужно больше паразитов - Не блокируйте!"
 })
 
 L:SetOptionLocalization({
 	specWarnActivatedVulnerable		= "Спец-предупреждение когда вы уязвимы к активирующимся идеалам",
-	specWarnCriteriaLinked			= "Спец-предупреждение когда вы слинкованы с $spell:144095"
+	specWarnMoreParasites			= "Спец-предупреждение когда вам нужно больше паразитов",
+	AimArrow						= "Показывать стрелку DBM, когда на ком-то $spell:142948"
 })
 
 L:SetMiscLocalization({
