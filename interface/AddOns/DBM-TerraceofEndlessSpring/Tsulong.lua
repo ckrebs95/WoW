@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(742, "DBM-TerraceofEndlessSpring", nil, 320)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10728 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10980 $"):sub(12, -3))
 mod:SetCreatureID(62442)--62919 Unstable Sha, 62969 Embodied Terror
 mod:SetEncounterID(1505)
 mod:SetReCombatTime(60)--fix lfr combat re-starts after killed.
@@ -10,10 +10,10 @@ mod:RegisterCombat("combat")
 mod:RegisterKill("yell", L.Victory)
 
 mod:RegisterEventsInCombat(
-	"SPELL_AURA_APPLIED",
-	"SPELL_AURA_APPLIED_DOSE",
-	"SPELL_CAST_START",
-	"SPELL_CAST_SUCCESS",
+	"SPELL_AURA_APPLIED 122768 123012 122858 123716",
+	"SPELL_AURA_APPLIED_DOSE 122768",
+	"SPELL_CAST_START 122855",
+	"SPELL_CAST_SUCCESS 122752 124176 123630",
 	"RAID_BOSS_EMOTE",
 	"UNIT_SPELLCAST_SUCCEEDED"
 )
@@ -103,16 +103,18 @@ function mod:OnCombatStart(delay)
 end
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args.spellId == 122768 then
-		if args:IsPlayer() and (args.amount or 1) >= 9 and (args.amount or 1) % 3 == 0  then
-			specWarnDreadShadows:Show(args.amount)
+	local spellId = args.spellId
+	if spellId == 122768 and args:IsPlayer() then
+		local amount = args.amount or 1
+		if amount >= 9 and amount % 3 == 0  then
+			specWarnDreadShadows:Show(amount)
 		end
-	elseif args.spellId == 123012 and args:GetDestCreatureID() == 62442 then
+	elseif spellId == 123012 and args:GetDestCreatureID() == 62442 then
 		warnTerrorize:Show(args.destName)
 		specWarnTerrorize:Show(args.destName)
-	elseif args.spellId == 122858 and args:IsPlayer() then
+	elseif spellId == 122858 and args:IsPlayer() then
 		timerBathedinLight:Start()
-	elseif args.spellId == 123716 then
+	elseif spellId == 123716 then
 		lightOfDayCount = lightOfDayCount + 1
 		warnLightOfDay:Show(args.destName, lightOfDayCount)
 		timerLightOfDay:Start(args.destName)
@@ -121,7 +123,8 @@ end
 mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
 
 function mod:SPELL_CAST_START(args)
-	if args.spellId == 122855 then
+	local spellId = args.spellId
+	if spellId == 122855 then
 		breathCount = breathCount + 1
 		warnSunBreath:Show(breathCount)
 		if timerNightCD:GetTime() < 100 then
@@ -132,7 +135,8 @@ function mod:SPELL_CAST_START(args)
 end
 
 function mod:SPELL_CAST_SUCCESS(args)
-	if args.spellId == 122752 then
+	local spellId = args.spellId
+	if spellId == 122752 then
 		warnShadowBreath:Show()
 		specWarnShadowBreath:Show()
 		if timerNightCD:GetTime() < 93 then

@@ -1,22 +1,22 @@
 local mod	= DBM:NewMod(824, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10728 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10977 $"):sub(12, -3))
 mod:SetCreatureID(69427)
 mod:SetEncounterID(1576)
 mod:SetZone()
 mod:SetUsedIcons(1)
 
-mod:RegisterCombat("emote", L.Pull)
+mod:RegisterCombat("combat")
 
 mod:RegisterEventsInCombat(
-	"SPELL_CAST_START",
-	"SPELL_CAST_SUCCESS",
-	"SPELL_AURA_APPLIED",
-	"SPELL_AURA_APPLIED_DOSE",
-	"SPELL_AURA_REMOVED",
-	"SPELL_DAMAGE",
-	"SPELL_MISSED",
+	"SPELL_CAST_START 136594 138763 139867 139869",
+	"SPELL_CAST_SUCCESS 138644",
+	"SPELL_AURA_APPLIED 138569 138609 138780 139537 138691",
+	"SPELL_AURA_APPLIED_DOSE 138569",
+	"SPELL_AURA_REMOVED 138609 138569 138691",
+	"SPELL_DAMAGE 138405",
+	"SPELL_MISSED 138618",
 	"RAID_BOSS_WHISPER"
 )
 
@@ -51,6 +51,7 @@ local timerAnimusActivation			= mod:NewCastTimer(60, 139537)--LFR only
 local timerSiphonAnimaCD			= mod:NewNextCountTimer(20, 138644)--Needed mainly for heroic. not important on normal/LFR
 local timerAnimaRingCD				= mod:NewNextTimer(24.2, 136954, nil, mod:IsTank())--Updated/Verified post march 19 hotfix
 local timerAnimaFontCD				= mod:NewCDTimer(25, 138691)
+local timerInterruptingJolt			= mod:NewCastTimer(2.2, 138763)
 local timerInterruptingJoltCD		= mod:NewCDCountTimer(21.5, 138763)--seems 23~24 normal and lfr. every 21.5 exactly on heroic
 local timerEmpowerGolemCD			= mod:NewCDTimer(16, 138780)
 
@@ -67,6 +68,14 @@ local siphon = 0
 local jolt = 0
 
 mod:AddBoolOption("SetIconOnFont", true)
+
+local function PowerDelay()
+	local power = UnitPower("boss1")
+	if power >= 70 and power < 75 then
+		timerInterruptingJoltCD:Start(18, 1)
+		countdownInterruptingJolt:Start(18)
+	end
+end
 
 function mod:AnimaRingTarget(targetname)
 	warnAnimaRing:Show(targetname)
@@ -92,7 +101,8 @@ function mod:OnCombatEnd()
 end
 
 function mod:SPELL_CAST_START(args)
-	if args.spellId == 136954 then
+	local spellId = args.spellId
+	if spellId == 136954 then
 		self:BossTargetScanner(69427, "AnimaRingTarget", 0.02, 12)
 		timerAnimaRingCD:Start()
 		countdownAnimaRing:Start()
@@ -100,6 +110,11 @@ function mod:SPELL_CAST_START(args)
 		jolt = jolt + 1
 		warnInterruptingJolt:Show(jolt)
 		specWarnInterruptingJolt:Show()
+		if self:IsDifficulty("lfr25") then
+			timerInterruptingJolt:Start(3.8)
+		else
+			timerInterruptingJolt:Start()
+		end
 		if self:IsDifficulty("heroic10", "heroic25") then
 			timerInterruptingJoltCD:Start(nil, jolt+1)
 			countdownInterruptingJolt:Start()
@@ -109,16 +124,9 @@ function mod:SPELL_CAST_START(args)
 	end
 end
 
-local function PowerDelay()
-	local power = UnitPower("boss1")
-	if power >= 70 and power < 75 then
-		timerInterruptingJoltCD:Start(18, 1)
-		countdownInterruptingJolt:Start(18)
-	end
-end
-
 function mod:SPELL_CAST_SUCCESS(args)
-	if args.spellId == 138644 and self:IsDifficulty("heroic10", "heroic25") then--Only start on heroic, on normal it's 6 second cd, not worth using timer there
+	local spellId = args.spellId
+	if spellId == 138644 and self:IsDifficulty("heroic10", "heroic25") then--Only start on heroic, on normal it's 6 second cd, not worth using timer there
 		siphon = siphon + 1
 		timerSiphonAnimaCD:Start(nil, siphon+1)
 		self:Schedule(2, PowerDelay)
@@ -126,7 +134,8 @@ function mod:SPELL_CAST_SUCCESS(args)
 end
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args.spellId == 138569 then
+	local spellId = args.spellId
+	if spellId == 138569 then
 		local uId = DBM:GetRaidUnitId(args.destName)
 		if self:IsTanking(uId, "boss1") then--Only want sprays that are on tanks, not bads standing on tanks.
 			local amount = args.amount or 1
@@ -142,20 +151,20 @@ function mod:SPELL_AURA_APPLIED(args)
 				end
 			end
 		end
-	elseif args.spellId == 138609 then
+	elseif spellId == 138609 then
 		warnMatterSwap:Show(args.destName)
 		timerMatterSwap:Start(args.destName)
 		if args:IsPlayer() then
 			specWarnMatterSwap:Show()
 		end
-	elseif args.spellId == 138780 then
+	elseif spellId == 138780 then
 		warnEmpowerGolem:Show(args.destName)
 		timerEmpowerGolemCD:Start()
-	elseif args.spellId == 139537 then
+	elseif spellId == 139537 then
 		warnActivation:Show()
 		timerAnimusActivation:Start()
 		countdownActivation:Start()
-	elseif args.spellId == 138691 then
+	elseif spellId == 138691 then
 		warnAnimaFont:Show(args.destName)
 		timerAnimaFontCD:Start()
 		if args:IsPlayer() then
@@ -169,11 +178,12 @@ end
 mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
 
 function mod:SPELL_AURA_REMOVED(args)
-	if args.spellId == 138609 then
+	local spellId = args.spellId
+	if spellId == 138609 then
 		timerMatterSwap:Cancel(args.destName)
-	elseif args.spellId == 138569 then
+	elseif spellId == 138569 then
 		timerExplosiveSlam:Cancel(args.destName)
-	elseif args.spellId == 138691 and self.Options.SetIconOnFont then
+	elseif spellId == 138691 and self.Options.SetIconOnFont then
 		self:SetIcon(args.destName, 0)
 	end
 end

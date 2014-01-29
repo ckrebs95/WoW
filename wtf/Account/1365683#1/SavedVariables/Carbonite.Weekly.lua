@@ -15,7 +15,7 @@ NXWeek = {
 				["Version"] = 0.1,
 			},
 			["Weekly"] = {
-				["SecondsToReset"] = 1389607136,
+				["SecondsToReset"] = 1391421547,
 			},
 		},
 	},

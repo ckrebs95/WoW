@@ -1,8 +1,10 @@
 local mod	= DBM:NewMod(194, "DBM-Firelands", nil, 78)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 90 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 100 $"):sub(12, -3))
 mod:SetCreatureID(52530)
+mod:SetEncounterID(1206)
+mod:DisableEEKillDetection()
 mod:SetZone()
 mod:SetModelSound("Sound\\Creature\\ALYSRAZOR\\VO_FL_ALYSRAZOR_AGGRO.wav", "Sound\\Creature\\ALYSRAZOR\\VO_FL_ALYSRAZOR_TRANSITION_02.wav")
 --Long: I serve a new master now, mortals!
@@ -37,7 +39,7 @@ local specWarnGushingWoundSelf	= mod:NewSpecialWarningYou(99308, false)
 local specWarnTantrum			= mod:NewSpecialWarningSpell(99362, mod:IsTank())
 local specWarnGushingWoundOther	= mod:NewSpecialWarningTarget(99308, false)
 
-local timerCombatStart			= mod:NewCombatTimer(35.5)
+local timerCombatStart			= mod:NewCombatTimer(34)
 local timerFieryVortexCD		= mod:NewNextTimer(179, 99794)
 local timerMoltingCD			= mod:NewNextTimer(60, 99464)
 local timerCataclysm			= mod:NewCastTimer(5, 102111)--Heroic
@@ -152,7 +154,7 @@ function mod:SPELL_AURA_REMOVED(args)
 		timerTantrum:Cancel()
 	elseif args.spellId == 99359 and ((args.sourceGUID == UnitGUID("target") and self:IsTank()) or not self:IsTank() and args.sourceGUID == UnitGUID("targettarget")) then--^^ Same as above only with diff spell
 		timerSatiated:Cancel()
-	elseif args.spellId == 101731 then
+	elseif args.spellId == 99844 then
 		timerBlazingClaw:Cancel(args.destName)
 	end
 end

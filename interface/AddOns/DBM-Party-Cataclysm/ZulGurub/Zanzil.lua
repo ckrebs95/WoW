@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(184, "DBM-Party-Cataclysm", 11, 76)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 79 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 96 $"):sub(12, -3))
 mod:SetCreatureID(52053)
 mod:SetZone()
 
@@ -58,7 +58,7 @@ function mod:OnCombatEnd()
 end
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args.spellId == 96388 then
+	if args.spellId == 96338 then
 		timerZanzilGas:Start()
 	elseif args.spellId == 96316 then
 		warnZanzilElixir:Show()

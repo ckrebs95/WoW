@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Kazrogal", "DBM-Hyjal")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 527 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 532 $"):sub(12, -3))
 mod:SetCreatureID(17888)
 mod:SetModelID(17886)
 mod:SetZone()
@@ -41,7 +41,7 @@ function mod:SPELL_CAST_START(args)
 end
 
 function mod:SPELL_CAST_SUCCESS(args)
-	if args.spellId == 31447 then
+	if args.spellId == 31480 then
 		warnStomp:Show()
 	end
 end

@@ -15,7 +15,7 @@ NXWhouse = {
 				["Version"] = 0.15,
 				["Khaz Modan"] = {
 					["I was framed"] = {
-						["Money"] = 322385573,
+						["Money"] = 571965258,
 					},
 					["Exodus"] = {
 					},

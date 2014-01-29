@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Shahraz", "DBM-BlackTemple")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 527 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 531 $"):sub(12, -3))
 mod:SetCreatureID(22947)
 mod:SetModelID(21252)
 mod:SetZone()
@@ -16,7 +16,7 @@ mod:RegisterEventsInCombat(
 	"SPELL_AURA_REMOVED",
 	"SPELL_CAST_SUCCESS",
 	"UNIT_HEALTH target focus mouseover",
-	"UNIT_SPELLCAST_SUCCEEDED"
+	"UNIT_SPELLCAST_SUCCEEDED target focus"
 )
 
 local warnFA			= mod:NewTargetAnnounce(41001, 4)
@@ -73,8 +73,6 @@ function mod:SPELL_AURA_APPLIED(args)
 		else
 			self:Schedule(1, showFATargets)
 		end
-	elseif args.spellId == 99999 then
-		warnEnrage:Show()
 	end
 end
 mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED

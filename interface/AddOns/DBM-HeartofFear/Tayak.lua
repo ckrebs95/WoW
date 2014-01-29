@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(744, "DBM-HeartofFear", nil, 330)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10819 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10980 $"):sub(12, -3))
 mod:SetCreatureID(62543)
 mod:SetEncounterID(1504)
 mod:SetZone()
@@ -9,11 +9,11 @@ mod:SetZone()
 mod:RegisterCombat("combat")
 
 mod:RegisterEventsInCombat(
-	"SPELL_AURA_APPLIED",
-	"SPELL_AURA_APPLIED_DOSE",
-	"SPELL_AURA_REMOVED",
-	"SPELL_CAST_START",
-	"SPELL_CAST_SUCCESS",
+	"SPELL_AURA_APPLIED 123474 123471",
+	"SPELL_AURA_APPLIED_DOSE 123474 123471",
+	"SPELL_AURA_REMOVED 123474",
+	"SPELL_CAST_START 125310",
+	"SPELL_CAST_SUCCESS 123474 123175",
 	"CHAT_MSG_RAID_BOSS_EMOTE",
 	"UNIT_SPELLCAST_SUCCEEDED boss1"
 )
@@ -85,21 +85,24 @@ function mod:OnCombatEnd()
 end
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args.spellId == 123474 then
-		warnOverwhelmingAssault:Show(args.destName, args.amount or 1)
+	local spellId = args.spellId
+	if spellId == 123474 then
+		local amount = args.amount or 1
+		warnOverwhelmingAssault:Show(args.destName, amount)
 		timerOverwhelmingAssault:Start(args.destName)
 		if args:IsPlayer() then
-			if (args.amount or 1) >= 2 then
-				specWarnOverwhelmingAssault:Show(args.amount)
+			if amount >= 2 then
+				specWarnOverwhelmingAssault:Show(amount)
 			end
 		else
-			if (args.amount or 1) >= 1 and not UnitDebuff("player", GetSpellInfo(123474)) and not UnitIsDeadOrGhost("player") then--Other tank has at least one stack and you have none
+			if amount >= 1 and not UnitDebuff("player", GetSpellInfo(123474)) and not UnitIsDeadOrGhost("player") then--Other tank has at least one stack and you have none
 				specWarnOverwhelmingAssaultOther:Show(args.destName)--So nudge you to taunt it off other tank already.
 			end
 		end
-	elseif args.spellId == 123471 then
-		if phase2 and (args.amount or 1) % 3 == 0 or not phase2 then
-			warnIntensify:Show(args.destName, args.amount or 1)
+	elseif spellId == 123471 then
+		local amount = args.amount or 1
+		if phase2 and amount % 3 == 0 or not phase2 then
+			warnIntensify:Show(args.destName, amount)
 		end
 		timerIntensifyCD:Start(intensifyCD)
 	end
@@ -107,13 +110,15 @@ end
 mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
 
 function mod:SPELL_AURA_REMOVED(args)
-	if args.spellId == 123474 then
+	local spellId = args.spellId
+	if spellId == 123474 then
 		timerOverwhelmingAssault:Cancel(args.destName)
 	end
 end
 
 function mod:SPELL_CAST_START(args)
-	if args.spellId == 125310 then
+	local spellId = args.spellId
+	if spellId == 125310 then
 		warnBladeTempest:Show()
 		specWarnBladeTempest:Show()
 		soundBladeTempest:Play()
@@ -124,9 +129,10 @@ function mod:SPELL_CAST_START(args)
 end
 
 function mod:SPELL_CAST_SUCCESS(args)
-	if args.spellId == 123474 then
+	local spellId = args.spellId
+	if spellId == 123474 then
 		timerOverwhelmingAssaultCD:Start()--Start CD here, since this might miss.
-	elseif args.spellId == 123175 then
+	elseif spellId == 123175 then
 		warnWindStep:Show(args.destName)
 		if self:IsDifficulty("lfr25") then
 			timerWindStepCD:Start(30)

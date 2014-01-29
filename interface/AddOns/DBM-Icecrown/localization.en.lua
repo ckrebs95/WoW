@@ -1,87 +1,5 @@
 local L
 
----------------------------
---  Trash - Lower Spire  --
----------------------------
-L = DBM:GetModLocalization("LowerSpireTrash")
-
-L:SetGeneralLocalization{
-	name = "Lower Spire trash"
-}
-
-L:SetWarningLocalization{
-	SpecWarnTrap		= "Trap Activated! - Deathbound Ward released"--creatureid 37007
-}
-
-L:SetOptionLocalization{
-	SpecWarnTrap		= "Show special warning for trap activation",
-	SetIconOnDarkReckoning	= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(69483),
-	SetIconOnDeathPlague	= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(72865)
-}
-
-L:SetMiscLocalization{
-	WarderTrap1		= "Who... goes there...?",
-	WarderTrap2		= "I... awaken!",
-	WarderTrap3		= "The master's sanctum has been disturbed!"
-}
-
----------------------------
---  Trash - Plagueworks  --
----------------------------
-L = DBM:GetModLocalization("PlagueworksTrash")
-
-L:SetGeneralLocalization{
-	name = "Plagueworks Trash"
-}
-
-L:SetWarningLocalization{
-	SpecWarnTrap	= "Trap Activated! - Vengeful Fleshreapers incoming"--creatureid 37038
-}
-
-L:SetOptionLocalization{
-	SpecWarnTrap	= "Show special warning for trap activation"
-}
-
-L:SetMiscLocalization{
-	FleshreaperTrap1		= "Quickly! We'll ambush them from behind!",
-	FleshreaperTrap2		= "You... cannot escape us!",
-	FleshreaperTrap3		= "The living... here?!"
-}
-
----------------------------
---  Trash - Crimson Hall  --
----------------------------
-L = DBM:GetModLocalization("CrimsonHallTrash")
-
-L:SetGeneralLocalization{
-	name = "Crimson Hall Trash"
-}
-
-L:SetOptionLocalization{
-	BloodMirrorIcon		= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(70451)
-}
-
----------------------------
---  Trash - Frostwing Hall  --
----------------------------
-L = DBM:GetModLocalization("FrostwingHallTrash")
-
-L:SetGeneralLocalization{
-	name = "Frostwing Hall Trash"
-}
-
-L:SetWarningLocalization{
-	SpecWarnGosaEvent	= "Sindragosa gauntlet started!"
-}
-
-L:SetOptionLocalization{
-	SpecWarnGosaEvent	= "Show special warning for Sindragosa gauntlet event"
-}
-
-L:SetMiscLocalization{
-	SindragosaEvent		= "You must not approach the Frost Queen. Quickly, stop them!"
-}
-
 ----------------------
 --  Lord Marrowgar  --
 ----------------------
@@ -154,13 +72,13 @@ L:SetTimerLocalization{
 
 L:SetMiscLocalization{
 	PullAlliance	= "Fire up the engines! We got a meetin' with destiny, lads!",
-	KillAlliance	= "Don't say I didn't warn ya, scoundrels! Onward, brothers and sisters!",
 	PullHorde		= "Rise up, sons and daughters of the Horde! Today we battle a hated enemy of the Horde! LOK'TAR OGAR!",
-	KillHorde		= "The Alliance falter. Onward to the Lich King!",
 	AddsAlliance	= "Reavers, Sergeants, attack",
 	AddsHorde		= "Marines, Sergeants, attack",
 	MageAlliance	= "We're taking hull damage, get a battle-mage out here to shut down those cannons!",
-	MageHorde		= "We're taking hull damage, get a sorcerer out here to shut down those cannons!"
+	MageHorde		= "We're taking hull damage, get a sorcerer out here to shut down those cannons!",
+	Hammer 			= "Orgrim's Hammer",
+	Skybreaker		= "Skybreaker"
 }
 
 -----------------------------
@@ -180,7 +98,6 @@ L:SetOptionLocalization{
 }
 
 L:SetMiscLocalization{
-	RunePower			= "Blood Power",
 	PullAlliance		= "For every Horde soldier that you killed -- for every Alliance dog that fell, the Lich King's armies grew. Even now the val'kyr work to raise your fallen as Scourge.",
 	PullHorde			= "Kor'kron, move out! Champions, watch your backs. The Scourge have been..."
 }
@@ -321,6 +238,7 @@ L:SetWarningLocalization{
 
 L:SetTimerLocalization{
 	TimerPortalsOpen		= "Portals open",
+	TimerPortalsClose		= "Portals close",
 	TimerBlazingSkeleton	= "Next Blazing Skeleton",
 	TimerAbom				= "Next Abomination"
 }
@@ -329,13 +247,12 @@ L:SetOptionLocalization{
 	SetIconOnBlazingSkeleton	= "Set icon on Blazing Skeleton (skull)",
 	WarnPortalOpen				= "Show warning when Nightmare Portals are opened up",
 	TimerPortalsOpen			= "Show timer when Nightmare Portals are opened up",
+	TimerPortalsClose			= "Show timer when Nightmare Portals are closed",
 	TimerBlazingSkeleton		= "Show timer for next Blazing Skeleton spawn",
 	TimerAbom					= "Show timer for next Gluttonous Abomination spawn (Experimental)"
 }
 
 L:SetMiscLocalization{
-	YellPull		= "Intruders have breached the inner sanctum. Hasten the destruction of the green dragon! Leave only bones and sinew for the reanimation!",
-	YellKill		= "I AM RENEWED! Ysera grant me the favor to lay these foul creatures to rest!",
 	YellPortals		= "I have opened a portal into the Dream. Your salvation lies within, heroes..."
 }
 
@@ -429,4 +346,58 @@ L:SetMiscLocalization{
 	ValkGrabbed				= "Valkyr Shadowguard grabbed %s",
 	PlagueStackWarning		= "Warning: %s has %d stacks of Necrotic Plague",
 	AchievementCompleted	= ">> ACHIEVEMENT COMPLETE: %s has %d stacks of Necrotic Plague <<"
+}
+
+---------------------------
+--  Trash - Lower Spire  --
+---------------------------
+L = DBM:GetModLocalization("LowerSpireTrash")
+
+L:SetGeneralLocalization{
+	name = "Lower Spire trash"
+}
+
+L:SetWarningLocalization{
+	SpecWarnTrap		= "Trap Activated! - Deathbound Ward released"--creatureid 37007
+}
+
+L:SetOptionLocalization{
+	SpecWarnTrap		= "Show special warning for trap activation",
+}
+
+L:SetMiscLocalization{
+	WarderTrap1		= "Who... goes there...?",
+	WarderTrap2		= "I... awaken!",
+	WarderTrap3		= "The master's sanctum has been disturbed!"
+}
+
+-------------
+--  Trash  --
+-------------
+L = DBM:GetModLocalization("ICCTrash")
+
+L:SetGeneralLocalization{
+	name = "Icecrown Trash"
+}
+
+L:SetWarningLocalization{
+	SpecWarnTrapL		= "Trap Activated! - Deathbound Ward released",
+	SpecWarnTrapP		= "Trap Activated! - Vengeful Fleshreapers incoming",
+	SpecWarnGosaEvent	= "Sindragosa gauntlet started!"
+}
+
+L:SetOptionLocalization{
+	SpecWarnTrapL		= "Show special warning for Deathbound Ward trap activation",
+	SpecWarnTrapP		= "Show special warning for engeful Fleshreapers trap activation",
+	SpecWarnGosaEvent	= "Show special warning for Sindragosa gauntlet event"
+}
+
+L:SetMiscLocalization{
+	WarderTrap1			= "Who... goes there...?",
+	WarderTrap2			= "I... awaken!",
+	WarderTrap3			= "The master's sanctum has been disturbed!",
+	FleshreaperTrap1	= "Quickly! We'll ambush them from behind!",
+	FleshreaperTrap2	= "You... cannot escape us!",
+	FleshreaperTrap3	= "The living... here?!",
+	SindragosaEvent		= "You must not approach the Frost Queen. Quickly, stop them!"
 }

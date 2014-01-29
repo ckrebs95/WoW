@@ -18,19 +18,14 @@ Quartz3DB = {
 		},
 		["Mirror"] = {
 		},
-		["Focus"] = {
-			["profiles"] = {
-				["Default"] = {
-					["x"] = 860,
-				},
-			},
-		},
 		["Player"] = {
 			["profiles"] = {
 				["Default"] = {
 					["x"] = 835,
 				},
 			},
+		},
+		["EnemyCasts"] = {
 		},
 		["GCD"] = {
 		},
@@ -58,7 +53,12 @@ Quartz3DB = {
 		},
 		["Range"] = {
 		},
-		["EnemyCasts"] = {
+		["Focus"] = {
+			["profiles"] = {
+				["Default"] = {
+					["x"] = 860,
+				},
+			},
 		},
 		["Latency"] = {
 		},

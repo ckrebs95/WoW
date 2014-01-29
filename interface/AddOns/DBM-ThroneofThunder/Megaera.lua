@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(821, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10733 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10977 $"):sub(12, -3))
 mod:SetCreatureID(68065, 70235, 70247)--Frozen 70235, Venomous 70247 (only 2 heads that ever start in front, so no need to look for combat with arcane or fire for combat detection)
 mod:SetEncounterID(1578)
 mod:SetMainBossID(68065)
@@ -12,14 +12,14 @@ mod:RegisterCombat("combat")
 
 mod:RegisterEventsInCombat(
 	"RAID_BOSS_WHISPER",
-	"SPELL_CAST_SUCCESS",
-	"SPELL_AURA_APPLIED",
-	"SPELL_AURA_APPLIED_DOSE",
-	"SPELL_AURA_REMOVED",
-	"SPELL_DAMAGE",
-	"SPELL_MISSED",
-	"SPELL_PERIODIC_DAMAGE",
-	"SPELL_PERIODIC_MISSED",
+	"SPELL_CAST_SUCCESS 140138 139866",
+	"SPELL_AURA_APPLIED 139843 137731 139840 139993 139822",
+	"SPELL_AURA_APPLIED_DOSE 139843 137731 139840 139993",
+	"SPELL_AURA_REMOVED 139822",
+	"SPELL_DAMAGE 139836",
+	"SPELL_MISSED 139836",
+	"SPELL_PERIODIC_DAMAGE 139909",
+	"SPELL_PERIODIC_MISSED 139909",
 	"CHAT_MSG_RAID_BOSS_EMOTE",
 	"UNIT_SPELLCAST_SUCCEEDED boss1 boss2 boss3 boss4 boss5",
 	"UNIT_DIED"
@@ -224,18 +224,20 @@ end
 
 
 function mod:SPELL_CAST_SUCCESS(args)
-	if args.spellId == 140138 then
+	local spellId = args.spellId
+	if spellId == 140138 then
 		warnNetherTear:Show()
 		specWarnNetherTear:Show()
 --		timerNetherTearCD:Start(args.sourceGUID)
-	elseif args.spellId == 139866 then
+	elseif spellId == 139866 then
 --		timerTorrentofIceCD:Start(args.sourceGUID)
 		findTorrent()
 	end
 end
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args.spellId == 139843 then
+	local spellId = args.spellId
+	if spellId == 139843 then
 		local uId = DBM:GetRaidUnitId(args.destName)
 		if self:IsTanking(uId) then
 			local amount = args.amount or 1
@@ -250,7 +252,7 @@ function mod:SPELL_AURA_APPLIED(args)
 				timerBreathsCD:Start()
 			end
 		end
-	elseif args.spellId == 137731 then
+	elseif spellId == 137731 then
 		local uId = DBM:GetRaidUnitId(args.destName)
 		if self:IsTanking(uId) then
 			local amount = args.amount or 1
@@ -261,7 +263,7 @@ function mod:SPELL_AURA_APPLIED(args)
 			if not self.Options.timerBreaths then return end
 			timerBreathsCD:Start()
 		end
-	elseif args.spellId == 139840 then
+	elseif spellId == 139840 then
 		local uId = DBM:GetRaidUnitId(args.destName)
 		if self:IsTanking(uId) then
 			local amount = args.amount or 1
@@ -276,7 +278,7 @@ function mod:SPELL_AURA_APPLIED(args)
 				timerBreathsCD:Start()
 			end
 		end
-	elseif args.spellId == 139993 then
+	elseif spellId == 139993 then
 		local uId = DBM:GetRaidUnitId(args.destName)
 		if self:IsTanking(uId) then
 			local amount = args.amount or 1
@@ -287,7 +289,7 @@ function mod:SPELL_AURA_APPLIED(args)
 			if not self.Options.timerBreaths then return end
 			timerBreathsCD:Start()
 		end
-	elseif args.spellId == 139822 then
+	elseif spellId == 139822 then
 		warnCinders:Show(args.destName)
 --		timerCinderCD:Start(args.sourceGUID)
 		if args:IsPlayer() then
@@ -308,7 +310,8 @@ end
 mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
 
 function mod:SPELL_AURA_REMOVED(args)
-	if args.spellId == 139822 and self.Options.SetIconOnCinders then
+	local spellId = args.spellId
+	if spellId == 139822 and self.Options.SetIconOnCinders then
 		self:SetIcon(args.destName, 0)
 	end
 end

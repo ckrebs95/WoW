@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(819, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10732 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10977 $"):sub(12, -3))
 mod:SetCreatureID(68476)
 mod:SetEncounterID(1575)
 mod:SetZone()
@@ -10,13 +10,13 @@ mod:SetUsedIcons(8, 7, 6, 5, 4, 3, 1)
 mod:RegisterCombat("combat")
 
 mod:RegisterEventsInCombat(
-	"SPELL_CAST_START",
-	"SPELL_CAST_SUCCESS",
-	"SPELL_AURA_APPLIED",
-	"SPELL_AURA_APPLIED_DOSE",
-	"SPELL_AURA_REMOVED",
-	"SPELL_DAMAGE",
-	"SPELL_MISSED",
+	"SPELL_CAST_START 136741 136770 137458 136587",
+	"SPELL_CAST_SUCCESS 136797",
+	"SPELL_AURA_APPLIED 136767 136817 138621 137327 137240 136840 136465 140946 136512",
+	"SPELL_AURA_APPLIED_DOSE 136767 136817 137240",
+	"SPELL_AURA_REMOVED 136767",
+	"SPELL_DAMAGE 136723 136646 136573 136490",
+	"SPELL_MISSED 136723 136646 136573 136490",
 	"CHAT_MSG_RAID_BOSS_EMOTE",
 	"UNIT_DIED"
 )
@@ -137,23 +137,24 @@ Delayed by Charge version
 "<86.4 15:08:45> [CLEU] SPELL_CAST_START#false#0xF1310B7C0000383C#Horridon#2632#0##nil#-2147483648#-2147483648#136741#Double Swipe#1", -- [6003]
 --]]
 function mod:SPELL_CAST_START(args)
-	if args.spellId == 136741 then--Regular double swipe
+	local spellId = args.spellId
+	if spellId == 136741 then--Regular double swipe
 		warnDoubleSwipe:Show()
 		specWarnDoubleSwipe:Show()
 		--The only flaw is charge is sometimes delayed by unexpected events like using an orb, we may fail to start timer once in a while when it DOES come before a charge.
 		if timerChargeCD:GetTime() < 32 then--Check if charge is less than 18 seconds away, if it is, double swipe is going tobe delayed by quite a bit and we'll trigger timer after charge
 			timerDoubleSwipeCD:Start()
 		end
-	elseif args.spellId == 136770 then--Double swipe that follows a charge (136769)
+	elseif spellId == 136770 then--Double swipe that follows a charge (136769)
 		warnDoubleSwipe:Show()
 		specWarnDoubleSwipe:Show()
 		timerDoubleSwipeCD:Start(11.5)--Hard coded failsafe. 136741 version is always 11.5 seconds after 136770 version
-	elseif args.spellId == 137458 then
+	elseif spellId == 137458 then
 		direNumber = direNumber + 1
 		warnDireCall:Show(direNumber)
 		specWarnDireCall:Show(direNumber)
 		timerDireCallCD:Start(nil, direNumber+1)--CD still reset when he breaks a door?
-	elseif args.spellId == 136587 then
+	elseif spellId == 136587 then
 		warnVenomBolt:Show()
 		if args.sourceGUID == UnitGUID("target") or args.sourceGUID == UnitGUID("focus") then
 			specWarnVenomBolt:Show(args.sourceName)
@@ -162,64 +163,69 @@ function mod:SPELL_CAST_START(args)
 end
 
 function mod:SPELL_CAST_SUCCESS(args)
-	if args.spellId == 136797 then
+	local spellId = args.spellId
+	if spellId == 136797 then
 		warnMending:Show()
 		specWarnMending:Show(args.sourceName)
 	end
 end
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args.spellId == 136767 then
-		warnPuncture:Show(args.destName, args.amount or 1)
+	local spellId = args.spellId
+	if spellId == 136767 then
+		local amount = args.amount or 1
+		warnPuncture:Show(args.destName, amount)
 		timerPuncture:Start(args.destName)
 		timerPunctureCD:Start()
 		if args:IsPlayer() then
-			if (args.amount or 1) >= 9 then
-				specWarnPuncture:Show(args.amount)
+			if amount >= 9 then
+				specWarnPuncture:Show(amount)
 			end
 		else
-			if (args.amount or 1) >= 9 and not UnitDebuff("player", GetSpellInfo(136767)) and not UnitIsDeadOrGhost("player") then--Other tank has at least one stack and you have none
+			if amount >= 9 and not UnitDebuff("player", GetSpellInfo(136767)) and not UnitIsDeadOrGhost("player") then--Other tank has at least one stack and you have none
 				specWarnPunctureOther:Show(args.destName)--So nudge you to taunt it off other tank already.
 			end
 		end
 	--"<317.2 15:12:36> [CLEU] SPELL_AURA_APPLIED_DOSE#false#0xF1310B7C0000383C#Horridon#68168#0#0xF1310B7C0000383C#Horridon#68168#0#137240#Cracked Shell#1#BUFF#4", -- [21950]
 	--"<327.0 15:12:46> [INSTANCE_ENCOUNTER_ENGAGE_UNIT] Fake Args:#1#1#Horridon#0xF1310B7C0000383C#elite#261178058#1#1#War-God Jalak <--War-God Jalak jumps down
 	--He jumps down 10 seconds after 4th door is smashed, or when Horridon reaches 30%
-	elseif args.spellId == 136817 then
-		warnBestialCry:Show(args.destName, args.amount or 1)
-		timerBestialCryCD:Start(10, (args.amount or 1)+1)
-	elseif args.spellId == 136821 then
+	elseif spellId == 136817 then
+		local amount = args.amount or 1
+		warnBestialCry:Show(args.destName, amount)
+		timerBestialCryCD:Start(10, amount+1)
+	elseif spellId == 136821 then
 		warnRampage:Show(args.destName)
 		specWarnRampage:Show(args.destName)
-	elseif args.spellId == 137237 then
+	elseif spellId == 137237 then
 		warnOrbofControl:Show()
 		specWarnOrbofControl:Show()
-	elseif args.spellId == 137240 then
+	elseif spellId == 137240 then
 		warnCrackedShell:Show(args.destName, args.amount or 1)
-	elseif args.spellId == 136480 then
+	elseif spellId == 136480 then
 		warnChainLightning:Show()
 		if args.sourceGUID == UnitGUID("target") or args.sourceGUID == UnitGUID("focus") then
 			specWarnChainLightning:Show(args.sourceName)
 		end
-	elseif args.spellId == 136465 then
+	elseif spellId == 136465 then
 		warnFireball:Show()
 		if args.sourceGUID == UnitGUID("target") or args.sourceGUID == UnitGUID("focus") then
 			specWarnFireball:Show(args.sourceName)
 		end
-	elseif args.spellId == 140946 then
+	elseif spellId == 140946 then
 		warnDireFixate:CombinedShow(1.0, args.destName)
 		if args:IsPlayer() then
 			specWarnDireFixate:Show()
 			soundDireFixate:Play()
 		end
-	elseif args.spellId == 136512 and args:IsPlayer() then
+	elseif spellId == 136512 and args:IsPlayer() then
 		specWarnHex:Show()
 	end
 end
 mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
 
 function mod:SPELL_AURA_REMOVED(args)
-	if args.spellId == 136767 then
+	local spellId = args.spellId
+	if spellId == 136767 then
 		timerPuncture:Cancel(args.destName)
 	end
 end

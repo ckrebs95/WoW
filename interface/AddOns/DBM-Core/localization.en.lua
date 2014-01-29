@@ -87,7 +87,7 @@ DBM_CORE_UPDATEREMINDER_HEADER_ALPHA	= "Your alpha version of Deadly Boss Mods i
 DBM_CORE_UPDATEREMINDER_FOOTER			= "Press " .. (IsMacClient() and "Cmd-C" or "Ctrl-C")  ..  " to copy the download link to your clipboard."
 DBM_CORE_UPDATEREMINDER_FOOTER_GENERIC	= "Press " .. (IsMacClient() and "Cmd-C" or "Ctrl-C")  ..  " to copy the link to your clipboard."
 DBM_CORE_UPDATEREMINDER_DISABLE			= "WARNING: Do to your Deadly Boss Mods being drastically out of date (%d revisions), it has been disabled until updated. This is to ensure old and incompatable code doesn't cause poor play experience for yourself or fellow raid members."
-DBM_CORE_UPDATEREMINDER_HOTFIX			= "Your version of DBM will have incorrect timers or warnings during this boss encounter. This is corrected in an upcoming release or can be corrected immediately by updating to latest alpha release."
+DBM_CORE_UPDATEREMINDER_HOTFIX			= "Your version of DBM will have incorrect timers or warnings during this boss encounter. This is corrected in a newer release (or alpha release if newer release version not available)"
 
 DBM_CORE_MOVABLE_BAR				= "Drag me!"
 
@@ -161,6 +161,7 @@ DBM_CORE_AUTO_ANNOUNCE_TEXTS = {
 	targetcount	= "%s (%%d) on >%%s<",
 	spell		= "%s",
 	ends 		= "%s ended",
+	endtarget	= "%s ended: >%%s<",
 	fades		= "%s faded",
 	adds		= "%s remaining: %%d",
 	cast		= "Casting %s: %.1f sec",
@@ -178,6 +179,7 @@ DBM_CORE_AUTO_ANNOUNCE_OPTIONS = {
 	targetcount	= "Announce $spell:%s targets",
 	spell		= "Show warning for $spell:%s",
 	ends		= "Show warning when $spell:%s has ended",
+	endtarget	= "Show warning when $spell:%s has ended",
 	fades		= "Show warning when $spell:%s has faded",
 	adds		= "Announce how many $spell:%s remain",
 	cast		= "Show warning when $spell:%s is being cast",
@@ -280,9 +282,6 @@ DBM_CORE_AUTO_READY_CHECK_OPTION_TEXT	= "Play ready check sound when boss is pul
 -- New special warnings
 DBM_CORE_MOVE_SPECIAL_WARNING_BAR	= "Special warning movable"
 DBM_CORE_MOVE_SPECIAL_WARNING_TEXT	= "Special Warning"
-
-
-DBM_CORE_RANGE_CHECK_ZONE_UNSUPPORTED	= "A %d yard range check is not supported in this zone.\nSupported ranges are 10, 11, 15 and 28 yard."
 
 DBM_ARROW_MOVABLE					= "Arrow movable"
 DBM_ARROW_NO_RAIDGROUP				= "This function only works in raid groups and within raid instances."

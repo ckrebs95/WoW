@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(729, "DBM-TerraceofEndlessSpring", nil, 320)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10805 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 10980 $"):sub(12, -3))
 mod:SetCreatureID(62983)--62995 Animated Protector
 mod:SetEncounterID(1506)
 
@@ -10,10 +10,10 @@ mod:RegisterKill("yell", L.Victory)--Kill detection is aweful. No death, no spec
 mod:SetUsedIcons(8, 7, 6, 5, 4, 3) -- on 25 heroic 6 guards spawn.
 
 mod:RegisterEventsInCombat(
-	"SPELL_AURA_APPLIED",
-	"SPELL_AURA_APPLIED_DOSE",
-	"SPELL_AURA_REMOVED",
-	"SPELL_CAST_START",
+	"SPELL_AURA_APPLIED 123250 123505 123461 123121 123705",
+	"SPELL_AURA_APPLIED_DOSE 123121 123705",
+	"SPELL_AURA_REMOVED 123250 123121 123461",
+	"SPELL_CAST_START 123244 123705",
 	"UNIT_HEALTH boss1",--UNIT_HEALTH_FREQUENT maybe not needed. It's too high cpu usage.
 	"UNIT_SPELLCAST_SUCCEEDED boss1"
 )
@@ -94,7 +94,8 @@ function mod:OnCombatEnd()
 end
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args.spellId == 123250 then
+	local spellId = args.spellId
+	if spellId == 123250 then
 		local elapsed, total = timerSpecialCD:GetTime(specialsCast+1)
 		specialRemaining = total - elapsed
 		lastProtect = GetTime()	
@@ -103,9 +104,9 @@ function mod:SPELL_AURA_APPLIED(args)
 		self:Schedule(0.2, function()
 			timerSpecialCD:Cancel()
 		end)
-	elseif args.spellId == 123505 and self.Options.SetIconOnProtector then
+	elseif spellId == 123505 and self.Options.SetIconOnProtector then
 		self:ScanForMobs(args.destGUID, 0, 8, nil, 0.05, 6)
-	elseif args.spellId == 123461 then
+	elseif spellId == 123461 then
 		specialsCast = specialsCast + 1
 		warnGetAway:Show(specialsCast)
 		specWarnGetAway:Show()
@@ -119,7 +120,7 @@ function mod:SPELL_AURA_APPLIED(args)
 			local getAwayHealth = math.floor(UnitHealthMax("boss1") * 0.04)
 			self:ShowDamagedHealthBar(args.sourceGUID, args.spellName, getAwayHealth)
 		end
-	elseif args.spellId == 123121 then
+	elseif spellId == 123121 then
 		local uId = DBM:GetRaidUnitId(args.destName)
 		if self:IsTanking(uId, "boss1") then--Only want sprays that are on tanks, not bads standing on tanks.
 			local amount = args.amount or 1
@@ -135,14 +136,15 @@ function mod:SPELL_AURA_APPLIED(args)
 				end
 			end
 		end
-	elseif args.spellId == 123705 and self:AntiSpam(2.5, 1) then
+	elseif spellId == 123705 and self:AntiSpam(2.5, 1) then
 		self:ScaryFogRepeat()
 	end
 end
 mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
 
 function mod:SPELL_AURA_REMOVED(args)
-	if args.spellId == 123250 then
+	local spellId = args.spellId
+	if spellId == 123250 then
 		if timerSpecialCD:GetTime(specialsCast+1) == 0 then -- failsafe. (i.e : 79.8% hide -> protect... bar remains)
 			local protectElapsed = GetTime() - lastProtect
 			local specialCD = specialRemaining - protectElapsed
@@ -152,9 +154,9 @@ function mod:SPELL_AURA_REMOVED(args)
 				timerSpecialCD:Start(specialCD, specialsCast+1)
 			end
 		end
-	elseif args.spellId == 123121 then
+	elseif spellId == 123121 then
 		timerSpray:Cancel(args.destName)
-	elseif args.spellId == 123461 then
+	elseif spellId == 123461 then
 		timerGetAway:Cancel()
 		if DBM.BossHealth:IsShown() and self.Options.GWHealthFrame then
 			self:RemoveDamagedHealthBar()
@@ -163,7 +165,8 @@ function mod:SPELL_AURA_REMOVED(args)
 end
 
 function mod:SPELL_CAST_START(args)
-	if args.spellId == 123244 then
+	local spellId = args.spellId
+	if spellId == 123244 then
 		hideTime = GetTime()
 		specialsCast = specialsCast + 1
 		hideActive = true
@@ -179,7 +182,7 @@ function mod:SPELL_CAST_START(args)
 		if self.Options.RangeFrame then
 			DBM.RangeCheck:Show(3)--Show everyone during hide
 		end
-	elseif args.spellId == 123705 then
+	elseif spellId == 123705 then
 		self:ScaryFogRepeat()
 	end
 end

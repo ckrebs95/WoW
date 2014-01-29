@@ -15,10 +15,18 @@ L:SetMiscLocalization({
 ---------------------------
 L= DBM:GetModLocalization(849)
 
+L:SetWarningLocalization({
+	specWarnMeasures	= "絕處求生即將到來(%s)!"
+})
+
 ---------------------------
 -- Norushen --
 ---------------------------
 L= DBM:GetModLocalization(866)
+
+L:SetMiscLocalization({
+	wasteOfTime	= "很好，我會創造一個力場隔離你們的腐化。"
+})
 
 ------------------
 -- Sha of Pride --
@@ -35,6 +43,7 @@ L:SetOptionLocalization({
 L= DBM:GetModLocalization(868)
 
 L:SetWarningLocalization({
+	warnTowerOpen		= "砲塔門被打開了",
 	warnTowerGrunt		= "塔防蠻兵"
 })
 
@@ -44,6 +53,7 @@ L:SetTimerLocalization({
 })
 
 L:SetOptionLocalization({
+	warnTowerOpen		= "提示砲塔門被打開",
 	warnTowerGrunt		= "提示新的塔防蠻兵重生",
 	timerTowerCD		= "為下一波塔攻顯示計時器",
 	timerTowerGruntCD	= "為下一次塔防蠻兵顯示計時器"
@@ -172,7 +182,14 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(869)
 
 L:SetOptionLocalization({
-	RangeFrame	= "顯示動態距離框架(10碼)<br/>(這是智慧距離框架，當到達$spell:147126門檻時自動切換)"
+	RangeFrame			= "顯示動態距離框架(10碼)<br/>(這是智慧距離框架，當到達$spell:147126門檻時自動切換)",
+	InfoFrame			= "為玩家在中場階段時沒有傷害減免顯示訊息框架",
+	yellMaliceFading	= "當$spell:147209將要退去時大喊"
+})
+
+L:SetMiscLocalization({
+	NoReduce			= "無傷害減免",
+	MaliceFadeYell		= "%s的惡意消退中(%d)"
 })
 
 -------------

@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(817, "DBM-ThroneofThunder", nil, 362)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10793 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 11001 $"):sub(12, -3))
 mod:SetCreatureID(68078, 68079, 68080, 68081)--Ro'shak 68079, Quet'zal 68080, Dam'ren 68081, Iron Qon 68078
 mod:SetEncounterID(1559)
 mod:SetMainBossID(68078)
@@ -11,13 +11,13 @@ mod:SetUsedIcons(8)
 mod:RegisterCombat("combat")
 
 mod:RegisterEventsInCombat(
-	"SPELL_AURA_APPLIED",
-	"SPELL_AURA_APPLIED_DOSE",
-	"SPELL_AURA_REMOVED",
-	"SPELL_CAST_SUCCESS",
-	"SPELL_SUMMON",
-	"SPELL_DAMAGE",
-	"SPELL_MISSED",
+	"SPELL_AURA_APPLIED 134691 134647 137221 136192 135145 136323",
+	"SPELL_AURA_APPLIED_DOSE 134691 134647 135145 136323",
+	"SPELL_AURA_REMOVED 134647 136192",
+	"SPELL_CAST_SUCCESS 134664 137226 137227 137228 137229 137230 137231",
+	"SPELL_SUMMON 134926",
+	"SPELL_DAMAGE 137668 137669 136520 137764",
+	"SPELL_MISSED 137668 137669 136520 137764",
 	"UNIT_SPELLCAST_SUCCEEDED boss1 boss2 boss3 boss4",
 	"UNIT_DIED"
 )
@@ -84,24 +84,22 @@ local Roshak = select(2, EJ_GetCreatureInfo(2, 817))
 local Quetzal = select(2, EJ_GetCreatureInfo(3, 817))
 local Damren = select(2, EJ_GetCreatureInfo(4, 817))
 local arcingName = GetSpellInfo(136193)
-local phase = 1--Not sure this is useful yet, coding it in, in case spear cd is different in different phases
-local fistSmashCount = 0
+mod.vb.phase = 1
+mod.vb.fistSmashCount = 0
+local spearSpecWarnFired = false
 --Spear/arcing methods called VERY often, so cache these globals locally
-local UnitDetailedThreatSituation = UnitDetailedThreatSituation
-local UnitExists = UnitExists
-local UnitClass = UnitClass
-local UnitDebuff = UnitDebuff
+local UnitDetailedThreatSituation, UnitExists, UnitClass, UnitDebuff = UnitDetailedThreatSituation, UnitExists, UnitClass, UnitDebuff
 
 local function updateHealthFrame()
 	if DBM.BossHealth:IsShown() then
 		DBM.BossHealth:Clear()
-		if phase == 1 then
+		if mod.vb.phase == 1 then
 			DBM.BossHealth:AddBoss(68079, Roshak)
-		elseif phase == 2 then
+		elseif mod.vb.phase == 2 then
 			DBM.BossHealth:AddBoss(68080, Quetzal)
-		elseif phase == 3 then
+		elseif mod.vb.phase == 3 then
 			DBM.BossHealth:AddBoss(68081, Damren)
-		elseif phase == 4 then
+		elseif mod.vb.phase == 4 then
 			DBM.BossHealth:AddBoss(68078, L.name)
 			if mod:IsDifficulty("heroic10", "heroic25") then
 				DBM.BossHealth:AddBoss(68081, Damren)
@@ -145,6 +143,7 @@ end
 --In that case the aoe failsafe warning will just be used, so 1/10 or 1/25 odds in phase 1.
 local function checkSpear()
 	if UnitExists("boss1target") and not notEligable("boss1target") then--Boss 1 is looking at someone that isn't his highest threat or a tank (have to filter tanks cause he looks at them to cast impale, have to filter his highest threat in case it's not a tank, ie a healer)
+		spearSpecWarnFired = true
 		mod:Unschedule(checkSpear)
 		local targetname = DBM:GetUnitFullName("boss1target")
 		warnThrowSpear:Show(targetname)
@@ -190,8 +189,8 @@ local function checkArcing()
 end
 
 function mod:OnCombatStart(delay)
-	phase = 1
-	fistSmashCount = 0
+	self.vb.phase = 1
+	self.vb.fistSmashCount = 0
 	updateHealthFrame()
 	warnPhase1:Show()
 	timerThrowSpearCD:Start(-delay)
@@ -224,7 +223,8 @@ function mod:OnCombatEnd()
 end
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args.spellId == 134691 then
+	local spellId = args.spellId
+	if spellId == 134691 then
 		local amount = args.amount or 1
 		warnImpale:Show(args.destName, amount)
 		timerImpaleCD:Start()
@@ -235,7 +235,7 @@ function mod:SPELL_AURA_APPLIED(args)
 				specWarnImpaleOther:Show(args.destName)
 			end
 		end
-	elseif args.spellId == 134647 and args:IsPlayer() then
+	elseif spellId == 134647 and args:IsPlayer() then
 		local amount = args.amount or 1
 		if self:IsDifficulty("lfr25") then
 			timerScorched:Start(15)
@@ -245,13 +245,13 @@ function mod:SPELL_AURA_APPLIED(args)
 		if amount > 2 then
 			specWarnScorched:Show(amount)
 		end
-	elseif args.spellId == 137221 then
+	elseif spellId == 137221 then
 		warnMoltenOverload:Show()
 		specWarnMoltenOverload:Show()
 		timerMoltenOverload:Start()
-	elseif args.spellId == 136192 then
+	elseif spellId == 136192 then
 		warnLightningStorm:Show(args.destName)
-		if phase == 2 then
+		if self.vb.phase == 2 then
 			timerLightningStormCD:Start()
 		else--Heroic phase 1 or 4
 			timerLightningStormCD:Start(37.5)
@@ -263,14 +263,14 @@ function mod:SPELL_AURA_APPLIED(args)
 			specWarnLightningStorm:Show()
 			yellLightningStorm:Yell()
 		end
-	elseif args.spellId == 135145 then
+	elseif spellId == 135145 then
 		warnFreeze:Show(args.destName)
-		if phase == 3 then
+		if self.vb.phase == 3 then
 			timerFreezeCD:Start()
 		else--Heroic phase 2 or 4
 			timerFreezeCD:Start(36)
 		end
-	elseif args.spellId == 136323 then
+	elseif spellId == 136323 then
 		warnRisingAnger:Show(args.destName, args.amount or 1)
 		timerRisingAngerCD:Start()
 	end
@@ -278,38 +278,40 @@ end
 mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
 
 function mod:SPELL_AURA_REMOVED(args)
-	if args.spellId == 134647 and args:IsPlayer() then
+	local spellId = args.spellId
+	if spellId == 134647 and args:IsPlayer() then
 		timerScorched:Cancel()
-	elseif args.spellId == 136192 and self.Options.SetIconOnLightningStorm and not self:IsDifficulty("lfr25") then
+	elseif spellId == 136192 and self.Options.SetIconOnLightningStorm and not self:IsDifficulty("lfr25") then
 		self:SetIcon(args.destName, 0)
 	end
 end
 
 function mod:SPELL_CAST_SUCCESS(args)
-	if args.spellId == 134664 then
+	local spellId = args.spellId
+	if spellId == 134664 then
 		warnMoltenInferno:Show()
 	--Dead zone IDs, each dead zone has two shields and two openings. Each spellid identifies those openings.
-	elseif args.spellId == 137226 then--Front, Right Shielded
+	elseif spellId == 137226 then--Front, Right Shielded
 		warnDeadZone:Show(args.spellName, DBM_CORE_FRONT, DBM_CORE_RIGHT)
 		timerDeadZoneCD:Start()
 		--Attack left or Behind (maybe add special warning that says where you can attack, for dps?)
-	elseif args.spellId == 137227 then--Left, Right Shielded
+	elseif spellId == 137227 then--Left, Right Shielded
 		warnDeadZone:Show(args.spellName, DBM_CORE_LEFT, DBM_CORE_RIGHT)
 		timerDeadZoneCD:Start()
 		--Attack Front or Behind
-	elseif args.spellId == 137228 then--Left, Front Shielded
+	elseif spellId == 137228 then--Left, Front Shielded
 		warnDeadZone:Show(args.spellName, DBM_CORE_LEFT, DBM_CORE_FRONT)
 		timerDeadZoneCD:Start()
 		--Attack Right or Behind
-	elseif args.spellId == 137229 then--Back, Front Shielded
+	elseif spellId == 137229 then--Back, Front Shielded
 		warnDeadZone:Show(args.spellName, DBM_CORE_BACK, DBM_CORE_FRONT)
 		timerDeadZoneCD:Start()
 		--Attack left or Right
-	elseif args.spellId == 137230 then--Back, Left Shielded
+	elseif spellId == 137230 then--Back, Left Shielded
 		warnDeadZone:Show(args.spellName, DBM_CORE_BACK, DBM_CORE_LEFT)
 		timerDeadZoneCD:Start()
 		--Attack Front or Right
-	elseif args.spellId == 137231 then--Back, Right Shielded
+	elseif spellId == 137231 then--Back, Right Shielded
 		warnDeadZone:Show(args.spellName, DBM_CORE_BACK, DBM_CORE_RIGHT)
 		timerDeadZoneCD:Start()
 		--Attack Front or Left
@@ -317,10 +319,12 @@ function mod:SPELL_CAST_SUCCESS(args)
 end
 
 function mod:SPELL_SUMMON(args)
-	if args.spellId == 134926 and phase < 4 then
-		if self:AntiSpam(15, 6) then--Basically, if the target scanning failed, we do an aoe warning on the actual summon.
+	local spellId = args.spellId
+	if spellId == 134926 and self.vb.phase < 4 then
+		if self:AntiSpam(15, 6) and not spearSpecWarnFired then--Basically, if the target scanning failed, we do an aoe warning on the actual summon.
 			specWarnThrowSpear:Show()
 		end
+		spearSpecWarnFired = false
 		timerThrowSpearCD:Start()
 		self:Unschedule(checkSpear)
 		self:Schedule(25, checkSpear)--Timing adjust to reduce cpu usage when we know for sure the best time to check target. spear cd is variable, minimum though is 30, 25 is probably too early to start scanning but a good place to start.
@@ -359,7 +363,7 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 				DBM.RangeCheck:Show(10, nil, nil, 1)--Switch range frame back to 1. Range is assumed 10, no spell info
 			end
 			--Only one log, but i looks like spear cd from phase 1 remains intact
-			phase = 2
+			self.vb.phase = 2
 			updateHealthFrame()
 			timerUnleashedFlameCD:Cancel()
 			timerMoltenOverload:Cancel()
@@ -377,7 +381,7 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 			timerWindStorm:Schedule(52)
 			timerWindStormCD:Start(52)
 		elseif cid == 68080 then--Quet'zal
-			phase = 3
+			self.vb.phase = 3
 			updateHealthFrame()
 			timerLightningStormCD:Cancel()
 			timerWindStorm:Cancel()
@@ -392,7 +396,7 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 			checkArcing()
 		elseif cid == 68081 then--Dam'ren
 			--confirmed, dam'ren's abilities do NOT reset in phase 4, cds from phase 3 carry over.
-			phase = 4
+			self.vb.phase = 4
 			updateHealthFrame()
 			timerImpaleCD:Cancel()
 			warnPhase4:Show()
@@ -413,7 +417,7 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 	elseif spellId == 139181 then--Frost Spike (Phase 2 Heroic)
 		warnFrostSpike:Show()
 		timerFrostSpikeCD:Start()
-	elseif spellId == 137656 and phase == 2 and self:AntiSpam(2, 1) then--Rushing Winds (Wind Storm end trigger). ANTISPAM still needed, multiple get cast
+	elseif spellId == 137656 and self.vb.phase == 2 and self:AntiSpam(2, 1) then--Rushing Winds (Wind Storm end trigger). ANTISPAM still needed, multiple get cast
 		warnWindStorm:Cancel()
 		specWarnWindStorm:Cancel()
 		warnWindStormEnd:Show()
@@ -422,19 +426,19 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
 		timerWindStorm:Schedule(70)
 		timerWindStormCD:Start()
 	elseif spellId == 136146 and self:AntiSpam(2, 5) then
-		if phase < 4 then--Shit broke, which happens sometimes
-			phase = 4
+		if self.vb.phase < 4 then--Shit broke, which happens sometimes
+			self.vb.phase = 4
 			timerThrowSpearCD:Cancel()
 			self:Unschedule(checkSpear)
 		end
-		fistSmashCount = fistSmashCount + 1
-		warnFistSmash:Show(fistSmashCount)
+		self.vb.fistSmashCount = self.vb.fistSmashCount + 1
+		warnFistSmash:Show(self.vb.fistSmashCount)
 		specWarnFistSmash:Show()
 		timerFistSmash:Start()
 		if self:IsDifficulty("heroic10", "heroic25") then
-			timerFistSmashCD:Start(28, fistSmashCount+1) -- heroic cd longer.
+			timerFistSmashCD:Start(28, self.vb.fistSmashCount+1) -- heroic cd longer.
 		else
-			timerFistSmashCD:Start(nil, fistSmashCount+1)
+			timerFistSmashCD:Start(nil, self.vb.fistSmashCount+1)
 		end
 	end
 end
@@ -454,7 +458,7 @@ function mod:UNIT_DIED(args)
 				DBM.InfoFrame:SetHeader(arcingName)
 				DBM.InfoFrame:Show(5, "playerbaddebuff", 136193)
 			end
-			phase = 2
+			self.vb.phase = 2
 			updateHealthFrame()
 			timerImpaleCD:Cancel()
 			timerLightningStormCD:Start(17)
@@ -483,7 +487,7 @@ function mod:UNIT_DIED(args)
 		if self:IsDifficulty("heroic10", "heroic25") and DBM.BossHealth:IsShown() then--In heroic, all mounts die in phase 4.
 			DBM.BossHealth:RemoveBoss(cid)
 		else
-			phase = 3
+			self.vb.phase = 3
 			updateHealthFrame()
 			timerImpaleCD:Cancel()
 			warnPhase3:Show()
@@ -498,7 +502,7 @@ function mod:UNIT_DIED(args)
 		if self:IsDifficulty("heroic10", "heroic25") and DBM.BossHealth:IsShown() then--In heroic, all mounts die in phase 4.
 			DBM.BossHealth:RemoveBoss(cid)
 		else
-			phase = 4
+			self.vb.phase = 4
 			updateHealthFrame()
 			timerImpaleCD:Cancel()
 			timerThrowSpearCD:Cancel()

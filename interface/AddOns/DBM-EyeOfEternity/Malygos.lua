@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Malygos", "DBM-EyeOfEternity")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 112 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 126 $"):sub(12, -3))
 mod:SetCreatureID(28859)
 mod:SetEncounterID(1094)
 mod:SetModelID(26752)
@@ -152,8 +152,6 @@ end
 function mod:RAID_BOSS_EMOTE(msg)
 	if msg == L.EmoteSpark or msg:find(L.EmoteSpark) then
 		self:SendSync("Spark")
-	elseif msg == L.EmoteBreath or msg:find(L.EmoteBreath) then
-		self:SendSync("Breath")
 	end
 end
 

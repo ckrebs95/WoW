@@ -15,10 +15,20 @@ L:SetMiscLocalization({
 ---------------------------
 L= DBM:GetModLocalization(849)
 
+L:SetWarningLocalization({
+	warnCalamity		= "%s",
+	specWarnCalamity	= "%s",
+	specWarnMeasures	= "곧 궁책 (%s)!"
+})
+
 ---------------------------
 -- Norushen --
 ---------------------------
 L= DBM:GetModLocalization(866)
+
+L:SetMiscLocalization({
+	wasteOfTime			= "그래, 좋다. 너희 타락을 가두어 둘 공간을 만들겠다."
+})
 
 ------------------
 -- Sha of Pride --
@@ -35,17 +45,19 @@ L:SetOptionLocalization({
 L= DBM:GetModLocalization(868)
 
 L:SetWarningLocalization({
+	warnTowerOpen	= "탑문 열림",
 	warnTowerGrunt	= "폭파조 등장"
 })
 
 L:SetTimerLocalization({
-	timerTowerCD		= "다음 포탑",
+	timerTowerCD		= "다음 탑문 열림",
 	timerTowerGruntCD	= "다음 폭파조"
 })
 
 L:SetOptionLocalization({
+	warnTowerOpen		= "탑문 열림 알림 보기",
 	warnTowerGrunt		= "폭파조 등장 알림 보기",
-	timerTowerCD		= "다음 포탑 바 보기",
+	timerTowerCD		= "다음 탑문 열림 바 보기",
 	timerTowerGruntCD	= "다음 폭파조 바 보기"
 })
 
@@ -72,7 +84,7 @@ L= DBM:GetModLocalization(864)
 L= DBM:GetModLocalization(856)
 
 L:SetMiscLocalization({
-	PrisonYell		= "%s의 강철 감옥 사라지기 직전! (%d초 남음)"
+	PrisonYell		= "%s의 강철 감옥 %d초 남음!"
 })
 
 ---------------------
@@ -179,7 +191,14 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(869)
 
 L:SetOptionLocalization({
-	RangeFrame	= "거리 창 보기(8m)($spell:147126 주문의 경고 수치에 도달한 경우에만 보임)"
+	RangeFrame			= "거리 창 보기(8m)($spell:147126 주문의 경고 수치에 도달한 경우에만 보임)",
+	InfoFrame			= "사잇단계에서 피해 감소가 없는 대상을 정보 창으로 보기",
+	yellMaliceFading	= "$spell:147209 가 사라지기 전에 대화로 알리기"
+})
+
+L:SetMiscLocalization({
+	NoReduce			= "피해 감소 없음",
+	MaliceFadeYell		= "%s의 악의 %d초 남음!"
 })
 
 -------------

@@ -14,10 +14,20 @@ L:SetMiscLocalization({
 ---------------------------
 L= DBM:GetModLocalization(849)
 
+L:SetWarningLocalization({
+	warnCalamity		= "%s",
+	specWarnCalamity	= "%s",
+	specWarnMeasures	= "Desperate Measures soon (%s)!"
+})
+
 ---------------------------
 -- Norushen --
 ---------------------------
 L= DBM:GetModLocalization(866)
+
+L:SetMiscLocalization({
+	wasteOfTime			= "Very well, I will create a field to keep your corruption quarantined."
+})
 
 ------------------
 -- Sha of Pride --
@@ -34,15 +44,17 @@ L:SetOptionLocalization({
 L= DBM:GetModLocalization(868)
 
 L:SetWarningLocalization({
+	warnTowerOpen		= "Tower opened",
 	warnTowerGrunt		= "Tower Grunt"
 })
 
 L:SetTimerLocalization({
 	timerTowerCD		= "Next Tower",
-	timerTowerGruntCD	= "Next tower grunt"
+	timerTowerGruntCD	= "Next Tower Grunt"
 })
 
 L:SetOptionLocalization({
+	warnTowerOpen		= "Announce when tower opens",
 	warnTowerGrunt		= "Announce when new tower grunt spawns",
 	timerTowerCD		= "Show timer for next tower assault",
 	timerTowerGruntCD	= "Show timer for next tower grunt"
@@ -186,7 +198,14 @@ L:SetMiscLocalization({
 L= DBM:GetModLocalization(869)
 
 L:SetOptionLocalization({
-	RangeFrame	= "Show dynamic range frame (8)<br/>(This is a smart range frame that shows when you reach $spell:147126 threshold)"
+	RangeFrame			= "Show dynamic range frame (8)<br/>(This is a smart range frame that shows when you reach $spell:147126 threshold)",
+	InfoFrame			= "Show info frame for players without damage reduction during intermission",
+	yellMaliceFading	= "Yell when $spell:147209 is about to fade"
+})
+
+L:SetMiscLocalization({
+	NoReduce			= "No damage reduction",
+	MaliceFadeYell		= "Malice fading on %s (%d)"
 })
 
 -------------
