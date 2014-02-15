@@ -126,6 +126,7 @@ local defaults = {
 			KeyUseItem = "",			
 			OCntFirst = false, 
 			OMaxLen = 60,
+			RefreshTimer = 500,
 			RemoveComplete = false,
 			ScenTrack = true,
 			ShowClose = false,
@@ -818,7 +819,7 @@ local function QuestOptions ()
 							name = "Quest Font Size",						
 							desc = "Sets the size of the quest window font",
 							min = 6,
-							max = 14,
+							max = 20,
 							step = 1,
 							bigStep = 1,
 							get = function()
@@ -978,21 +979,38 @@ local function QuestOptions ()
 							set = function()
 								Nx.qdb.profile.QuestWatch.Sync = not Nx.qdb.profile.QuestWatch.Sync
 							end,				
-						},												
-						spacer = {
+						},					
+						qrefresh = {
 							order = 10,
+							type = "range",								
+							name = "Watch Delay Time",
+							desc = "Sets the forced delay time of watch update in ms, performance toggle for systems that need it",
+							min = 1,
+							max = 1000,
+							step = 1,
+							bigStep = 1,
+							get = function()
+								return Nx.qdb.profile.QuestWatch.RefreshTimer
+							end,
+							set = function(info,value)
+								Nx.qdb.profile.QuestWatch.RefreshTimer = value								
+								Nx.Quest.Watch:Update()
+							end,											
+						},
+						spacer = {
+							order = 11,
 							type = "description",
 							width = "full",
 							name = " ",
 						},						
 						spacer1 = {
-							order = 11,
+							order = 12,
 							type = "description",
 							width = "full",
 							name = " ",
 						},
 						qwautonew = {
-							order = 12,
+							order = 13,
 							type = "toggle",
 							width = "full",
 							name = "Auto Watch New Quests",
@@ -1005,7 +1023,7 @@ local function QuestOptions ()
 							end,				
 						},						
 						qwaddchanged = {
-							order = 13,
+							order = 14,
 							type = "toggle",
 							width = "full",
 							name = "Auto Watch Changed Quests",
@@ -1018,7 +1036,7 @@ local function QuestOptions ()
 							end,				
 						},						
 						qwremovecomplete = {
-							order = 14,
+							order = 15,
 							type = "toggle",
 							width = "full",
 							name = "Auto Remove Completed Quests",
@@ -1031,7 +1049,7 @@ local function QuestOptions ()
 							end,				
 						},
 						qwshowdist = {
-							order = 15,
+							order = 16,
 							type = "toggle",
 							width = "full",
 							name = "Show distance to quest objectives",
@@ -1045,7 +1063,7 @@ local function QuestOptions ()
 							end,				
 						},				
 						qwhideobject = {
-							order = 16,
+							order = 17,
 							type = "toggle",
 							width = "full",
 							name = "Auto Hide Finished Objectives",
@@ -1059,7 +1077,7 @@ local function QuestOptions ()
 							end,				
 						},		
 						qwobjfirst = {
-							order = 17,
+							order = 18,
 							type = "toggle",
 							width = "full",
 							name = "Show Objective Amount First",
@@ -1073,13 +1091,13 @@ local function QuestOptions ()
 							end,				
 						},						
 						spacer2 = {
-							order = 18,
+							order = 19,
 							type = "description",
 							width = "full",
 							name = " ",
 						},						
 						qwwatchscen = {
-							order = 19,
+							order = 20,
 							type = "toggle",
 							width = "full",
 							name = "Watch Scenarios",
@@ -1093,7 +1111,7 @@ local function QuestOptions ()
 							end,				
 						},						
 						qwwatchach = {
-							order = 20,
+							order = 21,
 							type = "toggle",
 							width = "full",
 							name = "Watch Achievements",
@@ -1107,7 +1125,7 @@ local function QuestOptions ()
 							end,				
 						},								
 						qwwatchchal = {
-							order = 21,
+							order = 22,
 							type = "toggle",
 							width = "full",
 							name = "Watch Challenge Modes",
@@ -1121,7 +1139,7 @@ local function QuestOptions ()
 							end,				
 						},									
 						qwwatchzone = {
-							order = 22,
+							order = 23,
 							type = "toggle",
 							width = "full",
 							name = "Show Zone Achievement if Known",
@@ -1133,15 +1151,15 @@ local function QuestOptions ()
 								Nx.qdb.profile.QuestWatch.AchZoneShow = not Nx.qdb.profile.QuestWatch.AchZoneShow
 								Nx.Quest.Watch:Update()
 							end,				
-						},								
+						},											
 						spacer3 = {
-							order = 23,
+							order = 24,
 							type = "description",
 							width = "full",
 							name = " ",
 						},			
 						qwshowclose = {
-							order = 24,
+							order = 25,
 							type = "toggle",
 							width = "full",
 							name = "Show Close Button",
@@ -1155,7 +1173,7 @@ local function QuestOptions ()
 							end,				
 						},			
 						qwfadeall = {
-							order = 25,
+							order = 26,
 							type = "toggle",
 							width = "full",
 							name = "Fade Entire Window",
@@ -1169,7 +1187,7 @@ local function QuestOptions ()
 							end,				
 						},									
 						qwbgcol = {
-							order = 26,
+							order = 27,
 							type = "color",
 							width = "full",
 							name = "Quest Watch Background Color",
@@ -1189,7 +1207,7 @@ local function QuestOptions ()
 							end,						
 						},
 						qwcompletecol = {
-							order = 27,
+							order = 28,
 							type = "color",
 							width = "full",
 							name = "Quest Complete Color",
@@ -1209,7 +1227,7 @@ local function QuestOptions ()
 							end,						
 						},						
 						qwicompletecol = {
-							order = 28,
+							order = 29,
 							type = "color",
 							width = "full",
 							name = "Quest Incomplete Color",
@@ -1229,7 +1247,7 @@ local function QuestOptions ()
 							end,						
 						},								
 						qwocompletecol = {
-							order = 29,
+							order = 30,
 							type = "color",
 							width = "full",
 							name = "Objective Complete Color",
@@ -1249,7 +1267,7 @@ local function QuestOptions ()
 							end,						
 						},								
 						qwoincompletecol = {
-							order = 30,
+							order = 31,
 							type = "color",
 							width = "full",
 							name = "Objective Incomplete Color",
@@ -1269,7 +1287,7 @@ local function QuestOptions ()
 							end,						
 						},								
 						qwobjshade = {
-							order = 31,
+							order = 32,
 							type = "toggle",
 							width = "full",
 							name = "Color Objective Based on Progress",
@@ -1283,13 +1301,13 @@ local function QuestOptions ()
 							end,				
 						},															
 						spacer4 = {
-							order = 32,
+							order = 33,
 							type = "description",
 							width = "full",
 							name = " ",
 						},				
 						qwiconsize = {
-							order = 33,
+							order = 34,
 							type = "range",							
 							name = "Clickable Icon Size (0 disables)",						
 							desc = "If a quest has an item to be used, will draw it beside the quest at the size defined here",
@@ -1306,13 +1324,13 @@ local function QuestOptions ()
 							end,				
 						},			
 						spacer5 = {
-							order = 34,
+							order = 35,
 							type = "description",
 							width = "full",
 							name = " ",
 						},				
 						qwitemalpha = {
-							order = 35,
+							order = 36,
 							type = "color",
 							width = "full",
 							name = "Item Transparency",
@@ -1332,13 +1350,13 @@ local function QuestOptions ()
 							end,						
 						},								
 						spacer6 = {
-							order = 36,
+							order = 37,
 							type = "description",
 							width = "full",
 							name = " ",
 						},												
 						QuestWatchFont = {
-							order = 37,
+							order = 38,
 							type	= "select",
 							name	= "Quest Watch Font",
 							desc	= "Sets the font to be used on the quest watch window",
@@ -1361,12 +1379,12 @@ local function QuestOptions ()
 							end,					
 						},
 						QuestWatchFontSize = {
-							order = 38,
+							order = 39,
 							type = "range",							
 							name = "Watch Font Size",						
 							desc = "Sets the size of the quest watch font",
 							min = 6,
-							max = 14,
+							max = 20,
 							step = 1,
 							bigStep = 1,
 							get = function()
@@ -1378,7 +1396,7 @@ local function QuestOptions ()
 							end,				
 						},				
 						QuestWatchFontSpacing = {
-							order = 39,
+							order = 40,
 							type = "range",							
 							name = "Watch Font Spacing",						
 							desc = "Sets the spacing of the quest watch font",
@@ -1728,6 +1746,8 @@ function CarboniteQuest:OnInitialize()
 		return
 	end	
 	Nx.qdb = LibStub("AceDB-3.0"):New("NXQuest",defaults, true)	
+	Nx.qdb:SetProfile(Nx.db:GetCurrentProfile())
+	tinsert(Nx.dbs,Nx.qdb)	
 	Nx.Font:ModuleAdd("Quest.QuestFont",{ "NxFontQ", "GameFontNormal","qdb" })	
 	Nx.Font:ModuleAdd("QuestWatch.WatchFont",{ "NxFontW", "GameFontNormal","qdb" })		
 	Nx.Map.Maps[1].PIconMenu:AddItem (0, "Get Quests", Nx.Map.Menu_OnGetQuests,Nx.Map.Maps[1])
@@ -3511,7 +3531,7 @@ function Nx.Quest:ScanBlizzQuestDataTimer()
 	local scanCnt = 0
 
 	while scanCnt < 1000 do
-		if InCombatLockdown() then
+		if InCombatLockdown() then			
 			return
 		end
 		if mapId ~= curMapId then
@@ -8345,7 +8365,7 @@ local qw_elapsed = 0
 local qw_lasttime
 local qw_ttl = 9999
 
-function Nx.Quest.Watch:Update()
+function Nx.Quest.Watch:Update()	
 	if qw_lasttime then
 		local curtime = debugprofilestop()
 		qw_elapsed = curtime - qw_lasttime
@@ -8354,13 +8374,13 @@ function Nx.Quest.Watch:Update()
 		qw_lasttime = debugprofilestop()
 	end		
 	qw_ttl = qw_ttl + qw_elapsed
-	if qw_ttl < 500 then				
+	if qw_ttl < Nx.qdb.profile.QuestWatch.RefreshTimer then				
 		return
 	end			
 	qw_ttl = 0
 	self.CalcDistI = 1
 	self.CalcDistCnt = 20
-	QuestWatchDist = Nx:ScheduleTimer(self.OnTimer,0,self)
+	QuestWatchDist = Nx:ScheduleTimer(self.OnTimer,0,self)	
 end
 
 function Nx.Quest.Watch:OnTimer (item)
@@ -8484,9 +8504,13 @@ function Nx.Quest.Watch:UpdateList()
 			end
 			if Nx.qdb.profile.QuestWatch.ChalTrack then
 			  local cTimer ={GetWorldElapsedTimers()}
-				for _,id in ipairs(cTimer) do
- 		          local description, elapsedTime, isChallengeModeTimer = GetWorldElapsedTime(id) 
- 		          if (isChallengeModeTimer) then
+				for a,id in ipairs(cTimer) do
+				  local ProvingGroundsType, _, _, _ = C_Scenario.GetProvingGroundsInfo()
+				  if ProvingGroundsType ~= 0 then
+					id = 2
+				  end
+ 		          local description, elapsedTime, isChallengeModeTimer = GetWorldElapsedTime(id) 					  
+ 		          if isChallengeModeTimer == 2 then				  					
  		            list:ItemAdd(0)
  			        list:ItemSet(2,format("|cffff8888%s",description))
  			        list:ItemSetButton("QuestWatchTip",false)
@@ -8494,6 +8518,25 @@ function Nx.Quest.Watch:UpdateList()
  			        list:ItemAdd(0)
  			        list:ItemSet(2,s)
  		          end
+				  if isChallengeModeTimer == 3 then					
+					local difficulty, curWave, maxWave, duration = C_Scenario.GetProvingGroundsInfo()					
+					local diff = ""
+					list:ItemAdd(0)
+					if difficulty == 1 then
+						diff = "|cffffffffDifficulty: |cff8C7853Bronze"
+					end
+					if difficulty == 2 then
+						diff = "|cffffffffDifficulty: |cffC0C0C0Silver"
+					end
+					if difficulty == 3 then
+						diff = "|cffffffffDifficulty: |cffC77826gold"
+					end
+					list:ItemSet(2,format("|cffff8888%s",diff))
+					list:ItemSetButton("QuestWatchTip",false)
+					local s = "  |cffff0000 Wave: [|cffffffff" .. curWave .. "|cffff0000/|cffffffff" .. maxWave .. "|cffff0000]|cff00ff00 " .. SecondsToTime(duration-elapsedTime)
+					list:ItemAdd(0)
+					list:ItemSet(2,s)
+				  end
  		        end			
 			end
 			if Nx.qdb.profile.QuestWatch.ScenTrack then
@@ -8596,12 +8639,9 @@ function Nx.Quest.Watch:UpdateList()
 
 					local trackMode = Quest.Tracking[qId] or 0
 					local obj = quest and (quest["End"] or quest["Start"])					
-					if qId == 0 then
+					if qId == 0 then						
 						list:ItemSetButton ("QuestWatchErr", false)
-
 					elseif not obj then
-	
---						Nx.prt ("not obj")
 						list:ItemSetButton ("QuestWatchErr", false)
 
 					elseif isComplete or lbNum == 0 then

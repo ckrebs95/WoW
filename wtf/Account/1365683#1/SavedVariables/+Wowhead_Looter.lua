@@ -1,8 +1,8 @@
 
 wlVersion = 50014
 wlUploaded = 0
-wlStats = "150^12^27^126^5^1^enUS^17688"
-wlExportData = "who=us.logon.worldofwarcraft.com,Khaz Modan,Desamil,4&glyphs=704,189,194,455,197,199,987,457&projects=-1&timePlayedTotal=0;"
+wlStats = "162^12^28^126^5^1^enUS^17688"
+wlExportData = "who=us.logon.worldofwarcraft.com,Khaz Modan,Desamil,4&glyphs=704,189,194,455,197,199,987,457&projects=-1&timePlayedTotal=410071;"
 wlRealmList = {
 	["us.logon.worldofwarcraft.com"] = 1,
 }
@@ -26,151 +26,151 @@ wlEvent = {
 			}, -- [1]
 			{
 				["flags"] = 1024,
+				["what"] = "loot",
+				["action"] = "Killing",
+				["dd"] = -1,
+				["id"] = 62358,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
 				["drop"] = {
 					"89112^1", -- [1]
 					"81202^1", -- [2]
 				},
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 62358,
-				["kind"] = "npc",
-				["isAoeLoot"] = 0,
-				["dd"] = -1,
 			}, -- [2]
 			{
 				["flags"] = 1024,
-				["drop"] = {
-					"83156^4", -- [1]
-				},
-				["action"] = "Killing",
 				["what"] = "loot",
+				["action"] = "Killing",
+				["dd"] = -1,
 				["id"] = 59544,
 				["kind"] = "npc",
 				["isAoeLoot"] = 1,
-				["dd"] = -1,
+				["drop"] = {
+					"83156^4", -- [1]
+				},
 			}, -- [3]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 59547,
 				["isAoeLoot"] = 1,
-				["dd"] = -1,
+				["action"] = "Killing",
 				["drop"] = {
 					"coin^9514", -- [1]
 				},
+				["id"] = 59547,
+				["kind"] = "npc",
+				["dd"] = -1,
+				["what"] = "loot",
 			}, -- [4]
 			{
 				["flags"] = 1024,
-				["drop"] = {
-					"81200^3", -- [1]
-				},
-				["action"] = "Killing",
 				["what"] = "loot",
+				["action"] = "Killing",
+				["dd"] = -1,
 				["id"] = 57109,
 				["kind"] = "npc",
 				["isAoeLoot"] = 1,
-				["dd"] = -1,
+				["drop"] = {
+					"81200^3", -- [1]
+				},
 			}, -- [5]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 58319,
 				["isAoeLoot"] = 1,
-				["dd"] = -1,
+				["action"] = "Killing",
 				["drop"] = {
 					"81200^4", -- [1]
 				},
+				["id"] = 58319,
+				["kind"] = "npc",
+				["dd"] = -1,
+				["what"] = "loot",
 			}, -- [6]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 58319,
 				["isAoeLoot"] = 1,
-				["dd"] = -1,
+				["action"] = "Killing",
 				["drop"] = {
 					"81200^4", -- [1]
 				},
+				["id"] = 58319,
+				["kind"] = "npc",
+				["dd"] = -1,
+				["what"] = "loot",
 			}, -- [7]
 			{
 				["flags"] = 1024,
+				["what"] = "loot",
+				["action"] = "Killing",
+				["dd"] = -1,
+				["id"] = 56732,
+				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["drop"] = {
 					"coin^400000", -- [1]
 					"80872^1", -- [2]
 				},
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 56732,
-				["kind"] = "npc",
-				["isAoeLoot"] = 1,
-				["dd"] = -1,
 			}, -- [8]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 58319,
 				["isAoeLoot"] = 1,
-				["dd"] = -1,
+				["action"] = "Killing",
 				["drop"] = {
 					"81200^2", -- [1]
 				},
+				["id"] = 58319,
+				["kind"] = "npc",
+				["dd"] = -1,
+				["what"] = "loot",
 			}, -- [9]
 			{
 				["flags"] = 1024,
+				["what"] = "loot",
+				["action"] = "Killing",
+				["dd"] = -1,
+				["id"] = 56439,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
 				["drop"] = {
 					"80871^1", -- [1]
 					"80869^1", -- [2]
 					"coin^400000", -- [3]
 				},
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 56439,
-				["kind"] = "npc",
-				["isAoeLoot"] = 0,
-				["dd"] = -1,
 			}, -- [10]
 			{
 				["flags"] = 1024,
+				["what"] = "loot",
+				["action"] = "Killing",
+				["dd"] = 0,
+				["id"] = 65928,
+				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["drop"] = {
 					"coin^4377", -- [1]
 				},
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 65928,
-				["kind"] = "npc",
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
 			}, -- [11]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 65928,
 				["isAoeLoot"] = 1,
-				["dd"] = 0,
+				["action"] = "Killing",
 				["drop"] = {
 					"coin^2584", -- [1]
 				},
+				["id"] = 65928,
+				["kind"] = "npc",
+				["dd"] = 0,
+				["what"] = "loot",
 			}, -- [12]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 59580,
 				["isAoeLoot"] = 1,
-				["dd"] = 0,
+				["action"] = "Killing",
 				["drop"] = {
 					"coin^4139", -- [1]
 				},
+				["id"] = 59580,
+				["kind"] = "npc",
+				["dd"] = 0,
+				["what"] = "loot",
 			}, -- [13]
 			{
 				["dl"] = 0,
@@ -182,13 +182,13 @@ wlEvent = {
 				["y"] = 882,
 				["x"] = 584,
 				["name"] = "Root Vegetable",
-				["dd"] = 0,
-				["flags"] = 1024,
-				["kind"] = "object",
-				["isAoeLoot"] = 0,
 				["drop"] = {
 					"80227^1", -- [1]
 				},
+				["flags"] = 1024,
+				["isAoeLoot"] = 0,
+				["kind"] = "object",
+				["dd"] = 0,
 			}, -- [14]
 			{
 				["dl"] = 0,
@@ -200,13 +200,13 @@ wlEvent = {
 				["y"] = 883,
 				["x"] = 586,
 				["name"] = "Root Vegetable",
-				["dd"] = 0,
-				["flags"] = 1024,
-				["kind"] = "object",
-				["isAoeLoot"] = 0,
 				["drop"] = {
 					"80227^1", -- [1]
 				},
+				["flags"] = 1024,
+				["isAoeLoot"] = 0,
+				["kind"] = "object",
+				["dd"] = 0,
 			}, -- [15]
 			{
 				["dl"] = 0,
@@ -218,13 +218,13 @@ wlEvent = {
 				["y"] = 885,
 				["x"] = 586,
 				["name"] = "Root Vegetable",
-				["dd"] = 0,
-				["flags"] = 1024,
-				["kind"] = "object",
-				["isAoeLoot"] = 0,
 				["drop"] = {
 					"80227^1", -- [1]
 				},
+				["flags"] = 1024,
+				["isAoeLoot"] = 0,
+				["kind"] = "object",
+				["dd"] = 0,
 			}, -- [16]
 			{
 				["dl"] = 0,
@@ -236,13 +236,13 @@ wlEvent = {
 				["y"] = 885,
 				["x"] = 585,
 				["name"] = "Root Vegetable",
-				["dd"] = 0,
-				["flags"] = 1024,
-				["kind"] = "object",
-				["isAoeLoot"] = 0,
 				["drop"] = {
 					"80227^1", -- [1]
 				},
+				["flags"] = 1024,
+				["isAoeLoot"] = 0,
+				["kind"] = "object",
+				["dd"] = 0,
 			}, -- [17]
 			{
 				["dl"] = 0,
@@ -254,13 +254,13 @@ wlEvent = {
 				["y"] = 887,
 				["x"] = 583,
 				["name"] = "Root Vegetable",
-				["dd"] = 0,
-				["flags"] = 1024,
-				["kind"] = "object",
-				["isAoeLoot"] = 0,
 				["drop"] = {
 					"80227^1", -- [1]
 				},
+				["flags"] = 1024,
+				["isAoeLoot"] = 0,
+				["kind"] = "object",
+				["dd"] = 0,
 			}, -- [18]
 			{
 				["dl"] = 0,
@@ -272,13 +272,13 @@ wlEvent = {
 				["y"] = 889,
 				["x"] = 584,
 				["name"] = "Root Vegetable",
-				["dd"] = 0,
-				["flags"] = 1024,
-				["kind"] = "object",
-				["isAoeLoot"] = 0,
 				["drop"] = {
 					"80227^1", -- [1]
 				},
+				["flags"] = 1024,
+				["isAoeLoot"] = 0,
+				["kind"] = "object",
+				["dd"] = 0,
 			}, -- [19]
 			{
 				["dl"] = 0,
@@ -290,100 +290,100 @@ wlEvent = {
 				["y"] = 886,
 				["x"] = 586,
 				["name"] = "Root Vegetable",
-				["dd"] = 0,
-				["flags"] = 1024,
-				["kind"] = "object",
-				["isAoeLoot"] = 0,
 				["drop"] = {
 					"80227^1", -- [1]
 				},
+				["flags"] = 1024,
+				["isAoeLoot"] = 0,
+				["kind"] = "object",
+				["dd"] = 0,
 			}, -- [20]
 			{
 				["flags"] = 1024,
+				["what"] = "loot",
+				["action"] = "Killing",
+				["dd"] = 0,
+				["id"] = 59655,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
 				["drop"] = {
 					"72988^2", -- [1]
 					"coin^5291", -- [2]
 					"80227^6", -- [3]
 				},
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 59655,
-				["kind"] = "npc",
-				["isAoeLoot"] = 0,
-				["dd"] = 0,
 			}, -- [21]
 			{
 				["flags"] = 1024,
+				["what"] = "loot",
+				["action"] = "Killing",
+				["dd"] = 0,
+				["id"] = 59580,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
 				["drop"] = {
 					"coin^4592", -- [1]
 				},
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 59580,
-				["kind"] = "npc",
-				["isAoeLoot"] = 0,
-				["dd"] = 0,
 			}, -- [22]
 			{
 				["flags"] = 1024,
-				["drop"] = {
-					"coin^1661", -- [1]
-				},
-				["action"] = "Killing",
 				["what"] = "loot",
+				["action"] = "Killing",
+				["dd"] = 0,
 				["id"] = 59580,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["dd"] = 0,
+				["drop"] = {
+					"coin^1661", -- [1]
+				},
 			}, -- [23]
 			{
 				["flags"] = 1024,
-				["drop"] = {
-					"coin^3761", -- [1]
-				},
-				["action"] = "Killing",
 				["what"] = "loot",
+				["action"] = "Killing",
+				["dd"] = 0,
 				["id"] = 59655,
 				["kind"] = "npc",
 				["isAoeLoot"] = 1,
-				["dd"] = 0,
+				["drop"] = {
+					"coin^3761", -- [1]
+				},
 			}, -- [24]
 			{
 				["flags"] = 1024,
-				["isAoeLoot"] = 1,
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 59580,
 				["kind"] = "npc",
-				["dd"] = 0,
+				["action"] = "Killing",
 				["drop"] = {
 					"coin^4276", -- [1]
 				},
+				["id"] = 59580,
+				["isAoeLoot"] = 1,
+				["dd"] = 0,
+				["what"] = "loot",
 			}, -- [25]
 			{
 				["flags"] = 1024,
+				["what"] = "loot",
+				["action"] = "Killing",
+				["dd"] = 0,
+				["id"] = 65928,
+				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["drop"] = {
 					"coin^1791", -- [1]
 				},
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 65928,
-				["kind"] = "npc",
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
 			}, -- [26]
 			{
 				["flags"] = 1024,
-				["isAoeLoot"] = 1,
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 65928,
 				["kind"] = "npc",
-				["dd"] = 0,
+				["action"] = "Killing",
 				["drop"] = {
 					"coin^4615", -- [1]
 					"72988^2", -- [2]
 				},
+				["id"] = 65928,
+				["isAoeLoot"] = 1,
+				["dd"] = 0,
+				["what"] = "loot",
 			}, -- [27]
 			{
 				["dl"] = 0,
@@ -395,13 +395,13 @@ wlEvent = {
 				["y"] = 884,
 				["x"] = 601,
 				["name"] = "Cast Iron Pot",
-				["dd"] = 0,
-				["flags"] = 1024,
-				["kind"] = "object",
-				["isAoeLoot"] = 0,
 				["drop"] = {
 					"80230^1", -- [1]
 				},
+				["flags"] = 1024,
+				["isAoeLoot"] = 0,
+				["kind"] = "object",
+				["dd"] = 0,
 			}, -- [28]
 			{
 				["questid"] = 30571,
@@ -443,14 +443,14 @@ wlEvent = {
 				["y"] = 739,
 				["x"] = 429,
 				["name"] = "Ghost Iron Deposit",
-				["dd"] = 0,
-				["flags"] = 1024,
-				["kind"] = "object",
-				["isAoeLoot"] = 0,
 				["drop"] = {
 					"72092^1", -- [1]
 					"97512^6", -- [2]
 				},
+				["flags"] = 1024,
+				["isAoeLoot"] = 0,
+				["kind"] = "object",
+				["dd"] = 0,
 			}, -- [32]
 			{
 				["dl"] = 0,
@@ -462,62 +462,62 @@ wlEvent = {
 				["y"] = 506,
 				["x"] = 700,
 				["name"] = "Ghost Iron Deposit",
-				["dd"] = 0,
-				["flags"] = 1024,
-				["kind"] = "object",
-				["isAoeLoot"] = 0,
 				["drop"] = {
 					"97512^7", -- [1]
 					"72092^4", -- [2]
 				},
+				["flags"] = 1024,
+				["isAoeLoot"] = 0,
+				["kind"] = "object",
+				["dd"] = 0,
 			}, -- [33]
 			{
 				["flags"] = 1024,
-				["drop"] = {
-					"coin^13003", -- [1]
-				},
-				["action"] = "Killing",
 				["what"] = "loot",
+				["action"] = "Killing",
+				["dd"] = -1,
 				["id"] = 59751,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["dd"] = -1,
+				["drop"] = {
+					"coin^13003", -- [1]
+				},
 			}, -- [34]
 			{
 				["flags"] = 1024,
-				["drop"] = {
-					"coin^14272", -- [1]
-				},
-				["action"] = "Killing",
 				["what"] = "loot",
+				["action"] = "Killing",
+				["dd"] = -1,
 				["id"] = 59808,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["dd"] = -1,
+				["drop"] = {
+					"coin^14272", -- [1]
+				},
 			}, -- [35]
 			{
 				["flags"] = 1024,
-				["drop"] = {
-					"80910^1", -- [1]
-				},
-				["action"] = "Killing",
 				["what"] = "loot",
+				["action"] = "Killing",
+				["dd"] = -1,
 				["id"] = 56747,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["dd"] = -1,
+				["drop"] = {
+					"80910^1", -- [1]
+				},
 			}, -- [36]
 			{
 				["flags"] = 1024,
-				["drop"] = {
-					"81200^2", -- [1]
-				},
-				["action"] = "Killing",
 				["what"] = "loot",
+				["action"] = "Killing",
+				["dd"] = -1,
 				["id"] = 65414,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["dd"] = -1,
+				["drop"] = {
+					"81200^2", -- [1]
+				},
 			}, -- [37]
 			{
 				["sharable"] = 1,
@@ -531,88 +531,88 @@ wlEvent = {
 			}, -- [38]
 			{
 				["flags"] = 1024,
-				["drop"] = {
-					"82137^1", -- [1]
-				},
-				["action"] = "Killing",
 				["what"] = "loot",
+				["action"] = "Killing",
+				["dd"] = -1,
 				["id"] = 56764,
 				["kind"] = "npc",
 				["isAoeLoot"] = 1,
-				["dd"] = -1,
+				["drop"] = {
+					"82137^1", -- [1]
+				},
 			}, -- [39]
 			{
 				["flags"] = 1024,
-				["isAoeLoot"] = 1,
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 56763,
 				["kind"] = "npc",
-				["dd"] = -1,
+				["action"] = "Killing",
 				["drop"] = {
 					"81200^3", -- [1]
 				},
+				["id"] = 56763,
+				["isAoeLoot"] = 1,
+				["dd"] = -1,
+				["what"] = "loot",
 			}, -- [40]
 			{
 				["flags"] = 1024,
+				["what"] = "loot",
+				["action"] = "Killing",
+				["dd"] = -1,
+				["id"] = 56765,
+				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["drop"] = {
 					"82095^1", -- [1]
 				},
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 56765,
-				["kind"] = "npc",
-				["isAoeLoot"] = 1,
-				["dd"] = -1,
 			}, -- [41]
 			{
 				["flags"] = 1024,
-				["isAoeLoot"] = 1,
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 56765,
 				["kind"] = "npc",
-				["dd"] = -1,
+				["action"] = "Killing",
 				["drop"] = {
 					"82194^1", -- [1]
 				},
+				["id"] = 56765,
+				["isAoeLoot"] = 1,
+				["dd"] = -1,
+				["what"] = "loot",
 			}, -- [42]
 			{
 				["flags"] = 1024,
-				["isAoeLoot"] = 1,
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 56765,
 				["kind"] = "npc",
-				["dd"] = -1,
+				["action"] = "Killing",
 				["drop"] = {
 					"81200^2", -- [1]
 				},
+				["id"] = 56765,
+				["isAoeLoot"] = 1,
+				["dd"] = -1,
+				["what"] = "loot",
 			}, -- [43]
 			{
 				["flags"] = 1024,
+				["what"] = "loot",
+				["action"] = "Killing",
+				["dd"] = -1,
+				["id"] = 56719,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
 				["drop"] = {
 					"coin^400000", -- [1]
 					"80915^1", -- [2]
 				},
-				["action"] = "Killing",
-				["what"] = "loot",
-				["id"] = 56719,
-				["kind"] = "npc",
-				["isAoeLoot"] = 0,
-				["dd"] = -1,
 			}, -- [44]
 			{
 				["flags"] = 1024,
-				["drop"] = {
-					"81205^3", -- [1]
-				},
-				["action"] = "Killing",
 				["what"] = "loot",
+				["action"] = "Killing",
+				["dd"] = -1,
 				["id"] = 58807,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["dd"] = -1,
+				["drop"] = {
+					"81205^3", -- [1]
+				},
 			}, -- [45]
 			{
 				["dl"] = 0,
@@ -624,26 +624,26 @@ wlEvent = {
 				["y"] = 581,
 				["x"] = 588,
 				["name"] = "Ghost Iron Deposit",
-				["dd"] = -1,
-				["flags"] = 1024,
-				["kind"] = "object",
-				["isAoeLoot"] = 0,
 				["drop"] = {
 					"97512^7", -- [1]
 					"72092^2", -- [2]
 				},
+				["flags"] = 1024,
+				["isAoeLoot"] = 0,
+				["kind"] = "object",
+				["dd"] = -1,
 			}, -- [46]
 			{
 				["flags"] = 1024,
-				["drop"] = {
-					"81205^5", -- [1]
-				},
-				["action"] = "Killing",
 				["what"] = "loot",
+				["action"] = "Killing",
+				["dd"] = -1,
 				["id"] = 58803,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["dd"] = -1,
+				["drop"] = {
+					"81205^5", -- [1]
+				},
 			}, -- [47]
 			{
 				["questid"] = 30757,
@@ -675,14 +675,14 @@ wlEvent = {
 				["y"] = 585,
 				["x"] = 724,
 				["name"] = "Ghost Iron Deposit",
-				["dd"] = 0,
-				["flags"] = 1024,
-				["kind"] = "object",
-				["isAoeLoot"] = 0,
 				["drop"] = {
 					"97512^8", -- [1]
 					"72092^1", -- [2]
 				},
+				["flags"] = 1024,
+				["isAoeLoot"] = 0,
+				["kind"] = "object",
+				["dd"] = 0,
 			}, -- [50]
 			{
 				["questid"] = 30814,
@@ -704,14 +704,14 @@ wlEvent = {
 				["y"] = 837,
 				["x"] = 503,
 				["name"] = "Ghost Iron Deposit",
-				["dd"] = 0,
-				["flags"] = 1024,
-				["kind"] = "object",
-				["isAoeLoot"] = 0,
 				["drop"] = {
 					"97512^10", -- [1]
 					"72092^2", -- [2]
 				},
+				["flags"] = 1024,
+				["isAoeLoot"] = 0,
+				["kind"] = "object",
+				["dd"] = 0,
 			}, -- [52]
 		}, -- [1]
 		{
@@ -725,53 +725,53 @@ wlEvent = {
 				["zone"] = "Townlong Steppes",
 				["id"] = 211506,
 				["mapAreaID"] = 810,
-				["dd"] = 0,
-				["y"] = 529,
-				["x"] = 688,
-				["name"] = "Pitch Pot",
 				["drop"] = {
 					"81174^1", -- [1]
 				},
-				["kind"] = "object",
+				["y"] = 529,
+				["x"] = 688,
+				["name"] = "Pitch Pot",
+				["dd"] = 0,
 				["isAoeLoot"] = 0,
+				["kind"] = "object",
 				["flags"] = 1024,
 				["what"] = "loot",
 			}, -- [2]
 			{
 				["flags"] = 1024,
-				["what"] = "loot",
-				["action"] = "Killing",
 				["dd"] = 0,
-				["id"] = 60647,
-				["kind"] = "npc",
-				["isAoeLoot"] = 0,
+				["action"] = "Killing",
 				["drop"] = {
 					"coin^2049", -- [1]
 				},
+				["id"] = 60647,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["what"] = "loot",
 			}, -- [3]
 			{
 				["flags"] = 1024,
-				["what"] = "loot",
-				["action"] = "Killing",
 				["dd"] = 0,
-				["id"] = 60647,
-				["kind"] = "npc",
-				["isAoeLoot"] = 1,
+				["action"] = "Killing",
 				["drop"] = {
 					"coin^5388", -- [1]
 				},
+				["id"] = 60647,
+				["kind"] = "npc",
+				["isAoeLoot"] = 1,
+				["what"] = "loot",
 			}, -- [4]
 			{
 				["flags"] = 1024,
-				["what"] = "loot",
-				["action"] = "Killing",
 				["drop"] = {
 					"coin^3737", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 60647,
-				["kind"] = "npc",
-				["dd"] = 0,
 				["isAoeLoot"] = 1,
+				["dd"] = 0,
+				["kind"] = "npc",
 			}, -- [5]
 			{
 				["dl"] = 0,
@@ -779,15 +779,15 @@ wlEvent = {
 				["zone"] = "Townlong Steppes",
 				["id"] = 211507,
 				["mapAreaID"] = 810,
-				["dd"] = 0,
-				["y"] = 523,
-				["x"] = 696,
-				["name"] = "Pitch Pot",
 				["drop"] = {
 					"81174^1", -- [1]
 				},
-				["kind"] = "object",
+				["y"] = 523,
+				["x"] = 696,
+				["name"] = "Pitch Pot",
+				["dd"] = 0,
 				["isAoeLoot"] = 0,
+				["kind"] = "object",
 				["flags"] = 1024,
 				["what"] = "loot",
 			}, -- [6]
@@ -797,15 +797,15 @@ wlEvent = {
 				["zone"] = "Townlong Steppes",
 				["id"] = 211506,
 				["mapAreaID"] = 810,
-				["dd"] = 0,
-				["y"] = 519,
-				["x"] = 697,
-				["name"] = "Pitch Pot",
 				["drop"] = {
 					"81174^1", -- [1]
 				},
-				["kind"] = "object",
+				["y"] = 519,
+				["x"] = 697,
+				["name"] = "Pitch Pot",
+				["dd"] = 0,
 				["isAoeLoot"] = 0,
+				["kind"] = "object",
 				["flags"] = 1024,
 				["what"] = "loot",
 			}, -- [7]
@@ -815,15 +815,15 @@ wlEvent = {
 				["zone"] = "Townlong Steppes",
 				["id"] = 211506,
 				["mapAreaID"] = 810,
-				["dd"] = 0,
-				["y"] = 517,
-				["x"] = 698,
-				["name"] = "Pitch Pot",
 				["drop"] = {
 					"81174^1", -- [1]
 				},
-				["kind"] = "object",
+				["y"] = 517,
+				["x"] = 698,
+				["name"] = "Pitch Pot",
+				["dd"] = 0,
 				["isAoeLoot"] = 0,
+				["kind"] = "object",
 				["flags"] = 1024,
 				["what"] = "loot",
 			}, -- [8]
@@ -833,15 +833,15 @@ wlEvent = {
 				["zone"] = "Townlong Steppes",
 				["id"] = 211507,
 				["mapAreaID"] = 810,
-				["dd"] = 0,
-				["y"] = 517,
-				["x"] = 695,
-				["name"] = "Pitch Pot",
 				["drop"] = {
 					"81174^1", -- [1]
 				},
-				["kind"] = "object",
+				["y"] = 517,
+				["x"] = 695,
+				["name"] = "Pitch Pot",
+				["dd"] = 0,
 				["isAoeLoot"] = 0,
+				["kind"] = "object",
 				["flags"] = 1024,
 				["what"] = "loot",
 			}, -- [9]
@@ -851,54 +851,54 @@ wlEvent = {
 				["zone"] = "Townlong Steppes",
 				["id"] = 211507,
 				["mapAreaID"] = 810,
-				["dd"] = 0,
-				["y"] = 522,
-				["x"] = 694,
-				["name"] = "Pitch Pot",
 				["drop"] = {
 					"81174^1", -- [1]
 				},
-				["kind"] = "object",
+				["y"] = 522,
+				["x"] = 694,
+				["name"] = "Pitch Pot",
+				["dd"] = 0,
 				["isAoeLoot"] = 0,
+				["kind"] = "object",
 				["flags"] = 1024,
 				["what"] = "loot",
 			}, -- [10]
 			{
 				["flags"] = 1024,
-				["what"] = "loot",
-				["action"] = "Killing",
 				["dd"] = 0,
-				["id"] = 60647,
-				["kind"] = "npc",
-				["isAoeLoot"] = 1,
+				["action"] = "Killing",
 				["drop"] = {
 					"coin^3629", -- [1]
 				},
+				["id"] = 60647,
+				["kind"] = "npc",
+				["isAoeLoot"] = 1,
+				["what"] = "loot",
 			}, -- [11]
 			{
 				["flags"] = 1024,
-				["what"] = "loot",
-				["action"] = "Killing",
 				["drop"] = {
 					"coin^3868", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 60647,
-				["kind"] = "npc",
-				["dd"] = 0,
 				["isAoeLoot"] = 1,
+				["dd"] = 0,
+				["kind"] = "npc",
 			}, -- [12]
 			{
 				["flags"] = 1024,
-				["what"] = "loot",
-				["action"] = "Killing",
 				["dd"] = 0,
-				["id"] = 60647,
-				["kind"] = "npc",
-				["isAoeLoot"] = 0,
+				["action"] = "Killing",
 				["drop"] = {
 					"coin^1050", -- [1]
 					"82181^1", -- [2]
 				},
+				["id"] = 60647,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["what"] = "loot",
 			}, -- [13]
 			{
 				["dl"] = 0,
@@ -906,15 +906,15 @@ wlEvent = {
 				["zone"] = "Townlong Steppes",
 				["id"] = 211507,
 				["mapAreaID"] = 810,
-				["dd"] = 0,
-				["y"] = 517,
-				["x"] = 684,
-				["name"] = "Pitch Pot",
 				["drop"] = {
 					"81174^1", -- [1]
 				},
-				["kind"] = "object",
+				["y"] = 517,
+				["x"] = 684,
+				["name"] = "Pitch Pot",
+				["dd"] = 0,
 				["isAoeLoot"] = 0,
+				["kind"] = "object",
 				["flags"] = 1024,
 				["what"] = "loot",
 			}, -- [14]
@@ -924,30 +924,30 @@ wlEvent = {
 				["zone"] = "Townlong Steppes",
 				["id"] = 211507,
 				["mapAreaID"] = 810,
-				["dd"] = 0,
-				["y"] = 518,
-				["x"] = 683,
-				["name"] = "Pitch Pot",
 				["drop"] = {
 					"81174^1", -- [1]
 				},
-				["kind"] = "object",
+				["y"] = 518,
+				["x"] = 683,
+				["name"] = "Pitch Pot",
+				["dd"] = 0,
 				["isAoeLoot"] = 0,
+				["kind"] = "object",
 				["flags"] = 1024,
 				["what"] = "loot",
 			}, -- [15]
 			{
 				["flags"] = 1024,
-				["what"] = "loot",
-				["action"] = "Killing",
 				["dd"] = 0,
-				["id"] = 60647,
-				["kind"] = "npc",
-				["isAoeLoot"] = 0,
+				["action"] = "Killing",
 				["drop"] = {
 					"coin^4720", -- [1]
 					"72988^1", -- [2]
 				},
+				["id"] = 60647,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["what"] = "loot",
 			}, -- [16]
 			{
 				["targetkind"] = "npc",
@@ -1001,81 +1001,81 @@ wlEvent = {
 			}, -- [21]
 			{
 				["flags"] = 1024,
-				["what"] = "loot",
-				["action"] = "Killing",
 				["dd"] = 0,
-				["id"] = 60692,
-				["kind"] = "npc",
-				["isAoeLoot"] = 1,
+				["action"] = "Killing",
 				["drop"] = {
 					"coin^4189", -- [1]
 				},
+				["id"] = 60692,
+				["kind"] = "npc",
+				["isAoeLoot"] = 1,
+				["what"] = "loot",
 			}, -- [22]
 			{
 				["flags"] = 1024,
-				["what"] = "loot",
-				["action"] = "Killing",
 				["drop"] = {
 					"81405^1", -- [1]
 					"81178^1", -- [2]
 					"coin^967", -- [3]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 66289,
-				["kind"] = "npc",
-				["dd"] = 0,
 				["isAoeLoot"] = 1,
+				["dd"] = 0,
+				["kind"] = "npc",
 			}, -- [23]
 			{
 				["flags"] = 1024,
-				["what"] = "loot",
-				["action"] = "Killing",
 				["dd"] = 0,
-				["id"] = 60692,
-				["kind"] = "npc",
-				["isAoeLoot"] = 0,
+				["action"] = "Killing",
 				["drop"] = {
 					"coin^1090", -- [1]
 				},
-			}, -- [24]
-			{
-				["flags"] = 1024,
-				["what"] = "loot",
-				["action"] = "Killing",
-				["dd"] = 0,
 				["id"] = 60692,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
+				["what"] = "loot",
+			}, -- [24]
+			{
+				["flags"] = 1024,
+				["dd"] = 0,
+				["action"] = "Killing",
 				["drop"] = {
 					"90759^1", -- [1]
 					"81178^1", -- [2]
 					"coin^2815", -- [3]
 				},
-			}, -- [25]
-			{
-				["flags"] = 1024,
-				["what"] = "loot",
-				["action"] = "Killing",
-				["dd"] = 0,
 				["id"] = 60692,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
+				["what"] = "loot",
+			}, -- [25]
+			{
+				["flags"] = 1024,
+				["dd"] = 0,
+				["action"] = "Killing",
 				["drop"] = {
 					"coin^4994", -- [1]
 					"72988^2", -- [2]
 				},
-			}, -- [26]
-			{
-				["flags"] = 1024,
-				["what"] = "loot",
-				["action"] = "Killing",
-				["dd"] = 0,
 				["id"] = 60692,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
+				["what"] = "loot",
+			}, -- [26]
+			{
+				["flags"] = 1024,
+				["dd"] = 0,
+				["action"] = "Killing",
 				["drop"] = {
 					"coin^4323", -- [1]
 					"81178^1", -- [2]
 				},
+				["id"] = 60692,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["what"] = "loot",
 			}, -- [27]
 			{
 				["dl"] = 0,
@@ -1083,68 +1083,68 @@ wlEvent = {
 				["zone"] = "Townlong Steppes",
 				["id"] = 209311,
 				["mapAreaID"] = 810,
-				["dd"] = 0,
-				["y"] = 479,
-				["x"] = 665,
-				["name"] = "Ghost Iron Deposit",
 				["drop"] = {
 					"97512^6", -- [1]
 					"72092^1", -- [2]
 				},
-				["kind"] = "object",
+				["y"] = 479,
+				["x"] = 665,
+				["name"] = "Ghost Iron Deposit",
+				["dd"] = 0,
 				["isAoeLoot"] = 0,
+				["kind"] = "object",
 				["flags"] = 1024,
 				["what"] = "loot",
 			}, -- [28]
 			{
 				["flags"] = 1024,
-				["what"] = "loot",
-				["action"] = "Killing",
 				["dd"] = 0,
-				["id"] = 66289,
-				["kind"] = "npc",
-				["isAoeLoot"] = 0,
+				["action"] = "Killing",
 				["drop"] = {
 					"coin^850", -- [1]
 				},
-			}, -- [29]
-			{
-				["flags"] = 1024,
-				["what"] = "loot",
-				["action"] = "Killing",
-				["dd"] = 0,
 				["id"] = 66289,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
+				["what"] = "loot",
+			}, -- [29]
+			{
+				["flags"] = 1024,
+				["dd"] = 0,
+				["action"] = "Killing",
 				["drop"] = {
 					"coin^1823", -- [1]
 					"89112^1", -- [2]
 				},
-			}, -- [30]
-			{
-				["flags"] = 1024,
-				["what"] = "loot",
-				["action"] = "Killing",
-				["dd"] = 0,
 				["id"] = 66289,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
+				["what"] = "loot",
+			}, -- [30]
+			{
+				["flags"] = 1024,
+				["dd"] = 0,
+				["action"] = "Killing",
 				["drop"] = {
 					"coin^1714", -- [1]
 				},
+				["id"] = 66289,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["what"] = "loot",
 			}, -- [31]
 			{
 				["flags"] = 1024,
-				["what"] = "loot",
-				["action"] = "Killing",
 				["dd"] = 0,
-				["id"] = 60692,
-				["kind"] = "npc",
-				["isAoeLoot"] = 0,
+				["action"] = "Killing",
 				["drop"] = {
 					"coin^1292", -- [1]
 					"72988^1", -- [2]
 				},
+				["id"] = 60692,
+				["kind"] = "npc",
+				["isAoeLoot"] = 0,
+				["what"] = "loot",
 			}, -- [32]
 			{
 				["targetkind"] = "npc",
@@ -1188,29 +1188,29 @@ wlEvent = {
 			}, -- [36]
 			{
 				["flags"] = 1024,
-				["what"] = "loot",
-				["action"] = "Killing",
 				["dd"] = 0,
-				["id"] = 66289,
-				["kind"] = "npc",
-				["isAoeLoot"] = 1,
+				["action"] = "Killing",
 				["drop"] = {
 					"81405^1", -- [1]
 					"72988^2", -- [2]
 					"coin^5195", -- [3]
 				},
+				["id"] = 66289,
+				["kind"] = "npc",
+				["isAoeLoot"] = 1,
+				["what"] = "loot",
 			}, -- [37]
 			{
 				["flags"] = 1024,
-				["what"] = "loot",
-				["action"] = "Killing",
 				["drop"] = {
 					"coin^1505", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 60692,
-				["kind"] = "npc",
-				["dd"] = 0,
 				["isAoeLoot"] = 1,
+				["dd"] = 0,
+				["kind"] = "npc",
 			}, -- [38]
 			{
 				["targetkind"] = "npc",
@@ -1238,27 +1238,27 @@ wlEvent = {
 				["y"] = 567,
 				["x"] = 729,
 				["name"] = "Ghost Iron Deposit",
+				["dd"] = 0,
+				["flags"] = 1024,
+				["kind"] = "object",
+				["isAoeLoot"] = 0,
 				["drop"] = {
 					"97512^7", -- [1]
 					"72092^1", -- [2]
 				},
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["kind"] = "object",
-				["dd"] = 0,
 			}, -- [2]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"89112^1", -- [1]
 					"81194^1", -- [2]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 60932,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [3]
 			{
 				["questid"] = 30777,
@@ -1272,27 +1272,27 @@ wlEvent = {
 			}, -- [4]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"81194^1", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 60932,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [5]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"81194^1", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 60932,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [6]
 			{
 				["dl"] = 0,
@@ -1304,85 +1304,85 @@ wlEvent = {
 				["y"] = 740,
 				["x"] = 836,
 				["name"] = "Palewind Totem",
+				["dd"] = 0,
+				["flags"] = 1024,
+				["kind"] = "object",
+				["isAoeLoot"] = 0,
 				["drop"] = {
 					"81355^1", -- [1]
 				},
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["kind"] = "object",
-				["dd"] = 0,
 			}, -- [7]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"83157^1", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 66368,
 				["kind"] = "npc",
 				["isAoeLoot"] = 1,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [8]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 66368,
+				["kind"] = "npc",
+				["dd"] = 0,
 				["drop"] = {
 					"67333^1", -- [1]
 				},
-				["id"] = 66368,
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-				["what"] = "loot",
 			}, -- [9]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 66368,
+				["kind"] = "npc",
+				["dd"] = 0,
 				["drop"] = {
 					"83157^1", -- [1]
 				},
-				["id"] = 66368,
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-				["what"] = "loot",
 			}, -- [10]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"81194^1", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 60932,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [11]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"81194^1", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 60932,
 				["kind"] = "npc",
 				["isAoeLoot"] = 1,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [12]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 60932,
+				["kind"] = "npc",
+				["dd"] = 0,
 				["drop"] = {
 					"81194^1", -- [1]
 				},
-				["id"] = 60932,
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-				["what"] = "loot",
 			}, -- [13]
 			{
 				["dl"] = 0,
@@ -1394,26 +1394,26 @@ wlEvent = {
 				["y"] = 767,
 				["x"] = 830,
 				["name"] = "Palewind Totem",
+				["dd"] = 0,
+				["flags"] = 1024,
+				["kind"] = "object",
+				["isAoeLoot"] = 0,
 				["drop"] = {
 					"81355^1", -- [1]
 				},
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["kind"] = "object",
-				["dd"] = 0,
 			}, -- [14]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"81194^1", -- [1]
 					"88567^1", -- [2]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 60932,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [15]
 			{
 				["dl"] = 0,
@@ -1425,61 +1425,61 @@ wlEvent = {
 				["y"] = 774,
 				["x"] = 831,
 				["name"] = "Palewind Totem",
+				["dd"] = 0,
+				["flags"] = 1024,
+				["kind"] = "object",
+				["isAoeLoot"] = 0,
 				["drop"] = {
 					"81355^1", -- [1]
 				},
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["kind"] = "object",
-				["dd"] = 0,
 			}, -- [16]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"83157^1", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 66368,
 				["kind"] = "npc",
 				["isAoeLoot"] = 1,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [17]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 66368,
+				["kind"] = "npc",
+				["dd"] = 0,
 				["drop"] = {
 					"83157^1", -- [1]
 				},
-				["id"] = 66368,
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-				["what"] = "loot",
 			}, -- [18]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 66368,
+				["kind"] = "npc",
+				["dd"] = 0,
 				["drop"] = {
 					"83157^1", -- [1]
 				},
-				["id"] = 66368,
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-				["what"] = "loot",
 			}, -- [19]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"81194^1", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 60932,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [20]
 			{
 				["dl"] = 0,
@@ -1491,13 +1491,13 @@ wlEvent = {
 				["y"] = 784,
 				["x"] = 826,
 				["name"] = "Palewind Totem",
+				["dd"] = 0,
+				["flags"] = 1024,
+				["kind"] = "object",
+				["isAoeLoot"] = 0,
 				["drop"] = {
 					"81355^1", -- [1]
 				},
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["kind"] = "object",
-				["dd"] = 0,
 			}, -- [21]
 			{
 				["dl"] = 0,
@@ -1509,49 +1509,49 @@ wlEvent = {
 				["y"] = 790,
 				["x"] = 825,
 				["name"] = "Palewind Totem",
+				["dd"] = 0,
+				["flags"] = 1024,
+				["kind"] = "object",
+				["isAoeLoot"] = 0,
 				["drop"] = {
 					"81355^1", -- [1]
 				},
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["kind"] = "object",
-				["dd"] = 0,
 			}, -- [22]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"81194^1", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 60932,
 				["kind"] = "npc",
 				["isAoeLoot"] = 1,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [23]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 60932,
+				["kind"] = "npc",
+				["dd"] = 0,
 				["drop"] = {
 					"81194^1", -- [1]
 				},
-				["id"] = 60932,
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-				["what"] = "loot",
 			}, -- [24]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 60932,
+				["kind"] = "npc",
+				["dd"] = 0,
 				["drop"] = {
 					"81194^1", -- [1]
 				},
-				["id"] = 60932,
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-				["what"] = "loot",
 			}, -- [25]
 			{
 				["dl"] = 0,
@@ -1563,13 +1563,13 @@ wlEvent = {
 				["y"] = 781,
 				["x"] = 834,
 				["name"] = "Palewind Totem",
+				["dd"] = 0,
+				["flags"] = 1024,
+				["kind"] = "object",
+				["isAoeLoot"] = 0,
 				["drop"] = {
 					"81355^1", -- [1]
 				},
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["kind"] = "object",
-				["dd"] = 0,
 			}, -- [26]
 			{
 				["dl"] = 0,
@@ -1581,37 +1581,37 @@ wlEvent = {
 				["y"] = 784,
 				["x"] = 836,
 				["name"] = "Palewind Totem",
+				["dd"] = 0,
+				["flags"] = 1024,
+				["kind"] = "object",
+				["isAoeLoot"] = 0,
 				["drop"] = {
 					"81355^1", -- [1]
 				},
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["kind"] = "object",
-				["dd"] = 0,
 			}, -- [27]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"81194^1", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 60932,
 				["kind"] = "npc",
 				["isAoeLoot"] = 1,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [28]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 60932,
+				["kind"] = "npc",
+				["dd"] = 0,
 				["drop"] = {
 					"81194^1", -- [1]
 				},
-				["id"] = 60932,
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-				["what"] = "loot",
 			}, -- [29]
 			{
 				["dl"] = 0,
@@ -1623,13 +1623,13 @@ wlEvent = {
 				["y"] = 790,
 				["x"] = 841,
 				["name"] = "Palewind Totem",
+				["dd"] = 0,
+				["flags"] = 1024,
+				["kind"] = "object",
+				["isAoeLoot"] = 0,
 				["drop"] = {
 					"81355^1", -- [1]
 				},
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["kind"] = "object",
-				["dd"] = 0,
 			}, -- [30]
 			{
 				["dl"] = 0,
@@ -1641,85 +1641,85 @@ wlEvent = {
 				["y"] = 794,
 				["x"] = 840,
 				["name"] = "Palewind Totem",
+				["dd"] = 0,
+				["flags"] = 1024,
+				["kind"] = "object",
+				["isAoeLoot"] = 0,
 				["drop"] = {
 					"81355^1", -- [1]
 				},
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["kind"] = "object",
-				["dd"] = 0,
 			}, -- [31]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"81194^1", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 60932,
 				["kind"] = "npc",
 				["isAoeLoot"] = 1,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [32]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 66368,
+				["kind"] = "npc",
+				["dd"] = 0,
 				["drop"] = {
 					"83157^1", -- [1]
 				},
-				["id"] = 66368,
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-				["what"] = "loot",
 			}, -- [33]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 66368,
+				["kind"] = "npc",
+				["dd"] = 0,
 				["drop"] = {
 					"83157^1", -- [1]
 				},
-				["id"] = 66368,
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-				["what"] = "loot",
 			}, -- [34]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 66368,
+				["kind"] = "npc",
+				["dd"] = 0,
 				["drop"] = {
 					"83157^1", -- [1]
 				},
-				["id"] = 66368,
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-				["what"] = "loot",
 			}, -- [35]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 60932,
+				["kind"] = "npc",
+				["dd"] = 0,
 				["drop"] = {
 					"81194^1", -- [1]
 				},
-				["id"] = 60932,
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-				["what"] = "loot",
 			}, -- [36]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 60932,
+				["kind"] = "npc",
+				["dd"] = 0,
 				["drop"] = {
 					"81212^1", -- [1]
 				},
-				["id"] = 60932,
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-				["what"] = "loot",
 			}, -- [37]
 			{
 				["dl"] = 0,
@@ -1731,86 +1731,86 @@ wlEvent = {
 				["y"] = 721,
 				["x"] = 853,
 				["name"] = "Ghost Iron Deposit",
+				["dd"] = 0,
+				["flags"] = 1024,
+				["kind"] = "object",
+				["isAoeLoot"] = 0,
 				["drop"] = {
 					"97512^7", -- [1]
 					"72092^1", -- [2]
 				},
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["kind"] = "object",
-				["dd"] = 0,
 			}, -- [38]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"83157^1", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 66368,
 				["kind"] = "npc",
 				["isAoeLoot"] = 1,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [39]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 66368,
+				["kind"] = "npc",
+				["dd"] = 0,
 				["drop"] = {
 					"83157^1", -- [1]
 				},
-				["id"] = 66368,
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-				["what"] = "loot",
 			}, -- [40]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 60932,
+				["kind"] = "npc",
+				["dd"] = 0,
 				["drop"] = {
 					"81194^1", -- [1]
 				},
-				["id"] = 60932,
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-				["what"] = "loot",
 			}, -- [41]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 66368,
+				["kind"] = "npc",
+				["dd"] = 0,
 				["drop"] = {
 					"83157^1", -- [1]
 				},
-				["id"] = 66368,
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-				["what"] = "loot",
 			}, -- [42]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"81194^1", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 60932,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [43]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"81194^1", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 60932,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [44]
 			{
 				["questid"] = 30780,
@@ -1864,127 +1864,127 @@ wlEvent = {
 			}, -- [49]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"coin^3696", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 63839,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [50]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"coin^4643", -- [1]
 					"90766^1", -- [2]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 61025,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [51]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"coin^881", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 63840,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [52]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"coin^3035", -- [1]
 					"72988^2", -- [2]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 63840,
 				["kind"] = "npc",
 				["isAoeLoot"] = 1,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [53]
 			{
 				["flags"] = 1024,
-				["kind"] = "npc",
+				["isAoeLoot"] = 1,
 				["action"] = "Killing",
+				["what"] = "loot",
+				["id"] = 63839,
+				["kind"] = "npc",
+				["dd"] = 0,
 				["drop"] = {
 					"coin^2060", -- [1]
 				},
-				["id"] = 63839,
-				["isAoeLoot"] = 1,
-				["dd"] = 0,
-				["what"] = "loot",
 			}, -- [54]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"coin^1967", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 63840,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [55]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"coin^1668", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 63840,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [56]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"coin^2480", -- [1]
 					"72988^1", -- [2]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 63839,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [57]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"coin^1300", -- [1]
 					"89112^1", -- [2]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 63840,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [58]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"coin^3736", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 61025,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [59]
 			{
 				["questid"] = 30783,
@@ -2026,26 +2026,26 @@ wlEvent = {
 				["y"] = 746,
 				["x"] = 810,
 				["name"] = "Ghost Iron Deposit",
+				["dd"] = 0,
+				["flags"] = 1024,
+				["kind"] = "object",
+				["isAoeLoot"] = 0,
 				["drop"] = {
 					"97512^6", -- [1]
 					"72092^1", -- [2]
 				},
-				["flags"] = 1024,
-				["isAoeLoot"] = 0,
-				["kind"] = "object",
-				["dd"] = 0,
 			}, -- [63]
 			{
 				["flags"] = 1024,
-				["dd"] = 0,
-				["action"] = "Killing",
 				["drop"] = {
 					"coin^2094", -- [1]
 				},
+				["action"] = "Killing",
+				["what"] = "loot",
 				["id"] = 61025,
 				["kind"] = "npc",
 				["isAoeLoot"] = 0,
-				["what"] = "loot",
+				["dd"] = 0,
 			}, -- [64]
 			{
 				["questid"] = 30785,
@@ -2064,6 +2064,28 @@ wlEvent = {
 				["what"] = "login",
 			}, -- [1]
 		}, -- [4]
+		{
+			{
+				["date"] = "2^14^2014",
+				["what"] = "login",
+			}, -- [1]
+		}, -- [5]
+		{
+			{
+				["date"] = "2^14^2014",
+				["what"] = "login",
+			}, -- [1]
+			{
+				["targetkind"] = "npc",
+				["targetid"] = 64597,
+				["action"] = "turn-in",
+				["what"] = "quest",
+				["progress"] = "Hurry it up, will ya? I'm an old woman. I don't have all the time in the world, and I want one more taste of the sauce before I croak!",
+				["questid"] = 31949,
+				["targetname"] = "Nana Mudclaw",
+				["complete"] = "<Nana Mudclaw scrutinizes a dark witchberry, then pops it into her mouth. Her face lights up.>\n\nLands alive! I haven't tasted such a sweet, juicy witchberry in years! Why, the only person who could grow berries like these was... Old Yoon, yer friend's grandpa.\n\n<Nana Mudclaw blushes.>\n\nOh that man was such a scamp! I still remember the summer days when we were young, eating these berries by the bushel without a care in the world.\n\nThank you for reminding me of an old friend, $N.",
+			}, -- [2]
+		}, -- [6]
 	},
 }
 wlItemSuffix = {
@@ -2083,13 +2105,13 @@ wlItemSuffix = {
 		[-135] = 1,
 		["sF"] = 644,
 	},
-	[82137] = {
-		[-91] = 1,
-		["sF"] = 726,
-	},
 	[82004] = {
 		[-39] = 1,
 		["sF"] = 379,
+	},
+	[82137] = {
+		[-91] = 1,
+		["sF"] = 726,
 	},
 }
 wlObject = {
@@ -2138,7 +2160,7 @@ wlObject = {
 					["y"] = 311,
 					["x"] = 620,
 					["dl"] = 0,
-					["n"] = 4,
+					["n"] = 5,
 				}, -- [1]
 				["n"] = 1,
 			},
@@ -2373,7 +2395,7 @@ wlProfile = {
 		["faction"] = "Alliance",
 		["class"] = "PALADIN",
 		["sex"] = 3,
-		["n"] = 4,
+		["n"] = 6,
 	},
 }
 wlUnit = {
@@ -2516,11 +2538,12 @@ wlUnit = {
 	[58562] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["88^Alliance^5"] = 912398391606,
 			["87^Alliance^5"] = 912398570619,
+			["90^Alliance^5"] = 1392424823450,
+			["88^Alliance^5"] = 912398391606,
 		},
 		["sex"] = {
-			16, -- [1]
+			29, -- [1]
 		},
 		["class"] = "WARRIOR",
 		["spec"] = {
@@ -2533,9 +2556,15 @@ wlUnit = {
 									["y"] = 484,
 									["x"] = 520,
 									["dl"] = 0,
-									["n"] = 5,
+									["n"] = 7,
 								}, -- [1]
-								["n"] = 1,
+								{
+									["y"] = 478,
+									["x"] = 517,
+									["dl"] = 0,
+									["n"] = 2,
+								}, -- [2]
+								["n"] = 2,
 							},
 						},
 					},
@@ -2577,10 +2606,11 @@ wlUnit = {
 	[60172] = {
 		["isPvp"] = false,
 		["reaction"] = {
+			["90^Alliance^5"] = 1392424864232,
 			["87^Alliance^5"] = 912398587756,
 		},
 		["sex"] = {
-			1, -- [1]
+			3, -- [1]
 		},
 		["class"] = "WARRIOR",
 		["spec"] = {
@@ -2590,10 +2620,10 @@ wlUnit = {
 						["Valley of the Four Winds"] = {
 							[807] = {
 								{
-									["y"] = 484,
-									["x"] = 520,
+									["y"] = 480,
+									["x"] = 518,
 									["dl"] = 0,
-									["n"] = 1,
+									["n"] = 3,
 								}, -- [1]
 								["n"] = 1,
 							},
@@ -2785,6 +2815,25 @@ wlUnit = {
 			},
 		},
 	},
+	[65965] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 1392425116522,
+		},
+		["sex"] = {
+			1, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				{
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
+			},
+		},
+	},
 	[56754] = {
 		["isPvp"] = false,
 		["reaction"] = {
@@ -2890,11 +2939,12 @@ wlUnit = {
 	[58563] = {
 		["isPvp"] = false,
 		["reaction"] = {
-			["88^Alliance^5"] = 912398452880,
 			["87^Alliance^5"] = 912398672636,
+			["90^Alliance^5"] = 1392424986723,
+			["88^Alliance^5"] = 912398452880,
 		},
 		["sex"] = {
-			17, -- [1]
+			29, -- [1]
 		},
 		["class"] = "WARRIOR",
 		["spec"] = {
@@ -2907,9 +2957,15 @@ wlUnit = {
 									["y"] = 484,
 									["x"] = 520,
 									["dl"] = 0,
-									["n"] = 5,
+									["n"] = 7,
 								}, -- [1]
-								["n"] = 1,
+								{
+									["y"] = 477,
+									["x"] = 518,
+									["dl"] = 0,
+									["n"] = 1,
+								}, -- [2]
+								["n"] = 2,
 							},
 						},
 					},
@@ -3209,9 +3265,9 @@ wlUnit = {
 					["powermax"] = 0,
 				},
 				["spell"] = {
-					[46182] = 1070,
 					[118406] = 2,
 					[87395] = 908,
+					[46182] = 1070,
 				},
 			},
 		},
@@ -3838,74 +3894,74 @@ wlUnit = {
 			["82634^0^1^822067"] = -1,
 			["82708^0^1^1435017"] = -1,
 			["82622^0^1^633490"] = -1,
-			["82641^0^1^843147"] = -1,
+			["82618^0^1^624463"] = -1,
 			["82655^0^1^617586"] = -1,
 			["82633^0^1^819113"] = -1,
 			["82686^0^1^340607"] = -1,
-			["82618^0^1^624463"] = -1,
-			["82668^0^1^404183"] = -1,
+			["82693^0^1^340607"] = -1,
+			["82696^0^1^513182"] = -1,
 			["82718^0^1^782127"] = -1,
 			["82710^0^1^1156567"] = -1,
 			["82684^0^1^398080"] = -1,
 			["82630^0^1^606350"] = -1,
-			["82643^0^1^849217"] = -1,
+			["82641^0^1^843147"] = -1,
 			["82672^0^1^410247"] = -1,
 			["82654^0^1^615314"] = -1,
-			["82659^0^1^420930"] = -1,
-			["82688^0^1^340607"] = -1,
+			["82671^0^1^408721"] = -1,
+			["82707^0^1^1429597"] = -1,
 			["82704^0^1^592534"] = -1,
 			["82664^0^1^398120"] = -1,
-			["82636^0^1^828136"] = -1,
-			["82696^0^1^513182"] = -1,
+			["82662^0^1^395110"] = -1,
+			["82631^0^1^608621"] = -1,
 			["82625^0^1^640305"] = -1,
 			["82637^0^1^831089"] = -1,
 			["82685^0^1^399605"] = -1,
 			["82674^0^1^413300"] = -1,
 			["82635^0^1^825101"] = -1,
 			["82653^0^1^613042"] = -1,
-			["82671^0^1^408721"] = -1,
+			["82659^0^1^420930"] = -1,
 			["82647^0^1^800904"] = -1,
 			["82717^0^1^1217735"] = -1,
-			["82661^0^1^423941"] = -1,
-			["82666^0^1^401172"] = -1,
-			["82665^0^1^399647"] = -1,
+			["82668^0^1^404183"] = -1,
+			["82688^0^1^340607"] = -1,
+			["82636^0^1^828136"] = -1,
+			["82682^0^1^395027"] = -1,
+			["82632^0^1^816078"] = -1,
+			["82716^0^1^1516750"] = -1,
 			["82639^0^1^837160"] = -1,
-			["82714^0^1^1204846"] = -1,
-			["82707^0^1^1429597"] = -1,
-			["82662^0^1^395110"] = -1,
-			["82631^0^1^608621"] = -1,
+			["82679^0^1^431778"] = -1,
 			["82712^0^1^1196291"] = -1,
 			["82630^0^1^606349"] = -1,
-			["82678^0^1^419363"] = -1,
+			["82662^0^1^395109"] = -1,
+			["82683^0^1^396554"] = -1,
 			["82680^0^1^392015"] = -1,
-			["82720^0^1^1113328"] = -1,
 			["82709^0^1^1440290"] = -1,
 			["82619^0^1^626735"] = -1,
-			["82679^0^1^431778"] = -1,
+			["82666^0^1^401172"] = -1,
 			["82715^0^1^1209181"] = -1,
 			["82627^0^1^583323"] = -1,
-			["82662^0^1^395109"] = -1,
-			["82655^0^1^617587"] = -1,
-			["82676^0^1^416310"] = -1,
+			["82665^0^1^399647"] = -1,
+			["82720^0^1^1113328"] = -1,
+			["82646^0^1^797870"] = -1,
 			["82621^0^1^631278"] = -1,
-			["82683^0^1^396554"] = -1,
-			["82695^0^1^340607"] = -1,
-			["82692^0^1^340607"] = -1,
+			["82676^0^1^416310"] = -1,
+			["82616^0^1^619980"] = -1,
+			["82634^0^1^822066"] = -1,
 			["82656^0^1^619796"] = -1,
 			["82637^0^1^831090"] = -1,
 			["82646^0^1^797869"] = -1,
 			["82642^0^1^846182"] = -1,
 			["82675^0^1^414784"] = -1,
 			["82704^0^1^592533"] = -1,
-			["82634^0^1^822066"] = -1,
-			["82646^0^1^797870"] = -1,
+			["82690^0^1^340607"] = -1,
+			["82701^0^1^585718"] = -1,
 			["82681^0^1^393542"] = -1,
 			["82673^0^1^411773"] = -1,
 			["82628^0^1^585595"] = -1,
 			["82663^0^1^396635"] = -1,
-			["82652^0^1^610770"] = -1,
-			["82694^0^1^340607"] = -1,
+			["82633^0^1^819114"] = -1,
 			["82620^0^1^629007"] = -1,
+			["82694^0^1^340607"] = -1,
 			["82614^0^1^615498"] = -1,
 			["82650^0^1^606288"] = -1,
 			["82658^0^1^624340"] = -1,
@@ -3913,19 +3969,19 @@ wlUnit = {
 			["82711^0^1^893967"] = -1,
 			["82638^0^1^834124"] = -1,
 			["82624^0^1^638033"] = -1,
-			["82690^0^1^340607"] = -1,
+			["82652^0^1^610770"] = -1,
 			["82719^0^1^784901"] = -1,
 			["82697^0^1^513182"] = -1,
 			["82649^0^1^806891"] = -1,
-			["82633^0^1^819114"] = -1,
+			["82655^0^1^617587"] = -1,
 			["82700^0^1^513182"] = -1,
 			["82648^0^1^803938"] = -1,
 			["82713^0^1^1200510"] = -1,
 			["82622^0^1^633489"] = -1,
 			["82660^0^1^422415"] = -1,
-			["82682^0^1^395027"] = -1,
-			["82616^0^1^619980"] = -1,
-			["82701^0^1^585718"] = -1,
+			["82695^0^1^340607"] = -1,
+			["82661^0^1^423941"] = -1,
+			["82692^0^1^340607"] = -1,
 			["82669^0^1^405710"] = -1,
 			["82615^0^1^617709"] = -1,
 			["82702^0^1^587990"] = -1,
@@ -3933,12 +3989,12 @@ wlUnit = {
 			["82677^0^1^417836"] = -1,
 			["82689^0^1^340607"] = -1,
 			["82640^0^1^840194"] = -1,
+			["82714^0^1^1204846"] = -1,
+			["82678^0^1^419363"] = -1,
+			["82643^0^1^849217"] = -1,
 			["82687^0^1^340607"] = -1,
-			["82716^0^1^1516750"] = -1,
-			["82632^0^1^816078"] = -1,
-			["82665^0^1^399646"] = -1,
 			["82624^0^1^638034"] = -1,
-			["82693^0^1^340607"] = -1,
+			["82665^0^1^399646"] = -1,
 			["82691^0^1^340607"] = -1,
 			["82615^0^1^617710"] = -1,
 			["82706^0^1^1424177"] = -1,
@@ -4067,6 +4123,38 @@ wlUnit = {
 					[106434] = 6,
 					[106454] = 3,
 				},
+			},
+		},
+	},
+	[65970] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 1392425076143,
+		},
+		["sex"] = {
+			1, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				{
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							[807] = {
+								{
+									["y"] = 484,
+									["x"] = 519,
+									["dl"] = 0,
+									["n"] = 1,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
 			},
 		},
 	},
@@ -4247,8 +4335,8 @@ wlUnit = {
 				},
 				["spell"] = {
 					[130317] = 11,
-					[130388] = 8,
 					[36207] = 18,
+					[130388] = 8,
 					[130389] = 25,
 				},
 			},
@@ -4454,80 +4542,80 @@ wlUnit = {
 				["76436^Blacksmithing^480^0^74285"] = 1,
 				["122580^Blacksmithing^530^0^91428"] = 1,
 				["9986^Blacksmithing^130^0^571"] = 1,
-				["2668^Blacksmithing^105^0^342"] = 1,
+				["55179^Blacksmithing^400^0^57142"] = 1,
 				["19666^Blacksmithing^100^0^114"] = 1,
 				["3320^Blacksmithing^25^0^114"] = 1,
 				["3292^Blacksmithing^95^0^571"] = 1,
 				["9987^Blacksmithing^135^0^571"] = 1,
 				["76264^Blacksmithing^460^0^62857"] = 1,
 				["76181^Blacksmithing^460^0^62857"] = 1,
-				["55179^Blacksmithing^400^0^57142"] = 1,
+				["55628^Blacksmithing^400^0^51428"] = 1,
 				["29557^Blacksmithing^310^0^20571"] = 1,
 				["29547^Blacksmithing^305^0^17142"] = 1,
-				["55628^Blacksmithing^400^0^51428"] = 1,
-				["16653^Blacksmithing^280^0^11428"] = 1,
+				["2668^Blacksmithing^105^0^342"] = 1,
+				["9961^Blacksmithing^230^0^17142"] = 1,
 				["6517^Blacksmithing^110^0^914"] = 1,
 				["16662^Blacksmithing^300^0^13714"] = 1,
 				["3293^Blacksmithing^35^0^285"] = 1,
 				["76438^Blacksmithing^475^0^68571"] = 1,
-				["55300^Blacksmithing^420^0^51428"] = 1,
 				["3337^Blacksmithing^125^0^1142"] = 1,
 				["76182^Blacksmithing^470^0^68571"] = 1,
-				["122581^Blacksmithing^500^0^91428"] = 1,
-				["3506^Blacksmithing^155^0^5714"] = 1,
 				["122635^Blacksmithing^540^0^91428"] = 1,
-				["29654^Blacksmithing^300^0^17142"] = 1,
-				["122637^Blacksmithing^545^0^91428"] = 1,
-				["76266^Blacksmithing^480^0^74285"] = 1,
+				["76267^Blacksmithing^490^0^74285"] = 1,
+				["3506^Blacksmithing^155^0^5714"] = 1,
 				["2670^Blacksmithing^105^0^571"] = 1,
-				["76435^Blacksmithing^480^0^74285"] = 1,
+				["29654^Blacksmithing^300^0^17142"] = 1,
+				["55308^Blacksmithing^420^0^51428"] = 1,
+				["55300^Blacksmithing^420^0^51428"] = 1,
+				["76433^Blacksmithing^460^0^57142"] = 1,
+				["122581^Blacksmithing^500^0^91428"] = 1,
 				["59405^Blacksmithing^350^0^34285"] = 1,
 				["76441^Blacksmithing^490^0^74285"] = 1,
 				["3491^Blacksmithing^105^0^685"] = 1,
-				["76433^Blacksmithing^460^0^57142"] = 1,
+				["9985^Blacksmithing^125^0^285"] = 1,
 				["9968^Blacksmithing^235^0^22857"] = 1,
 				["122583^Blacksmithing^525^0^91428"] = 1,
 				["29550^Blacksmithing^325^0^28571"] = 1,
-				["9985^Blacksmithing^125^0^285"] = 1,
-				["54917^Blacksmithing^375^0^34285"] = 1,
-				["54557^Blacksmithing^390^0^45714"] = 1,
 				["55371^Blacksmithing^440^0^171428"] = 1,
+				["54917^Blacksmithing^375^0^34285"] = 1,
+				["55376^Blacksmithing^440^0^137142"] = 1,
+				["2662^Blacksmithing^1^0^57"] = 1,
 				["16644^Blacksmithing^255^0^11428"] = 1,
 				["59440^Blacksmithing^405^0^45714"] = 1,
 				["76259^Blacksmithing^490^0^74285"] = 1,
 				["2741^Blacksmithing^115^0^228"] = 1,
-				["55376^Blacksmithing^440^0^137142"] = 1,
+				["55373^Blacksmithing^440^0^137142"] = 1,
 				["16730^Blacksmithing^300^0^13714"] = 1,
 				["55206^Blacksmithing^405^0^45714"] = 1,
 				["2661^Blacksmithing^35^0^114"] = 1,
-				["2662^Blacksmithing^1^0^57"] = 1,
-				["55055^Blacksmithing^395^0^45714"] = 1,
-				["55373^Blacksmithing^440^0^137142"] = 1,
-				["76286^Blacksmithing^480^0^74285"] = 1,
+				["54557^Blacksmithing^390^0^45714"] = 1,
 				["16642^Blacksmithing^250^0^11428"] = 1,
+				["122637^Blacksmithing^545^0^91428"] = 1,
+				["76286^Blacksmithing^480^0^74285"] = 1,
+				["55055^Blacksmithing^395^0^45714"] = 1,
 				["9928^Blacksmithing^205^0^5714"] = 1,
 				["29556^Blacksmithing^320^0^25142"] = 1,
 				["55203^Blacksmithing^385^0^40000"] = 1,
-				["76265^Blacksmithing^470^0^68571"] = 1,
-				["52571^Blacksmithing^370^0^34285"] = 1,
+				["59438^Blacksmithing^400^0^45714"] = 1,
+				["16640^Blacksmithing^250^0^11428"] = 1,
 				["54555^Blacksmithing^405^0^45714"] = 1,
 				["16971^Blacksmithing^280^0^17142"] = 1,
-				["54947^Blacksmithing^395^0^40000"] = 1,
-				["59442^Blacksmithing^410^0^45714"] = 1,
+				["3116^Blacksmithing^65^0^114"] = 1,
+				["76265^Blacksmithing^470^0^68571"] = 1,
 				["76270^Blacksmithing^500^0^85714"] = 1,
 				["55200^Blacksmithing^380^0^40000"] = 1,
 				["19668^Blacksmithing^200^0^2857"] = 1,
-				["3324^Blacksmithing^45^0^228"] = 1,
-				["3323^Blacksmithing^40^0^114"] = 1,
+				["54947^Blacksmithing^395^0^40000"] = 1,
+				["54945^Blacksmithing^390^0^40000"] = 1,
 				["122639^Blacksmithing^560^0^91428"] = 1,
-				["76288^Blacksmithing^490^0^74285"] = 1,
+				["2664^Blacksmithing^90^0^571"] = 1,
 				["29558^Blacksmithing^315^0^22857"] = 1,
 				["55834^Blacksmithing^360^0^34285"] = 1,
 				["54949^Blacksmithing^400^0^34285"] = 1,
 				["55839^Blacksmithing^420^0^48000"] = 1,
 				["52569^Blacksmithing^350^0^34285"] = 1,
-				["55302^Blacksmithing^425^0^51428"] = 1,
-				["3116^Blacksmithing^65^0^114"] = 1,
+				["55204^Blacksmithing^390^0^40000"] = 1,
+				["59442^Blacksmithing^410^0^45714"] = 1,
 				["52572^Blacksmithing^360^0^34285"] = 1,
 				["2674^Blacksmithing^125^0^1142"] = 1,
 				["61009^Blacksmithing^420^0^137142"] = 1,
@@ -4535,69 +4623,69 @@ wlUnit = {
 				["54550^Blacksmithing^360^0^34285"] = 1,
 				["16658^Blacksmithing^295^0^11428"] = 1,
 				["55057^Blacksmithing^405^0^45714"] = 1,
-				["76178^Blacksmithing^425^0^17142"] = 1,
+				["55058^Blacksmithing^415^0^51428"] = 1,
 				["54554^Blacksmithing^395^0^45714"] = 1,
 				["76180^Blacksmithing^450^0^57142"] = 1,
-				["55312^Blacksmithing^425^0^51428"] = 1,
-				["55056^Blacksmithing^400^0^45714"] = 1,
-				["15972^Blacksmithing^180^0^8571"] = 1,
-				["9926^Blacksmithing^205^0^5714"] = 1,
-				["32284^Blacksmithing^325^0^28571"] = 1,
-				["54945^Blacksmithing^390^0^40000"] = 1,
-				["54551^Blacksmithing^395^0^45714"] = 1,
-				["122582^Blacksmithing^530^0^91428"] = 1,
-				["7817^Blacksmithing^95^0^228"] = 1,
-				["2664^Blacksmithing^90^0^571"] = 1,
-				["52570^Blacksmithing^375^0^34285"] = 1,
-				["2737^Blacksmithing^15^0^57"] = 1,
 				["55305^Blacksmithing^420^0^51428"] = 1,
 				["16647^Blacksmithing^265^0^11428"] = 1,
-				["16639^Blacksmithing^250^0^11428"] = 1,
+				["15972^Blacksmithing^180^0^8571"] = 1,
 				["10001^Blacksmithing^230^0^17142"] = 1,
+				["32284^Blacksmithing^325^0^28571"] = 1,
+				["55174^Blacksmithing^390^0^57142"] = 1,
+				["54551^Blacksmithing^395^0^45714"] = 1,
+				["55181^Blacksmithing^405^0^57142"] = 1,
+				["7817^Blacksmithing^95^0^228"] = 1,
+				["3323^Blacksmithing^40^0^114"] = 1,
+				["52570^Blacksmithing^375^0^34285"] = 1,
+				["2737^Blacksmithing^15^0^57"] = 1,
+				["56552^Blacksmithing^420^0^51428"] = 1,
+				["55312^Blacksmithing^425^0^51428"] = 1,
+				["16639^Blacksmithing^250^0^11428"] = 1,
+				["9916^Blacksmithing^200^0^2857"] = 1,
 				["55309^Blacksmithing^420^0^51428"] = 1,
 				["2018^^0^5^11"] = 1,
 				["3100^Blacksmithing^50^10^571"] = 1,
-				["55174^Blacksmithing^390^0^57142"] = 1,
+				["9926^Blacksmithing^205^0^5714"] = 1,
 				["54948^Blacksmithing^400^0^34285"] = 1,
-				["55181^Blacksmithing^405^0^57142"] = 1,
-				["56552^Blacksmithing^420^0^51428"] = 1,
+				["3501^Blacksmithing^165^0^1142"] = 1,
+				["122582^Blacksmithing^530^0^91428"] = 1,
 				["56554^Blacksmithing^425^0^51428"] = 1,
 				["76263^Blacksmithing^450^0^57142"] = 1,
 				["76434^Blacksmithing^470^0^68571"] = 1,
-				["3501^Blacksmithing^165^0^1142"] = 1,
+				["122636^Blacksmithing^545^0^91428"] = 1,
 				["122641^Blacksmithing^565^0^91428"] = 1,
 				["56234^Blacksmithing^440^0^171428"] = 1,
 				["29552^Blacksmithing^310^0^20571"] = 1,
-				["122576^Blacksmithing^550^0^91428"] = 1,
-				["55014^Blacksmithing^410^0^40000"] = 1,
 				["56549^Blacksmithing^420^0^51428"] = 1,
-				["16643^Blacksmithing^250^0^11428"] = 1,
+				["55014^Blacksmithing^410^0^40000"] = 1,
 				["122638^Blacksmithing^545^0^91428"] = 1,
+				["16643^Blacksmithing^250^0^11428"] = 1,
+				["9918^Blacksmithing^200^0^2857"] = 1,
 				["56555^Blacksmithing^425^0^51428"] = 1,
 				["55656^Blacksmithing^415^0^57142"] = 1,
-				["9918^Blacksmithing^200^0^2857"] = 1,
-				["76291^Blacksmithing^450^0^57142"] = 1,
+				["59406^Blacksmithing^430^0^51428"] = 1,
+				["76258^Blacksmithing^480^0^74285"] = 1,
 				["7408^Blacksmithing^65^0^342"] = 1,
 				["9920^Blacksmithing^200^0^2857"] = 1,
-				["59406^Blacksmithing^430^0^51428"] = 1,
+				["55369^Blacksmithing^440^0^205714"] = 1,
 				["55177^Blacksmithing^395^0^57142"] = 1,
-				["56280^Blacksmithing^410^0^45714"] = 1,
-				["76258^Blacksmithing^480^0^74285"] = 1,
+				["76291^Blacksmithing^450^0^57142"] = 1,
+				["55302^Blacksmithing^425^0^51428"] = 1,
 				["76437^Blacksmithing^480^0^74285"] = 1,
 				["9931^Blacksmithing^210^0^5714"] = 1,
-				["2672^Blacksmithing^120^0^571"] = 1,
+				["76287^Blacksmithing^480^0^74285"] = 1,
 				["76280^Blacksmithing^440^0^45714"] = 1,
 				["55201^Blacksmithing^380^0^40000"] = 1,
 				["55310^Blacksmithing^425^0^51428"] = 1,
 				["29553^Blacksmithing^315^0^22857"] = 1,
 				["3333^Blacksmithing^135^0^1142"] = 1,
 				["16646^Blacksmithing^265^0^11428"] = 1,
-				["110396^Blacksmithing^500^80^685714"] = 1,
+				["54944^Blacksmithing^385^0^34285"] = 1,
 				["55185^Blacksmithing^415^0^51428"] = 1,
-				["56553^Blacksmithing^420^0^51428"] = 1,
-				["56357^Blacksmithing^420^0^48000"] = 1,
-				["55013^Blacksmithing^390^0^45714"] = 1,
+				["110396^Blacksmithing^500^80^685714"] = 1,
 				["2738^Blacksmithing^20^0^57"] = 1,
+				["55013^Blacksmithing^390^0^45714"] = 1,
+				["56357^Blacksmithing^420^0^48000"] = 1,
 				["55182^Blacksmithing^410^0^45714"] = 1,
 				["55017^Blacksmithing^410^0^45714"] = 1,
 				["2665^Blacksmithing^65^0^114"] = 1,
@@ -4605,54 +4693,54 @@ wlUnit = {
 				["55304^Blacksmithing^425^0^51428"] = 1,
 				["59436^Blacksmithing^395^0^45714"] = 1,
 				["34607^Blacksmithing^300^0^17142"] = 1,
-				["54944^Blacksmithing^385^0^34285"] = 1,
+				["56553^Blacksmithing^420^0^51428"] = 1,
 				["54918^Blacksmithing^380^0^34285"] = 1,
 				["2675^Blacksmithing^145^0^1142"] = 1,
 				["29549^Blacksmithing^315^0^22857"] = 1,
 				["122633^Blacksmithing^500^0^91428"] = 1,
 				["3326^Blacksmithing^75^0^285"] = 1,
 				["19669^Blacksmithing^275^0^11428"] = 1,
-				["76287^Blacksmithing^480^0^74285"] = 1,
+				["2672^Blacksmithing^120^0^571"] = 1,
 				["76474^Blacksmithing^470^0^68571"] = 1,
-				["55369^Blacksmithing^440^0^205714"] = 1,
+				["56280^Blacksmithing^410^0^45714"] = 1,
 				["56550^Blacksmithing^420^0^51428"] = 1,
 				["56556^Blacksmithing^425^0^51428"] = 1,
 				["76293^Blacksmithing^470^0^68571"] = 1,
 				["76283^Blacksmithing^460^0^62857"] = 1,
 				["9983^Blacksmithing^30^0^114"] = 1,
 				["29551^Blacksmithing^300^0^17142"] = 1,
-				["122636^Blacksmithing^545^0^91428"] = 1,
-				["8880^Blacksmithing^30^0^114"] = 1,
+				["122576^Blacksmithing^550^0^91428"] = 1,
+				["55056^Blacksmithing^400^0^45714"] = 1,
 				["9921^Blacksmithing^200^0^2857"] = 1,
-				["55641^Blacksmithing^400^0^51428"] = 1,
-				["9916^Blacksmithing^200^0^2857"] = 1,
+				["76288^Blacksmithing^490^0^74285"] = 1,
+				["8880^Blacksmithing^30^0^114"] = 1,
 				["16641^Blacksmithing^250^0^11428"] = 1,
+				["55641^Blacksmithing^400^0^51428"] = 1,
 				["76281^Blacksmithing^450^0^57142"] = 1,
-				["55204^Blacksmithing^390^0^40000"] = 1,
 				["55307^Blacksmithing^420^0^51428"] = 1,
 				["61008^Blacksmithing^425^0^137142"] = 1,
 				["55835^Blacksmithing^370^0^34285"] = 1,
 				["55311^Blacksmithing^425^0^51428"] = 1,
-				["52568^Blacksmithing^350^0^34285"] = 1,
-				["55058^Blacksmithing^415^0^51428"] = 1,
+				["76178^Blacksmithing^425^0^17142"] = 1,
+				["3324^Blacksmithing^45^0^228"] = 1,
 				["55015^Blacksmithing^415^0^45714"] = 1,
 				["55306^Blacksmithing^420^0^51428"] = 1,
-				["59438^Blacksmithing^400^0^45714"] = 1,
+				["52568^Blacksmithing^350^0^34285"] = 1,
 				["55298^Blacksmithing^420^0^51428"] = 1,
 				["2666^Blacksmithing^70^0^228"] = 1,
 				["3508^Blacksmithing^180^0^8571"] = 1,
-				["3296^Blacksmithing^130^0^1142"] = 1,
+				["52571^Blacksmithing^370^0^34285"] = 1,
 				["76285^Blacksmithing^470^0^68571"] = 1,
 				["9993^Blacksmithing^210^0^11428"] = 1,
+				["3296^Blacksmithing^130^0^1142"] = 1,
 				["55303^Blacksmithing^425^0^51428"] = 1,
-				["16640^Blacksmithing^250^0^11428"] = 1,
 				["55375^Blacksmithing^440^0^137142"] = 1,
 				["2739^Blacksmithing^25^0^57"] = 1,
 				["54556^Blacksmithing^405^0^45714"] = 1,
 				["54946^Blacksmithing^395^0^34285"] = 1,
 				["3319^Blacksmithing^20^0^57"] = 1,
-				["55308^Blacksmithing^420^0^51428"] = 1,
-				["76267^Blacksmithing^490^0^74285"] = 1,
+				["76435^Blacksmithing^480^0^74285"] = 1,
+				["76266^Blacksmithing^480^0^74285"] = 1,
 				["8768^Blacksmithing^150^0^285"] = 1,
 				["16657^Blacksmithing^295^0^11428"] = 1,
 				["56551^Blacksmithing^420^0^51428"] = 1,
@@ -4660,7 +4748,7 @@ wlUnit = {
 				["76289^Blacksmithing^500^0^85714"] = 1,
 				["76269^Blacksmithing^500^0^85714"] = 1,
 				["56400^Blacksmithing^440^0^171428"] = 1,
-				["9961^Blacksmithing^230^0^17142"] = 1,
+				["16653^Blacksmithing^280^0^11428"] = 1,
 				["61010^Blacksmithing^420^0^137142"] = 1,
 				["29844^Blacksmithing^275^50^114285"] = 1,
 				["54552^Blacksmithing^400^0^45714"] = 1,
@@ -4810,8 +4898,8 @@ wlUnit = {
 				["102161^Mining^500^80^685714"] = 1,
 				["49252^Mining^350^0^114285"] = 1,
 				["10097^Mining^150^0^5714"] = 1,
-				["49258^Mining^400^0^171428"] = 1,
 				["3308^Mining^115^0^685"] = 1,
+				["49258^Mining^400^0^171428"] = 1,
 				["102167^Mining^600^0^68571"] = 1,
 				["55208^Mining^450^0^228571"] = 1,
 				["10098^Mining^165^0^11428"] = 1,
@@ -4896,6 +4984,44 @@ wlUnit = {
 				},
 				["spell"] = {
 					[114811] = 6,
+				},
+			},
+		},
+	},
+	[60072] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^2"] = 1392425048047,
+		},
+		["sex"] = {
+			3, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							[807] = {
+								{
+									["y"] = 483,
+									["x"] = 517,
+									["dl"] = 0,
+									["n"] = 2,
+								}, -- [1]
+								{
+									["y"] = 479,
+									["x"] = 518,
+									["dl"] = 0,
+									["n"] = 1,
+								}, -- [2]
+								["n"] = 2,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 393941,
+					["powermax"] = 0,
 				},
 			},
 		},
@@ -5085,6 +5211,38 @@ wlUnit = {
 				["spell"] = {
 					[35205] = 1,
 				},
+			},
+		},
+	},
+	[65972] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 1392425028640,
+		},
+		["sex"] = {
+			1, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				{
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							[807] = {
+								{
+									["y"] = 483,
+									["x"] = 518,
+									["dl"] = 0,
+									["n"] = 1,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
 			},
 		},
 	},
@@ -5290,11 +5448,12 @@ wlUnit = {
 			["85158^0^1^45000"] = -1,
 		},
 		["reaction"] = {
-			["88^Alliance^5"] = 912398437663,
 			["87^Alliance^5"] = 912398654457,
+			["90^Alliance^5"] = 1392424962540,
+			["88^Alliance^5"] = 912398437663,
 		},
 		["sex"] = {
-			[2] = 4,
+			[2] = 5,
 		},
 		["class"] = "WARRIOR",
 		["spec"] = {
@@ -5307,7 +5466,7 @@ wlUnit = {
 									["y"] = 521,
 									["x"] = 529,
 									["dl"] = 0,
-									["n"] = 4,
+									["n"] = 5,
 								}, -- [1]
 								["n"] = 1,
 							},
@@ -5320,7 +5479,7 @@ wlUnit = {
 			},
 		},
 		["gossip"] = {
-			["vendor"] = 4,
+			["vendor"] = 5,
 		},
 	},
 	[15895] = {
@@ -5352,6 +5511,44 @@ wlUnit = {
 					["health"] = 4182,
 					["powermax"] = 5013,
 				},
+			},
+		},
+	},
+	[65973] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 1392424674816,
+		},
+		["sex"] = {
+			10, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				{
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							[807] = {
+								{
+									["y"] = 484,
+									["x"] = 520,
+									["dl"] = 0,
+									["n"] = 1,
+								}, -- [1]
+								{
+									["y"] = 477,
+									["x"] = 517,
+									["dl"] = 0,
+									["n"] = 1,
+								}, -- [2]
+								["n"] = 2,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
 			},
 		},
 	},
@@ -5394,6 +5591,38 @@ wlUnit = {
 					["health"] = 790395,
 					["powermax"] = 0,
 				},
+			},
+		},
+	},
+	[66085] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 1392424716182,
+		},
+		["sex"] = {
+			2, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				{
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							[807] = {
+								{
+									["y"] = 479,
+									["x"] = 518,
+									["dl"] = 0,
+									["n"] = 1,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
 			},
 		},
 	},
@@ -5494,10 +5723,19 @@ wlUnit = {
 					["powermax"] = 0,
 				},
 				["spell"] = {
-					[36207] = 41,
-					[124048] = 197,
 					[124019] = 101,
 					[124015] = 198,
+					[36207] = 41,
+					[124048] = 197,
+				},
+			},
+		},
+	},
+	[66229] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[130830] = 2,
 				},
 			},
 		},
@@ -5505,10 +5743,11 @@ wlUnit = {
 	[60153] = {
 		["isPvp"] = false,
 		["reaction"] = {
+			["90^Alliance^5"] = 1392424697025,
 			["88^Alliance^5"] = 912398385003,
 		},
 		["sex"] = {
-			4, -- [1]
+			8, -- [1]
 		},
 		["class"] = "WARRIOR",
 		["spec"] = {
@@ -5519,9 +5758,9 @@ wlUnit = {
 							[807] = {
 								{
 									["y"] = 484,
-									["x"] = 520,
+									["x"] = 519,
 									["dl"] = 0,
-									["n"] = 2,
+									["n"] = 3,
 								}, -- [1]
 								["n"] = 1,
 							},
@@ -5647,10 +5886,11 @@ wlUnit = {
 	[60185] = {
 		["isPvp"] = false,
 		["reaction"] = {
+			["90^Alliance^5"] = 1392425108096,
 			["88^Alliance^5"] = 912398514311,
 		},
 		["sex"] = {
-			2, -- [1]
+			3, -- [1]
 		},
 		["class"] = "WARRIOR",
 		["spec"] = {
@@ -5660,10 +5900,10 @@ wlUnit = {
 						["Valley of the Four Winds"] = {
 							[807] = {
 								{
-									["y"] = 483,
-									["x"] = 520,
+									["y"] = 481,
+									["x"] = 519,
 									["dl"] = 0,
-									["n"] = 2,
+									["n"] = 3,
 								}, -- [1]
 								["n"] = 1,
 							},
@@ -5969,6 +6209,87 @@ wlUnit = {
 			},
 		},
 	},
+	[65964] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 1392425044024,
+		},
+		["sex"] = {
+			3, -- [1]
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				{
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							[807] = {
+								{
+									["y"] = 482,
+									["x"] = 518,
+									["dl"] = 0,
+									["n"] = 2,
+								}, -- [1]
+								{
+									["y"] = 477,
+									["x"] = 518,
+									["dl"] = 0,
+									["n"] = 1,
+								}, -- [2]
+								["n"] = 2,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 84,
+					["powermax"] = 0,
+				}, -- [1]
+			},
+		},
+	},
+	[64597] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["90^Alliance^5"] = 1392424795622,
+		},
+		["sex"] = {
+			[3] = 1,
+		},
+		["quote"] = {
+			["say"] = {
+				["I knew your grandfather well. I was very sorry when he passed."] = "",
+				["You know, the two of you remind me of him."] = "",
+				["And you two have shown quite the knack for growing delicious fruits and vegetables."] = "",
+				["Anyone with such a talented green thumb needs to be a Tiller. I don't care what that hare-brained grandson of mine says! Haohan is wrong about Farmer Yoon. You have my vote, <name>."] = "",
+				["I had to come and see Old Yoon's cub with my own eyes."] = "",
+				["You were stubborn enough to keep tilling this soil even though you didn't have much experience."] = "",
+				["You were brave enough to stand up to my grandson, Haohan."] = "",
+			},
+		},
+		["class"] = "WARRIOR",
+		["spec"] = {
+			[0] = {
+				[90] = {
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							[807] = {
+								{
+									["y"] = 470,
+									["x"] = 547,
+									["dl"] = 0,
+									["n"] = 1,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 393941,
+					["powermax"] = 0,
+				},
+			},
+		},
+	},
 	[58807] = {
 		["isPvp"] = false,
 		["reaction"] = {
@@ -6064,6 +6385,26 @@ wlUnit = {
 			["taxi"] = 1,
 		},
 	},
+	[57415] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[118578] = 3,
+					[130830] = 6,
+				},
+			},
+		},
+	},
+	[57413] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[118576] = 4,
+					[130306] = 1,
+				},
+			},
+		},
+	},
 	[65928] = {
 		["isPvp"] = false,
 		["reaction"] = {
@@ -6100,6 +6441,16 @@ wlUnit = {
 				},
 				["spell"] = {
 					[131512] = 38,
+				},
+			},
+		},
+	},
+	[58910] = {
+		["spec"] = {
+			[0] = {
+				["spell"] = {
+					[117516] = 4,
+					[117507] = 2,
 				},
 			},
 		},
@@ -6357,9 +6708,10 @@ wlUnit = {
 		["isPvp"] = false,
 		["reaction"] = {
 			["87^Alliance^2"] = 912398589026,
+			["90^Alliance^2"] = 1392424867994,
 		},
 		["sex"] = {
-			1, -- [1]
+			3, -- [1]
 		},
 		["class"] = "WARRIOR",
 		["spec"] = {
@@ -6380,6 +6732,24 @@ wlUnit = {
 					},
 					["powertype"] = 1,
 					["health"] = 214985,
+					["powermax"] = 0,
+				},
+				[90] = {
+					["loc"] = {
+						["Valley of the Four Winds"] = {
+							[807] = {
+								{
+									["y"] = 479,
+									["x"] = 518,
+									["dl"] = 0,
+									["n"] = 2,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 393941,
 					["powermax"] = 0,
 				},
 			},
@@ -6591,11 +6961,7 @@ wlUnit = {
 		["sex"] = {
 			[3] = 1,
 		},
-		["canRepair"] = 1,
 		["class"] = "WARRIOR",
-		["gossip"] = {
-			["vendor"] = 2,
-		},
 		["spec"] = {
 			[0] = {
 				[90] = {
@@ -6618,6 +6984,10 @@ wlUnit = {
 				},
 			},
 		},
+		["gossip"] = {
+			["vendor"] = 2,
+		},
+		["canRepair"] = 1,
 	},
 	[59051] = {
 		["isPvp"] = false,
@@ -6777,41 +7147,40 @@ wlUnit = {
 			},
 		},
 	},
-	[56473] = {
-		["isPvp"] = false,
+	[43723] = {
+		["isPvp"] = true,
 		["reaction"] = {
-			["88^Alliance^2"] = 912403843624,
+			["88^Alliance^5"] = 912406412605,
 		},
 		["sex"] = {
-			[3] = 2,
+			[3] = 1,
 		},
-		["class"] = {
-		},
+		["faction"] = "Stormwind",
+		["class"] = "WARRIOR",
 		["spec"] = {
-			[-1] = {
-				[88] = {
+			[0] = {
+				[45] = {
 					["loc"] = {
-						["Shado-Pan Monastery"] = {
-							[877] = {
+						["Stormwind City"] = {
+							[301] = {
 								{
-									["y"] = 631,
-									["x"] = 593,
-									["dl"] = 2,
-									["n"] = 1,
+									["y"] = 290,
+									["x"] = 648,
+									["dl"] = 0,
+									["n"] = 2,
 								}, -- [1]
 								["n"] = 1,
 							},
 						},
 					},
 					["powertype"] = 1,
-					["health"] = 2171008,
+					["health"] = 11088,
 					["powermax"] = 0,
 				},
-				["spell"] = {
-					[106646] = 4,
-					[106699] = 4,
-				},
 			},
+		},
+		["gossip"] = {
+			["banker"] = 1,
 		},
 	},
 	[62360] = {
@@ -7158,10 +7527,11 @@ wlUnit = {
 	[66023] = {
 		["isPvp"] = false,
 		["reaction"] = {
+			["90^Alliance^5"] = 1392424467859,
 			["88^Alliance^5"] = 912406883571,
 		},
 		["sex"] = {
-			[2] = 2,
+			[2] = 3,
 		},
 		["class"] = "PALADIN",
 		["spec"] = {
@@ -7174,7 +7544,7 @@ wlUnit = {
 									["y"] = 851,
 									["x"] = 461,
 									["dl"] = 0,
-									["n"] = 2,
+									["n"] = 3,
 								}, -- [1]
 								["n"] = 1,
 							},
@@ -7187,7 +7557,7 @@ wlUnit = {
 			},
 		},
 		["gossip"] = {
-			["taxi"] = 2,
+			["taxi"] = 3,
 		},
 	},
 	[59645] = {
@@ -7392,6 +7762,43 @@ wlUnit = {
 		["class"] = {
 		},
 	},
+	[56473] = {
+		["isPvp"] = false,
+		["reaction"] = {
+			["88^Alliance^2"] = 912403843624,
+		},
+		["sex"] = {
+			[3] = 2,
+		},
+		["class"] = {
+		},
+		["spec"] = {
+			[-1] = {
+				[88] = {
+					["loc"] = {
+						["Shado-Pan Monastery"] = {
+							[877] = {
+								{
+									["y"] = 631,
+									["x"] = 593,
+									["dl"] = 2,
+									["n"] = 1,
+								}, -- [1]
+								["n"] = 1,
+							},
+						},
+					},
+					["powertype"] = 1,
+					["health"] = 2171008,
+					["powermax"] = 0,
+				},
+				["spell"] = {
+					[106646] = 4,
+					[106699] = 4,
+				},
+			},
+		},
+	},
 	[56747] = {
 		["isPvp"] = false,
 		["reaction"] = {
@@ -7443,42 +7850,6 @@ wlUnit = {
 					[110852] = 1,
 				},
 			},
-		},
-	},
-	[43723] = {
-		["isPvp"] = true,
-		["reaction"] = {
-			["88^Alliance^5"] = 912406412605,
-		},
-		["sex"] = {
-			[3] = 1,
-		},
-		["faction"] = "Stormwind",
-		["class"] = "WARRIOR",
-		["spec"] = {
-			[0] = {
-				[45] = {
-					["loc"] = {
-						["Stormwind City"] = {
-							[301] = {
-								{
-									["y"] = 290,
-									["x"] = 648,
-									["dl"] = 0,
-									["n"] = 2,
-								}, -- [1]
-								["n"] = 1,
-							},
-						},
-					},
-					["powertype"] = 1,
-					["health"] = 11088,
-					["powermax"] = 0,
-				},
-			},
-		},
-		["gossip"] = {
-			["banker"] = 1,
 		},
 	},
 	[63145] = {
@@ -7753,97 +8124,129 @@ wlUnit = {
 wlBaseStats = {
 }
 wlItemDurability = {
+	[74842] = 0,
 	[74866] = 0,
 	[82494] = 70,
 	[72985] = 0,
 	[82653] = 55,
+	[83669] = 140,
 	[81661] = 0,
 	[71636] = 0,
 	[80915] = 65,
 	[82701] = 0,
+	[86518] = 90,
 	[74843] = 0,
 	[81582] = 70,
 	[81209] = 0,
+	[85177] = 0,
+	[72096] = 0,
+	[71635] = 0,
+	[81660] = 0,
 	[85186] = 50,
+	[87353] = 0,
+	[97512] = 0,
 	[81654] = 0,
+	[84539] = 85,
 	[82686] = 0,
 	[82694] = 0,
+	[81600] = 115,
+	[80932] = 90,
+	[74844] = 0,
 	[87298] = 50,
 	[81591] = 70,
 	[87314] = 0,
 	[87322] = 85,
 	[87330] = 50,
 	[82004] = 85,
+	[87216] = 0,
+	[87340] = 100,
+	[84060] = 0,
 	[80766] = 0,
-	[80901] = 100,
+	[101856] = 120,
+	[97546] = 0,
 	[79266] = 0,
+	[80513] = 0,
+	[101823] = 120,
 	[74845] = 0,
-	[81600] = 115,
+	[81627] = 40,
+	[80861] = 140,
+	[88585] = 0,
+	[71634] = 0,
+	[6289] = 0,
 	[71083] = 0,
+	[81618] = 55,
 	[88371] = 0,
+	[76061] = 0,
 	[81656] = 0,
 	[81664] = 0,
+	[81030] = 40,
 	[79267] = 0,
 	[6948] = 0,
+	[88584] = 0,
+	[74846] = 0,
+	[83744] = 0,
+	[80863] = 65,
 	[82617] = 70,
+	[83753] = 75,
 	[72092] = 0,
 	[86070] = 0,
-	[83669] = 140,
-	[76061] = 0,
+	[81202] = 0,
+	[87350] = 50,
+	[100953] = 50,
 	[81403] = 0,
-	[81030] = 40,
+	[101858] = 100,
 	[80911] = 50,
-	[88584] = 0,
-	[83753] = 75,
-	[74839] = 0,
-	[74847] = 0,
-	[80861] = 140,
-	[87309] = 50,
-	[79265] = 0,
-	[82118] = 0,
-	[2575] = 0,
-	[65906] = 0,
-	[97512] = 0,
-	[83674] = 85,
-	[82671] = 40,
-	[85177] = 0,
-	[81666] = 0,
-	[89112] = 0,
-	[82696] = 0,
-	[87340] = 100,
 	[54849] = 0,
+	[49927] = 0,
+	[83729] = 0,
+	[74847] = 0,
+	[89112] = 0,
+	[87309] = 50,
+	[65906] = 0,
+	[82118] = 0,
+	[72093] = 0,
+	[73410] = 0,
+	[83674] = 85,
+	[88119] = 55,
+	[82671] = 40,
+	[101851] = 165,
+	[81666] = 0,
+	[82696] = 0,
+	[2575] = 0,
+	[82719] = 85,
+	[74840] = 0,
 	[74848] = 0,
 	[74856] = 0,
 	[84516] = 70,
-	[80513] = 0,
+	[82626] = 70,
 	[88088] = 70,
-	[82635] = 115,
-	[81627] = 40,
-	[87350] = 50,
-	[40772] = 0,
+	[72094] = 0,
+	[84040] = 40,
+	[52186] = 0,
+	[79265] = 0,
 	[81651] = 0,
-	[81202] = 0,
-	[71634] = 0,
+	[74839] = 0,
+	[40772] = 0,
 	[82691] = 0,
 	[82699] = 0,
-	[81618] = 55,
+	[83696] = 40,
 	[74841] = 0,
-	[80863] = 65,
+	[72988] = 0,
 	[74857] = 0,
-	[73410] = 0,
-	[84539] = 85,
-	[82719] = 85,
-	[52186] = 0,
-	[87216] = 0,
+	[84055] = 0,
+	[30817] = 0,
+	[82635] = 115,
+	[71096] = 0,
+	[72103] = 0,
 	[81636] = 40,
 	[79104] = 0,
-	[82626] = 70,
-	[81660] = 0,
-	[71635] = 0,
+	[80901] = 100,
+	[101853] = 55,
+	[101861] = 55,
 	[34109] = 0,
 	[80795] = 90,
-	[86518] = 90,
-	[83696] = 40,
+	[84613] = 0,
+	[101854] = 55,
 }
 wlBattlePetStats = {
 }

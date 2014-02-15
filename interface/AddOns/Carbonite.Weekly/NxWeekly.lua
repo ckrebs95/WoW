@@ -236,7 +236,9 @@ function CarboniteWeekly:OnInitialize()
 		CarbWeeklyInit = Nx:ScheduleTimer(CarboniteWeekly.OnInitialize,1)
 		return
 	end
-	Nx.wkdb = LibStub("AceDB-3.0"):New("NXWeek",defaults, true)				
+	Nx.wkdb = LibStub("AceDB-3.0"):New("NXWeek",defaults, true)		
+	Nx.wkdb:SetProfile(Nx.db:GetCurrentProfile())
+	tinsert(Nx.dbs,Nx.wkdb)	
 	Nx.Weekly:Init()
 	Nx.Weekly:Login()
 	local function func ()

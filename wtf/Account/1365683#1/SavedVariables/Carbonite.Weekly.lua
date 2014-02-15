@@ -11,11 +11,11 @@ NXWeek = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["WeeklyData"] = {
-				["Version"] = 0.1,
-			},
 			["Weekly"] = {
 				["SecondsToReset"] = 1391421547,
+			},
+			["WeeklyData"] = {
+				["Version"] = 0.1,
 			},
 		},
 	},

@@ -7,9 +7,16 @@ Y: 241
 W: 32
 H: 32
 Frame: Recount_MainWindow
-FrameLevel: 26
+FrameLevel: 19
 Anchor: BOTTOMLEFT
 X: 35
 Y: 4
 W: 280
 H: 115
+Frame: NxHUD
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 342
+Y: -144
+W: 10
+H: 72
