@@ -1,7 +1,7 @@
 SET spellActivationOverlayOpacity "1"
 SET autoQuestWatch "0"
 SET autoQuestProgress "0"
-SET flaggedTutorials "v##$##F##[##+##3##)##E##Y##(##,##A##B"
+SET flaggedTutorials "v##$##F##[##+##3##)##E##Y##(##,##A##B##:##%##?##@##L##J##6##;##8##5##K##<"
 SET profanityFilter "0"
 SET guildShowOffline "0"
 SET showTimestamps "%I:%M "

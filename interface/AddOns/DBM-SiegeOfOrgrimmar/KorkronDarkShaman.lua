@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(856, "DBM-SiegeOfOrgrimmar", nil, 369)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 11011 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 11043 $"):sub(12, -3))
 mod:SetCreatureID(71859, 71858)--haromm, Kardris
 mod:SetEncounterID(1606)
 mod:SetZone()
@@ -78,6 +78,7 @@ local berserkCD						= mod:NewCDTimer(540, 26662)
 
 mod:AddRangeFrameOption(4, 143990)--This is more or less for foul geyser and foul stream splash damage
 mod:AddSetIconOption("SetIconOnToxicMists", 144089, false)
+mod:AddSetIconOption("SetIconOnFoulStream", 144090, false)
 
 --Upvales, don't need variables
 local UnitExists, UnitGUID, UnitDetailedThreatSituation = UnitExists, UnitGUID, UnitDetailedThreatSituation
@@ -108,6 +109,9 @@ function mod:FoulStreamTarget(targetname, uId)
 		else
 			specWarnFoulStream:Show()
 		end
+		if self.Options.SetIconOnFoulStream then
+			self:SetIcon(targetname, 8, 3)
+		end
 	end
 end
 
@@ -117,7 +121,7 @@ function mod:ToxicStormTarget(targetname, uId)
 	if targetname == UnitName("player") then
 		specWarnToxicStorm:Show()
 		yellToxicStorm:Yell()
-	elseif self:CheckNearby(8, targetname) then
+	elseif self:CheckNearby(10, targetname) then
 		specWarnToxicStormNear:Show(targetname)
 	end
 end
@@ -224,7 +228,7 @@ function mod:SPELL_AURA_APPLIED(args)
 	elseif spellId == 144215 then
 		local amount = args.amount or 1
 		timerFroststormStrike:Start(args.destName)
-		if amount % 2 == 0 then
+		if amount % 2 == 0 or amount >= 5 then
 			warnFroststormStrike:Show(args.destName, amount)
 		end
 		if amount >= 5 then

@@ -11,6 +11,7 @@ DBM_CORE_LOAD_MOD_SUCCESS			= "Boss Mods für '%s' geladen. Für weitere Einstel
 DBM_CORE_LOAD_MOD_COMBAT			= "Laden von '%s' verzögert bis du den Kampf verlässt."
 DBM_CORE_LOAD_GUI_ERROR				= "Konnte die grafische Benutzeroberfläche nicht laden: %s."
 DBM_CORE_LOAD_GUI_COMBAT			= "Die grafische Benutzeroberfläche kann nicht im Kampf geladen werden. Zur Vornahme von Einstellungen bitte diese zunächst außerhalb des Kampfes laden. Danach steht sie auch im Kampf zur Verfügung."
+DBM_CORE_LOAD_SKIN_COMBAT			= "Das Design der DBM-Timer konnte nicht im Kampf gesetzt werden. Die Timer werden vermutlich nicht korrekt funktionieren und diverse LUA-Fehler generieren. Dies wird oft durch Mods anderer Hersteller verursacht, die versuchen Designänderungen im Kampf vorzunehmen. Du solltest nach dem Kampfende /reload ausführen."
 DBM_CORE_BAD_LOAD					= "Dein Boss Mod für diese Instanz konnte nicht vollständig korrekt im Kampf geladen werden. Bitte führe baldmöglichst nach Kampfende /reload aus."
 
 DBM_CORE_LOOT_SPEC_REMINDER			= "Deine aktuelle Spezialisierung ist %s. Deine aktuelle Beutespezialisierung ist %s."
@@ -36,6 +37,9 @@ DBM_CORE_SCENARIO_ENDED_AT_LONG		= "%s abgebrochen nach %s. Das war dein %d. Abb
 DBM_CORE_COMBAT_STATE_RECOVERED		= "Kampf gegen %s hat vor %s begonnen, Neukalibrierung der Timer erfolgt..."
 DBM_CORE_TRANSCRIPTOR_LOG_START		= "\"Transcriptor\"-Aufzeichnung gestartet."
 DBM_CORE_TRANSCRIPTOR_LOG_END		= "\"Transcriptor\"-Aufzeichnung beendet."
+
+DBM_CORE_WORLDBOSS_ENGAGED			= "Kampf gegen %s wurde auf deinem Realm bei %s Prozent Leben begonnen."
+DBM_CORE_WORLDBOSS_DEFEATED			= "%s wurde auf deinem Realm besiegt."
 
 DBM_CORE_TIMER_FORMAT_SECS			= "%d |4Sekunde:Sekunden;"
 DBM_CORE_TIMER_FORMAT_MINS			= "%d |4Minute:Minuten;"
@@ -271,9 +275,6 @@ DBM_CORE_AUTO_READY_CHECK_OPTION_TEXT	= "Spiele \"Bereitschaftscheck\"-Sound, we
 -- New special warnings
 DBM_CORE_MOVE_SPECIAL_WARNING_BAR	= "bewegbare Spezialwarnung"
 DBM_CORE_MOVE_SPECIAL_WARNING_TEXT	= "Spezialwarnung"
-
-
-DBM_CORE_RANGE_CHECK_ZONE_UNSUPPORTED	= "Eine %d Meter Abstandsprüfung wird in dieser Zone nicht unterstützt.\nUnterstützte Reichweiten sind 10, 11, 15 und 28 Meter."
 
 DBM_ARROW_MOVABLE					= "Pfeil (bewegbar)"
 DBM_ARROW_NO_RAIDGROUP				= "Diese Funktion steht nur in Schlachtzügen und innerhalb von Instanzen zu Verfügung." 

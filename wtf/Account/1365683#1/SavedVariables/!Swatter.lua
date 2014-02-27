@@ -4,59 +4,6 @@ SwatterData = {
 	["autoshow"] = true,
 	["errors"] = {
 		{
-			["message"] = "[string \"safecall Dispatcher[25]\"]:13: script ran too long",
-			["count"] = 6,
-			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50008\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucScanData, v5.15.5383 (LikeableLyrebird)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.9\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.6\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DBMMogushanVaults, v\n  DBMTerraceofEndlessSpring, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.3.11\n  Quartz, v3.1.2\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.2.0.50200 <us>\n  (ck=882)\n",
-			["locals"] = "handlers = <table> {\n (null) = <function> defined @Interface\\AddOns\\SlideBar\\Libs\\LibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147\n (null) = <function> defined @Interface\\AddOns\\SlideBar\\Libs\\LibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147\n (null) = <function> defined @Interface\\AddOns\\SlideBar\\Libs\\LibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147\n (null) = <function> defined @Interface\\AddOns\\SlideBar\\Libs\\LibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147\n}\nindex = <table> {\n SetMainWindowModeByLabel = <function> defined @Interface\\AddOns\\Recount\\Recount_Modes.lua:643\n ResetData = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:855\n ResetPositionAllWindows = <function> defined @Interface\\AddOns\\Recount\\WindowOrder.lua:123\n modules = <table> {\n }\n FormatLongNums = <function> defined @Interface\\AddOns\\Recount\\GUI_Main.lua:56\n srcRetention = true\n SpellBuildingDamage = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:502\n FlagSync = <function> defined @Interface\\AddOns\\Recount\\LazySync.lua:504\n GetInheritGuardian = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:1248\n UnregisterTracking = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:2306\n CheckPartyCombatWithPets = <function> defined @Interface\\AddOns\\Recount\\roster.lua:14\n InitFightData = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:999\n RequestVersion = <function> defined @Interface\\AddOns\\Recount\\LazySync.lua:554\n SpellAuraRefresh = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:721\n UpdateZoneGroupFilter = <function> defined @Interface\\AddOns\\Recount\\zonefilters.lua:71\n BossFound = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:1575\n InGroup = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:1311\n MergedPetHealingDPS = <function> defined @Interface\\AddOns\\Recount\\Recount_Modes.lua:280\n SetStrataAndClamp = <function> defined @Interface\\AddOns\\Recount\\WindowOrder.lua:157\n ShortNumber = <function> defined @Interface\\AddOns\\Recount\\GUI_Main.lua:28\n FreeTableRecurse = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:2129\n FreeComm = <function> defined @Interface\\AddOns\\Recount\\LazySync.lua:500\n db = <table> {\n }\n SetZoneGroupFilter = <function> defined @Interface\\AddOns\\Recount\\zonefilters.lua:50\n UnregisterAllComm = <function> defined @Interface\\AddOns\\SlideBar\\Libs\\LibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:202\n SetWindowTop = <function> defined @Interface\\AddOns\\Recount\\WindowOrder.lua:36\n ReportVersions = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:829\n ResetFightData = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:938\n SpellMissed = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:600\n FightingWho = \"Sha of Fear\"\n SetDeathLogDetails = <function> defined @Interface\\AddOns\\Recount\\GUI_Detail.lua:457\n FindTargetedUnit = <function> defined @Interface\\AddOns\\Recount\\roster.lua:93\n SpellAuraRemoved = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:763\n NewModule = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:256\n IsBoss = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:384\n GetLazySyncAmount = <function> defined @Interface\\AddOns\\Recount\\LazySync.lua:575\n CreateFilterWeights = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:1599\n UpdateSummaryMode = <function> defined @Interface\\AddOns\\Recount\\GUI_Detail.lua:1290\n SpellEnergize = <function> defined @Interface\\AddOns\\Recount\\TrackerModules\\TrackerModule_PowerGains.lua:58\n AddGain = <function> defined @Interface\\AddOns\\Recount\\TrackerModules\\TrackerModule_PowerGains.lua:68\n Deserialize = <function> defined @Interface\\AddOns\\Recount\\Libs\\AceSerializer-3.0\\AceSerializer-3.0.lua:242\n AddDispelData = <function> defined @Interface\\AddOns\\Recount\\TrackerModules\\TrackerModule_Dispels.lua:42\n CheckFontStringLength = <function> defined @Interface\\AddOns\\Recount\\GUI_Graph.lua:736\n GetPetPrefixUnit = <function> defined @Interface\\AddOns\\Recount\\roster.lua:69\n GetName = <function> defined @Interface\\AddOns\\Barte",
-			["timestamp"] = "2013-04-19 22:32:29",
-			["context"] = "Global",
-			["stack"] = "[string \"safecall Dispatcher[25]\"]:13: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:92: in function `Fire'\n...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:120: in function <...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>\n",
-		}, -- [1]
-		{
-			["message"] = "Interface\\AddOns\\Recount\\Tracker.lua:1140: script ran too long",
-			["count"] = 1,
-			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50008\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucScanData, v5.15.5383 (LikeableLyrebird)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.9\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.6\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DBMMogushanVaults, v\n  DBMTerraceofEndlessSpring, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.3.11\n  Quartz, v3.1.2\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.2.0.50200 <us>\n  (ck=882)\n",
-			["timestamp"] = "2013-04-19 22:32:41",
-			["context"] = "Global",
-			["stack"] = "Interface\\AddOns\\Recount\\Tracker.lua:1140: in function `AddCurrentEvent'\nInterface\\AddOns\\Recount\\Tracker.lua:1807: in function `AddDamageData'\nInterface\\AddOns\\Recount\\Tracker.lua:544: in function `SpellDamage'\nInterface\\AddOns\\Recount\\Tracker.lua:499: in function <Interface\\AddOns\\Recount\\Tracker.lua:498>\nInterface\\AddOns\\Recount\\Tracker.lua:1071: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147: in function <...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147>\n[string \"safecall Dispatcher[22]\"]:4: in function <[string \"safecall Dispatcher[22]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[22]\"]:13: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:92: in function `Fire'\n...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:120: in function <...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>\n",
-		}, -- [2]
-		{
-			["message"] = "[string \"safecall Dispatcher[12]\"]:13: script ran too long",
-			["count"] = 1,
-			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50008\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucScanData, v5.15.5383 (LikeableLyrebird)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.9\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.6\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DBMMogushanVaults, v\n  DBMTerraceofEndlessSpring, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.3.11\n  Quartz, v3.1.2\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.2.0.50200 <us>\n  (ck=882)\n",
-			["locals"] = "handlers = <table> {\n (null) = <function> defined @Interface\\AddOns\\SlideBar\\Libs\\LibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147\n (null) = <function> defined @Interface\\AddOns\\SlideBar\\Libs\\LibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147\n (null) = <function> defined @Interface\\AddOns\\SlideBar\\Libs\\LibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147\n (null) = <function> defined @Interface\\AddOns\\SlideBar\\Libs\\LibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147\n}\nindex = <table> {\n SetMainWindowModeByLabel = <function> defined @Interface\\AddOns\\Recount\\Recount_Modes.lua:643\n ResetData = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:855\n ResetPositionAllWindows = <function> defined @Interface\\AddOns\\Recount\\WindowOrder.lua:123\n modules = <table> {\n }\n FormatLongNums = <function> defined @Interface\\AddOns\\Recount\\GUI_Main.lua:56\n srcRetention = false\n SpellBuildingDamage = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:502\n FlagSync = <function> defined @Interface\\AddOns\\Recount\\LazySync.lua:504\n GetInheritGuardian = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:1248\n UnregisterTracking = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:2306\n CheckPartyCombatWithPets = <function> defined @Interface\\AddOns\\Recount\\roster.lua:14\n InitFightData = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:999\n RequestVersion = <function> defined @Interface\\AddOns\\Recount\\LazySync.lua:554\n SpellAuraRefresh = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:721\n UpdateZoneGroupFilter = <function> defined @Interface\\AddOns\\Recount\\zonefilters.lua:71\n BossFound = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:1575\n InGroup = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:1311\n MergedPetHealingDPS = <function> defined @Interface\\AddOns\\Recount\\Recount_Modes.lua:280\n SetStrataAndClamp = <function> defined @Interface\\AddOns\\Recount\\WindowOrder.lua:157\n ShortNumber = <function> defined @Interface\\AddOns\\Recount\\GUI_Main.lua:28\n FreeTableRecurse = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:2129\n FreeComm = <function> defined @Interface\\AddOns\\Recount\\LazySync.lua:500\n db = <table> {\n }\n SetZoneGroupFilter = <function> defined @Interface\\AddOns\\Recount\\zonefilters.lua:50\n UnregisterAllComm = <function> defined @Interface\\AddOns\\SlideBar\\Libs\\LibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:202\n SetWindowTop = <function> defined @Interface\\AddOns\\Recount\\WindowOrder.lua:36\n ReportVersions = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:829\n ResetFightData = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:938\n SpellMissed = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:600\n FightingWho = \"Sha of Fear\"\n SetDeathLogDetails = <function> defined @Interface\\AddOns\\Recount\\GUI_Detail.lua:457\n FindTargetedUnit = <function> defined @Interface\\AddOns\\Recount\\roster.lua:93\n SpellAuraRemoved = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:763\n NewModule = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:256\n IsBoss = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:384\n GetLazySyncAmount = <function> defined @Interface\\AddOns\\Recount\\LazySync.lua:575\n CreateFilterWeights = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:1599\n UpdateSummaryMode = <function> defined @Interface\\AddOns\\Recount\\GUI_Detail.lua:1290\n SpellEnergize = <function> defined @Interface\\AddOns\\Recount\\TrackerModules\\TrackerModule_PowerGains.lua:58\n AddGain = <function> defined @Interface\\AddOns\\Recount\\TrackerModules\\TrackerModule_PowerGains.lua:68\n Deserialize = <function> defined @Interface\\AddOns\\Recount\\Libs\\AceSerializer-3.0\\AceSerializer-3.0.lua:242\n AddDispelData = <function> defined @Interface\\AddOns\\Recount\\TrackerModules\\TrackerModule_Dispels.lua:42\n CheckFontStringLength = <function> defined @Interface\\AddOns\\Recount\\GUI_Graph.lua:736\n GetPetPrefixUnit = <function> defined @Interface\\AddOns\\Recount\\roster.lua:69\n GetName = <function> defined @Interface\\AddOns\\Bart",
-			["timestamp"] = "2013-04-19 22:32:43",
-			["context"] = "Global",
-			["stack"] = "[string \"safecall Dispatcher[12]\"]:13: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:92: in function `Fire'\n...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:120: in function <...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>\n",
-		}, -- [3]
-		{
-			["message"] = "[string \"safecall Dispatcher[19]\"]:13: script ran too long",
-			["count"] = 1,
-			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50008\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucScanData, v5.15.5383 (LikeableLyrebird)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.9\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.6\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DBMMogushanVaults, v\n  DBMTerraceofEndlessSpring, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.3.11\n  Quartz, v3.1.2\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.2.0.50200 <us>\n  (ck=882)\n",
-			["locals"] = "handlers = <table> {\n (null) = <function> defined @Interface\\AddOns\\SlideBar\\Libs\\LibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147\n (null) = <function> defined @Interface\\AddOns\\SlideBar\\Libs\\LibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147\n (null) = <function> defined @Interface\\AddOns\\SlideBar\\Libs\\LibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147\n (null) = <function> defined @Interface\\AddOns\\SlideBar\\Libs\\LibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147\n}\nindex = <table> {\n SetMainWindowModeByLabel = <function> defined @Interface\\AddOns\\Recount\\Recount_Modes.lua:643\n ResetData = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:855\n ResetPositionAllWindows = <function> defined @Interface\\AddOns\\Recount\\WindowOrder.lua:123\n modules = <table> {\n }\n FormatLongNums = <function> defined @Interface\\AddOns\\Recount\\GUI_Main.lua:56\n srcRetention = true\n SpellBuildingDamage = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:502\n FlagSync = <function> defined @Interface\\AddOns\\Recount\\LazySync.lua:504\n GetInheritGuardian = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:1248\n UnregisterTracking = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:2306\n CheckPartyCombatWithPets = <function> defined @Interface\\AddOns\\Recount\\roster.lua:14\n InitFightData = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:999\n RequestVersion = <function> defined @Interface\\AddOns\\Recount\\LazySync.lua:554\n SpellAuraRefresh = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:721\n UpdateZoneGroupFilter = <function> defined @Interface\\AddOns\\Recount\\zonefilters.lua:71\n BossFound = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:1575\n InGroup = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:1311\n MergedPetHealingDPS = <function> defined @Interface\\AddOns\\Recount\\Recount_Modes.lua:280\n SetStrataAndClamp = <function> defined @Interface\\AddOns\\Recount\\WindowOrder.lua:157\n ShortNumber = <function> defined @Interface\\AddOns\\Recount\\GUI_Main.lua:28\n FreeTableRecurse = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:2129\n FreeComm = <function> defined @Interface\\AddOns\\Recount\\LazySync.lua:500\n db = <table> {\n }\n SetZoneGroupFilter = <function> defined @Interface\\AddOns\\Recount\\zonefilters.lua:50\n UnregisterAllComm = <function> defined @Interface\\AddOns\\SlideBar\\Libs\\LibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:202\n SetWindowTop = <function> defined @Interface\\AddOns\\Recount\\WindowOrder.lua:36\n ReportVersions = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:829\n ResetFightData = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:938\n SpellMissed = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:600\n FightingWho = \"Sha of Fear\"\n SetDeathLogDetails = <function> defined @Interface\\AddOns\\Recount\\GUI_Detail.lua:457\n FindTargetedUnit = <function> defined @Interface\\AddOns\\Recount\\roster.lua:93\n SpellAuraRemoved = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:763\n NewModule = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:256\n IsBoss = <function> defined @Interface\\AddOns\\Recount\\Tracker.lua:384\n GetLazySyncAmount = <function> defined @Interface\\AddOns\\Recount\\LazySync.lua:575\n CreateFilterWeights = <function> defined @Interface\\AddOns\\Recount\\Recount.lua:1599\n UpdateSummaryMode = <function> defined @Interface\\AddOns\\Recount\\GUI_Detail.lua:1290\n SpellEnergize = <function> defined @Interface\\AddOns\\Recount\\TrackerModules\\TrackerModule_PowerGains.lua:58\n AddGain = <function> defined @Interface\\AddOns\\Recount\\TrackerModules\\TrackerModule_PowerGains.lua:68\n Deserialize = <function> defined @Interface\\AddOns\\Recount\\Libs\\AceSerializer-3.0\\AceSerializer-3.0.lua:242\n AddDispelData = <function> defined @Interface\\AddOns\\Recount\\TrackerModules\\TrackerModule_Dispels.lua:42\n CheckFontStringLength = <function> defined @Interface\\AddOns\\Recount\\GUI_Graph.lua:736\n GetPetPrefixUnit = <function> defined @Interface\\AddOns\\Recount\\roster.lua:69\n GetName = <function> defined @Interface\\AddOns\\Barte",
-			["timestamp"] = "2013-04-19 22:32:43",
-			["context"] = "Global",
-			["stack"] = "[string \"safecall Dispatcher[19]\"]:13: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:92: in function `Fire'\n...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:120: in function <...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>\n",
-		}, -- [4]
-		{
-			["message"] = "...nterface\\AddOns\\DBM-MogushanVaults\\WillofEmperor.lua:238: script ran too long",
-			["count"] = 1,
-			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50008\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucScanData, v5.15.5383 (LikeableLyrebird)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.9\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.6\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DBMMogushanVaults, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.3.11\n  Quartz, v3.1.2\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.2.0.50200 <us>\n  (ck=863)\n",
-			["locals"] = "self = <table> {\n CHAT_MSG_MONSTER_YELL = <function> defined @Interface\\AddOns\\DBM-MogushanVaults\\WillofEmperor.lua:192\n stats = <table> {\n }\n multiMobPullDetection = <table> {\n }\n ignoreBestkill = false\n modId = \"DBM-MogushanVaults\"\n lastAntiSpam1 = 3325.754\n RAID_BOSS_EMOTE = <function> defined @Interface\\AddOns\\DBM-MogushanVaults\\WillofEmperor.lua:200\n revision = 8974\n creatureId = 60399\n OnCombatStart = <function> defined @Interface\\AddOns\\DBM-MogushanVaults\\WillofEmperor.lua:103\n encounterId = 677\n localization = <table> {\n }\n announces = <table> {\n }\n optionCategories = <table> {\n }\n timers = <table> {\n }\n specwarns = <table> {\n }\n OnCombatEnd = <function> defined @Interface\\AddOns\\DBM-MogushanVaults\\WillofEmperor.lua:128\n modelId = 41391\n inCombat = true\n inCombatOnlyEventsRegistered = 1\n noHeroic = false\n hasChallenge = false\n hasLFR = true\n zones = <table> {\n }\n combatInfo = <table> {\n }\n Options = <table> {\n }\n categorySort = <table> {\n }\n id = \"677\"\n minCombatTime = 25\n instanceId = 317\n countdowns = <table> {\n }\n oneFormat = false\n type = \"RAID\"\n UNIT_POWER = <function> defined @Interface\\AddOns\\DBM-MogushanVaults\\WillofEmperor.lua:302\n UNIT_SPELLCAST_SUCCEEDED = <function> defined @Interface\\AddOns\\DBM-MogushanVaults\\WillofEmperor.lua:227\n SPELL_AURA_APPLIED = <function> defined @Interface\\AddOns\\DBM-MogushanVaults\\WillofEmperor.lua:137\n DefaultOptions = <table> {\n }\n addon = <table> {\n }\n inCombatOnlyEvents = <table> {\n }\n}\nuId = \"boss1\"\n_ = \"Arc Left\"\n_ = \"\"\n_ = 0\nspellId = 116968\ncastMob = \"Qin-xi\"\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = \"Interface\\AddOns\\DBM-Core\\Sounds\\Corsica_S\\1.ogg\"\n(*temporary) = \"Master\"\n(*temporary) = true\n(*temporary) = \"script ran too long\"\ncomboMob = \"Qin-xi\"\nwarnEnergizingSmash = <table> {\n mod = <table> {\n }\n option = \"Announce116550spell\"\n sound = true\n color = <table> {\n }\n text = \"Energizing Smash\"\n icon = \"Interface\\Icons\\inv_mace_42\"\n announceType = \"spell\"\n}\ncomboCount = 1\nwarnArcLeft = <table> {\n mod = <table> {\n }\n option = \"Announce116968count\"\n sound = true\n color = <table> {\n }\n text = \"Arc Left (%d)\"\n icon = \"INTERFACE\\ICONS\\misc_arrowleft\"\n announceType = \"count\"\n}\nwarnArcRight = <table> {\n mod = <table> {\n }\n option = \"Announce116971count\"\n sound = true\n color = <table> {\n }\n text = \"Arc Right (%d)\"\n icon = \"INTERFACE\\ICONS\\misc_arrowright\"\n announceType = \"count\"\n}\nwarnArcCenter = <table> {\n mod = <table> {\n }\n option = \"Announce116972count\"\n sound = true\n color = <table> {\n }\n text = \"Arc Center (%d)\"\n icon = \"INTERFACE\\ICONS\\misc_arrowlup\"\n announceType = \"count\"\n}\nwarnStomp = <table> {\n mod = <table> {\n }\n option = \"Announce116969count\"\n sound = true\n color = <table> {\n }\n text = \"Stomp (%d)\"\n icon = \"Interface\\Icons\\Ability_WarStomp\"\n announceType = \"count\"\n}\nexpectedComboCount = 5\n",
-			["timestamp"] = "2013-04-20 22:55:09",
-			["context"] = "Global",
-			["stack"] = "...nterface\\AddOns\\DBM-MogushanVaults\\WillofEmperor.lua:238: in function `handler'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:386: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:377>\n",
-		}, -- [5]
-		{
-			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9117: bad argument #2 to 'strsplit' (string expected, got nil)",
-			["count"] = 4,
-			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50008\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucScanData, v5.15.5383 (LikeableLyrebird)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.9\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.6\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.3.11\n  Quartz, v3.1.2\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.2.0.50200 <us>\n  (ck=84c)\n",
-			["locals"] = "(*temporary) = \"!\"\n(*temporary) = nil\n(*temporary) = \"string expected, got nil\"\n",
-			["timestamp"] = "2013-04-25 05:42:13",
-			["context"] = "Global",
-			["stack"] = "[C]: in function `strsplit'\nInterface\\AddOns\\Carbonite\\NxMap.lua:9117: in function `GetInstanceID'\nInterface\\AddOns\\Carbonite\\NxMap.lua:9137: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:9126>\n(tail call): ?\nInterface\\AddOns\\Carbonite\\NxMapGuide.lua:1180: in function `UpdateMapIcons'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:1808: in function `RecordQuestsLog'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:1381: in function `RecordQuests'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:4733: in function `LogUpdate'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:4702: in function `?'\nInterface\\AddOns\\Carbonite\\NxUI.lua:2780: in function <Interface\\AddOns\\Carbonite\\NxUI.lua:2762>\n",
-		}, -- [6]
-		{
 			["message"] = "...nterface\\AddOns\\DBM-MogushanVaults\\WillofEmperor.lua:255: script ran too long",
 			["count"] = 1,
 			["addons"] = "  Swatter, v5.15.5383 (LikeableLyrebird)\n  WowheadLooter, v50008\n  AucAdvanced, v5.15.5383 (LikeableLyrebird)\n  AucFilterBasic, v5.15.5383 (LikeableLyrebird)\n  AucFilterOutlier, v5.15.5383.5381(5.15/embedded)\n  AucMatchUndercut, v5.15.5383.5381(5.15/embedded)\n  AucScanData, v5.15.5383 (LikeableLyrebird)\n  AucStatHistogram, v5.15.5383 (LikeableLyrebird)\n  AucStatiLevel, v5.15.5383 (LikeableLyrebird)\n  AucStatPurchased, v5.15.5383 (LikeableLyrebird)\n  AucStatSales, v5.15.5383.5381(5.15/embedded)\n  AucStatSimple, v5.15.5383 (LikeableLyrebird)\n  AucStatStdDev, v5.15.5383 (LikeableLyrebird)\n  AucStatWOWEcon, v5.15.5383.5323(5.15/embedded)\n  AucUtilAHWindowControl, v5.15.5383.5381(5.15/embedded)\n  AucUtilAppraiser, v5.15.5383.5381(5.15/embedded)\n  AucUtilAskPrice, v5.15.5383.5381(5.15/embedded)\n  AucUtilAutoMagic, v5.15.5383.5381(5.15/embedded)\n  AucUtilCompactUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilEasyBuyout, v5.15.5383.5381(5.15/embedded)\n  AucUtilFixAH, v5.15.5383 (LikeableLyrebird)\n  AucUtilItemSuggest, v5.15.5383.5381(5.15/embedded)\n  AucUtilPriceLevel, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanButton, v5.15.5383.5320(5.15/embedded)\n  AucUtilScanFinish, v5.15.5383.5381(5.15/embedded)\n  AucUtilScanProgress, v5.15.5383.4979(5.15/embedded)\n  AucUtilScanStart, v5.15.5383.5381(5.15/embedded)\n  AucUtilSearchUI, v5.15.5383.5381(5.15/embedded)\n  AucUtilSimpleAuction, v5.15.5383.5381(5.15/embedded)\n  AucUtilVendMarkup, v5.15.5383.4828(5.15/embedded)\n  Babylonian, v5.1.DEV.332(/embedded)\n  Bartender4, v4.5.9\n  BeanCounter, v5.15.5383 (LikeableLyrebird)\n  Carbonite, v5.1.6\n  CarboniteTransfer, v1.01\n  Configator, v5.1.DEV.344(/embedded)\n  DBMCore, v\n  DBMMogushanVaults, v\n  DebugLib, v5.1.DEV.337(/embedded)\n  Enchantrix, v5.15.5383 (LikeableLyrebird)\n  EnchantrixBarker, v5.15.5383 (LikeableLyrebird)\n  Informant, v5.15.5383 (LikeableLyrebird)\n  LibExtraTip, v5.12.DEV.342(/embedded)\n  ProfessionsVault, v6.3.11\n  Quartz, v3.1.2\n  QuartzProcs, v3.4\n  Recount, v\n  SlideBar, v5.15.5383 (LikeableLyrebird)\n  Stubby, v5.15.5383 (LikeableLyrebird)\n  TipHelper, v5.12.DEV.343(/embedded)\n  BlizRuntimeLib_enUS v5.2.0.50200 <us>\n  (ck=863)\n",
@@ -64,7 +11,7 @@ SwatterData = {
 			["timestamp"] = "2013-04-26 22:55:45",
 			["context"] = "Global",
 			["stack"] = "...nterface\\AddOns\\DBM-MogushanVaults\\WillofEmperor.lua:255: in function `handler'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:386: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:377>\n",
-		}, -- [7]
+		}, -- [1]
 		{
 			["message"] = "...nterface\\AddOns\\DBM-MogushanVaults\\WillofEmperor.lua:238: script ran too long",
 			["count"] = 1,
@@ -73,7 +20,7 @@ SwatterData = {
 			["timestamp"] = "2013-04-26 22:55:58",
 			["context"] = "Global",
 			["stack"] = "...nterface\\AddOns\\DBM-MogushanVaults\\WillofEmperor.lua:238: in function `handler'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:386: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:377>\n",
-		}, -- [8]
+		}, -- [2]
 		{
 			["message"] = "Interface\\AddOns\\!Swatter\\Swatter.lua:277: script ran too long",
 			["count"] = 1,
@@ -81,7 +28,7 @@ SwatterData = {
 			["timestamp"] = "2013-04-30 05:26:01",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\!Swatter\\Swatter.lua:277: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n(tail call): ?\nInterface\\AddOns\\!Swatter\\Swatter.lua:277: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n(tail call): ?\nInterface\\AddOns\\Recount\\Tracker.lua:1281: in function `AddTableDataStats'\nInterface\\AddOns\\Recount\\Tracker.lua:1849: in function `AddDamageData'\nInterface\\AddOns\\Recount\\Tracker.lua:597: in function <Interface\\AddOns\\Recount\\Tracker.lua:579>\nInterface\\AddOns\\Recount\\Tracker.lua:1071: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147: in function <...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147>\n[string \"safecall Dispatcher[14]\"]:4: in function <[string \"safecall Dispatcher[14]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[14]\"]:13: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:92: in function `Fire'\n...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:120: in function <...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>\n",
-		}, -- [9]
+		}, -- [3]
 		{
 			["message"] = "[string \"safecall Dispatcher[14]\"]:13: script ran too long",
 			["count"] = 1,
@@ -90,7 +37,7 @@ SwatterData = {
 			["timestamp"] = "2013-04-30 05:26:01",
 			["context"] = "Global",
 			["stack"] = "[string \"safecall Dispatcher[14]\"]:13: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:92: in function `Fire'\n...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:120: in function <...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>\n",
-		}, -- [10]
+		}, -- [4]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9117: bad argument #2 to 'strsplit' (string expected, got nil)",
 			["count"] = 18,
@@ -99,7 +46,7 @@ SwatterData = {
 			["timestamp"] = "2013-04-30 05:45:47",
 			["context"] = "Global",
 			["stack"] = "[C]: in function `strsplit'\nInterface\\AddOns\\Carbonite\\NxMap.lua:9117: in function `GetInstanceID'\nInterface\\AddOns\\Carbonite\\NxMap.lua:9137: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:9126>\n(tail call): ?\nInterface\\AddOns\\Carbonite\\NxMapGuide.lua:1180: in function `UpdateMapIcons'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:1808: in function `RecordQuestsLog'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:1381: in function `RecordQuests'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:4733: in function `LogUpdate'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:4702: in function `?'\nInterface\\AddOns\\Carbonite\\NxUI.lua:2780: in function <Interface\\AddOns\\Carbonite\\NxUI.lua:2762>\n",
-		}, -- [11]
+		}, -- [5]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:-1: script ran too long",
 			["count"] = 1,
@@ -108,7 +55,7 @@ SwatterData = {
 			["timestamp"] = "2013-05-07 05:27:15",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\NxMap.lua: in function `ToggleFrame'\nInterface\\FrameXML\\UIParent.lua:636: in function `ToggleEncounterJournal'\n[string \"TOGGLEENCOUNTERJOURNAL\"]:1: in function <[string \"TOGGLEENCOUNTERJOURNAL\"]:1>\n",
-		}, -- [12]
+		}, -- [6]
 		{
 			["message"] = "...nterface\\AddOns\\DBM-MogushanVaults\\WillofEmperor.lua:255: script ran too long",
 			["count"] = 1,
@@ -117,7 +64,7 @@ SwatterData = {
 			["timestamp"] = "2013-05-10 05:33:01",
 			["context"] = "Global",
 			["stack"] = "...nterface\\AddOns\\DBM-MogushanVaults\\WillofEmperor.lua:255: in function `handler'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:386: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:377>\n",
-		}, -- [13]
+		}, -- [7]
 		{
 			["message"] = "Interface\\AddOns\\!Swatter\\Swatter.lua:300: script ran too long",
 			["count"] = 1,
@@ -126,7 +73,7 @@ SwatterData = {
 			["timestamp"] = "2013-05-11 23:08:01",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\!Swatter\\Swatter.lua:300: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `debugstack'\nInterface\\AddOns\\!Swatter\\Swatter.lua:167: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `(for generator)'\nInterface\\AddOns\\!Swatter\\Swatter.lua:300: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `GetAddOnInfo'\nInterface\\AddOns\\!Swatter\\Swatter.lua:277: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `GetAddOnInfo'\nInterface\\AddOns\\!Swatter\\Swatter.lua:277: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `debugstack'\nInterface\\AddOns\\!Swatter\\Swatter.lua:167: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\n...\n[C]: in function `GetAddOnInfo'\nInterface\\AddOns\\!Swatter\\Swatter.lua:277: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `GetAddOnInfo'\nInterface\\AddOns\\!Swatter\\Swatter.lua:277: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `GetAddOnMetadata'\nInterface\\AddOns\\!Swatter\\Swatter.lua:280: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `GetAddOnInfo'\nInterface\\AddOns\\!Swatter\\Swatter.lua:277: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: ?\n[string \"safecall Dispatcher[19]\"]:13: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:92: in function `Fire'\n...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:120: in function <...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>\n",
-		}, -- [14]
+		}, -- [8]
 		{
 			["message"] = "Interface\\AddOns\\!Swatter\\Swatter.lua:167: script ran too long",
 			["count"] = 3,
@@ -135,7 +82,7 @@ SwatterData = {
 			["timestamp"] = "2013-05-11 23:08:03",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\!Swatter\\Swatter.lua:167: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `GetAddOnInfo'\nInterface\\AddOns\\!Swatter\\Swatter.lua:277: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `RealShow'\nInterface\\AddOns\\!Swatter\\Swatter.lua:563: in function `Show'\nInterface\\AddOns\\!Swatter\\Swatter.lua:533: in function `ErrorUpdate'\nInterface\\AddOns\\!Swatter\\Swatter.lua:215: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `(for generator)'\nInterface\\AddOns\\!Swatter\\Swatter.lua:300: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `debugstack'\nInterface\\AddOns\\!Swatter\\Swatter.lua:167: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `(for generator)'\nInterface\\AddOns\\!Swatter\\Swatter.lua:300: in function `GetAddOns'\n...\n[C]: in function `GetAddOnInfo'\nInterface\\AddOns\\!Swatter\\Swatter.lua:277: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `GetAddOnInfo'\nInterface\\AddOns\\!Swatter\\Swatter.lua:277: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `GetAddOnMetadata'\nInterface\\AddOns\\!Swatter\\Swatter.lua:280: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `GetAddOnInfo'\nInterface\\AddOns\\!Swatter\\Swatter.lua:277: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: ?\n[string \"safecall Dispatcher[19]\"]:13: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:92: in function `Fire'\n...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:120: in function <...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>\n",
-		}, -- [15]
+		}, -- [9]
 		{
 			["message"] = "Interface\\AddOns\\!Swatter\\Swatter.lua:277: script ran too long",
 			["count"] = 1,
@@ -144,7 +91,7 @@ SwatterData = {
 			["timestamp"] = "2013-05-11 23:11:26",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\!Swatter\\Swatter.lua:277: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `GetAddOnInfo'\nInterface\\AddOns\\!Swatter\\Swatter.lua:277: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `type'\nInterface\\AddOns\\!Swatter\\Swatter.lua:179: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: ?\nInterface\\AddOns\\Carbonite\\NxMap.lua:5551: in function `?'\nInterface\\AddOns\\Carbonite\\NxMap.lua:5132: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4114: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4038>\n",
-		}, -- [16]
+		}, -- [10]
 		{
 			["message"] = "Interface\\AddOns\\!Swatter\\Swatter.lua:563: script ran too long",
 			["count"] = 1,
@@ -153,7 +100,7 @@ SwatterData = {
 			["timestamp"] = "2013-05-11 23:11:28",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\!Swatter\\Swatter.lua:563: in function `Show'\nInterface\\AddOns\\!Swatter\\Swatter.lua:533: in function `ErrorUpdate'\nInterface\\AddOns\\!Swatter\\Swatter.lua:215: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `GetAddOnInfo'\nInterface\\AddOns\\!Swatter\\Swatter.lua:277: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `GetAddOnInfo'\nInterface\\AddOns\\!Swatter\\Swatter.lua:277: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: in function `type'\nInterface\\AddOns\\!Swatter\\Swatter.lua:179: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n[C]: ?\nInterface\\AddOns\\Carbonite\\NxMap.lua:5551: in function `?'\nInterface\\AddOns\\Carbonite\\NxMap.lua:5132: in function `Update'\nInterface\\AddOns\\Carbonite\\NxMap.lua:4114: in function <Interface\\AddOns\\Carbonite\\NxMap.lua:4038>\n",
-		}, -- [17]
+		}, -- [11]
 		{
 			["message"] = "Interface\\AddOns\\!Swatter\\Swatter.lua:288: script ran too long",
 			["count"] = 1,
@@ -161,7 +108,7 @@ SwatterData = {
 			["timestamp"] = "2013-05-11 23:11:35",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\!Swatter\\Swatter.lua:288: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n(tail call): ?\nInterface\\AddOns\\!Swatter\\Swatter.lua:292: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:181: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:157>\nInterface\\AddOns\\!Swatter\\Swatter.lua:227: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:225>\n(tail call): ?\nInterface\\AddOns\\Recount\\Recount.lua:2173: in function `GetTable'\nInterface\\AddOns\\Recount\\Tracker.lua:1286: in function `AddTableDataStats'\nInterface\\AddOns\\Recount\\Tracker.lua:2029: in function `AddHealData'\nInterface\\AddOns\\Recount\\Tracker.lua:640: in function <Interface\\AddOns\\Recount\\Tracker.lua:620>\nInterface\\AddOns\\Recount\\Tracker.lua:1071: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147: in function <...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147>\n[string \"safecall Dispatcher[19]\"]:4: in function <[string \"safecall Dispatcher[19]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[19]\"]:13: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:92: in function `Fire'\n...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:120: in function <...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>\n",
-		}, -- [18]
+		}, -- [12]
 		{
 			["message"] = "[string \"safecall Dispatcher[19]\"]:13: script ran too long",
 			["count"] = 1,
@@ -170,7 +117,7 @@ SwatterData = {
 			["timestamp"] = "2013-05-11 23:11:35",
 			["context"] = "Global",
 			["stack"] = "[string \"safecall Dispatcher[19]\"]:13: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:92: in function `Fire'\n...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:120: in function <...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>\n",
-		}, -- [19]
+		}, -- [13]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Core\\DBM-Core.lua:4521: script ran too long",
 			["count"] = 1,
@@ -179,7 +126,7 @@ SwatterData = {
 			["timestamp"] = "2013-05-16 21:33:03",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Core\\DBM-Core.lua:4521: in function `func'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:888: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:881>\n",
-		}, -- [20]
+		}, -- [14]
 		{
 			["message"] = "Interface\\AddOns\\Recount\\roster.lua:102: script ran too long",
 			["count"] = 6,
@@ -187,7 +134,7 @@ SwatterData = {
 			["timestamp"] = "2013-05-16 21:38:11",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Recount\\roster.lua:102: in function `FindTargetedUnit'\nInterface\\AddOns\\Recount\\Recount.lua:931: in function `FindUnit'\nInterface\\AddOns\\Recount\\Tracker.lua:1133: in function `AddCurrentEvent'\nInterface\\AddOns\\Recount\\Tracker.lua:1685: in function `AddDamageData'\nInterface\\AddOns\\Recount\\Tracker.lua:597: in function <Interface\\AddOns\\Recount\\Tracker.lua:579>\nInterface\\AddOns\\Recount\\Tracker.lua:1071: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147: in function <...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147>\n[string \"safecall Dispatcher[15]\"]:4: in function <[string \"safecall Dispatcher[15]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[15]\"]:13: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:92: in function `Fire'\n...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:120: in function <...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>\n",
-		}, -- [21]
+		}, -- [15]
 		{
 			["message"] = "[string \"safecall Dispatcher[15]\"]:13: script ran too long",
 			["count"] = 1,
@@ -196,7 +143,7 @@ SwatterData = {
 			["timestamp"] = "2013-05-16 21:38:11",
 			["context"] = "Global",
 			["stack"] = "[string \"safecall Dispatcher[15]\"]:13: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:92: in function `Fire'\n...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:120: in function <...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>\n",
-		}, -- [22]
+		}, -- [16]
 		{
 			["message"] = "[string \"safecall Dispatcher[19]\"]:13: script ran too long",
 			["count"] = 5,
@@ -205,7 +152,7 @@ SwatterData = {
 			["timestamp"] = "2013-05-16 21:38:15",
 			["context"] = "Global",
 			["stack"] = "[string \"safecall Dispatcher[19]\"]:13: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:92: in function `Fire'\n...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:120: in function <...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>\n",
-		}, -- [23]
+		}, -- [17]
 		{
 			["message"] = "Interface\\AddOns\\Recount\\roster.lua:100: script ran too long",
 			["count"] = 1,
@@ -213,7 +160,7 @@ SwatterData = {
 			["timestamp"] = "2013-05-16 21:38:24",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Recount\\roster.lua:100: in function `FindTargetedUnit'\nInterface\\AddOns\\Recount\\Recount.lua:931: in function `FindUnit'\nInterface\\AddOns\\Recount\\Tracker.lua:1133: in function `AddCurrentEvent'\nInterface\\AddOns\\Recount\\Tracker.lua:1959: in function `AddHealData'\nInterface\\AddOns\\Recount\\Tracker.lua:640: in function <Interface\\AddOns\\Recount\\Tracker.lua:620>\nInterface\\AddOns\\Recount\\Tracker.lua:1071: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147: in function <...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147>\n[string \"safecall Dispatcher[19]\"]:4: in function <[string \"safecall Dispatcher[19]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[19]\"]:13: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:92: in function `Fire'\n...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:120: in function <...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>\n",
-		}, -- [24]
+		}, -- [18]
 		{
 			["message"] = "[string \"safecall Dispatcher[22]\"]:13: script ran too long",
 			["count"] = 2,
@@ -222,7 +169,7 @@ SwatterData = {
 			["timestamp"] = "2013-05-16 21:38:24",
 			["context"] = "Global",
 			["stack"] = "[string \"safecall Dispatcher[22]\"]:13: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:92: in function `Fire'\n...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:120: in function <...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>\n",
-		}, -- [25]
+		}, -- [19]
 		{
 			["message"] = "Interface\\AddOns\\Recount\\Tracker.lua:1253: script ran too long",
 			["count"] = 1,
@@ -230,7 +177,7 @@ SwatterData = {
 			["timestamp"] = "2013-05-16 21:38:24",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Recount\\Tracker.lua:1253: in function `AddTableDataStats'\nInterface\\AddOns\\Recount\\Tracker.lua:1717: in function `AddDamageData'\nInterface\\AddOns\\Recount\\Tracker.lua:544: in function `SpellDamage'\nInterface\\AddOns\\Recount\\Tracker.lua:499: in function <Interface\\AddOns\\Recount\\Tracker.lua:498>\nInterface\\AddOns\\Recount\\Tracker.lua:1071: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147: in function <...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147>\n[string \"safecall Dispatcher[22]\"]:4: in function <[string \"safecall Dispatcher[22]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[22]\"]:13: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:92: in function `Fire'\n...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:120: in function <...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>\n",
-		}, -- [26]
+		}, -- [20]
 		{
 			["message"] = "Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: attempt to call method 'returnProcList' (a nil value)",
 			["count"] = 1,
@@ -238,7 +185,7 @@ SwatterData = {
 			["timestamp"] = "2013-05-24 23:21:22",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: in function <Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:91>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...\\ProfessionsVault\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:529: in function `InitializeAddon'\n...\\ProfessionsVault\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:644: in function <...\\ProfessionsVault\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:636>\n",
-		}, -- [27]
+		}, -- [21]
 		{
 			["message"] = "Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: attempt to call method 'returnProcList' (a nil value)",
 			["count"] = 1,
@@ -246,7 +193,7 @@ SwatterData = {
 			["timestamp"] = "2013-05-24 23:28:54",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: in function <Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:91>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...\\ProfessionsVault\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:529: in function `InitializeAddon'\n...\\ProfessionsVault\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:644: in function <...\\ProfessionsVault\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:636>\n",
-		}, -- [28]
+		}, -- [22]
 		{
 			["message"] = "Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: attempt to call method 'returnProcList' (a nil value)",
 			["count"] = 1,
@@ -254,7 +201,7 @@ SwatterData = {
 			["timestamp"] = "2013-06-08 22:34:05",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:145: in function <Interface\\AddOns\\Quartz_Procs\\quartzprocs.lua:91>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:529: in function `InitializeAddon'\n...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:644: in function <...AddOns\\Bartender4\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:636>\n",
-		}, -- [29]
+		}, -- [23]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\Carbonite.lua:2352: script ran too long",
 			["count"] = 1,
@@ -263,7 +210,7 @@ SwatterData = {
 			["timestamp"] = "2013-06-17 05:25:30",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\Carbonite.lua:2352: in function `AddEvent'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:2415: in function `AddKillEvent'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:3215: in function `AddKill'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:2984: in function <Interface\\AddOns\\Carbonite\\Carbonite.lua:2894>\n",
-		}, -- [30]
+		}, -- [24]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:10367: script ran too long",
 			["count"] = 1,
@@ -272,7 +219,7 @@ SwatterData = {
 			["timestamp"] = "2013-06-21 22:58:18",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:10367: in function `F'\nInterface\\AddOns\\Carbonite\\NxTimer.lua:111: in function `OnUpdate'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1113: in function `NXOnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n",
-		}, -- [31]
+		}, -- [25]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2077: script ran too long",
 			["count"] = 1,
@@ -281,7 +228,7 @@ SwatterData = {
 			["timestamp"] = "2013-06-21 22:58:19",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Core\\DBM-Core.lua:2077: in function `LoadMod'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2038: in function `LoadModsOnDemand'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2021: in function `handler'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:418: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:405>\n",
-		}, -- [32]
+		}, -- [26]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:10380: script ran too long",
 			["count"] = 1,
@@ -290,7 +237,7 @@ SwatterData = {
 			["timestamp"] = "2013-06-21 22:58:20",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:10380: in function `F'\nInterface\\AddOns\\Carbonite\\NxTimer.lua:111: in function `OnUpdate'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1113: in function `NXOnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n",
-		}, -- [33]
+		}, -- [27]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (MinimapCluster:Hide()) during combat lockdown.",
 			["count"] = 1,
@@ -298,7 +245,7 @@ SwatterData = {
 			["timestamp"] = "2013-06-21 22:58:20",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Hide'\nInterface\\AddOns\\Carbonite\\NxMap.lua:2453: in function `MinimapButtonShowUpdate'\nInterface\\AddOns\\Carbonite\\NxMap.lua:10396: in function `F'\nInterface\\AddOns\\Carbonite\\NxTimer.lua:111: in function `OnUpdate'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1113: in function `NXOnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n",
-		}, -- [34]
+		}, -- [28]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9231: script ran too long",
 			["count"] = 1,
@@ -307,7 +254,7 @@ SwatterData = {
 			["timestamp"] = "2013-06-21 22:58:20",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:9231: in function `SetCurrentMap'\nInterface\\AddOns\\Carbonite\\NxQuest.lua:1854: in function `F'\nInterface\\AddOns\\Carbonite\\NxTimer.lua:111: in function `OnUpdate'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1113: in function `NXOnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n",
-		}, -- [35]
+		}, -- [29]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\Carbonite.lua:2590: script ran too long",
 			["count"] = 53,
@@ -316,7 +263,7 @@ SwatterData = {
 			["timestamp"] = "2013-06-21 22:58:26",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\Carbonite.lua:2590: in function `Func'\nInterface\\AddOns\\Carbonite\\NxHelp.lua:812: in function `OnUpdate'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1114: in function `NXOnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n",
-		}, -- [36]
+		}, -- [30]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Core\\DBM-Core.lua:5246: script ran too long",
 			["count"] = 1,
@@ -325,7 +272,7 @@ SwatterData = {
 			["timestamp"] = "2013-06-22 22:07:29",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Core\\DBM-Core.lua:5246: in function `PlayCountSound'\nInterface\\AddOns\\DBM-ThroneofThunder\\Tortos.lua:161: in function `handler'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:418: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:405>\n(tail call): ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:418: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:405>\n",
-		}, -- [37]
+		}, -- [31]
 		{
 			["message"] = "Interface\\AddOns\\!Swatter\\Swatter.lua:342: script ran too long",
 			["count"] = 1,
@@ -334,7 +281,7 @@ SwatterData = {
 			["timestamp"] = "2013-06-25 05:50:50",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\!Swatter\\Swatter.lua:342: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:182: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:158>\nInterface\\AddOns\\!Swatter\\Swatter.lua:228: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:226>\n[C]: in function `(for generator)'\nInterface\\AddOns\\!Swatter\\Swatter.lua:301: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:182: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:158>\nInterface\\AddOns\\!Swatter\\Swatter.lua:228: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:226>\n[C]: in function `(for generator)'\nInterface\\AddOns\\!Swatter\\Swatter.lua:301: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:182: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:158>\nInterface\\AddOns\\!Swatter\\Swatter.lua:228: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:226>\n[C]: ?\nInterface\\AddOns\\!Swatter\\Swatter.lua:289: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:182: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:158>\nInterface\\AddOns\\!Swatter\\Swatter.lua:228: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:226>\n[C]: in function `debuglocals'\nInterface\\AddOns\\!Swatter\\Swatter.lua:170: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:158>\nInterface\\AddOns\\!Swatter\\Swatter.lua:228: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:226>\n[C]: ?\nInterface\\AddOns\\Recount\\Recount_Modes.lua:207: in function `MergedPetDamageDPS'\nInterface\\AddOns\\Recount\\Recount_Modes.lua:252: in function `GetData'\nInterface\\AddOns\\Recount\\GUI_Main.lua:975: in function `?'\n...\\ProfessionsVault\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:41: in function <...\\ProfessionsVault\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:36>\n",
-		}, -- [38]
+		}, -- [32]
 		{
 			["message"] = "Interface\\AddOns\\Recount\\Recount_Modes.lua:210: script ran too long",
 			["count"] = 2,
@@ -343,7 +290,7 @@ SwatterData = {
 			["timestamp"] = "2013-06-25 05:50:50",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Recount\\Recount_Modes.lua:210: in function `MergedPetDamageDPS'\nInterface\\AddOns\\Recount\\Recount_Modes.lua:252: in function `GetData'\nInterface\\AddOns\\Recount\\GUI_Main.lua:975: in function `?'\n...\\ProfessionsVault\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:41: in function <...\\ProfessionsVault\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:36>\n",
-		}, -- [39]
+		}, -- [33]
 		{
 			["message"] = "Interface\\AddOns\\!Swatter\\Swatter.lua:253: script ran too long",
 			["count"] = 1,
@@ -352,7 +299,7 @@ SwatterData = {
 			["timestamp"] = "2013-06-25 05:51:05",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\!Swatter\\Swatter.lua:253: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:251>\nInterface\\AddOns\\!Swatter\\Swatter.lua:301: in function `GetAddOns'\nInterface\\AddOns\\!Swatter\\Swatter.lua:182: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:158>\nInterface\\AddOns\\!Swatter\\Swatter.lua:228: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:226>\n[C]: in function `debuglocals'\nInterface\\AddOns\\!Swatter\\Swatter.lua:170: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:158>\nInterface\\AddOns\\!Swatter\\Swatter.lua:228: in function <Interface\\AddOns\\!Swatter\\Swatter.lua:226>\n[C]: in function `pcall'\n...\\ProfessionsVault\\libs\\LibStrataFix\\LibStrataFix.lua:139: in function <...\\ProfessionsVault\\libs\\LibStrataFix\\LibStrataFix.lua:121>\n(tail call): ?\n[C]: in function `CreateFrame'\nInterface\\AddOns\\Quartz\\QuartzStatusBar.lua:33: in function `CreateStatusBar'\nInterface\\AddOns\\Quartz\\modules\\Buff.lua:139: in function <Interface\\AddOns\\Quartz\\modules\\Buff.lua:138>\nInterface\\AddOns\\Quartz\\modules\\Buff.lua:939: in function `UpdateTargetBars'\nInterface\\AddOns\\Quartz\\modules\\Buff.lua:833: in function <Interface\\AddOns\\Quartz\\modules\\Buff.lua:830>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[2]\"]:9: in function <[string \"safecall Dispatcher[2]\"]:5>\n(tail call): ?\n...e\\AddOns\\Quartz\\libs\\AceBucket-3.0\\AceBucket-3.0.lua:116: in function `func'\n...\\ProfessionsVault\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:43: in function <...\\ProfessionsVault\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:36>\n",
-		}, -- [40]
+		}, -- [34]
 		{
 			["message"] = "Interface\\AddOns\\Quartz\\QuartzStatusBar.lua:33: script ran too long",
 			["count"] = 1,
@@ -360,7 +307,7 @@ SwatterData = {
 			["timestamp"] = "2013-06-25 05:51:05",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Quartz\\QuartzStatusBar.lua:33: in function `CreateStatusBar'\nInterface\\AddOns\\Quartz\\modules\\Buff.lua:139: in function <Interface\\AddOns\\Quartz\\modules\\Buff.lua:138>\nInterface\\AddOns\\Quartz\\modules\\Buff.lua:939: in function `UpdateTargetBars'\nInterface\\AddOns\\Quartz\\modules\\Buff.lua:833: in function <Interface\\AddOns\\Quartz\\modules\\Buff.lua:830>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[2]\"]:9: in function <[string \"safecall Dispatcher[2]\"]:5>\n(tail call): ?\n...e\\AddOns\\Quartz\\libs\\AceBucket-3.0\\AceBucket-3.0.lua:116: in function `func'\n...\\ProfessionsVault\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:43: in function <...\\ProfessionsVault\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:36>\n",
-		}, -- [41]
+		}, -- [35]
 		{
 			["message"] = "[string \"safecall Dispatcher[2]\"]:9: script ran too long",
 			["count"] = 1,
@@ -369,7 +316,7 @@ SwatterData = {
 			["timestamp"] = "2013-06-25 05:51:05",
 			["context"] = "Global",
 			["stack"] = "[string \"safecall Dispatcher[2]\"]:9: in function <[string \"safecall Dispatcher[2]\"]:5>\n(tail call): ?\n...e\\AddOns\\Quartz\\libs\\AceBucket-3.0\\AceBucket-3.0.lua:116: in function `func'\n...\\ProfessionsVault\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:43: in function <...\\ProfessionsVault\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:36>\n",
-		}, -- [42]
+		}, -- [36]
 		{
 			["message"] = "Note: AddOn Carbonite.Quests attempted to call a protected function (PartyMemberFrame3:originalHide()) during combat lockdown.",
 			["count"] = 1,
@@ -377,7 +324,7 @@ SwatterData = {
 			["timestamp"] = "2013-07-03 22:11:49",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `originalHide'\nInterface\\FrameXML\\FrameLocks.lua:92: in function <Interface\\FrameXML\\FrameLocks.lua:68>\nInterface\\FrameXML\\FrameLocks.lua:111: in function <Interface\\FrameXML\\FrameLocks.lua:106>\nInterface\\FrameXML\\FrameLocks.lua:153: in function `RemoveFrameLock'\n...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:454: in function `PetBattleFrame_Remove'\n...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:120: in function <...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:91>\n",
-		}, -- [43]
+		}, -- [37]
 		{
 			["message"] = "Note: AddOn Carbonite.Quests attempted to call a protected function (MainMenuBar:originalShow()) during combat lockdown.",
 			["count"] = 1,
@@ -385,7 +332,7 @@ SwatterData = {
 			["timestamp"] = "2013-07-03 22:11:49",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `originalShow'\nInterface\\FrameXML\\FrameLocks.lua:90: in function <Interface\\FrameXML\\FrameLocks.lua:68>\nInterface\\FrameXML\\FrameLocks.lua:111: in function <Interface\\FrameXML\\FrameLocks.lua:106>\nInterface\\FrameXML\\FrameLocks.lua:153: in function `RemoveFrameLock'\n...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:454: in function `PetBattleFrame_Remove'\n...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:120: in function <...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:91>\n",
-		}, -- [44]
+		}, -- [38]
 		{
 			["message"] = "Note: AddOn Carbonite.Quests attempted to call a protected function (MinimapCluster:originalHide()) during combat lockdown.",
 			["count"] = 1,
@@ -393,7 +340,7 @@ SwatterData = {
 			["timestamp"] = "2013-07-03 22:11:49",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `originalHide'\nInterface\\FrameXML\\FrameLocks.lua:92: in function <Interface\\FrameXML\\FrameLocks.lua:68>\nInterface\\FrameXML\\FrameLocks.lua:111: in function <Interface\\FrameXML\\FrameLocks.lua:106>\nInterface\\FrameXML\\FrameLocks.lua:153: in function `RemoveFrameLock'\n...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:454: in function `PetBattleFrame_Remove'\n...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:120: in function <...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:91>\n",
-		}, -- [45]
+		}, -- [39]
 		{
 			["message"] = "Note: AddOn Carbonite.Quests attempted to call a protected function (PlayerFrame:originalShow()) during combat lockdown.",
 			["count"] = 1,
@@ -401,7 +348,7 @@ SwatterData = {
 			["timestamp"] = "2013-07-03 22:11:49",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `originalShow'\nInterface\\FrameXML\\FrameLocks.lua:90: in function <Interface\\FrameXML\\FrameLocks.lua:68>\nInterface\\FrameXML\\FrameLocks.lua:111: in function <Interface\\FrameXML\\FrameLocks.lua:106>\nInterface\\FrameXML\\FrameLocks.lua:153: in function `RemoveFrameLock'\n...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:454: in function `PetBattleFrame_Remove'\n...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:120: in function <...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:91>\n",
-		}, -- [46]
+		}, -- [40]
 		{
 			["message"] = "Note: AddOn Carbonite.Quests attempted to call a protected function (FocusFrame:originalHide()) during combat lockdown.",
 			["count"] = 1,
@@ -409,7 +356,7 @@ SwatterData = {
 			["timestamp"] = "2013-07-03 22:11:49",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `originalHide'\nInterface\\FrameXML\\FrameLocks.lua:92: in function <Interface\\FrameXML\\FrameLocks.lua:68>\nInterface\\FrameXML\\FrameLocks.lua:111: in function <Interface\\FrameXML\\FrameLocks.lua:106>\nInterface\\FrameXML\\FrameLocks.lua:153: in function `RemoveFrameLock'\n...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:454: in function `PetBattleFrame_Remove'\n...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:120: in function <...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:91>\n",
-		}, -- [47]
+		}, -- [41]
 		{
 			["message"] = "Note: AddOn Carbonite.Quests attempted to call a protected function (MultiBarLeft:originalHide()) during combat lockdown.",
 			["count"] = 1,
@@ -417,7 +364,7 @@ SwatterData = {
 			["timestamp"] = "2013-07-03 22:11:49",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `originalHide'\nInterface\\FrameXML\\FrameLocks.lua:92: in function <Interface\\FrameXML\\FrameLocks.lua:68>\nInterface\\FrameXML\\FrameLocks.lua:111: in function <Interface\\FrameXML\\FrameLocks.lua:106>\nInterface\\FrameXML\\FrameLocks.lua:153: in function `RemoveFrameLock'\n...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:454: in function `PetBattleFrame_Remove'\n...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:120: in function <...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:91>\n",
-		}, -- [48]
+		}, -- [42]
 		{
 			["message"] = "Note: AddOn Carbonite.Quests attempted to call a protected function (PartyMemberFrame4:originalHide()) during combat lockdown.",
 			["count"] = 1,
@@ -425,7 +372,7 @@ SwatterData = {
 			["timestamp"] = "2013-07-03 22:11:49",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `originalHide'\nInterface\\FrameXML\\FrameLocks.lua:92: in function <Interface\\FrameXML\\FrameLocks.lua:68>\nInterface\\FrameXML\\FrameLocks.lua:111: in function <Interface\\FrameXML\\FrameLocks.lua:106>\nInterface\\FrameXML\\FrameLocks.lua:153: in function `RemoveFrameLock'\n...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:454: in function `PetBattleFrame_Remove'\n...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:120: in function <...AddOns\\Blizzard_PetBattleUI\\Blizzard_PetBattleUI.lua:91>\n",
-		}, -- [49]
+		}, -- [43]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:3152: script ran too long",
 			["count"] = 1,
@@ -434,7 +381,7 @@ SwatterData = {
 			["timestamp"] = "2013-07-26 23:38:22",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:3152: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3140: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n[C]: in function `RunBinding'\nInterface\\FrameXML\\WorldMapFrame.lua:392: in function <Interface\\FrameXML\\WorldMapFrame.lua:389>\n",
-		}, -- [50]
+		}, -- [44]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (PetJournalParent:SetAttribute()) during combat lockdown.",
 			["count"] = 20,
@@ -442,7 +389,7 @@ SwatterData = {
 			["timestamp"] = "2013-08-07 06:00:53",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:68: in function <Interface\\FrameXML\\UIParent.lua:62>\nInterface\\FrameXML\\UIParent.lua:2235: in function <Interface\\FrameXML\\UIParent.lua:2231>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3134: in function `ToggleFrame'\nInterface\\FrameXML\\UIParent.lua:656: in function `TogglePetJournal'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>\n",
-		}, -- [51]
+		}, -- [45]
 		{
 			["message"] = "Note: AddOn Carbonite attempted to call a protected function (PetJournalParent:Show()) during combat lockdown.",
 			["count"] = 4,
@@ -450,7 +397,7 @@ SwatterData = {
 			["timestamp"] = "2013-08-07 06:00:53",
 			["context"] = "AddOn: Carbonite",
 			["stack"] = "[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:2236: in function <Interface\\FrameXML\\UIParent.lua:2231>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3134: in function `ToggleFrame'\nInterface\\FrameXML\\UIParent.lua:656: in function `TogglePetJournal'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>\n",
-		}, -- [52]
+		}, -- [46]
 		{
 			["message"] = "Note: AddOn CyborgMMO7 attempted to call a protected function (MainPage:Hide()) during combat lockdown.",
 			["count"] = 64,
@@ -458,7 +405,7 @@ SwatterData = {
 			["timestamp"] = "2013-09-01 22:18:45",
 			["context"] = "AddOn: CyborgMMO7",
 			["stack"] = "[C]: in function `Hide'\nInterface\\AddOns\\CyborgMMO7\\CyborgMMO7.lua:564: in function `Close'\nInterface\\AddOns\\CyborgMMO7\\CyborgMMO7.lua:475: in function `Event'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>\n",
-		}, -- [53]
+		}, -- [47]
 		{
 			["message"] = "Note: AddOn CyborgMMO7 attempted to call a protected function (MainPage:Show()) during combat lockdown.",
 			["count"] = 1,
@@ -466,7 +413,7 @@ SwatterData = {
 			["timestamp"] = "2013-09-01 22:21:36",
 			["context"] = "AddOn: CyborgMMO7",
 			["stack"] = "[C]: in function `Show'\nInterface\\AddOns\\CyborgMMO7\\CyborgMMO7.lua:571: in function `Open'\nInterface\\AddOns\\CyborgMMO7\\CyborgMMO7.lua:590: in function `Toggle'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>\n",
-		}, -- [54]
+		}, -- [48]
 		{
 			["message"] = "...terface\\AddOns\\ProfessionsVault\\ProfessionsVault.lua:3292: attempt to index local 'rem' (a nil value)",
 			["count"] = 1,
@@ -474,7 +421,7 @@ SwatterData = {
 			["timestamp"] = "2013-09-11 06:00:18",
 			["context"] = "Global",
 			["stack"] = "...terface\\AddOns\\ProfessionsVault\\ProfessionsVault.lua:3292: in function `link_parse'\n...terface\\AddOns\\ProfessionsVault\\ProfessionsVault.lua:3497: in function `normalize_link'\n...terface\\AddOns\\ProfessionsVault\\ProfessionsVault.lua:1866: in function `UpdateTrade'\n...terface\\AddOns\\ProfessionsVault\\ProfessionsVault.lua:1757: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147: in function <...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147>\n[string \"safecall Dispatcher[1]\"]:4: in function <[string \"safecall Dispatcher[1]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:13: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:92: in function `Fire'\n...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:120: in function <...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:348: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:633: in function <Interface\\FrameXML\\SecureTemplates.lua:581>\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:264: in function <Interface\\FrameXML\\SecureHandlers.lua:261>\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:294: in function <Interface\\FrameXML\\SecureHandlers.lua:277>\n(tail call): ?\n",
-		}, -- [55]
+		}, -- [49]
 		{
 			["message"] = "...terface\\AddOns\\ProfessionsVault\\ProfessionsVault.lua:3292: attempt to index local 'rem' (a nil value)",
 			["count"] = 5,
@@ -482,7 +429,7 @@ SwatterData = {
 			["timestamp"] = "2013-09-12 05:42:26",
 			["context"] = "Global",
 			["stack"] = "...terface\\AddOns\\ProfessionsVault\\ProfessionsVault.lua:3292: in function `link_parse'\n...terface\\AddOns\\ProfessionsVault\\ProfessionsVault.lua:3497: in function `normalize_link'\n...terface\\AddOns\\ProfessionsVault\\ProfessionsVault.lua:2206: in function `ScanSecondary'\n...terface\\AddOns\\ProfessionsVault\\ProfessionsVault.lua:1539: in function <...terface\\AddOns\\ProfessionsVault\\ProfessionsVault.lua:1494>\n...terface\\AddOns\\ProfessionsVault\\ProfessionsVault.lua:1567: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147: in function <...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:147>\n[string \"safecall Dispatcher[16]\"]:4: in function <[string \"safecall Dispatcher[16]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[16]\"]:13: in function `?'\n...ibDataBroker\\CallbackHandler\\CallbackHandler-1.0.lua:92: in function `Fire'\n...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:120: in function <...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>\n",
-		}, -- [56]
+		}, -- [50]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Core\\DBT.lua:793: script ran too long",
 			["count"] = 1,
@@ -491,7 +438,7 @@ SwatterData = {
 			["timestamp"] = "2013-09-13 22:43:27",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Core\\DBT.lua:793: in function `ApplyStyle'\nInterface\\AddOns\\DBM-Core\\DBT.lua:444: in function `CreateBar'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:5482: in function `Start'\nInterface\\AddOns\\DBM-Pandaria\\Yulon.lua:97: in function `OnSync'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:6146: in function `ReceiveSync'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:6132: in function `SendSync'\nInterface\\AddOns\\DBM-Pandaria\\Yulon.lua:80: in function `handler'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:442: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:429>\n",
-		}, -- [57]
+		}, -- [51]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 1,
@@ -499,7 +446,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-03 00:04:25",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [58]
+		}, -- [52]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 22,
@@ -507,7 +454,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-04 05:32:39",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [59]
+		}, -- [53]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 12,
@@ -515,7 +462,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-05 05:37:47",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [60]
+		}, -- [54]
 		{
 			["message"] = "Error: AddOn +Wowhead_Looter attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 2,
@@ -523,7 +470,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-06 05:41:50",
 			["context"] = "AddOn: +Wowhead_Looter",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\n...ace\\AddOns\\Blizzard_TrainerUI\\Blizzard_TrainerUI.lua:95: in function <...ace\\AddOns\\Blizzard_TrainerUI\\Blizzard_TrainerUI.lua:84>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1819: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1725: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\n...ace\\AddOns\\Blizzard_TrainerUI\\Blizzard_TrainerUI.lua:42: in function `ClassTrainerFrame_Show'\nInterface\\FrameXML\\UIParent.lua:1145: in function <Interface\\FrameXML\\UIParent.lua:702>\n",
-		}, -- [61]
+		}, -- [55]
 		{
 			["message"] = "Interface\\AddOns\\Blizzard_PVPUI\\Blizzard_PVPUI.lua:643: attempt to compare number with nil",
 			["count"] = 6,
@@ -532,7 +479,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-09 21:36:01",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Blizzard_PVPUI\\Blizzard_PVPUI.lua:643: in function `HonorFrameBonusFrame_Update'\nInterface\\AddOns\\Blizzard_PVPUI\\Blizzard_PVPUI.lua:329: in function <Interface\\AddOns\\Blizzard_PVPUI\\Blizzard_PVPUI.lua:321>\n",
-		}, -- [62]
+		}, -- [56]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 5,
@@ -540,7 +487,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-09 22:27:49",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [63]
+		}, -- [57]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 12,
@@ -548,7 +495,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-11 05:41:45",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [64]
+		}, -- [58]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 5,
@@ -556,7 +503,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-12 05:53:01",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [65]
+		}, -- [59]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 3,
@@ -564,7 +511,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-13 20:24:27",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [66]
+		}, -- [60]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 37,
@@ -572,7 +519,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-14 05:39:43",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [67]
+		}, -- [61]
 		{
 			["message"] = "Error: AddOn +Wowhead_Looter attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 3,
@@ -580,7 +527,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-15 05:26:14",
 			["context"] = "AddOn: +Wowhead_Looter",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\n...ace\\AddOns\\Blizzard_TrainerUI\\Blizzard_TrainerUI.lua:95: in function <...ace\\AddOns\\Blizzard_TrainerUI\\Blizzard_TrainerUI.lua:84>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1819: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1725: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\n...ace\\AddOns\\Blizzard_TrainerUI\\Blizzard_TrainerUI.lua:42: in function `ClassTrainerFrame_Show'\nInterface\\FrameXML\\UIParent.lua:1145: in function <Interface\\FrameXML\\UIParent.lua:702>\n",
-		}, -- [68]
+		}, -- [62]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 4,
@@ -588,7 +535,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-15 05:39:29",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [69]
+		}, -- [63]
 		{
 			["message"] = "Error: AddOn +Wowhead_Looter attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 1,
@@ -596,7 +543,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-17 14:04:04",
 			["context"] = "AddOn: +Wowhead_Looter",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\n...ace\\AddOns\\Blizzard_TrainerUI\\Blizzard_TrainerUI.lua:95: in function <...ace\\AddOns\\Blizzard_TrainerUI\\Blizzard_TrainerUI.lua:84>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1819: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1663: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\n...ace\\AddOns\\Blizzard_TrainerUI\\Blizzard_TrainerUI.lua:42: in function `ClassTrainerFrame_Show'\nInterface\\FrameXML\\UIParent.lua:1145: in function <Interface\\FrameXML\\UIParent.lua:702>\n",
-		}, -- [70]
+		}, -- [64]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 14,
@@ -604,7 +551,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-22 05:28:50",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [71]
+		}, -- [65]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 10,
@@ -612,7 +559,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-22 21:29:20",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [72]
+		}, -- [66]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 1,
@@ -620,7 +567,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-23 22:23:22",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [73]
+		}, -- [67]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 6,
@@ -628,7 +575,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-25 05:52:54",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [74]
+		}, -- [68]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 20,
@@ -636,7 +583,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-26 05:26:33",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [75]
+		}, -- [69]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 30,
@@ -644,7 +591,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-27 20:14:23",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [76]
+		}, -- [70]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 19,
@@ -652,7 +599,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-28 21:56:29",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [77]
+		}, -- [71]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 14,
@@ -660,7 +607,7 @@ SwatterData = {
 			["timestamp"] = "2013-11-29 22:34:10",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [78]
+		}, -- [72]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 18,
@@ -668,7 +615,7 @@ SwatterData = {
 			["timestamp"] = "2013-12-02 05:16:28",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [79]
+		}, -- [73]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 7,
@@ -676,7 +623,7 @@ SwatterData = {
 			["timestamp"] = "2013-12-03 05:53:19",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [80]
+		}, -- [74]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 5,
@@ -684,7 +631,7 @@ SwatterData = {
 			["timestamp"] = "2013-12-04 05:31:27",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [81]
+		}, -- [75]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 2,
@@ -692,7 +639,7 @@ SwatterData = {
 			["timestamp"] = "2013-12-07 22:40:25",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [82]
+		}, -- [76]
 		{
 			["message"] = "Error: AddOn Carbonite.Quests attempted to call a forbidden function (IsDisabledByParentalControls()) from a tainted execution path.",
 			["count"] = 14,
@@ -700,7 +647,7 @@ SwatterData = {
 			["timestamp"] = "2013-12-09 05:31:18",
 			["context"] = "AddOn: Carbonite.Quests",
 			["stack"] = "[C]: in function `IsDisabledByParentalControls'\nInterface\\FrameXML\\MainMenuBarMicroButtons.lua:229: in function <Interface\\FrameXML\\MainMenuBarMicroButtons.lua:76>\n[C]: in function `UpdateMicroButtons'\nInterface\\FrameXML\\WorldMapFrame.lua:272: in function <Interface\\FrameXML\\WorldMapFrame.lua:255>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:1772: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1614: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1545: in function <Interface\\FrameXML\\UIParent.lua:1541>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2262: in function <Interface\\FrameXML\\UIParent.lua:2250>\n[C]: ?\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3170: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [83]
+		}, -- [77]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Ulduar\\FlameLeviathan.lua:7: attempt to call method 'SetEncounterID' (a nil value)",
 			["count"] = 1,
@@ -709,7 +656,7 @@ SwatterData = {
 			["timestamp"] = "2014-01-04 20:36:09",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Ulduar\\FlameLeviathan.lua:7: in main chunk\n[C]: ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2210: in function `LoadMod'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2172: in function `LoadModsOnDemand'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2160: in function `func'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:1041: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1034>\n",
-		}, -- [84]
+		}, -- [78]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Ulduar\\Ignis.lua:6: attempt to call method 'SetEncounterID' (a nil value)",
 			["count"] = 1,
@@ -718,7 +665,7 @@ SwatterData = {
 			["timestamp"] = "2014-01-04 20:36:09",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Ulduar\\Ignis.lua:6: in main chunk\n[C]: ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2210: in function `LoadMod'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2172: in function `LoadModsOnDemand'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2160: in function `func'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:1041: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1034>\n",
-		}, -- [85]
+		}, -- [79]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Ulduar\\Razorscale.lua:6: attempt to call method 'SetEncounterID' (a nil value)",
 			["count"] = 1,
@@ -727,7 +674,7 @@ SwatterData = {
 			["timestamp"] = "2014-01-04 20:36:09",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Ulduar\\Razorscale.lua:6: in main chunk\n[C]: ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2210: in function `LoadMod'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2172: in function `LoadModsOnDemand'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2160: in function `func'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:1041: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1034>\n",
-		}, -- [86]
+		}, -- [80]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Ulduar\\XT002.lua:6: attempt to call method 'SetEncounterID' (a nil value)",
 			["count"] = 1,
@@ -736,7 +683,7 @@ SwatterData = {
 			["timestamp"] = "2014-01-04 20:36:09",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Ulduar\\XT002.lua:6: in main chunk\n[C]: ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2210: in function `LoadMod'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2172: in function `LoadModsOnDemand'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2160: in function `func'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:1041: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1034>\n",
-		}, -- [87]
+		}, -- [81]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Ulduar\\IronCouncil.lua:6: attempt to call method 'SetEncounterID' (a nil value)",
 			["count"] = 1,
@@ -745,7 +692,7 @@ SwatterData = {
 			["timestamp"] = "2014-01-04 20:36:09",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Ulduar\\IronCouncil.lua:6: in main chunk\n[C]: ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2210: in function `LoadMod'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2172: in function `LoadModsOnDemand'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2160: in function `func'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:1041: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1034>\n",
-		}, -- [88]
+		}, -- [82]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Ulduar\\Kologarn.lua:6: attempt to call method 'SetEncounterID' (a nil value)",
 			["count"] = 1,
@@ -754,7 +701,7 @@ SwatterData = {
 			["timestamp"] = "2014-01-04 20:36:09",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Ulduar\\Kologarn.lua:6: in main chunk\n[C]: ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2210: in function `LoadMod'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2172: in function `LoadModsOnDemand'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2160: in function `func'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:1041: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1034>\n",
-		}, -- [89]
+		}, -- [83]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Ulduar\\Auriaya.lua:7: attempt to call method 'SetEncounterID' (a nil value)",
 			["count"] = 1,
@@ -763,7 +710,7 @@ SwatterData = {
 			["timestamp"] = "2014-01-04 20:36:09",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Ulduar\\Auriaya.lua:7: in main chunk\n[C]: ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2210: in function `LoadMod'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2172: in function `LoadModsOnDemand'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2160: in function `func'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:1041: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1034>\n",
-		}, -- [90]
+		}, -- [84]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Ulduar\\Mimiron.lua:6: attempt to call method 'SetEncounterID' (a nil value)",
 			["count"] = 1,
@@ -772,7 +719,7 @@ SwatterData = {
 			["timestamp"] = "2014-01-04 20:36:09",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Ulduar\\Mimiron.lua:6: in main chunk\n[C]: ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2210: in function `LoadMod'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2172: in function `LoadModsOnDemand'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2160: in function `func'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:1041: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1034>\n",
-		}, -- [91]
+		}, -- [85]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Ulduar\\Freya.lua:7: attempt to call method 'SetEncounterID' (a nil value)",
 			["count"] = 1,
@@ -781,7 +728,7 @@ SwatterData = {
 			["timestamp"] = "2014-01-04 20:36:09",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Ulduar\\Freya.lua:7: in main chunk\n[C]: ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2210: in function `LoadMod'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2172: in function `LoadModsOnDemand'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2160: in function `func'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:1041: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1034>\n",
-		}, -- [92]
+		}, -- [86]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Ulduar\\Thorim.lua:6: attempt to call method 'SetEncounterID' (a nil value)",
 			["count"] = 1,
@@ -790,7 +737,7 @@ SwatterData = {
 			["timestamp"] = "2014-01-04 20:36:09",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Ulduar\\Thorim.lua:6: in main chunk\n[C]: ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2210: in function `LoadMod'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2172: in function `LoadModsOnDemand'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2160: in function `func'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:1041: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1034>\n",
-		}, -- [93]
+		}, -- [87]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Ulduar\\Hodir.lua:6: attempt to call method 'SetEncounterID' (a nil value)",
 			["count"] = 1,
@@ -799,7 +746,7 @@ SwatterData = {
 			["timestamp"] = "2014-01-04 20:36:09",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Ulduar\\Hodir.lua:6: in main chunk\n[C]: ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2210: in function `LoadMod'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2172: in function `LoadModsOnDemand'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2160: in function `func'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:1041: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1034>\n",
-		}, -- [94]
+		}, -- [88]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Ulduar\\GeneralVezax.lua:6: attempt to call method 'SetEncounterID' (a nil value)",
 			["count"] = 1,
@@ -808,7 +755,7 @@ SwatterData = {
 			["timestamp"] = "2014-01-04 20:36:09",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Ulduar\\GeneralVezax.lua:6: in main chunk\n[C]: ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2210: in function `LoadMod'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2172: in function `LoadModsOnDemand'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2160: in function `func'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:1041: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1034>\n",
-		}, -- [95]
+		}, -- [89]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Ulduar\\YoggSaron.lua:6: attempt to call method 'SetEncounterID' (a nil value)",
 			["count"] = 1,
@@ -817,7 +764,7 @@ SwatterData = {
 			["timestamp"] = "2014-01-04 20:36:09",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Ulduar\\YoggSaron.lua:6: in main chunk\n[C]: ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2210: in function `LoadMod'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2172: in function `LoadModsOnDemand'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2160: in function `func'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:1041: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1034>\n",
-		}, -- [96]
+		}, -- [90]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Ulduar\\Algalon.lua:6: attempt to call method 'SetEncounterID' (a nil value)",
 			["count"] = 1,
@@ -826,7 +773,7 @@ SwatterData = {
 			["timestamp"] = "2014-01-04 20:36:09",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\DBM-Ulduar\\Algalon.lua:6: in main chunk\n[C]: ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2210: in function `LoadMod'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2172: in function `LoadModsOnDemand'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:2160: in function `func'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:1041: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:1034>\n",
-		}, -- [97]
+		}, -- [91]
 		{
 			["message"] = "...\\AddOns\\DBM-Icecrown\\TheLowerSpire\\GunshipBattle.lua:58: attempt to call method 'Show' (a nil value)",
 			["count"] = 1,
@@ -835,7 +782,7 @@ SwatterData = {
 			["timestamp"] = "2014-01-24 21:46:03",
 			["context"] = "Global",
 			["stack"] = "...\\AddOns\\DBM-Icecrown\\TheLowerSpire\\GunshipBattle.lua:58: in function `OnCombatStart'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:3425: in function `StartCombat'\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:3172: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3167>\n(tail call): ?\nInterface\\AddOns\\DBM-Core\\DBM-Core.lua:459: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:446>\n",
-		}, -- [98]
+		}, -- [92]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:8353: bad argument #1 to 'pairs' (table expected, got nil)",
 			["count"] = 1,
@@ -844,7 +791,7 @@ SwatterData = {
 			["timestamp"] = "2014-02-14 21:31:30",
 			["context"] = "Global",
 			["stack"] = "[C]: in function `pairs'\nInterface\\AddOns\\Carbonite\\NxMap.lua:8353: in function `InitTables'\nInterface\\AddOns\\Carbonite\\NxMap.lua:138: in function `Init'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:637: in function `SetupEverything'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1100: in function `NXOnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n",
-		}, -- [99]
+		}, -- [93]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\Carbonite.lua:2793: attempt to index local 'map' (a nil value)",
 			["count"] = 1,
@@ -853,7 +800,7 @@ SwatterData = {
 			["timestamp"] = "2014-02-14 21:31:33",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\Carbonite.lua:2793: in function `GetPlyrPos'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:2685: in function `AddInfo'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:999: in function `h'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:760: in function `NXOnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>\n",
-		}, -- [100]
+		}, -- [94]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:8353: bad argument #1 to 'pairs' (table expected, got nil)",
 			["count"] = 1,
@@ -862,7 +809,7 @@ SwatterData = {
 			["timestamp"] = "2014-02-14 21:33:06",
 			["context"] = "Global",
 			["stack"] = "[C]: in function `pairs'\nInterface\\AddOns\\Carbonite\\NxMap.lua:8353: in function `InitTables'\nInterface\\AddOns\\Carbonite\\NxMap.lua:138: in function `Init'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:637: in function `SetupEverything'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:1100: in function `NXOnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n",
-		}, -- [101]
+		}, -- [95]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\Carbonite.lua:2793: attempt to index local 'map' (a nil value)",
 			["count"] = 8,
@@ -871,7 +818,7 @@ SwatterData = {
 			["timestamp"] = "2014-02-14 21:33:06",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\Carbonite.lua:2793: in function `GetPlyrPos'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:2685: in function `AddInfo'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:999: in function `h'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:760: in function `NXOnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>\n",
-		}, -- [102]
+		}, -- [96]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxUI.lua:2908: attempt to concatenate field 'LayoutMode' (a boolean value)",
 			["count"] = 1,
@@ -880,7 +827,7 @@ SwatterData = {
 			["timestamp"] = "2014-02-14 21:36:44",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\NxUI.lua:2908: in function <Interface\\AddOns\\Carbonite\\NxUI.lua:2893>\n",
-		}, -- [103]
+		}, -- [97]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:3169: attempt to index local 'map' (a nil value)",
 			["count"] = 6,
@@ -889,7 +836,7 @@ SwatterData = {
 			["timestamp"] = "2014-02-14 21:39:54",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:3169: in function `BlizzToggleWorldMap'\nInterface\\AddOns\\Carbonite\\NxMap.lua:3154: in function `ToggleFrame'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>\n",
-		}, -- [104]
+		}, -- [98]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:3222: attempt to index local 'map' (a nil value)",
 			["count"] = 1,
@@ -898,7 +845,7 @@ SwatterData = {
 			["timestamp"] = "2014-02-14 21:40:06",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\NxMap.lua:3222: in function `ToggleSize'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:3771: in function `NXOnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>\n",
-		}, -- [105]
+		}, -- [99]
 		{
 			["message"] = "Interface\\AddOns\\Carbonite\\NxMapGuide.lua:1780: attempt to index local 'map' (a nil value)",
 			["count"] = 2,
@@ -907,6 +854,6 @@ SwatterData = {
 			["timestamp"] = "2014-02-14 21:43:44",
 			["context"] = "Global",
 			["stack"] = "Interface\\AddOns\\Carbonite\\NxMapGuide.lua:1780: in function `SavePlayerNPCTarget'\nInterface\\AddOns\\Carbonite\\NxMapGuide.lua:1785: in function `h'\nInterface\\AddOns\\Carbonite\\Carbonite.lua:760: in function `NXOnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>\n",
-		}, -- [106]
+		}, -- [100]
 	},
 }

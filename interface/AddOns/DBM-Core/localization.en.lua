@@ -10,7 +10,12 @@ DBM_CORE_LOAD_MOD_SUCCESS			= "Loaded '%s' mods. For more options, type /dbm or 
 DBM_CORE_LOAD_MOD_COMBAT			= "Loading of '%s' delayed until you leave combat"
 DBM_CORE_LOAD_GUI_ERROR				= "Could not load GUI: %s"
 DBM_CORE_LOAD_GUI_COMBAT			= "GUI cannot be initially loaded in combat. GUI will be loaded out of combat. After GUI loaded, you can load GUI in combat."
+DBM_CORE_LOAD_SKIN_COMBAT			= "DBM timers failed to skin during combat. Your timers will likely not work correctly and generate several lua errors. This is often caused by 3rd party mods trying to apply skin changes in combat. Recommended to reloadui after you leave combat"
 DBM_CORE_BAD_LOAD					= "DBM has detected your mod for this instance failed to fully load correctly because of combat. As soon as you are out of combat, please do /console reloadui as soon as possible."
+
+DBM_CORE_DYNAMIC_DIFFICULTY_CLUMP	= "DBM has disabled dynamic range frame on this fight do to insufficient information about number of players needed to affect clump check for a group of your size."
+DBM_CORE_DYNAMIC_ADD_COUNT			= "DBM has disabled add count warnings on this fight do to insufficient information about number of adds that spawn for a group of your size."
+DBM_CORE_DYNAMIC_MULTIPLE			= "DBM has disabled multiple features on this fight do to insufficient information about certain mechanics for a group of your size."
 
 DBM_CORE_LOOT_SPEC_REMINDER			= "Your current spec is %s. Your current loot choice is %s."
 
@@ -35,6 +40,9 @@ DBM_CORE_SCENARIO_ENDED_AT_LONG		= "%s ended after %s. You have %d total incompl
 DBM_CORE_COMBAT_STATE_RECOVERED		= "%s was engaged %s ago, recovering timers..."
 DBM_CORE_TRANSCRIPTOR_LOG_START		= "Transcriptor logging started."
 DBM_CORE_TRANSCRIPTOR_LOG_END		= "Transcriptor logging ended."
+
+DBM_CORE_WORLDBOSS_ENGAGED			= "%s was engaged on your realm at %s percent health."
+DBM_CORE_WORLDBOSS_DEFEATED			= "%s was defeated on your realm."
 
 DBM_CORE_TIMER_FORMAT_SECS			= "%d |4second:seconds;"
 DBM_CORE_TIMER_FORMAT_MINS			= "%d |4minute:minutes;"

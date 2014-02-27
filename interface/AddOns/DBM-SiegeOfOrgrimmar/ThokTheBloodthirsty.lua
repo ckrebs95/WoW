@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(851, "DBM-SiegeOfOrgrimmar", nil, 369)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 10977 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 11047 $"):sub(12, -3))
 mod:SetCreatureID(71529)
 mod:SetEncounterID(1599)
 mod:SetZone()
@@ -137,7 +137,7 @@ function mod:OnCombatStart(delay)
 	end
 	berserkTimer:Start(-delay)
 	if self.Options.RangeFrame and not self:IsDifficulty("lfr25") then
-		if self:IsDifficulty("normal10", "heroic10") then
+		if self:IsDifficulty("normal10", "heroic10", "flex") then
 			DBM.RangeCheck:Show(10, nil, nil, 4)
 		else
 			DBM.RangeCheck:Show(10, nil, nil, 14)
@@ -308,10 +308,10 @@ function mod:SPELL_AURA_REMOVED(args)
 			specWarnDeafeningScreech:Schedule(11.5)
 		end
 		if self.Options.RangeFrame and not self:IsDifficulty("lfr25") then
-			if self:IsDifficulty("normal10", "heroic10") then
+			if self:IsDifficulty("normal10", "heroic10", "flex") then
 				DBM.RangeCheck:Show(10, nil, nil, 4)
 			else
-				DBM.RangeCheck:Show(10, nil, nil, 14)
+				DBM.RangeCheck:Show(10, nil, nil, 14)	
 			end
 		end
 	elseif spellId == 143445 then
